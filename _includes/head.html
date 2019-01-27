@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+
+{% if page.lang == 'pl' %}
+  {% assign lang = '' %}
+{% else %}
+  {% capture lang %}/{{page.lang}}{% endcapture %}
+{% endif %}
+
+{% assign t = site.translations | where:"translation_id", "header"  | first %}
+{% assign t = t[page.lang] %}
+
+    <head>
+        <!-- Basic Page Needs
+================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Title and meta description
+================================================== -->
+        {% if page.lang == 'pl' %}
+                  <title>
+                  {% if page.title %}
+                    {% if page.target_id %} Wskaźnik {{ page.target_id}} - {% elsif page.sdg_goal %} Cel {{ page.sdg_goal}} - {%else%} {% endif %}
+                    {{ page.title | escape }}
+                  {% else %}
+                  {{ t.site-title | escape }}
+                  {% endif %}</title>
+                {% else %}
+                <title>
+                {% if page.title %}
+                  {% if page.target_id %} Indicator {{ page.target_id}} - {% elsif page.sdg_goal %} Goal {{ page.sdg_goal}} - {%else%} {% endif %}
+                  {{ page.title | escape }}
+                {% else %}
+                {{ t.site-title | escape }}
+                {% endif %}</title>
+                {% endif %}
+
+        <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ t.site-title | escape }}{% endif %}">
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        <link rel="canonical" href="/"><!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.js"></script>
+  <script src="/assets/js/vendor/respond.js"></script>
+  <script src="/assets/js/vendor/selectivizr-min.js"></script>
+<![endif]-->
+        <!--[if IE]>
+          <script src="{{ site.baseurl }}/assets/js/vendor/custom-event-polyfill.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}/assets/img/flags/pl.ico">
+        <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/flags/pl.png">
+        {%
+            assign cache_bust = site.time | replace: ' ', '-' | replace: ':', '-'
+        %}
+
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/chartist.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/chartist-plugin-tooltip.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pl_sdg.css?v={{ cache_bust }}">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css?v={{ cache_bust }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="{{ site.baseurl }}/assets/js/accessibility.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/chartist.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-accessibility.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-legend.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-axistitle.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-tooltip.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/jquery-1.11.3.min.js" type="text/javascript"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/uswds.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+
+
+    </head>
+    <body>

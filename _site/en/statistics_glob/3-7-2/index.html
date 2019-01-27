@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+
+
+
+
+
+
+    <head>
+        <!-- Basic Page Needs
+================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Title and meta description
+================================================== -->
+        
+                <title>
+                
+                   Indicator 3.7.2 - 
+                  Adolescent birth rate
+                </title>
+                
+
+        <meta property="og:title" content="Adolescent birth rate">
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        <link rel="canonical" href="/"><!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.js"></script>
+  <script src="/assets/js/vendor/respond.js"></script>
+  <script src="/assets/js/vendor/selectivizr-min.js"></script>
+<![endif]-->
+        <!--[if IE]>
+          <script src="/sdg-indicators/assets/js/vendor/custom-event-polyfill.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" type="image/ico" href="/sdg-indicators/assets/img/flags/pl.ico">
+        <link rel="icon" type="image/png" href="/sdg-indicators/assets/img/flags/pl.png">
+        
+
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-01-25-11-39-41-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-01-25-11-39-41-+0100">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="/sdg-indicators/assets/js/accessibility.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-accessibility.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-tooltip.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/jquery-1.11.3.min.js" type="text/javascript"></script>
+        <script src="/sdg-indicators/assets/js/vendor/bootstrap.min.js"></script>
+        <script src="/sdg-indicators/assets/js/uswds.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+
+
+    </head>
+    <body>
+
+
+
+
+
+<header role="banner" class="fixed-header indicator">
+  <!------------------pasek z ikonami i wyszukiwarką------------------------------------------------------------>
+  <div class="usa-disclaimer  development">
+    <div class="pl-grid nag">
+	  <div class="usa-disclaimer-official" style="width: 28%; padding-left: 0px">
+        <span id="krajowa" class="contrast-default">National Reporting Platform - SDG</span>
+      </div>
+    <!------------------ikony na gornym pasku------------------------------------------------------------>
+      <div style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 4px; padding-left: 6px; border-width: thin; float: left;">
+        <a href="http://stat.gov.pl/" target="_blank" title="Strona GUS" class="pos-1" style=" color: #999999;">
+          <img src="/sdg-indicators/assets/img/gus_cz.png" height="25px"></img>
+        </a>
+      </div>
+	  <div class="icons">
+        <a href="https://www.youtube.com/channel/UC0wiQMElFgYszpAoYgTnXtg/featured" target="_blank" title="kanał na YouTube" class="pos-3" style="color: #999999;">
+          <i class="fa fa-youtube-play" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/GlownyUrzadStatystyczny/" target="_blank" title="profil GUS na Facebooku" class="pos-4" style=" color: #999999;">
+          <i class="fa fa-facebook-square" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="http://twitter.com/GUS_STAT" target="_blank" title="profil GUS na Twitterze" class="pos-5" style=" color: #999999;">
+          <i class="fa fa-twitter" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="https://www.linkedin.com/company/532930" target="_blank" title="profil GUS na LinkedIn" class="pos-6" style=" ">
+          <i class="fa fa-linkedin-square" style="font-size:20px;color: #999999;"></i>
+        </a>
+      </div>
+    <!------------------kontrast na gornym pasku------------------------------------------------------------------------------------->
+      <div class="kontrast" style="border-right-style: solid; float: left; height: 35px;  border-color: #ddd;  padding: 4px 8px;;border-width: thin;">
+      </div>
+    <!------------------flaga z jezykami na gornym pasku------------------------------------------------------------------------------------->
+      <div class="language-toggle"style="border-right-style: solid;border-color: #ddd;height: 35px;padding: 6px;border-width: thin;">
+        
+          
+          <a class='pull-right lang'  data-lang='pl' href='/sdg-indicators/statistics_glob/3-7-2/'>
+            <img src="/sdg-indicators/assets/img/en/flaga.png" height="16px" width="25px">
+          </a>
+        
+      </div>
+    <!------------------duża wyszukiwarka na gornym pasku------------------------------------------------------------------------------------->
+      
+        <a class="wyszukiwarka">
+          <div class ="topnav">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="search-container">
+              <form action="/sdg-indicators/en/search/?search=" style="width: 300px;">
+                <input type="text" placeholder="Search indicator.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </a>
+      
+    <!--------------------wyszukiwarka dla małej wersji-------------------------------------------------------------------------------------------->
+      
+        <div id="wyszukiwarka_small" style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 6px; border-width: thin; float: left;">
+          <a href="/sdg-indicators/en/search/?search=" class="pos-6" style=" ">
+            <i class="fa fa-search" style="font-size:20px;color: #999999;"></i></a>
+        </div>
+      
+    </div> <!--zamykajacy do pl-grid nag-->
+  </div> <!--zamykajacy do usa-disclaimer-->
+
+
+<!--------------------menu małe-------------------------------------------------------------------------------------------------->
+  <!--jesli nie strona z intro-->
+    <a href="/sdg-indicators/en/" class="logo-home-mobile"><h1></h1></a>
+    <nav class="navbar navbar-light light-blue lighten-4">
+      <!--------------------menu jako przycisk-------------------------------------------------------------------------------------------------->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+      aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom:0px; margin-top: 0px;background-color:white; padding-bottom: 0;width: 100%; box-shadow: 0 0 3px #ffffff, 0 0 7px #ffffff;">
+        <a class="navbar-brand"><img src="/sdg-indicators/assets/img/en/logo_GUS_mobile.png" style="max-height: 100%" /></a>
+        <i class="fa fa-bars" style="color:gray;padding: 15px;float: right;"></i>
+      </button>
+      <!--------------------menu zakładki-------------------------------------------------------------------------------------------------->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto" id="hamburger">
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/o_sdg" style="text-decoration: none;color: #000;width: 100%">About SDG</a>
+          </li>
+		  <li class="nav-item small" style="pointer-events: none;">
+            <a class="nav-link" style="color: #000;">PL Statistics </a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">Global indicators</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/statistics_nat" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">National indicators</a>
+          </li>
+          <li class="nav-item small" style="pointer-events: none;">
+            <a class="nav-link" style="color: #000;">Reporting Status</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/statistics_glob/status" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">Global indicators</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/statistics_nat/status" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">National indicators</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/guide" style="text-decoration: none;color: #000;width: 100%">Guide</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/faqs" style="text-decoration: none;color: #000;width: 100%">FAQs</a>
+          </li>
+        </ul>
+      </div> <!--zamykający do collapse navbar-collapse-->
+    </nav> <!--zamknięcie menu małego-->
+
+<!--------------------menu duże-------------------------------------------------------------------------------------------------->
+    <nav class="site-navbar nav-collapse pl-grid" style="overflow: visible;height: 80px;">
+      <!--------------------logo-------------------------------------------------------------------------------------------------->
+      
+		
+			<a href="/sdg-indicators/en/" class="logo-home-en"><h1></h1></a>
+		
+      
+      <ul class="usa-unstyled-list">
+        <!--------------------element menu 0-------------------------------------------------------------------------------------------------->
+		<li class="nav-item" style="width: auto"><a href="/sdg-indicators/en/o_sdg" style="margin-right: 15px;
+
+		
+			padding-left: 30px; width: 110px;
+        
+
+		text-align: left">About SDG</a></li>
+		<!--------------------lista rozwijana I-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 220px">
+          <div class="dropdown" style="width: 150px; text-align:center">
+            <a>
+              <div class="dropbtn" style="padding-left: 15px;">PL Statistics
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+             <div class="dropdown-content" style="margin-right: 15px;">
+              <a class="pod" href="/sdg-indicators/en/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">Global indicators</a>
+              <a class="pod" href="/sdg-indicators/en/statistics_nat" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">National indicators</a>
+            </div>
+          </div>
+        </li>
+        <!--------------------lista rozwijana II-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 220px">
+          <div class="dropdown" style="width: 158px; text-align:left">
+            <a>
+              <div class="dropbtn">Reporting Status
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+            <div class="dropdown-content" style="margin-right: 15px;">
+               <a class="pod" href="/sdg-indicators/en/statistics_glob/status" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">Global indicators</a>
+              <a class="pod" href="/sdg-indicators/en/statistics_nat/status" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">National indicators</a>
+            </div>
+          </div>
+        </li>
+        <!--------------------element menu III-------------------------------------------------------------------------------------------------->
+        <li class="nav-item"><a href="/sdg-indicators/en/guide" style="margin-left: 
+		
+			40px;
+		
+		">Guide</a></li>
+        <!--------------------element menu IV-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 70px"><a href="/sdg-indicators/en/faqs">FAQs</a></li>
+      </ul>
+    </nav>
+   <!--zakończenie page.layout != 'splash'-->
+
+
+
+</header>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-toggle').dropdown()
+});
+var switcher = new accessibilitySwitcher('en');
+$(".high").attr("src", '/sdg-indicators/assets/img/high.png');
+$(".default").attr("src", '/sdg-indicators/assets/img/default.png');
+
+(function() {
+	var CookieToolkit = function( text, acceptText ) {
+		this.text = text;
+		this.acceptText = acceptText;
+		this.element = null;
+		this.init();
+	};
+
+	CookieToolkit.prototype = {
+		init: function() {
+			this.create();
+			this.load();
+			this.actions();
+		},
+		load: function() {
+			if( localStorage.getItem( "cookie-toolkit-accepted" ) === null ) {
+				this._show();
+			}
+		},
+		actions: function() {
+			var accept = document.querySelector( "#cookie-toolkit-accept" ),
+				self = this;
+
+				accept.addEventListener( "click", function( e ) {
+					e.preventDefault();
+					localStorage.setItem( "cookie-toolkit-accepted", "yes" );
+					self._hide();
+				}, false);
+
+		},
+		create: function() {
+			var element = document.createElement( "div" );
+			this.element = element;
+			var html = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div>";
+      element.id = "cookie-toolkit";
+			html += "<div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div>";
+			html += "</div>";
+      element.innerHTML = html;
+      var headers = document.querySelector(".usa-disclaimer.development");
+			headers.after( element );
+
+		},
+		_show: function() {
+      var self = this;
+			self.element.style.display = "block";
+			self.element.style.paddingBottom=".5rem";
+			self.element.style.paddingTop=".5rem";
+			setTimeout(function() {
+				self.element.className = "visible";
+			}, 500);
+    },
+		_hide: function() {
+      var self = this;
+			self.element.className = "";
+			self.element.style.display = "none";
+    }
+	};
+
+	document.addEventListener( "DOMContentLoaded", function() {
+    var jez='en'
+    if (jez=='pl'){
+      var toolkit = new CookieToolkit( "Strona wykorzystuje pliki cookies. Korzystanie z witryny bez zmiany ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Zawsze możesz zmienić te ustawienia.", "OK" );
+    }else{
+      var toolkit = new CookieToolkit( "We use cookies to help our site work, to understand how it is used, and to tailor the adverts presented on our site. By clicking “OK”, you agree to us doing so. You can read more in our cookie notice. ", "OK" );
+    }
+	});
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+<div id="main" class="main-content initiative-content">
+
+  
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+        <a id="main-content" tabindex="-1"></a>
+        
+		<section class="pl-banner-glob">
+		
+            <div class="pl-grid">
+                <div class="pl-banner-content">
+                  <h1>
+
+                    
+
+                          
+  							                 Goal 3 - Good Health and Well-being
+  						            
+                      
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+                  </h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="pl-grid initiative-description">
+
+          
+          
+
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+                <ol class="breadcrumb">
+              <li><a href="/sdg-indicators/en/">Home</a> / </li>
+              <li><a href="/sdg-indicators/en/good-health-and-well-being">Goal 3</a></li>
+              <li class="active"> / Indicator 3.7.2</li>
+              </ol>
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+              
+          
+            
+          
+          
+
+          <h3>Indicator 3.7.2 - Adolescent birth rate </h3>
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
+            <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab">Metadata</a></li>
+
+          </ul>
+
+
+          <div style="float: left;width: 100%;">
+
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="data">
+    <div style="display: flow-root;">
+      
+
+          
+          
+
+          
+          
+          
+
+            
+              
+                <div id="filtry">.</div>
+                  
+                    <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;">Select All</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;">Clear All</button></div>
+                  
+                <br>
+                <div>
+
+
+
+
+<div id="linechart-3-7-2" class="ct-chart ct-major-eleventh"></div>
+<script>
+
+(function (){
+  var container = '#linechart-3-7-2'
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var licznik=3
+  var calosc=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+  var jez= 'en'
+  var legen=["women 10-19 years","women 10-14 years","women 15-19 years"]
+
+  if(1=='0'){
+    var precyz=0;
+  }else{
+    var precyz=parseInt(1) || 2
+  }
+
+if ('3-7-2'=='12-2-2' || '3-7-2' == '8-4-2'){
+  if (window.location.href.indexOf("en") > -1){
+      legenda=["total"]
+  }else{
+    legenda=["ogółem"]
+  }
+
+
+}else if ('3-7-2'=='9-1-2') {
+
+  if (window.location.href.indexOf("en") > -1){
+      legenda=["railway transport","road transport","maritime transport fleet","transport by inland waterway fleet","air transport"]
+  }else{
+    legenda=["transport kolejowy","transport samochodowy","transport morski","śródlądowy transport wodny","transport lotniczy"]
+  }
+
+}else{
+    legenda=[]
+    for (j=0;j<legen.length;j++){
+      legenda.push(legen[j].replace(/[_]/g, ''))
+    }
+}
+
+
+var calosc_liczby =calosc.map(Number)
+var lower = Math.min.apply(Math,calosc_liczby);
+if (lower>0){
+  lower=0;
+}
+
+var b = [[]];
+seria=[]
+for (i=1;i<licznik+1;i++){
+  b[i] = calosc.splice(0,labels.length);
+  seria.push(b[i])
+}
+
+  var chartData = {
+    labels: labels,
+    series: seria
+  }
+
+  var chartOpts = {
+    showArea: true,
+    scaleMinSpace: 30,
+    low:lower,
+    width: '100%',
+    height: '100%',
+    chartPadding: {
+        left: 40
+    },
+    axisY: {
+      
+      offset: 50,
+      
+      onlyInteger: false,
+      
+      labelInterpolationFnc: function (value) {
+        // do whatever math operation you want here
+        if (jez=='en'){
+          return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(",", ".") + '';
+        }else{
+          return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(".", ",") + '';
+        }
+
+      }
+        
+    },
+    axisX: {
+      showGrid: false,
+      labelInterpolationFnc: function (value) {
+        return value.toString()
+      }
+    },
+    lineSmooth: Chartist.Interpolation.none({
+      fillHoles: true,
+    }),
+    plugins: [
+      Chartist.plugins.tooltip({
+        class: 'chartist-tooltip',
+        tooltipFnc: function(_, value) {
+          if (jez=='en'){
+            return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(",", ".") + '';
+          }else{
+            return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(".", ",") + '';
+          }
+        }
+      }),
+      Chartist.plugins.ctAccessibility({
+        caption: '',
+        seriesHeader: 'year',
+        summary: '',
+        valueTransform: Chartist.noop
+      }),
+      Chartist.plugins.legend({
+          legendNames: legenda,
+          position: document.querySelector('div#Legenda')
+      }),
+      Chartist.plugins.ctAxisTitle({
+      axisX: {},
+      axisY: {
+        axisTitle: 'women per 1 thous. women in this age group',
+        axisClass: 'ct-axis-title',
+        offset: {
+          x: 0,
+          y: 0
+        },
+        textAnchor: 'middle',
+        flipTitle: false
+      }
+    })
+    ],
+  }
+  chart = new Chartist.Line(container, chartData, chartOpts);
+
+  return chart;
+  })()
+
+
+
+
+</script>
+</div>
+                <div id="Legenda" align="center" style="pointer-events: none;"></div>
+              
+              <div><div id="d"></div>
+<script>
+
+function Zaznacz(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+  for (var index = 0, len = listItems.length; index < len; index++){
+    if (listItems[index].style.display=='none'){
+      listItems[index].style.display='inline-block'
+      listItems[index].click();
+      $("#infoToggler"+index).find('img').toggle();
+      $('#row-'+index).toggle();
+    }
+  };
+
+  const listIle = document.querySelectorAll('.panel-group');
+  for (ile=0;ile<listIle.length;ile++){
+    document.getElementById('wszystkie'+ile).src="/sdg-indicators/assets/img/pelne.png";
+  }
+}
+
+function Zaz(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+  co=$(this).attr('id');
+  $('#collapse'+co+' ul #filtr').each(function(i)
+  {
+    ind=$(this)[0].value;
+    if (listItems[ind].style.display=='none'){
+      listItems[ind].style.display='inline-block'
+      listItems[ind].click();
+      $("#infoToggler"+ind).find('img').toggle();
+      $('#row-'+ind).toggle();
+    }
+  });
+  document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/pelne.png";
+
+}
+
+
+function Usun(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+      if (listItems[0].style.display=='none'){
+        listItems[0].click();
+        $("#infoToggler0").find('img').toggle();
+        numer=0;
+        $('#row-'+numer).toggle();
+      }
+      listItems[0].style.display='inline-block';
+      for (numer=1;numer<listItems.length;numer++){
+        if (listItems[numer].style.display=='inline-block'){
+        listItems[numer].style.display='none'
+        listItems[numer].click();
+        $("#infoToggler"+numer).find('img').toggle();
+        $('#row-'+numer).toggle();
+        }
+      }
+
+    const listIle = document.querySelectorAll('.panel-group');
+    for (ile=0;ile<listIle.length;ile++){
+      document.getElementById('wszystkie'+ile).src="/sdg-indicators/assets/img/puste.png";
+    }
+}
+
+$( document ).ready(function() {
+var lista=["age"];
+var lista1=[["women 10-19 years","women 10-14 years","women 15-19 years"],]
+var jez='en'
+if (jez=='pl'){
+  wymiar_n='Wymiar - Zaznacz wszystko'
+}else{
+  wymiar_n='Dimension - Select All'
+}
+ilosc=0;
+
+var wymiar=0;
+
+lista.forEach(function(el,elind) {
+
+    var Div = document.createElement('div');
+    Div.style.width = '25%';
+    Div.style.height = '100px';
+    Div.style.float = 'left';
+    Div.style.padding = '5px';
+    Div.id = 'divove'+ilosc;
+	Div.style.minWidth = "121px";
+    Div.className = 'divovefiltry'
+    if (ilosc==0){
+      $('#filtry').after(Div);
+    }else{
+      $('#divove'+(ilosc-1)).after(Div);
+    }
+
+
+    var iDiv = document.createElement('div');
+    iDiv.className = 'panel-group';
+    iDiv.id = 'filtry'+ilosc;
+    iDiv.style.position='relative';
+    iDiv.style.zIndex='11';
+    iDiv.style.float = 'left';
+    iDiv.style.width = '100%';
+    Div.appendChild(iDiv);
+
+
+    var iiDiv = document.createElement('div');
+    iiDiv.className = 'panel panel-default';
+    iDiv.appendChild(iiDiv);
+
+    var iii1Div = document.createElement('div');
+    iii1Div.className = 'panel-heading';
+    iii1Div.style.marginBottom = '5px';
+    iii1Div.style.marginLeft = '1px';
+    iii1Div.style.marginRight = '1px';
+    iii1Div.style.padding = '0px';
+    iiDiv.appendChild(iii1Div);
+
+    var iii2Div = document.createElement('div');
+    iii2Div.id = 'collapse'+ilosc;
+    iii2Div.className = 'panel-collapse collapse';
+    iiDiv.appendChild(iii2Div);
+
+    var naglowek = document.createElement('h4');
+    naglowek.className = 'panel-title';
+    naglowek.style.margin = '15px';
+    iii1Div.appendChild(naglowek);
+
+    var napis = document.createElement('a');
+    $(napis).attr("data-toggle", "collapse");
+    napis.href="#collapse"+ilosc;
+    napis.style.textAlign="left";
+    napis.style.fontSize="1.6rem";
+    naglowek.appendChild(napis);
+
+    var napisek = document.createElement('h5');
+    napisek.innerHTML = el;
+    napisek.style.fontSize="1.6rem";
+	napisek.style.wordWrap= "break-word";
+    napis.appendChild(napisek);
+
+    var imgh5 = document.createElement('i');
+    imgh5.className="fa fa-caret-down";
+    imgh5.style.float='right';
+    imgh5.style.color='#0071bc';
+    imgh5.style.fontSize='25px';
+    napisek.appendChild(imgh5);
+
+
+    var lista = document.createElement('ul');
+    lista.className = 'list-group checked-list-box';
+    lista.id = 'check-list-box';
+    iii2Div.appendChild(lista);
+
+    var element = document.createElement('li');
+    element.className='dropdown-header';
+    element.textContent = wymiar_n;
+    lista.appendChild(element);
+
+    var przycisk=document.createElement('button');
+    przycisk.style.float='right';
+    przycisk.style.margin='0';
+    przycisk.style.fontSize='0rem';
+    przycisk.style.backgroundColor='transparent';
+    przycisk.style.padding='0%';
+    przycisk.id=ilosc;
+    przycisk.onclick=Zaz;
+    element.appendChild(przycisk);
+
+    var image2 = document.createElement('img');
+    image2.src="/sdg-indicators/assets/img/puste.png";
+    image2.style.width='13px';
+    image2.style.height='13px';
+    image2.style.display = 'inline';
+    image2.className='wszystkie'+ilosc;
+    image2.id='wszystkie'+ilosc;
+    przycisk.appendChild(image2);
+
+    halo=0;
+
+    for (jak=0;jak<lista1[ilosc].length;jak++){
+            var span = document.createElement('span')
+            var element = document.createElement('li');
+            element.className = 'list-group-item';
+            element.id = 'filtr';
+            element.value = wymiar +jak;
+            element.style.cursor="pointer";
+            element.onclick=function(){
+              const listItems = document.querySelectorAll('.ct-legend li');
+              war=true
+              co=$(this).attr('value');
+              for (ktory=0;ktory<listItems.length;ktory++){
+                if (ktory!=co){
+                  war=(war && $("#row-"+ktory).is(":hidden"))
+                }
+              }
+              warunek=(war)
+
+              if(!warunek) {
+                $('#row-'+co).toggle();
+                $("#infoToggler"+co).find('img').toggle();
+            }
+
+            ile=$(this).closest( "ul" ).children('li').length
+            ke=$(this).closest( "ul" ).find('img').attr('class');
+            document.getElementById(ke).src="/sdg-indicators/assets/img/puste.png"
+
+            licznik=0;
+            ke2=$(this).closest( "ul" );
+            ke2.each(function() {
+               $(this).find('li').each(function(){
+                 var img = $(this).find('img:visible').attr('src');
+
+                 if (img=="/sdg-indicators/assets/img/pelne.png"){
+                   licznik=licznik+1;
+                 }
+               });
+            });
+            if (licznik==ile-1){
+              document.getElementById(ke).src="/sdg-indicators/assets/img/pelne.png"
+            }
+          },
+            span.style.marginLeft = "15px";
+            span.innerHTML = lista1[ilosc][jak];
+            element.appendChild(span);
+            lista.appendChild(element);
+
+            var zdjecie = document.createElement('div');
+            zdjecie.id = 'infoToggler'+(wymiar +jak);
+            zdjecie.style.float="right";
+			      zdjecie.style.marginRight="15px";
+            element.appendChild(zdjecie);
+
+            if ((jak==0) && (elind==0)){
+              var imga1 = document.createElement('img');
+              imga1.src="/sdg-indicators/assets/img/pelne.png";
+              imga1.style.width='13px';
+              imga1.style.height='13px';
+              imga1.style.display = 'inline';
+              zdjecie.appendChild(imga1);
+
+              var imga2 = document.createElement('img');
+              imga2.src="/sdg-indicators/assets/img/puste.png";
+              imga2.style.width='13px';
+              imga2.style.height='13px';
+              imga2.style.display = 'none';
+              zdjecie.appendChild(imga2);
+
+            }else{
+            var imga1 = document.createElement('img');
+            imga1.src="/sdg-indicators/assets/img/puste.png";
+            imga1.style.width='13px';
+            imga1.style.height='13px';
+            imga1.style.display = 'inline';
+            zdjecie.appendChild(imga1);
+
+            var imga2 = document.createElement('img');
+            imga2.src="/sdg-indicators/assets/img/pelne.png";
+            imga2.style.width='13px';
+            imga2.style.height='13px';
+            imga2.style.display = 'none';
+            zdjecie.appendChild(imga2);
+          }
+          /*var checkbx = document.createElement("INPUT");
+            checkbx.setAttribute("type", "checkbox");
+            element.appendChild(checkbx);*/
+
+            halo=halo+1
+    }
+    ilosc=ilosc+1;
+    wymiar=wymiar+halo;
+});
+
+
+
+
+});
+
+/*$(window).load(function() {
+
+$(".ct-legend li").click(function() {
+
+  const listItems = document.querySelectorAll('.ct-legend li');
+  var co=$(this).attr('data-legend');
+
+  war=true
+  for (ktory=0;ktory<listItems.length;ktory++){
+    if (ktory!=co){
+      war=(war && $("#column-"+ktory).is(":hidden"))
+    }
+  }
+  warunek=(war)
+
+  if(!warunek) {
+  header = $("#column-"+co),
+  table = header.closest("table"),
+  index = header.index() + 1,
+  selector = "tbody tr td:nth-child(" + index + ")",
+  column = table.find(selector).add(header);
+  column.toggle();
+  $("#infoToggler"+co).find('img').toggle();
+}
+});
+
+});*/
+
+</script>
+</div>
+            
+
+          
+            <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px;">Download All</button><button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px;">Download Selected</button>
+          
+
+          
+<div id="content" align="center" style="overflow-x: auto; width: 100%; text-align: center; padding: 1px;"></div>
+
+<script>
+
+$( document ).ready(function() {
+var jez='en'
+var DATA = [{"year":"2010","women 10-19 years":"8.5","women 10-14 years":"0.1","women 15-19 years":"15.2"},{"year":"2011","women 10-19 years":"7.7","women 10-14 years":"0.0","women 15-19 years":"14.0"},{"year":"2012","women 10-19 years":"7.8","women 10-14 years":"0.1","women 15-19 years":"14.2"},{"year":"2013","women 10-19 years":"7.4","women 10-14 years":"0.1","women 15-19 years":"13.7"},{"year":"2014","women 10-19 years":"7.0","women 10-14 years":"0.1","women 15-19 years":"13.1"},{"year":"2015","women 10-19 years":"6.5","women 10-14 years":"0.1","women 15-19 years":"12.2"},{"year":"2016","women 10-19 years":"6.2","women 10-14 years":"0.1","women 15-19 years":"11.9"},{"year":"2017","women 10-19 years":"5.5","women 10-14 years":"0.0","women 15-19 years":"10.9"}]
+var naglowek=["women 10-19 years","women 10-14 years","women 15-19 years"]
+
+
+
+if (jez=='pl'){
+  rokk='Wymiar'
+}else{
+  rokk='Dimension'
+}
+
+
+function buildTable(data) {
+    var table = document.createElement("table");
+    table.className="gridtable";
+    var thead = document.createElement("thead");
+    var tbody = document.createElement("tbody");
+    var headRow = document.createElement("tr");
+
+    var th=document.createElement("th");
+    th.appendChild(document.createTextNode(rokk));
+    headRow.appendChild(th);
+
+    DATA.forEach(function(el) {
+      var th=document.createElement("th");
+      th.appendChild(document.createTextNode(el["year"]));
+      headRow.appendChild(th);
+    });
+    thead.appendChild(headRow);
+    table.appendChild(thead);
+
+
+    naglowek.forEach(function(o,index) {
+      var tr=document.createElement("tr");
+      tr.setAttribute("id", "row-"+index);
+      var td = document.createElement("td");
+      o1=o.replace(/[_]/g, '')
+      td.appendChild(document.createTextNode(o1));
+      tr.appendChild(td);
+      DATA.forEach(function(el) {
+        var td = document.createElement("td");
+        if (el[o]!=null){
+
+          if (jez=='pl'){
+            el[o]=el[o].replace(".",",");
+          }else{
+            el[o]=el[o].replace(",",".");
+          }
+        }else{
+          el[o]='•'
+        }
+        td.appendChild(document.createTextNode(el[o]));
+        td.align="center";
+        tr.appendChild(td);
+        if ('3-7-2'=='12-2-2' || '3-7-2' == '8-4-2' || '3-7-2' == '2-5-1-b' || '3-7-2' == '9-1-2'){
+            tr.style.display='table-row';
+        }else{
+          if (index>0){
+            tr.style.display='none';
+          }
+        }
+
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+
+    return table;
+}
+
+document.getElementById("content").appendChild(buildTable(DATA));
+});
+</script>
+
+      
+    </div>
+  </div>
+
+
+  <div role="tabpanel" class="tab-pane" id="metadata">
+    <div class="metadata-table">
+        <h2>Information about indicator</h2>
+
+        
+        
+        
+        
+
+        
+        
+        
+
+        <p>
+
+            
+              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/3-7-2.pdf">Download metadata for 3.7.2</a>
+
+          
+        </p>
+
+        <table>
+
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  3.7.2 Adolescent birth rate </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 3. Good health and well-being </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Target </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  3.7 By 2030, ensure universal access to sexual and reproductive health-care services, including for family planning, information and education, and the integration of reproductive health into national strategies and programmes </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Definition </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Number of births to young girls (aged 10-14 and 15-19) per 1 thous. girls in a respective age group. </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Unit </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  persons </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  age </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Live birth – the complete expulsion or extraction from the mother of an infant, irrespective of the duration of the pregnancy, which, after such separation, breathes or shows any other evidence of life, such as beating of the heart, pulsation of the umbilical cord, or definite movement of the voluntary muscles, whether or not the umbilical cord has been cut or the placenta has been separated  each such a product is considered as live born.The source of data on births is a basic document (secondarily utilized by national statistics) of the Ministry of Health "Written notification of the child's birth" (Regulation of the Minister of Health on the written notification of the child's birth. Journal of Laws of 2015, item. 171). </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Source of data </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Data availability </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Notes </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+          </tr>
+          
+          
+
+        </table>
+
+      </div>
+    </div>
+
+
+</div>
+
+
+
+<script>
+  $( document ).ready(function() {
+      if ('persons'==''){
+          $('.usa-button').css('display','none');
+      }
+
+  });
+
+
+function Wybrane(jez){
+  var filename='3.7.2'
+  var html = document.querySelector(".gridtable").outerHTML;
+  var csv = [];
+	var rows = document.querySelectorAll(".gridtable tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++)
+        if(rows[i].style.display != 'none'){
+            row.push(cols[j].innerText);
+        }
+    if(rows[i].style.display != 'none'){
+
+      if(jez==2){
+        csv.push(row.join(","));
+      }else{
+        csv.push(row.join(";"));
+      }
+
+    }
+  }
+  if(jez==2){
+    var reszta='selected';
+  }else{
+    var reszta='wybrane';
+  }
+  download_csv(csv.join("\n"), filename+'_'+reszta+'.csv');
+}
+
+function Calosc(jez){
+  var filename='3.7.2'
+  var html = document.querySelector(".gridtable").outerHTML;
+  var csv = [];
+	var rows = document.querySelectorAll(".gridtable tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++)
+          row.push(cols[j].innerText);
+          if(jez==2){
+            csv.push(row.join(","));
+          }else{
+            csv.push(row.join(";"));
+          }
+  }
+  download_csv(csv.join("\n"), filename+'.csv');
+}
+
+function download_csv(csv, filename) {
+    var csvFile;
+    var downloadLink;
+
+    csvFile = new Blob(["\ufeff",csv], {type: "text/csv;"});
+    downloadLink = document.createElement("a");
+    downloadLink.download = filename;
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+}
+
+
+
+</script>
+</div>
+
+        </div>
+
+</div>
+
+<script>
+
+function Zmiana_jednostki(){
+
+  var licznik=3
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='en'
+
+    if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
+      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,14);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki2(){
+
+  var licznik=3
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='en'
+
+    if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
+      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(32,40);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "sztuki";
+        document.getElementById("Jednostka2").innerHTML = "Zmień jednostkę - liczba zwierząt";
+      }
+
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "number";
+        document.getElementById("Jednostka2").innerHTML = "Change unit - number of animals";
+      }
+
+      $('.ct-series-0').css({'display':'none'});
+      $('.ct-series-1').css({'display':'none'});
+      $('.ct-series-2').css({'display':'none'});
+      $('.ct-series-3').css({'display':'none'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }else{
+      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,32);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "liczba zwierząt";
+        document.getElementById("Jednostka2").innerHTML = "Zmień jednostkę - sztuki";
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "number of animals";
+        document.getElementById("Jednostka2").innerHTML = "Change unit - number";
+      }
+
+      $('.ct-series-0').css({'display':'inline-block'});
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'none'});
+
+    }
+}
+
+function Zmiana_jednostki3(){
+
+  var licznik=3
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='en'
+
+    if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
+      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(40,72);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka3").innerHTML = "Zmień jednostkę - tys. pasażerów";
+      }
+
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka3").innerHTML = "Change unit - thous. passengers";
+      }
+
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }else{
+      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,40);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. pasażerów";
+        document.getElementById("Jednostka3").innerHTML = "Zmień jednostkę - tys. ton";
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. people";
+        document.getElementById("Jednostka3").innerHTML = "Change unit - thous. tonnes";
+      }
+
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }
+}
+
+$( document ).ready(function() {
+  if ('3-7-2'=='12-2-2' || '3-7-2' == '8-4-2' || '3-7-2' == '2-5-1-b' || '3-7-2' == '9-1-2'){
+    $('.ct-chart').css({'margin-top':'20px'});
+
+  }
+
+  if ('3-7-2'=='2-5-1-b'){
+    var licznik=3
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+    var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,32);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+    chart.update({labels: labels,series: seria})
+
+    $('.ct-series-1').css({'display':'inline-block'});
+    $('.ct-series-2').css({'display':'inline-block'});
+    $('.ct-series-3').css({'display':'inline-block'});
+  }
+
+  if ('3-7-2'=='9-1-2'){
+    var licznik=3
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+    var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,40);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+    chart.update({labels: labels,series: seria})
+
+    $('.ct-series-1').css({'display':'inline-block'});
+    $('.ct-series-2').css({'display':'inline-block'});
+    $('.ct-series-3').css({'display':'inline-block'});
+    $('.ct-series-4').css({'display':'inline-block'});
+
+  }
+
+$('body').click(function( e ){
+    try{
+
+      var name = e.target.className;
+      if (!(e.target.className.includes('ct-series') || e.target.classList.contains('list-group-item') || e.target.id.includes('infoToggler'))){
+        if(!(e.target.src)){
+          $('.collapse').collapse('hide');
+        }
+
+      }
+
+    }catch(e){
+
+      $('.collapse').collapse('hide');
+    }
+});
+
+
+$(function () {
+$('.list-group.checked-list-box .list-group-item').each(function () {
+
+          var zmienna=3
+          var $widget = $(this),
+          $checkbox = $('<input type="checkbox"/>')
+          $widget.css('cursor', 'pointer')
+          $widget.append($checkbox);
+
+          $widget.on('click', function (e) {
+              $checkbox.prop('checked', !$checkbox.is(':checked'));
+              $checkbox.triggerHandler('change');
+
+              var isChecked = $checkbox.is(':checked');
+          });
+
+          $checkbox.on('change', function () {
+              var isChecked = $checkbox.is(':checked');
+
+              for (ola=0;ola<zmienna;ola++){
+                if($widget.val()===ola){
+                  $('li.ct-series-'+ola).click();
+                  if(document.querySelector('li.ct-series-'+ola).style.display=='none'){
+                    document.querySelector('li.ct-series-'+ola).style.display='inline-block'
+                  }else{
+                    if ($('.ct-legend > li:visible').length >1){
+                      document.querySelector('li.ct-series-'+ola).style.display='none'
+                    }
+
+                  }
+                }
+              }
+            });
+
+              if ($widget.data('checked') == true) {
+                  $checkbox.prop('checked', !$checkbox.is(':checked'));
+
+              }
+
+              var isChecked = $checkbox.is(':checked');
+            });
+});
+});
+</script>
+
+
+
+
+
+<footer class="usa-footer usa-footer-big usa-sans" role="contentinfo">
+    <div class="pl-grid usa-footer-return-to-top">
+      <a href="#"  style="font-size: 15px">Return to top</a>
+    </div>
+
+    <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
+      <div class="pl-grid">
+        <div class="usa-footer-contact-links usa-width-one-half" style="margin-right: 145px">
+          <address>
+            <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
+            <p> <b>About</b><br />Welcome to the GUS website dedicated to Agenda 2030 and Sustainable Development Goals </p>
+
+          </address>
+        </div>
+		<div style="display: inline-table">
+        <div class="usa-footer-logo usa-width-one-half" style="width: 65px; margin-right: 15px">
+          <img src="/sdg-indicators/assets/img/gus_cz_2.png" style="max-height: 100%; margin-right: 15px; margin-top: 0px; margin-left: ">
+		</div>
+		<div class="usa-footer-logo usa-width-one-half" style="width: 170px; margin-right: 15px">
+            <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
+			<p class="contact"><b>Statistics Poland</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br /></p>
+        </div>
+		<div class="usa-footer-logo usa-width-one-half" style="width: 225px">
+            <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
+			<p class="contact">Office Hours: 8.15–16.15<br /> Telephone Exchange: +48 22 608 30 00<br /> kancelariaogolnaGUS@stat.gov.pl<br /></p>
+        </div>
+		</div>
+      </div>
+    </div>
+  </footer>
+    </body>
+</html>
+

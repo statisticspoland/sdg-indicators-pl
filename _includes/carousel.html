@@ -1,0 +1,76 @@
+<div id="{{ include.carousel }}" class="carousel slide"></div>
+ {% assign number = page.sdg_goal | downcase %}
+ {% if page.url contains '/statistics_nat/' %}
+		{% assign glob_kraj = "/statistics_nat/" %}
+ {% else %}
+		{% assign glob_kraj = "/" %}
+{% endif %}
+
+{% if page.lang == 'pl' %}
+    {% assign translate = "" %}
+{% endif %}
+{% if page.lang == 'en' %}
+    {% assign translate = "/en" %}
+{% endif %}
+
+<script>
+
+tytul=['partnerships-for-the-goals','no-poverty','zero-hunger','good-health-and-well-being','quality-education','gender-equality','clean-water-and-sanitation','affordable-and-clean-energy','decent-jobs-and-economic-growth','industry-innovation-and-infrastructure','reduced-inequalities','sustainable-cities-communities','responsible-consumption-and-production','climate-action','life-below-water','life-on-land','peace-and-justice-strong-institutions','partnerships-for-the-goals','no-poverty']
+
+    var i = {{ number }};
+
+    if (i==17){
+      var link_lew = document.createElement('a');
+      link_lew.className="left carousel-control";
+      link_lew.dataSlide="prev";
+      link_lew.href="{{ site.baseurl }}{{translate}}{{glob_kraj}}"+tytul[16]+'/';
+      document.querySelectorAll('.carousel.slide')[0].appendChild(link_lew);
+      var strzala1=document.createElement('span');
+      strzala1.className="glyphicon glyphicon-chevron-left";
+      var strzala1_napis=document.createElement('span');
+      strzala1_napis.className="sr-only";
+      link_lew.appendChild(strzala1);
+      link_lew.appendChild(strzala1_napis);
+
+      var link_praw = document.createElement('a');
+      link_praw.className="right carousel-control";
+      link_praw.dataSlide="next";
+      link_praw.href="{{ site.baseurl }}{{translate}}{{glob_kraj}}"+tytul[1]+'/';
+      document.querySelectorAll('.carousel.slide')[0].appendChild(link_praw);
+      var strzala2=document.createElement('span');
+      strzala2.className="glyphicon glyphicon-chevron-right";
+      var strzala2_napis=document.createElement('span');
+      strzala2_napis.className="sr-only";
+      link_praw.appendChild(strzala2);
+      link_praw.appendChild(strzala2_napis);
+    }else{
+      var link_lew = document.createElement('a');
+      link_lew.className="left carousel-control";
+      link_lew.dataSlide="prev";
+      link_lew.href="{{ site.baseurl }}{{translate}}{{glob_kraj}}"+tytul[i-1]+'/';
+      document.querySelectorAll('.carousel.slide')[0].appendChild(link_lew);
+      var strzala1=document.createElement('span');
+      strzala1.className="glyphicon glyphicon-chevron-left";
+      var strzala1_napis=document.createElement('span');
+      strzala1_napis.className="sr-only";
+      link_lew.appendChild(strzala1);
+      link_lew.appendChild(strzala1_napis);
+
+      var link_praw = document.createElement('a');
+      link_praw.className="right carousel-control";
+      link_praw.dataSlide="next";
+      link_praw.href="{{ site.baseurl }}{{translate}}{{glob_kraj}}"+tytul[i+1]+'/';
+      document.querySelectorAll('.carousel.slide')[0].appendChild(link_praw);
+      var strzala2=document.createElement('span');
+      strzala2.className="glyphicon glyphicon-chevron-right";
+      var strzala2_napis=document.createElement('span');
+      strzala2_napis.className="sr-only";
+      link_praw.appendChild(strzala2);
+      link_praw.appendChild(strzala2_napis);
+    }
+
+
+
+
+
+</script>

@@ -1,0 +1,35 @@
+{% capture api_output %}
+
+{% assign slug = page.indicator | replace: '.', '-' %}
+{% assign dataset_name = 'indicator_' | append: slug %}
+
+{% assign sdg_indicator_metadata = site.indicators %}
+
+{% for indicators in sdg_indicator_metadata %}
+{% if indicators.indicator == page.indicator %}
+{% if indicators.lang == page.lang %}
+  {% assign this_sdg_indicator_metadata = indicators %}
+  {% endif %}
+{% endif %}
+{% endfor %}
+
+{% assign hidden_fields = "sdg_goal,lang,indicator,jednostka,source_url,graph,graph_title,target_id" | split: ',' %}
+
+{% assign managed_fields = site.prose.metadata._indicators %}
+{
+
+{% for hidden_field in hidden_fields %}
+
+{% if not_first == true %},{% endif %}"{{ hidden_field }}":{{ this_sdg_indicator_metadata[hidden_field] | jsonify }}
+{% assign not_first = true %}
+
+{% endfor %}
+
+{% for managed_field in managed_fields %}
+
+,"{{ managed_field.name }}":{{ this_sdg_indicator_metadata[managed_field.name] | jsonify }}
+
+{% endfor %}
+
+}
+{% endcapture %}{{ api_output | strip_newlines }}

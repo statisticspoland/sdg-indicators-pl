@@ -1,0 +1,233 @@
+@font-face {
+    font-family: FiraSans;
+    src: url(../fonts/FiraSans-Regular.ttf);
+}
+
+
+.chartist-tooltip {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  min-width: 5em;
+  padding: .5em;
+  background: #F4C63D;
+  color: #453D3F;
+  font-family: FiraSans;
+  font-weight: 700;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transition: opacity .2s linear;
+  -moz-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear; }
+  .chartist-tooltip:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top-color: #F4C63D; }
+  .chartist-tooltip.tooltip-show {
+    opacity: 1; }
+
+
+.ct-chart {
+  margin-top : 120px;
+}
+
+       .ct-legend {
+           position: relative;
+           z-index: 10;
+           list-style: none;
+           text-align: center;
+           left: 0px;
+       }
+       .ct-legend li {
+           position: relative;
+           padding-left: 23px;
+           margin-right: 40px;
+           margin-bottom: 3px;
+           cursor: pointer;
+           display: inline-block;
+       }
+       .ct-legend li:before {
+           width: 18px;
+           height: 0px;
+           position: absolute;
+           left: 0;
+           content: '';
+           border: 3px solid transparent;
+           border-radius: 2px;
+           margin-top : 10px;
+       }
+       .ct-legend li.inactive:before {
+           background: transparent;
+       }
+       .ct-legend.ct-legend-inside {
+           position: absolute;
+           top: 0;
+           right: 0;
+       }
+       .ct-legend.ct-legend-inside li{
+           display: block;
+           margin: 0;
+       }
+       .ct-legend .ct-series-0:before {
+           background-color: #205493;
+           border-color: #205493;
+       }
+       .ct-legend .ct-series-1:before {
+           background-color: #f05b4f;
+           border-color: #f05b4f;
+       }
+       .ct-legend .ct-series-2:before {
+           background-color: #f4c63d;
+           border-color: #f4c63d;
+       }
+       .ct-legend .ct-series-3:before {
+           background-color: #d17905;
+           border-color: #d17905;
+       }
+       .ct-legend .ct-series-4:before {
+           background-color: #453d3f;
+           border-color: #453d3f;
+       }
+       .ct-legend .ct-series-5:before {
+           background-color: #59922b;
+           border-color: #59922b;
+       }
+       .ct-legend .ct-series-6:before {
+           background-color: #0544d3;
+           border-color: #0544d3;
+       }
+       .ct-legend .ct-series-7:before {
+           background-color: #6b0392;
+           border-color: #6b0392;
+       }
+       .ct-legend .ct-series-8:before {
+           background-color: #f05b4f;
+           border-color: #f05b4f;
+       }
+       .ct-legend .ct-series-9:before {
+           background-color: #dda458;
+           border-color: #dda458;
+       }
+       .ct-legend .ct-series-10:before {
+           background-color: #eacf7d;
+           border-color: #eacf7d;
+       }
+       .ct-legend .ct-series-11:before {
+           background-color: #86797d;
+           border-color: #86797d;
+       }
+       .ct-legend .ct-series-12:before {
+           background-color: #b2c326;
+           border-color: #b2c326;
+       }
+       .ct-legend .ct-series-13:before {
+           background-color: #6188e2;
+           border-color: #6188e2;
+       }
+       .ct-legend .ct-series-14:before {
+           background-color: #a748ca;
+           border-color: #a748ca;
+       }
+       .ct-legend .ct-series-15:before {
+           background-color: #f05b4f;
+           border-color: #f05b4f;
+       }
+       .ct-legend .ct-series-16:before {
+           background-color: #dda458;
+           border-color: #dda458;
+       }
+       .ct-legend .ct-series-17:before {
+           background-color: #eacf7d;
+           border-color: #eacf7d;
+       }
+       .ct-legend .ct-series-18:before {
+           background-color: #86797d;
+           border-color: #86797d;
+       }
+       .ct-legend .ct-series-19:before {
+           background-color: #b2c326;
+           border-color: #b2c326;
+       }
+       .ct-legend .ct-series-20:before {
+           background-color: #6188e2;
+           border-color: #6188e2;
+       }
+       .ct-legend .ct-series-21:before {
+           background-color: #a748ca;
+           border-color: #a748ca;
+       }
+
+       .ct-legend .ct-series-0 {
+           color: #205493;
+       }
+       .ct-legend .ct-series-1 {
+           color: #f05b4f;
+       }
+       .ct-legend .ct-series-2 {
+           color: #f4c63d;
+       }
+       .ct-legend .ct-series-3 {
+           color: #d17905;
+       }
+       .ct-legend .ct-series-4 {
+           color: #453d3f;
+       }
+       .ct-legend .ct-series-5 {
+           color: #59922b;
+       }
+       .ct-legend .ct-series-6 {
+           color: #0544d3;
+       }
+       .ct-legend .ct-series-7 {
+           color: #6b0392;
+       }
+       .ct-legend .ct-series-8 {
+           color: #f05b4f;
+       }
+       .ct-legend .ct-series-9 {
+           color: #dda458;
+       }
+       .ct-legend .ct-series-10 {
+           color: #eacf7d;
+       }
+       .ct-legend .ct-series-11 {
+           color: #86797d;
+       }
+       .ct-legend .ct-series-12 {
+           color: #b2c326;
+       }
+       .ct-legend .ct-series-13 {
+           color: #6188e2;
+       }
+       .ct-legend .ct-series-14 {
+           color: #a748ca;
+       }
+       .ct-legend .ct-series-15 {
+           color: #f05b4f;
+       }
+       .ct-legend .ct-series-16 {
+           color: #dda458;
+       }
+       .ct-legend .ct-series-17 {
+           color: #eacf7d;
+       }
+       .ct-legend .ct-series-18 {
+           color: #86797d;
+       }
+       .ct-legend .ct-series-19 {
+           color: #b2c326;
+       }
+       .ct-legend .ct-series-20 {
+           color: #6188e2;
+       }
+       .ct-legend .ct-series-21 {
+           color: #a748ca;
+       }

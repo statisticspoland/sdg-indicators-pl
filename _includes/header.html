@@ -1,0 +1,290 @@
+{% assign t = site.translations | where:"translation_id", "header"  | first %}
+{% assign t = t[page.lang] %}
+
+<header role="banner" class="fixed-header {{ page.layout }}">
+  <!------------------pasek z ikonami i wyszukiwarką------------------------------------------------------------>
+  <div class="usa-disclaimer {{ site.github.environment }} {{ jekyll.environment }}">
+    <div class="pl-grid nag">
+	  <div class="usa-disclaimer-official" style="width: 28%; padding-left: 0px">
+        <span id="krajowa" class="contrast-default">{{ t.government-site }}</span>
+      </div>
+    <!------------------ikony na gornym pasku------------------------------------------------------------>
+      <div style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 4px; padding-left: 6px; border-width: thin; float: left;">
+        <a href="http://stat.gov.pl/" target="_blank" title="Strona GUS" class="pos-1" style=" color: #999999;">
+          <img src="{{ site.baseurl }}/assets/img/gus_cz.png" height="25px"></img>
+        </a>
+      </div>
+	  <div class="icons">
+        <a href="https://www.youtube.com/channel/UC0wiQMElFgYszpAoYgTnXtg/featured" target="_blank" title="kanał na YouTube" class="pos-3" style="color: #999999;">
+          <i class="fa fa-youtube-play" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/GlownyUrzadStatystyczny/" target="_blank" title="profil GUS na Facebooku" class="pos-4" style=" color: #999999;">
+          <i class="fa fa-facebook-square" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="http://twitter.com/GUS_STAT" target="_blank" title="profil GUS na Twitterze" class="pos-5" style=" color: #999999;">
+          <i class="fa fa-twitter" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="https://www.linkedin.com/company/532930" target="_blank" title="profil GUS na LinkedIn" class="pos-6" style=" ">
+          <i class="fa fa-linkedin-square" style="font-size:20px;color: #999999;"></i>
+        </a>
+      </div>
+    <!------------------kontrast na gornym pasku------------------------------------------------------------------------------------->
+      <div class="kontrast" style="border-right-style: solid; float: left; height: 35px;  border-color: #ddd;  padding: 4px 8px;;border-width: thin;">
+      </div>
+    <!------------------flaga z jezykami na gornym pasku------------------------------------------------------------------------------------->
+      <div class="language-toggle"style="border-right-style: solid;border-color: #ddd;height: 35px;padding: 6px;border-width: thin;">
+        {% if page.lang == 'pl' %}
+          <a class='pull-right lang en' data-lang='en' href='{{site.baseurl}}/en{{page.url | remove: 'index.html'}}'>
+            <img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/flaga.png" height="16px" width="25px">
+          </a>
+        {% else %}
+          {% assign language_path_part = '/' | append: page.lang %}
+          <a class='pull-right lang'  data-lang='pl' href='{{site.baseurl}}{{page.url | replace_first:language_path_part, ''}}'>
+            <img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/flaga.png" height="16px" width="25px">
+          </a>
+        {% endif %}
+      </div>
+    <!------------------duża wyszukiwarka na gornym pasku------------------------------------------------------------------------------------->
+      {% if page.lang == 'pl' %}
+        <a class="wyszukiwarka">
+          <div class ="topnav">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="search-container">
+              <form action="{{ site.baseurl }}/search/?search=" style="width: 300px;">
+                <input type="text" placeholder="Wyszukaj wskaźnik.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </a>
+      {% else %}
+        <a class="wyszukiwarka">
+          <div class ="topnav">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="search-container">
+              <form action="{{ site.baseurl }}/en/search/?search=" style="width: 300px;">
+                <input type="text" placeholder="Search indicator.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </a>
+      {% endif %}
+    <!--------------------wyszukiwarka dla małej wersji-------------------------------------------------------------------------------------------->
+      {% if page.lang == 'pl' %}
+        <div id="wyszukiwarka_small" style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 6px; border-width: thin; float: left;">
+          <a href="{{ site.baseurl }}/search/?search=" class="pos-6" style=" ">
+            <i class="fa fa-search" style="font-size:20px;color: #999999;"></i>
+          </a>
+        </div>
+      {% else %}
+        <div id="wyszukiwarka_small" style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 6px; border-width: thin; float: left;">
+          <a href="{{ site.baseurl }}/en/search/?search=" class="pos-6" style=" ">
+            <i class="fa fa-search" style="font-size:20px;color: #999999;"></i></a>
+        </div>
+      {% endif %}
+    </div> <!--zamykajacy do pl-grid nag-->
+  </div> <!--zamykajacy do usa-disclaimer-->
+
+
+<!--------------------menu małe-------------------------------------------------------------------------------------------------->
+  {% if page.layout != 'splash' %}<!--jesli nie strona z intro-->
+    <a href="{{ site.baseurl }}{{ lang }}/" class="logo-home-mobile"><h1></h1></a>
+    <nav class="navbar navbar-light light-blue lighten-4">
+      <!--------------------menu jako przycisk-------------------------------------------------------------------------------------------------->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+      aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom:0px; margin-top: 0px;background-color:white; padding-bottom: 0;width: 100%; box-shadow: 0 0 3px #ffffff, 0 0 7px #ffffff;">
+        <a class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/logo_GUS_mobile.png" style="max-height: 100%" /></a>
+        <i class="fa fa-bars" style="color:gray;padding: 15px;float: right;"></i>
+      </button>
+      <!--------------------menu zakładki-------------------------------------------------------------------------------------------------->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto" id="hamburger">
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/o_sdg" style="text-decoration: none;color: #000;width: 100%">{{ t.nav-about }}</a>
+          </li>
+		  <li class="nav-item small" style="pointer-events: none;">
+            <a class="nav-link" style="color: #000;">{{ t.nav-statistics }} </a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">{{ t.nav-glob }}</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_nat" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">{{ t.nav-nat }}</a>
+          </li>
+          <li class="nav-item small" style="pointer-events: none;">
+            <a class="nav-link" style="color: #000;">{{ t.nav-reporting-status }}</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_glob/status" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">{{ t.nav-glob }}</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_nat/status" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">{{ t.nav-nat }}</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/guide" style="text-decoration: none;color: #000;width: 100%">{{ t.nav-monitoring }}</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/faqs" style="text-decoration: none;color: #000;width: 100%">{{ t.nav-development }}</a>
+          </li>
+        </ul>
+      </div> <!--zamykający do collapse navbar-collapse-->
+    </nav> <!--zamknięcie menu małego-->
+
+<!--------------------menu duże-------------------------------------------------------------------------------------------------->
+    <nav class="site-navbar nav-collapse pl-grid" style="overflow: visible;height: 80px;">
+      <!--------------------logo-------------------------------------------------------------------------------------------------->
+      {% if page.lang == 'pl' %}
+		{% if page.url contains '/statistics_nat/' %}
+			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" class="logo-home"><h1></h1></a>
+		{% else %}
+			<a href="{{ site.baseurl }}{{ lang }}/" class="logo-home"><h1></h1></a>
+		{% endif %}
+	  {% else %}
+		{% if page.url contains '/statistics_nat/' %}
+			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" class="logo-home-en"><h1></h1></a>
+		{% else %}
+			<a href="{{ site.baseurl }}{{ lang }}/" class="logo-home-en"><h1></h1></a>
+		{% endif %}
+      {% endif %}
+      <ul class="usa-unstyled-list">
+        <!--------------------element menu 0-------------------------------------------------------------------------------------------------->
+		<li class="nav-item" style="width: auto"><a href="{{ site.baseurl }}{{ lang }}/o_sdg" style="margin-right: 15px;
+
+		{% if page.lang == 'pl' %}
+			padding-left: 50px; width: 100px;
+		{% else %}
+			padding-left: 30px; width: 110px;
+        {% endif %}
+
+		text-align: left">{{ t.nav-about }}</a></li>
+		<!--------------------lista rozwijana I-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 220px">
+          <div class="dropdown" style="width: 150px; text-align:center">
+            <a>
+              <div class="dropbtn" style="padding-left: 15px;">{{ t.nav-statistics }}
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+             <div class="dropdown-content" style="margin-right: 15px;">
+              <a class="pod" href="{{ site.baseurl }}{{ lang }}/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">{{ t.nav-glob }}</a>
+              <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_nat" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">{{ t.nav-nat }}</a>
+            </div>
+          </div>
+        </li>
+        <!--------------------lista rozwijana II-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 220px">
+          <div class="dropdown" style="width: 158px; text-align:left">
+            <a>
+              <div class="dropbtn">{{ t.nav-reporting-status }}
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+            <div class="dropdown-content" style="margin-right: 15px;">
+               <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_glob/status" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">{{ t.nav-glob }}</a>
+              <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_nat/status" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">{{ t.nav-nat }}</a>
+            </div>
+          </div>
+        </li>
+        <!--------------------element menu III-------------------------------------------------------------------------------------------------->
+        <li class="nav-item"><a href="{{ site.baseurl }}{{ lang }}/guide" style="margin-left: 
+		{% if page.url contains '/en/' %}
+			40px;
+		{% else %}
+			20px;
+		{% endif %}
+		">{{ t.nav-monitoring }}</a></li>
+        <!--------------------element menu IV-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 70px"><a href="{{ site.baseurl }}{{ lang }}/faqs">{{ t.nav-development }}</a></li>
+      </ul>
+    </nav>
+  {% endif %} <!--zakończenie page.layout != 'splash'-->
+
+{% if page.layout == 'goal' %}
+  {% include carousel.html name=carousel data=site.data.carousel %}
+{% endif %}
+
+</header>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-toggle').dropdown()
+});
+var switcher = new accessibilitySwitcher('{{page.lang}}');
+$(".high").attr("src", '{{ site.baseurl }}/assets/img/high.png');
+$(".default").attr("src", '{{ site.baseurl }}/assets/img/default.png');
+
+(function() {
+	var CookieToolkit = function( text, acceptText ) {
+		this.text = text;
+		this.acceptText = acceptText;
+		this.element = null;
+		this.init();
+	};
+
+	CookieToolkit.prototype = {
+		init: function() {
+			this.create();
+			this.load();
+			this.actions();
+		},
+		load: function() {
+			if( localStorage.getItem( "cookie-toolkit-accepted" ) === null ) {
+				this._show();
+			}
+		},
+		actions: function() {
+			var accept = document.querySelector( "#cookie-toolkit-accept" ),
+				self = this;
+
+				accept.addEventListener( "click", function( e ) {
+					e.preventDefault();
+					localStorage.setItem( "cookie-toolkit-accepted", "yes" );
+					self._hide();
+				}, false);
+
+		},
+		create: function() {
+			var element = document.createElement( "div" );
+			this.element = element;
+			var html = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div>";
+      element.id = "cookie-toolkit";
+			html += "<div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div>";
+			html += "</div>";
+      element.innerHTML = html;
+      var headers = document.querySelector(".usa-disclaimer.development");
+			headers.after( element );
+
+		},
+		_show: function() {
+      var self = this;
+			self.element.style.display = "block";
+			self.element.style.paddingBottom=".5rem";
+			self.element.style.paddingTop=".5rem";
+			setTimeout(function() {
+				self.element.className = "visible";
+			}, 500);
+    },
+		_hide: function() {
+      var self = this;
+			self.element.className = "";
+			self.element.style.display = "none";
+    }
+	};
+
+	document.addEventListener( "DOMContentLoaded", function() {
+    var jez='{{page.lang}}'
+    if (jez=='pl'){
+      var toolkit = new CookieToolkit( "Strona wykorzystuje pliki cookies. Korzystanie z witryny bez zmiany ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Zawsze możesz zmienić te ustawienia.", "OK" );
+    }else{
+      var toolkit = new CookieToolkit( "We use cookies to help our site work, to understand how it is used, and to tailor the adverts presented on our site. By clicking “OK”, you agree to us doing so. You can read more in our cookie notice. ", "OK" );
+    }
+	});
+})();
+</script>

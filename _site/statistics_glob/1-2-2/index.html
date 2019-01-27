@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+
+
+
+
+
+
+    <head>
+        <!-- Basic Page Needs
+================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Title and meta description
+================================================== -->
+        
+                  <title>
+                  
+                     Wskaźnik 1.2.2 - 
+                    Wskaźnik zagrożenia ubóstwem warunków życia
+                  </title>
+                
+
+        <meta property="og:title" content="Wskaźnik zagrożenia ubóstwem warunków życia">
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        <link rel="canonical" href="/"><!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.js"></script>
+  <script src="/assets/js/vendor/respond.js"></script>
+  <script src="/assets/js/vendor/selectivizr-min.js"></script>
+<![endif]-->
+        <!--[if IE]>
+          <script src="/sdg-indicators/assets/js/vendor/custom-event-polyfill.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" type="image/ico" href="/sdg-indicators/assets/img/flags/pl.ico">
+        <link rel="icon" type="image/png" href="/sdg-indicators/assets/img/flags/pl.png">
+        
+
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-01-25-11-39-41-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-01-25-11-39-41-+0100">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="/sdg-indicators/assets/js/accessibility.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-accessibility.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-tooltip.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/jquery-1.11.3.min.js" type="text/javascript"></script>
+        <script src="/sdg-indicators/assets/js/vendor/bootstrap.min.js"></script>
+        <script src="/sdg-indicators/assets/js/uswds.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+
+
+    </head>
+    <body>
+
+
+
+
+
+<header role="banner" class="fixed-header indicator">
+  <!------------------pasek z ikonami i wyszukiwarką------------------------------------------------------------>
+  <div class="usa-disclaimer  development">
+    <div class="pl-grid nag">
+	  <div class="usa-disclaimer-official" style="width: 28%; padding-left: 0px">
+        <span id="krajowa" class="contrast-default">Krajowa Platforma Raportująca - SDG</span>
+      </div>
+    <!------------------ikony na gornym pasku------------------------------------------------------------>
+      <div style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 4px; padding-left: 6px; border-width: thin; float: left;">
+        <a href="http://stat.gov.pl/" target="_blank" title="Strona GUS" class="pos-1" style=" color: #999999;">
+          <img src="/sdg-indicators/assets/img/gus_cz.png" height="25px"></img>
+        </a>
+      </div>
+	  <div class="icons">
+        <a href="https://www.youtube.com/channel/UC0wiQMElFgYszpAoYgTnXtg/featured" target="_blank" title="kanał na YouTube" class="pos-3" style="color: #999999;">
+          <i class="fa fa-youtube-play" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/GlownyUrzadStatystyczny/" target="_blank" title="profil GUS na Facebooku" class="pos-4" style=" color: #999999;">
+          <i class="fa fa-facebook-square" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="http://twitter.com/GUS_STAT" target="_blank" title="profil GUS na Twitterze" class="pos-5" style=" color: #999999;">
+          <i class="fa fa-twitter" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="https://www.linkedin.com/company/532930" target="_blank" title="profil GUS na LinkedIn" class="pos-6" style=" ">
+          <i class="fa fa-linkedin-square" style="font-size:20px;color: #999999;"></i>
+        </a>
+      </div>
+    <!------------------kontrast na gornym pasku------------------------------------------------------------------------------------->
+      <div class="kontrast" style="border-right-style: solid; float: left; height: 35px;  border-color: #ddd;  padding: 4px 8px;;border-width: thin;">
+      </div>
+    <!------------------flaga z jezykami na gornym pasku------------------------------------------------------------------------------------->
+      <div class="language-toggle"style="border-right-style: solid;border-color: #ddd;height: 35px;padding: 6px;border-width: thin;">
+        
+          <a class='pull-right lang en' data-lang='en' href='/sdg-indicators/en/statistics_glob/1-2-2/'>
+            <img src="/sdg-indicators/assets/img/pl/flaga.png" height="16px" width="25px">
+          </a>
+        
+      </div>
+    <!------------------duża wyszukiwarka na gornym pasku------------------------------------------------------------------------------------->
+      
+        <a class="wyszukiwarka">
+          <div class ="topnav">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="search-container">
+              <form action="/sdg-indicators/search/?search=" style="width: 300px;">
+                <input type="text" placeholder="Wyszukaj wskaźnik.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </a>
+      
+    <!--------------------wyszukiwarka dla małej wersji-------------------------------------------------------------------------------------------->
+      
+        <div id="wyszukiwarka_small" style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 6px; border-width: thin; float: left;">
+          <a href="/sdg-indicators/search/?search=" class="pos-6" style=" ">
+            <i class="fa fa-search" style="font-size:20px;color: #999999;"></i>
+          </a>
+        </div>
+      
+    </div> <!--zamykajacy do pl-grid nag-->
+  </div> <!--zamykajacy do usa-disclaimer-->
+
+
+<!--------------------menu małe-------------------------------------------------------------------------------------------------->
+  <!--jesli nie strona z intro-->
+    <a href="/sdg-indicators/" class="logo-home-mobile"><h1></h1></a>
+    <nav class="navbar navbar-light light-blue lighten-4">
+      <!--------------------menu jako przycisk-------------------------------------------------------------------------------------------------->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+      aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom:0px; margin-top: 0px;background-color:white; padding-bottom: 0;width: 100%; box-shadow: 0 0 3px #ffffff, 0 0 7px #ffffff;">
+        <a class="navbar-brand"><img src="/sdg-indicators/assets/img/pl/logo_GUS_mobile.png" style="max-height: 100%" /></a>
+        <i class="fa fa-bars" style="color:gray;padding: 15px;float: right;"></i>
+      </button>
+      <!--------------------menu zakładki-------------------------------------------------------------------------------------------------->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto" id="hamburger">
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/o_sdg" style="text-decoration: none;color: #000;width: 100%">O SDG</a>
+          </li>
+		  <li class="nav-item small" style="pointer-events: none;">
+            <a class="nav-link" style="color: #000;">Dane dla Polski </a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">Wskaźniki dla celów globalnych</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/statistics_nat" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">Wskaźniki dla priorytetów krajowych</a>
+          </li>
+          <li class="nav-item small" style="pointer-events: none;">
+            <a class="nav-link" style="color: #000;">Status raportowania</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/statistics_glob/status" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">Wskaźniki dla celów globalnych</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/statistics_nat/status" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">Wskaźniki dla priorytetów krajowych</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/guide" style="text-decoration: none;color: #000;width: 100%">Przewodnik</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/faqs" style="text-decoration: none;color: #000;width: 100%">FAQs</a>
+          </li>
+        </ul>
+      </div> <!--zamykający do collapse navbar-collapse-->
+    </nav> <!--zamknięcie menu małego-->
+
+<!--------------------menu duże-------------------------------------------------------------------------------------------------->
+    <nav class="site-navbar nav-collapse pl-grid" style="overflow: visible;height: 80px;">
+      <!--------------------logo-------------------------------------------------------------------------------------------------->
+      
+		
+			<a href="/sdg-indicators/" class="logo-home"><h1></h1></a>
+		
+	  
+      <ul class="usa-unstyled-list">
+        <!--------------------element menu 0-------------------------------------------------------------------------------------------------->
+		<li class="nav-item" style="width: auto"><a href="/sdg-indicators/o_sdg" style="margin-right: 15px;
+
+		
+			padding-left: 50px; width: 100px;
+		
+
+		text-align: left">O SDG</a></li>
+		<!--------------------lista rozwijana I-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 220px">
+          <div class="dropdown" style="width: 150px; text-align:center">
+            <a>
+              <div class="dropbtn" style="padding-left: 15px;">Dane dla Polski
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+             <div class="dropdown-content" style="margin-right: 15px;">
+              <a class="pod" href="/sdg-indicators/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">Wskaźniki dla celów globalnych</a>
+              <a class="pod" href="/sdg-indicators/statistics_nat" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">Wskaźniki dla priorytetów krajowych</a>
+            </div>
+          </div>
+        </li>
+        <!--------------------lista rozwijana II-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 220px">
+          <div class="dropdown" style="width: 158px; text-align:left">
+            <a>
+              <div class="dropbtn">Status raportowania
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+            <div class="dropdown-content" style="margin-right: 15px;">
+               <a class="pod" href="/sdg-indicators/statistics_glob/status" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">Wskaźniki dla celów globalnych</a>
+              <a class="pod" href="/sdg-indicators/statistics_nat/status" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">Wskaźniki dla priorytetów krajowych</a>
+            </div>
+          </div>
+        </li>
+        <!--------------------element menu III-------------------------------------------------------------------------------------------------->
+        <li class="nav-item"><a href="/sdg-indicators/guide" style="margin-left: 
+		
+			20px;
+		
+		">Przewodnik</a></li>
+        <!--------------------element menu IV-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 70px"><a href="/sdg-indicators/faqs">FAQs</a></li>
+      </ul>
+    </nav>
+   <!--zakończenie page.layout != 'splash'-->
+
+
+
+</header>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-toggle').dropdown()
+});
+var switcher = new accessibilitySwitcher('pl');
+$(".high").attr("src", '/sdg-indicators/assets/img/high.png');
+$(".default").attr("src", '/sdg-indicators/assets/img/default.png');
+
+(function() {
+	var CookieToolkit = function( text, acceptText ) {
+		this.text = text;
+		this.acceptText = acceptText;
+		this.element = null;
+		this.init();
+	};
+
+	CookieToolkit.prototype = {
+		init: function() {
+			this.create();
+			this.load();
+			this.actions();
+		},
+		load: function() {
+			if( localStorage.getItem( "cookie-toolkit-accepted" ) === null ) {
+				this._show();
+			}
+		},
+		actions: function() {
+			var accept = document.querySelector( "#cookie-toolkit-accept" ),
+				self = this;
+
+				accept.addEventListener( "click", function( e ) {
+					e.preventDefault();
+					localStorage.setItem( "cookie-toolkit-accepted", "yes" );
+					self._hide();
+				}, false);
+
+		},
+		create: function() {
+			var element = document.createElement( "div" );
+			this.element = element;
+			var html = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div>";
+      element.id = "cookie-toolkit";
+			html += "<div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div>";
+			html += "</div>";
+      element.innerHTML = html;
+      var headers = document.querySelector(".usa-disclaimer.development");
+			headers.after( element );
+
+		},
+		_show: function() {
+      var self = this;
+			self.element.style.display = "block";
+			self.element.style.paddingBottom=".5rem";
+			self.element.style.paddingTop=".5rem";
+			setTimeout(function() {
+				self.element.className = "visible";
+			}, 500);
+    },
+		_hide: function() {
+      var self = this;
+			self.element.className = "";
+			self.element.style.display = "none";
+    }
+	};
+
+	document.addEventListener( "DOMContentLoaded", function() {
+    var jez='pl'
+    if (jez=='pl'){
+      var toolkit = new CookieToolkit( "Strona wykorzystuje pliki cookies. Korzystanie z witryny bez zmiany ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Zawsze możesz zmienić te ustawienia.", "OK" );
+    }else{
+      var toolkit = new CookieToolkit( "We use cookies to help our site work, to understand how it is used, and to tailor the adverts presented on our site. By clicking “OK”, you agree to us doing so. You can read more in our cookie notice. ", "OK" );
+    }
+	});
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+<div id="main" class="main-content initiative-content">
+
+  
+
+    
+    
+
+    
+
+        <a id="main-content" tabindex="-1"></a>
+        
+		<section class="pl-banner-glob">
+		
+            <div class="pl-grid">
+                <div class="pl-banner-content">
+                  <h1>
+
+                    
+
+                          
+  							                 Cel 1 - Koniec z ubóstwem
+  						            
+                      
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+
+    
+    
+
+    
+
+                    
+                  </h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="pl-grid initiative-description">
+
+          
+          
+
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+            
+                <ol class="breadcrumb">
+              <li><a href="/sdg-indicators/">Strona Główna</a> / </li>
+              <li><a href="/sdg-indicators/no-poverty">Cel 1</a></li>
+              <li class="active"> / Wskaźnik 1.2.2</li>
+              </ol>
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+
+          
+
+          <h3>Wskaźnik 1.2.2 - Wskaźnik zagrożenia ubóstwem warunków życia </h3>
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
+            <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab">Informacje o wskaźniku</a></li>
+
+          </ul>
+
+
+          <div style="float: left;width: 100%;">
+
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="data">
+    <div style="display: flow-root;">
+      
+
+          
+          
+
+          
+          
+          
+
+            
+              <div>
+
+
+<div id="linechart-1-2-2" class="ct-chart ct-major-eleventh"></div>
+<script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
+<script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
+<script>
+(function () {
+  var container = '#linechart-1-2-2'
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var licznik=1
+  var calosc=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+  var jez= 'pl'
+  var legen=["ogółem"]
+
+  if(1=='0'){
+    var precyz=0;
+  }else{
+    var precyz=parseInt(1) || 2
+  }
+
+  legenda=[]
+  for (j=0;j<legen.length;j++){
+    legenda.push(legen[j].replace(/[_]/g, ''))
+  }
+
+var calosc_liczby =calosc.map(Number)
+var lower = Math.min.apply(Math,calosc_liczby);
+if (lower>0){
+  lower=0;
+}
+
+var b = [[]];
+seria=[]
+for (i=1;i<licznik+1;i++){
+  b[i] = calosc.splice(0,labels.length);
+  seria.push(b[i])
+}
+
+  var chartData = {
+    labels: labels,
+    series: seria
+  }
+
+  var chartOpts = {
+    showArea: false,
+    showLine: false,
+    scaleMinSpace: 30,
+    low:lower,
+    chartPadding: {
+        left: 40
+    },
+    axisY: {
+      
+      offset: 50,
+      
+      onlyInteger: false,
+
+      
+      labelInterpolationFnc: function (value) {
+        // do whatever math operation you want here
+        if (jez=='en'){
+          return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(",", ".") + '';
+        }else{
+          return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(".", ",") + '';
+        }
+
+      }
+      
+    },
+    axisX: {
+      showGrid: false,
+      labelInterpolationFnc: function (value) {
+        return value.toString()
+      }
+    },
+    lineSmooth: Chartist.Interpolation.none({
+      fillHoles: true,
+    }),
+    plugins: [
+      Chartist.plugins.tooltip({
+        class: 'chartist-tooltip',
+        tooltipFnc: function(_, value) {
+          if (jez=='en'){
+            return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(",", ".") + '';
+          }else{
+            return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(".", ",") + '';
+          }
+        }
+      }),
+      Chartist.plugins.ctAccessibility({
+        caption: '',
+        seriesHeader: 'year',
+        summary: '',
+        valueTransform: Chartist.noop
+      }),
+      Chartist.plugins.legend({
+          legendNames: legenda,
+          position: document.querySelector('div#Legenda')
+      }),
+      Chartist.plugins.ctAxisTitle({
+      axisX: {},
+      axisY: {
+        axisTitle: 'procent',
+        axisClass: 'ct-axis-title',
+        offset: {
+          x: 0,
+          y: 0
+        },
+        textAnchor: 'middle',
+        flipTitle: false
+      }
+    })
+    ],
+  }
+  new Chartist.Line(container, chartData, chartOpts)
+})()
+
+
+</script>
+</div>
+              <div id="Legenda" align="center" style="pointer-events: none;"></div>
+            
+
+          
+            <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px;">Pobierz całość</button><button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px;">Pobierz wybrane</button>
+          
+
+          
+<div id="content" align="center" style="overflow-x: auto; width: 100%; text-align: center; padding: 1px;"></div>
+
+<script>
+
+$( document ).ready(function() {
+var jez='pl'
+var DATA = [{"year":"2010","ogółem":null},{"year":"2011","ogółem":"13.5"},{"year":"2012","ogółem":null},{"year":"2013","ogółem":null},{"year":"2014","ogółem":null},{"year":"2015","ogółem":"8.5"},{"year":"2016","ogółem":null},{"year":"2017","ogółem":null}]
+var naglowek=["ogółem"]
+
+
+
+if (jez=='pl'){
+  rokk='Wymiar'
+}else{
+  rokk='Dimension'
+}
+
+
+function buildTable(data) {
+    var table = document.createElement("table");
+    table.className="gridtable";
+    var thead = document.createElement("thead");
+    var tbody = document.createElement("tbody");
+    var headRow = document.createElement("tr");
+
+    var th=document.createElement("th");
+    th.appendChild(document.createTextNode(rokk));
+    headRow.appendChild(th);
+
+    DATA.forEach(function(el) {
+      var th=document.createElement("th");
+      th.appendChild(document.createTextNode(el["year"]));
+      headRow.appendChild(th);
+    });
+    thead.appendChild(headRow);
+    table.appendChild(thead);
+
+
+    naglowek.forEach(function(o,index) {
+      var tr=document.createElement("tr");
+      tr.setAttribute("id", "row-"+index);
+      var td = document.createElement("td");
+      o1=o.replace(/[_]/g, '')
+      td.appendChild(document.createTextNode(o1));
+      tr.appendChild(td);
+      DATA.forEach(function(el) {
+        var td = document.createElement("td");
+        if (el[o]!=null){
+
+          if (jez=='pl'){
+            el[o]=el[o].replace(".",",");
+          }else{
+            el[o]=el[o].replace(",",".");
+          }
+        }else{
+          el[o]='•'
+        }
+        td.appendChild(document.createTextNode(el[o]));
+        td.align="center";
+        tr.appendChild(td);
+        if ('1-2-2'=='12-2-2' || '1-2-2' == '8-4-2' || '1-2-2' == '2-5-1-b' || '1-2-2' == '9-1-2'){
+            tr.style.display='table-row';
+        }else{
+          if (index>0){
+            tr.style.display='none';
+          }
+        }
+
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+
+    return table;
+}
+
+document.getElementById("content").appendChild(buildTable(DATA));
+});
+</script>
+
+      
+    </div>
+  </div>
+
+
+  <div role="tabpanel" class="tab-pane" id="metadata">
+    <div class="metadata-table">
+        <h2>Informacje o wskaźniku</h2>
+
+        
+        
+        
+        
+
+        
+        
+        
+
+        <p>
+
+            
+              <a class="usa-button" href="/sdg-indicators/assets/pdf/pl/1-2-2.pdf">Pobierz metadane dla 1.2.2</a>
+              <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla 1.2.2</a>-->
+          
+        </p>
+
+        <table>
+
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  1.2.2 Wskaźnik zagrożenia ubóstwem warunków życia </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 1. Koniec z ubóstwem </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Zadanie </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  1.2 Do 2030 roku zmniejszyć przynajmniej o połowę odsetek mężczyzn, kobiet i dzieci, cierpiących z powodu ubóstwa, we wszystkich jego wymiarach określonych zgodnie z krajowymi definicjami </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Odsetek gospodarstw domowych, w których obserwowano 10 z 30 symptomów złych warunków życia. Wśród przejawów złych warunków życia rozpatruje się m.in. brak możliwości zaspokojenia różnego typu potrzeb konsumpcyjnych, jakość mieszkania oraz poziom wyposażenia w dobra trwałego użytku. </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  procent [%] </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik obliczany jest na podstawie Badania Spójności Społecznej.celem Badania spójności społecznej jest zebranie informacji pozwalających na dokonanie wszechstronnych ocen jakości życia, rozumianej jako kategoria wielowymiarowa (uwzględniająca aspekty ekonomiczne i społeczne) i ocenianej przez pryzmat zarówno wskaźników obiektywnych, jak i subiektywnych. Dzięki integracji danych indywidualnych możliwe jest m.in. określenie w jakich grupach społeczeństwa występuje kumulacja korzystnych, bądź niekorzystnych aspektów jakości życia, jakie czynniki warunkują te sytuacje, a także jakie relacje zachodzą pomiędzy poszczególnymi wymiarami jakości życia. Szeroki zakres zbieranych informacji pozwala m.in. na kompleksową ocenę zróżnicowania poziomu i stylu życia oraz wielowymiarową analizę ubóstwa, wykluczenia społecznego, kapitału społecznego oraz subiektywnego dobrobytu.Jednostką badania jest gospodarstwo domowe oraz jedna wylosowana osoba w gospodarstwie, w wieku co najmniej 16 lat.Gospodarstwo domowe tworzą osoby, które są lub nie są ze sobą spokrewnione, mieszkają razem i wspólnie utrzymują się (gospodarstwo domowe wieloosobowe). Gospodarstwo domowe może również tworzyć jedna osoba, która utrzymuje się samodzielnie, bez względu na to, czy mieszka sama, czy z innymi osobami (gospodarstwo domowe jednoosobowe).Badanie Spójności Społecznej przeprowadzane jest cyklicznie. Pierwsze badanie zostało przeprowadzone w 2011 r., kolejne - w 2015 r.W ramach wskaźnika warunków życia wzięto pod uwagę następujących 30 przejawów złych warunków życia: brak pieniędzy na przynajmniej jeden tydzień wakacji raz w roku, brak pieniędzy na rozrywkę (wyjście do kina, teatru, restauracji, na koncert itp.), brak możliwości utrzymania odpowiedniej temperatury w mieszkaniu (niewystarczająco ciepłe w zimie, niewystarczająco chłodne w lecie), zbyt małe mieszkanie lub nie każda osoba dorosła ma samodzielny pokój (lub wydzielone w mieszkaniu swoje stałe miejsce do odpoczynku, nauki i pracy), brak pieniędzy na wymianę zużytych mebli, brak pieniędzy na wizyty u lekarzy specjalistów lub lekarza dentysty, mieszkanie usytuowane: w hałaśliwym otoczeniu, w rejonie o skażonym środowisku naturalnym, mieszkanie ciemne, wilgotne, brak zainstalowanego ogrzewania lub występowanie pieca na opał (na węgiel, drewno, trociny), brak pieniędzy na zakup książek lub prasy, gospodarstwo nie może sobie pozwolić na zaproszenie raz w miesiącu swojej rodziny lub przyjaciół na obiad, kolację lub inny poczęstunek, złe warunki sanitarne (brak wody bieżącej, w tym ciepłej, łazienki, toalety), brak pieniędzy na zakup leków, brak kuchenki mikrofalowej lub wielofunkcyjnego robota kuchennego, gospodarstwo nie może sobie pozwolić na ofiarowanie swoim najbliższym prezentów przynajmniej raz w roku, brak samochodu z przyczyn finansowych, brak pieniędzy na zakup obuwia, odzieży, pościeli, brak dostępu do Internetu z przyczyn finansowych, brak komputera z przyczyn finansowych, brak pieniędzy na żywność (rezygnacja z jedzenia mięsa, świeżych owoców, warzyw), zły stan instalacji elektrycznej lub jej brak, brak odtwarzacza CD, DVD, MP3, telewizji kablowej lub satelitarnej z przyczyn finansowych, złe warunki mieszkaniowe, złe wyposażenie gospodarstwa w dobra trwałe, brak radia lub telewizora z przyczyn finansowych, brak pralki z przyczyn finansowych, brak odkurzacza z przyczyn finansowych, konieczność rezygnacji ze względu na brak pieniędzy z któregoś z podstawowych posiłków (śniadania, obiadu lub kolacji), brak telefonu (stacjonarnego, komórkowego) z przyczyn finansowych, brak lodówki, chłodziarki z przyczyn finansowych. </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Źrodło danych </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Urząd Statystyczny </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Dane co kilka lat  od 2011 r. </td>
+          </tr>
+          
+          
+          
+          <tr>
+            
+              <th style="padding: 5px; height: 45px;">  Uwagi </th>
+            
+            <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+          </tr>
+          
+          
+
+        </table>
+
+      </div>
+    </div>
+
+
+</div>
+
+
+
+<script>
+  $( document ).ready(function() {
+      if ('procent [%]'==''){
+          $('.usa-button').css('display','none');
+      }
+
+  });
+
+
+function Wybrane(jez){
+  var filename='1.2.2'
+  var html = document.querySelector(".gridtable").outerHTML;
+  var csv = [];
+	var rows = document.querySelectorAll(".gridtable tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++)
+        if(rows[i].style.display != 'none'){
+            row.push(cols[j].innerText);
+        }
+    if(rows[i].style.display != 'none'){
+
+      if(jez==2){
+        csv.push(row.join(","));
+      }else{
+        csv.push(row.join(";"));
+      }
+
+    }
+  }
+  if(jez==2){
+    var reszta='selected';
+  }else{
+    var reszta='wybrane';
+  }
+  download_csv(csv.join("\n"), filename+'_'+reszta+'.csv');
+}
+
+function Calosc(jez){
+  var filename='1.2.2'
+  var html = document.querySelector(".gridtable").outerHTML;
+  var csv = [];
+	var rows = document.querySelectorAll(".gridtable tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++)
+          row.push(cols[j].innerText);
+          if(jez==2){
+            csv.push(row.join(","));
+          }else{
+            csv.push(row.join(";"));
+          }
+  }
+  download_csv(csv.join("\n"), filename+'.csv');
+}
+
+function download_csv(csv, filename) {
+    var csvFile;
+    var downloadLink;
+
+    csvFile = new Blob(["\ufeff",csv], {type: "text/csv;"});
+    downloadLink = document.createElement("a");
+    downloadLink.download = filename;
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+}
+
+
+
+</script>
+</div>
+
+        </div>
+
+</div>
+
+<script>
+
+function Zmiana_jednostki(){
+
+  var licznik=1
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
+      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,14);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki2(){
+
+  var licznik=1
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
+      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(32,40);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "sztuki";
+        document.getElementById("Jednostka2").innerHTML = "Zmień jednostkę - liczba zwierząt";
+      }
+
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "number";
+        document.getElementById("Jednostka2").innerHTML = "Change unit - number of animals";
+      }
+
+      $('.ct-series-0').css({'display':'none'});
+      $('.ct-series-1').css({'display':'none'});
+      $('.ct-series-2').css({'display':'none'});
+      $('.ct-series-3').css({'display':'none'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }else{
+      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,32);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "liczba zwierząt";
+        document.getElementById("Jednostka2").innerHTML = "Zmień jednostkę - sztuki";
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "number of animals";
+        document.getElementById("Jednostka2").innerHTML = "Change unit - number";
+      }
+
+      $('.ct-series-0').css({'display':'inline-block'});
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'none'});
+
+    }
+}
+
+function Zmiana_jednostki3(){
+
+  var licznik=1
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
+      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(40,72);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka3").innerHTML = "Zmień jednostkę - tys. pasażerów";
+      }
+
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka3").innerHTML = "Change unit - thous. passengers";
+      }
+
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }else{
+      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,40);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. pasażerów";
+        document.getElementById("Jednostka3").innerHTML = "Zmień jednostkę - tys. ton";
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. people";
+        document.getElementById("Jednostka3").innerHTML = "Change unit - thous. tonnes";
+      }
+
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }
+}
+
+$( document ).ready(function() {
+  if ('1-2-2'=='12-2-2' || '1-2-2' == '8-4-2' || '1-2-2' == '2-5-1-b' || '1-2-2' == '9-1-2'){
+    $('.ct-chart').css({'margin-top':'20px'});
+
+  }
+
+  if ('1-2-2'=='2-5-1-b'){
+    var licznik=1
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+    var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,32);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+    chart.update({labels: labels,series: seria})
+
+    $('.ct-series-1').css({'display':'inline-block'});
+    $('.ct-series-2').css({'display':'inline-block'});
+    $('.ct-series-3').css({'display':'inline-block'});
+  }
+
+  if ('1-2-2'=='9-1-2'){
+    var licznik=1
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+    var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,40);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+    chart.update({labels: labels,series: seria})
+
+    $('.ct-series-1').css({'display':'inline-block'});
+    $('.ct-series-2').css({'display':'inline-block'});
+    $('.ct-series-3').css({'display':'inline-block'});
+    $('.ct-series-4').css({'display':'inline-block'});
+
+  }
+
+$('body').click(function( e ){
+    try{
+
+      var name = e.target.className;
+      if (!(e.target.className.includes('ct-series') || e.target.classList.contains('list-group-item') || e.target.id.includes('infoToggler'))){
+        if(!(e.target.src)){
+          $('.collapse').collapse('hide');
+        }
+
+      }
+
+    }catch(e){
+
+      $('.collapse').collapse('hide');
+    }
+});
+
+
+$(function () {
+$('.list-group.checked-list-box .list-group-item').each(function () {
+
+          var zmienna=1
+          var $widget = $(this),
+          $checkbox = $('<input type="checkbox"/>')
+          $widget.css('cursor', 'pointer')
+          $widget.append($checkbox);
+
+          $widget.on('click', function (e) {
+              $checkbox.prop('checked', !$checkbox.is(':checked'));
+              $checkbox.triggerHandler('change');
+
+              var isChecked = $checkbox.is(':checked');
+          });
+
+          $checkbox.on('change', function () {
+              var isChecked = $checkbox.is(':checked');
+
+              for (ola=0;ola<zmienna;ola++){
+                if($widget.val()===ola){
+                  $('li.ct-series-'+ola).click();
+                  if(document.querySelector('li.ct-series-'+ola).style.display=='none'){
+                    document.querySelector('li.ct-series-'+ola).style.display='inline-block'
+                  }else{
+                    if ($('.ct-legend > li:visible').length >1){
+                      document.querySelector('li.ct-series-'+ola).style.display='none'
+                    }
+
+                  }
+                }
+              }
+            });
+
+              if ($widget.data('checked') == true) {
+                  $checkbox.prop('checked', !$checkbox.is(':checked'));
+
+              }
+
+              var isChecked = $checkbox.is(':checked');
+            });
+});
+});
+</script>
+
+
+
+
+
+<footer class="usa-footer usa-footer-big usa-sans" role="contentinfo">
+    <div class="pl-grid usa-footer-return-to-top">
+      <a href="#"  style="font-size: 15px">Do góry</a>
+    </div>
+
+    <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
+      <div class="pl-grid">
+        <div class="usa-footer-contact-links usa-width-one-half" style="margin-right: 145px">
+          <address>
+            <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
+            <p> <b>O projekcie</b><br />Witamy na stronie internetowej GUS poświęconej Agendzie 2030 i Celom Zrównoważonego Rozwoju </p>
+
+          </address>
+        </div>
+		<div style="display: inline-table">
+        <div class="usa-footer-logo usa-width-one-half" style="width: 65px; margin-right: 15px">
+          <img src="/sdg-indicators/assets/img/gus_cz_2.png" style="max-height: 100%; margin-right: 15px; margin-top: 0px; margin-left: ">
+		</div>
+		<div class="usa-footer-logo usa-width-one-half" style="width: 170px; margin-right: 15px">
+            <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
+			<p class="contact"><b>Główny Urząd Statystyczny</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br /></p>
+        </div>
+		<div class="usa-footer-logo usa-width-one-half" style="width: 225px">
+            <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
+			<p class="contact">Godziny pracy Urzędu: 8.15–16.15<br /> Centrala: +48 22 608 30 00<br /> kancelariaogolnaGUS@stat.gov.pl<br /></p>
+        </div>
+		</div>
+      </div>
+    </div>
+  </footer>
+    </body>
+</html>
+

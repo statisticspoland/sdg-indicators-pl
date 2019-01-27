@@ -1,0 +1,51 @@
+{% include head.html %}
+
+{% include header.html %}
+
+{% assign t = site.translations | where:"translation_id", "search"  | first %}
+{% assign t = t[page.lang] %}
+
+<div id="main" class="main-content initiative-content status-dashboard">
+
+        <a id="main-content" tabindex="-1">
+        <section class="pl-banner banner-small">
+            <div class="pl-grid">
+                <div class="pl-banner-content">
+                  <h1>{{ t.page-title }}</h1>
+                </div>
+            </div>
+        </section>
+
+		<div class="pl-grid">
+
+
+    <form id="search-form" action="" style="max-width: 100%;display: contents;">
+
+      <br/>
+      <input class="input" id="search" type="text" name="search" placeholder="Wyszukaj wskaźnik:" autocomplete="on">
+      <ul class="list  list--results" id="list">
+
+      </ul>
+    </form>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/search/fetch.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/search/search.js"></script>
+    <script type="text/javascript">
+      const search = new jekyllSearch(
+        '{{ site.baseurl }}/assets/js/search/search.json',
+        '#search',
+        '#list',
+		''
+      );
+      search.init();
+    </script>
+    <noscript>Please enable JavaScript to use the search form.</noscript>
+
+                    </div>
+                  </a>
+
+
+        </div>
+
+
+
+{% include footer.html %}

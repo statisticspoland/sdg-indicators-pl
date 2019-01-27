@@ -1,0 +1,199 @@
+{% assign table_template = 'components/table1.html' %}
+{% assign id = page.indicator | slugify %}
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="data">
+    <div style="display: flow-root;">
+      {% if page.graph == 'bar' or page.graph == 'longitudinal' or page.graph == 'scatter'%}
+
+          {% assign graph_type = page.graph %}
+          {% if page.graph == 'longitudinal' %}
+            {% assign graph_type = 'line' %}
+          {% endif %}
+
+          {% assign graph_template = 'components/' | append: graph_type | append: '.html' %}
+          {% assign indicator_template = 'components/indicator1' | append: '.html' %}
+          {% if id == '12-2-2' or id == '8-4-2' %}
+            {% if language == 'pl' %}
+              <button type="button" id="Jednostka" onclick="Zmiana_jednostki()" style="margin-top: 30px;">Zmień jednostkę - tona</button>
+            {% else %}
+              <button type="button" id="Jednostka" onclick="Zmiana_jednostki()" style="margin-top: 30px;">Change unit - tonne</button>
+            {% endif %}
+          {% elsif id == '2-5-1-b' %}
+            {% if language == 'pl' %}
+              <button type="button" id="Jednostka2" onclick="Zmiana_jednostki2()" style="margin-top: 30px;">Zmień jednostkę - sztuki</button>
+            {% else %}
+              <button type="button" id="Jednostka2" onclick="Zmiana_jednostki2()" style="margin-top: 30px;">Change unit - number</button>
+            {% endif %}
+          {% elsif id == '9-1-2' %}
+            {% if language == 'pl' %}
+              <button type="button" id="Jednostka3" onclick="Zmiana_jednostki3()" style="margin-top: 30px;">Zmień jednostkę - tys. ton</button>
+            {% else %}
+              <button type="button" id="Jednostka3" onclick="Zmiana_jednostki3()" style="margin-top: 30px;">Change unit - thous. tonnes</button>
+            {% endif %}
+          {% endif %}
+
+            {% if licznik>1 %}
+              {% if language == 'pl' %}
+                <div id="filtry">.</div>
+                  {% if id != '12-2-2' and id != '8-4-2' and id != '2-5-1-b' and id != '9-1-2' %}
+                    <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;">Zaznacz wszystkie wymiary</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;">Usuń zaznaczenia</button></div>
+                  {% endif %}
+                <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
+                <div id="Legenda" align="center" style="pointer-events: none;"></div>
+              {% else %}
+                <div id="filtry">.</div>
+                  {% if id != '12-2-2' and id != '8-4-2' and id != '2-5-1-b' and id != '9-1-2' %}
+                    <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;">Select All</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;">Clear All</button></div>
+                  {% endif %}
+                <br>
+                <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
+                <div id="Legenda" align="center" style="pointer-events: none;"></div>
+              {% endif %}
+              <div>{% include components/filters.html content=filtry content1=foo content2=language%}</div>
+            {%else%}
+              <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
+              <div id="Legenda" align="center" style="pointer-events: none;"></div>
+            {% endif %}
+
+          {% if language == 'pl' %}
+            <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px;">Pobierz całość</button><button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px;">Pobierz wybrane</button>
+          {% else %}
+            <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px;">Download All</button><button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px;">Download Selected</button>
+          {% endif %}
+
+          {% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%}
+      {% else %}
+              {% if language == 'pl' %}
+                       <p style="text-align: center;">W przyszłości pojawi się tu tabela</p>
+              {% else %}
+                        <p style="text-align: center;">The table will appear here</p>
+              {% endif %}
+      {% endif %}
+    </div>
+  </div>
+
+
+  <div role="tabpanel" class="tab-pane" id="metadata">
+    <div class="metadata-table">
+        <h2>{{ t.global-metadata }}</h2>
+
+        {% assign indicator_decimals = page.indicator | split: '.'  %}
+        {% assign goal_num = indicator_decimals[0] | plus:0  %}
+        {% assign target_num = indicator_decimals[1] | plus:0  %}
+        {% assign indicator_num = indicator_decimals[2] | plus:0  %}
+
+        {% if goal_num < 10 %} {% assign goal_num = goal_num | prepend:0  %} {% endif %}
+        {% if target_num < 10 %} {% assign target_num = target_num | prepend:0  %} {% endif %}
+        {% if indicator_num < 10 %} {% assign indicator_num = indicator_num | prepend:0  %} {% endif %}
+
+        <p>
+
+            {% if language == 'pl' %}
+              <a class="usa-button" href="{{ site.baseurl }}/assets/pdf/{{ page.lang }}/{{page.indicator | replace: ".", "-"}}.pdf">Pobierz metadane dla {{ page.indicator | remove: ".0" }}</a>
+              <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla {{ page.indicator }}</a>-->
+          {% else %}
+              <a class="usa-button" href="{{ site.baseurl }}/assets/pdf/en/{{page.indicator | replace: ".", "-"}}.pdf">Download metadata for {{ page.indicator | remove: ".0" }}</a>
+
+          {% endif %}
+        </p>
+
+        <table>
+
+          {% for indicator_metadata in site.prose.metadata._indicators %}
+          {% if indicator_metadata.field.scope == "global" %}
+          <tr>
+            {% if language == 'pl' %}
+              <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
+            {% else %}
+              <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label2 }} </th>
+            {% endif %}
+            <td style="padding: 10px; text-align: justify; height: 45px;">  {{ metadane[indicator_metadata.name] }} </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+
+        </table>
+
+      </div>
+    </div>
+
+
+</div>
+
+
+
+<script>
+  $( document ).ready(function() {
+      if ('{{metadane["jednostka_prezentacji"]}}'==''){
+          $('.usa-button').css('display','none');
+      }
+
+  });
+
+
+function Wybrane(jez){
+  var filename='{{ page.indicator }}'
+  var html = document.querySelector(".gridtable").outerHTML;
+  var csv = [];
+	var rows = document.querySelectorAll(".gridtable tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++)
+        if(rows[i].style.display != 'none'){
+            row.push(cols[j].innerText);
+        }
+    if(rows[i].style.display != 'none'){
+
+      if(jez==2){
+        csv.push(row.join(","));
+      }else{
+        csv.push(row.join(";"));
+      }
+
+    }
+  }
+  if(jez==2){
+    var reszta='selected';
+  }else{
+    var reszta='wybrane';
+  }
+  download_csv(csv.join("\n"), filename+'_'+reszta+'.csv');
+}
+
+function Calosc(jez){
+  var filename='{{ page.indicator }}'
+  var html = document.querySelector(".gridtable").outerHTML;
+  var csv = [];
+	var rows = document.querySelectorAll(".gridtable tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++)
+          row.push(cols[j].innerText);
+          if(jez==2){
+            csv.push(row.join(","));
+          }else{
+            csv.push(row.join(";"));
+          }
+  }
+  download_csv(csv.join("\n"), filename+'.csv');
+}
+
+function download_csv(csv, filename) {
+    var csvFile;
+    var downloadLink;
+
+    csvFile = new Blob(["\ufeff",csv], {type: "text/csv;"});
+    downloadLink = document.createElement("a");
+    downloadLink.download = filename;
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+}
+
+
+
+</script>

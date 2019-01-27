@@ -1,0 +1,69 @@
+class jekyllSearch {
+  constructor(dataSource, searchField, resultsList, siteURL, indicator,lang) {
+    this.dataSource = dataSource
+    this.searchField = document.querySelector(searchField)
+    this.resultsList = document.querySelector(resultsList)
+    this.siteURL = siteURL
+    this.indicator = indicator
+    this.language = lang
+
+    this.displayResults = this.displayResults.bind(this)
+  }
+
+  fetchedData() {
+    return fetch(this.dataSource)
+      .then(blob => blob.json())
+  }
+
+  async findResults() {
+    const data = await this.fetchedData()
+    return data.filter(item => {
+      const regex = new RegExp(this.searchField.value, 'gi')
+      return item.title.match(regex) || item.content.match(regex) || item.indicator.match(regex)
+    })
+  }
+
+  async displayResults() {
+    const results = await this.findResults()
+    const html = results.map(item => {
+      return `
+        <li class="result">
+            <article class="result__article  article">
+                <h4>
+                  <a href="${item.url}">${item.indicator +' '+ item.title}</a>
+                </h4>
+                <p>${item.excerpt}</p>
+            </article>
+        </li>`
+    }).join('')
+    if ((results.length == 0) || (this.searchField.value == '')) {
+
+      if (window.location.href.indexOf("en") > -1){
+        this.resultsList.innerHTML = `<p>There is no indicator containing the searched phrase</p>`
+      }else{
+
+        this.resultsList.innerHTML = `<p>Brak wskaźnika zawierającego szukaną frazę</p>`
+      }
+    } else {
+      this.resultsList.innerHTML = html
+    }
+  }
+
+  init() {
+    const url = new URL(document.location)
+    if (url.searchParams.get("search")) {
+      this.searchField.value = url.searchParams.get("search")
+      this.displayResults()
+    }
+    this.searchField.addEventListener('keyup', () => {
+      this.displayResults()
+      url.searchParams.set("search", this.searchField.value)
+      window.history.pushState('', '', url.href)
+    })
+    this.searchField.addEventListener('keypress', event => {
+      if (event.keyCode == 13) {
+        event.preventDefault()
+      }
+    })
+  }
+}

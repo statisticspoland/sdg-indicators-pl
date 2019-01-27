@@ -1,0 +1,471 @@
+{% include head.html %}
+
+{% include header.html %}
+
+{% assign t = site.translations | where:"translation_id", "indicator"  | first %}
+{% assign t = t[page.lang] %}
+{% assign id = page.indicator | slugify %}
+
+{% if page.url contains '/statistics_nat/' %}
+  {% assign ktore = site.data.krajowe %}
+{% else %}
+  {% assign ktore = site.data.globalne %}
+{% endif %}
+
+{% if page.lang == 'pl' %}
+    {% assign sdg_goals = ktore.sdg_goals %}
+{% else %}
+    {% assign sdg_goals = ktore[page.lang].sdg_goals %}
+{% endif %}
+
+<div id="main" class="main-content initiative-content">
+
+  {% for goals in sdg_goals %}
+
+    {% assign page_goal_num = page.sdg_goal | plus:0 %}
+    {% assign goals_goal_num = goals.goal | plus:0 %}
+
+    {% if page_goal_num == goals_goal_num %}
+
+        <a id="main-content" tabindex="-1"></a>
+        {% if page.url contains '/statistics_glob/' %}
+		<section class="pl-banner-glob">
+		{% else %}
+			{% if page.url contains '/statistics_nat/' %}
+			<section class="pl-banner-nat">
+			{% else %}
+			<section class="pl-banner">
+			{% endif %}
+		{% endif %}
+            <div class="pl-grid">
+                <div class="pl-banner-content">
+                  <h1>
+
+                    {% if page.url contains '/statistics_nat/' %}
+                    {% assign rodzaj = '/statistics_nat/' %}
+                    {% else %}
+                    {% assign rodzaj = '/statistics_glob/' %}
+                    {% endif %}
+
+                          {% if page.lang == 'en' %}
+  							                 Goal {{ goals.goal }} - {{ goals.title }}
+  						            {% else %}
+  							                 Cel {{ goals.goal }} - {{ goals.title }}
+  						            {% endif %}
+                      {% endif %}
+
+                    {% endfor %}
+                  </h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="pl-grid initiative-description">
+
+          {% assign slug = page.indicator | replace: '.', '-' %}
+          {% assign dataset_name = 'indicator_' | append: slug %}
+
+          {% assign array = "" | split: ""  %}
+          {% assign precyzja = array %}
+          {% assign header_csv = array %}
+          {% assign filtry = array %}
+          {% assign wszystkie = array %}
+          {% assign jednostka = array %}
+          {% assign tytul = array %}
+          {% assign metadane = array %}
+
+
+          {% if page.lang == 'pl' %}
+              {% assign precyzja = page.pre %}
+              {% assign metadane =page %}
+              {% assign tytul = page.graph_title %}
+              {% assign jednostka = page.jednostka %}
+              {% assign wszystkie = page.zmienne | split: ";" %}
+              {% assign filtry = page.kategorie | split: "," %}
+              {% assign header_csv = page.indicator_variable_1 | split: "," %}
+              {% assign sdg_indicator = ktore[dataset_name] %}
+              {% assign sdg_indicators = ktore.sdg_indicator_metadata %}
+              {% assign language = 'pl' %}
+
+          {% else %}
+              {% assign precyzja = page.pre %}
+              {% assign metadane =page %}
+              {% assign tytul = page.graph_title %}
+              {% assign jednostka = page.jednostka %}
+              {% assign wszystkie = page.zmienne | split: ";" %}
+              {% assign filtry = page.kategorie | split: "," %}
+              {% assign header_csv = page.indicator_variable_1 | split: "," %}
+              {% assign sdg_indicator = ktore[page.lang][dataset_name] %}
+              {% assign sdg_indicators = ktore[page.lang].sdg_indicator_metadata %}
+              {% assign page = site.indicators | where:"indicator", page.indicator  | first %}
+              {% assign language = 'en' %}
+          {% endif %}
+
+
+          {% assign foo = array %}
+          {% for wszy in wszystkie %}
+          {% assign ha = wszy | split: "," | jsonify | append:','%}
+          {% assign foo = foo | push: ha %}
+          {% endfor %}
+
+          {% for indicators in sdg_indicators %}
+          {% if indicators.indicator_id == page.indicator %}
+            {% assign this_sdg_indicator_metadata = indicators %}
+          {% endif %}
+          {% endfor %}
+
+          {% assign indicator_title = this_sdg_indicator_metadata.indicator %}
+
+          {% assign licznik = header_csv | size %}
+
+          {% assign row = array %}
+
+          {% assign labels = array %}
+
+          {% assign row1 = array %}
+          {%for i in (0..licznik) %}
+          {% for indicator in sdg_indicator %}
+            {% assign a = header_csv[i] %}
+            {% assign row1 = row1 | push: indicator[a] %}
+          {%endfor%}
+          {%endfor%}
+
+          {% for indicator in sdg_indicator %}
+            {% assign labels = labels | push: indicator.year %}
+          {% endfor %}
+
+          {% if page.url contains '/statistics_nat/' %}
+            {% assign rodzaj = '/statistics_nat/' %}
+          {% else %}
+            {% assign rodzaj = '/' %}
+          {% endif %}
+
+          {% if language == 'pl' %}
+          {% for goals in sdg_goals %}
+          {% assign numer = goals.goal %}
+          {% assign numer1 = page.sdg_goal | downcase %}
+            {% if numer == numer1 %}
+                <ol class="breadcrumb">
+              <li><a href="{{ site.baseurl }}{{ rodzaj }}">Strona Główna</a> / </li>
+              <li><a href="{{ site.baseurl }}{{ rodzaj }}{{ goals.short | slugify }}">Cel {{ page.sdg_goal }}</a></li>
+              <li class="active"> / Wskaźnik {{ page.indicator | remove: ".0" }}</li>
+              </ol>
+            {% endif %}
+          {% endfor %}
+
+          {% else %}
+
+          {% for goals in sdg_goals %}
+              {% assign numer = goals.goal %}
+          {% assign numer1 = page.sdg_goal | downcase %}
+            {% if numer == numer1 %}
+                <ol class="breadcrumb">
+              <li><a href="{{ site.baseurl }}/{{ language }}{{ rodzaj }}">Home</a> / </li>
+              <li><a href="{{ site.baseurl }}/{{ language }}{{ rodzaj }}{{ goals.short | slugify }}">Goal {{ page.sdg_goal }}</a></li>
+              <li class="active"> / Indicator {{ page.indicator | remove: ".0" }}</li>
+              </ol>
+            {% endif %}
+          {% endfor %}
+          {% endif %}
+
+          <h3>{{ t.sub-subtitle }} {{ page.indicator | remove: ".0" }} - {{ indicator_title }} </h3>
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">{{ t.data }}</a></li>
+            <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab">{{ t.metadata }}</a></li>
+
+          </ul>
+
+
+          <div style="float: left;width: 100%;">{% include components/indicator1.html %}</div>
+
+        </div>
+
+</div>
+
+<script>
+
+function Zmiana_jednostki(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
+      var calo={{ row1 | jsonify }}
+      calosc=calo.splice(8,14);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      calosc=calo.splice(0,8);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki2(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
+      var calo={{ row1 | jsonify }}
+      calosc=calo.splice(32,40);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "sztuki";
+        document.getElementById("Jednostka2").innerHTML = "Zmień jednostkę - liczba zwierząt";
+      }
+
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "number";
+        document.getElementById("Jednostka2").innerHTML = "Change unit - number of animals";
+      }
+
+      $('.ct-series-0').css({'display':'none'});
+      $('.ct-series-1').css({'display':'none'});
+      $('.ct-series-2').css({'display':'none'});
+      $('.ct-series-3').css({'display':'none'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      calosc=calo.splice(0,32);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "liczba zwierząt";
+        document.getElementById("Jednostka2").innerHTML = "Zmień jednostkę - sztuki";
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "number of animals";
+        document.getElementById("Jednostka2").innerHTML = "Change unit - number";
+      }
+
+      $('.ct-series-0').css({'display':'inline-block'});
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'none'});
+
+    }
+}
+
+function Zmiana_jednostki3(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
+      var calo={{ row1 | jsonify }}
+      calosc=calo.splice(40,72);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka3").innerHTML = "Zmień jednostkę - tys. pasażerów";
+      }
+
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka3").innerHTML = "Change unit - thous. passengers";
+      }
+
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      calosc=calo.splice(0,40);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. pasażerów";
+        document.getElementById("Jednostka3").innerHTML = "Zmień jednostkę - tys. ton";
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. people";
+        document.getElementById("Jednostka3").innerHTML = "Change unit - thous. tonnes";
+      }
+
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }
+}
+
+$( document ).ready(function() {
+  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '2-5-1-b' || '{{id}}' == '9-1-2'){
+    $('.ct-chart').css({'margin-top':'20px'});
+
+  }
+
+  if ('{{id}}'=='2-5-1-b'){
+    var licznik={{ licznik }}
+    var labels = {{ labels | jsonify }}
+    var calo={{ row1 | jsonify }}
+    calosc=calo.splice(0,32);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+    chart.update({labels: labels,series: seria})
+
+    $('.ct-series-1').css({'display':'inline-block'});
+    $('.ct-series-2').css({'display':'inline-block'});
+    $('.ct-series-3').css({'display':'inline-block'});
+  }
+
+  if ('{{id}}'=='9-1-2'){
+    var licznik={{ licznik }}
+    var labels = {{ labels | jsonify }}
+    var calo={{ row1 | jsonify }}
+    calosc=calo.splice(0,40);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+    chart.update({labels: labels,series: seria})
+
+    $('.ct-series-1').css({'display':'inline-block'});
+    $('.ct-series-2').css({'display':'inline-block'});
+    $('.ct-series-3').css({'display':'inline-block'});
+    $('.ct-series-4').css({'display':'inline-block'});
+
+  }
+
+$('body').click(function( e ){
+    try{
+
+      var name = e.target.className;
+      if (!(e.target.className.includes('ct-series') || e.target.classList.contains('list-group-item') || e.target.id.includes('infoToggler'))){
+        if(!(e.target.src)){
+          $('.collapse').collapse('hide');
+        }
+
+      }
+
+    }catch(e){
+
+      $('.collapse').collapse('hide');
+    }
+});
+
+
+$(function () {
+$('.list-group.checked-list-box .list-group-item').each(function () {
+
+          var zmienna={{licznik}}
+          var $widget = $(this),
+          $checkbox = $('<input type="checkbox"/>')
+          $widget.css('cursor', 'pointer')
+          $widget.append($checkbox);
+
+          $widget.on('click', function (e) {
+              $checkbox.prop('checked', !$checkbox.is(':checked'));
+              $checkbox.triggerHandler('change');
+
+              var isChecked = $checkbox.is(':checked');
+          });
+
+          $checkbox.on('change', function () {
+              var isChecked = $checkbox.is(':checked');
+
+              for (ola=0;ola<zmienna;ola++){
+                if($widget.val()===ola){
+                  $('li.ct-series-'+ola).click();
+                  if(document.querySelector('li.ct-series-'+ola).style.display=='none'){
+                    document.querySelector('li.ct-series-'+ola).style.display='inline-block'
+                  }else{
+                    if ($('.ct-legend > li:visible').length >1){
+                      document.querySelector('li.ct-series-'+ola).style.display='none'
+                    }
+
+                  }
+                }
+              }
+            });
+
+              if ($widget.data('checked') == true) {
+                  $checkbox.prop('checked', !$checkbox.is(':checked'));
+
+              }
+
+              var isChecked = $checkbox.is(':checked');
+            });
+});
+});
+</script>
+
+{% include footer.html content2=language%}

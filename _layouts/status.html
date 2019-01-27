@@ -1,0 +1,258 @@
+{% include head.html %}
+
+{% include header.html %}
+
+{% assign t = site.translations | where:"translation_id", "status"  | first %}
+{% assign t = t[page.lang] %}
+
+{% if page.url contains '/statistics_nat/' %}
+  {% assign nazwa = '/statistics_nat/' %}
+  {% assign ktore = site.data.krajowe %}
+{% else %}
+  {% assign nazwa = '/statistics_glob/' %}
+  {% assign ktore = site.data.globalne %}
+{% endif %}
+
+    <div id="main" class="main-content initiative-content status-dashboard">
+
+        <a id="main-content" tabindex="-1"></a>
+        {% if page.url contains '/statistics_glob/' %}
+		<section class="pl-banner-glob">
+		{% else %}
+			{% if page.url contains '/statistics_nat/' %}
+			<section class="pl-banner-nat">
+			{% else %}
+			<section class="pl-banner">
+			{% endif %}
+		{% endif %}
+            <div class="pl-grid">
+                <div class="pl-banner-content">
+                  {% if page.url contains '/statistics_nat/' %}
+                    <h1>{{ t.page-title2 }}</h1>
+                  {% else %}
+                    <h1>{{ t.page-title }}</h1>
+                  {% endif %}
+                </div>
+            </div>
+        </section>
+
+        <div class="pl-grid">
+            {{ content }}
+
+            {% assign indicators_count = 0 %}
+
+            {% assign unsourced_data = 0 %}
+            {% assign compiling_statistic = 0 %}
+            {% assign finalized_reporting = 0 %}
+            {% assign tier3 = 0 %}
+
+            {% assign unsourced_percent = 0 %}
+            {% assign compiling_percent = 0 %}
+            {% assign finalized_percent = 0 %}
+            {% assign tier3_percent = 0 %}
+
+            {% for indicator in site.indicators %}
+
+                {% if indicator.lang == site.defaults[0].values.lang %}
+                  {% if indicator.permalink contains nazwa %}
+                    {% assign indicators_count = indicators_count | plus:1 %}
+
+                    {% if indicator.un_designated_tier != '3' %}
+                        {% assign unsourced_data = unsourced_data | plus:1 %}
+
+                        {% if indicator.source_url != nil and indicator.source_url != "" %}
+                          {% assign unsourced_data = unsourced_data | minus:1 %}
+                          {% assign compiling_statistic = compiling_statistic | plus:1 %}
+
+                          {% if indicator.graph != nil and indicator.graph != "" %}
+                            {% assign compiling_statistic = compiling_statistic | minus:1 %}
+                            {% assign finalized_reporting = finalized_reporting | plus:1 %}
+                          {% endif %}
+
+                        {% endif %}
+                    {% else %}
+                        {% assign tier3 = tier3 | plus:1 %}
+                    {% endif %}
+                  {% endif %}
+                {% endif %}
+
+            {% endfor %}
+
+            {% assign indicators_count = indicators_count  %}
+
+            {% assign tier3_percent = tier3 | times: 100.0  | divided_by: indicators_count | round %}
+            {% assign unsourced_percent = unsourced_data | times: 100.0  | divided_by: indicators_count | round %}
+            {% assign compiling_percent = compiling_statistic | times: 100.0  | divided_by: indicators_count | round %}
+            {% assign finalized_percent = finalized_reporting | times: 100.0  | divided_by: indicators_count | round %}
+
+			<h4>{{ t.page-subtitle }} <span class="badge dark-badge">{{ t.indicators }} {{ indicators_count  }}</span></h4>
+						
+            <div class="container-fluid status-traffic-statbox">
+              <div class="col-md-4">
+                <span class="label label-danger">{{ unsourced_data }}</span> {{ t.danger-text }} <br>{{ unsourced_percent }}%
+              </div>
+              <div class="col-md-4">
+                <span class="label label-warning">{{ compiling_statistic }}</span> {{t.warning-text }} <br>{{ compiling_percent  }}%
+              </div>
+              <div class="col-md-4">
+                <span class="label label-success">{{ finalized_reporting }}</span> {{ t.success-text }} <br>{{ finalized_percent  }}%
+              </div>
+            </div>
+
+            <div class="usa-width-one-whole">
+              <div class="progress progress-top" style="margin-top: 18px;">
+                <div class="progress-bar progress-bar-danger" style="width:{{ unsourced_percent }}%">
+                  <span class="sr-only">{{ t.danger-text }} {{ unsourced_percent  }}%</span>
+                </div>
+                <div class="progress-bar progress-bar-warning" style="width:{{ compiling_percent }}%">
+                  <span class="sr-only">{{t.warning-text }} {{ compiling_percent  }}%</span>
+                </div>
+                <div class="progress-bar progress-bar-success" style="width:{{ finalized_percent }}%">
+                  <span class="sr-only">{{ t.success-text }} {{ finalized_percent  }}%</span>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="pl-grid initiative-description">
+
+            <div class="goal-list">
+
+            {% if page.lang == 'pl' %}
+              {% assign goals = ktore.sdg_goals %}
+            {% else %}
+              {% assign goals = ktore[page.lang].sdg_goals %}
+            {% endif %}
+
+            {% for goal in goals %}
+
+                {% assign this_goal = goal.goal | plus:0 %}
+
+                {% assign indicators_count = 0 %}
+
+                {% assign unsourced_data = 0 %}
+                {% assign compiling_statistic = 0 %}
+                {% assign finalized_reporting = 0 %}
+                {% assign tier3 = 0 %}
+
+                {% assign unsourced_percent = 0 %}
+                {% assign compiling_percent = 0 %}
+                {% assign finalized_percent = 0 %}
+                {% assign tier3_percent = 0 %}
+
+                {% for indicator in site.indicators %}
+
+                    {% if indicator.lang == site.defaults[0].values.lang %}
+                      {% if indicator.permalink contains nazwa %}
+                        {% if indicator.sdg_goal == this_goal %}
+
+                            {% assign indicators_count = indicators_count | plus:1 %}
+
+                            {% if indicator.un_designated_tier != '3' %}
+                                {% assign unsourced_data = unsourced_data | plus:1 %}
+
+                                {% if indicator.source_url != nil and indicator.source_url != "" %}
+                                  {% assign unsourced_data = unsourced_data | minus:1 %}
+                                  {% assign compiling_statistic = compiling_statistic | plus:1 %}
+
+                                  {% if indicator.graph != nil and indicator.graph != "" %}
+                                    {% assign compiling_statistic = compiling_statistic | minus:1 %}
+                                    {% assign finalized_reporting = finalized_reporting | plus:1 %}
+                                  {% endif %}
+
+                                {% endif %}
+                            {% else %}
+                                {% assign tier3 = tier3 | plus:1 %}
+                            {% endif %}
+                          {% endif %}
+                      {% endif %}
+                    {% endif %}
+
+                {% endfor %}
+
+                {% assign indicators_count = indicators_count  %}
+
+                {% assign tier3_percent = tier3 | times: 100.0  | divided_by: indicators_count | round  %}
+                {% assign unsourced_percent = unsourced_data | times: 100.0  | divided_by: indicators_count | round %}
+                {% assign compiling_percent = compiling_statistic | times: 100.0  | divided_by: indicators_count | round  %}
+                {% assign finalized_percent = finalized_reporting | times: 100.0  | divided_by: indicators_count | round  %}
+
+                {% assign indicators_count = indicators_count  %}
+
+                {% if this_goal < 10 %}
+                    {% assign img_path = 0  %}
+                {% else %}
+                    {% assign img_path = ''  %}
+                {% endif %}
+
+                {% if page.url contains '/statistics_nat/' %}
+                  <a class="goal-progress" href="{{ site.baseurl }}{{ lang }}/statistics_nat/{{ goal.short | slugify }}/">
+                {% else %}
+                  <a class="goal-progress" href="{{ site.baseurl }}{{ lang }}/{{ goal.short | slugify }}/">
+                {% endif %}
+
+                  <div>
+
+                    <div class="media pl-grid-full">
+
+                      <div class="usa-width-one-sixth">
+                        <div class="media-left">
+                          <div>
+
+                            <img class="media-object" src="{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ this_goal }}.png" width="75%" height="calc(1 * width)" alt="{{ goal.short}}">
+
+                          <span class="sr-only">
+                                {{ goal.title}}
+                          </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="usa-width-five-sixths">
+
+
+
+                         <div class="media-body">
+                           
+						    <h4>{{ goal.title }} <span class="badge dark-badge">{{ t.indicators }} {{ indicators_count  }}</span></h4>
+													   
+                            <div class="container-fluid status-traffic-statbox">
+                              <div class="col-md-4">
+                                <span class="label label-danger">{{ unsourced_data }}</span> {{ t.danger-text }} <br>{{ unsourced_percent  }}%
+                              </div>
+                              <div class="col-md-4">
+                                <span class="label label-warning">{{ compiling_statistic }}</span> {{ t.warning-text }} <br>{{ compiling_percent  }}%
+                              </div>
+                              <div class="col-md-4">
+                                <span class="label label-success">{{ finalized_reporting }}</span> {{ t.success-text }} <br>{{ finalized_percent  }}%
+                              </div>
+                            </div>
+
+                            <div class="usa-width-one-whole">
+                              <div class="progress">
+                                <div class="progress-bar progress-bar-danger" style="width:{{ unsourced_percent }}%">
+                                  <span class="sr-only">{{ t.danger-text }} {{ unsourced_percent }}%</span>
+                                </div>
+                                <div class="progress-bar progress-bar-warning" style="width:{{ compiling_percent }}%">
+                                  <span class="sr-only">{{ t.warning-text }} {{ compiling_percent }}%</span>
+                                </div>
+                                <div class="progress-bar progress-bar-success" style="width:{{ finalized_percent }}%">
+                                  <span class="sr-only">{{ t.success-text }} {{ finalized_percent }}%</span>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </a>
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+{% include footer.html %}

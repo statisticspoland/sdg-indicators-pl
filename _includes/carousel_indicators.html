@@ -1,0 +1,71 @@
+<div id="{{ include.carousel_indicators }}" class="carousel slide" data-ride="carousel">
+
+
+{% if page.url contains '/statistics_nat/' %}
+                    {% assign rodzaj = '/statistics_nat/' %}
+					          {% assign ktore_v1 = site.data.krajowe %}
+{% else %}
+                    {% assign rodzaj = '' %}
+					          {% assign ktore_v1 = site.data.globalne %}
+{% endif %}
+
+ {% if page.lang != 'en' %}
+              {% assign sdg_indicators_v1 = ktore_v1.sdg_indicator_metadata %}
+			  {% assign page_v1 = site.indicators | where:"indicator", page.indicator  | first %}
+              {% assign language_v1 = 'pl' %}
+{% endif %}
+
+     {% if page.lang == 'en' %}
+              {% assign sdg_indicators_v1 = ktore_v1[page.lang].sdg_indicator_metadata %}
+              {% assign page_v1 = site.indicators | where:"indicator", page.indicator  | first %}
+              {% assign language_v1 = 'en' %}
+     {% endif %}
+
+
+{% if language_v1 == 'en' %}
+		  {% assign licznik_nowy = 0 %}
+		  {% for indicators in sdg_indicators_v1 %}
+				{% if licznik_nowy == 0 %}
+				{% if indicators.indicator_id <> page_v1.indicator %}
+				{% assign poprzedni = indicators.indicator_id %}
+				{% else %}
+				<a class="left carousel-control" href="{{ site.baseurl }}/{{ language_v1 }}/{{ rodzaj }}{{ poprzedni | replace: ".", "-" }}/" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left-indicators"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+				{% assign licznik_nowy = 1 %}
+				{% endif %}
+				{% else %}
+				<a class="right carousel-control" href="{{ site.baseurl }}/{{ language_v1 }}/{{ rodzaj }}{{ indicators.indicator_id | replace: ".", "-" }}/" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right-indicators"></span>
+				<span class="sr-only">Next</span>
+				</a>
+				{% assign licznik_nowy = 0 %}
+				{% endif %}
+          {% endfor %}
+{% endif %}
+
+{% if language_v1 == 'pl' %}
+		  {% assign licznik_nowy = 0 %}
+		  {% for indicators in sdg_indicators_v1 %}
+				{% if licznik_nowy == 0 %}
+				{% if indicators.indicator_id <> page_v1.indicator %}
+				{% assign poprzedni = indicators.indicator_id %}
+				{% else %}
+				<a class="left carousel-control" href="{{ site.baseurl }}{{ poprzedni | replace: ".", "-" }}/" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left-indicators"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+				{% assign licznik_nowy = 1 %}
+				{% endif %}
+				{% else %}
+				<a class="right carousel-control" href="{{ site.baseurl }}{{ indicators.indicator_id | replace: ".", "-" }}/" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right-indicators"></span>
+				<span class="sr-only">Next</span>
+				</a>
+				{% assign licznik_nowy = 0 %}
+				{% endif %}
+          {% endfor %}
+{% endif %}
+
+</div>

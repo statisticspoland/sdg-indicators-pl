@@ -1,0 +1,117 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Polish Reporting Platform -  indicators for the Sustainable Development Goals
+description: Statistics Poland
+baseurl: "https://sdg.gov.pl" # the subpath of your site, e.g. /blog
+url: ""
+data_dir: data
+
+#Github Repo
+repo_name: sdg-indicators-pl
+branch: gh-pages
+org_name: Statistics Poland
+
+# Build settings
+markdown: kramdown
+
+# Pages
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  indicators:
+    output: true
+  goals:
+    output: true
+  translations:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      lang: pl
+  -
+    scope:
+      layout: "indicator"
+    values:
+      # This value corresponds to a file in _includes/indicator_data_source/.
+      indicator_data_source: local_csv
+
+analytics:
+  ga_prod: ''
+
+ckan_endpoint:
+
+# Prose configuration
+prose:
+  ignore: ['/assets', '/_includes', '/_layouts', '/scripts', '/sass' ]
+  metadata:
+    _indicators:
+      - name: "nazwa_wskaznika"
+        field:
+            element: text
+            label: "Nazwa wskaźnika"
+            label2: "Name of the indicator"
+            scope: global
+      - name: "cel"
+        field:
+            element: text
+            label: "Cel Zrównoważonego Rozwoju"
+            label2: "Sustainable Development Goal"
+            scope: global
+      - name: "zadanie"
+        field:
+            element: textarea
+            label: "Zadanie"
+            label2: "Target"
+            scope: global
+      - name: "definicja"
+        field:
+            element: textarea
+            label: "Definicja wskaźnika"
+            label2: "Definition"
+            scope: global
+      - name: "jednostka_prezentacji"
+        field:
+            element: text
+            label: "Jednostka prezentacji"
+            label2: "Unit"
+            scope: global
+      - name: "dostepne_wymiary"
+        field:
+            element: textarea
+            label: "Dostępne wymiary"
+            label2: "Available dimensions"
+            scope: global
+      - name: "wyjasnienia_metodologiczne"
+        field:
+            element: textarea
+            label: "Wyjaśnienia metodologiczne"
+            label2: "Methodological explanations"
+            scope: global
+      - name: "zrodlo_danych"
+        field:
+            element: text
+            label: "Źrodło danych"
+            label2: "Source of data"
+            scope: global
+      - name: "czestotliwosc_dostępnosc_danych"
+        field:
+            element: textarea
+            label: "Częstotliwość i dostępność danych"
+            label2: "Data availability"
+            scope: global
+      - name: "uwagi"
+        field:
+            element: textarea
+            label: "Uwagi"
+            label2: "Notes"
+            scope: global

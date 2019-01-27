@@ -1,0 +1,120 @@
+{% assign id = page.indicator | slugify %}
+{% assign unit_label = page.variable_unit_label %}
+
+<div id="linechart-{{ id }}" class="ct-chart ct-major-eleventh"></div>
+<script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-legend.js"></script>
+<script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-axistitle.js"></script>
+<script>
+(function () {
+  var container = '#linechart-{{ id }}'
+  var labels = {{ include.labels | jsonify }}
+  var licznik={{ include.licznik }}
+  var calosc={{ include.row1 | jsonify }}
+  var jez= '{{ include.content2 }}'
+  var legen={{ include.legenda | jsonify }}
+
+  if({{ precyzja }}=='0'){
+    var precyz=0;
+  }else{
+    var precyz=parseInt({{ precyzja }}) || 2
+  }
+
+  legenda=[]
+  for (j=0;j<legen.length;j++){
+    legenda.push(legen[j].replace(/[_]/g, ''))
+  }
+
+var calosc_liczby =calosc.map(Number)
+var lower = Math.min.apply(Math,calosc_liczby);
+if (lower>0){
+  lower=0;
+}
+
+var b = [[]];
+seria=[]
+for (i=1;i<licznik+1;i++){
+  b[i] = calosc.splice(0,labels.length);
+  seria.push(b[i])
+}
+
+  var chartData = {
+    labels: labels,
+    series: seria
+  }
+
+  var chartOpts = {
+    showArea: false,
+    showLine: false,
+    scaleMinSpace: 30,
+    low:lower,
+    chartPadding: {
+        left: 40
+    },
+    axisY: {
+      {% if page.graph_negative != true %}
+      offset: 50,
+      {% endif %}
+      onlyInteger: false,
+
+      {% if precyzja != 0 %}
+      labelInterpolationFnc: function (value) {
+        // do whatever math operation you want here
+        if (jez=='en'){
+          return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(",", ".") + '{{ unit_label }}';
+        }else{
+          return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(".", ",") + '{{ unit_label }}';
+        }
+
+      }
+      {% endif %}
+    },
+    axisX: {
+      showGrid: false,
+      labelInterpolationFnc: function (value) {
+        return value.toString()
+      }
+    },
+    lineSmooth: Chartist.Interpolation.none({
+      fillHoles: true,
+    }),
+    plugins: [
+      Chartist.plugins.tooltip({
+        class: 'chartist-tooltip',
+        tooltipFnc: function(_, value) {
+          if (jez=='en'){
+            return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(",", ".") + '{{ unit_label }}';
+          }else{
+            return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(".", ",") + '{{ unit_label }}';
+          }
+        }
+      }),
+      Chartist.plugins.ctAccessibility({
+        caption: '{{ row.Indicator }}',
+        seriesHeader: 'year',
+        summary: '{{ row.description }}',
+        valueTransform: Chartist.noop
+      }),
+      Chartist.plugins.legend({
+          legendNames: legenda,
+          position: document.querySelector('div#Legenda')
+      }),
+      Chartist.plugins.ctAxisTitle({
+      axisX: {},
+      axisY: {
+        axisTitle: '{{jednostka}}',
+        axisClass: 'ct-axis-title',
+        offset: {
+          x: 0,
+          y: 0
+        },
+        textAnchor: 'middle',
+        flipTitle: false
+      }
+    })
+    ],
+  }
+  new Chartist.Line(container, chartData, chartOpts)
+})()
+
+
+</script>

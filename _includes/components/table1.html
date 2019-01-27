@@ -1,0 +1,80 @@
+{% assign id = page.indicator | slugify %}
+<div id="content" align="center" style="overflow-x: auto; width: 100%; text-align: center; padding: 1px;"></div>
+
+<script>
+
+$( document ).ready(function() {
+var jez='{{include.content2}}'
+var DATA = {{include.content1 | jsonify}}
+var naglowek={{include.content | jsonify}}
+
+
+
+if (jez=='pl'){
+  rokk='Wymiar'
+}else{
+  rokk='Dimension'
+}
+
+
+function buildTable(data) {
+    var table = document.createElement("table");
+    table.className="gridtable";
+    var thead = document.createElement("thead");
+    var tbody = document.createElement("tbody");
+    var headRow = document.createElement("tr");
+
+    var th=document.createElement("th");
+    th.appendChild(document.createTextNode(rokk));
+    headRow.appendChild(th);
+
+    DATA.forEach(function(el) {
+      var th=document.createElement("th");
+      th.appendChild(document.createTextNode(el["year"]));
+      headRow.appendChild(th);
+    });
+    thead.appendChild(headRow);
+    table.appendChild(thead);
+
+
+    naglowek.forEach(function(o,index) {
+      var tr=document.createElement("tr");
+      tr.setAttribute("id", "row-"+index);
+      var td = document.createElement("td");
+      o1=o.replace(/[_]/g, '')
+      td.appendChild(document.createTextNode(o1));
+      tr.appendChild(td);
+      DATA.forEach(function(el) {
+        var td = document.createElement("td");
+        if (el[o]!=null){
+
+          if (jez=='pl'){
+            el[o]=el[o].replace(".",",");
+          }else{
+            el[o]=el[o].replace(",",".");
+          }
+        }else{
+          el[o]='•'
+        }
+        td.appendChild(document.createTextNode(el[o]));
+        td.align="center";
+        tr.appendChild(td);
+        if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '2-5-1-b' || '{{id}}' == '9-1-2'){
+            tr.style.display='table-row';
+        }else{
+          if (index>0){
+            tr.style.display='none';
+          }
+        }
+
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+
+    return table;
+}
+
+document.getElementById("content").appendChild(buildTable(DATA));
+});
+</script>

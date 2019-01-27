@@ -1,0 +1,84 @@
+{% include head.html %}
+
+{% include header.html %}
+
+{% assign t = site.translations | where:"translation_id", "frontpage" | first %}
+{% assign t = t[page.lang] %}
+
+{% if page.url contains '/statistics_nat/' %}
+{% assign ktore = site.data.krajowe %}
+{% else %}
+{% assign ktore = site.data.globalne %}
+{% endif %}
+
+<div id="main" class="main-content" role="main">
+
+  <a id="main-content" tabindex="-1"></a>
+  {% if page.url contains '/statistics_nat/' %}
+    <section class="pl-banner-nat">
+		{% elsif page.url contains '/'%}
+		<section class="pl-banner-glob">
+		{% else %}
+		<section class="pl-banner">
+	{% endif %}
+    <div class="pl-grid">
+      <div class="pl-banner-content">
+                        <h1>
+                          {% if page.url contains '/statistics_nat/' %}
+                            {{ t.main-heading2 }}
+                          {% else %}
+                            {{ t.main-heading }}
+                          {% endif %}
+                        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="usa-section">
+    <div class="pl-grid">
+      <div class="usa-font-lead intro-paragraph">
+        {{ t.intro-text }}
+      </div>
+
+
+      <section class="goals-list">
+        {% if page.lang == 'pl' %}
+        {% assign sdg_goals = ktore.sdg_goals %}
+        {% else %}
+        {% assign sdg_goals = ktore[page.lang].sdg_goals %}
+        {% endif %}
+
+        {% for goals in sdg_goals %}
+
+        {% assign img_path = goals.goal | plus:0 %}
+
+        {% if img_path < 10 %} {% assign img_path=0 %} {% else %} {% assign img_path='' %} {% endif %} {% if page.url contains '/statistics_nat/' %} <a class="usa-width-one-fourth" href="../statistics_nat/{{ goals.short | slugify }}/">
+          <img class="goal-icon" src="{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ goals.goal }}.png" alt="icon for Goal {{ goals.goal }} - {{ goals.title }}" />
+                      </a>
+          {% else %}
+            {% if page.lang == 'en' %}
+              {% assign language = 'en/' %}
+            {% else %}
+              {% assign language = '' %}
+            {% endif %}
+
+            <a class="usa-width-one-fourth" href="{{ site.baseurl }}/{{ language }}{{ goals.short | slugify }}/">
+                      <img class="goal-icon" src="{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ goals.goal }}.png" alt="icon for Goal {{ goals.goal }} - {{ goals.title }}" />
+                      </a>
+          {% endif %}
+
+          {% endfor %}
+
+          <a class="usa-width-one-fourth" href="{{ site.baseurl }}{{ lang }}/download">
+                      <img class="goal-icon" src="{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png" alt="icon for Global Goals" />
+                      </a>
+		  
+		  
+		  
+
+
+      </section>
+    </div>
+  </section>
+</div>
+{% include footer.html %}

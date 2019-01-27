@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+
+
+
+
+
+
+    <head>
+        <!-- Basic Page Needs
+================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Title and meta description
+================================================== -->
+        
+                <title>
+                
+                   
+                  About SDG
+                </title>
+                
+
+        <meta property="og:title" content="About SDG">
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        <link rel="canonical" href="/"><!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.js"></script>
+  <script src="/assets/js/vendor/respond.js"></script>
+  <script src="/assets/js/vendor/selectivizr-min.js"></script>
+<![endif]-->
+        <!--[if IE]>
+          <script src="/sdg-indicators/assets/js/vendor/custom-event-polyfill.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" type="image/ico" href="/sdg-indicators/assets/img/flags/pl.ico">
+        <link rel="icon" type="image/png" href="/sdg-indicators/assets/img/flags/pl.png">
+        
+
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-01-25-11-39-41-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-01-25-11-39-41-+0100">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="/sdg-indicators/assets/js/accessibility.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-accessibility.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-tooltip.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/jquery-1.11.3.min.js" type="text/javascript"></script>
+        <script src="/sdg-indicators/assets/js/vendor/bootstrap.min.js"></script>
+        <script src="/sdg-indicators/assets/js/uswds.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="/sdg-indicators/assets/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+
+
+    </head>
+    <body>
+
+
+
+
+
+<header role="banner" class="fixed-header page">
+  <!------------------pasek z ikonami i wyszukiwarką------------------------------------------------------------>
+  <div class="usa-disclaimer  development">
+    <div class="pl-grid nag">
+	  <div class="usa-disclaimer-official" style="width: 28%; padding-left: 0px">
+        <span id="krajowa" class="contrast-default">National Reporting Platform - SDG</span>
+      </div>
+    <!------------------ikony na gornym pasku------------------------------------------------------------>
+      <div style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 4px; padding-left: 6px; border-width: thin; float: left;">
+        <a href="http://stat.gov.pl/" target="_blank" title="Strona GUS" class="pos-1" style=" color: #999999;">
+          <img src="/sdg-indicators/assets/img/gus_cz.png" height="25px"></img>
+        </a>
+      </div>
+	  <div class="icons">
+        <a href="https://www.youtube.com/channel/UC0wiQMElFgYszpAoYgTnXtg/featured" target="_blank" title="kanał na YouTube" class="pos-3" style="color: #999999;">
+          <i class="fa fa-youtube-play" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/GlownyUrzadStatystyczny/" target="_blank" title="profil GUS na Facebooku" class="pos-4" style=" color: #999999;">
+          <i class="fa fa-facebook-square" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="http://twitter.com/GUS_STAT" target="_blank" title="profil GUS na Twitterze" class="pos-5" style=" color: #999999;">
+          <i class="fa fa-twitter" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="https://www.linkedin.com/company/532930" target="_blank" title="profil GUS na LinkedIn" class="pos-6" style=" ">
+          <i class="fa fa-linkedin-square" style="font-size:20px;color: #999999;"></i>
+        </a>
+      </div>
+    <!------------------kontrast na gornym pasku------------------------------------------------------------------------------------->
+      <div class="kontrast" style="border-right-style: solid; float: left; height: 35px;  border-color: #ddd;  padding: 4px 8px;;border-width: thin;">
+      </div>
+    <!------------------flaga z jezykami na gornym pasku------------------------------------------------------------------------------------->
+      <div class="language-toggle"style="border-right-style: solid;border-color: #ddd;height: 35px;padding: 6px;border-width: thin;">
+        
+          
+          <a class='pull-right lang'  data-lang='pl' href='/sdg-indicators/o_sdg/'>
+            <img src="/sdg-indicators/assets/img/en/flaga.png" height="16px" width="25px">
+          </a>
+        
+      </div>
+    <!------------------duża wyszukiwarka na gornym pasku------------------------------------------------------------------------------------->
+      
+        <a class="wyszukiwarka">
+          <div class ="topnav">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="search-container">
+              <form action="/sdg-indicators/en/search/?search=" style="width: 300px;">
+                <input type="text" placeholder="Search indicator.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </a>
+      
+    <!--------------------wyszukiwarka dla małej wersji-------------------------------------------------------------------------------------------->
+      
+        <div id="wyszukiwarka_small" style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 6px; border-width: thin; float: left;">
+          <a href="/sdg-indicators/en/search/?search=" class="pos-6" style=" ">
+            <i class="fa fa-search" style="font-size:20px;color: #999999;"></i></a>
+        </div>
+      
+    </div> <!--zamykajacy do pl-grid nag-->
+  </div> <!--zamykajacy do usa-disclaimer-->
+
+
+<!--------------------menu małe-------------------------------------------------------------------------------------------------->
+  <!--jesli nie strona z intro-->
+    <a href="/sdg-indicators/en/" class="logo-home-mobile"><h1></h1></a>
+    <nav class="navbar navbar-light light-blue lighten-4">
+      <!--------------------menu jako przycisk-------------------------------------------------------------------------------------------------->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+      aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom:0px; margin-top: 0px;background-color:white; padding-bottom: 0;width: 100%; box-shadow: 0 0 3px #ffffff, 0 0 7px #ffffff;">
+        <a class="navbar-brand"><img src="/sdg-indicators/assets/img/en/logo_GUS_mobile.png" style="max-height: 100%" /></a>
+        <i class="fa fa-bars" style="color:gray;padding: 15px;float: right;"></i>
+      </button>
+      <!--------------------menu zakładki-------------------------------------------------------------------------------------------------->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto" id="hamburger">
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/o_sdg" style="text-decoration: none;color: #000;width: 100%">About SDG</a>
+          </li>
+		  <li class="nav-item small" style="pointer-events: none;">
+            <a class="nav-link" style="color: #000;">PL Statistics </a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">Global indicators</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/statistics_nat" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">National indicators</a>
+          </li>
+          <li class="nav-item small" style="pointer-events: none;">
+            <a class="nav-link" style="color: #000;">Reporting Status</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/statistics_glob/status" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">Global indicators</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/statistics_nat/status" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">National indicators</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/guide" style="text-decoration: none;color: #000;width: 100%">Guide</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="/sdg-indicators/en/faqs" style="text-decoration: none;color: #000;width: 100%">FAQs</a>
+          </li>
+        </ul>
+      </div> <!--zamykający do collapse navbar-collapse-->
+    </nav> <!--zamknięcie menu małego-->
+
+<!--------------------menu duże-------------------------------------------------------------------------------------------------->
+    <nav class="site-navbar nav-collapse pl-grid" style="overflow: visible;height: 80px;">
+      <!--------------------logo-------------------------------------------------------------------------------------------------->
+      
+		
+			<a href="/sdg-indicators/en/" class="logo-home-en"><h1></h1></a>
+		
+      
+      <ul class="usa-unstyled-list">
+        <!--------------------element menu 0-------------------------------------------------------------------------------------------------->
+		<li class="nav-item" style="width: auto"><a href="/sdg-indicators/en/o_sdg" style="margin-right: 15px;
+
+		
+			padding-left: 30px; width: 110px;
+        
+
+		text-align: left">About SDG</a></li>
+		<!--------------------lista rozwijana I-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 220px">
+          <div class="dropdown" style="width: 150px; text-align:center">
+            <a>
+              <div class="dropbtn" style="padding-left: 15px;">PL Statistics
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+             <div class="dropdown-content" style="margin-right: 15px;">
+              <a class="pod" href="/sdg-indicators/en/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">Global indicators</a>
+              <a class="pod" href="/sdg-indicators/en/statistics_nat" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">National indicators</a>
+            </div>
+          </div>
+        </li>
+        <!--------------------lista rozwijana II-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 220px">
+          <div class="dropdown" style="width: 158px; text-align:left">
+            <a>
+              <div class="dropbtn">Reporting Status
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+            <div class="dropdown-content" style="margin-right: 15px;">
+               <a class="pod" href="/sdg-indicators/en/statistics_glob/status" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">Global indicators</a>
+              <a class="pod" href="/sdg-indicators/en/statistics_nat/status" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px; text-align: center">National indicators</a>
+            </div>
+          </div>
+        </li>
+        <!--------------------element menu III-------------------------------------------------------------------------------------------------->
+        <li class="nav-item"><a href="/sdg-indicators/en/guide" style="margin-left: 
+		
+			40px;
+		
+		">Guide</a></li>
+        <!--------------------element menu IV-------------------------------------------------------------------------------------------------->
+        <li class="nav-item" style="width: 70px"><a href="/sdg-indicators/en/faqs">FAQs</a></li>
+      </ul>
+    </nav>
+   <!--zakończenie page.layout != 'splash'-->
+
+
+
+</header>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-toggle').dropdown()
+});
+var switcher = new accessibilitySwitcher('en');
+$(".high").attr("src", '/sdg-indicators/assets/img/high.png');
+$(".default").attr("src", '/sdg-indicators/assets/img/default.png');
+
+(function() {
+	var CookieToolkit = function( text, acceptText ) {
+		this.text = text;
+		this.acceptText = acceptText;
+		this.element = null;
+		this.init();
+	};
+
+	CookieToolkit.prototype = {
+		init: function() {
+			this.create();
+			this.load();
+			this.actions();
+		},
+		load: function() {
+			if( localStorage.getItem( "cookie-toolkit-accepted" ) === null ) {
+				this._show();
+			}
+		},
+		actions: function() {
+			var accept = document.querySelector( "#cookie-toolkit-accept" ),
+				self = this;
+
+				accept.addEventListener( "click", function( e ) {
+					e.preventDefault();
+					localStorage.setItem( "cookie-toolkit-accepted", "yes" );
+					self._hide();
+				}, false);
+
+		},
+		create: function() {
+			var element = document.createElement( "div" );
+			this.element = element;
+			var html = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div>";
+      element.id = "cookie-toolkit";
+			html += "<div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div>";
+			html += "</div>";
+      element.innerHTML = html;
+      var headers = document.querySelector(".usa-disclaimer.development");
+			headers.after( element );
+
+		},
+		_show: function() {
+      var self = this;
+			self.element.style.display = "block";
+			self.element.style.paddingBottom=".5rem";
+			self.element.style.paddingTop=".5rem";
+			setTimeout(function() {
+				self.element.className = "visible";
+			}, 500);
+    },
+		_hide: function() {
+      var self = this;
+			self.element.className = "";
+			self.element.style.display = "none";
+    }
+	};
+
+	document.addEventListener( "DOMContentLoaded", function() {
+    var jez='en'
+    if (jez=='pl'){
+      var toolkit = new CookieToolkit( "Strona wykorzystuje pliki cookies. Korzystanie z witryny bez zmiany ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Zawsze możesz zmienić te ustawienia.", "OK" );
+    }else{
+      var toolkit = new CookieToolkit( "We use cookies to help our site work, to understand how it is used, and to tailor the adverts presented on our site. By clicking “OK”, you agree to us doing so. You can read more in our cookie notice. ", "OK" );
+    }
+	});
+})();
+</script>
+
+
+        <div id="main" class="main-content" role="main">
+
+            <a id="main-content" tabindex="-1"></a>
+            <section class="pl-banner">
+                <div class="pl-grid">
+
+                    <div class="pl-banner-content">
+                        <h1>
+                            About SDG
+                        </h1>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="pl-grid">
+                <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#sdg" aria-controls="data" role="tab" data-toggle="tab">ON THE 2030 AGENDA AND SDGs</a></li>
+            <li role="presentation"><a href="#ini" aria-controls="data" role="tab" data-toggle="tab">SUSTAINABLE DEVELOPMENT IN EU AND OECD</a></li>
+            <li role="presentation"><a href="#stat" aria-controls="metadata" role="tab" data-toggle="tab">STATYSTYKA PUBLICZNA</a></li>
+            <li role="presentation"><a href="#publ" aria-controls="metadata" role="tab" data-toggle="tab">PUBLICATIONS</a></li>
+
+</ul>
+
+<div class="tab-content">
+
+  <div role="tabpanel" class="tab-pane active" id="sdg">
+  <h4><b>ON THE 2030 AGENDA AND SDGs (SUSTAINABLE DEVELOPMENT GOALS)</b></h4>
+
+  <p><a target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/70/1&amp;Lang=E">The 2030 Agenda for Sustainable Development</a>, adopted in September 2015, is a comprehensive plan of action for the world in a 2030 perspective, established by UN via negotiations amongst its member states. The adoption of the 2030 Agenda is an unprecedented event in the history of mankind. All 193 UN member states committed themselves to working for the realisation of  <a target="_blank" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">17 Sustainable Development Goals – SDGs</a>. The Goals are focused on ensuring decent lives, peace and economic progress for all people in the world while taking care of the natural environment and combating climate change.</p>
+  <p>The 2030 Agenda is focused on five areas of critical importance for humanity and the planet (so-called 5Ps):</p>
+
+  <p><b>People</b> are at the centre of the 2030 Agenda. Eradication of poverty and hunger amongst them, fulfilment of  their individual potential in dignity and equality as well as life in healthy environment are major challenges and prerequisites of sustainable development.</p>
+
+  <p><b>Planet</b> should serve the needs of present and future generations. The rational use of natural resources, sustainable consumption and production, inclusive economic growth as well as climate action will help protect the planet from degradation and ensure intra- and intergenerational solidarity.</p>
+
+  <p><b>Prosperity</b> should be provided to everyone through common improvement of life quality. Universal access to quality education, medical service as well as infrastructure in connection with environment-friendly economic and technological progress will enable the enjoyment of prosperous and fulfilling life.</p>
+
+  <p><b>Peace</b> remains on guard of the 2030 Agenda realisation. The achievement of the Goals is possible only in societies free from violence and fear, based on tolerance and inclusion.</p>
+
+  <p><b>Partnership</b> entails the necessity of mobilization of many environments. Global cooperation among all the countries, co-action of the government, business and civil society, in the spirit of solidarity with the poorest and most vulnerable, will enable the realisation of the ambitious vision of the 2030 Agenda.</p>
+
+  </div>
+
+  <div role="tabpanel" class="tab-pane" id="ini">
+  <h4><b>Sustainable development in EU and OECD</b></h4>
+
+  <p><b>EU’s engagement with sustainable development  </b></p>
+
+  <p>The course of action for sustainable development in EU was outlined for the first time in the EU Sustainable Development Strategy (EU SDS), adopted in 2001 and revised in 2006. The EU SDS goals were monitored by a relevant set of sustainable development indicators (SDIs).</p>
+  <p>Joining the global initiative of the 2030 Agenda, the European Commission issued the communication ‘Next steps for a sustainable European future’ in 2016. The document declared integration of SDGs in EU policy framework and regular reporting of the progress in SDGs implementation. Taking into account that EU development priorities were determined in i.a.  Europe 2020 Strategy, 10 Priorities of the European Commission and Circular Economy Package, a special set of <a target="_blank" href="https://ec.europa.eu/eurostat/web/sdi/main-tables">100 indicators</a> was adopted for monitoring the Sustainable Development Goals, different from the UN set of SDG indicators and consistent with challenges faced by EU member states. The set fully relies on the statistical resources of the European Statistical System.</p>
+
+  <p><b>OECD’s engagement with sustainable development </b></p>
+  <p>The Organisation for Economic Co-operation and Development also takes an active part in the sustainable development initiatives, including the 2030 Agenda realisation. OECD supports its member states in SDGs implementation through i.a. assistance with domestic resource mobilisation as well as  policy review and its adjustment to specific Goals. Among the most important OECD’s initiatives are Better Life Initiative as well as Green growth and Sustainable development, both adopted in 2011. </p>
+
+  <p><b><a target="_blank" href="http://www.oecd.org/statistics/better-life-initiative.htm">Better Life Initiative </a></b>– OECD’s project promoting better policies in line with the phrase ‘Better policies for better lives.’ The initiative engages the political world into actions aimed at fostering well-being, and enhances social engagement. Development of Better Life Index, enabling a comprehensive view of  societal well-being issue, was part of the project. Results of the latest research on life quality are presented in successive editions of the thematic publication How’s life? Measuring Well-being.</p>
+
+  <p><b><a target="_blank" href="http://www.oecd.org/greengrowth/">Green growth and Sustainable development </a></b>– actions towards policy enhancement for economic growth, while preserving natural environment assets and developing environment-friendly infrastructure. OECD’s activity in the area of green growth is based on the Green Growth Strategy, adopted in 2011. Progress made by individual countries in implementing economic and environmental priorities, outlined in the Strategy, is presented in the successive editions of the publication Towards Green Growth? Tracking Progress.</p>
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="stat">
+  <h4><b>STATYSTYKA PUBLICZNA NA RZECZ SDGs</b></h4>
+  <p>W Polsce stosowany jest model podziału odpowiedzialności za implementację celów zrównoważonego rozwoju, zgodny z zalecanym w Agendzie. Na szczeblu politycznym opracowywane i wyznaczane są programy i działania mające zapewnić postęp w osiąganiu celów. Za ich monitorowanie odpowiedzialna jest natomiast statystyka publiczna. W Polsce działania w tym zakresie koordynowane są przez Główny Urząd Statystyczny. GUS jest odpowiedzialny m.in. za raportowanie wskaźników, zapewniając rzetelne i wiarygodne dane, zarówno w wymiarze krajowym, jak i globalnym. Wskaźniki statystyczne pozwalają na diagnozę sytuacji w poszczególnych obszarach życia społeczno-gospodarczego, ocenę zachodzących zmian, a co za tym idzie podejmowanie odpowiednich działań, zmierzających do poprawy sytuacji. Monitorowaniu celów zrównoważonego rozwoju oraz raportowaniu danych na potrzeby globalne służy niniejsza, udostępniona przez GUS, platforma raportująca SDG.
+  Polskie podejście do monitorowania celów SDGs zakłada prezentację dwóch osobnych zestawów wskaźników, z których jeden prezentuje przyjęte przez Komisję Statystyczną Narodów Zjednoczonych wskaźniki globalne z wartościami dla Polski; drugi zaś – krajowy zestaw wskaźników, uwzględniający priorytety i specyfikę Polski.</p>
+
+  <p>Skuteczna realizacja Agendy 2030 wymaga partnerstwa i współpracy pomiędzy rządami, sektorem prywatnym i społeczeństwem obywatelskim. O znaczeniu partnerstwa świadczy fakt, że poświęcono mu jeden z celów Agendy (Cel 17. Partnerstwa na rzecz Celów). Istotnym ogniwem uwzględnionym w procesie realizacji Celów jest statystyka publiczna, która współpracuje z wieloma podmiotami krajowymi (w szczególności z resortami, będącymi koordynatorami poszczególnych celów). Pozwala to na zapewnienie spójności prowadzonych działań oraz wspieranie efektywnej realizacji zadań związanych z wdrażaniem oraz monitorowaniem celów zrównoważonego rozwoju.</p>
+
+  <p>Polska aktywnie angażuje się również w działania podejmowane na arenie międzynarodowej, zapewniając wymianę doświadczeń i dobrych praktyk oraz wzmacniając swój wizerunek na świecie. Bogate doświadczenie Polski w monitorowaniu zrównoważonego rozwoju oraz wykazywana aktywność w rozwijaniu narzędzi do monitorowania celów zrównoważonego rozwoju (np. krajowej platformy SDG) zostało docenione m.in. na poziomie Europejskiej Komisji Gospodarczej (UNECE). Działania tej Komisji są zorientowane na wsparcie krajów regionu w planowaniu i organizowaniu procesu monitorowania SDGs oraz raportowania danych dla potrzeb ONZ.</p>
+
+  <p>Główny Urząd Statystyczny, jako koordynator procesu związanego z monitorowaniem SDGs, zarówno angażuje się w aktywności międzynarodowe, związane z zapewnieniem monitorowania Agendy w wymiarze globalnym, jak i odpowiada za działania statystyki na szczeblu krajowym, wynikające z wrażania priorytetów rozwojowych dla Polski.</p>
+
+  <p>W 2018 r. Polska po raz pierwszy zaprezentowała efekty z wdrażania Celów SDGs podczas organizowanego corocznie dobrowolnego przeglądu krajów (<em>Voluntary National Review – VNR</em>) na Forum Politycznym Wysokiego Szczebla ONZ. Działania związane z przygotowaniem Polski do tego przeglądu koordynowane były przez Ministerstwo Przedsiębiorczości i Technologii. Główny Urząd Statystyczny, odpowiedzialny za kwestie związane z monitorowaniem priorytetów rozwojowych, był aktywnie włączany w ten proces, a efektem tych działań były m.in. </p>
+  <p>•	opracowanie zestawu wskaźników monitorujących priorytety zrównoważonego rozwoju dla Polski zdefiniowane na szczeblu politycznym;</p>
+  <p>•	przygotowanie Aneksu statystycznego do Raportu pn. <em>“Achievement of Sustainable Development Goals in Poland. 2018 Report”</em>, prezentującego zestaw wskaźników monitorujących krajowe priorytety rozwojowe;</p>
+  <p>•	opracowanie anglojęzycznej publikację pt. <em>“A picture of Poland. Statistics for SDGs”</em>, w której dane statystyczne wykorzystano do przybliżenia czytelnikom z innych krajów obrazu Polski oraz roli, jaką ma ona do spełnienia w osiąganiu celów Agendy 2030.</p>
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="publ">
+  <h4><b>PUBLICATIONS</b></h4>
+
+  <div class="image-wrapper">
+      <a target="_blank" href="https://stat.gov.pl/en/topics/other-studies/other-aggregated-studies/a-picture-of-poland-statistics-for-sdgs,20,1.html"><img src="/sdg-indicators/assets/img/publikacje/1_a_picture_of_poland.png" align="center" alt="GUS" border="0" /></a>
+  </div>
+  <p><b>A picture of Poland. Statistics for SDGs</b></p>
+  <p>In 2015, Poland became one of 193 countries that signed the UN Resolution on the 2030 Agenda for Sustainable Development. In July 2018, Poland is presenting for the first time its advancement towards reaching the Sustainable Development Goals (<em>SDGs</em>) under Voluntary National Review (VNR) at the UN High Level Political Forum. On this occasion, Statistics Poland, as the coordinator of the SDGs monitoring process in Poland, has prepared the publication <em>A picture of Poland. Statistics for SDGs</em>, , which aims to introduce foreign readers to a picture of our country and the role that Poland has to fulfill in achieving the Goals of the 2030 Agenda.</p>
+  <p>The information set out in the publication was inspired by the development priorities for the country, indicated in the document <a target="_blank" href="https://www.mpit.gov.pl/media/58469/Polska_VNR_20180615.pdf"> Implementation of Sustainable Development Goals in Poland. Report 2018</a>, prepared for this year's VNR by the Ministry of Entrepreneurship and Technology.
+Publication, as it is addressed mainly to foreign recipients, is available only in the English version.</p>
+
+  <hr />
+  <div class="image-wrapper">
+      <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html"><img src="/sdg-indicators/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0" /></a>
+  </div>
+  <p><b>On the sustainable development’s path</b></p>
+  <p>Publication has been prepared on the occasion of setting the sustainable development goals by UN, included in the 2030 Agenda. It is addressed to everyone who wants to learn and understand what an idea of sustainable development is about and what connects it with statistics.</p>
+
+<p>Publication is available only in the Polish version.
+
+  <br /><br /><br /><br /><br /><br /><br /></p>
+
+
+  <hr />
+  <div class="image-wrapper">
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2018/"><img src="/sdg-indicators/assets/img/publikacje/3_sdgreport_2018.png" align="center" alt="GUS" border="0" /></a>
+  </div>
+  <p><b>The Sustainable Development Goals Report 2018</b></p>
+
+  <p>The report reviews progress in the third year of implementation of the 2030 Agenda for Sustainable Development. This overview presents highlights of progress and remaining gaps for all 17 Sustainable Development Goals, based on the latest available data, and examines some of the interconnections across Goals and targets.</p>
+
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2017/">The Sustainable Development Goals Report 2017</a></p>
+  <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2016/">The Sustainable Development Goals Report 2016</a></p>
+
+  <hr />
+
+  <hr />
+  <div class="image-wrapper">
+      <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656"><img src="/sdg-indicators/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0" /></a>
+  </div>
+  <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU contex</b></p>
+
+  <p>The publication, issued in 2017 by Eurostat, is a monitoring report on the progress towards achieving the Sustainable Development Goals in an EU context. This report describes progress made using a set of 100 indicators that are structured along the 17 SDGs. Two periods are considered: the short term, accounting for progress over the past five years, and the long term, looking at the trends over the last 15 years.
+  <br /><br /><br /></p>
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-04-17-780?inheritRedirect=true&amp;redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Monitoring report on progress towards the SDGs in an EU context</a></p>  
+
+
+  <hr />
+  <div class="image-wrapper">
+      <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656"><img src="/sdg-indicators/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0" /></a>
+  </div>
+  <p><b>Sustainable development In the European Union – Overview of progress towards the SDGs In an EU context</b></p>
+
+  <p>The brochure is a concise version of Eurostat’s publication on the realisation of SDGs in the European Union: <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU contex</a>. Progress made in the implementation of the 2030 Agenda in EU is assessed over the past five years on the basis of EU SDG indicator set, and presented in a graphic form. More detailed analysis of the 2030 Agenda realisation in EU is available in the full Eurostat SDG publication.
+
+  <br /><br /><br /></p>
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&amp;redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development In the European Union – Overview of progress towards the SDGs In an EU context</a></p>
+
+  <hr />
+  <div class="image-wrapper">
+      <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-02-16-996"><img src="/sdg-indicators/assets/img/publikacje/6_statistical_glance.png" align="center" alt="GUS" border="0" /></a>
+  </div>
+  <p><b>Sustainable development in the European Union — A statistical glance from the viewpoint of the UN Sustainable Development Goals</b></p>
+
+  <p>This publication builds on Eurostat’s long experience in monitoring the EU Sustainable Development Strategy. It provides a statistical glance at the current situation in the EU and its Member States, but now from the viewpoint of the SDGs. The publication is based on a limited number of indicators which are relevant for the EU and aims to capture the broader ambition of each SDG. In total, 51 indicators are presented, mainly produced and disseminated by Eurostat. For each indicator the publication presents data for the most recent available year for the EU-28 and the EU Member States and trends (in general from 2000) for the EU-28.<br /><br /></p>
+
+  <hr />
+  <div class="image-wrapper">
+      <a target="_blank" href="http://www.oecd.org/environment/towards-green-growth-9789264234437-en.htm"><img src="/sdg-indicators/assets/img/publikacje/7_towards_green_growth.png" align="center" alt="GUS" border="0" /></a>
+  </div>
+  <p><b>Towards Green Growth? Tracking Progress</b></p>
+
+  <p>The Green Growth Strategy adopted in 2011 by OECD provides guidance on how to achieve economic growth and development, while preventing costly environmental damage and inefficient resource use. The report Towards Green Growth? Tracking Progress attempts to evaluate progress that countries have made since the adoption of the Strategy in aligning economic and environmental priorities.</p>
+
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" href="http://www.oecd.org/env/towards-green-growth-9789264111318-en.htm">Towards Green Growth</a></p>  
+
+
+  <hr />
+  <div class="image-wrapper">
+      <a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en"><img src="/sdg-indicators/assets/img/publikacje/8_hows_life.png" align="center" alt="GUS" border="0" /></a>
+  </div>
+  <p><b>How’s Life? 2015. Measuring Well-being</b></p>
+
+
+  <p>The publication <em>How's Life?</em> describes the key elements that shape people’s well-being in OECD and partner countries. It includes a wide variety of statistics, capturing both material well-being (such as income, jobs, housing), as well as other aspects of quality of people’s life (such as health, education, work-life balance, environment). The report, in addition to the results of the latest research, also shows the changes that have occurred over time and how the distribution of well-being among different groups of the population has changed.</p>
+
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2013_9789264201392-en">How’s Life? 2013. Measuring Well-being</a></p>  
+  <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_9789264121164-en">How’s Life? 2011. Measuring Well-being</a></p>  
+
+  </div>
+
+
+</div>
+<hr />
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+<footer class="usa-footer usa-footer-big usa-sans" role="contentinfo">
+    <div class="pl-grid usa-footer-return-to-top">
+      <a href="#"  style="font-size: 15px">Return to top</a>
+    </div>
+
+    <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
+      <div class="pl-grid">
+        <div class="usa-footer-contact-links usa-width-one-half" style="margin-right: 145px">
+          <address>
+            <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
+            <p> <b>About</b><br />Welcome to the GUS website dedicated to Agenda 2030 and Sustainable Development Goals </p>
+
+          </address>
+        </div>
+		<div style="display: inline-table">
+        <div class="usa-footer-logo usa-width-one-half" style="width: 65px; margin-right: 15px">
+          <img src="/sdg-indicators/assets/img/gus_cz_2.png" style="max-height: 100%; margin-right: 15px; margin-top: 0px; margin-left: ">
+		</div>
+		<div class="usa-footer-logo usa-width-one-half" style="width: 170px; margin-right: 15px">
+            <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
+			<p class="contact"><b>Statistics Poland</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br /></p>
+        </div>
+		<div class="usa-footer-logo usa-width-one-half" style="width: 225px">
+            <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
+			<p class="contact">Office Hours: 8.15–16.15<br /> Telephone Exchange: +48 22 608 30 00<br /> kancelariaogolnaGUS@stat.gov.pl<br /></p>
+        </div>
+		</div>
+      </div>
+    </div>
+  </footer>
+    </body>
+</html>
+

@@ -1,0 +1,172 @@
+{% include head.html %}
+
+{% include header.html %}
+
+{% assign t = site.translations | where:"translation_id", "goal" | first %}
+{% assign t = t[page.lang] %}
+
+
+{% if page.url contains '/statistics_nat/' %}
+{% assign ktore = site.data.krajowe %}
+{% else %}
+{% assign ktore = site.data.globalne %}
+{% endif %}
+
+{% assign t_status = site.translations | where:"translation_id", "status" | first %}
+{% assign t_status = t_status[page.lang] %}
+
+{% if page.lang == 'pl' %}
+{% assign sdg_goals = ktore.sdg_goals %}
+{% else %}
+{% assign sdg_goals = ktore[page.lang].sdg_goals %}
+{% endif %}
+
+{% for goals in sdg_goals %}
+
+{% assign page_goal_num = page.sdg_goal | plus:0 %}
+{% assign goals_goal_num = goals.goal | plus:0 %}
+
+{% if page_goal_num == goals_goal_num %}
+
+<div id="main" class="main-content initiative-content">
+
+  <a id="main-content" tabindex="-1"></a>
+  {% if page.url contains '/statistics_nat/' %}
+    <section class="pl-banner-nat">
+		{% elsif page.url contains '/'%}
+		<section class="pl-banner-glob">
+		{% else %}
+		<section class="pl-banner">
+	{% endif %}
+
+
+  	<div class="pl-grid">
+      <div class="pl-banner-content">
+          <h1>
+          {% if page.url contains '/statistics_nat/' %}
+            {% assign rodzaj = '/statistics_nat/' %}
+          {% else %}
+            {% assign rodzaj = '/statistics_glob' %}
+          {% endif %}
+                          {% if page.lang == 'en' %}
+  							                 Goal {{ goals.goal }} - {{ goals.title }}
+  						            {% else %}
+  							                 Cel {{ goals.goal }} - {{ goals.title }}
+  						            {% endif %}
+                      {% endif %}
+                    {% endfor %}
+          </h1>
+        </div>
+      </div>
+    </section>
+
+  <div class="pl-grid initiative-description">
+    {{ content }}
+
+    {% if page.lang == 'pl' %}
+    {% assign sdg_indicators = ktore.sdg_indicator_metadata %}
+    {% else %}
+    {% assign sdg_indicators = ktore[page.lang].sdg_indicator_metadata %}
+    {% endif %}
+
+    {% if page.url contains '/statistics_nat/' %}
+		{% assign rodzaj = '/statistics_nat/' %}
+		{% else %}
+		{% assign rodzaj = '/' %}
+    {% endif %}
+  	{% if page.lang == 'pl' %}
+  	<ol class="breadcrumb">
+  		<li><a href="{{ site.baseurl }}{{rodzaj}}">Strona Główna</a></li>
+  		<li class="active"> / Cel {{ page.sdg_goal }}</li>
+  	</ol>
+  	{% else %}
+  	<ol class="breadcrumb">
+  		<li><a href="{{ site.baseurl }}/{{page.lang}}{{rodzaj}}">Home</a></li>
+  		<li class="active"> / Goal {{ page.sdg_goal }}</li>
+  	</ol>
+  	{% endif %}
+
+
+    <table class="indicator-status-table">
+      <thead>
+        <tr style="padding: 1.5rem; text-align: left; height: 45px;">
+          {% if page.lang == 'pl' %}
+              <th scope="col" style="padding: 7px">Proxy</th>
+              <th scope="col">Status</th>
+              <th scope="col">Opis wskaźnika</th>
+          {% else %}
+            <th scope="col" style="padding: 7px">Proxy</th>
+            <th scope="col">Status</th>
+            <th scope="col">Indicator description</th>
+          {% endif %}
+        </tr>
+      </thead>
+      <tbody>
+
+        {% assign sdg_goal = page.sdg_goal | append:'' %}
+
+        {% for indicator_sort in sdg_indicators %}
+
+        {% if indicator_sort.goal == sdg_goal %}
+
+        {% assign indicator = site.indicators | where:"indicator", indicator_sort.indicator_id %}
+        {% assign indicator = indicator | where:"lang", site.defaults[0].values.lang | first %}
+
+        {% if indicator.un_designated_tier != '3' %}
+        {% assign indicator_status = t_status.danger-text %}
+        {% assign status_label = "danger" %}
+
+        {% if indicator.source_url != nil and indicator.source_url != "" %}
+        {% assign indicator_status = t_status.warning-text %}
+        {% assign status_label = "warning" %}
+
+        {% if indicator.graph != nil and indicator.graph != "" %}
+        {% assign indicator_status = t_status.success-text %}
+        {% assign status_label = "success" %}
+        {% endif %}
+
+        {% endif %}
+        {% else %}
+        {% assign indicator_status = t_status.default-text %}
+        {% assign status_label = "default" %}
+        {% endif %}
+
+        {% if page.lang == site.defaults[0].values.lang %}
+        {% assign indicator_title = indicator.title %}
+        {% else %}
+        {% assign indicator_translate = sdg_indicators | where:"indicator_id", indicator.indicator | first %}
+        {% assign indicator_title = indicator_translate.indicator %}
+        {% endif %}
+
+        <tr>
+          {% if indicator.indicator == "1.5.1" or indicator.indicator == "3.3.5" or indicator.indicator == "4.2.1" or indicator.indicator == "5.2.1" or indicator.indicator == "5.3.1" or indicator.indicator == "5.a.1.a" or indicator.indicator == "5.a.1.b"
+          or indicator.indicator == "7.a.1" or indicator.indicator == "8.3.1" or indicator.indicator == "8.4.1" or indicator.indicator == "8.8.1"
+          or indicator.indicator == "9.3.2" or indicator.indicator == "10.2.1" or indicator.indicator == "11.1.1" or indicator.indicator == "11.5.1"
+          or indicator.indicator == "11.6.1" or indicator.indicator == "11.6.2" or indicator.indicator == "11.a.1"
+          or indicator.indicator == "12.2.1" or indicator.indicator == "12.6.1" or indicator.indicator == "13.1.1"
+          or indicator.indicator == "13.a.1" or indicator.indicator == "15.2.1"
+          or indicator.indicator == "15.7.1" or indicator.indicator == "16.1.2"
+          or indicator.indicator == "16.2.3" or indicator.indicator == "16.3.2"
+          or indicator.indicator == "16.5.1" or indicator.indicator == "16.7.1"   %}
+
+          <td><i class="fa fa-check" style="font-size:20px; padding: 0 15px;"></i></td>
+          <td style="text-align: center; padding: 8px; height: 45px;"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></td>
+          <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator | remove: ".0" }} {{ indicator_title }}</a></td>
+
+          {% else %}
+          <td></td>
+          <td style="text-align: center; padding: 8px; height: 45px;"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></td>
+          <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_title }}</a></td>
+
+          {% endif %}
+        </tr>
+
+        {% endif %}
+
+        {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include footer.html %}

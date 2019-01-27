@@ -1,0 +1,33 @@
+---
+translation_id: header
+pl:
+  site-title: "Polskie statystyki SDG"
+  disclaimer-wip: "Strona w budowie"
+  nav-reporting-status : "Status raportowania"
+  nav-glob : "Wskaźniki dla celów globalnych"
+  nav-nat : "Wskaźniki dla priorytetów krajowych"
+  nav-statistics : "Dane dla Polski"
+  nav-monitoring : "Przewodnik"
+  nav-development : "FAQs"
+  nav-search: "Wyszukaj"
+  nav-about: "O SDG"
+  disclaimer-staging: "Strona do monitorowania wskaźników SDG w Polsce"
+  government-site: "Krajowa Platforma Raportująca - SDG"
+  login: "Zaloguj"
+  logout: "Wyloguj"
+en:
+  site-title: "Polish statistics SDG"
+  disclaimer-wip: "This site is a work in progress"
+  nav-reporting-status : "Reporting Status"
+  nav-glob : "Global indicators"
+  nav-nat : "National indicators"
+  nav-statistics : "PL Statistics"
+  nav-monitoring : "Guide"
+  nav-development : "FAQs"
+  nav-search: "Search"
+  nav-about: "About SDG"
+  disclaimer-staging: "Website for monitoring SDG indicators in Poland"
+  government-site: "National Reporting Platform - SDG"
+  login: "Login"
+  logout: "Logout"
+---
