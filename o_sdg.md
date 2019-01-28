@@ -73,12 +73,24 @@ permalink: /o_sdg/
   <h4><b>PUBLIKACJE</b></h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://stat.gov.pl/en/topics/other-studies/other-aggregated-studies/a-picture-of-poland-statistics-for-sdgs,20,1.html"><img src="{{ site.baseurl }}/assets/img/publikacje/1_a_picture_of_poland.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/a-picture-of-poland-statistics-for-sdgs,33,1.html"><img src="{{ site.baseurl }}/assets/img/publikacje/1_a_picture_of_poland.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>A picture of Poland. Statistics for SDGs</b></p>
   <p>W 2015 r. Polska została jednym z 193 sygnatariuszy Rezolucji ONZ w sprawie Agendy 2030 na rzecz Zrównoważonego Rozwoju. W lipcu 2018 r. po raz pierwszy zaprezentowała swoje postępy we wdrażaniu Celów Zrównoważonego Rozwoju (<em>Sustainable Development Goals – SDGs</em>) podczas krajowych przeglądów na Forum Politycznym Wysokiego Szczebla ONZ. Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował publikację <em>A picture of Poland. Statistics for SDGs</em>, której celem było przybliżenie czytelnikom z innych państw obraz naszego kraju oraz roli, jaką ma do spełnienia Polska w osiąganiu celów Agendy 2030.</p>
   <p>Informacje zawarte w publikacji zostały zainspirowane priorytetami rozwojowymi dla kraju, wskazanymi w dokumencie <a href="https://www.mpit.gov.pl/media/58469/Polska_VNR_20180615.pdf">Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</a>, przygotowanym na przegląd przez Ministerstwo Przedsiębiorczości i Technologii.</p>
   <p>Publikacja, jako wydawnictwo skierowane głównie do odbiorców zagranicznych, dostępne jest wyłącznie w wersji anglojęzycznej.</p>
+
+
+  <hr>
+  <div class="image-wrapper">
+      <a target="_blank" href="https://www.mpit.gov.pl/media/58469/Polska_VNR_20180615.pdf"><img src="{{ site.baseurl }}/assets/img/publikacje/2_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</b></p>
+  <p>Raport został opracowany przez Ministerstwo Przedsiębiorczości i Technologii (koordynatora procesu wdrażania Agendy 2030 w Polsce) na potrzeby przeglądu realizacji przez Polskę Celów Zrównoważonego Rozwoju. W publikacji zostały wskazane dotychczasowe doświadczenia, krajowe priorytety rozwoju Polski oraz krajowe podejście do realizacji poszczególnych SDGs. Raport został uzupełniony aneksem statystycznym, zawierającym listę krajowych wskaźników niezbędnych do mierzenia efektów działań podejmowanych na rzecz realizacji każdego z SDGs.
+Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane corocznie w Nowym Jorku przez Forum Polityczne Wysokiego Szczebla ONZ. W 2018 r. Polska, w 2018 r., prezentowała swoje osiągnięcia po raz pierwszy.
+
+  <br><br><br><br><br><br><br></p>
+
 
   <hr>
   <div class="image-wrapper">
@@ -102,8 +114,6 @@ permalink: /o_sdg/
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2016/">The Sustainable Development Goals Report 2016</a></p>
 
   <hr>
-
-  <hr>
   <div class="image-wrapper">
       <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -121,7 +131,7 @@ permalink: /o_sdg/
   </div>
   <p><b>Sustainable development In the European Union – Overview of progress towards the SDGs In an EU context</b></p>
 
-  <p>Opracowanie stanowi skróconą wersję raportu Eurostatu z realizacji SDGs w Unii Europejskiej pn. <a href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU contex</a>. Postęp we wdrażaniu Agendy 2030 w UE oceniany jest w okresie krótkim na podstawie nowego zestawu wskaźników SDG dla UE i prezentowany w formie graficznej. Szczegółowa analiza realizacji Agendy 2030 w UE dostępna jest w pełnej wersji raportu.
+  <p>Opracowanie stanowi skróconą wersję raportu Eurostatu z realizacji SDGs w Unii Europejskiej pn. <a href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU contex</a>. Postęp we wdrażaniu Agendy 2030 w UE oceniany jest w okresie krótkim na podstawie nowego zestawu wskaźników SDG dla UE i prezentowany w formie graficznej. Szczegółowa analiza realizacji Agendy 2030 w UE dostępna jest w pełnej wersji raportu.
 
   <br><br><br></p>
   <p><b>Archiwum:</b></p>

@@ -10,7 +10,7 @@ pl:
   default-text : "Opracowywanie wskaźników"
   danger-text : "Analiza źródeł"
   warning-text : "Statystyki w przygotowaniu"
-  success-text : "Statystyki opublikowanie"
+  success-text : "Statystyki opublikowane"
   indicators: "Liczba wskaźników:"
 en:
   page-title: "Global Reporting Status"

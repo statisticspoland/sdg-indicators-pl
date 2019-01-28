@@ -91,13 +91,17 @@
       <thead>
         <tr style="padding: 1.5rem; text-align: left; height: 45px;">
           {% if page.lang == 'pl' %}
-              <th scope="col" style="padding: 7px">Proxy</th>
               <th scope="col">Status</th>
               <th scope="col">Opis wskaźnika</th>
+              {% if rodzaj == '/' %}
+                <th scope="col" style="padding: 7px"><a href="{{ site.baseurl }}{{ lang }}/faqs" style="color: black;">Zastępczy</a></th>
+              {% endif %}
           {% else %}
-            <th scope="col" style="padding: 7px">Proxy</th>
             <th scope="col">Status</th>
             <th scope="col">Indicator description</th>
+            {% if rodzaj == '/' %}
+              <th scope="col" style="padding: 7px"><a href="{{ site.baseurl }}{{ lang }}/faqs" style="color: black;">Proxy</a></th>
+            {% endif %}
           {% endif %}
         </tr>
       </thead>
@@ -139,7 +143,7 @@
         {% endif %}
 
         <tr>
-          {% if indicator.indicator == "1.5.1" or indicator.indicator == "3.3.5" or indicator.indicator == "4.2.1" or indicator.indicator == "5.2.1" or indicator.indicator == "5.3.1" or indicator.indicator == "5.a.1.a" or indicator.indicator == "5.a.1.b"
+          {% if indicator.indicator == "1.5.1" or indicator.indicator == "2.a.2" or indicator.indicator == "3.3.5" or indicator.indicator == "4.2.1" or indicator.indicator == "5.2.1" or indicator.indicator == "5.3.1" or indicator.indicator == "5.a.1.a" or indicator.indicator == "5.a.1.b"
           or indicator.indicator == "7.a.1" or indicator.indicator == "8.3.1" or indicator.indicator == "8.4.1" or indicator.indicator == "8.8.1"
           or indicator.indicator == "9.3.2" or indicator.indicator == "10.2.1" or indicator.indicator == "11.1.1" or indicator.indicator == "11.5.1"
           or indicator.indicator == "11.6.1" or indicator.indicator == "11.6.2" or indicator.indicator == "11.a.1"
@@ -149,15 +153,14 @@
           or indicator.indicator == "16.2.3" or indicator.indicator == "16.3.2"
           or indicator.indicator == "16.5.1" or indicator.indicator == "16.7.1"   %}
 
-          <td><i class="fa fa-check" style="font-size:20px; padding: 0 15px;"></i></td>
           <td style="text-align: center; padding: 8px; height: 45px;"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></td>
           <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator | remove: ".0" }} {{ indicator_title }}</a></td>
+          <td><i class="fa fa-check" style="font-size:20px; padding: 0 15px;"></i></td>
 
           {% else %}
-          <td></td>
           <td style="text-align: center; padding: 8px; height: 45px;"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></td>
           <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_title }}</a></td>
-
+          <td></td>
           {% endif %}
         </tr>
 
