@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-01-25-11-39-41-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-01-25-11-39-41-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-01-29-07-25-05-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-01-29-07-25-05-+0100">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -698,7 +698,8 @@ for (i=1;i<licznik+1;i++){
       
       offset: 50,
       
-      onlyInteger: false,
+      
+      onlyInteger: true,
       
     },
     axisX: {
@@ -1424,7 +1425,7 @@ function Zmiana_jednostki2(){
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
       var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(32,40);
+      calosc=calo.splice(24,40);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1446,12 +1447,14 @@ function Zmiana_jednostki2(){
       $('.ct-series-0').css({'display':'none'});
       $('.ct-series-1').css({'display':'none'});
       $('.ct-series-2').css({'display':'none'});
-      $('.ct-series-3').css({'display':'none'});
+      $('.ct-series-3').css({'display':'inline-block'});
       $('.ct-series-4').css({'display':'inline-block'});
+      $('.ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut').css({'stroke':'#453d3f'});
+      $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
       var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,32);
+      calosc=calo.splice(0,24);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1472,7 +1475,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-0').css({'display':'inline-block'});
       $('.ct-series-1').css({'display':'inline-block'});
       $('.ct-series-2').css({'display':'inline-block'});
-      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'none'});
       $('.ct-series-4').css({'display':'none'});
 
     }
@@ -1538,17 +1541,21 @@ function Zmiana_jednostki3(){
     }
 }
 
-$( document ).ready(function() {
+$(window).on("load", function() {
   if ('9-1-2'=='12-2-2' || '9-1-2' == '8-4-2' || '9-1-2' == '2-5-1-b' || '9-1-2' == '9-1-2'){
     $('.ct-chart').css({'margin-top':'20px'});
 
   }
 
   if ('9-1-2'=='2-5-1-b'){
+    if(!window.location.hash) {
+        window.location = window.location + '#2';
+        window.location.reload();
+    }
     var licznik=10
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,32);
+    calosc=calo.splice(0,24);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1559,21 +1566,26 @@ $( document ).ready(function() {
 
     $('.ct-series-1').css({'display':'inline-block'});
     $('.ct-series-2').css({'display':'inline-block'});
-    $('.ct-series-3').css({'display':'inline-block'});
   }
 
+
+
   if ('9-1-2'=='9-1-2'){
-    var licznik=10
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+    if(!window.location.hash) {
+        window.location = window.location + '#9';
+        window.location.reload();
+    }
+    var licznik=10;
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
+    var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
-    seria=[]
+    seria=[];
     for (i=1;i<licznik+1;i++){
       b[i] = calosc.splice(0,labels.length);
-      seria.push(b[i])
+      seria.push(b[i]);
     }
-    chart.update({labels: labels,series: seria})
+    chart.update({labels: labels,series: seria});
 
     $('.ct-series-1').css({'display':'inline-block'});
     $('.ct-series-2').css({'display':'inline-block'});

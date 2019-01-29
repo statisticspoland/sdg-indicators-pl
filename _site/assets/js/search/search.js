@@ -19,7 +19,7 @@ class jekyllSearch {
     const data = await this.fetchedData()
     return data.filter(item => {
       const regex = new RegExp(this.searchField.value, 'gi')
-      return item.title.match(regex) || item.content.match(regex) || item.indicator.match(regex)
+      return item.title.match(regex) || item.content.match(regex)
     })
   }
 
@@ -30,7 +30,7 @@ class jekyllSearch {
         <li class="result">
             <article class="result__article  article">
                 <h4>
-                  <a href="${item.url}">${item.indicator +' '+ item.title}</a>
+                  <a href="${this.siteURL + item.url}">${item.indicator +' '+ item.title}</a>
                 </h4>
                 <p>${item.excerpt}</p>
             </article>

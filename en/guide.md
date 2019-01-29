@@ -16,10 +16,10 @@ permalink: /en/guide/
             <br />- features official statistics and metadata according to established standard methodology;
             <br />- is publicly accessible;
             <br />- allows for feedback from data users;
-            <br />- features <i> open source </i> (free) technology.
+            <br />- features <i> open source</i> (free) technology.</p>
 
             <p>In addition, the Polish NRP reporting platform has been developed in accordance with accepted ones
-            international guidelines, in particular for open data and software produced in the <i> open source model</i>.
+            international guidelines, in particular for open data and software produced in the <i>open source model</i>.
             </p>
 
 </article>
@@ -32,7 +32,7 @@ permalink: /en/guide/
 
             The current version of the Polish reporting platform has been developed based on earlier version of the US NRP,
             and was developed by us with new functionality and adapted to the needs of Polish statistics.
-            <br />The project code is publicly available in the repository - <a href="#l"  target="_blank">
+            <br />The project code is publicly available in the repository - <a href="https://github.com/statsticspoland/sdg-indicators-pl"  target="_blank">
             https://github.com/statsticspoland/sdg-indicators-pl</a>
             </p>
             <p>

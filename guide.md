@@ -33,7 +33,7 @@ permalink: /guide/
             Aktualna wersja polskiej platformy raportującej została opracowana na podstawie
             udostępnionej wersji USA NRP oraz dostosowana przez nas do naszych potrzeb.</p>
             <p>Kod projektu dostępny jest w publicznym repozytorium
-            <a href="#l"  target="_blank">
+            <a href="https://github.com/statsticspoland/sdg-indicators-pls"  target="_blank">
             https://github.com/statsticspoland/sdg-indicators-pl</a>
             </p>
             <p>

@@ -75,8 +75,8 @@ for (i=1;i<licznik+1;i++){
       {% if page.graph_negative != true %}
       offset: 50,
       {% endif %}
-      onlyInteger: false,
       {% if precyzja != 0 %}
+      onlyInteger: false,
       labelInterpolationFnc: function (value) {
         // do whatever math operation you want here
         if (jez=='en'){
@@ -85,8 +85,9 @@ for (i=1;i<licznik+1;i++){
           return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(".", ",") + '{{ unit_label }}';
         }
 
-      }
-        {% endif %}
+      }{% else %}
+      onlyInteger: true,
+      {% endif %}
     },
     axisX: {
       showGrid: false,

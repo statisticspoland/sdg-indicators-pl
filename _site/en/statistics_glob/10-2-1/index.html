@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-01-25-11-39-41-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-01-25-11-39-41-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-01-29-07-25-05-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-01-29-07-25-05-+0100">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -696,8 +696,8 @@ for (i=1;i<licznik+1;i++){
       
       offset: 50,
       
-      onlyInteger: false,
       
+      onlyInteger: false,
       labelInterpolationFnc: function (value) {
         // do whatever math operation you want here
         if (jez=='en'){
@@ -707,7 +707,6 @@ for (i=1;i<licznik+1;i++){
         }
 
       }
-        
     },
     axisX: {
       showGrid: false,
@@ -1432,7 +1431,7 @@ function Zmiana_jednostki2(){
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
       var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(32,40);
+      calosc=calo.splice(24,40);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1454,12 +1453,14 @@ function Zmiana_jednostki2(){
       $('.ct-series-0').css({'display':'none'});
       $('.ct-series-1').css({'display':'none'});
       $('.ct-series-2').css({'display':'none'});
-      $('.ct-series-3').css({'display':'none'});
+      $('.ct-series-3').css({'display':'inline-block'});
       $('.ct-series-4').css({'display':'inline-block'});
+      $('.ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut').css({'stroke':'#453d3f'});
+      $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
       var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,32);
+      calosc=calo.splice(0,24);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1480,7 +1481,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-0').css({'display':'inline-block'});
       $('.ct-series-1').css({'display':'inline-block'});
       $('.ct-series-2').css({'display':'inline-block'});
-      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'none'});
       $('.ct-series-4').css({'display':'none'});
 
     }
@@ -1546,17 +1547,21 @@ function Zmiana_jednostki3(){
     }
 }
 
-$( document ).ready(function() {
+$(window).on("load", function() {
   if ('10-2-1'=='12-2-2' || '10-2-1' == '8-4-2' || '10-2-1' == '2-5-1-b' || '10-2-1' == '9-1-2'){
     $('.ct-chart').css({'margin-top':'20px'});
 
   }
 
   if ('10-2-1'=='2-5-1-b'){
+    if(!window.location.hash) {
+        window.location = window.location + '#2';
+        window.location.reload();
+    }
     var licznik=9
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,32);
+    calosc=calo.splice(0,24);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1567,21 +1572,26 @@ $( document ).ready(function() {
 
     $('.ct-series-1').css({'display':'inline-block'});
     $('.ct-series-2').css({'display':'inline-block'});
-    $('.ct-series-3').css({'display':'inline-block'});
   }
 
+
+
   if ('10-2-1'=='9-1-2'){
-    var licznik=9
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
+    if(!window.location.hash) {
+        window.location = window.location + '#9';
+        window.location.reload();
+    }
+    var licznik=9;
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
+    var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
-    seria=[]
+    seria=[];
     for (i=1;i<licznik+1;i++){
       b[i] = calosc.splice(0,labels.length);
-      seria.push(b[i])
+      seria.push(b[i]);
     }
-    chart.update({labels: labels,series: seria})
+    chart.update({labels: labels,series: seria});
 
     $('.ct-series-1').css({'display':'inline-block'});
     $('.ct-series-2').css({'display':'inline-block'});
