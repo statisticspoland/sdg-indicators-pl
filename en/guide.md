@@ -32,8 +32,8 @@ permalink: /en/guide/
 
             The current version of the Polish reporting platform has been developed based on earlier version of the US NRP,
             and was developed by us with new functionality and adapted to the needs of Polish statistics.
-            <br />The project code is publicly available in the repository - <a href="https://github.com/statsticspoland/sdg-indicators-pl"  target="_blank">
-            https://github.com/statsticspoland/sdg-indicators-pl</a>
+            <br />The project code is publicly available in the repository - <a href="https://github.com/statisticspoland/sdg-indicators-pl"  target="_blank">
+            https://github.com/statisticspoland/sdg-indicators-pl</a>
             </p>
             <p>
             The new universal version of the <b><i>open-sdg</i></b> platform developed by the US, UK and Center for Open Data Enterprise is available.
