@@ -1,7 +1,7 @@
 ---
 layout: page
 lang: en
-title: FAQ – questions and answers to the platform www.sdg.gov.pl
+title: FAQ – questions and answers to the SDG platform 
 permalink: /en/faqs/
 ---
 <article>

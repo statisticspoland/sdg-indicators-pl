@@ -380,6 +380,12 @@ header.fixed-header .site-navbar ul li a {
 	}
 }
 
+@media only screen and (max-width: 1200px) {
+	.dis{
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 933px) and (max-width: 950px) {
 	.pl-banner-glob {
 	background-position: 445px 0px;

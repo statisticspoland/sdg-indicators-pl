@@ -19,23 +19,27 @@ class jekyllSearch {
     const data = await this.fetchedData()
     return data.filter(item => {
       const regex = new RegExp(this.searchField.value, 'gi')
-      return item.title.match(regex) || item.content.match(regex)
+      return item.title.match(regex) || item.content.match(regex) || item.indicator.match(regex)
     })
   }
 
   async displayResults() {
     const results = await this.findResults()
-    const html = results.map(item => {
-      return `
-        <li class="result">
-            <article class="result__article  article">
-                <h4>
-                  <a href="${this.siteURL + item.url}">${item.indicator +' '+ item.title}</a>
-                </h4>
-                <p>${item.excerpt}</p>
-            </article>
-        </li>`
-    }).join('')
+    var allcookies = document.cookie
+    if (allcookies.includes(`high`)){
+        const html = results.map(item => {
+          return `
+            <li class="result">
+                <article class="result__article  article">
+                    <h4>
+                      <a class="search_pl" style="color: #fff" href="${item.url}">${item.indicator +' '+ item.title}</a>
+                    </h4>
+                    <p>${item.excerpt}</p>
+                </article>
+            </li>`
+        }).join('')
+
+
     if ((results.length == 0) || (this.searchField.value == '')) {
 
       if (window.location.href.indexOf("en") > -1){
@@ -47,8 +51,35 @@ class jekyllSearch {
     } else {
       this.resultsList.innerHTML = html
     }
-  }
+  }else{
 
+          const html = results.map(item => {
+            return `
+              <li class="result">
+                  <article class="result__article  article">
+                      <h4>
+                        <a class="search_pl" href="${item.url}">${item.indicator +' '+ item.title}</a>
+                      </h4>
+                      <p>${item.excerpt}</p>
+                  </article>
+              </li>`
+          }).join('')
+
+
+        if ((results.length == 0) || (this.searchField.value == '')) {
+
+        if (window.location.href.indexOf("en") > -1){
+          this.resultsList.innerHTML = `<p>There is no indicator containing the searched phrase</p>`
+        }else{
+
+          this.resultsList.innerHTML = `<p>Brak wskaźnika zawierającego szukaną frazę</p>`
+        }
+        } else {
+        this.resultsList.innerHTML = html
+        }
+
+  }
+}
   init() {
     const url = new URL(document.location)
     if (url.searchParams.get("search")) {

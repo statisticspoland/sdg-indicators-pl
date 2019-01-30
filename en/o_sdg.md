@@ -7,7 +7,7 @@ permalink: /en/o_sdg/
 <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#sdg" aria-controls="data" role="tab" data-toggle="tab">ON THE 2030 AGENDA AND SDGs</a></li>
             <li role="presentation"><a href="#ini" aria-controls="data" role="tab" data-toggle="tab">SUSTAINABLE DEVELOPMENT IN EU AND OECD</a></li>
-            <li role="presentation"><a href="#stat" aria-controls="metadata" role="tab" data-toggle="tab">STATYSTYKA PUBLICZNA</a></li>
+            <li role="presentation"><a href="#stat" aria-controls="metadata" role="tab" data-toggle="tab">PUBLIC STATISTICS FOR SDGs</a></li>
             <li role="presentation"><a href="#publ" aria-controls="metadata" role="tab" data-toggle="tab">PUBLICATIONS</a></li>
 
 </ul>
@@ -51,20 +51,19 @@ permalink: /en/o_sdg/
 
   </div>
   <div role="tabpanel" class="tab-pane" id="stat">
-  <h4><b>STATYSTYKA PUBLICZNA NA RZECZ SDGs</b></h4>
-  <p>W Polsce stosowany jest model podziału odpowiedzialności za implementację celów zrównoważonego rozwoju, zgodny z zalecanym w Agendzie. Na szczeblu politycznym opracowywane i wyznaczane są programy i działania mające zapewnić postęp w osiąganiu celów. Za ich monitorowanie odpowiedzialna jest natomiast statystyka publiczna. W Polsce działania w tym zakresie koordynowane są przez Główny Urząd Statystyczny. GUS jest odpowiedzialny m.in. za raportowanie wskaźników, zapewniając rzetelne i wiarygodne dane, zarówno w wymiarze krajowym, jak i globalnym. Wskaźniki statystyczne pozwalają na diagnozę sytuacji w poszczególnych obszarach życia społeczno-gospodarczego, ocenę zachodzących zmian, a co za tym idzie podejmowanie odpowiednich działań, zmierzających do poprawy sytuacji. Monitorowaniu celów zrównoważonego rozwoju oraz raportowaniu danych na potrzeby globalne służy niniejsza, udostępniona przez GUS, platforma raportująca SDG.
-  Polskie podejście do monitorowania celów SDGs zakłada prezentację dwóch osobnych zestawów wskaźników, z których jeden prezentuje przyjęte przez Komisję Statystyczną Narodów Zjednoczonych wskaźniki globalne z wartościami dla Polski; drugi zaś – krajowy zestaw wskaźników, uwzględniający priorytety i specyfikę Polski.</p>
+  <h4><b>PUBLIC STATISTICS FOR SDGs</b></h4>
+  <p>The task of official statistics, indicated in the 2030 Agenda, is to monitor progress in achieving
+the Sustainable Development Goals. The monitoring is carried out on the three following levels:
+</p>
+<p>•	global – this level is coordinated by The United Nations Statistical Commission;</p>
+<p>•	world regions – the responsibility for them lies with the UN regional commissions (as for Poland, it is the United Nations Economic Commission for Europe – UNECE);</p>
+<p>•	national – national statistical offices are accountable for this level (in Poland, it is Statistics Poland – GUS). </p>
+<p>In order to assess progress on the global and regional level, a set of so-called  <a href="http://sdg.gov.pl/en/faqs/">global</a> (<a href="https://unstats.un.org/sdgs/indicators/indicators-list/">SDG indicators</a>). is used. Indicator values for the whole world and its regions are calculated by international organizations, mainly on the basis of official statistical data obtained from individual countries. On the national level, instead of global indicators, countries can use their own sets of indicators for monitoring areas and issues of greatest relevance to them. This approach has been adopted in Poland (see – <a href="http://sdg.gov.pl/faqs/">– the indicator set monitoring national priorities</a>). </p>
 
-  <p>Skuteczna realizacja Agendy 2030 wymaga partnerstwa i współpracy pomiędzy rządami, sektorem prywatnym i społeczeństwem obywatelskim. O znaczeniu partnerstwa świadczy fakt, że poświęcono mu jeden z celów Agendy (Cel 17. Partnerstwa na rzecz Celów). Istotnym ogniwem uwzględnionym w procesie realizacji Celów jest statystyka publiczna, która współpracuje z wieloma podmiotami krajowymi (w szczególności z resortami, będącymi koordynatorami poszczególnych celów). Pozwala to na zapewnienie spójności prowadzonych działań oraz wspieranie efektywnej realizacji zadań związanych z wdrażaniem oraz monitorowaniem celów zrównoważonego rozwoju.</p>
+<p>Progress made on the global and regional scale is presented in annual UN <a href="http://sdg.gov.pl/en/o_sdg/">reports</a>. In addition to that,
+a global <a href="https://unstats.un.org/sdgs/indicators/database/">database</a>. is available for users searching for detailed information on the world, regions and individual countries. Actions undertaken by individual countries are monitored within (<a href="https://sustainabledevelopment.un.org/vnrs/">Voluntary National Reviews – VNR</a>), conducted every year in July at the UN High-Level Political Forum in New York. In 2018, Poland conducted its first national review. As an institution responsible for indicator framework and provision of necessary statistical information, Statistics Poland took part in preparing a <a href="https://www.mpit.gov.pl/strony/zadania/zrownowazony-rozwoj/agenda-2030/konsultacje-spoleczne-raport-pl/">report</a> on Poland’s progress.</p>
 
-  <p>Polska aktywnie angażuje się również w działania podejmowane na arenie międzynarodowej, zapewniając wymianę doświadczeń i dobrych praktyk oraz wzmacniając swój wizerunek na świecie. Bogate doświadczenie Polski w monitorowaniu zrównoważonego rozwoju oraz wykazywana aktywność w rozwijaniu narzędzi do monitorowania celów zrównoważonego rozwoju (np. krajowej platformy SDG) zostało docenione m.in. na poziomie Europejskiej Komisji Gospodarczej (UNECE). Działania tej Komisji są zorientowane na wsparcie krajów regionu w planowaniu i organizowaniu procesu monitorowania SDGs oraz raportowania danych dla potrzeb ONZ.</p>
-
-  <p>Główny Urząd Statystyczny, jako koordynator procesu związanego z monitorowaniem SDGs, zarówno angażuje się w aktywności międzynarodowe, związane z zapewnieniem monitorowania Agendy w wymiarze globalnym, jak i odpowiada za działania statystyki na szczeblu krajowym, wynikające z wrażania priorytetów rozwojowych dla Polski.</p>
-
-  <p>W 2018 r. Polska po raz pierwszy zaprezentowała efekty z wdrażania Celów SDGs podczas organizowanego corocznie dobrowolnego przeglądu krajów (<em>Voluntary National Review – VNR</em>) na Forum Politycznym Wysokiego Szczebla ONZ. Działania związane z przygotowaniem Polski do tego przeglądu koordynowane były przez Ministerstwo Przedsiębiorczości i Technologii. Główny Urząd Statystyczny, odpowiedzialny za kwestie związane z monitorowaniem priorytetów rozwojowych, był aktywnie włączany w ten proces, a efektem tych działań były m.in. </p>
-  <p>•	opracowanie zestawu wskaźników monitorujących priorytety zrównoważonego rozwoju dla Polski zdefiniowane na szczeblu politycznym;</p>
-  <p>•	przygotowanie Aneksu statystycznego do Raportu pn. <em>“Achievement of Sustainable Development Goals in Poland. 2018 Report”</em>, prezentującego zestaw wskaźników monitorujących krajowe priorytety rozwojowe;</p>
-  <p>•	opracowanie anglojęzycznej publikację pt. <em>“A picture of Poland. Statistics for SDGs”</em>, w której dane statystyczne wykorzystano do przybliżenia czytelnikom z innych krajów obrazu Polski oraz roli, jaką ma ona do spełnienia w osiąganiu celów Agendy 2030.</p>
+<p>Monitoring progress in the realisation of the 2030 Agenda is a great challenge for official statistics. It requires coordination of many institutions’ activities and cooperation between the international and national level. So as to support statistical institutions in the UNECE region, the Steering Group on Statistics for Sustainable Development Goals was established. Since 2018, the Group has been co-chaired by Poland (GUS). One of the Group’s greatest achievements is preparation of (<a href="http://www.unece.org/index.php?id=47510">Road Map on statistics for Sustainable Development Goals</a>), which facilitates organization of the 2030 Agenda monitoring.</p>
 
   </div>
   <div role="tabpanel" class="tab-pane" id="publ">
@@ -118,7 +117,7 @@ Poland presented its achievements at HLPF for the first time.
   <div class="image-wrapper">
       <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU contex</b></p>
+  <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</b></p>
 
   <p>The publication, issued in 2017 by Eurostat, is a monitoring report on the progress towards achieving the Sustainable Development Goals in an EU context. This report describes progress made using a set of 100 indicators that are structured along the 17 SDGs. Two periods are considered: the short term, accounting for progress over the past five years, and the long term, looking at the trends over the last 15 years.
   <br><br><br></p>
@@ -128,11 +127,11 @@ Poland presented its achievements at HLPF for the first time.
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Sustainable development In the European Union – Overview of progress towards the SDGs In an EU context</b></p>
+  <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs In an EU context</b></p>
 
-  <p>The brochure is a concise version of Eurostat’s publication on the realisation of SDGs in the European Union: <a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU contex</a>. Progress made in the implementation of the 2030 Agenda in EU is assessed over the past five years on the basis of EU SDG indicator set, and presented in a graphic form. More detailed analysis of the 2030 Agenda realisation in EU is available in the full Eurostat SDG publication.
+  <p>The brochure is a concise version of Eurostat’s publication on the realisation of SDGs in the European Union: <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU contex</a>. Progress made in the implementation of the 2030 Agenda in EU is assessed over the past five years on the basis of EU SDG indicator set, and presented in a graphic form. More detailed analysis of the 2030 Agenda realisation in EU is available in the full Eurostat SDG publication.
 
   <br><br><br></p>
   <p><b>Archive:</b></p>

@@ -7,5 +7,5 @@ pl:
 en:
   main-heading: "Statistics for the SDGs – global indicators"
   main-heading2: "Statistics for the SDGs – national indicators"
-  intro-text: "Click goal for Sustainable Development Goal indicators"
+  intro-text: "Click on Sustainable Development Goal for indicators"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FAQ – pytania i odpowiedzi do platformy www.sdg.gov.pl
+title: FAQ – pytania i odpowiedzi do platformy SDG
 permalink: /faqs/
 ---
 <article>

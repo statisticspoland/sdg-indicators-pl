@@ -153,14 +153,16 @@
           or indicator.indicator == "16.2.3" or indicator.indicator == "16.3.2"
           or indicator.indicator == "16.5.1" or indicator.indicator == "16.7.1"   %}
 
-          <td style="text-align: center; padding: 8px; height: 45px;"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></td>
+          <td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
           <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator | remove: ".0" }} {{ indicator_title }}</a></td>
-          <td><i class="fa fa-check" style="font-size:20px; padding: 0 15px;"></i></td>
+          <td><i class="fa fa-check" style="font-size:20px; width: 100%; text-align: center;"></i></td>
 
           {% else %}
-          <td style="text-align: center; padding: 8px; height: 45px;"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></td>
+          <td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
           <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_title }}</a></td>
-          <td></td>
+            {% if rodzaj == '/' %}
+              <td></td>
+            {% endif %}
           {% endif %}
         </tr>
 
