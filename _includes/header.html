@@ -25,9 +25,15 @@
         </a>
       </div>
       <div class="icons">
+	  {% if page.url contains '/en/' %}
+		<a href="http://twitter.com/StatPoland" target="_blank" title="Statistics Poland on Twitter" class="pos-5" style=" color: #999999;">
+          <i class="fa fa-twitter" style="font-size:20px;"></i>
+        </a>
+	  {% else %}
         <a href="http://twitter.com/GUS_STAT" target="_blank" title="profil GUS na Twitterze" class="pos-5" style=" color: #999999;">
           <i class="fa fa-twitter" style="font-size:20px;"></i>
         </a>
+	  {% endif %}
       </div>
       <div class="icons">
         <a href="https://www.linkedin.com/company/532930" target="_blank" title="profil GUS na LinkedIn" class="pos-6" style=" ">
@@ -193,7 +199,7 @@
           </div>
         </li>
         <!--------------------element menu III-------------------------------------------------------------------------------------------------->
-        <li class="nav-item"><a href="{{ site.baseurl }}{{ lang }}/guide" style="margin-left: 
+        <li class="nav-item"><a href="{{ site.baseurl }}{{ lang }}/guide" style="margin-left:
 		{% if page.url contains '/en/' %}
 			40px;
 		{% else %}
@@ -250,18 +256,15 @@ $(".default").attr("src", '{{ site.baseurl }}/assets/img/default.png');
 				}, false);
 
 		},
-		create: function() {
-			var element = document.createElement( "div" );
-			this.element = element;
-			var html = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div>";
+    create: function() {
+      var element = document.createElement( "div" );
+      this.element = element;
       element.id = "cookie-toolkit";
-			html += "<div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div>";
-			html += "</div>";
-      element.innerHTML = html;
-      var headers = document.querySelector(".usa-disclaimer.development");
-			headers.after( element );
+      element.innerHTML = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div><div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div></div>";
+      var headers = document.querySelector(".usa-disclaimer");
+      headers.after(element);
 
-		},
+    },
 		_show: function() {
       var self = this;
 			self.element.style.display = "block";

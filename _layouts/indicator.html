@@ -192,7 +192,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo={{ row1 | jsonify }}
-      calosc=calo.splice(8,14);
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -216,7 +216,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo={{ row1 | jsonify }}
-      calosc=calo.splice(0,8);
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -247,7 +247,7 @@ function Zmiana_jednostki2(){
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
       var calo={{ row1 | jsonify }}
-      calosc=calo.splice(24,40);
+      calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -276,7 +276,7 @@ function Zmiana_jednostki2(){
 
     }else{
       var calo={{ row1 | jsonify }}
-      calosc=calo.splice(0,24);
+      calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){

@@ -7,7 +7,7 @@ permalink: /en/o_sdg/
 <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#sdg" aria-controls="data" role="tab" data-toggle="tab">ON THE 2030 AGENDA AND SDGs</a></li>
             <li role="presentation"><a href="#ini" aria-controls="data" role="tab" data-toggle="tab">SUSTAINABLE DEVELOPMENT IN EU AND OECD</a></li>
-            <li role="presentation"><a href="#stat" aria-controls="metadata" role="tab" data-toggle="tab">PUBLIC STATISTICS FOR SDGs</a></li>
+            <li role="presentation"><a href="#stat" aria-controls="metadata" role="tab" data-toggle="tab">OFFICIAL STATISTICS</a></li>
             <li role="presentation"><a href="#publ" aria-controls="metadata" role="tab" data-toggle="tab">PUBLICATIONS</a></li>
 
 </ul>
@@ -51,7 +51,7 @@ permalink: /en/o_sdg/
 
   </div>
   <div role="tabpanel" class="tab-pane" id="stat">
-  <h4><b>PUBLIC STATISTICS FOR SDGs</b></h4>
+  <h4><b>OFFICIAL STATISTICS FOR SDGs</b></h4>
   <p>The task of official statistics, indicated in the 2030 Agenda, is to monitor progress in achieving
 the Sustainable Development Goals. The monitoring is carried out on the three following levels:
 </p>
@@ -60,10 +60,10 @@ the Sustainable Development Goals. The monitoring is carried out on the three fo
 <p>•	national – national statistical offices are accountable for this level (in Poland, it is Statistics Poland – GUS). </p>
 <p>In order to assess progress on the global and regional level, a set of so-called  <a href="http://sdg.gov.pl/en/faqs/">global</a> (<a href="https://unstats.un.org/sdgs/indicators/indicators-list/">SDG indicators</a>). is used. Indicator values for the whole world and its regions are calculated by international organizations, mainly on the basis of official statistical data obtained from individual countries. On the national level, instead of global indicators, countries can use their own sets of indicators for monitoring areas and issues of greatest relevance to them. This approach has been adopted in Poland (see – <a href="http://sdg.gov.pl/faqs/">– the indicator set monitoring national priorities</a>). </p>
 
-<p>Progress made on the global and regional scale is presented in annual UN <a href="http://sdg.gov.pl/en/o_sdg/">reports</a>. In addition to that,
-a global <a href="https://unstats.un.org/sdgs/indicators/database/">database</a>. is available for users searching for detailed information on the world, regions and individual countries. Actions undertaken by individual countries are monitored within (<a href="https://sustainabledevelopment.un.org/vnrs/">Voluntary National Reviews – VNR</a>), conducted every year in July at the UN High-Level Political Forum in New York. In 2018, Poland conducted its first national review. As an institution responsible for indicator framework and provision of necessary statistical information, Statistics Poland took part in preparing a <a href="https://www.mpit.gov.pl/strony/zadania/zrownowazony-rozwoj/agenda-2030/konsultacje-spoleczne-raport-pl/">report</a> on Poland’s progress.</p>
+<p>Progress made on the global and regional scale is presented in annual UN <a href="https://unstats.un.org/sdgs/report/2018/"  target="_blank">reports</a>. In addition to that,
+a global <a href="https://unstats.un.org/sdgs/indicators/database/"  target="_blank">database</a>. is available for users searching for detailed information on the world, regions and individual countries. Actions undertaken by individual countries are monitored within (<a href="https://sustainabledevelopment.un.org/vnrs/"  target="_blank">Voluntary National Reviews – VNR</a>), conducted every year in July at the UN High-Level Political Forum in New York. In 2018, Poland conducted its first national review. As an institution responsible for indicator framework and provision of necessary statistical information, Statistics Poland took part in preparing a <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank">report</a> on Poland’s progress.</p>
 
-<p>Monitoring progress in the realisation of the 2030 Agenda is a great challenge for official statistics. It requires coordination of many institutions’ activities and cooperation between the international and national level. So as to support statistical institutions in the UNECE region, the Steering Group on Statistics for Sustainable Development Goals was established. Since 2018, the Group has been co-chaired by Poland (GUS). One of the Group’s greatest achievements is preparation of (<a href="http://www.unece.org/index.php?id=47510">Road Map on statistics for Sustainable Development Goals</a>), which facilitates organization of the 2030 Agenda monitoring.</p>
+<p>Monitoring progress in the realisation of the 2030 Agenda is a great challenge for official statistics. It requires coordination of many institutions’ activities and cooperation between the international and national level. So as to support statistical institutions in the UNECE region, the Steering Group on Statistics for Sustainable Development Goals was established. Since 2018, the Group has been co-chaired by Poland (GUS). One of the Group’s greatest achievements is preparation of (<a href="http://www.unece.org/index.php?id=47510"  target="_blank">Road Map on statistics for Sustainable Development Goals</a>), which facilitates organization of the 2030 Agenda monitoring.</p>
 
   </div>
   <div role="tabpanel" class="tab-pane" id="publ">
@@ -74,12 +74,12 @@ a global <a href="https://unstats.un.org/sdgs/indicators/database/">database</a>
   </div>
   <p><b>A picture of Poland. Statistics for SDGs</b></p>
   <p>In 2015, Poland became one of 193 countries that signed the UN Resolution on the 2030 Agenda for Sustainable Development. In July 2018, Poland is presenting for the first time its advancement towards reaching the Sustainable Development Goals (<em>SDGs</em>) under Voluntary National Review (VNR) at the UN High Level Political Forum. On this occasion, Statistics Poland, as the coordinator of the SDGs monitoring process in Poland, has prepared the publication <em>A picture of Poland. Statistics for SDGs</em>, , which aims to introduce foreign readers to a picture of our country and the role that Poland has to fulfill in achieving the Goals of the 2030 Agenda.</p>
-  <p>The information set out in the publication was inspired by the development priorities for the country, indicated in the document <a target="_blank" href="https://www.mpit.gov.pl/media/58469/Polska_VNR_20180615.pdf"> Implementation of Sustainable Development Goals in Poland. Report 2018</a>, prepared for this year's VNR by the Ministry of Entrepreneurship and Technology.
+  <p>The information set out in the publication was inspired by the development priorities for the country, indicated in the document <a target="_blank" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank"> Implementation of Sustainable Development Goals in Poland. Report 2018</a>, prepared for this year's VNR by the Ministry of Entrepreneurship and Technology.
 Publication, as it is addressed mainly to foreign recipients, is available only in the English version.</p>
 
 <hr>
 <div class="image-wrapper">
-    <a target="_blank" href="https://www.mpit.gov.pl/media/58470/Poland_VNR_20180615.pdf "><img src="{{ site.baseurl }}/assets/img/publikacje/3_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
+    <a target="_blank" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/3_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
 </div>
 <p><b>Implementation of the Sustainable Development Goals in Poland. The 2018 National Report.</b></p>
 <p>The report was compiled by the Ministry of Entrepreneurship and Technology (coordinator of the implementation process of the 2030 Agenda in Poland) for the review of realisation of the Sustainable Development Goals in Poland. The publication indicates Poland’s experiences so far, national development priorities and national approach to the realisation of individual SDGs. The report is supplemented with a statistical annex, containing a list of national indicators indispensable for assessing the results of actions undertaken for the realisation of each SDG.
@@ -129,13 +129,13 @@ Poland presented its achievements at HLPF for the first time.
   <div class="image-wrapper">
       <a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs In an EU context</b></p>
+  <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</b></p>
 
-  <p>The brochure is a concise version of Eurostat’s publication on the realisation of SDGs in the European Union: <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU contex</a>. Progress made in the implementation of the 2030 Agenda in EU is assessed over the past five years on the basis of EU SDG indicator set, and presented in a graphic form. More detailed analysis of the 2030 Agenda realisation in EU is available in the full Eurostat SDG publication.
+  <p>The brochure is a concise version of Eurostat’s publication on the realisation of SDGs in the European Union: <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</a>. Progress made in the implementation of the 2030 Agenda in EU is assessed over the past five years on the basis of EU SDG indicator set, and presented in a graphic form. More detailed analysis of the 2030 Agenda realisation in EU is available in the full Eurostat SDG publication.
 
   <br><br><br></p>
   <p><b>Archive:</b></p>
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development In the European Union – Overview of progress towards the SDGs In an EU context</a></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</a></p>
 
   <hr>
   <div class="image-wrapper">
@@ -175,3 +175,18 @@ Poland presented its achievements at HLPF for the first time.
 
 </div>
 <hr>
+
+<script>
+$(document).ready(function() {
+    if (location.hash) {
+        $("a[href='" + location.hash + "']").tab("show");
+    }
+    $(document.body).on("click", "a[data-toggle]", function(event) {
+        location.hash = this.getAttribute("href");
+    });
+});
+$(window).on("popstate", function() {
+    var anchor = location.hash || $("a[data-toggle='tab']").first().attr("href");
+    $("a[href='" + anchor + "']").tab("show");
+});
+</script>

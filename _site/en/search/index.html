@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-01-30-13-03-29-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-01-30-13-03-29-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -93,9 +93,11 @@
         </a>
       </div>
       <div class="icons">
-        <a href="http://twitter.com/GUS_STAT" target="_blank" title="profil GUS na Twitterze" class="pos-5" style=" color: #999999;">
+	  
+		<a href="http://twitter.com/StatPoland" target="_blank" title="Statistics Poland on Twitter" class="pos-5" style=" color: #999999;">
           <i class="fa fa-twitter" style="font-size:20px;"></i>
         </a>
+	  
       </div>
       <div class="icons">
         <a href="https://www.linkedin.com/company/532930" target="_blank" title="profil GUS na LinkedIn" class="pos-6" style=" ">
@@ -229,7 +231,7 @@
           </div>
         </li>
         <!--------------------element menu III-------------------------------------------------------------------------------------------------->
-        <li class="nav-item"><a href="/sdg-indicators/en/guide" style="margin-left: 
+        <li class="nav-item"><a href="/sdg-indicators/en/guide" style="margin-left:
 		
 			40px;
 		
@@ -282,18 +284,15 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 				}, false);
 
 		},
-		create: function() {
-			var element = document.createElement( "div" );
-			this.element = element;
-			var html = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div>";
+    create: function() {
+      var element = document.createElement( "div" );
+      this.element = element;
       element.id = "cookie-toolkit";
-			html += "<div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div>";
-			html += "</div>";
-      element.innerHTML = html;
-      var headers = document.querySelector(".usa-disclaimer.development");
-			headers.after( element );
+      element.innerHTML = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div><div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div></div>";
+      var headers = document.querySelector(".usa-disclaimer");
+      headers.after(element);
 
-		},
+    },
 		_show: function() {
       var self = this;
 			self.element.style.display = "block";
@@ -380,10 +379,10 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
       <div class="pl-grid">
-        <div class="usa-footer-contact-links usa-width-one-half" style="margin-right: 145px">
+        <div class="usa-footer-contact-links usa-width-one-half" style="margin-right: 0px">
           <address>
             <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
-            <p> <b>About</b><br />Welcome to the GUS website dedicated to Agenda 2030 and Sustainable Development Goals </p>
+            <p> <b>About</b><br />Welcome to the Statistics Poland website dedicated to the 2030 Agenda and Sustainable Development Goals </p>
 
           </address>
         </div>
@@ -391,14 +390,14 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
         <div class="usa-footer-logo usa-width-one-half" style="width: 65px; margin-right: 15px">
 
 		</div>
-		<div class="usa-footer-logo usa-width-one-half" style="width: 170px; margin-right: 15px">
+		<div class="usa-footer-logo usa-width-one-half" style="width: 310px; margin-right: 15px">
             <h3 class="usa-footer-contact-heading footer-about-heading dis"></h3>
 
         </div>
-		<div class="usa-footer-logo usa-width-one-half" style="width: 225px;display: inline-flex;">
-        <img src="/sdg-indicators/assets/img/gus_cz_2.png" style="max-height: 100%; margin-right: 15px; margin-top: 0px; margin-left: ">
+		<div class="usa-footer-logo usa-width-one-half" style="width: 230px; display: inline-flex;">
+        <img src="/sdg-indicators/assets/img/gus_cz_2.png" style="max-height: 85px; margin-right: 15px; margin-top: 0px; margin-left: ">
       <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
-      <p class="contact"><b>Statistics Poland</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br /><a href="mailto:Agenda2030@stat.gov.pl" class="contact">Agenda2030@stat.gov.pl <br /></a></p>
+      <p class="contact"><b>Statistics Poland</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br /><a href="mailto:SDG@stat.gov.pl" class="contact">SDG@stat.gov.pl <br /></a></p>
         </div>
 		</div>
       </div>

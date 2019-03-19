@@ -18,14 +18,14 @@ permalink: /o_sdg/
   <div role="tabpanel" class="tab-pane active" id="sdg">
   <h4><b>O AGENDZIE 2030 i SDGs (CELACH ZRÓWNOWAŻONEGO ROZWOJU)</b></h4>
 
-  <p>Przyjęta we wrześniu 2015 r. <a target="_blank" href="http://stat.gov.pl/files/gfx/portalinformacyjny/pl/defaultstronaopisowa/5989/1/1/agenda_2030_pl_2.pdf">Agenda na rzecz Zrównoważonego Rozwoju 2030</a> jest ustalonym przez ONZ, w drodze negocjacji pomiędzy krajami członkowskimi, kompleksowym planem rozwoju dla świata z perspektywą do 2030 r. Przyjęcie Agendy 2030 jest wydarzeniem bezprecedensowym w historii ludzkości. Wszystkie 193 kraje członkowskie ONZ zobowiązały się do podejmowania działań na rzecz realizacji 17 Celów Zrównoważonego Rozwoju (<a target="_blank" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">Sustainable Development Goals – SDGs</a>). Cele te skupiają się na zapewnieniu godnego życia dla wszystkich mieszkańców świata, pokoju i postępu gospodarczego, przy równoczesnej ochronie środowiska naturalnego i przeciwdziałaniu zmianom klimatu.</p>
+  <p>Przyjęta we wrześniu 2015 r. <a target="_blank" href="https://www.gov.pl/documents/910151/911704/Agenda_2030_na_rzecz_zrownowazonego_rozwoju.pdf/d56cd332-4ba5-2035-9439-5a8a5212cbed">Agenda na rzecz Zrównoważonego Rozwoju 2030</a> jest ustalonym przez ONZ, w drodze negocjacji pomiędzy krajami członkowskimi, kompleksowym planem rozwoju dla świata z perspektywą do 2030 r. Przyjęcie Agendy 2030 jest wydarzeniem bezprecedensowym w historii ludzkości. Wszystkie 193 kraje członkowskie ONZ zobowiązały się do podejmowania działań na rzecz realizacji 17 Celów Zrównoważonego Rozwoju (<a target="_blank" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">Sustainable Development Goals – SDGs</a>). Cele te skupiają się na zapewnieniu godnego życia dla wszystkich mieszkańców świata, pokoju i postępu gospodarczego, przy równoczesnej ochronie środowiska naturalnego i przeciwdziałaniu zmianom klimatu.</p>
   <p>Agenda 2030 koncentruje się na pięciu aspektach o kluczowym znaczeniu dla ludzkości i naszej planety (tzw. 5xP):</p>
 
   <p><b>Ludzie </b>(<em>People</em>) stanowią centrum zainteresowania Agendy 2030.  Eliminacja ubóstwa i głodu, pełne wykorzystanie indywidualnego potencjału w poczuciu godności i równości szans oraz życie w zdrowym środowisku to główne wyzwania i warunki zrównoważonego rozwoju. </p>
 
   <p><b>Planeta </b>(<em>Planet</em>) powinna służyć potrzebom obecnych i przyszłych pokoleń. Racjonalne wykorzystanie zasobów naturalnych,  zrównoważona konsumpcja i produkcja, wzrost gospodarczy sprzyjający włączeniu społecznemu oraz działania w dziedzinie klimatu pozwolą uchronić planetę przed degradacją oraz zapewnią sprawiedliwość wewnątrz- i międzypokoleniową.</p>
 
-  <p><b>Dobrobyt </b>(<em>Prosperity</em>) należy zapewnić każdemu poprzez powszechną poprawę jakości życia. Uniwersalny dostęp do dobrej edukacji, opieki zdrowotnej oraz infrastruktury w powiązaniu z przyjaznym środowisku postępem gospodarczym i technologicznym pozwoli na Unii Europejskiej korzystanie z dobrodziejstw dostatniego i satysfakcjonującego życia.</p>
+  <p><b>Dobrobyt </b>(<em>Prosperity</em>) należy zapewnić każdemu poprzez powszechną poprawę jakości życia. Uniwersalny dostęp do dobrej edukacji, opieki zdrowotnej oraz infrastruktury w powiązaniu z przyjaznym środowisku postępem gospodarczym i technologicznym pozwoli na korzystanie z dobrodziejstw dostatniego i satysfakcjonującego życia.</p>
 
   <p><b>Pokój </b>(<em>Peace</em>) stoi na straży realizacji Agendy 2030. Osiągnięcie jej celów możliwe jest jedynie w społeczeństwach wolnych od przemocy i lęku, opartych na tolerancji i włączeniu. </p>
 
@@ -58,11 +58,11 @@ permalink: /o_sdg/
 <p>•	globalnym – ten poziom koordynuje Komisja Statystyczna ONZ;</p>
 <p>•	regionów świata  – tu odpowiedzialne są regionalne agendy ONZ (w naszym regionie Europejska Komisja Gospodarcza ONZ –  UNECE);</p>
 <p>•	krajowym – za który odpowiadają krajowe urzędy statystyczne (w Polsce GUS).</p>
-<p>Do oceny postępów na poziomie globalnym i regionalnym stosowany jest zestaw tzw. <a href="http://sdg.gov.pl/faqs/">wskaźników globalnych</a> (<a href="https://unstats.un.org/sdgs/indicators/indicators-list/">SDG indicators</a>). Wartości dla całego świata i jego regionów są obliczane przez organizacje międzynarodowe, głównie na podstawie oficjalnych danych statystycznych pozyskiwanych z poszczególnych krajów. Na poziomie krajowym, zamiast wskaźników globalnych, państwa mogą wykorzystywać własne zestawy wskaźników, pozwalające na monitorowanie tych obszarów i problemów, które są najważniejsze dla danego kraju. Takie rozwiązanie przyjęto w Polsce (patrz – <a href="http://sdg.gov.pl/faqs/">wskaźniki monitorujące priorytety krajowe</a>). </p>
+<p>Do oceny postępów na poziomie globalnym i regionalnym stosowany jest zestaw tzw. <a href="http://sdg.gov.pl/faqs/">wskaźników globalnych</a> (<a href="https://unstats.un.org/sdgs/indicators/indicators-list/"  target="_blank">SDG indicators</a>). Wartości dla całego świata i jego regionów są obliczane przez organizacje międzynarodowe, głównie na podstawie oficjalnych danych statystycznych pozyskiwanych z poszczególnych krajów. Na poziomie krajowym, zamiast wskaźników globalnych, państwa mogą wykorzystywać własne zestawy wskaźników, pozwalające na monitorowanie tych obszarów i problemów, które są najważniejsze dla danego kraju. Takie rozwiązanie przyjęto w Polsce (patrz – <a href="http://sdg.gov.pl/faqs/">wskaźniki monitorujące priorytety krajowe</a>). </p>
 
-<p>Postępy poczynione w skali całego świata i jego regionów są prezentowane przez ONZ w wydawanych co roku <a href="http://sdg.gov.pl/o_sdg/">raportach</a>. Dodatkowo, dla użytkowników poszukujących szczegółowych danych dla świata, regionów i poszczególnych krajów udostępniono <a href="https://unstats.un.org/sdgs/indicators/database/">bazę danych</a>. Działania podejmowane przez poszczególne kraje są monitorowane w ramach tzw. dobrowolnych krajowych przeglądów (<a href="https://sustainabledevelopment.un.org/vnrs/">Voluntary National Reviews – VNR</a>), które odbywają się w lipcu każdego roku na Forum Wysokiego Szczebla ONZ w Nowym Jorku. W 2018 r. po raz pierwszy na przeglądzie zaprezentowała się Polska. Główny Urząd Statystyczny brał udział w przygotowaniu <a href="https://www.mpit.gov.pl/strony/zadania/zrownowazony-rozwoj/agenda-2030/konsultacje-spoleczne-raport-pl/">raportu</a> z postępów Polski, jako instytucja odpowiedzialna za wskaźniki monitorujące i zapewnienie potrzebnych informacji statystycznych.</p>
+<p>Postępy poczynione w skali całego świata i jego regionów są prezentowane przez ONZ w wydawanych co roku <a href="https://unstats.un.org/sdgs/report/2018/"  target="_blank">raportach</a>. Dodatkowo, dla użytkowników poszukujących szczegółowych danych dla świata, regionów i poszczególnych krajów udostępniono <a href="https://unstats.un.org/sdgs/indicators/database/"  target="_blank">bazę danych</a>. Działania podejmowane przez poszczególne kraje są monitorowane w ramach tzw. dobrowolnych krajowych przeglądów (<a href="https://sustainabledevelopment.un.org/vnrs/"  target="_blank">Voluntary National Reviews – VNR</a>), które odbywają się w lipcu każdego roku na Forum Wysokiego Szczebla ONZ w Nowym Jorku. W 2018 r. po raz pierwszy na przeglądzie zaprezentowała się Polska. Główny Urząd Statystyczny brał udział w przygotowaniu <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank">raportu</a> z postępów Polski, jako instytucja odpowiedzialna za wskaźniki monitorujące i zapewnienie potrzebnych informacji statystycznych.</p>
 
-<p>Monitorowanie postępów z realizacji Agendy 2030 jest dużym wyzwaniem dla statystyki publicznej. Wymaga koordynacji prac wielu instytucji i współpracy pomiędzy szczeblem międzynarodowym a krajowym. Dla wsparcia instytucji statystycznych w regionie Europejskiej Komisji Gospodarczej ONZ powołano Grupę Sterującą ds. Statystyki dla SDGs. Od 2018 r. grupie tej współprzewodniczy Polska (GUS). Jednym z najważniejszych dokonań grupy jest przygotowanie mapy drogowej (<a href="http://www.unece.org/index.php?id=47510">Road Map on statistics for Sustainable Development Goals</a>), która ułatwia krajom organizację procesu monitorowania Agendy 2030.</p>
+<p>Monitorowanie postępów z realizacji Agendy 2030 jest dużym wyzwaniem dla statystyki publicznej. Wymaga koordynacji prac wielu instytucji i współpracy pomiędzy szczeblem międzynarodowym a krajowym. Dla wsparcia instytucji statystycznych w regionie Europejskiej Komisji Gospodarczej ONZ powołano Grupę Sterującą ds. Statystyki dla SDGs. Od 2018 r. grupie tej współprzewodniczy Polska (GUS). Jednym z najważniejszych dokonań grupy jest przygotowanie mapy drogowej (<a href="http://www.unece.org/index.php?id=47510"  target="_blank">Road Map on statistics for Sustainable Development Goals</a>), która ułatwia krajom organizację procesu monitorowania Agendy 2030.</p>
 
   </div>
   <div role="tabpanel" class="tab-pane" id="publ">
@@ -73,13 +73,13 @@ permalink: /o_sdg/
   </div>
   <p><b>A picture of Poland. Statistics for SDGs</b></p>
   <p>W 2015 r. Polska została jednym z 193 sygnatariuszy Rezolucji ONZ w sprawie Agendy 2030 na rzecz Zrównoważonego Rozwoju. W lipcu 2018 r. po raz pierwszy zaprezentowała swoje postępy we wdrażaniu Celów Zrównoważonego Rozwoju (<em>Sustainable Development Goals – SDGs</em>) podczas krajowych przeglądów na Forum Politycznym Wysokiego Szczebla ONZ. Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował publikację <em>A picture of Poland. Statistics for SDGs</em>, której celem było przybliżenie czytelnikom z innych państw obraz naszego kraju oraz roli, jaką ma do spełnienia Polska w osiąganiu celów Agendy 2030.</p>
-  <p>Informacje zawarte w publikacji zostały zainspirowane priorytetami rozwojowymi dla kraju, wskazanymi w dokumencie <a href="https://www.mpit.gov.pl/media/58469/Polska_VNR_20180615.pdf">Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</a>, przygotowanym na przegląd przez Ministerstwo Przedsiębiorczości i Technologii.</p>
+  <p>Informacje zawarte w publikacji zostały zainspirowane priorytetami rozwojowymi dla kraju, wskazanymi w dokumencie <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank">Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</a>, przygotowanym na przegląd przez Ministerstwo Przedsiębiorczości i Technologii.</p>
   <p>Publikacja, jako wydawnictwo skierowane głównie do odbiorców zagranicznych, dostępne jest wyłącznie w wersji anglojęzycznej.</p>
 
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.mpit.gov.pl/media/58469/Polska_VNR_20180615.pdf"><img src="{{ site.baseurl }}/assets/img/publikacje/2_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/2_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</b></p>
   <p>Raport został opracowany przez Ministerstwo Przedsiębiorczości i Technologii (koordynatora procesu wdrażania Agendy 2030 w Polsce) na potrzeby przeglądu realizacji przez Polskę Celów Zrównoważonego Rozwoju. W publikacji zostały wskazane dotychczasowe doświadczenia, krajowe priorytety rozwoju Polski oraz krajowe podejście do realizacji poszczególnych SDGs. Raport został uzupełniony aneksem statystycznym, zawierającym listę krajowych wskaźników niezbędnych do mierzenia efektów działań podejmowanych na rzecz realizacji każdego z SDGs.
@@ -125,13 +125,13 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   <div class="image-wrapper">
       <a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs In an EU context</b></p>
+  <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</b></p>
 
-  <p>Opracowanie stanowi skróconą wersję raportu Eurostatu z realizacji SDGs w Unii Europejskiej pn. <a href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU contex</a>. Postęp we wdrażaniu Agendy 2030 w UE oceniany jest w okresie krótkim na podstawie nowego zestawu wskaźników SDG dla UE i prezentowany w formie graficznej. Szczegółowa analiza realizacji Agendy 2030 w UE dostępna jest w pełnej wersji raportu.
+  <p>Opracowanie stanowi skróconą wersję raportu Eurostatu z realizacji SDGs w Unii Europejskiej pn. <a href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</a>. Postęp we wdrażaniu Agendy 2030 w UE oceniany jest w okresie krótkim na podstawie nowego zestawu wskaźników SDG dla UE i prezentowany w formie graficznej. Szczegółowa analiza realizacji Agendy 2030 w UE dostępna jest w pełnej wersji raportu.
 
   <br><br><br></p>
   <p><b>Archiwum:</b></p>
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development In the European Union – Overview of progress towards the SDGs In an EU context – Edycja 2017</a></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2017</a></p>
 
   <hr>
   <div class="image-wrapper">
@@ -171,3 +171,18 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
 </div>
 <hr>
+
+<script>
+$(document).ready(function() {
+    if (location.hash) {
+        $("a[href='" + location.hash + "']").tab("show");
+    }
+    $(document.body).on("click", "a[data-toggle]", function(event) {
+        location.hash = this.getAttribute("href");
+    });
+});
+$(window).on("popstate", function() {
+    var anchor = location.hash || $("a[data-toggle='tab']").first().attr("href");
+    $("a[href='" + anchor + "']").tab("show");
+});
+</script>

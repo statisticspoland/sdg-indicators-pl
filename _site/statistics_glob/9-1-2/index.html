@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-01-30-13-03-29-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-01-30-13-03-29-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -93,9 +93,11 @@
         </a>
       </div>
       <div class="icons">
+	  
         <a href="http://twitter.com/GUS_STAT" target="_blank" title="profil GUS na Twitterze" class="pos-5" style=" color: #999999;">
           <i class="fa fa-twitter" style="font-size:20px;"></i>
         </a>
+	  
       </div>
       <div class="icons">
         <a href="https://www.linkedin.com/company/532930" target="_blank" title="profil GUS na LinkedIn" class="pos-6" style=" ">
@@ -229,7 +231,7 @@
           </div>
         </li>
         <!--------------------element menu III-------------------------------------------------------------------------------------------------->
-        <li class="nav-item"><a href="/sdg-indicators/guide" style="margin-left: 
+        <li class="nav-item"><a href="/sdg-indicators/guide" style="margin-left:
 		
 			20px;
 		
@@ -282,18 +284,15 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 				}, false);
 
 		},
-		create: function() {
-			var element = document.createElement( "div" );
-			this.element = element;
-			var html = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div>";
+    create: function() {
+      var element = document.createElement( "div" );
+      this.element = element;
       element.id = "cookie-toolkit";
-			html += "<div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div>";
-			html += "</div>";
-      element.innerHTML = html;
-      var headers = document.querySelector(".usa-disclaimer.development");
-			headers.after( element );
+      element.innerHTML = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div><div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div></div>";
+      var headers = document.querySelector(".usa-disclaimer");
+      headers.after(element);
 
-		},
+    },
 		_show: function() {
       var self = this;
 			self.element.style.display = "block";
@@ -632,7 +631,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
   var container = '#linechart-9-1-2'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
   var licznik=10
-  var calosc=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+  var calosc=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
   var jez= 'pl'
   var legen=["transport kolejowy (tys. pasażerów)","transport samochodowy (tys. pasażerów)","transport morski (tys. pasażerów)","śródlądowy transport wodny (tys. pasażerów)","transport lotniczy (tys. pasażerów)","transport kolejowy (tys. ton)","transport samochodowy (tys. ton)","transport morski (tys. ton)","śródlądowy transport wodny (tys. ton)","transport lotniczy (tys. ton)"]
 
@@ -1075,7 +1074,7 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","transport kolejowy (tys. pasażerów)":"261314","transport samochodowy (tys. pasażerów)":"569652","transport morski (tys. pasażerów)":"671","śródlądowy transport wodny (tys. pasażerów)":"1397","transport lotniczy (tys. pasażerów)":"4990","transport kolejowy (tys. ton)":"216899","transport samochodowy (tys. ton)":"1551841","transport morski (tys. ton)":"56208","śródlądowy transport wodny (tys. ton)":"8362","transport lotniczy (tys. ton)":"5141"},{"year":"2011","transport kolejowy (tys. pasażerów)":"263609","transport samochodowy (tys. pasażerów)":"534885","transport morski (tys. pasażerów)":"637","śródlądowy transport wodny (tys. pasażerów)":"1519","transport lotniczy (tys. pasażerów)":"6491","transport kolejowy (tys. ton)":"248606","transport samochodowy (tys. ton)":"1596209","transport morski (tys. ton)":"54482","śródlądowy transport wodny (tys. ton)":"7737","transport lotniczy (tys. ton)":"5093"},{"year":"2012","transport kolejowy (tys. pasażerów)":"273182","transport samochodowy (tys. pasażerów)":"497288","transport morski (tys. pasażerów)":"642","śródlądowy transport wodny (tys. pasażerów)":"1515","transport lotniczy (tys. pasażerów)":"7170","transport kolejowy (tys. ton)":"230878","transport samochodowy (tys. ton)":"1493386","transport morski (tys. ton)":"52985","śródlądowy transport wodny (tys. ton)":"7476","transport lotniczy (tys. ton)":"4579"},{"year":"2013","transport kolejowy (tys. pasażerów)":"269815","transport samochodowy (tys. pasażerów)":"459947","transport morski (tys. pasażerów)":"606","śródlądowy transport wodny (tys. pasażerów)":"1540","transport lotniczy (tys. pasażerów)":"7648","transport kolejowy (tys. ton)":"232596","transport samochodowy (tys. ton)":"1553050","transport morski (tys. ton)":"50656","śródlądowy transport wodny (tys. ton)":"6965","transport lotniczy (tys. ton)":"5044"},{"year":"2014","transport kolejowy (tys. pasażerów)":"268204","transport samochodowy (tys. pasażerów)":"431516","transport morski (tys. pasażerów)":"611","śródlądowy transport wodny (tys. pasażerów)":"1579","transport lotniczy (tys. pasażerów)":"7788","transport kolejowy (tys. ton)":"227820","transport samochodowy (tys. ton)":"1547883","transport morski (tys. ton)":"49810","śródlądowy transport wodny (tys. ton)":"6781","transport lotniczy (tys. ton)":"7629"},{"year":"2015","transport kolejowy (tys. pasażerów)":"277321","transport samochodowy (tys. pasażerów)":"416774","transport morski (tys. pasażerów)":"597","śródlądowy transport wodny (tys. pasażerów)":"1762","transport lotniczy (tys. pasażerów)":"7288","transport kolejowy (tys. ton)":"224320","transport samochodowy (tys. ton)":"1505719","transport morski (tys. ton)":"54850","śródlądowy transport wodny (tys. ton)":"6963","transport lotniczy (tys. ton)":"11928"},{"year":"2016","transport kolejowy (tys. pasażerów)":"291981","transport samochodowy (tys. pasażerów)":"390410","transport morski (tys. pasażerów)":"632","śródlądowy transport wodny (tys. pasażerów)":"2024","transport lotniczy (tys. pasażerów)":"8779","transport kolejowy (tys. ton)":"222523","transport samochodowy (tys. ton)":"1546572","transport morski (tys. ton)":"54058","śródlądowy transport wodny (tys. ton)":"7248","transport lotniczy (tys. ton)":"6210"},{"year":"2017","transport kolejowy (tys. pasażerów)":"303001","transport samochodowy (tys. pasażerów)":"378610","transport morski (tys. pasażerów)":"644","śródlądowy transport wodny (tys. pasażerów)":"1262","transport lotniczy (tys. pasażerów)":"11846","transport kolejowy (tys. ton)":"239501","transport samochodowy (tys. ton)":"1747266","transport morski (tys. ton)":"52393","śródlądowy transport wodny (tys. ton)":"8254","transport lotniczy (tys. ton)":"5778"}]
+var DATA = [{"year":"2010","transport kolejowy (tys. pasażerów)":"261314","transport samochodowy (tys. pasażerów)":"569652","transport morski (tys. pasażerów)":"671","śródlądowy transport wodny (tys. pasażerów)":"1397","transport lotniczy (tys. pasażerów)":"4990","transport kolejowy (tys. ton)":"234568","transport samochodowy (tys. ton)":"1551841","transport morski (tys. ton)":"56208","śródlądowy transport wodny (tys. ton)":"8362","transport lotniczy (tys. ton)":"5141"},{"year":"2011","transport kolejowy (tys. pasażerów)":"263609","transport samochodowy (tys. pasażerów)":"534885","transport morski (tys. pasażerów)":"637","śródlądowy transport wodny (tys. pasażerów)":"1519","transport lotniczy (tys. pasażerów)":"6491","transport kolejowy (tys. ton)":"248606","transport samochodowy (tys. ton)":"1596209","transport morski (tys. ton)":"54482","śródlądowy transport wodny (tys. ton)":"7737","transport lotniczy (tys. ton)":"5093"},{"year":"2012","transport kolejowy (tys. pasażerów)":"273182","transport samochodowy (tys. pasażerów)":"497288","transport morski (tys. pasażerów)":"642","śródlądowy transport wodny (tys. pasażerów)":"1515","transport lotniczy (tys. pasażerów)":"7170","transport kolejowy (tys. ton)":"230878","transport samochodowy (tys. ton)":"1493386","transport morski (tys. ton)":"52985","śródlądowy transport wodny (tys. ton)":"7476","transport lotniczy (tys. ton)":"4579"},{"year":"2013","transport kolejowy (tys. pasażerów)":"269815","transport samochodowy (tys. pasażerów)":"459947","transport morski (tys. pasażerów)":"606","śródlądowy transport wodny (tys. pasażerów)":"1540","transport lotniczy (tys. pasażerów)":"7648","transport kolejowy (tys. ton)":"232596","transport samochodowy (tys. ton)":"1553050","transport morski (tys. ton)":"50656","śródlądowy transport wodny (tys. ton)":"6965","transport lotniczy (tys. ton)":"5044"},{"year":"2014","transport kolejowy (tys. pasażerów)":"268204","transport samochodowy (tys. pasażerów)":"431516","transport morski (tys. pasażerów)":"611","śródlądowy transport wodny (tys. pasażerów)":"1579","transport lotniczy (tys. pasażerów)":"7788","transport kolejowy (tys. ton)":"227820","transport samochodowy (tys. ton)":"1547883","transport morski (tys. ton)":"49810","śródlądowy transport wodny (tys. ton)":"6781","transport lotniczy (tys. ton)":"7629"},{"year":"2015","transport kolejowy (tys. pasażerów)":"277321","transport samochodowy (tys. pasażerów)":"416774","transport morski (tys. pasażerów)":"597","śródlądowy transport wodny (tys. pasażerów)":"1762","transport lotniczy (tys. pasażerów)":"7288","transport kolejowy (tys. ton)":"224320","transport samochodowy (tys. ton)":"1505719","transport morski (tys. ton)":"54850","śródlądowy transport wodny (tys. ton)":"6963","transport lotniczy (tys. ton)":"11928"},{"year":"2016","transport kolejowy (tys. pasażerów)":"291981","transport samochodowy (tys. pasażerów)":"390410","transport morski (tys. pasażerów)":"632","śródlądowy transport wodny (tys. pasażerów)":"2024","transport lotniczy (tys. pasażerów)":"8779","transport kolejowy (tys. ton)":"222523","transport samochodowy (tys. ton)":"1546572","transport morski (tys. ton)":"54058","śródlądowy transport wodny (tys. ton)":"7248","transport lotniczy (tys. ton)":"6210"},{"year":"2017","transport kolejowy (tys. pasażerów)":"303001","transport samochodowy (tys. pasażerów)":"378610","transport morski (tys. pasażerów)":"644","śródlądowy transport wodny (tys. pasażerów)":"1262","transport lotniczy (tys. pasażerów)":"11846","transport kolejowy (tys. ton)":"239501","transport samochodowy (tys. ton)":"1747266","transport morski (tys. ton)":"52393","śródlądowy transport wodny (tys. ton)":"8254","transport lotniczy (tys. ton)":"5778"}]
 var naglowek=["transport kolejowy (tys. pasażerów)","transport samochodowy (tys. pasażerów)","transport morski (tys. pasażerów)","śródlądowy transport wodny (tys. pasażerów)","transport lotniczy (tys. pasażerów)","transport kolejowy (tys. ton)","transport samochodowy (tys. ton)","transport morski (tys. ton)","śródlądowy transport wodny (tys. ton)","transport lotniczy (tys. ton)"]
 
 
@@ -1244,7 +1243,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
           
           <tr>
             
-              <th style="padding: 5px; height: 45px;">  Źrodło danych </th>
+              <th style="padding: 5px; height: 45px;">  Źródło danych </th>
             
             <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Urząd Statystyczny </td>
           </tr>
@@ -1368,8 +1367,8 @@ function Zmiana_jednostki(){
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,14);
+      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1392,8 +1391,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1423,8 +1422,8 @@ function Zmiana_jednostki2(){
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(24,40);
+      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1452,8 +1451,8 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,24);
+      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1487,7 +1486,7 @@ function Zmiana_jednostki3(){
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1513,7 +1512,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1553,7 +1552,7 @@ $(window).on("load", function() {
     }
     var licznik=10
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+    var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
     calosc=calo.splice(0,24);
     var b = [[]];
     seria=[]
@@ -1576,7 +1575,7 @@ $(window).on("load", function() {
     }
     var licznik=10;
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null];
+    var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1667,7 +1666,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
       <div class="pl-grid">
-        <div class="usa-footer-contact-links usa-width-one-half" style="margin-right: 145px">
+        <div class="usa-footer-contact-links usa-width-one-half" style="margin-right: 0px">
           <address>
             <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
             <p> <b>O projekcie</b><br />Witamy na stronie internetowej GUS poświęconej Agendzie 2030 i Celom Zrównoważonego Rozwoju </p>
@@ -1678,14 +1677,14 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
         <div class="usa-footer-logo usa-width-one-half" style="width: 65px; margin-right: 15px">
 
 		</div>
-		<div class="usa-footer-logo usa-width-one-half" style="width: 170px; margin-right: 15px">
+		<div class="usa-footer-logo usa-width-one-half" style="width: 310px; margin-right: 15px">
             <h3 class="usa-footer-contact-heading footer-about-heading dis"></h3>
 
         </div>
-		<div class="usa-footer-logo usa-width-one-half" style="width: 225px;display: inline-flex;">
-        <img src="/sdg-indicators/assets/img/gus_cz_2.png" style="max-height: 100%; margin-right: 15px; margin-top: 0px; margin-left: ">
+		<div class="usa-footer-logo usa-width-one-half" style="width: 230px; display: inline-flex;">
+        <img src="/sdg-indicators/assets/img/gus_cz_2.png" style="max-height: 85px; margin-right: 15px; margin-top: 0px; margin-left: ">
       <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
-      <p class="contact"><b>Główny Urząd Statystyczny</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br /><a href="mailto:Agenda2030@stat.gov.pl" class="contact">Agenda2030@stat.gov.pl <br /></a></p>
+      <p class="contact"><b>Główny Urząd Statystyczny</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br /><a href="mailto:SDG@stat.gov.pl" class="contact">SDG@stat.gov.pl <br /></a></p>
         </div>
 		</div>
       </div>

@@ -1,18 +1,18 @@
 ---
 layout: page
-title: FAQ – pytania i odpowiedzi do platformy SDG
+title: FAQ
 permalink: /faqs/
 ---
 <article>
 
 
   <p><b>1. Czym jest zestaw wskaźników monitorujących cele globalne? </b></p>
-  <p>Zestaw wskaźników monitorujących cele globalne został opracowany przez Organizację Narodów Zjednoczonych i  ma umożliwiać ocenę postępów w realizacji Celów Zrównoważonego Rozwoju (Sustainable Development Goals – SDGs) Agendy 2030. Dzięki jednolitemu zestawowi mierników możliwe jest nie tylko dokonanie porównań między poszczególnymi krajami i regionami, ale również prezentowanie zmian w skali całego świata.
+  <p><a href="https://unstats.un.org/sdgs/indicators/indicators-list/"  target="_blank">Zestaw wskaźników monitorujących cele globalne</a> został opracowany przez Organizację Narodów Zjednoczonych i  ma umożliwiać ocenę postępów w realizacji Celów Zrównoważonego Rozwoju (Sustainable Development Goals – SDGs) Agendy 2030. Dzięki jednolitemu zestawowi mierników możliwe jest nie tylko dokonanie porównań między poszczególnymi krajami i regionami, ale również prezentowanie zmian w skali całego świata.
   </p>
 
   <p><b>2. Czym jest zestaw wskaźników monitorujących priorytety krajowe?</b></p>
-  <p>Zestaw wskaźników monitorujących priorytety krajowe został zbudowany w celu monitorowania priorytetów zrównoważonego rozwoju Polski, ustalonych na szczeblu ministerialnym i zdefiniowanych w Raporcie pn.
-    <a href="https://www.mpit.gov.pl/strony/zadania/zrownowazony-rozwoj/agenda-2030/konsultacje-spoleczne-raport-pl/">„Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018”</a>. Jego podstawę stanowią mierniki monitorujące najważniejszy obecnie w Polsce dokument strategiczny – <a href="https://www.miir.gov.pl/strony/strategia-na-rzecz-odpowiedzialnego-rozwoju/informacje-o-strategii/">Strategię na rzecz Odpowiedzialnego Rozwoju</a>. Zgodnie z założeniami Agendy 2030, kraje-sygnatariusze są zachęcane do ustalania własnych priorytetów zrównoważonego rozwoju, uwzględniających krajowe uwarunkowania oraz specyfikę i pomiaru ich wdrażania za pomocą własnych zestawów wskaźników.
+  <p><a href="{{ site.baseurl }}/statistics_nat/">Zestaw wskaźników monitorujących priorytety krajowe</a> został zbudowany w celu monitorowania priorytetów zrównoważonego rozwoju Polski, ustalonych na szczeblu ministerialnym i zdefiniowanych w Raporcie pn.
+    <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank">„Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018”</a>. Jego podstawę stanowią mierniki monitorujące najważniejszy obecnie w Polsce dokument strategiczny – <a href="https://www.miir.gov.pl/strony/strategia-na-rzecz-odpowiedzialnego-rozwoju/informacje-o-strategii/"  target="_blank">Strategię na rzecz Odpowiedzialnego Rozwoju</a>. Zgodnie z założeniami Agendy 2030, kraje-sygnatariusze są zachęcane do ustalania własnych priorytetów zrównoważonego rozwoju, uwzględniających krajowe uwarunkowania oraz specyfikę i pomiaru ich wdrażania za pomocą własnych zestawów wskaźników.
   </p>
 
     <p><b>3. Co oznaczają poszczególne statusy: Statystyki opublikowane, Statystyki w przygotowaniu oraz Analiza źródeł?</b></p>

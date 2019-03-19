@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-01-30-13-03-29-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-01-30-13-03-29-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -93,9 +93,11 @@
         </a>
       </div>
       <div class="icons">
-        <a href="http://twitter.com/GUS_STAT" target="_blank" title="profil GUS na Twitterze" class="pos-5" style=" color: #999999;">
+	  
+		<a href="http://twitter.com/StatPoland" target="_blank" title="Statistics Poland on Twitter" class="pos-5" style=" color: #999999;">
           <i class="fa fa-twitter" style="font-size:20px;"></i>
         </a>
+	  
       </div>
       <div class="icons">
         <a href="https://www.linkedin.com/company/532930" target="_blank" title="profil GUS na LinkedIn" class="pos-6" style=" ">
@@ -229,7 +231,7 @@
           </div>
         </li>
         <!--------------------element menu III-------------------------------------------------------------------------------------------------->
-        <li class="nav-item"><a href="/sdg-indicators/en/guide" style="margin-left: 
+        <li class="nav-item"><a href="/sdg-indicators/en/guide" style="margin-left:
 		
 			40px;
 		
@@ -282,18 +284,15 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 				}, false);
 
 		},
-		create: function() {
-			var element = document.createElement( "div" );
-			this.element = element;
-			var html = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div>";
+    create: function() {
+      var element = document.createElement( "div" );
+      this.element = element;
       element.id = "cookie-toolkit";
-			html += "<div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div>";
-			html += "</div>";
-      element.innerHTML = html;
-      var headers = document.querySelector(".usa-disclaimer.development");
-			headers.after( element );
+      element.innerHTML = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div><div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div></div>";
+      var headers = document.querySelector(".usa-disclaimer");
+      headers.after(element);
 
-		},
+    },
 		_show: function() {
       var self = this;
 			self.element.style.display = "block";
@@ -629,9 +628,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 (function (){
   var container = '#linechart-9-1-2-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = []
   var licznik=5
-  var calosc=["216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778","41","45","41","37","38","38","41","53"]
+  var calosc=[]
   var jez= 'en'
   var legen=["railway transport","road transport","maritime transport fleet","transport by inland waterway fleet","air transport"]
 
@@ -1074,7 +1073,7 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","railway transport":"216899","road transport":"1551841","maritime transport fleet":"56208","transport by inland waterway fleet":"8362","air transport":"5141","":"41"},{"year":"2011","railway transport":"248606","road transport":"1596209","maritime transport fleet":"54482","transport by inland waterway fleet":"7737","air transport":"5093","":"45"},{"year":"2012","railway transport":"230878","road transport":"1493386","maritime transport fleet":"52985","transport by inland waterway fleet":"7476","air transport":"4579","":"41"},{"year":"2013","railway transport":"232596","road transport":"1553050","maritime transport fleet":"50656","transport by inland waterway fleet":"6965","air transport":"5044","":"37"},{"year":"2014","railway transport":"227820","road transport":"1547883","maritime transport fleet":"49810","transport by inland waterway fleet":"6781","air transport":"7629","":"38"},{"year":"2015","railway transport":"224320","road transport":"1505719","maritime transport fleet":"54850","transport by inland waterway fleet":"6963","air transport":"11928","":"38"},{"year":"2016","railway transport":"222523","road transport":"1546572","maritime transport fleet":"54058","transport by inland waterway fleet":"7248","air transport":"6210","":"41"},{"year":"2017","railway transport":"239501","road transport":"1747266","maritime transport fleet":"52393","transport by inland waterway fleet":"8254","air transport":"5778","":"53"}]
+var DATA = null
 var naglowek=["railway transport","road transport","maritime transport fleet","transport by inland waterway fleet","air transport"]
 
 
@@ -1363,12 +1362,12 @@ function download_csv(csv, filename) {
 function Zmiana_jednostki(){
 
   var licznik=5
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = []
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778","41","45","41","37","38","38","41","53"]
-      calosc=calo.splice(8,14);
+      var calo=[]
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1391,8 +1390,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778","41","45","41","37","38","38","41","53"]
-      calosc=calo.splice(0,8);
+      var calo=[]
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1418,12 +1417,12 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki2(){
 
   var licznik=5
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = []
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778","41","45","41","37","38","38","41","53"]
-      calosc=calo.splice(24,40);
+      var calo=[]
+      calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1451,8 +1450,8 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778","41","45","41","37","38","38","41","53"]
-      calosc=calo.splice(0,24);
+      var calo=[]
+      calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1482,11 +1481,11 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=5
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = []
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778","41","45","41","37","38","38","41","53"]
+      var calo=[]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1512,7 +1511,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778","41","45","41","37","38","38","41","53"]
+      var calo=[]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1551,8 +1550,8 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=5
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778","41","45","41","37","38","38","41","53"]
+    var labels = []
+    var calo=[]
     calosc=calo.splice(0,24);
     var b = [[]];
     seria=[]
@@ -1574,8 +1573,8 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=5;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["216899","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778","41","45","41","37","38","38","41","53"];
+    var labels = [];
+    var calo=[];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1666,10 +1665,10 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
       <div class="pl-grid">
-        <div class="usa-footer-contact-links usa-width-one-half" style="margin-right: 145px">
+        <div class="usa-footer-contact-links usa-width-one-half" style="margin-right: 0px">
           <address>
             <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
-            <p> <b>About</b><br />Welcome to the GUS website dedicated to Agenda 2030 and Sustainable Development Goals </p>
+            <p> <b>About</b><br />Welcome to the Statistics Poland website dedicated to the 2030 Agenda and Sustainable Development Goals </p>
 
           </address>
         </div>
@@ -1677,14 +1676,14 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
         <div class="usa-footer-logo usa-width-one-half" style="width: 65px; margin-right: 15px">
 
 		</div>
-		<div class="usa-footer-logo usa-width-one-half" style="width: 170px; margin-right: 15px">
+		<div class="usa-footer-logo usa-width-one-half" style="width: 310px; margin-right: 15px">
             <h3 class="usa-footer-contact-heading footer-about-heading dis"></h3>
 
         </div>
-		<div class="usa-footer-logo usa-width-one-half" style="width: 225px;display: inline-flex;">
-        <img src="/sdg-indicators/assets/img/gus_cz_2.png" style="max-height: 100%; margin-right: 15px; margin-top: 0px; margin-left: ">
+		<div class="usa-footer-logo usa-width-one-half" style="width: 230px; display: inline-flex;">
+        <img src="/sdg-indicators/assets/img/gus_cz_2.png" style="max-height: 85px; margin-right: 15px; margin-top: 0px; margin-left: ">
       <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
-      <p class="contact"><b>Statistics Poland</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br /><a href="mailto:Agenda2030@stat.gov.pl" class="contact">Agenda2030@stat.gov.pl <br /></a></p>
+      <p class="contact"><b>Statistics Poland</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br /><a href="mailto:SDG@stat.gov.pl" class="contact">SDG@stat.gov.pl <br /></a></p>
         </div>
 		</div>
       </div>

@@ -37,8 +37,8 @@ permalink: /en/guide/
             </p>
             <p>
             The new universal version of the <b><i>open-sdg</i></b> platform developed by the US, UK and Center for Open Data Enterprise is available.
-            <br />We encourage you to familiarize yourself with the national US, UK platforms for SDG and
-            <a href="https://open-sdg.readthedocs.io/en/latest/"  target="_blank">the project documentation</a>.
+            <br />We encourage you to familiarize yourself with the national US, UK platforms for SDG and the 
+            <a href="https://open-sdg.readthedocs.io/en/latest/"  target="_blank">project documentation</a>.
             </p>
             <p>
             - US NPR SDG -
@@ -59,10 +59,10 @@ permalink: /en/guide/
             <br />- extending the structure to accommodate in parallel both global and national SDG indicators
             <br />- SDG indicator search engine
             <br />- improvement of navigation between particular pages of the platform (eg scrolling between goals, breadcrumbs)
-            <br />- improving the presentation of indicators:
-            <br />-- dynamically generated table, charts based on selected data
-            <br />-- the possibility of adding several data series from available dimensional attributes
-            <br />-- CSV download (all or selected data)
+            <br />- improving the presentation of indicators
+            <br />- dynamically generated table, charts based on selected data
+            <br />- the possibility of adding several data series from available dimensional attributes
+            <br />- CSV download (all or selected data)
             </p>
 </article>
 <hr>

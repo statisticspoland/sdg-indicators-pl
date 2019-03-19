@@ -1,18 +1,18 @@
 ---
 layout: page
 lang: en
-title: FAQ – questions and answers to the SDG platform 
+title: FAQ
 permalink: /en/faqs/
 ---
 <article>
 
   <p><b>1. What is the indicator set monitoring global goals?</b></p>
-  <p>The global goal indicator set was developed by the United Nations, and its task is to enable the assessment of progress in the realisation of the Sustainable Development Goals – SDGs of the 2030 Agenda. Owing to the uniform set of measures, not only is it possible to make comparisons among individual countries and regions, but it is also possible to present changes globally.
+  <p><a href="https://unstats.un.org/sdgs/indicators/indicators-list/"  target="_blank">The global goal indicator set</a> was developed by the United Nations, and its task is to enable the assessment of progress in the realisation of the Sustainable Development Goals – SDGs of the 2030 Agenda. Owing to the uniform set of measures, not only is it possible to make comparisons among individual countries and regions, but it is also possible to present changes globally.
   </p>
 
   <p><b>2. What is the indicator set monitoring national priorities? </b></p>
-  <p>The indicator set monitoring national priorities was developed in order to monitor Poland’s sustainable development priorities, established at ministerial level and defined in the Report
-    <a href="https://www.mpit.gov.pl/strony/zadania/zrownowazony-rozwoj/agenda-2030/konsultacje-spoleczne-raport-pl/">Implementation of the Sustainable Development Goals in Poland. The 2018 National Report</a>. It is based on the indicators monitoring  currently the most important strategic document in Poland – <a href="https://www.miir.gov.pl/strony/strategia-na-rzecz-odpowiedzialnego-rozwoju/informacje-o-strategii/">the Strategy for Responsible Development</a>. In line with the 2030 Agenda’s assumption, the signatory countries are encouraged to determine their own sustainable development priorities, taking into account the country situation and its specificity, and measure their implementation with their own indicator sets.    
+  <p><a href="{{ site.baseurl }}/en/statistics_nat/">The indicator set monitoring national priorities</a> was developed in order to monitor Poland’s sustainable development priorities, established at ministerial level and defined in the Report
+    <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank">Implementation of the Sustainable Development Goals in Poland. The 2018 National Report</a>. It is based on the indicators monitoring  currently the most important strategic document in Poland – <a href="https://www.miir.gov.pl/strony/strategia-na-rzecz-odpowiedzialnego-rozwoju/informacje-o-strategii/"  target="_blank">the Strategy for Responsible Development</a>. In line with the 2030 Agenda’s assumption, the signatory countries are encouraged to determine their own sustainable development priorities, taking into account the country situation and its specificity, and measure their implementation with their own indicator sets.    
   </p>
 
     <p><b>3. What is the meaning of the following statuses: Reported online, Statistics in progress and Exploring data sources?</b></p>

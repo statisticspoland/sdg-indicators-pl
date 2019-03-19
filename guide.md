@@ -37,8 +37,8 @@ permalink: /guide/
             https://github.com/statisticspoland/sdg-indicators-pl</a>
             </p>
             <p>
-            Aktualnie dostępna jest nowa wersja platformy open-sdg opracowana przez US, UK, CODE.
-            Zachęcamy do zapoznania się z krajowymi platformam US, UK oraz z <a href="#"  target="_blank">dokumentacją projektu</a>.
+            Aktualnie dostępna jest nowa wersja platformy <b><i>open-sdg</i></b> opracowana przez US, UK, CODE.
+            Zachęcamy do zapoznania się z krajowymi platformami US, UK oraz z <a href="https://open-sdg.readthedocs.io/en/latest/"  target="_blank">dokumentacją projektu</a>.
             </p>
             <p>
             - US NPR SDG -
@@ -60,10 +60,10 @@ permalink: /guide/
             <br />- rozszerzenie modelu danych w celu prezentacji globalnych i krajowych wskaźników SDGs
             <br />- wyszukiwarka wskaźników SDG
             <br />- ulepszenie nawigacji między poszczególnymi stronami platformy (np. przewijanie między celami, mapa strony)
-            <br />- ulepszenie prezentacji wskaźników:
-            <br />-- dynamicznie generowane tabele, wykresy na podstawie wybranych danych
-            <br />-- możliwość dodania kilku serii danych z dostępnych wymiarów
-            <br />-- możliwość pobrania danych w formacie CSV dla danego wskaźnika (całość lub wybrane przez użytkownika)
+            <br />- ulepszenie prezentacji wskaźników
+            <br />- dynamicznie generowane tabele, wykresy na podstawie wybranych danych
+            <br />- możliwość dodania kilku serii danych z dostępnych wymiarów
+            <br />- możliwość pobrania danych w formacie CSV dla danego wskaźnika (całość lub wybrane przez użytkownika)
             </p>
 </article>
 <hr>
@@ -88,6 +88,7 @@ permalink: /guide/
             <b>Frontend IT wymagania:</b>
             <br />-	XHTML, CSS, JavaScript
             <br />-	Chartist.js: Chartist jest biblioteką JavaScript do tworzenia responsywnych wykresów
+			<br />-	Bootstrap: framework CSS
             </p>
 </article>
 <hr>
