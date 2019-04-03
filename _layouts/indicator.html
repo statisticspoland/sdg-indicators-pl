@@ -192,7 +192,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo={{ row1 | jsonify }}
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -216,7 +216,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo={{ row1 | jsonify }}
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -233,6 +233,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo={{ row1 | jsonify }}
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -377,7 +432,7 @@ $(window).on("load", function() {
     var licznik={{ licznik }}
     var labels = {{ labels | jsonify }}
     var calo={{ row1 | jsonify }}
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

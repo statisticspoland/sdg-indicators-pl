@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -625,12 +625,12 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-3-4-2" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-3-4-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var licznik=3
-  var calosc=["16.5","15.9","16.5","16.1","15.4","14.1","12.2",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0",null,null,null,null,null,null,null,null,null]
+  var calosc=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
   var jez= 'en'
   var legen=["total","males","females"]
 
@@ -675,7 +675,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -801,6 +803,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -832,8 +877,10 @@ var lista1=[["total","males","females"],]
 var jez='en'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -937,6 +984,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1081,7 +1153,7 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":"16.5","males":"29.6","females":"4.2"},{"year":"2011","total":"15.9","males":"28.7","females":"3.8"},{"year":"2012","total":"16.5","males":"29.8","females":"4.1"},{"year":"2013","total":"16.1","males":"28.9","females":"4.2"},{"year":"2014","total":"15.4","males":"27.5","females":"4.1"},{"year":"2015","total":"14.1","males":"25.2","females":"3.6"},{"year":"2016","total":"12.2","males":"21.9","females":"3.0"},{"year":"2017","total":null,"males":null,"females":null}]
+var DATA = [{"year":"2010","total":"16.5","males":"29.6","females":"4.2"},{"year":"2011","total":"15.9","males":"28.7","females":"3.8"},{"year":"2012","total":"16.5","males":"29.8","females":"4.1"},{"year":"2013","total":"16.1","males":"28.9","females":"4.2"},{"year":"2014","total":"15.4","males":"27.5","females":"4.1"},{"year":"2015","total":"14.1","males":"25.2","females":"3.6"},{"year":"2016","total":"12.2","males":"21.9","females":"3.0"},{"year":"2017","total":"11.7","males":"20.9","females":"3.0"},{"year":"2018","total":null,"males":null,"females":null}]
 var naglowek=["total","males","females"]
 
 
@@ -1370,12 +1442,12 @@ function download_csv(csv, filename) {
 function Zmiana_jednostki(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1398,8 +1470,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1422,14 +1494,69 @@ function Zmiana_jednostki(){
     }
 }
 
+function Zmiana_jednostki4(){
+
+  var licznik=3
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='en'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
 function Zmiana_jednostki2(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0",null,null,null,null,null,null,null,null,null]
+      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1458,7 +1585,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0",null,null,null,null,null,null,null,null,null]
+      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1489,11 +1616,11 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0",null,null,null,null,null,null,null,null,null]
+      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1519,7 +1646,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0",null,null,null,null,null,null,null,null,null]
+      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1558,9 +1685,9 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0",null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1581,8 +1708,8 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0",null,null,null,null,null,null,null,null,null];
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];

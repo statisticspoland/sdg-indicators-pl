@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -625,7 +625,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-11-6-2" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-11-6-2'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
@@ -675,7 +675,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -801,6 +803,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -832,8 +877,10 @@ var lista1=[["Agglomeration of Bialystok","Agglomeration of Bydgoszcz","Upper Si
 var jez='en'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -937,6 +984,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1375,7 +1447,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1399,7 +1471,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1416,6 +1488,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=24
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='en'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1560,7 +1687,7 @@ $(window).on("load", function() {
     var licznik=24
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

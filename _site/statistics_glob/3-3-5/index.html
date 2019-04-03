@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -619,12 +619,12 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-3-3-5" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-3-3-5'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var licznik=1
-  var calosc=["43","26","33","55","63","60","105","103",null,null,null,null,null,null,null,null]
+  var calosc=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null]
   var jez= 'pl'
   var legen=["ogółem"]
 
@@ -669,7 +669,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -762,7 +764,7 @@ for (i=1;i<licznik+1;i++){
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":"43"},{"year":"2011","ogółem":"26"},{"year":"2012","ogółem":"33"},{"year":"2013","ogółem":"55"},{"year":"2014","ogółem":"63"},{"year":"2015","ogółem":"60"},{"year":"2016","ogółem":"105"},{"year":"2017","ogółem":"103"}]
+var DATA = [{"year":"2010","ogółem":"43"},{"year":"2011","ogółem":"26"},{"year":"2012","ogółem":"33"},{"year":"2013","ogółem":"55"},{"year":"2014","ogółem":"63"},{"year":"2015","ogółem":"60"},{"year":"2016","ogółem":"105"},{"year":"2017","ogółem":"104"},{"year":"2018","ogółem":"85"}]
 var naglowek=["ogółem"]
 
 
@@ -870,7 +872,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  3.3.5 Liczba zachorowań na wybrane choroby tropikalne </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>3.3.5 Liczba zachorowań na wybrane choroby tropikalne</b> </td>
           </tr>
           
           
@@ -879,7 +881,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 3. Dobre zdrowie i jakość życia </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 3. Dobre zdrowie i jakość życia </td>
           </tr>
           
           
@@ -924,7 +926,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Choroby tropikalne - choroby, występujące w krajach o klimacie tropikalnym. Choroby tropikalne mogą być wywoływane przez: bakterie, wirusy, grzyby oraz pasożyty jedno- i wielokomórkowe.Dane obliczane na podstawie sprawozdania MZ-56 o zachorowaniach na choroby zakaźne, zakażeniach i zatruciach. Według Międzynarodowej Statystycznej Klasyfikacji Chorób i Problemów Zdrowotnych ICD-10, do chorób tropikalnych zaliczamy jednostki chorobowe o symbolu: A30 (trąd, zwana chorobą Hansena) A31.1 (owrzodzenie Buruli) A66 (frambezja) A71 (jaglica) A82 (wścieklizna) A90 (gorączka denga) A91 (gorączka krwotoczna Denga) A92.0 (Chikungunya) B55 (leiszmanioza) B56 (śpiączka afrykańska, zwana trypanosomatozą afrykańską) B57 (choroba Chagasa) B65 (Schistosomatoza) B66 (choroby przenoszone droga pokarmową wywoływane przez przywry) B67 (Bąblowica - echinokokoza) B68 (Tasiemczyca) B69 (wągrzyca, zwana cysticerkozą) B72 (drakunkuloza) B73 (Onchocerkoza - ślepota rzeczna) B74 (filarioza) B83.0 (Larwa wędrująca trzewna) Spośród ww. chorób w Polsce podlegają zgłoszeniom i są wyodrębniane w rejestracji zachorowań następujące choroby zakaźne: Bąblowica Wągrzyca Chikungunya Gorączka denga Wścieklizna Dla Polski największe znaczenia mają: bąblowica (większość przypadków to przypadki rodzime) oraz wścieklizna (z uwagi na istniejącą wściekliznę zwierząt w Polsce, a tym samym istniejące zagrożenie wystąpienia przypadków u ludzi). </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Choroby tropikalne </b>- choroby, występujące w krajach o klimacie tropikalnym. Choroby tropikalne mogą być wywoływane przez: bakterie, wirusy, grzyby oraz pasożyty jedno- i wielokomórkowe.</p> <p>Dane obliczane na podstawie sprawozdania MZ-56 o zachorowaniach na choroby zakaźne, zakażeniach i zatruciach. Według Międzynarodowej Statystycznej Klasyfikacji Chorób i Problemów Zdrowotnych ICD-10, do chorób tropikalnych zaliczamy jednostki chorobowe o symbolu: </p> <p>  • A30 (trąd, zwana chorobą Hansena) </p> <p>  • A31.1 (owrzodzenie Buruli) </p> <p>  • A66 (frambezja) </p> <p>  • A71 (jaglica) </p> <p>  • A82 (wścieklizna) </p> <p>  • A90 (gorączka denga) </p> <p>  • A91 (gorączka krwotoczna Denga) </p> <p>  • A92.0 (Chikungunya) B55 (leiszmanioza) </p> <p>  • B56 (śpiączka afrykańska, zwana trypanosomatozą afrykańską) </p> <p>  • B57 (choroba Chagasa) </p> <p>  • B65 (Schistosomatoza) </p> <p>  • B66 (choroby przenoszone droga pokarmową wywoływane przez przywry) </p> <p>  • B67 (Bąblowica - echinokokoza) </p> <p>  • B68 (Tasiemczyca) </p> <p>  • B69 (wągrzyca, zwana cysticerkozą) </p> <p>  • B72 (drakunkuloza) </p> <p>  • B73 (Onchocerkoza - ślepota rzeczna) </p> <p>  • B74 (filarioza) </p> <p>  • B83.0 (Larwa wędrująca trzewna) </p> <p>Spośród ww. chorób w Polsce podlegają zgłoszeniom i są wyodrębniane w rejestracji zachorowań następujące choroby zakaźne: </p> <p>  • Bąblowica </p> <p>  • Wągrzyca </p> <p>  • Chikungunya </p> <p>  • Gorączka denga </p> <p>  • Wścieklizna </p> <p>Dla Polski największe znaczenia mają: bąblowica (większość przypadków to przypadki rodzime) oraz wścieklizna (z uwagi na istniejącą wściekliznę zwierząt w Polsce, a tym samym istniejące zagrożenie wystąpienia przypadków u ludzi).</p> </td>
           </tr>
           
           
@@ -951,7 +953,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Uwagi </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Prezentowane dane dotyczą zachorowań na następujące choroby: Wągrzyca, Denga i Bąblowica.Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym cel 3.3 Agendy 2030, jest wskaźnik 3.3.5 Liczba osób wymagających interwencji z powodu zaniedbanych chorób tropikalnych (Neglected Tropical Diseases - NTD). </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Prezentowane dane dotyczą zachorowań na następujące choroby: Wągrzyca, Denga i Bąblowica.</p> <p>Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym cel <b>3.3 </b>Agendy 2030, jest wskaźnik <b>3.3.5 </b>Liczba osób wymagających interwencji z powodu zaniedbanych chorób tropikalnych (Neglected Tropical Diseases - NTD).</p> </td>
           </tr>
           
           
@@ -1051,12 +1053,12 @@ function download_csv(csv, filename) {
 function Zmiana_jednostki(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["43","26","33","55","63","60","105","103",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      var calo=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1079,8 +1081,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["43","26","33","55","63","60","105","103",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      var calo=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1103,14 +1105,69 @@ function Zmiana_jednostki(){
     }
 }
 
+function Zmiana_jednostki4(){
+
+  var licznik=1
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
 function Zmiana_jednostki2(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["43","26","33","55","63","60","105","103",null,null,null,null,null,null,null,null]
+      var calo=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1139,7 +1196,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["43","26","33","55","63","60","105","103",null,null,null,null,null,null,null,null]
+      var calo=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1170,11 +1227,11 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["43","26","33","55","63","60","105","103",null,null,null,null,null,null,null,null]
+      var calo=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1200,7 +1257,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["43","26","33","55","63","60","105","103",null,null,null,null,null,null,null,null]
+      var calo=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1239,9 +1296,9 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["43","26","33","55","63","60","105","103",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    var calo=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1262,8 +1319,8 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["43","26","33","55","63","60","105","103",null,null,null,null,null,null,null,null];
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    var calo=["43","26","33","55","63","60","105","104","85",null,null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];

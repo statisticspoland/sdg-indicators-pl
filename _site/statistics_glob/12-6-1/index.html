@@ -21,11 +21,11 @@
                   <title>
                   
                      Wskaźnik 12.6.1 - 
-                    Liczba firm - sygnatariuszy Deklaracji Polskiego Biznesu na rzecz Zrównoważonego Rozwoju
+                    Liczba sygnatariuszy Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju (SDGs)
                   </title>
                 
 
-        <meta property="og:title" content="Liczba firm - sygnatariuszy Deklaracji Polskiego Biznesu na rzecz Zrównoważonego Rozwoju">
+        <meta property="og:title" content="Liczba sygnatariuszy Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju (SDGs)">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -588,7 +588,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
           
 
-          <h3>Wskaźnik 12.6.1 - Liczba firm - sygnatariuszy Deklaracji Polskiego Biznesu na rzecz Zrównoważonego Rozwoju </h3>
+          <h3>Wskaźnik 12.6.1 - Liczba sygnatariuszy Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju (SDGs) </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
             <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab">Informacje o wskaźniku</a></li>
@@ -619,12 +619,12 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-12-6-1" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-12-6-1'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var licznik=1
-  var calosc=[null,null,null,null,"81","99","99",null,null,null,null,null,null,null,null,null,null,null]
+  var calosc=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
   var jez= 'pl'
   var legen=["ogółem"]
 
@@ -669,7 +669,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -762,7 +764,7 @@ for (i=1;i<licznik+1;i++){
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":null},{"year":"2011","ogółem":null},{"year":"2012","ogółem":null},{"year":"2013","ogółem":null},{"year":"2014","ogółem":"81"},{"year":"2015","ogółem":"99"},{"year":"2016","ogółem":"99"},{"year":"2017","ogółem":null},{"year":"2018","ogółem":null}]
+var DATA = [{"year":"2010","ogółem":null},{"year":"2011","ogółem":null},{"year":"2012","ogółem":null},{"year":"2013","ogółem":null},{"year":"2014","ogółem":null},{"year":"2015","ogółem":null},{"year":"2016","ogółem":null},{"year":"2017","ogółem":"72"},{"year":"2018","ogółem":"102"}]
 var naglowek=["ogółem"]
 
 
@@ -870,7 +872,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  12.6.1 Liczba firm - sygnatariuszy Deklaracji Polskiego Biznesu na rzecz Zrównoważonego Rozwoju </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>12.6.1 Liczba sygnatariuszy Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju (SDGs)</b> </td>
           </tr>
           
           
@@ -879,7 +881,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 12. Odpowiedzialna konsumpcja i produkcja </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 12. Odpowiedzialna konsumpcja i produkcja </td>
           </tr>
           
           
@@ -897,7 +899,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Liczba firm będących na liście sygnatariuszy Deklaracji Polskiego Biznesu na rzecz Zrównoważonego Rozwoju. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Liczba podmiotów będących Sygnatariuszami Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju. </td>
           </tr>
           
           
@@ -924,7 +926,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Deklaracja Polskiego Biznesu na rzecz Zrównoważonego Rozwoju jest dokumentem programowym projektu Wizja Zrównoważonego Rozwoju dla Polskiego Biznesu 2050 (Wizja 2050), prowadzonego przez ministerstwo ds. gospodarki (obecne Ministerstwo Rozwoju), Ministerstwo Środowiska, Forum Odpowiedzialnego Biznesu oraz firmy doradcze.Wizja 2050 ma za zadanie zintegrować biznes wokół idei zrównoważonego rozwoju, wskazać wyzwania w tym obszarze oraz wzmocnić dialog administracji i sektora prywatnego na rzecz realizacji celów rozwojowych Polski. Deklaracja Polskiego Biznesu na rzecz Zrównoważonego Rozwoju określa 10 kluczowych wyzwań wspierających zrównoważony rozwój gospodarki, środowiska i społeczeństwa:1. Nasze działania opierać o szeroką współpracę, innowacyjne myślenie oraz edukację zarówno własnych pracowników jak i społeczeństwa. 2. Prowadzić działalność biznesową w oparciu o zaufanie i dialog. 3. Podejmować współpracę z ośrodkami akademickimi i szkołami w zakresie edukacji przyszłych pracowników. 4. Stwarzać pracownikom warunki i możliwości rozwoju. 5. Promować i wspierać wdrażanie nowych rozwiązań technologicznych. 6. Tworzyć infrastrukturę i prowadzić inwestycje w oparciu o dialog oraz w zgodzie z zasadami zrównoważonego rozwoju. 7. Podejmować działania na rzecz zmniejszenia naszego negatywnego wpływu na środowisko. 8. Wprowadzać rozwiązania pozwalające na zmniejszenie zużycia energii, zarówno w zakresie wdrażania nowych rozwiązań technologicznych, optymalizacji procesów, jak i edukacji. 9. Prowadzić dialog z rządem i dzielić się swoimi doświadczeniami w kwestiach istotnych dla przedsiębiorców i gospodarki. 10. Podnosić poziom etyki w biznesie, w tym w relacjach z wszystkimi grupami interesariuszy. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Partnerstwo na rzecz realizacji Celów Zrównoważonego Rozwoju </b>zostało zainicjowane w czerwcu 2017 r. Jego celem jest zintegrowanie we współpracy przedstawicieli różnych środowisk na rzecz efektywnego osiągania SDGs (Celów Zrównoważonego Rozwoju). Inicjatywa ta zwiększa świadomość nt. przyjętych przez społeczność międzynarodową Celów Zrównoważonego Rozwoju, ich znaczenia dla poszczególnych grup społecznych oraz potrzeby współpracy w efektywnej ich realizacji. Sygnatariusze dają przykład aktywnego zaangażowania i odpowiedzialnego wdrażania zasad zrównoważonego rozwoju wewnątrz organizacji, stanowiąc cenne źródło inspiracji dla innych. Współpraca szerokiego grona interesariuszy odzwierciedla starania Polski na rzecz aktywnego włączania w planowanie i realizację działań rozwojowych podmiotów publicznych, prywatnych, organizacji pozarządowych, sektora nauki i społeczeństwa obywatelskiego. Ma to zapewnić szerszą komunikację, zwiększać świadomość o potrzebie współpracy i dialogu.</p> <p>Sygnatariusze przystępują do Partnerstwa podczas wydarzeń konferencyjnych organizowanych przez krajowego koordynatora wdrażania SDGs w Polsce – Ministerstwo Przedsiębiorczości i Technologii (do stycznia 2018 r. Ministerstwo Rozwoju). Podczas uroczystości przystąpienia do Partnerstwa, Sygnatariusze na jednej wspólnej karcie Partnerstwa, kolejno składają podpisy pod treścią deklaracji:</p> <p><i>"Świadomi globalnych wyzwań gospodarczych, społecznych i środowiskowych oraz ich złożoności, upatrujemy w Celach Zrównoważonego Rozwoju szansę na wykreowanie nowej rzeczywistości gospodarczej, otwierającej nowe ścieżki rozwoju dla biznesu, opartej na zasadach transparentności i budującej wizerunek Polski, jako wiarygodnego partnera gospodarczego. Uznajemy, że osiągnięcie ambitnych celów i zadań będzie możliwe dzięki wspólnemu działaniu w efektywny sposób, mobilizacji sił, kreowaniu synergii, ożywionemu i wzmocnionemu partnerstwu, będącemu efektem dialogu, otwartego dla wszystkich zainteresowanych stron. Dążąc wspólnie do wykorzystania szans na dokonanie zmian w kraju, regionie i firmie, zwiększania wpływu na zrównoważony rozwój, wyrażamy intencję współpracy w ramach niniejszej inicjatywy partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju."</i></p> </td>
           </tr>
           
           
@@ -933,7 +935,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Źródło danych </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Ministerstwo Rozwoju </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Ministerstwo Przedsiębiorczości i Technologii </td>
           </tr>
           
           
@@ -942,7 +944,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2014 r. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne; od 2017 r. </td>
           </tr>
           
           
@@ -951,7 +953,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Uwagi </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik zastępczy, dostępny w ramach polskiej statystyki publicznej.Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym cel 12.6 Agendy 2030 jest wskaźnik 12.6.1 Liczba firm publikująca raporty dotyczące zrównoważonego rozwoju. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik zastępczy. Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym cel 12.6 Agendy 2030 jest wskaźnik 12.6.1 Liczba firm publikująca raporty dotyczące zrównoważonego rozwoju. </td>
           </tr>
           
           
@@ -1055,8 +1057,8 @@ function Zmiana_jednostki(){
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,null,null,"81","99","99",null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1079,8 +1081,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,null,null,null,"81","99","99",null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1103,6 +1105,61 @@ function Zmiana_jednostki(){
     }
 }
 
+function Zmiana_jednostki4(){
+
+  var licznik=1
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
 function Zmiana_jednostki2(){
 
   var licznik=1
@@ -1110,7 +1167,7 @@ function Zmiana_jednostki2(){
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,null,null,null,"81","99","99",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1139,7 +1196,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,null,null,null,"81","99","99",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1174,7 +1231,7 @@ function Zmiana_jednostki3(){
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,null,null,null,"81","99","99",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1200,7 +1257,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,null,null,null,"81","99","99",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1240,8 +1297,8 @@ $(window).on("load", function() {
     }
     var licznik=1
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=[null,null,null,null,"81","99","99",null,null,null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1263,7 +1320,7 @@ $(window).on("load", function() {
     }
     var licznik=1;
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=[null,null,null,null,"81","99","99",null,null,null,null,null,null,null,null,null,null,null];
+    var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];

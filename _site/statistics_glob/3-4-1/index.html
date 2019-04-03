@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -624,12 +624,12 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-3-4-1" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-3-4-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var licznik=4
-  var calosc=["451.8","440.9","460.8","460.8","441.1","469.0","437.1",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7",null,null,null,null,null,null,null,null,null]
+  var calosc=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
   var jez= 'pl'
   var legen=["choroby układu krążenia","cukrzyca","nowotwór","przewlekła choroba dróg oddechowych"]
 
@@ -674,7 +674,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -800,6 +802,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -831,8 +876,10 @@ var lista1=[["choroby układu krążenia","cukrzyca","nowotwór","przewlekła ch
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -936,6 +983,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1080,7 +1152,7 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","choroby układu krążenia":"451.8","cukrzyca":"16.9","nowotwór":"240.4","przewlekła choroba dróg oddechowych":"25.3"},{"year":"2011","choroby układu krążenia":"440.9","cukrzyca":"17.6","nowotwór":"239.3","przewlekła choroba dróg oddechowych":"25.6"},{"year":"2012","choroby układu krążenia":"460.8","cukrzyca":"18.5","nowotwór":"245.9","przewlekła choroba dróg oddechowych":"23.4"},{"year":"2013","choroby układu krążenia":"460.8","cukrzyca":"19.3","nowotwór":"244.4","przewlekła choroba dróg oddechowych":"24.5"},{"year":"2014","choroby układu krążenia":"441.1","cukrzyca":"17.6","nowotwór":"248.3","przewlekła choroba dróg oddechowych":"21.0"},{"year":"2015","choroby układu krążenia":"469.0","cukrzyca":"21.5","nowotwór":"261.6","przewlekła choroba dróg oddechowych":"24.7"},{"year":"2016","choroby układu krążenia":"437.1","cukrzyca":"21.6","nowotwór":"260.1","przewlekła choroba dróg oddechowych":"24.7"},{"year":"2017","choroby układu krążenia":null,"cukrzyca":null,"nowotwór":null,"przewlekła choroba dróg oddechowych":null}]
+var DATA = [{"year":"2010","choroby układu krążenia":"451.8","cukrzyca":"16.9","nowotwór":"240.4","przewlekła choroba dróg oddechowych":"25.3"},{"year":"2011","choroby układu krążenia":"440.9","cukrzyca":"17.6","nowotwór":"239.3","przewlekła choroba dróg oddechowych":"25.6"},{"year":"2012","choroby układu krążenia":"460.8","cukrzyca":"18.5","nowotwór":"245.9","przewlekła choroba dróg oddechowych":"23.4"},{"year":"2013","choroby układu krążenia":"460.8","cukrzyca":"19.3","nowotwór":"244.4","przewlekła choroba dróg oddechowych":"24.5"},{"year":"2014","choroby układu krążenia":"441.1","cukrzyca":"17.6","nowotwór":"248.3","przewlekła choroba dróg oddechowych":"21.0"},{"year":"2015","choroby układu krążenia":"469.0","cukrzyca":"21.5","nowotwór":"261.6","przewlekła choroba dróg oddechowych":"24.7"},{"year":"2016","choroby układu krążenia":"437.1","cukrzyca":"21.6","nowotwór":"260.1","przewlekła choroba dróg oddechowych":"24.7"},{"year":"2017","choroby układu krążenia":"434.8","cukrzyca":"22.9","nowotwór":"259.3","przewlekła choroba dróg oddechowych":"26.4"},{"year":"2018","choroby układu krążenia":null,"cukrzyca":null,"nowotwór":null,"przewlekła choroba dróg oddechowych":null}]
 var naglowek=["choroby układu krążenia","cukrzyca","nowotwór","przewlekła choroba dróg oddechowych"]
 
 
@@ -1188,7 +1260,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  3.4.1 Zgony z powodu chorób układu krążenia, cukrzycy, nowotworów złośliwych i przewlekłej choroby dróg oddechowych na 100 tys. ludności </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>3.4.1 Zgony z powodu chorób układu krążenia, cukrzycy, nowotworów złośliwych i przewlekłej choroby dróg oddechowych na 100 tys. ludności</b> </td>
           </tr>
           
           
@@ -1197,7 +1269,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 3. Dobre zdrowie i jakość życia </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 3. Dobre zdrowie i jakość życia </td>
           </tr>
           
           
@@ -1242,7 +1314,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Zgon - trwałe, nieodwracalne ustanie czynności narządów niezbędnych dla życia, konsekwencją czego jest ustanie czynności całego ustroju.Przewlekła choroba dróg oddechowych - wg Międzynarodowej Statystycznej Klasyfikacji Chorób i Problemów Zdrowotnych ICD-10: jednostka chorobowa o symbolu z zakresu J30-J98 - schorzenie dotyczące dróg oddechowych i innych struktur w płucach. Do najbardziej powszechnych zalicza się: przewlekłą obturacyjną chorobę płuc (POChP), astmę, chorobę zawodową płuc i nadciśnienie płucne.Źródłem informacji o zgonach jest wykorzystywany wtórnie przez statystykę indywidualny dokument "Karta zgonu" (Rozporządzenie Ministra Zdrowia w sprawie wzoru karty zgonu i sposobu jej wypełniania Dz. U. 2015 r., poz. 231).Dane o zgonach opracowano w podziale terytorialnym - według miejsca zameldowania na pobyt stały osoby zmarłej.Przy opracowywaniu danych zgonów według przyczyn przyjmuje się wyjściowa przyczynę zgonu. Za przyczynę wyjściową uważa się chorobę stanowiącą początek procesu chorobowego, który doprowadził do zgonu albo uraz czy zatrucie, w wyniku którego nastąpił zgon.Dane dotyczące orzecznictwa o przyczynach zgonów podano zgodnie z Międzynarodową Statystyczną Klasyfikacją Chorób i Problemów Zdrowotnych (X Rewizja).Ludność opracowano na podstawie: bilansów ludności zamieszkałej na terenie gminy w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2011 (dla danych od 2010 r.)  dla lat wcześniejszych (2000-2009) w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2002, rejestrów Ministerstwa Spraw Wewnętrznych i Administracji - migracje wewnętrzne i zagraniczne na pobyt stały (od 2006 r. dane są pobierane z rejestru PESEL - Powszechny Elektroniczny System Ewidencji Ludności), sprawozdań urzędów stanu cywilnego - urodzenia, zgony. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Zgon </b>- trwałe, nieodwracalne ustanie czynności narządów niezbędnych dla życia, konsekwencją czego jest ustanie czynności całego ustroju.</p> <p><b>Choroby układu krążenia </b>– wg Międzynarodowej Statystycznej Klasyfikacji Chorób i Problemów Zdrowotnych ICD-10: jednostki chorobowe o symbolach I00-I99 - schorzenia dotyczące narządów i tkanek wchodzących w skład układu krążenia, a w szczególności serca, tętnic i żył.</p> <p><b>Źródłem informacji o zgonach </b>jest wykorzystywany wtórnie przez statystykę indywidualny dokument "Karta zgonu" (Rozporządzenie Ministra Zdrowia w sprawie wzoru karty zgonu i sposobu jej wypełniania Dz. U. 2015 r., poz. 231).</p> <p>Dane o zgonach opracowano w podziale terytorialnym - według miejsca zameldowania na pobyt stały osoby zmarłej.</p> <p>Przy opracowywaniu danych zgonów <b>według przyczyn </b>przyjmuje się wyjściowa przyczynę zgonu. Za przyczynę wyjściową uważa się chorobę stanowiącą początek procesu chorobowego, który doprowadził do zgonu albo uraz czy zatrucie, w wyniku którego nastąpił zgon.</br> <p>Dane dotyczące orzecznictwa o przyczynach zgonów podano zgodnie z Międzynarodową Statystyczną Klasyfikacją Chorób i Problemów Zdrowotnych (X Rewizja).</p> <p><b>Ludność </b>opracowano na podstawie: </p> <p>  • bilansów ludności zamieszkałej na terenie gminy w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2011 (dla danych od 2010 r.)  dla lat wcześniejszych (2000-2009) w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2002, </p> <p>  • rejestrów Ministerstwa Spraw Wewnętrznych i Administracji - migracje wewnętrzne i zagraniczne na pobyt stały (od 2006 r. dane są pobierane z rejestru PESEL - Powszechny Elektroniczny System Ewidencji Ludności), </p> <p>  • sprawozdań urzędów stanu cywilnego - urodzenia, zgony.</p> </td>
           </tr>
           
           
@@ -1369,12 +1441,12 @@ function download_csv(csv, filename) {
 function Zmiana_jednostki(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1397,8 +1469,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1421,14 +1493,69 @@ function Zmiana_jednostki(){
     }
 }
 
+function Zmiana_jednostki4(){
+
+  var licznik=4
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
 function Zmiana_jednostki2(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7",null,null,null,null,null,null,null,null,null]
+      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1457,7 +1584,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7",null,null,null,null,null,null,null,null,null]
+      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1488,11 +1615,11 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7",null,null,null,null,null,null,null,null,null]
+      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1518,7 +1645,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7",null,null,null,null,null,null,null,null,null]
+      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1557,9 +1684,9 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=4
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7",null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1580,8 +1707,8 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=4;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7",null,null,null,null,null,null,null,null,null];
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];

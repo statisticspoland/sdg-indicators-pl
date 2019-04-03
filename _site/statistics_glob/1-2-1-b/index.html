@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -624,7 +624,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-1-2-1-b" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-1-2-1-b'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
@@ -674,7 +674,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -800,6 +802,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -831,8 +876,10 @@ var lista1=[["ogółem","mężczyźni","kobiety"],["0-17 lat","18-64 lata","65 l
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -936,6 +983,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1188,7 +1260,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  1.2.1.b Wskaźnik zagrożenia ubóstwem skrajnym </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>1.2.1.b Wskaźnik zagrożenia ubóstwem skrajnym</b> </td>
           </tr>
           
           
@@ -1197,7 +1269,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 1. Koniec z ubóstwem </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 1. Koniec z ubóstwem </td>
           </tr>
           
           
@@ -1242,7 +1314,32 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik obliczany jest na podstawie Badania budżetów gospodarstw domowych.Badanie budżetów gospodarstw domowych prowadzone jest metodą reprezentacyjną, opartą na próbie losowej, która daje możliwość uogólniania z określonym błędem, uzyskanych wyników na wszystkie gospodarstwa domowe w kraju. Od 1993 r. badanie budżetów prowadzone jest metodą rotacji miesięcznej, tzn., że w ciągu roku w każdym miesiącu badane są inne gospodarstwa domowe. Badaniem objęte są gospodarstwa domowe jedno- i wieloosobowe. Biorą w nim również udział gospodarstwa domowe obywateli państw obcych zamieszkujących w Polsce na stałe lub przez dłuższy okres czasu i posługujących się językiem polskim. celem badania jest umożliwienie dokonywania analiz poziomu życia ludności, a także oceny wpływu różnych czynników na kształtowanie się poziomu i zróżnicowania sytuacji bytowej podstawowych grup gospodarstw domowych.Badanie budżetów gospodarstw domowych dostarcza szczegółowych informacji o: poziomie i strukturze realizowanych wydatków, źródłach pozyskiwania towarów i usług  poziomie spożycia podstawowych artykułów żywnościowych w ujęciu ilościowym oraz w przeliczeniu na wartości energetyczne i składniki odżywcze  cenach płaconych przez gospodarstwa domowe za wybrane towary i usługi  poziomie i źródłach osiąganych dochodów wyposażeniu gospodarstw domowych w dobra trwałego użytku  warunkach mieszkaniowych  subiektywnej ocenie sytuacji materialnej gospodarstw domowych  strukturze demograficzno-społecznej gospodarstw domowych, tj. o liczbie, wieku, płci, wykształceniu, niepełnosprawności, aktywności ekonomicznej osób wchodzących w skład badanego gospodarstwa domowego. Wydatki obejmują wydatki na towary i usługi konsumpcyjne oraz pozostałe wydatki.Wydatki na towary i usługi konsumpcyjne przeznaczone są na zaspokojenie potrzeb gospodarstwa domowego. Obejmują one towary zakupione za gotówkę (również przy użyciu karty płatniczej lub kredytowej), na kredyt, otrzymane bezpłatnie oraz spożycie naturalne (towary i usługi konsumpcyjne pobrane na potrzeby gospodarstwa domowego z działalności rolniczej bądź działalności gospodarczej na własny rachunek). Towary konsumpcyjne obejmują dobra nietrwałego użytkowania (np.: żywność, napoje, lekarstwa), półtrwałego użytkowania (np.: odzież, książki, zabawki) i trwałego użytkowania (np.: samochody, pralki, lodówki, telewizory).Pozostałe wydatki, które składają się z: darów przekazanych innym gospodarstwom domowym i instytucjom niekomercyjnym, niektórych podatków, w tym podatku od spadków i darowizn, podatku od nieruchomości, opłaty za wieczyste użytkowanie gruntu, zaliczek na podatek od dochodów osobistych oraz składek na ubezpieczenia społeczne płaconych samodzielnie przez podatnika, pozostałych rodzajów wydatków nie przeznaczonych bezpośrednio na cele konsumpcyjne, w tym strat pieniężnych, odszkodowań za wyrządzone szkody. Jednostką badania jest gospodarstwo domowe, czyli osoby, które są lub nie są ze sobą spokrewnione, mieszkają razem i wspólnie utrzymują się (gospodarstwo wieloosobowe). Gospodarstwo domowe może również tworzyć jedna osoba, która utrzymuje się samodzielnie, bez względu na to, czy mieszka sama, czy z innymi osobami (gospodarstwo jednoosobowe).Granica ubóstwa skrajnego szacowana jest w oparciu o poziom minimum egzystencji. Poziom ten obliczany jest przez Instytut Pracy i Spraw Socjalnych (IPiSS). Minimum egzystencji uwzględnia jedynie te potrzeby, których zaspokojenie nie może być odłożone w czasie, a konsumpcja niższa od tego poziomu prowadzi do biologicznego wyniszczenia.W przypadku ubóstwa skrajnego, w celu wyeliminowania wpływu, jaki na koszty utrzymania gospodarstw domowych wywiera ich skład demograficzny, zarówno przy obliczaniu poziomu wydatków w gospodarstwach domowych, jak i ustalaniu granic ubóstwa, zastosowano tzw. oryginalną skalę ekwiwalentności OECD.Według tej skali: wagę 1 przypisuje się pierwszej osobie w gospodarstwie domowym w wieku 14 lat i więcej  wagę 0,7 – każdej następnej osobie w tym wieku  wagę 0,5 – każdemu dziecku w wieku poniżej 14 lat. Oznacza to, że granica ubóstwa skrajnego dla gospodarstwa 4-osobowego złożonego z dwóch osób dorosłych i dwojga dzieci jest 2,7 razy wyższa niż dla gospodarstwa 1-osobowego. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Wskaźnik obliczany jest na podstawie Badania budżetów gospodarstw domowych.</p> <p><b>Badanie budżetów gospodarstw domowych </b>prowadzone jest metodą reprezentacyjną, opartą na próbie losowej, która daje możliwość uogólniania z określonym błędem, uzyskanych wyników na wszystkie gospodarstwa domowe w kraju. </br> Od 1993 r. badanie budżetów prowadzone jest metodą rotacji miesięcznej, tzn., że w ciągu roku w każdym miesiącu badane są inne gospodarstwa domowe. </br> Badaniem objęte są gospodarstwa domowe jedno- i wieloosobowe. Biorą w nim również udział gospodarstwa domowe obywateli państw obcych zamieszkujących w Polsce na stałe lub przez dłuższy okres czasu i posługujących się językiem polskim. </br> Celem badania jest umożliwienie dokonywania analiz poziomu życia ludności, a także oceny wpływu różnych czynników na kształtowanie się poziomu i zróżnicowania sytuacji bytowej podstawowych grup gospodarstw domowych.</br>
+ <p>Badanie budżetów gospodarstw domowych dostarcza szczegółowych informacji o: </p>
+ <p>  • poziomie i strukturze realizowanych wydatków, źródłach pozyskiwania towarów i usług;</p>
+ <p>  • poziomie spożycia podstawowych artykułów żywnościowych w ujęciu ilościowym oraz w przeliczeniu na wartości energetyczne i składniki odżywcze
+ </p>
+ <p>  • cenach płaconych przez gospodarstwa domowe za wybrane towary i usługi;</p>
+ <p>  • poziomie i źródłach osiąganych dochodów wyposażeniu gospodarstw domowych w dobra trwałego użytku;</p>
+ <p>  • warunkach mieszkaniowych  subiektywnej ocenie sytuacji materialnej gospodarstw domowych;</p>
+ <p>  • strukturze demograficzno-społecznej gospodarstw domowych, tj. o liczbie, wieku, płci, wykształceniu, niepełnosprawności, aktywności ekonomicznej osób wchodzących w skład badanego gospodarstwa domowego. </p>
+ <p>Wydatki obejmują wydatki na towary i usługi konsumpcyjne oraz pozostałe wydatki.</p>
+ <p><b>Wydatki na towary i usługi konsumpcyjne</b> przeznaczone są na zaspokojenie potrzeb gospodarstwa domowego. Obejmują one towary zakupione za gotówkę (również przy użyciu karty płatniczej lub kredytowej), na kredyt, otrzymane bezpłatnie oraz spożycie naturalne (towary i usługi konsumpcyjne pobrane na potrzeby gospodarstwa domowego z działalności rolniczej bądź działalności gospodarczej na własny rachunek). <b>Towary konsumpcyjne
+ </b>obejmują dobra nietrwałego użytkowania (np.: żywność, napoje, lekarstwa), półtrwałego użytkowania (np.: odzież, książki, zabawki) i trwałego użytkowania (np.: samochody, pralki, lodówki, telewizory).</p>
+ <p>Pozostałe wydatki, które składają się z: </p>
+ <p>  • darów przekazanych innym gospodarstwom domowym i instytucjom niekomercyjnym, </p>
+ <p>  • niektórych podatków, w tym podatku od spadków i darowizn, podatku od nieruchomości, opłaty za wieczyste użytkowanie gruntu, </p>
+ <p>  • zaliczek na podatek od dochodów osobistych oraz składek na ubezpieczenia społeczne płaconych samodzielnie przez podatnika, </p>
+ <p>  • pozostałych rodzajów wydatków nie przeznaczonych bezpośrednio na cele konsumpcyjne, w tym strat pieniężnych, odszkodowań za wyrządzone szkody.
+ </p>
+ <p>Jednostką badania jest <b>gospodarstwo domowe</b>, czyli osoby, które są lub nie są ze sobą spokrewnione, mieszkają razem i wspólnie utrzymują się (gospodarstwo wieloosobowe). Gospodarstwo domowe może również tworzyć jedna osoba, która utrzymuje się samodzielnie, bez względu na to, czy mieszka sama, czy z innymi osobami (gospodarstwo jednoosobowe).</p>
+ <p><b>Granica ubóstwa skrajnego </b>szacowana jest w oparciu o poziom minimum egzystencji. Poziom ten obliczany jest przez Instytut Pracy i Spraw Socjalnych (IPiSS). Minimum egzystencji uwzględnia jedynie te potrzeby, których zaspokojenie nie może być odłożone w czasie, a konsumpcja niższa od tego poziomu prowadzi do biologicznego wyniszczenia.</p>
+ <p>W przypadku ubóstwa skrajnego, w celu wyeliminowania wpływu, jaki na koszty utrzymania gospodarstw domowych wywiera ich skład demograficzny, zarówno przy obliczaniu poziomu wydatków w gospodarstwach domowych, jak i ustalaniu granic ubóstwa, zastosowano tzw. <b>oryginalną skalę ekwiwalentności OECD</b>.
+ <p>Według tej skali: </p>
+ <p>  • wagę 1 przypisuje się pierwszej osobie w gospodarstwie domowym w wieku 14 lat i więcej;</p>
+ <p>  • wagę 0,7 – każdej następnej osobie w tym wieku;</p>
+ <p>  • wagę 0,5 – każdemu dziecku w wieku poniżej 14 lat. </p>
+ <p>Oznacza to, że granica ubóstwa skrajnego dla gospodarstwa 4-osobowego złożonego z dwóch osób dorosłych i dwojga dzieci jest 2,7 razy wyższa niż dla gospodarstwa 1-osobowego.</p> </td>
           </tr>
           
           
@@ -1374,7 +1471,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=["5.8","6.8","6.8","7.4","7.4","6.5","4.9","4.3","5.5","6.6","6.7","7.3","7.4","6.5","4.8","4.3","6.5","7.4","7.0","7.4","7.3","6.6","5.1","4.5","8.8","9.7","9.8","10.1","10.3","9.0","5.8","4.7","5.3","6.4","6.4","7.0","7.0","6.2","5.0","4.4","3.4","4.0","3.8","4.4","4.3","4.2","3.4","3.6",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1398,7 +1495,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=["5.8","6.8","6.8","7.4","7.4","6.5","4.9","4.3","5.5","6.6","6.7","7.3","7.4","6.5","4.8","4.3","6.5","7.4","7.0","7.4","7.3","6.6","5.1","4.5","8.8","9.7","9.8","10.1","10.3","9.0","5.8","4.7","5.3","6.4","6.4","7.0","7.0","6.2","5.0","4.4","3.4","4.0","3.8","4.4","4.3","4.2","3.4","3.6",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1415,6 +1512,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=6
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["5.8","6.8","6.8","7.4","7.4","6.5","4.9","4.3","5.5","6.6","6.7","7.3","7.4","6.5","4.8","4.3","6.5","7.4","7.0","7.4","7.3","6.6","5.1","4.5","8.8","9.7","9.8","10.1","10.3","9.0","5.8","4.7","5.3","6.4","6.4","7.0","7.0","6.2","5.0","4.4","3.4","4.0","3.8","4.4","4.3","4.2","3.4","3.6",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["5.8","6.8","6.8","7.4","7.4","6.5","4.9","4.3","5.5","6.6","6.7","7.3","7.4","6.5","4.8","4.3","6.5","7.4","7.0","7.4","7.3","6.6","5.1","4.5","8.8","9.7","9.8","10.1","10.3","9.0","5.8","4.7","5.3","6.4","6.4","7.0","7.0","6.2","5.0","4.4","3.4","4.0","3.8","4.4","4.3","4.2","3.4","3.6",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1559,7 +1711,7 @@ $(window).on("load", function() {
     var licznik=6
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=["5.8","6.8","6.8","7.4","7.4","6.5","4.9","4.3","5.5","6.6","6.7","7.3","7.4","6.5","4.8","4.3","6.5","7.4","7.0","7.4","7.3","6.6","5.1","4.5","8.8","9.7","9.8","10.1","10.3","9.0","5.8","4.7","5.3","6.4","6.4","7.0","7.0","6.2","5.0","4.4","3.4","4.0","3.8","4.4","4.3","4.2","3.4","3.6",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

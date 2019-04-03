@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -603,9 +603,603 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
   <div role="tabpanel" class="tab-pane active" id="data">
     <div style="display: flow-root;">
       
+
+          
+          
+
+          
+          
+          
+
+            
               
-                       <p style="text-align: center;">W przyszłości pojawi się tu tabela</p>
+                <div id="filtry">.</div>
+                  
+                    <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;">Zaznacz wszystkie wymiary</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;">Usuń zaznaczenia</button></div>
+                  
+                <div>
+
+
+<div id="linechart-2-1-2" class="ct-chart ct-major-eleventh"></div>
+<script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
+<script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
+<script>
+(function () {
+  var container = '#linechart-2-1-2'
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var licznik=2
+  var calosc=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null]
+  var jez= 'pl'
+  var legen=["umiarkowany lub duży","duży"]
+
+  if(1=='0'){
+    var precyz=0;
+  }else{
+    var precyz=parseInt(1) || 2
+  }
+
+  legenda=[]
+  for (j=0;j<legen.length;j++){
+    legenda.push(legen[j].replace(/[_]/g, ''))
+  }
+
+var calosc_liczby =calosc.map(Number)
+var lower = Math.min.apply(Math,calosc_liczby);
+if (lower>0){
+  lower=0;
+}
+
+var b = [[]];
+seria=[]
+for (i=1;i<licznik+1;i++){
+  b[i] = calosc.splice(0,labels.length);
+  seria.push(b[i])
+}
+
+  var chartData = {
+    labels: labels,
+    series: seria
+  }
+
+  var chartOpts = {
+    showArea: false,
+    showLine: false,
+    scaleMinSpace: 30,
+    low:lower,
+    chartPadding: {
+        left: 40
+    },
+    axisY: {
+      
+      offset: 50,
+      
+
+      
+      onlyInteger: false,
+      labelInterpolationFnc: function (value) {
+        // do whatever math operation you want here
+        if (jez=='en'){
+          return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(",", ".") + '';
+        }else{
+          return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(".", ",") + '';
+        }
+
+      }
+    },
+    axisX: {
+      showGrid: false,
+      labelInterpolationFnc: function (value) {
+        return value.toString()
+      }
+    },
+    lineSmooth: Chartist.Interpolation.none({
+      fillHoles: true,
+    }),
+    plugins: [
+      Chartist.plugins.tooltip({
+        class: 'chartist-tooltip',
+        tooltipFnc: function(_, value) {
+          if (jez=='en'){
+            return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(",", ".") + '';
+          }else{
+            return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(".", ",") + '';
+          }
+        }
+      }),
+      Chartist.plugins.ctAccessibility({
+        caption: '',
+        seriesHeader: 'year',
+        summary: '',
+        valueTransform: Chartist.noop
+      }),
+      Chartist.plugins.legend({
+          legendNames: legenda,
+          position: document.querySelector('div#Legenda')
+      }),
+      Chartist.plugins.ctAxisTitle({
+      axisX: {},
+      axisY: {
+        axisTitle: 'procent',
+        axisClass: 'ct-axis-title',
+        offset: {
+          x: 0,
+          y: 0
+        },
+        textAnchor: 'middle',
+        flipTitle: false
+      }
+    })
+    ],
+  }
+  new Chartist.Line(container, chartData, chartOpts)
+})()
+
+
+</script>
+</div>
+                <div id="Legenda" align="center" style="pointer-events: none;"></div>
               
+              <div><div id="d"></div>
+<script>
+
+function Zaznacz(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+  for (var index = 0, len = listItems.length; index < len; index++){
+    if (listItems[index].style.display=='none'){
+      listItems[index].style.display='inline-block'
+      listItems[index].click();
+      $("#infoToggler"+index).find('img').toggle();
+      $('#row-'+index).toggle();
+    }
+  };
+
+  const listIle = document.querySelectorAll('.panel-group');
+  for (ile=0;ile<listIle.length;ile++){
+    document.getElementById('wszystkie'+ile).src="/sdg-indicators/assets/img/pelne.png";
+  }
+}
+
+function Zaz(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+  co=$(this).attr('id');
+  $('#collapse'+co+' ul #filtr').each(function(i)
+  {
+    ind=$(this)[0].value;
+    if (listItems[ind].style.display=='none'){
+      listItems[ind].style.display='inline-block'
+      listItems[ind].click();
+      $("#infoToggler"+ind).find('img').toggle();
+      $('#row-'+ind).toggle();
+    }
+  });
+  document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/pelne.png";
+
+}
+
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
+
+function Usun(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+      if (listItems[0].style.display=='none'){
+        listItems[0].click();
+        $("#infoToggler0").find('img').toggle();
+        numer=0;
+        $('#row-'+numer).toggle();
+      }
+      listItems[0].style.display='inline-block';
+      for (numer=1;numer<listItems.length;numer++){
+        if (listItems[numer].style.display=='inline-block'){
+        listItems[numer].style.display='none'
+        listItems[numer].click();
+        $("#infoToggler"+numer).find('img').toggle();
+        $('#row-'+numer).toggle();
+        }
+      }
+
+    const listIle = document.querySelectorAll('.panel-group');
+    for (ile=0;ile<listIle.length;ile++){
+      document.getElementById('wszystkie'+ile).src="/sdg-indicators/assets/img/puste.png";
+    }
+}
+
+$( document ).ready(function() {
+var lista=["poziom braku bezpieczeństwa żywnościowego"];
+var lista1=[["umiarkowany lub duży","duży"],]
+var jez='pl'
+if (jez=='pl'){
+  wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
+}else{
+  wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
+}
+ilosc=0;
+
+var wymiar=0;
+
+lista.forEach(function(el,elind) {
+
+    var Div = document.createElement('div');
+    Div.style.width = '25%';
+    Div.style.height = '100px';
+    Div.style.float = 'left';
+    Div.style.padding = '5px';
+    Div.id = 'divove'+ilosc;
+	Div.style.minWidth = "121px";
+    Div.className = 'divovefiltry'
+    if (ilosc==0){
+      $('#filtry').after(Div);
+    }else{
+      $('#divove'+(ilosc-1)).after(Div);
+    }
+
+
+    var iDiv = document.createElement('div');
+    iDiv.className = 'panel-group';
+    iDiv.id = 'filtry'+ilosc;
+    iDiv.style.position='relative';
+    iDiv.style.zIndex='11';
+    iDiv.style.float = 'left';
+    iDiv.style.width = '100%';
+    Div.appendChild(iDiv);
+
+
+    var iiDiv = document.createElement('div');
+    iiDiv.className = 'panel panel-default';
+    iDiv.appendChild(iiDiv);
+
+    var iii1Div = document.createElement('div');
+    iii1Div.className = 'panel-heading';
+    iii1Div.style.marginBottom = '5px';
+    iii1Div.style.marginLeft = '1px';
+    iii1Div.style.marginRight = '1px';
+    iii1Div.style.padding = '0px';
+    iiDiv.appendChild(iii1Div);
+
+    var iii2Div = document.createElement('div');
+    iii2Div.id = 'collapse'+ilosc;
+    iii2Div.className = 'panel-collapse collapse';
+    iiDiv.appendChild(iii2Div);
+
+    var naglowek = document.createElement('h4');
+    naglowek.className = 'panel-title';
+    naglowek.style.margin = '15px';
+    iii1Div.appendChild(naglowek);
+
+    var napis = document.createElement('a');
+    $(napis).attr("data-toggle", "collapse");
+    napis.href="#collapse"+ilosc;
+    napis.style.textAlign="left";
+    napis.style.fontSize="1.6rem";
+    naglowek.appendChild(napis);
+
+    var napisek = document.createElement('h5');
+    napisek.innerHTML = el;
+    napisek.style.fontSize="1.6rem";
+	napisek.style.wordWrap= "break-word";
+    napis.appendChild(napisek);
+
+    var imgh5 = document.createElement('i');
+    imgh5.className="fa fa-caret-down";
+    imgh5.style.float='right';
+    imgh5.style.color='#0071bc';
+    imgh5.style.fontSize='25px';
+    napisek.appendChild(imgh5);
+
+
+    var lista = document.createElement('ul');
+    lista.className = 'list-group checked-list-box';
+    lista.id = 'check-list-box';
+    iii2Div.appendChild(lista);
+
+    var element = document.createElement('li');
+    element.className='dropdown-header';
+    element.textContent = wymiar_n;
+    lista.appendChild(element);
+
+    var przycisk=document.createElement('button');
+    przycisk.style.float='right';
+    przycisk.style.margin='0';
+    przycisk.style.fontSize='0rem';
+    przycisk.style.backgroundColor='transparent';
+    przycisk.style.padding='0%';
+    przycisk.id=ilosc;
+    przycisk.onclick=Zaz;
+    element.appendChild(przycisk);
+
+    var image2 = document.createElement('img');
+    image2.src="/sdg-indicators/assets/img/puste.png";
+    image2.style.width='13px';
+    image2.style.height='13px';
+    image2.style.display = 'inline';
+    image2.className='wszystkie'+ilosc;
+    image2.id='wszystkie'+ilosc;
+    przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
+
+    halo=0;
+
+    for (jak=0;jak<lista1[ilosc].length;jak++){
+            var span = document.createElement('span')
+            var element = document.createElement('li');
+            element.className = 'list-group-item';
+            element.id = 'filtr';
+            element.value = wymiar +jak;
+            element.style.cursor="pointer";
+            element.onclick=function(){
+              const listItems = document.querySelectorAll('.ct-legend li');
+              war=true
+              co=$(this).attr('value');
+              for (ktory=0;ktory<listItems.length;ktory++){
+                if (ktory!=co){
+                  war=(war && $("#row-"+ktory).is(":hidden"))
+                }
+              }
+              warunek=(war)
+
+              if(!warunek) {
+                $('#row-'+co).toggle();
+                $("#infoToggler"+co).find('img').toggle();
+            }
+
+            ile=$(this).closest( "ul" ).children('li').length
+            ke=$(this).closest( "ul" ).find('img').attr('class');
+            document.getElementById(ke).src="/sdg-indicators/assets/img/puste.png"
+
+            licznik=0;
+            ke2=$(this).closest( "ul" );
+            ke2.each(function() {
+               $(this).find('li').each(function(){
+                 var img = $(this).find('img:visible').attr('src');
+
+                 if (img=="/sdg-indicators/assets/img/pelne.png"){
+                   licznik=licznik+1;
+                 }
+               });
+            });
+            if (licznik==ile-1){
+              document.getElementById(ke).src="/sdg-indicators/assets/img/pelne.png"
+            }
+          },
+            span.style.marginLeft = "15px";
+            span.innerHTML = lista1[ilosc][jak];
+            element.appendChild(span);
+            lista.appendChild(element);
+
+            var zdjecie = document.createElement('div');
+            zdjecie.id = 'infoToggler'+(wymiar +jak);
+            zdjecie.style.float="right";
+			      zdjecie.style.marginRight="15px";
+            element.appendChild(zdjecie);
+
+            if ((jak==0) && (elind==0)){
+              var imga1 = document.createElement('img');
+              imga1.src="/sdg-indicators/assets/img/pelne.png";
+              imga1.style.width='13px';
+              imga1.style.height='13px';
+              imga1.style.display = 'inline';
+              zdjecie.appendChild(imga1);
+
+              var imga2 = document.createElement('img');
+              imga2.src="/sdg-indicators/assets/img/puste.png";
+              imga2.style.width='13px';
+              imga2.style.height='13px';
+              imga2.style.display = 'none';
+              zdjecie.appendChild(imga2);
+
+            }else{
+            var imga1 = document.createElement('img');
+            imga1.src="/sdg-indicators/assets/img/puste.png";
+            imga1.style.width='13px';
+            imga1.style.height='13px';
+            imga1.style.display = 'inline';
+            zdjecie.appendChild(imga1);
+
+            var imga2 = document.createElement('img');
+            imga2.src="/sdg-indicators/assets/img/pelne.png";
+            imga2.style.width='13px';
+            imga2.style.height='13px';
+            imga2.style.display = 'none';
+            zdjecie.appendChild(imga2);
+          }
+          /*var checkbx = document.createElement("INPUT");
+            checkbx.setAttribute("type", "checkbox");
+            element.appendChild(checkbx);*/
+
+            halo=halo+1
+    }
+    ilosc=ilosc+1;
+    wymiar=wymiar+halo;
+});
+
+
+
+
+});
+
+/*$(window).load(function() {
+
+$(".ct-legend li").click(function() {
+
+  const listItems = document.querySelectorAll('.ct-legend li');
+  var co=$(this).attr('data-legend');
+
+  war=true
+  for (ktory=0;ktory<listItems.length;ktory++){
+    if (ktory!=co){
+      war=(war && $("#column-"+ktory).is(":hidden"))
+    }
+  }
+  warunek=(war)
+
+  if(!warunek) {
+  header = $("#column-"+co),
+  table = header.closest("table"),
+  index = header.index() + 1,
+  selector = "tbody tr td:nth-child(" + index + ")",
+  column = table.find(selector).add(header);
+  column.toggle();
+  $("#infoToggler"+co).find('img').toggle();
+}
+});
+
+});*/
+
+</script>
+</div>
+            
+
+          
+            <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px;">Pobierz całość</button><button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px;">Pobierz wybrane</button>
+          
+
+          
+<div id="content" align="center" style="overflow-x: auto; width: 100%; text-align: center; padding: 1px;"></div>
+
+<script>
+
+$( document ).ready(function() {
+var jez='pl'
+var DATA = [{"year":"2010","umiarkowany lub duży":null,"duży":null},{"year":"2011","umiarkowany lub duży":null,"duży":null},{"year":"2012","umiarkowany lub duży":null,"duży":null},{"year":"2013","umiarkowany lub duży":null,"duży":null},{"year":"2014","umiarkowany lub duży":null,"duży":null},{"year":"2015","umiarkowany lub duży":"8.7","duży":"1.7"},{"year":"2016","umiarkowany lub duży":"6.0","duży":"1.1"},{"year":"2017","umiarkowany lub duży":null,"duży":null},{"year":"2018","umiarkowany lub duży":null,"duży":null}]
+var naglowek=["umiarkowany lub duży","duży"]
+
+
+
+if (jez=='pl'){
+  rokk='Wymiar'
+}else{
+  rokk='Dimension'
+}
+
+
+function buildTable(data) {
+    var table = document.createElement("table");
+    table.className="gridtable";
+    var thead = document.createElement("thead");
+    var tbody = document.createElement("tbody");
+    var headRow = document.createElement("tr");
+
+    var th=document.createElement("th");
+    th.appendChild(document.createTextNode(rokk));
+    headRow.appendChild(th);
+
+    DATA.forEach(function(el) {
+      var th=document.createElement("th");
+      th.appendChild(document.createTextNode(el["year"]));
+      headRow.appendChild(th);
+    });
+    thead.appendChild(headRow);
+    table.appendChild(thead);
+
+
+    naglowek.forEach(function(o,index) {
+      var tr=document.createElement("tr");
+      tr.setAttribute("id", "row-"+index);
+      var td = document.createElement("td");
+      o1=o.replace(/[_]/g, '')
+      td.appendChild(document.createTextNode(o1));
+      tr.appendChild(td);
+      DATA.forEach(function(el) {
+        var td = document.createElement("td");
+        if (el[o]!=null){
+
+          if (jez=='pl'){
+            el[o]=el[o].replace(".",",");
+          }else{
+            el[o]=el[o].replace(",",".");
+          }
+        }else{
+          el[o]='•'
+        }
+        td.appendChild(document.createTextNode(el[o]));
+        td.align="center";
+        tr.appendChild(td);
+        if ('2-1-2'=='12-2-2' || '2-1-2' == '8-4-2' || '2-1-2' == '2-5-1-b' || '2-1-2' == '9-1-2'){
+            tr.style.display='table-row';
+        }else{
+          if (index>0){
+            tr.style.display='none';
+          }
+        }
+
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+
+    return table;
+}
+
+document.getElementById("content").appendChild(buildTable(DATA));
+});
+</script>
+
       
     </div>
   </div>
@@ -640,7 +1234,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  2.1.2 Częstotliwość występowania umiarkowanego lub dużego braku bezpieczeństwa żywnościowego w populacji, w oparciu o Skalę Bezpieczeństwa Żywnościowego </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>2.1.2 Częstotliwość występowania umiarkowanego lub dużego braku bezpieczeństwa żywnościowego w populacji, w oparciu o Skalę Bezpieczeństwa Żywnościowego (FIES)</b> </td>
           </tr>
           
           
@@ -649,7 +1243,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 2. Zero głodu </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 2. Zero głodu </td>
           </tr>
           
           
@@ -667,7 +1261,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
             
               <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Odsetek osób, które doświadczyły umiarkowanego lub dużego braku bezpieczeństwa żywnościowego w badanym okresie. Brak bezpieczeństwa żywnościowego, definiowany jako cecha ukryta, określany jest w oparciu globalną Skalę Bezpieczeństwa Żywnościowego (<i>Food Insecurity Experience Scale</i> – FIES), opracowaną przez FAO w wyniku zastosowania FIES w 140 krajach na świecie, począwszy od 2014 r.   </td>
           </tr>
           
           
@@ -676,7 +1270,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
             
               <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  procent [%] </td>
           </tr>
           
           
@@ -685,7 +1279,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
             
               <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  umiarkowany lub duży brak bezpieczeństwa żywnościowego</br>duży brak bezpieczeństwa żywnościowego </td>
           </tr>
           
           
@@ -694,7 +1288,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Brak bezpieczeństwa żywnościowego</b> oznacza ograniczony dostęp do żywności w gospodarstwach domowych ze względu na brak środków finansowych lub niedobór innych zasobów. </p> <p><b>Poziom braku bezpieczeństwa żywnościowego </b>określany jest na podstawie badania modułowego z wykorzystaniem Skali Bezpieczeństwa Żywnościowego (FIES-SM). Podczas badania respondentom zdawanych jest osiem pytań na temat doświadczeń oraz okoliczności związanych z brakiem bezpieczeństwa żywnościowego. Metodologia FIES opracowana przez FAO umożliwia pomiar braku bezpieczeństwa żywnościowego w skali globu, a także pozwala na uzyskanie porównywalności między krajami w obszarze braku bezpieczeństwa żywnościowego.</p> </td>
           </tr>
           
           
@@ -703,7 +1297,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
             
               <th style="padding: 5px; height: 45px;">  Źródło danych </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  FAO </td>
           </tr>
           
           
@@ -712,7 +1306,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
             
               <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Dane uśrednione z trzech lat: 2014-2016, 2015-2017. </td>
           </tr>
           
           
@@ -721,7 +1315,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
             
               <th style="padding: 5px; height: 45px;">  Uwagi </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  brak danych </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Wstępne szacunki oparte na danych FAO, mogą ulec zmianie po wyliczeniu oficjalnych danych krajowych. </br>Dane prezentowane dla 2015 r. stanowią średnią wartość z lat 2014-2016, natomiast dane dla 2016 r. to średnia wartość z lat 2015-2017. </td>
           </tr>
           
           
@@ -738,7 +1332,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <script>
   $( document ).ready(function() {
-      if (''==''){
+      if ('procent [%]'==''){
           $('.usa-button').css('display','none');
       }
 
@@ -820,13 +1414,13 @@ function download_csv(csv, filename) {
 
 function Zmiana_jednostki(){
 
-  var licznik=1
-  var labels = []
+  var licznik=2
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[]
-      calosc=calo.splice(9,16);
+      var calo=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -849,8 +1443,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[]
-      calosc=calo.splice(0,9);
+      var calo=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -873,14 +1467,69 @@ function Zmiana_jednostki(){
     }
 }
 
+function Zmiana_jednostki4(){
+
+  var licznik=2
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
 function Zmiana_jednostki2(){
 
-  var licznik=1
-  var labels = []
+  var licznik=2
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[]
+      var calo=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -909,7 +1558,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[]
+      var calo=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -939,12 +1588,12 @@ function Zmiana_jednostki2(){
 
 function Zmiana_jednostki3(){
 
-  var licznik=1
-  var labels = []
+  var licznik=2
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[]
+      var calo=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -970,7 +1619,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[]
+      var calo=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1008,10 +1657,10 @@ $(window).on("load", function() {
         window.location = window.location + '#2';
         window.location.reload();
     }
-    var licznik=1
-    var labels = []
-    var calo=[]
-    calosc=calo.splice(0,24);
+    var licznik=2
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    var calo=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1031,9 +1680,9 @@ $(window).on("load", function() {
         window.location = window.location + '#9';
         window.location.reload();
     }
-    var licznik=1;
-    var labels = [];
-    var calo=[];
+    var licznik=2;
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    var calo=[null,null,null,null,null,"8.7","6.0",null,null,null,null,null,null,null,"1.7","1.1",null,null,null,null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1071,7 +1720,7 @@ $('body').click(function( e ){
 $(function () {
 $('.list-group.checked-list-box .list-group-item').each(function () {
 
-          var zmienna=1
+          var zmienna=2
           var $widget = $(this),
           $checkbox = $('<input type="checkbox"/>')
           $widget.css('cursor', 'pointer')

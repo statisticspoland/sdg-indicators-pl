@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -624,7 +624,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-1-3-1-b" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-1-3-1-b'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
@@ -674,7 +674,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -800,6 +802,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -831,8 +876,10 @@ var lista1=[["ogółem","mężczyźni","kobiety"],]
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -936,6 +983,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1188,7 +1260,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  1.3.1.b Udział osób w wieku poprodukcyjnym otrzymujących emeryturę w odniesieniu do ludności ogółem w wieku poprodukcyjnym </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b> 1.3.1.b Udział osób w wieku poprodukcyjnym otrzymujących emeryturę w odniesieniu do ludności ogółem w wieku poprodukcyjnym </b> </td>
           </tr>
           
           
@@ -1197,7 +1269,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 1. Koniec z ubóstwem </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 1. Koniec z ubóstwem </td>
           </tr>
           
           
@@ -1242,7 +1314,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Emerytura – świadczenie pieniężne przysługujące ubezpieczonemu, który spełnia warunki uprawniające do emerytury z ubezpieczenia społecznego, tzn. osiągnął wiek emerytalny zróżnicowany w zależności od płci oraz ma odpowiedni okres składkowy i nieskładkowy.Powszechny wiek emerytalny do grudnia 2012 r. wynosił 60 lat życia (dla kobiet) i 65 lat życia (dla mężczyzn). W wyniku reformy systemu emerytalnego od stycznia 2013 r. ustawowy minimalny wiek emerytalny był podwyższany o 1 miesiąc w każdym kwartale. Docelowy wiek stanowiło 67 lat. Dla mężczyzn ten pułap miał zostać osiągnięty w 2020 r., dla kobiet w 2040 r. W wyniku kolejnych zmian, od października 2017 r. powszechny wiek emerytalny wynosi 60 lat dla kobiet i 65 lat dla mężczyzn.Ludność w wieku poprodukcyjnym obejmuje kobiety w wieku 60 lat i więcej oraz mężczyzn w wieku 65 lat i więcej.Warunki nabywania prawa do świadczeń emerytalno-rentowych określają ustawy: • z dn. 13 października 1998 r. o systemie ubezpieczeń społecznych (Dz. U. z 2016 r. poz. 121, z późn. zm.), • z dn. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2015 r. poz. 748, z późn. zm.), • z dn. 20 grudnia 1990 r. ustawa o ubezpieczeniu społecznym rolników (Dz. U. z 2016 r. poz. 277).Odrębnie uregulowane są warunki nabywania prawa do świadczeń emerytalno-rentowych wypłacanych przez MON, MSWiA oraz MS oraz wysokości tych świadczeń – reguluje je ustawa z dn. 23 lipca 2003 r. o zmianie ustawy o systemie ubezpieczeń społecznych (Dz. U. Nr 166, poz. 1609). </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Emerytura</b> – świadczenie pieniężne przysługujące ubezpieczonemu, który spełnia warunki uprawniające do emerytury z ubezpieczenia społecznego, tzn. osiągnął wiek emerytalny zróżnicowany w zależności od płci oraz ma odpowiedni okres składkowy i nieskładkowy.</p> <p><b>Powszechny wiek emerytalny </b>do grudnia 2012 r. wynosił 60 lat życia (dla kobiet) i 65 lat życia (dla mężczyzn). W wyniku reformy systemu emerytalnego od stycznia 2013 r. ustawowy minimalny wiek emerytalny był podwyższany o 1 miesiąc w każdym kwartale. Docelowy wiek stanowiło 67 lat. Dla mężczyzn ten pułap miał zostać osiągnięty w 2020 r., dla kobiet w 2040 r. W wyniku kolejnych zmian, od października 2017 r. powszechny wiek emerytalny wynosi 60 lat dla kobiet i 65 lat dla mężczyzn.</p> <p><b>Ludność w wieku poprodukcyjnym </b>obejmuje kobiety w wieku 60 lat i więcej oraz mężczyzn w wieku 65 lat i więcej.</p> <p>Warunki nabywania prawa do świadczeń emerytalno-rentowych określają ustawy:</p> <p>  • z dn. 13 października 1998 r. o systemie ubezpieczeń społecznych (Dz. U. z 2016 r. poz. 121, z późn. zm.), </p> <p>  • z dn. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2015 r. poz. 748, z późn. zm.),</p> <p>  • z dn. 20 grudnia 1990 r. ustawa o ubezpieczeniu społecznym rolników (Dz. U. z 2016 r. poz. 277).</p> <p>Odrębnie uregulowane są warunki nabywania prawa do świadczeń emerytalno-rentowych wypłacanych przez MON, MSWiA oraz MS oraz wysokości tych świadczeń – reguluje je ustawa z dn. 23 lipca 2003 r. o zmianie ustawy o systemie ubezpieczeń społecznych (Dz. U. Nr 166, poz. 1609).</p> </td>
           </tr>
           
           
@@ -1374,7 +1446,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1398,7 +1470,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1415,6 +1487,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=3
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1559,7 +1686,7 @@ $(window).on("load", function() {
     var licznik=3
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

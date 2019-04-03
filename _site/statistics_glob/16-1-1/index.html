@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -619,12 +619,12 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-16-1-1" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-16-1-1'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var licznik=1
-  var calosc=["0.92","1.06","0.96","1.10","0.87","0.76","0.74",null,null,null,null,null,null,null,null,null,null,null]
+  var calosc=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null]
   var jez= 'pl'
   var legen=["ogółem"]
 
@@ -669,7 +669,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -770,7 +772,7 @@ for (i=1;i<licznik+1;i++){
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":"0.92"},{"year":"2011","ogółem":"1.06"},{"year":"2012","ogółem":"0.96"},{"year":"2013","ogółem":"1.10"},{"year":"2014","ogółem":"0.87"},{"year":"2015","ogółem":"0.76"},{"year":"2016","ogółem":"0.74"},{"year":"2017","ogółem":null},{"year":"2018","ogółem":null}]
+var DATA = [{"year":"2010","ogółem":"0.92"},{"year":"2011","ogółem":"1.06"},{"year":"2012","ogółem":"0.96"},{"year":"2013","ogółem":"1.10"},{"year":"2014","ogółem":"0.87"},{"year":"2015","ogółem":"0.76"},{"year":"2016","ogółem":"0.74"},{"year":"2017","ogółem":"0.68"},{"year":"2018","ogółem":null}]
 var naglowek=["ogółem"]
 
 
@@ -878,7 +880,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  16.1.1 Współczynnik zgonów w wyniku zabójstw na 100 tys. ludności </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>16.1.1 Współczynnik zgonów w wyniku zabójstw na 100 tys. ludności</b> </td>
           </tr>
           
           
@@ -887,7 +889,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 16. Pokój, sprawiedliwość i silne instytucje </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 16. Pokój, sprawiedliwość i silne instytucje </td>
           </tr>
           
           
@@ -932,7 +934,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Zgon - trwałe, nieodwracalne ustanie czynności narządów niezbędnych dla życia, konsekwencją czego jest ustanie czynności całego ustroju.Zabójstwo - wg Międzynarodowej Statystycznej Klasyfikacji Chorób i Problemów Zdrowotnych ICD-10: jednostki chorobowe o symbolu z zakresu X85-Y09 — schorzenia spowodowane obrażeniami zadanymi przez inną osobę w zamiarze zranienia lub pozbawienia życia, w dowolny sposób lub zabójstwem.Źródłem informacji o zgonach jest wykorzystywany wtórnie przez statystykę indywidualny dokument "Karta zgonu" (Rozporządzenie Ministra Zdrowia w sprawie wzoru karty zgonu i sposobu jej wypełniania Dz. U. 2015 r., poz. 231).Dane o zgonach opracowano w podziale terytorialnym — według miejsca zameldowania na pobyt stały osoby zmarłej.Przy opracowywaniu danych zgonów według przyczyn przyjmuje się wyjściowa przyczynę zgonu. Za przyczynę wyjściową uważa się chorobę stanowiącą początek procesu chorobowego, który doprowadził do zgonu albo uraz czy zatrucie, w wyniku którego nastąpił zgon. Dane dotyczące orzecznictwa o przyczynach zgonów podano zgodnie z Międzynarodową Statystyczną Klasyfikacją Chorób i Problemów Zdrowotnych (X Rewizja).Zabójstwo jest jednym z najcięższych przestępstw, skierowanym przeciwko najwyższemu dobru chronionemu prawem, jakim jest życie człowieka. Zabójstwo jest przestępstwem określonym przez ustawodawcę w art. 148 kodeksu karnego. Zabójstwa dopuszcza się sprawca, który zabija innego człowieka. W art. 148 § 4 k.k., ustawodawca określił tzw. zabójstwo typu uprzywilejowanego, którego dopuszcza się każdy kto zabija człowieka pod wpływem silnego wzburzenia usprawiedliwionego okolicznościami, czyli gdy mamy do czynienia z tzw. afektem fizjologicznym oraz silnym wzburzeniem usprawiedliwionym okolicznościami zewnętrznymi, które z perspektywy ocen społecznych mogą zasługiwać na pewne zrozumienie.Zgodnie z art. 148 par. 1 kodeksu karnego, kto zabija człowieka, podlega karze pozbawienia wolności na czas nie krótszy od lat 8, karze 25 lat pozbawienia wolności albo karze dożywotniego pozbawienia wolności.Zgodnie z art. 148 par 2. kodeksu karnego kto zabija człowieka: ze szczególnym okrucieństwem, w związku z wzięciem zakładnika, zgwałceniem albo rozbojem, w wyniku motywacji zasługującej na szczególne potępienie, z użyciem materiałów wybuchowych, podlega karze pozbawienia wolności na czas nie krótszy od lat 12, karze 25 lat pozbawienia wolności albo karze dożywotniego pozbawienia wolności.Ludność opracowano na podstawie: • bilansów ludności zamieszkałej na terenie gminy w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2011 (dla danych od 2010 r.)  dla lat wcześniejszych (2000-2009) w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2002, • rejestrów Ministerstwa Spraw Wewnętrznych i Administracji - migracje wewnętrzne i zagraniczne na pobyt stały (od 2006 r. dane są pobierane z rejestru PESEL - Powszechny Elektroniczny System Ewidencji Ludności), • sprawozdań urzędów stanu cywilnego - urodzenia, zgony. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Zgon </b>- trwałe, nieodwracalne ustanie czynności narządów niezbędnych dla życia, konsekwencją czego jest ustanie czynności całego ustroju.</p> <p><b>Zabójstwo </b>- wg Międzynarodowej Statystycznej Klasyfikacji Chorób i Problemów Zdrowotnych ICD-10: jednostki chorobowe o symbolu z zakresu X85-Y09 — schorzenia spowodowane obrażeniami zadanymi przez inną osobę w zamiarze zranienia lub pozbawienia życia, w dowolny sposób lub zabójstwem.</p> <p><b>Źródłem informacji o zgonach </b>jest wykorzystywany wtórnie przez statystykę indywidualny dokument "Karta zgonu" (Rozporządzenie Ministra Zdrowia w sprawie wzoru karty zgonu i sposobu jej wypełniania Dz. U. 2015 r., poz. 231).</p> <p>Dane o zgonach opracowano w podziale terytorialnym — według miejsca zameldowania na pobyt stały osoby zmarłej.</p> <p>Przy opracowywaniu danych zgonów według przyczyn przyjmuje się wyjściowa przyczynę zgonu. Za przyczynę wyjściową uważa się chorobę stanowiącą początek procesu chorobowego, który doprowadził do zgonu albo uraz czy zatrucie, w wyniku którego nastąpił zgon. Dane dotyczące orzecznictwa o przyczynach zgonów podano zgodnie z Międzynarodową Statystyczną Klasyfikacją Chorób i Problemów Zdrowotnych (X Rewizja).</p> <p><b>Zabójstwo </b>jest jednym z najcięższych przestępstw, skierowanym przeciwko najwyższemu dobru chronionemu prawem, jakim jest życie człowieka. Zabójstwo jest przestępstwem określonym przez ustawodawcę w art. 148 kodeksu karnego. Zabójstwa dopuszcza się sprawca, który zabija innego człowieka. W art. 148 § 4 k.k., ustawodawca określił tzw. zabójstwo typu uprzywilejowanego, którego dopuszcza się każdy kto zabija człowieka pod wpływem silnego wzburzenia usprawiedliwionego okolicznościami, czyli gdy mamy do czynienia z tzw. afektem fizjologicznym oraz silnym wzburzeniem usprawiedliwionym okolicznościami zewnętrznymi, które z perspektywy ocen społecznych mogą zasługiwać na pewne zrozumienie.</p> <p>Zgodnie z art. 148 par. 1 kodeksu karnego, kto zabija człowieka, podlega karze pozbawienia wolności na czas nie krótszy od lat 8, karze 25 lat pozbawienia wolności albo karze dożywotniego pozbawienia wolności.</p> <p>Zgodnie z art. 148 par 2. kodeksu karnego kto zabija człowieka: </p> <p>  1. ze szczególnym okrucieństwem, </p> <p>  2. w związku z wzięciem zakładnika, zgwałceniem albo rozbojem, </p> <p>  3. w wyniku motywacji zasługującej na szczególne potępienie, </p> <p>  4. z użyciem materiałów wybuchowych, </p> <p>podlega karze pozbawienia wolności na czas nie krótszy od lat 12, karze 25 lat pozbawienia wolności albo karze dożywotniego pozbawienia wolności.</p> <p><b>Ludność </b>opracowano na podstawie: </p> <p>  • bilansów ludności zamieszkałej na terenie gminy w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2011 (dla danych od 2010 r.)  dla lat wcześniejszych (2000-2009) w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2002, </p> <p>  • rejestrów Ministerstwa Spraw Wewnętrznych i Administracji - migracje wewnętrzne i zagraniczne na pobyt stały (od 2006 r. dane są pobierane z rejestru PESEL - Powszechny Elektroniczny System Ewidencji Ludności), </p> <p>  • sprawozdań urzędów stanu cywilnego - urodzenia, zgony.</p> </td>
           </tr>
           
           
@@ -1063,8 +1065,8 @@ function Zmiana_jednostki(){
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74",null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1087,8 +1089,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74",null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1111,6 +1113,61 @@ function Zmiana_jednostki(){
     }
 }
 
+function Zmiana_jednostki4(){
+
+  var licznik=1
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
 function Zmiana_jednostki2(){
 
   var licznik=1
@@ -1118,7 +1175,7 @@ function Zmiana_jednostki2(){
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1147,7 +1204,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1182,7 +1239,7 @@ function Zmiana_jednostki3(){
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1208,7 +1265,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1248,8 +1305,8 @@ $(window).on("load", function() {
     }
     var licznik=1
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74",null,null,null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1271,7 +1328,7 @@ $(window).on("load", function() {
     }
     var licznik=1;
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74",null,null,null,null,null,null,null,null,null,null,null];
+    var calo=["0.92","1.06","0.96","1.10","0.87","0.76","0.74","0.68",null,null,null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];

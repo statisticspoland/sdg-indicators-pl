@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -619,7 +619,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-16-1-2" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-16-1-2'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
@@ -669,7 +669,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -870,7 +872,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  16.1.2 Liczba żołnierzy poległych i zmarłych na misjach </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>16.1.2 Liczba żołnierzy poległych i zmarłych na misjach</b> </td>
           </tr>
           
           
@@ -879,7 +881,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 16. Pokój, sprawiedliwość i silne instytucje </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 16. Pokój, sprawiedliwość i silne instytucje </td>
           </tr>
           
           
@@ -924,7 +926,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Dane dotyczące żołnierzy poległych i zmarłych na misjach pokojowych za granicami kraju są pozyskiwane z ewidencji prowadzonej przez Oddział Operacyjno-Medyczny Dowództwa Operacyjnego Rodzajów Sił Zbrojnych.Polska jest zaangażowana w operacje pokojowe od 1953 r. Od tego czasu, ponad 115 tys. Polskich żołnierzy uczestniczyło w 92 różnych misjach, w trakcie realizacji których zmieniały się zadania (od logistycznych do bojowych w Iraku i Afganistanie).Wojsko Polskie brało dotychczas udział w następujących operacjach i misjach pokojowych: operacje pokojowe, obserwacyjne, humanitarne, rozjemcze, policyjne. W ramach operacji i misji pokojowych ONZ Polska dotychczas brała udział misjach w Afryce, Ameryce, rejonie Azji i Pacyfiku, Europie oraz na Bliskim Wschodzie. W ramach operacji i misji pokojowych NATO, Polska uczestnizyła w misjach w: Albanii, Macedonii, Bośni i Hercegowinie, Iraku oraz Afganistanie.Aktualnie polscy żołnierze służą w Afganistanie, Kosowie, Bośni i Hercegowinie, Republice Środkowej Afryki, Państwie Kuwejt oraz Republice Iraku. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Dane dotyczące żołnierzy poległych i zmarłych na misjach pokojowych za granicami kraju są pozyskiwane z ewidencji prowadzonej przez Oddział Operacyjno-Medyczny Dowództwa Operacyjnego Rodzajów Sił Zbrojnych.</p> <p>Polska jest zaangażowana w operacje pokojowe od 1953 r. Od tego czasu, ponad 115 tys. Polskich żołnierzy uczestniczyło w 92 różnych misjach, w trakcie realizacji których zmieniały się zadania (od logistycznych do bojowych w Iraku i Afganistanie).</p> <p>Wojsko Polskie brało dotychczas udział w następujących operacjach i misjach pokojowych: </p> <p>  • operacje pokojowe, </p> <p>  • obserwacyjne, </p> <p>  • humanitarne, </p> <p>  • rozjemcze, </p> <p>  • policyjne. </p> <p>W ramach operacji i misji pokojowych ONZ Polska dotychczas brała udział misjach w Afryce, Ameryce, rejonie Azji i Pacyfiku, Europie oraz na Bliskim Wschodzie. W ramach operacji i misji pokojowych NATO, Polska uczestnizyła w misjach w: Albanii, Macedonii, Bośni i Hercegowinie, Iraku oraz Afganistanie.</p> <p>Aktualnie polscy żołnierze służą w Afganistanie, Kosowie, Bośni i Hercegowinie, Republice Środkowej Afryki, Państwie Kuwejt oraz Republice Iraku.</p> </td>
           </tr>
           
           
@@ -1056,7 +1058,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=["6","15","0","6","1","0","0","0","0",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1080,7 +1082,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=["6","15","0","6","1","0","0","0","0",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1097,6 +1099,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=1
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["6","15","0","6","1","0","0","0","0",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["6","15","0","6","1","0","0","0","0",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1241,7 +1298,7 @@ $(window).on("load", function() {
     var licznik=1
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
     var calo=["6","15","0","6","1","0","0","0","0",null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

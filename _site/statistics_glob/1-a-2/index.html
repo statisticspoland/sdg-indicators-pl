@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -624,7 +624,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-1-a-2" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-1-a-2'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
@@ -674,7 +674,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -800,6 +802,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -831,8 +876,10 @@ var lista1=[["ogółem","zdrowie","edukacja","ochrona socjalna"],]
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -936,6 +983,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1188,7 +1260,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  1.a.2 Udział wydatków sektora instytucji rządowych i samorządowych według COFOG przeznaczanych na zdrowie, edukację i ochronę socjalną w wydatkach ogółem sektora instytucji rządowych i samorządowych </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>1.a.2 Udział wydatków sektora instytucji rządowych i samorządowych według COFOG przeznaczanych na zdrowie, edukację i ochronę socjalną w wydatkach ogółem sektora instytucji rządowych i samorządowych</b> </td>
           </tr>
           
           
@@ -1197,7 +1269,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 1. Koniec z ubóstwem </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 1. Koniec z ubóstwem </td>
           </tr>
           
           
@@ -1242,7 +1314,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Sektor instytucji rządowych i samorządowych – zgodnie z ESA 2010 – obejmuje następujące podmioty gospodarki narodowej:a) działające na zasadach określonych w ustawie o finansach publicznych (jednostki budżetowe, fundusze celowe, a od 2010 r. także samorządowe zakłady budżetowe, agencje wykonawcze i instytucje gospodarki budżetowej oraz działające do 2005 r. środki specjalne jednostek budżetowych, w latach 2005—2010 — rachunek dochodów własnych jednostek budżetowych oraz do 2010 r. — zakłady budżetowe i gospodarstwa pomocnicze jednostek budżetowych łącznie z prowadzącymi działalność gospodarczą oraz fundusze motywacyjne),b) podmioty, których system finansowy został określony odrębnymi ustawami, a których podstawowym źródłem finansowania są dotacje z budżetu państwa (publiczne szkoły wyższe, Polska Akademia Nauk i tworzone przez nią jednostki organizacyjne, Krajowy Fundusz Drogowy oraz inne fundusze zarządzane przez Bank Gospodarstwa Krajowego, jednostki doradztwa rolniczego oraz agencje rządowe),c) samodzielne publiczne zakłady opieki zdrowotnej,d) państwowe i samorządowe instytucje kultury oraz państwowe instytucje filmowe,e) fundusze mające osobowość prawną, które są powiązane z budżetem państwa lub z budżetami jednostek samorządu terytorialnego,f) instytucje obsługujące fundusze ubezpieczeń społecznych (ZUS, KRUS) wraz z zarządzanymi przez nie funduszami oraz Narodowy Fundusz Zdrowia (w okresie 1 I 1999 r.— —31 III 2003 r. — kasy chorych),g) szpitale publiczne działające w formie spółek kapitałowych oraz w formie instytutów badawczych, h) Bankowy Fundusz Gwarancyjny, i) inne jednostki, w tym przedsiębiorstwa publiczne oraz instytucje niekomercyjne spełniające kryteria ESA 2010 w zakresie klasyfikacji do sektora instytucji rządowych i samorządowych.Klasyfikacja COFOG (ang. Classification of the Functions of Government) – klasyfikacja wydatków instytucji rządowych i samorządowych według funkcji, w której wydatki uporządkowane są w układzie działów (funkcji), grup oraz klas. Zgodnie z tą klasyfikacją GF 07 oznacza funkcję Zdrowie, GF 09 - Edukację, GF10 - Ochronę socjalną. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Sektor instytucji rządowych i samorządowych </b>– zgodnie z ESA 2010 – obejmuje następujące podmioty gospodarki narodowej:</p> <p>  a) działające na zasadach określonych w ustawie o finansach publicznych (jednostki budżetowe, fundusze celowe, a od 2010 r. także samorządowe zakłady budżetowe, agencje wykonawcze i instytucje gospodarki budżetowej oraz działające do 2005 r. środki specjalne jednostek budżetowych, w latach 2005—2010 — rachunek dochodów własnych jednostek budżetowych oraz do 2010 r. — zakłady budżetowe i gospodarstwa pomocnicze jednostek budżetowych łącznie z prowadzącymi działalność gospodarczą oraz fundusze motywacyjne),</p> <p>  b) podmioty, których system finansowy został określony odrębnymi ustawami, a których podstawowym źródłem finansowania są dotacje z budżetu państwa (publiczne szkoły wyższe, Polska Akademia Nauk i tworzone przez nią jednostki organizacyjne, Krajowy Fundusz Drogowy oraz inne fundusze zarządzane przez Bank Gospodarstwa Krajowego, jednostki doradztwa rolniczego oraz agencje rządowe),</p> <p>  c) samodzielne publiczne zakłady opieki zdrowotnej,</p> <p>  d) państwowe i samorządowe instytucje kultury oraz państwowe instytucje filmowe,</p> <p>  e) fundusze mające osobowość prawną, które są powiązane z budżetem państwa lub z budżetami jednostek samorządu terytorialnego,</p> <p>  f) instytucje obsługujące fundusze ubezpieczeń społecznych (ZUS, KRUS) wraz z zarządzanymi przez nie funduszami oraz Narodowy Fundusz Zdrowia (w okresie 1 I 1999 r.— —31 III 2003 r. — kasy chorych),</p> <p>  g) szpitale publiczne działające w formie spółek kapitałowych oraz w formie instytutów badawczych, </p> <p>  h) Bankowy Fundusz Gwarancyjny, </p> <p>  i) inne jednostki, w tym przedsiębiorstwa publiczne oraz instytucje niekomercyjne spełniające kryteria ESA 2010 w zakresie klasyfikacji do sektora instytucji rządowych i samorządowych.</p> <p><b>Klasyfikacja COFOG </b>(ang. Classification of the Functions of Government) – klasyfikacja wydatków instytucji rządowych i samorządowych według funkcji, w której wydatki uporządkowane są w układzie działów (funkcji), grup oraz klas. Zgodnie z tą klasyfikacją GF 07 oznacza funkcję Zdrowie, GF 09 - Edukację, GF10 - Ochronę socjalną.</p> </td>
           </tr>
           
           
@@ -1374,7 +1446,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=["58.6","58.3","59.7","60.9","60.9","61.6","63.9","63.3","10.9","10.6","10.8","10.9","11.0","11.2","11.3","11.4","12.1","12.4","12.5","12.4","12.4","12.7","12.1","11.9","35.6","35.3","36.4","37.6","37.6","37.7","40.5","40.0",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1398,7 +1470,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=["58.6","58.3","59.7","60.9","60.9","61.6","63.9","63.3","10.9","10.6","10.8","10.9","11.0","11.2","11.3","11.4","12.1","12.4","12.5","12.4","12.4","12.7","12.1","11.9","35.6","35.3","36.4","37.6","37.6","37.7","40.5","40.0",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1415,6 +1487,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=4
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["58.6","58.3","59.7","60.9","60.9","61.6","63.9","63.3","10.9","10.6","10.8","10.9","11.0","11.2","11.3","11.4","12.1","12.4","12.5","12.4","12.4","12.7","12.1","11.9","35.6","35.3","36.4","37.6","37.6","37.7","40.5","40.0",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["58.6","58.3","59.7","60.9","60.9","61.6","63.9","63.3","10.9","10.6","10.8","10.9","11.0","11.2","11.3","11.4","12.1","12.4","12.5","12.4","12.4","12.7","12.1","11.9","35.6","35.3","36.4","37.6","37.6","37.7","40.5","40.0",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1559,7 +1686,7 @@ $(window).on("load", function() {
     var licznik=4
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=["58.6","58.3","59.7","60.9","60.9","61.6","63.9","63.3","10.9","10.6","10.8","10.9","11.0","11.2","11.3","11.4","12.1","12.4","12.5","12.4","12.4","12.7","12.1","11.9","35.6","35.3","36.4","37.6","37.6","37.7","40.5","40.0",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

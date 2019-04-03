@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -776,6 +776,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -807,8 +850,10 @@ var lista1=[["ogółem","chłopcy","dziewczęta"],]
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -912,6 +957,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1164,7 +1234,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  4.1.1.c Wyniki testów PISA - odsetek uczniów na minimalnym wymaganym poziomie osiągnięć w matematyce </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>4.1.1.c Wyniki testów PISA - odsetek uczniów na minimalnym wymaganym poziomie osiągnięć w matematyce</b> </td>
           </tr>
           
           
@@ -1173,7 +1243,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 4. Dobra jakość edukacji </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 4. Dobra jakość edukacji </td>
           </tr>
           
           
@@ -1218,7 +1288,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Dane pochodzą z Programu Międzynarodowej Oceny Umiejętności Uczniów PISA (Programme for International Student Assessment).Program Międzynarodowej Oceny Umiejętności Uczniów w skali międzynarodowej koordynowany jest przez Organizację Współpracy Gospodarczej i Rozwoju (OECD), a w Polsce przez Ministerstwo Edukacji Narodowej. celem Programu jest sprawdzenie umiejętności praktycznego zastosowania wiedzy nabytej w szkole i poza szkołą. Badanie (reprezentacyjne) realizowane jest w wylosowanych szkołach, a wyniki uogólniane są na całą populację. Warunkiem powodzenia badania jest uczestnictwo w nim wszystkich wylosowanych szkół i uczniów. Standardy PISA pozwalają jedynie na niewielką skalę odmowy.PISA sprawdza kompetencje uczniów w trzech dziedzinach: czytaniu i interpretacji, matematyce oraz rozumowaniu w naukach przyrodniczych. Badanie realizowanie jest co trzy lata, począwszy od 2000 r. W każdym z kolejnych badań szczególny nacisk jest położony na zbadanie jednej dziedziny, na którą przeznacza się połowę czasu przewidzianego na rozwiązanie przez ucznia całego zestawu zadań.Testy PISA (opracowane przez międzynarodowe konsorcjum, przy współpracy krajów uczestniczących w projekcie) różnią się od typowych zadań szkolnych, a na podstawie otrzymanych wyników szacuje się poziom umiejętności ucznia. Najlepsi uczniowie osiągają poziom 5 lub 6 (zadania o względnie wysokim stopniu trudności), natomiast wyniki poniżej poziomu 2 - minimalnego poziomu kompetencji - wskazują na posiadanie jedynie bardzo podstawowych umiejętności, co oznacza zwiększone ryzyko nieradzenia sobie na drodze edukacji i w życiu dorosłym.PISA jest jednym z najważniejszych i największych badań edukacyjnych, które ma na celu uzyskanie obiektywnych i porównywalnych danych w skali międzynarodowej o umiejętnościach (jednego rocznika) uczniów. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Dane pochodzą z <b>Programu Międzynarodowej Oceny Umiejętności Uczniów PISA </b>(<i>Programme for International Student Assessment</i>).</p> <p>Program Międzynarodowej Oceny Umiejętności Uczniów w skali międzynarodowej koordynowany jest przez Organizację Współpracy Gospodarczej i Rozwoju (OECD), a w Polsce przez Ministerstwo Edukacji Narodowej. celem Programu jest sprawdzenie umiejętności praktycznego zastosowania wiedzy nabytej w szkole i poza szkołą. Badanie (reprezentacyjne) realizowane jest w wylosowanych szkołach, a wyniki uogólniane są na całą populację. Warunkiem powodzenia badania jest uczestnictwo w nim wszystkich wylosowanych szkół i uczniów. Standardy PISA pozwalają jedynie na niewielką skalę odmowy.</p> <p>PISA sprawdza kompetencje uczniów w trzech dziedzinach: czytaniu i interpretacji, matematyce oraz rozumowaniu w naukach przyrodniczych. Badanie realizowanie jest co trzy lata, począwszy od 2000 r. W każdym z kolejnych badań szczególny nacisk jest położony na zbadanie jednej dziedziny, na którą przeznacza się połowę czasu przewidzianego na rozwiązanie przez ucznia całego zestawu zadań.</p> <p>Testy PISA (opracowane przez międzynarodowe konsorcjum, przy współpracy krajów uczestniczących w projekcie) różnią się od typowych zadań szkolnych, a na podstawie otrzymanych wyników szacuje się poziom umiejętności ucznia. Najlepsi uczniowie osiągają poziom 5 lub 6 (zadania o względnie wysokim stopniu trudności), natomiast wyniki poniżej poziomu 2 - minimalnego poziomu kompetencji - wskazują na posiadanie jedynie bardzo podstawowych umiejętności, co oznacza zwiększone ryzyko nieradzenia sobie na drodze edukacji i w życiu dorosłym.</p> <P>PISA jest jednym z najważniejszych i największych badań edukacyjnych, które ma na celu uzyskanie obiektywnych i porównywalnych danych w skali międzynarodowej o umiejętnościach (jednego rocznika) uczniów.</p> </td>
           </tr>
           
           
@@ -1350,7 +1420,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=["79.5",null,"85.6",null,null,"82.8",null,null,null,"78.9",null,"85.0",null,null,"84.0",null,null,null,"80.2",null,"86.2",null,null,"81.5",null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1374,7 +1444,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=["79.5",null,"85.6",null,null,"82.8",null,null,null,"78.9",null,"85.0",null,null,"84.0",null,null,null,"80.2",null,"86.2",null,null,"81.5",null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1391,6 +1461,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=3
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["79.5",null,"85.6",null,null,"82.8",null,null,null,"78.9",null,"85.0",null,null,"84.0",null,null,null,"80.2",null,"86.2",null,null,"81.5",null,null,null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["79.5",null,"85.6",null,null,"82.8",null,null,null,"78.9",null,"85.0",null,null,"84.0",null,null,null,"80.2",null,"86.2",null,null,"81.5",null,null,null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1535,7 +1660,7 @@ $(window).on("load", function() {
     var licznik=3
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
     var calo=["79.5",null,"85.6",null,null,"82.8",null,null,null,"78.9",null,"85.0",null,null,"84.0",null,null,null,"80.2",null,"86.2",null,null,"81.5",null,null,null,null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

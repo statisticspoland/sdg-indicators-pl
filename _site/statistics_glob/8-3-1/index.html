@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -628,7 +628,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
   var container = '#linechart-8-3-1'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
   var licznik=3
-  var calosc=["4.6",null,null,null,"4.5",null,null,null,"5.5",null,null,null,"5.8",null,null,null,"3.6",null,null,null,"2.9",null,null,null,null,null,null,null,null,null,null,null]
+  var calosc=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null]
   var jez= 'pl'
   var legen=["ogółem","mężczyźni","kobiety"]
 
@@ -776,6 +776,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -807,8 +850,10 @@ var lista1=[["ogółem","mężczyźni","kobiety"],]
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -912,6 +957,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1056,7 +1126,7 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":"4.6","mężczyźni":"5.5","kobiety":"3.6"},{"year":"2011","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2012","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2013","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2014","ogółem":"4.5","mężczyźni":"5.8","kobiety":"2.9"},{"year":"2015","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2016","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2017","ogółem":null,"mężczyźni":null,"kobiety":null}]
+var DATA = [{"year":"2010","ogółem":"4.6","mężczyźni":"5.5","kobiety":"3.6"},{"year":"2011","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2012","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2013","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2014","ogółem":"4.5","mężczyźni":"5.8","kobiety":"2.9"},{"year":"2015","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2016","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2017","ogółem":"4.7","mężczyźni":"5.3","kobiety":"4.0"}]
 var naglowek=["ogółem","mężczyźni","kobiety"]
 
 
@@ -1164,7 +1234,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  8.3.1 Osoby wykonujące pracę nierejestrowaną w % ogółu pracujących (wg BAEL) </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>8.3.1 Osoby wykonujące pracę nierejestrowaną w % ogółu pracujących (wg BAEL)</b> </td>
           </tr>
           
           
@@ -1173,7 +1243,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 8. Wzrost gospodarczy i godna praca </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 8. Wzrost gospodarczy i godna praca </td>
           </tr>
           
           
@@ -1218,7 +1288,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Badanie pracy nierejestrowanej jest przeprowadzane w ramach modułu do Badania Aktywności Ekonomicznej Ludności (BAEL) – „Nietypowe formy zatrudnienia i praca nierejestrowana”. Badanie modułowe jest dodatkowym badaniem realizowanym jednocześnie z badaniem podstawowym pozwalającym na rozszerzenie zakresu informacji zdobywanych w badaniu podstawowym.Przez pracę nierejestrowaną należy rozumieć: – pracę najemną wykonywaną bez nawiązania stosunku pracy czyli bez umowy o pracę, bez umowy zlecenia, umowy o dzieło lub jakiejkolwiek innej pisemnej umowy pomiędzy pracodawcą i pracownikiem bez względu na sektor własności (również u osób fizycznych i w indywidualnych gospodarstwach rolnych)  praca nie może być również wykonywana na podstawie powołania, mianowania lub wyboru  z tytułu wykonywania pracy nierejestrowanej pracownik nie uzyskuje ubezpieczenia społecznego, a więc uprawnień do korzystania ze świadczeń społecznych  okres wykonywania tej pracy nie jest także zaliczany jako składkowy z punktu widzenia ZUS, a pracodawca nie odprowadza na konto ZUS i Funduszu Pracy odpowiednich sum z tytułu wypłacanego wynagrodzenia  od dochodów z pracy nierejestrowanej nie są płacone podatki dochodowe, – pracę na rachunek własny, jeśli z tytułu prowadzonej działalności gospodarczej nie są realizowane obowiązki finansowe wobec państwa (np. podatki).Do pracujących zaliczono wszystkie osoby w wieku 15 lat i więcej, które w okresie badanego tygodnia:– wykonywały przez co najmniej 1 godzinę pracę przynoszącą zarobek lub dochód tzn. były zatrudnione w charakterze pracownika najemnego, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem,– miały pracę, ale jej nie wykonywały: z powodu choroby, urlopu macierzyńskiego lub wypoczynkowego, z innych powodów, przy czym długość przerwy w pracy wynosiła: – do 3 miesięcy,– powyżej 3 miesięcy, ale osoby te były pracownikami najemnymi i w tym czasie otrzymywały co najmniej 50% dotychczasowego wynagrodzenia.Do pracujących – zgodnie z międzynarodowymi standardami – zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Badanie pracy nierejestrowanej jest przeprowadzane w ramach modułu do Badania Aktywności Ekonomicznej Ludności (BAEL) – „Nietypowe formy zatrudnienia i praca nierejestrowana”. Badanie modułowe jest dodatkowym badaniem realizowanym jednocześnie z badaniem podstawowym pozwalającym na rozszerzenie zakresu informacji zdobywanych w badaniu podstawowym.</p> <p>Przez <b>pracę nierejestrowaną </b>należy rozumieć: </br> <p>  – pracę najemną wykonywaną bez nawiązania stosunku pracy czyli bez umowy o pracę, bez umowy zlecenia, umowy o dzieło lub jakiejkolwiek innej pisemnej umowy pomiędzy pracodawcą i pracownikiem bez względu na sektor własności (również u osób fizycznych i w indywidualnych gospodarstwach rolnych)  praca nie może być również wykonywana na podstawie powołania, mianowania lub wyboru  z tytułu wykonywania pracy nierejestrowanej pracownik nie uzyskuje ubezpieczenia społecznego, a więc uprawnień do korzystania ze świadczeń społecznych  okres wykonywania tej pracy nie jest także zaliczany jako składkowy z punktu widzenia ZUS, a pracodawca nie odprowadza na konto ZUS i Funduszu Pracy odpowiednich sum z tytułu wypłacanego wynagrodzenia  od dochodów z pracy nierejestrowanej nie są płacone podatki dochodowe, </br> <p>  – pracę na rachunek własny, jeśli z tytułu prowadzonej działalności gospodarczej nie są realizowane obowiązki finansowe wobec państwa (np. podatki).</p> <p>Do <b>pracujących </b>zaliczono wszystkie osoby w wieku 15 lat i więcej, które w okresie badanego tygodnia:</p> <p>  – wykonywały przez co najmniej 1 godzinę pracę przynoszącą zarobek lub dochód tzn. były zatrudnione w charakterze pracownika najemnego, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem,</p> <p>  – miały pracę, ale jej nie wykonywały: </p> <p>  • z powodu choroby, urlopu macierzyńskiego lub wypoczynkowego, </p> <p>  • z innych powodów, przy czym długość przerwy w pracy wynosiła: </p> <p>  – do 3 miesięcy, </p> <p>  – powyżej 3 miesięcy, ale osoby te były pracownikami najemnymi i w tym czasie otrzymywały, co najmniej 50% dotychczasowego wynagrodzenia.</p> <p>Do <b>pracujących </b>– zgodnie z międzynarodowymi standardami – zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie.</p> </td>
           </tr>
           
           
@@ -1349,8 +1419,8 @@ function Zmiana_jednostki(){
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["4.6",null,null,null,"4.5",null,null,null,"5.5",null,null,null,"5.8",null,null,null,"3.6",null,null,null,"2.9",null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      var calo=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1373,8 +1443,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["4.6",null,null,null,"4.5",null,null,null,"5.5",null,null,null,"5.8",null,null,null,"3.6",null,null,null,"2.9",null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      var calo=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1397,6 +1467,61 @@ function Zmiana_jednostki(){
     }
 }
 
+function Zmiana_jednostki4(){
+
+  var licznik=3
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
 function Zmiana_jednostki2(){
 
   var licznik=3
@@ -1404,7 +1529,7 @@ function Zmiana_jednostki2(){
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["4.6",null,null,null,"4.5",null,null,null,"5.5",null,null,null,"5.8",null,null,null,"3.6",null,null,null,"2.9",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1433,7 +1558,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["4.6",null,null,null,"4.5",null,null,null,"5.5",null,null,null,"5.8",null,null,null,"3.6",null,null,null,"2.9",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1468,7 +1593,7 @@ function Zmiana_jednostki3(){
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["4.6",null,null,null,"4.5",null,null,null,"5.5",null,null,null,"5.8",null,null,null,"3.6",null,null,null,"2.9",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1494,7 +1619,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["4.6",null,null,null,"4.5",null,null,null,"5.5",null,null,null,"5.8",null,null,null,"3.6",null,null,null,"2.9",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1534,8 +1659,8 @@ $(window).on("load", function() {
     }
     var licznik=3
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["4.6",null,null,null,"4.5",null,null,null,"5.5",null,null,null,"5.8",null,null,null,"3.6",null,null,null,"2.9",null,null,null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    var calo=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1557,7 +1682,7 @@ $(window).on("load", function() {
     }
     var licznik=3;
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["4.6",null,null,null,"4.5",null,null,null,"5.5",null,null,null,"5.8",null,null,null,"3.6",null,null,null,"2.9",null,null,null,null,null,null,null,null,null,null,null];
+    var calo=["4.6",null,null,null,"4.5",null,null,"4.7","5.5",null,null,null,"5.8",null,null,"5.3","3.6",null,null,null,"2.9",null,null,"4.0",null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];

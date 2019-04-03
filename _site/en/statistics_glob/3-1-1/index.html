@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -619,12 +619,12 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-3-1-1" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-3-1-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var licznik=1
-  var calosc=["2.2","2.3","1.0","1.9","2.1","1.6","2.4",null,null,null,null,null,null,null,null,null]
+  var calosc=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null]
   var jez= 'en'
   var legen=["total"]
 
@@ -669,7 +669,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -770,7 +772,7 @@ for (i=1;i<licznik+1;i++){
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":"2.2"},{"year":"2011","total":"2.3"},{"year":"2012","total":"1.0"},{"year":"2013","total":"1.9"},{"year":"2014","total":"2.1"},{"year":"2015","total":"1.6"},{"year":"2016","total":"2.4"},{"year":"2017","total":null}]
+var DATA = [{"year":"2010","total":"2.2"},{"year":"2011","total":"2.3"},{"year":"2012","total":"1.0"},{"year":"2013","total":"1.9"},{"year":"2014","total":"2.1"},{"year":"2015","total":"1.6"},{"year":"2016","total":"2.4"},{"year":"2017","total":"2.2"},{"year":"2018","total":null}]
 var naglowek=["total"]
 
 
@@ -1059,12 +1061,12 @@ function download_csv(csv, filename) {
 function Zmiana_jednostki(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1087,8 +1089,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1111,14 +1113,69 @@ function Zmiana_jednostki(){
     }
 }
 
+function Zmiana_jednostki4(){
+
+  var licznik=1
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='en'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
 function Zmiana_jednostki2(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4",null,null,null,null,null,null,null,null,null]
+      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1147,7 +1204,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4",null,null,null,null,null,null,null,null,null]
+      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1178,11 +1235,11 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4",null,null,null,null,null,null,null,null,null]
+      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1208,7 +1265,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4",null,null,null,null,null,null,null,null,null]
+      var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1247,9 +1304,9 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4",null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1270,8 +1327,8 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4",null,null,null,null,null,null,null,null,null];
+    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    var calo=["2.2","2.3","1.0","1.9","2.1","1.6","2.4","2.2",null,null,null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];

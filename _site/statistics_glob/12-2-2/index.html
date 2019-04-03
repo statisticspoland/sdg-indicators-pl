@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -610,9 +610,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
           
-            
-              <button type="button" id="Jednostka" onclick="Zmiana_jednostki()" style="margin-top: 30px;">Zmień jednostkę - tona</button>
-            
+              
+                <button type="button" id="Jednostka4" onclick="Zmiana_jednostki4()" style="margin-top: 30px;">Zmień jednostkę - tona</button>
+              
           
 
             
@@ -626,7 +626,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-12-2-2" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-12-2-2'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
@@ -676,7 +676,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -802,6 +804,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -833,8 +878,10 @@ var lista1=[["ogółem"," na 1 mieszkańca"],]
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -938,6 +985,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1190,7 +1262,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  12.2.2 Krajowa Konsumpcja Materialna (DMC) </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>12.2.2 Krajowa Konsumpcja Materialna (DMC)</b> </td>
           </tr>
           
           
@@ -1199,7 +1271,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 12. Odpowiedzialna konsumpcja i produkcja </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 12. Odpowiedzialna konsumpcja i produkcja </td>
           </tr>
           
           
@@ -1244,7 +1316,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Krajowa Konsumpcja Materialna (DMC) obejmuje wszystkie materiały bezposrednio zużyte w procesach ekonomicznych na potrzeby gospodarki. Stanowi sumę materiałó pozyskanych na terytorium kraju oraz z importu pomniejszoną o materiały wysłane na eksport.Wskaźnik Krajowej Konsumpcji Materialnej (DMC) wyznacza się w oparciu o Ogólnogospodarcze Rachunki Przepływów Materialnych (EW-MFA, Economy-wide Material Flow Accounts), czyli spójne zestawienia całkowitych nakładów materialnych wchodzących do gospodarek narodowych, zmian poziomu zapasów materialnych w gospodarce oraz wpływów materialnych do innych gospodarek albo do środowiska.Dane w tablicach EW-MFA, w jednostkach masy, tworzy się dla następujacych elementów składowych: Biomasa i produkty z biomasy Rudy i koncentraty metali, surowe i przetworzone Minerały niemetaliczne, surowe i przetworzone Kopalne surowce energetyczne / nośniki energii, surowe i przetworzone Inne produkty Odpady przywożone w celu ostatecznego przetworzenia i usunięcia </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Krajowa Konsumpcja Materialna (DMC) </b>obejmuje wszystkie materiały bezpośrednio zużyte w procesach ekonomicznych na potrzeby gospodarki. Stanowi sumę materiałów pozyskanych na terytorium kraju oraz z importu pomniejszoną o materiały wysłane na eksport.</p> <p><b>Wskaźnik Krajowej Konsumpcji Materialnej (DMC) </b>wyznacza się w oparciu o <b>Ogólnogospodarcze Rachunki Przepływów Materialnych </b>(EW-MFA, Economy-wide Material Flow Accounts), czyli spójne zestawienia całkowitych nakładów materialnych wchodzących do gospodarek narodowych, zmian poziomu zapasów materialnych w gospodarce oraz wypływów materialnych do innych gospodarek albo do środowiska.</p> <p>Dane w tablicach EW-MFA, w jednostkach masy, tworzy się dla następujących elementów składowych:</br> 1. Biomasa i produkty z biomasy.</br> 2. Rudy i koncentraty metali, surowe i przetworzone.</br> 3. Minerały niemetaliczne, surowe i przetworzone.</br> 4. Kopalne surowce energetyczne/ nośniki energii, surowe i przetworzone.</br> 5. Inne produkty.</br> 6. Odpady przywożone w celu ostatecznego przetworzenia i usunięcia.</p> </td>
           </tr>
           
           
@@ -1376,7 +1448,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=["644835.0","797870.8","695354.2","657020.7","654385.4","643165.3","671920.7","718609.9",null,"16.95","20.96","18.27","17.27","17.22","16.93","17.70","18.92",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1400,7 +1472,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=["644835.0","797870.8","695354.2","657020.7","654385.4","643165.3","671920.7","718609.9",null,"16.95","20.96","18.27","17.27","17.22","16.93","17.70","18.92",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1417,6 +1489,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=2
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["644835.0","797870.8","695354.2","657020.7","654385.4","643165.3","671920.7","718609.9",null,"16.95","20.96","18.27","17.27","17.22","16.93","17.70","18.92",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["644835.0","797870.8","695354.2","657020.7","654385.4","643165.3","671920.7","718609.9",null,"16.95","20.96","18.27","17.27","17.22","16.93","17.70","18.92",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1561,7 +1688,7 @@ $(window).on("load", function() {
     var licznik=2
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
     var calo=["644835.0","797870.8","695354.2","657020.7","654385.4","643165.3","671920.7","718609.9",null,"16.95","20.96","18.27","17.27","17.22","16.93","17.70","18.92",null,null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

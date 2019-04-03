@@ -13,7 +13,7 @@
 
           {% assign graph_template = 'components/' | append: graph_type | append: '.html' %}
           {% assign indicator_template = 'components/indicator1' | append: '.html' %}
-          {% if id == '12-2-2' or id == '8-4-2' %}
+          {% if id == '8-4-2' %}
             {% if language == 'pl' %}
               <button type="button" id="Jednostka" onclick="Zmiana_jednostki()" style="margin-top: 30px;">Zmień jednostkę - tona</button>
             {% else %}
@@ -31,6 +31,12 @@
             {% else %}
               <button type="button" id="Jednostka3" onclick="Zmiana_jednostki3()" style="margin-top: 30px;">Change unit - thous. tonnes</button>
             {% endif %}
+          {% elsif id == '12-2-2' %}
+              {% if language == 'pl' %}
+                <button type="button" id="Jednostka4" onclick="Zmiana_jednostki4()" style="margin-top: 30px;">Zmień jednostkę - tona</button>
+              {% else %}
+                <button type="button" id="Jednostka4" onclick="Zmiana_jednostki4()" style="margin-top: 30px;">Change unit - tonne</button>
+              {% endif %}
           {% endif %}
 
             {% if licznik>1 %}

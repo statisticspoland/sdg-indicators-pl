@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -776,6 +776,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -807,8 +850,10 @@ var lista1=[["ogółem","mężczyźni","kobiety"],["miasto","wieś"],["10-14 lat
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -912,6 +957,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1164,7 +1234,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  5.4.1 Odsetek czasu poświęconego na niepłatną pracę w gospodarstwie domowym i pracę opiekuńczą </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>5.4.1 Odsetek czasu poświęconego na niepłatną pracę w gospodarstwie domowym i pracę opiekuńczą</b> </td>
           </tr>
           
           
@@ -1173,7 +1243,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 5. Równość płci </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 5. Równość płci </td>
           </tr>
           
           
@@ -1218,7 +1288,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Dane pochodzą z Badania budżetu czasu ludności.Badanie budżetu czasu ludności dostarcza informacji o bardzo wielu aspektach życia Polaków, w tym rozkładzie czasu poświęcanego na różne sfery życia. Badanie odbywa się co 10 lat. Ostatnie przeprowadzono w 2013 r., trwało przez cały rok i obejmowało osoby w wieku 10 lat lub więcej.Czas, którym dysponujemy w ciągu doby został podzielony na 10 głównych grup czynności oraz dodatkową jedenastą grupę zawierającą niewielki odsetek innych niewymienionych czynności, tj.: potrzeby fizjologiczne  zajęcia i prace domowe  praca zawodowa  korzystanie ze środków masowego przekazu  życie towarzyskie i rozrywki  dojazdy i dojścia  zamiłowania osobiste  uczestnictwo w sporcie i rekreacji  nauka  dobrowolna praca w organizacjach i poza nimi  pomoc innym  zaangażowanie w działalność organizacji i praktyki religijne  inne niewymienione czynności. Do grupy związanej z zajęciami i pracami domowymi zaliczono m.in. utrzymanie porządku, gotowanie, opiekę nad dziećmi i dorosłymi oraz zakupy i korzystanie z usług. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Dane pochodzą z <b>Badania budżetu czasu ludności</b>.</p> <p>Badanie budżetu czasu ludności dostarcza informacji o bardzo wielu aspektach życia Polaków, w tym rozkładzie czasu poświęcanego na różne sfery życia. Badanie odbywa się co 10 lat. Ostatnie przeprowadzono w 2013 r., trwało przez cały rok i obejmowało osoby w wieku 10 lat lub więcej.</p> <p>Czas, którym dysponujemy w ciągu doby został podzielony na <b>10 głównych grup czynności </b>oraz dodatkową jedenastą grupę zawierającą niewielki odsetek innych niewymienionych czynności, tj.:</p> <p>  • potrzeby fizjologiczne; </p> <p>  • zajęcia i prace domowe; </p> <p>  • praca zawodowa; </p> <p>  • korzystanie ze środków masowego przekazu; </p> <p>  • życie towarzyskie i rozrywki; </p> <p>  • dojazdy i dojścia; </p> <p>  • zamiłowania osobiste; </p> <p>  • uczestnictwo w sporcie i rekreacji; </p> <p>  • nauka; </p> <p>  • dobrowolna praca w organizacjach i poza nimi  pomoc innym  zaangażowanie w działalność organizacji i praktyki religijne; </p> <p>  • inne niewymienione czynności. </p> <p>Do grupy związanej z zajęciami i pracami domowymi zaliczono m.in. utrzymanie porządku, gotowanie, opiekę nad dziećmi i dorosłymi oraz zakupy i korzystanie z usług.</p> </td>
           </tr>
           
           
@@ -1350,7 +1420,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=[null,null,null,"14.3",null,null,null,null,null,null,null,"9.9",null,null,null,null,null,null,null,"18.3",null,null,null,null,null,null,null,"14.0",null,null,null,null,null,null,null,"14.9",null,null,null,null,null,null,null,"3.6",null,null,null,null,null,null,null,"5.3",null,null,null,null,null,null,null,"9.7",null,null,null,null,null,null,null,"15.8",null,null,null,null,null,null,null,"15.4",null,null,null,null,null,null,null,"14.0",null,null,null,null,null,null,null,"15.7",null,null,null,null,null,null,null,"16.0",null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1374,7 +1444,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=[null,null,null,"14.3",null,null,null,null,null,null,null,"9.9",null,null,null,null,null,null,null,"18.3",null,null,null,null,null,null,null,"14.0",null,null,null,null,null,null,null,"14.9",null,null,null,null,null,null,null,"3.6",null,null,null,null,null,null,null,"5.3",null,null,null,null,null,null,null,"9.7",null,null,null,null,null,null,null,"15.8",null,null,null,null,null,null,null,"15.4",null,null,null,null,null,null,null,"14.0",null,null,null,null,null,null,null,"15.7",null,null,null,null,null,null,null,"16.0",null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1391,6 +1461,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=13
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=[null,null,null,"14.3",null,null,null,null,null,null,null,"9.9",null,null,null,null,null,null,null,"18.3",null,null,null,null,null,null,null,"14.0",null,null,null,null,null,null,null,"14.9",null,null,null,null,null,null,null,"3.6",null,null,null,null,null,null,null,"5.3",null,null,null,null,null,null,null,"9.7",null,null,null,null,null,null,null,"15.8",null,null,null,null,null,null,null,"15.4",null,null,null,null,null,null,null,"14.0",null,null,null,null,null,null,null,"15.7",null,null,null,null,null,null,null,"16.0",null,null,null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=[null,null,null,"14.3",null,null,null,null,null,null,null,"9.9",null,null,null,null,null,null,null,"18.3",null,null,null,null,null,null,null,"14.0",null,null,null,null,null,null,null,"14.9",null,null,null,null,null,null,null,"3.6",null,null,null,null,null,null,null,"5.3",null,null,null,null,null,null,null,"9.7",null,null,null,null,null,null,null,"15.8",null,null,null,null,null,null,null,"15.4",null,null,null,null,null,null,null,"14.0",null,null,null,null,null,null,null,"15.7",null,null,null,null,null,null,null,"16.0",null,null,null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1535,7 +1660,7 @@ $(window).on("load", function() {
     var licznik=13
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=[null,null,null,"14.3",null,null,null,null,null,null,null,"9.9",null,null,null,null,null,null,null,"18.3",null,null,null,null,null,null,null,"14.0",null,null,null,null,null,null,null,"14.9",null,null,null,null,null,null,null,"3.6",null,null,null,null,null,null,null,"5.3",null,null,null,null,null,null,null,"9.7",null,null,null,null,null,null,null,"15.8",null,null,null,null,null,null,null,"15.4",null,null,null,null,null,null,null,"14.0",null,null,null,null,null,null,null,"15.7",null,null,null,null,null,null,null,"16.0",null,null,null,null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

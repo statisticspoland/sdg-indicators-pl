@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -625,7 +625,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-10-b-1" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-10-b-1'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
@@ -675,7 +675,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -801,6 +803,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -832,8 +877,10 @@ var lista1=[["total official development assistance","total bilateral official d
 var jez='en'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -937,6 +984,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1375,7 +1447,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1399,7 +1471,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1416,6 +1488,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=11
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='en'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1560,7 +1687,7 @@ $(window).on("load", function() {
     var licznik=11
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

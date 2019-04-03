@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -624,7 +624,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-11-6-1" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-11-6-1'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
@@ -674,7 +674,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -800,6 +802,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -831,8 +876,10 @@ var lista1=[["recykling","kompostowanie lub fermentacja","przekształcenia termi
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -936,6 +983,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1188,7 +1260,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  11.6.1 Odsetek odpadów komunalnych przeznaczonych do przetworzenia w określony sposób w relacji do ilości odpadów wytworzonych </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>11.6.1 Odsetek odpadów komunalnych przeznaczonych do przetworzenia w określony sposób w relacji do ilości odpadów wytworzonych</b> </td>
           </tr>
           
           
@@ -1197,7 +1269,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 11. Zrównoważone miasta i społeczności </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 11. Zrównoważone miasta i społeczności </td>
           </tr>
           
           
@@ -1242,7 +1314,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Odpady komunalne to odpady powstające w gospodarstwach domowych, z wyłączeniem pojazdów wycofanych z eksploatacji, a także odpady niezawierające odpadów niebezpiecznych pochodzące od innych wytwórców odpadów, które ze względu na swój charakter lub skład są podobne do odpadów powstających w gospodarstwach domowych  zmieszane odpady komunalne pozostają zmieszanymi odpadami komunalnymi, nawet jeżeli zostały poddane czynności przetwarzania odpadów, która nie zmieniła w sposób znaczący ich właściwości.Dane o odpadach komunalnych zbierane są od jednostek zajmujących się zbieraniem (odbieraniem) odpadów od jednostek zajmujących się przetwarzaniem odpadów komunalnych. Zbierane informacje obejmują odpady z kodem 20: Odpady komunalne łącznie z frakcjami gromadzonymi selektywnie oraz odpady z kodem 15 01: Odpady opakowaniowe (włącznie z selektywnie gromadzonymi odpadami komunalnymi) jeżeli pochodzą z sektora komunalnego.Dla danych za lata 2010-2014: Sposób klasyfikacji odpadów oraz katalog odpadów wraz z listą odpadów niebezpiecznych określa rozporządzenie Ministra Środowiska z dnia 27 września 2001 r. w sprawie katalogu odpadów (Dz. U. 2001 Nr 112, poz. 1206).Dla danych od 2015 r.: Sposób klasyfikacji odpadów oraz katalog odpadów wraz z listą odpadów niebezpiecznych określa rozporządzenie Ministra Środowiska z dnia 9 grudnia 2014 r. w sprawie katalogu odpadów (Dz. U. 2014, poz. 1923). </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Odpady komunalne </b>to odpady powstające w gospodarstwach domowych, z wyłączeniem pojazdów wycofanych z eksploatacji, a także odpady niezawierające odpadów niebezpiecznych pochodzące od innych wytwórców odpadów, które ze względu na swój charakter lub skład są podobne do odpadów powstających w gospodarstwach domowych  zmieszane odpady komunalne pozostają zmieszanymi odpadami komunalnymi, nawet jeżeli zostały poddane czynności przetwarzania odpadów, która nie zmieniła w sposób znaczący ich właściwości.</p> <p><b>Dane o odpadach komunalnych </b>zbierane są od jednostek zajmujących się zbieraniem (odbieraniem) odpadów od jednostek zajmujących się przetwarzaniem odpadów komunalnych. Zbierane informacje obejmują odpady z kodem 20: Odpady komunalne łącznie z frakcjami gromadzonymi selektywnie oraz odpady z kodem 15 01: Odpady opakowaniowe (włącznie z selektywnie gromadzonymi odpadami komunalnymi) jeżeli pochodzą z sektora komunalnego.</p> <p>Dla danych za lata 2010-2014: Sposób klasyfikacji odpadów oraz katalog odpadów wraz z listą odpadów niebezpiecznych określa rozporządzenie Ministra Środowiska z dnia 27 września 2001 r. w sprawie katalogu odpadów (Dz. U. 2001 Nr 112, poz. 1206).</p> <p>Dla danych od 2015 r.: Sposób klasyfikacji odpadów oraz katalog odpadów wraz z listą odpadów niebezpiecznych określa rozporządzenie Ministra Środowiska z dnia 9 grudnia 2014 r. w sprawie katalogu odpadów (Dz. U. 2014, poz. 1923).</p> </td>
           </tr>
           
           
@@ -1374,7 +1446,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1398,7 +1470,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1415,6 +1487,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=4
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1559,7 +1686,7 @@ $(window).on("load", function() {
     var licznik=4
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

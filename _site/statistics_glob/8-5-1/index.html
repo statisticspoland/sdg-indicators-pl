@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -627,10 +627,10 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 (function () {
   var container = '#linechart-8-5-1'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-  var licznik=22
-  var calosc=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+  var licznik=19
+  var calosc=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null]
   var jez= 'pl'
-  var legen=["ogółem","mężczyźni","kobiety","przedstawiciele władz publicznych"," wyżsi urzędnicy i kierownicy","specjaliści","technicy i inny średni personel","pracownicy biurowi","pracownicy usług i sprzedawcy","rolnicy"," ogrodnicy"," leśnicy i rybacy","robotnicy przemysłowi i rzemieślnicy","operatorzy i monterzy maszyn i urządzeń","pracownicy przy pracach prostych","do 24 lat","25-34 lata","35-44 lata","45-54 lata","55-59 lata","60-64 lata","65 lat i więcej"]
+  var legen=["ogółem","mężczyźni","kobiety","przedstawiciele władz publicznych; wyżsi urzędnicy i kierownicy","specjaliści","technicy i inny średni personel","pracownicy biurowi","pracownicy usług i sprzedawcy","rolnicy; ogrodnicy; leśnicy i rybacy","robotnicy przemysłowi i rzemieślnicy","operatorzy i monterzy maszyn i urządzeń","pracownicy przy pracach prostych","do 24 lat","25-34 lata","35-44 lata","45-54 lata","55-59 lata","60-64 lata","65 lat i więcej"]
 
   if(2=='0'){
     var precyz=0;
@@ -776,6 +776,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -807,8 +850,10 @@ var lista1=[["ogółem","mężczyźni","kobiety"],["przedstawiciele władz publi
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -912,6 +957,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1056,8 +1126,8 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":"21.98","mężczyźni":"22.89","kobiety":"21.00","przedstawiciele władz publicznych":"43.51"," wyżsi urzędnicy i kierownicy":"31.84","specjaliści":"21.77","technicy i inny średni personel":"17.65","pracownicy biurowi":"12.44","pracownicy usług i sprzedawcy":"12.82","rolnicy":"16.06"," ogrodnicy":"17.24"," leśnicy i rybacy":"12.22","robotnicy przemysłowi i rzemieślnicy":"13.71","operatorzy i monterzy maszyn i urządzeń":"20.66","pracownicy przy pracach prostych":"24.33","do 24 lat":"22.30","25-34 lata":"22.61","35-44 lata":"27.21","45-54 lata":"32.57","55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null},{"year":"2011","ogółem":null,"mężczyźni":null,"kobiety":null,"przedstawiciele władz publicznych":null," wyżsi urzędnicy i kierownicy":null,"specjaliści":null,"technicy i inny średni personel":null,"pracownicy biurowi":null,"pracownicy usług i sprzedawcy":null,"rolnicy":null," ogrodnicy":null," leśnicy i rybacy":null,"robotnicy przemysłowi i rzemieślnicy":null,"operatorzy i monterzy maszyn i urządzeń":null,"pracownicy przy pracach prostych":null,"do 24 lat":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null},{"year":"2012","ogółem":"21.76","mężczyźni":"23.09","kobiety":"20.35","przedstawiciele władz publicznych":"44.15"," wyżsi urzędnicy i kierownicy":"29.80","specjaliści":"21.25","technicy i inny średni personel":"17.32","pracownicy biurowi":"12.27","pracownicy usług i sprzedawcy":"14.04","rolnicy":"16.56"," ogrodnicy":"17.14"," leśnicy i rybacy":"12.09","robotnicy przemysłowi i rzemieślnicy":"13.57","operatorzy i monterzy maszyn i urządzeń":"20.18","pracownicy przy pracach prostych":"24.28","do 24 lat":"22.25","25-34 lata":"21.65","35-44 lata":"25.91","45-54 lata":"35.02","55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null},{"year":"2013","ogółem":null,"mężczyźni":null,"kobiety":null,"przedstawiciele władz publicznych":null," wyżsi urzędnicy i kierownicy":null,"specjaliści":null,"technicy i inny średni personel":null,"pracownicy biurowi":null,"pracownicy usług i sprzedawcy":null,"rolnicy":null," ogrodnicy":null," leśnicy i rybacy":null,"robotnicy przemysłowi i rzemieślnicy":null,"operatorzy i monterzy maszyn i urządzeń":null,"pracownicy przy pracach prostych":null,"do 24 lat":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null},{"year":"2014","ogółem":"22.91","mężczyźni":"24.32","kobiety":"21.35","przedstawiciele władz publicznych":"45.39"," wyżsi urzędnicy i kierownicy":"31.70","specjaliści":"22.49","technicy i inny średni personel":"17.73","pracownicy biurowi":"13.14","pracownicy usług i sprzedawcy":"14.35","rolnicy":"17.53"," ogrodnicy":"17.88"," leśnicy i rybacy":"12.95","robotnicy przemysłowi i rzemieślnicy":"14.34","operatorzy i monterzy maszyn i urządzeń":"20.89","pracownicy przy pracach prostych":"25.51","do 24 lat":"23.83","25-34 lata":"22.58","35-44 lata":"25.29","45-54 lata":"34.02","55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null},{"year":"2015","ogółem":null,"mężczyźni":null,"kobiety":null,"przedstawiciele władz publicznych":null," wyżsi urzędnicy i kierownicy":null,"specjaliści":null,"technicy i inny średni personel":null,"pracownicy biurowi":null,"pracownicy usług i sprzedawcy":null,"rolnicy":null," ogrodnicy":null," leśnicy i rybacy":null,"robotnicy przemysłowi i rzemieślnicy":null,"operatorzy i monterzy maszyn i urządzeń":null,"pracownicy przy pracach prostych":null,"do 24 lat":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null},{"year":"2016","ogółem":"26.37","mężczyźni":"27.79","kobiety":"24.79","przedstawiciele władz publicznych":"52.11"," wyżsi urzędnicy i kierownicy":"36.17","specjaliści":"26.12","technicy i inny średni personel":"20.80","pracownicy biurowi":"15.93","pracownicy usług i sprzedawcy":"17.29","rolnicy":"19.84"," ogrodnicy":"20.20"," leśnicy i rybacy":"15.35","robotnicy przemysłowi i rzemieślnicy":"17.14","operatorzy i monterzy maszyn i urządzeń":"24.29","pracownicy przy pracach prostych":"28.98","do 24 lat":"27.63","25-34 lata":"25.87","35-44 lata":"27.61","45-54 lata":"34.18","55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null},{"year":"2017","ogółem":null,"mężczyźni":null,"kobiety":null,"przedstawiciele władz publicznych":null," wyżsi urzędnicy i kierownicy":null,"specjaliści":null,"technicy i inny średni personel":null,"pracownicy biurowi":null,"pracownicy usług i sprzedawcy":null,"rolnicy":null," ogrodnicy":null," leśnicy i rybacy":null,"robotnicy przemysłowi i rzemieślnicy":null,"operatorzy i monterzy maszyn i urządzeń":null,"pracownicy przy pracach prostych":null,"do 24 lat":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null}]
-var naglowek=["ogółem","mężczyźni","kobiety","przedstawiciele władz publicznych"," wyżsi urzędnicy i kierownicy","specjaliści","technicy i inny średni personel","pracownicy biurowi","pracownicy usług i sprzedawcy","rolnicy"," ogrodnicy"," leśnicy i rybacy","robotnicy przemysłowi i rzemieślnicy","operatorzy i monterzy maszyn i urządzeń","pracownicy przy pracach prostych","do 24 lat","25-34 lata","35-44 lata","45-54 lata","55-59 lata","60-64 lata","65 lat i więcej"]
+var DATA = [{"year":"2010","ogółem":"21.98","mężczyźni":"22.89","kobiety":"21.00","przedstawiciele władz publicznych; wyżsi urzędnicy i kierownicy":"43.51","specjaliści":"31.84","technicy i inny średni personel":"21.77","pracownicy biurowi":"17.65","pracownicy usług i sprzedawcy":"12.44","rolnicy; ogrodnicy; leśnicy i rybacy":"12.82","robotnicy przemysłowi i rzemieślnicy":"16.06","operatorzy i monterzy maszyn i urządzeń":"17.24","pracownicy przy pracach prostych":"12.22","do 24 lat":"13.71","25-34 lata":"20.66","35-44 lata":"24.33","45-54 lata":"22.30","55-59 lata":"22.61","60-64 lata":"27.21","65 lat i więcej":"32.57"},{"year":"2011","ogółem":null,"mężczyźni":null,"kobiety":null,"przedstawiciele władz publicznych; wyżsi urzędnicy i kierownicy":null,"specjaliści":null,"technicy i inny średni personel":null,"pracownicy biurowi":null,"pracownicy usług i sprzedawcy":null,"rolnicy; ogrodnicy; leśnicy i rybacy":null,"robotnicy przemysłowi i rzemieślnicy":null,"operatorzy i monterzy maszyn i urządzeń":null,"pracownicy przy pracach prostych":null,"do 24 lat":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null},{"year":"2012","ogółem":"21.76","mężczyźni":"23.09","kobiety":"20.35","przedstawiciele władz publicznych; wyżsi urzędnicy i kierownicy":"44.15","specjaliści":"29.80","technicy i inny średni personel":"21.25","pracownicy biurowi":"17.32","pracownicy usług i sprzedawcy":"12.27","rolnicy; ogrodnicy; leśnicy i rybacy":"14.04","robotnicy przemysłowi i rzemieślnicy":"16.56","operatorzy i monterzy maszyn i urządzeń":"17.14","pracownicy przy pracach prostych":"12.09","do 24 lat":"13.57","25-34 lata":"20.18","35-44 lata":"24.28","45-54 lata":"22.25","55-59 lata":"21.65","60-64 lata":"25.91","65 lat i więcej":"35.02"},{"year":"2013","ogółem":null,"mężczyźni":null,"kobiety":null,"przedstawiciele władz publicznych; wyżsi urzędnicy i kierownicy":null,"specjaliści":null,"technicy i inny średni personel":null,"pracownicy biurowi":null,"pracownicy usług i sprzedawcy":null,"rolnicy; ogrodnicy; leśnicy i rybacy":null,"robotnicy przemysłowi i rzemieślnicy":null,"operatorzy i monterzy maszyn i urządzeń":null,"pracownicy przy pracach prostych":null,"do 24 lat":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null},{"year":"2014","ogółem":"22.91","mężczyźni":"24.32","kobiety":"21.35","przedstawiciele władz publicznych; wyżsi urzędnicy i kierownicy":"45.39","specjaliści":"31.70","technicy i inny średni personel":"22.49","pracownicy biurowi":"17.73","pracownicy usług i sprzedawcy":"13.14","rolnicy; ogrodnicy; leśnicy i rybacy":"14.35","robotnicy przemysłowi i rzemieślnicy":"17.53","operatorzy i monterzy maszyn i urządzeń":"17.88","pracownicy przy pracach prostych":"12.95","do 24 lat":"14.34","25-34 lata":"20.89","35-44 lata":"25.51","45-54 lata":"23.83","55-59 lata":"22.58","60-64 lata":"25.29","65 lat i więcej":"34.02"},{"year":"2015","ogółem":null,"mężczyźni":null,"kobiety":null,"przedstawiciele władz publicznych; wyżsi urzędnicy i kierownicy":null,"specjaliści":null,"technicy i inny średni personel":null,"pracownicy biurowi":null,"pracownicy usług i sprzedawcy":null,"rolnicy; ogrodnicy; leśnicy i rybacy":null,"robotnicy przemysłowi i rzemieślnicy":null,"operatorzy i monterzy maszyn i urządzeń":null,"pracownicy przy pracach prostych":null,"do 24 lat":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null},{"year":"2016","ogółem":"26.37","mężczyźni":"27.79","kobiety":"24.79","przedstawiciele władz publicznych; wyżsi urzędnicy i kierownicy":"52.11","specjaliści":"36.17","technicy i inny średni personel":"26.12","pracownicy biurowi":"20.80","pracownicy usług i sprzedawcy":"15.93","rolnicy; ogrodnicy; leśnicy i rybacy":"17.29","robotnicy przemysłowi i rzemieślnicy":"19.84","operatorzy i monterzy maszyn i urządzeń":"20.20","pracownicy przy pracach prostych":"15.35","do 24 lat":"17.14","25-34 lata":"24.29","35-44 lata":"28.98","45-54 lata":"27.63","55-59 lata":"25.87","60-64 lata":"27.61","65 lat i więcej":"34.18"},{"year":"2017","ogółem":null,"mężczyźni":null,"kobiety":null,"przedstawiciele władz publicznych; wyżsi urzędnicy i kierownicy":null,"specjaliści":null,"technicy i inny średni personel":null,"pracownicy biurowi":null,"pracownicy usług i sprzedawcy":null,"rolnicy; ogrodnicy; leśnicy i rybacy":null,"robotnicy przemysłowi i rzemieślnicy":null,"operatorzy i monterzy maszyn i urządzeń":null,"pracownicy przy pracach prostych":null,"do 24 lat":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55-59 lata":null,"60-64 lata":null,"65 lat i więcej":null}]
+var naglowek=["ogółem","mężczyźni","kobiety","przedstawiciele władz publicznych; wyżsi urzędnicy i kierownicy","specjaliści","technicy i inny średni personel","pracownicy biurowi","pracownicy usług i sprzedawcy","rolnicy; ogrodnicy; leśnicy i rybacy","robotnicy przemysłowi i rzemieślnicy","operatorzy i monterzy maszyn i urządzeń","pracownicy przy pracach prostych","do 24 lat","25-34 lata","35-44 lata","45-54 lata","55-59 lata","60-64 lata","65 lat i więcej"]
 
 
 
@@ -1164,7 +1234,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  8.5.1 Przeciętna wysokość stawki godzinowej dla zatrudnionych kobiet i mężczyzn według zawodu oraz wieku </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>8.5.1 Przeciętna wysokość stawki godzinowej dla zatrudnionych kobiet i mężczyzn według zawodu oraz wieku</b> </td>
           </tr>
           
           
@@ -1173,7 +1243,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 8. Wzrost gospodarczy i godna praca </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 8. Wzrost gospodarczy i godna praca </td>
           </tr>
           
           
@@ -1344,13 +1414,13 @@ function download_csv(csv, filename) {
 
 function Zmiana_jednostki(){
 
-  var licznik=22
+  var licznik=19
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1373,8 +1443,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1397,14 +1467,69 @@ function Zmiana_jednostki(){
     }
 }
 
+function Zmiana_jednostki4(){
+
+  var licznik=19
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
 function Zmiana_jednostki2(){
 
-  var licznik=22
+  var licznik=19
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1433,7 +1558,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1463,12 +1588,12 @@ function Zmiana_jednostki2(){
 
 function Zmiana_jednostki3(){
 
-  var licznik=22
+  var licznik=19
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1494,7 +1619,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1532,10 +1657,10 @@ $(window).on("load", function() {
         window.location = window.location + '#2';
         window.location.reload();
     }
-    var licznik=22
+    var licznik=19
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1555,9 +1680,9 @@ $(window).on("load", function() {
         window.location = window.location + '#9';
         window.location.reload();
     }
-    var licznik=22;
+    var licznik=19;
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null];
+    var calo=["21.98",null,"21.76",null,"22.91",null,"26.37",null,"22.89",null,"23.09",null,"24.32",null,"27.79",null,"21.00",null,"20.35",null,"21.35",null,"24.79",null,"43.51",null,"44.15",null,"45.39",null,"52.11",null,"31.84",null,"29.80",null,"31.70",null,"36.17",null,"21.77",null,"21.25",null,"22.49",null,"26.12",null,"17.65",null,"17.32",null,"17.73",null,"20.80",null,"12.44",null,"12.27",null,"13.14",null,"15.93",null,"12.82",null,"14.04",null,"14.35",null,"17.29",null,"16.06",null,"16.56",null,"17.53",null,"19.84",null,"17.24",null,"17.14",null,"17.88",null,"20.20",null,"12.22",null,"12.09",null,"12.95",null,"15.35",null,"13.71",null,"13.57",null,"14.34",null,"17.14",null,"20.66",null,"20.18",null,"20.89",null,"24.29",null,"24.33",null,"24.28",null,"25.51",null,"28.98",null,"22.30",null,"22.25",null,"23.83",null,"27.63",null,"22.61",null,"21.65",null,"22.58",null,"25.87",null,"27.21",null,"25.91",null,"25.29",null,"27.61",null,"32.57",null,"35.02",null,"34.02",null,"34.18",null,null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1595,7 +1720,7 @@ $('body').click(function( e ){
 $(function () {
 $('.list-group.checked-list-box .list-group-item').each(function () {
 
-          var zmienna=22
+          var zmienna=19
           var $widget = $(this),
           $checkbox = $('<input type="checkbox"/>')
           $widget.css('cursor', 'pointer')

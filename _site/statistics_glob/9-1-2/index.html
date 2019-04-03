@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -626,7 +626,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-9-1-2" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-9-1-2'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
@@ -676,7 +676,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -794,6 +796,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -825,8 +870,10 @@ var lista1=[["transport kolejowy","transport samochodowy","transport morski","ś
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -930,6 +977,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1182,7 +1254,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  9.1.2 Rozmiary transportu pasażerskiego i towarowego według rodzaju transportu </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>9.1.2 Rozmiary transportu pasażerskiego i towarowego według rodzaju transportu</b> </td>
           </tr>
           
           
@@ -1191,7 +1263,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 9. Przemysł, Innowacyjność, Infrastruktura </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 9. Przemysł, Innowacyjność, Infrastruktura </td>
           </tr>
           
           
@@ -1236,7 +1308,9 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Przewozy pasażerów transportem kolejowymLiczba wszystkich pasażerów przewiezionych na sieci kolei normalnotorowych i wąskotorowych pociągami osobowymi, pośpiesznymi i ekspresowymi (łącznie z pasażerami przewiezionymi w wagonach sypialnych i w wagonach z miejscami do leżenia) z biletami płatnymi oraz pasażerów korzystających z bezpłatnych przejazdów na podstawie odpowiednich przepisów w ramach komunikacji wewnętrznej i międzynarodowej. Przewozy pasażerów transportem samochodowymPrzewozy pasażerów taborem autobusowym to suma pasażerów przewiezionych w komunikacji krajowej i międzynarodowej autobusami w ramach komunikacji regularnej (tj. na podstawie rozkładu jazdy), regularnej specjalnej (np. przewozy pracownicze, szkolne) oraz w przewozach pozostałych (np. wycieczkowe). Dane o przewozach pasażerów transportem samochodowym nie obejmują przewozów osób taborem autobusowym przedsiębiorstw komunikacji miejskiej oraz taborem autobusowym będącym w transporcie samochodowym gospodarczym. Dane nie obejmują przewozów dokonywanych przez podmioty o liczbie pracujących do 9 osób. Przewozy ładunków morską flotą transportowąPrzewozy ładunków wykonane w rejsach zakończonych statkami własnymi i statkami dzierżawionymi pływającymi pod banderą polską i obcą. Obejmują przewozy ładunków wykonane we wszystkich relacjach, tj. przywożonych do portów polskich z portów obcych, wywożonych z portów polskich do portów obcych, przewożonych pomiędzy portami obcymi, przewożonych pomiędzy portami polskimi.Nie ujmuje się przewozów ładunków wykonanych statkami przekazanymi w czarter obcemu (zagranicznemu) armatorowi. Przewozy taborem żeglugi śródlądowejDane o przewozach taborem żeglugi śródlądowej odnoszą się do taboru będącego w eksploatacji polskich przedsiębiorstw żeglugi śródlądowej (łącznie z jednostkami pływającymi będącymi w dyspozycji przedsiębiorstw zagranicznych w okresie przerwy nawigacyjnej na polskich drogach wodnych) oraz od 2001 r. również podmiotów, których podstawowa działalność jest inna niż świadczenie tych usług. Dane o przewozach ładunków żeglugą śródlądową nie obejmują ładunków przewożonych w przesyłkach drobnych na statkach pasażerskich. Przewozy pasażerów taborem żeglugii śródlądowej obejmują również transport przybrzeżny. Przewozy pasażerów i ładunków transportem lotniczymDane o przewozach ładunków i pasażerów transportem lotniczym obejmują ładunki i pasażerów przewiezionych w lotach rozkładowych, dodatkowych i wynajętych (czarterowych) samolotami polskich przewoźników transportu lotniczego rozkładowego (transport pasażerów lub ładunków na stałych trasach i według stałych rozkładów lotów) oraz innych polskich przewoźników świadczących zarobkowo tego rodzaju usługi w komunikacji międzynarodowej i w komunikacji krajowej. Przewozy ładunków transportem kolejowymDane te obejmują sumę masy brutto wszystkich przesyłek handlowych i służbowych (tj. łącznie z wagą opakowań, a w przypadku przewozów w kontenerach również łącznie z wagą kontenerów) przewiezionych w wagonach towarowych w komunikacji wewnętrznej (krajowej) i międzynarodowej wszystkimi rodzajami pociągów. Dane nie obejmują przewozów manewrowych. Przewozy ładunków transportem samochodowymDane o przewozach ładunków transportem samochodowym dotyczą całego transportu samochodowego, tj. zarobkowego i gospodarczego w sektorze publicznym i prywatnym. Przez transport samochodowy zarobkowy rozumie się świadczenie usług przewozowych za opłatą, a przez transport samochodowy gospodarczy - wykonywanie przewozów ładunków na własne potrzeby, tj. bez opłaty (wliczanych w koszt przedsiębiorstwa). Dane częściowo szacunkowe. Przewozy ładunków transportem rurociągowymObejmują ropę naftową i produkty naftowe przetłoczone rurociągami magistralnymi na potrzeby wewnętrzne kraju (w tym z importu) i tranzytem przez terytorium kraju. Ilość ropy naftowej (produktów naftowych) ustala się jako sumę masy netto poszczególnych partii ropy (produktów) przyjętych do zbiorników odbiorcy za protokółami zdawczo-odbiorczymi. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Przewozy pasażerów transportem kolejowym</b></br> Liczba wszystkich pasażerów przewiezionych na sieci kolei normalnotorowych i wąskotorowych pociągami osobowymi, pośpiesznymi i ekspresowymi (łącznie z pasażerami przewiezionymi w wagonach sypialnych i w wagonach z miejscami do leżenia) z biletami płatnymi oraz pasażerów korzystających z bezpłatnych przejazdów na podstawie odpowiednich przepisów w ramach komunikacji wewnętrznej i międzynarodowej. </p> <p><b>Przewozy pasażerów transportem samochodowym</b></br> Przewozy pasażerów taborem autobusowym to suma pasażerów przewiezionych w komunikacji krajowej i międzynarodowej autobusami w ramach komunikacji regularnej (tj. na podstawie rozkładu jazdy), regularnej specjalnej (np. przewozy pracownicze, szkolne) oraz w przewozach pozostałych (np. wycieczkowe). Dane o przewozach pasażerów transportem samochodowym nie obejmują przewozów osób taborem autobusowym przedsiębiorstw komunikacji miejskiej oraz taborem autobusowym będącym w transporcie samochodowym gospodarczym. Dane nie obejmują przewozów dokonywanych przez podmioty o liczbie pracujących do 9 osób. </p> <p><b>Przewozy ładunków morską flotą transportową</b></br> Przewozy ładunków wykonane w rejsach zakończonych statkami własnymi i statkami dzierżawionymi pływającymi pod banderą polską i obcą. Obejmują przewozy ładunków wykonane we wszystkich relacjach, tj. przywożonych do portów polskich z portów obcych, wywożonych z portów polskich do portów obcych, przewożonych pomiędzy portami obcymi, przewożonych pomiędzy portami polskimi.Nie ujmuje się przewozów ładunków wykonanych statkami przekazanymi w czarter obcemu (zagranicznemu) armatorowi. </p> <p><b>Przewozy taborem żeglugi śródlądowej</b></br> Dane o przewozach taborem żeglugi śródlądowej odnoszą się do taboru będącego w eksploatacji polskich przedsiębiorstw żeglugi śródlądowej (łącznie z jednostkami pływającymi będącymi w dyspozycji przedsiębiorstw zagranicznych w okresie przerwy nawigacyjnej na polskich drogach wodnych) oraz od 2001 r. również podmiotów, których podstawowa działalność jest inna niż świadczenie tych usług. Dane o przewozach ładunków żeglugą śródlądową nie obejmują ładunków przewożonych w przesyłkach drobnych na statkach pasażerskich. Przewozy pasażerów taborem żeglugii śródlądowej obejmują również transport przybrzeżny.
+ </p>
+<p><b>Przewozy pasażerów i ładunków transportem lotniczym </b></br> Dane o przewozach ładunków i pasażerów transportem lotniczym obejmują ładunki i pasażerów przewiezionych w lotach rozkładowych, dodatkowych i wynajętych (czarterowych) samolotami polskich przewoźników transportu lotniczego rozkładowego (transport pasażerów lub ładunków na stałych trasach i według stałych rozkładów lotów) oraz innych polskich przewoźników świadczących zarobkowo tego rodzaju usługi w komunikacji międzynarodowej i w komunikacji krajowej. </p> <p><b>Przewozy ładunków transportem kolejowym</b></br> Dane te obejmują sumę masy brutto wszystkich przesyłek handlowych i służbowych (tj. łącznie z wagą opakowań, a w przypadku przewozów w kontenerach również łącznie z wagą kontenerów) przewiezionych w wagonach towarowych w komunikacji wewnętrznej (krajowej) i międzynarodowej wszystkimi rodzajami pociągów. Dane nie obejmują przewozów manewrowych. </p> <p><b>Przewozy ładunków transportem samochodowym</b></br> Dane o przewozach ładunków transportem samochodowym dotyczą całego transportu samochodowego, tj. zarobkowego i gospodarczego w sektorze publicznym i prywatnym. Przez transport samochodowy zarobkowy rozumie się świadczenie usług przewozowych za opłatą, a przez transport samochodowy gospodarczy - wykonywanie przewozów ładunków na własne potrzeby, tj. bez opłaty (wliczanych w koszt przedsiębiorstwa). Dane częściowo szacunkowe. </p> <p><b>Przewozy ładunków transportem rurociągowym</b></br> Obejmują ropę naftową i produkty naftowe przetłoczone rurociągami magistralnymi na potrzeby wewnętrzne kraju (w tym z importu) i tranzytem przez terytorium kraju. Ilość ropy naftowej (produktów naftowych) ustala się jako sumę masy netto poszczególnych partii ropy (produktów) przyjętych do zbiorników odbiorcy za protokółami zdawczo-odbiorczymi.</p> </td>
           </tr>
           
           
@@ -1368,7 +1442,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1392,7 +1466,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1409,6 +1483,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=10
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1553,7 +1682,7 @@ $(window).on("load", function() {
     var licznik=10
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

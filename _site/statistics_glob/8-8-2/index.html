@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -776,6 +776,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -807,8 +850,10 @@ var lista1=[["ogółem","w prawie","w praktyce"],]
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -912,6 +957,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1164,7 +1234,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  8.8.2 Poziom przestrzegania prawa pracy (wolność zrzeszania się i rokowań zbiorowych) w kraju na podstawie dokumentów Międzynarodowej Organizacji Pracy (MOP) oraz krajowego ustawodawstwa </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>8.8.2 Poziom przestrzegania prawa pracy (wolność zrzeszania się i rokowań zbiorowych) w kraju na podstawie dokumentów Międzynarodowej Organizacji Pracy (MOP) oraz krajowego ustawodawstwa</b> </td>
           </tr>
           
           
@@ -1173,7 +1243,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 8. Wzrost gospodarczy i godna praca </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 8. Wzrost gospodarczy i godna praca </td>
           </tr>
           
           
@@ -1191,7 +1261,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik opracowano na podstawie definicji Konwencji Międzynarodowej Organizacji Pracy (MOP) Nr 87 (na temat wolności związkowej i ochrony praw związkowych) oraz Nr 98 (na temat stosowania zasad prawa organizowania się i rokowań zbiorowych), a także z uwzględnieniem przedmiotowego orzecznictwa MOP.Poziom przestrzegania prawa pracy określany jest w przedziale od 0 do 10 punktów (odpowiednio, najlepsza i najsłabsza nota) w podziale na naruszenia wolności zrzeszania się i rokowań zbiorowych ogółem oraz w prawie i praktyce. Wskaźnik oparty jest na pięciu podstawowych założeniach: zgodność z definicjami MOP, transparentność źródeł i powtarzalność wyników, 108 kryteriów ewaluacyjnych do kodowania informacji o naruszeniach prawa pracy (ogółem, w prawie i praktyce), źródła tekstowe wybrane do kodowania informacji o naruszeniach prawa pracy, zasady kodowania informacji, zasady normalizacji zakodowanej informacji. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Wskaźnik opracowano na podstawie definicji Konwencji Międzynarodowej Organizacji Pracy (MOP) Nr 87 (na temat wolności związkowej i ochrony praw związkowych) oraz Nr 98 (na temat stosowania zasad prawa organizowania się i rokowań zbiorowych), a także z uwzględnieniem przedmiotowego orzecznictwa MOP.</p> <p>Poziom przestrzegania prawa pracy określany jest w przedziale od 0 do 10 punktów (odpowiednio, najlepsza i najsłabsza nota) w podziale na naruszenia wolności zrzeszania się i rokowań zbiorowych <b>ogółem </b>oraz <b>w prawie i praktyce</b>. Wskaźnik oparty jest na pięciu podstawowych założeniach: </p> <p>  • zgodność z definicjami MOP, transparentność źródeł i powtarzalność wyników, </p> <p>  • 108 kryteriów ewaluacyjnych do kodowania informacji o naruszeniach prawa pracy (ogółem, w prawie i praktyce), </p> <p>  • źródła tekstowe wybrane do kodowania informacji o naruszeniach prawa pracy, </p> <p>  • zasady kodowania informacji, </p> <p>  • zasady normalizacji zakodowanej informacji.</p> </td>
           </tr>
           
           
@@ -1218,7 +1288,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Wartość wskaźnika wyliczana jest na podstawie zakodowanych (według 108 kryteriów ewaluacyjnych) naruszeń wolności zrzeszania się i rokowań zbiorowych, opisanych w dokumentach MOP i krajowym ustawodawstwie. Wagi kryteriów ewaluacyjnych określono metodą Delphi. Wyniki kodowania normalizowane są w skali od zera do 10 punktów (odpowiednio, najlepszy i najsłabszy wynik) w podziale na naruszenia wolności zrzeszania się i rokowań zbiorowych ogółem, w prawie i praktyce.Podstawę wyliczenia wskaźnika stanowi kodowanie informacji na temat naruszeń prawa pracy z następujących dokumentów: Sprawozdania Komitetu Ekspertów MOP ds. stosowania konwencji i zaleceń, Sprawozdania Komitetu Konferencji MOP ds. stosowania standardów, Roczne przeglądy krajowe na mocy Deklaracji MOP, zażalenia złożone na podstawie Artykułu 24 Konstytucji MOP, skargi złożone na podstawie Artykułu 26 Konstytucji MOP, Sprawozdania Komitetu Wolności Związkowej, ustawodawstwo krajowe. Informacja z wymienionych źródeł kodowana jest według 108 kryteriów ewaluacyjnych prezentujących V kategorii naruszeń wolności zrzeszania się i rokowań zbiorowych (zgodnie z definicjami MOP): Naruszenie podstawowych wolności obywatelskich. Prawo pracowników do tworzenia i przystępowania do organizacji. Prawa dotyczące działalności wewnątrz organizacji pracowniczych. Prawo do rokowań zbiorowych. Prawo do strajku. Wśród V kategorii naruszeń wolności zrzeszania się i rokowań zbiorowych dodatkowo wyodrębniono naruszenia w prawie i praktyce: naruszenia w prawie odnoszą się do (I) krajowego ustawodawstwa pozostającego w sprzeczności z prawem do wolności zrzeszania się i rokowań zbiorowych według definicji MOP oraz (II) działań podjętych na mocy tego ustawodawstwa, naruszenia w praktyce odnoszą się do czynów naruszających obowiązujące ustawodawstwo krajowe pozostające w zgodzie z prawem do wolności zrzeszania się i rokowań zbiorowych według definicji MOP. Natomiast naruszenia ogółem stanowią sumę naruszeń wolności zrzeszania się i rokowań zbiorowych w prawie i praktyce.Szczegółowy opis zasad kodowania, normalizacji oraz metodologii dostępny jest pod adresem http://labour-rights-indicators.la.psu.edu/about </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Wartość wskaźnika wyliczana jest na podstawie zakodowanych (według 108 kryteriów ewaluacyjnych) naruszeń wolności zrzeszania się i rokowań zbiorowych, opisanych w dokumentach MOP i krajowym ustawodawstwie. Wagi kryteriów ewaluacyjnych określono metodą Delphi. Wyniki kodowania normalizowane są w skali od zera do 10 punktów (odpowiednio, najlepszy i najsłabszy wynik) w podziale na naruszenia wolności zrzeszania się i rokowań zbiorowych<b> ogółem, w prawie i praktyce.</b></p> <p>Podstawę wyliczenia wskaźnika stanowi kodowanie informacji na temat naruszeń prawa pracy z następujących dokumentów:</p> <p>  • Sprawozdania Komitetu Ekspertów MOP ds. stosowania konwencji i zaleceń, </p> <p>  • Sprawozdania Komitetu Konferencji MOP ds. stosowania standardów, </p> <p>  • Roczne przeglądy krajowe na mocy Deklaracji MOP,</p> <p>  • zażalenia złożone na podstawie Artykułu 24 Konstytucji MOP, </p> <p>  • skargi złożone na podstawie Artykułu 26 Konstytucji MOP, </p> <p>  • Sprawozdania Komitetu Wolności Związkowej, </p> <p>  • ustawodawstwo krajowe. </p> <p>Informacja z wymienionych źródeł kodowana jest według 108 kryteriów ewaluacyjnych prezentujących V kategorii naruszeń wolności zrzeszania się i rokowań zbiorowych (zgodnie z definicjami MOP):</p> <p>  1. Naruszenie podstawowych wolności obywatelskich. </p> <p>  2. Prawo pracowników do tworzenia i przystępowania do organizacji. </p> <p>  3. Prawa dotyczące działalności wewnątrz organizacji pracowniczych. </p> <p>  4. Prawo do rokowań zbiorowych. </p> <p>  5. Prawo do strajku. </p> <p>Wśród V kategorii naruszeń wolności zrzeszania się i rokowań zbiorowych dodatkowo wyodrębniono naruszenia <b>w prawie i praktyce</b>: </p> <p>  • <b>naruszenia w prawie </b>odnoszą się do (I) krajowego ustawodawstwa pozostającego w sprzeczności z prawem do wolności zrzeszania się i rokowań zbiorowych według definicji MOP oraz (II) działań podjętych na mocy tego ustawodawstwa, </p> <p>  • <b>naruszenia w praktyce </b>odnoszą się do czynów naruszających obowiązujące ustawodawstwo krajowe pozostające w zgodzie z prawem do wolności zrzeszania się i rokowań zbiorowych według definicji MOP. </p> <p>Natomiast <b>naruszenia ogółem </b>stanowią sumę naruszeń wolności zrzeszania się i rokowań zbiorowych w prawie i praktyce.Szczegółowy opis zasad kodowania, normalizacji oraz metodologii dostępny jest pod adresem http://labour-rights-indicators.la.psu.edu/about</p> </td>
           </tr>
           
           
@@ -1350,7 +1420,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=[null,null,"1.71",null,null,"0.95","1.43",null,null,null,"1.21",null,null,"1.21","1.69",null,null,null,"1.51",null,null,"0.30","0.57",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1374,7 +1444,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=[null,null,"1.71",null,null,"0.95","1.43",null,null,null,"1.21",null,null,"1.21","1.69",null,null,null,"1.51",null,null,"0.30","0.57",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1391,6 +1461,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=3
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=[null,null,"1.71",null,null,"0.95","1.43",null,null,null,"1.21",null,null,"1.21","1.69",null,null,null,"1.51",null,null,"0.30","0.57",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=[null,null,"1.71",null,null,"0.95","1.43",null,null,null,"1.21",null,null,"1.21","1.69",null,null,null,"1.51",null,null,"0.30","0.57",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1535,7 +1660,7 @@ $(window).on("load", function() {
     var licznik=3
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=[null,null,"1.71",null,null,"0.95","1.43",null,null,null,"1.21",null,null,"1.21","1.69",null,null,null,"1.51",null,null,"0.30","0.57",null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

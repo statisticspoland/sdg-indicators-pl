@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -624,7 +624,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-2-5-2" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-2-5-2'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
@@ -674,7 +674,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -800,6 +802,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -831,8 +876,10 @@ var lista1=[["proporcje ras zagrożonych","proporcje ras niezagrożonych"],]
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -936,6 +983,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1188,7 +1260,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  2.5.2 Proporcje ras zagrożonych i niezagrożonych ryzykiem wyginięcia w ogólnej liczbie populacji objętych programem ochrony zasobów genetycznych zwierząt w Polsce </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>2.5.2 Proporcje ras zagrożonych i niezagrożonych ryzykiem wyginięcia w ogólnej liczbie populacji objętych programem ochrony zasobów genetycznych zwierząt w Polsce</b> </td>
           </tr>
           
           
@@ -1197,7 +1269,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 2. Zero głodu </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 2. Zero głodu </td>
           </tr>
           
           
@@ -1242,7 +1314,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Podstawowym celem programów ochrony zasobów genetycznych jest zachowanie poszczególnych populacji i ochrona przed ich wyginięciem, poprzez utrzymanie i wzrost liczebnosci populacj, utrzymanie równowagi genetycznej, przy jednoczesnym zachowaniu charakterystycznych cech fenotypowych zwierząt danej rasy.Programem ochrony zasobów genetycznych w Polsce objęte są następujące rasy zwierząt: - 4 rasy bydła, - 3 rasy świń, - 7 ras koni, - 15 ras owiec, - 14 ras gęsi, - 11 ras kur nieśnych, - 10 ras kaczek, - 4 rasy zwierząt futerkowych - oraz 5 linii pszczół.Istnieją następujące metody ochrony populacji zwierząt przed wyginięciem: - in situ – polegającą na ochronie żywych zwierząt w ich naturalnym środowisku, - ex-situ –ochrona zasobów genetycznych poza miejscem ich naturalnego występowania, w tym: ex-situ in vitro - kriokonserwowanego materiału w bankach materiału genetycznego, ex situ in vivo - kolekcje żywych zwierząt utrzymywane poza miejscem występowania. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Podstawowym celem programów ochrony zasobów genetycznych jest zachowanie poszczególnych populacji i ochrona przed ich wyginięciem, poprzez utrzymanie i wzrost liczebnosci populacj, utrzymanie równowagi genetycznej, przy jednoczesnym zachowaniu charakterystycznych cech fenotypowych zwierząt danej rasy.</p> <p>Programem ochrony zasobów genetycznych w Polsce objęte są następujące rasy zwierząt: </p> <p>  - 4 rasy bydła, </p> <p>  - 3 rasy świń, </p> <p>  - 7 ras koni, </p> <p>  - 15 ras owiec, </p> <p>  - 14 ras gęsi, </p> <p>  - 11 ras kur nieśnych, </p> <p>  - 10 ras kaczek, </p> <p>  - 4 rasy zwierząt futerkowych </p> <p>  - oraz 5 linii pszczół.</p> <p>Istnieją następujące metody ochrony populacji zwierząt przed wyginięciem: </p> <p>  - in situ – polegającą na ochronie żywych zwierząt w ich naturalnym środowisku, </p> <p>  - ex-situ –ochrona zasobów genetycznych poza miejscem ich naturalnego występowania, w tym:</p> <p>  • ex-situ in vitro - kriokonserwowanego materiału w bankach materiału genetycznego, </p> <p>  • ex situ in vivo - kolekcje żywych zwierząt utrzymywane poza miejscem występowania.</p> </td>
           </tr>
           
           
@@ -1269,7 +1341,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Uwagi </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym zadanie 2.5 jest wskaźnik 2.5.2 Proporcje lokalnych hodowli zaklasyfikowanych jako zagrożone ryzykiem wyginięcia, nie zagrożonych ryzykiem lub na nieznanym poziomie ryzyka wyginięcia.Dane dotyczące liczby zwierząt objętych programami ochrony zasobów genetycznych są zbierane, szacowane i przedstawiane corocznie, na podstawie informacji własnych Instytutu Zootechniki PIB . Natomiast klasy zagrożenia są rozpatrywane na podstawie wytycznych FAO (The State of the World’s Animal Genetic, Resources for Food and Agriculture, FAO, 2007). Kklasyfikacja ras zagrożonych zaproponowana przez FAO faktycznie dotyczy ras o skrajnym zagrożeniu wyginięciem (kryteria do 100 i między 100 a 1000 samic), tak aby można było zidentyfikować rasy wymagające natychmiastowej interwencji. W Polsce za podstawę objęcia danej rasy programem ochrony przyjęte zostały progi liczebności w obrębie ras zagrożonych wyginięciem analogiczne do progów określonych rozporządzeniem Komisji (WE) Nr 1974/2006 z dnia 15 grudnia 2006 r. ustanawiającym szczegółowe zasady stosowania rozporządzenia Rady (WE) nr 1698/2005 w sprawie wsparcia rozwoju obszarów wiejskich przez Europejski Fundusz Rolny na rzecz Rozwoju Obszarów Wiejskich (EFRROW), które to progi wyznaczone były na dużo wyższym poziomie. Takie progi mają na celu zapewnienie zachowania zmienności genetycznej w małych populacjach, stworzenie możliwości systematycznego zwiększania populacji a przede wszystkim niedopuszczenie do krytycznego zagrożenia ras, poniżej którego proces restytucji jest już bardzo trudny. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym zadanie 2.5 jest wskaźnik 2.5.2 Proporcje lokalnych hodowli zaklasyfikowanych jako zagrożone ryzykiem wyginięcia, nie zagrożonych ryzykiem lub na nieznanym poziomie ryzyka wyginięcia.</p> <p>Dane dotyczące liczby zwierząt objętych programami ochrony zasobów genetycznych są zbierane, szacowane i przedstawiane corocznie, na podstawie informacji własnych Instytutu Zootechniki PIB . Natomiast klasy zagrożenia są rozpatrywane na podstawie wytycznych FAO (The State of the World’s Animal Genetic, Resources for Food and Agriculture, FAO, 2007). Kklasyfikacja ras zagrożonych zaproponowana przez FAO faktycznie dotyczy ras o skrajnym zagrożeniu wyginięciem (kryteria do 100 i między 100 a 1000 samic), tak aby można było zidentyfikować rasy wymagające natychmiastowej interwencji. </br> W Polsce za podstawę objęcia danej rasy programem ochrony przyjęte zostały progi liczebności w obrębie ras zagrożonych wyginięciem analogiczne do progów określonych rozporządzeniem Komisji (WE) Nr 1974/2006 z dnia 15 grudnia 2006 r. ustanawiającym szczegółowe zasady stosowania rozporządzenia Rady (WE) nr 1698/2005 w sprawie wsparcia rozwoju obszarów wiejskich przez Europejski Fundusz Rolny na rzecz Rozwoju Obszarów Wiejskich (EFRROW), które to progi wyznaczone były na dużo wyższym poziomie. Takie progi mają na celu zapewnienie zachowania zmienności genetycznej w małych populacjach, stworzenie możliwości systematycznego zwiększania populacji a przede wszystkim niedopuszczenie do krytycznego zagrożenia ras, poniżej którego proces restytucji jest już bardzo trudny.</p> </td>
           </tr>
           
           
@@ -1374,7 +1446,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=[null,null,null,null,null,"69.88","69.88","67.50","68.70",null,null,null,null,null,"30.12","30.12","32.50","31.30",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1398,7 +1470,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=[null,null,null,null,null,"69.88","69.88","67.50","68.70",null,null,null,null,null,"30.12","30.12","32.50","31.30",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1415,6 +1487,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=2
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=[null,null,null,null,null,"69.88","69.88","67.50","68.70",null,null,null,null,null,"30.12","30.12","32.50","31.30",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=[null,null,null,null,null,"69.88","69.88","67.50","68.70",null,null,null,null,null,"30.12","30.12","32.50","31.30",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1559,7 +1686,7 @@ $(window).on("load", function() {
     var licznik=2
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
     var calo=[null,null,null,null,null,"69.88","69.88","67.50","68.70",null,null,null,null,null,"30.12","30.12","32.50","31.30",null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

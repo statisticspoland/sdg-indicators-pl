@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -854,7 +854,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  10.3.1 Poczucie zagrożenia dyskryminacją </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>10.3.1 Poczucie zagrożenia dyskryminacją</b> </td>
           </tr>
           
           
@@ -863,7 +863,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 10. Mniej nierówności </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 10. Mniej nierówności </td>
           </tr>
           
           
@@ -908,7 +908,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Dane pochodzą z reprezentacyjnego badania gospodarstw domowych pn. Badanie Spójności Społecznej (BSS). Pierwsza edycja BSS została zrealizowana przez GUS w 2011 r., druga - w 2015 r. W badaniu wzięło udział blisko 14 tys. respondentów w wieku 16 lat i więcej.Respondentom zadano pytanie "Czy uznałby/uznałaby się Pan/Pani za osobę należącą do grupy ludzi, która z jakiegokolwiek powodu jest w Polsce gorzej traktowana (dyskryminowana)?".Możliwymi odpowiedziami były: tak lub nie.celem Badania spójności społecznej jest zebranie informacji pozwalających na dokonanie wszechstronnych ocen jakości życia (z uwzględnieniem aspektów ekonomicznych i społecznych), ocenianej przez pryzmat zarówno wskaźników obiektywnych, jak i subiektywnych. Dzięki integracji danych indywidualnych możliwe jest m.in. określenie, w jakich grupach społeczeństwa występuje kumulacja korzystnych bądź niekorzystnych aspektów jakości życia, jakie czynniki warunkują te sytuacje, a także jakie relacje zachodzą pomiędzy poszczególnymi wymiarami jakości życia. Szeroki zakres zbieranych informacji pozwala m.in. na kompleksową ocenę zróżnicowania poziomu i stylu życia oraz wielowymiarową analizę ubóstwa, wykluczenia społecznego, kapitału społecznego oraz subiektywnego dobrobytu. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Dane pochodzą z reprezentacyjnego badania gospodarstw domowych pn. <b>Badanie Spójności Społecznej (BSS). </b> Pierwsza edycja BSS została zrealizowana przez GUS w 2011 r., druga - w 2015 r. W badaniu wzięło udział blisko 14 tys. respondentów w wieku 16 lat i więcej.</p> <p>Respondentom zadano pytanie <i>"Czy uznałby/uznałaby się Pan/Pani za osobę należącą do grupy ludzi, która z jakiegokolwiek powodu jest w Polsce gorzej traktowana (dyskryminowana)?" </i></br> <p>Możliwymi odpowiedziami były: tak lub nie.</p> <p>Celem Badania spójności społecznej jest zebranie informacji pozwalających na dokonanie wszechstronnych ocen jakości życia (z uwzględnieniem aspektów ekonomicznych i społecznych), ocenianej przez pryzmat zarówno wskaźników obiektywnych, jak i subiektywnych. Dzięki integracji danych indywidualnych możliwe jest m.in. określenie, w jakich grupach społeczeństwa występuje kumulacja korzystnych bądź niekorzystnych aspektów jakości życia, jakie czynniki warunkują te sytuacje, a także jakie relacje zachodzą pomiędzy poszczególnymi wymiarami jakości życia. Szeroki zakres zbieranych informacji pozwala m.in. na kompleksową ocenę zróżnicowania poziomu i stylu życia oraz wielowymiarową analizę ubóstwa, wykluczenia społecznego, kapitału społecznego oraz subiektywnego dobrobytu.</p> </td>
           </tr>
           
           
@@ -1040,7 +1040,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=[null,"9.6",null,null,null,"8.2",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1064,7 +1064,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=[null,"9.6",null,null,null,"8.2",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1081,6 +1081,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=1
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=[null,"9.6",null,null,null,"8.2",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=[null,"9.6",null,null,null,"8.2",null,null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1225,7 +1280,7 @@ $(window).on("load", function() {
     var licznik=1
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=[null,"9.6",null,null,null,"8.2",null,null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

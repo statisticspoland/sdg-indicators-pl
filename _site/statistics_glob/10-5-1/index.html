@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -624,7 +624,7 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-10-5-1" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-10-5-1'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
@@ -674,7 +674,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -800,6 +802,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -831,8 +876,10 @@ var lista1=[["Kapitał regulacyjny w relacji do aktywów ważonych ryzykiem (wym
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -936,6 +983,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1188,7 +1260,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  10.5.1 Wskaźniki dotyczące sytuacji finansowej instytucji depozytowych </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>10.5.1 Wskaźniki dotyczące sytuacji finansowej instytucji depozytowych</b> </td>
           </tr>
           
           
@@ -1197,7 +1269,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 10. Mniej nierówności </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 10. Mniej nierówności </td>
           </tr>
           
           
@@ -1233,7 +1305,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Kapitał regulacyjny w relacji do aktywów ważonych ryzykiemKapitał regulacyjny Tier 1 w relacji do aktywów ważonych ryzykiemWskaźnik pokrycia rezerwami kredytów zagrożonych netto w realcji do kapitałuKredyty zagrożone w relacji do kredytów brutto ogółemKoncentracja sektorowa kredytów do kredytów ogółemWskaźnik rentowności aktywów ROAWskaźnik rentowności kapitału własnego ROEMarża odsetkowa w relacji do wyników bruttoWydatki pozaodsetkowe w relacji do wyników bruttoAktywa płynne w relacji do aktywów ogółemAktywa płynne w relacji do zobowiązań krótkoterminowychOtwarte pozycje walutowe netto w relacji do kapitału </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Kapitał regulacyjny w relacji do aktywów ważonych ryzykiem</br> Kapitał regulacyjny Tier 1 w relacji do aktywów ważonych ryzykiem</br> Wskaźnik pokrycia rezerwami kredytów zagrożonych netto w realcji do kapitału</br> Kredyty zagrożone w relacji do kredytów brutto ogółem</br> Koncentracja sektorowa kredytów do kredytów ogółem</br> Wskaźnik rentowności aktywów ROA</br> Wskaźnik rentowności kapitału własnego ROE</br> Marża odsetkowa w relacji do wyników brutto</br> Wydatki pozaodsetkowe w relacji do wyników brutto</br> Aktywa płynne w relacji do aktywów ogółem</br> Aktywa płynne w relacji do zobowiązań krótkoterminowych</br> Otwarte pozycje walutowe netto w relacji do kapitału </td>
           </tr>
           
           
@@ -1242,7 +1314,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  W Polsce wskaźniki zaklasyfikowane przez Międzynarodowy Fundusz Walutowy do zestawu podstawowych 12 wskaźników (tzw. Core Set) monitorujących bieżącą sytuację finansową i stabilność instytucji finansowych dotyczą banków. Zestaw ten obejmuje następujące wskaźniki:1. Kapitał regulacyjny w relacji do aktywów ważonych ryzykiem (wymogi kapitałowe) - wyrażona w procentach relacja kapitału regulacyjnego do wartości aktywów ważonych ryzykiem. Kapitał regulacyjny danej instytucji zdefiniowany w Rozporządzeniu PE i RADY UE nr 575/2013 w sprawie wymogów ostrożnościowych dla instytucji kredytowych i firm inwestycyjnych (Capital Requirements Regulation – CRR) stanowi sumę jej kapitału Tier I (kapitał, który służy do pokrywania strat w warunkach wypłacalności banku  kapitał ten pozwala bankowi kontynuować normalną działalność i zapewnia mu płynność finansową) i kapitału Tier II (kapitał, który służy do pokrywania strat w warunkach utraty wypłacalności banku  pozwala bankowi spłacić deponentów i uprzywilejowanych wierzycieli, gdy bank przestał być wypłacalny). Wymogi kapitałowe to wyrażona kwotowo wielkość ekspozycji banku na poszczególne rodzaje ryzyka, w tym z tytułu ryzyka kredytowego.2. Kapitał regulacyjny Tier I w relacji do aktywów ważonych ryzykiem (wymogi kapitałowe) - wyrażona w procentach relacja kapitału regulacyjnego Tier I do wartości aktywów ważonych ryzykiem. Kapitał regulacyjny Tier I zdefiniowany w Rozporządzeniu CRR składa się z kapitału podstawowego Tier I i kapitału dodatkowego Tier I. Wymogi kapitałowe to wyrażona kwotowo wielkość ekspozycji banku na poszczególne rodzaje ryzyka, w tym z tytułu ryzyka kredytowego.3. Kredyty zagrożone pomniejszone o odpisy w relacji do kapitału – wyrażona w procentach relacja wartości kredytów zagrożonych (przeterminowanych o ponad 90 dni) do wartości kapitału regulacyjnego. Kredyty zagrożone w przypadku banków, stosujących międzynarodowe standardy rachunkowości (MSR), kwalifikowane są jako kredyty ze stwierdzoną utratą wartości, a w przypadku banków stosujących polskie standardy rachunkowości (PSR) - do kategorii poniżej standardu, wątpliwe i stracone4. Kredyty zagrożone w relacji do kredytów brutto ogółem – wyrażona w procentach relacja wartości kredytów zagrożonych (przeterminowanych o ponad 90 dni) do wartości kredytów brutto ogółem, obejmujących kredyty bez utraty wartości i z rozpoznaną utratą wartości. Kredyty brutto nie są pomniejszone o wartość odpisów/rezerw.5. Koncentracja sektorowa kredytów do kredytów ogółem- wyrażona w procentach relacja wartości kredytów brutto udzielonych dla poszczególnych sektorów gospodarki (rezydentów) do wartości kredytów brutto ogółem. Kredyty brutto ogółem obejmują kredyty bez utraty wartości i z rozpoznaną utratą wartości. Kredyty brutto nie są pomniejszone o wartość odpisów/rezerw.Rezydentami są osoby fizyczne mające miejsce zamieszkania w kraju oraz osoby prawne mające siedzibę w kraju, a także inne podmioty mające siedzibę w kraju, posiadające zdolność zaciągania zobowiązań i nabywania praw we własnym imieniu  rezydentami są również znajdujące się w kraju oddziały, przedstawicielstwa i przedsiębiorstwa utworzone przez nierezydentów.6. Wskaźnik zwrotu z aktywów (ROA) - wyrażona w procentach relacja wyniku finansowego netto w okresie 12 miesięcy poprzedzających dzień bilansowy do średniej wielkości aktywów w tym okresie.7. Stopa zwrotu z kapitału własnego (ROE) - wyrażona w procentach relacja wyniku finansowego netto w okresie 12 miesięcy poprzedzających dzień bilansowy do średniej wielkości kapitału regulacyjnego Tier I w tym okresie. .8. Wynik odsetkowy netto w relacji do wyniku działalności bankowej - wyrażona w procentach relacja wartości różnicy pomiędzy przychodami odsetkowymi uzyskiwanymi przez bank, a kosztami odsetkowymi przezeń płaconymi do wyniku działalności bankowej (stanowiącego sumę wyniku odsetkowego, przychodów z tytułu opłat i prowizji, wyniku z wyceny i z tytułu działalności handlowej, przychodów z tytułu dywidend oraz pozostałych przychodów operacyjnych) w okresie 12 miesięcy poprzedzających dzień bilansowy..9. Koszty pozaodsetkowe w relacji do wyniku działalności bankowej - wyrażona w procentach relacja wszystkich pozycji kosztowych banków za wyjątkiem kosztów odsetkowych do wyniku działalności bankowej w okresie 12 miesięcy poprzedzających dzień bilansowy.10. Aktywa płynne w relacji do aktywów ogółem - wyrażona w procentach relacja wartości aktywów, w przypadku których istnieje możliwość, bez nadmiernej straty, zamiany ich na środki pieniężne do wartości aktywów ogółem. Aktywa płynne według szerokiej miary zdefiniowanej w podręczniku Międzynarodowego Funduszu Walutowego (MFW) obejmują: gotówkę w kasie, operacje z bankiem centralnym (rachunek bieżący nostro, lokaty jednodniowe), rachunki bieżące - sektor finansowy (banki), instrumenty dłużne przeznaczone do obrotu (banki centralne, instytucje rządowe szczebla centralnego), instrumenty dłużne dostępne do sprzedaży (banki centralne, instytucje rządowe szczebla centralnego) oraz instrumenty dłużne wyceniane według wartości godziwej ze skutkiem wyceny odnoszonym do rachunku zysków i strat (banki centralne, instytucje rządowe szczebla centralnego).Aktywa - kontrolowane przez jednostkę gospodarczą zasoby majątkowe o wiarygodnie określonej wartości, uzyskane w wyniku przeszłych zdarzeń, które spowodują w przyszłości wpływ do jednostki korzyści ekonomicznych. Wyróżnia się aktywa finansowe (obejmujące m.in. aktywa pieniężne, kredyty, papiery wartościowe) i niefinansowe (m.in. aktywa trwałe).11. Aktywa płynne w relacji do zobowiązań krótkoterminowych - wartość aktywów płynnych w relacji do ogółu zobowiązań, które stają się wymagalne w ciągu 12 miesięcy od dnia bilansowego.12. Otwarta pozycja walutowa netto w relacji do kapitału - wyrażona w procentach wartość otwartej pozycji walutowej netto w relacji do kapitału regulacyjnego Tier I. Otwarta pozycja walutowa (netto) to różnica długiej i krótkiej pozycji w walutach obcych, wynikających z posiadanych instrumentów finansowych (aktywów, zobowiązań i pozycji pozabilansowych). Długa pozycja oznacza zysk przy aprecjacji waluty obcej i stratę przy deprecjacji waluty obcej (krótka pozycja - odwrotnie).Wymogi kapitałowe, kapitał regulacyjny ogółem oraz kapitał regulacyjny Tier I ą wykorzystywane do wyliczenia wskaźników od I kwartału 2014 r., wyznaczane zgodnie z rozporządzeniem Parlamentu Europejskiego i Rady nr 575/2013 (Capital Requirements Regulation – CRR).W okresie od marca 2010 r. do grudnia 2013 r. dane w zakresie adekwatności kapitałowej, w tym fundusze własne banki ustalały zgodnie z zapisami art. 127 ustawy Prawo bankowe, Uchwały KNF nr. 76/2010 i nr. 381/2008.Polskie Standardy Rachunkowości (PSR) – krajowe przepisy z zakresu rachunkowości określone w ustawie z dn. 29 września 1994 r. o rachunkowości (Dz.U. 2013 poz. 330, z późn.zm.) i aktach wykonawczych do ustawy oraz krajowe standardy rachunkowości wydane przez Komitet Standardów Rachunkowości. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>W Polsce wskaźniki zaklasyfikowane przez Międzynarodowy Fundusz Walutowy do zestawu podstawowych 12 wskaźników (tzw. Core Set) monitorujących bieżącą sytuację finansową i stabilność instytucji finansowych dotyczą banków. Zestaw ten obejmuje następujące wskaźniki:</p> <p><b>1. Kapitał regulacyjny w relacji do aktywów ważonych ryzykiem (wymogi kapitałowe) </b>- wyrażona w procentach relacja kapitału regulacyjnego do wartości aktywów ważonych ryzykiem. Kapitał regulacyjny danej instytucji zdefiniowany w Rozporządzeniu PE i RADY UE nr 575/2013 w sprawie wymogów ostrożnościowych dla instytucji kredytowych i firm inwestycyjnych (Capital Requirements Regulation – CRR) stanowi sumę jej kapitału Tier I (kapitał, który służy do pokrywania strat w warunkach wypłacalności banku  kapitał ten pozwala bankowi kontynuować normalną działalność i zapewnia mu płynność finansową) i kapitału Tier II (kapitał, który służy do pokrywania strat w warunkach utraty wypłacalności banku  pozwala bankowi spłacić deponentów i uprzywilejowanych wierzycieli, gdy bank przestał być wypłacalny). Wymogi kapitałowe to wyrażona kwotowo wielkość ekspozycji banku na poszczególne rodzaje ryzyka, w tym z tytułu ryzyka kredytowego.</p> <p><b>2. Kapitał regulacyjny Tier I w relacji do aktywów ważonych ryzykiem (wymogi kapitałowe) </b>- wyrażona w procentach relacja kapitału regulacyjnego Tier I do wartości aktywów ważonych ryzykiem. Kapitał regulacyjny Tier I zdefiniowany w Rozporządzeniu CRR składa się z kapitału podstawowego Tier I i kapitału dodatkowego Tier I. Wymogi kapitałowe to wyrażona kwotowo wielkość ekspozycji banku na poszczególne rodzaje ryzyka, w tym z tytułu ryzyka kredytowego.</p> <p><b>3. Kredyty zagrożone pomniejszone o odpisy w relacji do kapitału </b>– wyrażona w procentach relacja wartości kredytów zagrożonych (przeterminowanych o ponad 90 dni) do wartości kapitału regulacyjnego. Kredyty zagrożone w przypadku banków, stosujących międzynarodowe standardy rachunkowości (MSR), kwalifikowane są jako kredyty ze stwierdzoną utratą wartości, a w przypadku banków stosujących polskie standardy rachunkowości (PSR) - do kategorii poniżej standardu, wątpliwe i stracone</p> <p><b>4. Kredyty zagrożone w relacji do kredytów brutto ogółem </b>– wyrażona w procentach relacja wartości kredytów zagrożonych (przeterminowanych o ponad 90 dni) do wartości kredytów brutto ogółem, obejmujących kredyty bez utraty wartości i z rozpoznaną utratą wartości. Kredyty brutto nie są pomniejszone o wartość odpisów/rezerw.</p> <p><b>5. Koncentracja sektorowa kredytów do kredytów ogółem </b>- wyrażona w procentach relacja wartości kredytów brutto udzielonych dla poszczególnych sektorów gospodarki (rezydentów) do wartości kredytów brutto ogółem. Kredyty brutto ogółem obejmują kredyty bez utraty wartości i z rozpoznaną utratą wartości. Kredyty brutto nie są pomniejszone o wartość odpisów/rezerw.</p> <P><b>Rezydentami </b>są osoby fizyczne mające miejsce zamieszkania w kraju oraz osoby prawne mające siedzibę w kraju, a także inne podmioty mające siedzibę w kraju, posiadające zdolność zaciągania zobowiązań i nabywania praw we własnym imieniu  rezydentami są również znajdujące się w kraju oddziały, przedstawicielstwa i przedsiębiorstwa utworzone przez nierezydentów.</p> <p><b>6. Wskaźnik zwrotu z aktywów (ROA) </b>- wyrażona w procentach relacja wyniku finansowego netto w okresie 12 miesięcy poprzedzających dzień bilansowy do średniej wielkości aktywów w tym okresie.</p> <p><b>7. Stopa zwrotu z kapitału własnego (ROE) </b>- wyrażona w procentach relacja wyniku finansowego netto w okresie 12 miesięcy poprzedzających dzień bilansowy do średniej wielkości kapitału regulacyjnego Tier I w tym okresie. </p> <P><b>8. Wynik odsetkowy netto w relacji do wyniku działalności bankowej </b>- wyrażona w procentach relacja wartości różnicy pomiędzy przychodami odsetkowymi uzyskiwanymi przez bank, a kosztami odsetkowymi przezeń płaconymi do wyniku działalności bankowej (stanowiącego sumę wyniku odsetkowego, przychodów z tytułu opłat i prowizji, wyniku z wyceny i z tytułu działalności handlowej, przychodów z tytułu dywidend oraz pozostałych przychodów operacyjnych) w okresie 12 miesięcy poprzedzających dzień bilansowy.</p> <p><b>9. Koszty pozaodsetkowe w relacji do wyniku działalności bankowej </b>- wyrażona w procentach relacja wszystkich pozycji kosztowych banków za wyjątkiem kosztów odsetkowych do wyniku działalności bankowej w okresie 12 miesięcy poprzedzających dzień bilansowy.</p> <p><b>10. Aktywa płynne w relacji do aktywów ogółem </b>- wyrażona w procentach relacja wartości aktywów, w przypadku których istnieje możliwość, bez nadmiernej straty, zamiany ich na środki pieniężne do wartości aktywów ogółem. Aktywa płynne według szerokiej miary zdefiniowanej w podręczniku Międzynarodowego Funduszu Walutowego (MFW) obejmują: gotówkę w kasie, operacje z bankiem centralnym (rachunek bieżący nostro, lokaty jednodniowe), rachunki bieżące - sektor finansowy (banki), instrumenty dłużne przeznaczone do obrotu (banki centralne, instytucje rządowe szczebla centralnego), instrumenty dłużne dostępne do sprzedaży (banki centralne, instytucje rządowe szczebla centralnego) oraz instrumenty dłużne wyceniane według wartości godziwej ze skutkiem wyceny odnoszonym do rachunku zysków i strat (banki centralne, instytucje rządowe szczebla centralnego).</p> <p><b>Aktywa </b>- kontrolowane przez jednostkę gospodarczą zasoby majątkowe o wiarygodnie określonej wartości, uzyskane w wyniku przeszłych zdarzeń, które spowodują w przyszłości wpływ do jednostki korzyści ekonomicznych. Wyróżnia się aktywa finansowe (obejmujące m.in. aktywa pieniężne, kredyty, papiery wartościowe) i niefinansowe (m.in. aktywa trwałe).</p> <p><b>11. Aktywa płynne w relacji do zobowiązań krótkoterminowych </b>- wartość aktywów płynnych w relacji do ogółu zobowiązań, które stają się wymagalne w ciągu 12 miesięcy od dnia bilansowego.</p> <p><b>12. Otwarta pozycja walutowa netto w relacji do kapitału </b>- wyrażona w procentach wartość otwartej pozycji walutowej netto w relacji do kapitału regulacyjnego Tier I. Otwarta pozycja walutowa (netto) to różnica długiej i krótkiej pozycji w walutach obcych, wynikających z posiadanych instrumentów finansowych (aktywów, zobowiązań i pozycji pozabilansowych). Długa pozycja oznacza zysk przy aprecjacji waluty obcej i stratę przy deprecjacji waluty obcej (krótka pozycja - odwrotnie).</p> <p><b>Wymogi kapitałowe, kapitał regulacyjny ogółem oraz kapitał regulacyjny Tier I </b>są wykorzystywane do wyliczenia wskaźników od I kwartału 2014 r., wyznaczane zgodnie z rozporządzeniem Parlamentu Europejskiego i Rady nr 575/2013 (Capital Requirements Regulation – CRR).</p> <p>W okresie od marca 2010 r. do grudnia 2013 r. dane w zakresie adekwatności kapitałowej, w tym fundusze własne banki ustalały zgodnie z zapisami art. 127 ustawy Prawo bankowe, Uchwały KNF nr. 76/2010 i nr. 381/2008. </p> <p><b>Polskie Standardy Rachunkowości (PSR) </b>– krajowe przepisy z zakresu rachunkowości określone w ustawie z dn. 29 września 1994 r. o rachunkowości (Dz.U. 2013 poz. 330, z późn.zm.) i aktach wykonawczych do ustawy oraz krajowe standardy rachunkowości wydane przez Komitet Standardów Rachunkowości.</p> </td>
           </tr>
           
           
@@ -1374,7 +1446,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=["13.9","13.1","14.8","15.7","14.7","16.0","17.2","18.1","0.3","-0.3","0.2","-0.1","0.1","1.0","0.3","0.2","12.5","11.7","13.1","14.1","13.5","14.6","15.6","16.2","11.5","11.6","12.9","12.1","12.1","10.2","9.2","8.1","4.9","4.7","5.2","5.0","4.8","4.3","4.0","3.9","96.6","95.9","96.3","96.5","96.6","96.7","96.5","96.6","1.0","1.3","1.2","1.1","1.1","0.8","0.8","0.8","13.3","16.1","14.0","12.1","12.3","9.1","9.2","8.2","53.0","55.8","55.0","56.1","58.2","57.2","57.0","61.5","56.0","54.7","54.5","57.2","54.9","61.9","59.3","59.8","20.8","19.5","20.9","21.4","20.6","20.1","21.6","21.5","31.2","28.8","31.1","31.7","30.6","29.7","31.1","30.5",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1398,7 +1470,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=["13.9","13.1","14.8","15.7","14.7","16.0","17.2","18.1","0.3","-0.3","0.2","-0.1","0.1","1.0","0.3","0.2","12.5","11.7","13.1","14.1","13.5","14.6","15.6","16.2","11.5","11.6","12.9","12.1","12.1","10.2","9.2","8.1","4.9","4.7","5.2","5.0","4.8","4.3","4.0","3.9","96.6","95.9","96.3","96.5","96.6","96.7","96.5","96.6","1.0","1.3","1.2","1.1","1.1","0.8","0.8","0.8","13.3","16.1","14.0","12.1","12.3","9.1","9.2","8.2","53.0","55.8","55.0","56.1","58.2","57.2","57.0","61.5","56.0","54.7","54.5","57.2","54.9","61.9","59.3","59.8","20.8","19.5","20.9","21.4","20.6","20.1","21.6","21.5","31.2","28.8","31.1","31.7","30.6","29.7","31.1","30.5",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1415,6 +1487,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=12
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=["13.9","13.1","14.8","15.7","14.7","16.0","17.2","18.1","0.3","-0.3","0.2","-0.1","0.1","1.0","0.3","0.2","12.5","11.7","13.1","14.1","13.5","14.6","15.6","16.2","11.5","11.6","12.9","12.1","12.1","10.2","9.2","8.1","4.9","4.7","5.2","5.0","4.8","4.3","4.0","3.9","96.6","95.9","96.3","96.5","96.6","96.7","96.5","96.6","1.0","1.3","1.2","1.1","1.1","0.8","0.8","0.8","13.3","16.1","14.0","12.1","12.3","9.1","9.2","8.2","53.0","55.8","55.0","56.1","58.2","57.2","57.0","61.5","56.0","54.7","54.5","57.2","54.9","61.9","59.3","59.8","20.8","19.5","20.9","21.4","20.6","20.1","21.6","21.5","31.2","28.8","31.1","31.7","30.6","29.7","31.1","30.5",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=["13.9","13.1","14.8","15.7","14.7","16.0","17.2","18.1","0.3","-0.3","0.2","-0.1","0.1","1.0","0.3","0.2","12.5","11.7","13.1","14.1","13.5","14.6","15.6","16.2","11.5","11.6","12.9","12.1","12.1","10.2","9.2","8.1","4.9","4.7","5.2","5.0","4.8","4.3","4.0","3.9","96.6","95.9","96.3","96.5","96.6","96.7","96.5","96.6","1.0","1.3","1.2","1.1","1.1","0.8","0.8","0.8","13.3","16.1","14.0","12.1","12.3","9.1","9.2","8.2","53.0","55.8","55.0","56.1","58.2","57.2","57.0","61.5","56.0","54.7","54.5","57.2","54.9","61.9","59.3","59.8","20.8","19.5","20.9","21.4","20.6","20.1","21.6","21.5","31.2","28.8","31.1","31.7","30.6","29.7","31.1","30.5",null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1559,7 +1686,7 @@ $(window).on("load", function() {
     var licznik=12
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
     var calo=["13.9","13.1","14.8","15.7","14.7","16.0","17.2","18.1","0.3","-0.3","0.2","-0.1","0.1","1.0","0.3","0.2","12.5","11.7","13.1","14.1","13.5","14.6","15.6","16.2","11.5","11.6","12.9","12.1","12.1","10.2","9.2","8.1","4.9","4.7","5.2","5.0","4.8","4.3","4.0","3.9","96.6","95.9","96.3","96.5","96.6","96.7","96.5","96.6","1.0","1.3","1.2","1.1","1.1","0.8","0.8","0.8","13.3","16.1","14.0","12.1","12.3","9.1","9.2","8.2","53.0","55.8","55.0","56.1","58.2","57.2","57.0","61.5","56.0","54.7","54.5","57.2","54.9","61.9","59.3","59.8","20.8","19.5","20.9","21.4","20.6","20.1","21.6","21.5","31.2","28.8","31.1","31.7","30.6","29.7","31.1","30.5",null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){

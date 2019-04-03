@@ -5,7 +5,7 @@
 
 <div id="linechart-{{ id }}" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-{{ id }}'
   var labels = {{ include.labels | jsonify }}
@@ -55,7 +55,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,

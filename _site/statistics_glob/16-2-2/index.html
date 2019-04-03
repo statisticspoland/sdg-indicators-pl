@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -619,12 +619,12 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 <div id="linechart-16-2-2" class="ct-chart ct-major-eleventh"></div>
 <script>
-
+//LINIOWY
 (function (){
   var container = '#linechart-16-2-2'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var licznik=1
-  var calosc=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22",null,null,null,null,null,null,null,null,null,null]
+  var calosc=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null]
   var jez= 'pl'
   var legen=["ogółem"]
 
@@ -669,7 +669,9 @@ seria=[]
 for (i=1;i<licznik+1;i++){
   b[i] = calosc.splice(0,labels.length);
   seria.push(b[i])
+
 }
+
 
   var chartData = {
     labels: labels,
@@ -770,7 +772,7 @@ for (i=1;i<licznik+1;i++){
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":null},{"year":"2011","ogółem":null},{"year":"2012","ogółem":"0.05"},{"year":"2013","ogółem":"0.26"},{"year":"2014","ogółem":"0.13"},{"year":"2015","ogółem":"0.08"},{"year":"2016","ogółem":"0.04"},{"year":"2017","ogółem":"0.22"},{"year":"2018","ogółem":null}]
+var DATA = [{"year":"2010","ogółem":null},{"year":"2011","ogółem":null},{"year":"2012","ogółem":"0.05"},{"year":"2013","ogółem":"0.26"},{"year":"2014","ogółem":"0.13"},{"year":"2015","ogółem":"0.08"},{"year":"2016","ogółem":"0.04"},{"year":"2017","ogółem":"0.22"},{"year":"2018","ogółem":"0.18"}]
 var naglowek=["ogółem"]
 
 
@@ -878,7 +880,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  16.2.2 Liczba ofiar handlu ludźmi na 100 tys. ludności </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>16.2.2 Liczba ofiar handlu ludźmi na 100 tys. ludności</b> </td>
           </tr>
           
           
@@ -887,7 +889,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 16. Pokój, sprawiedliwość i silne instytucje </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 16. Pokój, sprawiedliwość i silne instytucje </td>
           </tr>
           
           
@@ -932,7 +934,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Handel ludźmi jest przestępstwem, które zgodnie z art. art. 189a kodeksu karnego (Ustawa z dnia 6 czerwca 1997 r., Dz.U. 2016.0.1137), podlega karze pozbawienia wolności na czas nie krótszy od lat 3.Pod pojęciem handlu ludźmi, zgodnie z par. 22 art. 115 kodeksu karnego rozumiemy werbowanie, transport, dostarczanie, przekazywanie, przechowywanie lub przyjmowanie osoby z zastosowaniem: przemocy lub groźby bezprawnej, uprowadzenia, podstępu, wprowadzenia w błąd albo wyzyskania błędu lub niezdolności do należytego pojmowania przedsiębranego działania, nadużycia stosunku zależności, wykorzystania krytycznego położenia lub stanu bezradności, udzielenia albo przyjęcia korzyści majątkowej lub osobistej albo jej obietnicy osobie sprawującej opiekę lub nadzór nad inną osobą – w celu jej wykorzystania, nawet za jej zgodą, w szczególności w prostytucji, pornografii lub innych formach seksualnego wykorzystania, w pracy lub usługach o charakterze przymusowym, w żebractwie, w niewolnictwie lub innych formach wykorzystania poniżających godność człowieka albo w celu pozyskania komórek, tkanek lub narządów wbrew przepisom ustawy. Jeżeli zachowanie sprawcy dotyczy małoletniego, stanowi ono handel ludźmi, nawet gdy nie zostały użyte metody lub środki wymienione w pkt 1–6. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Handel ludźmi </b>jest przestępstwem, które zgodnie z art. art. 189a kodeksu karnego (Ustawa z dnia 6 czerwca 1997 r., Dz.U. 2016.0.1137), podlega karze pozbawienia wolności na czas nie krótszy od lat 3.</p> <p>Pod pojęciem <b>handlu ludźmi</b>, zgodnie z par. 22 art. 115 kodeksu karnego rozumiemy werbowanie, transport, dostarczanie, przekazywanie, przechowywanie lub przyjmowanie osoby z zastosowaniem: </p> <p>  • przemocy lub groźby bezprawnej, </p> <p>  • uprowadzenia, </p> <p>  • podstępu, </p> <p>  • wprowadzenia w błąd albo wyzyskania błędu lub niezdolności do należytego pojmowania przedsiębranego działania, </p> <p>  • nadużycia stosunku zależności, wykorzystania krytycznego położenia lub stanu bezradności, </p> <p>  • udzielenia albo przyjęcia korzyści majątkowej lub osobistej albo jej obietnicy osobie sprawującej opiekę lub nadzór nad inną osobą – w celu jej wykorzystania, nawet za jej zgodą, w szczególności w prostytucji, pornografii lub innych formach seksualnego wykorzystania, w pracy lub usługach o charakterze przymusowym, w żebractwie, w niewolnictwie lub innych formach wykorzystania poniżających godność człowieka albo w celu pozyskania komórek, tkanek lub narządów wbrew przepisom ustawy. </p> <p>Jeżeli zachowanie sprawcy dotyczy małoletniego, stanowi ono handel ludźmi, nawet gdy nie zostały użyte metody lub środki wymienione w pkt 1–6.</p> </td>
           </tr>
           
           
@@ -1063,8 +1065,8 @@ function Zmiana_jednostki(){
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1087,8 +1089,8 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1111,6 +1113,61 @@ function Zmiana_jednostki(){
     }
 }
 
+function Zmiana_jednostki4(){
+
+  var licznik=1
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
 function Zmiana_jednostki2(){
 
   var licznik=1
@@ -1118,7 +1175,7 @@ function Zmiana_jednostki2(){
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22",null,null,null,null,null,null,null,null,null,null]
+      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1147,7 +1204,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22",null,null,null,null,null,null,null,null,null,null]
+      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1182,7 +1239,7 @@ function Zmiana_jednostki3(){
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22",null,null,null,null,null,null,null,null,null,null]
+      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1208,7 +1265,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22",null,null,null,null,null,null,null,null,null,null]
+      var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1248,8 +1305,8 @@ $(window).on("load", function() {
     }
     var licznik=1
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22",null,null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null]
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -1271,7 +1328,7 @@ $(window).on("load", function() {
     }
     var licznik=1;
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22",null,null,null,null,null,null,null,null,null,null];
+    var calo=[null,null,"0.05","0.26","0.13","0.08","0.04","0.22","0.18",null,null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];

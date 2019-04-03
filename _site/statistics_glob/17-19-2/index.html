@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-03-19-08-48-10-+0100">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-03-19-08-48-10-+0100">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-03-09-58-17-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-03-09-58-17-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -768,6 +768,49 @@ function Zaz(){
 
 }
 
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
 
 function Usun(){
   const listItems = document.querySelectorAll('.ct-legend li');
@@ -794,13 +837,15 @@ function Usun(){
 }
 
 $( document ).ready(function() {
-var lista=["Liczba krajów"," które przeprowadziły"];
+var lista=["Liczba krajów które przeprowadziły"];
 var lista1=[["Narodowy Spis Powszechny Ludności i Mieszkań","100% rejestracja urodzin","100% rejestracja zgonów"],]
 var jez='pl'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
 }else{
   wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
 }
 ilosc=0;
 
@@ -904,6 +949,31 @@ lista.forEach(function(el,elind) {
     image2.className='wszystkie'+ilosc;
     image2.id='wszystkie'+ilosc;
     przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
 
     halo=0;
 
@@ -1156,7 +1226,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  17.19.2 Liczba krajów, które a) przeprowadziły przynajmniej jeden Spis Powszechny Ludności w ciągu ostatnich dziesięciu lat, i b) osiągnęły 100% rejestrację narodzin i 80% rejestrację zgonów </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <b>17.19.2 Liczba krajów, które a) przeprowadziły przynajmniej jeden Spis Powszechny Ludności w ciągu ostatnich dziesięciu lat, i b) osiągnęły 100% rejestrację narodzin i 80% rejestrację zgonów</b> </td>
           </tr>
           
           
@@ -1165,7 +1235,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  cel 17. Partnerstwa na rzecz celów </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 17. Partnerstwa na rzecz celów </td>
           </tr>
           
           
@@ -1210,7 +1280,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  W Polsce ostatni Narodowy Spis Powszechny Ludności i Mieszkań został przeprowadzony w 2011 r. Podstawą prawną przeprowadzenia spisu była Ustawa z dn. 4 marca 2010 r. o narodowym spisie powszechnym ludnści i mieszkań w 2011 r. (Dz. U. z 26 marca 2010 r. nr 47, poz. 277) wraz z aktami wykonawczymi do ustawy oraz Rozporządzenie (WE) Parlamentu Europejskiego i Rady Nr 763/2008 z dn. 9 lipca 2008 r. w sprawie spisów powszechnych ludności i mieszkań.Spis ludności 2011 obejmował osoby stale zamieszkałe (zameldowane) na obszarze Polski bez względu na fakt, czy te osoby przebywały w kraju w czasie spisu czy też były za granicą oraz osoby przebywające czasowo. Spis był przeprowadzony w budynkach, mieszkaniach, obiektach zbiorowego zakwaterowania i innych zamieszkanych pomieszczeniach niebędących mieszkaniami.Zgodnie z ustawą z dnia 28 listopada 2014 r. Prawo o aktach stanu cywilnego (Dz.U. z 2016 r. poz. 2064) wszystkie urodzenia na terenie Rzeczypospolitej Polskiej są rejestrowane w urzędzie stanu cywilnego właściwym ze względu na miejsce urodzenia dziecka. Zgłoszenia zgonu dokonuje się w urzędzie stanu cywilnego właściwym ze względu na miejsce zgonu albo miejsce znalezienia zwłok. </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  <p>W Polsce ostatni <b>Narodowy Spis Powszechny Ludności i Mieszkań </b>został przeprowadzony w 2011 r. Podstawą prawną przeprowadzenia spisu była Ustawa z dn. 4 marca 2010 r. o narodowym spisie powszechnym ludnści i mieszkań w 2011 r. (Dz. U. z 26 marca 2010 r. nr 47, poz. 277) wraz z aktami wykonawczymi do ustawy oraz Rozporządzenie (WE) Parlamentu Europejskiego i Rady Nr 763/2008 z dn. 9 lipca 2008 r. w sprawie spisów powszechnych ludności i mieszkań.</p> <p><b>Spis ludności 2011 </b>obejmował osoby stale zamieszkałe (zameldowane) na obszarze Polski bez względu na fakt, czy te osoby przebywały w kraju w czasie spisu czy też były za granicą oraz osoby przebywające czasowo. Spis był przeprowadzony w budynkach, mieszkaniach, obiektach zbiorowego zakwaterowania i innych zamieszkanych pomieszczeniach niebędących mieszkaniami.</p> <p>Zgodnie z ustawą z dnia 28 listopada 2014 r. Prawo o aktach stanu cywilnego (Dz.U. z 2016 r. poz. 2064) wszystkie urodzenia na terenie Rzeczypospolitej Polskiej są rejestrowane w urzędzie stanu cywilnego właściwym ze względu na miejsce urodzenia dziecka. Zgłoszenia zgonu dokonuje się w urzędzie stanu cywilnego właściwym ze względu na miejsce zgonu albo miejsce znalezienia zwłok.</p> </td>
           </tr>
           
           
@@ -1219,7 +1289,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
             
               <th style="padding: 5px; height: 45px;">  Źródło danych </th>
             
-            <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Urząd StatystycznyMinisterstwo Spraw Wewnętrznych i Administracji </td>
+            <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Urząd Statystyczny; Ministerstwo Spraw Wewnętrznych i Administracji </td>
           </tr>
           
           
@@ -1342,7 +1412,7 @@ function Zmiana_jednostki(){
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=[null,"1",null,null,null,null,null,null,null,"1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1366,7 +1436,7 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=[null,"1",null,null,null,null,null,null,null,"1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1383,6 +1453,61 @@ function Zmiana_jednostki(){
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
         document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik=3
+  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var lan='pl'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+      var calo=[null,"1",null,null,null,null,null,null,null,"1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(9,16);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo=[null,"1",null,null,null,null,null,null,null,"1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
         $(".ct-series-0").text('total');
       }
 
@@ -1527,7 +1652,7 @@ $(window).on("load", function() {
     var licznik=3
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
     var calo=[null,"1",null,null,null,null,null,null,null,"1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
-    calosc=calo.splice(0,24);
+    calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
