@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-04-08-48-07-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-04-08-48-07-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-05-11-52-01-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-05-11-52-01-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -821,11 +821,11 @@ function download_csv(csv, filename) {
 function Zmiana_jednostki(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = []
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,"22812","21900","24344","24814","22446",null,null,null,null,null,null,null,null,null]
+      var calo=[]
       calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
@@ -849,7 +849,7 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,null,"22812","21900","24344","24814","22446",null,null,null,null,null,null,null,null,null]
+      var calo=[]
       calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
@@ -876,11 +876,11 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = []
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,"22812","21900","24344","24814","22446",null,null,null,null,null,null,null,null,null]
+      var calo=[]
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -904,7 +904,7 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=[null,null,"22812","21900","24344","24814","22446",null,null,null,null,null,null,null,null,null]
+      var calo=[]
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -931,11 +931,11 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = []
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,null,"22812","21900","24344","24814","22446",null,null,null,null,null,null,null,null,null]
+      var calo=[]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -964,7 +964,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,null,"22812","21900","24344","24814","22446",null,null,null,null,null,null,null,null,null]
+      var calo=[]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -995,11 +995,11 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = []
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,null,"22812","21900","24344","24814","22446",null,null,null,null,null,null,null,null,null]
+      var calo=[]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1025,7 +1025,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,null,"22812","21900","24344","24814","22446",null,null,null,null,null,null,null,null,null]
+      var calo=[]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1064,8 +1064,8 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=[null,null,"22812","21900","24344","24814","22446",null,null,null,null,null,null,null,null,null]
+    var labels = []
+    var calo=[]
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1087,8 +1087,8 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=[null,null,"22812","21900","24344","24814","22446",null,null,null,null,null,null,null,null,null];
+    var labels = [];
+    var calo=[];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
