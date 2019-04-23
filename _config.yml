@@ -52,7 +52,11 @@ ckan_endpoint:
 
 # Prose configuration
 prose:
-  ignore: ['/assets', '/_includes', '/_layouts', '/scripts', '/sass', '/goals', '/indicators', '/posts', '/sass', '/site', '/translations', '/api', '/en', '/_goals', '/_indicators', '/_posts', '/_sass', '/_site', '/_translations', '404.md']
+  ignore: ['/assets', '/_includes', '/_layouts', '/scripts', '/sass', '/goals', '/indicators', '/posts', '/sass', '/site'
+  ,'/translations', '/api', '/en', '/_goals', '/_posts', '/_sass', '/_site', '/_translations', '404.md'
+  , '.Rhistory', 'CNAME', 'LICENSE', 'README.md', '_config.yml', 'account.md', 'admin.md', 'download.md', 'faqs.md'
+  , 'feed.xml', 'guide.md', 'index.md', 'indicators_status.md', 'o_sdg.md', 'package.json', 'search.md'
+  , 'statistics_glob.md', 'statistics_nat.md', ''status_glob.md, 'status_nat.md']
   metadata:
     _indicators:
       - name: "nazwa_wskaznika"
