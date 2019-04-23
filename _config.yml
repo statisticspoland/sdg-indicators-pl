@@ -154,3 +154,9 @@ prose:
             label: "Uwagi"
             label2: "Notes"
             scope: global
+      - name: "layout"
+        field:
+            element: hidden
+            label: ""
+            label2: ""
+            scope: global
