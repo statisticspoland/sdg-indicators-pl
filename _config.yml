@@ -53,9 +53,17 @@ ckan_endpoint:
 # Prose configuration
 prose:
   ignore:
-  - /assets
   - /_includes
   - /_layouts
+  - /_goals
+  - /_indicators
+  - /_posts
+  - /_sass
+  - /_site
+  - /_translations
+  - /api
+  - /en
+  - /assets
   - /scripts
   - /sass
   - /goals
@@ -63,9 +71,13 @@ prose:
   - /sass
   - /site
   - /translations
+  - .Rhistory
+  - CNAME
+  - LICENSE
   - 404.md
   - README.md
   - config.yml
+  - _config.yml
   - account.md
   - admin.md
   - download.md
@@ -73,7 +85,7 @@ prose:
   - feed.xml
   - guide.md
   - index.md
-  - indicators_status.md
+  - indicator_status.md
   - o_sdg.md
   - package.json
   - search.md
