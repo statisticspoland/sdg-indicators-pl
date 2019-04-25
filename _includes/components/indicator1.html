@@ -108,7 +108,7 @@
 
           {% for indicator_metadata in site.prose.metadata._indicators %}
           {% if indicator_metadata.field.scope == "global" %}
-            {% if indicator_metadata.field.label != "indicator_variable_1" and indicator_metadata.field.label != "kategorie" and indicator_metadata.field.label != "zmienne" and indicator_metadata.field.label != "jednostka" and indicator_metadata.field.label != "pre" and indicator_metadata.field.label != "graph" and indicator_metadata.field.label != "source_url" and indicator_metadata.field.label != "permalink" and indicator_metadata.field.label != "sdg_goal"
+            {% if indicator_metadata.field.label != "indicator_variable_1" and indicator_metadata.field.label != "kategorie" and indicator_metadata.field.label != "zmienne" and indicator_metadata.field.label != "jednostka" and indicator_metadata.field.label != "pre" and indicator_metadata.field.label != "graph" and indicator_metadata.field.label != "source_url" and indicator_metadata.field.label != "permalink" and indicator_metadata.field.label != "sdg_goal" and indicator_metadata.field.label!= "layout"
             and indicator_metadata.field.label!= "indicator" and indicator_metadata.field.label != "target_id" and indicator_metadata.field.label != "graph_title" %}
               <tr>
                 {% if language == 'pl' %}
