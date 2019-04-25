@@ -108,14 +108,17 @@
 
           {% for indicator_metadata in site.prose.metadata._indicators %}
           {% if indicator_metadata.field.scope == "global" %}
-          <tr>
-            {% if language == 'pl' %}
-              <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
-            {% else %}
-              <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label2 }} </th>
+            {% if indicator_metadata.field.label != "indicator_variable_1" and indicator_metadata.field.label != "kategorie" and indicator_metadata.field.label != "zmienne" and indicator_metadata.field.label != "jednostka" and indicator_metadata.field.label != "pre" and indicator_metadata.field.label != "graph" and indicator_metadata.field.label != "source_url" and indicator_metadata.field.label != "permalink" and indicator_metadata.field.label != "sdg_goal"
+            and indicator_metadata.field.label!= "indicator" and indicator_metadata.field.label != "target_id" and indicator_metadata.field.label != "graph_title" %}
+              <tr>
+                {% if language == 'pl' %}
+                  <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
+                {% else %}
+                  <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label2 }} </th>
+                {% endif %}
+                <td style="padding: 10px; text-align: justify; height: 45px;">  {{ metadane[indicator_metadata.name] }} </td>
+              </tr>
             {% endif %}
-            <td style="padding: 10px; text-align: justify; height: 45px;">  {{ metadane[indicator_metadata.name] }} </td>
-          </tr>
           {% endif %}
           {% endfor %}
 

@@ -154,3 +154,81 @@ prose:
             label: "Uwagi"
             label2: "Notes"
             scope: global
+      - name: "layout"
+        field:
+            element: hidden
+            label: "layout"
+            label2: ""
+            scope: global
+      - name: "indicator_variable_1"
+        field:
+            element: hidden
+            label: ""
+            label2: "indicator_variable_1"
+            scope: global
+      - name: "kategorie"
+        field:
+            element: hidden
+            label: "kategorie"
+            label2: ""
+            scope: global
+      - name: "zmienne"
+        field:
+            element: hidden
+            label: "zmienne"
+            label2: ""
+            scope: global
+      - name: "jednostka"
+        field:
+            element: hidden
+            label: "jednostka"
+            label2: ""
+            scope: global
+      - name: "pre"
+        field:
+            element: hidden
+            label: "pre"
+            label2: ""
+            scope: global
+      - name: "graph"
+        field:
+            element: hidden
+            label: "graph"
+            label2: ""
+            scope: global
+      - name: "source_url"
+        field:
+            element: hidden
+            label: "source_url"
+            label2: ""
+            scope: global
+      - name: "permalink"
+        field:
+            element: hidden
+            label: "permalink"
+            label2: ""
+            scope: global
+      - name: "sdg_goal"
+        field:
+            element: hidden
+            label: "sdg_goal"
+            label2: ""
+            scope: global
+      - name: "indicator"
+        field:
+            element: hidden
+            label: "indicator"
+            label2: ""
+            scope: global
+      - name: "target_id"
+        field:
+            element: hidden
+            label: "target_id"
+            label2: ""
+            scope: global
+      - name: "graph_title"
+        field:
+            element: hidden
+            label: "graph_title"
+            label2: ""
+            scope: global

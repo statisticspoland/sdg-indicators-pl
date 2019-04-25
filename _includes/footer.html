@@ -9,6 +9,14 @@
 <footer class="usa-footer usa-footer-big usa-sans" role="contentinfo">
     <div class="pl-grid usa-footer-return-to-top">
       <a href="#"  style="font-size: 15px">{{ t.return-to-top }}</a>
+
+
+
+      {% if page.lang == 'en' %}
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
+      {% else %}
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+      {% endif %}
     </div>
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
