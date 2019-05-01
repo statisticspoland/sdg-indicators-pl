@@ -12,3 +12,6 @@ National reporting platform - SDG is a publicly available tool serving dissemina
 - XHTML, CSS, JavaScript
 - Chartist: JavaScript library that offers customizable and responsive charts
 - Bootstrap: framework CSS
+
+##
+The project is available - http://sdg.gov.pl
