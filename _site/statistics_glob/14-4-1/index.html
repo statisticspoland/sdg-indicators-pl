@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-04-25-08-50-49-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-04-25-08-50-49-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -61,6 +61,7 @@
         <script src="/sdg-indicators/assets/js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 
+        
 
     </head>
     <body>
@@ -612,7 +613,12 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
 
             
-              <div>
+              
+                <div id="filtry">.</div>
+                  
+                    <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;">Zaznacz wszystkie wymiary</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;">Usuń zaznaczenia</button></div>
+                  
+                <div>
 
 
 
@@ -623,15 +629,15 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 (function (){
   var container = '#linechart-14-4-1'
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-  var licznik=1
-  var calosc=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null]
+  var licznik=4
+  var calosc=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null]
   var jez= 'pl'
-  var legen=["ogółem"]
+  var legen=["odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim"]
 
-  if(0=='0'){
+  if(1=='0'){
     var precyz=0;
   }else{
-    var precyz=parseInt(0) || 2
+    var precyz=parseInt(1) || 2
   }
 
 if ('14-4-1'=='12-2-2' || '14-4-1' == '8-4-2'){
@@ -692,8 +698,16 @@ for (i=1;i<licznik+1;i++){
       offset: 50,
       
       
-      onlyInteger: true,
-      
+      onlyInteger: false,
+      labelInterpolationFnc: function (value) {
+        // do whatever math operation you want here
+        if (jez=='en'){
+          return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(",", ".") + '';
+        }else{
+          return Chartist.roundWithPrecision(value, precyz).toFixed(precyz).toString().replace(".", ",") + '';
+        }
+
+      }
     },
     axisX: {
       showGrid: false,
@@ -750,7 +764,382 @@ for (i=1;i<licznik+1;i++){
 
 </script>
 </div>
-              <div id="Legenda" align="center" style="pointer-events: none;"></div>
+                <div id="Legenda" align="center" style="pointer-events: none;"></div>
+              
+              <div><div id="d"></div>
+<script>
+
+function Zaznacz(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+  for (var index = 0, len = listItems.length; index < len; index++){
+    if (listItems[index].style.display=='none'){
+      listItems[index].style.display='inline-block'
+      listItems[index].click();
+      $("#infoToggler"+index).find('img').toggle();
+      $('#row-'+index).toggle();
+    }
+  };
+
+  const listIle = document.querySelectorAll('.panel-group');
+  for (ile=0;ile<listIle.length;ile++){
+    document.getElementById('wszystkie'+ile).src="/sdg-indicators/assets/img/pelne.png";
+  }
+}
+
+function Zaz(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+  co=$(this).attr('id');
+  $('#collapse'+co+' ul #filtr').each(function(i)
+  {
+    ind=$(this)[0].value;
+    if (listItems[ind].style.display=='none'){
+      listItems[ind].style.display='inline-block'
+      listItems[ind].click();
+      $("#infoToggler"+ind).find('img').toggle();
+      $('#row-'+ind).toggle();
+    }
+  });
+  document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/pelne.png";
+
+}
+
+function Usu(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+
+  co=$(this).attr('id');
+  if (co>0){
+    if (listItems[0].style.display=='none'){
+      listItems[0].click();
+      $("#infoToggler0").find('img').toggle();
+      $('#row-0').toggle();
+      listItems[0].style.display='inline-block'
+    }
+    $('#collapse'+co+' ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (listItems[ind].style.display=='inline-block'){
+        listItems[ind].style.display='none'
+        listItems[ind].click();
+        $("#infoToggler"+ind).find('img').toggle();
+        $('#row-'+ind).toggle();
+      }
+    });
+    document.getElementById('wszystkie'+co).src="/sdg-indicators/assets/img/puste.png";
+
+  }else{
+    $('#collapse0 ul #filtr').each(function(i)
+    {
+      ind=$(this)[0].value;
+      if (ind>0){
+        if (listItems[ind].style.display=='inline-block'){
+          listItems[ind].style.display='none'
+          listItems[ind].click();
+          $("#infoToggler"+ind).find('img').toggle();
+          $('#row-'+ind).toggle();
+        }
+      }
+
+    });
+    document.getElementById('wszystkie0').src="/sdg-indicators/assets/img/puste.png";
+  }
+
+
+}
+
+
+function Usun(){
+  const listItems = document.querySelectorAll('.ct-legend li');
+      if (listItems[0].style.display=='none'){
+        listItems[0].click();
+        $("#infoToggler0").find('img').toggle();
+        numer=0;
+        $('#row-'+numer).toggle();
+      }
+      listItems[0].style.display='inline-block';
+      for (numer=1;numer<listItems.length;numer++){
+        if (listItems[numer].style.display=='inline-block'){
+        listItems[numer].style.display='none'
+        listItems[numer].click();
+        $("#infoToggler"+numer).find('img').toggle();
+        $('#row-'+numer).toggle();
+        }
+      }
+
+    const listIle = document.querySelectorAll('.panel-group');
+    for (ile=0;ile<listIle.length;ile++){
+      document.getElementById('wszystkie'+ile).src="/sdg-indicators/assets/img/puste.png";
+    }
+}
+
+$( document ).ready(function() {
+var lista=["odsetek stad ryb"];
+var lista1=[["odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim"],]
+var jez='pl'
+if (jez=='pl'){
+  wymiar_n='Wymiar - Zaznacz wszystko'
+  wymiar_n_us='Wymiar - Usuń wszystko'
+}else{
+  wymiar_n='Dimension - Select All'
+  wymiar_n_us='Dimension - Diselect All'
+}
+ilosc=0;
+
+var wymiar=0;
+
+lista.forEach(function(el,elind) {
+
+    var Div = document.createElement('div');
+    Div.style.width = '25%';
+    Div.style.height = '100px';
+    Div.style.float = 'left';
+    Div.style.padding = '5px';
+    Div.id = 'divove'+ilosc;
+	Div.style.minWidth = "121px";
+    Div.className = 'divovefiltry'
+    if (ilosc==0){
+      $('#filtry').after(Div);
+    }else{
+      $('#divove'+(ilosc-1)).after(Div);
+    }
+
+
+    var iDiv = document.createElement('div');
+    iDiv.className = 'panel-group';
+    iDiv.id = 'filtry'+ilosc;
+    iDiv.style.position='relative';
+    iDiv.style.zIndex='11';
+    iDiv.style.float = 'left';
+    iDiv.style.width = '100%';
+    Div.appendChild(iDiv);
+
+
+    var iiDiv = document.createElement('div');
+    iiDiv.className = 'panel panel-default';
+    iDiv.appendChild(iiDiv);
+
+    var iii1Div = document.createElement('div');
+    iii1Div.className = 'panel-heading';
+    iii1Div.style.marginBottom = '5px';
+    iii1Div.style.marginLeft = '1px';
+    iii1Div.style.marginRight = '1px';
+    iii1Div.style.padding = '0px';
+    iiDiv.appendChild(iii1Div);
+
+    var iii2Div = document.createElement('div');
+    iii2Div.id = 'collapse'+ilosc;
+    iii2Div.className = 'panel-collapse collapse';
+    iiDiv.appendChild(iii2Div);
+
+    var naglowek = document.createElement('h4');
+    naglowek.className = 'panel-title';
+    naglowek.style.margin = '15px';
+    iii1Div.appendChild(naglowek);
+
+    var napis = document.createElement('a');
+    $(napis).attr("data-toggle", "collapse");
+    napis.href="#collapse"+ilosc;
+    napis.style.textAlign="left";
+    napis.style.fontSize="1.6rem";
+    naglowek.appendChild(napis);
+
+    var napisek = document.createElement('h5');
+    napisek.innerHTML = el;
+    napisek.style.fontSize="1.6rem";
+	napisek.style.wordWrap= "break-word";
+    napis.appendChild(napisek);
+
+    var imgh5 = document.createElement('i');
+    imgh5.className="fa fa-caret-down";
+    imgh5.style.float='right';
+    imgh5.style.color='#0071bc';
+    imgh5.style.fontSize='25px';
+    napisek.appendChild(imgh5);
+
+
+    var lista = document.createElement('ul');
+    lista.className = 'list-group checked-list-box';
+    lista.id = 'check-list-box';
+    iii2Div.appendChild(lista);
+
+    var element = document.createElement('li');
+    element.className='dropdown-header';
+    element.textContent = wymiar_n;
+    lista.appendChild(element);
+
+    var przycisk=document.createElement('button');
+    przycisk.style.float='right';
+    przycisk.style.margin='0';
+    przycisk.style.fontSize='0rem';
+    przycisk.style.backgroundColor='transparent';
+    przycisk.style.padding='0%';
+    przycisk.id=ilosc;
+    przycisk.onclick=Zaz;
+    element.appendChild(przycisk);
+
+    var image2 = document.createElement('img');
+    image2.src="/sdg-indicators/assets/img/puste.png";
+    image2.style.width='13px';
+    image2.style.height='13px';
+    image2.style.display = 'inline';
+    image2.className='wszystkie'+ilosc;
+    image2.id='wszystkie'+ilosc;
+    przycisk.appendChild(image2);
+
+
+    var element1 = document.createElement('li');
+    element1.className='dropdown-header';
+    element1.textContent = wymiar_n_us;
+    lista.appendChild(element1);
+
+    var przycisk1=document.createElement('button');
+    przycisk1.style.float='right';
+    przycisk1.style.margin='0';
+    przycisk1.style.fontSize='0rem';
+    przycisk1.style.backgroundColor='transparent';
+    przycisk1.style.padding='0%';
+    przycisk1.id=ilosc;
+    przycisk1.onclick=Usu;
+    element1.appendChild(przycisk1);
+
+    var image21 = document.createElement('img');
+    image21.src="/sdg-indicators/assets/img/puste.png";
+    image21.style.width='13px';
+    image21.style.height='13px';
+    image21.style.display = 'inline';
+    image21.className='wszystkie'+ilosc;
+    image21.id='wszystkie'+ilosc;
+    przycisk1.appendChild(image21);
+
+    halo=0;
+
+    for (jak=0;jak<lista1[ilosc].length;jak++){
+            var span = document.createElement('span')
+            var element = document.createElement('li');
+            element.className = 'list-group-item';
+            element.id = 'filtr';
+            element.value = wymiar +jak;
+            element.style.cursor="pointer";
+            element.onclick=function(){
+              const listItems = document.querySelectorAll('.ct-legend li');
+              war=true
+              co=$(this).attr('value');
+              for (ktory=0;ktory<listItems.length;ktory++){
+                if (ktory!=co){
+                  war=(war && $("#row-"+ktory).is(":hidden"))
+                }
+              }
+              warunek=(war)
+
+              if(!warunek) {
+                $('#row-'+co).toggle();
+                $("#infoToggler"+co).find('img').toggle();
+            }
+
+            ile=$(this).closest( "ul" ).children('li').length
+            ke=$(this).closest( "ul" ).find('img').attr('class');
+            document.getElementById(ke).src="/sdg-indicators/assets/img/puste.png"
+
+            licznik=0;
+            ke2=$(this).closest( "ul" );
+            ke2.each(function() {
+               $(this).find('li').each(function(){
+                 var img = $(this).find('img:visible').attr('src');
+
+                 if (img=="/sdg-indicators/assets/img/pelne.png"){
+                   licznik=licznik+1;
+                 }
+               });
+            });
+            if (licznik==ile-1){
+              document.getElementById(ke).src="/sdg-indicators/assets/img/pelne.png"
+            }
+          },
+            span.style.marginLeft = "15px";
+            span.innerHTML = lista1[ilosc][jak];
+            element.appendChild(span);
+            lista.appendChild(element);
+
+            var zdjecie = document.createElement('div');
+            zdjecie.id = 'infoToggler'+(wymiar +jak);
+            zdjecie.style.float="right";
+			      zdjecie.style.marginRight="15px";
+            element.appendChild(zdjecie);
+
+            if ((jak==0) && (elind==0)){
+              var imga1 = document.createElement('img');
+              imga1.src="/sdg-indicators/assets/img/pelne.png";
+              imga1.style.width='13px';
+              imga1.style.height='13px';
+              imga1.style.display = 'inline';
+              zdjecie.appendChild(imga1);
+
+              var imga2 = document.createElement('img');
+              imga2.src="/sdg-indicators/assets/img/puste.png";
+              imga2.style.width='13px';
+              imga2.style.height='13px';
+              imga2.style.display = 'none';
+              zdjecie.appendChild(imga2);
+
+            }else{
+            var imga1 = document.createElement('img');
+            imga1.src="/sdg-indicators/assets/img/puste.png";
+            imga1.style.width='13px';
+            imga1.style.height='13px';
+            imga1.style.display = 'inline';
+            zdjecie.appendChild(imga1);
+
+            var imga2 = document.createElement('img');
+            imga2.src="/sdg-indicators/assets/img/pelne.png";
+            imga2.style.width='13px';
+            imga2.style.height='13px';
+            imga2.style.display = 'none';
+            zdjecie.appendChild(imga2);
+          }
+          /*var checkbx = document.createElement("INPUT");
+            checkbx.setAttribute("type", "checkbox");
+            element.appendChild(checkbx);*/
+
+            halo=halo+1
+    }
+    ilosc=ilosc+1;
+    wymiar=wymiar+halo;
+});
+
+
+
+
+});
+
+/*$(window).load(function() {
+
+$(".ct-legend li").click(function() {
+
+  const listItems = document.querySelectorAll('.ct-legend li');
+  var co=$(this).attr('data-legend');
+
+  war=true
+  for (ktory=0;ktory<listItems.length;ktory++){
+    if (ktory!=co){
+      war=(war && $("#column-"+ktory).is(":hidden"))
+    }
+  }
+  warunek=(war)
+
+  if(!warunek) {
+  header = $("#column-"+co),
+  table = header.closest("table"),
+  index = header.index() + 1,
+  selector = "tbody tr td:nth-child(" + index + ")",
+  column = table.find(selector).add(header);
+  column.toggle();
+  $("#infoToggler"+co).find('img').toggle();
+}
+});
+
+});*/
+
+</script>
+</div>
             
 
           
@@ -764,8 +1153,8 @@ for (i=1;i<licznik+1;i++){
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":"40"},{"year":"2011","ogółem":"60"},{"year":"2012","ogółem":"50"},{"year":"2013","ogółem":"50"},{"year":"2014","ogółem":"50"},{"year":"2015","ogółem":"50"},{"year":"2016","ogółem":"75"},{"year":"2017","ogółem":"100"},{"year":"2018","ogółem":null}]
-var naglowek=["ogółem"]
+var DATA = [{"year":"2010","odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim":"40","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim":"40"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim":"0"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim":"60"},{"year":"2011","odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim":"60","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim":"60"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim":"0"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim":"40"},{"year":"2012","odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim":"40","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim":"20"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim":"20"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim":"60"},{"year":"2013","odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim":"40","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim":"20"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim":"20"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim":"60"},{"year":"2014","odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim":"40","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim":"20"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim":"20"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim":"60"},{"year":"2015","odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim":"40","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim":"40"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim":"0"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim":"60"},{"year":"2016","odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim":"60","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim":"60"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim":"0"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim":"40"},{"year":"2017","odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim":"40","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim":"40"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim":"0"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim":"60"},{"year":"2018","odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim":null,"udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim":null," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim":null," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim":null}]
+var naglowek=["odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim","udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim"," odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim"," odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim"]
 
 
 
@@ -928,7 +1317,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
                 
                   <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
                 
-                <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem </td>
+                <td style="padding: 10px; text-align: justify; height: 45px;">  odsetek stad ryb w granicach poziomów zrównoważonych na Morzu Bałtyckim,udział zasobów rybnych w pełni wykorzystanych (fully exploited) na Morzu Bałtyckim, odsetek stad ryb które są nie w pełni wykorzystane (non-fully exploited) na Morzu Bałtyckim, odsetek stad ryb które są nadmiernie eksploatowane (overexploited) na Morzu Bałtyckim </td>
               </tr>
             
           
@@ -1120,12 +1509,12 @@ function download_csv(csv, filename) {
 
 function Zmiana_jednostki(){
 
-  var licznik=1
+  var licznik=4
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null]
+      var calo=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(8,16);
       var b = [[]];
       seria=[]
@@ -1149,7 +1538,7 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null]
+      var calo=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,8);
       var b = [[]];
       seria=[]
@@ -1175,12 +1564,12 @@ function Zmiana_jednostki(){
 
 function Zmiana_jednostki4(){
 
-  var licznik=1
+  var licznik=4
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null]
+      var calo=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1204,7 +1593,7 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null]
+      var calo=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1230,12 +1619,12 @@ function Zmiana_jednostki4(){
 
 function Zmiana_jednostki2(){
 
-  var licznik=1
+  var licznik=4
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null]
+      var calo=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1264,7 +1653,7 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null]
+      var calo=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1294,12 +1683,12 @@ function Zmiana_jednostki2(){
 
 function Zmiana_jednostki3(){
 
-  var licznik=1
+  var licznik=4
   var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null]
+      var calo=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1325,7 +1714,7 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null]
+      var calo=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null]
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1363,9 +1752,9 @@ $(window).on("load", function() {
         window.location = window.location + '#2';
         window.location.reload();
     }
-    var licznik=1
+    var licznik=4
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null]
+    var calo=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null]
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1386,9 +1775,9 @@ $(window).on("load", function() {
         window.location = window.location + '#9';
         window.location.reload();
     }
-    var licznik=1;
+    var licznik=4;
     var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["40","60","50","50","50","50","75","100",null,null,null,null,null,null,null,null,null,null];
+    var calo=["40","60","40","40","40","40","60","40",null,"40","60","20","20","20","40","60","40",null,"0","0","20","20","20","0","0","0",null,"60","40","60","60","60","60","40","60",null,null,null,null,null,null,null,null,null,null];
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1426,7 +1815,7 @@ $('body').click(function( e ){
 $(function () {
 $('.list-group.checked-list-box .list-group-item').each(function () {
 
-          var zmienna=1
+          var zmienna=4
           var $widget = $(this),
           $checkbox = $('<input type="checkbox"/>')
           $widget.css('cursor', 'pointer')

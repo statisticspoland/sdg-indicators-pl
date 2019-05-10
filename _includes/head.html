@@ -77,6 +77,9 @@
         <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 
+        {% if site.google_analytics and jekyll.environment == 'production' %}
+        {% include analytics.html %}
+        {% endif %}
 
     </head>
     <body>

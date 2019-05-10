@@ -12,6 +12,9 @@ baseurl: "http://sdg.gov.pl" # the subpath of your site, e.g. /blog
 url: ""
 data_dir: data
 
+# Google Analytics
+google_analytics: UA-139029935-1
+
 #Github Repo
 repo_name: sdg-indicators-pl
 branch: gh-pages
