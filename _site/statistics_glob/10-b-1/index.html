@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                   </title>
                 
 
-        <meta property="og:title" content="Łączne przepływy zasobów dla rozwoju, zdezagregowane wg państw darczyńców i państw odbiorów i rodzaju przepływu (np. oficjalnej pomocy rozwojowej, bezpośrednich inwestycji zagranicznych i innych przepływów)">
+        <meta property="og:title" content="10 B 1">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Wskaźnik 10.b.1 - Łączne przepływy zasobów dla rozwoju, zdezagregowane wg państw darczyńców i państw odbiorów i rodzaju przepływu (np. oficjalnej pomocy rozwojowej, bezpośrednich inwestycji zagranicznych i innych przepływów) </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -626,13 +653,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-10-b-1" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-10-b-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=11
-  var calosc=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
+  var calosc=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total official development assistance","total bilateral official development assistance","bilateral official development assistance for least developed countries (LDC)","bilateral official development assistance for other low income countries (LIC)","bilateral official development assistance for lower middle income countries (LMIC)","bilateral official development assistance for upper middle income countries (UMIC)","total Polish foreign direct investments","Polish foreign direct investments for least developed countries (LDC)","Polish foreign direct investments for other low income countries (LIC)","Polish foreign direct investments for lower middle income countries (LMIC)","Polish foreign direct investments for upper middle income countries (UMIC)"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'pl'
-  var legen=["oficjalna pomoc rozwojowa ogółem","oficjalna pomoc rozwojowa dwustronna ogółem","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)","polskie inwestycje bezpośrednie za granicą ogółem","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)"]
+
+  if (jez=='en'){
+    var legen=["total official development assistance","total bilateral official development assistance","bilateral official development assistance for least developed countries (LDC)","bilateral official development assistance for other low income countries (LIC)","bilateral official development assistance for lower middle income countries (LMIC)","bilateral official development assistance for upper middle income countries (UMIC)","total Polish foreign direct investments","Polish foreign direct investments for least developed countries (LDC)","Polish foreign direct investments for other low income countries (LIC)","Polish foreign direct investments for lower middle income countries (LMIC)","Polish foreign direct investments for upper middle income countries (UMIC)"]
+  }else{
+    var legen=["oficjalna pomoc rozwojowa ogółem","oficjalna pomoc rozwojowa dwustronna ogółem","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)","polskie inwestycje bezpośrednie za granicą ogółem","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)"]
+  }
 
   if(2=='0'){
     var precyz=0;
@@ -1153,9 +1200,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","oficjalna pomoc rozwojowa ogółem":"377.75","oficjalna pomoc rozwojowa dwustronna ogółem":"96.04","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"9.37","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"0.31","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"24.92","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"60.01","polskie inwestycje bezpośrednie za granicą ogółem":"7225.60","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"5.90","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"-23.30","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"148.60","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"-64.90"},{"year":"2011","oficjalna pomoc rozwojowa ogółem":"417.47","oficjalna pomoc rozwojowa dwustronna ogółem":"90.68","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"12.17","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"0.56","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"27.27","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"46.07","polskie inwestycje bezpośrednie za granicą ogółem":"8155.80","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"1.00","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"-0.30","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"58.40","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"248.10"},{"year":"2012","oficjalna pomoc rozwojowa ogółem":"421.06","oficjalna pomoc rozwojowa dwustronna ogółem":"111.55","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"11.69","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"3.59","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"22.26","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"62.45","polskie inwestycje bezpośrednie za granicą ogółem":"716.30","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"8.00","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"0.10","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"91.40","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"70.30"},{"year":"2013","oficjalna pomoc rozwojowa ogółem":"487.12","oficjalna pomoc rozwojowa dwustronna ogółem":"127.11","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"46.60","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"1.02","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"30.76","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"32.65","polskie inwestycje bezpośrednie za granicą ogółem":"-1346.00","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"49.20","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"0.00","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"-215.20","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"133.40"},{"year":"2014","oficjalna pomoc rozwojowa ogółem":"451.84","oficjalna pomoc rozwojowa dwustronna ogółem":"82.28","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"40.73","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"1.54","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"31.84","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"3.91","polskie inwestycje bezpośrednie za granicą ogółem":"2897.59","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"-55.94","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"0.00","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"14.64","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"94.67"},{"year":"2015","oficjalna pomoc rozwojowa ogółem":"440.89","oficjalna pomoc rozwojowa dwustronna ogółem":"100.19","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"44.25","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"1.08","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"38.88","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"-0.81","polskie inwestycje bezpośrednie za granicą ogółem":"4994.75","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"-2.07","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"0.29","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"-34.53","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"110.69"},{"year":"2016","oficjalna pomoc rozwojowa ogółem":"662.95","oficjalna pomoc rozwojowa dwustronna ogółem":"148.99","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"71.67","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"8.90","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"39.16","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"18.48","polskie inwestycje bezpośrednie za granicą ogółem":"8073.06","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"-0.91","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"-0.38","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"37.84","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"360.93"},{"year":"2017","oficjalna pomoc rozwojowa ogółem":"679.46","oficjalna pomoc rozwojowa dwustronna ogółem":"222.11","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"14.19","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"2.17","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"74.21","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"55.18","polskie inwestycje bezpośrednie za granicą ogółem":"2760.33","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"-1.46","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"0.03","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"201.76","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"234.59"}]
-var naglowek=["oficjalna pomoc rozwojowa ogółem","oficjalna pomoc rozwojowa dwustronna ogółem","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)","polskie inwestycje bezpośrednie za granicą ogółem","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)"]
+var DATA = [{"year":"year","oficjalna pomoc rozwojowa ogółem":"total official development assistance","oficjalna pomoc rozwojowa dwustronna ogółem":"total bilateral official development assistance","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"bilateral official development assistance for least developed countries (LDC)","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"bilateral official development assistance for other low income countries (LIC)","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"bilateral official development assistance for lower middle income countries (LMIC)","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"bilateral official development assistance for upper middle income countries (UMIC)","polskie inwestycje bezpośrednie za granicą ogółem":"total Polish foreign direct investments","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"Polish foreign direct investments for least developed countries (LDC)","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"Polish foreign direct investments for other low income countries (LIC)","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"Polish foreign direct investments for lower middle income countries (LMIC)","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"Polish foreign direct investments for upper middle income countries (UMIC)"},{"year":"2010","oficjalna pomoc rozwojowa ogółem":"377.75","oficjalna pomoc rozwojowa dwustronna ogółem":"96.04","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"9.37","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"0.31","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"24.92","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"60.01","polskie inwestycje bezpośrednie za granicą ogółem":"7225.60","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"5.90","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"-23.30","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"148.60","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"-64.90"},{"year":"2011","oficjalna pomoc rozwojowa ogółem":"417.47","oficjalna pomoc rozwojowa dwustronna ogółem":"90.68","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"12.17","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"0.56","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"27.27","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"46.07","polskie inwestycje bezpośrednie za granicą ogółem":"8155.80","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"1.00","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"-0.30","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"58.40","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"248.10"},{"year":"2012","oficjalna pomoc rozwojowa ogółem":"421.06","oficjalna pomoc rozwojowa dwustronna ogółem":"111.55","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"11.69","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"3.59","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"22.26","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"62.45","polskie inwestycje bezpośrednie za granicą ogółem":"716.30","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"8.00","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"0.10","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"91.40","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"70.30"},{"year":"2013","oficjalna pomoc rozwojowa ogółem":"487.12","oficjalna pomoc rozwojowa dwustronna ogółem":"127.11","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"46.60","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"1.02","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"30.76","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"32.65","polskie inwestycje bezpośrednie za granicą ogółem":"-1346.00","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"49.20","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"0.00","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"-215.20","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"133.40"},{"year":"2014","oficjalna pomoc rozwojowa ogółem":"451.84","oficjalna pomoc rozwojowa dwustronna ogółem":"82.28","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"40.73","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"1.54","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"31.84","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"3.91","polskie inwestycje bezpośrednie za granicą ogółem":"2897.59","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"-55.94","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"0.00","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"14.64","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"94.67"},{"year":"2015","oficjalna pomoc rozwojowa ogółem":"440.89","oficjalna pomoc rozwojowa dwustronna ogółem":"100.19","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"44.25","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"1.08","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"38.88","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"-0.81","polskie inwestycje bezpośrednie za granicą ogółem":"4994.75","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"-2.07","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"0.29","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"-34.53","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"110.69"},{"year":"2016","oficjalna pomoc rozwojowa ogółem":"662.95","oficjalna pomoc rozwojowa dwustronna ogółem":"148.99","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"71.67","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"8.90","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"39.16","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"18.48","polskie inwestycje bezpośrednie za granicą ogółem":"8073.06","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"-0.91","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"-0.38","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"37.84","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"360.93"},{"year":"2017","oficjalna pomoc rozwojowa ogółem":"679.46","oficjalna pomoc rozwojowa dwustronna ogółem":"222.11","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"14.19","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"2.17","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"74.21","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"55.18","polskie inwestycje bezpośrednie za granicą ogółem":"2760.33","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":"-1.46","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":"0.03","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":"201.76","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":"234.59"},{"year":"2018","oficjalna pomoc rozwojowa ogółem":"762.82","oficjalna pomoc rozwojowa dwustronna ogółem":"242.5","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)":"75.64","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)":"0.38","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)":"94.94","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)":"59.81","polskie inwestycje bezpośrednie za granicą ogółem":null,"polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)":null,"polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach":null,"polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)":null,"polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)":null}]
 
+var naglowek=["oficjalna pomoc rozwojowa ogółem","oficjalna pomoc rozwojowa dwustronna ogółem","oficjalna pomoc rozwojowa dwustronna na rzecz krajów najsłabiej rozwiniętych (LDC)","oficjalna pomoc rozwojowa dwustronna na rzecz pozostałych krajów o niskich dochodach (LIC)","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-niskich dochodach (LMIC)","oficjalna pomoc rozwojowa dwustronna na rzecz krajów o średnio-wysokich dochodach (UMIC)","polskie inwestycje bezpośrednie za granicą ogółem","polskie inwestycje bezpośrednie za granicą na rzecz krajów najsłabiej rozwiniętych (LDC)","polskie inwestycje bezpośrednie za granicą na rzecz pozostałych krajów o niskich dochodach","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-niskich dochodach (LMIC)","polskie inwestycje bezpośrednie za granicą na rzecz krajów o średnio-wysokich dochodach (UMIC)"]
+var naglowek_ang=["total official development assistance","total bilateral official development assistance","bilateral official development assistance for least developed countries (LDC)","bilateral official development assistance for other low income countries (LIC)","bilateral official development assistance for lower middle income countries (LMIC)","bilateral official development assistance for upper middle income countries (UMIC)","total Polish foreign direct investments","Polish foreign direct investments for least developed countries (LDC)","Polish foreign direct investments for other low income countries (LIC)","Polish foreign direct investments for lower middle income countries (LMIC)","Polish foreign direct investments for upper middle income countries (UMIC)"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1189,7 +1238,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1248,174 +1302,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/pl/10-b-1.pdf">Pobierz metadane dla 10.b.1</a>
+              <a href="/sdg-indicators/assets/pdf/pl/10-b-1.pdf"><button>Pobierz metadane dla 10.b.1</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla 10.b.1</a>-->
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <b>10.b.1 Łączne przepływy zasobów dla rozwoju, zdezagregowane wg państw darczyńców i państw odbiorów i rodzaju przepływu (np. oficjalnej pomocy rozwojowej, bezpośrednich inwestycji zagranicznych i innych przepływów)</b> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 10. Mniej nierówności </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Zadanie </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  10.b Zapewnić oficjalną pomoc rozwojową (Official Development Assistance) i przepływ środków finansowych, w tym bezpośrednie inwestycje zagraniczne do krajów najbardziej potrzebujących, w szczególności do państw najmniej rozwiniętych, krajów afrykańskich, małych państw wyspiarskich i tych bez dostępu do morza, zgodnie z krajowymi planami i programami tych krajów </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Suma przepływu oficjalnej pomocy rozwojowej (ODA) oraz suma odpływu kapitału z tytułu polskich inwestycji bezpośednich za granicą (BIZ), wyrażona w mln PLN. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  mln USD (ceny bieżące) </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem, rodzaj przepływu (oficjalna pomoc rozwojowa, bezpośrednie inwestycje zagraniczne), kraje według grup dochodowych </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Do <b>Oficjalnej Pomocy Rozwojowej </b>(ang. <i>Official Development Assistance</i> – ODA) zaliczane są darowizny i pożyczki przekazywane przez instytucje rządowe lub organizacje międzynarodowe, mające na celu wsparcie rozwoju gospodarczego i dobrobytu w krajach rozwijających się. Pożyczki są uważane jako ODA wtedy, gdy zawierają element darowizny o wartości udzielanej pomocy przynajmniej: </p> <p>  • 45% dla krajów najsłabiej rozwiniętych i innych krajów o niskich dochodach (least developed countries and other low income countires – LDCs & other LICs), wyliczony przy stopie dyskontowej 9%, </p> <p>  • 15% dla krajów o średnich i niskich dochodach (lower middle income countries – LMICs), wyliczony przy stopie dyskontowej 7%, </p> <p>  • 10% dla krajów o średniowysokim dochodzie (upper middle income countries – UMICs), wyliczony przy stopie dyskontowej 6%. </p> Do ODA <b>zaliczana jest </b>również pomoc techniczna, mająca na celu rozwój zasobów ludzkich, podniesienie kwalifikacji oraz możliwości technicznych i produkcyjnych krajów rozwijających się. Pomoc ta polega między innymi na przekazywaniu wiedzy i doświadczeń w postaci szkoleń, delegowania ekspertów, inicjowania badań i/lub pokrywania wynikających z tego kosztów.</p> <p>Do ODA <b>nie zalicza się </b>dotacji przeznaczonych na wydatki wojskowe.</p> <p>Warunkiem zaklasyfikowania współpracy jako Oficjalnej Pomocy Rozwojowej jest to, aby kraj partnerski, na rzecz którego udzielane jest wsparcie, znajdował się na liście Komitetu Pomocy Rozwojowej OECD (<i>Development Assistance Committee</i>).</p> <p>W zależności od sposobu realizacji pomocy możemy wyróżnić : </p> <p><b>  • pomoc dwustronną </b>– podejmowana przez donatora bezpośrednio w kraju partnerskim bądź poprzez organizację międzynarodową w formie wpłaty celowej na rzecz kraju partnerskiego (earmarked contribution) lub w formie wpłaty na określony program/fundusz zarządzany przez organizację, </p> <p><b>  • pomoc wielostronną </b>– udzielana w formie wpłat do budżetów ogólnych organizacji międzynarodowych, których lista jest corocznie aktualizowana przez Sekretariat DAC OECD. </p> <p>Aktualna metodologia DAC OECD zbierania danych na temat pomocy rozwojowej w formacie CRS (Creditor Reporting System) pozwala na oznaczanie sektora wsparcia i markera jedynie przy przepływach dwustronnych. Do wskaźnika nie będą zatem zaliczone wydatki w ramach pomocy wielostronnej w formie wpłat do budżetów ogólnych takich organizacji, jak np. FAO (<i>Food and Agriculture Organization</i>) czy WFP (<i>World Foof Programme</i>), które również działają w obszarze rolnictwa.</p> <p>Z uwagi na trwający aktualnie proces modernizacji ODA spodziewamy się, że od 2018 r. wskaźnik ODA będzie prezentowany w formie ekwiwalentu grantu, uwzględniającej jedynie element grantu pomnożony przez wartość danego przepływu. Zniknie zatem podział na wydatkowanie ODA brutto i netto. Dodatkowo trwają prace nad włączeniem do ODA innych przepływów, np. kwot zmobilizowanych przez sektor publiczny z instrumentów sektora prywatnego. Aktualnie konstruowany jest alternatywny do ODA wskaźnik TOSSD (Total Oficial Support for Sustainable Development), który będzie mierzyć środki przeznaczane na wdrożenie SDGs.</p> <p>Oficjalna Pomoc Rozwojowa w Polsce świadczona jest na podstawie ustawy o współpracy rozwojowej z dnia 16 września 2011 r. (Dz.U. 2011 r., Nr 234, poz. 1386). Polska współpraca rozwojowa prowadzona jest w oparciu o Wieloletni Program Współpracy Rozwojowej opracowywany na okres minimum 4 lat. Ustawa definiuje współpracę rozwojową jako ogół działań podejmowanych przez organy administracji rządowej w celu udzielenia państwom rozwijającym się pomocy rozwojowej, pomocy humanitarnej oraz realizację działań edukacyjnych na rzecz podniesienia świadomości i zrozumienia problemów i współzależności globalnych.</p> <p>Za zagadnienia związane z pomocą rozwojową w Polsce odpowiedzialne jest Ministerstwo Spraw Zagranicznych, które opracowało „Wieloletni program współpracy rozwojowej na lata 2016-2020, w oparciu o który polska współpraca rozwojowa koncentruje się na krajach Partnerstwa Wschodniego (Białoruś, Gruzja, Mołdawia, Ukraina) oraz Afryki, Azji i Bliskiego Wschodu (Etiopia, Kenia, Mjanma, Palestyna, Senegal, Tanzania). Polska współpraca rozwojowa służy wzmocnieniu rządów prawa i wspieraniu reform decentralizacyjnych oraz zwalczaniu korupcji, a także przestrzeganiu praw człowieka i swobód obywatelskich. Wśród celów współpracy rozwojowej są: poprawa opieki zdrowotnej i dostępu do edukacji oraz wsparcie dla przedsiębiorczości i rolnictwa, a także ochrona środowiska naturalnego, w tym zapobieganie skutkom klęsk żywiołowych. Działania objęte programem finansowane są ze środków Ministerstwa Spraw Zagranicznych, rezerwy celowej budżetu państwa przeznaczonej na współpracę rozwojową i funduszy innych resortów.</p> <p><b>Bezpośrednie inwestycje zagraniczne </b>to inaczej przepływy kapitału przez granice państw polegające na zakupie istniejącego przedsiębiorstwa lub na utworzeniu nowej firmy przez inwestora zagranicznego, co oznacza, że inwestor zagraniczny staje się współwłaścicielem lub właścicielem przedsiębiorstwa funkcjonującego w danym kraju.</p> <p>Bezpośrednie inwestycje zagraniczne oznaczają długotrwałą współpracę, będącą odzwierciedleniem trwałego zainteresowania inwestora. Inwestycje to aktywa finansowe, nieruchomości lub wartości niematerialne i prawne, które nie są użytkowane przez daną jednostkę, lecz zostały nabyte w celu osiągnięcia korzyści ekonomicznych. Oznaczają one wydatki ponoszone w celu zwiększenia zasobów kapitału produkcyjnego, którym dysponuje jednostka.</p> <p>Inwestycje bezpośrednie odzwierciedlają długotrwałe udziały jednostki rezydenta jednej gospodarki (inwestor bezpośredni) w jednostce rezydenta innej gospodarki (przedsiębiorstwo inwestycji bezpośrednich) i obejmują transakcje zawarte między nimi.</p> <p>Znak (+) oznacza odpływ kapitału z Polski, znak (-) oznacza wycofanie do Polski.</p> <p>Kraje prezentowane według grup dochodowych zgodnie z częścią I wykazu beneficjentów pomocy DAC OECD (Part I of the OEC DAC List of Aid Recipients).</p> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Źródło danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Ministerstwo Spraw Zagranicznych / Narodowy Bank Polski </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2010 r. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Uwagi </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <b>10.b.1 Łączne przepływy zasobów dla rozwoju, zdezagregowane wg państw darczyńców i państw odbiorów i rodzaju przepływu (np. oficjalnej pomocy rozwojowej, bezpośrednich inwestycji zagranicznych i innych przepływów)</b> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 10. Mniej nierówności </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Zadanie </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  10.b Zapewnić oficjalną pomoc rozwojową (Official Development Assistance) i przepływ środków finansowych, w tym bezpośrednie inwestycje zagraniczne do krajów najbardziej potrzebujących, w szczególności do państw najmniej rozwiniętych, krajów afrykańskich, małych państw wyspiarskich i tych bez dostępu do morza, zgodnie z krajowymi planami i programami tych krajów </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Suma przepływu oficjalnej pomocy rozwojowej (ODA) oraz suma odpływu kapitału z tytułu polskich inwestycji bezpośednich za granicą (BIZ), wyrażona w mln PLN. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  mln USD (ceny bieżące) </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem, rodzaj przepływu (oficjalna pomoc rozwojowa, bezpośrednie inwestycje zagraniczne), kraje według grup dochodowych </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Do <b>Oficjalnej Pomocy Rozwojowej </b>(ang. <i>Official Development Assistance</i> – ODA) zaliczane są darowizny i pożyczki przekazywane przez instytucje rządowe lub organizacje międzynarodowe, mające na celu wsparcie rozwoju gospodarczego i dobrobytu w krajach rozwijających się. Pożyczki są uważane jako ODA wtedy, gdy zawierają element darowizny o wartości udzielanej pomocy przynajmniej: </p> <p>  • 45% dla krajów najsłabiej rozwiniętych i innych krajów o niskich dochodach (least developed countries and other low income countires – LDCs & other LICs), wyliczony przy stopie dyskontowej 9%, </p> <p>  • 15% dla krajów o średnich i niskich dochodach (lower middle income countries – LMICs), wyliczony przy stopie dyskontowej 7%, </p> <p>  • 10% dla krajów o średniowysokim dochodzie (upper middle income countries – UMICs), wyliczony przy stopie dyskontowej 6%. </p> Do ODA <b>zaliczana jest </b>również pomoc techniczna, mająca na celu rozwój zasobów ludzkich, podniesienie kwalifikacji oraz możliwości technicznych i produkcyjnych krajów rozwijających się. Pomoc ta polega między innymi na przekazywaniu wiedzy i doświadczeń w postaci szkoleń, delegowania ekspertów, inicjowania badań i/lub pokrywania wynikających z tego kosztów.</p> <p>Do ODA <b>nie zalicza się </b>dotacji przeznaczonych na wydatki wojskowe.</p> <p>Warunkiem zaklasyfikowania współpracy jako Oficjalnej Pomocy Rozwojowej jest to, aby kraj partnerski, na rzecz którego udzielane jest wsparcie, znajdował się na liście Komitetu Pomocy Rozwojowej OECD (<i>Development Assistance Committee</i>).</p> <p>W zależności od sposobu realizacji pomocy możemy wyróżnić : </p> <p><b>  • pomoc dwustronną </b>– podejmowana przez donatora bezpośrednio w kraju partnerskim bądź poprzez organizację międzynarodową w formie wpłaty celowej na rzecz kraju partnerskiego (earmarked contribution) lub w formie wpłaty na określony program/fundusz zarządzany przez organizację, </p> <p><b>  • pomoc wielostronną </b>– udzielana w formie wpłat do budżetów ogólnych organizacji międzynarodowych, których lista jest corocznie aktualizowana przez Sekretariat DAC OECD. </p> <p>Aktualna metodologia DAC OECD zbierania danych na temat pomocy rozwojowej w formacie CRS (Creditor Reporting System) pozwala na oznaczanie sektora wsparcia i markera jedynie przy przepływach dwustronnych. Do wskaźnika nie będą zatem zaliczone wydatki w ramach pomocy wielostronnej w formie wpłat do budżetów ogólnych takich organizacji, jak np. FAO (<i>Food and Agriculture Organization</i>) czy WFP (<i>World Foof Programme</i>), które również działają w obszarze rolnictwa.</p> <p>Z uwagi na trwający aktualnie proces modernizacji ODA spodziewamy się, że od 2018 r. wskaźnik ODA będzie prezentowany w formie ekwiwalentu grantu, uwzględniającej jedynie element grantu pomnożony przez wartość danego przepływu. Zniknie zatem podział na wydatkowanie ODA brutto i netto. Dodatkowo trwają prace nad włączeniem do ODA innych przepływów, np. kwot zmobilizowanych przez sektor publiczny z instrumentów sektora prywatnego. Aktualnie konstruowany jest alternatywny do ODA wskaźnik TOSSD (Total Oficial Support for Sustainable Development), który będzie mierzyć środki przeznaczane na wdrożenie SDGs.</p> <p>Oficjalna Pomoc Rozwojowa w Polsce świadczona jest na podstawie ustawy o współpracy rozwojowej z dnia 16 września 2011 r. (Dz.U. 2011 r., Nr 234, poz. 1386). Polska współpraca rozwojowa prowadzona jest w oparciu o Wieloletni Program Współpracy Rozwojowej opracowywany na okres minimum 4 lat. Ustawa definiuje współpracę rozwojową jako ogół działań podejmowanych przez organy administracji rządowej w celu udzielenia państwom rozwijającym się pomocy rozwojowej, pomocy humanitarnej oraz realizację działań edukacyjnych na rzecz podniesienia świadomości i zrozumienia problemów i współzależności globalnych.</p> <p>Za zagadnienia związane z pomocą rozwojową w Polsce odpowiedzialne jest Ministerstwo Spraw Zagranicznych, które opracowało „Wieloletni program współpracy rozwojowej na lata 2016-2020, w oparciu o który polska współpraca rozwojowa koncentruje się na krajach Partnerstwa Wschodniego (Białoruś, Gruzja, Mołdawia, Ukraina) oraz Afryki, Azji i Bliskiego Wschodu (Etiopia, Kenia, Mjanma, Palestyna, Senegal, Tanzania). Polska współpraca rozwojowa służy wzmocnieniu rządów prawa i wspieraniu reform decentralizacyjnych oraz zwalczaniu korupcji, a także przestrzeganiu praw człowieka i swobód obywatelskich. Wśród celów współpracy rozwojowej są: poprawa opieki zdrowotnej i dostępu do edukacji oraz wsparcie dla przedsiębiorczości i rolnictwa, a także ochrona środowiska naturalnego, w tym zapobieganie skutkom klęsk żywiołowych. Działania objęte programem finansowane są ze środków Ministerstwa Spraw Zagranicznych, rezerwy celowej budżetu państwa przeznaczonej na współpracę rozwojową i funduszy innych resortów.</p> <p><b>Bezpośrednie inwestycje zagraniczne </b>to inaczej przepływy kapitału przez granice państw polegające na zakupie istniejącego przedsiębiorstwa lub na utworzeniu nowej firmy przez inwestora zagranicznego, co oznacza, że inwestor zagraniczny staje się współwłaścicielem lub właścicielem przedsiębiorstwa funkcjonującego w danym kraju.</p> <p>Bezpośrednie inwestycje zagraniczne oznaczają długotrwałą współpracę, będącą odzwierciedleniem trwałego zainteresowania inwestora. Inwestycje to aktywa finansowe, nieruchomości lub wartości niematerialne i prawne, które nie są użytkowane przez daną jednostkę, lecz zostały nabyte w celu osiągnięcia korzyści ekonomicznych. Oznaczają one wydatki ponoszone w celu zwiększenia zasobów kapitału produkcyjnego, którym dysponuje jednostka.</p> <p>Inwestycje bezpośrednie odzwierciedlają długotrwałe udziały jednostki rezydenta jednej gospodarki (inwestor bezpośredni) w jednostce rezydenta innej gospodarki (przedsiębiorstwo inwestycji bezpośrednich) i obejmują transakcje zawarte między nimi.</p> <p>Znak (+) oznacza odpływ kapitału z Polski, znak (-) oznacza wycofanie do Polski.</p> <p>Kraje prezentowane według grup dochodowych zgodnie z częścią I wykazu beneficjentów pomocy DAC OECD (Part I of the OEC DAC List of Aid Recipients).</p> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Źródło danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Ministerstwo Spraw Zagranicznych / Narodowy Bank Polski </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2010 r. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Uwagi </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik zastępczy, dostępny w ramach polskiej statystyki publicznej.Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym cel 10.b Agendy 2030, jest wskaźnik 10.b.1 Łączne przepływy zasobów dla rozwoju, zdezagregowane wg państw darczyńców i państw odbiorów i rodzaju przepływu (np. oficjalnej pomocy rozwojowej, bezpośrednich inwestycji zagranicznych i innych przepływów). </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1427,7 +1537,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('mln USD (ceny bieżące)'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1507,15 +1617,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total official development assistance","total bilateral official development assistance","bilateral official development assistance for least developed countries (LDC)","bilateral official development assistance for other low income countries (LIC)","bilateral official development assistance for lower middle income countries (LMIC)","bilateral official development assistance for upper middle income countries (UMIC)","total Polish foreign direct investments","Polish foreign direct investments for least developed countries (LDC)","Polish foreign direct investments for other low income countries (LIC)","Polish foreign direct investments for lower middle income countries (LMIC)","Polish foreign direct investments for upper middle income countries (UMIC)"]
+
 function Zmiana_jednostki(){
 
   var licznik=11
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1538,8 +1655,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1565,11 +1686,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=11
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
+      var calo=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1593,7 +1719,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
+      var calo=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1620,11 +1750,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=11
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
+      var calo=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1653,7 +1788,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
+      var calo=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1684,11 +1823,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=11
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
+      var calo=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1714,7 +1858,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
+      var calo=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1753,8 +1900,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=11
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1776,8 +1929,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=11;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["total official development assistance","377.75","417.47","421.06","487.12","451.84","440.89","662.95","679.46","762.82","total bilateral official development assistance","96.04","90.68","111.55","127.11","82.28","100.19","148.99","222.11","242.5","bilateral official development assistance for least developed countries (LDC)","9.37","12.17","11.69","46.60","40.73","44.25","71.67","14.19","75.64","bilateral official development assistance for other low income countries (LIC)","0.31","0.56","3.59","1.02","1.54","1.08","8.90","2.17","0.38","bilateral official development assistance for lower middle income countries (LMIC)","24.92","27.27","22.26","30.76","31.84","38.88","39.16","74.21","94.94","bilateral official development assistance for upper middle income countries (UMIC)","60.01","46.07","62.45","32.65","3.91","-0.81","18.48","55.18","59.81","total Polish foreign direct investments","7225.60","8155.80","716.30","-1346.00","2897.59","4994.75","8073.06","2760.33",null,"Polish foreign direct investments for least developed countries (LDC)","5.90","1.00","8.00","49.20","-55.94","-2.07","-0.91","-1.46",null,"Polish foreign direct investments for other low income countries (LIC)","-23.30","-0.30","0.10","0.00","0.00","0.29","-0.38","0.03",null,"Polish foreign direct investments for lower middle income countries (LMIC)","148.60","58.40","91.40","-215.20","14.64","-34.53","37.84","201.76",null,"Polish foreign direct investments for upper middle income countries (UMIC)","-64.90","248.10","70.30","133.40","94.67","110.69","360.93","234.59",null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1868,8 +2026,10 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
-      
+             
+			    <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+			 
+	  
     </div>
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">

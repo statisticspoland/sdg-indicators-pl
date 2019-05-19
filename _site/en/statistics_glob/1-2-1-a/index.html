@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="At-risk of poverty rate after social transfers">
+        <meta property="og:title" content="1 2 1 A">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 1.2.1.a - At-risk of poverty rate after social transfers </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-1-2-1-a" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-1-2-1-a'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=11
-  var calosc=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
+  var calosc=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total","urban area","rural area","males","females","under 6 years","less than 18 years","18-24 years","18-64 years","60 years and more","65 years and more"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["total","urban area","rural area","males","females","under 6 years","less than 18 years","18-24 years","18-64 years","60 years and more","65 years and more"]
+
+  if (jez=='en'){
+    var legen=["total","urban area","rural area","males","females","under 6 years","less than 18 years","18-24 years","18-64 years","60 years and more","65 years and more"]
+  }else{
+    var legen=["ogółem","miasto","wieś","mężczyźni","kobiety","poniżej 6 lat","poniżej 18 lat","18-24 lata","18-64 lata","60 lat i więcej","65 lat i więcej"]
+  }
 
   if(1=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":"17.6","urban area":"12.6","rural area":"25.3","males":"17.4","females":"17.7","under 6 years":"20.5","less than 18 years":"22.5","18-24 years":"20.9","18-64 years":"16.9","60 years and more":"14.0","65 years and more":"14.2"},{"year":"2011","total":"17.7","urban area":"12.7","rural area":"25.2","males":"17.8","females":"17.6","under 6 years":"19.7","less than 18 years":"22.0","18-24 years":"20.7","18-64 years":"17.1","60 years and more":"14.5","65 years and more":"14.7"},{"year":"2012","total":"17.1","urban area":"12.3","rural area":"24.3","males":"17.1","females":"17.1","under 6 years":"18.6","less than 18 years":"21.5","18-24 years":"21.8","18-64 years":"16.5","60 years and more":"14.0","65 years and more":"14.0"},{"year":"2013","total":"17.3","urban area":"12.1","rural area":"24.9","males":"17.3","females":"17.3","under 6 years":"21.7","less than 18 years":"23.2","18-24 years":"21.5","18-64 years":"16.7","60 years and more":"12.3","65 years and more":"12.3"},{"year":"2014","total":"17.0","urban area":"11.7","rural area":"24.7","males":"17.2","females":"16.8","under 6 years":"19.4","less than 18 years":"22.3","18-24 years":"22.0","18-64 years":"16.7","60 years and more":"12.3","65 years and more":"11.7"},{"year":"2015","total":"17.6","urban area":"12.5","rural area":"25.2","males":"18.1","females":"17.2","under 6 years":"19.7","less than 18 years":"22.4","18-24 years":"22.6","18-64 years":"17.6","60 years and more":"13.0","65 years and more":"12.1"},{"year":"2016","total":"17.3","urban area":"12.8","rural area":"24.0","males":"17.1","females":"17.4","under 6 years":"17.6","less than 18 years":"21.1","18-24 years":"23.5","18-64 years":"17.3","60 years and more":"14.0","65 years and more":"12.8"},{"year":"2017","total":"15.0","urban area":"10.7","rural area":"21.5","males":"15.1","females":"14.9","under 6 years":"11.8","less than 18 years":"14.0","18-24 years":"20.9","18-64 years":"15.6","60 years and more":"15.0","65 years and more":"13.8"}]
-var naglowek=["total","urban area","rural area","males","females","under 6 years","less than 18 years","18-24 years","18-64 years","60 years and more","65 years and more"]
+var DATA = [{"year":"year","ogółem":"total","miasto":"urban area","wieś":"rural area","mężczyźni":"males","kobiety":"females","poniżej 6 lat":"under 6 years","poniżej 18 lat":"less than 18 years","18-24 lata":"18-24 years","18-64 lata":"18-64 years","60 lat i więcej":"60 years and more","65 lat i więcej":"65 years and more"},{"year":"2010","ogółem":"17.6","miasto":"12.6","wieś":"25.3","mężczyźni":"17.4","kobiety":"17.7","poniżej 6 lat":"20.5","poniżej 18 lat":"22.5","18-24 lata":"20.9","18-64 lata":"16.9","60 lat i więcej":"14.0","65 lat i więcej":"14.2"},{"year":"2011","ogółem":"17.7","miasto":"12.7","wieś":"25.2","mężczyźni":"17.8","kobiety":"17.6","poniżej 6 lat":"19.7","poniżej 18 lat":"22.0","18-24 lata":"20.7","18-64 lata":"17.1","60 lat i więcej":"14.5","65 lat i więcej":"14.7"},{"year":"2012","ogółem":"17.1","miasto":"12.3","wieś":"24.3","mężczyźni":"17.1","kobiety":"17.1","poniżej 6 lat":"18.6","poniżej 18 lat":"21.5","18-24 lata":"21.8","18-64 lata":"16.5","60 lat i więcej":"14.0","65 lat i więcej":"14.0"},{"year":"2013","ogółem":"17.3","miasto":"12.1","wieś":"24.9","mężczyźni":"17.3","kobiety":"17.3","poniżej 6 lat":"21.7","poniżej 18 lat":"23.2","18-24 lata":"21.5","18-64 lata":"16.7","60 lat i więcej":"12.3","65 lat i więcej":"12.3"},{"year":"2014","ogółem":"17.0","miasto":"11.7","wieś":"24.7","mężczyźni":"17.2","kobiety":"16.8","poniżej 6 lat":"19.4","poniżej 18 lat":"22.3","18-24 lata":"22.0","18-64 lata":"16.7","60 lat i więcej":"12.3","65 lat i więcej":"11.7"},{"year":"2015","ogółem":"17.6","miasto":"12.5","wieś":"25.2","mężczyźni":"18.1","kobiety":"17.2","poniżej 6 lat":"19.7","poniżej 18 lat":"22.4","18-24 lata":"22.6","18-64 lata":"17.6","60 lat i więcej":"13.0","65 lat i więcej":"12.1"},{"year":"2016","ogółem":"17.3","miasto":"12.8","wieś":"24.0","mężczyźni":"17.1","kobiety":"17.4","poniżej 6 lat":"17.6","poniżej 18 lat":"21.1","18-24 lata":"23.5","18-64 lata":"17.3","60 lat i więcej":"14.0","65 lat i więcej":"12.8"},{"year":"2017","ogółem":"15.0","miasto":"10.7","wieś":"21.5","mężczyźni":"15.1","kobiety":"14.9","poniżej 6 lat":"11.8","poniżej 18 lat":"14.0","18-24 lata":"20.9","18-64 lata":"15.6","60 lat i więcej":"15.0","65 lat i więcej":"13.8"}]
 
+var naglowek=["ogółem","miasto","wieś","mężczyźni","kobiety","poniżej 6 lat","poniżej 18 lat","18-24 lata","18-64 lata","60 lat i więcej","65 lat i więcej"]
+var naglowek_ang=["total","urban area","rural area","males","females","under 6 years","less than 18 years","18-24 years","18-64 years","60 years and more","65 years and more"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/1-2-1-a.pdf">Download metadata for 1.2.1.a</a>
+              <a href="/sdg-indicators/assets/pdf/en/1-2-1-a.pdf"><button>Download metadata for 1.2.1.a</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  1.2.1.a At-risk of poverty rate after social transfers </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 1. No poverty </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  1.2 By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Percentage of persons with an equivalised disposable income (after social transfers) is below the at-risk-of-poverty threshold set at 60% of the national median of equivalised disposable income. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total, sex, age </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The indicator is calculated on the basis of information obtained from the EU-SILC survey.EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) The subject of the EU-SILC are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of “observation” at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview techniqueusing 2 questionnaires  one of which is used to obtain data on households, and the second to obtain data on individuals.The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of the European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Central Statistical Office of Poland implemented EU-SILC survey in 2005.The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household).Equivalent disposable income in the survey is defined as a sum of the net (after deduction of income tax prepayment, tax on income from property, social and health insurance contributions) annual monetary incomes gained by all the household members reduced by: property tax, inter-household cash transfers paid and balance of offsetting settlements with the Tax Office.For the calculation of income statistics the modified OECD equivalence scale was applied which is calculated as follows: 1 – for the first adult household member, 0.5 – for the second and each subsequent household member aged 14 and over, 0.3 – for every child in the household under 14. And thus, for instance, the extreme and relative poverty threshold for a 4-person household consisting of two adult persons and two children is 2,1 times as high as that for a 1-person household. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2010 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  1.2.1.a At-risk of poverty rate after social transfers </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 1. No poverty </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  1.2 By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Percentage of persons with an equivalised disposable income (after social transfers) is below the at-risk-of-poverty threshold set at 60% of the national median of equivalised disposable income. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total, sex, age </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The indicator is calculated on the basis of information obtained from the EU-SILC survey.EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) The subject of the EU-SILC are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of “observation” at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview techniqueusing 2 questionnaires  one of which is used to obtain data on households, and the second to obtain data on individuals.The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of the European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Central Statistical Office of Poland implemented EU-SILC survey in 2005.The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household).Equivalent disposable income in the survey is defined as a sum of the net (after deduction of income tax prepayment, tax on income from property, social and health insurance contributions) annual monetary incomes gained by all the household members reduced by: property tax, inter-household cash transfers paid and balance of offsetting settlements with the Tax Office.For the calculation of income statistics the modified OECD equivalence scale was applied which is calculated as follows: 1 – for the first adult household member, 0.5 – for the second and each subsequent household member aged 14 and over, 0.3 – for every child in the household under 14. And thus, for instance, the extreme and relative poverty threshold for a 4-person household consisting of two adult persons and two children is 2,1 times as high as that for a 1-person household. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2010 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total","urban area","rural area","males","females","under 6 years","less than 18 years","18-24 years","18-64 years","60 years and more","65 years and more"]
+
 function Zmiana_jednostki(){
 
   var licznik=11
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=11
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
+      var calo=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
+      var calo=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=11
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
+      var calo=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
+      var calo=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=11
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
+      var calo=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
+      var calo=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=11
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=11;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["total","17.6","17.7","17.1","17.3","17.0","17.6","17.3","15.0","urban area","12.6","12.7","12.3","12.1","11.7","12.5","12.8","10.7","rural area","25.3","25.2","24.3","24.9","24.7","25.2","24.0","21.5","males","17.4","17.8","17.1","17.3","17.2","18.1","17.1","15.1","females","17.7","17.6","17.1","17.3","16.8","17.2","17.4","14.9","under 6 years","20.5","19.7","18.6","21.7","19.4","19.7","17.6","11.8","less than 18 years","22.5","22.0","21.5","23.2","22.3","22.4","21.1","14.0","18-24 years","20.9","20.7","21.8","21.5","22.0","22.6","23.5","20.9","18-64 years","16.9","17.1","16.5","16.7","16.7","17.6","17.3","15.6","60 years and more","14.0","14.5","14.0","12.3","12.3","13.0","14.0","15.0","65 years and more","14.2","14.7","14.0","12.3","11.7","12.1","12.8","13.8",null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

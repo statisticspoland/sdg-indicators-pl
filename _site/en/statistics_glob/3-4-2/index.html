@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Suicide mortality rate">
+        <meta property="og:title" content="3 4 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 3.4.2 - Suicide mortality rate </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-3-4-2" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-3-4-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=3
-  var calosc=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+  var calosc=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total","males","females"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["total","males","females"]
+
+  if (jez=='en'){
+    var legen=["total","males","females"]
+  }else{
+    var legen=["ogółem","mężczyźni","kobiety"]
+  }
 
   if(1=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":"16.5","males":"29.6","females":"4.2"},{"year":"2011","total":"15.9","males":"28.7","females":"3.8"},{"year":"2012","total":"16.5","males":"29.8","females":"4.1"},{"year":"2013","total":"16.1","males":"28.9","females":"4.2"},{"year":"2014","total":"15.4","males":"27.5","females":"4.1"},{"year":"2015","total":"14.1","males":"25.2","females":"3.6"},{"year":"2016","total":"12.2","males":"21.9","females":"3.0"},{"year":"2017","total":"11.7","males":"20.9","females":"3.0"},{"year":"2018","total":null,"males":null,"females":null}]
-var naglowek=["total","males","females"]
+var DATA = [{"year":"year","ogółem":"total","mężczyźni":"males","kobiety":"females"},{"year":"2010","ogółem":"16.5","mężczyźni":"29.6","kobiety":"4.2"},{"year":"2011","ogółem":"15.9","mężczyźni":"28.7","kobiety":"3.8"},{"year":"2012","ogółem":"16.5","mężczyźni":"29.8","kobiety":"4.1"},{"year":"2013","ogółem":"16.1","mężczyźni":"28.9","kobiety":"4.2"},{"year":"2014","ogółem":"15.4","mężczyźni":"27.5","kobiety":"4.1"},{"year":"2015","ogółem":"14.1","mężczyźni":"25.2","kobiety":"3.6"},{"year":"2016","ogółem":"12.2","mężczyźni":"21.9","kobiety":"3.0"},{"year":"2017","ogółem":"11.7","mężczyźni":"20.9","kobiety":"3.0"},{"year":"2018","ogółem":null,"mężczyźni":null,"kobiety":null}]
 
+var naglowek=["ogółem","mężczyźni","kobiety"]
+var naglowek_ang=["total","males","females"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/3-4-2.pdf">Download metadata for 3.4.2</a>
+              <a href="/sdg-indicators/assets/pdf/en/3-4-2.pdf"><button>Download metadata for 3.4.2</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  3.4.2 Suicide mortality rate </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 3. Good health and well-being </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  3.4 By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Suicide rate per 100 thous. population. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  persons </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total, sex </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Death - permanent, irreversible cessation of functions of the essential for life organs, the consequence of which is the cessation of all functions of the whole organism.Suicide - act of deliberately killing oneself (according to the International Statistical Classification of Diseases and Related Health Problems ICD-10: disease entity symbol X60-X84).The source of data on death is the document of the Ministry of Health ”Death certificate”, which is basic document for civil status acts and is in the part secondarily utilized by national statistics (Regulation of the Minister of Health, Journal of Laws 2015, item 231).When compiling the data on deaths by cause the initial cause of death is assumed. The initial cause is the disease, which was at the beginning of the morbid process and which caused the death  it may be also the injury or the poisoning, which caused the death.Data relating to the judicature on the causes of death are given in accordance with the International Statistical Classification of Diseases and Related Health Problems (Revision X).Data on population were compiled on the basis of: the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010)  for previous years (2003 – 2009) on the basis of the 2002 Population and Housing Census, the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register – PESEL), documentation of Civil Status Offices regarding registered marriages, births and deaths. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  3.4.2 Suicide mortality rate </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 3. Good health and well-being </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  3.4 By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Suicide rate per 100 thous. population. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  persons </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total, sex </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Death - permanent, irreversible cessation of functions of the essential for life organs, the consequence of which is the cessation of all functions of the whole organism.Suicide - act of deliberately killing oneself (according to the International Statistical Classification of Diseases and Related Health Problems ICD-10: disease entity symbol X60-X84).The source of data on death is the document of the Ministry of Health ”Death certificate”, which is basic document for civil status acts and is in the part secondarily utilized by national statistics (Regulation of the Minister of Health, Journal of Laws 2015, item 231).When compiling the data on deaths by cause the initial cause of death is assumed. The initial cause is the disease, which was at the beginning of the morbid process and which caused the death  it may be also the injury or the poisoning, which caused the death.Data relating to the judicature on the causes of death are given in accordance with the International Statistical Classification of Diseases and Related Health Problems (Revision X).Data on population were compiled on the basis of: the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010)  for previous years (2003 – 2009) on the basis of the 2002 Population and Housing Census, the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register – PESEL), documentation of Civil Status Offices regarding registered marriages, births and deaths. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('persons'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total","males","females"]
+
 function Zmiana_jednostki(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["total","16.5","15.9","16.5","16.1","15.4","14.1","12.2","11.7",null,"males","29.6","28.7","29.8","28.9","27.5","25.2","21.9","20.9",null,"females","4.2","3.8","4.1","4.2","4.1","3.6","3.0","3.0",null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

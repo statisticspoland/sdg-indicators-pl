@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                   </title>
                 
 
-        <meta property="og:title" content="Wyniki testów PIRLS - odsetek uczniów na minimalnym wymaganym poziomie osiągnięć w czytaniu">
+        <meta property="og:title" content="4 1 1 A">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Wskaźnik 4.1.1.a - Wyniki testów PIRLS - odsetek uczniów na minimalnym wymaganym poziomie osiągnięć w czytaniu </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -625,14 +652,35 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
 <script>
+
+  function remove(array, element) {
+    const index = array.indexOf(element);
+
+    if (index !== -1) {
+      array.splice(index, 1);
+    }
+  }
+
 (function () {
   var container = '#linechart-4-1-1-a'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=3
-  var calosc=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
-  var jez= 'pl'
-  var legen=["ogółem","chłopcy","dziewczęta"]
+  var calosc=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total","boys","girls"]
 
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
+  var jez= 'pl'
+
+  if (jez=='en'){
+    var legen=["total","boys","girls"]
+  }else{
+    var legen=["ogółem","chłopcy","dziewczęta"]
+  }
+  
   if(1=='0'){
     var precyz=0;
   }else{
@@ -1127,9 +1175,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2011","ogółem":"94.6","chłopcy":"93.3","dziewczęta":"96.0"},{"year":"2012","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2013","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2014","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2015","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2016","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2017","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2018","ogółem":null,"chłopcy":null,"dziewczęta":null}]
-var naglowek=["ogółem","chłopcy","dziewczęta"]
+var DATA = [{"year":"year","ogółem":"total","chłopcy":"boys","dziewczęta":"girls"},{"year":"2010","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2011","ogółem":"94.6","chłopcy":"93.3","dziewczęta":"96.0"},{"year":"2012","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2013","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2014","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2015","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2016","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2017","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2018","ogółem":null,"chłopcy":null,"dziewczęta":null}]
 
+var naglowek=["ogółem","chłopcy","dziewczęta"]
+var naglowek_ang=["total","boys","girls"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1163,7 +1213,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1222,174 +1277,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/pl/4-1-1-a.pdf">Pobierz metadane dla 4.1.1.a</a>
+              <a href="/sdg-indicators/assets/pdf/pl/4-1-1-a.pdf"><button>Pobierz metadane dla 4.1.1.a</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla 4.1.1.a</a>-->
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <b>4.1.1.a Wyniki testów PIRLS - odsetek uczniów na minimalnym wymaganym poziomie osiągnięć w czytaniu</b> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 4. Dobra jakość edukacji </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Zadanie </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  4.1 Do 2030 roku zapewnić wszystkim dziewczętom i chłopcom ukończenie nieodpłatnej, sprawiedliwej, dobrej jakości edukacji na poziomie podstawowym i ponadpodstawowym prowadzącej do efektywnych wyników w nauce, zgodnie z czwartym celem </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Relacja liczby uczniów w wieku 10 lat na wymaganym poziomie biegłości w czytaniu (minimum poziom drugi) do liczby uczniów w danej grupie wiekowej objętych badaniem. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  procent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem, płeć </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Dane pochodzą z <b>Międzynarodowego badania postępów w czytaniu PIRLS</b> (<i>Progress in International Reading Literacy Study</i>) </p> <p>PIRLS to badanie osiągnięć uczniów dziesięcioletnich w czytaniu tekstów literackich i użytkowych. Badanie jest organizowane przez Międzynarodowe Towarzystwo Oceniania Osiągnięć Szkolnych (IEA) i odbywa się w cyklu pięcioletnim od 2001 r. Za przygotowanie i przeprowadzenie badania w Polsce odpowiada Instytut Badań Edukacyjnych (na zlecenie Ministerstwa Edukacji Narodowej). </p> <p>Na podstawie otrzymanych wyników szacuje się poziom umiejętności ucznia. Najlepsi uczniowie osiągają poziom 5 (zdolność oddzielania informacji istotnych od nieistotnych, wyciąganie wniosków z przesłanek rozsianych w tekście, itd.), natomiast wyniki poniżej poziomu 2 - minimalnego poziomu kompetencji - wskazują na posiadanie jedynie bardzo podstawowych umiejętności (rozumienie tylko pojedynczych zdań). </p> <p>Dotychczas w Polsce przeprowadzono 3 edycje badania: w 2006 r., w 2011 r. oraz w 2016 r. W dwóch pierwszych edycjach badaniem objęto klasę trzecią szkoły podstawowej, natomiast w ostatniej udział wzięli uczniowie klasy czwartej. Zmiana klasy wynikała z reformy wieku obowiązku szkolnego w Polsce.</p> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Źródło danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Ministerstwo Edukacji Narodowej </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne co 5 lat; od 2011 r. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Uwagi </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <b>4.1.1.a Wyniki testów PIRLS - odsetek uczniów na minimalnym wymaganym poziomie osiągnięć w czytaniu</b> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 4. Dobra jakość edukacji </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Zadanie </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  4.1 Do 2030 roku zapewnić wszystkim dziewczętom i chłopcom ukończenie nieodpłatnej, sprawiedliwej, dobrej jakości edukacji na poziomie podstawowym i ponadpodstawowym prowadzącej do efektywnych wyników w nauce, zgodnie z czwartym celem </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Relacja liczby uczniów w wieku 10 lat na wymaganym poziomie biegłości w czytaniu (minimum poziom drugi) do liczby uczniów w danej grupie wiekowej objętych badaniem. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  procent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem, płeć </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Dane pochodzą z <b>Międzynarodowego badania postępów w czytaniu PIRLS</b> (<i>Progress in International Reading Literacy Study</i>) </p> <p>PIRLS to badanie osiągnięć uczniów dziesięcioletnich w czytaniu tekstów literackich i użytkowych. Badanie jest organizowane przez Międzynarodowe Towarzystwo Oceniania Osiągnięć Szkolnych (IEA) i odbywa się w cyklu pięcioletnim od 2001 r. Za przygotowanie i przeprowadzenie badania w Polsce odpowiada Instytut Badań Edukacyjnych (na zlecenie Ministerstwa Edukacji Narodowej). </p> <p>Na podstawie otrzymanych wyników szacuje się poziom umiejętności ucznia. Najlepsi uczniowie osiągają poziom 5 (zdolność oddzielania informacji istotnych od nieistotnych, wyciąganie wniosków z przesłanek rozsianych w tekście, itd.), natomiast wyniki poniżej poziomu 2 - minimalnego poziomu kompetencji - wskazują na posiadanie jedynie bardzo podstawowych umiejętności (rozumienie tylko pojedynczych zdań). </p> <p>Dotychczas w Polsce przeprowadzono 3 edycje badania: w 2006 r., w 2011 r. oraz w 2016 r. W dwóch pierwszych edycjach badaniem objęto klasę trzecią szkoły podstawowej, natomiast w ostatniej udział wzięli uczniowie klasy czwartej. Zmiana klasy wynikała z reformy wieku obowiązku szkolnego w Polsce.</p> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Źródło danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Ministerstwo Edukacji Narodowej </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne co 5 lat; od 2011 r. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Uwagi </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1401,7 +1512,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('procent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1481,15 +1592,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total","boys","girls"]
+
 function Zmiana_jednostki(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1512,8 +1630,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,11 +1661,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1567,7 +1694,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1594,11 +1725,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1627,7 +1763,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1658,11 +1798,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1688,7 +1833,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1727,8 +1875,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1750,8 +1904,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=[null,"94.6",null,null,null,null,null,null,null,null,"93.3",null,null,null,null,null,null,null,null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["total",null,"94.6",null,null,null,null,null,null,null,"boys",null,"93.3",null,null,null,null,null,null,null,"girls",null,"96.0",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1842,8 +2001,10 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
-      
+             
+			    <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+			 
+	  
     </div>
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">

@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Proportion of bodies of water with good ambient water quality">
+        <meta property="og:title" content="6 3 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 6.3.2 - Proportion of bodies of water with good ambient water quality </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -626,14 +653,35 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
 <script>
+
+  function remove(array, element) {
+    const index = array.indexOf(element);
+
+    if (index !== -1) {
+      array.splice(index, 1);
+    }
+  }
+
 (function () {
   var container = '#linechart-6-3-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=2
-  var calosc=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null]
-  var jez= 'en'
-  var legen=["lakes","rivers"]
+  var calosc=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["lakes","rivers"]
 
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
+  var jez= 'en'
+
+  if (jez=='en'){
+    var legen=["lakes","rivers"]
+  }else{
+    var legen=["jeziora","rzeki"]
+  }
+  
   if(0=='0'){
     var precyz=0;
   }else{
@@ -1120,9 +1168,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","lakes":null,"rivers":null},{"year":"2011","lakes":null,"rivers":null},{"year":"2012","lakes":null,"rivers":null},{"year":"2013","lakes":null,"rivers":null},{"year":"2014","lakes":null,"rivers":null},{"year":"2015","lakes":"37","rivers":"20"},{"year":"2016","lakes":null,"rivers":null},{"year":"2017","lakes":null,"rivers":null},{"year":"2018","lakes":null,"rivers":null}]
-var naglowek=["lakes","rivers"]
+var DATA = [{"year":"year","jeziora":"lakes","rzeki":"rivers"},{"year":"2010","jeziora":null,"rzeki":null},{"year":"2011","jeziora":null,"rzeki":null},{"year":"2012","jeziora":null,"rzeki":null},{"year":"2013","jeziora":null,"rzeki":null},{"year":"2014","jeziora":null,"rzeki":null},{"year":"2015","jeziora":"37","rzeki":"20"},{"year":"2016","jeziora":null,"rzeki":null},{"year":"2017","jeziora":null,"rzeki":null},{"year":"2018","jeziora":null,"rzeki":null}]
 
+var naglowek=["jeziora","rzeki"]
+var naglowek_ang=["lakes","rivers"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1156,7 +1206,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1215,174 +1270,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/6-3-2.pdf">Download metadata for 6.3.2</a>
+              <a href="/sdg-indicators/assets/pdf/en/6-3-2.pdf"><button>Download metadata for 6.3.2</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  6.3.2 Proportion of bodies of water with good ambient water quality </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 6. Clear water and sanitation </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  6.3 By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Proportion of waterbodies with good water status to the total number of waterbodies monitored according to diagnostic monitoring program in the last 6 years in the given category of water ie: (1) lakes, (2) rivers. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The status of uniform water bodies of river and lakes is evaluated as good or bad by comparing results of the classification of ecological status or potential (on the basis of research results concerning quality indices of waters constituting physico– chemical, biological and hydromorphological elements) with results of the classification of their chemical status if it was planned and completed (on the basis of limit values of chemical quality indices). The worst indicator decides about final assessment. Classification of the uniform water bodies to the moderate or worse ecological status/potential, or to the bad chemical status, shows the bad status of waters, what informs that during evaluated period the uniform water body did not comply the assigned requirements of environmental goals. When the result of assessment showed at least good ecological status/potential, but the chemical status was not assessed or chemical status was good, but it was impossible to classify the ecological status/potential, it was impossible to define the final assessment of the status of uniform water bodies. The assessment of monitored uniform rivers and lakes water bodies was completed with extrapolation or expert assessment of the rest of waters. In the accepted method, when there was no data for precised classification of the ecological status/potential, “at least good” or “below good” classification was assigned, what enabled to define the final assessment of the status. Due to the cyclical planning and programming in water management in Poland, data on quality of surface water relate to the cycles 2010 –2015 for lakes and for rivers (the lakes were monitored in voivodships, and the rivers across the country). </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Chief Inspectorate of Environmental Protection </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  every 6 years </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  6.3.2 Proportion of bodies of water with good ambient water quality </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 6. Clear water and sanitation </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  6.3 By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Proportion of waterbodies with good water status to the total number of waterbodies monitored according to diagnostic monitoring program in the last 6 years in the given category of water ie: (1) lakes, (2) rivers. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The status of uniform water bodies of river and lakes is evaluated as good or bad by comparing results of the classification of ecological status or potential (on the basis of research results concerning quality indices of waters constituting physico– chemical, biological and hydromorphological elements) with results of the classification of their chemical status if it was planned and completed (on the basis of limit values of chemical quality indices). The worst indicator decides about final assessment. Classification of the uniform water bodies to the moderate or worse ecological status/potential, or to the bad chemical status, shows the bad status of waters, what informs that during evaluated period the uniform water body did not comply the assigned requirements of environmental goals. When the result of assessment showed at least good ecological status/potential, but the chemical status was not assessed or chemical status was good, but it was impossible to classify the ecological status/potential, it was impossible to define the final assessment of the status of uniform water bodies. The assessment of monitored uniform rivers and lakes water bodies was completed with extrapolation or expert assessment of the rest of waters. In the accepted method, when there was no data for precised classification of the ecological status/potential, “at least good” or “below good” classification was assigned, what enabled to define the final assessment of the status. Due to the cyclical planning and programming in water management in Poland, data on quality of surface water relate to the cycles 2010 –2015 for lakes and for rivers (the lakes were monitored in voivodships, and the rivers across the country). </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Chief Inspectorate of Environmental Protection </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  every 6 years </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Indicator related to the water management cycle 2010-2015  The indicator for the next water management cycle 2016-2021 will be calculated in 2022. </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1394,7 +1505,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1474,15 +1585,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["lakes","rivers"]
+
 function Zmiana_jednostki(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1505,8 +1623,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1532,11 +1654,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1560,7 +1687,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1587,11 +1718,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1620,7 +1756,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1651,11 +1791,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1681,7 +1826,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1720,8 +1868,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=2
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1743,8 +1897,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=2;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=[null,null,null,null,null,"37",null,null,null,null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["lakes",null,null,null,null,null,"37",null,null,null,"rivers",null,null,null,null,null,"20",null,null,null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1835,7 +1994,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

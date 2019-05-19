@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                   </title>
                 
 
-        <meta property="og:title" content="Wskaźnik zagrożenia ubóstwem warunków życia">
+        <meta property="og:title" content="1 2 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Wskaźnik 1.2.2 - Wskaźnik zagrożenia ubóstwem warunków życia </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -620,14 +647,35 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
 <script>
+
+  function remove(array, element) {
+    const index = array.indexOf(element);
+
+    if (index !== -1) {
+      array.splice(index, 1);
+    }
+  }
+
 (function () {
   var container = '#linechart-1-2-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=1
-  var calosc=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
-  var jez= 'pl'
-  var legen=["ogółem"]
+  var calosc=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total"]
 
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
+  var jez= 'pl'
+
+  if (jez=='en'){
+    var legen=["total"]
+  }else{
+    var legen=["ogółem"]
+  }
+  
   if(1=='0'){
     var precyz=0;
   }else{
@@ -747,9 +795,11 @@ for (i=1;i<licznik+1;i++){
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":null},{"year":"2011","ogółem":"13.5"},{"year":"2012","ogółem":null},{"year":"2013","ogółem":null},{"year":"2014","ogółem":null},{"year":"2015","ogółem":"8.5"},{"year":"2016","ogółem":null},{"year":"2017","ogółem":null}]
-var naglowek=["ogółem"]
+var DATA = [{"year":"year","ogółem":"total"},{"year":"2010","ogółem":null},{"year":"2011","ogółem":"13.5"},{"year":"2012","ogółem":null},{"year":"2013","ogółem":null},{"year":"2014","ogółem":null},{"year":"2015","ogółem":"8.5"},{"year":"2016","ogółem":null},{"year":"2017","ogółem":null}]
 
+var naglowek=["ogółem"]
+var naglowek_ang=["total"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -783,7 +833,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -842,174 +897,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/pl/1-2-2.pdf">Pobierz metadane dla 1.2.2</a>
+              <a href="/sdg-indicators/assets/pdf/pl/1-2-2.pdf"><button>Pobierz metadane dla 1.2.2</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla 1.2.2</a>-->
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <b>1.2.2 Wskaźnik zagrożenia ubóstwem warunków życia</b> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 1. Koniec z ubóstwem </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Zadanie </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  1.2 Do 2030 roku zmniejszyć przynajmniej o połowę odsetek mężczyzn, kobiet i dzieci, cierpiących z powodu ubóstwa, we wszystkich jego wymiarach określonych zgodnie z krajowymi definicjami </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Odsetek gospodarstw domowych, w których obserwowano 10 z 30 symptomów złych warunków życia. Wśród przejawów złych warunków życia rozpatruje się m.in. brak możliwości zaspokojenia różnego typu potrzeb konsumpcyjnych, jakość mieszkania oraz poziom wyposażenia w dobra trwałego użytku. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  procent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Wskaźnik obliczany jest na podstawie <b>Badania Spójności Społecznej</b>.</p> <p>Celem Badania spójności społecznej jest zebranie informacji pozwalających na dokonanie wszechstronnych ocen jakości życia, rozumianej jako kategoria wielowymiarowa (uwzględniająca aspekty ekonomiczne i społeczne) i ocenianej przez pryzmat zarówno wskaźników obiektywnych, jak i subiektywnych. </br> Dzięki integracji danych indywidualnych możliwe jest m.in. określenie w jakich grupach społeczeństwa występuje kumulacja korzystnych, bądź niekorzystnych aspektów jakości życia, jakie czynniki warunkują te sytuacje, a także jakie relacje zachodzą pomiędzy poszczególnymi wymiarami jakości życia. Szeroki zakres zbieranych informacji pozwala m.in. na kompleksową ocenę zróżnicowania poziomu i stylu życia oraz wielowymiarową analizę ubóstwa, wykluczenia społecznego, kapitału społecznego oraz subiektywnego dobrobytu.</p> <p>Jednostką badania jest gospodarstwo domowe oraz jedna wylosowana osoba w gospodarstwie, w wieku co najmniej 16 lat.</p> <p>Gospodarstwo domowe tworzą osoby, które są lub nie są ze sobą spokrewnione, mieszkają razem i wspólnie utrzymują się (gospodarstwo domowe wieloosobowe). Gospodarstwo domowe może również tworzyć jedna osoba, która utrzymuje się samodzielnie, bez względu na to, czy mieszka sama, czy z innymi osobami (gospodarstwo domowe jednoosobowe).</p> <p>Badanie Spójności Społecznej przeprowadzane jest cyklicznie. Pierwsze badanie zostało przeprowadzone w 2011 r., kolejne - w 2015 r.</p> <p>W ramach wskaźnika warunków życia wzięto pod uwagę następujących <b>30 przejawów złych warunków życia</b>: </p> <p>  • brak pieniędzy na przynajmniej jeden tydzień wakacji raz w roku, </p> <p>  • brak pieniędzy na rozrywkę (wyjście do kina, teatru, restauracji, na koncert itp.), </p> <p>  • brak możliwości utrzymania odpowiedniej temperatury w mieszkaniu (niewystarczająco ciepłe w zimie, niewystarczająco chłodne w lecie), </p> <p>  • zbyt małe mieszkanie lub nie każda osoba dorosła ma samodzielny pokój (lub wydzielone w mieszkaniu swoje stałe miejsce do odpoczynku, nauki i pracy), </p> <p>  • brak pieniędzy na wymianę zużytych mebli, </p> <p>  • brak pieniędzy na wizyty u lekarzy specjalistów lub lekarza dentysty, </p> <p>  • mieszkanie usytuowane: w hałaśliwym otoczeniu, w rejonie o skażonym środowisku naturalnym, </P> <p>  • mieszkanie ciemne, wilgotne, </p> <p>  • brak zainstalowanego ogrzewania lub występowanie pieca na opał (na węgiel, drewno, trociny), </p> <p>  • brak pieniędzy na zakup książek lub prasy, </p> <p>  • gospodarstwo nie może sobie pozwolić na zaproszenie raz w miesiącu swojej rodziny lub przyjaciół na obiad, kolację lub inny poczęstunek, </p> <p>  • złe warunki sanitarne (brak wody bieżącej, w tym ciepłej, łazienki, toalety), </p> <p>  • brak pieniędzy na zakup leków, </p> <p>  • brak kuchenki mikrofalowej lub wielofunkcyjnego robota kuchennego, </p> <p>  • gospodarstwo nie może sobie pozwolić na ofiarowanie swoim najbliższym prezentów przynajmniej raz w roku, </p> <p>  • brak samochodu z przyczyn finansowych, </p> <p>  • brak pieniędzy na zakup obuwia, odzieży, pościeli, </p> <p>  • brak dostępu do Internetu z przyczyn finansowych, </p> <p>  • brak komputera z przyczyn finansowych, </p> <p>  • brak pieniędzy na żywność (rezygnacja z jedzenia mięsa, świeżych owoców, warzyw), </p> <p>  • zły stan instalacji elektrycznej lub jej brak, </p> <p>  • brak odtwarzacza CD, DVD, MP3, telewizji kablowej lub satelitarnej z przyczyn finansowych, </p> <p>  • złe warunki mieszkaniowe, </p> <p>  • złe wyposażenie gospodarstwa w dobra trwałe, </p> <p>  • brak radia lub telewizora z przyczyn finansowych, </p> <p>  • brak pralki z przyczyn finansowych, </p> <p>  • brak odkurzacza z przyczyn finansowych, </p> <p>  • konieczność rezygnacji ze względu na brak pieniędzy z któregoś z podstawowych posiłków (śniadania, obiadu lub kolacji), </p> <p>  • brak telefonu (stacjonarnego, komórkowego) z przyczyn finansowych, </p> <p>  • brak lodówki, chłodziarki z przyczyn finansowych.</p> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Źródło danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Urząd Statystyczny </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Dane co kilka lat  od 2011 r. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Uwagi </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <b>1.2.2 Wskaźnik zagrożenia ubóstwem warunków życia</b> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 1. Koniec z ubóstwem </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Zadanie </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  1.2 Do 2030 roku zmniejszyć przynajmniej o połowę odsetek mężczyzn, kobiet i dzieci, cierpiących z powodu ubóstwa, we wszystkich jego wymiarach określonych zgodnie z krajowymi definicjami </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Odsetek gospodarstw domowych, w których obserwowano 10 z 30 symptomów złych warunków życia. Wśród przejawów złych warunków życia rozpatruje się m.in. brak możliwości zaspokojenia różnego typu potrzeb konsumpcyjnych, jakość mieszkania oraz poziom wyposażenia w dobra trwałego użytku. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  procent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Wskaźnik obliczany jest na podstawie <b>Badania Spójności Społecznej</b>.</p> <p>Celem Badania spójności społecznej jest zebranie informacji pozwalających na dokonanie wszechstronnych ocen jakości życia, rozumianej jako kategoria wielowymiarowa (uwzględniająca aspekty ekonomiczne i społeczne) i ocenianej przez pryzmat zarówno wskaźników obiektywnych, jak i subiektywnych. </br> Dzięki integracji danych indywidualnych możliwe jest m.in. określenie w jakich grupach społeczeństwa występuje kumulacja korzystnych, bądź niekorzystnych aspektów jakości życia, jakie czynniki warunkują te sytuacje, a także jakie relacje zachodzą pomiędzy poszczególnymi wymiarami jakości życia. Szeroki zakres zbieranych informacji pozwala m.in. na kompleksową ocenę zróżnicowania poziomu i stylu życia oraz wielowymiarową analizę ubóstwa, wykluczenia społecznego, kapitału społecznego oraz subiektywnego dobrobytu.</p> <p>Jednostką badania jest gospodarstwo domowe oraz jedna wylosowana osoba w gospodarstwie, w wieku co najmniej 16 lat.</p> <p>Gospodarstwo domowe tworzą osoby, które są lub nie są ze sobą spokrewnione, mieszkają razem i wspólnie utrzymują się (gospodarstwo domowe wieloosobowe). Gospodarstwo domowe może również tworzyć jedna osoba, która utrzymuje się samodzielnie, bez względu na to, czy mieszka sama, czy z innymi osobami (gospodarstwo domowe jednoosobowe).</p> <p>Badanie Spójności Społecznej przeprowadzane jest cyklicznie. Pierwsze badanie zostało przeprowadzone w 2011 r., kolejne - w 2015 r.</p> <p>W ramach wskaźnika warunków życia wzięto pod uwagę następujących <b>30 przejawów złych warunków życia</b>: </p> <p>  • brak pieniędzy na przynajmniej jeden tydzień wakacji raz w roku, </p> <p>  • brak pieniędzy na rozrywkę (wyjście do kina, teatru, restauracji, na koncert itp.), </p> <p>  • brak możliwości utrzymania odpowiedniej temperatury w mieszkaniu (niewystarczająco ciepłe w zimie, niewystarczająco chłodne w lecie), </p> <p>  • zbyt małe mieszkanie lub nie każda osoba dorosła ma samodzielny pokój (lub wydzielone w mieszkaniu swoje stałe miejsce do odpoczynku, nauki i pracy), </p> <p>  • brak pieniędzy na wymianę zużytych mebli, </p> <p>  • brak pieniędzy na wizyty u lekarzy specjalistów lub lekarza dentysty, </p> <p>  • mieszkanie usytuowane: w hałaśliwym otoczeniu, w rejonie o skażonym środowisku naturalnym, </P> <p>  • mieszkanie ciemne, wilgotne, </p> <p>  • brak zainstalowanego ogrzewania lub występowanie pieca na opał (na węgiel, drewno, trociny), </p> <p>  • brak pieniędzy na zakup książek lub prasy, </p> <p>  • gospodarstwo nie może sobie pozwolić na zaproszenie raz w miesiącu swojej rodziny lub przyjaciół na obiad, kolację lub inny poczęstunek, </p> <p>  • złe warunki sanitarne (brak wody bieżącej, w tym ciepłej, łazienki, toalety), </p> <p>  • brak pieniędzy na zakup leków, </p> <p>  • brak kuchenki mikrofalowej lub wielofunkcyjnego robota kuchennego, </p> <p>  • gospodarstwo nie może sobie pozwolić na ofiarowanie swoim najbliższym prezentów przynajmniej raz w roku, </p> <p>  • brak samochodu z przyczyn finansowych, </p> <p>  • brak pieniędzy na zakup obuwia, odzieży, pościeli, </p> <p>  • brak dostępu do Internetu z przyczyn finansowych, </p> <p>  • brak komputera z przyczyn finansowych, </p> <p>  • brak pieniędzy na żywność (rezygnacja z jedzenia mięsa, świeżych owoców, warzyw), </p> <p>  • zły stan instalacji elektrycznej lub jej brak, </p> <p>  • brak odtwarzacza CD, DVD, MP3, telewizji kablowej lub satelitarnej z przyczyn finansowych, </p> <p>  • złe warunki mieszkaniowe, </p> <p>  • złe wyposażenie gospodarstwa w dobra trwałe, </p> <p>  • brak radia lub telewizora z przyczyn finansowych, </p> <p>  • brak pralki z przyczyn finansowych, </p> <p>  • brak odkurzacza z przyczyn finansowych, </p> <p>  • konieczność rezygnacji ze względu na brak pieniędzy z któregoś z podstawowych posiłków (śniadania, obiadu lub kolacji), </p> <p>  • brak telefonu (stacjonarnego, komórkowego) z przyczyn finansowych, </p> <p>  • brak lodówki, chłodziarki z przyczyn finansowych.</p> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Źródło danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Urząd Statystyczny </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Dane co kilka lat  od 2011 r. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Uwagi </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1021,7 +1132,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('procent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1101,15 +1212,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total"]
+
 function Zmiana_jednostki(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1132,8 +1250,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1159,11 +1281,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1187,7 +1314,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1214,11 +1345,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1247,7 +1383,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1278,11 +1418,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1308,7 +1453,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1347,8 +1495,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1370,8 +1524,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=[null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["total",null,"13.5",null,null,null,"8.5",null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1462,8 +1621,10 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
-      
+             
+			    <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+			 
+	  
     </div>
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">

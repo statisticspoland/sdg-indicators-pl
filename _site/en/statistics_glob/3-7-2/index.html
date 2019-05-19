@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Adolescent birth rate">
+        <meta property="og:title" content="3 7 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 3.7.2 - Adolescent birth rate </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-3-7-2" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-3-7-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=3
-  var calosc=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+  var calosc=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["women 10-19 years","women 10-14 years","women 15-19 years"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["women 10-19 years","women 10-14 years","women 15-19 years"]
+
+  if (jez=='en'){
+    var legen=["women 10-19 years","women 10-14 years","women 15-19 years"]
+  }else{
+    var legen=["kobiety w wieku 10-19 lat","kobiety w wieku 10-14 lat","kobiety w wieku 15-19 lat"]
+  }
 
   if(1=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","women 10-19 years":"8.5","women 10-14 years":"0.1","women 15-19 years":"15.2"},{"year":"2011","women 10-19 years":"7.7","women 10-14 years":"0.0","women 15-19 years":"14.0"},{"year":"2012","women 10-19 years":"7.8","women 10-14 years":"0.1","women 15-19 years":"14.2"},{"year":"2013","women 10-19 years":"7.4","women 10-14 years":"0.1","women 15-19 years":"13.7"},{"year":"2014","women 10-19 years":"7.0","women 10-14 years":"0.1","women 15-19 years":"13.1"},{"year":"2015","women 10-19 years":"6.5","women 10-14 years":"0.1","women 15-19 years":"12.2"},{"year":"2016","women 10-19 years":"6.2","women 10-14 years":"0.1","women 15-19 years":"11.9"},{"year":"2017","women 10-19 years":"5.5","women 10-14 years":"0.0","women 15-19 years":"10.9"}]
-var naglowek=["women 10-19 years","women 10-14 years","women 15-19 years"]
+var DATA = [{"year":"year","kobiety w wieku 10-19 lat":"women 10-19 years","kobiety w wieku 10-14 lat":"women 10-14 years","kobiety w wieku 15-19 lat":"women 15-19 years"},{"year":"2010","kobiety w wieku 10-19 lat":"8.5","kobiety w wieku 10-14 lat":"0.1","kobiety w wieku 15-19 lat":"15.2"},{"year":"2011","kobiety w wieku 10-19 lat":"7.7","kobiety w wieku 10-14 lat":"0.0","kobiety w wieku 15-19 lat":"14.0"},{"year":"2012","kobiety w wieku 10-19 lat":"7.8","kobiety w wieku 10-14 lat":"0.1","kobiety w wieku 15-19 lat":"14.2"},{"year":"2013","kobiety w wieku 10-19 lat":"7.4","kobiety w wieku 10-14 lat":"0.1","kobiety w wieku 15-19 lat":"13.7"},{"year":"2014","kobiety w wieku 10-19 lat":"7.0","kobiety w wieku 10-14 lat":"0.1","kobiety w wieku 15-19 lat":"13.1"},{"year":"2015","kobiety w wieku 10-19 lat":"6.5","kobiety w wieku 10-14 lat":"0.1","kobiety w wieku 15-19 lat":"12.2"},{"year":"2016","kobiety w wieku 10-19 lat":"6.2","kobiety w wieku 10-14 lat":"0.1","kobiety w wieku 15-19 lat":"11.9"},{"year":"2017","kobiety w wieku 10-19 lat":"5.5","kobiety w wieku 10-14 lat":"0.0","kobiety w wieku 15-19 lat":"10.9"}]
 
+var naglowek=["kobiety w wieku 10-19 lat","kobiety w wieku 10-14 lat","kobiety w wieku 15-19 lat"]
+var naglowek_ang=["women 10-19 years","women 10-14 years","women 15-19 years"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/3-7-2.pdf">Download metadata for 3.7.2</a>
+              <a href="/sdg-indicators/assets/pdf/en/3-7-2.pdf"><button>Download metadata for 3.7.2</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  3.7.2 Adolescent birth rate </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 3. Good health and well-being </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  3.7 By 2030, ensure universal access to sexual and reproductive health-care services, including for family planning, information and education, and the integration of reproductive health into national strategies and programmes </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Number of births to young girls (aged 10-14 and 15-19) per 1 thous. girls in a respective age group. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  persons </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  age </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Live birth – the complete expulsion or extraction from the mother of an infant, irrespective of the duration of the pregnancy, which, after such separation, breathes or shows any other evidence of life, such as beating of the heart, pulsation of the umbilical cord, or definite movement of the voluntary muscles, whether or not the umbilical cord has been cut or the placenta has been separated  each such a product is considered as live born.The source of data on births is a basic document (secondarily utilized by national statistics) of the Ministry of Health "Written notification of the child's birth" (Regulation of the Minister of Health on the written notification of the child's birth. Journal of Laws of 2015, item. 171). </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  3.7.2 Adolescent birth rate </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 3. Good health and well-being </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  3.7 By 2030, ensure universal access to sexual and reproductive health-care services, including for family planning, information and education, and the integration of reproductive health into national strategies and programmes </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Number of births to young girls (aged 10-14 and 15-19) per 1 thous. girls in a respective age group. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  persons </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  age </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Live birth – the complete expulsion or extraction from the mother of an infant, irrespective of the duration of the pregnancy, which, after such separation, breathes or shows any other evidence of life, such as beating of the heart, pulsation of the umbilical cord, or definite movement of the voluntary muscles, whether or not the umbilical cord has been cut or the placenta has been separated  each such a product is considered as live born.The source of data on births is a basic document (secondarily utilized by national statistics) of the Ministry of Health "Written notification of the child's birth" (Regulation of the Minister of Health on the written notification of the child's birth. Journal of Laws of 2015, item. 171). </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('persons'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["women 10-19 years","women 10-14 years","women 15-19 years"]
+
 function Zmiana_jednostki(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      var calo=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      var calo=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      var calo=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      var calo=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      var calo=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+      var calo=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["women 10-19 years","8.5","7.7","7.8","7.4","7.0","6.5","6.2","5.5","women 10-14 years","0.1","0.0","0.1","0.1","0.1","0.1","0.1","0.0","women 15-19 years","15.2","14.0","14.2","13.7","13.1","12.2","11.9","10.9",null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

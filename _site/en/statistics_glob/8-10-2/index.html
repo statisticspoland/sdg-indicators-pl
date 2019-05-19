@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Percentage of adults (15 years and older) with an account at a bank or other financial institution">
+        <meta property="og:title" content="8 10 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 8.10.2 - Percentage of adults (15 years and older) with an account at a bank or other financial institution </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -626,14 +653,35 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
 <script>
+
+  function remove(array, element) {
+    const index = array.indexOf(element);
+
+    if (index !== -1) {
+      array.splice(index, 1);
+    }
+  }
+
 (function () {
   var container = '#linechart-8-10-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=8
-  var calosc=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null]
-  var jez= 'en'
-  var legen=["total","males","females","15-24 years","25-34 years","35-44 years","45-54 years","55 years and over"]
+  var calosc=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total","males","females","15-24 years","25-34 years","35-44 years","45-54 years","55 years and over"]
 
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
+  var jez= 'en'
+
+  if (jez=='en'){
+    var legen=["total","males","females","15-24 years","25-34 years","35-44 years","45-54 years","55 years and over"]
+  }else{
+    var legen=["ogółem","mężczyźni","kobiety","15-24 lata","25-34 lata","35-44 lata","45-54 lata","55 lat i więcej"]
+  }
+  
   if(0=='0'){
     var precyz=0;
   }else{
@@ -1120,9 +1168,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":null,"males":null,"females":null,"15-24 years":null,"25-34 years":null,"35-44 years":null,"45-54 years":null,"55 years and over":null},{"year":"2011","total":null,"males":null,"females":null,"15-24 years":null,"25-34 years":null,"35-44 years":null,"45-54 years":null,"55 years and over":null},{"year":"2012","total":null,"males":null,"females":null,"15-24 years":null,"25-34 years":null,"35-44 years":null,"45-54 years":null,"55 years and over":null},{"year":"2013","total":null,"males":null,"females":null,"15-24 years":null,"25-34 years":null,"35-44 years":null,"45-54 years":null,"55 years and over":null},{"year":"2014","total":null,"males":null,"females":null,"15-24 years":null,"25-34 years":null,"35-44 years":null,"45-54 years":null,"55 years and over":null},{"year":"2015","total":"71","males":"71","females":"71","15-24 years":"52","25-34 years":"75","35-44 years":"83","45-54 years":"79","55 years and over":"69"},{"year":"2016","total":null,"males":null,"females":null,"15-24 years":null,"25-34 years":null,"35-44 years":null,"45-54 years":null,"55 years and over":null},{"year":"2017","total":null,"males":null,"females":null,"15-24 years":null,"25-34 years":null,"35-44 years":null,"45-54 years":null,"55 years and over":null}]
-var naglowek=["total","males","females","15-24 years","25-34 years","35-44 years","45-54 years","55 years and over"]
+var DATA = [{"year":"year","ogółem":"total","mężczyźni":"males","kobiety":"females","15-24 lata":"15-24 years","25-34 lata":"25-34 years","35-44 lata":"35-44 years","45-54 lata":"45-54 years","55 lat i więcej":"55 years and over"},{"year":"2010","ogółem":null,"mężczyźni":null,"kobiety":null,"15-24 lata":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55 lat i więcej":null},{"year":"2011","ogółem":null,"mężczyźni":null,"kobiety":null,"15-24 lata":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55 lat i więcej":null},{"year":"2012","ogółem":null,"mężczyźni":null,"kobiety":null,"15-24 lata":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55 lat i więcej":null},{"year":"2013","ogółem":null,"mężczyźni":null,"kobiety":null,"15-24 lata":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55 lat i więcej":null},{"year":"2014","ogółem":null,"mężczyźni":null,"kobiety":null,"15-24 lata":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55 lat i więcej":null},{"year":"2015","ogółem":"71","mężczyźni":"71","kobiety":"71","15-24 lata":"52","25-34 lata":"75","35-44 lata":"83","45-54 lata":"79","55 lat i więcej":"69"},{"year":"2016","ogółem":null,"mężczyźni":null,"kobiety":null,"15-24 lata":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55 lat i więcej":null},{"year":"2017","ogółem":null,"mężczyźni":null,"kobiety":null,"15-24 lata":null,"25-34 lata":null,"35-44 lata":null,"45-54 lata":null,"55 lat i więcej":null}]
 
+var naglowek=["ogółem","mężczyźni","kobiety","15-24 lata","25-34 lata","35-44 lata","45-54 lata","55 lat i więcej"]
+var naglowek_ang=["total","males","females","15-24 years","25-34 years","35-44 years","45-54 years","55 years and over"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1156,7 +1206,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1215,174 +1270,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/8-10-2.pdf">Download metadata for 8.10.2</a>
+              <a href="/sdg-indicators/assets/pdf/en/8-10-2.pdf"><button>Download metadata for 8.10.2</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  8.10.2 Percentage of adults (15 years and older) with an account at a bank or other financial institution </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 8. Decent work and economic growth </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  8.10 Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Percentage of population aged 15 and more having a personal account / checking and savings account with a bank or Co-operative Savings and Credit Union (SKOK). </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total, age, sex </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The survey, conducted in 2015, was quantitative in character. 2, 000 personal interviews (N-observations) were carried out via computer-assisted interviewing (CAPI) from March to April 2015.The way that country-wide sample was selected ensured representativeness of the survey results for Poland's population aged 15+ with respect to sex, age and place of residence (locality LAU-1, LAU-2 and voivodship NUTS-2 size).The randomness in respondent selection was ensured thanks to: locality sampling in individual classes, address sampling (street and number), applying the procedure of random route. Locality and address sampling was carried out via Central Statistical Office's central catalogue of streets (ULIC), being part of the system of the address identification of streets, real properties, buildings and dwellings (NOBC) (http://bip.stat.gov.pl/dzialalnosc-statystyki-publicznej/rejestr-teryt/zakres-rejestru-teryt/). </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  National Bank of Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Data from the survey carried out in 2015. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  8.10.2 Percentage of adults (15 years and older) with an account at a bank or other financial institution </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 8. Decent work and economic growth </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  8.10 Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Percentage of population aged 15 and more having a personal account / checking and savings account with a bank or Co-operative Savings and Credit Union (SKOK). </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total, age, sex </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The survey, conducted in 2015, was quantitative in character. 2, 000 personal interviews (N-observations) were carried out via computer-assisted interviewing (CAPI) from March to April 2015.The way that country-wide sample was selected ensured representativeness of the survey results for Poland's population aged 15+ with respect to sex, age and place of residence (locality LAU-1, LAU-2 and voivodship NUTS-2 size).The randomness in respondent selection was ensured thanks to: locality sampling in individual classes, address sampling (street and number), applying the procedure of random route. Locality and address sampling was carried out via Central Statistical Office's central catalogue of streets (ULIC), being part of the system of the address identification of streets, real properties, buildings and dwellings (NOBC) (http://bip.stat.gov.pl/dzialalnosc-statystyki-publicznej/rejestr-teryt/zakres-rejestru-teryt/). </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  National Bank of Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Data from the survey carried out in 2015. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  An original indicator, adopted by the UN for monitoring target 8.10 of the Agenda 2030 is 8.10.2 Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider. </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1394,7 +1505,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1474,15 +1585,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total","males","females","15-24 years","25-34 years","35-44 years","45-54 years","55 years and over"]
+
 function Zmiana_jednostki(){
 
   var licznik=8
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1505,8 +1623,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1532,11 +1654,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=8
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1560,7 +1687,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1587,11 +1718,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=8
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1620,7 +1756,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1651,11 +1791,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=8
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1681,7 +1826,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1720,8 +1868,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=8
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1743,8 +1897,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=8;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=[null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"71",null,null,null,null,null,null,null,"52",null,null,null,null,null,null,null,"75",null,null,null,null,null,null,null,"83",null,null,null,null,null,null,null,"79",null,null,null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["total",null,null,null,null,null,"71",null,null,"males",null,null,null,null,null,"71",null,null,"females",null,null,null,null,null,"71",null,null,"15-24 years",null,null,null,null,null,"52",null,null,"25-34 years",null,null,null,null,null,"75",null,null,"35-44 years",null,null,null,null,null,"83",null,null,"45-54 years",null,null,null,null,null,"79",null,null,"55 years and over",null,null,null,null,null,"69",null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1835,7 +1994,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

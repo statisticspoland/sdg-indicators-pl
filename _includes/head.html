@@ -11,6 +11,13 @@
 {% assign t = site.translations | where:"translation_id", "header"  | first %}
 {% assign t = t[page.lang] %}
 
+{% assign slug = page.indicator | replace: '.', '-' %}
+{% if page.url contains '/statistics_nat/' %}
+  {% assign t1 = site.metadane_krajowe | where:"translation_id", slug | first %}
+{% else %}
+  {% assign t1 = site.metadane_globalne | where:"translation_id", slug | first %}
+{% endif %}
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -23,19 +30,19 @@
 ================================================== -->
         {% if page.lang == 'pl' %}
                   <title>
-                  {% if page.title %}
-                    {% if page.target_id %} Wskaźnik {{ page.target_id}} - {% elsif page.sdg_goal %} Cel {{ page.sdg_goal}} - {%else%} {% endif %}
-                    {{ page.title | escape }}
+                  {% if t1.pl_title %}
+                    {% if page.target_id %} Wskaźnik {{ page.target_id}} - {% elsif page.sdg_goal %} Cel {{ page.sdg_goal}} - {{ page.title}}{%else%} {% endif %}
+                    {{ t1.pl_title | escape }}
                   {% else %}
-                  {{ t.site-title | escape }}
+                  {{ page.title | escape }}
                   {% endif %}</title>
                 {% else %}
                 <title>
-                {% if page.title %}
-                  {% if page.target_id %} Indicator {{ page.target_id}} - {% elsif page.sdg_goal %} Goal {{ page.sdg_goal}} - {%else%} {% endif %}
-                  {{ page.title | escape }}
+                {% if t1.en_title %}
+                  {% if page.target_id %} Indicator {{ page.target_id}} - {% elsif page.sdg_goal %} Goal {{ page.sdg_goal}} - {{ page.title}}{%else%} {% endif %}
+                  {{ t1.en_title | escape }}
                 {% else %}
-                {{ t.site-title | escape }}
+                {{ page.title | escape }}
                 {% endif %}</title>
                 {% endif %}
 

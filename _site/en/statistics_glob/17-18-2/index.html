@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics">
+        <meta property="og:title" content="17 18 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 17.18.2 - Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -620,14 +647,35 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
 <script>
+
+  function remove(array, element) {
+    const index = array.indexOf(element);
+
+    if (index !== -1) {
+      array.splice(index, 1);
+    }
+  }
+
 (function () {
   var container = '#linechart-17-18-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=1
-  var calosc=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
-  var jez= 'en'
-  var legen=["total"]
+  var calosc=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total"]
 
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
+  var jez= 'en'
+
+  if (jez=='en'){
+    var legen=["total"]
+  }else{
+    var legen=["ogółem"]
+  }
+  
   if(0=='0'){
     var precyz=0;
   }else{
@@ -739,9 +787,11 @@ for (i=1;i<licznik+1;i++){
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":"1"},{"year":"2011","total":"1"},{"year":"2012","total":"1"},{"year":"2013","total":"1"},{"year":"2014","total":"1"},{"year":"2015","total":"1"},{"year":"2016","total":"1"},{"year":"2017","total":"1"},{"year":"2018","total":"1"}]
-var naglowek=["total"]
+var DATA = [{"year":"year","ogółem":"total"},{"year":"2010","ogółem":"1"},{"year":"2011","ogółem":"1"},{"year":"2012","ogółem":"1"},{"year":"2013","ogółem":"1"},{"year":"2014","ogółem":"1"},{"year":"2015","ogółem":"1"},{"year":"2016","ogółem":"1"},{"year":"2017","ogółem":"1"},{"year":"2018","ogółem":"1"}]
 
+var naglowek=["ogółem"]
+var naglowek_ang=["total"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -775,7 +825,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -834,174 +889,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/17-18-2.pdf">Download metadata for 17.18.2</a>
+              <a href="/sdg-indicators/assets/pdf/en/17-18-2.pdf"><button>Download metadata for 17.18.2</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  17.18.2 Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 17. Partnerships  for the goals </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  17.18 By 2020, enhance capacity-building support to developing countries, including for least developed countries and small island developing States, to increase significantly the availability of high-quality, timely and reliable data disaggregated by income, gender, age, race, ethnicity, migratory status, disability, geographic location and other characteristics relevant in national contexts </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The indicator assumes a value 1 when country has national statistical legislation that complies with the Fundamental Principles of Official Statistics </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  { 0 , 1 } </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The standards for developing, producing and disseminating European statistics are determined in the European Statistics Code of Practice sets. It sets out 16 key principles, compliant with Fundemantal Principles of Official Statistics.</br> Each year Eurostat monitors compliance with the Code of Practice across the European Statistical System. Poland was found compliant with the European Statistics Code of Practice in the 2013-2015 peer review exercise.</br> Implementation of the Fundamental Principles of Official Statistics in the Polish statistical system:</br> Principle 1: Relevance, impartiality and equal access</br> * Art. 3 and art. 14 paragraph 1 and 2 of the Law of 29 June 1995 on official statistics (Journal of Laws of 2016 item 1068 – here and after the Law)</br> Principle 2: Professional standards and ethics</br> * Art. 24 and art. 25a of the Law</br> Principle 3: Accountability and transparency</br> * Art. 25 paragraph 1 and 15, art. 26 of the Law</br> Principle 4: Prevention of misuse</br> * No relevant provision in the Law on Official Statistics, however there is a custom in Polish official statistics to comment on erroneous interpretation and misuse of statistics.</br> Principle 5: Sources of official statistics</br> * Art. 5, art. 13 especially paragraph 5 and art. 18 paragraph 1 and 3 of the Law</br> Principle 6: Confidentiality</br> * Art. 2 point 8a and 8b, art. 10 and art. 12 of the Law.</br> Principle 7: Legislation</br> * Law and regulations under which the Polish statistical system operates are made public. They are published on CSO Poland website. As all Polish legal acts they are also published in the Official Journal of Poland (only Polish version) and available on the Parliament Internet System dedicated to legal acts (IASP).</br> The most important Polish legal acts are:</br> * Law of 29 June 1995 on official statistics (Journal of Laws of 2016 item 1068);</br> * Regulation of the Council of Ministers of 19 December 2017 on the Programme of statistical surveys of official statistic in 2018 (Journal of Laws of 2015 item 2471);</br> * Regulation of the Prime Minister of 14 March 2017 on report forms, the explanation of how to file them and template statistical questionnaires used in statistical surveys established within the Programme of Statistical Surveys of Official Statistics in 2016 (Journal of Laws of 2017 item 837, with later amendments).</br> Principle 8: National Coordination</br> * Art. 22, art. 23, art. 24 and art. 25 of the Law</br> The main coordination ‘tool’ in Polish Statistical System is the Programme of Statistical Surveys of Official Statistics which is elaborated in accordance with articles 18 and 20 of the Law. The Coordination function of Statistics Poland is also specified in the EU legal provisions.</br> Principle 9: Use of international standards</br> * Art. 25 paragraph 1 point 6 and point 15, art. 26 and art. 25a of the Law.</br> The classification, concepts and methods used in Polish Statistical System are based on international standards.</br> Principle 10: International cooperation</br> * Art. 20 paragraph 3, art. 25 paragraph 1 point 11 – 13 and especially 14 and art. 37 point 5 of the Law </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data; since 2010 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  17.18.2 Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 17. Partnerships  for the goals </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  17.18 By 2020, enhance capacity-building support to developing countries, including for least developed countries and small island developing States, to increase significantly the availability of high-quality, timely and reliable data disaggregated by income, gender, age, race, ethnicity, migratory status, disability, geographic location and other characteristics relevant in national contexts </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The indicator assumes a value 1 when country has national statistical legislation that complies with the Fundamental Principles of Official Statistics </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  { 0 , 1 } </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The standards for developing, producing and disseminating European statistics are determined in the European Statistics Code of Practice sets. It sets out 16 key principles, compliant with Fundemantal Principles of Official Statistics.</br> Each year Eurostat monitors compliance with the Code of Practice across the European Statistical System. Poland was found compliant with the European Statistics Code of Practice in the 2013-2015 peer review exercise.</br> Implementation of the Fundamental Principles of Official Statistics in the Polish statistical system:</br> Principle 1: Relevance, impartiality and equal access</br> * Art. 3 and art. 14 paragraph 1 and 2 of the Law of 29 June 1995 on official statistics (Journal of Laws of 2016 item 1068 – here and after the Law)</br> Principle 2: Professional standards and ethics</br> * Art. 24 and art. 25a of the Law</br> Principle 3: Accountability and transparency</br> * Art. 25 paragraph 1 and 15, art. 26 of the Law</br> Principle 4: Prevention of misuse</br> * No relevant provision in the Law on Official Statistics, however there is a custom in Polish official statistics to comment on erroneous interpretation and misuse of statistics.</br> Principle 5: Sources of official statistics</br> * Art. 5, art. 13 especially paragraph 5 and art. 18 paragraph 1 and 3 of the Law</br> Principle 6: Confidentiality</br> * Art. 2 point 8a and 8b, art. 10 and art. 12 of the Law.</br> Principle 7: Legislation</br> * Law and regulations under which the Polish statistical system operates are made public. They are published on CSO Poland website. As all Polish legal acts they are also published in the Official Journal of Poland (only Polish version) and available on the Parliament Internet System dedicated to legal acts (IASP).</br> The most important Polish legal acts are:</br> * Law of 29 June 1995 on official statistics (Journal of Laws of 2016 item 1068);</br> * Regulation of the Council of Ministers of 19 December 2017 on the Programme of statistical surveys of official statistic in 2018 (Journal of Laws of 2015 item 2471);</br> * Regulation of the Prime Minister of 14 March 2017 on report forms, the explanation of how to file them and template statistical questionnaires used in statistical surveys established within the Programme of Statistical Surveys of Official Statistics in 2016 (Journal of Laws of 2017 item 837, with later amendments).</br> Principle 8: National Coordination</br> * Art. 22, art. 23, art. 24 and art. 25 of the Law</br> The main coordination ‘tool’ in Polish Statistical System is the Programme of Statistical Surveys of Official Statistics which is elaborated in accordance with articles 18 and 20 of the Law. The Coordination function of Statistics Poland is also specified in the EU legal provisions.</br> Principle 9: Use of international standards</br> * Art. 25 paragraph 1 point 6 and point 15, art. 26 and art. 25a of the Law.</br> The classification, concepts and methods used in Polish Statistical System are based on international standards.</br> Principle 10: International cooperation</br> * Art. 20 paragraph 3, art. 25 paragraph 1 point 11 – 13 and especially 14 and art. 37 point 5 of the Law </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data; since 2010 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1013,7 +1124,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('{ 0 , 1 }'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1093,15 +1204,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total"]
+
 function Zmiana_jednostki(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1124,8 +1242,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1151,11 +1273,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
+      var calo=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1179,7 +1306,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
+      var calo=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1206,11 +1337,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
+      var calo=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1239,7 +1375,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
+      var calo=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1270,11 +1410,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
+      var calo=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1300,7 +1445,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
+      var calo=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1339,8 +1487,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1362,8 +1516,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["total","1","1","1","1","1","1","1","1","1",null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1454,7 +1613,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

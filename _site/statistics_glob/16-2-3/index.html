@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                   </title>
                 
 
-        <meta property="og:title" content="Liczba stwierdzonych przestępstw przeciwko wolności seksualnej popełnionych wobec osób małoletnich">
+        <meta property="og:title" content="16 2 3">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Wskaźnik 16.2.3 - Liczba stwierdzonych przestępstw przeciwko wolności seksualnej popełnionych wobec osób małoletnich </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -626,13 +653,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-16-2-3" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-16-2-3'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=10
-  var calosc=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null]
+  var calosc=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total","males","women","total_","men_","women_","rape","reaping a profit from the another person's prostitution","sexual abuse of juvenile","sexual reliance abuse"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'pl'
-  var legen=["ogółem","mężczyźni","kobiety","ogółem_","mężczyźni_","kobiety_","gwałt","czerpanie zysku z cudzego nierządu","seksualne wykorzystanie małoletniego","seksualne wykorzystanie zależności"]
+
+  if (jez=='en'){
+    var legen=["total","males","women","total_","men_","women_","rape","reaping a profit from the another person's prostitution","sexual abuse of juvenile","sexual reliance abuse"]
+  }else{
+    var legen=["ogółem","mężczyźni","kobiety","ogółem_","mężczyźni_","kobiety_","gwałt","czerpanie zysku z cudzego nierządu","seksualne wykorzystanie małoletniego","seksualne wykorzystanie zależności"]
+  }
 
   if(0=='0'){
     var precyz=0;
@@ -1145,9 +1192,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2011","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2012","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2013","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2014","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2015","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2016","ogółem":"1429","mężczyźni":"212","kobiety":"1214","ogółem_":"1034","mężczyźni_":"153","kobiety_":"879","gwałt":"84","czerpanie zysku z cudzego nierządu":"4","seksualne wykorzystanie małoletniego":"1274","seksualne wykorzystanie zależności":"67"},{"year":"2017","ogółem":"1424","mężczyźni":"201","kobiety":"1200","ogółem_":"1193","mężczyźni_":"168","kobiety_":"1025","gwałt":"116","czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":"1247","seksualne wykorzystanie zależności":"54"},{"year":"2018","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null}]
-var naglowek=["ogółem","mężczyźni","kobiety","ogółem_","mężczyźni_","kobiety_","gwałt","czerpanie zysku z cudzego nierządu","seksualne wykorzystanie małoletniego","seksualne wykorzystanie zależności"]
+var DATA = [{"year":"year","ogółem":"total","mężczyźni":"males","kobiety":"women","ogółem_":"total_","mężczyźni_":"men_","kobiety_":"women_","gwałt":"rape","czerpanie zysku z cudzego nierządu":"reaping a profit from the another person's prostitution","seksualne wykorzystanie małoletniego":"sexual abuse of juvenile","seksualne wykorzystanie zależności":"sexual reliance abuse"},{"year":"2010","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2011","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2012","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2013","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2014","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2015","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null},{"year":"2016","ogółem":"1429","mężczyźni":"212","kobiety":"1214","ogółem_":"1034","mężczyźni_":"153","kobiety_":"879","gwałt":"84","czerpanie zysku z cudzego nierządu":"4","seksualne wykorzystanie małoletniego":"1274","seksualne wykorzystanie zależności":"67"},{"year":"2017","ogółem":"1424","mężczyźni":"201","kobiety":"1200","ogółem_":"1193","mężczyźni_":"168","kobiety_":"1025","gwałt":"116","czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":"1247","seksualne wykorzystanie zależności":"54"},{"year":"2018","ogółem":null,"mężczyźni":null,"kobiety":null,"ogółem_":null,"mężczyźni_":null,"kobiety_":null,"gwałt":null,"czerpanie zysku z cudzego nierządu":null,"seksualne wykorzystanie małoletniego":null,"seksualne wykorzystanie zależności":null}]
 
+var naglowek=["ogółem","mężczyźni","kobiety","ogółem_","mężczyźni_","kobiety_","gwałt","czerpanie zysku z cudzego nierządu","seksualne wykorzystanie małoletniego","seksualne wykorzystanie zależności"]
+var naglowek_ang=["total","males","women","total_","men_","women_","rape","reaping a profit from the another person's prostitution","sexual abuse of juvenile","sexual reliance abuse"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1181,7 +1230,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1240,174 +1294,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/pl/16-2-3.pdf">Pobierz metadane dla 16.2.3</a>
+              <a href="/sdg-indicators/assets/pdf/pl/16-2-3.pdf"><button>Pobierz metadane dla 16.2.3</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla 16.2.3</a>-->
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <b>16.2.3 Liczba stwierdzonych przestępstw przeciwko wolności seksualnej popełnionych wobec osób małoletnich</b> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 16. Pokój, sprawiedliwość i silne instytucje </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Zadanie </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  16.2 Wyeliminować nadużycia, wykorzystywanie i handel ludźmi oraz wszelkie formy przemocy i tortur wobec dzieci </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Liczba stwierdzonych przestępstw przeciwko wolności seksualnej popełnionych wobec osb małoletnich (tj. osób poniżej 18 lat / według jednostki rejestrującej postępowanie). </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  liczba przestępstw </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  rodzaj przestępstwa, wiek, płeć </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <p>W polskim ustawodawstwie do <b>przestępstw przeciwko wolności seksualnej </b>popełnianych wobec osób małoletnich (tj. osób poniżej 18 lat) zalicza się m.in.: </p> <p>  • zgwałcenie (art. 197 kk) - doprowadzenie przemocą, groźbą bezprawną lud podstępem innej osoby do obcowania płciowego, </p> <p>  • seksualne wykorzystanie zależności (art. 199 kk) - doprowadzenie innej osoby, poprzez nadużycie stosunku zależności lub wykorzystanie krytycznego położenia, do obcowania płciowego lub do poddania się innej czynności seksualnej, </p> <p>  • seksualne wykorzystanie małoletniego (art. 200 kk) - doprowadzenie małoletniego poniżej lat 15 do obcowania płciowego lub dopuszczenie się wobec takiej osoby innej czynności seksualnej, </p> <p>  • czerpanie zysku z cudzego nierządu (art. 204 kk) - osiąganie korzyści majątkowej, nakłanianie innej osoby do uprawiania prostytucji lub jej tego ułatwiania.</p> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Źródło danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Komenda Główna Policji </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2016 r. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Uwagi </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <b>16.2.3 Liczba stwierdzonych przestępstw przeciwko wolności seksualnej popełnionych wobec osób małoletnich</b> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 16. Pokój, sprawiedliwość i silne instytucje </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Zadanie </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  16.2 Wyeliminować nadużycia, wykorzystywanie i handel ludźmi oraz wszelkie formy przemocy i tortur wobec dzieci </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Liczba stwierdzonych przestępstw przeciwko wolności seksualnej popełnionych wobec osb małoletnich (tj. osób poniżej 18 lat / według jednostki rejestrującej postępowanie). </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  liczba przestępstw </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  rodzaj przestępstwa, wiek, płeć </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <p>W polskim ustawodawstwie do <b>przestępstw przeciwko wolności seksualnej </b>popełnianych wobec osób małoletnich (tj. osób poniżej 18 lat) zalicza się m.in.: </p> <p>  • zgwałcenie (art. 197 kk) - doprowadzenie przemocą, groźbą bezprawną lud podstępem innej osoby do obcowania płciowego, </p> <p>  • seksualne wykorzystanie zależności (art. 199 kk) - doprowadzenie innej osoby, poprzez nadużycie stosunku zależności lub wykorzystanie krytycznego położenia, do obcowania płciowego lub do poddania się innej czynności seksualnej, </p> <p>  • seksualne wykorzystanie małoletniego (art. 200 kk) - doprowadzenie małoletniego poniżej lat 15 do obcowania płciowego lub dopuszczenie się wobec takiej osoby innej czynności seksualnej, </p> <p>  • czerpanie zysku z cudzego nierządu (art. 204 kk) - osiąganie korzyści majątkowej, nakłanianie innej osoby do uprawiania prostytucji lub jej tego ułatwiania.</p> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Źródło danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Komenda Główna Policji </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2016 r. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Uwagi </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik zastępczy, dostępny w ramach polskiej statystyki publicznej. Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym cel 16.2 Agendy 2030, jest wskaźnik 16.2.3 Odsetek kobiet i mężczyzn w wieku 18-29 lat, którzy doświadczyli przemocy seksualnej przed ukończeniem 18 lat. </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1419,7 +1529,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('liczba przestępstw'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1499,15 +1609,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total","males","women","total_","men_","women_","rape","reaping a profit from the another person's prostitution","sexual abuse of juvenile","sexual reliance abuse"]
+
 function Zmiana_jednostki(){
 
   var licznik=10
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1530,8 +1647,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1557,11 +1678,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=10
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1585,7 +1711,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1612,11 +1742,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=10
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1645,7 +1780,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1676,11 +1815,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=10
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1706,7 +1850,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1745,8 +1892,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=10
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1768,8 +1921,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=10;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=[null,null,null,null,null,null,"1429","1424",null,null,null,null,null,null,null,"212","201",null,null,null,null,null,null,null,"1214","1200",null,null,null,null,null,null,null,"1034","1193",null,null,null,null,null,null,null,"153","168",null,null,null,null,null,null,null,"879","1025",null,null,null,null,null,null,null,"84","116",null,null,null,null,null,null,null,"4",null,null,null,null,null,null,null,null,"1274","1247",null,null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["total",null,null,null,null,null,null,"1429","1424",null,"males",null,null,null,null,null,null,"212","201",null,"women",null,null,null,null,null,null,"1214","1200",null,"total_",null,null,null,null,null,null,"1034","1193",null,"men_",null,null,null,null,null,null,"153","168",null,"women_",null,null,null,null,null,null,"879","1025",null,"rape",null,null,null,null,null,null,"84","116",null,"reaping a profit from the another person's prostitution",null,null,null,null,null,null,"4",null,null,"sexual abuse of juvenile",null,null,null,null,null,null,"1274","1247",null,"sexual reliance abuse",null,null,null,null,null,null,"67","54",null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1860,8 +2018,10 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
-      
+             
+			    <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+			 
+	  
     </div>
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">

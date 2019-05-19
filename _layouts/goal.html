@@ -5,7 +5,6 @@
 {% assign t = site.translations | where:"translation_id", "goal" | first %}
 {% assign t = t[page.lang] %}
 
-
 {% if page.url contains '/statistics_nat/' %}
 {% assign ktore = site.data.krajowe %}
 {% else %}
@@ -135,13 +134,6 @@
         {% assign status_label = "default" %}
         {% endif %}
 
-        {% if page.lang == site.defaults[0].values.lang %}
-        {% assign indicator_title = indicator.title %}
-        {% else %}
-        {% assign indicator_translate = sdg_indicators | where:"indicator_id", indicator.indicator | first %}
-        {% assign indicator_title = indicator_translate.indicator %}
-        {% endif %}
-
         <tr>
           {% if indicator.indicator == "1.5.1" or indicator.indicator == "2.5.2" or indicator.indicator == "2.a.2" or indicator.indicator == "3.3.5" or indicator.indicator == "4.2.1" or indicator.indicator == "5.2.1" or indicator.indicator == "5.3.1" or indicator.indicator == "5.a.1.a" or indicator.indicator == "5.a.1.b"
           or indicator.indicator == "7.a.1" or indicator.indicator == "8.3.1" or indicator.indicator == "8.4.1" or indicator.indicator == "8.8.1"
@@ -153,13 +145,13 @@
           or indicator.indicator == "16.2.3" or indicator.indicator == "16.3.2"
           or indicator.indicator == "16.5.1" or indicator.indicator == "16.7.1"   %}
 
-          <td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
-          <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator | remove: ".0" }} {{ indicator_title }}</a></td>
+          <td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.pl.permalink }}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
+          <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator | remove: ".0" }} {{ indicator_sort.indicator }}</a></td>
           <td><i class="fa fa-check" style="font-size:20px; width: 100%; text-align: center;"></i></td>
 
           {% else %}
-          <td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
-          <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_title }}</a></td>
+          <td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.pl.permalink }}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
+          <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
             {% if rodzaj == '/' %}
               <td></td>
             {% endif %}

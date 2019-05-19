@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                   </title>
                 
 
-        <meta property="og:title" content="Liczba zasobów genetycznych zwierząt dla wyżywienia i rolnictwa zabezpieczonych w kolekcjach banków genów">
+        <meta property="og:title" content="2 5 1 B">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Wskaźnik 2.5.1.b - Liczba zasobów genetycznych zwierząt dla wyżywienia i rolnictwa zabezpieczonych w kolekcjach banków genów </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -628,13 +655,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-2-5-1-b" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-2-5-1-b'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=5
-  var calosc=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null]
+  var calosc=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["hen","ducks","geese"," cattle"," number of portions of material collected in gene bank"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'pl'
-  var legen=["kury (żywe kolekcje)","kaczki (żywe kolekcje)","gęsi (żywe kolekcje)","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)","bydło (liczba porcji materiału zgromadzonych w banku genów)"]
+
+  if (jez=='en'){
+    var legen=["hen","ducks","geese"," cattle"," number of portions of material collected in gene bank"]
+  }else{
+    var legen=["kury (żywe kolekcje)","kaczki (żywe kolekcje)","gęsi (żywe kolekcje)","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)","bydło (liczba porcji materiału zgromadzonych w banku genów)"]
+  }
 
   if(0=='0'){
     var precyz=0;
@@ -1147,9 +1194,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","kury (żywe kolekcje)":"7225","kaczki (żywe kolekcje)":"1293","gęsi (żywe kolekcje)":"3681","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"31","bydło (liczba porcji materiału zgromadzonych w banku genów)":"7565"},{"year":"2011","kury (żywe kolekcje)":"7210","kaczki (żywe kolekcje)":"1277","gęsi (żywe kolekcje)":"3716","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"47","bydło (liczba porcji materiału zgromadzonych w banku genów)":"9315"},{"year":"2012","kury (żywe kolekcje)":"7884","kaczki (żywe kolekcje)":"1296","gęsi (żywe kolekcje)":"3675","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"52","bydło (liczba porcji materiału zgromadzonych w banku genów)":"10315"},{"year":"2013","kury (żywe kolekcje)":"8168","kaczki (żywe kolekcje)":"1319","gęsi (żywe kolekcje)":"3959","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"57","bydło (liczba porcji materiału zgromadzonych w banku genów)":"11315"},{"year":"2014","kury (żywe kolekcje)":"8207","kaczki (żywe kolekcje)":"1314","gęsi (żywe kolekcje)":"3981","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"60","bydło (liczba porcji materiału zgromadzonych w banku genów)":"11915"},{"year":"2015","kury (żywe kolekcje)":"8239","kaczki (żywe kolekcje)":"1394","gęsi (żywe kolekcje)":"3907","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"76","bydło (liczba porcji materiału zgromadzonych w banku genów)":"28838"},{"year":"2016","kury (żywe kolekcje)":"8170","kaczki (żywe kolekcje)":"1307","gęsi (żywe kolekcje)":"4256","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"85","bydło (liczba porcji materiału zgromadzonych w banku genów)":"30638"},{"year":"2017","kury (żywe kolekcje)":"8137","kaczki (żywe kolekcje)":"1373","gęsi (żywe kolekcje)":"3979","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"125","bydło (liczba porcji materiału zgromadzonych w banku genów)":"34511"},{"year":"2018","kury (żywe kolekcje)":"8125","kaczki (żywe kolekcje)":"1455","gęsi (żywe kolekcje)":"4197","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"120","bydło (liczba porcji materiału zgromadzonych w banku genów)":"33679"}]
-var naglowek=["kury (żywe kolekcje)","kaczki (żywe kolekcje)","gęsi (żywe kolekcje)","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)","bydło (liczba porcji materiału zgromadzonych w banku genów)"]
+var DATA = [{"year":"year","kury (żywe kolekcje)":"hen","kaczki (żywe kolekcje)":"ducks","gęsi (żywe kolekcje)":"geese","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":" cattle","bydło (liczba porcji materiału zgromadzonych w banku genów)":" number of portions of material collected in gene bank"},{"year":"2010","kury (żywe kolekcje)":"7225","kaczki (żywe kolekcje)":"1293","gęsi (żywe kolekcje)":"3681","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"31","bydło (liczba porcji materiału zgromadzonych w banku genów)":"7565"},{"year":"2011","kury (żywe kolekcje)":"7210","kaczki (żywe kolekcje)":"1277","gęsi (żywe kolekcje)":"3716","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"47","bydło (liczba porcji materiału zgromadzonych w banku genów)":"9315"},{"year":"2012","kury (żywe kolekcje)":"7884","kaczki (żywe kolekcje)":"1296","gęsi (żywe kolekcje)":"3675","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"52","bydło (liczba porcji materiału zgromadzonych w banku genów)":"10315"},{"year":"2013","kury (żywe kolekcje)":"8168","kaczki (żywe kolekcje)":"1319","gęsi (żywe kolekcje)":"3959","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"57","bydło (liczba porcji materiału zgromadzonych w banku genów)":"11315"},{"year":"2014","kury (żywe kolekcje)":"8207","kaczki (żywe kolekcje)":"1314","gęsi (żywe kolekcje)":"3981","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"60","bydło (liczba porcji materiału zgromadzonych w banku genów)":"11915"},{"year":"2015","kury (żywe kolekcje)":"8239","kaczki (żywe kolekcje)":"1394","gęsi (żywe kolekcje)":"3907","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"76","bydło (liczba porcji materiału zgromadzonych w banku genów)":"28838"},{"year":"2016","kury (żywe kolekcje)":"8170","kaczki (żywe kolekcje)":"1307","gęsi (żywe kolekcje)":"4256","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"85","bydło (liczba porcji materiału zgromadzonych w banku genów)":"30638"},{"year":"2017","kury (żywe kolekcje)":"8137","kaczki (żywe kolekcje)":"1373","gęsi (żywe kolekcje)":"3979","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"125","bydło (liczba porcji materiału zgromadzonych w banku genów)":"34511"},{"year":"2018","kury (żywe kolekcje)":"8125","kaczki (żywe kolekcje)":"1455","gęsi (żywe kolekcje)":"4197","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)":"120","bydło (liczba porcji materiału zgromadzonych w banku genów)":"33679"}]
 
+var naglowek=["kury (żywe kolekcje)","kaczki (żywe kolekcje)","gęsi (żywe kolekcje)","bydło (liczba zwierząt (dawców) od których zgromadzono materiał w banku genów)","bydło (liczba porcji materiału zgromadzonych w banku genów)"]
+var naglowek_ang=["hen","ducks","geese"," cattle"," number of portions of material collected in gene bank"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1183,7 +1232,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1242,174 +1296,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/pl/2-5-1-b.pdf">Pobierz metadane dla 2.5.1.b</a>
+              <a href="/sdg-indicators/assets/pdf/pl/2-5-1-b.pdf"><button>Pobierz metadane dla 2.5.1.b</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla 2.5.1.b</a>-->
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <b>2.5.1.b Liczba zasobów genetycznych zwierząt dla wyżywienia i rolnictwa zabezpieczonych w kolekcjach banków genów</b> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 2. Zero głodu </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Zadanie </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  2.5 Do 2020 roku zapewnić różnorodność genetyczną nasion, roślin uprawnych, zwierząt hodowlanych i udomowionych oraz powiązanych z nimi dzikich gatunków, w tym poprzez skutecznie zarządzane i różnorodne banki nasion i roślin na poziomie krajowym, regionalnym i międzynarodowym, jak również promować uczciwy i sprawiedliwy podział oraz dostęp do korzyści płynących z wykorzystania zasobów genetycznych oraz związanej z nimi tradycyjnej wiedzy, zgodnie z ustaleniami na szczeblu międzynarodowym </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik określa stan ochrony zasobów genetycznych zwierząt gospodarskich metodami ex situ in vitro i ex situ in vivo. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  liczba zwierząt (żywe kolekcje)  liczba porcji materiału, liczba zwierząt (dawców) od których zgromadzono materiał (banki) </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Wskaźnik określa stan ochrony zasobów genetycznych zwierząt gospodarskich metodami ex situ in vitro i ex situ in vivo. </p> <p>Istnieją następujące metody ochrony populacji zwierząt przed wyginięciem: </p> <p>  - in situ – polegającą na ochronie żywych zwierząt w ich naturalnym środowisku, </p> <p>  - ex-situ –ochrona zasobów genetycznych poza miejscem ich naturalnego występowania, w tym: </p> <p>        • ex-situ in vitro - kriokonserwowanego materiału w bankach materiału genetycznego, </p> <p>        • ex situ in vivo - kolekcje żywych zwierząt utrzymywane poza miejscem występowania. </p> <p>W przypadku kolekcji ex situ in vivo, aby można je było uznać za utrzymywane w sposób długookresowy i stabilny, przyjmuje sie, że są one w placówkach należących do sektora publicznego.</p> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Źródło danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Ministerstwo Rozwoju Wsi i Rolnictwa / Instytut Zootechniki </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2010 r. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Uwagi </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <b>2.5.1.b Liczba zasobów genetycznych zwierząt dla wyżywienia i rolnictwa zabezpieczonych w kolekcjach banków genów</b> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 2. Zero głodu </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Zadanie </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  2.5 Do 2020 roku zapewnić różnorodność genetyczną nasion, roślin uprawnych, zwierząt hodowlanych i udomowionych oraz powiązanych z nimi dzikich gatunków, w tym poprzez skutecznie zarządzane i różnorodne banki nasion i roślin na poziomie krajowym, regionalnym i międzynarodowym, jak również promować uczciwy i sprawiedliwy podział oraz dostęp do korzyści płynących z wykorzystania zasobów genetycznych oraz związanej z nimi tradycyjnej wiedzy, zgodnie z ustaleniami na szczeblu międzynarodowym </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik określa stan ochrony zasobów genetycznych zwierząt gospodarskich metodami ex situ in vitro i ex situ in vivo. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  liczba zwierząt (żywe kolekcje)  liczba porcji materiału, liczba zwierząt (dawców) od których zgromadzono materiał (banki) </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Wskaźnik określa stan ochrony zasobów genetycznych zwierząt gospodarskich metodami ex situ in vitro i ex situ in vivo. </p> <p>Istnieją następujące metody ochrony populacji zwierząt przed wyginięciem: </p> <p>  - in situ – polegającą na ochronie żywych zwierząt w ich naturalnym środowisku, </p> <p>  - ex-situ –ochrona zasobów genetycznych poza miejscem ich naturalnego występowania, w tym: </p> <p>        • ex-situ in vitro - kriokonserwowanego materiału w bankach materiału genetycznego, </p> <p>        • ex situ in vivo - kolekcje żywych zwierząt utrzymywane poza miejscem występowania. </p> <p>W przypadku kolekcji ex situ in vivo, aby można je było uznać za utrzymywane w sposób długookresowy i stabilny, przyjmuje sie, że są one w placówkach należących do sektora publicznego.</p> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Źródło danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Ministerstwo Rozwoju Wsi i Rolnictwa / Instytut Zootechniki </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2010 r. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Uwagi </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1421,7 +1531,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('liczba zwierząt (żywe kolekcje)  liczba porcji materiału, liczba zwierząt (dawców) od których zgromadzono materiał (banki)'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1501,15 +1611,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["hen","ducks","geese"," cattle"," number of portions of material collected in gene bank"]
+
 function Zmiana_jednostki(){
 
   var licznik=5
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1532,8 +1649,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1559,11 +1680,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=5
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null]
+      var calo=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1587,7 +1713,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null]
+      var calo=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1614,11 +1744,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=5
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null]
+      var calo=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1647,7 +1782,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null]
+      var calo=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1678,11 +1817,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=5
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null]
+      var calo=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1708,7 +1852,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null]
+      var calo=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1747,8 +1894,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=5
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1770,8 +1923,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=5;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["7225","7210","7884","8168","8207","8239","8170","8137","8125","1293","1277","1296","1319","1314","1394","1307","1373","1455","3681","3716","3675","3959","3981","3907","4256","3979","4197","31","47","52","57","60","76","85","125","120","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["hen","7225","7210","7884","8168","8207","8239","8170","8137","8125","ducks","1293","1277","1296","1319","1314","1394","1307","1373","1455","geese","3681","3716","3675","3959","3981","3907","4256","3979","4197"," cattle","31","47","52","57","60","76","85","125","120"," number of portions of material collected in gene bank","7565","9315","10315","11315","11915","28838","30638","34511","33679",null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1862,8 +2020,10 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
-      
+             
+			    <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+			 
+	  
     </div>
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">

@@ -1,6 +1,13 @@
 {% assign table_template = 'components/table1.html' %}
 {% assign id = page.indicator | slugify %}
 
+{% assign slug = page.indicator | replace: '.', '-' %}
+{% if page.url contains '/statistics_nat/' %}
+  {% assign t1 = site.metadane_krajowe | where:"translation_id", slug | first %}
+{% else %}
+  {% assign t1 = site.metadane_globalne | where:"translation_id", slug | first %}
+{% endif %}
+
 <div class="tab-content">
   <div role="tabpanel" class="tab-pane active" id="data">
     <div style="display: flow-root;">
@@ -96,33 +103,57 @@
         <p>
 
             {% if language == 'pl' %}
-              <a class="usa-button" href="{{ site.baseurl }}/assets/pdf/{{ page.lang }}/{{page.indicator | replace: ".", "-"}}.pdf">Pobierz metadane dla {{ page.indicator | remove: ".0" }}</a>
+              <a href="{{ site.baseurl }}/assets/pdf/{{ page.lang }}/{{page.indicator | replace: ".", "-"}}.pdf"><button>Pobierz metadane dla {{ page.indicator | remove: ".0" }}</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla {{ page.indicator }}</a>-->
           {% else %}
-              <a class="usa-button" href="{{ site.baseurl }}/assets/pdf/en/{{page.indicator | replace: ".", "-"}}.pdf">Download metadata for {{ page.indicator | remove: ".0" }}</a>
+              <a href="{{ site.baseurl }}/assets/pdf/en/{{page.indicator | replace: ".", "-"}}.pdf"><button>Download metadata for {{ page.indicator | remove: ".0" }}</button></a>
 
           {% endif %}
         </p>
 
         <table>
-
-          {% for indicator_metadata in site.prose.metadata._indicators %}
-          {% if indicator_metadata.field.scope == "global" %}
-            {% if indicator_metadata.field.label != "indicator_variable_1" and indicator_metadata.field.label != "kategorie" and indicator_metadata.field.label != "zmienne" and indicator_metadata.field.label != "jednostka" and indicator_metadata.field.label != "pre" and indicator_metadata.field.label != "graph" and indicator_metadata.field.label != "source_url" and indicator_metadata.field.label != "permalink" and indicator_metadata.field.label != "sdg_goal" and indicator_metadata.field.label!= "layout"
-            and indicator_metadata.field.label!= "indicator" and indicator_metadata.field.label != "target_id" and indicator_metadata.field.label != "graph_title" %}
-              <tr>
-                {% if language == 'pl' %}
-                  <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
-                {% else %}
-                  <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label2 }} </th>
-                {% endif %}
-                <td style="padding: 10px; text-align: justify; height: 45px;">  {{ metadane[indicator_metadata.name] }} </td>
-              </tr>
-            {% endif %}
+          {% if page.url contains '/statistics_glob/' %}
+            {% for indicator_metadata in site.prose.metadata._metadane_globalne %}
+              {% if indicator_metadata.name != 'pl_graph_title' and indicator_metadata.name != 'pl_title' and indicator_metadata.name != 'pl_jednostka' and indicator_metadata.name != 'en_graph_title' and indicator_metadata.name != 'en_title' and indicator_metadata.name != 'en_jednostka'%}
+                <tr>
+                  {% if language == 'pl' %}
+                    {% if indicator_metadata.name contains 'pl_' %}
+                      <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  {{ t1.[indicator_metadata.name] }} </td>
+                    {% endif %}
+                  {% else %}
+                    {% if indicator_metadata.name contains 'en_' %}
+                      <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  {{ t1.[indicator_metadata.name] }} </td>
+                    {% endif %}
+                  {% endif %}
+                </tr>
+              {% endif %}
+            {% endfor %}
           {% endif %}
-          {% endfor %}
 
+
+          {% if page.url contains '/statistics_nat/' %}
+            {% for indicator_metadata in site.prose.metadata._metadane_krajowe %}
+              {% if indicator_metadata.name != 'pl_graph_title' and indicator_metadata.name != 'pl_title' and indicator_metadata.name != 'pl_jednostka' and indicator_metadata.name != 'en_graph_title' and indicator_metadata.name != 'en_title' and indicator_metadata.name != 'en_jednostka'%}
+                <tr>
+                  {% if language == 'pl' %}
+                    {% if indicator_metadata.name contains 'pl_' %}
+                      <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  {{ t1.[indicator_metadata.name] }} </td>
+                    {% endif %}
+                  {% else %}
+                    {% if indicator_metadata.name contains 'en_' %}
+                      <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  {{ t1.[indicator_metadata.name] }} </td>
+                    {% endif %}
+                  {% endif %}
+                </tr>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
         </table>
+
 
       </div>
     </div>

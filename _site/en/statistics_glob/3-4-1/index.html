@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Deaths by diseases of the circulatory system, diabetes mellitus, malignant neoplasms and chronic respiratory disease per 100 thous. population">
+        <meta property="og:title" content="3 4 1">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 3.4.1 - Deaths by diseases of the circulatory system, diabetes mellitus, malignant neoplasms and chronic respiratory disease per 100 thous. population </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-3-4-1" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-3-4-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=4
-  var calosc=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+  var calosc=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["diseases of the circulatory system","diabetes mellitus","malignant neoplasms","chronic respiratory disease"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["diseases of the circulatory system","diabetes mellitus","malignant neoplasms","chronic respiratory disease"]
+
+  if (jez=='en'){
+    var legen=["diseases of the circulatory system","diabetes mellitus","malignant neoplasms","chronic respiratory disease"]
+  }else{
+    var legen=["choroby układu krążenia","cukrzyca","nowotwór","przewlekła choroba dróg oddechowych"]
+  }
 
   if(1=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","diseases of the circulatory system":"451.8","diabetes mellitus":"16.9","malignant neoplasms":"240.4","chronic respiratory disease":"25.3"},{"year":"2011","diseases of the circulatory system":"440.9","diabetes mellitus":"17.6","malignant neoplasms":"239.3","chronic respiratory disease":"25.6"},{"year":"2012","diseases of the circulatory system":"460.8","diabetes mellitus":"18.5","malignant neoplasms":"245.9","chronic respiratory disease":"23.4"},{"year":"2013","diseases of the circulatory system":"460.8","diabetes mellitus":"19.3","malignant neoplasms":"244.4","chronic respiratory disease":"24.5"},{"year":"2014","diseases of the circulatory system":"441.1","diabetes mellitus":"17.6","malignant neoplasms":"248.3","chronic respiratory disease":"21.0"},{"year":"2015","diseases of the circulatory system":"469.0","diabetes mellitus":"21.5","malignant neoplasms":"261.6","chronic respiratory disease":"24.7"},{"year":"2016","diseases of the circulatory system":"437.1","diabetes mellitus":"21.6","malignant neoplasms":"260.1","chronic respiratory disease":"24.7"},{"year":"2017","diseases of the circulatory system":"434.8","diabetes mellitus":"22.9","malignant neoplasms":"259.3","chronic respiratory disease":"26.4"},{"year":"2018","diseases of the circulatory system":null,"diabetes mellitus":null,"malignant neoplasms":null,"chronic respiratory disease":null}]
-var naglowek=["diseases of the circulatory system","diabetes mellitus","malignant neoplasms","chronic respiratory disease"]
+var DATA = [{"year":"year","choroby układu krążenia":"diseases of the circulatory system","cukrzyca":"diabetes mellitus","nowotwór":"malignant neoplasms","przewlekła choroba dróg oddechowych":"chronic respiratory disease"},{"year":"2010","choroby układu krążenia":"451.8","cukrzyca":"16.9","nowotwór":"240.4","przewlekła choroba dróg oddechowych":"25.3"},{"year":"2011","choroby układu krążenia":"440.9","cukrzyca":"17.6","nowotwór":"239.3","przewlekła choroba dróg oddechowych":"25.6"},{"year":"2012","choroby układu krążenia":"460.8","cukrzyca":"18.5","nowotwór":"245.9","przewlekła choroba dróg oddechowych":"23.4"},{"year":"2013","choroby układu krążenia":"460.8","cukrzyca":"19.3","nowotwór":"244.4","przewlekła choroba dróg oddechowych":"24.5"},{"year":"2014","choroby układu krążenia":"441.1","cukrzyca":"17.6","nowotwór":"248.3","przewlekła choroba dróg oddechowych":"21.0"},{"year":"2015","choroby układu krążenia":"469.0","cukrzyca":"21.5","nowotwór":"261.6","przewlekła choroba dróg oddechowych":"24.7"},{"year":"2016","choroby układu krążenia":"437.1","cukrzyca":"21.6","nowotwór":"260.1","przewlekła choroba dróg oddechowych":"24.7"},{"year":"2017","choroby układu krążenia":"434.8","cukrzyca":"22.9","nowotwór":"259.3","przewlekła choroba dróg oddechowych":"26.4"},{"year":"2018","choroby układu krążenia":null,"cukrzyca":null,"nowotwór":null,"przewlekła choroba dróg oddechowych":null}]
 
+var naglowek=["choroby układu krążenia","cukrzyca","nowotwór","przewlekła choroba dróg oddechowych"]
+var naglowek_ang=["diseases of the circulatory system","diabetes mellitus","malignant neoplasms","chronic respiratory disease"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/3-4-1.pdf">Download metadata for 3.4.1</a>
+              <a href="/sdg-indicators/assets/pdf/en/3-4-1.pdf"><button>Download metadata for 3.4.1</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  3.4.1 Deaths by diseases of the circulatory system, diabetes mellitus, malignant neoplasms and chronic respiratory disease per 100 thous. population </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 3. Good health and well-being </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  3.4 By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Number of deaths by chronic respiratory disease per 100 thous. population. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  persons </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Death - permanent, irreversible cessation of functions of the essential for life organs, the consequence of which is the cessation of all functions of the whole organism.Chronic respiratory diseases (CRDs) - according to the International Statistical Classification of Diseases and Related Health Problems ICD-10: disease symbol J30-J98 - diseases of the airways and other structures of the lung. Some of the most common are chronic obstructive pulmonary disease (COPD), asthma, occupational lung diseases and pulmonary hypertension.The source of data on death is the document of the Ministry of Health ”Death certificate”, which is basic document for civil status acts and is in the part secondarily utilized by national statistics (Regulation of the Minister of Health, Journal of Laws 2015, item 231).Data on deaths are compiled in territorial division by place of registered for permanent stay of deceased person.When compiling the data on deaths by cause the initial cause of death is assumed. The initial cause is the disease, which was at the beginning of the morbid process and which caused the death  it may be also the injury or the poisoning, which caused the death.Data relating to the judicature on the causes of death are given in accordance with the International Statistical Classification of Diseases and Related Health Problems (Revision X).Data on population were compiled on the basis of: the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010)  for previous years (2003 – 2009) on the basis of the 2002 Population and Housing Census, the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register – PESEL), documentation of Civil Status Offices regarding registered marriages, births and deaths. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  3.4.1 Deaths by diseases of the circulatory system, diabetes mellitus, malignant neoplasms and chronic respiratory disease per 100 thous. population </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 3. Good health and well-being </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  3.4 By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Number of deaths by chronic respiratory disease per 100 thous. population. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  persons </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Death - permanent, irreversible cessation of functions of the essential for life organs, the consequence of which is the cessation of all functions of the whole organism.Chronic respiratory diseases (CRDs) - according to the International Statistical Classification of Diseases and Related Health Problems ICD-10: disease symbol J30-J98 - diseases of the airways and other structures of the lung. Some of the most common are chronic obstructive pulmonary disease (COPD), asthma, occupational lung diseases and pulmonary hypertension.The source of data on death is the document of the Ministry of Health ”Death certificate”, which is basic document for civil status acts and is in the part secondarily utilized by national statistics (Regulation of the Minister of Health, Journal of Laws 2015, item 231).Data on deaths are compiled in territorial division by place of registered for permanent stay of deceased person.When compiling the data on deaths by cause the initial cause of death is assumed. The initial cause is the disease, which was at the beginning of the morbid process and which caused the death  it may be also the injury or the poisoning, which caused the death.Data relating to the judicature on the causes of death are given in accordance with the International Statistical Classification of Diseases and Related Health Problems (Revision X).Data on population were compiled on the basis of: the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010)  for previous years (2003 – 2009) on the basis of the 2002 Population and Housing Census, the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register – PESEL), documentation of Civil Status Offices regarding registered marriages, births and deaths. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('persons'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["diseases of the circulatory system","diabetes mellitus","malignant neoplasms","chronic respiratory disease"]
+
 function Zmiana_jednostki(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+      var calo=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+      var calo=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+      var calo=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+      var calo=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+      var calo=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+      var calo=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=4
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=4;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["diseases of the circulatory system","451.8","440.9","460.8","460.8","441.1","469.0","437.1","434.8",null,"diabetes mellitus","16.9","17.6","18.5","19.3","17.6","21.5","21.6","22.9",null,"malignant neoplasms","240.4","239.3","245.9","244.4","248.3","261.6","260.1","259.3",null,"chronic respiratory disease","25.3","25.6","23.4","24.5","21.0","24.7","24.7","26.4",null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

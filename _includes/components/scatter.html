@@ -5,14 +5,35 @@
 <script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-legend.js"></script>
 <script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-axistitle.js"></script>
 <script>
+
+  function remove(array, element) {
+    const index = array.indexOf(element);
+
+    if (index !== -1) {
+      array.splice(index, 1);
+    }
+  }
+
 (function () {
   var container = '#linechart-{{ id }}'
   var labels = {{ include.labels | jsonify }}
+  labels.shift();
   var licznik={{ include.licznik }}
   var calosc={{ include.row1 | jsonify }}
-  var jez= '{{ include.content2 }}'
-  var legen={{ include.legenda | jsonify }}
+  var naglowek_ang={{ page.indicator_variable_2 | split: "," | jsonify}}
 
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
+  var jez= '{{ include.content2 }}'
+
+  if (jez=='en'){
+    var legen={{ page.indicator_variable_2 | split: "," | jsonify}}
+  }else{
+    var legen={{ include.legenda | jsonify }}
+  }
+  
   if({{ precyzja }}=='0'){
     var precyz=0;
   }else{

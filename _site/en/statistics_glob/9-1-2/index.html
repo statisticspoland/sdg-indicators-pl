@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Passenger and freight volumes, by mode of transport">
+        <meta property="og:title" content="9 1 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 9.1.2 - Passenger and freight volumes, by mode of transport </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -629,13 +656,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-9-1-2" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-9-1-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=10
-  var calosc=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+  var calosc=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["railway transport (thous. passengers)","road transport (thous. passengers)","maritime transport fleet (thous. passengers)","transport by inland waterway fleet (thous. passengers)","air transport (thous. passengers)","railway transport (thous. tonnes)","road transport (thous. tonnes)","maritime transport fleet (thous. tonnes)","transport by inland waterway fleet (thous. tonnes)","air transport (thous. tonnes)"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["railway transport (thous. passengers)","road transport (thous. passengers)","maritime transport fleet (thous. passengers)","transport by inland waterway fleet (thous. passengers)","air transport (thous. passengers)","railway transport (thous. tonnes)","road transport (thous. tonnes)","maritime transport fleet (thous. tonnes)","transport by inland waterway fleet (thous. tonnes)","air transport (thous. tonnes)"]
+
+  if (jez=='en'){
+    var legen=["railway transport (thous. passengers)","road transport (thous. passengers)","maritime transport fleet (thous. passengers)","transport by inland waterway fleet (thous. passengers)","air transport (thous. passengers)","railway transport (thous. tonnes)","road transport (thous. tonnes)","maritime transport fleet (thous. tonnes)","transport by inland waterway fleet (thous. tonnes)","air transport (thous. tonnes)"]
+  }else{
+    var legen=["transport kolejowy (tys. pasażerów)","transport samochodowy (tys. pasażerów)","transport morski (tys. pasażerów)","śródlądowy transport wodny (tys. pasażerów)","transport lotniczy (tys. pasażerów)","transport kolejowy (tys. ton)","transport samochodowy (tys. ton)","transport morski (tys. ton)","śródlądowy transport wodny (tys. ton)","transport lotniczy (tys. ton)"]
+  }
 
   if(0=='0'){
     var precyz=0;
@@ -1148,9 +1195,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","railway transport (thous. passengers)":"261314","road transport (thous. passengers)":"569652","maritime transport fleet (thous. passengers)":"671","transport by inland waterway fleet (thous. passengers)":"1397","air transport (thous. passengers)":"4990","railway transport (thous. tonnes)":"234568","road transport (thous. tonnes)":"1551841","maritime transport fleet (thous. tonnes)":"56208","transport by inland waterway fleet (thous. tonnes)":"8362","air transport (thous. tonnes)":"5141"},{"year":"2011","railway transport (thous. passengers)":"263609","road transport (thous. passengers)":"534885","maritime transport fleet (thous. passengers)":"637","transport by inland waterway fleet (thous. passengers)":"1519","air transport (thous. passengers)":"6491","railway transport (thous. tonnes)":"248606","road transport (thous. tonnes)":"1596209","maritime transport fleet (thous. tonnes)":"54482","transport by inland waterway fleet (thous. tonnes)":"7737","air transport (thous. tonnes)":"5093"},{"year":"2012","railway transport (thous. passengers)":"273182","road transport (thous. passengers)":"497288","maritime transport fleet (thous. passengers)":"642","transport by inland waterway fleet (thous. passengers)":"1515","air transport (thous. passengers)":"7170","railway transport (thous. tonnes)":"230878","road transport (thous. tonnes)":"1493386","maritime transport fleet (thous. tonnes)":"52985","transport by inland waterway fleet (thous. tonnes)":"7476","air transport (thous. tonnes)":"4579"},{"year":"2013","railway transport (thous. passengers)":"269815","road transport (thous. passengers)":"459947","maritime transport fleet (thous. passengers)":"606","transport by inland waterway fleet (thous. passengers)":"1540","air transport (thous. passengers)":"7648","railway transport (thous. tonnes)":"232596","road transport (thous. tonnes)":"1553050","maritime transport fleet (thous. tonnes)":"50656","transport by inland waterway fleet (thous. tonnes)":"6965","air transport (thous. tonnes)":"5044"},{"year":"2014","railway transport (thous. passengers)":"268204","road transport (thous. passengers)":"431516","maritime transport fleet (thous. passengers)":"611","transport by inland waterway fleet (thous. passengers)":"1579","air transport (thous. passengers)":"7788","railway transport (thous. tonnes)":"227820","road transport (thous. tonnes)":"1547883","maritime transport fleet (thous. tonnes)":"49810","transport by inland waterway fleet (thous. tonnes)":"6781","air transport (thous. tonnes)":"7629"},{"year":"2015","railway transport (thous. passengers)":"277321","road transport (thous. passengers)":"416774","maritime transport fleet (thous. passengers)":"597","transport by inland waterway fleet (thous. passengers)":"1762","air transport (thous. passengers)":"7288","railway transport (thous. tonnes)":"224320","road transport (thous. tonnes)":"1505719","maritime transport fleet (thous. tonnes)":"54850","transport by inland waterway fleet (thous. tonnes)":"6963","air transport (thous. tonnes)":"11928"},{"year":"2016","railway transport (thous. passengers)":"291981","road transport (thous. passengers)":"390410","maritime transport fleet (thous. passengers)":"632","transport by inland waterway fleet (thous. passengers)":"2024","air transport (thous. passengers)":"8779","railway transport (thous. tonnes)":"222523","road transport (thous. tonnes)":"1546572","maritime transport fleet (thous. tonnes)":"54058","transport by inland waterway fleet (thous. tonnes)":"7248","air transport (thous. tonnes)":"6210"},{"year":"2017","railway transport (thous. passengers)":"303001","road transport (thous. passengers)":"378610","maritime transport fleet (thous. passengers)":"644","transport by inland waterway fleet (thous. passengers)":"1262","air transport (thous. passengers)":"11846","railway transport (thous. tonnes)":"239501","road transport (thous. tonnes)":"1747266","maritime transport fleet (thous. tonnes)":"52393","transport by inland waterway fleet (thous. tonnes)":"8254","air transport (thous. tonnes)":"5778"}]
-var naglowek=["railway transport (thous. passengers)","road transport (thous. passengers)","maritime transport fleet (thous. passengers)","transport by inland waterway fleet (thous. passengers)","air transport (thous. passengers)","railway transport (thous. tonnes)","road transport (thous. tonnes)","maritime transport fleet (thous. tonnes)","transport by inland waterway fleet (thous. tonnes)","air transport (thous. tonnes)"]
+var DATA = [{"year":"year","transport kolejowy (tys. pasażerów)":"railway transport (thous. passengers)","transport samochodowy (tys. pasażerów)":"road transport (thous. passengers)","transport morski (tys. pasażerów)":"maritime transport fleet (thous. passengers)","śródlądowy transport wodny (tys. pasażerów)":"transport by inland waterway fleet (thous. passengers)","transport lotniczy (tys. pasażerów)":"air transport (thous. passengers)","transport kolejowy (tys. ton)":"railway transport (thous. tonnes)","transport samochodowy (tys. ton)":"road transport (thous. tonnes)","transport morski (tys. ton)":"maritime transport fleet (thous. tonnes)","śródlądowy transport wodny (tys. ton)":"transport by inland waterway fleet (thous. tonnes)","transport lotniczy (tys. ton)":"air transport (thous. tonnes)"},{"year":"2010","transport kolejowy (tys. pasażerów)":"261314","transport samochodowy (tys. pasażerów)":"569652","transport morski (tys. pasażerów)":"671","śródlądowy transport wodny (tys. pasażerów)":"1397","transport lotniczy (tys. pasażerów)":"4990","transport kolejowy (tys. ton)":"234568","transport samochodowy (tys. ton)":"1551841","transport morski (tys. ton)":"56208","śródlądowy transport wodny (tys. ton)":"8362","transport lotniczy (tys. ton)":"5141"},{"year":"2011","transport kolejowy (tys. pasażerów)":"263609","transport samochodowy (tys. pasażerów)":"534885","transport morski (tys. pasażerów)":"637","śródlądowy transport wodny (tys. pasażerów)":"1519","transport lotniczy (tys. pasażerów)":"6491","transport kolejowy (tys. ton)":"248606","transport samochodowy (tys. ton)":"1596209","transport morski (tys. ton)":"54482","śródlądowy transport wodny (tys. ton)":"7737","transport lotniczy (tys. ton)":"5093"},{"year":"2012","transport kolejowy (tys. pasażerów)":"273182","transport samochodowy (tys. pasażerów)":"497288","transport morski (tys. pasażerów)":"642","śródlądowy transport wodny (tys. pasażerów)":"1515","transport lotniczy (tys. pasażerów)":"7170","transport kolejowy (tys. ton)":"230878","transport samochodowy (tys. ton)":"1493386","transport morski (tys. ton)":"52985","śródlądowy transport wodny (tys. ton)":"7476","transport lotniczy (tys. ton)":"4579"},{"year":"2013","transport kolejowy (tys. pasażerów)":"269815","transport samochodowy (tys. pasażerów)":"459947","transport morski (tys. pasażerów)":"606","śródlądowy transport wodny (tys. pasażerów)":"1540","transport lotniczy (tys. pasażerów)":"7648","transport kolejowy (tys. ton)":"232596","transport samochodowy (tys. ton)":"1553050","transport morski (tys. ton)":"50656","śródlądowy transport wodny (tys. ton)":"6965","transport lotniczy (tys. ton)":"5044"},{"year":"2014","transport kolejowy (tys. pasażerów)":"268204","transport samochodowy (tys. pasażerów)":"431516","transport morski (tys. pasażerów)":"611","śródlądowy transport wodny (tys. pasażerów)":"1579","transport lotniczy (tys. pasażerów)":"7788","transport kolejowy (tys. ton)":"227820","transport samochodowy (tys. ton)":"1547883","transport morski (tys. ton)":"49810","śródlądowy transport wodny (tys. ton)":"6781","transport lotniczy (tys. ton)":"7629"},{"year":"2015","transport kolejowy (tys. pasażerów)":"277321","transport samochodowy (tys. pasażerów)":"416774","transport morski (tys. pasażerów)":"597","śródlądowy transport wodny (tys. pasażerów)":"1762","transport lotniczy (tys. pasażerów)":"7288","transport kolejowy (tys. ton)":"224320","transport samochodowy (tys. ton)":"1505719","transport morski (tys. ton)":"54850","śródlądowy transport wodny (tys. ton)":"6963","transport lotniczy (tys. ton)":"11928"},{"year":"2016","transport kolejowy (tys. pasażerów)":"291981","transport samochodowy (tys. pasażerów)":"390410","transport morski (tys. pasażerów)":"632","śródlądowy transport wodny (tys. pasażerów)":"2024","transport lotniczy (tys. pasażerów)":"8779","transport kolejowy (tys. ton)":"222523","transport samochodowy (tys. ton)":"1546572","transport morski (tys. ton)":"54058","śródlądowy transport wodny (tys. ton)":"7248","transport lotniczy (tys. ton)":"6210"},{"year":"2017","transport kolejowy (tys. pasażerów)":"303001","transport samochodowy (tys. pasażerów)":"378610","transport morski (tys. pasażerów)":"644","śródlądowy transport wodny (tys. pasażerów)":"1262","transport lotniczy (tys. pasażerów)":"11846","transport kolejowy (tys. ton)":"239501","transport samochodowy (tys. ton)":"1747266","transport morski (tys. ton)":"52393","śródlądowy transport wodny (tys. ton)":"8254","transport lotniczy (tys. ton)":"5778"}]
 
+var naglowek=["transport kolejowy (tys. pasażerów)","transport samochodowy (tys. pasażerów)","transport morski (tys. pasażerów)","śródlądowy transport wodny (tys. pasażerów)","transport lotniczy (tys. pasażerów)","transport kolejowy (tys. ton)","transport samochodowy (tys. ton)","transport morski (tys. ton)","śródlądowy transport wodny (tys. ton)","transport lotniczy (tys. ton)"]
+var naglowek_ang=["railway transport (thous. passengers)","road transport (thous. passengers)","maritime transport fleet (thous. passengers)","transport by inland waterway fleet (thous. passengers)","air transport (thous. passengers)","railway transport (thous. tonnes)","road transport (thous. tonnes)","maritime transport fleet (thous. tonnes)","transport by inland waterway fleet (thous. tonnes)","air transport (thous. tonnes)"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1184,7 +1233,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1243,174 +1297,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/9-1-2.pdf">Download metadata for 9.1.2</a>
+              <a href="/sdg-indicators/assets/pdf/en/9-1-2.pdf"><button>Download metadata for 9.1.2</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <b>9.1.2 Passenger and freight volumes, by mode of transport</b> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 9. Industry, Innovation and Infrastructure </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  9.1 Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The number of passengers (in thousands) and the volume of goods transport (in thousand tonnes) by mode of transport. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  thous. passengers </br>thous. tonnes </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  transport of passengers by mode of transport </br>transport of goods by mode of transport </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Railway transport of passengers</b></p> <p>The number of all passengers carried on the standard and narrow gauge railway network and express trains (including passengers transported in sleeping cars and in wagons with berths) with paid tickets and passengers travelling free of charge on the basis of relevant regulations as part of national and international transport.</p> <p><b>Road transport of passengers </b></p> <p>Road transport of passengers is the total number of passengers carried by scheduled daytime services (according to timetable), special scheduled services (e.g. carriage of employees, to school) and other carriage (e.g. holiday trips) in national and international transport. Data on road transport of passengers do not include transport of persons by buses: of urban public transport enterprises, enterprises carrying out tourist services and transport of persons by buses on own account. The data do not include transport services carried out by entities employing fewer than 9 persons.</p> <p><b>Maritime transport of goods</b></p> <p>Cargo transport in cruises finished with merchant ships, own ferries and ships and ferries hired from other ship-owners. It covers cargo transport in all directions, i.e., cargo delivered into Polish ports from foreign ports, from Polish ports into foreign ports, between foreign ports, between Polish ports. It does not cover transport of goods by ships and ferries chartered to foreign ship-owners.</p> <p>Data on the maritime transport fleet concern ships of the Polish property, joint ownership or share, whatever flag they hoist. The ships of the Polish maritime fleet include ships which are owned by Polish maritime transport enterprises, ships rented from a ship-owner company, whose shareholders are Polish enterprises, and ships owned by companies (with a share of Polish capital) with their seat abroad, which are operated by Polish enterprises.Transport by inland waterway fleetData concerning transport by inland waterway fleet refer to the fleet operated by Polish inland waterway transport enterprises (including vessels which are at the disposal of foreign enterprises during the period of navigation break on Polish inland waterway) and, since 2001, also entities whose main activity is different than providing these services. The data concerning carriage of goods by inland waterways do not include small consignments carried by passenger vessels.</p> <p><b>Air transport of goods and passengers</b></p> <p>Data concerning air transport of goods and passengers include freight and passengers carried on scheduled flights, additional and rented (chartered), by aircrafts owned by Polish operators in scheduled air transport (transport of passengers or goods on permanent routes and according to permanent flight schedules) as well as other Polish operators providing such services against payment in international and national transport.</p> <p><b>Railway transport of goods</b></p> <p>Data on railway transport of goods include the sum of the gross weight of all commercial and official consignments (i.e. together with the weight of the packages, and in the case of transport in containers together with the weight of the containers) transported in wagons in national and international transport by all types of trains. The data do not cover shunting.</p> <p><b>Road transport of goods</b></p> <p>Data concerning road transport of goods refer to total road transport, i.e. both for hire or reward and on own account, in public and private sectors. Road transport for hire or reward is understood as providing paid transport services whereas road transport on own account as carriage of goods on own needs, i.e. without payment (calculated into the costs of a business enterprise). In part, these are estimated data.</p> <p><b>Pipeline transport of goods</b></p> <p>Data on the pipeline transport of goods include crude oil and crude oil products pumped through major pipelines for the domestic demand (including imported) and by transit through the territory of Poland. The amount of crude oil (crude oil products) is the sum of net weights of individual lots of crude oil (products) received to client's tanks upon delivery-acceptance protocols.</p> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data;  Since 2010. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <b>9.1.2 Passenger and freight volumes, by mode of transport</b> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 9. Industry, Innovation and Infrastructure </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  9.1 Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The number of passengers (in thousands) and the volume of goods transport (in thousand tonnes) by mode of transport. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  thous. passengers </br>thous. tonnes </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  transport of passengers by mode of transport </br>transport of goods by mode of transport </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Railway transport of passengers</b></p> <p>The number of all passengers carried on the standard and narrow gauge railway network and express trains (including passengers transported in sleeping cars and in wagons with berths) with paid tickets and passengers travelling free of charge on the basis of relevant regulations as part of national and international transport.</p> <p><b>Road transport of passengers </b></p> <p>Road transport of passengers is the total number of passengers carried by scheduled daytime services (according to timetable), special scheduled services (e.g. carriage of employees, to school) and other carriage (e.g. holiday trips) in national and international transport. Data on road transport of passengers do not include transport of persons by buses: of urban public transport enterprises, enterprises carrying out tourist services and transport of persons by buses on own account. The data do not include transport services carried out by entities employing fewer than 9 persons.</p> <p><b>Maritime transport of goods</b></p> <p>Cargo transport in cruises finished with merchant ships, own ferries and ships and ferries hired from other ship-owners. It covers cargo transport in all directions, i.e., cargo delivered into Polish ports from foreign ports, from Polish ports into foreign ports, between foreign ports, between Polish ports. It does not cover transport of goods by ships and ferries chartered to foreign ship-owners.</p> <p>Data on the maritime transport fleet concern ships of the Polish property, joint ownership or share, whatever flag they hoist. The ships of the Polish maritime fleet include ships which are owned by Polish maritime transport enterprises, ships rented from a ship-owner company, whose shareholders are Polish enterprises, and ships owned by companies (with a share of Polish capital) with their seat abroad, which are operated by Polish enterprises.Transport by inland waterway fleetData concerning transport by inland waterway fleet refer to the fleet operated by Polish inland waterway transport enterprises (including vessels which are at the disposal of foreign enterprises during the period of navigation break on Polish inland waterway) and, since 2001, also entities whose main activity is different than providing these services. The data concerning carriage of goods by inland waterways do not include small consignments carried by passenger vessels.</p> <p><b>Air transport of goods and passengers</b></p> <p>Data concerning air transport of goods and passengers include freight and passengers carried on scheduled flights, additional and rented (chartered), by aircrafts owned by Polish operators in scheduled air transport (transport of passengers or goods on permanent routes and according to permanent flight schedules) as well as other Polish operators providing such services against payment in international and national transport.</p> <p><b>Railway transport of goods</b></p> <p>Data on railway transport of goods include the sum of the gross weight of all commercial and official consignments (i.e. together with the weight of the packages, and in the case of transport in containers together with the weight of the containers) transported in wagons in national and international transport by all types of trains. The data do not cover shunting.</p> <p><b>Road transport of goods</b></p> <p>Data concerning road transport of goods refer to total road transport, i.e. both for hire or reward and on own account, in public and private sectors. Road transport for hire or reward is understood as providing paid transport services whereas road transport on own account as carriage of goods on own needs, i.e. without payment (calculated into the costs of a business enterprise). In part, these are estimated data.</p> <p><b>Pipeline transport of goods</b></p> <p>Data on the pipeline transport of goods include crude oil and crude oil products pumped through major pipelines for the domestic demand (including imported) and by transit through the territory of Poland. The amount of crude oil (crude oil products) is the sum of net weights of individual lots of crude oil (products) received to client's tanks upon delivery-acceptance protocols.</p> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data;  Since 2010. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1422,7 +1532,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('thous. passengers </br>thous. tonnes'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1502,15 +1612,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["railway transport (thous. passengers)","road transport (thous. passengers)","maritime transport fleet (thous. passengers)","transport by inland waterway fleet (thous. passengers)","air transport (thous. passengers)","railway transport (thous. tonnes)","road transport (thous. tonnes)","maritime transport fleet (thous. tonnes)","transport by inland waterway fleet (thous. tonnes)","air transport (thous. tonnes)"]
+
 function Zmiana_jednostki(){
 
   var licznik=10
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1533,8 +1650,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1560,11 +1681,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=10
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      var calo=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1588,7 +1714,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      var calo=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1615,11 +1745,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=10
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      var calo=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1648,7 +1783,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      var calo=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1679,11 +1818,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=10
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      var calo=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1709,7 +1853,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+      var calo=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1748,8 +1895,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=10
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1771,8 +1924,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=10;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["261314","263609","273182","269815","268204","277321","291981","303001","569652","534885","497288","459947","431516","416774","390410","378610","671","637","642","606","611","597","632","644","1397","1519","1515","1540","1579","1762","2024","1262","4990","6491","7170","7648","7788","7288","8779","11846","234568","248606","230878","232596","227820","224320","222523","239501","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","56208","54482","52985","50656","49810","54850","54058","52393","8362","7737","7476","6965","6781","6963","7248","8254","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["railway transport (thous. passengers)","261314","263609","273182","269815","268204","277321","291981","303001","road transport (thous. passengers)","569652","534885","497288","459947","431516","416774","390410","378610","maritime transport fleet (thous. passengers)","671","637","642","606","611","597","632","644","transport by inland waterway fleet (thous. passengers)","1397","1519","1515","1540","1579","1762","2024","1262","air transport (thous. passengers)","4990","6491","7170","7648","7788","7288","8779","11846","railway transport (thous. tonnes)","234568","248606","230878","232596","227820","224320","222523","239501","road transport (thous. tonnes)","1551841","1596209","1493386","1553050","1547883","1505719","1546572","1747266","maritime transport fleet (thous. tonnes)","56208","54482","52985","50656","49810","54850","54058","52393","transport by inland waterway fleet (thous. tonnes)","8362","7737","7476","6965","6781","6963","7248","8254","air transport (thous. tonnes)","5141","5093","4579","5044","7629","11928","6210","5778",null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1863,7 +2021,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

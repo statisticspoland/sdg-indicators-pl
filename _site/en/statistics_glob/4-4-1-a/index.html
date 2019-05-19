@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill">
+        <meta property="og:title" content="4 4 1 A">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 4.4.1.a - Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-4-4-1-a" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-4-4-1-a'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=16
-  var calosc=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null]
+  var calosc=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["copying or moving a file or folder","using copy and paste tools to duplicate or move information within a document","using the basic math functions in a spreadsheet","installing new devices","transferring files between a computer and other devices","changing or checking program settings","creating electronic presentations with presentation software","sending e-mail with attachments","copying or moving a file or folder_","using copy and paste tools to duplicate or move information within a document_","using the basic math functions in a spreadsheet_","installing new devices_","transferring files between a computer and other devices_","changing or checking program settings_","creating electronic presentations with presentation software_","sending e-mails with attachements_"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["copying or moving a file or folder","using copy and paste tools to duplicate or move information within a document","using the basic math functions in a spreadsheet","installing new devices","transferring files between a computer and other devices","changing or checking program settings","creating electronic presentations with presentation software","sending e-mail with attachments","copying or moving a file or folder_","using copy and paste tools to duplicate or move information within a document_","using the basic math functions in a spreadsheet_","installing new devices_","transferring files between a computer and other devices_","changing or checking program settings_","creating electronic presentations with presentation software_","sending e-mails with attachements_"]
+
+  if (jez=='en'){
+    var legen=["copying or moving a file or folder","using copy and paste tools to duplicate or move information within a document","using the basic math functions in a spreadsheet","installing new devices","transferring files between a computer and other devices","changing or checking program settings","creating electronic presentations with presentation software","sending e-mail with attachments","copying or moving a file or folder_","using copy and paste tools to duplicate or move information within a document_","using the basic math functions in a spreadsheet_","installing new devices_","transferring files between a computer and other devices_","changing or checking program settings_","creating electronic presentations with presentation software_","sending e-mails with attachements_"]
+  }else{
+    var legen=["kopiowanie lub przenoszenie pliku lub folderu","używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym","instalowanie nowych urządzeń","przenoszenie plików pomiędzy komputerem a innymi urządzeniami","zmienianie lub sprawdzanie ustawień programów","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego","wysyłanie e-maila z załącznikami","kopiowanie lub przenoszenie pliku lub folderu_","używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_","instalowanie nowych urządzeń","przenoszenie plików pomiędzy komputerem a innymi urządzeniami_","zmienianie lub sprawdzanie ustawień programów_","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_","wysyłanie e-maila z załącznikami_"]
+  }
 
   if(1=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","copying or moving a file or folder":"50.1","using copy and paste tools to duplicate or move information within a document":"44.1","using the basic math functions in a spreadsheet":"31.2","installing new devices":"32.1","transferring files between a computer and other devices":null,"changing or checking program settings":null,"creating electronic presentations with presentation software":null,"sending e-mail with attachments":"45.8","copying or moving a file or folder_":"91.3","using copy and paste tools to duplicate or move information within a document_":"83.3","using the basic math functions in a spreadsheet_":"63.5","installing new devices_":"66.2","transferring files between a computer and other devices_":null,"changing or checking program settings_":null,"creating electronic presentations with presentation software_":null,"sending e-mails with attachements_":"84.9"},{"year":"2011","copying or moving a file or folder":"52.0","using copy and paste tools to duplicate or move information within a document":"45.5","using the basic math functions in a spreadsheet":"33.3","installing new devices":"33.8","transferring files between a computer and other devices":"30.9","changing or checking program settings":"19.4","creating electronic presentations with presentation software":"16.5","sending e-mail with attachments":"46.8","copying or moving a file or folder_":"93.7","using copy and paste tools to duplicate or move information within a document_":"85.4","using the basic math functions in a spreadsheet_":"69.7","installing new devices_":"70.4","transferring files between a computer and other devices_":"66.0","changing or checking program settings_":"44.4","creating electronic presentations with presentation software_":"46.6","sending e-mails with attachements_":"84.3"},{"year":"2012","copying or moving a file or folder":"52.5","using copy and paste tools to duplicate or move information within a document":"46.6","using the basic math functions in a spreadsheet":"33.0","installing new devices":"35.1","transferring files between a computer and other devices":"36.5","changing or checking program settings":"21.7","creating electronic presentations with presentation software":"20.0","sending e-mail with attachments":"51.1","copying or moving a file or folder_":"91.6","using copy and paste tools to duplicate or move information within a document_":"83.5","using the basic math functions in a spreadsheet_":"65.1","installing new devices_":"69.1","transferring files between a computer and other devices_":"73.8","changing or checking program settings_":"46.3","creating electronic presentations with presentation software_":"53.3","sending e-mails with attachements_":"86.8"},{"year":"2013","copying or moving a file or folder":"52.5","using copy and paste tools to duplicate or move information within a document":"47.3","using the basic math functions in a spreadsheet":"34.1","installing new devices":"34.9","transferring files between a computer and other devices":"36.7","changing or checking program settings":"22.1","creating electronic presentations with presentation software":"19.1","sending e-mail with attachments":"51.5","copying or moving a file or folder_":"93.4","using copy and paste tools to duplicate or move information within a document_":"85.2","using the basic math functions in a spreadsheet_":"67.9","installing new devices_":"70.7","transferring files between a computer and other devices_":"72.3","changing or checking program settings_":"45.6","creating electronic presentations with presentation software_":"50.1","sending e-mails with attachements_":"86.2"},{"year":"2014","copying or moving a file or folder":"54.9","using copy and paste tools to duplicate or move information within a document":"50.2","using the basic math functions in a spreadsheet":"36.1","installing new devices":"38.5","transferring files between a computer and other devices":"39.7","changing or checking program settings":"25.2","creating electronic presentations with presentation software":"21.6","sending e-mail with attachments":"52.9","copying or moving a file or folder_":"93.6","using copy and paste tools to duplicate or move information within a document_":"87.6","using the basic math functions in a spreadsheet_":"70.4","installing new devices_":"74.8","transferring files between a computer and other devices_":"78.2","changing or checking program settings_":"52.4","creating electronic presentations with presentation software_":"56.2","sending e-mails with attachements_":"84.4"},{"year":"2015","copying or moving a file or folder":null,"using copy and paste tools to duplicate or move information within a document":null,"using the basic math functions in a spreadsheet":null,"installing new devices":null,"transferring files between a computer and other devices":null,"changing or checking program settings":null,"creating electronic presentations with presentation software":null,"sending e-mail with attachments":null,"copying or moving a file or folder_":null,"using copy and paste tools to duplicate or move information within a document_":null,"using the basic math functions in a spreadsheet_":null,"installing new devices_":null,"transferring files between a computer and other devices_":null,"changing or checking program settings_":null,"creating electronic presentations with presentation software_":null,"sending e-mails with attachements_":null},{"year":"2016","copying or moving a file or folder":null,"using copy and paste tools to duplicate or move information within a document":null,"using the basic math functions in a spreadsheet":null,"installing new devices":null,"transferring files between a computer and other devices":null,"changing or checking program settings":null,"creating electronic presentations with presentation software":null,"sending e-mail with attachments":null,"copying or moving a file or folder_":null,"using copy and paste tools to duplicate or move information within a document_":null,"using the basic math functions in a spreadsheet_":null,"installing new devices_":null,"transferring files between a computer and other devices_":null,"changing or checking program settings_":null,"creating electronic presentations with presentation software_":null,"sending e-mails with attachements_":null},{"year":"2017","copying or moving a file or folder":null,"using copy and paste tools to duplicate or move information within a document":null,"using the basic math functions in a spreadsheet":null,"installing new devices":null,"transferring files between a computer and other devices":null,"changing or checking program settings":null,"creating electronic presentations with presentation software":null,"sending e-mail with attachments":null,"copying or moving a file or folder_":null,"using copy and paste tools to duplicate or move information within a document_":null,"using the basic math functions in a spreadsheet_":null,"installing new devices_":null,"transferring files between a computer and other devices_":null,"changing or checking program settings_":null,"creating electronic presentations with presentation software_":null,"sending e-mails with attachements_":null},{"year":"2018","copying or moving a file or folder":null,"using copy and paste tools to duplicate or move information within a document":null,"using the basic math functions in a spreadsheet":null,"installing new devices":null,"transferring files between a computer and other devices":null,"changing or checking program settings":null,"creating electronic presentations with presentation software":null,"sending e-mail with attachments":null,"copying or moving a file or folder_":null,"using copy and paste tools to duplicate or move information within a document_":null,"using the basic math functions in a spreadsheet_":null,"installing new devices_":null,"transferring files between a computer and other devices_":null,"changing or checking program settings_":null,"creating electronic presentations with presentation software_":null,"sending e-mails with attachements_":null}]
-var naglowek=["copying or moving a file or folder","using copy and paste tools to duplicate or move information within a document","using the basic math functions in a spreadsheet","installing new devices","transferring files between a computer and other devices","changing or checking program settings","creating electronic presentations with presentation software","sending e-mail with attachments","copying or moving a file or folder_","using copy and paste tools to duplicate or move information within a document_","using the basic math functions in a spreadsheet_","installing new devices_","transferring files between a computer and other devices_","changing or checking program settings_","creating electronic presentations with presentation software_","sending e-mails with attachements_"]
+var DATA = [{"year":"year","kopiowanie lub przenoszenie pliku lub folderu":"copying or moving a file or folder","używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu":"using copy and paste tools to duplicate or move information within a document","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym":"using the basic math functions in a spreadsheet","instalowanie nowych urządzeń":"installing new devices","przenoszenie plików pomiędzy komputerem a innymi urządzeniami":"transferring files between a computer and other devices","zmienianie lub sprawdzanie ustawień programów":"changing or checking program settings","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego":"creating electronic presentations with presentation software","wysyłanie e-maila z załącznikami":"sending e-mail with attachments","kopiowanie lub przenoszenie pliku lub folderu_":"copying or moving a file or folder_","używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_":"using copy and paste tools to duplicate or move information within a document_","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_":"using the basic math functions in a spreadsheet_","instalowanie nowych urządzeń_":"installing new devices_","przenoszenie plików pomiędzy komputerem a innymi urządzeniami_":"transferring files between a computer and other devices_","zmienianie lub sprawdzanie ustawień programów_":"changing or checking program settings_","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_":"creating electronic presentations with presentation software_","wysyłanie e-maila z załącznikami_":"sending e-mails with attachements_"},{"year":"2010","kopiowanie lub przenoszenie pliku lub folderu":"50.1","używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu":"44.1","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym":"31.2","instalowanie nowych urządzeń":"32.1","przenoszenie plików pomiędzy komputerem a innymi urządzeniami":null,"zmienianie lub sprawdzanie ustawień programów":null,"tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego":null,"wysyłanie e-maila z załącznikami":"45.8","kopiowanie lub przenoszenie pliku lub folderu_":"91.3","używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_":"83.3","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_":"63.5","instalowanie nowych urządzeń_":"66.2","przenoszenie plików pomiędzy komputerem a innymi urządzeniami_":null,"zmienianie lub sprawdzanie ustawień programów_":null,"tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_":null,"wysyłanie e-maila z załącznikami_":"84.9"},{"year":"2011","kopiowanie lub przenoszenie pliku lub folderu":"52.0","używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu":"45.5","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym":"33.3","instalowanie nowych urządzeń":"33.8","przenoszenie plików pomiędzy komputerem a innymi urządzeniami":"30.9","zmienianie lub sprawdzanie ustawień programów":"19.4","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego":"16.5","wysyłanie e-maila z załącznikami":"46.8","kopiowanie lub przenoszenie pliku lub folderu_":"93.7","używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_":"85.4","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_":"69.7","instalowanie nowych urządzeń_":"70.4","przenoszenie plików pomiędzy komputerem a innymi urządzeniami_":"66.0","zmienianie lub sprawdzanie ustawień programów_":"44.4","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_":"46.6","wysyłanie e-maila z załącznikami_":"84.3"},{"year":"2012","kopiowanie lub przenoszenie pliku lub folderu":"52.5","używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu":"46.6","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym":"33.0","instalowanie nowych urządzeń":"35.1","przenoszenie plików pomiędzy komputerem a innymi urządzeniami":"36.5","zmienianie lub sprawdzanie ustawień programów":"21.7","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego":"20.0","wysyłanie e-maila z załącznikami":"51.1","kopiowanie lub przenoszenie pliku lub folderu_":"91.6","używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_":"83.5","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_":"65.1","instalowanie nowych urządzeń_":"69.1","przenoszenie plików pomiędzy komputerem a innymi urządzeniami_":"73.8","zmienianie lub sprawdzanie ustawień programów_":"46.3","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_":"53.3","wysyłanie e-maila z załącznikami_":"86.8"},{"year":"2013","kopiowanie lub przenoszenie pliku lub folderu":"52.5","używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu":"47.3","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym":"34.1","instalowanie nowych urządzeń":"34.9","przenoszenie plików pomiędzy komputerem a innymi urządzeniami":"36.7","zmienianie lub sprawdzanie ustawień programów":"22.1","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego":"19.1","wysyłanie e-maila z załącznikami":"51.5","kopiowanie lub przenoszenie pliku lub folderu_":"93.4","używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_":"85.2","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_":"67.9","instalowanie nowych urządzeń_":"70.7","przenoszenie plików pomiędzy komputerem a innymi urządzeniami_":"72.3","zmienianie lub sprawdzanie ustawień programów_":"45.6","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_":"50.1","wysyłanie e-maila z załącznikami_":"86.2"},{"year":"2014","kopiowanie lub przenoszenie pliku lub folderu":"54.9","używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu":"50.2","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym":"36.1","instalowanie nowych urządzeń":"38.5","przenoszenie plików pomiędzy komputerem a innymi urządzeniami":"39.7","zmienianie lub sprawdzanie ustawień programów":"25.2","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego":"21.6","wysyłanie e-maila z załącznikami":"52.9","kopiowanie lub przenoszenie pliku lub folderu_":"93.6","używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_":"87.6","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_":"70.4","instalowanie nowych urządzeń_":"74.8","przenoszenie plików pomiędzy komputerem a innymi urządzeniami_":"78.2","zmienianie lub sprawdzanie ustawień programów_":"52.4","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_":"56.2","wysyłanie e-maila z załącznikami_":"84.4"},{"year":"2015","kopiowanie lub przenoszenie pliku lub folderu":null,"używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu":null,"korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym":null,"instalowanie nowych urządzeń":null,"przenoszenie plików pomiędzy komputerem a innymi urządzeniami":null,"zmienianie lub sprawdzanie ustawień programów":null,"tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego":null,"wysyłanie e-maila z załącznikami":null,"kopiowanie lub przenoszenie pliku lub folderu_":null,"używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_":null,"korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_":null,"instalowanie nowych urządzeń_":null,"przenoszenie plików pomiędzy komputerem a innymi urządzeniami_":null,"zmienianie lub sprawdzanie ustawień programów_":null,"tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_":null,"wysyłanie e-maila z załącznikami_":null},{"year":"2016","kopiowanie lub przenoszenie pliku lub folderu":null,"używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu":null,"korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym":null,"instalowanie nowych urządzeń":null,"przenoszenie plików pomiędzy komputerem a innymi urządzeniami":null,"zmienianie lub sprawdzanie ustawień programów":null,"tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego":null,"wysyłanie e-maila z załącznikami":null,"kopiowanie lub przenoszenie pliku lub folderu_":null,"używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_":null,"korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_":null,"instalowanie nowych urządzeń_":null,"przenoszenie plików pomiędzy komputerem a innymi urządzeniami_":null,"zmienianie lub sprawdzanie ustawień programów_":null,"tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_":null,"wysyłanie e-maila z załącznikami_":null},{"year":"2017","kopiowanie lub przenoszenie pliku lub folderu":null,"używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu":null,"korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym":null,"instalowanie nowych urządzeń":null,"przenoszenie plików pomiędzy komputerem a innymi urządzeniami":null,"zmienianie lub sprawdzanie ustawień programów":null,"tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego":null,"wysyłanie e-maila z załącznikami":null,"kopiowanie lub przenoszenie pliku lub folderu_":null,"używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_":null,"korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_":null,"instalowanie nowych urządzeń_":null,"przenoszenie plików pomiędzy komputerem a innymi urządzeniami_":null,"zmienianie lub sprawdzanie ustawień programów_":null,"tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_":null,"wysyłanie e-maila z załącznikami_":null},{"year":"2018","kopiowanie lub przenoszenie pliku lub folderu":null,"używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu":null,"korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym":null,"instalowanie nowych urządzeń":null,"przenoszenie plików pomiędzy komputerem a innymi urządzeniami":null,"zmienianie lub sprawdzanie ustawień programów":null,"tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego":null,"wysyłanie e-maila z załącznikami":null,"kopiowanie lub przenoszenie pliku lub folderu_":null,"używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_":null,"korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_":null,"instalowanie nowych urządzeń_":null,"przenoszenie plików pomiędzy komputerem a innymi urządzeniami_":null,"zmienianie lub sprawdzanie ustawień programów_":null,"tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_":null,"wysyłanie e-maila z załącznikami_":null}]
 
+var naglowek=["kopiowanie lub przenoszenie pliku lub folderu","używanie polecenia kopiowania i wklejania w celu powielenia lub przemieszczenia wybranych fragmentów dokumentu","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym","instalowanie nowych urządzeń","przenoszenie plików pomiędzy komputerem a innymi urządzeniami","zmienianie lub sprawdzanie ustawień programów","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego","wysyłanie e-maila z załącznikami","kopiowanie lub przenoszenie pliku lub folderu_","używanie polecenia wklejania w celu powielania lub przemieszczania wybranych fragmentów_","korzystanie z podstawowych funkcji matematycznych w arkuszu kalkulacyjnym_","instalowanie nowych urządzeń","przenoszenie plików pomiędzy komputerem a innymi urządzeniami_","zmienianie lub sprawdzanie ustawień programów_","tworzenie prezentacji elektronicznej za pomocą oprogramowania prezentacyjnego_","wysyłanie e-maila z załącznikami_"]
+var naglowek_ang=["copying or moving a file or folder","using copy and paste tools to duplicate or move information within a document","using the basic math functions in a spreadsheet","installing new devices","transferring files between a computer and other devices","changing or checking program settings","creating electronic presentations with presentation software","sending e-mail with attachments","copying or moving a file or folder_","using copy and paste tools to duplicate or move information within a document_","using the basic math functions in a spreadsheet_","installing new devices_","transferring files between a computer and other devices_","changing or checking program settings_","creating electronic presentations with presentation software_","sending e-mails with attachements_"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/4-4-1-a.pdf">Download metadata for 4.4.1.a</a>
+              <a href="/sdg-indicators/assets/pdf/en/4-4-1-a.pdf"><button>Download metadata for 4.4.1.a</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  4.4.1.a Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 4. Quality education </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  4.4 By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The percentage of young people (aged 16-24) and adults (aged 16-74) who have skills in information and communication technologies. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total, age </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Information and Communication Technologies (ICT) - technologies that process, collect and transmit information electronically.Data for the indicator comes from the Study of the use of Information and Communication Technologies in households and by individuals.The study of the use of Information and Communication Technologies in households and by individual users started in the EU in 2002, using mainly the method of direct or telephone interviews. In Poland, monitoring of the ICT usage in households in accordance with the European Union (EU) harmonized methodology was launched in 2004. Since then, the survey has been carried out annually and voluntary participation is ongoing. The study is carried out through face-to face interviews and includes households with at least one person aged 16-74 and persons of that age.Data for the years 2010-2014 refer to the percentage of people with computer skills (by level: low, medium, high) and internet skills (by level: low, medium, high). The level of computer and Internet skills was calculated on the basis of a list of activities related to using the computer or the internet, as appropriate, including: coping or moving a file or folder, using the copy and paste command to duplicate or move information within a document, using the basic math functions in a spreadsheet, compressing (packing) files using a special program, installing new devices, writing a computer program using a specialized programming language, using an internet search engine to find information, sending e-mail with attachments (e.g. documents, graphic files), participating in online chat rooms, groups or forums (e.g. on social networking sites)  dialing via the Internet, using programs to exchange movie files, music, etc., creating website. Starting in 2015, the Eurostat methodology for digital literacy indicators calculation has been changed. This methodology is no longer based on the existing list of activities, so the indicators based on it are not available since 2015. New indicators cover the percentage of people with total digital skills (by level: low, basic, above basic) and by skill type (information, communication, problem-solving, software). </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  from 2010 to 2014 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  4.4.1.a Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 4. Quality education </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  4.4 By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The percentage of young people (aged 16-24) and adults (aged 16-74) who have skills in information and communication technologies. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total, age </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Information and Communication Technologies (ICT) - technologies that process, collect and transmit information electronically.Data for the indicator comes from the Study of the use of Information and Communication Technologies in households and by individuals.The study of the use of Information and Communication Technologies in households and by individual users started in the EU in 2002, using mainly the method of direct or telephone interviews. In Poland, monitoring of the ICT usage in households in accordance with the European Union (EU) harmonized methodology was launched in 2004. Since then, the survey has been carried out annually and voluntary participation is ongoing. The study is carried out through face-to face interviews and includes households with at least one person aged 16-74 and persons of that age.Data for the years 2010-2014 refer to the percentage of people with computer skills (by level: low, medium, high) and internet skills (by level: low, medium, high). The level of computer and Internet skills was calculated on the basis of a list of activities related to using the computer or the internet, as appropriate, including: coping or moving a file or folder, using the copy and paste command to duplicate or move information within a document, using the basic math functions in a spreadsheet, compressing (packing) files using a special program, installing new devices, writing a computer program using a specialized programming language, using an internet search engine to find information, sending e-mail with attachments (e.g. documents, graphic files), participating in online chat rooms, groups or forums (e.g. on social networking sites)  dialing via the Internet, using programs to exchange movie files, music, etc., creating website. Starting in 2015, the Eurostat methodology for digital literacy indicators calculation has been changed. This methodology is no longer based on the existing list of activities, so the indicators based on it are not available since 2015. New indicators cover the percentage of people with total digital skills (by level: low, basic, above basic) and by skill type (information, communication, problem-solving, software). </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  from 2010 to 2014 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["copying or moving a file or folder","using copy and paste tools to duplicate or move information within a document","using the basic math functions in a spreadsheet","installing new devices","transferring files between a computer and other devices","changing or checking program settings","creating electronic presentations with presentation software","sending e-mail with attachments","copying or moving a file or folder_","using copy and paste tools to duplicate or move information within a document_","using the basic math functions in a spreadsheet_","installing new devices_","transferring files between a computer and other devices_","changing or checking program settings_","creating electronic presentations with presentation software_","sending e-mails with attachements_"]
+
 function Zmiana_jednostki(){
 
   var licznik=16
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=16
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=16
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=16
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=16
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=16;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["50.1","52.0","52.5","52.5","54.9",null,null,null,null,"44.1","45.5","46.6","47.3","50.2",null,null,null,null,"31.2","33.3","33.0","34.1","36.1",null,null,null,null,"32.1","33.8","35.1","34.9","38.5",null,null,null,null,null,"30.9","36.5","36.7","39.7",null,null,null,null,null,"19.4","21.7","22.1","25.2",null,null,null,null,null,"16.5","20.0","19.1","21.6",null,null,null,null,"45.8","46.8","51.1","51.5","52.9",null,null,null,null,"91.3","93.7","91.6","93.4","93.6",null,null,null,null,"83.3","85.4","83.5","85.2","87.6",null,null,null,null,"63.5","69.7","65.1","67.9","70.4",null,null,null,null,"66.2","70.4","69.1","70.7","74.8",null,null,null,null,null,"66.0","73.8","72.3","78.2",null,null,null,null,null,"44.4","46.3","45.6","52.4",null,null,null,null,null,"46.6","53.3","50.1","56.2",null,null,null,null,"84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["copying or moving a file or folder","50.1","52.0","52.5","52.5","54.9",null,null,null,null,"using copy and paste tools to duplicate or move information within a document","44.1","45.5","46.6","47.3","50.2",null,null,null,null,"using the basic math functions in a spreadsheet","31.2","33.3","33.0","34.1","36.1",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices",null,"30.9","36.5","36.7","39.7",null,null,null,null,"changing or checking program settings",null,"19.4","21.7","22.1","25.2",null,null,null,null,"creating electronic presentations with presentation software",null,"16.5","20.0","19.1","21.6",null,null,null,null,"sending e-mail with attachments","45.8","46.8","51.1","51.5","52.9",null,null,null,null,"copying or moving a file or folder_","91.3","93.7","91.6","93.4","93.6",null,null,null,null,"using copy and paste tools to duplicate or move information within a document_","83.3","85.4","83.5","85.2","87.6",null,null,null,null,"using the basic math functions in a spreadsheet_","63.5","69.7","65.1","67.9","70.4",null,null,null,null,"installing new devices","32.1","33.8","35.1","34.9","38.5",null,null,null,null,"transferring files between a computer and other devices_",null,"66.0","73.8","72.3","78.2",null,null,null,null,"changing or checking program settings_",null,"44.4","46.3","45.6","52.4",null,null,null,null,"creating electronic presentations with presentation software_",null,"46.6","53.3","50.1","56.2",null,null,null,null,"sending e-mails with attachements_","84.9","84.3","86.8","86.2","84.4",null,null,null,null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

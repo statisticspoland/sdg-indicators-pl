@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Results of PISA tests - percentage of students achieving at least a minimum proficiency level in reading">
+        <meta property="og:title" content="4 1 1 B">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 4.1.1.b - Results of PISA tests - percentage of students achieving at least a minimum proficiency level in reading </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -626,14 +653,35 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
 <script>
+
+  function remove(array, element) {
+    const index = array.indexOf(element);
+
+    if (index !== -1) {
+      array.splice(index, 1);
+    }
+  }
+
 (function () {
   var container = '#linechart-4-1-1-b'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=3
-  var calosc=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null]
-  var jez= 'en'
-  var legen=["total","boys","girls"]
+  var calosc=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total","boys","girls"]
 
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
+  var jez= 'en'
+
+  if (jez=='en'){
+    var legen=["total","boys","girls"]
+  }else{
+    var legen=["ogółem","chłopcy","dziewczęta"]
+  }
+  
   if(1=='0'){
     var precyz=0;
   }else{
@@ -1128,9 +1176,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":"85.0","boys":"77.4","girls":"92.6"},{"year":"2011","total":null,"boys":null,"girls":null},{"year":"2012","total":"89.4","boys":"83.8","girls":"94.8"},{"year":"2013","total":null,"boys":null,"girls":null},{"year":"2014","total":null,"boys":null,"girls":null},{"year":"2015","total":"85.6","boys":"80.8","girls":"90.5"},{"year":"2016","total":null,"boys":null,"girls":null},{"year":"2017","total":null,"boys":null,"girls":null},{"year":"2018","total":null,"boys":null,"girls":null}]
-var naglowek=["total","boys","girls"]
+var DATA = [{"year":"year","ogółem":"total","chłopcy":"boys","dziewczęta":"girls"},{"year":"2010","ogółem":"85.0","chłopcy":"77.4","dziewczęta":"92.6"},{"year":"2011","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2012","ogółem":"89.4","chłopcy":"83.8","dziewczęta":"94.8"},{"year":"2013","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2014","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2015","ogółem":"85.6","chłopcy":"80.8","dziewczęta":"90.5"},{"year":"2016","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2017","ogółem":null,"chłopcy":null,"dziewczęta":null},{"year":"2018","ogółem":null,"chłopcy":null,"dziewczęta":null}]
 
+var naglowek=["ogółem","chłopcy","dziewczęta"]
+var naglowek_ang=["total","boys","girls"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1164,7 +1214,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1223,174 +1278,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/4-1-1-b.pdf">Download metadata for 4.1.1.b</a>
+              <a href="/sdg-indicators/assets/pdf/en/4-1-1-b.pdf"><button>Download metadata for 4.1.1.b</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  4.1.1.b Results of PISA tests - percentage of students achieving at least a minimum proficiency level in reading </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 4. Quality education </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  4.1 By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Relation of number of students at the required level of proficiency (minimum level 2) in reading and interpretation to the number of students covered by the study. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total, sex </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The data comes from the Program for International Student Assessment (PISA).Programme for International Student Assessment – PISA is internationally coordinated by the Organisation for Economic Co-operation and Development (OECD) and in Poland by the Ministry of National Education. The aim of the programme is to verify the practical application of knowledge acquired in school and outside the school. The survey (representative) is carried out in randomly selected schools, and its results are generalized to the entire population. The success of the survey depends on the participation of all sampled schools and students. PISA standards only allow a small-scale denial.PISA tests students skills in three subject areas: Reading and Interpretation, Mathematics and Scientific literacy. The survey is carried out every three years, since 2000. In each of the subsequent surveys, a particular emphasis is put on the examination of one area, which takes half of the time provided for the student to solve the entire set of tasks.PISA tests (developed by an international consortium, with the cooperation of the countries participating in the project) are different from typical school activities, and on the basis of the results, the level of student skills is estimated. The best students reach level 5 or 6 (tasks with a relatively high degree of difficulty), while results below level 2 - a minimum level of competence - indicate very basic skills, which means an higher risk of not coping with education and adult life.PISA is one of the most important and the biggest educational surveys, which aims to provide objective and internationally comparable data on the same year students’ skills. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Organisation for Economic Co-operation and Development / Ministry of Education </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data every 3 years  since 2009 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  4.1.1.b Results of PISA tests - percentage of students achieving at least a minimum proficiency level in reading </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 4. Quality education </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  4.1 By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Relation of number of students at the required level of proficiency (minimum level 2) in reading and interpretation to the number of students covered by the study. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total, sex </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The data comes from the Program for International Student Assessment (PISA).Programme for International Student Assessment – PISA is internationally coordinated by the Organisation for Economic Co-operation and Development (OECD) and in Poland by the Ministry of National Education. The aim of the programme is to verify the practical application of knowledge acquired in school and outside the school. The survey (representative) is carried out in randomly selected schools, and its results are generalized to the entire population. The success of the survey depends on the participation of all sampled schools and students. PISA standards only allow a small-scale denial.PISA tests students skills in three subject areas: Reading and Interpretation, Mathematics and Scientific literacy. The survey is carried out every three years, since 2000. In each of the subsequent surveys, a particular emphasis is put on the examination of one area, which takes half of the time provided for the student to solve the entire set of tasks.PISA tests (developed by an international consortium, with the cooperation of the countries participating in the project) are different from typical school activities, and on the basis of the results, the level of student skills is estimated. The best students reach level 5 or 6 (tasks with a relatively high degree of difficulty), while results below level 2 - a minimum level of competence - indicate very basic skills, which means an higher risk of not coping with education and adult life.PISA is one of the most important and the biggest educational surveys, which aims to provide objective and internationally comparable data on the same year students’ skills. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Organisation for Economic Co-operation and Development / Ministry of Education </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data every 3 years  since 2009 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The value of the indicator in 2010 is for 2009. </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1402,7 +1513,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1482,15 +1593,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total","boys","girls"]
+
 function Zmiana_jednostki(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1513,8 +1631,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1540,11 +1662,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1568,7 +1695,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1595,11 +1726,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1628,7 +1764,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1659,11 +1799,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1689,7 +1834,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1728,8 +1876,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1751,8 +1905,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["85.0",null,"89.4",null,null,"85.6",null,null,null,"77.4",null,"83.8",null,null,"80.8",null,null,null,"92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["total","85.0",null,"89.4",null,null,"85.6",null,null,null,"boys","77.4",null,"83.8",null,null,"80.8",null,null,null,"girls","92.6",null,"94.8",null,null,"90.5",null,null,null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1843,7 +2002,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

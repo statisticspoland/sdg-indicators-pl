@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Fixed Internet broadband subscriptions per 100 inhabitants">
+        <meta property="og:title" content="17 6 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 17.6.2 - Fixed Internet broadband subscriptions per 100 inhabitants </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-17-6-2" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-17-6-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=3
-  var calosc=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null]
+  var calosc=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["to 30 Mbps","from 30 Mbps to 100 Mbps","above 100 Mbps"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["to 30 Mbps","from 30 Mbps to 100 Mbps","above 100 Mbps"]
+
+  if (jez=='en'){
+    var legen=["to 30 Mbps","from 30 Mbps to 100 Mbps","above 100 Mbps"]
+  }else{
+    var legen=["do 30 Mb/s","od 30 Mb/s do 100 Mb/s","powyżej 100 Mb/s"]
+  }
 
   if(2=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","to 30 Mbps":"11.34","from 30 Mbps to 100 Mbps":"0.15","above 100 Mbps":"0.03"},{"year":"2011","to 30 Mbps":"11.75","from 30 Mbps to 100 Mbps":"0.36","above 100 Mbps":"0.09"},{"year":"2012","to 30 Mbps":"11.82","from 30 Mbps to 100 Mbps":"1.41","above 100 Mbps":"0.18"},{"year":"2013","to 30 Mbps":"11.31","from 30 Mbps to 100 Mbps":"2.52","above 100 Mbps":"0.35"},{"year":"2014","to 30 Mbps":"10.67","from 30 Mbps to 100 Mbps":"3.30","above 100 Mbps":"0.79"},{"year":"2015","to 30 Mbps":"9.41","from 30 Mbps to 100 Mbps":"4.05","above 100 Mbps":"1.66"},{"year":"2016","to 30 Mbps":"8.12","from 30 Mbps to 100 Mbps":"4.57","above 100 Mbps":"2.70"},{"year":"2017","to 30 Mbps":"6.68","from 30 Mbps to 100 Mbps":"4.54","above 100 Mbps":"4.23"},{"year":"2018","to 30 Mbps":null,"from 30 Mbps to 100 Mbps":null,"above 100 Mbps":null}]
-var naglowek=["to 30 Mbps","from 30 Mbps to 100 Mbps","above 100 Mbps"]
+var DATA = [{"year":"year","do 30 Mb/s":"to 30 Mbps","od 30 Mb/s do 100 Mb/s":"from 30 Mbps to 100 Mbps","powyżej 100 Mb/s":"above 100 Mbps"},{"year":"2010","do 30 Mb/s":"11.34","od 30 Mb/s do 100 Mb/s":"0.15","powyżej 100 Mb/s":"0.03"},{"year":"2011","do 30 Mb/s":"11.75","od 30 Mb/s do 100 Mb/s":"0.36","powyżej 100 Mb/s":"0.09"},{"year":"2012","do 30 Mb/s":"11.82","od 30 Mb/s do 100 Mb/s":"1.41","powyżej 100 Mb/s":"0.18"},{"year":"2013","do 30 Mb/s":"11.31","od 30 Mb/s do 100 Mb/s":"2.52","powyżej 100 Mb/s":"0.35"},{"year":"2014","do 30 Mb/s":"10.67","od 30 Mb/s do 100 Mb/s":"3.30","powyżej 100 Mb/s":"0.79"},{"year":"2015","do 30 Mb/s":"9.41","od 30 Mb/s do 100 Mb/s":"4.05","powyżej 100 Mb/s":"1.66"},{"year":"2016","do 30 Mb/s":"8.12","od 30 Mb/s do 100 Mb/s":"4.57","powyżej 100 Mb/s":"2.70"},{"year":"2017","do 30 Mb/s":"6.68","od 30 Mb/s do 100 Mb/s":"4.54","powyżej 100 Mb/s":"4.23"},{"year":"2018","do 30 Mb/s":null,"od 30 Mb/s do 100 Mb/s":null,"powyżej 100 Mb/s":null}]
 
+var naglowek=["do 30 Mb/s","od 30 Mb/s do 100 Mb/s","powyżej 100 Mb/s"]
+var naglowek_ang=["to 30 Mbps","from 30 Mbps to 100 Mbps","above 100 Mbps"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/17-6-2.pdf">Download metadata for 17.6.2</a>
+              <a href="/sdg-indicators/assets/pdf/en/17-6-2.pdf"><button>Download metadata for 17.6.2</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  17.6.2 Fixed Internet broadband subscriptions per 100 inhabitants </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 17. Partnerships  for the goals </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  17.6 Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge-sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Number of fixed line and wireless broadband internet subscribers per 100 persons. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  persons </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total, by speed </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Broadband connection – there are two approaches to defining the concept of broadband connection in the European Union's (EU) statistics. The first in the Information and COmmunication Technologies (ICT) usage research conducted by all national statistical offices (by Central Statistical Office in Poland) and the second in telecommunication market research conducted by national regulators of the telecommunications market (respectively by the Electronic Communications Office). The EU statistics on the telecommunications market used by the Office of Electronic Communications and the European Commission for fixed-line broadband are considered those with speeds above 144 kbps. On the other hand, for research conducted by national statistical offices, coordinated by Eurostat, broadband is defined by the type of technique used for the connection, not its speed. These include DSL technologies such as ADSL, HDSL, SDSL, VDSL, Ethernet LANs, which are the backbone of broadband connections, and others with high bandwidth (wired or wireless).Data for the indicator comes from a survey conducted twice a year by the Office of Electronic Communications for the European Commission (Digital Agenda). The survey covers about 100-120 largest telecommunications undertakings with a combined market share of over 95%. The indicator is presented according to the connection speed for the following speed ranges: less than 30 Mbps from 30 Mbps to less than 100 Mbps from 100 Mbps It presents the number of fixed line and wireless broadband internet subscribers per 100 persons (according to the population at the end of the year announced by the Central Statistical Office of Poland).Data on population were compiled on the basis of: the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010)  for previous years (2003 – 2009) on the basis of the 2002 Population and Housing Census, the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register – PESEL), documentation of Civil Status Offices regarding registered marriages, births and deaths. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Office of Electronic Communications </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2010 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  17.6.2 Fixed Internet broadband subscriptions per 100 inhabitants </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 17. Partnerships  for the goals </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  17.6 Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge-sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Number of fixed line and wireless broadband internet subscribers per 100 persons. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  persons </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total, by speed </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Broadband connection – there are two approaches to defining the concept of broadband connection in the European Union's (EU) statistics. The first in the Information and COmmunication Technologies (ICT) usage research conducted by all national statistical offices (by Central Statistical Office in Poland) and the second in telecommunication market research conducted by national regulators of the telecommunications market (respectively by the Electronic Communications Office). The EU statistics on the telecommunications market used by the Office of Electronic Communications and the European Commission for fixed-line broadband are considered those with speeds above 144 kbps. On the other hand, for research conducted by national statistical offices, coordinated by Eurostat, broadband is defined by the type of technique used for the connection, not its speed. These include DSL technologies such as ADSL, HDSL, SDSL, VDSL, Ethernet LANs, which are the backbone of broadband connections, and others with high bandwidth (wired or wireless).Data for the indicator comes from a survey conducted twice a year by the Office of Electronic Communications for the European Commission (Digital Agenda). The survey covers about 100-120 largest telecommunications undertakings with a combined market share of over 95%. The indicator is presented according to the connection speed for the following speed ranges: less than 30 Mbps from 30 Mbps to less than 100 Mbps from 100 Mbps It presents the number of fixed line and wireless broadband internet subscribers per 100 persons (according to the population at the end of the year announced by the Central Statistical Office of Poland).Data on population were compiled on the basis of: the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010)  for previous years (2003 – 2009) on the basis of the 2002 Population and Housing Census, the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register – PESEL), documentation of Civil Status Offices regarding registered marriages, births and deaths. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Office of Electronic Communications </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2010 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('persons'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["to 30 Mbps","from 30 Mbps to 100 Mbps","above 100 Mbps"]
+
 function Zmiana_jednostki(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null]
+      var calo=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null]
+      var calo=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null]
+      var calo=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null]
+      var calo=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null]
+      var calo=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null]
+      var calo=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["to 30 Mbps","11.34","11.75","11.82","11.31","10.67","9.41","8.12","6.68",null,"from 30 Mbps to 100 Mbps","0.15","0.36","1.41","2.52","3.30","4.05","4.57","4.54",null,"above 100 Mbps","0.03","0.09","0.18","0.35","0.79","1.66","2.70","4.23",null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

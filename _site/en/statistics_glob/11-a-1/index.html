@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs by size of cities">
+        <meta property="og:title" content="11 A 1">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 11.a.1 - Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs by size of cities </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-11-a-1" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-11-a-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=8
-  var calosc=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null]
+  var calosc=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total","urban gminas","rural gminas","urban-rural gminas","total_","urban gminas_","rural gminas_","urbal-rural gminas"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["total","urban gminas","rural gminas","urban-rural gminas","total_","urban gminas_","rural gminas_","urbal-rural gminas"]
+
+  if (jez=='en'){
+    var legen=["total","urban gminas","rural gminas","urban-rural gminas","total_","urban gminas_","rural gminas_","urbal-rural gminas"]
+  }else{
+    var legen=["ogółem","gminy miejskie","gminy wiejskie","gminy miejsko-wiejskie","ogółem_","gminy miejskie_","gminy wiejskie_","gminy miejsko-wiejskie_"]
+  }
 
   if(2=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":"96.87","urban gminas":"99.90","rural gminas":"90.59","urban-rural gminas":"98.16","total_":"61.7","urban gminas_":"60.6","rural gminas_":"67.0","urbal-rural gminas":"57.4"},{"year":"2011","total":"97.19","urban gminas":"99.91","rural gminas":"91.66","urban-rural gminas":"98.22","total_":"60.8","urban gminas_":"58.7","rural gminas_":"66.2","urbal-rural gminas":"58.5"},{"year":"2012","total":"97.29","urban gminas":"99.93","rural gminas":"91.90","urban-rural gminas":"98.39","total_":"60.9","urban gminas_":"60.1","rural gminas_":"65.6","urbal-rural gminas":"56.9"},{"year":"2013","total":"97.48","urban gminas":"99.96","rural gminas":"92.42","urban-rural gminas":"98.54","total_":"58.7","urban gminas_":"54.3","rural gminas_":"67.4","urbal-rural gminas":"57.2"},{"year":"2014","total":"97.59","urban gminas":"99.97","rural gminas":"92.85","urban-rural gminas":"98.45","total_":"59.8","urban gminas_":"56.3","rural gminas_":"67.5","urbal-rural gminas":"57.7"},{"year":"2015","total":"93.30","urban gminas":"100.00","rural gminas":"90.28","urban-rural gminas":"97.71","total_":"66.6","urban gminas_":"55.9","rural gminas_":"71.5","urbal-rural gminas":"59.4"},{"year":"2016","total":"93.42","urban gminas":"100.0","rural gminas":"90.38","urban-rural gminas":"97.89","total_":"65.6","urban gminas_":"58.4","rural gminas_":"69.8","urbal-rural gminas":"58.6"},{"year":"2017","total":"93.50","urban gminas":"100.0","rural gminas":"90.40","urban-rural gminas":"98.20","total_":"66.3","urban gminas_":"59.3","rural gminas_":"70.4","urbal-rural gminas":"59.3"}]
-var naglowek=["total","urban gminas","rural gminas","urban-rural gminas","total_","urban gminas_","rural gminas_","urbal-rural gminas"]
+var DATA = [{"year":"year","ogółem":"total","gminy miejskie":"urban gminas","gminy wiejskie":"rural gminas","gminy miejsko-wiejskie":"urban-rural gminas","ogółem_":"total_","gminy miejskie_":"urban gminas_","gminy wiejskie_":"rural gminas_","gminy miejsko-wiejskie_":"urbal-rural gminas"},{"year":"2010","ogółem":"96.87","gminy miejskie":"99.90","gminy wiejskie":"90.59","gminy miejsko-wiejskie":"98.16","ogółem_":"61.7","gminy miejskie_":"60.6","gminy wiejskie_":"67.0","gminy miejsko-wiejskie_":"57.4"},{"year":"2011","ogółem":"97.19","gminy miejskie":"99.91","gminy wiejskie":"91.66","gminy miejsko-wiejskie":"98.22","ogółem_":"60.8","gminy miejskie_":"58.7","gminy wiejskie_":"66.2","gminy miejsko-wiejskie_":"58.5"},{"year":"2012","ogółem":"97.29","gminy miejskie":"99.93","gminy wiejskie":"91.90","gminy miejsko-wiejskie":"98.39","ogółem_":"60.9","gminy miejskie_":"60.1","gminy wiejskie_":"65.6","gminy miejsko-wiejskie_":"56.9"},{"year":"2013","ogółem":"97.48","gminy miejskie":"99.96","gminy wiejskie":"92.42","gminy miejsko-wiejskie":"98.54","ogółem_":"58.7","gminy miejskie_":"54.3","gminy wiejskie_":"67.4","gminy miejsko-wiejskie_":"57.2"},{"year":"2014","ogółem":"97.59","gminy miejskie":"99.97","gminy wiejskie":"92.85","gminy miejsko-wiejskie":"98.45","ogółem_":"59.8","gminy miejskie_":"56.3","gminy wiejskie_":"67.5","gminy miejsko-wiejskie_":"57.7"},{"year":"2015","ogółem":"93.30","gminy miejskie":"100.00","gminy wiejskie":"90.28","gminy miejsko-wiejskie":"97.71","ogółem_":"66.6","gminy miejskie_":"55.9","gminy wiejskie_":"71.5","gminy miejsko-wiejskie_":"59.4"},{"year":"2016","ogółem":"93.42","gminy miejskie":"100.0","gminy wiejskie":"90.38","gminy miejsko-wiejskie":"97.89","ogółem_":"65.6","gminy miejskie_":"58.4","gminy wiejskie_":"69.8","gminy miejsko-wiejskie_":"58.6"},{"year":"2017","ogółem":"93.50","gminy miejskie":"100.0","gminy wiejskie":"90.40","gminy miejsko-wiejskie":"98.20","ogółem_":"66.3","gminy miejskie_":"59.3","gminy wiejskie_":"70.4","gminy miejsko-wiejskie_":"59.3"}]
 
+var naglowek=["ogółem","gminy miejskie","gminy wiejskie","gminy miejsko-wiejskie","ogółem_","gminy miejskie_","gminy wiejskie_","gminy miejsko-wiejskie_"]
+var naglowek_ang=["total","urban gminas","rural gminas","urban-rural gminas","total_","urban gminas_","rural gminas_","urbal-rural gminas"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/11-a-1.pdf">Download metadata for 11.a.1</a>
+              <a href="/sdg-indicators/assets/pdf/en/11-a-1.pdf"><button>Download metadata for 11.a.1</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  11.a.1 Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs by size of cities </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 11. Sustainable cities and communities </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  11.a Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional development planning </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The percentage of the population of gminas that have valid local spatial development plans (regardless of the number of plans) or valid study of local spatial planning direcions and determinats in total population, and by type of gminas: rural, urban and urban-rural. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total, gmina </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Study of local spatial planning direcions and determinats is adopted by the gmina council to determine the spatial policy, including local zoning rules, taking into account, among others, principles set out in the concept of spatial development of the country, the development strategy content and the voivodship spatial development plan, the framework study of local spatial planning of metropolitan organisation and gmina development strategies, and analysis of economic, environmental and social, demographic forecasts.The local spatial development plan is an act of local law adopted by the gmina council in accordance with the content of the study of ocal spatial planning, which specifies the purpose and the ways of developing particular areas, including public purpose investment. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Ministry of InfrastructureStatistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  11.a.1 Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs by size of cities </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 11. Sustainable cities and communities </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  11.a Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional development planning </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The percentage of the population of gminas that have valid local spatial development plans (regardless of the number of plans) or valid study of local spatial planning direcions and determinats in total population, and by type of gminas: rural, urban and urban-rural. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total, gmina </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Study of local spatial planning direcions and determinats is adopted by the gmina council to determine the spatial policy, including local zoning rules, taking into account, among others, principles set out in the concept of spatial development of the country, the development strategy content and the voivodship spatial development plan, the framework study of local spatial planning of metropolitan organisation and gmina development strategies, and analysis of economic, environmental and social, demographic forecasts.The local spatial development plan is an act of local law adopted by the gmina council in accordance with the content of the study of ocal spatial planning, which specifies the purpose and the ways of developing particular areas, including public purpose investment. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Ministry of InfrastructureStatistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Proxy indicator, available within the Polish public statistics. An original indicator, adopted by the UN for monitoring target 11.a Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional development planning, is 11.a.1 Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs by size of cities </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total","urban gminas","rural gminas","urban-rural gminas","total_","urban gminas_","rural gminas_","urbal-rural gminas"]
+
 function Zmiana_jednostki(){
 
   var licznik=8
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=8
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null]
+      var calo=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null]
+      var calo=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=8
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null]
+      var calo=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null]
+      var calo=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=8
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null]
+      var calo=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null]
+      var calo=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=8
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=8;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["total","96.87","97.19","97.29","97.48","97.59","93.30","93.42","93.50","urban gminas","99.90","99.91","99.93","99.96","99.97","100.00","100.0","100.0","rural gminas","90.59","91.66","91.90","92.42","92.85","90.28","90.38","90.40","urban-rural gminas","98.16","98.22","98.39","98.54","98.45","97.71","97.89","98.20","total_","61.7","60.8","60.9","58.7","59.8","66.6","65.6","66.3","urban gminas_","60.6","58.7","60.1","54.3","56.3","55.9","58.4","59.3","rural gminas_","67.0","66.2","65.6","67.4","67.5","71.5","69.8","70.4","urbal-rural gminas","57.4","58.5","56.9","57.2","57.7","59.4","58.6","59.3",null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

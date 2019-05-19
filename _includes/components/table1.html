@@ -6,8 +6,10 @@
 $( document ).ready(function() {
 var jez='{{include.content2}}'
 var DATA = {{include.content1 | jsonify}}
-var naglowek={{include.content | jsonify}}
 
+var naglowek={{include.content | jsonify}}
+var naglowek_ang={{ page.indicator_variable_2 | split: "," | jsonify}}
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -41,7 +43,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {

@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="The number of CITES individuals detained by custom officers">
+        <meta property="og:title" content="15 7 1">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 15.7.1 - The number of CITES individuals detained by custom officers </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -621,13 +648,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-15-7-1" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-15-7-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=1
-  var calosc=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null]
+  var calosc=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["total"]
+
+  if (jez=='en'){
+    var legen=["total"]
+  }else{
+    var legen=["ogółem"]
+  }
 
   if(0=='0'){
     var precyz=0;
@@ -729,7 +776,7 @@ for (i=1;i<licznik+1;i++){
       Chartist.plugins.ctAxisTitle({
       axisX: {},
       axisY: {
-        axisTitle: '',
+        axisTitle: 'null',
         axisClass: 'ct-axis-title',
         offset: {
           x: 0,
@@ -765,9 +812,11 @@ for (i=1;i<licznik+1;i++){
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":"8495"},{"year":"2011","total":"12833"},{"year":"2012","total":"8650"},{"year":"2013","total":"10632"},{"year":"2014","total":"3303"},{"year":"2015","total":"10677"},{"year":"2016","total":"8582"},{"year":"2017","total":null},{"year":"2018","total":null}]
-var naglowek=["total"]
+var DATA = [{"year":"year","ogółem":"total"},{"year":"2010","ogółem":"8495"},{"year":"2011","ogółem":"12833"},{"year":"2012","ogółem":"8650"},{"year":"2013","ogółem":"10632"},{"year":"2014","ogółem":"3303"},{"year":"2015","ogółem":"10677"},{"year":"2016","ogółem":"8582"},{"year":"2017","ogółem":null},{"year":"2018","ogółem":null}]
 
+var naglowek=["ogółem"]
+var naglowek_ang=["total"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -801,7 +850,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -860,174 +914,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/15-7-1.pdf">Download metadata for 15.7.1</a>
+              <a href="/sdg-indicators/assets/pdf/en/15-7-1.pdf"><button>Download metadata for 15.7.1</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  15.7.1 The number of CITES individuals detained by custom officers </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 15. Life on land </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  15.7 Take urgent action to end poaching and trafficking of protected species of flora and fauna and address both demand and supply of illegal wildlife products </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The indicator presents the number of CITES individuals, of which alive plants and animals, detained by customs officers. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  none </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) is an international agreement concluded in Washington on 3 March 1973 (Journal of Laws 1991 No. 27 item 112 with later amendments). Pursuant to the convention: species means any species, subspecies, or geographically separate population thereof  whereas specimen means: any animal or plant, either alive or dead  in the case of an animal: for species included in Appendices I and II, any readily recognizable part or derivative thereof  and for species included in Appendix III, any readily recognizable part or derivative thereof specified in Appendix III in relation to the species  in the case of a plant: for species included in Appendix I, any readily recognizable part or derivative thereof  and for species included in Appendices II and III, any readily recognizable part or derivative thereof specified in Appendices II and III in relation to the species. Trade means export, re-export, import and introduction from the sea, whereas re-export means export of any specimen that has previously been imported.Appendix I lists species that are the most endangered or which are or may be subject to commercial activity. Trade in these species should be under particular supervision in order to present further threat to their existence and may be permitted only in exceptional circumstances.Appendix II lists: all species that are not necessarily now threatened with extinction but that may become so, unless trade is closely controlled to prevent exploitation which cannot be reconciled with their preservation and some specimen, which should be subject to supervision for the purpose of efficient control of trade in species enlisted in Appendix II. Appendix III is a list of species included at the request of a Party that already regulates trade in the species and that needs the cooperation of other countries to prevent unsustainable or illegal exploitation.Total number of CITES speciments for 2010-2015 specifies the number of alive plants and animals. In addition: for year 2010: in total - 8286 speciments of Asian medicine medicines (TAM), 70 specimens (70 kg) of frozen European eel. for year 2011: in total - 2m3 Swietnia spp. wood and 3000 seeds of cactus Astrophytum asterias as well as 9594 speciments of Asian medicine medicines (TAM). for year 2012: in total - 8217 speciments of Asian medicine medicines (TAM), 7 specimens of ivory. for year 2013: in total - 2137 speciments of Asian medicine medicines (TAM), 2 specimens of ivory. for year 2014: in total - 2040 speciments of Asian medicine medicines (TAM), 1 specimens of ivory. for year 2015: in total - 9986 speciments of Asian medicine medicines (TAM), 7 specimens of ivory. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Ministry of Finance Republic of Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2010. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  15.7.1 The number of CITES individuals detained by custom officers </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 15. Life on land </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  15.7 Take urgent action to end poaching and trafficking of protected species of flora and fauna and address both demand and supply of illegal wildlife products </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The indicator presents the number of CITES individuals, of which alive plants and animals, detained by customs officers. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  none </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) is an international agreement concluded in Washington on 3 March 1973 (Journal of Laws 1991 No. 27 item 112 with later amendments). Pursuant to the convention: species means any species, subspecies, or geographically separate population thereof  whereas specimen means: any animal or plant, either alive or dead  in the case of an animal: for species included in Appendices I and II, any readily recognizable part or derivative thereof  and for species included in Appendix III, any readily recognizable part or derivative thereof specified in Appendix III in relation to the species  in the case of a plant: for species included in Appendix I, any readily recognizable part or derivative thereof  and for species included in Appendices II and III, any readily recognizable part or derivative thereof specified in Appendices II and III in relation to the species. Trade means export, re-export, import and introduction from the sea, whereas re-export means export of any specimen that has previously been imported.Appendix I lists species that are the most endangered or which are or may be subject to commercial activity. Trade in these species should be under particular supervision in order to present further threat to their existence and may be permitted only in exceptional circumstances.Appendix II lists: all species that are not necessarily now threatened with extinction but that may become so, unless trade is closely controlled to prevent exploitation which cannot be reconciled with their preservation and some specimen, which should be subject to supervision for the purpose of efficient control of trade in species enlisted in Appendix II. Appendix III is a list of species included at the request of a Party that already regulates trade in the species and that needs the cooperation of other countries to prevent unsustainable or illegal exploitation.Total number of CITES speciments for 2010-2015 specifies the number of alive plants and animals. In addition: for year 2010: in total - 8286 speciments of Asian medicine medicines (TAM), 70 specimens (70 kg) of frozen European eel. for year 2011: in total - 2m3 Swietnia spp. wood and 3000 seeds of cactus Astrophytum asterias as well as 9594 speciments of Asian medicine medicines (TAM). for year 2012: in total - 8217 speciments of Asian medicine medicines (TAM), 7 specimens of ivory. for year 2013: in total - 2137 speciments of Asian medicine medicines (TAM), 2 specimens of ivory. for year 2014: in total - 2040 speciments of Asian medicine medicines (TAM), 1 specimens of ivory. for year 2015: in total - 9986 speciments of Asian medicine medicines (TAM), 7 specimens of ivory. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Ministry of Finance Republic of Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2010. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Proxy indicator, availabe within the Polish public statistics.An orginal indicator, adoped by the UN for monitoring target 15.7 of the 2030 Agenda is 15.7.1 Proportion of traded wildlife that was poached or illicitly trafficked. </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1039,7 +1149,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('none'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1119,15 +1229,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total"]
+
 function Zmiana_jednostki(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1150,8 +1267,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1177,11 +1298,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1205,7 +1331,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1232,11 +1362,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1265,7 +1400,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1296,11 +1435,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1326,7 +1470,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1365,8 +1512,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1388,8 +1541,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["total","8495","12833","8650","10632","3303","10677","8582",null,null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1480,7 +1638,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

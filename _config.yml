@@ -33,7 +33,11 @@ collections:
   goals:
     output: true
   translations:
-    output: false
+    output: true
+  metadane_globalne:
+    output: true
+  metadane_krajowe:
+    output: true
 
 defaults:
   -
@@ -57,6 +61,7 @@ ckan_endpoint:
 prose:
   ignore:
   - /_includes
+  - /_indicators
   - /_layouts
   - /_goals
   - /_posts
@@ -96,142 +101,275 @@ prose:
   - status_glob.md
   - status_nat.md
   metadata:
-    _indicators:
-      - name: "nazwa_wskaznika"
+    _metadane_globalne:
+      - name: "pl_nazwa_wskaznika"
         field:
             element: text
             label: "Nazwa wskaźnika"
-            label2: "Name of the indicator"
             scope: global
-      - name: "cel"
+      - name: "pl_cel"
         field:
             element: text
             label: "Cel Zrównoważonego Rozwoju"
-            label2: "Sustainable Development Goal"
             scope: global
-      - name: "zadanie"
+      - name: "pl_zadanie"
         field:
             element: textarea
             label: "Zadanie"
-            label2: "Target"
             scope: global
-      - name: "definicja"
+      - name: "pl_definicja"
         field:
             element: textarea
             label: "Definicja wskaźnika"
-            label2: "Definition"
             scope: global
-      - name: "jednostka_prezentacji"
+      - name: "pl_jednostka_prezentacji"
         field:
             element: text
             label: "Jednostka prezentacji"
-            label2: "Unit"
             scope: global
-      - name: "dostepne_wymiary"
+      - name: "pl_dostepne_wymiary"
         field:
             element: textarea
             label: "Dostępne wymiary"
-            label2: "Available dimensions"
             scope: global
-      - name: "wyjasnienia_metodologiczne"
+      - name: "pl_wyjasnienia_metodologiczne"
         field:
             element: textarea
             label: "Wyjaśnienia metodologiczne"
-            label2: "Methodological explanations"
             scope: global
-      - name: "zrodlo_danych"
+      - name: "pl_zrodlo_danych"
         field:
             element: text
             label: "Źródło danych"
-            label2: "Source of data"
             scope: global
-      - name: "czestotliwosc_dostępnosc_danych"
+      - name: "pl_czestotliwosc_dostępnosc_danych"
         field:
             element: textarea
             label: "Częstotliwość i dostępność danych"
-            label2: "Data availability"
             scope: global
-      - name: "uwagi"
+      - name: "pl_uwagi"
         field:
             element: textarea
             label: "Uwagi"
-            label2: "Notes"
             scope: global
-      - name: "layout"
+      - name: "en_nazwa_wskaznika"
         field:
-            element: hidden
-            label: "layout"
-            label2: ""
+            element: text
+            label: "Name of the indicator"
             scope: global
-      - name: "indicator_variable_1"
+      - name: "en_cel"
         field:
-            element: hidden
-            label: "indicator_variable_1"
-            label2: ""
+            element: text
+            label: "Sustainable Development Goal"
             scope: global
-      - name: "kategorie"
+      - name: "en_zadanie"
         field:
-            element: hidden
-            label: "kategorie"
-            label2: ""
+            element: textarea
+            label: "Target"
             scope: global
-      - name: "zmienne"
+      - name: "en_definicja"
         field:
-            element: hidden
-            label: "zmienne"
-            label2: ""
+            element: textarea
+            label: "Definition"
             scope: global
-      - name: "jednostka"
+      - name: "en_jednostka_prezentacji"
         field:
-            element: hidden
-            label: "jednostka"
-            label2: ""
+            element: text
+            label: "Unit"
             scope: global
-      - name: "pre"
+      - name: "en_dostepne_wymiary"
         field:
-            element: hidden
-            label: "pre"
-            label2: ""
+            element: textarea
+            label: "Available dimensions"
             scope: global
-      - name: "graph"
+      - name: "en_wyjasnienia_metodologiczne"
         field:
-            element: hidden
-            label: "graph"
-            label2: ""
+            element: textarea
+            label: "Methodological explanations"
             scope: global
-      - name: "source_url"
+      - name: "en_zrodlo_danych"
         field:
-            element: hidden
-            label: "source_url"
-            label2: ""
+            element: text
+            label: "Source of data"
             scope: global
-      - name: "permalink"
+      - name: "en_czestotliwosc_dostępnosc_danych"
         field:
-            element: hidden
-            label: "permalink"
-            label2: ""
+            element: textarea
+            label: "Data availability"
             scope: global
-      - name: "sdg_goal"
+      - name: "en_uwagi"
         field:
-            element: hidden
-            label: "sdg_goal"
-            label2: ""
+            element: textarea
+            label: "Notes"
             scope: global
-      - name: "indicator"
-        field:
-            element: hidden
-            label: "indicator"
-            label2: ""
-            scope: global
-      - name: "target_id"
-        field:
-            element: hidden
-            label: "target_id"
-            label2: ""
-            scope: global
-      - name: "graph_title"
+      - name: "en_graph_title"
         field:
             element: hidden
             label: "graph_title"
-            label2: ""
+            scope: global
+      - name: "en_title"
+        field:
+            element: hidden
+            label: "title"
+            scope: global
+      - name: "en_jednostka"
+        field:
+            element: hidden
+            label: "jednostka"
+            scope: global
+      - name: "pl_graph_title"
+        field:
+            element: hidden
+            label: "graph_title"
+            scope: global
+      - name: "pl_title"
+        field:
+            element: hidden
+            label: "title"
+            scope: global
+      - name: "pl_jednostka"
+        field:
+            element: hidden
+            label: "jednostka"
+            scope: global
+      - name: "translation_id"
+        field:
+            element: hidden
+            label: "translation_id"
+            scope: global
+    _metadane_krajowe:
+      - name: "pl_nazwa_wskaznika"
+        field:
+            element: text
+            label: "Nazwa wskaźnika"
+            scope: global
+      - name: "pl_cel"
+        field:
+            element: text
+            label: "Cel Zrównoważonego Rozwoju"
+            scope: global
+      - name: "pl_priorytet"
+        field:
+            element: textarea
+            label: "Priorytet"
+            scope: global
+      - name: "pl_definicja"
+        field:
+            element: textarea
+            label: "Definicja wskaźnika"
+            scope: global
+      - name: "pl_jednostka_prezentacji"
+        field:
+            element: text
+            label: "Jednostka prezentacji"
+            scope: global
+      - name: "pl_dostepne_wymiary"
+        field:
+            element: textarea
+            label: "Dostępne wymiary"
+            scope: global
+      - name: "pl_wyjasnienia_metodologiczne"
+        field:
+            element: textarea
+            label: "Wyjaśnienia metodologiczne"
+            scope: global
+      - name: "pl_zrodlo_danych"
+        field:
+            element: text
+            label: "Źródło danych"
+            scope: global
+      - name: "pl_czestotliwosc_dostępnosc_danych"
+        field:
+           element: textarea
+            label: "Częstotliwość i dostępność danych"
+            scope: global
+      - name: "pl_uwagi"
+        field:
+            element: textarea
+            label: "Uwagi"
+            scope: global
+      - name: "en_nazwa_wskaznika"
+        field:
+            element: text
+            label: "Name of the indicator"
+            scope: global
+      - name: "en_cel"
+        field:
+            element: text
+            label: "Sustainable Development Goal"
+            scope: global
+      - name: "en_priorytet"
+        field:
+            element: textarea
+            label: "Priority"
+            scope: global
+      - name: "en_definicja"
+        field:
+            element: textarea
+            label: "Definition"
+            scope: global
+      - name: "en_jednostka_prezentacji"
+        field:
+            element: text
+            label: "Unit"
+            scope: global
+      - name: "en_dostepne_wymiary"
+        field:
+            element: textarea
+            label: "Available dimensions"
+            scope: global
+      - name: "en_wyjasnienia_metodologiczne"
+        field:
+            element: textarea
+            label: "Methodological explanations"
+            scope: global
+      - name: "en_zrodlo_danych"
+        field:
+            element: text
+            label: "Source of data"
+            scope: global
+      - name: "en_czestotliwosc_dostępnosc_danych"
+        field:
+            element: textarea
+            label: "Data availability"
+            scope: global
+      - name: "en_uwagi"
+        field:
+            element: textarea
+            label: "Notes"
+            scope: global
+      - name: "en_graph_title"
+        field:
+            element: hidden
+            label: "graph_title"
+            scope: global
+      - name: "en_title"
+        field:
+            element: hidden
+            label: "title"
+            scope: global
+      - name: "en_jednostka"
+        field:
+            element: hidden
+            label: "jednostka"
+            scope: global
+      - name: "pl_graph_title"
+        field:
+            element: hidden
+            label: "graph_title"
+            scope: global
+      - name: "pl_title"
+        field:
+            element: hidden
+            label: "title"
+            scope: global
+      - name: "pl_jednostka"
+        field:
+            element: hidden
+            label: "jednostka"
+            scope: global
+      - name: "translation_id"
+        field:
+            element: hidden
+            label: "translation_id"
             scope: global

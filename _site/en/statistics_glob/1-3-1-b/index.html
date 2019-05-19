@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Share of post-working age persons receiving retirement in the whole post-working age population">
+        <meta property="og:title" content="1 3 1 B">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 1.3.1.b - Share of post-working age persons receiving retirement in the whole post-working age population </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-1-3-1-b" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-1-3-1-b'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=3
-  var calosc=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
+  var calosc=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total","males","females"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["total","males","females"]
+
+  if (jez=='en'){
+    var legen=["total","males","females"]
+  }else{
+    var legen=["ogółem","mężczyźni","kobiety"]
+  }
 
   if(1=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":null,"males":null,"females":null},{"year":"2011","total":"77.1","males":"91.5","females":"70.8"},{"year":"2012","total":"77.1","males":"90.0","females":"71.3"},{"year":"2013","total":"77.4","males":"90.1","females":"71.4"},{"year":"2014","total":"75.2","males":"87.4","females":"69.7"},{"year":"2015","total":"74.6","males":"86.0","females":"69.4"},{"year":"2016","total":"74.0","males":"85.0","females":"68.9"},{"year":"2017","total":"76.4","males":"86.2","females":"71.3"}]
-var naglowek=["total","males","females"]
+var DATA = [{"year":"year","ogółem":"total","mężczyźni":"males","kobiety":"females"},{"year":"2010","ogółem":null,"mężczyźni":null,"kobiety":null},{"year":"2011","ogółem":"77.1","mężczyźni":"91.5","kobiety":"70.8"},{"year":"2012","ogółem":"77.1","mężczyźni":"90.0","kobiety":"71.3"},{"year":"2013","ogółem":"77.4","mężczyźni":"90.1","kobiety":"71.4"},{"year":"2014","ogółem":"75.2","mężczyźni":"87.4","kobiety":"69.7"},{"year":"2015","ogółem":"74.6","mężczyźni":"86.0","kobiety":"69.4"},{"year":"2016","ogółem":"74.0","mężczyźni":"85.0","kobiety":"68.9"},{"year":"2017","ogółem":"76.4","mężczyźni":"86.2","kobiety":"71.3"}]
 
+var naglowek=["ogółem","mężczyźni","kobiety"]
+var naglowek_ang=["total","males","females"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/1-3-1-b.pdf">Download metadata for 1.3.1.b</a>
+              <a href="/sdg-indicators/assets/pdf/en/1-3-1-b.pdf"><button>Download metadata for 1.3.1.b</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  1.3.1.b Share of post-working age persons receiving retirement in the whole post-working age population </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 1. No poverty </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  1.3 Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Number of post-working age persons receiving retirement related to the whole post-working age population multiplied by 100. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total, sex </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Retirement pension is a pecuniary performance for the insured who fulfills conditions giving right to the retirement pension from the social security, that is: attained retirement age-depending on the sex, employment in specific conditions or for special function and has appropriate contributory period and non-contributory period.Until the December 2012 general retirement age was established at 60 years (women) and 65 years of age (men). Since January 2013 the retirement system, the statutory minimum retirement age was increased by one month in each quarter. The target age was 67 years. This threshold was meaant to be achieved in 2020 for men, in 2040 for women. As a result of subsequent changes, since October 2017 the general retirement age was establishet at 60 years for women and 65 years for men.The post-working age population refers to 65 and more years for males and 60 and more for females.The conditions concerning acquiring the rights of retirement pays and pensions are defined in following Laws: dated on 13.10.1998 on Insurance system (Journal of Law item 121, with later amendments), dated on 17.12.1998 on on pensions and retirement pay from National Insurance Fund and some other laws (Journal of Laws 2015, Item 748, with later amendments), dated on 20.12.1990 on Social Insurance of Farmers (Journal of Laws 2016, Item 277, with later amendments). The conditions concerning acquiring the rights of retirement pays and pensions paid by Ministry of National Defence of Republic of Poland (MON), Ministry of the Interior and Administration (MSWiA) and Ministry of justice (MS) as well as their amount - all of these are defined in Law dated on 23.07.2003 on amendment of Law on Social Insurance System (Journal of Laws No 166, Item 1609, with later amendments). </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Social Insurance Institution / Agricultural Social Insurance Fund / Ministry of National Defence Republic of Poland / Ministry of the Interior and Administration / Ministry of Justice / Statistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2011 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  1.3.1.b Share of post-working age persons receiving retirement in the whole post-working age population </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 1. No poverty </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  1.3 Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Number of post-working age persons receiving retirement related to the whole post-working age population multiplied by 100. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total, sex </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Retirement pension is a pecuniary performance for the insured who fulfills conditions giving right to the retirement pension from the social security, that is: attained retirement age-depending on the sex, employment in specific conditions or for special function and has appropriate contributory period and non-contributory period.Until the December 2012 general retirement age was established at 60 years (women) and 65 years of age (men). Since January 2013 the retirement system, the statutory minimum retirement age was increased by one month in each quarter. The target age was 67 years. This threshold was meaant to be achieved in 2020 for men, in 2040 for women. As a result of subsequent changes, since October 2017 the general retirement age was establishet at 60 years for women and 65 years for men.The post-working age population refers to 65 and more years for males and 60 and more for females.The conditions concerning acquiring the rights of retirement pays and pensions are defined in following Laws: dated on 13.10.1998 on Insurance system (Journal of Law item 121, with later amendments), dated on 17.12.1998 on on pensions and retirement pay from National Insurance Fund and some other laws (Journal of Laws 2015, Item 748, with later amendments), dated on 20.12.1990 on Social Insurance of Farmers (Journal of Laws 2016, Item 277, with later amendments). The conditions concerning acquiring the rights of retirement pays and pensions paid by Ministry of National Defence of Republic of Poland (MON), Ministry of the Interior and Administration (MSWiA) and Ministry of justice (MS) as well as their amount - all of these are defined in Law dated on 23.07.2003 on amendment of Law on Social Insurance System (Journal of Laws No 166, Item 1609, with later amendments). </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Social Insurance Institution / Agricultural Social Insurance Fund / Ministry of National Defence Republic of Poland / Ministry of the Interior and Administration / Ministry of Justice / Statistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2011 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total","males","females"]
+
 function Zmiana_jednostki(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
+      var calo=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
+      var calo=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
+      var calo=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
+      var calo=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=3
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
+      var calo=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
+      var calo=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=3;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=[null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["total",null,"77.1","77.1","77.4","75.2","74.6","74.0","76.4","males",null,"91.5","90.0","90.1","87.4","86.0","85.0","86.2","females",null,"70.8","71.3","71.4","69.7","69.4","68.9","71.3",null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

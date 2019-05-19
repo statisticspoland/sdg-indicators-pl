@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                   </title>
                 
 
-        <meta property="og:title" content="Rozmiary transportu pasażerskiego i towarowego według rodzaju transportu">
+        <meta property="og:title" content="9 1 2 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Wskaźnik 9.1.2.2 -  </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -626,13 +653,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-9-1-2-2" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-9-1-2-2'
   var labels = []
+  labels.shift();
   var licznik=5
   var calosc=[]
+  var naglowek_ang=["railway transport","road transport","maritime transport fleet","transport by inland waterway fleet","air transport"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'pl'
-  var legen=["transport kolejowy (tys. ton)","transport samochodowy (tys. ton)","transport morski (tys. ton)","śródlądowy transport wodny (tys. ton)","transport lotniczy (tys. ton)"]
+
+  if (jez=='en'){
+    var legen=["railway transport","road transport","maritime transport fleet","transport by inland waterway fleet","air transport"]
+  }else{
+    var legen=["transport kolejowy (tys. ton)","transport samochodowy (tys. ton)","transport morski (tys. ton)","śródlądowy transport wodny (tys. ton)","transport lotniczy (tys. ton)"]
+  }
 
   if(0=='0'){
     var precyz=0;
@@ -1146,8 +1193,10 @@ $(".ct-legend li").click(function() {
 $( document ).ready(function() {
 var jez='pl'
 var DATA = null
-var naglowek=["transport kolejowy (tys. ton)","transport samochodowy (tys. ton)","transport morski (tys. ton)","śródlądowy transport wodny (tys. ton)","transport lotniczy (tys. ton)"]
 
+var naglowek=["transport kolejowy (tys. ton)","transport samochodowy (tys. ton)","transport morski (tys. ton)","śródlądowy transport wodny (tys. ton)","transport lotniczy (tys. ton)"]
+var naglowek_ang=["railway transport","road transport","maritime transport fleet","transport by inland waterway fleet","air transport"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1181,7 +1230,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1240,174 +1294,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/pl/9-1-2-2.pdf">Pobierz metadane dla 9.1.2.2</a>
+              <a href="/sdg-indicators/assets/pdf/pl/9-1-2-2.pdf"><button>Pobierz metadane dla 9.1.2.2</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla 9.1.2.2</a>-->
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  9.1.2 Rozmiary transportu pasażerskiego i towarowego według rodzaju transportu </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  cel 9. Przemysł, Innowacyjność, Infrastruktura </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Zadanie </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  9.1 Rozwijać niezawodną, zrównoważoną i odporną infrastrukturę dobrej jakości, w tym infrastrukturę regionalną i transgraniczną, wspierającą rozwój gospodarczy i dobrobyt ludzi. Zapewnić wszystkim ludziom równy dostęp do infrastruktury po przystępnej cenie. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Liczba pasażerów (w tysiącach pasażerów) oraz wielkość przewiezionych ładunków (w tysiącach ton) według rodzaju transportu. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  tys. pasażerów tys. ton </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  przewozy pasażerów według rodzaju transportu przewozy ładunków według rodzaju transportu </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Przewozy pasażerów transportem kolejowymLiczba wszystkich pasażerów przewiezionych na sieci kolei normalnotorowych i wąskotorowych pociągami osobowymi, pośpiesznymi i ekspresowymi (łącznie z pasażerami przewiezionymi w wagonach sypialnych i w wagonach z miejscami do leżenia) z biletami płatnymi oraz pasażerów korzystających z bezpłatnych przejazdów na podstawie odpowiednich przepisów w ramach komunikacji wewnętrznej i międzynarodowej. Przewozy pasażerów transportem samochodowymPrzewozy pasażerów taborem autobusowym to suma pasażerów przewiezionych w komunikacji krajowej i międzynarodowej autobusami w ramach komunikacji regularnej (tj. na podstawie rozkładu jazdy), regularnej specjalnej (np. przewozy pracownicze, szkolne) oraz w przewozach pozostałych (np. wycieczkowe). Dane o przewozach pasażerów transportem samochodowym nie obejmują przewozów osób taborem autobusowym przedsiębiorstw komunikacji miejskiej oraz taborem autobusowym będącym w transporcie samochodowym gospodarczym. Dane nie obejmują przewozów dokonywanych przez podmioty o liczbie pracujących do 9 osób. Przewozy ładunków morską flotą transportowąPrzewozy ładunków wykonane w rejsach zakończonych statkami własnymi i statkami dzierżawionymi pływającymi pod banderą polską i obcą. Obejmują przewozy ładunków wykonane we wszystkich relacjach, tj. przywożonych do portów polskich z portów obcych, wywożonych z portów polskich do portów obcych, przewożonych pomiędzy portami obcymi, przewożonych pomiędzy portami polskimi.Nie ujmuje się przewozów ładunków wykonanych statkami przekazanymi w czarter obcemu (zagranicznemu) armatorowi. Przewozy taborem żeglugi śródlądowejDane o przewozach taborem żeglugi śródlądowej odnoszą się do taboru będącego w eksploatacji polskich przedsiębiorstw żeglugi śródlądowej (łącznie z jednostkami pływającymi będącymi w dyspozycji przedsiębiorstw zagranicznych w okresie przerwy nawigacyjnej na polskich drogach wodnych) oraz od 2001 r. również podmiotów, których podstawowa działalność jest inna niż świadczenie tych usług. Dane o przewozach ładunków żeglugą śródlądową nie obejmują ładunków przewożonych w przesyłkach drobnych na statkach pasażerskich. Przewozy pasażerów taborem żeglugii śródlądowej obejmują również transport przybrzeżny. Przewozy pasażerów i ładunków transportem lotniczymDane o przewozach ładunków i pasażerów transportem lotniczym obejmują ładunki i pasażerów przewiezionych w lotach rozkładowych, dodatkowych i wynajętych (czarterowych) samolotami polskich przewoźników transportu lotniczego rozkładowego (transport pasażerów lub ładunków na stałych trasach i według stałych rozkładów lotów) oraz innych polskich przewoźników świadczących zarobkowo tego rodzaju usługi w komunikacji międzynarodowej i w komunikacji krajowej. Przewozy ładunków transportem kolejowymDane te obejmują sumę masy brutto wszystkich przesyłek handlowych i służbowych (tj. łącznie z wagą opakowań, a w przypadku przewozów w kontenerach również łącznie z wagą kontenerów) przewiezionych w wagonach towarowych w komunikacji wewnętrznej (krajowej) i międzynarodowej wszystkimi rodzajami pociągów. Dane nie obejmują przewozów manewrowych. Przewozy ładunków transportem samochodowymDane o przewozach ładunków transportem samochodowym dotyczą całego transportu samochodowego, tj. zarobkowego i gospodarczego w sektorze publicznym i prywatnym. Przez transport samochodowy zarobkowy rozumie się świadczenie usług przewozowych za opłatą, a przez transport samochodowy gospodarczy - wykonywanie przewozów ładunków na własne potrzeby, tj. bez opłaty (wliczanych w koszt przedsiębiorstwa). Dane częściowo szacunkowe. Przewozy ładunków transportem rurociągowymObejmują ropę naftową i produkty naftowe przetłoczone rurociągami magistralnymi na potrzeby wewnętrzne kraju (w tym z importu) i tranzytem przez terytorium kraju. Ilość ropy naftowej (produktów naftowych) ustala się jako sumę masy netto poszczególnych partii ropy (produktów) przyjętych do zbiorników odbiorcy za protokółami zdawczo-odbiorczymi. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Źródło danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Urząd Statystyczny </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2010 r. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Uwagi </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  9.1.2 Rozmiary transportu pasażerskiego i towarowego według rodzaju transportu </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  cel 9. Przemysł, Innowacyjność, Infrastruktura </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Zadanie </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  9.1 Rozwijać niezawodną, zrównoważoną i odporną infrastrukturę dobrej jakości, w tym infrastrukturę regionalną i transgraniczną, wspierającą rozwój gospodarczy i dobrobyt ludzi. Zapewnić wszystkim ludziom równy dostęp do infrastruktury po przystępnej cenie. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Liczba pasażerów (w tysiącach pasażerów) oraz wielkość przewiezionych ładunków (w tysiącach ton) według rodzaju transportu. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  tys. pasażerów tys. ton </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  przewozy pasażerów według rodzaju transportu przewozy ładunków według rodzaju transportu </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Przewozy pasażerów transportem kolejowymLiczba wszystkich pasażerów przewiezionych na sieci kolei normalnotorowych i wąskotorowych pociągami osobowymi, pośpiesznymi i ekspresowymi (łącznie z pasażerami przewiezionymi w wagonach sypialnych i w wagonach z miejscami do leżenia) z biletami płatnymi oraz pasażerów korzystających z bezpłatnych przejazdów na podstawie odpowiednich przepisów w ramach komunikacji wewnętrznej i międzynarodowej. Przewozy pasażerów transportem samochodowymPrzewozy pasażerów taborem autobusowym to suma pasażerów przewiezionych w komunikacji krajowej i międzynarodowej autobusami w ramach komunikacji regularnej (tj. na podstawie rozkładu jazdy), regularnej specjalnej (np. przewozy pracownicze, szkolne) oraz w przewozach pozostałych (np. wycieczkowe). Dane o przewozach pasażerów transportem samochodowym nie obejmują przewozów osób taborem autobusowym przedsiębiorstw komunikacji miejskiej oraz taborem autobusowym będącym w transporcie samochodowym gospodarczym. Dane nie obejmują przewozów dokonywanych przez podmioty o liczbie pracujących do 9 osób. Przewozy ładunków morską flotą transportowąPrzewozy ładunków wykonane w rejsach zakończonych statkami własnymi i statkami dzierżawionymi pływającymi pod banderą polską i obcą. Obejmują przewozy ładunków wykonane we wszystkich relacjach, tj. przywożonych do portów polskich z portów obcych, wywożonych z portów polskich do portów obcych, przewożonych pomiędzy portami obcymi, przewożonych pomiędzy portami polskimi.Nie ujmuje się przewozów ładunków wykonanych statkami przekazanymi w czarter obcemu (zagranicznemu) armatorowi. Przewozy taborem żeglugi śródlądowejDane o przewozach taborem żeglugi śródlądowej odnoszą się do taboru będącego w eksploatacji polskich przedsiębiorstw żeglugi śródlądowej (łącznie z jednostkami pływającymi będącymi w dyspozycji przedsiębiorstw zagranicznych w okresie przerwy nawigacyjnej na polskich drogach wodnych) oraz od 2001 r. również podmiotów, których podstawowa działalność jest inna niż świadczenie tych usług. Dane o przewozach ładunków żeglugą śródlądową nie obejmują ładunków przewożonych w przesyłkach drobnych na statkach pasażerskich. Przewozy pasażerów taborem żeglugii śródlądowej obejmują również transport przybrzeżny. Przewozy pasażerów i ładunków transportem lotniczymDane o przewozach ładunków i pasażerów transportem lotniczym obejmują ładunki i pasażerów przewiezionych w lotach rozkładowych, dodatkowych i wynajętych (czarterowych) samolotami polskich przewoźników transportu lotniczego rozkładowego (transport pasażerów lub ładunków na stałych trasach i według stałych rozkładów lotów) oraz innych polskich przewoźników świadczących zarobkowo tego rodzaju usługi w komunikacji międzynarodowej i w komunikacji krajowej. Przewozy ładunków transportem kolejowymDane te obejmują sumę masy brutto wszystkich przesyłek handlowych i służbowych (tj. łącznie z wagą opakowań, a w przypadku przewozów w kontenerach również łącznie z wagą kontenerów) przewiezionych w wagonach towarowych w komunikacji wewnętrznej (krajowej) i międzynarodowej wszystkimi rodzajami pociągów. Dane nie obejmują przewozów manewrowych. Przewozy ładunków transportem samochodowymDane o przewozach ładunków transportem samochodowym dotyczą całego transportu samochodowego, tj. zarobkowego i gospodarczego w sektorze publicznym i prywatnym. Przez transport samochodowy zarobkowy rozumie się świadczenie usług przewozowych za opłatą, a przez transport samochodowy gospodarczy - wykonywanie przewozów ładunków na własne potrzeby, tj. bez opłaty (wliczanych w koszt przedsiębiorstwa). Dane częściowo szacunkowe. Przewozy ładunków transportem rurociągowymObejmują ropę naftową i produkty naftowe przetłoczone rurociągami magistralnymi na potrzeby wewnętrzne kraju (w tym z importu) i tranzytem przez terytorium kraju. Ilość ropy naftowej (produktów naftowych) ustala się jako sumę masy netto poszczególnych partii ropy (produktów) przyjętych do zbiorników odbiorcy za protokółami zdawczo-odbiorczymi. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Źródło danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Urząd Statystyczny </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2010 r. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Uwagi </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1419,7 +1529,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('tys. pasażerów tys. ton'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1499,15 +1609,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["railway transport","road transport","maritime transport fleet","transport by inland waterway fleet","air transport"]
+
 function Zmiana_jednostki(){
 
   var licznik=5
   var labels = []
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo=[]
-      calosc=calo.splice(8,16);
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1531,7 +1648,11 @@ function Zmiana_jednostki(){
 
     }else{
       var calo=[]
-      calosc=calo.splice(0,8);
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1558,10 +1679,15 @@ function Zmiana_jednostki4(){
 
   var licznik=5
   var labels = []
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
       var calo=[]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1586,6 +1712,10 @@ function Zmiana_jednostki4(){
 
     }else{
       var calo=[]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1613,10 +1743,15 @@ function Zmiana_jednostki2(){
 
   var licznik=5
   var labels = []
+  labels.shift();
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
       var calo=[]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1646,6 +1781,10 @@ function Zmiana_jednostki2(){
 
     }else{
       var calo=[]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1677,10 +1816,15 @@ function Zmiana_jednostki3(){
 
   var licznik=5
   var labels = []
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
       var calo=[]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1707,6 +1851,9 @@ function Zmiana_jednostki3(){
 
     }else{
       var calo=[]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1746,7 +1893,13 @@ $(window).on("load", function() {
     }
     var licznik=5
     var labels = []
+    labels.shift();
     var calo=[]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1769,7 +1922,12 @@ $(window).on("load", function() {
     }
     var licznik=5;
     var labels = [];
+    labels.shift()
     var calo=[];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1860,8 +2018,10 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
-      
+             
+			    <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+			 
+	  
     </div>
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">

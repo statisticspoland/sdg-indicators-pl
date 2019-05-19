@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Proportion of municipal waste collected according to the treatment operations to total municipal generated waste collected within a year">
+        <meta property="og:title" content="11 6 1">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 11.6.1 - Proportion of municipal waste collected according to the treatment operations to total municipal generated waste collected within a year </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-11-6-1" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-11-6-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=4
-  var calosc=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
+  var calosc=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["recycling","composting or fermentation","incineration","landfilling"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["recycling","composting or fermentation","incineration","landfilling"]
+
+  if (jez=='en'){
+    var legen=["recycling","composting or fermentation","incineration","landfilling"]
+  }else{
+    var legen=["recykling","kompostowanie lub fermentacja","przekształcenia termiczne","składowanie"]
+  }
 
   if(2=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","recycling":"14.82","composting or fermentation":"6.57","incineration":"0.32","landfilling":"61.74"},{"year":"2011","recycling":"9.67","composting or fermentation":"7.84","incineration":"0.37","landfilling":"63.15"},{"year":"2012","recycling":"10.29","composting or fermentation":"9.33","incineration":"0.42","landfilling":"59.24"},{"year":"2013","recycling":"13.27","composting or fermentation":"10.90","incineration":"6.78","landfilling":"52.93"},{"year":"2014","recycling":"21.10","composting or fermentation":"11.17","incineration":"15.10","landfilling":"52.63"},{"year":"2015","recycling":"26.39","composting or fermentation":"16.11","incineration":"13.25","landfilling":"44.26"},{"year":"2016","recycling":"27.84","composting or fermentation":"16.22","incineration":"19.44","landfilling":"36.51"},{"year":"2017","recycling":"22.76","composting or fermentation":"7.08","incineration":"24.42","landfilling":"41.77"}]
-var naglowek=["recycling","composting or fermentation","incineration","landfilling"]
+var DATA = [{"year":"year","recykling":"recycling","kompostowanie lub fermentacja":"composting or fermentation","przekształcenia termiczne":"incineration","składowanie":"landfilling"},{"year":"2010","recykling":"14.82","kompostowanie lub fermentacja":"6.57","przekształcenia termiczne":"0.32","składowanie":"61.74"},{"year":"2011","recykling":"9.67","kompostowanie lub fermentacja":"7.84","przekształcenia termiczne":"0.37","składowanie":"63.15"},{"year":"2012","recykling":"10.29","kompostowanie lub fermentacja":"9.33","przekształcenia termiczne":"0.42","składowanie":"59.24"},{"year":"2013","recykling":"13.27","kompostowanie lub fermentacja":"10.90","przekształcenia termiczne":"6.78","składowanie":"52.93"},{"year":"2014","recykling":"21.10","kompostowanie lub fermentacja":"11.17","przekształcenia termiczne":"15.10","składowanie":"52.63"},{"year":"2015","recykling":"26.39","kompostowanie lub fermentacja":"16.11","przekształcenia termiczne":"13.25","składowanie":"44.26"},{"year":"2016","recykling":"27.84","kompostowanie lub fermentacja":"16.22","przekształcenia termiczne":"19.44","składowanie":"36.51"},{"year":"2017","recykling":"22.76","kompostowanie lub fermentacja":"7.08","przekształcenia termiczne":"24.42","składowanie":"41.77"}]
 
+var naglowek=["recykling","kompostowanie lub fermentacja","przekształcenia termiczne","składowanie"]
+var naglowek_ang=["recycling","composting or fermentation","incineration","landfilling"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/11-6-1.pdf">Download metadata for 11.6.1</a>
+              <a href="/sdg-indicators/assets/pdf/en/11-6-1.pdf"><button>Download metadata for 11.6.1</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  11.6.1 Proportion of municipal waste collected according to the treatment operations to total municipal generated waste collected within a year </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 11. Sustainable cities and communities </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  11.6 By 2030, reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Percentage of municipal waste designated for recycling, composting or fermentation, incineration or landfilling to total municipal waste generated within a year. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  designated for recycling </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Municipal wastes are defined as the wastes generated in households (excluding end of life vehicles) as well as waste which does not contain hazardous substances, coming from other waste producers, which in their nature or composition are similar to wastes generated in households  mixed municipal waste remain mixed municipal waste, even if they have been processed, which did not change substantially their attributes.Data on municipal wastes are gathered from units responsible for municipal waste collection and from units responsible for municipal waste treatment. Information comprise waste coded with code 20: Municipal waste including separately collected fractions, and wastes coded with code 15 01: Waste packaging (including separately collected municipal packaging waste) provided they originate from municipal sector.For 2010-2014 data: classification of waste and Catalogue of Waste including hazardous waste list is stipulated by Regulation of Minister of Environment issued on 27 September 2001 on the Waste Catalogue (Journal of Law 2001 No. 112, item 1206).Since 2015 data: classification of waste and Catalogue of Waste including hazardous waste list is stipulated by Regulation of Minister of Environment issued on 9 December 2014 on the Waste Catalogue (Journal of Law 2014, item 1923). </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  11.6.1 Proportion of municipal waste collected according to the treatment operations to total municipal generated waste collected within a year </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 11. Sustainable cities and communities </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  11.6 By 2030, reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Percentage of municipal waste designated for recycling, composting or fermentation, incineration or landfilling to total municipal waste generated within a year. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  designated for recycling </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Municipal wastes are defined as the wastes generated in households (excluding end of life vehicles) as well as waste which does not contain hazardous substances, coming from other waste producers, which in their nature or composition are similar to wastes generated in households  mixed municipal waste remain mixed municipal waste, even if they have been processed, which did not change substantially their attributes.Data on municipal wastes are gathered from units responsible for municipal waste collection and from units responsible for municipal waste treatment. Information comprise waste coded with code 20: Municipal waste including separately collected fractions, and wastes coded with code 15 01: Waste packaging (including separately collected municipal packaging waste) provided they originate from municipal sector.For 2010-2014 data: classification of waste and Catalogue of Waste including hazardous waste list is stipulated by Regulation of Minister of Environment issued on 27 September 2001 on the Waste Catalogue (Journal of Law 2001 No. 112, item 1206).Since 2015 data: classification of waste and Catalogue of Waste including hazardous waste list is stipulated by Regulation of Minister of Environment issued on 9 December 2014 on the Waste Catalogue (Journal of Law 2014, item 1923). </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Statistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Proxy indicator, available within the Polish public statistics. An original indicator, adopted by the UN for monitoring target 11.6 of the 2030 Agenda is 11.6.1 Proportion of urban solid waste regularly collected and with adequate final discharge out of total urban solid waste generated, by the city. </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["recycling","composting or fermentation","incineration","landfilling"]
+
 function Zmiana_jednostki(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
+      var calo=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
+      var calo=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
+      var calo=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
+      var calo=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
+      var calo=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
+      var calo=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=4
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=4;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["recycling","14.82","9.67","10.29","13.27","21.10","26.39","27.84","22.76","composting or fermentation","6.57","7.84","9.33","10.90","11.17","16.11","16.22","7.08","incineration","0.32","0.37","0.42","6.78","15.10","13.25","19.44","24.42","landfilling","61.74","63.15","59.24","52.93","52.63","44.26","36.51","41.77",null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

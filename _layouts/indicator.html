@@ -4,6 +4,11 @@
 
 {% assign t = site.translations | where:"translation_id", "indicator"  | first %}
 {% assign t = t[page.lang] %}
+
+
+{% assign slug = page.indicator | replace: '.', '-' %}
+
+
 {% assign id = page.indicator | slugify %}
 
 {% if page.url contains '/statistics_nat/' %}
@@ -62,8 +67,20 @@
 
         <div class="pl-grid initiative-description">
 
-          {% assign slug = page.indicator | replace: '.', '-' %}
-          {% assign dataset_name = 'indicator_' | append: slug %}
+
+          {% if slug=='8-4-1' %}
+            {% assign dataset_name = 'indicator_12-2-1' %}
+          {% elsif slug=='8-4-2' %}
+            {% assign dataset_name = 'indicator_12-2-2' %}
+          {% elsif slug=='10-3-1' %}
+            {% assign dataset_name = 'indicator_16-b-1' %}
+          {% elsif slug=='15-a-1' %}
+            {% assign dataset_name = 'indicator_15-b-1' %}
+          {% elsif slug=='1-5-1' or slug=='11-5-1' %}
+            {% assign dataset_name = 'indicator_13-1-1' %}
+          {% else %}
+            {% assign dataset_name = 'indicator_' | append: slug %}
+          {% endif %}
 
           {% assign array = "" | split: ""  %}
           {% assign precyzja = array %}
@@ -79,7 +96,7 @@
               {% assign precyzja = page.pre %}
               {% assign metadane =page %}
               {% assign tytul = page.graph_title %}
-              {% assign jednostka = page.jednostka %}
+              {% assign jednostka = t1.pl_jednostka %}
               {% assign wszystkie = page.zmienne | split: ";" %}
               {% assign filtry = page.kategorie | split: "," %}
               {% assign header_csv = page.indicator_variable_1 | split: "," %}
@@ -91,16 +108,19 @@
               {% assign precyzja = page.pre %}
               {% assign metadane =page %}
               {% assign tytul = page.graph_title %}
-              {% assign jednostka = page.jednostka %}
+              {% assign jednostka = t1.en_jednostka %}
               {% assign wszystkie = page.zmienne | split: ";" %}
               {% assign filtry = page.kategorie | split: "," %}
               {% assign header_csv = page.indicator_variable_1 | split: "," %}
-              {% assign sdg_indicator = ktore[page.lang][dataset_name] %}
+              {% assign sdg_indicator = ktore[dataset_name] %}
               {% assign sdg_indicators = ktore[page.lang].sdg_indicator_metadata %}
               {% assign page = site.indicators | where:"indicator", page.indicator  | first %}
               {% assign language = 'en' %}
           {% endif %}
 
+
+          {% assign t1 = site.translations | where:"translation_id", slug | first %}
+          {% assign t1 = t1[language] %}
 
           {% assign foo = array %}
           {% for wszy in wszystkie %}
@@ -168,6 +188,36 @@
           {% endfor %}
           {% endif %}
 
+
+
+
+
+
+		  {% if page.url contains '/statistics_nat/' %}
+			{% assign t1 = site.metadane_krajowe | where:"translation_id", slug | first %}
+			{% if language == 'pl' %}
+				{% if t1.pl_priorytet.size > 100 %}
+					<div class="container" style="width: auto">
+						<div class="row">
+							<div class="span4 collapse-group">
+							<p style="color:rgb(220,20,60)"> Priorytet - {{ t1.pl_priorytet | slice: 0, 100 }} <span class="collapse" id="viewdetails3"> {{ t1.pl_priorytet | slice: 100, 100000 }} </span> <a data-toggle="collapse" data-target="#viewdetails3">Więcej... &raquo;</a></p>
+							</div>
+						</div>
+					</div>
+				{% else %}
+					<p style="color:rgb(220,20,60)"> Priorytet - {{ t1.pl_priorytet }} </p>
+				{% endif %}
+			{% else %}
+					<p style="color:rgb(220,20,60)"> Priority - {{ t1.en_priorytet }} </p>
+			{% endif %}
+		  {% endif %}
+
+
+
+
+
+
+
           <h3>{{ t.sub-subtitle }} {{ page.indicator | remove: ".0" }} - {{ indicator_title }} </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">{{ t.data }}</a></li>
@@ -184,15 +234,22 @@
 
 <script>
 
+var naglowek_ang={{ page.indicator_variable_2 | split: "," | jsonify}}
+
 function Zmiana_jednostki(){
 
   var licznik={{ licznik }}
   var labels = {{ labels | jsonify }}
+  labels.shift()
   var lan='{{language}}'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo={{ row1 | jsonify }}
-      calosc=calo.splice(8,16);
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -216,7 +273,11 @@ function Zmiana_jednostki(){
 
     }else{
       var calo={{ row1 | jsonify }}
-      calosc=calo.splice(0,8);
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -243,10 +304,15 @@ function Zmiana_jednostki4(){
 
   var licznik={{ licznik }}
   var labels = {{ labels | jsonify }}
+  labels.shift()
   var lan='{{language}}'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
       var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -271,6 +337,10 @@ function Zmiana_jednostki4(){
 
     }else{
       var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -298,10 +368,15 @@ function Zmiana_jednostki2(){
 
   var licznik={{ licznik }}
   var labels = {{ labels | jsonify }}
+  labels.shift();
   var lan='{{language}}'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
       var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -331,6 +406,10 @@ function Zmiana_jednostki2(){
 
     }else{
       var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -362,10 +441,15 @@ function Zmiana_jednostki3(){
 
   var licznik={{ licznik }}
   var labels = {{ labels | jsonify }}
+  labels.shift()
   var lan='{{language}}'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
       var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -392,6 +476,9 @@ function Zmiana_jednostki3(){
 
     }else{
       var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -431,7 +518,13 @@ $(window).on("load", function() {
     }
     var licznik={{ licznik }}
     var labels = {{ labels | jsonify }}
+    labels.shift();
     var calo={{ row1 | jsonify }}
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -454,7 +547,12 @@ $(window).on("load", function() {
     }
     var licznik={{ licznik }};
     var labels = {{ labels | jsonify }};
+    labels.shift()
     var calo={{ row1 | jsonify }};
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];

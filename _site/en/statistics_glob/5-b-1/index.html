@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Proportion of individuals who own a mobile telephone">
+        <meta property="og:title" content="5 B 1">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 5.b.1 - Proportion of individuals who own a mobile telephone </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-5-b-1" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-5-b-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=2
-  var calosc=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null]
+  var calosc=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["males","females"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["males","females"]
+
+  if (jez=='en'){
+    var legen=["males","females"]
+  }else{
+    var legen=["mężczyźni","kobiety"]
+  }
 
   if(1=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","males":null,"females":null},{"year":"2011","males":null,"females":null},{"year":"2012","males":"65.0","females":"59.0"},{"year":"2013","males":"83.0","females":"89.0"},{"year":"2014","males":"84.0","females":"91.0"},{"year":"2015","males":"93.0","females":"91.0"},{"year":"2016","males":"89.4","females":"85.7"},{"year":"2017","males":"92.0","females":"94.2"}]
-var naglowek=["males","females"]
+var DATA = [{"year":"year","mężczyźni":"males","kobiety":"females"},{"year":"2010","mężczyźni":null,"kobiety":null},{"year":"2011","mężczyźni":null,"kobiety":null},{"year":"2012","mężczyźni":"65.0","kobiety":"59.0"},{"year":"2013","mężczyźni":"83.0","kobiety":"89.0"},{"year":"2014","mężczyźni":"84.0","kobiety":"91.0"},{"year":"2015","mężczyźni":"93.0","kobiety":"91.0"},{"year":"2016","mężczyźni":"89.4","kobiety":"85.7"},{"year":"2017","mężczyźni":"92.0","kobiety":"94.2"}]
 
+var naglowek=["mężczyźni","kobiety"]
+var naglowek_ang=["males","females"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/5-b-1.pdf">Download metadata for 5.b.1</a>
+              <a href="/sdg-indicators/assets/pdf/en/5-b-1.pdf"><button>Download metadata for 5.b.1</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  5.b.1 Proportion of individuals who own a mobile telephone </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 5. Gender equality </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  5.b Enhance the use of enabling technology, in particular information and communications technology, to promote the empowerment of women </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Share of individuals who own a mobile telephone in the total population aged 15 and over. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  sex </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The data comes from a consumer survey carried out annually on behalf of the Office of Eletronic Communication.The aim of the study is to seek the views of individual customers on the telecommunications market in Poland. It covered the following services: telephony: fixed, VoIP, mobile, including Premium Rate  Internet: dial-up, fixed, mobile  bundled services (packages)  elements of universal service - National Telephone Directory, National Directory of Public Telephone Numbers. In addition, the general opinions of consumers on the telecommunications market in Poland and the following changes are collected.The study is carried out using the Computer Assisted Personal Interview (CAPI) method, i.e. direct interviews with the respondent using mobile devices (e.g. laptop), where responses are recorded. The study used a random sample stratified according to the voivodship (i.e.the division into sub-sampling and random selection of an object from each of them) and included persons aged 15 and over. The results of the study were weighted according to the structure of Poles aged 15 and over. Age, education and size of the place of residence were taken into consideration when determining the weights. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Office of Electronic Communications </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2012 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  5.b.1 Proportion of individuals who own a mobile telephone </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 5. Gender equality </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  5.b Enhance the use of enabling technology, in particular information and communications technology, to promote the empowerment of women </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Share of individuals who own a mobile telephone in the total population aged 15 and over. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  sex </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The data comes from a consumer survey carried out annually on behalf of the Office of Eletronic Communication.The aim of the study is to seek the views of individual customers on the telecommunications market in Poland. It covered the following services: telephony: fixed, VoIP, mobile, including Premium Rate  Internet: dial-up, fixed, mobile  bundled services (packages)  elements of universal service - National Telephone Directory, National Directory of Public Telephone Numbers. In addition, the general opinions of consumers on the telecommunications market in Poland and the following changes are collected.The study is carried out using the Computer Assisted Personal Interview (CAPI) method, i.e. direct interviews with the respondent using mobile devices (e.g. laptop), where responses are recorded. The study used a random sample stratified according to the voivodship (i.e.the division into sub-sampling and random selection of an object from each of them) and included persons aged 15 and over. The results of the study were weighted according to the structure of Poles aged 15 and over. Age, education and size of the place of residence were taken into consideration when determining the weights. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Office of Electronic Communications </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2012 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["males","females"]
+
 function Zmiana_jednostki(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null]
+      var calo=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null]
+      var calo=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null]
+      var calo=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null]
+      var calo=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null]
+      var calo=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null]
+      var calo=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=2
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=2;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=[null,null,"65.0","83.0","84.0","93.0","89.4","92.0",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["males",null,null,"65.0","83.0","84.0","93.0","89.4","92.0","females",null,null,"59.0","89.0","91.0","91.0","85.7","94.2",null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

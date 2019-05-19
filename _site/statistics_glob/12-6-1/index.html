@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                   </title>
                 
 
-        <meta property="og:title" content="Liczba sygnatariuszy Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju (SDGs)">
+        <meta property="og:title" content="12 6 1">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Wskaźnik 12.6.1 - Liczba sygnatariuszy Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju (SDGs) </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -621,13 +648,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-12-6-1" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-12-6-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=1
-  var calosc=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+  var calosc=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'pl'
-  var legen=["ogółem"]
+
+  if (jez=='en'){
+    var legen=["total"]
+  }else{
+    var legen=["ogółem"]
+  }
 
   if(0=='0'){
     var precyz=0;
@@ -729,7 +776,7 @@ for (i=1;i<licznik+1;i++){
       Chartist.plugins.ctAxisTitle({
       axisX: {},
       axisY: {
-        axisTitle: '',
+        axisTitle: 'null',
         axisClass: 'ct-axis-title',
         offset: {
           x: 0,
@@ -765,9 +812,11 @@ for (i=1;i<licznik+1;i++){
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":null},{"year":"2011","ogółem":null},{"year":"2012","ogółem":null},{"year":"2013","ogółem":null},{"year":"2014","ogółem":null},{"year":"2015","ogółem":null},{"year":"2016","ogółem":null},{"year":"2017","ogółem":"72"},{"year":"2018","ogółem":"102"}]
-var naglowek=["ogółem"]
+var DATA = [{"year":"year","ogółem":"total"},{"year":"2010","ogółem":null},{"year":"2011","ogółem":null},{"year":"2012","ogółem":null},{"year":"2013","ogółem":null},{"year":"2014","ogółem":null},{"year":"2015","ogółem":null},{"year":"2016","ogółem":null},{"year":"2017","ogółem":"72"},{"year":"2018","ogółem":"102"}]
 
+var naglowek=["ogółem"]
+var naglowek_ang=["total"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -801,7 +850,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -860,174 +914,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/pl/12-6-1.pdf">Pobierz metadane dla 12.6.1</a>
+              <a href="/sdg-indicators/assets/pdf/pl/12-6-1.pdf"><button>Pobierz metadane dla 12.6.1</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla 12.6.1</a>-->
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <b>12.6.1 Liczba sygnatariuszy Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju (SDGs)</b> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 12. Odpowiedzialna konsumpcja i produkcja </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Zadanie </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  12.6 Zachęcać przedsiębiorstwa, w szczególności te duże i międzynarodowe, do wdrażania praktyk w zakresie zrównoważonego rozwoju i uwzględniania informacji na ten temat w swoich cyklicznych raportach. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Liczba podmiotów będących Sygnatariuszami Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  brak </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Partnerstwo na rzecz realizacji Celów Zrównoważonego Rozwoju </b>zostało zainicjowane w czerwcu 2017 r. Jego celem jest zintegrowanie we współpracy przedstawicieli różnych środowisk na rzecz efektywnego osiągania SDGs (Celów Zrównoważonego Rozwoju). Inicjatywa ta zwiększa świadomość nt. przyjętych przez społeczność międzynarodową Celów Zrównoważonego Rozwoju, ich znaczenia dla poszczególnych grup społecznych oraz potrzeby współpracy w efektywnej ich realizacji. Sygnatariusze dają przykład aktywnego zaangażowania i odpowiedzialnego wdrażania zasad zrównoważonego rozwoju wewnątrz organizacji, stanowiąc cenne źródło inspiracji dla innych. Współpraca szerokiego grona interesariuszy odzwierciedla starania Polski na rzecz aktywnego włączania w planowanie i realizację działań rozwojowych podmiotów publicznych, prywatnych, organizacji pozarządowych, sektora nauki i społeczeństwa obywatelskiego. Ma to zapewnić szerszą komunikację, zwiększać świadomość o potrzebie współpracy i dialogu.</p> <p>Sygnatariusze przystępują do Partnerstwa podczas wydarzeń konferencyjnych organizowanych przez krajowego koordynatora wdrażania SDGs w Polsce – Ministerstwo Przedsiębiorczości i Technologii (do stycznia 2018 r. Ministerstwo Rozwoju). Podczas uroczystości przystąpienia do Partnerstwa, Sygnatariusze na jednej wspólnej karcie Partnerstwa, kolejno składają podpisy pod treścią deklaracji:</p> <p><i>"Świadomi globalnych wyzwań gospodarczych, społecznych i środowiskowych oraz ich złożoności, upatrujemy w Celach Zrównoważonego Rozwoju szansę na wykreowanie nowej rzeczywistości gospodarczej, otwierającej nowe ścieżki rozwoju dla biznesu, opartej na zasadach transparentności i budującej wizerunek Polski, jako wiarygodnego partnera gospodarczego. Uznajemy, że osiągnięcie ambitnych celów i zadań będzie możliwe dzięki wspólnemu działaniu w efektywny sposób, mobilizacji sił, kreowaniu synergii, ożywionemu i wzmocnionemu partnerstwu, będącemu efektem dialogu, otwartego dla wszystkich zainteresowanych stron. Dążąc wspólnie do wykorzystania szans na dokonanie zmian w kraju, regionie i firmie, zwiększania wpływu na zrównoważony rozwój, wyrażamy intencję współpracy w ramach niniejszej inicjatywy partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju."</i></p> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Źródło danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Ministerstwo Przedsiębiorczości i Technologii </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne; od 2017 r. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Uwagi </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <b>12.6.1 Liczba sygnatariuszy Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju (SDGs)</b> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 12. Odpowiedzialna konsumpcja i produkcja </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Zadanie </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  12.6 Zachęcać przedsiębiorstwa, w szczególności te duże i międzynarodowe, do wdrażania praktyk w zakresie zrównoważonego rozwoju i uwzględniania informacji na ten temat w swoich cyklicznych raportach. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Liczba podmiotów będących Sygnatariuszami Partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  brak </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <p><b>Partnerstwo na rzecz realizacji Celów Zrównoważonego Rozwoju </b>zostało zainicjowane w czerwcu 2017 r. Jego celem jest zintegrowanie we współpracy przedstawicieli różnych środowisk na rzecz efektywnego osiągania SDGs (Celów Zrównoważonego Rozwoju). Inicjatywa ta zwiększa świadomość nt. przyjętych przez społeczność międzynarodową Celów Zrównoważonego Rozwoju, ich znaczenia dla poszczególnych grup społecznych oraz potrzeby współpracy w efektywnej ich realizacji. Sygnatariusze dają przykład aktywnego zaangażowania i odpowiedzialnego wdrażania zasad zrównoważonego rozwoju wewnątrz organizacji, stanowiąc cenne źródło inspiracji dla innych. Współpraca szerokiego grona interesariuszy odzwierciedla starania Polski na rzecz aktywnego włączania w planowanie i realizację działań rozwojowych podmiotów publicznych, prywatnych, organizacji pozarządowych, sektora nauki i społeczeństwa obywatelskiego. Ma to zapewnić szerszą komunikację, zwiększać świadomość o potrzebie współpracy i dialogu.</p> <p>Sygnatariusze przystępują do Partnerstwa podczas wydarzeń konferencyjnych organizowanych przez krajowego koordynatora wdrażania SDGs w Polsce – Ministerstwo Przedsiębiorczości i Technologii (do stycznia 2018 r. Ministerstwo Rozwoju). Podczas uroczystości przystąpienia do Partnerstwa, Sygnatariusze na jednej wspólnej karcie Partnerstwa, kolejno składają podpisy pod treścią deklaracji:</p> <p><i>"Świadomi globalnych wyzwań gospodarczych, społecznych i środowiskowych oraz ich złożoności, upatrujemy w Celach Zrównoważonego Rozwoju szansę na wykreowanie nowej rzeczywistości gospodarczej, otwierającej nowe ścieżki rozwoju dla biznesu, opartej na zasadach transparentności i budującej wizerunek Polski, jako wiarygodnego partnera gospodarczego. Uznajemy, że osiągnięcie ambitnych celów i zadań będzie możliwe dzięki wspólnemu działaniu w efektywny sposób, mobilizacji sił, kreowaniu synergii, ożywionemu i wzmocnionemu partnerstwu, będącemu efektem dialogu, otwartego dla wszystkich zainteresowanych stron. Dążąc wspólnie do wykorzystania szans na dokonanie zmian w kraju, regionie i firmie, zwiększania wpływu na zrównoważony rozwój, wyrażamy intencję współpracy w ramach niniejszej inicjatywy partnerstwa na rzecz realizacji Celów Zrównoważonego Rozwoju."</i></p> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Źródło danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Ministerstwo Przedsiębiorczości i Technologii </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne; od 2017 r. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Uwagi </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik zastępczy. Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym cel 12.6 Agendy 2030 jest wskaźnik 12.6.1 Liczba firm publikująca raporty dotyczące zrównoważonego rozwoju. </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1039,7 +1149,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('brak'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1119,15 +1229,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total"]
+
 function Zmiana_jednostki(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1150,8 +1267,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1177,11 +1298,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1205,7 +1331,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1232,11 +1362,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1265,7 +1400,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1296,11 +1435,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=1
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1326,7 +1470,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+      var calo=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1365,8 +1512,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1388,8 +1541,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=1;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=[null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["total",null,null,null,null,null,null,null,"72","102",null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1480,8 +1638,10 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
-      
+             
+			    <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+			 
+	  
     </div>
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">

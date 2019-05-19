@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Hazardous waste generated per capita, proportion of hazardous waste treated and by type of treatment">
+        <meta property="og:title" content="B">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 12.4.2.b - Hazardous waste generated per capita, proportion of hazardous waste treated and by type of treatment </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -626,14 +653,35 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-legend.js"></script>
 <script src="/sdg-indicators/assets/js/vendor/chartist-plugin-axistitle.js"></script>
 <script>
+
+  function remove(array, element) {
+    const index = array.indexOf(element);
+
+    if (index !== -1) {
+      array.splice(index, 1);
+    }
+  }
+
 (function () {
   var container = '#linechart-12-4-2-b'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=2
-  var calosc=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null]
-  var jez= 'en'
-  var legen=["recovery of hazarodus waste","disposal of hazardous waste"]
+  var calosc=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["recovery of hazarodus waste","disposal of hazardous waste"]
 
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
+  var jez= 'en'
+
+  if (jez=='en'){
+    var legen=["recovery of hazarodus waste","disposal of hazardous waste"]
+  }else{
+    var legen=["odzysk odpadów niebezpiecznych","unieszkodliwienie odpadów niebezpiecznych"]
+  }
+  
   if(0=='0'){
     var precyz=0;
   }else{
@@ -1120,9 +1168,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","recovery of hazarodus waste":"75","disposal of hazardous waste":"21"},{"year":"2011","recovery of hazarodus waste":null,"disposal of hazardous waste":null},{"year":"2012","recovery of hazarodus waste":"67","disposal of hazardous waste":"8"},{"year":"2013","recovery of hazarodus waste":null,"disposal of hazardous waste":null},{"year":"2014","recovery of hazarodus waste":"89","disposal of hazardous waste":"23"},{"year":"2015","recovery of hazarodus waste":null,"disposal of hazardous waste":null},{"year":"2016","recovery of hazarodus waste":"49","disposal of hazardous waste":"24"},{"year":"2017","recovery of hazarodus waste":null,"disposal of hazardous waste":null},{"year":"2018","recovery of hazarodus waste":null,"disposal of hazardous waste":null}]
-var naglowek=["recovery of hazarodus waste","disposal of hazardous waste"]
+var DATA = [{"year":"year","odzysk odpadów niebezpiecznych":"recovery of hazarodus waste","unieszkodliwienie odpadów niebezpiecznych":"disposal of hazardous waste"},{"year":"2010","odzysk odpadów niebezpiecznych":"75","unieszkodliwienie odpadów niebezpiecznych":"21"},{"year":"2011","odzysk odpadów niebezpiecznych":null,"unieszkodliwienie odpadów niebezpiecznych":null},{"year":"2012","odzysk odpadów niebezpiecznych":"67","unieszkodliwienie odpadów niebezpiecznych":"8"},{"year":"2013","odzysk odpadów niebezpiecznych":null,"unieszkodliwienie odpadów niebezpiecznych":null},{"year":"2014","odzysk odpadów niebezpiecznych":"89","unieszkodliwienie odpadów niebezpiecznych":"23"},{"year":"2015","odzysk odpadów niebezpiecznych":null,"unieszkodliwienie odpadów niebezpiecznych":null},{"year":"2016","odzysk odpadów niebezpiecznych":"49","unieszkodliwienie odpadów niebezpiecznych":"24"},{"year":"2017","odzysk odpadów niebezpiecznych":null,"unieszkodliwienie odpadów niebezpiecznych":null},{"year":"2018","odzysk odpadów niebezpiecznych":null,"unieszkodliwienie odpadów niebezpiecznych":null}]
 
+var naglowek=["odzysk odpadów niebezpiecznych","unieszkodliwienie odpadów niebezpiecznych"]
+var naglowek_ang=["recovery of hazarodus waste","disposal of hazardous waste"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1156,7 +1206,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1215,174 +1270,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/12-4-2-b.pdf">Download metadata for 12.4.2.b</a>
+              <a href="/sdg-indicators/assets/pdf/en/12-4-2-b.pdf"><button>Download metadata for 12.4.2.b</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  12.4.2.b Hazardous waste generated per capita, proportion of hazardous waste treated and by type of treatment </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 12. Responsible consumption and production </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  12.4 By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Hazardous waste is defined by The Act of Waste of 27 April 2001 (Journal of Laws, No 3) as " any substance or object which the holder discards or intends or is required to discard ", and whose features , which displays one or more of the hazardous properties listed in in Annexes 2A, 2B, 3 and 4 to the above-mentioned Act. These annexes are an integral part of art. 3 sec. 2 of the Act of Waste(1) Amount of hazarous waste generated in the country in kilograms and reported according under applicable law.(2) Ratio of amount hazardous waste exposed to recovery to amount hazardous waste generated in the country.(3) Ratio of amount hazardous waste exposed to dispodal to amount hazardous waste generated in the country. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Processes of waste recovered R1-R10 are the operation described in the list of recovery operations listed in Annex No. 1 to the Act of 14 December 2012 on Waste (Journal of Laws 2013, item 21).Processes of waste disposal D1-D12 are the operations described in the list of disposal operations listed in Annex No. 2 to the Act of 14 December 2012 on waste (Journal of Laws 2013, item 21).The percentage is calculated as the ratio of the mass of waste recovered, conditioned waste to waste generated. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Ministry of the Environment, Eurostat </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2010. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  12.4.2.b Hazardous waste generated per capita, proportion of hazardous waste treated and by type of treatment </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 12. Responsible consumption and production </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  12.4 By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Hazardous waste is defined by The Act of Waste of 27 April 2001 (Journal of Laws, No 3) as " any substance or object which the holder discards or intends or is required to discard ", and whose features , which displays one or more of the hazardous properties listed in in Annexes 2A, 2B, 3 and 4 to the above-mentioned Act. These annexes are an integral part of art. 3 sec. 2 of the Act of Waste(1) Amount of hazarous waste generated in the country in kilograms and reported according under applicable law.(2) Ratio of amount hazardous waste exposed to recovery to amount hazardous waste generated in the country.(3) Ratio of amount hazardous waste exposed to dispodal to amount hazardous waste generated in the country. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Processes of waste recovered R1-R10 are the operation described in the list of recovery operations listed in Annex No. 1 to the Act of 14 December 2012 on Waste (Journal of Laws 2013, item 21).Processes of waste disposal D1-D12 are the operations described in the list of disposal operations listed in Annex No. 2 to the Act of 14 December 2012 on waste (Journal of Laws 2013, item 21).The percentage is calculated as the ratio of the mass of waste recovered, conditioned waste to waste generated. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Ministry of the Environment, Eurostat </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  since 2010. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1394,7 +1505,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1474,15 +1585,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["recovery of hazarodus waste","disposal of hazardous waste"]
+
 function Zmiana_jednostki(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1505,8 +1623,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1532,11 +1654,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1560,7 +1687,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1587,11 +1718,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1620,7 +1756,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1651,11 +1791,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1681,7 +1826,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null]
+      var calo=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1720,8 +1868,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=2
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1743,8 +1897,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=2;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["75",null,"67",null,"89",null,"49",null,null,"21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["recovery of hazarodus waste","75",null,"67",null,"89",null,"49",null,null,"disposal of hazardous waste","21",null,"8",null,"23",null,"24",null,null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1835,7 +1994,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

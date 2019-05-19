@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Proportion of teachers in (a) pre-primary  (b) primary  (c) lower secondary  and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country">
+        <meta property="og:title" content="4 C 1">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 4.c.1 - Proportion of teachers in: (a) pre-primary  (b) primary  (c) lower secondary  and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-4-c-1" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-4-c-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var licznik=4
-  var calosc=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null]
+  var calosc=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["teachers in pre-primary education","teachers in primary education","teachers in lower secondary education","teachers in upper secondary education"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["teachers in pre-primary education","teachers in primary education","teachers in lower secondary education","teachers in upper secondary education"]
+
+  if (jez=='en'){
+    var legen=["teachers in pre-primary education","teachers in primary education","teachers in lower secondary education","teachers in upper secondary education"]
+  }else{
+    var legen=["nauczyciele wychowania przedszkolnego","nauczyciele szkół podstawowych","nauczyciele szkół gimnazjalnych","nauczyciele szkół ponadgimnazjalnych (bez policealnych)"]
+  }
 
   if(1=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","teachers in pre-primary education":"97.8","teachers in primary education":"99.3","teachers in lower secondary education":"98.7","teachers in upper secondary education":"98.4"},{"year":"2011","teachers in pre-primary education":"98.1","teachers in primary education":"99.5","teachers in lower secondary education":"98.8","teachers in upper secondary education":"98.4"},{"year":"2012","teachers in pre-primary education":"98.2","teachers in primary education":"99.5","teachers in lower secondary education":"99.0","teachers in upper secondary education":"98.4"},{"year":"2013","teachers in pre-primary education":"98.3","teachers in primary education":"99.6","teachers in lower secondary education":"99.1","teachers in upper secondary education":"98.5"},{"year":"2014","teachers in pre-primary education":"98.4","teachers in primary education":"99.6","teachers in lower secondary education":"99.17","teachers in upper secondary education":"98.5"},{"year":"2015","teachers in pre-primary education":"98.4","teachers in primary education":"99.6","teachers in lower secondary education":"99.2","teachers in upper secondary education":"98.4"},{"year":"2016","teachers in pre-primary education":"98.3","teachers in primary education":"99.6","teachers in lower secondary education":"99.3","teachers in upper secondary education":"98.4"},{"year":"2017","teachers in pre-primary education":"98.3","teachers in primary education":"99.5","teachers in lower secondary education":"99.2","teachers in upper secondary education":"98.3"},{"year":"2018","teachers in pre-primary education":null,"teachers in primary education":null,"teachers in lower secondary education":null,"teachers in upper secondary education":null}]
-var naglowek=["teachers in pre-primary education","teachers in primary education","teachers in lower secondary education","teachers in upper secondary education"]
+var DATA = [{"year":"year","nauczyciele wychowania przedszkolnego":"teachers in pre-primary education","nauczyciele szkół podstawowych":"teachers in primary education","nauczyciele szkół gimnazjalnych":"teachers in lower secondary education","nauczyciele szkół ponadgimnazjalnych (bez policealnych)":"teachers in upper secondary education"},{"year":"2010","nauczyciele wychowania przedszkolnego":"97.8","nauczyciele szkół podstawowych":"99.3","nauczyciele szkół gimnazjalnych":"98.7","nauczyciele szkół ponadgimnazjalnych (bez policealnych)":"98.4"},{"year":"2011","nauczyciele wychowania przedszkolnego":"98.1","nauczyciele szkół podstawowych":"99.5","nauczyciele szkół gimnazjalnych":"98.8","nauczyciele szkół ponadgimnazjalnych (bez policealnych)":"98.4"},{"year":"2012","nauczyciele wychowania przedszkolnego":"98.2","nauczyciele szkół podstawowych":"99.5","nauczyciele szkół gimnazjalnych":"99.0","nauczyciele szkół ponadgimnazjalnych (bez policealnych)":"98.4"},{"year":"2013","nauczyciele wychowania przedszkolnego":"98.3","nauczyciele szkół podstawowych":"99.6","nauczyciele szkół gimnazjalnych":"99.1","nauczyciele szkół ponadgimnazjalnych (bez policealnych)":"98.5"},{"year":"2014","nauczyciele wychowania przedszkolnego":"98.4","nauczyciele szkół podstawowych":"99.6","nauczyciele szkół gimnazjalnych":"99.17","nauczyciele szkół ponadgimnazjalnych (bez policealnych)":"98.5"},{"year":"2015","nauczyciele wychowania przedszkolnego":"98.4","nauczyciele szkół podstawowych":"99.6","nauczyciele szkół gimnazjalnych":"99.2","nauczyciele szkół ponadgimnazjalnych (bez policealnych)":"98.4"},{"year":"2016","nauczyciele wychowania przedszkolnego":"98.3","nauczyciele szkół podstawowych":"99.6","nauczyciele szkół gimnazjalnych":"99.3","nauczyciele szkół ponadgimnazjalnych (bez policealnych)":"98.4"},{"year":"2017","nauczyciele wychowania przedszkolnego":"98.3","nauczyciele szkół podstawowych":"99.5","nauczyciele szkół gimnazjalnych":"99.2","nauczyciele szkół ponadgimnazjalnych (bez policealnych)":"98.3"},{"year":"2018","nauczyciele wychowania przedszkolnego":null,"nauczyciele szkół podstawowych":null,"nauczyciele szkół gimnazjalnych":null,"nauczyciele szkół ponadgimnazjalnych (bez policealnych)":null}]
 
+var naglowek=["nauczyciele wychowania przedszkolnego","nauczyciele szkół podstawowych","nauczyciele szkół gimnazjalnych","nauczyciele szkół ponadgimnazjalnych (bez policealnych)"]
+var naglowek_ang=["teachers in pre-primary education","teachers in primary education","teachers in lower secondary education","teachers in upper secondary education"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/4-c-1.pdf">Download metadata for 4.c.1</a>
+              <a href="/sdg-indicators/assets/pdf/en/4-c-1.pdf"><button>Download metadata for 4.c.1</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  4.c.1 Proportion of teachers in (a) pre-primary  (b) primary  (c) lower secondary  and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 4. Quality education </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  4.c By 2030, substantially increase the supply of qualified teachers, including through international cooperation for teacher training in developing countries, especially least developed countries and small island developing States </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Number of teachers with appropriate education and pedagogical preparation, which allows them to teach at a given level of education in relation to the number of all teachers teaching at a given level. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  levels of education </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  The data comes from the Educational Information System (SIO), administered by the Ministry of National Education. The presented values ??apply only to classroom teachers in ISCED 2011 0 to 3 education centers for children and young people. In order to avoid double counting, teachers teaching at different levels of education are allocated to the level at which they work the largest number of hours. Reference year: 2011 includes data for the school year 2010/2011, year - 2012 - data for the school year 2011/2012,Classification according to educational levels was made according to the International Standard Classification of Education ISCED 2011, where:ISCED 0: Early childhood education (‘less than primary’ for educational attainment) ISCED 1: Primary education ISCED 2: Lower secondary education ISCED 3: Upper secondary education ISCED 4: Post-secondary non-tertiary education ISCED 5, 6, 7, 8: Tertiary educationThe adopted levels of education correspond to the following levels of ISCED 2011: pre-school education - ISCED 0 primary school - ISCED 1 junior high school - ISCED 2 upper secondary school - ISCED 3 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Ministry of National Education </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data, since 2010 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  4.c.1 Proportion of teachers in (a) pre-primary  (b) primary  (c) lower secondary  and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 4. Quality education </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  4.c By 2030, substantially increase the supply of qualified teachers, including through international cooperation for teacher training in developing countries, especially least developed countries and small island developing States </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Number of teachers with appropriate education and pedagogical preparation, which allows them to teach at a given level of education in relation to the number of all teachers teaching at a given level. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  levels of education </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  The data comes from the Educational Information System (SIO), administered by the Ministry of National Education. The presented values ??apply only to classroom teachers in ISCED 2011 0 to 3 education centers for children and young people. In order to avoid double counting, teachers teaching at different levels of education are allocated to the level at which they work the largest number of hours. Reference year: 2011 includes data for the school year 2010/2011, year - 2012 - data for the school year 2011/2012,Classification according to educational levels was made according to the International Standard Classification of Education ISCED 2011, where:ISCED 0: Early childhood education (‘less than primary’ for educational attainment) ISCED 1: Primary education ISCED 2: Lower secondary education ISCED 3: Upper secondary education ISCED 4: Post-secondary non-tertiary education ISCED 5, 6, 7, 8: Tertiary educationThe adopted levels of education correspond to the following levels of ISCED 2011: pre-school education - ISCED 0 primary school - ISCED 1 junior high school - ISCED 2 upper secondary school - ISCED 3 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Ministry of National Education </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data, since 2010 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["teachers in pre-primary education","teachers in primary education","teachers in lower secondary education","teachers in upper secondary education"]
+
 function Zmiana_jednostki(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null]
+      var calo=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null]
+      var calo=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null]
+      var calo=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null]
+      var calo=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=4
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null]
+      var calo=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null]
+      var calo=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=4
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"]
-    var calo=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"]
+    labels.shift();
+    var calo=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=4;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017","2018"];
-    var calo=["97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017","2018"];
+    labels.shift()
+    var calo=["teachers in pre-primary education","97.8","98.1","98.2","98.3","98.4","98.4","98.3","98.3",null,"teachers in primary education","99.3","99.5","99.5","99.6","99.6","99.6","99.6","99.5",null,"teachers in lower secondary education","98.7","98.8","99.0","99.1","99.17","99.2","99.3","99.2",null,"teachers in upper secondary education","98.4","98.4","98.4","98.5","98.5","98.4","98.4","98.3",null,null,null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

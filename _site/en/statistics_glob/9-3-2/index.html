@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                 </title>
                 
 
-        <meta property="og:title" content="Proportion of entities taking bank credits by long-term and current credits">
+        <meta property="og:title" content="9 3 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
           
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Indicator 9.3.2 - Proportion of entities taking bank credits by long-term and current credits </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -627,13 +654,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-9-3-2" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-9-3-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=6
-  var calosc=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null]
+  var calosc=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total","long-term credits","current credits","total_","long-term credits_","current credits_"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'en'
-  var legen=["total","long-term credits","current credits","total_","long-term credits_","current credits_"]
+
+  if (jez=='en'){
+    var legen=["total","long-term credits","current credits","total_","long-term credits_","current credits_"]
+  }else{
+    var legen=["ogółem","kredyty długoterminowe","kredyty krótkoterminowe","ogółem_","kredyty długoterminowe_","kredyty krótkoterminowe_"]
+  }
 
   if(1=='0'){
     var precyz=0;
@@ -1154,9 +1201,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='en'
-var DATA = [{"year":"2010","total":"49.8","long-term credits":"30.2","current credits":"42.3","total_":"49.5","long-term credits_":"30.1","current credits_":"41.7"},{"year":"2011","total":"52.8","long-term credits":"32.4","current credits":"45.0","total_":"52.6","long-term credits_":"32.3","current credits_":"44.5"},{"year":"2012","total":"52.6","long-term credits":"31.5","current credits":"45.5","total_":"52.5","long-term credits_":"31.4","current credits_":"45.1"},{"year":"2013","total":"50.2","long-term credits":"30.3","current credits":"43.3","total_":"50.1","long-term credits_":"30.2","current credits_":"42.9"},{"year":"2014","total":"48.9","long-term credits":"29.8","current credits":"41.9","total_":"48.8","long-term credits_":"29.7","current credits_":"41.6"},{"year":"2015","total":"47.9","long-term credits":"29.4","current credits":"41.2","total_":"47.9","long-term credits_":"29.4","current credits_":"40.9"},{"year":"2016","total":"46.5","long-term credits":"28.5","current credits":"40.0","total_":"46.5","long-term credits_":"28.4","current credits_":"39.8"},{"year":"2017","total":"45.5","long-term credits":"27.5","current credits":"39.5","total_":"45.5","long-term credits_":"27.4","current credits_":"39.1"}]
-var naglowek=["total","long-term credits","current credits","total_","long-term credits_","current credits_"]
+var DATA = [{"year":"year","ogółem":"total","kredyty długoterminowe":"long-term credits","kredyty krótkoterminowe":"current credits","ogółem_":"total_","kredyty długoterminowe_":"long-term credits_","kredyty krótkoterminowe_":"current credits_"},{"year":"2010","ogółem":"49.8","kredyty długoterminowe":"30.2","kredyty krótkoterminowe":"42.3","ogółem_":"49.5","kredyty długoterminowe_":"30.1","kredyty krótkoterminowe_":"41.7"},{"year":"2011","ogółem":"52.8","kredyty długoterminowe":"32.4","kredyty krótkoterminowe":"45.0","ogółem_":"52.6","kredyty długoterminowe_":"32.3","kredyty krótkoterminowe_":"44.5"},{"year":"2012","ogółem":"52.6","kredyty długoterminowe":"31.5","kredyty krótkoterminowe":"45.5","ogółem_":"52.5","kredyty długoterminowe_":"31.4","kredyty krótkoterminowe_":"45.1"},{"year":"2013","ogółem":"50.2","kredyty długoterminowe":"30.3","kredyty krótkoterminowe":"43.3","ogółem_":"50.1","kredyty długoterminowe_":"30.2","kredyty krótkoterminowe_":"42.9"},{"year":"2014","ogółem":"48.9","kredyty długoterminowe":"29.8","kredyty krótkoterminowe":"41.9","ogółem_":"48.8","kredyty długoterminowe_":"29.7","kredyty krótkoterminowe_":"41.6"},{"year":"2015","ogółem":"47.9","kredyty długoterminowe":"29.4","kredyty krótkoterminowe":"41.2","ogółem_":"47.9","kredyty długoterminowe_":"29.4","kredyty krótkoterminowe_":"40.9"},{"year":"2016","ogółem":"46.5","kredyty długoterminowe":"28.5","kredyty krótkoterminowe":"40.0","ogółem_":"46.5","kredyty długoterminowe_":"28.4","kredyty krótkoterminowe_":"39.8"},{"year":"2017","ogółem":"45.5","kredyty długoterminowe":"27.5","kredyty krótkoterminowe":"39.5","ogółem_":"45.5","kredyty długoterminowe_":"27.4","kredyty krótkoterminowe_":"39.1"}]
 
+var naglowek=["ogółem","kredyty długoterminowe","kredyty krótkoterminowe","ogółem_","kredyty długoterminowe_","kredyty krótkoterminowe_"]
+var naglowek_ang=["total","long-term credits","current credits","total_","long-term credits_","current credits_"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1190,7 +1239,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1249,174 +1303,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/en/9-3-2.pdf">Download metadata for 9.3.2</a>
+              <a href="/sdg-indicators/assets/pdf/en/9-3-2.pdf"><button>Download metadata for 9.3.2</button></a>
 
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <b>9.3.2 Proportion of entities taking bank credits by long-term and current credits</b> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 9. Industry, Innovation and Infrastructure </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Target </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  9.3 Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definition </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Share of non-financial enterprises taking bank credits in total enterprises. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Unit </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Available dimensions </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  total, long-term credits, current credits </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <p>On the basis of a credit agreement, a bank obliges itself to provide a borrower with a certain amount of money for a specific purpose and specified amount of time outlined in the agreement, whereas the borrower obliges themselves to use the borrowed money in accordance with the agreement terms, to return the amount of the used credit with interest on the agreed redemption dates and to repay commission on the received credit.</p> <p>Long-term credits – credits whose redemption date exceeds 12 months since the balance sheet day.</p> <p>Current credits – credits whose redemption date occurs within 12 months since the balance sheet day.</p> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Source of data </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  National Bank of Poland / Statistics Poland </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Data availability </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Notes </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Name of the indicator </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <b>9.3.2 Proportion of entities taking bank credits by long-term and current credits</b> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Sustainable Development Goal </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Goal 9. Industry, Innovation and Infrastructure </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Target </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  9.3 Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definition </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Share of non-financial enterprises taking bank credits in total enterprises. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Unit </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  percent [%] </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Available dimensions </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  total, long-term credits, current credits </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Methodological explanations </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <p>On the basis of a credit agreement, a bank obliges itself to provide a borrower with a certain amount of money for a specific purpose and specified amount of time outlined in the agreement, whereas the borrower obliges themselves to use the borrowed money in accordance with the agreement terms, to return the amount of the used credit with interest on the agreed redemption dates and to repay commission on the received credit.</p> <p>Long-term credits – credits whose redemption date exceeds 12 months since the balance sheet day.</p> <p>Current credits – credits whose redemption date occurs within 12 months since the balance sheet day.</p> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Source of data </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  National Bank of Poland / Statistics Poland </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Data availability </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Annual data  Since 2010. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Notes </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Proxy indicator, available within the Polish public statistics.</p> <p>An original indicator, adopted by the UN for monitoring target <b>9.3</b> of the 2030 Agenda is <b>9.3.2</b></p> <p>Proportion of small-scale industries with a loan or line of credit.</p> </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1428,7 +1538,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('percent [%]'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1508,15 +1618,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total","long-term credits","current credits","total_","long-term credits_","current credits_"]
+
 function Zmiana_jednostki(){
 
   var licznik=6
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1539,8 +1656,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1566,11 +1687,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=6
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null]
+      var calo=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1594,7 +1720,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null]
+      var calo=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1621,11 +1751,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=6
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='en'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null]
+      var calo=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1654,7 +1789,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null]
+      var calo=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1685,11 +1824,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=6
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='en'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null]
+      var calo=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1715,7 +1859,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null]
+      var calo=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1754,8 +1901,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=6
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1777,8 +1930,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=6;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["total","49.8","52.8","52.6","50.2","48.9","47.9","46.5","45.5","long-term credits","30.2","32.4","31.5","30.3","29.8","29.4","28.5","27.5","current credits","42.3","45.0","45.5","43.3","41.9","41.2","40.0","39.5","total_","49.5","52.6","52.5","50.1","48.8","47.9","46.5","45.5","long-term credits_","30.1","32.3","31.4","30.2","29.7","29.4","28.4","27.4","current credits_","41.7","44.5","45.1","42.9","41.6","40.9","39.8","39.1",null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1869,7 +2027,7 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=en"  style="font-size: 15px;float: right;margin-right: 30px;">Archive</a>
       
     </div>
 

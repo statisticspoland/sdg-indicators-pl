@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                   </title>
                 
 
-        <meta property="og:title" content="Liczba poszkodowanych w wypadkach przy pracy na 1000 pracujących (wskaźnik wypadkowości)">
+        <meta property="og:title" content="8 8 1">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Wskaźnik 8.8.1 - Liczba poszkodowanych w wypadkach przy pracy na 1000 pracujących (wskaźnik wypadkowości) </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -626,13 +653,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-8-8-1" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-8-8-1'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=2
-  var calosc=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+  var calosc=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["total","fatal accidents"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'pl'
-  var legen=["ogółem","wypadki śmiertelne"]
+
+  if (jez=='en'){
+    var legen=["total","fatal accidents"]
+  }else{
+    var legen=["ogółem","wypadki śmiertelne"]
+  }
 
   if(2=='0'){
     var precyz=0;
@@ -1153,9 +1200,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","ogółem":"8.15","wypadki śmiertelne":"0.04"},{"year":"2011","ogółem":"8.34","wypadki śmiertelne":"0.04"},{"year":"2012","ogółem":"7.78","wypadki śmiertelne":"0.03"},{"year":"2013","ogółem":"7.54","wypadki śmiertelne":"0.02"},{"year":"2014","ogółem":"7.45","wypadki śmiertelne":"0.02"},{"year":"2015","ogółem":"7.19","wypadki śmiertelne":"0.02"},{"year":"2016","ogółem":"7.00","wypadki śmiertelne":"0.02"},{"year":"2017","ogółem":null,"wypadki śmiertelne":null}]
-var naglowek=["ogółem","wypadki śmiertelne"]
+var DATA = [{"year":"year","ogółem":"total","wypadki śmiertelne":"fatal accidents"},{"year":"2010","ogółem":"8.15","wypadki śmiertelne":"0.04"},{"year":"2011","ogółem":"8.34","wypadki śmiertelne":"0.04"},{"year":"2012","ogółem":"7.78","wypadki śmiertelne":"0.03"},{"year":"2013","ogółem":"7.54","wypadki śmiertelne":"0.02"},{"year":"2014","ogółem":"7.45","wypadki śmiertelne":"0.02"},{"year":"2015","ogółem":"7.19","wypadki śmiertelne":"0.02"},{"year":"2016","ogółem":"7.00","wypadki śmiertelne":"0.02"},{"year":"2017","ogółem":"6.80","wypadki śmiertelne":"0.02"}]
 
+var naglowek=["ogółem","wypadki śmiertelne"]
+var naglowek_ang=["total","fatal accidents"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1189,7 +1238,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1248,174 +1302,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/pl/8-8-1.pdf">Pobierz metadane dla 8.8.1</a>
+              <a href="/sdg-indicators/assets/pdf/pl/8-8-1.pdf"><button>Pobierz metadane dla 8.8.1</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla 8.8.1</a>-->
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <b>8.8.1 Liczba poszkodowanych w wypadkach przy pracy na 1000 pracujących (wskaźnik wypadkowości)</b> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 8. Wzrost gospodarczy i godna praca </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Zadanie </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  8.8 Chronić prawa pracownicze oraz promować bezpieczne środowisko pracy dla wszystkich, w tym dla pracowników, w tym pracowników - migrantów, w szczególności dla kobiet migrantek i osób mających niepewne zatrudnienie </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Liczba osób poszkodowanych przypadających na 1000 pracujących  do obliczenia wskaźnika przyjęto przeciętną liczbę pracujących obliczoną jako średnia arytmetyczna 2 stanów w dniu 31 XII, tj. z roku poprzedzającego rok badany i z roku badanego. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  osoby </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem, wypadki śmiertelne </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Informacje o wypadkach przy pracy obejmują wszystkie wypadki przy pracy, jak również wypadki traktowane na równi z wypadkami przy pracy niezależnie od tego, czy wykazana została niezdolność do pracy. </br> <p>Za <b>wypadek </b>przy pracy uważa się nagłe zdarzenie wywołane przyczyną zewnętrzną, powodujące uraz lub śmierć, które nastąpiło w związku z pracą: </br> 1) podczas lub w związku z wykonywaniem przez pracownika zwykłych czynności lub poleceń przełożonych oraz czynności na rzecz pracodawcy, nawet bez polecenia; </br> 2) w czasie pozostawania pracownika w dyspozycji pracodawcy w drodze między siedzibą pracodawcy a miejscem wykonywania obowiązku wynikającego ze stosunku pracy.</p> <p>Na równi z wypadkiem przy pracy, w zakresie uprawnienia do świadczeń określonych w ustawie o ubezpieczeniu społecznym z tytułu wypadków przy pracy i chorób zawodowych, traktuje się wypadek, któremu pracownik uległ: </br> 1) w czasie podróży służbowej; </br> 2) podczas szkolenia w zakresie powszechnej samoobrony; </br> 3) przy wykonywaniu zadań zleconych przez działające u pracodawcy organizacje związkowe.</p> <p>Za wypadek przy pracy uważa się również nagłe zdarzenie, powodujące uraz lub śmierć, które nastąpiło w okresie ubezpieczenia wypadkowego podczas:</br> 1) uprawiania sportu w trakcie zawodów i treningów przez osobę pobierającą stypendium sportowe;</br> 2) wykonywania odpłatnie pracy w czasie odbywania kary pozbawienia wolności lub tymczasowego aresztowania; </br> 3) pełnienia mandatu posła lub senatora, pobierającego uposażenie; </br> 4) sprawowania mandatu posła do Parlamentu Europejskiego wybranego w Rzeczypospolitej Polskiej; </br> 5) odbywania — na podstawie skierowania wydanego przez powiatowy urząd pracy lub inny podmiot kierujący — szkolenia lub stażu związanego z pobieraniem przez absolwenta stypendium; </br> 6) wykonywania przez członka rolniczej spółdzielni produkcyjnej, spółdzielni kółek rolniczych oraz przez inną osobę traktowaną na równi z członkiem spółdzielni, pracy na rzecz tych spółdzielni; </br> 7) wykonywania lub współpracy przy wykonywaniu pracy na podstawie umowy agencyjnej, umowy-zlecenia lub umowy o świadczenie usług; </br> 8) wykonywania zwykłych czynności związanych z prowadzeniem lub współpracą przy prowadzeniu działalności pozarolniczej; </br> 9) wykonywania przez osobę duchowną czynności religijnych lub czynności związanych z powierzonymi funkcjami duszpasterskimi lub zakonnymi; </br> 10) odbywania zastępczych form służby wojskowej; </br> 11) nauki w Krajowej Szkole Administracji Publicznej przez słuchaczy pobierających stypendium.</p> <p>Za <b>ciężki wypadek przy pracy </b>uważa się wypadek, w wyniku którego nastąpiło ciężkie uszkodzenie ciała, a mianowicie: utrata wzroku, słuchu, mowy, zdolności płodzenia lub inne uszkodzenie ciała albo rozstrój zdrowia, naruszające podstawowe funkcje organizmu, a także choroba nieuleczalna lub zagrażająca życiu, trwała choroba psychiczna, trwała, całkowita lub znaczna niezdolność do pracy w zawodzie albo trwałe poważne zeszpecenie lub zniekształcenie ciała.</p> <p>Za <b>śmiertelny wypadek </b>przy pracy uważa się wypadek, w wyniku którego nastąpiła śmierć osoby poszkodowanej na miejscu wypadku lub w okresie 6 miesięcy od chwili wypadku.</p> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Źródło danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Urząd Statystyczny </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2010 r. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Uwagi </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <b>8.8.1 Liczba poszkodowanych w wypadkach przy pracy na 1000 pracujących (wskaźnik wypadkowości)</b> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 8. Wzrost gospodarczy i godna praca </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Zadanie </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  8.8 Chronić prawa pracownicze oraz promować bezpieczne środowisko pracy dla wszystkich, w tym dla pracowników, w tym pracowników - migrantów, w szczególności dla kobiet migrantek i osób mających niepewne zatrudnienie </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Liczba osób poszkodowanych przypadających na 1000 pracujących  do obliczenia wskaźnika przyjęto przeciętną liczbę pracujących obliczoną jako średnia arytmetyczna 2 stanów w dniu 31 XII, tj. z roku poprzedzającego rok badany i z roku badanego. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  osoby </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  ogółem, wypadki śmiertelne </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <p>Informacje o wypadkach przy pracy obejmują wszystkie wypadki przy pracy, jak również wypadki traktowane na równi z wypadkami przy pracy niezależnie od tego, czy wykazana została niezdolność do pracy. </br> <p>Za <b>wypadek </b>przy pracy uważa się nagłe zdarzenie wywołane przyczyną zewnętrzną, powodujące uraz lub śmierć, które nastąpiło w związku z pracą: </br> 1) podczas lub w związku z wykonywaniem przez pracownika zwykłych czynności lub poleceń przełożonych oraz czynności na rzecz pracodawcy, nawet bez polecenia; </br> 2) w czasie pozostawania pracownika w dyspozycji pracodawcy w drodze między siedzibą pracodawcy a miejscem wykonywania obowiązku wynikającego ze stosunku pracy.</p> <p>Na równi z wypadkiem przy pracy, w zakresie uprawnienia do świadczeń określonych w ustawie o ubezpieczeniu społecznym z tytułu wypadków przy pracy i chorób zawodowych, traktuje się wypadek, któremu pracownik uległ: </br> 1) w czasie podróży służbowej; </br> 2) podczas szkolenia w zakresie powszechnej samoobrony; </br> 3) przy wykonywaniu zadań zleconych przez działające u pracodawcy organizacje związkowe.</p> <p>Za wypadek przy pracy uważa się również nagłe zdarzenie, powodujące uraz lub śmierć, które nastąpiło w okresie ubezpieczenia wypadkowego podczas:</br> 1) uprawiania sportu w trakcie zawodów i treningów przez osobę pobierającą stypendium sportowe;</br> 2) wykonywania odpłatnie pracy w czasie odbywania kary pozbawienia wolności lub tymczasowego aresztowania; </br> 3) pełnienia mandatu posła lub senatora, pobierającego uposażenie; </br> 4) sprawowania mandatu posła do Parlamentu Europejskiego wybranego w Rzeczypospolitej Polskiej; </br> 5) odbywania — na podstawie skierowania wydanego przez powiatowy urząd pracy lub inny podmiot kierujący — szkolenia lub stażu związanego z pobieraniem przez absolwenta stypendium; </br> 6) wykonywania przez członka rolniczej spółdzielni produkcyjnej, spółdzielni kółek rolniczych oraz przez inną osobę traktowaną na równi z członkiem spółdzielni, pracy na rzecz tych spółdzielni; </br> 7) wykonywania lub współpracy przy wykonywaniu pracy na podstawie umowy agencyjnej, umowy-zlecenia lub umowy o świadczenie usług; </br> 8) wykonywania zwykłych czynności związanych z prowadzeniem lub współpracą przy prowadzeniu działalności pozarolniczej; </br> 9) wykonywania przez osobę duchowną czynności religijnych lub czynności związanych z powierzonymi funkcjami duszpasterskimi lub zakonnymi; </br> 10) odbywania zastępczych form służby wojskowej; </br> 11) nauki w Krajowej Szkole Administracji Publicznej przez słuchaczy pobierających stypendium.</p> <p>Za <b>ciężki wypadek przy pracy </b>uważa się wypadek, w wyniku którego nastąpiło ciężkie uszkodzenie ciała, a mianowicie: utrata wzroku, słuchu, mowy, zdolności płodzenia lub inne uszkodzenie ciała albo rozstrój zdrowia, naruszające podstawowe funkcje organizmu, a także choroba nieuleczalna lub zagrażająca życiu, trwała choroba psychiczna, trwała, całkowita lub znaczna niezdolność do pracy w zawodzie albo trwałe poważne zeszpecenie lub zniekształcenie ciała.</p> <p>Za <b>śmiertelny wypadek </b>przy pracy uważa się wypadek, w wyniku którego nastąpiła śmierć osoby poszkodowanej na miejscu wypadku lub w okresie 6 miesięcy od chwili wypadku.</p> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Źródło danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Urząd Statystyczny </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2010 r. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Uwagi </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik zastępczy, dostępny w ramach polskiej statystyki publicznej.Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym cel 8.8 Agendy 2030, jest wskaźnik 8.8.1 Częstość występowania urazów śmiertelnych i nieśmiertelnych przy pracy, według płci i statusu migracyjnego. </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1427,7 +1537,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('osoby'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1507,15 +1617,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["total","fatal accidents"]
+
 function Zmiana_jednostki(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1538,8 +1655,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1565,11 +1686,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      var calo=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1593,7 +1719,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      var calo=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1620,11 +1750,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      var calo=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1653,7 +1788,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      var calo=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1684,11 +1823,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=2
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      var calo=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1714,7 +1858,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      var calo=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1753,8 +1900,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=2
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1776,8 +1929,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=2;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["8.15","8.34","7.78","7.54","7.45","7.19","7.00",null,"0.04","0.04","0.03","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["total","8.15","8.34","7.78","7.54","7.45","7.19","7.00","6.80","fatal accidents","0.04","0.04","0.03","0.02","0.02","0.02","0.02","0.02",null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1868,8 +2026,10 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
-      
+             
+			    <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+			 
+	  
     </div>
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">

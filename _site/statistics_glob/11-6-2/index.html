@@ -7,6 +7,9 @@
 
 
 
+
+
+
     <head>
         <!-- Basic Page Needs
 ================================================== -->
@@ -25,7 +28,7 @@
                   </title>
                 
 
-        <meta property="og:title" content="Średnioroczne poziomy pyłu zawieszonego w 12 aglomeracjach">
+        <meta property="og:title" content="11 6 2">
         <meta name="description" content="">
         <meta property="og:description" content="">
         <link rel="canonical" href="/"><!--[if lt IE 9]>
@@ -44,8 +47,8 @@
         <link rel="stylesheet" href="/sdg-indicators/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist.css">
         <link rel="stylesheet" href="/sdg-indicators/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-07-12-40-27-+0200">
-        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-07-12-40-27-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/pl_sdg.css?v=2019-05-16-08-42-34-+0200">
+        <link rel="stylesheet" href="/sdg-indicators/assets/css/custom.css?v=2019-05-16-08-42-34-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="/sdg-indicators/assets/js/accessibility.js"></script>
@@ -330,6 +333,11 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
 
+
+
+
+
+
 <div id="main" class="main-content initiative-content">
 
   
@@ -474,21 +482,24 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
         <div class="pl-grid initiative-description">
 
-          
-          
-
-          
-          
-          
-          
-          
-          
-          
-          
-
 
           
 
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+          
+
+
+          
+          
 
           
           
@@ -589,6 +600,19 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
           
 
+
+
+
+
+
+		  
+
+
+
+
+
+
+
           <h3>Wskaźnik 11.6.2 - Średnioroczne poziomy pyłu zawieszonego w 12 aglomeracjach </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">Dane</a></li>
@@ -598,6 +622,9 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 
 
           <div style="float: left;width: 100%;">
+
+
+
 
 
 <div class="tab-content">
@@ -626,13 +653,33 @@ $(".default").attr("src", '/sdg-indicators/assets/img/default.png');
 <div id="linechart-11-6-2" class="ct-chart ct-major-eleventh"></div>
 <script>
 //LINIOWY
+function remove(array, element) {
+  const index = array.indexOf(element);
+
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
+}
+
 (function (){
   var container = '#linechart-11-6-2'
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var licznik=24
-  var calosc=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
+  var calosc=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null]
+  var naglowek_ang=["Agglomeration of Bialystok","Agglomeration of Bydgoszcz","Upper Silesian Agglomeration","Cracow Agglomeration","Lublin Agglomeration","Lodz Agglomeration","Poznan Agglomeration","Rybnicko Jastrzębska Agglomeration","Szczecin Agglomeration","Tri-City Agglomeration","Warsaw Agglomeration","Wrocław Agglomeration","Agglomeration of Bialystok_","Agglomeration of Bydgoszcz_","Upper Silesian Agglomeration_","Cracow Agglomeration_","Lublin Agglomeration_","Lodz Agglomeration_","Poznan Agglomeration_","Rybnicko Jastrzębska Agglomeration_","Szczecin Agglomeration_","Tri-City Agglomeration_","Warsaw Agglomeration_","Wrocław Agglomeration_"]
+
+  for (i=0;i<naglowek_ang.length;i++){
+    remove(calosc, naglowek_ang[i]);
+
+  }
   var jez= 'pl'
-  var legen=["Aglomeracja Białostocka","Aglomeracja Bydgoska","Aglomeracja Górnośląska","Aglomeracja Krakowska","Aglomeracja Lubelska","Aglomeracja Łódzka","Aglomeracja Poznańska","Aglomeracja Rybnicko-Jastrzębska","Aglomeracja Szczecińska","Aglomeracja Trójmiejska","Aglomeracja Warszawska","Aglomeracja Wrocławska","Aglomeracja Białostocka_","Aglomeracja Bydgoska_","Aglomeracja Górnośląska_","Aglomeracja Krakowska_","Aglomeracja Lubelska_","Aglomeracja Łódzka_","Aglomeracja Poznańska_","Aglomeracja Rybnicko-Jastrzębska_","Aglomeracja Szczecińska_","Aglomeracja Trójmiejska_","Aglomeracja Warszawska_","Aglomeracja Wrocławska_"]
+
+  if (jez=='en'){
+    var legen=["Agglomeration of Bialystok","Agglomeration of Bydgoszcz","Upper Silesian Agglomeration","Cracow Agglomeration","Lublin Agglomeration","Lodz Agglomeration","Poznan Agglomeration","Rybnicko Jastrzębska Agglomeration","Szczecin Agglomeration","Tri-City Agglomeration","Warsaw Agglomeration","Wrocław Agglomeration","Agglomeration of Bialystok_","Agglomeration of Bydgoszcz_","Upper Silesian Agglomeration_","Cracow Agglomeration_","Lublin Agglomeration_","Lodz Agglomeration_","Poznan Agglomeration_","Rybnicko Jastrzębska Agglomeration_","Szczecin Agglomeration_","Tri-City Agglomeration_","Warsaw Agglomeration_","Wrocław Agglomeration_"]
+  }else{
+    var legen=["Aglomeracja Białostocka","Aglomeracja Bydgoska","Aglomeracja Górnośląska","Aglomeracja Krakowska","Aglomeracja Lubelska","Aglomeracja Łódzka","Aglomeracja Poznańska","Aglomeracja Rybnicko-Jastrzębska","Aglomeracja Szczecińska","Aglomeracja Trójmiejska","Aglomeracja Warszawska","Aglomeracja Wrocławska","Aglomeracja Białostocka_","Aglomeracja Bydgoska_","Aglomeracja Górnośląska_","Aglomeracja Krakowska_","Aglomeracja Lubelska_","Aglomeracja Łódzka_","Aglomeracja Poznańska_","Aglomeracja Rybnicko-Jastrzębska_","Aglomeracja Szczecińska_","Aglomeracja Trójmiejska_","Aglomeracja Warszawska_","Aglomeracja Wrocławska_"]
+  }
 
   if(1=='0'){
     var precyz=0;
@@ -1153,9 +1200,11 @@ $(".ct-legend li").click(function() {
 
 $( document ).ready(function() {
 var jez='pl'
-var DATA = [{"year":"2010","Aglomeracja Białostocka":"27.7","Aglomeracja Bydgoska":"29.6","Aglomeracja Górnośląska":"50.5","Aglomeracja Krakowska":"65.9","Aglomeracja Lubelska":"32","Aglomeracja Łódzka":"42.7","Aglomeracja Poznańska":"38","Aglomeracja Rybnicko-Jastrzębska":"57.7","Aglomeracja Szczecińska":"31.2","Aglomeracja Trójmiejska":"25.4","Aglomeracja Warszawska":"38","Aglomeracja Wrocławska":"54.9","Aglomeracja Białostocka_":"23.7","Aglomeracja Bydgoska_":"27.7","Aglomeracja Górnośląska_":"42.5","Aglomeracja Krakowska_":"50.9","Aglomeracja Lubelska_":"25.1","Aglomeracja Łódzka_":"26.2","Aglomeracja Poznańska_":null,"Aglomeracja Rybnicko-Jastrzębska_":"44.3","Aglomeracja Szczecińska_":"19.3","Aglomeracja Trójmiejska_":"20.3","Aglomeracja Warszawska_":"30.9","Aglomeracja Wrocławska_":"34.8"},{"year":"2011","Aglomeracja Białostocka":"30.5","Aglomeracja Bydgoska":"36","Aglomeracja Górnośląska":"51.9","Aglomeracja Krakowska":"64.7","Aglomeracja Lubelska":"32.5","Aglomeracja Łódzka":"40.5","Aglomeracja Poznańska":"39","Aglomeracja Rybnicko-Jastrzębska":"51","Aglomeracja Szczecińska":"28.3","Aglomeracja Trójmiejska":"23.4","Aglomeracja Warszawska":"37.6","Aglomeracja Wrocławska":"45.5","Aglomeracja Białostocka_":"27.1","Aglomeracja Bydgoska_":"17.4","Aglomeracja Górnośląska_":"36.7","Aglomeracja Krakowska_":"45.1","Aglomeracja Lubelska_":"23.2","Aglomeracja Łódzka_":"27.5","Aglomeracja Poznańska_":"27.5","Aglomeracja Rybnicko-Jastrzębska_":"33.0","Aglomeracja Szczecińska_":"18.8","Aglomeracja Trójmiejska_":"18.2","Aglomeracja Warszawska_":"28","Aglomeracja Wrocławska_":"30.3"},{"year":"2012","Aglomeracja Białostocka":"29.4","Aglomeracja Bydgoska":"29.8","Aglomeracja Górnośląska":"48.4","Aglomeracja Krakowska":"56.9","Aglomeracja Lubelska":"29.4","Aglomeracja Łódzka":"38.8","Aglomeracja Poznańska":"32.9","Aglomeracja Rybnicko-Jastrzębska":"51.2","Aglomeracja Szczecińska":"24.2","Aglomeracja Trójmiejska":"20.6","Aglomeracja Warszawska":"37.5","Aglomeracja Wrocławska":"38.8","Aglomeracja Białostocka_":"23.5","Aglomeracja Bydgoska_":"20.4","Aglomeracja Górnośląska_":"35.8","Aglomeracja Krakowska_":"41.7","Aglomeracja Lubelska_":"22.4","Aglomeracja Łódzka_":"27.1","Aglomeracja Poznańska_":"24.4","Aglomeracja Rybnicko-Jastrzębska_":"32.6","Aglomeracja Szczecińska_":"16.2","Aglomeracja Trójmiejska_":"16.2","Aglomeracja Warszawska_":"25.8","Aglomeracja Wrocławska_":"28.8"},{"year":"2013","Aglomeracja Białostocka":"24.9","Aglomeracja Bydgoska":"34.9","Aglomeracja Górnośląska":"44.9","Aglomeracja Krakowska":"51.1","Aglomeracja Lubelska":"29.5","Aglomeracja Łódzka":"38.1","Aglomeracja Poznańska":"26.9","Aglomeracja Rybnicko-Jastrzębska":"49.1","Aglomeracja Szczecińska":"22.9","Aglomeracja Trójmiejska":"19","Aglomeracja Warszawska":"33.3","Aglomeracja Wrocławska":"36.4","Aglomeracja Białostocka_":"19.9","Aglomeracja Bydgoska_":"20.9","Aglomeracja Górnośląska_":"34.8","Aglomeracja Krakowska_":"37.4","Aglomeracja Lubelska_":"21.4","Aglomeracja Łódzka_":"26.8","Aglomeracja Poznańska_":"22.0","Aglomeracja Rybnicko-Jastrzębska_":"31.4","Aglomeracja Szczecińska_":"15.4","Aglomeracja Trójmiejska_":"13.4","Aglomeracja Warszawska_":"26","Aglomeracja Wrocławska_":"29.1"},{"year":"2014","Aglomeracja Białostocka":"27.4","Aglomeracja Bydgoska":"38.8","Aglomeracja Górnośląska":"45.3","Aglomeracja Krakowska":"53.1","Aglomeracja Lubelska":"32.1","Aglomeracja Łódzka":"38.2","Aglomeracja Poznańska":"32.5","Aglomeracja Rybnicko-Jastrzębska":"47.2","Aglomeracja Szczecińska":"26.9","Aglomeracja Trójmiejska":"23.2","Aglomeracja Warszawska":"33.7","Aglomeracja Wrocławska":"35.2","Aglomeracja Białostocka_":"20.7","Aglomeracja Bydgoska_":"21.8","Aglomeracja Górnośląska_":"35.6","Aglomeracja Krakowska_":"36.6","Aglomeracja Lubelska_":"23.0","Aglomeracja Łódzka_":"26.5","Aglomeracja Poznańska_":"26.0","Aglomeracja Rybnicko-Jastrzębska_":"28.0","Aglomeracja Szczecińska_":"20.3","Aglomeracja Trójmiejska_":"16.8","Aglomeracja Warszawska_":"26.2","Aglomeracja Wrocławska_":"25.9"},{"year":"2015","Aglomeracja Białostocka":"27.1","Aglomeracja Bydgoska":"33","Aglomeracja Górnośląska":"41.9","Aglomeracja Krakowska":"54.9","Aglomeracja Lubelska":"32.9","Aglomeracja Łódzka":"35.5","Aglomeracja Poznańska":"31.5","Aglomeracja Rybnicko-Jastrzębska":"44.3","Aglomeracja Szczecińska":"24.1","Aglomeracja Trójmiejska":"20.8","Aglomeracja Warszawska":"33.2","Aglomeracja Wrocławska":"32.6","Aglomeracja Białostocka_":"20.3","Aglomeracja Bydgoska_":"18.9","Aglomeracja Górnośląska_":"30.3","Aglomeracja Krakowska_":"36.9","Aglomeracja Lubelska_":"24.8","Aglomeracja Łódzka_":"24.1","Aglomeracja Poznańska_":"24.0","Aglomeracja Rybnicko-Jastrzębska_":"28.0","Aglomeracja Szczecińska_":"17.3","Aglomeracja Trójmiejska_":"13.5","Aglomeracja Warszawska_":"22.9","Aglomeracja Wrocławska_":"25.7"},{"year":"2016","Aglomeracja Białostocka":"21.9","Aglomeracja Bydgoska":"32.2","Aglomeracja Górnośląska":"40.6","Aglomeracja Krakowska":"43.7","Aglomeracja Lubelska":"28.0","Aglomeracja Łódzka":"34.0","Aglomeracja Poznańska":"30.5","Aglomeracja Rybnicko-Jastrzębska":"44.7","Aglomeracja Szczecińska":"23.6","Aglomeracja Trójmiejska":"18.9","Aglomeracja Warszawska":"32.2","Aglomeracja Wrocławska":"30.2","Aglomeracja Białostocka_":"18.2","Aglomeracja Bydgoska_":"18.8","Aglomeracja Górnośląska_":"31.1","Aglomeracja Krakowska_":"32.4","Aglomeracja Lubelska_":"22.9","Aglomeracja Łódzka_":"22.4","Aglomeracja Poznańska_":"24.0","Aglomeracja Rybnicko-Jastrzębska_":"29.0","Aglomeracja Szczecińska_":"17.4","Aglomeracja Trójmiejska_":"11.5","Aglomeracja Warszawska_":"22.7","Aglomeracja Wrocławska_":"24.8"},{"year":"2017","Aglomeracja Białostocka":"22.1","Aglomeracja Bydgoska":"34.7","Aglomeracja Górnośląska":"43.8","Aglomeracja Krakowska":"44.2","Aglomeracja Lubelska":"29.7","Aglomeracja Łódzka":"37.6","Aglomeracja Poznańska":"28.0","Aglomeracja Rybnicko-Jastrzębska":"46.7","Aglomeracja Szczecińska":"21.9","Aglomeracja Trójmiejska":"18.8","Aglomeracja Warszawska":"34.3","Aglomeracja Wrocławska":"29.5","Aglomeracja Białostocka_":"17.3","Aglomeracja Bydgoska_":"19.0","Aglomeracja Górnośląska_":"33.7","Aglomeracja Krakowska_":"33.4","Aglomeracja Lubelska_":"21.4","Aglomeracja Łódzka_":"27.5","Aglomeracja Poznańska_":"22.0","Aglomeracja Rybnicko-Jastrzębska_":"29.0","Aglomeracja Szczecińska_":"16.7","Aglomeracja Trójmiejska_":"11.8","Aglomeracja Warszawska_":"24.4","Aglomeracja Wrocławska_":"22.2"}]
-var naglowek=["Aglomeracja Białostocka","Aglomeracja Bydgoska","Aglomeracja Górnośląska","Aglomeracja Krakowska","Aglomeracja Lubelska","Aglomeracja Łódzka","Aglomeracja Poznańska","Aglomeracja Rybnicko-Jastrzębska","Aglomeracja Szczecińska","Aglomeracja Trójmiejska","Aglomeracja Warszawska","Aglomeracja Wrocławska","Aglomeracja Białostocka_","Aglomeracja Bydgoska_","Aglomeracja Górnośląska_","Aglomeracja Krakowska_","Aglomeracja Lubelska_","Aglomeracja Łódzka_","Aglomeracja Poznańska_","Aglomeracja Rybnicko-Jastrzębska_","Aglomeracja Szczecińska_","Aglomeracja Trójmiejska_","Aglomeracja Warszawska_","Aglomeracja Wrocławska_"]
+var DATA = [{"year":"year","Aglomeracja Białostocka":"Agglomeration of Bialystok","Aglomeracja Bydgoska":"Agglomeration of Bydgoszcz","Aglomeracja Górnośląska":"Upper Silesian Agglomeration","Aglomeracja Krakowska":"Cracow Agglomeration","Aglomeracja Lubelska":"Lublin Agglomeration","Aglomeracja Łódzka":"Lodz Agglomeration","Aglomeracja Poznańska":"Poznan Agglomeration","Aglomeracja Rybnicko-Jastrzębska":"Rybnicko Jastrzębska Agglomeration","Aglomeracja Szczecińska":"Szczecin Agglomeration","Aglomeracja Trójmiejska":"Tri-City Agglomeration","Aglomeracja Warszawska":"Warsaw Agglomeration","Aglomeracja Wrocławska":"Wrocław Agglomeration","Aglomeracja Białostocka_":"Agglomeration of Bialystok_","Aglomeracja Bydgoska_":"Agglomeration of Bydgoszcz_","Aglomeracja Górnośląska_":"Upper Silesian Agglomeration_","Aglomeracja Krakowska_":"Cracow Agglomeration_","Aglomeracja Lubelska_":"Lublin Agglomeration_","Aglomeracja Łódzka_":"Lodz Agglomeration_","Aglomeracja Poznańska_":"Poznan Agglomeration_","Aglomeracja Rybnicko-Jastrzębska_":"Rybnicko Jastrzębska Agglomeration_","Aglomeracja Szczecińska_":"Szczecin Agglomeration_","Aglomeracja Trójmiejska_":"Tri-City Agglomeration_","Aglomeracja Warszawska_":"Warsaw Agglomeration_","Aglomeracja Wrocławska_":"Wrocław Agglomeration_"},{"year":"2010","Aglomeracja Białostocka":"27.7","Aglomeracja Bydgoska":"29.6","Aglomeracja Górnośląska":"50.5","Aglomeracja Krakowska":"65.9","Aglomeracja Lubelska":"32","Aglomeracja Łódzka":"42.7","Aglomeracja Poznańska":"38","Aglomeracja Rybnicko-Jastrzębska":"57.7","Aglomeracja Szczecińska":"31.2","Aglomeracja Trójmiejska":"25.4","Aglomeracja Warszawska":"38","Aglomeracja Wrocławska":"54.9","Aglomeracja Białostocka_":"23.7","Aglomeracja Bydgoska_":"27.7","Aglomeracja Górnośląska_":"42.5","Aglomeracja Krakowska_":"50.9","Aglomeracja Lubelska_":"25.1","Aglomeracja Łódzka_":"26.2","Aglomeracja Poznańska_":null,"Aglomeracja Rybnicko-Jastrzębska_":"44.3","Aglomeracja Szczecińska_":"19.3","Aglomeracja Trójmiejska_":"20.3","Aglomeracja Warszawska_":"30.9","Aglomeracja Wrocławska_":"34.8"},{"year":"2011","Aglomeracja Białostocka":"30.5","Aglomeracja Bydgoska":"36","Aglomeracja Górnośląska":"51.9","Aglomeracja Krakowska":"64.7","Aglomeracja Lubelska":"32.5","Aglomeracja Łódzka":"40.5","Aglomeracja Poznańska":"39","Aglomeracja Rybnicko-Jastrzębska":"51","Aglomeracja Szczecińska":"28.3","Aglomeracja Trójmiejska":"23.4","Aglomeracja Warszawska":"37.6","Aglomeracja Wrocławska":"45.5","Aglomeracja Białostocka_":"27.1","Aglomeracja Bydgoska_":"17.4","Aglomeracja Górnośląska_":"36.7","Aglomeracja Krakowska_":"45.1","Aglomeracja Lubelska_":"23.2","Aglomeracja Łódzka_":"27.5","Aglomeracja Poznańska_":"27.5","Aglomeracja Rybnicko-Jastrzębska_":"33.0","Aglomeracja Szczecińska_":"18.8","Aglomeracja Trójmiejska_":"18.2","Aglomeracja Warszawska_":"28","Aglomeracja Wrocławska_":"30.3"},{"year":"2012","Aglomeracja Białostocka":"29.4","Aglomeracja Bydgoska":"29.8","Aglomeracja Górnośląska":"48.4","Aglomeracja Krakowska":"56.9","Aglomeracja Lubelska":"29.4","Aglomeracja Łódzka":"38.8","Aglomeracja Poznańska":"32.9","Aglomeracja Rybnicko-Jastrzębska":"51.2","Aglomeracja Szczecińska":"24.2","Aglomeracja Trójmiejska":"20.6","Aglomeracja Warszawska":"37.5","Aglomeracja Wrocławska":"38.8","Aglomeracja Białostocka_":"23.5","Aglomeracja Bydgoska_":"20.4","Aglomeracja Górnośląska_":"35.8","Aglomeracja Krakowska_":"41.7","Aglomeracja Lubelska_":"22.4","Aglomeracja Łódzka_":"27.1","Aglomeracja Poznańska_":"24.4","Aglomeracja Rybnicko-Jastrzębska_":"32.6","Aglomeracja Szczecińska_":"16.2","Aglomeracja Trójmiejska_":"16.2","Aglomeracja Warszawska_":"25.8","Aglomeracja Wrocławska_":"28.8"},{"year":"2013","Aglomeracja Białostocka":"24.9","Aglomeracja Bydgoska":"34.9","Aglomeracja Górnośląska":"44.9","Aglomeracja Krakowska":"51.1","Aglomeracja Lubelska":"29.5","Aglomeracja Łódzka":"38.1","Aglomeracja Poznańska":"26.9","Aglomeracja Rybnicko-Jastrzębska":"49.1","Aglomeracja Szczecińska":"22.9","Aglomeracja Trójmiejska":"19","Aglomeracja Warszawska":"33.3","Aglomeracja Wrocławska":"36.4","Aglomeracja Białostocka_":"19.9","Aglomeracja Bydgoska_":"20.9","Aglomeracja Górnośląska_":"34.8","Aglomeracja Krakowska_":"37.4","Aglomeracja Lubelska_":"21.4","Aglomeracja Łódzka_":"26.8","Aglomeracja Poznańska_":"22.0","Aglomeracja Rybnicko-Jastrzębska_":"31.4","Aglomeracja Szczecińska_":"15.4","Aglomeracja Trójmiejska_":"13.4","Aglomeracja Warszawska_":"26","Aglomeracja Wrocławska_":"29.1"},{"year":"2014","Aglomeracja Białostocka":"27.4","Aglomeracja Bydgoska":"38.8","Aglomeracja Górnośląska":"45.3","Aglomeracja Krakowska":"53.1","Aglomeracja Lubelska":"32.1","Aglomeracja Łódzka":"38.2","Aglomeracja Poznańska":"32.5","Aglomeracja Rybnicko-Jastrzębska":"47.2","Aglomeracja Szczecińska":"26.9","Aglomeracja Trójmiejska":"23.2","Aglomeracja Warszawska":"33.7","Aglomeracja Wrocławska":"35.2","Aglomeracja Białostocka_":"20.7","Aglomeracja Bydgoska_":"21.8","Aglomeracja Górnośląska_":"35.6","Aglomeracja Krakowska_":"36.6","Aglomeracja Lubelska_":"23.0","Aglomeracja Łódzka_":"26.5","Aglomeracja Poznańska_":"26.0","Aglomeracja Rybnicko-Jastrzębska_":"28.0","Aglomeracja Szczecińska_":"20.3","Aglomeracja Trójmiejska_":"16.8","Aglomeracja Warszawska_":"26.2","Aglomeracja Wrocławska_":"25.9"},{"year":"2015","Aglomeracja Białostocka":"27.1","Aglomeracja Bydgoska":"33","Aglomeracja Górnośląska":"41.9","Aglomeracja Krakowska":"54.9","Aglomeracja Lubelska":"32.9","Aglomeracja Łódzka":"35.5","Aglomeracja Poznańska":"31.5","Aglomeracja Rybnicko-Jastrzębska":"44.3","Aglomeracja Szczecińska":"24.1","Aglomeracja Trójmiejska":"20.8","Aglomeracja Warszawska":"33.2","Aglomeracja Wrocławska":"32.6","Aglomeracja Białostocka_":"20.3","Aglomeracja Bydgoska_":"18.9","Aglomeracja Górnośląska_":"30.3","Aglomeracja Krakowska_":"36.9","Aglomeracja Lubelska_":"24.8","Aglomeracja Łódzka_":"24.1","Aglomeracja Poznańska_":"24.0","Aglomeracja Rybnicko-Jastrzębska_":"28.0","Aglomeracja Szczecińska_":"17.3","Aglomeracja Trójmiejska_":"13.5","Aglomeracja Warszawska_":"22.9","Aglomeracja Wrocławska_":"25.7"},{"year":"2016","Aglomeracja Białostocka":"21.9","Aglomeracja Bydgoska":"32.2","Aglomeracja Górnośląska":"40.6","Aglomeracja Krakowska":"43.7","Aglomeracja Lubelska":"28.0","Aglomeracja Łódzka":"34.0","Aglomeracja Poznańska":"30.5","Aglomeracja Rybnicko-Jastrzębska":"44.7","Aglomeracja Szczecińska":"23.6","Aglomeracja Trójmiejska":"18.9","Aglomeracja Warszawska":"32.2","Aglomeracja Wrocławska":"30.2","Aglomeracja Białostocka_":"18.2","Aglomeracja Bydgoska_":"18.8","Aglomeracja Górnośląska_":"31.1","Aglomeracja Krakowska_":"32.4","Aglomeracja Lubelska_":"22.9","Aglomeracja Łódzka_":"22.4","Aglomeracja Poznańska_":"24.0","Aglomeracja Rybnicko-Jastrzębska_":"29.0","Aglomeracja Szczecińska_":"17.4","Aglomeracja Trójmiejska_":"11.5","Aglomeracja Warszawska_":"22.7","Aglomeracja Wrocławska_":"24.8"},{"year":"2017","Aglomeracja Białostocka":"22.1","Aglomeracja Bydgoska":"34.7","Aglomeracja Górnośląska":"43.8","Aglomeracja Krakowska":"44.2","Aglomeracja Lubelska":"29.7","Aglomeracja Łódzka":"37.6","Aglomeracja Poznańska":"28.0","Aglomeracja Rybnicko-Jastrzębska":"46.7","Aglomeracja Szczecińska":"21.9","Aglomeracja Trójmiejska":"18.8","Aglomeracja Warszawska":"34.3","Aglomeracja Wrocławska":"29.5","Aglomeracja Białostocka_":"17.3","Aglomeracja Bydgoska_":"19.0","Aglomeracja Górnośląska_":"33.7","Aglomeracja Krakowska_":"33.4","Aglomeracja Lubelska_":"21.4","Aglomeracja Łódzka_":"27.5","Aglomeracja Poznańska_":"22.0","Aglomeracja Rybnicko-Jastrzębska_":"29.0","Aglomeracja Szczecińska_":"16.7","Aglomeracja Trójmiejska_":"11.8","Aglomeracja Warszawska_":"24.4","Aglomeracja Wrocławska_":"22.2"}]
 
+var naglowek=["Aglomeracja Białostocka","Aglomeracja Bydgoska","Aglomeracja Górnośląska","Aglomeracja Krakowska","Aglomeracja Lubelska","Aglomeracja Łódzka","Aglomeracja Poznańska","Aglomeracja Rybnicko-Jastrzębska","Aglomeracja Szczecińska","Aglomeracja Trójmiejska","Aglomeracja Warszawska","Aglomeracja Wrocławska","Aglomeracja Białostocka_","Aglomeracja Bydgoska_","Aglomeracja Górnośląska_","Aglomeracja Krakowska_","Aglomeracja Lubelska_","Aglomeracja Łódzka_","Aglomeracja Poznańska_","Aglomeracja Rybnicko-Jastrzębska_","Aglomeracja Szczecińska_","Aglomeracja Trójmiejska_","Aglomeracja Warszawska_","Aglomeracja Wrocławska_"]
+var naglowek_ang=["Agglomeration of Bialystok","Agglomeration of Bydgoszcz","Upper Silesian Agglomeration","Cracow Agglomeration","Lublin Agglomeration","Lodz Agglomeration","Poznan Agglomeration","Rybnicko Jastrzębska Agglomeration","Szczecin Agglomeration","Tri-City Agglomeration","Warsaw Agglomeration","Wrocław Agglomeration","Agglomeration of Bialystok_","Agglomeration of Bydgoszcz_","Upper Silesian Agglomeration_","Cracow Agglomeration_","Lublin Agglomeration_","Lodz Agglomeration_","Poznan Agglomeration_","Rybnicko Jastrzębska Agglomeration_","Szczecin Agglomeration_","Tri-City Agglomeration_","Warsaw Agglomeration_","Wrocław Agglomeration_"]
+DATA.shift();
 
 
 if (jez=='pl'){
@@ -1189,7 +1238,12 @@ function buildTable(data) {
       var tr=document.createElement("tr");
       tr.setAttribute("id", "row-"+index);
       var td = document.createElement("td");
-      o1=o.replace(/[_]/g, '')
+      if (jez=='pl'){
+        o1=o.replace(/[_]/g, '')
+      }else{
+        o1=naglowek_ang[index].replace(/[_]/g, '')
+      }
+
       td.appendChild(document.createTextNode(o1));
       tr.appendChild(td);
       DATA.forEach(function(el) {
@@ -1248,174 +1302,230 @@ document.getElementById("content").appendChild(buildTable(DATA));
         <p>
 
             
-              <a class="usa-button" href="/sdg-indicators/assets/pdf/pl/11-6-2.pdf">Pobierz metadane dla 11.6.2</a>
+              <a href="/sdg-indicators/assets/pdf/pl/11-6-2.pdf"><button>Pobierz metadane dla 11.6.2</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla 11.6.2</a>-->
           
         </p>
 
         <table>
+          
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  <b>11.6.2 Średnioroczne poziomy pyłu zawieszonego w 12 aglomeracjach</b> </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 11. Zrównoważone miasta i społeczności </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Zadanie </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  11.6 Do 2030 roku obniżyć niekorzystny wskaźnik negatywnego oddziaływania miasta na środowisko per capita, zwracając szczególną uwagę na jakość powietrza oraz gospodarowanie odpadami komunalnymi i innymi zanieczyszczeniami </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Wartość normowanego, średniego rocznego stężenia pyłu PM 10 / PM 2,5 w 12 aglomeracjach. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  µg/m3 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  PM 10, PM 2,5 </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  PM10 to pył zawieszony o średnicy równoważnej ziaren mniejszej niż 10 µm. Poziom dopuszczalny dla stężenia średniorocznego pyłu PM10 wynosi 40 µg/m3. </br> PM2,5 to pył zawieszony o średnicy równoważnej ziaren mniejszej niż 2,5 µm. Poziom dopuszczalny dla stężenia średniorocznego pyłu PM2,5 wynosi 25 µg/m3. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Źródło danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Inspektorat Ochrony Środowiska </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2010 r. </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                      <th style="padding: 5px; height: 45px;">  Uwagi </th>
+                      <td style="padding: 10px; text-align: justify; height: 45px;">   </td>
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  
+                    
+                  
+                </tr>
+              
+            
+          
+
 
           
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Nazwa wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  <b>11.6.2 Średnioroczne poziomy pyłu zawieszonego w 12 aglomeracjach</b> </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Cel Zrównoważonego Rozwoju </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Cel 11. Zrównoważone miasta i społeczności </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Zadanie </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  11.6 Do 2030 roku obniżyć niekorzystny wskaźnik negatywnego oddziaływania miasta na środowisko per capita, zwracając szczególną uwagę na jakość powietrza oraz gospodarowanie odpadami komunalnymi i innymi zanieczyszczeniami </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Definicja wskaźnika </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Wartość normowanego, średniego rocznego stężenia pyłu PM 10 / PM 2,5 w 12 aglomeracjach. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Jednostka prezentacji </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  µg/m3 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Dostępne wymiary </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  PM 10, PM 2,5 </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Wyjaśnienia metodologiczne </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  PM10 to pył zawieszony o średnicy równoważnej ziaren mniejszej niż 10 µm. Poziom dopuszczalny dla stężenia średniorocznego pyłu PM10 wynosi 40 µg/m3. </br> PM2,5 to pył zawieszony o średnicy równoważnej ziaren mniejszej niż 2,5 µm. Poziom dopuszczalny dla stężenia średniorocznego pyłu PM2,5 wynosi 25 µg/m3. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Źródło danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Główny Inspektorat Ochrony Środowiska </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Częstotliwość i dostępność danych </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Dane roczne  od 2010 r. </td>
-              </tr>
-            
-          
-          
-          
-            
-              <tr>
-                
-                  <th style="padding: 5px; height: 45px;">  Uwagi </th>
-                
-                <td style="padding: 10px; text-align: justify; height: 45px;">  Wskaźnik zastępczy, dostępny w ramach polskiej statystyki publicznej. Wskaźnikiem zasadniczym, przyjętym przez ONZ, monitorującym cel 11.6 Agendy 2030, jest wskaźnik 11.6.2 Średnioroczne poziomy pyłu zawieszonego (PM2,5 i PM10) w miastach (ludność ważona). </td>
-              </tr>
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-          
-            
-          
-          
-
         </table>
+
 
       </div>
     </div>
@@ -1427,7 +1537,7 @@ document.getElementById("content").appendChild(buildTable(DATA));
 
 <script>
   $( document ).ready(function() {
-      if ('µg/m3'==''){
+      if (''==''){
           $('.usa-button').css('display','none');
       }
 
@@ -1507,15 +1617,22 @@ function download_csv(csv, filename) {
 
 <script>
 
+var naglowek_ang=["Agglomeration of Bialystok","Agglomeration of Bydgoszcz","Upper Silesian Agglomeration","Cracow Agglomeration","Lublin Agglomeration","Lodz Agglomeration","Poznan Agglomeration","Rybnicko Jastrzębska Agglomeration","Szczecin Agglomeration","Tri-City Agglomeration","Warsaw Agglomeration","Wrocław Agglomeration","Agglomeration of Bialystok_","Agglomeration of Bydgoszcz_","Upper Silesian Agglomeration_","Cracow Agglomeration_","Lublin Agglomeration_","Lodz Agglomeration_","Poznan Agglomeration_","Rybnicko Jastrzębska Agglomeration_","Szczecin Agglomeration_","Tri-City Agglomeration_","Warsaw Agglomeration_","Wrocław Agglomeration_"]
+
 function Zmiana_jednostki(){
 
   var licznik=24
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
-      var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(8,16);
+      var calo=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1538,8 +1655,12 @@ function Zmiana_jednostki(){
 
 
     }else{
-      var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
-      calosc=calo.splice(0,8);
+      var calo=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -1565,11 +1686,16 @@ function Zmiana_jednostki(){
 function Zmiana_jednostki4(){
 
   var licznik=24
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
-      var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
+      var calo=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(9,16);
       var b = [[]];
       seria=[]
@@ -1593,7 +1719,11 @@ function Zmiana_jednostki4(){
 
 
     }else{
-      var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
+      var calo=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,9);
       var b = [[]];
       seria=[]
@@ -1620,11 +1750,16 @@ function Zmiana_jednostki4(){
 function Zmiana_jednostki2(){
 
   var licznik=24
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift();
   var lan='pl'
 
     if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
-      var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
+      var calo=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(27,45);
       var b = [[]];
       seria=[]
@@ -1653,7 +1788,11 @@ function Zmiana_jednostki2(){
       $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
 
     }else{
-      var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
+      var calo=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(0,27);
       var b = [[]];
       seria=[]
@@ -1684,11 +1823,16 @@ function Zmiana_jednostki2(){
 function Zmiana_jednostki3(){
 
   var licznik=24
-  var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
+  var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+  labels.shift()
   var lan='pl'
 
     if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
-      var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
+      var calo=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
       calosc=calo.splice(40,72);
       var b = [[]];
       seria=[]
@@ -1714,7 +1858,10 @@ function Zmiana_jednostki3(){
       $('.ct-series-4').css({'display':'inline-block'});
 
     }else{
-      var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
+      var calo=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null]
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
       calosc=calo.splice(0,40);
       var b = [[]];
       seria=[]
@@ -1753,8 +1900,14 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=24
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"]
-    var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null]
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"]
+    labels.shift();
+    var calo=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null]
+
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,27);
     var b = [[]];
     seria=[]
@@ -1776,8 +1929,13 @@ $(window).on("load", function() {
         window.location.reload();
     }
     var licznik=24;
-    var labels = ["2010","2011","2012","2013","2014","2015","2016","2017"];
-    var calo=["27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","29.6","36","29.8","34.9","38.8","33","32.2","34.7","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","38","39","32.9","26.9","32.5","31.5","30.5","28.0","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","30.9","28","25.8","26","26.2","22.9","22.7","24.4","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null];
+    var labels = ["year","2010","2011","2012","2013","2014","2015","2016","2017"];
+    labels.shift()
+    var calo=["Agglomeration of Bialystok","27.7","30.5","29.4","24.9","27.4","27.1","21.9","22.1","Agglomeration of Bydgoszcz","29.6","36","29.8","34.9","38.8","33","32.2","34.7","Upper Silesian Agglomeration","50.5","51.9","48.4","44.9","45.3","41.9","40.6","43.8","Cracow Agglomeration","65.9","64.7","56.9","51.1","53.1","54.9","43.7","44.2","Lublin Agglomeration","32","32.5","29.4","29.5","32.1","32.9","28.0","29.7","Lodz Agglomeration","42.7","40.5","38.8","38.1","38.2","35.5","34.0","37.6","Poznan Agglomeration","38","39","32.9","26.9","32.5","31.5","30.5","28.0","Rybnicko Jastrzębska Agglomeration","57.7","51","51.2","49.1","47.2","44.3","44.7","46.7","Szczecin Agglomeration","31.2","28.3","24.2","22.9","26.9","24.1","23.6","21.9","Tri-City Agglomeration","25.4","23.4","20.6","19","23.2","20.8","18.9","18.8","Warsaw Agglomeration","38","37.6","37.5","33.3","33.7","33.2","32.2","34.3","Wrocław Agglomeration","54.9","45.5","38.8","36.4","35.2","32.6","30.2","29.5","Agglomeration of Bialystok_","23.7","27.1","23.5","19.9","20.7","20.3","18.2","17.3","Agglomeration of Bydgoszcz_","27.7","17.4","20.4","20.9","21.8","18.9","18.8","19.0","Upper Silesian Agglomeration_","42.5","36.7","35.8","34.8","35.6","30.3","31.1","33.7","Cracow Agglomeration_","50.9","45.1","41.7","37.4","36.6","36.9","32.4","33.4","Lublin Agglomeration_","25.1","23.2","22.4","21.4","23.0","24.8","22.9","21.4","Lodz Agglomeration_","26.2","27.5","27.1","26.8","26.5","24.1","22.4","27.5","Poznan Agglomeration_",null,"27.5","24.4","22.0","26.0","24.0","24.0","22.0","Rybnicko Jastrzębska Agglomeration_","44.3","33.0","32.6","31.4","28.0","28.0","29.0","29.0","Szczecin Agglomeration_","19.3","18.8","16.2","15.4","20.3","17.3","17.4","16.7","Tri-City Agglomeration_","20.3","18.2","16.2","13.4","16.8","13.5","11.5","11.8","Warsaw Agglomeration_","30.9","28","25.8","26","26.2","22.9","22.7","24.4","Wrocław Agglomeration_","34.8","30.3","28.8","29.1","25.9","25.7","24.8","22.2",null,null,null,null,null,null,null,null,null];
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
     calosc=calo.splice(0,40);
     var b = [[]];
     seria=[];
@@ -1868,8 +2026,10 @@ $('.list-group.checked-list-box .list-group-item').each(function () {
 
 
       
-             <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
-      
+             
+			    <a href="http://wskaznikizrp.stat.gov.pl/index.jsf?jezyk=pl&parametr_o1=&parametr_r1=&rozmiar=pl"  style="font-size: 15px;float: right;margin-right: 30px;">Archiwum</a>
+			 
+	  
     </div>
 
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
