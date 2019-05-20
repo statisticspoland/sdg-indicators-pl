@@ -52,54 +52,11 @@ defaults:
       # This value corresponds to a file in _includes/indicator_data_source/.
       indicator_data_source: local_csv
 
-analytics:
-  ga_prod: ''
-
-ckan_endpoint:
+ckan_endpoint: https://inventory.data.gov/api/action/datastore_search
 
 # Prose configuration
 prose:
-  ignore:
-  - /_includes
-  - /_indicators
-  - /_layouts
-  - /_goals
-  - /_posts
-  - /_sass
-  - /_site
-  - /_translations
-  - /api
-  - /en
-  - /assets
-  - /scripts
-  - /sass
-  - /goals
-  - /posts
-  - /sass
-  - /site
-  - /translations
-  - .Rhistory
-  - CNAME
-  - LICENSE
-  - 404.md
-  - README.md
-  - config.yml
-  - _config.yml
-  - account.md
-  - admin.md
-  - download.md
-  - faqs.md
-  - feed.xml
-  - guide.md
-  - index.md
-  - indicator_status.md
-  - o_sdg.md
-  - package.json
-  - search.md
-  - statistics_glob.md
-  - statistics_nat.md
-  - status_glob.md
-  - status_nat.md
+  ignore: ['/assets', '/_includes', '/_layouts', '/scripts', '/sass' ]
   metadata:
     _metadane_globalne:
       - name: "pl_nazwa_wskaznika"
@@ -280,7 +237,7 @@ prose:
             scope: global
       - name: "pl_czestotliwosc_dostępnosc_danych"
         field:
-           element: textarea
+            element: textarea
             label: "Częstotliwość i dostępność danych"
             scope: global
       - name: "pl_uwagi"
