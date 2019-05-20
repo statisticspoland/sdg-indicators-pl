@@ -56,7 +56,7 @@ ckan_endpoint: https://inventory.data.gov/api/action/datastore_search
 
 # Prose configuration
 prose:
-  ignore: ['/assets', '/_includes', '/_layouts', '/scripts', '/sass' ]
+  ignore: ['/assets', '/_includes', '/_layouts', '/scripts', '/_sass', '/_goals', '/_indicators', '/_posts', '/_site', '/_translations','api', 'en' ]
   metadata:
     _metadane_globalne:
       - name: "pl_nazwa_wskaznika"
