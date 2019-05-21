@@ -196,19 +196,9 @@
 		  {% if page.url contains '/statistics_nat/' %}
 			{% assign t1 = site.metadane_krajowe | where:"translation_id", slug | first %}
 			{% if language == 'pl' %}
-				{% if t1.pl_priorytet.size > 100 %}
-					<div class="container" style="width: auto">
-						<div class="row">
-							<div class="span4 collapse-group">
-							<p style="color:rgb(220,20,60)"> Priorytet - {{ t1.pl_priorytet | slice: 0, 100 }} <span class="collapse" id="viewdetails3"> {{ t1.pl_priorytet | slice: 100, 100000 }} </span> <a data-toggle="collapse" data-target="#viewdetails3">Więcej... &raquo;</a></p>
-							</div>
-						</div>
-					</div>
-				{% else %}
-					<p style="color:rgb(220,20,60)"> Priorytet - {{ t1.pl_priorytet }} </p>
-				{% endif %}
+				<p style="font-size: 19px;"> Priorytet - {{ t1.pl_priorytet }} </p>
 			{% else %}
-					<p style="color:rgb(220,20,60)"> Priority - {{ t1.en_priorytet }} </p>
+				<p style="font-size: 19px;"> Priority - {{ t1.en_priorytet }} </p>
 			{% endif %}
 		  {% endif %}
 
