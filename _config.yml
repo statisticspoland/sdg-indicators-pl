@@ -23,6 +23,20 @@ org_name: Statistics Poland
 # Build settings
 markdown: kramdown
 
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      lang: pl
+  -
+    scope:
+      layout: "indicator"
+    values:
+      # This value corresponds to a file in _includes/indicator_data_source/.
+      indicator_data_source: local_csv
+
 # Pages
 collections:
   pages:
