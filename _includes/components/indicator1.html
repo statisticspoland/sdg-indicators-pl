@@ -100,16 +100,17 @@
         {% if target_num < 10 %} {% assign target_num = target_num | prepend:0  %} {% endif %}
         {% if indicator_num < 10 %} {% assign indicator_num = indicator_num | prepend:0  %} {% endif %}
 
-        <p>
+	{% if page.url contains '/statistics_glob/' %} <p>
 
-            {% if language == 'pl' %}
+          {% if language == 'pl' %}
               <a href="{{ site.baseurl }}/assets/pdf/{{ page.lang }}/{{page.indicator | replace: ".", "-"}}.pdf"><button>Pobierz metadane dla {{ page.indicator | remove: ".0" }}</button></a>
               <!--<a class="usa-button" href="/sdg-indicators/assets/pdf/pl/metadane_1_2_1_a.pdf">Zobacz metadane dla {{ page.indicator }}</a>-->
           {% else %}
-              <a href="{{ site.baseurl }}/assets/pdf/en/{{page.indicator | replace: ".", "-"}}.pdf"><button>Download metadata for {{ page.indicator | remove: ".0" }}</button></a>
+              <a class="usa-button" href="{{ site.baseurl }}/assets/pdf/en/{{page.indicator | replace: ".", "-"}}.pdf">Download metadata for {{ page.indicator | remove: ".0" }}</a>
 
           {% endif %}
         </p>
+        {% endif %} 
 
         <table>
           {% if page.url contains '/statistics_glob/' %}
