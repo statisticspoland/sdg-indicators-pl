@@ -196,9 +196,9 @@
 		  {% if page.url contains '/statistics_nat/' %}
 			{% assign t1 = site.metadane_krajowe | where:"translation_id", slug | first %}
 			{% if language == 'pl' %}
-				<p style="font-size: 19px;"> Priorytet - {{ t1.pl_priorytet }} </p>
+				<p style="font-size: 21px;"> Priorytet dla Polski - {{ t1.pl_priorytet }} </p>
 			{% else %}
-				<p style="font-size: 19px;"> Priority - {{ t1.en_priorytet }} </p>
+				<p style="font-size: 21px;"> Priority for Poland - {{ t1.en_priorytet }} </p>
 			{% endif %}
 		  {% endif %}
 
