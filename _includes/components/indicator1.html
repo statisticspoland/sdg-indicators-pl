@@ -70,9 +70,15 @@
             {% endif %}
 
           {% if language == 'pl' %}
-            <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px;">Pobierz całość</button><button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px;">Pobierz wybrane</button>
+            <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px;">Pobierz całość</button>
+	    {% if filtry.size>0 %}
+	    	<button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px;">Pobierz wybrane</button>
+	    {% endif %}
           {% else %}
-            <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px;">Download All</button><button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px;">Download Selected</button>
+            <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px;">Download All</button>
+	    {% if filtry.size>0 %}
+	    	<button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px;">Download Selected</button>
+	    {% endif %}
           {% endif %}
 
           {% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%}
