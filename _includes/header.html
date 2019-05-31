@@ -222,6 +222,7 @@
 $(document).ready(function(){
   $('.dropdown-toggle').dropdown()
 });
+
 var switcher = new accessibilitySwitcher('{{page.lang}}');
 $(".high").attr("src", '{{ site.baseurl }}/assets/img/high.png');
 $(".default").attr("src", '{{ site.baseurl }}/assets/img/default.png');
@@ -287,6 +288,87 @@ $(".default").attr("src", '{{ site.baseurl }}/assets/img/default.png');
       var toolkit = new CookieToolkit( "Strona wykorzystuje pliki cookies. Korzystanie z witryny bez zmiany ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Zawsze możesz zmienić te ustawienia.", "OK" );
     }else{
       var toolkit = new CookieToolkit( "We use cookies to help our site work, to understand how it is used, and to tailor the adverts presented on our site. By clicking “OK”, you agree to us doing so. You can read more in our cookie notice. ", "OK" );
+    }
+	});
+})();
+
+function FuncKrajo(){
+  window.location.href="{{ site.baseurl }}{{ lang }}/statistics_nat";
+  FuncZamk();
+}
+
+function FuncZamk(){
+  var self = document.getElementById("national-toolkit");
+  self.className = "";
+  self.style.display = "none";
+  localStorage.setItem( "nat-toolkit-accepted", "yes" );
+}
+
+
+$(window).bind('click', function(event) {
+    if(event.target.href)
+        $(window).unbind('beforeunload');
+});
+$(window).bind('beforeunload', function(event) {
+
+    $.ajax({
+      url:"",
+      async:false,
+      success: function(data) {
+localStorage.removeItem("nat-toolkit-accepted");
+  }
+});
+});
+
+
+(function() {
+	var NationalToolkit = function( text) {
+		this.text = text;
+		this.element = null;
+		this.init();
+	};
+
+	NationalToolkit.prototype = {
+		init: function() {
+			this.create();
+			this.load();
+		},
+		load: function() {
+      if( localStorage.getItem( "nat-toolkit-accepted" ) === null ) {
+          this._show();
+        }
+		},
+    create: function() {
+      var element = document.createElement( "div" );
+      this.element = element;
+      element.id = "national-toolkit";
+      var jez='{{page.lang}}'
+      if (jez=='pl'){
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='/sdg-indicators/statistics_nat' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
+      }else{
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='/sdg-indicators/statistics_nat' onclick='FuncZamk()'>Go to</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
+      }
+      var headers = document.querySelector(".site-navbar");
+      headers.after(element);
+
+    },
+		_show: function() {
+      var self = this;
+			self.element.style.display = "block";
+			self.element.style.paddingBottom=".5rem";
+			self.element.style.paddingTop=".5rem";
+			setTimeout(function() {
+				self.element.className = "visible";
+			}, 500);
+    }
+	};
+
+	document.addEventListener( "DOMContentLoaded", function() {
+    var jez='{{page.lang}}'
+    if (jez=='pl'){
+      var toolkit = new NationalToolkit( "Priorytety SDG dla Polski i aktualne wskaźniki do ich pomiaru już dostępne!");
+    }else{
+      var toolkit = new NationalToolkit( "SDG priorities for Poland and their current indicators already available!");
     }
 	});
 })();
