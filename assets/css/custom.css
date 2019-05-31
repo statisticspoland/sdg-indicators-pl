@@ -99,6 +99,93 @@ body.contrast-high {
   background-color: transparent;
 }
 
+#national-toolkit {
+  left: 0;
+	width: 100%;
+	min-height: 3em;
+	background: #e0e0e0;
+	color: rgb(51, 51, 51);
+	z-index: 10000000000;
+	display: none;
+	transition: all 500ms ease-in;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+}
+
+#national-toolkit.visible.contrast-high{
+
+	background: #000;
+  color: #fff;
+}
+
+#national-toolkit-accept.contrast-high {
+	color: #fff;
+}
+
+#national-toolkit.visible {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+
+#national-toolkit-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;
+  padding: 0 3rem;
+  display: grid;
+}
+
+#national-toolkit-text {
+	font-weight: bold;
+	line-height: 1.3;
+	margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  width: 100%;
+  font-size: 2.80rem;
+  text-align: center;
+  /*padding: 0px 155px;*/
+}
+
+#national-toolkit-btns {
+	padding: 0.5em;
+  width: 100%;
+  display: inline;
+  text-align: center;
+}
+
+#national-toolkit-btns button {
+	border: none;
+	padding: 0.5em 1.5em;
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 0.5em;
+  background-color: transparent;
+}
+
+#natio{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #0071bc;
+    border: 0;
+    border-radius: 0.3rem;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: FiraSans;
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    outline: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+
 #calosc {
   width: 20%;
 }
@@ -2318,4 +2405,17 @@ article p {
 	.icons {
 	display: none;
 	}
+}
+
+
+
+.kafelek {
+  background-repeat: no-repeat;
+  float: left;
+    width: 149px;
+    height: 149px;
+    margin-right: .35765%;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
 }
