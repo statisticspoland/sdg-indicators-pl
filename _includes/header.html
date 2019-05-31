@@ -344,9 +344,9 @@ localStorage.removeItem("nat-toolkit-accepted");
       element.id = "national-toolkit";
       var jez='{{page.lang}}'
       if (jez=='pl'){
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='/sdg-indicators/statistics_nat' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='{{ site.baseurl }}{{ lang }}/statistics_nat' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
       }else{
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='/sdg-indicators/statistics_nat' onclick='FuncZamk()'>Go to</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='{{ site.baseurl }}{{ lang }}/statistics_nat' onclick='FuncZamk()'>Go to</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
       }
       var headers = document.querySelector(".site-navbar");
       headers.after(element);
