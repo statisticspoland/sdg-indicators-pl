@@ -52,9 +52,8 @@
 
         {% assign img_path = goals.goal | plus:0 %}
 
-        {% if img_path < 10 %} {% assign img_path=0 %} {% else %} {% assign img_path='' %} {% endif %} {% if page.url contains '/statistics_nat/' %} <a class="usa-width-one-fourth" href="../statistics_nat/{{ goals.short | slugify }}/">
-          <img class="goal-icon" src="{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ goals.goal }}.png" alt="icon for Goal {{ goals.goal }} - {{ goals.title }}" />
-                      </a>
+        {% if img_path < 10 %} {% assign img_path=0 %} {% else %} {% assign img_path='' %} {% endif %} {% if page.url contains '/statistics_nat/' %}
+          <a class="kafelek" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ goals.goal }}.png')" href="{{ site.baseurl }}/statistics_nat/{{ goals.short | slugify }}/"></a>
           {% else %}
             {% if page.lang == 'en' %}
               {% assign language = 'en/' %}
@@ -62,19 +61,12 @@
               {% assign language = '' %}
             {% endif %}
 
-            <a class="usa-width-one-fourth" href="{{ site.baseurl }}/{{ language }}{{ goals.short | slugify }}/">
-                      <img class="goal-icon" src="{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ goals.goal }}.png" alt="icon for Goal {{ goals.goal }} - {{ goals.title }}" />
-                      </a>
+          <a class="kafelek" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ goals.goal }}.png')" href="{{ site.baseurl }}/{{ language }}{{ goals.short | slugify }}/" ></a>
           {% endif %}
 
           {% endfor %}
 
-          <a class="usa-width-one-fourth" href="{{ site.baseurl }}{{ lang }}/download">
-                      <img class="goal-icon" src="{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png" alt="icon for Global Goals" />
-                      </a>
-		  
-		  
-		  
+          <a class="kafelek" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}{{ lang }}/download" ></a>
 
 
       </section>
