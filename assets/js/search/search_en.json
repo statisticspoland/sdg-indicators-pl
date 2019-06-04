@@ -3,37 +3,25 @@ layout: null
 sitemap: null
 ---
 
+{% assign pages1 = site.metadane_globalne %}
 [
-
-  {% assign collections = collections | where_exp:'collection','collection.output != false' %}
-  {% for collection in collections %}
-    {% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}
-    {% for doc in docs %}
-      {
-        "indicator": {{ doc.indicator | remove: ".0" | jsonify }},
-        "title": {{ doc.title | jsonify }},
-        "lang": {{ doc.lang | jsonify }},
-        "excerpt": {{ doc.excerpt | markdownify | strip_html | jsonify }},
-        "content": {{ doc.content | markdownify | strip_html | jsonify }},
-        "url": {{ site.baseurl | append: doc.url | jsonify }}
-      },
-    {% endfor %}
-  {% endfor %}
-
-
-
-    {% assign pages = site.indicators |  where_exp:'doc','doc.lang == "en"' | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.title != null' %}
-  {% for page in pages %}
+  {% assign pages = site.metadane_krajowe %}{% for page in pages %}
   {
     "indicator": {{ page.indicator | remove: ".0" | jsonify }},
-    "title": {{ page.title | jsonify }},
+    "title": {{ page.en_nazwa_wskaznika | jsonify }},
+    "lang": {{ page.lang | jsonify }},
+    "excerpt": {{ page.excerpt | markdownify | strip_html | jsonify }},
+    "content": {{ page.content | markdownify | strip_html | jsonify }},
+    "url": {{ site.baseurl | append: page.url | jsonify }}
+  },
+  {% endfor %}{% for page in pages1 %}
+  {
+    "indicator": {{ page.indicator | remove: ".0" | jsonify }},
+    "title": {{ page.en_nazwa_wskaznika | jsonify }},
     "lang": {{ page.lang | jsonify }},
     "excerpt": {{ page.excerpt | markdownify | strip_html | jsonify }},
     "content": {{ page.content | markdownify | strip_html | jsonify }},
     "url": {{ site.baseurl | append: page.url | jsonify }}
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
-
-
-
 ]
