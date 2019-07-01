@@ -82,6 +82,15 @@
           {% endif %}
 
           {% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%}
+          {% if language == 'pl' %}
+            Jednostka prezentacji: {{ t1.pl_jednostka_prezentacji }} <br />
+            Źródło danych: {{ t1.pl_zrodlo_danych }}
+          {% endif %}
+          {% if language == 'en' %}
+            Unit: {{ t1.en_jednostka_prezentacji }} <br />
+            Source of data: {{ t1.en_zrodlo_danych }}
+          {% endif %}
+            <p></p>
       {% else %}
               {% if language == 'pl' %}
                        <p style="text-align: center;">W przyszłości pojawi się tu tabela</p>
