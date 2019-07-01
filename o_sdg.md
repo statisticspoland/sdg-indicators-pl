@@ -7,6 +7,7 @@ permalink: /o_sdg/
             <li role="presentation" class="active"><a href="#sdg" aria-controls="data" role="tab" data-toggle="tab">O AGENDZIE 2030 i SDGs</a></li>
             <li role="presentation"><a href="#ini" aria-controls="data" role="tab" data-toggle="tab">ZRÓWNOWAŻONY ROZWÓJ W UE I OECD</a></li>
             <li role="presentation"><a href="#stat" aria-controls="metadata" role="tab" data-toggle="tab">STATYSTYKA PUBLICZNA</a></li>
+            <li role="presentation"><a href="#gus" aria-controls="metadata" role="tab" data-toggle="tab">GUS4SDGs</a></li>
             <li role="presentation"><a href="#publ" aria-controls="metadata" role="tab" data-toggle="tab">PUBLIKACJE</a></li>
 
 </ul>
@@ -34,7 +35,7 @@ permalink: /o_sdg/
   </div>
 
   <div role="tabpanel" class="tab-pane" id="ini">
-  <h4><b>Zrównoważony rozwój w UE i OECD</b></h4>
+  <h4><b>ZRÓWNOWAŻONY ROZWÓJ W UE I OECD</b></h4>
 
   <p><b>Zaangażowanie UE na rzecz zrównoważonego rozwoju </b></p>
 
@@ -63,6 +64,24 @@ permalink: /o_sdg/
 <p>Postępy poczynione w skali całego świata i jego regionów są prezentowane przez ONZ w wydawanych co roku <a href="https://unstats.un.org/sdgs/report/2018/"  target="_blank">raportach</a>. Dodatkowo, dla użytkowników poszukujących szczegółowych danych dla świata, regionów i poszczególnych krajów udostępniono <a href="https://unstats.un.org/sdgs/indicators/database/"  target="_blank">bazę danych</a>. Działania podejmowane przez poszczególne kraje są monitorowane w ramach tzw. dobrowolnych krajowych przeglądów (<a href="https://sustainabledevelopment.un.org/vnrs/"  target="_blank">Voluntary National Reviews – VNR</a>), które odbywają się w lipcu każdego roku na Forum Wysokiego Szczebla ONZ w Nowym Jorku. W 2018 r. po raz pierwszy na przeglądzie zaprezentowała się Polska. Główny Urząd Statystyczny brał udział w przygotowaniu <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank">raportu</a> z postępów Polski, jako instytucja odpowiedzialna za wskaźniki monitorujące i zapewnienie potrzebnych informacji statystycznych.</p>
 
 <p>Monitorowanie postępów z realizacji Agendy 2030 jest dużym wyzwaniem dla statystyki publicznej. Wymaga koordynacji prac wielu instytucji i współpracy pomiędzy szczeblem międzynarodowym a krajowym. Dla wsparcia instytucji statystycznych w regionie Europejskiej Komisji Gospodarczej ONZ powołano Grupę Sterującą ds. Statystyki dla SDGs. Od 2018 r. grupie tej współprzewodniczy Polska (GUS). Jednym z najważniejszych dokonań grupy jest przygotowanie mapy drogowej (<a href="http://www.unece.org/index.php?id=47510"  target="_blank">Road Map on statistics for Sustainable Development Goals</a>), która ułatwia krajom organizację procesu monitorowania Agendy 2030.</p>
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="gus">
+  <h4><b>GUS4SDGs</b></h4>
+  <p>W działania na rzecz realizacji Celów Agendy 2030 zaangażowanych jest wiele środowisk, co jest szansą dla GUS na promocję statystyki publicznej i nawiązywanie współpracy z nowymi partnerami.</p>
+  <p><b>Hackathon SDG</b></p>
+
+  <p>W listopadzie 2018 r., z myślą o młodzieży, jako szczególnej grupie odbiorców, GUS zorganizował hackathon. Celem tej inicjatywy była budowa aplikacji przeznaczonej dla młodego pokolenia, wykorzystującej wskaźniki SDGs oraz popularyzacja celów zrównoważonego rozwoju wśród młodzieży, a w efekcie zainspirowanie jej do działania na ich rzecz. Podczas wydarzenia międzynarodowe zespoły stworzyły prototypy interaktywnej aplikacji, promującej koncepcję zrównoważonego rozwoju i wykorzystującej dane statystyczne dotyczące SDGs. Spośród dziewięciu prototypów interaktywnych aplikacji, jury (w skład którego wchodzili przedstawiciele Głównego Urzędu Statystycznego, Ministerstwa Przedsiębiorczości i Technologii, Forum Odpowiedzialnego Biznesu oraz SAS Institute) wyłoniło trzy najlepsze gry. Wygrał zespół „Statistical Technical Girls”, który przedstawił grę „El Presidente”, wizualnie i językowo trafiającą w gust młodego pokolenia. Na 2. miejscu uplasował się zespół „Infiniteam”, również prezentując grę, w której na graczu spoczywa odpowiedzialność za prowadzenie polityki zrównoważonego rozwoju, a na 3. – „SKN ESTYMATOR” za aplikację stworzoną z myślą o instytucjach państwowych, biznesie i studentach. Dostrzegając potencjał aplikacji, GUS planuje je dalej rozwijać i wykorzystywać jako kolejną formę prezentacji statystyk SDGs.</p>
+  <p>Więcej informacji dostępnych na stronie: <a href="https://stat.gov.pl/aktualnosci/hackathon-poznajcie-zwyciezcow,215,1.html" target="_blank">https://stat.gov.pl/aktualnosci/hackathon-poznajcie-zwyciezcow,215,1.html</a></p>
+
+  <p><b>Wskaźniki SDG dla biznesu</b></p>
+
+  <p>Podejmowaniem wspólnych ze statystyką inicjatyw na rzecz SDGs są w szczególności zainteresowane organizacje pozarządowe oraz środowisko biznesowe. Na początku 2019 r. podjęta została inicjatywa wypracowania wskaźników monitorujących wpływ biznesu na SDGs. W tym celu powołano grupę ekspertów z zadaniem doboru wskaźników, umożliwiających przedsiębiorcom zmierzenie ich wkładu w realizację celów zrównoważonego rozwoju. W czerwcu br. GUS zorganizował warsztaty pt. „Wskaźniki mierzenia działań biznesu na rzecz Agendy 2030”. Inicjatorem tego przedsięwzięcia był CSR Consulting, a Główny Urząd Statystyczny – Partnerem Merytorycznym. Na początku września 2019 r. zestaw wskaźników trafi do otwartych konsultacji, a 25 września, tj. w 4. rocznicę przyjęcia Agendy 2030 przez ONZ, zostanie ogłoszony.</p>
+  <p>Więcej informacji dostępnych na stronie: <a href="https://kampania17celow.pl/kampania-17-celow/" target="_blank">https://kampania17celow.pl/kampania-17-celow/</a></p>
+
+  <p><b>SDGs w mediach społecznościowych</b></p>
+
+  <p>Promocja statystyk SDGs jest ukierunkowana na określone grupy odbiorców oraz całe społeczeństwo. Stałym kanałem komunikacji danych są media społecznościowe, na których cyklicznie zamieszczane są ciekawostki na temat zrównoważonego rozwoju, przy wykorzystaniu danych liczbowych. GUS jest wspierany przez organizacje pozarządowe w rozpowszechnianiu informacji na temat statystyk SDGs w mediach społecznościowych, w tym m.in. przez Forum Odpowiedzialnego Biznesu.</p>
 
   </div>
   <div role="tabpanel" class="tab-pane" id="publ">
