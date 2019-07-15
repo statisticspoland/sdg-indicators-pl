@@ -512,39 +512,10 @@ function Zmiana_jednostki3(){
 }
 
 $(window).on("load", function() {
-  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '2-5-1-b' || '{{id}}' == '9-1-2'){
+  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '9-1-2'){
     $('.ct-chart').css({'margin-top':'20px'});
 
   }
-
-  if ('{{id}}'=='2-5-1-b'){
-    if(!window.location.hash) {
-        window.location = window.location + '#2';
-        window.location.reload();
-    }
-    var licznik={{ licznik }}
-    var labels = {{ labels | jsonify }}
-    labels.shift();
-    var calo={{ row1 | jsonify }}
-
-    for (i=0;i<naglowek_ang.length;i++){
-      remove(calo, naglowek_ang[i]);
-
-    }
-    calosc=calo.splice(0,27);
-    var b = [[]];
-    seria=[]
-    for (i=1;i<licznik+1;i++){
-      b[i] = calosc.splice(0,labels.length);
-      seria.push(b[i])
-    }
-    chart.update({labels: labels,series: seria})
-
-    $('.ct-series-1').css({'display':'inline-block'});
-    $('.ct-series-2').css({'display':'inline-block'});
-  }
-
-
 
   if ('{{id}}'=='9-1-2'){
     if(!window.location.hash) {
