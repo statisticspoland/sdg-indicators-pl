@@ -240,7 +240,7 @@
 
 
   {% assign ht = indicatorr.target_id | replace: '.','-' %}
-  {% assign indic2 = "/" | append: site.baseurl | append: kt | append: ht | append: "/" | jsonify | append: "," %}
+  {% assign indic2 = "/" | append: kt | append: ht | append: "/" | jsonify | append: "," %}
   {% assign html = html | push: indic2 %}
 {% endfor %}
 <!----------------------------------------------->
