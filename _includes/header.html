@@ -271,7 +271,7 @@ for (i = 0; i < lista_nazw.length; i++) {
 
      source: function(request, response) {
         var results = $.ui.autocomplete.filter(availableTags, request.term);
-        response(results.slice(0, 10));
+        response(results.slice(0, 7));
     },
      select: function( event, ui ) {
             window.location.href = ui.item.html;
