@@ -63,7 +63,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <div class="search-container">
               <form action="{{ site.baseurl }}/search/?search=" style="width: 300px;">
-                <input type="text" placeholder="Wyszukaj wskaźnik.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <input id="tags" type="text" placeholder="Wyszukaj wskaźnik.." name="search" style="margin-top: 0;margin-right: 0.2em;">
                 <button type="submit"><i class="fa fa-search"></i></button>
               </form>
             </div>
@@ -75,7 +75,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <div class="search-container">
               <form action="{{ site.baseurl }}/en/search/?search=" style="width: 300px;">
-                <input type="text" placeholder="Search indicator.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <input id="tags" type="text" placeholder="Search indicator.." name="search" style="margin-top: 0;margin-right: 0.2em;">
                 <button type="submit"><i class="fa fa-search"></i></button>
               </form>
             </div>
@@ -216,7 +216,70 @@
   {% include carousel.html name=carousel data=site.data.carousel %}
 {% endif %}
 
+<!--potrzebne do wyszukiwarki------------------->
+{% if page.url contains '/statistics_nat/' %}
+{% assign ktore = site.data.krajowe %}
+{% assign kt = "/statistics_nat/" %}
+{% else %}
+{% assign ktore = site.data.globalne %}
+{% assign kt = "/statistics_glob/" %}
+{% endif %}
+
+{% if page.lang == 'pl' %}
+{% assign sdg_indicators = ktore.sdg_indicator_metadata %}
+{% else %}
+{% assign sdg_indicators = ktore[page.lang].sdg_indicator_metadata %}
+{% assign kt =  "/en" | append: kt %}
+{% endif %}
+
+{% assign nazwy = "" | split: ',' %}
+{% assign html = "" | split: ',' %}
+{% for indicatorr in sdg_indicators %}
+  {% assign indic = indicatorr.target_id | append: " " | append: indicatorr.indicator | jsonify | append: "," %}
+  {% assign nazwy = nazwy | push: indic %}
+
+
+  {% assign ht = indicatorr.target_id | replace: '.','-' %}
+  {% assign indic2 = "/" | append: site.baseurl | append: kt | append: ht | append: "/" | jsonify | append: "," %}
+  {% assign html = html | push: indic2 %}
+{% endfor %}
+<!----------------------------------------------->
+
 </header>
+
+$( function() {
+
+lista_nazw=[{{ nazwy }}];
+lista_url=[{{ html }}];
+
+var availableTags = [];
+
+for (i = 0; i < lista_nazw.length; i++) {
+   availableTags.push(
+   {
+     value: lista_nazw[i],
+     label: lista_nazw[i],
+     html:  lista_url[i]
+   })
+}
+
+
+   $( "#tags" ).autocomplete({
+
+     source: function(request, response) {
+        var results = $.ui.autocomplete.filter(availableTags, request.term);
+        response(results.slice(0, 10));
+    },
+     select: function( event, ui ) {
+            window.location.href = ui.item.html;
+        },
+    open: function() {
+        $("ul.ui-menu").width( "236px" );
+
+    }
+   });
+
+ } );
 
 <script>
 $(document).ready(function(){
