@@ -895,6 +895,7 @@ body .ui-tooltip {
 }
 .ui-widget.ui-widget-content {
 	border: 1px solid #d3d3d3;
+	position: fixed;
 }
 .ui-widget-content {
 	border: 1px solid #aaaaaa;
