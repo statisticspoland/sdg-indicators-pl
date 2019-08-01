@@ -81,11 +81,7 @@ a global <a href="https://unstats.un.org/sdgs/indicators/database/"  target="_bl
   <p>Non-governmental organizations as well as business environment are interested in undertaking joint SDG initiatives with Statistics Poland. At the beginning of 2019, an initiative to develop a set of SDG indicators for business was undertaken. A group of experts was set up to select metrics for measuring the impact of business on the sustainable development goals. In June 2019, Statistics Poland organized a workshop “Indicators for measuring the impact of business on the 2030 Agenda.” CSR Consulting was the initiator of the undertaking, whereas Statistics Poland – a subject matter partner. At the beginning of September 2019, the set of SDG indicators for business will be submitted to open consultations, and on 25 September, i.e. at the 4th anniversary of the 2030 Agenda adoption by the UN, the set will be released.</p>
   <p>More information at: <a href="https://kampania17celow.pl/the-17-goals-campaign/" target="_blank">https://kampania17celow.pl/the-17-goals-campaign/</a></p>
 
-  <p><b>SDGs in social media</b></p>
-
-  <p>Promotion of SDG statistics is aimed at specific groups of users and general public. Social media are a permanent communication channel for interesting SDG information with numerical data, posted on a regular basis. Statistics Poland is supported by non-governmental organizations in the dissemination of SDG statistics in social media, i.a. by the Responsible Business Forum.</p>
-
-  </div>
+ </div>
 
   <div role="tabpanel" class="tab-pane" id="publ">
   <h4><b>PUBLICATIONS</b></h4>
