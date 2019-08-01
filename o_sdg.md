@@ -51,7 +51,6 @@ permalink: /o_sdg/
 
   <p><b><a target="_blank" href="http://www.oecd.org/greengrowth/">Zielony wzrost i zrównoważony rozwój</a></b> (<em>Green growth and Sustainable development</em>) – działania ukierunkowane na wzmocnienie polityki sprzyjającej wzrostowi gospodarczemu, przy jednoczesnym zachowaniu dóbr środowiskowych i rozwoju infrastruktury przyjaznej środowisku. Podstawę aktywności OECD w zakresie zielonego wzrostu stanowi przyjęta w 2011 r. Strategia Zielonego Wzrostu (<em>Green Growth Strategy</em>). Postępy poszczególnych krajów we wdrażaniu wyznaczonych w Strategii priorytetów gospodarczych i ekologicznych są przedstawione w kolejnych seriach publikacjach pn. <em>Towards Green Growth? Tracking Progress.</em></p>
 
-
   </div>
   <div role="tabpanel" class="tab-pane" id="stat">
   <h4><b>STATYSTYKA PUBLICZNA NA RZECZ SDGs</b></h4>
