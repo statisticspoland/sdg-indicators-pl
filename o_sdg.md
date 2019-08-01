@@ -79,10 +79,6 @@ permalink: /o_sdg/
   <p>Podejmowaniem wspólnych ze statystyką inicjatyw na rzecz SDGs są w szczególności zainteresowane organizacje pozarządowe oraz środowisko biznesowe. Na początku 2019 r. podjęta została inicjatywa wypracowania wskaźników monitorujących wpływ biznesu na SDGs. W tym celu powołano grupę ekspertów z zadaniem doboru wskaźników, umożliwiających przedsiębiorcom zmierzenie ich wkładu w realizację celów zrównoważonego rozwoju. W czerwcu br. GUS zorganizował warsztaty pt. „Wskaźniki mierzenia działań biznesu na rzecz Agendy 2030”. Inicjatorem tego przedsięwzięcia był CSR Consulting, a Główny Urząd Statystyczny – Partnerem Merytorycznym. Na początku września 2019 r. zestaw wskaźników trafi do otwartych konsultacji, a 25 września, tj. w 4. rocznicę przyjęcia Agendy 2030 przez ONZ, zostanie ogłoszony.</p>
   <p>Więcej informacji dostępnych na stronie: <a href="https://kampania17celow.pl/kampania-17-celow/" target="_blank">https://kampania17celow.pl/kampania-17-celow/</a></p>
 
-  <p><b>SDGs w mediach społecznościowych</b></p>
-
-  <p>Promocja statystyk SDGs jest ukierunkowana na określone grupy odbiorców oraz całe społeczeństwo. Stałym kanałem komunikacji danych są media społecznościowe, na których cyklicznie zamieszczane są ciekawostki na temat zrównoważonego rozwoju, przy wykorzystaniu danych liczbowych. GUS jest wspierany przez organizacje pozarządowe w rozpowszechnianiu informacji na temat statystyk SDGs w mediach społecznościowych, w tym m.in. przez Forum Odpowiedzialnego Biznesu.</p>
-
   </div>
   <div role="tabpanel" class="tab-pane" id="publ">
   <h4><b>PUBLIKACJE</b></h4>
