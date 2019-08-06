@@ -106,7 +106,7 @@
 	<button onclick="javascript:demoFromHTML();" style="float: right;margin-right: 0px;">
         <i class="fa fa-print" style="font-size:20px;"></i></button>
 
-        <table>
+        <table id="metadane">
           {% if page.url contains '/statistics_glob/' %}
             {% for indicator_metadata in site.prose.metadata._metadane_globalne %}
               {% if indicator_metadata.name != 'pl_graph_title' and indicator_metadata.name != 'pl_title' and indicator_metadata.name != 'pl_jednostka' and indicator_metadata.name != 'en_graph_title' and indicator_metadata.name != 'en_title' and indicator_metadata.name != 'en_jednostka'%}
