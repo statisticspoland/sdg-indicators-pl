@@ -99,7 +99,7 @@ permalink: /o_sdg/
   <p>Raport został opracowany przez Ministerstwo Przedsiębiorczości i Technologii (koordynatora procesu wdrażania Agendy 2030 w Polsce) na potrzeby przeglądu realizacji przez Polskę Celów Zrównoważonego Rozwoju. W publikacji zostały wskazane dotychczasowe doświadczenia, krajowe priorytety rozwoju Polski oraz krajowe podejście do realizacji poszczególnych SDGs. Raport został uzupełniony aneksem statystycznym, zawierającym listę krajowych wskaźników niezbędnych do mierzenia efektów działań podejmowanych na rzecz realizacji każdego z SDGs.
 Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane corocznie w Nowym Jorku przez Forum Polityczne Wysokiego Szczebla ONZ. W 2018 r. Polska, w 2018 r., prezentowała swoje osiągnięcia po raz pierwszy.
 
-  <br><br><br><br><br><br><br></p>
+  <<br><br></p>
 
   <hr>
   <div class="image-wrapper">
