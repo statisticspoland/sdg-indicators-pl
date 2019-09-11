@@ -104,7 +104,7 @@ Voluntary national reviews are conducted every year in New York by the UN High-L
 Poland presented its achievements at HLPF for the first time.
 
 
-<br><br><br><br><br><br><br></p>
+<br><br><br></p>
 <hr>
 <div class="image-wrapper">
     <img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/>
@@ -113,7 +113,7 @@ Poland presented its achievements at HLPF for the first time.
 <p>The publication by the Ministry of Entrepreneurship and Technology, released in relation to this year’s  <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030" target="_blank">National Forum of the 2030 Agenda Stakeholders</a>, outlines SDG priorities for Poland as well as progress in their implementation. It presents selected governmental actions and strategic projects within individual SDGs as well as examples of the 2030 Agenda stakeholders’ engagement, including Statistics Poland as an initiator of the action “Statistics without barriers ‘cause everybody counts” (related to SDG 8. Economic growth and decent work). The priorities and relevant actions are accompanied by charts presenting indicators from <a href="http://sdg.gov.pl/en/statistics_nat/" target="_blank">the national set of SDG indicators </a> developed by Statistics Poland (national coordinator of SDG monitoring) in cooperation with the Ministry of Entrepreneurship and Technology (coordinator of SDG implementation in Poland). The publication may also serve as an inspiration for further actions for sustainable development goals in Poland.
 
 
-<br><br><br><br><br><br><br></p>
+<br><br><br></p>
   <hr>
   <div class="image-wrapper">
       <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html"><img src="{{ site.baseurl }}/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0"/></a>
