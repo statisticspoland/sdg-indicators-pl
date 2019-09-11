@@ -101,7 +101,15 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <br><br><br><br><br><br><br></p>
 
+  <hr>
+  <div class="image-wrapper">
+  <img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania</b></p>
+  <p>Publikacja Ministerstwa Przedsiębiorczości i Technologii (MPiT), wydana w związku z tegorocznym <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030"  target="_blank">Krajowym Forum Interesariuszy Agendy 2030</a>, prezentuje priorytety SDGs dla Polski oraz postępy w ich wdrażaniu. Przedstawiono w niej wybrane rządowe działania i projekty strategiczne w ramach poszczególnych celów oraz konkretne przykłady zaangażowania interesariuszy Agendy 2030, w tym Głównego Urzędu Statystycznego – inicjatora akcji „Statystyka bez barier, bo liczą się wszyscy” (w ramach Celu 8. Wzrost gospodarczy i godna praca). Priorytetom i podejmowanym w ich ramach działaniom towarzyszą przedstawione na wykresach wskaźniki, pochodzące z <a href="http://sdg.gov.pl/statistics_nat/"  target="_blank">krajowego zestawu wskaźników monitorujących SDGs w Polsce</a>, wypracowanego przez Główny Urząd Statystyczny (krajowego koordynatora procesu monitorowania celów SDGs) we współpracy z MPiT (koordynatorem wdrażania celów SDGs w Polsce). Publikacja stanowi również inspirację do podejmowania kolejnych działań na rzecz realizacji celów zrównoważonego rozwoju w kraju.
 
+  <br><br><br><br><br><br><br></p>
+  
   <hr>
   <div class="image-wrapper">
       <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html"><img src="{{ site.baseurl }}/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0"/></a>
@@ -113,31 +121,33 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2018/"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2018.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2019/"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2019.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>The Sustainable Development Goals Report 2018</b></p>
+  <p><b>The Sustainable Development Goals Report 2019</b></p>
 
   <p>Raport ten stanowi przegląd postępów, jakich dokonano w trzecim już roku realizacji Agendy na rzecz Zrównoważonego Rozwoju 2030. Przedstawia poczyniony progres, ale także wskazuje na konieczne do uzupełnienia luki informacyjne dla wszystkich 17 Celów Zrównoważonego Rozwoju, w oparciu o najnowsze dostępne dane.</p>
 
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2018/">The Sustainable Development Goals Report 2018</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2017/">The Sustainable Development Goals Report 2017</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2016/">The Sustainable Development Goals Report 2016</a></p>
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</b></p>
 
   <p>Wydawana od 2017 r. publikacja Eurostatu będąca raportem monitorującym postęp w kierunku osiągnięcia Celów Zrównoważonego Rozwoju w kontekście UE. Raport opisuje i analizuje dokonany postęp przy wykorzystaniu zestawu 100 wskaźników, przyporządkowanych do poszczególnych celów SDG. Analizie poddane są dwa okresy: krótki, uwzględniający postęp dokonany w ciągu ostatnich 5 lat oraz długi, obejmujący tendencje z ostatnich 15 lat.
   <br><br><br></p>
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Monitoring report on progress towards the SDGs in an EU context – Edycja 2018</a></p> 
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-04-17-780?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Monitoring report on progress towards the SDGs in an EU context – Edycja 2017</a></p>  
 
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</b></p>
 
@@ -145,6 +155,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <br><br><br></p>
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2018</a></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2017</a></p>
 
   <hr>
@@ -169,14 +180,15 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en"><img src="{{ site.baseurl }}/assets/img/publikacje/8_hows_life.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_23089679"><img src="{{ site.baseurl }}/assets/img/publikacje/8_hows_life.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>How’s Life? 2015. Measuring Well-being</b></p>
+  <p><b>How’s Life? 2017. Measuring Well-being</b></p>
 
 
   <p><em>How’s life? </em>opisuje kluczowe elementy kształtujące dobrobyt ludzi w państwach będących członkami OECD oraz w krajach partnerskich. Obejmuje szeroki wachlarz statystyk, uwzględniając zarówno dobrobyt materialny (tj. dochody, miejsca pracy, mieszkalnictwo), jak i inne aspekty jakości życia (tj. zdrowie, edukacja, równowaga między życiem prywatnym i zawodowym, środowisko). Raport, oprócz wyników najnowszych badań, pokazuje także zmiany, które zaszły na przestrzeni lat oraz jak zmieniła się dystrybucja dobrobytu pomiędzy różnymi grupami społecznymi.</p>
 
   <p><b>Archiwum:</b></p>
+   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en">How’s Life? 2015. Measuring Well-being</a></p>  
   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2013_9789264201392-en">How’s Life? 2013. Measuring Well-being</a></p>  
   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_9789264121164-en">How’s Life? 2011. Measuring Well-being</a></p>  
 
