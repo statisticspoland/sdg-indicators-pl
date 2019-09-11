@@ -105,7 +105,15 @@ Poland presented its achievements at HLPF for the first time.
 
 
 <br><br><br><br><br><br><br></p>
+<hr>
+<div class="image-wrapper">
+    <img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/>
+</div>
+<p><b>The 2030 Agenda in Poland. National priorities – joint actions</b></p>
+<p>The publication by the Ministry of Entrepreneurship and Technology, released in relation to this year’s  <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030" target="_blank">National Forum of the 2030 Agenda Stakeholders</a>, outlines SDG priorities for Poland as well as progress in their implementation. It presents selected governmental actions and strategic projects within individual SDGs as well as examples of the 2030 Agenda stakeholders’ engagement, including Statistics Poland as an initiator of the action “Statistics without barriers ‘cause everybody counts” (related to SDG 8. Economic growth and decent work). The priorities and relevant actions are accompanied by charts presenting indicators from <a href="http://sdg.gov.pl/en/statistics_nat/" target="_blank">the national set of SDG indicators </a> developed by Statistics Poland (national coordinator of SDG monitoring) in cooperation with the Ministry of Entrepreneurship and Technology (coordinator of SDG implementation in Poland). The publication may also serve as an inspiration for further actions for sustainable development goals in Poland.
 
+
+<br><br><br><br><br><br><br></p>
   <hr>
   <div class="image-wrapper">
       <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html"><img src="{{ site.baseurl }}/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0"/></a>
@@ -120,31 +128,33 @@ Poland presented its achievements at HLPF for the first time.
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2018/"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2018.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2019/"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2019.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>The Sustainable Development Goals Report 2018</b></p>
+  <p><b>The Sustainable Development Goals Report 2019</b></p>
 
   <p>The report reviews progress in the third year of implementation of the 2030 Agenda for Sustainable Development. This overview presents highlights of progress and remaining gaps for all 17 Sustainable Development Goals, based on the latest available data, and examines some of the interconnections across Goals and targets.</p>
 
   <p><b>Archive:</b></p>
+  <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2018/">The Sustainable Development Goals Report 2018</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2017/">The Sustainable Development Goals Report 2017</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2016/">The Sustainable Development Goals Report 2016</a></p>
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+  <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</b></p>
 
   <p>The publication, issued in 2017 by Eurostat, is a monitoring report on the progress towards achieving the Sustainable Development Goals in an EU context. This report describes progress made using a set of 100 indicators that are structured along the 17 SDGs. Two periods are considered: the short term, accounting for progress over the past five years, and the long term, looking at the trends over the last 15 years.
   <br><br><br></p>
   <p><b>Archive:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Monitoring report on progress towards the SDGs in an EU context</a></p>  
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-04-17-780?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Monitoring report on progress towards the SDGs in an EU context</a></p>  
 
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</b></p>
 
@@ -152,6 +162,7 @@ Poland presented its achievements at HLPF for the first time.
 
   <br><br><br></p>
   <p><b>Archive:</b></p>
+  p><a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</a></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</a></p>
 
   <hr>
@@ -176,14 +187,15 @@ Poland presented its achievements at HLPF for the first time.
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en"><img src="{{ site.baseurl }}/assets/img/publikacje/8_hows_life.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_23089679"><img src="{{ site.baseurl }}/assets/img/publikacje/8_hows_life.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>How’s Life? 2015. Measuring Well-being</b></p>
+  <p><b>How’s Life? 2017. Measuring Well-being</b></p>
 
 
   <p>The publication <em>How's Life?</em> describes the key elements that shape people’s well-being in OECD and partner countries. It includes a wide variety of statistics, capturing both material well-being (such as income, jobs, housing), as well as other aspects of quality of people’s life (such as health, education, work-life balance, environment). The report, in addition to the results of the latest research, also shows the changes that have occurred over time and how the distribution of well-being among different groups of the population has changed.</p>
 
   <p><b>Archive:</b></p>
+   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en">How’s Life? 2015. Measuring Well-being</a></p>  
   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2013_9789264201392-en">How’s Life? 2013. Measuring Well-being</a></p>  
   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_9789264121164-en">How’s Life? 2011. Measuring Well-being</a></p>  
 
