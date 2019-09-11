@@ -116,7 +116,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   </div>
   <p><b>Na ścieżce zrównoważonego rozwoju</b></p>
   <p>Publikacja <em>Na ścieżce zrównoważonego rozwoju </em>została przygotowana w związku z wyznaczeniem przez ONZ celów zrównoważonego rozwoju, ujętych w tzw. Agendzie 2030. Jest ona adresowana do wszystkich, którzy chcą dowiedzieć się i zrozumieć, na czym polega idea zrównoważonego rozwoju oraz co ją łączy ze statystyką.
- <br><br><br><br><br><br></p>
+ <br><br><br><br><br><br><br><br><br></p>
 
 
   <hr>
