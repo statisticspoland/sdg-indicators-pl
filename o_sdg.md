@@ -99,7 +99,7 @@ permalink: /o_sdg/
   <p>Raport został opracowany przez Ministerstwo Przedsiębiorczości i Technologii (koordynatora procesu wdrażania Agendy 2030 w Polsce) na potrzeby przeglądu realizacji przez Polskę Celów Zrównoważonego Rozwoju. W publikacji zostały wskazane dotychczasowe doświadczenia, krajowe priorytety rozwoju Polski oraz krajowe podejście do realizacji poszczególnych SDGs. Raport został uzupełniony aneksem statystycznym, zawierającym listę krajowych wskaźników niezbędnych do mierzenia efektów działań podejmowanych na rzecz realizacji każdego z SDGs.
 Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane corocznie w Nowym Jorku przez Forum Polityczne Wysokiego Szczebla ONZ. W 2018 r. Polska, w 2018 r., prezentowała swoje osiągnięcia po raz pierwszy.
 
- <br><br><br></p>
+ <br><br><br><br><br><br></p>
 
   <hr>
   <div class="image-wrapper">
@@ -108,7 +108,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   <p><b>Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania</b></p>
   <p>Publikacja Ministerstwa Przedsiębiorczości i Technologii (MPiT), wydana w związku z tegorocznym <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030"  target="_blank">Krajowym Forum Interesariuszy Agendy 2030</a>, prezentuje priorytety SDGs dla Polski oraz postępy w ich wdrażaniu. Przedstawiono w niej wybrane rządowe działania i projekty strategiczne w ramach poszczególnych celów oraz konkretne przykłady zaangażowania interesariuszy Agendy 2030, w tym Głównego Urzędu Statystycznego – inicjatora akcji „Statystyka bez barier, bo liczą się wszyscy” (w ramach Celu 8. Wzrost gospodarczy i godna praca). Priorytetom i podejmowanym w ich ramach działaniom towarzyszą przedstawione na wykresach wskaźniki, pochodzące z <a href="http://sdg.gov.pl/statistics_nat/"  target="_blank">krajowego zestawu wskaźników monitorujących SDGs w Polsce </a>, wypracowanego przez Główny Urząd Statystyczny (krajowego koordynatora procesu monitorowania celów SDGs) we współpracy z MPiT (koordynatorem wdrażania celów SDGs w Polsce). Publikacja stanowi również inspirację do podejmowania kolejnych działań na rzecz realizacji celów zrównoważonego rozwoju w kraju.
 
-  <br><br><br></p>
+  <br><br><br><br><br><br></p>
   
   <hr>
   <div class="image-wrapper">
@@ -116,7 +116,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   </div>
   <p><b>Na ścieżce zrównoważonego rozwoju</b></p>
   <p>Publikacja <em>Na ścieżce zrównoważonego rozwoju </em>została przygotowana w związku z wyznaczeniem przez ONZ celów zrównoważonego rozwoju, ujętych w tzw. Agendzie 2030. Jest ona adresowana do wszystkich, którzy chcą dowiedzieć się i zrozumieć, na czym polega idea zrównoważonego rozwoju oraz co ją łączy ze statystyką.
-  <br><br><br></p>
+ <br><br><br><br><br><br></p>
 
 
   <hr>
