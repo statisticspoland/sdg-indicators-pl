@@ -103,7 +103,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <hr>
   <div class="image-wrapper">
-  <img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/>
+   <a target="_blank" href="https://www.gov.pl/attachment/f18da2e5-5384-4040-8fc7-c55d67e56378"><img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania</b></p>
   <p>Publikacja Ministerstwa Przedsiębiorczości i Technologii (MPiT), wydana w związku z tegorocznym <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030"  target="_blank">Krajowym Forum Interesariuszy Agendy 2030</a>, prezentuje priorytety SDGs dla Polski oraz postępy w ich wdrażaniu. Przedstawiono w niej wybrane rządowe działania i projekty strategiczne w ramach poszczególnych celów oraz konkretne przykłady zaangażowania interesariuszy Agendy 2030, w tym Głównego Urzędu Statystycznego – inicjatora akcji „Statystyka bez barier, bo liczą się wszyscy” (w ramach Celu 8. Wzrost gospodarczy i godna praca). Priorytetom i podejmowanym w ich ramach działaniom towarzyszą przedstawione na wykresach wskaźniki, pochodzące z <a href="http://sdg.gov.pl/statistics_nat/"  target="_blank">krajowego zestawu wskaźników monitorujących SDGs w Polsce </a>, wypracowanego przez Główny Urząd Statystyczny (krajowego koordynatora procesu monitorowania celów SDGs) we współpracy z MPiT (koordynatorem wdrażania celów SDGs w Polsce). Publikacja stanowi również inspirację do podejmowania kolejnych działań na rzecz realizacji celów zrównoważonego rozwoju w kraju.
