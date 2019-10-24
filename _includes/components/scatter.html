@@ -72,6 +72,10 @@ for (i=1;i<licznik+1;i++){
         left: 40
     },
     axisY: {
+      labelOffset: {
+        x: 0,
+        y: 5
+      },
       {% if page.graph_negative != true %}
       offset: 50,
       {% endif %}
@@ -92,6 +96,10 @@ for (i=1;i<licznik+1;i++){
     },
     axisX: {
       showGrid: false,
+        labelOffset: {
+          x: -11,
+          y: 0
+        },
       labelInterpolationFnc: function (value) {
         return value.toString()
       }
