@@ -102,9 +102,17 @@ for (i=1;i<licznik+1;i++){
       }{% else %}
       onlyInteger: true,
       {% endif %}
+      labelOffset: {
+        x: 0,
+        y: 5
+      },
     },
     axisX: {
       showGrid: false,
+      labelOffset: {
+        x: -11,
+        y: 0
+      },
       labelInterpolationFnc: function (value) {
         return value.toString()
       }
