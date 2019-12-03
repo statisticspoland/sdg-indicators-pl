@@ -6,10 +6,11 @@ permalink: /en/o_sdg/
 ---
 <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#sdg" aria-controls="data" role="tab" data-toggle="tab">ON THE 2030 AGENDA AND SDGs</a></li>
-            <li role="presentation"><a href="#ini" aria-controls="data" role="tab" data-toggle="tab">SUSTAINABLE DEVELOPMENT IN EU AND OECD</a></li>
+            <li role="presentation"><a href="#ini" aria-controls="data" role="tab" data-toggle="tab">SDG in EU & OECD</a></li>
             <li role="presentation"><a href="#stat" aria-controls="metadata" role="tab" data-toggle="tab">OFFICIAL STATISTICS</a></li>
-            <li role="presentation"><a href="#gus" aria-controls="metadata" role="tab" data-toggle="tab">GUS4SDGs</a></li>
             <li role="presentation"><a href="#publ" aria-controls="metadata" role="tab" data-toggle="tab">PUBLICATIONS</a></li>
+            <li role="presentation"><a href="#gus" aria-controls="metadata" role="tab" data-toggle="tab">SDG4FUN</a></li>
+
 
 </ul>
 
@@ -36,7 +37,7 @@ permalink: /en/o_sdg/
   </div>
 
   <div role="tabpanel" class="tab-pane" id="ini">
-  <h4><b>SUSTAINABLE DEVELOPMENT IN EU AND OECD</b></h4>
+  <h4><b>SDG in EU & OECD</b></h4>
 
   <p><b>EU’s engagement with sustainable development  </b></p>
 
@@ -67,21 +68,6 @@ a global <a href="https://unstats.un.org/sdgs/indicators/database/"  target="_bl
 <p>Monitoring progress in the realisation of the 2030 Agenda is a great challenge for official statistics. It requires coordination of many institutions’ activities and cooperation between the international and national level. So as to support statistical institutions in the UNECE region, the Steering Group on Statistics for Sustainable Development Goals was established. Since 2018, the Group has been co-chaired by Poland (GUS). One of the Group’s greatest achievements is preparation of (<a href="http://www.unece.org/index.php?id=47510"  target="_blank">Road Map on statistics for Sustainable Development Goals</a>), which facilitates organization of the 2030 Agenda monitoring.</p>
 
   </div>
-
-  <div role="tabpanel" class="tab-pane" id="gus">
-  <h4><b>GUS4SDGs</b></h4>
-  <p>Many environments are involved in actions for the Sustainable Development Goals of the 2030 Agenda, which is an opportunity for Statistics Poland to promote official statistics and enter into new partnerships.</p>
-  <p><b>Hackathon SDG</b></p>
-
-  <p>In November 2018, Statistics Poland organized a hackathon aimed at the youth as a specific group of data users. The aim of the initiative was to develop a youth-oriented application with SDG indicators as well as promote the Sustainable Development Goals among young people and, as a result, inspire them to act for SDGs. At the hackathon, international teams developed prototypes of interactive applications promoting the idea of sustainable development and using SDG statistics. Out of nine application prototypes, the jury (including representatives of Statistics Poland, the Ministry of Entrepreneurship and Technology, the Responsible Business Forum and SAS Institute) selected the three best games. The winner was the “Statistical Technical Girls” team that made the game “El Presidente”, which was visually and linguistically compatible with the young generation. The 2nd place went to the “Infiniteam” for the game in which the player takes responsibility for the sustainable development policy, whereas the 3rd one was taken by the “SKN ESTYMATOR” team for the application dedicated to public institutions, business and students. Recognizing the potential of applications, Statistics Poland plans to continue their development and their usage as yet another form of presentation for SDG statistics.</p>
-  <p>More information at: <a href="https://stat.gov.pl/en/news/hackathon-meet-the-winners,33,1.html" target="_blank">https://stat.gov.pl/en/news/hackathon-meet-the-winners,33,1.html</a></p>
-
-  <p><b>SDG indicators for business</b></p>
-
-  <p>Non-governmental organizations as well as business environment are interested in undertaking joint SDG initiatives with Statistics Poland. At the beginning of 2019, an initiative to develop a set of SDG indicators for business was undertaken. A group of experts was set up to select metrics for measuring the impact of business on the sustainable development goals. In June 2019, Statistics Poland organized a workshop “Indicators for measuring the impact of business on the 2030 Agenda.” CSR Consulting was the initiator of the undertaking, whereas Statistics Poland – a subject matter partner. At the beginning of September 2019, the set of SDG indicators for business will be submitted to open consultations, and on 25 September, i.e. at the 4th anniversary of the 2030 Agenda adoption by the UN, the set will be released.</p>
-  <p>More information at: <a href="https://kampania17celow.pl/the-17-goals-campaign/" target="_blank">https://kampania17celow.pl/the-17-goals-campaign/</a></p>
-
- </div>
 
   <div role="tabpanel" class="tab-pane" id="publ">
   <h4><b>PUBLICATIONS</b></h4>
@@ -138,6 +124,19 @@ Poland presented its achievements at HLPF for the first time.
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2018/">The Sustainable Development Goals Report 2018</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2017/">The Sustainable Development Goals Report 2017</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2016/">The Sustainable Development Goals Report 2016</a></p>
+
+
+  <hr>
+  <div class="image-wrapper">
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2019/"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>SDGs & me</b></p>
+
+  <p>A new digital publication by Eurostat on the 2030 Agenda’s goals reaches out to a wide range of readers. Its intuitive nature and attractive layout encourage each and everyone to take a glance at the SDGs from the statistical point of view. SDGs & me presents progress towards 17 goals in the EU and its member countries by means of interactive visualizations. In order to assess progress in achieving the global goals, metrics from Eurostat’s SDG indicator set were used. The publication enables comparison of progress towards the SDGs between the countries and against the EU. It also makes it possible to guess trends for indicator values before their presentation on the chart.</p>
+
+  <p><b>Archiwum:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs_2018/">SDGs & me – 2018 edition</a></p>
+
 
   <hr>
   <div class="image-wrapper">
@@ -201,6 +200,17 @@ Poland presented its achievements at HLPF for the first time.
 
   </div>
 
+  <div role="tabpanel" class="tab-pane" id="gus">
+  <h4><b>SDG4FUN</b></h4>
+  <p>Statistical data don’t need to be boring or cause a headache. Wanna get to know them through fun? Explore SDG applications and you’ll find out the relevance of statistics to sustainable development.</p>
+
+  <p>Wanna learn about young people neither in education nor in employment? Play the games and movies made across the world by teams that took part in the UNECE <a href="https://statswiki.unece.org/display/BST/HLG+Hackathon+2017" target="_blank">hackathon Telling stories with SDG data</a> in 2017. Among the hackathon participants, there were two teams representing Statistics Poland, including the winning team <a href="http://153.19.126.235/bluebirds/" target="_blank">Polish Statistical Crew</a> from the head office of Statistics Poland and the Statistical Office in Gdańsk.  </p>
+
+  <p>But that’s not all! Wanna see that each and everyone, including the laziest person in the world, can act for the SDGs? Read the UN <a href="https://www.un.org/sustainabledevelopment/takeaction/" target="_blank">guide</a> that you can use at home, school or workplace. </p>
+
+  <p>Good luck!</p>
+
+  </div>
 
 </div>
 <hr>
