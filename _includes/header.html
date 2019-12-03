@@ -134,11 +134,9 @@
             <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_nat/status" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;">{{ t.nav-nat }}</a>
           </li>
           <li class="nav-item small">
-            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/guide" style="text-decoration: none;color: #000;width: 100%">{{ t.nav-monitoring }}</a>
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/business" style="text-decoration: none;color: #000;width: 100%">{{ t.nav-bis }}</a>
           </li>
-          <li class="nav-item small">
-            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/faqs" style="text-decoration: none;color: #000;width: 100%">{{ t.nav-development }}</a>
-          </li>
+
         </ul>
       </div> <!--zamykający do collapse navbar-collapse-->
     </nav> <!--zamknięcie menu małego-->
@@ -171,7 +169,7 @@
 
 		text-align: left">{{ t.nav-about }}</a></li>
 		<!--------------------lista rozwijana I-------------------------------------------------------------------------------------------------->
-        <li class="nav-item" style="width: 220px">
+        <li class="nav-item" style="width: 190px">
           <div class="dropdown" style="width: 150px; text-align:center">
             <a>
               <div class="dropbtn" style="padding-left: 15px;">{{ t.nav-statistics }}
@@ -185,7 +183,7 @@
           </div>
         </li>
         <!--------------------lista rozwijana II-------------------------------------------------------------------------------------------------->
-        <li class="nav-item" style="width: 220px">
+        <li class="nav-item" style="width: 200px">
           <div class="dropdown" style="width: 158px; text-align:left">
             <a>
               <div class="dropbtn">{{ t.nav-reporting-status }}
@@ -199,15 +197,8 @@
           </div>
         </li>
         <!--------------------element menu III-------------------------------------------------------------------------------------------------->
-        <li class="nav-item"><a href="{{ site.baseurl }}{{ lang }}/guide" style="margin-left:
-		{% if page.url contains '/en/' %}
-			40px;
-		{% else %}
-			20px;
-		{% endif %}
-		">{{ t.nav-monitoring }}</a></li>
+        <li class="nav-item"><a href="{{ site.baseurl }}{{ lang }}/business">{{ t.nav-bis }}</a></li>
         <!--------------------element menu IV-------------------------------------------------------------------------------------------------->
-        <li class="nav-item" style="width: 70px"><a href="{{ site.baseurl }}{{ lang }}/faqs">{{ t.nav-development }}</a></li>
       </ul>
     </nav>
   {% endif %} <!--zakończenie page.layout != 'splash'-->
@@ -283,7 +274,7 @@ for (i = 0; i < lista_nazw.length; i++) {
    });
 
  } );
-	
+
 $(document).ready(function(){
   $('.dropdown-toggle').dropdown()
 });
@@ -385,56 +376,4 @@ localStorage.removeItem("nat-toolkit-accepted");
 });
 });
 
-
-(function() {
-	var NationalToolkit = function( text) {
-		this.text = text;
-		this.element = null;
-		this.init();
-	};
-
-	NationalToolkit.prototype = {
-		init: function() {
-			this.create();
-			this.load();
-		},
-		load: function() {
-      if( localStorage.getItem( "nat-toolkit-accepted" ) === null ) {
-          this._show();
-        }
-		},
-    create: function() {
-      var element = document.createElement( "div" );
-      this.element = element;
-      element.id = "national-toolkit";
-      var jez='{{page.lang}}'
-      if (jez=='pl'){
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='{{ site.baseurl }}{{ lang }}/statistics_nat' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
-      }else{
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='{{ site.baseurl }}{{ lang }}/statistics_nat' onclick='FuncZamk()'>Go to</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
-      }
-      var headers = document.querySelector(".site-navbar");
-      headers.after(element);
-
-    },
-		_show: function() {
-      var self = this;
-			self.element.style.display = "block";
-			self.element.style.paddingBottom=".5rem";
-			self.element.style.paddingTop=".5rem";
-			setTimeout(function() {
-				self.element.className = "visible";
-			}, 500);
-    }
-	};
-
-	document.addEventListener( "DOMContentLoaded", function() {
-    var jez='{{page.lang}}'
-    if (jez=='pl'){
-      var toolkit = new NationalToolkit( "Priorytety SDG dla Polski i aktualne wskaźniki do ich pomiaru już dostępne!");
-    }else{
-      var toolkit = new NationalToolkit( "SDG priorities for Poland and their current indicators already available!");
-    }
-	});
-})();
 </script>
