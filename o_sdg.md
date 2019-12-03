@@ -5,10 +5,11 @@ permalink: /o_sdg/
 ---
 <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#sdg" aria-controls="data" role="tab" data-toggle="tab">O AGENDZIE 2030 i SDGs</a></li>
-            <li role="presentation"><a href="#ini" aria-controls="data" role="tab" data-toggle="tab">ZRÓWNOWAŻONY ROZWÓJ W UE I OECD</a></li>
+            <li role="presentation"><a href="#ini" aria-controls="data" role="tab" data-toggle="tab">SDG w UE i OECD</a></li>
             <li role="presentation"><a href="#stat" aria-controls="metadata" role="tab" data-toggle="tab">STATYSTYKA PUBLICZNA</a></li>
-            <li role="presentation"><a href="#gus" aria-controls="metadata" role="tab" data-toggle="tab">GUS4SDGs</a></li>
             <li role="presentation"><a href="#publ" aria-controls="metadata" role="tab" data-toggle="tab">PUBLIKACJE</a></li>
+            <li role="presentation"><a href="#gus" aria-controls="metadata" role="tab" data-toggle="tab">SDG4FUN</a></li>
+
 
 </ul>
 
@@ -35,7 +36,7 @@ permalink: /o_sdg/
   </div>
 
   <div role="tabpanel" class="tab-pane" id="ini">
-  <h4><b>ZRÓWNOWAŻONY ROZWÓJ W UE I OECD</b></h4>
+  <h4><b>SDG w UE i OECD</b></h4>
 
   <p><b>Zaangażowanie UE na rzecz zrównoważonego rozwoju </b></p>
 
@@ -65,20 +66,7 @@ permalink: /o_sdg/
 <p>Monitorowanie postępów z realizacji Agendy 2030 jest dużym wyzwaniem dla statystyki publicznej. Wymaga koordynacji prac wielu instytucji i współpracy pomiędzy szczeblem międzynarodowym a krajowym. Dla wsparcia instytucji statystycznych w regionie Europejskiej Komisji Gospodarczej ONZ powołano Grupę Sterującą ds. Statystyki dla SDGs. Od 2018 r. grupie tej współprzewodniczy Polska (GUS). Jednym z najważniejszych dokonań grupy jest przygotowanie mapy drogowej (<a href="http://www.unece.org/index.php?id=47510"  target="_blank">Road Map on statistics for Sustainable Development Goals</a>), która ułatwia krajom organizację procesu monitorowania Agendy 2030.</p>
 
   </div>
-  <div role="tabpanel" class="tab-pane" id="gus">
-  <h4><b>GUS4SDGs</b></h4>
-  <p>W działania na rzecz realizacji Celów Agendy 2030 zaangażowanych jest wiele środowisk, co jest szansą dla GUS na promocję statystyki publicznej i nawiązywanie współpracy z nowymi partnerami.</p>
-  <p><b>Hackathon SDG</b></p>
 
-  <p>W listopadzie 2018 r., z myślą o młodzieży, jako szczególnej grupie odbiorców, GUS zorganizował hackathon. Celem tej inicjatywy była budowa aplikacji przeznaczonej dla młodego pokolenia, wykorzystującej wskaźniki SDGs oraz popularyzacja celów zrównoważonego rozwoju wśród młodzieży, a w efekcie zainspirowanie jej do działania na ich rzecz. Podczas wydarzenia międzynarodowe zespoły stworzyły prototypy interaktywnej aplikacji, promującej koncepcję zrównoważonego rozwoju i wykorzystującej dane statystyczne dotyczące SDGs. Spośród dziewięciu prototypów interaktywnych aplikacji, jury (w skład którego wchodzili przedstawiciele Głównego Urzędu Statystycznego, Ministerstwa Przedsiębiorczości i Technologii, Forum Odpowiedzialnego Biznesu oraz SAS Institute) wyłoniło trzy najlepsze gry. Wygrał zespół „Statistical Technical Girls”, który przedstawił grę „El Presidente”, wizualnie i językowo trafiającą w gust młodego pokolenia. Na 2. miejscu uplasował się zespół „Infiniteam”, również prezentując grę, w której na graczu spoczywa odpowiedzialność za prowadzenie polityki zrównoważonego rozwoju, a na 3. – „SKN ESTYMATOR” za aplikację stworzoną z myślą o instytucjach państwowych, biznesie i studentach. Dostrzegając potencjał aplikacji, GUS planuje je dalej rozwijać i wykorzystywać jako kolejną formę prezentacji statystyk SDGs.</p>
-  <p>Więcej informacji dostępnych na stronie: <a href="https://stat.gov.pl/aktualnosci/hackathon-poznajcie-zwyciezcow,215,1.html" target="_blank">https://stat.gov.pl/aktualnosci/hackathon-poznajcie-zwyciezcow,215,1.html</a></p>
-
-  <p><b>Wskaźniki SDG dla biznesu</b></p>
-
-  <p>Podejmowaniem wspólnych ze statystyką inicjatyw na rzecz SDGs są w szczególności zainteresowane organizacje pozarządowe oraz środowisko biznesowe. Na początku 2019 r. podjęta została inicjatywa wypracowania wskaźników monitorujących wpływ biznesu na SDGs. W tym celu powołano grupę ekspertów z zadaniem doboru wskaźników, umożliwiających przedsiębiorcom zmierzenie ich wkładu w realizację celów zrównoważonego rozwoju. W czerwcu br. GUS zorganizował warsztaty pt. „Wskaźniki mierzenia działań biznesu na rzecz Agendy 2030”. Inicjatorem tego przedsięwzięcia był CSR Consulting, a Główny Urząd Statystyczny – Partnerem Merytorycznym. Na początku września 2019 r. zestaw wskaźników trafi do otwartych konsultacji, a 25 września, tj. w 4. rocznicę przyjęcia Agendy 2030 przez ONZ, zostanie ogłoszony.</p>
-  <p>Więcej informacji dostępnych na stronie: <a href="https://kampania17celow.pl/kampania-17-celow/" target="_blank">https://kampania17celow.pl/kampania-17-celow/</a></p>
-
-  </div>
   <div role="tabpanel" class="tab-pane" id="publ">
   <h4><b>PUBLIKACJE</b></h4>
 
@@ -109,7 +97,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   <p>Publikacja Ministerstwa Przedsiębiorczości i Technologii (MPiT), wydana w związku z tegorocznym <a href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030"  target="_blank">Krajowym Forum Interesariuszy Agendy 2030</a>, prezentuje priorytety SDGs dla Polski oraz postępy w ich wdrażaniu. Przedstawiono w niej wybrane rządowe działania i projekty strategiczne w ramach poszczególnych celów oraz konkretne przykłady zaangażowania interesariuszy Agendy 2030, w tym Głównego Urzędu Statystycznego – inicjatora akcji „Statystyka bez barier, bo liczą się wszyscy” (w ramach Celu 8. Wzrost gospodarczy i godna praca). Priorytetom i podejmowanym w ich ramach działaniom towarzyszą przedstawione na wykresach wskaźniki, pochodzące z <a href="http://sdg.gov.pl/statistics_nat/"  target="_blank">krajowego zestawu wskaźników monitorujących SDGs w Polsce </a>, wypracowanego przez Główny Urząd Statystyczny (krajowego koordynatora procesu monitorowania celów SDGs) we współpracy z MPiT (koordynatorem wdrażania celów SDGs w Polsce). Publikacja stanowi również inspirację do podejmowania kolejnych działań na rzecz realizacji celów zrównoważonego rozwoju w kraju.
 
   <br><br><br></p>
-  
+
   <hr>
   <div class="image-wrapper">
       <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html"><img src="{{ site.baseurl }}/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0"/></a>
@@ -132,6 +120,19 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2017/">The Sustainable Development Goals Report 2017</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2016/">The Sustainable Development Goals Report 2016</a></p>
 
+
+  <hr>
+  <div class="image-wrapper">
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2019/"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>SDGs & me</b></p>
+
+  <p>Nowa cyfrowa publikacja Eurostatu nt. celów Agendy 2030 adresowana jest do szerokiego grona odbiorców. Jej intuicyjny charakter i atrakcyjna forma zachęcą każdego do spojrzenia na SDGs z punktu widzenia statystyki. SDGs & me prezentuje postępy całej UE oraz poszczególnych krajów członkowskich we wdrażaniu 17 celów za pomocą interaktywnych wizualizacji. Do oceny realizacji celów globalnych wykorzystano wybrane wskaźniki SDG z zestawu opracowanego przez Eurostat dla Unii Europejskiej. Publikacja umożliwia porównywanie postępów w osiąganiu SDGs między krajami oraz na tle UE. Pozwala także na prognozowanie trendów dla wybranych mierników przed ich zaprezentowaniem na wykresie.</p>
+
+  <p><b>Archiwum:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/">SDGs & me – Edycja 2018 </a></p>
+
+
   <hr>
   <div class="image-wrapper">
       <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
@@ -141,7 +142,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   <p>Wydawana od 2017 r. publikacja Eurostatu będąca raportem monitorującym postęp w kierunku osiągnięcia Celów Zrównoważonego Rozwoju w kontekście UE. Raport opisuje i analizuje dokonany postęp przy wykorzystaniu zestawu 100 wskaźników, przyporządkowanych do poszczególnych celów SDG. Analizie poddane są dwa okresy: krótki, uwzględniający postęp dokonany w ciągu ostatnich 5 lat oraz długi, obejmujący tendencje z ostatnich 15 lat.
   <br><br><br></p>
   <p><b>Archiwum:</b></p>
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Monitoring report on progress towards the SDGs in an EU context – Edycja 2018</a></p> 
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Monitoring report on progress towards the SDGs in an EU context – Edycja 2018</a></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-04-17-780?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Monitoring report on progress towards the SDGs in an EU context – Edycja 2017</a></p>  
 
 
@@ -195,7 +196,23 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   </div>
 
 
+  <div role="tabpanel" class="tab-pane" id="gus">
+  <h4><b>SDG4FUN</b></h4>
+  <p>Dane statystyczne nie muszą być nudne ani przyprawiać o ból głowy. Chcesz je poznać poprzez zabawę? Zapoznaj się z aplikacjami o SDGs i przekonaj się, jak potrzebna jest statystyka w działaniu na rzecz zrównoważonego rozwoju. </p>
+
+  <p>Chcesz dowiedzieć się więcej o młodych ludziach, którzy nie uczą się ani nie pracują? Poznaj gry i filmy stworzone przez drużyny z całego świata, które w 2017 r. wzięły udział w <a href="https://statswiki.unece.org/display/BST/HLG+Hackathon+2017" target="_blank">hackathonie Telling stories with SDG data</a> zorganizowanym przez Europejską Komisję Gospodarczą Narodów Zjednoczonych. Wśród zawodników znalazły dwie drużyny reprezentujące polską statystykę, w tym zwycięska: <a href="http://153.19.126.235/bluebirds/" target="_blank">Polish Statistical Crew z GUS i US Gdańsk</a>.</p>
+
+  <p>To nie wszystko! Chcesz przekonać się, że każdy człowiek na Ziemi – nawet najbardziej leniwy może działać na rzecz SDGs? Poznaj <a href="https://www.un.org/sustainabledevelopment/takeaction/" target="_blank">poradnik</a> ONZ, który możesz zastosować w domu, szkole lub pracy.</p>
+
+  <p>Powodzenia!</p>
+
+  </div>
+
+
 </div>
+
+
+
 <hr>
 
 <script>
