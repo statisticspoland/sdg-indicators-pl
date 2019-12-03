@@ -7,6 +7,8 @@ pl:
   contact-text: "<b>Główny Urząd Statystyczny</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br />"
   contact-text-continue: "SDG@stat.gov.pl <br />"
   return-to-top: "Do góry"
+  nav-monitoring : "Przewodnik"
+  nav-development : "FAQs"
 en:
   about-heading: "About"
   about-text: "<b>About</b><br />Welcome to the Statistics Poland website dedicated to the 2030 Agenda and Sustainable Development Goals"
@@ -14,4 +16,6 @@ en:
   contact-text: "<b>Statistics Poland</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br />"
   contact-text-continue: "SDG@stat.gov.pl <br />"
   return-to-top: "Return to top"
+  nav-monitoring : "Guide"
+  nav-development : "FAQs"
 ---
