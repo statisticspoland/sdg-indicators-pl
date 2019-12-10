@@ -23,7 +23,7 @@ en:
   nav-statistics : "PL Statistics"
   nav-search: "Search"
   nav-about: "About SDG"
-  nav-bis: "Indicators for business"
+  nav-bis: "Business indicators"
   disclaimer-staging: "Website for monitoring SDG indicators in Poland"
   government-site: "National Reporting Platform - SDG"
   login: "Login"
