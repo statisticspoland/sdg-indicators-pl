@@ -1,7 +1,7 @@
 ---
 layout: page
 lang: en
-title: Indicators for business
+title: Business indicators
 permalink: /en/business/
 ---
 
@@ -13,13 +13,13 @@ permalink: /en/business/
 <section class="usa-section">
     <div>
           <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-              <a href="https://kampania17celow.pl/cele/cel-3-dobre-zdrowie-i-jakosc-zycia/"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-03.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+              <img src="{{ site.baseurl }}/assets/img/en/en-sdg-goal-03.png" style="width: 149px;height: 149px;background-color: grey;"/>
               <figcaption class="caption" style="display: block;">
               <p align="left"><b>3.1</b> Average health care expenditure per employee</p>
               </figcaption>
           </figure>
           <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-              <a href="https://kampania17celow.pl/cele/cel-4-dobra-jakosc-edukacji/"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-04.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+              <img src="{{ site.baseurl }}/assets/img/en/en-sdg-goal-04.png" style="width: 149px;height: 149px;background-color: grey;"/>
               <figcaption class="caption" style="display: block;">
               <p align="left"><b>4.1</b> Average number of training hours per employee</p>
               <p align="left"><b>4.2</b> Number of pupils and students covered by the company's activities supporting the education process in relation to the number of employees</p>
@@ -29,7 +29,7 @@ permalink: /en/business/
           </figcaption>
           </figure>
           <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-              <a href="https://kampania17celow.pl/cele/cel-5-rownosc-plci/"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-05.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+              <img src="{{ site.baseurl }}/assets/img/en/en-sdg-goal-05.png" style="width: 149px;height: 149px;background-color: grey;"/>
               <figcaption class="caption" style="display: block;">
               <p align="left"><b>5.1</b> Percentage of women in managerial positions</p>
               <p align="left"><b>5.2</b> Women to men remuneration ratio</p>
@@ -40,7 +40,7 @@ permalink: /en/business/
               </figcaption>
           </figure>
           <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-              <a href="https://kampania17celow.pl/cele/cel-8-wzrost-gospodarczy-i-godna-praca/"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-08.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+              <img src="{{ site.baseurl }}/assets/img/en/en-sdg-goal-08.png" style="width: 149px;height: 149px;background-color: grey;"/>
               <figcaption class="caption" style="display: block;">
               <p align="left"><b>8.1</b> Value added of the company per employee</p>
               <p align="left"><b>8.2</b> Percentage of employees employed under an employment contract</p>
@@ -53,7 +53,7 @@ permalink: /en/business/
               </figcaption>
           </figure>
           <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-              <a href="https://kampania17celow.pl/cele/cel-9-innowacyjnosc-przemysl-infrastruktura/"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-09.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+              <img src="{{ site.baseurl }}/assets/img/en/en-sdg-goal-09.png" style="width: 149px;height: 149px;background-color: grey;"/>
               <figcaption class="caption" style="display: block;">
               <p align="left"><b>9.1</b> Expenditure on innovations in relation to revenue</p>
               <p align="left"><b>9.2</b> Percentage of expenditure allocated to sustainable solutions as part of expenditure on innovations</p>
@@ -61,7 +61,7 @@ permalink: /en/business/
               </figcaption>
           </figure>
           <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-              <a href="https://kampania17celow.pl/cele/cel-12-odpowiedzialna-konsumpcja-i-produkcja/"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-12.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+              <img src="{{ site.baseurl }}/assets/img/en/en-sdg-goal-12.png" style="width: 149px;height: 149px;background-color: grey;"/>
               <figcaption class="caption" style="display: block;">
               <p align="left"><b>12.1</b> Material efficiency</p>
               <p align="left"><b>12.2</b> Energy efficiency</p>
