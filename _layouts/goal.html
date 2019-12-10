@@ -135,7 +135,15 @@
         {% endif %}
 
         <tr>
-          {% if indicator.indicator == "1.5.1" or indicator.indicator == "2.5.2" or indicator.indicator == "2.a.2" or indicator.indicator == "3.3.5" or indicator.indicator == "4.2.1" or indicator.indicator == "5.2.1" or indicator.indicator == "5.3.1" or indicator.indicator == "5.a.1.a" or indicator.indicator == "5.a.1.b"
+		
+		{% if indicator.permalink contains '/statistics_nat/' %}
+			<td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_nat/status/"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
+		{% else %}
+			<td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_glob/status/"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
+		{% endif %}
+			<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
+          
+		  {% if indicator.indicator == "1.5.1" or indicator.indicator == "2.5.2" or indicator.indicator == "2.a.2" or indicator.indicator == "3.3.5" or indicator.indicator == "4.2.1" or indicator.indicator == "5.2.1" or indicator.indicator == "5.3.1" or indicator.indicator == "5.a.1.a" or indicator.indicator == "5.a.1.b"
           or indicator.indicator == "7.a.1" or indicator.indicator == "8.3.1" or indicator.indicator == "8.4.1" or indicator.indicator == "8.8.1"
           or indicator.indicator == "9.3.2" or indicator.indicator == "10.2.1" or indicator.indicator == "11.1.1" or indicator.indicator == "11.5.1"
           or indicator.indicator == "11.6.1" or indicator.indicator == "11.6.2" or indicator.indicator == "11.a.1"
@@ -144,18 +152,15 @@
           or indicator.indicator == "15.7.1" or indicator.indicator == "16.1.2"
           or indicator.indicator == "16.2.3" or indicator.indicator == "16.3.2"
           or indicator.indicator == "16.5.1" or indicator.indicator == "16.7.1"   %}
-
-          <td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.pl.permalink }}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
-          <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator | remove: ".0" }} {{ indicator_sort.indicator }}</a></td>
-          <td><i class="fa fa-check" style="font-size:20px; width: 100%; text-align: center;"></i></td>
+			<td><i class="fa fa-check" style="font-size:20px; width: 100%; text-align: center;"></i></td>
 
           {% else %}
-          <td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.pl.permalink }}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
-          <td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
-            {% if rodzaj == '/' %}
-              <td></td>
+
+			{% if rodzaj == '/' %}
+				<td></td>
             {% endif %}
           {% endif %}
+
         </tr>
 
         {% endif %}
