@@ -128,13 +128,13 @@ Poland presented its achievements at HLPF for the first time.
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2019/"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>SDGs & me</b></p>
 
-  <p>A new digital publication by Eurostat on the 2030 Agenda’s goals reaches out to a wide range of readers. Its intuitive nature and attractive layout encourage each and everyone to take a glance at the SDGs from the statistical point of view. SDGs & me presents progress towards 17 goals in the EU and its member countries by means of interactive visualizations. In order to assess progress in achieving the global goals, metrics from Eurostat’s SDG indicator set were used. The publication enables comparison of progress towards the SDGs between the countries and against the EU. It also makes it possible to guess trends for indicator values before their presentation on the chart.</p>
+  <p>A new digital publication by Eurostat on the 2030 Agenda’s goals reaches out to a wide range of readers. Its intuitive nature and attractive layout encourage each and everyone to take a glance at the SDGs from the statistical point of view. <em>SDGs & me</em> presents progress towards 17 goals in the EU and its member countries by means of interactive visualizations. In order to assess progress in achieving the global goals, metrics from Eurostat’s SDG indicator set were used. The publication enables comparison of progress towards the SDGs between the countries and against the EU. It also makes it possible to guess trends for indicator values before their presentation on the chart.</p>
 
-  <p><b>Archiwum:</b></p>
+  <p><b>Archive:</b></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs_2018/">SDGs & me – 2018 edition</a></p>
 
 
