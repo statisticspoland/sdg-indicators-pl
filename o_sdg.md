@@ -123,11 +123,11 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2019/"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>SDGs & me</b></p>
 
-  <p>Nowa cyfrowa publikacja Eurostatu nt. celów Agendy 2030 adresowana jest do szerokiego grona odbiorców. Jej intuicyjny charakter i atrakcyjna forma zachęcą każdego do spojrzenia na SDGs z punktu widzenia statystyki. SDGs & me prezentuje postępy całej UE oraz poszczególnych krajów członkowskich we wdrażaniu 17 celów za pomocą interaktywnych wizualizacji. Do oceny realizacji celów globalnych wykorzystano wybrane wskaźniki SDG z zestawu opracowanego przez Eurostat dla Unii Europejskiej. Publikacja umożliwia porównywanie postępów w osiąganiu SDGs między krajami oraz na tle UE. Pozwala także na prognozowanie trendów dla wybranych mierników przed ich zaprezentowaniem na wykresie.</p>
+  <p>Nowa cyfrowa publikacja Eurostatu nt. celów Agendy 2030 adresowana jest do szerokiego grona odbiorców. Jej intuicyjny charakter i atrakcyjna forma zachęcą każdego do spojrzenia na SDGs z punktu widzenia statystyki. <em>SDGs & me</em> prezentuje postępy całej UE oraz poszczególnych krajów członkowskich we wdrażaniu 17 celów za pomocą interaktywnych wizualizacji. Do oceny realizacji celów globalnych wykorzystano wybrane wskaźniki SDG z zestawu opracowanego przez Eurostat dla Unii Europejskiej. Publikacja umożliwia porównywanie postępów w osiąganiu SDGs między krajami oraz na tle UE. Pozwala także na prognozowanie trendów dla wybranych mierników przed ich zaprezentowaniem na wykresie.</p>
 
   <p><b>Archiwum:</b></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/">SDGs & me – Edycja 2018 </a></p>
