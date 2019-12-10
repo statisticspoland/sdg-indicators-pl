@@ -376,4 +376,55 @@ localStorage.removeItem("nat-toolkit-accepted");
 });
 });
 
+
+(function() {
+	var BusinessToolkit = function( text) {
+		this.text = text;
+		this.element = null;
+		this.init();
+	};
+	BusinessToolkit.prototype = {
+		init: function() {
+			this.create();
+			this.load();
+		},
+		load: function() {
+      if( localStorage.getItem( "nat-toolkit-accepted" ) === null ) {
+          this._show();
+        }
+		},
+    create: function() {
+      var element = document.createElement( "div" );
+      this.element = element;
+      element.id = "national-toolkit";
+      var jez='{{page.lang}}'
+      if (jez=='pl'){
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='{{ site.baseurl }}{{ lang }}/business/' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
+      }else{
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='{{ site.baseurl }}{{ lang }}/business/' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
+      }
+      var headers = document.querySelector(".site-navbar");
+      headers.after(element);
+
+    },
+		_show: function() {
+      var self = this;
+			self.element.style.display = "block";
+			self.element.style.paddingBottom=".5rem";
+			self.element.style.paddingTop=".5rem";
+			setTimeout(function() {
+				self.element.className = "visible";
+			}, 500);
+    }
+	};
+
+	document.addEventListener( "DOMContentLoaded", function() {
+    var jez='{{page.lang}}'
+    if (jez=='pl'){
+      var toolkit = new BusinessToolkit( "Pierwszy zestaw wskaźników SDG dla polskiego biznesu!");
+    }else{
+      var toolkit = new BusinessToolkit( "The first set of SDG indicators for Polish business!");
+    }
+	});
+})();
 </script>
