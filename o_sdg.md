@@ -204,7 +204,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <p>To nie wszystko! Chcesz przekonać się, że każdy człowiek na Ziemi – nawet najbardziej leniwy może działać na rzecz SDGs? Poznaj <a href="https://www.un.org/sustainabledevelopment/takeaction/" target="_blank">poradnik</a> ONZ, który możesz zastosować w domu, szkole lub pracy.</p>
 
-  <p>Powodzenia!!!</p>
+  <p>Powodzenia!</p>
 
   </div>
 
