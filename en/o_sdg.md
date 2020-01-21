@@ -128,6 +128,16 @@ Poland presented its achievements at HLPF for the first time.
 
   <hr>
   <div class="image-wrapper">
+      <a target="_blank" href="https://sdgstorybook.com/foreword"><img src="{{ site.baseurl }}/assets/img/publikacje/3a_fairy_tales.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Fairy Tales for a Fairer World</b></p>
+
+  <p>Thanks to its use of well-known fairy tale motifs from different parts of the world, this book appeals most to little readers. Its individual tales refer to current challenges and 17 SDGs, featuring both heroes and villains, e.g. Little Red Riding Hood or Baba Yaga. <i>Fairy tales</i>… have been created by the Perception Change Project under the Director General of the United Nations Office in Geneva. In line with the intention of its authors, the book is an invitation to bridging the generation gap in a discussion on our planet.</p>
+  <br>
+
+
+  <hr>
+  <div class="image-wrapper">
       <a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>SDGs & me</b></p>
