@@ -127,7 +127,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   </div>
   <p><b>Baśnie i dziwy, by świat był sprawiedliwy</b></p>
 
-  <p>Opracowanie, dzięki wykorzystaniu motywów ze znanych bajek i baśni z rożnych stron świata, jest adresowane do najmłodszych czytelników. Poszczególne opowieści nawiązują do wyzwań współczesności i 17 celów zrównoważonego rozwoju, a ich bohaterami są postaci o dobrych i złych charakterach, np. Czerwony Kapturek i Baba Jaga. „Baśnie i dziwy…” powstały w ramach projektu „Zmiana Percepcji” z inicjatywy Dyrektora Generalnego ONZ w Genewie. Książka, zgodnie z intencją jej twórców, stanowi zaproszenie do budowania pokoleniowych mostów w dyskusji o naszej planecie.</p>
+  <p>Opracowanie, dzięki wykorzystaniu motywów ze znanych bajek i baśni z różnych stron świata, jest adresowane do najmłodszych czytelników. Poszczególne opowieści nawiązują do wyzwań współczesności i 17 celów zrównoważonego rozwoju, a ich bohaterami są postaci o dobrych i złych charakterach, np. Czerwony Kapturek i Baba Jaga. „Baśnie i dziwy…” powstały w ramach projektu „Zmiana Percepcji” z inicjatywy Dyrektora Generalnego ONZ w Genewie. Książka, zgodnie z intencją jej twórców, stanowi zaproszenie do budowania pokoleniowych mostów w dyskusji o naszej planecie.</p>
   <br>
 
 
