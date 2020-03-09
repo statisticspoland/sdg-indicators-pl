@@ -1,0 +1,34 @@
+---
+layout: page
+---
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/api.css?v={{ cache_bust }}">
+  <script src="{{ site.baseurl }}/assets/js/api.js"></script>
+
+  <section id='content'>
+    {% if page.url contains 'en/' %}
+      {% for post in site.posts %}
+        {% if post.lang == 'en' %}
+          <article class='{{ post.type }}'>
+            <a name='{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
+            <section class='body'>
+              {{ post.content }}
+            </section>
+          </article>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% for post in site.posts %}
+        {% if post.lang == 'pl' %}
+          <article class='{{ post.type }}'>
+            <a name='{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
+            <section class='body'>
+              {{ post.content }}
+            </section>
+          </article>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </section>
+
+  <script>require('boot');</script>
