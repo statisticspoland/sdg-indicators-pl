@@ -9713,7 +9713,7 @@ show.click(function () {
 $('#content').prepend(show);
 
 
-var hide = $('<a class=\'control hide\'>'+h+'</a>');
+var hide = $('<a class=\'control hide\'>'+h+'style="display: block !important;"</a>');
 hide.click(function () {
   $('#content article.active > a').trigger('click');
 });
