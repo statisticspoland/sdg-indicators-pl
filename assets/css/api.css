@@ -518,7 +518,7 @@ code {
   font-size: 12px;
   margin-left: 5px;
   float: left;
-  background-color: #119bdf;
+  background-color: #2c387c;
   color: white;
   padding: 0.8rem;
   margin-bottom: 15px;
@@ -532,7 +532,7 @@ code {
 }
 
 #content article > a {
-  background: #333;
+  background: #ededed;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -541,12 +541,12 @@ code {
   padding: 15px;
 }
 #content article > a:hover {
-  background: #222;
+  background: #999999;
   text-decoration: none;
 }
 
 #content a h2 {
-  color: #fff;
+  color: #191919;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
@@ -582,17 +582,12 @@ code {
 
 /* GET */
 #content article.GET a h2 code {
-  color: #119bdf;
-  background-color: #333333;
-}
-
-#content article.GET a h2 code:hover{
-  background-color: #222;
+  color: #2c387c;
 }
 
 
 #content article.GET a h2 code b {
-  background: #119bdf;
+  background: #2c387c;
 }
 
 /* POST */
