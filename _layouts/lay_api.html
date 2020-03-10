@@ -5,7 +5,14 @@ layout: page
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/api.css?v={{ cache_bust }}">
   <script src="{{ site.baseurl }}/assets/js/api.js"></script>
 
+
+  <h2 style="margin-top: 30px;">Interfejs programistyczny aplikacji (API)</h2>
+  <p>Interfejs API portalu SDG umożliwia dostęp do danych dotyczących Wskaźników Zrównoważonego Rozwoju, wytwarzanych w ramach Agendy na rzecz Zrównoważonego Rozwoju 2030. Poniższa lista opisuje usługi sieciowe udostępnione w ramach interfejsu API.</p>
+  <br/>
+  <p>Ze względów bezpieczeństwa na interfejs zostały nałożone limity zapytań. Użytkownicy anonimowi mogą wykonać do 60 zapytań w ciągu godziny. Dla użytkowników zarejestrowanych na platformie Github limit wynosi 5000 zapytań w ciągu godziny. </p>
+
   <section id='content'>
+
     {% if page.url contains 'en/' %}
       {% for post in site.posts %}
         {% if post.lang == 'en' %}
