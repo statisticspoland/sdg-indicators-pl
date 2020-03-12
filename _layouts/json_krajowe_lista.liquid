@@ -1,0 +1,25 @@
+{%- assign which_number = page.all |  split: "," -%}
+{
+  "krajowe":[
+      {% for which_num in which_number %}
+      {
+          {% assign number = which_num | prepend: "/" | append: "-"%}
+          "{{ which_num }}":[
+              {%- for data in site.metadane_krajowe -%}
+                {%- if data.path contains number -%}
+                  {%- assign slug = data.path | remove: "_metadane_krajowe/" | remove: ".md" -%}
+                  {%- assign t1 = site.metadane_krajowe | where:"translation_id", slug | first -%}
+                  {
+                    "{{ slug }}": [
+                      {
+                            "nazwa" : "{{t1['pl_nazwa_wskaznika']}}"
+                      }
+                    ]
+                  }{%- if data.next.path contains number -%},{%- endif -%}
+                {% endif %}
+              {%- endfor -%}
+        ]
+      }{% if forloop.last == false -%},{%- endif %}
+      {% endfor %}
+  ]
+}

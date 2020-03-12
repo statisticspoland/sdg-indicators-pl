@@ -1,0 +1,99 @@
+{%- assign which_number = page.all |  split: "," -%}
+{
+  "national":[
+      {% for which_num in which_number %}
+      {
+          {% assign number = which_num | prepend: "/" | append: "-"%}
+          "{{ which_num }}":[
+              {%- for data in site.metadane_krajowe -%}
+                {%- if data.path contains number -%}
+                  {%- assign slug = data.path | remove: "_metadane_krajowe/" | remove: ".md" -%}
+
+                  {%- assign dataset_name = 'indicator_' | append: slug -%}
+
+                  {%- assign t1 = site.metadane_krajowe | where:"translation_id", slug | first -%}
+
+                  {%- assign nazwa = slug | prepend : '/indicators/' | append: '.md' -%}
+                  {%- capture my_include %}{% include_relative {{ nazwa }} -%}{%- endcapture -%}
+                  {%- assign a= my_include | split : 'zmienne:' -%}
+                  {%- assign b= a[1] | split : 'indicator_variable_1:' -%}
+                  {%- assign zmienne = b[0] | split: ";" -%}
+
+
+                  {%- assign c= my_include | split : 'indicator_variable_1:' -%}
+                  {%- assign d= c[1] | split : 'kategorie:' -%}
+                  {%- assign zmienne2 = d[0] | split: ";" -%}
+
+                  {% assign kategorie = d[1] | remove : '---' | split: "," %}
+
+                  {%- assign zmienna_poj = 'total' -%}
+                  {%- assign zmienna_poj2 = 'ogółem' -%}
+
+                  {
+                    "{{ slug }}": [
+                      {
+                        "metadata": [
+                          {% assign managed_fields = site.prose.metadata._metadane_krajowe %}
+                          {
+                                {%- for managed_field in managed_fields -%}
+                                      {%- if  managed_field.name contains "en_" -%}
+                                        {% if managed_field.name != 'en_graph_title' and managed_field.name != 'en_title' and managed_field.name != 'en_jednostka' %}
+                                          "{{ managed_field.field.api }}": "{{ t1[managed_field.name] | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}"{% unless managed_field.field.label contains 'Notes' %},{% endunless %}
+                                        {% endif %}
+                                      {%- endif -%}
+                                {%- endfor -%}
+                          }
+                        ],
+                        "data": [
+                          {
+                              {%- unless zmienne[0] contains 'null' -%}
+                                  {%- if kategorie[0] contains 'null' -%}
+                                        "{{ zmienna_poj }}": [
+                                            {
+                                            {%- for data in site.data.krajowe[dataset_name] -%}
+                                              {% if data["year"] != 'year' %}
+                                                "{{ data["year"] }}" :   "{{ data[zmienna_poj2] }}"
+                                                {%- if forloop.last == false -%},{%- endif -%}
+                                              {% endif %}
+                                            {% endfor %}
+                                            }
+                                        ]
+                                  {% else %}
+                                    {% for poj_kategorie in kategorie %}
+                                            "{{ poj_kategorie | strip }}": [
+                                                {
+                                                {%- assign gr_zmienne = zmienne[forloop.index0] | split: "," -%}
+                                                {%- assign gr_zmienne2 = zmienne2[forloop.index0] | split: "," -%}
+                                                  {%- for poj_zmienne in gr_zmienne -%}
+                                                    {%- assign poj_zmienne2 = gr_zmienne2[forloop.index0] | strip -%}
+                                                    "{{ poj_zmienne | strip }}": [
+                                                        {
+                                                        {%- for data in site.data.krajowe[dataset_name] -%}
+                                                        {%- assign poj_z =poj_zmienne2 | strip-%}
+                                                          {% if data["year"] != 'year' %}
+                                                            "{{ data["year"] }}" : "{{ data[poj_z] }}"
+                                                            {%- if forloop.last == false -%},{%- endif -%}
+                                                          {% endif %}
+                                                        {% endfor %}
+                                                        }
+                                                    ]{%- if forloop.last == false -%},{%- endif -%}
+                                                  {% endfor %}
+                                                }
+                                            ]
+                                            {%- if forloop.last == false -%},{%- endif -%}
+                                    {% endfor %}
+                                  {% endif %}
+                              {% endunless %}
+                          }
+                        ]
+                      }
+                    ]
+                  }{%- if data.next.path contains number -%},{%- endif -%}
+                {% endif %}
+              {%- endfor -%}
+        ]
+
+      }{% if forloop.last == false -%},{%- endif %}
+      {% endfor %}
+  ]
+}

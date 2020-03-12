@@ -1,0 +1,90 @@
+{%- capture api_output -%}
+{%- assign number = page.sdg_goal | prepend: "/" | append: "-"-%}
+{
+  "{{ page.sdg_goal }}":[
+
+{%- for data in site.metadane_krajowe -%}
+  {%- if data.path contains number -%}
+
+
+  {% endif %}
+{%- endfor -%}
+{%- for data in site.metadane_krajowe -%}
+  {%- if data.path contains number -%}
+    {%- assign slug = data.path | remove: "_metadane_krajowe/" | remove: ".md" -%}
+
+    {%- assign dataset_name = 'indicator_' | append: slug -%}
+
+    {%- assign t1 = site.metadane_krajowe | where:"translation_id", slug | first -%}
+
+    {%- assign nazwa = slug | prepend : '/indicators/' | append: '.md' -%}
+    {%- capture my_include %}{% include_relative {{ nazwa }} -%}{%- endcapture -%}
+    {%- assign a= my_include | split : 'zmienne:' -%}
+    {%- assign b= a[1] | split : 'kategorie:' -%}
+    {%- assign zmienne = b[0] | split: ";" -%}
+    {% assign kategorie = b[1] | remove : '---' | split: "," %}
+    {%- assign zmienna_poj = 'ogółem' -%}
+
+    {
+      "{{ slug }}": [
+        {
+          "metadane": [
+            {% assign managed_fields = site.prose.metadata._metadane_krajowe %}
+            {
+                  {%- for managed_field in managed_fields -%}
+                        {%- if  managed_field.name contains "pl_" -%}
+                          {% if managed_field.name != 'pl_graph_title' and managed_field.name != 'pl_title' and managed_field.name != 'pl_jednostka' %}
+                            "{{ managed_field.field.api }}": "{{ t1[managed_field.name] | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}"{% unless managed_field.field.label contains 'Uwagi' %},{% endunless %}
+                          {% endif %}
+                        {%- endif -%}
+                  {%- endfor -%}
+            }
+          ],
+          "dane": [
+            {
+                {%- unless zmienne[0] contains 'null' -%}
+                    {%- if kategorie[0] contains 'null' -%}
+                          "{{ zmienna_poj }}": [
+                              {
+                              {%- for data in site.data.krajowe[dataset_name] -%}
+                                {% if data["year"] != 'year' %}
+                                  "{{ data["year"] }}" :   "{{ data[zmienna_poj] }}"
+                                  {%- if forloop.last == false -%},{%- endif -%}
+                                {% endif %}
+                              {% endfor %}
+                              }
+                          ]
+                    {% else %}
+                      {% for poj_kategorie in kategorie %}
+                              "{{ poj_kategorie | strip }}": [
+                                  {
+                                  {%- assign gr_zmienne = zmienne[forloop.index0] | split: "," -%}
+                                    {%- for poj_zmienne in gr_zmienne -%}
+                                      {%- assign poj_z= poj_zmienne | strip -%}
+                                      "{{ poj_z }}": [
+                                          {
+                                          {%- for data in site.data.krajowe[dataset_name] -%}
+                                            {% if data["year"] != 'year' %}
+                                              "{{ data["year"] }}" : "{{ data[poj_z] }}"
+                                              {%- if forloop.last == false -%},{%- endif -%}
+                                            {% endif %}
+                                          {% endfor %}
+                                          }
+                                      ]{%- if forloop.last == false -%},{%- endif -%}
+                                    {% endfor %}
+                                  }
+                              ]
+                              {%- if forloop.last == false -%},{%- endif -%}
+                      {% endfor %}
+                    {% endif %}
+                {% endunless %}
+            }
+          ]
+        }
+      ]
+    }{%- if data.next.path contains number -%},{%- endif -%}
+  {% endif %}
+{%- endfor -%}
+  ]
+}
+{%- endcapture -%}{{ api_output }}

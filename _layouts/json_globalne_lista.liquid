@@ -1,0 +1,25 @@
+{%- assign which_number = page.all |  split: "," -%}
+{
+  "globalne":[
+      {% for which_num in which_number %}
+      {
+          {% assign number = which_num | prepend: "/" | append: "-"%}
+          "{{ which_num }}":[
+              {%- for data in site.metadane_globalne -%}
+                {%- if data.path contains number -%}
+                  {%- assign slug = data.path | remove: "_metadane_globalne/" | remove: ".md" -%}
+                  {%- assign t1 = site.metadane_globalne | where:"translation_id", slug | first -%}
+                  {
+                    "{{ slug }}": [
+                      {
+                            "nazwa" : "{{t1['pl_nazwa_wskaznika']}}"
+                      }
+                    ]
+                  }{%- if data.next.path contains number -%},{%- endif -%}{%- if data.path=='_metadane_globalne/12-4-2-b.md' -%},{%- endif -%}
+                {% endif %}
+              {%- endfor -%}
+        ]
+      }{% if forloop.last == false -%},{%- endif %}
+      {% endfor %}
+  ]
+}

@@ -1,0 +1,67 @@
+{%- capture api_output -%}
+
+{%- assign slug = page.indicator | replace: '.', '-' | append: '-0' -%}
+{%- assign dataset_name = 'indicator_' | append: slug -%}
+{%- assign zmienne = page.zmienne | split: ";" -%}
+{%- assign zmienna_poj = 'ogółem' -%}
+{%- assign t1 = site.metadane_krajowe | where:"translation_id", slug | first -%}
+{%- assign kategorie = page.kategorie | split: "," -%}
+{% assign content = kategorie | strip_newlines %}
+
+{
+  "{{ slug }}": [
+    {
+      "metadane": [
+        {% assign managed_fields = site.prose.metadata._metadane_krajowe %}
+        {
+              {%- for managed_field in managed_fields -%}
+                    {%- if  managed_field.name contains "pl_" -%}
+                      {% if managed_field.name != 'pl_graph_title' and managed_field.name != 'pl_title' and managed_field.name != 'pl_jednostka' %}
+                        "{{ managed_field.field.api }}": "{{ t1[managed_field.name] | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}"{% unless managed_field.field.label contains 'Uwagi' %},{% endunless %}
+                      {% endif %}
+                    {%- endif -%}
+              {%- endfor -%}
+        }
+      ],
+      "dane": [
+        {
+
+          {%- if content=="[]" -%}
+                    "{{ zmienna_poj }}": [
+                        {
+                        {%- for data in site.data.krajowe[dataset_name] -%}
+                          {% if data["year"] != 'year' %}
+                            "{{ data["year"] }}" :   "{{ data[zmienna_poj] }}"
+                            {%- if forloop.last == false -%},{%- endif -%}
+                          {% endif %}
+                        {% endfor %}
+                        }
+                    ]{%- if forloop.last == false -%},{%- endif -%}
+              {%- else -%}
+                {% for poj_kategorie in kategorie %}
+                      "{{ poj_kategorie | strip }}": [
+                          {
+                          {%- assign gr_zmienne = zmienne[forloop.index0] | split: "," -%}
+                            {% for poj_zmienne in gr_zmienne %}
+                              "{{ poj_zmienne | strip }}": [
+                                  {
+                                  {%- for data in site.data.krajowe[dataset_name] -%}
+                                    {% if data["year"] != 'year' %}
+                                      "{{ data["year"] }}" :   "{{ data[poj_zmienne] }}"
+                                      {%- if forloop.last == false -%},{%- endif -%}
+                                    {% endif %}
+                                  {% endfor %}
+                                  }
+                              ]{%- if forloop.last == false -%},{%- endif -%}
+                            {% endfor %}
+                          }
+                      ]
+                      {%- if forloop.last == false -%},{%- endif -%}
+              {% endfor %}
+            {%- endif -%}
+        }
+      ]
+    }
+  ]
+}
+{%- endcapture -%}{{ api_output }}

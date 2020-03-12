@@ -1,0 +1,71 @@
+{%- capture api_output -%}
+
+{%- assign slug = page.indicator | replace: '.', '-' -%}
+{%- assign dataset_name = 'indicator_' | append: slug -%}
+{%- assign zmienne = page.zmienne | split: ";" -%}
+{%- assign zmienna_poj = 'total' -%}
+{%- assign zmienna_poj2 = 'ogółem' -%}
+{%- assign zmienne2 = page.indicator_variable_1  | split: ";" -%}
+{%- assign t1 = site.metadane_globalne | where:"translation_id", slug | first -%}
+{%- assign kategorie = page.kategorie | split: "," -%}
+{% assign content = kategorie | strip_newlines %}
+
+{
+  "{{ slug }}": [
+    {
+      "metadata": [
+        {% assign managed_fields = site.prose.metadata._metadane_globalne %}
+        {
+              {%- for managed_field in managed_fields -%}
+                    {%- if  managed_field.name contains "en_" -%}
+                      {% if managed_field.name != 'en_graph_title' and managed_field.name != 'en_title' and managed_field.name != 'en_jednostka' %}
+                        "{{ managed_field.field.api }}": "{{ t1[managed_field.name] | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}"{% unless managed_field.field.label contains 'Notes' %},{% endunless %}
+                      {% endif %}
+                    {%- endif -%}
+              {%- endfor -%}
+        }
+      ],
+      "data": [
+        {
+          {%- if content=="[]" -%}
+                  "{{ zmienna_poj }}": [
+                      {
+                      {%- for data in site.data.globalne[dataset_name] -%}
+                        {% if data["year"] != 'year' %}
+                          "{{ data["year"] }}" :   "{{ data[zmienna_poj2] }}"
+                          {%- if forloop.last == false -%},{%- endif -%}
+                        {% endif %}
+                      {% endfor %}
+                      }
+                  ]
+          {%- else -%}
+          {% for poj_kategorie in kategorie %}
+                "{{ poj_kategorie | strip }}": [
+                    {
+                    {%- assign gr_zmienne = zmienne[forloop.index0] | split: "," -%}
+                    {%- assign gr_zmienne2 = zmienne2[forloop.index0] | split: "," -%}
+                      {% for poj_zmienne in gr_zmienne %}
+                        {%- assign poj_zmienne2 = gr_zmienne2[forloop.index0] | strip -%}
+                        "{{ poj_zmienne | strip }}": [
+                            {
+                            {%- for data in site.data.globalne[dataset_name] -%}
+                            {%- assign poj_z =poj_zmienne2 | strip-%}
+                              {% if data["year"] != 'year' %}
+                                "{{ data["year"] }}" :   "{{ data[poj_z] }}"
+                                {%- if forloop.last == false -%},{%- endif -%}
+                              {% endif %}
+                            {% endfor %}
+                            }
+                        ]{%- if forloop.last == false -%},{%- endif -%}
+                      {% endfor %}
+                    }
+                ]
+                {%- if forloop.last == false -%},{%- endif -%}
+        {% endfor %}
+          {%- endif -%}
+        }
+      ]
+    }
+  ]
+}
+{%- endcapture -%}{{ api_output }}
