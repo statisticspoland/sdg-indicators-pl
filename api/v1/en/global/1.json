@@ -1,0 +1,1059 @@
+{
+  "1":[{
+      "1-1-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.1.1 At -risk of poverty rate according to international poverty line",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.1 By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day",
+                          
+                            "definition": "Precentage of persons in households whose daily income is below of international poverty threshold (i.e. $1.9 daily).",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Definition of indicator: The percentage of persons with disposable income lower than international poverty threshold, which is defined as daily disposable income in the amount of $ 1.9. Aiming at elimination of differences in measuring poverty of people living in different countries purchasing power parities (PPP) were used. PPPs are types of currency exchange rates that are used to convert economic indicators expressed in local currencies to a common conventional currency. As the socio-economic realities evolve, the international poverty line has to be periodically updated. The current threshold was set in October 2015. Prior to that, in the 2008 update the World Bank set the international poverty line at $1.25.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "0.2",
+                              
+                                  "2011" :   "0.3",
+                              
+                                  "2012" :   "0.3",
+                              
+                                  "2013" :   "0.2",
+                              
+                                  "2014" :   "0.4",
+                              
+                                  "2015" :   "0.4",
+                              
+                                  "2016" :   "0.5",
+                              
+                                  "2017" :   "0.3",
+                              
+                                  "2018" :   "0.3"
+                              
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-2-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.2.1 At-risk of poverty rate after social transfers",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.2 By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",
+                          
+                            "definition": "Percentage of persons with an equivalised disposable income (after social transfers) is below the at-risk-of-poverty threshold set at 60% of the national median of equivalised disposable income.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total, sex, age",
+                          
+                            "methodology": "The indicator is calculated on the basis of information obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) The subject of the EU-SILC are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview techniqueusing 2 questionnaires one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of the European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Central Statistical Office of Poland implemented EU-SILC survey in 2005. The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Equivalent disposable income in the survey is defined as a sum of the net (after deduction of income tax prepayment, tax on income from property, social and health insurance contributions) annual monetary incomes gained by all the household members reduced by: property tax, inter-household cash transfers paid and balance of offsetting settlements with the Tax Office. For the calculation of income statistics the modified OECD equivalence scale was applied which is calculated as follows: - 1 - for the first adult household member, - 0.5 - for the second and each subsequent household member aged 14 and over, - 0.3 - for every child in the household under 14. And thus, for instance, the extreme and relative poverty threshold for a 4-person household consisting of two adult persons and two children is 2,1 times as high as that for a 1-person household.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "location": [
+                                  {"total": [
+                                          {
+                                          
+                                              "2010" : "17.6",
+                                          
+                                              "2011" : "17.7",
+                                          
+                                              "2012" : "17.1",
+                                          
+                                              "2013" : "17.3",
+                                          
+                                              "2014" : "17.0",
+                                          
+                                              "2015" : "17.6",
+                                          
+                                              "2016" : "17.3",
+                                          
+                                              "2017" : "15.0",
+                                          
+                                              "2018" : "14.8"
+                                          
+                                          }
+                                      ],"urban area": [
+                                          {
+                                          
+                                              "2010" : "12.6",
+                                          
+                                              "2011" : "12.7",
+                                          
+                                              "2012" : "12.3",
+                                          
+                                              "2013" : "12.1",
+                                          
+                                              "2014" : "11.7",
+                                          
+                                              "2015" : "12.5",
+                                          
+                                              "2016" : "12.8",
+                                          
+                                              "2017" : "10.7",
+                                          
+                                              "2018" : "10.8"
+                                          
+                                          }
+                                      ],"rural area": [
+                                          {
+                                          
+                                              "2010" : "25.3",
+                                          
+                                              "2011" : "25.2",
+                                          
+                                              "2012" : "24.3",
+                                          
+                                              "2013" : "24.9",
+                                          
+                                              "2014" : "24.7",
+                                          
+                                              "2015" : "25.2",
+                                          
+                                              "2016" : "24.0",
+                                          
+                                              "2017" : "21.5",
+                                          
+                                              "2018" : "20.8"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ],
+                              "sex": [
+                                  {"males": [
+                                          {
+                                          
+                                              "2010" : "17.4",
+                                          
+                                              "2011" : "17.8",
+                                          
+                                              "2012" : "17.1",
+                                          
+                                              "2013" : "17.3",
+                                          
+                                              "2014" : "17.2",
+                                          
+                                              "2015" : "18.1",
+                                          
+                                              "2016" : "17.1",
+                                          
+                                              "2017" : "15.1",
+                                          
+                                              "2018" : "14.6"
+                                          
+                                          }
+                                      ],"females": [
+                                          {
+                                          
+                                              "2010" : "17.7",
+                                          
+                                              "2011" : "17.6",
+                                          
+                                              "2012" : "17.1",
+                                          
+                                              "2013" : "17.3",
+                                          
+                                              "2014" : "16.8",
+                                          
+                                              "2015" : "17.2",
+                                          
+                                              "2016" : "17.4",
+                                          
+                                              "2017" : "14.9",
+                                          
+                                              "2018" : "15.0"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ],
+                              "age": [
+                                  {"under 6 years": [
+                                          {
+                                          
+                                              "2010" : "20.5",
+                                          
+                                              "2011" : "19.7",
+                                          
+                                              "2012" : "18.6",
+                                          
+                                              "2013" : "21.7",
+                                          
+                                              "2014" : "19.4",
+                                          
+                                              "2015" : "19.7",
+                                          
+                                              "2016" : "17.6",
+                                          
+                                              "2017" : "11.8",
+                                          
+                                              "2018" : "10.7"
+                                          
+                                          }
+                                      ],"under 18 years": [
+                                          {
+                                          
+                                              "2010" : "22.5",
+                                          
+                                              "2011" : "22.0",
+                                          
+                                              "2012" : "21.5",
+                                          
+                                              "2013" : "23.2",
+                                          
+                                              "2014" : "22.3",
+                                          
+                                              "2015" : "22.4",
+                                          
+                                              "2016" : "21.1",
+                                          
+                                              "2017" : "14.0",
+                                          
+                                              "2018" : "13.0"
+                                          
+                                          }
+                                      ],"18-24 years": [
+                                          {
+                                          
+                                              "2010" : "20.9",
+                                          
+                                              "2011" : "20.7",
+                                          
+                                              "2012" : "21.8",
+                                          
+                                              "2013" : "21.5",
+                                          
+                                              "2014" : "22.0",
+                                          
+                                              "2015" : "22.6",
+                                          
+                                              "2016" : "23.5",
+                                          
+                                              "2017" : "20.9",
+                                          
+                                              "2018" : "21.1"
+                                          
+                                          }
+                                      ],"18-64 years": [
+                                          {
+                                          
+                                              "2010" : "16.9",
+                                          
+                                              "2011" : "17.1",
+                                          
+                                              "2012" : "16.5",
+                                          
+                                              "2013" : "16.7",
+                                          
+                                              "2014" : "16.7",
+                                          
+                                              "2015" : "17.6",
+                                          
+                                              "2016" : "17.3",
+                                          
+                                              "2017" : "15.6",
+                                          
+                                              "2018" : "15.2"
+                                          
+                                          }
+                                      ],"60 years and more": [
+                                          {
+                                          
+                                              "2010" : "14.0",
+                                          
+                                              "2011" : "14.5",
+                                          
+                                              "2012" : "14.0",
+                                          
+                                              "2013" : "12.3",
+                                          
+                                              "2014" : "12.3",
+                                          
+                                              "2015" : "13.0",
+                                          
+                                              "2016" : "14.0",
+                                          
+                                              "2017" : "15.0",
+                                          
+                                              "2018" : "16.2"
+                                          
+                                          }
+                                      ],"65 years and more": [
+                                          {
+                                          
+                                              "2010" : "14.2",
+                                          
+                                              "2011" : "14.7",
+                                          
+                                              "2012" : "14.0",
+                                          
+                                              "2013" : "12.3",
+                                          
+                                              "2014" : "11.7",
+                                          
+                                              "2015" : "12.1",
+                                          
+                                              "2016" : "12.8",
+                                          
+                                              "2017" : "13.8",
+                                          
+                                              "2018" : "15.5"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-2-2": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.2.2 At-risk of living conditions poverty rate",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.2 By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",
+                          
+                            "definition": "The percentage of households, in which at least 10 out of 30 symptoms of poor living conditions were observed. Among poor living conditions are considered, among others, inability to meet various consumer needs, quality of housing and provision of durable goods.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator is calculated on basis of the Social Cohesion Survey. The purpose of this survey is to gather information enabling to make a comprehensive assessment of the quality of life, understood as a multidimensional category (taking into account economic and social aspects) and assessed both by objective and subjective indicators. Due to the integration of individual data, it is possible, among others to identify in which groups of society occurs the accumulation of favorable (or unfavorable) aspects of quality of life, what factors condition those situations, and also what relationships between individual dimensions of quality of life. Wide range of collected information allow, among others to assess comprehensively the differentiation in level and lifestyle and multidimensional analysis of poverty, social exclusion, social capital and subjective well-being. The survey unit is the household and drawn one person in the household, aged at least 16 years. Household, is formed by the persons who may be related or unrelated , living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Social Cohesion Survey is carried out periodically. The first study was conducted in 2011, the next was carried in 2015. Within the living conditions poverty indicator were taken into account the following 30 symptoms of poor living conditions:  lack of money for at least one week vacation once a year, lack of money for entertainment (going to the cinema, theater, restaurants, concert, etc.) inability to maintain the proper temperature in the dwelling (sufficiently warm in winter, insufficiently cool in summer) too small flat or not each adult has a separate room (or a permanent separate place to rest in a flat, study and work) lack of money to replace worn-out furniture, lack of money for visits to specialists or a dentist, apartment located: in a noisy environment, in the area of contaminated environment, apartment dark, damp, lack of installed heating or the occurrence of fernace on solid fuel (coal, wood, sawdust) lack of money to buy books or newspapers, hosehold can not afford to invite a family or friends for lunch, dinner or other refreshments, once a month bad sanitary conditions (no running water, including hot, bathrooms, toilets) lack of money to buy pharmaceuticals, no microwave oven or multifunction food processor, the household can not afford to give his closest gifts at least once a year, lack of car for financial reasons, lack of money to buy shoes, clothes, bedding, lack of access to the Internet for financial reasons, lack of computer for financial reasons, lack of money for food (abandon eating meat, fresh fruits, vegetables) poor condition of the electrical system, or lack thereof, lack of CD, DVD, MP3, cable or satellite for financial reasons, bad housing conditions, bad equipment household durable goods, lack of radio or television for financial reasons, lack of washing machine for financial reasons, lack of a vacuum cleaner for financial reasons, the need to resign due to lack of money from one of the main meals (breakfast, lunch or dinner) lack of phone (landline, mobile) for financial reasons, lack of refrigerator or chiller for financial reasons. ",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Data every few years  since 2011",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "13.5",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "8.5",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   "4.8"
+                              
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-3-1-a": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.3.1.a Share of unemployed persons receiving unemployment benefits in total number of unemployed persons",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.3 Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable",
+                          
+                            "definition": "Number of unemployed persons receiving unemployment benefits related to the total number of unemployed persons multiplied by 100.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator basis is definition of unemployed person according to domestic legislation. It is included in Law dated 20.04.2004 on Promoting Employment and Labour Market Institutions (uniform text Journal of Laws 2016 item 645, with later amendments). Accordnig to this Law, unemployed person is understood as a person who is at least 18 years old and has not reached the retirement age, is not employed and not performing any other kind of paid work who is capable of work and ready to take full-time employment obligatory for a given job or service (or in case he/she is a disabled person - capable and ready to take work comprising no less than a half of working time), not attending a school with the exception of schools for adults (or taking extra curriculum exam within the scope of this school programme) or tertiary schools in part-time programme, registered in the powiat labour office corresponding to the person's permanent or temporary place of residence, and seeking employment or any other income-generating work, with additional provisions concerning the sources of income, included in the mentioned law. Unemployment benefit means a benefit granted to the unemployed persons registered in labour offices. Since 1st June 2004, unemployment benefits have been designated to persons authorized on the basis of the Law dated 20.04.2004 on Promoting Employment and Labour Market Institutions (in the chapter 15 Allowances for unemployed persons), uniform text Journal of Laws 2016 item 645, with later amendments. By September 30th of each year, the Minister competent for labour afairs, on the basis of the announcement of the President of the Central Statistical Office on the average unemployment rate in powiats according to the state of 30 June in given year, announces the amounts and the period of benefits in the Journal Law of the Republic of Poland 'Monitor Polski'. Dependent on the relation of unemployment rate in given powiat to average unemployment rate of the country - this period can last 180 or 365 days (Art. 73, Par.1 and 2).",
+                          
+                            "source": "Cental Statistical Office of Poland",
+                          
+                            "availability": "Annual data  since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "16.7",
+                              
+                                  "2011" :   "16.5",
+                              
+                                  "2012" :   "16.8",
+                              
+                                  "2013" :   "13.8",
+                              
+                                  "2014" :   "13.3",
+                              
+                                  "2015" :   "13.9",
+                              
+                                  "2016" :   "14.0",
+                              
+                                  "2017" :   "14.8",
+                              
+                                  "2018" :   "15.8"
+                              
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-3-1-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.3.1.b Share of post-working age persons receiving retirement in total post-working age population",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.3 Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable",
+                          
+                            "definition": "Number of post-working age persons receiving retirement related to the whole post-working age population multiplied by 100.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total, sex",
+                          
+                            "methodology": "Retirement pension is a pecuniary performance for the insured who fulfills conditions giving right to the retirement pension from the social security, that is: attained retirement age-depending on the sex, employment in specific conditions or for special function and has appropriate contributory period and non-contributory period. Until the December 2012 general retirement age was established at 60 years (women) and 65 years of age (men). Since January 2013 the retirement system, the statutory minimum retirement age was increased by one month in each quarter. The target age was 67 years. This threshold was meaant to be achieved in 2020 for men, in 2040 for women. As a result of subsequent changes, since October 2017 the general retirement age was establishet at 60 years for women and 65 years for men. The post-working age population refers to 65 and more years for males and 60 and more for females. The conditions concerning acquiring the rights of retirement pays and pensions are defined in following Laws:  dated on 13.10.1998 on Insurance system (Journal of Law item 121, with later amendments), dated on 17.12.1998 on on pensions and retirement pay from National Insurance Fund and some other laws (Journal of Laws 2015, Item 748, with later amendments), dated on 20.12.1990 on Social Insurance of Farmers (Journal of Laws 2016, Item 277, with later amendments).  The conditions concerning acquiring the rights of retirement pays and pensions paid by Ministry of National Defence of Republic of Poland (MON), Ministry of the Interior and Administration (MSWiA) and Ministry of justice (MS) as well as their amount - all of these are defined in Law dated on 23.07.2003 on amendment of Law on Social Insurance System (Journal of Laws No 166, Item 1609, with later amendments).",
+                          
+                            "source": "Social Insurance Institution / Agricultural Social Insurance Fund / Ministry of National Defence Republic of Poland / Ministry of the Interior and Administration / Ministry of Justice / Statistics Poland",
+                          
+                            "availability": "Annual data  since 2011",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "sex": [
+                                  {"total": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "77.1",
+                                          
+                                              "2012" : "77.1",
+                                          
+                                              "2013" : "77.4",
+                                          
+                                              "2014" : "75.2",
+                                          
+                                              "2015" : "74.6",
+                                          
+                                              "2016" : "74.0",
+                                          
+                                              "2017" : "76.4",
+                                          
+                                              "2018" : "78.1"
+                                          
+                                          }
+                                      ],"males": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "91.5",
+                                          
+                                              "2012" : "90.0",
+                                          
+                                              "2013" : "90.1",
+                                          
+                                              "2014" : "87.4",
+                                          
+                                              "2015" : "86.0",
+                                          
+                                              "2016" : "85.0",
+                                          
+                                              "2017" : "86.2",
+                                          
+                                              "2018" : "89.3"
+                                          
+                                          }
+                                      ],"females": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "70.8",
+                                          
+                                              "2012" : "71.3",
+                                          
+                                              "2013" : "71.4",
+                                          
+                                              "2014" : "69.7",
+                                          
+                                              "2015" : "69.4",
+                                          
+                                              "2016" : "68.9",
+                                          
+                                              "2017" : "71.3",
+                                          
+                                              "2018" : "72.7"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-4-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.4.1 Percentage of households with an access to basic sanitation and water supply",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.4 By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance",
+                          
+                            "definition": "Percentage of households with an access to basic sanitation and water supply. The indicator does'n include an access to sewage disposal.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator is calculated on the basis of information obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) whose subject are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview techniqueusing 2 questionnaires one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Central Statistical Office of Poland implemented EU-SILC survey in 2005. A household is understood as the persons may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Basic sanitation include a bathroom with bath and/or shower, flushable toilet with running water. Water supply means access to the tap with cold running water. The indicator does not include access to garbage disposal.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "93.7",
+                              
+                                  "2011" :   "93.8",
+                              
+                                  "2012" :   "94.5",
+                              
+                                  "2013" :   "94.9",
+                              
+                                  "2014" :   "95.2",
+                              
+                                  "2015" :   "95.5",
+                              
+                                  "2016" :   "96.0",
+                              
+                                  "2017" :   "96.2",
+                              
+                                  "2018" :   "96.6"
+                              
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-4-2": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.4.2 Proportion of total adult population with secure tenure rights to land, with legally recognized documentation and who perceive their rights to land as secure, by sex and by type of tenure",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.4 By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance",
+                          
+                            "definition": "",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "",
+                          
+                            "methodology": "",
+                          
+                            "source": "",
+                          
+                            "availability": "",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-5-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.5.1 Number of deaths or affected by construction disaster per 1 million people",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.5 By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters",
+                          
+                            "definition": "The proportion of the number of persons injured as a result of the construction disasters resulting from random events, error in maintenance or construction work, including the number of fatalities per 1 million residents.",
+                          
+                            "unit": "persons",
+                          
+                            "dimensions": "total, fatalities",
+                          
+                            "methodology": "The data at construction disasters are reported (transmitted) by district and provincial construction supervision inspectors within the framework of the tasks and responsibilities referred to Article 76 point 1 item 2 of the Act - Construction Law. Construction disaster, in accordance with article 73 of the Act - Construction law, is unintentional, the violent destruction of the construction facilities or of the part of it, as well as the the structural elements of scaffolding, forming elements, sheet piles walls and excavation support systems. Construction disaster are grouped according to reasons:  caused by (m.in. strong winds, fires, explosions, gas), caused errors when you establish the work, errors during the construction of a new object or the execution of works in an existing building and errors develop documentation of the work. ",
+                          
+                            "source": "Building Disaster Register  The General Office of Building Control",
+                          
+                            "availability": "Annual data  since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "Fatalities": [
+                                  {"total": [
+                                          {
+                                          }
+                                      ],"fatalities": [
+                                          {
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-5-2": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.5.2 Direct disaster economic loss in relation to global GDP",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.5 By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters",
+                          
+                            "definition": "",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "",
+                          
+                            "methodology": "",
+                          
+                            "source": "",
+                          
+                            "availability": "",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-5-3": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.5.3 Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.5 By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters",
+                          
+                            "definition": "",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "",
+                          
+                            "methodology": "",
+                          
+                            "source": "",
+                          
+                            "availability": "",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-5-4": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.5.4 Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.5 By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters",
+                          
+                            "definition": "",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "",
+                          
+                            "methodology": "",
+                          
+                            "source": "",
+                          
+                            "availability": "",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-a-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.a.1 Proportion of resources allocated by the government directly to poverty reduction programmes",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.a Ensure significant mobilization of resources from a variety of sources, including through enhanced development cooperation, in order to provide adequate and predictable means for developing countries, in particular least developed countries, to implement programmes and policies to end poverty in all its dimensions",
+                          
+                            "definition": "",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "",
+                          
+                            "methodology": "",
+                          
+                            "source": "",
+                          
+                            "availability": "",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-a-2": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.a.2 Share of general government spending on essential services (education, health and social protection, according to COFOG) in total general government spending",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.a Ensure significant mobilization of resources from a variety of sources, including through enhanced development cooperation, in order to provide adequate and predictable means for developing countries, in particular least developed countries, to implement programmes and policies to end poverty in all its dimensions",
+                          
+                            "definition": "The sum of general government spending (according to COFOG) on health, eduaction, social protection in relation to total government spending.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "functions",
+                          
+                            "methodology": "According to ESA 2010 general government sector includes the following entities of national economy: a) operating according to principles described in Law on Public Finances (budgetary units, appropriated funds and since 2010 also local budgetary establishments, executive agencies and budget institutions as well as until 2005 special funds of budgetary units, in 2005-2010 - own income account of budgetary units and until 2010 - budgetary establishments and auxiliary units of budgetary units including conducting economic activity ones as well as motivation funds), b) entities for which the financial system was defined in special regulations, and for which the subsidies from the state budget are the main source of financing (public higher education institutions, the Polish Academy of Science and entities established by it, the National Road Fund and other funds managed by Bank Gospodarstwa Krajowego, agriculture advisory units and state agencies), c) independent public self-government health care facilities, d) state and local government institutions of culture and national film institutions, e) funds with the legal personality which are connected with state or local government units budgets, f) institutions managing the social security funds (SII, ASIF) and these funds as well as the National Health Fund (in the period 1 I 1999-31 III 2003 - health funds), g) public hospitals operating in the form of limited companies and public hospitals operating in the form of research institutes, h) Bank Guarantee Fund, i) other units, including public corporations and non-commercial institutions that meet ESA 2010 classification criteria to general government sector. COFOG Classification (Classification of the Functions of Government) - the classification of general government expenditures by functions. The classification has three levels of detail: divisions (functions), groups and classes. In this classification the function Health is marked by GF 07. Education - by GF 09, and Social Protection - by GF 10.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data  since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "functions": [
+                                  {"total": [
+                                          {
+                                          
+                                              "2010" : "58.6",
+                                          
+                                              "2011" : "58.3",
+                                          
+                                              "2012" : "59.7",
+                                          
+                                              "2013" : "60.9",
+                                          
+                                              "2014" : "60.9",
+                                          
+                                              "2015" : "61.6",
+                                          
+                                              "2016" : "63.9",
+                                          
+                                              "2017" : "63.3"
+                                          
+                                          }
+                                      ],"health": [
+                                          {
+                                          
+                                              "2010" : "10.9",
+                                          
+                                              "2011" : "10.6",
+                                          
+                                              "2012" : "10.8",
+                                          
+                                              "2013" : "10.9",
+                                          
+                                              "2014" : "11.0",
+                                          
+                                              "2015" : "11.2",
+                                          
+                                              "2016" : "11.3",
+                                          
+                                              "2017" : "11.4"
+                                          
+                                          }
+                                      ],"education": [
+                                          {
+                                          
+                                              "2010" : "12.1",
+                                          
+                                              "2011" : "12.4",
+                                          
+                                              "2012" : "12.5",
+                                          
+                                              "2013" : "12.4",
+                                          
+                                              "2014" : "12.4",
+                                          
+                                              "2015" : "12.7",
+                                          
+                                              "2016" : "12.1",
+                                          
+                                              "2017" : "11.9"
+                                          
+                                          }
+                                      ],"social protection": [
+                                          {
+                                          
+                                              "2010" : "35.6",
+                                          
+                                              "2011" : "35.3",
+                                          
+                                              "2012" : "36.4",
+                                          
+                                              "2013" : "37.6",
+                                          
+                                              "2014" : "37.6",
+                                          
+                                              "2015" : "37.7",
+                                          
+                                              "2016" : "40.5",
+                                          
+                                              "2017" : "40.0"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-a-3": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.a.3 Sum of total grants and non-debt-creating inflows directly allocated to poverty reduction programmes as a proportion of GDP",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.a Ensure significant mobilization of resources from a variety of sources, including through enhanced development cooperation, in order to provide adequate and predictable means for developing countries, in particular least developed countries, to implement programmes and policies to end poverty in all its dimensions",
+                          
+                            "definition": "",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "",
+                          
+                            "methodology": "",
+                          
+                            "source": "",
+                          
+                            "availability": "",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },{
+      "1-b-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.b.1 Proportion of government recurrent and capital spending going to sectors that disproportionately benefit women, poor and vulnerable groups",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "target": "1.b Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions",
+                          
+                            "definition": "",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "",
+                          
+                            "methodology": "",
+                          
+                            "source": "",
+                          
+                            "availability": "",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              }
+                          ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    }]
+}
