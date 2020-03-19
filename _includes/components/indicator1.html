@@ -38,7 +38,7 @@
               {% if language == 'pl' %}
                 <div id="filtry">.</div>
                   {% if id != '12-2-2' and id != '8-4-2'%}
-                    <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;">Zaznacz wszystkie wymiary</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;">Usuń zaznaczenia</button></div>
+                    <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;">Zaznacz wszystko</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;">Usuń zaznaczenia</button></div>
                   {% endif %}
                 <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
                 <div id="Legenda" align="center" style="pointer-events: none;"></div>
