@@ -1,0 +1,1056 @@
+{
+  "9":[
+    {
+      "9-1-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.1.1 Proportion of the rural population who live within 2 km of an all-season road",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.1 Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all",
+                          
+                            "definition": "",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "",
+                          
+                            "methodology": "",
+                          
+                            "source": "",
+                          
+                            "availability": "",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-1-2": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.1.2 Passenger and freight volume by mode of transport",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.1 Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all",
+                          
+                            "definition": "The number of passengers (in thousands) by mode of transport.",
+                          
+                            "unit": "thous. passengers ",
+                          
+                            "dimensions": "mode of transport",
+                          
+                            "methodology": "Railway transport of passengers The number of all passengers carried on the standard and narrow gauge railway network and express trains (including passengers transported in sleeping cars and in wagons with berths) with paid tickets and passengers travelling free of charge on the basis of relevant regulations as part of national and international transport. Road transport of passengers  Road transport of passengers is the total number of passengers carried by scheduled daytime services (according to timetable), special scheduled services (e.g. carriage of employees, to school) and other carriage (e.g. holiday trips) in national and international transport. Data on road transport of passengers do not include transport of persons by buses: of urban public transport enterprises, enterprises carrying out tourist services and transport of persons by buses on own account. The data do not include transport services carried out by entities employing fewer than 9 persons. Air transport of passengers Data concerning air transport of passengers include passengers carried on scheduled flights, additional and rented (chartered), by aircrafts owned by Polish operators in scheduled air transport (transport of passengers on permanent routes and according to permanent flight schedules) as well as other Polish operators providing such services against payment in international and national transport.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010.",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "passengers volume by mode of transport": [
+                                  {"railway transport": [
+                                          {
+                                          
+                                              "2010" : "261314",
+                                          
+                                              "2011" : "263609",
+                                          
+                                              "2012" : "273182",
+                                          
+                                              "2013" : "269815",
+                                          
+                                              "2014" : "268204",
+                                          
+                                              "2015" : "277321",
+                                          
+                                              "2016" : "291981",
+                                          
+                                              "2017" : "303001",
+                                          
+                                              "2018" : "309722"
+                                          
+                                          }
+                                      ],"road transport": [
+                                          {
+                                          
+                                              "2010" : "569652",
+                                          
+                                              "2011" : "534885",
+                                          
+                                              "2012" : "497288",
+                                          
+                                              "2013" : "459947",
+                                          
+                                              "2014" : "431516",
+                                          
+                                              "2015" : "416774",
+                                          
+                                              "2016" : "390410",
+                                          
+                                              "2017" : "378610",
+                                          
+                                              "2018" : "336511"
+                                          
+                                          }
+                                      ],"maritime transport fleet": [
+                                          {
+                                          
+                                              "2010" : "671",
+                                          
+                                              "2011" : "637",
+                                          
+                                              "2012" : "642",
+                                          
+                                              "2013" : "606",
+                                          
+                                              "2014" : "611",
+                                          
+                                              "2015" : "597",
+                                          
+                                              "2016" : "632",
+                                          
+                                              "2017" : "644",
+                                          
+                                              "2018" : "632"
+                                          
+                                          }
+                                      ],"transport by inland waterway fleet": [
+                                          {
+                                          
+                                              "2010" : "1397",
+                                          
+                                              "2011" : "1519",
+                                          
+                                              "2012" : "1515",
+                                          
+                                              "2013" : "1540",
+                                          
+                                              "2014" : "1579",
+                                          
+                                              "2015" : "1762",
+                                          
+                                              "2016" : "2024",
+                                          
+                                              "2017" : "1262",
+                                          
+                                              "2018" : "1395"
+                                          
+                                          }
+                                      ],"air transport": [
+                                          {
+                                          
+                                              "2010" : "4990",
+                                          
+                                              "2011" : "6491",
+                                          
+                                              "2012" : "7170",
+                                          
+                                              "2013" : "7648",
+                                          
+                                              "2014" : "7788",
+                                          
+                                              "2015" : "7288",
+                                          
+                                              "2016" : "8779",
+                                          
+                                              "2017" : "11846",
+                                          
+                                              "2018" : "13850"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ],
+                              "freight volume by mode of transport": [
+                                  {"railway transport": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : ""
+                                          
+                                          }
+                                      ],"road transport": [
+                                          {
+                                          
+                                              "2010" : "1491253",
+                                          
+                                              "2011" : "1596209",
+                                          
+                                              "2012" : "1493386",
+                                          
+                                              "2013" : "1553050",
+                                          
+                                              "2014" : "1547883",
+                                          
+                                              "2015" : "1505719",
+                                          
+                                              "2016" : "1546572",
+                                          
+                                              "2017" : "1747266",
+                                          
+                                              "2018" : "1873022"
+                                          
+                                          }
+                                      ],"pipeline transport": [
+                                          {
+                                          
+                                              "2010" : "56208",
+                                          
+                                              "2011" : "54482",
+                                          
+                                              "2012" : "52985",
+                                          
+                                              "2013" : "50656",
+                                          
+                                              "2014" : "49810",
+                                          
+                                              "2015" : "54850",
+                                          
+                                              "2016" : "54058",
+                                          
+                                              "2017" : "52393",
+                                          
+                                              "2018" : "55287"
+                                          
+                                          }
+                                      ],"maritime transport fleet": [
+                                          {
+                                          
+                                              "2010" : "8362",
+                                          
+                                              "2011" : "7737",
+                                          
+                                              "2012" : "7476",
+                                          
+                                              "2013" : "6965",
+                                          
+                                              "2014" : "6781",
+                                          
+                                              "2015" : "6963",
+                                          
+                                              "2016" : "7248",
+                                          
+                                              "2017" : "8254",
+                                          
+                                              "2018" : "9149"
+                                          
+                                          }
+                                      ],"transport by inland waterway fleet": [
+                                          {
+                                          
+                                              "2010" : "5141",
+                                          
+                                              "2011" : "5093",
+                                          
+                                              "2012" : "4579",
+                                          
+                                              "2013" : "5044",
+                                          
+                                              "2014" : "7629",
+                                          
+                                              "2015" : "11928",
+                                          
+                                              "2016" : "6210",
+                                          
+                                              "2017" : "5778",
+                                          
+                                              "2018" : "5107"
+                                          
+                                          }
+                                      ],"air transport": [
+                                          {
+                                          
+                                              "2010" : "41",
+                                          
+                                              "2011" : "45",
+                                          
+                                              "2012" : "41",
+                                          
+                                              "2013" : "37",
+                                          
+                                              "2014" : "38",
+                                          
+                                              "2015" : "38",
+                                          
+                                              "2016" : "41",
+                                          
+                                              "2017" : "53",
+                                          
+                                              "2018" : "63"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-2-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.2.1 Manufacturing value added as a proportion of GDP",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.2 Promote inclusive and sustainable industrialization and, by 2030, significantly raise industry’s share of employment and gross domestic product, in line with national circumstances, and double its share in least developed countries",
+                          
+                            "definition": "The indicator is calculated as a percentage share of the NACE Rev. 2 Section Manufacturing industry in GDP.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Gross value added (GVA) in the gross domestic product account, is the difference between gross output and intermediate consumption. GVA indicates the input of individual producers, industries and sectors to the GDP creation. Gross domestic product (GDP) presents the final result of the activity of all entities of the national economy in a given year. GDP value can be calculated in three ways:    Gross domestic product is calculated according to obligatory in the European Union countries principles of the European System of National and Regional Accounts (ESA 2010) and recommendations of the Eurostat.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data;  Since 2010.",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "15.6",
+                              
+                                  "2011" :   "15.9",
+                              
+                                  "2012" :   "16.3",
+                              
+                                  "2013" :   "15.9",
+                              
+                                  "2014" :   "16.8",
+                              
+                                  "2015" :   "17.6",
+                              
+                                  "2016" :   "18.1",
+                              
+                                  "2017" :   "16.9",
+                              
+                                  "2018" :   "16.7"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-2-2": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.2.2 Manufacturing employment as a proportion of total employment",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.2 Promote inclusive and sustainable industrialization and, by 2030, significantly raise industry’s share of employment and gross domestic product, in line with national circumstances, and double its share in least developed countries",
+                          
+                            "definition": "Share of manufacturing employment in total employment.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Data regarding employment include persons performing work providing earnings or income. The employed include: a) employees hired on the basis of employment contract (labour contract, posting, appointment, election or service relation)   b) employers and own-account workers, i.e.: — owners, co-owners and leaseholders of private farms in agriculture (including contributing family workers), — owners and co-owners (including contributing family workers  excluding partners in companies who do not work in them) of entities conducting economic activity excluding private farms in agriculture, — other self-employed persons, e.g. persons practising learned professions   c) outworkers   d) agents (including contributing family workers and persons employed by agents)   e) members of agricultural production cooperatives (agricultural producer’s cooperatives and cooperatives established on their basis, as well as agricultural farmer’s cooperatives)   f) clergy fulfilling priestly obligations. The data include the employed in the budgetary entities conducting activity within the scope of national defence and public safety. They do not include persons employed on the basis of order-agreement or contract for a particular task/work.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data;  Since 2010.",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "17.3",
+                              
+                                  "2011" :   "17.2",
+                              
+                                  "2012" :   "17.0",
+                              
+                                  "2013" :   "17.0",
+                              
+                                  "2014" :   "17.3",
+                              
+                                  "2015" :   "17.4",
+                              
+                                  "2016" :   "17.5",
+                              
+                                  "2017" :   "17.7",
+                              
+                                  "2018" :   "17.6"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-3-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.3.1 Proportion share of small-scale industries in total industry value added",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.3 Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets",
+                          
+                            "definition": "Share of small-scale industries in total industry value added.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Industrial enterprise is an entity (regardless of the number of persons employed in it) classified into the following NACE Rev. 2 sections: • B Mining and quarrying, • C Manufacturing, • D Electricity, gas, steam and air conditioning supply, • E Water supply  sewerage, waste management and remediation activities. Small industry covers industrial enterprises employing fewer than 10 persons. Value added at producer price is a gross profit from operating activity including operating subsidies and indirect taxes. Its calculation is based on the turnover plus capitalised production, plus other profits from operating activity, plus or minus change in stocks, minus purchase of goods and services, minus taxes on products that are related to the turnover, but are not deductible, minus duty and taxes related to production.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data;  Since 2010.",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "8.34",
+                              
+                                  "2011" :   "7.03",
+                              
+                                  "2012" :   "6.68",
+                              
+                                  "2013" :   "6.82",
+                              
+                                  "2014" :   "7.17",
+                              
+                                  "2015" :   "8.22",
+                              
+                                  "2016" :   "8.41",
+                              
+                                  "2017" :   "8.47",
+                              
+                                  "2018" :   "8.80"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-3-2": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.3.2 Proportion of entities taking bank credits by long-term and current credits",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.3 Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets",
+                          
+                            "definition": "Share of non-financial enterprises taking bank credits in total enterprises.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total, long-term credits, current credits",
+                          
+                            "methodology": "On the basis of a credit agreement, a bank obliges itself to provide a borrower with a certain amount of money for a specific purpose and specified amount of time outlined in the agreement, whereas the borrower obliges themselves to use the borrowed money in accordance with the agreement terms, to return the amount of the used credit with interest on the agreed redemption dates and to repay commission on the received credit. Long-term credits – credits whose redemption date exceeds 12 months since the balance sheet day. Current credits – credits whose redemption date occurs within 12 months since the balance sheet day.",
+                          
+                            "source": "National Bank of Poland / Statistics Poland",
+                          
+                            "availability": "Annual data  Since 2010.",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "total enterprises - by type of credit": [
+                                  {"total": [
+                                          {
+                                          
+                                              "2010" : "49.8",
+                                          
+                                              "2011" : "52.8",
+                                          
+                                              "2012" : "52.6",
+                                          
+                                              "2013" : "50.2",
+                                          
+                                              "2014" : "48.9",
+                                          
+                                              "2015" : "47.9",
+                                          
+                                              "2016" : "46.5",
+                                          
+                                              "2017" : "45.5",
+                                          
+                                              "2018" : "43.5"
+                                          
+                                          }
+                                      ],"long-term credits": [
+                                          {
+                                          
+                                              "2010" : "30.2",
+                                          
+                                              "2011" : "32.4",
+                                          
+                                              "2012" : "31.5",
+                                          
+                                              "2013" : "30.3",
+                                          
+                                              "2014" : "29.8",
+                                          
+                                              "2015" : "29.4",
+                                          
+                                              "2016" : "28.5",
+                                          
+                                              "2017" : "27.5",
+                                          
+                                              "2018" : "26.0"
+                                          
+                                          }
+                                      ],"current credits": [
+                                          {
+                                          
+                                              "2010" : "42.3",
+                                          
+                                              "2011" : "45.0",
+                                          
+                                              "2012" : "45.5",
+                                          
+                                              "2013" : "43.3",
+                                          
+                                              "2014" : "41.9",
+                                          
+                                              "2015" : "41.2",
+                                          
+                                              "2016" : "40.0",
+                                          
+                                              "2017" : "39.5",
+                                          
+                                              "2018" : "38.0"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ],
+                              "small and medium-sized enterprises - by type of credit": [
+                                  {"total": [
+                                          {
+                                          
+                                              "2010" : "49.5",
+                                          
+                                              "2011" : "52.6",
+                                          
+                                              "2012" : "52.5",
+                                          
+                                              "2013" : "50.1",
+                                          
+                                              "2014" : "48.8",
+                                          
+                                              "2015" : "47.9",
+                                          
+                                              "2016" : "46.5",
+                                          
+                                              "2017" : "45.5",
+                                          
+                                              "2018" : "43.4"
+                                          
+                                          }
+                                      ],"long-term credits": [
+                                          {
+                                          
+                                              "2010" : "30.1",
+                                          
+                                              "2011" : "32.3",
+                                          
+                                              "2012" : "31.4",
+                                          
+                                              "2013" : "30.2",
+                                          
+                                              "2014" : "29.7",
+                                          
+                                              "2015" : "29.4",
+                                          
+                                              "2016" : "28.4",
+                                          
+                                              "2017" : "27.4",
+                                          
+                                              "2018" : "25.8"
+                                          
+                                          }
+                                      ],"current credits": [
+                                          {
+                                          
+                                              "2010" : "41.7",
+                                          
+                                              "2011" : "44.5",
+                                          
+                                              "2012" : "45.1",
+                                          
+                                              "2013" : "42.9",
+                                          
+                                              "2014" : "41.6",
+                                          
+                                              "2015" : "40.9",
+                                          
+                                              "2016" : "39.8",
+                                          
+                                              "2017" : "39.1",
+                                          
+                                              "2018" : "37.6"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-4-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.4.1 CO 2 emission per unit of value added",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.4 By 2030, upgrade infrastructure and retrofit industries to make them sustainable, with increased resource-use efficiency and greater adoption of clean and environmentally sound technologies and industrial processes, with all countries taking action in accordance with their respective capabilities",
+                          
+                            "definition": "The indicator determines the amount of carbon dioxide (CO2) in kg per one unit of gross value added of Gross Domestic Product (2010=100). The indicator CO2 emission per unit of value added is currently being measured by CO2 emission per GDP PPP (Purchasing Power Parity).",
+                          
+                            "unit": "kg CO2 / 2010 USD PPP",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Emission means the direct or indirect introduction, as a result of human activity, of the following factors into the air, water, soil or land: a) substances, b) energies, such as heat, noise, vibration or electromagnetic fields. Gross value added (GVA) in the gross domestic product account, is the difference between gross output and intermediate consumption. GVA indicates the input of individual producers, industries and sectors to the GDP creation. Carbon dioxide (CO2) emission per unit of value added is a universal indicator for measuring the impact of industrial production on environment. It captures the intensity of energy use, energy efficiency of production technology and most importantly use of fossil fuels.",
+                          
+                            "source": "International Energy Agency",
+                          
+                            "availability": "Annual data;  Since 2010.",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "0.38",
+                              
+                                  "2011" :   "0.36",
+                              
+                                  "2012" :   "0.35",
+                              
+                                  "2013" :   "0.34",
+                              
+                                  "2014" :   "0.31",
+                              
+                                  "2015" :   "0.30",
+                              
+                                  "2016" :   "0.31",
+                              
+                                  "2017" :   "0.30",
+                              
+                                  "2018" :   "0.29"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-5-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.5.1 Gross domestic expenditures on R&D in relation to GDP",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.5 Enhance scientific research, upgrade the technological capabilities of industrial sectors in all countries, in particular developing countries, including, by 2030, encouraging innovation and substantially increasing the number of research and development workers per 1 million people and public and private research and development spending",
+                          
+                            "definition": "Sum of internal expenditures on research and development activity incurred by all national entities conducting this activity, irrespective of origin of the funds, in relation to GDP.Indicator is the main measure in research and development statistics, characterized the competitiveness and the level of knowledge economy.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Research and development (R&D) is a creative work carried out on a systematic basis in order to increase the stock of knowledge of man, culture and society, and the use of this knowledge to devise new applications. It involves three types of activities, that is, basic research, applied research (including industrial) and experimental development. Intramural expenditures on R&amp D include expenditures on R&amp D performed within a statistical unit, whatever the source of funds. They involve both current and capital expenditures linked to R&amp D activities. Current expenditures on R&amp D include personnel costs as well as costs of used materials, non-durable articles and energy, costs of external services (other than R&amp D ) including external processing, transport, renovation, banking, postal, ICT, publishing or municipal services, costs of business trips and other current costs including, in particular, taxes and fees charging costs of activity and profits, property insurance, and equivalents for the benefit of employees – in a part in which they relate to R&amp D . Capital expenditures on R&amp D include expenditures on new fixed assets linked to R&amp D and, since 2016, costs of computer hardware used in reasearch and development activities for more than one year (charges for using the product of intellectual property by another entity as well as expenditures on software developed on one's own), costs of purchased patents, long-term licenses or other non-material and legal values that are used in research and development activities for more than one year. Gross domestic product (GDP) presents the final result of the activity of all entities of the national economy. GDP is equal to the sum of gross value added generated by all national institutional units, increased by taxes on products and decreased by subsidies on products. Gross domestic product is calculated according to obligatory in the European Union countries principles of the European System of National and Regional Accounts (ESA 2010) and recommendations of the Eurostat.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data;  Since 2010.",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "0.72",
+                              
+                                  "2011" :   "0.75",
+                              
+                                  "2012" :   "0.88",
+                              
+                                  "2013" :   "0.87",
+                              
+                                  "2014" :   "0.94",
+                              
+                                  "2015" :   "1.00",
+                              
+                                  "2016" :   "0.96",
+                              
+                                  "2017" :   "1.03",
+                              
+                                  "2018" :   "1.21"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-5-2": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.5.2 Researchers (in full-time equivalent) per million inhabitants",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.5 Enhance scientific research, upgrade the technological capabilities of industrial sectors in all countries, in particular developing countries, including, by 2030, encouraging innovation and substantially increasing the number of research and development workers per 1 million people and public and private research and development spending",
+                          
+                            "definition": "The number of employees in research and development activities in full-time equivalent calculated per one million population.",
+                          
+                            "unit": "FTE (full-time equivalent)",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": " R&D personnel includes all persons employed directly in R&D as well as those providing direct services such as R&D managers, administrators and clerical staff. R&D personnel, apart from conducting R&D activities, may also arrange and manage R&D projects, prepare reports, provide direct ICT, library and documentation maintenance in a given project as well as provide administrative services in the area of finance and human resources. Researchers (i.e. professionals engaged in the conception or creation of new knowledge, products, processes, methods and systems and also in the management of the projects) constitute the most numerous group of R&D personnel.The group ‘pracownicy naukowo-badawczy’ is a Polish equivalent of the researchers group (presented in Frascati Manual), also named as ‘scientists and engineers’. Belonging into this group requires neither formal qualifications nor occupying a specific post. Full-time equivalents (FTE) are conversion units used to determine actual employment in R&D . One full-time equivalent (FTE) means one person-year devoted exclusively to R&D activities. Employment in R&D in full-time equivalents is calculated on the basis of the ratio of working time devoted to R&D by particular employees within a reporting year to full working time on a particulate position in a given institution. Full-time equivalent is the only measure of employment in R&D used in international comparisons and international publications issued by OECD and EUROSTAT.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data;  Since 2010.",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "1689.4",
+                              
+                                  "2011" :   "1664.7",
+                              
+                                  "2012" :   "1738.8",
+                              
+                                  "2013" :   "1856.3",
+                              
+                                  "2014" :   "2044.4",
+                              
+                                  "2015" :   "2147.8",
+                              
+                                  "2016" :   "2294.4",
+                              
+                                  "2017" :   "2511.5",
+                              
+                                  "2018" :   "2568.0"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-a-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.a.1 Official development assistance to infrastructure",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.a Facilitate sustainable and resilient infrastructure development in developing countries through enhanced financial, technological and technical support to African countries, least developed countries, landlocked developing countries and small island developing States",
+                          
+                            "definition": "Total Official Development Assistance to infrastructure.",
+                          
+                            "unit": "mln USD (current prices)",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Official Development Assistance (ODA) comprises grants and loans that are provided by government agencies or international organizations to promote the economic development and welfare of developing countries. In order for loans to qualify as ODA, they need to comprise a grant element of at least: 45% of the total amount for LDCs and other LICs (calculated at the discount rate of 9 %), 15% for LMICs (calculated at the discount rate of 7%), 10% for UMICs (calculated at the discount rate of 6%). ODA also includes technical assistance that aims at developing human resources and raising qualifications as well as technical and productive capacity of the developing countries. Technical assistance consists in, i. a., conveying knowledge and experience in the form of training, sending experts and commencing research and/ or covering its resultant cost. No military equipment or services are reportable as ODA. Moreover, it is also required that a partner country benefitting from assistance is on the OECD DAC (Development Assistance Committee) list of ODA recipients. Depending on the form of its realisation, development assistance might be distinguished into: bilateral assistance which is undertaken by the donor country directly in the partner country or by an international organisation as earmarked contribution to the partner country or as a contribution for a specific programme/ fund managed by the organisation, multilateral assistance which is provided as a contribution to the general budgets of international organisations whose list is updated annually by the OECD-DAC Secretariat. Official Development Assistance in Poland is provided in accordance with the Development Cooperation Act of 16th September 2011 (Journal of Laws of 2011, No 234, item 1386). Polish development cooperation is based on the Multiannual Development Cooperation Programme, developed for a minimum period of four years. In accordance with the document, the development cooperation includes all the actions undertaken by the government administrative bodies in order to provide the developing countries with development assistance and humanitarian aid as well as the implementation of educational actions for raising awareness and better understanding of global issues and interdependencies. The development cooperation in Poland is coordinated by the Ministry of Foreign Affairs that has devised Multiannual Development Cooperation Programme for 2016-2020 in accordance with which the focus of Polish development cooperation has been placed on Eastern Partnership countries (Belarus, Georgia, Moldova, Ukraine) as well as Africa, Asia and Middle East (Ethiopia, Kenya, Lebanon, Mynamar, Senegal, Tanzania, Uganda and Palestine). Polish development cooperation supports strengthening the rule of law, decentralization reforms and combat against corruption as well as human and civil rights compliance. Its main objectives cover the improvement of health care, better access to education and support for entrepreneurship and agriculture as well as natural environment protection including natural disasters prevention. Activities included in the programme are financed with the resources from the Ministry of Foreign Affairs, target reserve of the state budget, designed for the development cooperation, and from the funds of other ministries.",
+                          
+                            "source": "Ministry of Foreign Affairs Republic of Poland",
+                          
+                            "availability": "Annual data; since 2013.",
+                          
+                            "notes": "Until 2017, DAC OECD methodology for data collection in Creditor Reporting System allowed for marking the sector of support only for bilateral flows. Therefore, the indicator did not cover expenditures within multilateral assistance in the form of contributions to the general budgets of international organisations also working in the infrastructure area. Since 2018, the indicator has been presented as a grant equivalent including only the grant element multiplied by the value of a given flow. As a result, there is no differentiation into net and gross ODA. Additionally, some methodological activities are being conducted to incorporate other flows into ODA, such as mobilised amount of money by the public sector from the private sector instruments. Furthermore, an alternative to ODA, TOSSD (Total Official Support for Sustainable Development) is being developed as an instrument for measuring means for SDGs implementation."
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "2.22",
+                              
+                                  "2014" :   "1.78",
+                              
+                                  "2015" :   "2.91",
+                              
+                                  "2016" :   "1.52",
+                              
+                                  "2017" :   "1.60",
+                              
+                                  "2018" :   "2.03"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-b-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.b.1 Proportion of medium and high-tech industry value added in total value added",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.b Support domestic technology development, research and innovation in developing countries, including by ensuring a conducive policy environment for, inter alia, industrial diversification and value addition to commodities",
+                          
+                            "definition": "Share of value added of medium and high-tech enterprises in total value added of non-financial enterprises.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "In accordance with NACE Rev.2 high technology covers:    • Division 21 Manufacture of basic pharmaceutical products and pharmaceutical preparations,    • Division 26 Manufacture of computer, electronic and optical products,    • Group 30.3 Manufacture of air and spacecraft and related machinery.  In accordance with NACE Rev.2 medium-high technology covers:    • Division 20 Manufacture of chemicals and chemical products,    • Group 25.4 Manufacture of weapons and ammunition,    • Division 27 Manufacture of electrical equipment,    • Division 28 Manufacture of machinery and equipment n.e.c.,    • Division 29 Manufacture of motor vehicles, trailers and semi-trailers excluding motorcycles,    • Division 30 Manufacture of other transport equipment (excluding Group 30.1 Building of ships and boats and Group 30.3 Manufacture of air and spacecraft and related machinery),    • Group 32.5 Manufacture of medical instruments and supplies excluding dental.  Non-financial enterprise is an entity (regardless of the number of persons employed in it) classified into the following NACE Rev.2 sections: B Mining and quarrying,C Manufacturing, D Electricity, gas, steam and air conditioning supply, E Water supply  sewerage, waste management and remediation activities, F Construction, G Wholesale and retail trade  repair of motor vehicles and motorcycles, H Transportation and storage, I Accommodation and food service activities, J Information and communication, L Real estate activities, M Professional, scientific and technical activities, N Administrative and support service activities, P Education (excluding higher education), Q Human health and social work activities (excluding independent public healthcare centres), R Arts, entertainment and recreation, S Other service activities (excluding Division 94 Activities of membership organisations). Value added at producer price is a gross profit from operating activity including operating subsidies and indirect taxes. Its calculation is based on the turnover plus capitalised production, plus other profits from operating activity, plus or minus change in stocks, minus purchase of goods and services, minus taxes on products that are related to the turnover, but are not deductible, minus duty and taxes related to production.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data  Since 2010.",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "7.96",
+                              
+                                  "2011" :   "8.58",
+                              
+                                  "2012" :   "8.06",
+                              
+                                  "2013" :   "8.36",
+                              
+                                  "2014" :   "8.12",
+                              
+                                  "2015" :   "8.08",
+                              
+                                  "2016" :   "8.26",
+                              
+                                  "2017" :   "7.90"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-c-1": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.c.1 Proportion of population covered by a mobile network, by technology",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "target": "9.c Significantly increase access to information and communications technology and strive to provide universal and affordable access to the Internet in least developed countries by 2020",
+                          
+                            "definition": "Proportion of population covered by a mobile network by technology refers to the proportion of inhabitants living within the range of mobile (cellular) network signal regardless of whether they are subscribers or users. The indicator is calculated as a ratio of the number of inhabitants within the range of a given mobile (cellular) technology to the total population multiplied by 100.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "technologies",
+                          
+                            "methodology": "Mobile telephone subscriber – entity that is a party to the contract for the telecommunications services provision entered into by a provider of publicly available telecommunications services. This concept also includes the so-called pre-paid users.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data;  Since 2014.",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "by technology": [
+                                  {"proportion of population within range of 3G": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "99.9",
+                                          
+                                              "2015" : "99.9",
+                                          
+                                              "2016" : "100.0",
+                                          
+                                              "2017" : "100.0",
+                                          
+                                              "2018" : "100.0"
+                                          
+                                          }
+                                      ],"proportion of population within range of 4G/LTE": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "80.0",
+                                          
+                                              "2015" : "99.8",
+                                          
+                                              "2016" : "99.9",
+                                          
+                                              "2017" : "99.9",
+                                          
+                                              "2018" : "100.0"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    }]
+}

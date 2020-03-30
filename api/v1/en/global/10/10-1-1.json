@@ -1,0 +1,84 @@
+
+
+
+{
+  "10-1-1": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "10.1.1 Annualized average growth rate per capita net disposable income in households",
+                      
+                        "goal": "Goal 10. Reduce inequalities",
+                      
+                        "target": "10.1 By 2030, progressively achieve and sustain income growth of the bottom 40 per cent of the population at a rate higher than the national average",
+                      
+                        "definition": "Annualized average growth rate in per capita net disposable income in households over a 5-year period.",
+                      
+                        "unit": "percent [%]",
+                      
+                        "dimensions": "total, the first and second quintile with the lowest incomes (bottom 40 per cent of the population)",
+                      
+                        "methodology": "The indicator is calculated on the basis of information obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) whose subject are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview techniqueusing 2 questionnaires one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Statistics Poland implemented EU-SILC survey in 2005. The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Equivalent disposable income in the survey is defined as a sum of the net (after deduction of income tax prepayment, tax on income from property, social and health insurance contributions) annual monetary incomes gained by all the household members reduced by:  property tax, inter-household cash transfers paid and balance of offsetting settlements with the Tax Office.  For the calculation of income statistics the modified OECD equivalence scale was applied which is calculated as follows:  1 for the first adult household member, 0.5 for the second and each subsequent household member aged 14 and over, 0.3 for every child in the household under 14.  And thus, for instance, the extreme and relative poverty threshold for a 4-person household consisting of two adult persons and two children is 2,1 times as high as that for a 1-person household. A household is classified into a given quintile groups on the basis of per capita available income in that household. Thus members of all the households in the survey are listed according to the increasing per capita available income using the weights applied in the survey and divided into five groups, equal in number of the weighted persons. The first quintile (I) consists of 20% of persons with the lowest incomes, while the fifth quintile (V) 20% of persons with the highest incomes.",
+                      
+                        "source": "Statistics Poland",
+                      
+                        "availability": "Annual data; since 2010.",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {
+                "by quintile group": [
+                    {"total": [
+                            {
+                            
+                                "2010" :   "9.6",
+                            
+                                "2011" :   "8.8",
+                            
+                                "2012" :   "9.6",
+                            
+                                "2013" :   "6.2",
+                            
+                                "2014" :   "5.0",
+                            
+                                "2015" :   "4.5",
+                            
+                                "2016" :   "4.4",
+                            
+                                "2017" :   "5.0",
+                            
+                                "2018" :   "4.7"
+                            
+                            }
+                        ],"the first and second quintile with the lowest incomes (bottom 40 per cent of the population)": [
+                            {
+                            
+                                "2010" :   "13.4",
+                            
+                                "2011" :   "11.0",
+                            
+                                "2012" :   "8.9",
+                            
+                                "2013" :   "6.2",
+                            
+                                "2014" :   "4.9",
+                            
+                                "2015" :   "4.6",
+                            
+                                "2016" :   "5.3",
+                            
+                                "2017" :   "6.3",
+                            
+                                "2018" :   "8.0"
+                            
+                            }
+                        ]
+                    }
+                ]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+
+
+
+{
+  "9-c-1": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "9.c.1 Proportion of population covered by a mobile network, by technology",
+                      
+                        "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                      
+                        "target": "9.c Significantly increase access to information and communications technology and strive to provide universal and affordable access to the Internet in least developed countries by 2020",
+                      
+                        "definition": "Proportion of population covered by a mobile network by technology refers to the proportion of inhabitants living within the range of mobile (cellular) network signal regardless of whether they are subscribers or users. The indicator is calculated as a ratio of the number of inhabitants within the range of a given mobile (cellular) technology to the total population multiplied by 100.",
+                      
+                        "unit": "percent [%]",
+                      
+                        "dimensions": "technologies",
+                      
+                        "methodology": "Mobile telephone subscriber – entity that is a party to the contract for the telecommunications services provision entered into by a provider of publicly available telecommunications services. This concept also includes the so-called pre-paid users.",
+                      
+                        "source": "Statistics Poland",
+                      
+                        "availability": "Annual data;  Since 2014.",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {
+                "by technology": [
+                    {"proportion of population within range of 3G": [
+                            {
+                            
+                                "2010" :   "",
+                            
+                                "2011" :   "",
+                            
+                                "2012" :   "",
+                            
+                                "2013" :   "",
+                            
+                                "2014" :   "99.9",
+                            
+                                "2015" :   "99.9",
+                            
+                                "2016" :   "100.0",
+                            
+                                "2017" :   "100.0",
+                            
+                                "2018" :   "100.0"
+                            
+                            }
+                        ],"proportion of population within range of 4G/LTE": [
+                            {
+                            
+                                "2010" :   "",
+                            
+                                "2011" :   "",
+                            
+                                "2012" :   "",
+                            
+                                "2013" :   "",
+                            
+                                "2014" :   "80.0",
+                            
+                                "2015" :   "99.8",
+                            
+                                "2016" :   "99.9",
+                            
+                                "2017" :   "99.9",
+                            
+                                "2018" :   "100.0"
+                            
+                            }
+                        ]
+                    }
+                ]}
+      ]
+    }
+  ]
+}

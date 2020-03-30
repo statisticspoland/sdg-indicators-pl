@@ -1,0 +1,106 @@
+
+
+
+{
+  "3-7-2": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "3.7.2 Adolescent birth rate",
+                      
+                        "goal": "Goal 3. Good health and well-being",
+                      
+                        "target": "3.7 By 2030, ensure universal access to sexual and reproductive health-care services, including for family planning, information and education, and the integration of reproductive health into national strategies and programmes",
+                      
+                        "definition": "Number of births to young girls (aged 10-14 and 15-19) per 1 thous. girls in a respective age group.",
+                      
+                        "unit": "persons",
+                      
+                        "dimensions": "age",
+                      
+                        "methodology": "Live birth - the complete expulsion or extraction from the mother of an infant, irrespective of the duration of the pregnancy, which, after such separation, breathes or shows any other evidence of life, such as beating of the heart, pulsation of the umbilical cord, or definite movement of the voluntary muscles, whether or not the umbilical cord has been cut or the placenta has been separated each such a product is considered as live born. The source of data on births is a basic document (secondarily utilized by national statistics) of the Ministry of Health 'Written notification of the child's birth' (Regulation of the Minister of Health on the written notification of the child's birth. Journal of Laws of 2015, item. 171).",
+                      
+                        "source": "Statistics Poland",
+                      
+                        "availability": "Annual data  Since 2010.",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {
+                "by age group": [
+                    {"women 10-19 years": [
+                            {
+                            
+                                "2010" :   "8.5",
+                            
+                                "2011" :   "7.7",
+                            
+                                "2012" :   "7.8",
+                            
+                                "2013" :   "7.4",
+                            
+                                "2014" :   "7.0",
+                            
+                                "2015" :   "6.5",
+                            
+                                "2016" :   "6.2",
+                            
+                                "2017" :   "5.5",
+                            
+                                "2018" :   "5.1"
+                            
+                            }
+                        ],"women 10-14 years": [
+                            {
+                            
+                                "2010" :   "0.1",
+                            
+                                "2011" :   "0.0",
+                            
+                                "2012" :   "0.1",
+                            
+                                "2013" :   "0.1",
+                            
+                                "2014" :   "0.1",
+                            
+                                "2015" :   "0.1",
+                            
+                                "2016" :   "0.1",
+                            
+                                "2017" :   "0.0",
+                            
+                                "2018" :   "0.0"
+                            
+                            }
+                        ],"women 15-19 years": [
+                            {
+                            
+                                "2010" :   "15.2",
+                            
+                                "2011" :   "14.0",
+                            
+                                "2012" :   "14.2",
+                            
+                                "2013" :   "13.7",
+                            
+                                "2014" :   "13.1",
+                            
+                                "2015" :   "12.2",
+                            
+                                "2016" :   "11.9",
+                            
+                                "2017" :   "10.9",
+                            
+                                "2018" :   "10.2"
+                            
+                            }
+                        ]
+                    }
+                ]}
+      ]
+    }
+  ]
+}

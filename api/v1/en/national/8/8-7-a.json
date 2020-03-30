@@ -1,0 +1,151 @@
+
+
+
+{
+  "8-7-a": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "8.7.a Activity rate (LFS)",
+                      
+                        "goal": "Goal 8. Decent work and economic growth",
+                      
+                        "priority": "Work activation of young people, women, persons aged 50+ , long-term unemployed as well as persons with disabilities",
+                      
+                        "definition": "The share of economically active persons (total or of given category) in the total of population or population of given category (in %). Average data per year.",
+                      
+                        "unit": "percent [%]",
+                      
+                        "dimensions": "total, female, age groups, disability",
+                      
+                        "methodology": "Data comes from a sample survey Labour Force Survey (LFS). The survey is conducted on a quarterly basis. The survey is conducted as continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15 and more who are members of households in dwellings selected on a random basis. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and economically inactive persons.The employed and unemployed are the economically active population. Among the employed are included all persons aged 15 years or more who during the reference week: 1) performed for at least one hour any work generating pay or income, i.e. were employed as paid employees, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in conducting family agricultural farm or family economic activity outside agriculture,2) had work but did not perform it: (e.g. due to illness, maternity leave or vacation, a break in company activity) if the break in employment did not exceed 3 months; if the break was longer than 3 months in case when persons were paid employees the additional criterion is receiving during thatperiod at least 50% of the hitherto earnings. According to international standards, among employees are also included persons performing outwork and apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). Due to the survey methodological assumptions the number of the employed obtained from the LFS does not comprise some categories of persons, who are considered as employed in the establishment survey, i.a.: a) employees living in lodging houses for workers,b) employees working abroad for their Polish employers.",
+                      
+                        "source": "Statistics Poland",
+                      
+                        "availability": "Annual data; since 2010",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {
+                    "activity rate": [
+                        {
+                        "total": [
+                                {
+                                
+                                    "2010" :   "55.3",
+                                
+                                    "2011" :   "55.5",
+                                
+                                    "2012" :   "55.9",
+                                
+                                    "2013" :   "55.9",
+                                
+                                    "2014" :   "56.2",
+                                
+                                    "2015" :   "56.2",
+                                
+                                    "2016" :   "56.2",
+                                
+                                    "2017" :   "56.4",
+                                
+                                    "2018" :   "56.3"
+                                
+                                }
+                            ],"females": [
+                                {
+                                
+                                    "2010" :   "47.6",
+                                
+                                    "2011" :   "47.8",
+                                
+                                    "2012" :   "48.1",
+                                
+                                    "2013" :   "48.2",
+                                
+                                    "2014" :   "48.5",
+                                
+                                    "2015" :   "48.4",
+                                
+                                    "2016" :   "48.3",
+                                
+                                    "2017" :   "48.4",
+                                
+                                    "2018" :   "48.5"
+                                
+                                }
+                            ],"aged 15-24": [
+                                {
+                                
+                                    "2010" :   "34.6",
+                                
+                                    "2011" :   "33.5",
+                                
+                                    "2012" :   "33.6",
+                                
+                                    "2013" :   "33.3",
+                                
+                                    "2014" :   "33.9",
+                                
+                                    "2015" :   "32.8",
+                                
+                                    "2016" :   "34.5",
+                                
+                                    "2017" :   "34.8",
+                                
+                                    "2018" :   "35.1"
+                                
+                                }
+                            ],"aged 50 and more": [
+                                {
+                                
+                                    "2010" :   "32.7",
+                                
+                                    "2011" :   "33.6",
+                                
+                                    "2012" :   "34.0",
+                                
+                                    "2013" :   "34.2",
+                                
+                                    "2014" :   "34.3",
+                                
+                                    "2015" :   "34.4",
+                                
+                                    "2016" :   "34.1",
+                                
+                                    "2017" :   "34.4",
+                                
+                                    "2018" :   "33.8"
+                                
+                                }
+                            ],"disabled persons aged 16 and more": [
+                                {
+                                
+                                    "2010" :   "16.9",
+                                
+                                    "2011" :   "17.0",
+                                
+                                    "2012" :   "17.4",
+                                
+                                    "2013" :   "17.3",
+                                
+                                    "2014" :   "17.4",
+                                
+                                    "2015" :   "16.5",
+                                
+                                    "2016" :   "16.3",
+                                
+                                    "2017" :   "17.6",
+                                
+                                    "2018" :   "17.3"
+                                
+                                }
+                            ]
+                        }
+                    ]}
+      ]
+    }
+  ]
+}

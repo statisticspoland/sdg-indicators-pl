@@ -1,0 +1,290 @@
+
+
+
+{
+  "1-2-1": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "1.2.1 At-risk of poverty rate after social transfers",
+                      
+                        "goal": "Goal 1. No poverty",
+                      
+                        "target": "1.2 By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",
+                      
+                        "definition": "Percentage of persons with an equivalised disposable income (after social transfers) is below the at-risk-of-poverty threshold set at 60% of the national median of equivalised disposable income.",
+                      
+                        "unit": "percent [%]",
+                      
+                        "dimensions": "total, sex, age",
+                      
+                        "methodology": "The indicator is calculated on the basis of information obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) The subject of the EU-SILC are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview techniqueusing 2 questionnaires one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of the European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Central Statistical Office of Poland implemented EU-SILC survey in 2005. The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Equivalent disposable income in the survey is defined as a sum of the net (after deduction of income tax prepayment, tax on income from property, social and health insurance contributions) annual monetary incomes gained by all the household members reduced by: property tax, inter-household cash transfers paid and balance of offsetting settlements with the Tax Office. For the calculation of income statistics the modified OECD equivalence scale was applied which is calculated as follows: - 1 - for the first adult household member, - 0.5 - for the second and each subsequent household member aged 14 and over, - 0.3 - for every child in the household under 14. And thus, for instance, the extreme and relative poverty threshold for a 4-person household consisting of two adult persons and two children is 2,1 times as high as that for a 1-person household.",
+                      
+                        "source": "Statistics Poland",
+                      
+                        "availability": "Annual data; since 2010",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {
+                "urban/rural area": [
+                    {"total": [
+                            {
+                            
+                                "2010" :   "17.6",
+                            
+                                "2011" :   "17.7",
+                            
+                                "2012" :   "17.1",
+                            
+                                "2013" :   "17.3",
+                            
+                                "2014" :   "17.0",
+                            
+                                "2015" :   "17.6",
+                            
+                                "2016" :   "17.3",
+                            
+                                "2017" :   "15.0",
+                            
+                                "2018" :   "14.8"
+                            
+                            }
+                        ],"urban area": [
+                            {
+                            
+                                "2010" :   "12.6",
+                            
+                                "2011" :   "12.7",
+                            
+                                "2012" :   "12.3",
+                            
+                                "2013" :   "12.1",
+                            
+                                "2014" :   "11.7",
+                            
+                                "2015" :   "12.5",
+                            
+                                "2016" :   "12.8",
+                            
+                                "2017" :   "10.7",
+                            
+                                "2018" :   "10.8"
+                            
+                            }
+                        ],"rural area": [
+                            {
+                            
+                                "2010" :   "25.3",
+                            
+                                "2011" :   "25.2",
+                            
+                                "2012" :   "24.3",
+                            
+                                "2013" :   "24.9",
+                            
+                                "2014" :   "24.7",
+                            
+                                "2015" :   "25.2",
+                            
+                                "2016" :   "24.0",
+                            
+                                "2017" :   "21.5",
+                            
+                                "2018" :   "20.8"
+                            
+                            }
+                        ]
+                    }
+                ],
+                "by sex": [
+                    {"males": [
+                            {
+                            
+                                "2010" :   "17.4",
+                            
+                                "2011" :   "17.8",
+                            
+                                "2012" :   "17.1",
+                            
+                                "2013" :   "17.3",
+                            
+                                "2014" :   "17.2",
+                            
+                                "2015" :   "18.1",
+                            
+                                "2016" :   "17.1",
+                            
+                                "2017" :   "15.1",
+                            
+                                "2018" :   "14.6"
+                            
+                            }
+                        ],"females": [
+                            {
+                            
+                                "2010" :   "17.7",
+                            
+                                "2011" :   "17.6",
+                            
+                                "2012" :   "17.1",
+                            
+                                "2013" :   "17.3",
+                            
+                                "2014" :   "16.8",
+                            
+                                "2015" :   "17.2",
+                            
+                                "2016" :   "17.4",
+                            
+                                "2017" :   "14.9",
+                            
+                                "2018" :   "15.0"
+                            
+                            }
+                        ]
+                    }
+                ],
+                "by age group": [
+                    {"under 6 years": [
+                            {
+                            
+                                "2010" :   "20.5",
+                            
+                                "2011" :   "19.7",
+                            
+                                "2012" :   "18.6",
+                            
+                                "2013" :   "21.7",
+                            
+                                "2014" :   "19.4",
+                            
+                                "2015" :   "19.7",
+                            
+                                "2016" :   "17.6",
+                            
+                                "2017" :   "11.8",
+                            
+                                "2018" :   "10.7"
+                            
+                            }
+                        ],"under 18 years": [
+                            {
+                            
+                                "2010" :   "22.5",
+                            
+                                "2011" :   "22.0",
+                            
+                                "2012" :   "21.5",
+                            
+                                "2013" :   "23.2",
+                            
+                                "2014" :   "22.3",
+                            
+                                "2015" :   "22.4",
+                            
+                                "2016" :   "21.1",
+                            
+                                "2017" :   "14.0",
+                            
+                                "2018" :   "13.0"
+                            
+                            }
+                        ],"18-24 years": [
+                            {
+                            
+                                "2010" :   "20.9",
+                            
+                                "2011" :   "20.7",
+                            
+                                "2012" :   "21.8",
+                            
+                                "2013" :   "21.5",
+                            
+                                "2014" :   "22.0",
+                            
+                                "2015" :   "22.6",
+                            
+                                "2016" :   "23.5",
+                            
+                                "2017" :   "20.9",
+                            
+                                "2018" :   "21.1"
+                            
+                            }
+                        ],"18-64 years": [
+                            {
+                            
+                                "2010" :   "16.9",
+                            
+                                "2011" :   "17.1",
+                            
+                                "2012" :   "16.5",
+                            
+                                "2013" :   "16.7",
+                            
+                                "2014" :   "16.7",
+                            
+                                "2015" :   "17.6",
+                            
+                                "2016" :   "17.3",
+                            
+                                "2017" :   "15.6",
+                            
+                                "2018" :   "15.2"
+                            
+                            }
+                        ],"60 years and more": [
+                            {
+                            
+                                "2010" :   "14.0",
+                            
+                                "2011" :   "14.5",
+                            
+                                "2012" :   "14.0",
+                            
+                                "2013" :   "12.3",
+                            
+                                "2014" :   "12.3",
+                            
+                                "2015" :   "13.0",
+                            
+                                "2016" :   "14.0",
+                            
+                                "2017" :   "15.0",
+                            
+                                "2018" :   "16.2"
+                            
+                            }
+                        ],"65 years and more": [
+                            {
+                            
+                                "2010" :   "14.2",
+                            
+                                "2011" :   "14.7",
+                            
+                                "2012" :   "14.0",
+                            
+                                "2013" :   "12.3",
+                            
+                                "2014" :   "11.7",
+                            
+                                "2015" :   "12.1",
+                            
+                                "2016" :   "12.8",
+                            
+                                "2017" :   "13.8",
+                            
+                                "2018" :   "15.5"
+                            
+                            }
+                        ]
+                    }
+                ]}
+      ]
+    }
+  ]
+}

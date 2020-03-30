@@ -1,0 +1,228 @@
+
+
+
+{
+  "11-a-1": [
+    {
+      "metadane": [
+        
+        {
+                        "nazwa": "11.a.1 Odsetek ludności gmin, które posiadają studium lub miejscowe plany zagospodarowania przestrzennego, w podziale na rodzaj gminy",
+                      
+                        "cel": "Cel 11. Zrównoważone miasta i społeczności",
+                      
+                        "zadanie": "11.a Wspierać korzystne ekonomicznie, społecznie i środowiskowo połączenia pomiędzy obszarami miejskimi, podmiejskimi i wiejskimi poprzez wzmocnienie krajowego i regionalnego planowania rozwoju",
+                      
+                        "definicja": "Odsetek ludności gmin, które posiadają obowiązujące miejscowe plany zagospodarowania przestrzennego/studium, ogółem oraz w podziale na gminy miejskie, wiejskie i miejsko-wiejskie niezależnie od liczby posiadanych planów.",
+                      
+                        "jednostka": "procent [%]",
+                      
+                        "wymiary": "ogółem, gmina",
+                      
+                        "metodologia": "Studium uwarunkowań i kierunków zagospodarowania przestrzennego uchwalane jest przez radę gminy w celu określenia polityki przestrzennej, w tym lokalnych zasad zagospodarowania przestrzennego, uwzględniając m.in. zasady określone w koncepcji przestrzennego zagospodarowania kraju, ustalenia strategii rozwoju i planu zagospodarowania przestrzennego województwa, ramowego studium uwarunkowań i kierunków zagospodarowania przestrzennego związku metropolitalnego oraz strategii rozwoju gminy, a także analizy ekonomiczne, środowiskowe i społeczne, prognozy demograficzne.  Miejscowy plan zagospodarowania przestrzennego stanowi akt prawa miejscowego uchwalony przez radę gminy zgodnie z zapisami studium uwarunkowań i kierunków zagospodarowania przestrzennego, w którym określa się przeznaczenie i sposoby zagospodarowania terenami, w tym dla inwestycji celu publicznego.",
+                      
+                        "zrodlo": "Ministerstwo Infrastruktury / Główny Urząd Statystyczny",
+                      
+                        "czestotliwosc": "Dane roczne  od 2010 r.",
+                      
+                        "uwagi": ""
+                      }
+      ],
+      "dane": [
+        {
+                      "miejscowe plany zagospodarowania przestrzennego - wg rodzaju gmin": [
+                          {
+                              "ogółem": [
+                                  {
+                                  
+                                      "2010" :   "96.87",
+                                  
+                                      "2011" :   "97.19",
+                                  
+                                      "2012" :   "97.29",
+                                  
+                                      "2013" :   "97.48",
+                                  
+                                      "2014" :   "97.59",
+                                  
+                                      "2015" :   "97.78",
+                                  
+                                      "2016" :   "97.85",
+                                  
+                                      "2017" :   "97.98",
+                                  
+                                      "2018" :   "98.08"
+                                  
+                                  }
+                              ],
+                              "gminy miejskie": [
+                                  {
+                                  
+                                      "2010" :   "99.90",
+                                  
+                                      "2011" :   "99.91",
+                                  
+                                      "2012" :   "99.93",
+                                  
+                                      "2013" :   "99.96",
+                                  
+                                      "2014" :   "99.97",
+                                  
+                                      "2015" :   "100.00",
+                                  
+                                      "2016" :   "100.0",
+                                  
+                                      "2017" :   "100.0",
+                                  
+                                      "2018" :   "100"
+                                  
+                                  }
+                              ],
+                              "gminy wiejskie": [
+                                  {
+                                  
+                                      "2010" :   "90.59",
+                                  
+                                      "2011" :   "91.66",
+                                  
+                                      "2012" :   "91.90",
+                                  
+                                      "2013" :   "92.42",
+                                  
+                                      "2014" :   "92.85",
+                                  
+                                      "2015" :   "93.32",
+                                  
+                                      "2016" :   "93.47",
+                                  
+                                      "2017" :   "93.63",
+                                  
+                                      "2018" :   "94.04"
+                                  
+                                  }
+                              ],
+                              "gminy miejsko-wiejskie": [
+                                  {
+                                  
+                                      "2010" :   "98.16",
+                                  
+                                      "2011" :   "98.22",
+                                  
+                                      "2012" :   "98.39",
+                                  
+                                      "2013" :   "98.54",
+                                  
+                                      "2014" :   "98.45",
+                                  
+                                      "2015" :   "98.64",
+                                  
+                                      "2016" :   "98.74",
+                                  
+                                      "2017" :   "99.12",
+                                  
+                                      "2018" :   "99.07"
+                                  
+                                  }
+                              ]
+                          }
+                      ],
+                      "studium - wg rodzaju gmin": [
+                          {
+                              "ogółem": [
+                                  {
+                                  
+                                      "2010" :   "96.87",
+                                  
+                                      "2011" :   "97.19",
+                                  
+                                      "2012" :   "97.29",
+                                  
+                                      "2013" :   "97.48",
+                                  
+                                      "2014" :   "97.59",
+                                  
+                                      "2015" :   "97.78",
+                                  
+                                      "2016" :   "97.85",
+                                  
+                                      "2017" :   "97.98",
+                                  
+                                      "2018" :   "98.08"
+                                  
+                                  }
+                              ],
+                              "gminy miejskie": [
+                                  {
+                                  
+                                      "2010" :   "99.90",
+                                  
+                                      "2011" :   "99.91",
+                                  
+                                      "2012" :   "99.93",
+                                  
+                                      "2013" :   "99.96",
+                                  
+                                      "2014" :   "99.97",
+                                  
+                                      "2015" :   "100.00",
+                                  
+                                      "2016" :   "100.0",
+                                  
+                                      "2017" :   "100.0",
+                                  
+                                      "2018" :   "100"
+                                  
+                                  }
+                              ],
+                              "gminy wiejskie": [
+                                  {
+                                  
+                                      "2010" :   "90.59",
+                                  
+                                      "2011" :   "91.66",
+                                  
+                                      "2012" :   "91.90",
+                                  
+                                      "2013" :   "92.42",
+                                  
+                                      "2014" :   "92.85",
+                                  
+                                      "2015" :   "93.32",
+                                  
+                                      "2016" :   "93.47",
+                                  
+                                      "2017" :   "93.63",
+                                  
+                                      "2018" :   "94.04"
+                                  
+                                  }
+                              ],
+                              "gminy miejsko-wiejskie": [
+                                  {
+                                  
+                                      "2010" :   "98.16",
+                                  
+                                      "2011" :   "98.22",
+                                  
+                                      "2012" :   "98.39",
+                                  
+                                      "2013" :   "98.54",
+                                  
+                                      "2014" :   "98.45",
+                                  
+                                      "2015" :   "98.64",
+                                  
+                                      "2016" :   "98.74",
+                                  
+                                      "2017" :   "99.12",
+                                  
+                                      "2018" :   "99.07"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+  ]
+}

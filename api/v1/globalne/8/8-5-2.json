@@ -1,0 +1,255 @@
+
+
+
+{
+  "8-5-2": [
+    {
+      "metadane": [
+        
+        {
+                        "nazwa": "8.5.2 Stopa bezrobocia (wg BAEL)",
+                      
+                        "cel": "Cel 8. Wzrost gospodarczy i godna praca",
+                      
+                        "zadanie": "8.5 Do 2030 roku zapewnić pełne i produktywne zatrudnienie oraz godną pracę dla wszystkich kobiet i mężczyzn, w tym dla młodych ludzi i osób z niepełnosprawnością  zapewnić jednakowe wynagrodzenie za pracę o jednakowej wartości",
+                      
+                        "definicja": "Udział liczby osób bezrobotnych (ogółem lub danej kategorii) w liczbie aktywnych zawodowo (ogółem lub danej kategorii).",
+                      
+                        "jednostka": "procent [%]",
+                      
+                        "wymiary": "ogółem, płeć, wiek",
+                      
+                        "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym. Badanie prowadzone jest metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15 lat i więcej będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: płeć, wiekpracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo.  Do pracujących zaliczono wszystkie osoby w wieku 15 lat i więcej, które w okresie badanego tygodnia:   – wykonywały, przez co najmniej 1 godzinę, pracę przynoszącą zarobek lub dochód, tzn. były zatrudnione w charakterze pracownika najemnego, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem,   – miały pracę, ale jej nie wykonywały:    • z powodu choroby, urlopu macierzyńskiego lub wypoczynkowego,    • z innych powodów, przy czym długość przerwy w pracy wynosiła:    – do 3 miesięcy,   – powyżej 3 miesięcy, ale osoby te były pracownikami najemnymi i w tym czasie otrzymywały co najmniej 50% dotychczasowego wynagrodzenia. Do pracujących – zgodnie z międzynarodowymi standardami – zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Bezrobotni to osoby w wieku 15-74 lata, które spełniają jednocześnie trzy warunki:   – w okresie badanego tygodnia nie były osobami pracującymi,   – aktywnie poszukiwały pracy, tzn. podjęły konkretne działania w ciągu 4 tygodni (wliczając jako ostatni – tydzień badany), aby znaleźć pracę,   – były gotowe (zdolne) podjąć pracę w ciągu dwóch tygodni następujących po tygodniu badanym. Do bezrobotnych zaliczane są również osoby, które nie poszukiwały pracy, ponieważ miały pracę załatwioną i oczekiwały na jej rozpoczęcie przez okres nie dłuższy niż 3 miesiące oraz były gotowe tę pracę podjąć.",
+                      
+                        "zrodlo": "Główny Urząd Statystyczny",
+                      
+                        "czestotliwosc": "Dane roczne od 2010 r.",
+                      
+                        "uwagi": ""
+                      }
+      ],
+      "dane": [
+        {
+                      "wg płci": [
+                          {
+                              "ogółem": [
+                                  {
+                                  
+                                      "2010" :   "9.6",
+                                  
+                                      "2011" :   "9.6",
+                                  
+                                      "2012" :   "10.1",
+                                  
+                                      "2013" :   "10.3",
+                                  
+                                      "2014" :   "9.0",
+                                  
+                                      "2015" :   "7.5",
+                                  
+                                      "2016" :   "6.2",
+                                  
+                                      "2017" :   "4.9",
+                                  
+                                      "2018" :   "3.8"
+                                  
+                                  }
+                              ],
+                              "mężczyźni": [
+                                  {
+                                  
+                                      "2010" :   "9.3",
+                                  
+                                      "2011" :   "9.0",
+                                  
+                                      "2012" :   "9.4",
+                                  
+                                      "2013" :   "9.7",
+                                  
+                                      "2014" :   "8.5",
+                                  
+                                      "2015" :   "7.3",
+                                  
+                                      "2016" :   "6.1",
+                                  
+                                      "2017" :   "4.9",
+                                  
+                                      "2018" :   "3.8"
+                                  
+                                  }
+                              ],
+                              "kobiety": [
+                                  {
+                                  
+                                      "2010" :   "10.0",
+                                  
+                                      "2011" :   "10.4",
+                                  
+                                      "2012" :   "10.9",
+                                  
+                                      "2013" :   "11.1",
+                                  
+                                      "2014" :   "9.6",
+                                  
+                                      "2015" :   "7.7",
+                                  
+                                      "2016" :   "6.2",
+                                  
+                                      "2017" :   "4.9",
+                                  
+                                      "2018" :   "3.8"
+                                  
+                                  }
+                              ]
+                          }
+                      ],
+                      "wg grup wieku": [
+                          {
+                              "15-24 lata": [
+                                  {
+                                  
+                                      "2010" :   "23.7",
+                                  
+                                      "2011" :   "25.8",
+                                  
+                                      "2012" :   "26.5",
+                                  
+                                      "2013" :   "27.3",
+                                  
+                                      "2014" :   "23.8",
+                                  
+                                      "2015" :   "20.8",
+                                  
+                                      "2016" :   "17.7",
+                                  
+                                      "2017" :   "14.8",
+                                  
+                                      "2018" :   "11.7"
+                                  
+                                  }
+                              ],
+                              "25-34 lata": [
+                                  {
+                                  
+                                      "2010" :   "10.0",
+                                  
+                                      "2011" :   "10.0",
+                                  
+                                      "2012" :   "10.7",
+                                  
+                                      "2013" :   "11.1",
+                                  
+                                      "2014" :   "9.8",
+                                  
+                                      "2015" :   "8.2",
+                                  
+                                      "2016" :   "6.7",
+                                  
+                                      "2017" :   "5.1",
+                                  
+                                      "2018" :   "4.3"
+                                  
+                                  }
+                              ],
+                              "35-44 lata": [
+                                  {
+                                  
+                                      "2010" :   "6.9",
+                                  
+                                      "2011" :   "6.7",
+                                  
+                                      "2012" :   "7.4",
+                                  
+                                      "2013" :   "7.9",
+                                  
+                                      "2014" :   "6.7",
+                                  
+                                      "2015" :   "5.6",
+                                  
+                                      "2016" :   "4.7",
+                                  
+                                      "2017" :   "3.7",
+                                  
+                                      "2018" :   "2.9"
+                                  
+                                  }
+                              ],
+                              "45-54 lata": [
+                                  {
+                                  
+                                      "2010" :   "7.7",
+                                  
+                                      "2011" :   "7.7",
+                                  
+                                      "2012" :   "7.9",
+                                  
+                                      "2013" :   "7.9",
+                                  
+                                      "2014" :   "7.0",
+                                  
+                                      "2015" :   "6.0",
+                                  
+                                      "2016" :   "4.6",
+                                  
+                                      "2017" :   "3.8",
+                                  
+                                      "2018" :   "2.9"
+                                  
+                                  }
+                              ],
+                              "55 lat i więcej": [
+                                  {
+                                  
+                                      "2010" :   "6.5",
+                                  
+                                      "2011" :   "6.3",
+                                  
+                                      "2012" :   "6.9",
+                                  
+                                      "2013" :   "7.2",
+                                  
+                                      "2014" :   "6.3",
+                                  
+                                      "2015" :   "5.1",
+                                  
+                                      "2016" :   "4.1",
+                                  
+                                      "2017" :   "3.4",
+                                  
+                                      "2018" :   "2.5"
+                                  
+                                  }
+                              ]
+                          }
+                      ],
+                      "osoby z niepełnosprawnością": [
+                          {
+                              "ogółem": [
+                                  {
+                                  
+                                      "2010" :   "9.6",
+                                  
+                                      "2011" :   "9.6",
+                                  
+                                      "2012" :   "10.1",
+                                  
+                                      "2013" :   "10.3",
+                                  
+                                      "2014" :   "9.0",
+                                  
+                                      "2015" :   "7.5",
+                                  
+                                      "2016" :   "6.2",
+                                  
+                                      "2017" :   "4.9",
+                                  
+                                      "2018" :   "3.8"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+  ]
+}

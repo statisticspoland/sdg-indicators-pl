@@ -1,0 +1,132 @@
+
+
+
+{
+  "11-6-1": [
+    {
+      "metadane": [
+        
+        {
+                        "nazwa": "11.6.1 Odsetek odpadów komunalnych przeznaczonych do przetworzenia w określony sposób w relacji do ilości odpadów wytworzonych",
+                      
+                        "cel": "Cel 11. Zrównoważone miasta i społeczności",
+                      
+                        "zadanie": "11.6 Do 2030 roku obniżyć niekorzystny wskaźnik negatywnego oddziaływania miasta na środowisko per capita, zwracając szczególną uwagę na jakość powietrza oraz gospodarowanie odpadami komunalnymi i innymi zanieczyszczeniami",
+                      
+                        "definicja": "Odsetek odpadów komunalnych przeznaczonych do przetworzenia w określony sposób (recykling, kompostowanie lub fermentacja, przekształcanie termiczne, składowanie) w relacji do ilości odpadów wytworzonych w ciągu roku.",
+                      
+                        "jednostka": "procent [%]",
+                      
+                        "wymiary": "sposób przetworzenia",
+                      
+                        "metodologia": "Odpady komunalne to odpady powstające w gospodarstwach domowych, z wyłączeniem pojazdów wycofanych z eksploatacji, a także odpady niezawierające odpadów niebezpiecznych pochodzące od innych wytwórców odpadów, które ze względu na swój charakter lub skład są podobne do odpadów powstających w gospodarstwach domowych  zmieszane odpady komunalne pozostają zmieszanymi odpadami komunalnymi, nawet jeżeli zostały poddane czynności przetwarzania odpadów, która nie zmieniła w sposób znaczący ich właściwości. Dane o odpadach komunalnych zbierane są od jednostek zajmujących się zbieraniem (odbieraniem) odpadów od jednostek zajmujących się przetwarzaniem odpadów komunalnych. Zbierane informacje obejmują odpady z kodem 20: Odpady komunalne łącznie z frakcjami gromadzonymi selektywnie oraz odpady z kodem 15 01: Odpady opakowaniowe (włącznie z selektywnie gromadzonymi odpadami komunalnymi) jeżeli pochodzą z sektora komunalnego. Dla danych za lata 2010-2014: Sposób klasyfikacji odpadów oraz katalog odpadów wraz z listą odpadów niebezpiecznych określa rozporządzenie Ministra Środowiska z dnia 27 września 2001 r. w sprawie katalogu odpadów (Dz. U. 2001 Nr 112, poz. 1206). Dla danych od 2015 r.: Sposób klasyfikacji odpadów oraz katalog odpadów wraz z listą odpadów niebezpiecznych określa rozporządzenie Ministra Środowiska z dnia 9 grudnia 2014 r. w sprawie katalogu odpadów (Dz. U. 2014, poz. 1923).",
+                      
+                        "zrodlo": "Główny Urząd Statystyczny",
+                      
+                        "czestotliwosc": "Dane roczne  od 2010 r.",
+                      
+                        "uwagi": ""
+                      }
+      ],
+      "dane": [
+        {
+                      "wg sposobu przetworzenia": [
+                          {
+                              "recykling": [
+                                  {
+                                  
+                                      "2010" :   "14.82",
+                                  
+                                      "2011" :   "9.70",
+                                  
+                                      "2012" :   "10.30",
+                                  
+                                      "2013" :   "13.27",
+                                  
+                                      "2014" :   "21.10",
+                                  
+                                      "2015" :   "26.39",
+                                  
+                                      "2016" :   "27.84",
+                                  
+                                      "2017" :   "26.73",
+                                  
+                                      "2018" :   "26.18"
+                                  
+                                  }
+                              ],
+                              "kompostowanie lub fermentacja": [
+                                  {
+                                  
+                                      "2010" :   "1.50",
+                                  
+                                      "2011" :   "1.73",
+                                  
+                                      "2012" :   "1.67",
+                                  
+                                      "2013" :   "1.88",
+                                  
+                                      "2014" :   "5.42",
+                                  
+                                      "2015" :   "6.09",
+                                  
+                                      "2016" :   "6.99",
+                                  
+                                      "2017" :   "7.08",
+                                  
+                                      "2018" :   "8.11"
+                                  
+                                  }
+                              ],
+                              "przekształcenia termiczne": [
+                                  {
+                                  
+                                      "2010" :   "0.32",
+                                  
+                                      "2011" :   "0.37",
+                                  
+                                      "2012" :   "0.42",
+                                  
+                                      "2013" :   "6.78",
+                                  
+                                      "2014" :   "15.10",
+                                  
+                                      "2015" :   "13.25",
+                                  
+                                      "2016" :   "19.44",
+                                  
+                                      "2017" :   "24.41",
+                                  
+                                      "2018" :   "24.13"
+                                  
+                                  }
+                              ],
+                              "składowanie": [
+                                  {
+                                  
+                                      "2010" :   "66.80",
+                                  
+                                      "2011" :   "69.26",
+                                  
+                                      "2012" :   "66.91",
+                                  
+                                      "2013" :   "61.95",
+                                  
+                                      "2014" :   "58.38",
+                                  
+                                      "2015" :   "54.29",
+                                  
+                                      "2016" :   "45.74",
+                                  
+                                      "2017" :   "41.77",
+                                  
+                                      "2018" :   "41.58"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+  ]
+}

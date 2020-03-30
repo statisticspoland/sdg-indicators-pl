@@ -1,0 +1,338 @@
+{
+  "7":[
+    {
+      "7-1-a": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "7.1.a Primary energy intensity of GDP with climatic correction",
+                          
+                            "goal": "Goal 7. Affordable and clean energy",
+                          
+                            "priority": "Improvement of energy efficiency",
+                          
+                            "definition": "Ratio of primary energy consumption to gross domestic product (GDP) at constant prices from the base year (2005) including climatic corrections.",
+                          
+                            "unit": "kg/euro (constant prices 2005)",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Total primary energy consumption includes primary energy production plus recovery, import and reduction of primary stocks and derivatives of energy carriers, minus export and marine bunkers of these carriers. A climatic correction determines the theoretical value of energy consumption for a given year, assuming that it would be characterised by weather conditions described by a long-term average number of degree days. Kgoe –  kilogram of oil equivalent (contractual), is a unit of measurement of energy used in international balance sheets. It indicates the amount of energy that can be produced from the combustion of one metric kilogram of crude oil. One tonne of oil is equal to the contractual 41.868 GJ or 11.63 MWh. Gross domestic product presents the final result of the activity of all entities of the national economy in a given year. GDP value can be calculated in three ways: - from the production side GDP is the sum of value added of all institutional sectors or all sections of the Polish Classification of Activities (PKD) of domestic production entities plus taxes less subsidies on products, - from the distribution side GDP is calculated as the sum of domestic demand, i.e. final consumption expenditure and gross capital formation as well as external balance of goods and services, - as the sum of uses in the total economy generation of income account (compensation of employees, taxes less subsidies on production and imports, gross operating surplus and mixed income of the total economy). Gross domestic product is calculated according to obligatory in the European Union countries principles of the European System of National and Regional Accounts (ESA 2010) and recommendations of the Eurostat.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "0.319",
+                              
+                                  "2011" :   "0.316",
+                              
+                                  "2012" :   "0.297",
+                              
+                                  "2013" :   "0.293",
+                              
+                                  "2014" :   "0.278",
+                              
+                                  "2015" :   "0.271",
+                              
+                                  "2016" :   "0.272",
+                              
+                                  "2017" :   "0.272",
+                              
+                                  "2018" :   ""
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "7-2-a": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "7.2.a Renewable energy share in the gross final energy consumption",
+                          
+                            "goal": "Goal 7. Affordable and clean energy",
+                          
+                            "priority": "Creation of conditions for steady and sustainable development of energy sector; reduction of impact of energy sector on the environment",
+                          
+                            "definition": "Ratio of gross final energy consumption from renewable sources to gross final energy consumption from all sources.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Energy from renewable sources is the energy derived from natural, repetitive environmental processes, obtained from renewable non-fossil energy sources (energy: water, wind, solar heat, geothermal heat, waves, sea currents and tides and energy obtained from biomass, biogas, biofuels). Gross energy consumption is a final consumption of energy carriers by the consumers (industry, transport sector, service sector, households, agriculture, forestry and fishery sector) including electricity and heat consumption by industry for electricity and heat generation as well as transformation and distribution looses.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "7-3-a": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "7.3.a Relation of energy acquisition in general to the global energy consumption",
+                          
+                            "goal": "Goal 7. Affordable and clean energy",
+                          
+                            "priority": "Ensurance of energy security of the state",
+                          
+                            "definition": "Relation of energy acquisition in general to the global energy consumption.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Acquisition is the quantity of primary energy carriers coming from domestic resources. The global consumption is determined as: acquisition + (plus) import - (minus) export - (minus) change in inventories. The indicator is based on preliminary data.",
+                          
+                            "source": "Ministry of Energy / Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "66",
+                              
+                                  "2011" :   "67",
+                              
+                                  "2012" :   "73",
+                              
+                                  "2013" :   "73",
+                              
+                                  "2014" :   "72",
+                              
+                                  "2015" :   "71",
+                              
+                                  "2016" :   "67",
+                              
+                                  "2017" :   "62",
+                              
+                                  "2018" :   "58"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "7-3-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "7.3.b SAIDI (System Average Interruption Duration Index)",
+                          
+                            "goal": "Goal 7. Affordable and clean energy",
+                          
+                            "priority": "Ensurance of energy security of the state",
+                          
+                            "definition": "Average system duration of long or very long interruption in electricity supply per one power consumer.",
+                          
+                            "unit": "minutes ",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "SAIDI (System Average Interruption Duration Index), expressed in minutes per power consumer per year, is the products sum of duration of long and very long interruption in electricity supply and number of power consumers exposed on effects of this interruption in a year, divided by total number of power consumers served. SAIDI informs of total duration of interruption of electricity power supply (in minutes) that power consumer can expect on average in a year. SAIDI is determined separately for planned and non-planned interruptions, taking into consideration disastrous interruptions and without taking into consideration those interruptions, according to Decree of the Minister of the Economy of 21 September 2008, changing the decree on detailed conditions of electro-energetic system functioning (Journal of Laws from 2008 No 162, item 162 position 1005). Long interruption lasts longer than 3 minutes and no longer that 12 hours very long interruption lasts longer than 12 hours and no longer than 24 hours.",
+                          
+                            "source": "Ministry of Energy",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "316.1",
+                              
+                                  "2011" :   "309.1",
+                              
+                                  "2012" :   "254.0",
+                              
+                                  "2013" :   "254.2",
+                              
+                                  "2014" :   "191.3",
+                              
+                                  "2015" :   "243.6",
+                              
+                                  "2016" :   "179.9",
+                              
+                                  "2017" :   "285.0",
+                              
+                                  "2018" :   ""
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "7-4-a": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "7.4.a Percentage of households (with income below 60% median) declaring inability to keep home adequately warm",
+                          
+                            "goal": "Goal 7. Affordable and clean energy",
+                          
+                            "priority": "Fulfillment of enterprises and households' energy needs",
+                          
+                            "definition": "Share of households (with income below 60% median) declaring inability to keep home adequately warm in the total number of households.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator is calculated on the basis of information obtained from the EU-SILC survey.EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) whose subject are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of “observation” at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview technique using 2 questionnaires one of which is used to obtain data on households, and the second to obtain data on individuals.The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat.At current requests of European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey).Statistics Poland implemented EU-SILC survey in 2005.The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household).",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "30.7",
+                              
+                                  "2011" :   "28.7",
+                              
+                                  "2012" :   "27.6",
+                              
+                                  "2013" :   "23.8",
+                              
+                                  "2014" :   "20.7",
+                              
+                                  "2015" :   "18.7",
+                              
+                                  "2016" :   "16.7",
+                              
+                                  "2017" :   "15.1",
+                              
+                                  "2018" :   "13.7"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "7-4-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "7.4.b Share of average monthly expenditures on electricity, gas and other fuels in total household expenditures ",
+                          
+                            "goal": "Goal 7. Affordable and clean energy",
+                          
+                            "priority": "Fulfillment of enterprises and households' energy needs",
+                          
+                            "definition": "Ratio of average monthly expenditures on energy carriers per one person in a household to total household expenditures per one person.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator is calculated on the basis of information obtained from the Household Budget Survey.The household budget survey is conducted using the representative method. The purpose of the survey is to enable the analysis of the living standards of the population as well as evaluate the impact of various factors on the living standard and its diversity among basic groups of households. The survey unit is a household, which is understood as persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). The household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Expenditures cover expenditures on consumer goods and services as well as other expenditures. Expenditures on consumer goods and services are allocated to satisfying household's needs. They include products purchased by cash, also using debt or credit card, on credit, received free of charge and natural consumption (consumer goods and services taken from individual farm or own economic activity to satisfy household's needs). Consumer goods comprise non-durable goods (e.g. food, beverages or medicines), semi-durable goods (e.g. clothes, books, toys) and durable goods (e.g. cars, washing machines, refrigerators, television sets).Other expenditures include:  - gifts donated to other households and non-commercial institutions;  - certain taxes, such as tax on legacy and donations, tax on real estates, fees for perpetual use of the land;  - prepayments of personal income tax and social security contributions paid directly by the tax payer;  - other kinds of expenditures not allocated directly to consumption, including sums lost in gambling and lotteries, losses of cash and bails.Expenditures on electricity, gas and other fuels were isolated on the basis of COICOP classification.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "11.9",
+                              
+                                  "2011" :   "12.3",
+                              
+                                  "2012" :   "12.1",
+                              
+                                  "2013" :   "12.2",
+                              
+                                  "2014" :   "11.5",
+                              
+                                  "2015" :   "11.4",
+                              
+                                  "2016" :   "10.8",
+                              
+                                  "2017" :   "10.7",
+                              
+                                  "2018" :   "10.3"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    }]
+}

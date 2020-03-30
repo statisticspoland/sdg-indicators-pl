@@ -1,0 +1,297 @@
+
+
+
+{
+  "9-1-2": [
+    {
+      "metadane": [
+        
+        {
+                        "nazwa": "9.1.2 Rozmiary transportu pasażerskiego i towarowego według rodzaju ",
+                      
+                        "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                      
+                        "zadanie": "9.1 Rozwijać niezawodną, zrównoważoną i odporną infrastrukturę dobrej jakości, w tym infrastrukturę regionalną i transgraniczną, wspierającą rozwój gospodarczy i dobrobyt ludzi. Zapewnić wszystkim ludziom równy dostęp do infrastruktury po przystępnej cenie.",
+                      
+                        "definicja": "Liczba pasażerów (w tysiącach pasażerów) według rodzaju transportu.",
+                      
+                        "jednostka": "tys. pasażerów ",
+                      
+                        "wymiary": "rodzaj transportu",
+                      
+                        "metodologia": "Przewozy pasażerów transportem kolejowym Liczba wszystkich pasażerów przewiezionych na sieci kolei normalnotorowych i wąskotorowych pociągami osobowymi, pośpiesznymi i ekspresowymi (łącznie z pasażerami przewiezionymi w wagonach sypialnych i w wagonach z miejscami do leżenia) z biletami płatnymi oraz pasażerów korzystających z bezpłatnych przejazdów na podstawie odpowiednich przepisów w ramach komunikacji wewnętrznej i międzynarodowej.  Przewozy pasażerów transportem samochodowym Przewozy pasażerów taborem autobusowym to suma pasażerów przewiezionych w komunikacji krajowej i międzynarodowej autobusami w ramach komunikacji regularnej (tj. na podstawie rozkładu jazdy), regularnej specjalnej (np. przewozy pracownicze, szkolne) oraz w przewozach pozostałych (np. wycieczkowe). Dane o przewozach pasażerów transportem samochodowym nie obejmują przewozów osób taborem autobusowym przedsiębiorstw komunikacji miejskiej oraz taborem autobusowym będącym w transporcie samochodowym gospodarczym. Dane nie obejmują przewozów dokonywanych przez podmioty o liczbie pracujących do 9 osób.  Przewozy pasażerów transportem lotniczym  Dane o przewozach pasażerów transportem lotniczym obejmują pasażerów przewiezionych w lotach rozkładowych, dodatkowych i wynajętych (czarterowych) samolotami polskich przewoźników transportu lotniczego rozkładowego (transport pasażerów na stałych trasach i według stałych rozkładów lotów) oraz innych polskich przewoźników świadczących zarobkowo tego rodzaju usługi w komunikacji międzynarodowej i w komunikacji krajowej. ",
+                      
+                        "zrodlo": "Główny Urząd Statystyczny",
+                      
+                        "czestotliwosc": "Dane roczne; od 2010 r.",
+                      
+                        "uwagi": ""
+                      }
+      ],
+      "dane": [
+        {
+                      "przewozy pasażerskie wg rodzaju transportu": [
+                          {
+                              "transport kolejowy": [
+                                  {
+                                  
+                                      "2010" :   "261314",
+                                  
+                                      "2011" :   "263609",
+                                  
+                                      "2012" :   "273182",
+                                  
+                                      "2013" :   "269815",
+                                  
+                                      "2014" :   "268204",
+                                  
+                                      "2015" :   "277321",
+                                  
+                                      "2016" :   "291981",
+                                  
+                                      "2017" :   "303001",
+                                  
+                                      "2018" :   "309722"
+                                  
+                                  }
+                              ],
+                              "transport samochodowy": [
+                                  {
+                                  
+                                      "2010" :   "569652",
+                                  
+                                      "2011" :   "534885",
+                                  
+                                      "2012" :   "497288",
+                                  
+                                      "2013" :   "459947",
+                                  
+                                      "2014" :   "431516",
+                                  
+                                      "2015" :   "416774",
+                                  
+                                      "2016" :   "390410",
+                                  
+                                      "2017" :   "378610",
+                                  
+                                      "2018" :   "336511"
+                                  
+                                  }
+                              ],
+                              "transport morski": [
+                                  {
+                                  
+                                      "2010" :   "671",
+                                  
+                                      "2011" :   "637",
+                                  
+                                      "2012" :   "642",
+                                  
+                                      "2013" :   "606",
+                                  
+                                      "2014" :   "611",
+                                  
+                                      "2015" :   "597",
+                                  
+                                      "2016" :   "632",
+                                  
+                                      "2017" :   "644",
+                                  
+                                      "2018" :   "632"
+                                  
+                                  }
+                              ],
+                              "śródlądowy transport wodny": [
+                                  {
+                                  
+                                      "2010" :   "1397",
+                                  
+                                      "2011" :   "1519",
+                                  
+                                      "2012" :   "1515",
+                                  
+                                      "2013" :   "1540",
+                                  
+                                      "2014" :   "1579",
+                                  
+                                      "2015" :   "1762",
+                                  
+                                      "2016" :   "2024",
+                                  
+                                      "2017" :   "1262",
+                                  
+                                      "2018" :   "1395"
+                                  
+                                  }
+                              ],
+                              "transport lotniczy": [
+                                  {
+                                  
+                                      "2010" :   "4990",
+                                  
+                                      "2011" :   "6491",
+                                  
+                                      "2012" :   "7170",
+                                  
+                                      "2013" :   "7648",
+                                  
+                                      "2014" :   "7788",
+                                  
+                                      "2015" :   "7288",
+                                  
+                                      "2016" :   "8779",
+                                  
+                                      "2017" :   "11846",
+                                  
+                                      "2018" :   "13850"
+                                  
+                                  }
+                              ]
+                          }
+                      ],
+                      "przewozy towarowe wg rodzaju transportu": [
+                          {
+                              "transport kolejowy": [
+                                  {
+                                  
+                                      "2010" :   "261314",
+                                  
+                                      "2011" :   "263609",
+                                  
+                                      "2012" :   "273182",
+                                  
+                                      "2013" :   "269815",
+                                  
+                                      "2014" :   "268204",
+                                  
+                                      "2015" :   "277321",
+                                  
+                                      "2016" :   "291981",
+                                  
+                                      "2017" :   "303001",
+                                  
+                                      "2018" :   "309722"
+                                  
+                                  }
+                              ],
+                              "transport samochodowy": [
+                                  {
+                                  
+                                      "2010" :   "569652",
+                                  
+                                      "2011" :   "534885",
+                                  
+                                      "2012" :   "497288",
+                                  
+                                      "2013" :   "459947",
+                                  
+                                      "2014" :   "431516",
+                                  
+                                      "2015" :   "416774",
+                                  
+                                      "2016" :   "390410",
+                                  
+                                      "2017" :   "378610",
+                                  
+                                      "2018" :   "336511"
+                                  
+                                  }
+                              ],
+                              "transport rurociągowy": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   ""
+                                  
+                                  }
+                              ],
+                              "transport morski": [
+                                  {
+                                  
+                                      "2010" :   "671",
+                                  
+                                      "2011" :   "637",
+                                  
+                                      "2012" :   "642",
+                                  
+                                      "2013" :   "606",
+                                  
+                                      "2014" :   "611",
+                                  
+                                      "2015" :   "597",
+                                  
+                                      "2016" :   "632",
+                                  
+                                      "2017" :   "644",
+                                  
+                                      "2018" :   "632"
+                                  
+                                  }
+                              ],
+                              "śródlądowy transport wodny": [
+                                  {
+                                  
+                                      "2010" :   "1397",
+                                  
+                                      "2011" :   "1519",
+                                  
+                                      "2012" :   "1515",
+                                  
+                                      "2013" :   "1540",
+                                  
+                                      "2014" :   "1579",
+                                  
+                                      "2015" :   "1762",
+                                  
+                                      "2016" :   "2024",
+                                  
+                                      "2017" :   "1262",
+                                  
+                                      "2018" :   "1395"
+                                  
+                                  }
+                              ],
+                              "transport lotniczy": [
+                                  {
+                                  
+                                      "2010" :   "4990",
+                                  
+                                      "2011" :   "6491",
+                                  
+                                      "2012" :   "7170",
+                                  
+                                      "2013" :   "7648",
+                                  
+                                      "2014" :   "7788",
+                                  
+                                      "2015" :   "7288",
+                                  
+                                      "2016" :   "8779",
+                                  
+                                      "2017" :   "11846",
+                                  
+                                      "2018" :   "13850"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+
+
+
+{
+  "10-2-a": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "10.2.a Change in the number of employees in sub-regions with less favorable development conditions",
+                      
+                        "goal": "Goal 10. Reduce inequalities",
+                      
+                        "priority": "Workplace creation in areas with less favourable conditions for development",
+                      
+                        "definition": "Decrease/increase in the number of employees compared to the previous year in subregions with less favorable development conditions.",
+                      
+                        "unit": "persons",
+                      
+                        "dimensions": "total",
+                      
+                        "methodology": "A subregion with less favorable development conditions should be understood as a subregion (NUTS 3), for which the indicator of gross domestic product per 1 inhabitant is below the value determining the first quartile in a given year. GDP (gross domestic product) value can be calculated in three ways: - from the production side GDP is the sum of value added of all institutional sectors or all sections of the Polish Classification of Activities (PKD) of domestic production entities plus taxes less subsidies on products, - from the distribution side GDP is calculated as the sum of domestic demand, i.e. final consumption expenditure and gross capital formation as well as external balance of goods and services, - as the sum of uses in the total economy generation of income account (compensation of employees, taxes less subsidies on production and imports, gross operating surplus and mixed income of the total economy). Gross domestic product is calculated according to obligatory in the European Union countries principles of the European System of National and Regional Accounts (ESA 2010) and recommendations of Eurostat. Regional accounts are a subsystem of national accounts, in which the economic activity of all entities of the national economy is grouped in territorial sections - according to macroregions, regions and subregions. Regional accounts are developed in accordance with the rules of the European System of Accounts 2010 (ESA 2010). For sub-regions, the following items are calculated: gross domestic product (GDP) and gross value added (GVA) by type of activity groups (by local type of activity type). For conversions per capita, the population was assumed as of 30 VI, taking into account the results of the 2011 National Population and Housing Census. Employment in national economy includes:  employees hired on the basis of employment (labour contract, posting, appointment, election or service relation); employers and own-account workers, i.e.  owners, co-owners and leaseholders of private farms in agriculture (including contributing family workers) owners and co-owners (including contributing family workers; excluding partners in companies who do not work in them) of entities conducting economic activity other than that related to private farms in agriculture other self-employed persons, e.g. persons practising learned professions   outworkers; agents (including contributing family workers and persons employed by agents); members of agricultural production co-operatives (agricultural producers co-operatives and co-operatives established on their basis as well as agricultural farmers co-operatives); clergy fulfilling priestly obligations.  Without working in budgetary units operating in the field of national defence and public safety, according to the actual workplace and type of activity.",
+                      
+                        "source": "Statistics Poland",
+                      
+                        "availability": "Annual data; since 2011",
+                      
+                        "notes": "Data from regional accounts are verified for routine revisions in annual national accounts, made according to a standard procedure in line with the requirements of fiscal notification. The time series of 2010-2017 differs in the scope of the data revisions implemented. Data on the gross domestic product in the territorial cross-section according to the statistical division of Poland between 2000 and 2013, applicable from 1 January 2018, will be available after the second stage of implementation of the NUTS 2016 classification for regional accounts, which will be implemented by the end of 2019."
+                      }
+      ],
+      "data": [
+        {"total": [
+                      {
+                      
+                          "2010" :   "",
+                      
+                          "2011" :   "120451",
+                      
+                          "2012" :   "-63307",
+                      
+                          "2013" :   "63845",
+                      
+                          "2014" :   "295265",
+                      
+                          "2015" :   "250661",
+                      
+                          "2016" :   "433179",
+                      
+                          "2017" :   "1127454",
+                      
+                          "2018" :   ""
+                      
+                      }
+                  ]
+            }
+      ]
+    }
+  ]
+}

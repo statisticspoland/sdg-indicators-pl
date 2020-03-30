@@ -1,0 +1,59 @@
+
+
+
+{
+  "6-4-1": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "6.4.1 Change in water use efficiency over time",
+                      
+                        "goal": "Goal 6. Clear water and sanitation",
+                      
+                        "target": "6.4 By 2030, substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and substantially reduce the number of people suffering from water scarcity",
+                      
+                        "definition": "Water productivity is gross domestic product (GDP) divided by the total annual fresh water abstraction.",
+                      
+                        "unit": "EUR per cubic metre [EUR/m3]",
+                      
+                        "dimensions": "total",
+                      
+                        "methodology": "Water productivity indicates how much economic output is produced per cubic meter of fresh water abstracted, in EUR per m3 (available in Eurostat database also in PPS per m3). It serves as a measure of the efficiency of water use.Total fresh water abstraction includes water removed from any fresh water source, either permanently or temporarily. Mine water and drainage water as well as water abstractions from precipitation are included, whereas water used for hydroelectricity generation (in situ use) is excluded.For the calculation of water productivity Eurostat uses the GDP either in the unit of EUR in chain-linked volumes to the reference year 2010 at 2010 exchange rates or in the unit PPS (Purchasing Power Standard). The unit EUR in chain linked volumes allows observing the water productivity trends over time in a single geographic area, whereas the unit PPS allows to compare countries for the same year. Since GDP is measured in million EUR or million PPS and water abstraction in million cubic meters, water productivity is available in both EUR per m3 and PPS per m3.",
+                      
+                        "source": "EUROSTAT",
+                      
+                        "availability": "Annual data  since 2010.",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {"total": [
+                      {
+                      
+                          "2010" :   "31.1",
+                      
+                          "2011" :   "31.9",
+                      
+                          "2012" :   "33.6",
+                      
+                          "2013" :   "34.8",
+                      
+                          "2014" :   "35.8",
+                      
+                          "2015" :   "37.8",
+                      
+                          "2016" :   "",
+                      
+                          "2017" :   "",
+                      
+                          "2018" :   ""
+                      
+                      }
+                  ]
+            }
+      ]
+    }
+  ]
+}

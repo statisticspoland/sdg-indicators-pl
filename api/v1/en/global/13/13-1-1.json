@@ -1,0 +1,84 @@
+
+
+
+{
+  "13-1-1": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "13.1.1 Number of deaths or affected by disaster per 1 million people",
+                      
+                        "goal": "Goal 13. Climate action",
+                      
+                        "target": "13.1 Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+                      
+                        "definition": "The proportion of the number of persons injured as a result of the construction disasters resulting from random events, error in maintenance or construction work, including the number of fatalities per 1 million residents.",
+                      
+                        "unit": "persons",
+                      
+                        "dimensions": "total, fatalities",
+                      
+                        "methodology": "The data at construction disasters are reported (transmitted) by district and provincial construction supervision inspectors within the framework of the tasks and responsibilities referred to Article 76 point 1 item 2 of the Act - Construction Law. Construction disaster, in accordance with article 73 of the Act - Construction law, is unintentional, the violent destruction of the construction facilities or of the part of it, as well as the the structural elements of scaffolding, forming elements, sheet piles walls and excavation support systems. Construction disaster are grouped according to reasons:  caused by random events (including strong winds, fires, gas explosions), caused by errors while maintaining the construction object, errors during the construction of a new building or construction works in an existing building, errors in the preparation of building object documentation. ",
+                      
+                        "source": "Building Disaster Register  The General Office of Building Control",
+                      
+                        "availability": "Annual data  since 2010.",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {
+                "victims": [
+                    {"total": [
+                            {
+                            
+                                "2010" :   "2.13",
+                            
+                                "2011" :   "2.41",
+                            
+                                "2012" :   "2.08",
+                            
+                                "2013" :   "2.23",
+                            
+                                "2014" :   "1.98",
+                            
+                                "2015" :   "2.47",
+                            
+                                "2016" :   "1.41",
+                            
+                                "2017" :   "3.61",
+                            
+                                "2018" :   "2.73"
+                            
+                            }
+                        ],"fatalities": [
+                            {
+                            
+                                "2010" :   "0.31",
+                            
+                                "2011" :   "0.65",
+                            
+                                "2012" :   "0.44",
+                            
+                                "2013" :   "0.55",
+                            
+                                "2014" :   "0.36",
+                            
+                                "2015" :   "0.47",
+                            
+                                "2016" :   "0.36",
+                            
+                                "2017" :   "0.78",
+                            
+                                "2018" :   "0.62"
+                            
+                            }
+                        ]
+                    }
+                ]}
+      ]
+    }
+  ]
+}

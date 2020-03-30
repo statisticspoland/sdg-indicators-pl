@@ -1,0 +1,188 @@
+
+
+
+{
+  "4-4-1": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "4.4.1 Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill",
+                      
+                        "goal": "Goal 4. Quality education",
+                      
+                        "target": "4.4 By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship",
+                      
+                        "definition": "The percentage of young people (aged 16-24) and adults (aged 16-74) who have skills in information and communication technologies.",
+                      
+                        "unit": "percent [%]",
+                      
+                        "dimensions": "total, age",
+                      
+                        "methodology": "Information and Communication Technologies (ICT) - technologies that process, collect and transmit information electronically. Data for the indicator comes from the Study of the use of Information and Communication Technologies in households and by individuals. The study of the use of information and communication technologies in households and by individual users began in the European Union (EU) in 2002, using mainly the method of direct or telephone interview.In Poland, the study on the use of ICT in households according to a methodology harmonized with the EU began in 2004. It is carried out annually and participation in it is voluntary. The survey is carried out using the direct interview method, and from 2018 also via the online self-census method. It covers households with at least one person aged 16-74 and people at that age. The indicators relate to the percentage of people with total digital skills (by level: low, basic, secondary) and information, communication, problem solving and software skills (by level: basic, secondary). Data have been presented since 2015, when the digital skills methodology was last revised.The skill level is calculated on the basis of a list of activities related to the use of the computer, software or the Internet, including:   copying or moving a file or folder, use of spreadsheets, transferring files between your computer and other devices, changing the settings of any software or operating system, creating presentations or documents combining text, pictures, tables or graphs, sending and receiving e-mails. ",
+                      
+                        "source": "Statistics Poland",
+                      
+                        "availability": "Annual data from 2015",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {
+                "persons aged 16-74 - by type of skill": [
+                    {"copying or moving a file or folder": [
+                            {
+                            
+                                "2015" :   "46.4",
+                            
+                                "2016" :   "50.7",
+                            
+                                "2017" :   "51.8",
+                            
+                                "2018" :   "49.9"
+                            
+                            }
+                        ],"using a spreadsheet": [
+                            {
+                            
+                                "2015" :   "23.8",
+                            
+                                "2016" :   "27.9",
+                            
+                                "2017" :   "28.1",
+                            
+                                "2018" :   "28.9"
+                            
+                            }
+                        ],"transferring files between a computer and other devices": [
+                            {
+                            
+                                "2015" :   "43.4",
+                            
+                                "2016" :   "46.7",
+                            
+                                "2017" :   "48.7",
+                            
+                                "2018" :   "47.0"
+                            
+                            }
+                        ],"changing the settings of any software or operating system": [
+                            {
+                            
+                                "2015" :   "23.5",
+                            
+                                "2016" :   "29.5",
+                            
+                                "2017" :   "31.7",
+                            
+                                "2018" :   "31.5"
+                            
+                            }
+                        ],"creating presentations or documents combining text pictures tables or graphs": [
+                            {
+                            
+                                "2015" :   "21.2",
+                            
+                                "2016" :   "25.2",
+                            
+                                "2017" :   "26.9",
+                            
+                                "2018" :   "26.9"
+                            
+                            }
+                        ],"sending and receiving e-mails": [
+                            {
+                            
+                                "2015" :   "54.0",
+                            
+                                "2016" :   "57.8",
+                            
+                                "2017" :   "59.8",
+                            
+                                "2018" :   "60.7"
+                            
+                            }
+                        ]
+                    }
+                ],
+                "persons aged 16-24 - by type of skill": [
+                    {"copying or moving a file or folder": [
+                            {
+                            
+                                "2015" :   "87.1",
+                            
+                                "2016" :   "87.0",
+                            
+                                "2017" :   "89.2",
+                            
+                                "2018" :   "84.1"
+                            
+                            }
+                        ],"using a spreadsheet": [
+                            {
+                            
+                                "2015" :   "47.9",
+                            
+                                "2016" :   "52.7",
+                            
+                                "2017" :   "54.6",
+                            
+                                "2018" :   "53.0"
+                            
+                            }
+                        ],"transferring files between a computer and other devices": [
+                            {
+                            
+                                "2015" :   "83.5",
+                            
+                                "2016" :   "84.8",
+                            
+                                "2017" :   "84.9",
+                            
+                                "2018" :   "81.4"
+                            
+                            }
+                        ],"changing the settings of any software or operating system": [
+                            {
+                            
+                                "2015" :   "46.4",
+                            
+                                "2016" :   "56.3",
+                            
+                                "2017" :   "62.3",
+                            
+                                "2018" :   "58.3"
+                            
+                            }
+                        ],"creating presentations or documents combining text pictures tables or graphs": [
+                            {
+                            
+                                "2015" :   "57.1",
+                            
+                                "2016" :   "61.4",
+                            
+                                "2017" :   "65.7",
+                            
+                                "2018" :   "62.0"
+                            
+                            }
+                        ],"sending and receiving e-mails": [
+                            {
+                            
+                                "2015" :   "87.8",
+                            
+                                "2016" :   "85.8",
+                            
+                                "2017" :   "87.4",
+                            
+                                "2018" :   "85.9"
+                            
+                            }
+                        ]
+                    }
+                ]}
+      ]
+    }
+  ]
+}

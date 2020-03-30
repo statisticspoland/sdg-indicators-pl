@@ -1,0 +1,246 @@
+
+
+
+{
+  "8-5-2": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "8.5.2 Unemployment rate (according to LFS)",
+                      
+                        "goal": "Goal 8. Decent work and economic growth",
+                      
+                        "target": "8.5 By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value",
+                      
+                        "definition": "The share of unemployment in total number of economically active persons, i.e. the employed and unemployed (in percent). The indicator may relate to the unemployed in terms of total or given group.",
+                      
+                        "unit": "percent [%]",
+                      
+                        "dimensions": "total, sex, age",
+                      
+                        "methodology": "Data comes from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis. The survey is conducted as continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15 and more who are members of households in dwellings selected on a random basis.In the context of economic activity –work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and ecomically inactive persons. The employed, unemployed are the economically active population.The employed are defined as all persons aged 15 and more who during the reference week: – performed for at least one hour any work generating pay or income, i.e. were employed as employees, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in work on family agricultural farm or in conducting family economic activity outside agriculture, – had work but did not perform it due to:  • due to sickness,  • maternity leave, paternal leave or vacation,  •  due to other reasons, but the break in employment:  – did not exceed 3 months, – excedeed 3 months but these persons worked as employees and during that period received at least 50% of the hitherto remuneration. In accordance with the international standards, among the employed, there are also included apprentices who entered into occupational training or occupational preparation contract with a private or public employer if they received remuneration. Unemployed persons are persons aged 15-74 who simultaneously fulfil three conditions: – within the reference week were not employed, – were actively looking for work, i.e. for over 4 weeks (the reference week being the fourth one) had been involved in concrete actions aimed at finding a job, – were available to take up work within two weeks after the reference week. Persons who were not seeking work because they had already found a job, were only waiting to start work within the period no longer than 3 months, and were available for this job are also included in the category of the unemployed.",
+                      
+                        "source": "Statistics Poland",
+                      
+                        "availability": "Annual data Since 2010.",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {
+                "by sex": [
+                    {"total": [
+                            {
+                            
+                                "2010" :   "9.6",
+                            
+                                "2011" :   "9.6",
+                            
+                                "2012" :   "10.1",
+                            
+                                "2013" :   "10.3",
+                            
+                                "2014" :   "9.0",
+                            
+                                "2015" :   "7.5",
+                            
+                                "2016" :   "6.2",
+                            
+                                "2017" :   "4.9",
+                            
+                                "2018" :   "3.8"
+                            
+                            }
+                        ],"males": [
+                            {
+                            
+                                "2010" :   "9.3",
+                            
+                                "2011" :   "9.0",
+                            
+                                "2012" :   "9.4",
+                            
+                                "2013" :   "9.7",
+                            
+                                "2014" :   "8.5",
+                            
+                                "2015" :   "7.3",
+                            
+                                "2016" :   "6.1",
+                            
+                                "2017" :   "4.9",
+                            
+                                "2018" :   "3.8"
+                            
+                            }
+                        ],"females": [
+                            {
+                            
+                                "2010" :   "10.0",
+                            
+                                "2011" :   "10.4",
+                            
+                                "2012" :   "10.9",
+                            
+                                "2013" :   "11.1",
+                            
+                                "2014" :   "9.6",
+                            
+                                "2015" :   "7.7",
+                            
+                                "2016" :   "6.2",
+                            
+                                "2017" :   "4.9",
+                            
+                                "2018" :   "3.8"
+                            
+                            }
+                        ]
+                    }
+                ],
+                "by age group": [
+                    {"15-24 years": [
+                            {
+                            
+                                "2010" :   "23.7",
+                            
+                                "2011" :   "25.8",
+                            
+                                "2012" :   "26.5",
+                            
+                                "2013" :   "27.3",
+                            
+                                "2014" :   "23.8",
+                            
+                                "2015" :   "20.8",
+                            
+                                "2016" :   "17.7",
+                            
+                                "2017" :   "14.8",
+                            
+                                "2018" :   "11.7"
+                            
+                            }
+                        ],"25-34 years": [
+                            {
+                            
+                                "2010" :   "10.0",
+                            
+                                "2011" :   "10.0",
+                            
+                                "2012" :   "10.7",
+                            
+                                "2013" :   "11.1",
+                            
+                                "2014" :   "9.8",
+                            
+                                "2015" :   "8.2",
+                            
+                                "2016" :   "6.7",
+                            
+                                "2017" :   "5.1",
+                            
+                                "2018" :   "4.3"
+                            
+                            }
+                        ],"35-44 years": [
+                            {
+                            
+                                "2010" :   "6.9",
+                            
+                                "2011" :   "6.7",
+                            
+                                "2012" :   "7.4",
+                            
+                                "2013" :   "7.9",
+                            
+                                "2014" :   "6.7",
+                            
+                                "2015" :   "5.6",
+                            
+                                "2016" :   "4.7",
+                            
+                                "2017" :   "3.7",
+                            
+                                "2018" :   "2.9"
+                            
+                            }
+                        ],"45-54 years": [
+                            {
+                            
+                                "2010" :   "7.7",
+                            
+                                "2011" :   "7.7",
+                            
+                                "2012" :   "7.9",
+                            
+                                "2013" :   "7.9",
+                            
+                                "2014" :   "7.0",
+                            
+                                "2015" :   "6.0",
+                            
+                                "2016" :   "4.6",
+                            
+                                "2017" :   "3.8",
+                            
+                                "2018" :   "2.9"
+                            
+                            }
+                        ],"55 years and more": [
+                            {
+                            
+                                "2010" :   "6.5",
+                            
+                                "2011" :   "6.3",
+                            
+                                "2012" :   "6.9",
+                            
+                                "2013" :   "7.2",
+                            
+                                "2014" :   "6.3",
+                            
+                                "2015" :   "5.1",
+                            
+                                "2016" :   "4.1",
+                            
+                                "2017" :   "3.4",
+                            
+                                "2018" :   "2.5"
+                            
+                            }
+                        ]
+                    }
+                ],
+                "persons with disabilities": [
+                    {"total": [
+                            {
+                            
+                                "2010" :   "13.4",
+                            
+                                "2011" :   "14.1",
+                            
+                                "2012" :   "14.6",
+                            
+                                "2013" :   "15.0",
+                            
+                                "2014" :   "14.8",
+                            
+                                "2015" :   "12.3",
+                            
+                                "2016" :   "10.9",
+                            
+                                "2017" :   "8.4",
+                            
+                                "2018" :   "6.5"
+                            
+                            }
+                        ]
+                    }
+                ]}
+      ]
+    }
+  ]
+}

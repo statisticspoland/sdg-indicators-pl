@@ -1,0 +1,1056 @@
+{
+  "9":[
+    {
+      "9-1-1": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.1.1 Odsetek ludności wiejskiej zamieszkałej w promieniu 2 km od dostępnej przez cały rok drogi",
+                          
+                            "cel": "cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.1 Rozwijać niezawodną, zrównoważoną i odporną infrastrukturę dobrej jakości, w tym infrastrukturę regionalną i transgraniczną, wspierającą rozwój gospodarczy i dobrobyt ludzi. Zapewnić wszystkim ludziom równy dostęp do infrastruktury po przystępnej cenie.",
+                          
+                            "definicja": "",
+                          
+                            "jednostka": "",
+                          
+                            "wymiary": "",
+                          
+                            "metodologia": "",
+                          
+                            "zrodlo": "",
+                          
+                            "czestotliwosc": "",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-1-2": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.1.2 Rozmiary transportu pasażerskiego i towarowego według rodzaju ",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.1 Rozwijać niezawodną, zrównoważoną i odporną infrastrukturę dobrej jakości, w tym infrastrukturę regionalną i transgraniczną, wspierającą rozwój gospodarczy i dobrobyt ludzi. Zapewnić wszystkim ludziom równy dostęp do infrastruktury po przystępnej cenie.",
+                          
+                            "definicja": "Liczba pasażerów (w tysiącach pasażerów) według rodzaju transportu.",
+                          
+                            "jednostka": "tys. pasażerów ",
+                          
+                            "wymiary": "rodzaj transportu",
+                          
+                            "metodologia": "Przewozy pasażerów transportem kolejowym Liczba wszystkich pasażerów przewiezionych na sieci kolei normalnotorowych i wąskotorowych pociągami osobowymi, pośpiesznymi i ekspresowymi (łącznie z pasażerami przewiezionymi w wagonach sypialnych i w wagonach z miejscami do leżenia) z biletami płatnymi oraz pasażerów korzystających z bezpłatnych przejazdów na podstawie odpowiednich przepisów w ramach komunikacji wewnętrznej i międzynarodowej.  Przewozy pasażerów transportem samochodowym Przewozy pasażerów taborem autobusowym to suma pasażerów przewiezionych w komunikacji krajowej i międzynarodowej autobusami w ramach komunikacji regularnej (tj. na podstawie rozkładu jazdy), regularnej specjalnej (np. przewozy pracownicze, szkolne) oraz w przewozach pozostałych (np. wycieczkowe). Dane o przewozach pasażerów transportem samochodowym nie obejmują przewozów osób taborem autobusowym przedsiębiorstw komunikacji miejskiej oraz taborem autobusowym będącym w transporcie samochodowym gospodarczym. Dane nie obejmują przewozów dokonywanych przez podmioty o liczbie pracujących do 9 osób.  Przewozy pasażerów transportem lotniczym  Dane o przewozach pasażerów transportem lotniczym obejmują pasażerów przewiezionych w lotach rozkładowych, dodatkowych i wynajętych (czarterowych) samolotami polskich przewoźników transportu lotniczego rozkładowego (transport pasażerów na stałych trasach i według stałych rozkładów lotów) oraz innych polskich przewoźników świadczących zarobkowo tego rodzaju usługi w komunikacji międzynarodowej i w komunikacji krajowej. ",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne; od 2010 r.",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {
+                      
+                              "przewozy pasażerskie wg rodzaju transportu": [
+                                  {"transport kolejowy": [
+                                          {
+                                          
+                                              "2010" : "261314",
+                                          
+                                              "2011" : "263609",
+                                          
+                                              "2012" : "273182",
+                                          
+                                              "2013" : "269815",
+                                          
+                                              "2014" : "268204",
+                                          
+                                              "2015" : "277321",
+                                          
+                                              "2016" : "291981",
+                                          
+                                              "2017" : "303001",
+                                          
+                                              "2018" : "309722"
+                                          
+                                          }
+                                      ],"transport samochodowy": [
+                                          {
+                                          
+                                              "2010" : "569652",
+                                          
+                                              "2011" : "534885",
+                                          
+                                              "2012" : "497288",
+                                          
+                                              "2013" : "459947",
+                                          
+                                              "2014" : "431516",
+                                          
+                                              "2015" : "416774",
+                                          
+                                              "2016" : "390410",
+                                          
+                                              "2017" : "378610",
+                                          
+                                              "2018" : "336511"
+                                          
+                                          }
+                                      ],"transport morski": [
+                                          {
+                                          
+                                              "2010" : "671",
+                                          
+                                              "2011" : "637",
+                                          
+                                              "2012" : "642",
+                                          
+                                              "2013" : "606",
+                                          
+                                              "2014" : "611",
+                                          
+                                              "2015" : "597",
+                                          
+                                              "2016" : "632",
+                                          
+                                              "2017" : "644",
+                                          
+                                              "2018" : "632"
+                                          
+                                          }
+                                      ],"śródlądowy transport wodny": [
+                                          {
+                                          
+                                              "2010" : "1397",
+                                          
+                                              "2011" : "1519",
+                                          
+                                              "2012" : "1515",
+                                          
+                                              "2013" : "1540",
+                                          
+                                              "2014" : "1579",
+                                          
+                                              "2015" : "1762",
+                                          
+                                              "2016" : "2024",
+                                          
+                                              "2017" : "1262",
+                                          
+                                              "2018" : "1395"
+                                          
+                                          }
+                                      ],"transport lotniczy": [
+                                          {
+                                          
+                                              "2010" : "4990",
+                                          
+                                              "2011" : "6491",
+                                          
+                                              "2012" : "7170",
+                                          
+                                              "2013" : "7648",
+                                          
+                                              "2014" : "7788",
+                                          
+                                              "2015" : "7288",
+                                          
+                                              "2016" : "8779",
+                                          
+                                              "2017" : "11846",
+                                          
+                                              "2018" : "13850"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ],
+                              "przewozy towarowe wg rodzaju transportu": [
+                                  {"transport kolejowy": [
+                                          {
+                                          
+                                              "2010" : "261314",
+                                          
+                                              "2011" : "263609",
+                                          
+                                              "2012" : "273182",
+                                          
+                                              "2013" : "269815",
+                                          
+                                              "2014" : "268204",
+                                          
+                                              "2015" : "277321",
+                                          
+                                              "2016" : "291981",
+                                          
+                                              "2017" : "303001",
+                                          
+                                              "2018" : "309722"
+                                          
+                                          }
+                                      ],"transport samochodowy": [
+                                          {
+                                          
+                                              "2010" : "569652",
+                                          
+                                              "2011" : "534885",
+                                          
+                                              "2012" : "497288",
+                                          
+                                              "2013" : "459947",
+                                          
+                                              "2014" : "431516",
+                                          
+                                              "2015" : "416774",
+                                          
+                                              "2016" : "390410",
+                                          
+                                              "2017" : "378610",
+                                          
+                                              "2018" : "336511"
+                                          
+                                          }
+                                      ],"transport rurociągowy": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : ""
+                                          
+                                          }
+                                      ],"transport morski": [
+                                          {
+                                          
+                                              "2010" : "671",
+                                          
+                                              "2011" : "637",
+                                          
+                                              "2012" : "642",
+                                          
+                                              "2013" : "606",
+                                          
+                                              "2014" : "611",
+                                          
+                                              "2015" : "597",
+                                          
+                                              "2016" : "632",
+                                          
+                                              "2017" : "644",
+                                          
+                                              "2018" : "632"
+                                          
+                                          }
+                                      ],"śródlądowy transport wodny": [
+                                          {
+                                          
+                                              "2010" : "1397",
+                                          
+                                              "2011" : "1519",
+                                          
+                                              "2012" : "1515",
+                                          
+                                              "2013" : "1540",
+                                          
+                                              "2014" : "1579",
+                                          
+                                              "2015" : "1762",
+                                          
+                                              "2016" : "2024",
+                                          
+                                              "2017" : "1262",
+                                          
+                                              "2018" : "1395"
+                                          
+                                          }
+                                      ],"transport lotniczy": [
+                                          {
+                                          
+                                              "2010" : "4990",
+                                          
+                                              "2011" : "6491",
+                                          
+                                              "2012" : "7170",
+                                          
+                                              "2013" : "7648",
+                                          
+                                              "2014" : "7788",
+                                          
+                                              "2015" : "7288",
+                                          
+                                              "2016" : "8779",
+                                          
+                                              "2017" : "11846",
+                                          
+                                              "2018" : "13850"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-2-1": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.2.1 Wartość dodana brutto sekcji PKD 2007 przetwórstwo przemysłowe jako procent PKB",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.2 Promować inkluzywną i zrównoważoną industrializację  do 2030 roku znacznie zwiększyć udział przemysłu w zatrudnieniu i wytwarzaniu PKB, biorąc pod uwagę uwarunkowania krajowe  podwoić ten udział w krajach najsłabiej rozwiniętych.",
+                          
+                            "definicja": "Wskaźnik jest obliczany jako udział procentowy sekcji PKD 2007 Przetwórstwo przemysłowe w PKB.",
+                          
+                            "jednostka": "procent [%]",
+                          
+                            "wymiary": "ogółem",
+                          
+                            "metodologia": "Wartość dodana brutto (WDB) mierzy wartość nowo wytworzoną w wyniku działalności produkcyjnej krajowych jednostek instytucjonalnych. Wartość dodana brutto stanowi różnicę między produkcją globalną a zużyciem pośrednim, jest wyrażona w cenach bazowych. Produkt krajowy brutto (PKB) prezentuje końcowy rezultat działalności wszystkich podmiotów gospodarki narodowej w danym roku.  Wartość PKB można obliczyć na trzy sposoby:  - od strony tworzenia jest ona równa wartości dodanej wszystkich sektorów instytucjonalnych lub wszystkich sekcji Polskiej Klasyfikacji Działalności (PKD) krajowych jednostek produkcyjnych powiększonej o podatki od produktów i pomniejszonej o dotacje do produktów,  - od strony rozdysponowania PKB obliczany jest jako suma popytu krajowego, tj. spożycia i akumulacji oraz salda wymiany produktów z zagranicą,  - jako sumę rozchodów na rachunku tworzenia dochodów gospodarki ogółem (a więc koszty związane z zatrudnieniem, podatki związane z produkcją i importem pomniejszone o dotacje, nadwyżka operacyjna brutto oraz dochód mieszany gospodarki ogółem). Produkt krajowy brutto jest liczony zgodnie z obowiązującymi w krajach Unii Europejskiej zasadami Europejskiego Systemu Rachunków Narodowych i Regionalnych (ESA 2010) oraz zaleceniami Eurostatu.",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne  od 2010 r.",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "15.6",
+                              
+                                  "2011" :   "15.9",
+                              
+                                  "2012" :   "16.3",
+                              
+                                  "2013" :   "15.9",
+                              
+                                  "2014" :   "16.8",
+                              
+                                  "2015" :   "17.6",
+                              
+                                  "2016" :   "18.1",
+                              
+                                  "2017" :   "16.9",
+                              
+                                  "2018" :   "16.7"
+                              
+                              }
+                          ]
+                        
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-2-2": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.2.2 Pracujący w przetwórstwie przemysłowym jako odsetek pracujących ogółem",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.2 Promować inkluzywną i zrównoważoną industrializację  do 2030 roku znacznie zwiększyć udział przemysłu w zatrudnieniu i wytwarzaniu PKB, biorąc pod uwagę uwarunkowania krajowe  podwoić ten udział w krajach najsłabiej rozwiniętych.",
+                          
+                            "definicja": "Udział pracujących w przetwórstwie przemysłowym w liczbie pracujących ogółem.",
+                          
+                            "jednostka": "procent [%]",
+                          
+                            "wymiary": "ogółem",
+                          
+                            "metodologia": "Dane o pracujących dotyczą osób wykonujących pracę przynoszącą im zarobek lub dochód. Do pracujących zaliczono:   a) osoby zatrudnione na podstawie stosunku pracy (umowa o pracę, powołanie, mianowanie, wybór lub stosunek służbowy)   b) pracodawców i pracujących na własny rachunek, a mianowicie: - właścicieli, współwłaścicieli i dzierżawców gospodarstw indywidualnych w rolnictwie (łącznie z pomagającymi członkami ich rodzin), - właścicieli i współwłaścicieli (łącznie z pomagającymi członkami ich rodzin  z wyłączeniem wspólników spółek, którzy nie pracują w spółce) podmiotów prowadzących działalność gospodarczą poza gospodarstwami indywidualnymi w rolnictwie  - inne osoby pracujące na własny rachunek, np. osoby wykonujące wolne zawody    c) osoby wykonujące pracę nakładczą    d) agentów (łącznie z pomagającymi członkami ich rodzin oraz osobami zatrudnionymi przez agentów)    e) członków spółdzielni produkcji rolniczej (rolniczych spółdzielni produkcyjnych i spółdzielni powstałych na ich bazie oraz spółdzielni kółek rolniczych)    f) duchownych pełniących obowiązki duszpasterskie. Dane o pracujących ogółem podane są łącznie z pracującymi w jednostkach budżetowych prowadzących działalność w zakresie obrony narodowej i bezpieczeństwa publicznego. Nie dotyczy osób pracujących na umowę zlecenie lub o dzieło. ",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne  od 2010 r.",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "17.3",
+                              
+                                  "2011" :   "17.2",
+                              
+                                  "2012" :   "17.0",
+                              
+                                  "2013" :   "17.0",
+                              
+                                  "2014" :   "17.3",
+                              
+                                  "2015" :   "17.4",
+                              
+                                  "2016" :   "17.5",
+                              
+                                  "2017" :   "17.7",
+                              
+                                  "2018" :   "17.6"
+                              
+                              }
+                          ]
+                        
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-3-1": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.3.1 Udział procentowy drobnego przemysłu w wartości dodanej przemysłu ogółem",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.3 Zwiększyć dostęp małych i innych przedsiębiorstw, w tym przemysłowych, w szczególności w krajach rozwijających się, do usług finansowych i przystępnych kredytów oraz włączyć je w łańcuchy wartości i zapewnić udział w rynku.",
+                          
+                            "definicja": "Udział procentowy drobnego przemysłu w wartości dodanej przemysłu ogółem.",
+                          
+                            "jednostka": "procent [%]",
+                          
+                            "wymiary": "ogółem",
+                          
+                            "metodologia": "Przedsiębiorstwo przemysłowe jest to podmiot zaklasyfikowany (niezależnie od liczby pracujących w nim osób) do następujących sekcji według Polskiej Klasyfikacji Działalności:   - B Górnictwo i wydobywanie,    - C Przetwórstwo przemysłowe,    - D Wytwarzanie i zaopatrywanie w energię elektryczną, gaz, parę wodną, gorącą wodę i powietrze do układów klimatyzacyjnych,    - E Dostawa wody  gospodarowanie ściekami i odpadami oraz działalność związana z rekultywacją. Drobny przemysł to przedsiębiorstwa przemysłowe o liczbie pracujących poniżej 10 osób. Wartość dodana w cenach producenta jest zyskiem brutto z działalności operacyjnej po uwzględnieniu dotacji operacyjnych oraz podatków pośrednich. Można ją obliczyć na podstawie obrotu powiększonego o produkcję skapitalizowaną, powiększonego o pozostałe zyski z działalności operacyjnej, powiększonego lub pomniejszonego o zmiany stanu zapasów, pomniejszonego o zakupy towarów i usług, pomniejszonego o inne podatki nakładane na produkty, które są związane z obrotem, ale nie podlegają odliczeniu, pomniejszonego o cła i podatki związane z produkcją.",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne  od 2010 r.",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "8.34",
+                              
+                                  "2011" :   "7.03",
+                              
+                                  "2012" :   "6.68",
+                              
+                                  "2013" :   "6.82",
+                              
+                                  "2014" :   "7.17",
+                              
+                                  "2015" :   "8.22",
+                              
+                                  "2016" :   "8.41",
+                              
+                                  "2017" :   "8.47",
+                              
+                                  "2018" :   "8.80"
+                              
+                              }
+                          ]
+                        
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-3-2": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.3.2 Odsetek podmiotów korzystających z kredytów bankowych w podziale na długo- i krótkoterminowe",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.3 Zwiększyć dostęp małych i innych przedsiębiorstw, w tym przemysłowych, w szczególności w krajach rozwijających się, do usług finansowych i przystępnych kredytów oraz włączyć je w łańcuchy wartości i zapewnić udział w rynku.",
+                          
+                            "definicja": "Udział przedsiębiorstw niefinansowych korzystających z kredytów bankowych w ogólnej liczbie przedsiębiorstw.",
+                          
+                            "jednostka": "procent [%]",
+                          
+                            "wymiary": "ogółem, kredyty długo- i krótkoterminowe",
+                          
+                            "metodologia": "Przez umowę kredytu bank zobowiązuje się oddać do dyspozycji kredytobiorcy na czas oznaczony w umowie kwotę środków pieniężnych z przeznaczeniem na ustalony cel, a kredytobiorca zobowiązuje się do korzystania z niej na warunkach określonych w umowie, zwrotu kwoty wykorzystanego kredytu wraz z odsetkami w oznaczonych terminach spłaty oraz zapłaty prowizji od udzielonego kredytu. Kredyty długookresowe – uzyskane przez jednostkę kredyty, których okres spłaty jest dłuższy niż 12 miesięcy od dnia bilansowego. Kredyty krótkookresowe – uzyskane przez jednostkę kredyty, których okres spłaty jest krótszy niż 12 miesięcy od dnia bilansowego.",
+                          
+                            "zrodlo": "Narodowy Bank Polski / Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne  od 2010 r.",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {
+                      
+                              "przedsiębiorstwa ogółem - wg rodzaju kredytu": [
+                                  {"ogółem": [
+                                          {
+                                          
+                                              "2010" : "49.8",
+                                          
+                                              "2011" : "52.8",
+                                          
+                                              "2012" : "52.6",
+                                          
+                                              "2013" : "50.2",
+                                          
+                                              "2014" : "48.9",
+                                          
+                                              "2015" : "47.9",
+                                          
+                                              "2016" : "46.5",
+                                          
+                                              "2017" : "45.5",
+                                          
+                                              "2018" : "43.5"
+                                          
+                                          }
+                                      ],"kredyty długoterminowe": [
+                                          {
+                                          
+                                              "2010" : "30.2",
+                                          
+                                              "2011" : "32.4",
+                                          
+                                              "2012" : "31.5",
+                                          
+                                              "2013" : "30.3",
+                                          
+                                              "2014" : "29.8",
+                                          
+                                              "2015" : "29.4",
+                                          
+                                              "2016" : "28.5",
+                                          
+                                              "2017" : "27.5",
+                                          
+                                              "2018" : "26.0"
+                                          
+                                          }
+                                      ],"kredyty krótkoterminowe": [
+                                          {
+                                          
+                                              "2010" : "42.3",
+                                          
+                                              "2011" : "45.0",
+                                          
+                                              "2012" : "45.5",
+                                          
+                                              "2013" : "43.3",
+                                          
+                                              "2014" : "41.9",
+                                          
+                                              "2015" : "41.2",
+                                          
+                                              "2016" : "40.0",
+                                          
+                                              "2017" : "39.5",
+                                          
+                                              "2018" : "38.0"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ],
+                              "małe i średnie przedsiębiorstwa - wg rodzaju kredytu": [
+                                  {"ogółem": [
+                                          {
+                                          
+                                              "2010" : "49.8",
+                                          
+                                              "2011" : "52.8",
+                                          
+                                              "2012" : "52.6",
+                                          
+                                              "2013" : "50.2",
+                                          
+                                              "2014" : "48.9",
+                                          
+                                              "2015" : "47.9",
+                                          
+                                              "2016" : "46.5",
+                                          
+                                              "2017" : "45.5",
+                                          
+                                              "2018" : "43.5"
+                                          
+                                          }
+                                      ],"kredyty długoterminowe": [
+                                          {
+                                          
+                                              "2010" : "30.2",
+                                          
+                                              "2011" : "32.4",
+                                          
+                                              "2012" : "31.5",
+                                          
+                                              "2013" : "30.3",
+                                          
+                                              "2014" : "29.8",
+                                          
+                                              "2015" : "29.4",
+                                          
+                                              "2016" : "28.5",
+                                          
+                                              "2017" : "27.5",
+                                          
+                                              "2018" : "26.0"
+                                          
+                                          }
+                                      ],"kredyty krótkoterminowe": [
+                                          {
+                                          
+                                              "2010" : "42.3",
+                                          
+                                              "2011" : "45.0",
+                                          
+                                              "2012" : "45.5",
+                                          
+                                              "2013" : "43.3",
+                                          
+                                              "2014" : "41.9",
+                                          
+                                              "2015" : "41.2",
+                                          
+                                              "2016" : "40.0",
+                                          
+                                              "2017" : "39.5",
+                                          
+                                              "2018" : "38.0"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-4-1": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.4.1 Emisja CO 2 na jednostkę wartości dodanej",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.4 Do 2030 roku podwyższyć jakość infrastruktury i wprowadzić zrównoważony rozwój przemysłu przez zwiększenie efektywności wykorzystania zasobów oraz stosowanie czystych i przyjaznych dla środowiska technologii i procesów produkcyjnych, przy udziale wszystkich krajów, zgodnie z ich możliwościami.",
+                          
+                            "definicja": "Wskaźnik określa wielkość emisji dwutlenku węgla (CO2) w kg na jednostkę warości dodanej Produktu Krajowego Brutto (rok 2010=100). Obecnie wskaźnik wyliczany jest jako stosunek emisji CO2 do PKB mierzonego Parytetem Siły Nabywczej (Purchasing Power Parity – PPP).",
+                          
+                            "jednostka": "kg CO2 / 2010 USD PPP",
+                          
+                            "wymiary": "ogółem",
+                          
+                            "metodologia": "Emisja to wprowadzane bezpośrednio lub pośrednio, w wyniku działalności człowieka, do powietrza, wody, gleby lub ziemi:  a) substancje,  b) energie, takie jak ciepło, hałas, wibracje lub pola elektromagnetyczne. Wartość dodana brutto (WDB) mierzy wartość nowo wytworzoną w wyniku działalności produkcyjnej krajowych jednostek instytucjonalnych. Wartość dodana brutto stanowi różnicę między produkcją globalną a zużyciem pośrednim, jest wyrażona w cenach bazowych. Emisja CO2 na jednostkę wartości dodanej jest uniwersalnym wskaźnikiem do pomiaru wpływu produkcji przemysłu na środowisko. Uwzględnia energochłonność, wydajność techolonogii produkcji oraz zużycie paliw kopalnych.",
+                          
+                            "zrodlo": "Międzynarodowa Agencja Energetyczna",
+                          
+                            "czestotliwosc": "Dane roczne  od 2010 r.",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "0.38",
+                              
+                                  "2011" :   "0.36",
+                              
+                                  "2012" :   "0.35",
+                              
+                                  "2013" :   "0.34",
+                              
+                                  "2014" :   "0.31",
+                              
+                                  "2015" :   "0.30",
+                              
+                                  "2016" :   "0.31",
+                              
+                                  "2017" :   "0.30",
+                              
+                                  "2018" :   "0.29"
+                              
+                              }
+                          ]
+                        
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-5-1": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.5.1 Nakłady krajowe brutto na działalność B+R w relacji do PKB",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.5 Do 2030 roku wzmocnić badania naukowe i podnieść poziom technologiczny sektora przemysłowego we wszystkich krajach, szczególnie w rozwijających się, w tym poprzez innowacje, znaczne zwiększenie liczby pracowników sektora badawczo-rozwojowego na każdy milion osób oraz poprzez zwiększanie publicznych i prywatnych nakładów finansowych na rozwój.",
+                          
+                            "definicja": "Suma nakładów wewnętrznych poniesionych na działalność badawczą i rozwojową przez wszystkie jednostki w kraju prowadzące tę działalność, niezależnie od źródeł pochodzenia środków, w relacji do PKB. Wskaźnik stanowi główny miernik z zakresu statystyki działalności badawczo-rozwojowej, charakteryzujący konkurencyjność i poziom rozwoju gospodarki opartej na wiedzy.",
+                          
+                            "jednostka": "procent [%]",
+                          
+                            "wymiary": "ogółem",
+                          
+                            "metodologia": "Działalność badawcza i rozwojowa (B+R) definiowana jest jako praca twórcza i prowadzona w sposób metodyczny, podejmowana w celu zwiększenia zasobów wiedzy o rodzaju ludzkim, kulturze i społeczeństwie oraz w celu tworzenia nowych zastosowań dla już istniejącej wiedzy. W obszarze działalności badawczej i rozwojowej zawierają się: badania podstawowe, stosowane (łącznie z przemysłowymi) oraz prace rozwojowe.  Nakłady wewnętrzne na działalność B+R to nakłady poniesione w roku sprawozdawczym na prace B+R wykonane w jednostce sprawozdawczej, niezależnie od źródła pochodzenia środków. Obejmują zarówno nakłady bieżące, jak i nakłady inwestycyjne związane z działalnością B+R. Nakładami bieżącymi na działalność B+R są nakłady osobowe, a także koszty zużycia materiałów, przedmiotów nietrwałych i energii, koszty usług obcych (innych niż B+R) obejmujące: obróbkę obcą, usługi transportowe, remontowe, bankowe, pocztowe, telekomunikacyjne, informatyczne, wydawnicze, komunalne itp., koszty podróży służbowych oraz pozostałe koszty bieżące obejmujące w szczególności podatki i opłaty obciążające koszty działalności i zyski, ubezpieczenia majątkowe i ekwiwalenty na rzecz pracowników – w części, w której dotyczą działalności B+R. Nakłady inwestycyjne na działalność B+R obejmują nakłady na nowe środki trwałe związane z działalnością B+R oraz od 2016 r. koszty oprogramowania komputerowego wykorzystywanego przy pracach badawczych i rozwojowych przez okres dłuższy niż jeden rok (wartość opłaty z tytułu użytkowania produktu własności intelektualnej innego podmiotu oraz wartość nakładów poniesionych na oprogramowanie wytworzone we własnym zakresie), koszty nabytych patentów, licencji długoterminowych lub innych wartości niematerialnych i prawnych, które są stosowane w działalności badawczej i rozwojowej oraz użytkowane przez okres dłuższy niż jeden rok.  Produkt Krajowy Brutto (PKB) przedstawia końcowy rezultat działalności wszystkich podmiotów gospodarki narodowej w danym roku. Produkt krajowy brutto równa się sumie wartości dodanej brutto wytworzonej przez wszystkie krajowe jednostki instytucjonalne powiększonej o podatki od produktów i pomniejszonej o dotacje do produktów. Produkt krajowy brutto jest liczony zgodnie z obowiązującymi w krajach Unii Europejskiej zasadami Europejskiego Systemu Rachunków Narodowych i Regionalnych (ESA 2010) oraz zaleceniami Eurostatu. Produkt krajowy brutto jest liczony w cenach rynkowych.",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne  od 2010 r.",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "0.72",
+                              
+                                  "2011" :   "0.75",
+                              
+                                  "2012" :   "0.88",
+                              
+                                  "2013" :   "0.87",
+                              
+                                  "2014" :   "0.94",
+                              
+                                  "2015" :   "1.00",
+                              
+                                  "2016" :   "0.96",
+                              
+                                  "2017" :   "1.03",
+                              
+                                  "2018" :   "1.21"
+                              
+                              }
+                          ]
+                        
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-5-2": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.5.2 Pracownicy naukowo-badawczy (w ekwiwalentach pełnego czasu pracy) na 1 mln ludności",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.5 Do 2030 roku wzmocnić badania naukowe i podnieść poziom technologiczny sektora przemysłowego we wszystkich krajach, szczególnie w rozwijających się, w tym poprzez innowacje, znaczne zwiększenie liczby pracowników sektora badawczo-rozwojowego na każdy milion osób oraz poprzez zwiększanie publicznych i prywatnych nakładów finansowych na rozwój.",
+                          
+                            "definicja": "Liczba pracowników naukowo-badawczych w przeliczeniu na 1 mln ludności.",
+                          
+                            "jednostka": "EPC (ekwiwalent pełnego czasu pracy)",
+                          
+                            "wymiary": "ogółem",
+                          
+                            "metodologia": "Personel B+R to wszystkie osoby zaangażowane bezpośrednio w działalność B+R realizowaną w jednostce sprawozdawczej, zarówno pracownicy merytoryczni, jak i personel pomocniczy. Personel B+R, oprócz wykonywania prac naukowo-badawczych (naukowo-technicznych), może planować lub kierować projektami B+R, przygotowywać raporty, zapewniać bezpośrednią obsługę informatyczną, biblioteczną czy dokumentacyjną w konkretnym projekcie, bądź też prowadzić obsługę administracyjną w zakresie spraw finansowych i kadrowych. Najliczniejszą grupę osób zaangażowanych w działalność B+R stanowią pracownicy naukowo-badawczy (badacze) tj. osoby zajmujące się pracą koncepcyjną i tworzeniem nowej wiedzy, wyrobów, usług, procesów, metod i systemów. Kategoria „pracownicy naukowo-badawczy” to polski odpowiednik występującej w Podręczniku OECD kategorii badacza – researcher. Przynależność do tej grupy nie musi być uwarunkowana ani posiadaniem formalnego wykształcenia, ani zajmowanym stanowiskiem.  Jednostki przeliczeniowe służące do ustalania faktycznego zatrudnienia w działalności B+R to ekwiwalenty pełnego czasu pracy (EPC). Jeden ekwiwalent pełnego czasu pracy oznacza jeden osoborok poświęcony wyłącznie na działalność B+R, a pomiaru dokonuje się na podstawie proporcji czasu przepracowanego przez poszczególnych pracowników w ciągu roku sprawozdawczego przy pracach B+R w stosunku do pełnego czasu pracy obowiązującego w danej instytucji na danym stanowisku pracy. Ekwiwalenty pełnego czasu pracy są główną jednostką miary zatrudnienia w działalności B+R stosowaną w porównaniach międzynarodowych i w publikacjach o charakterze międzynarodowym, wydawanych przez OECD i EUROSTAT.",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne  od 2010 r.",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "1689.4",
+                              
+                                  "2011" :   "1664.7",
+                              
+                                  "2012" :   "1738.8",
+                              
+                                  "2013" :   "1856.3",
+                              
+                                  "2014" :   "2044.4",
+                              
+                                  "2015" :   "2147.8",
+                              
+                                  "2016" :   "2294.4",
+                              
+                                  "2017" :   "2511.5",
+                              
+                                  "2018" :   "2568.0"
+                              
+                              }
+                          ]
+                        
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-a-1": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.a.1 Oficjalna Pomoc Rozwojowa na rzecz infrastruktury",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.a Ułatwić rozwój zrównoważonej i odpornej infrastruktury w krajach rozwijających się poprzez wzmocnienie wsparcia finansowego, technologicznego i technicznego dla krajów afrykańskich, najmniej rozwiniętych, w tym pozbawionych dostępu do morza i małych krajów wyspiarskich.",
+                          
+                            "definicja": "Suma Oficjalnej Pomocy Rozwojowej na rzecz infrastruktury.",
+                          
+                            "jednostka": "mln USD (ceny bieżące)",
+                          
+                            "wymiary": "ogółem",
+                          
+                            "metodologia": "Do Oficjalnej Pomocy Rozwojowej (ang. Official Development Assistance  ODA)zaliczane są darowizny i pożyczki przekazywane przez instytucje rządowe lub organizacje międzynarodowe, mające na celu wsparcie rozwoju gospodarczego i dobrobytu w krajach rozwijających się. Pożyczki są uważane jako ODA wtedy, gdy zawierają element darowizny o wartości udzielanej pomocy przynajmniej:  45% dla krajów najsłabiej rozwiniętych i innych krajów o niskich dochodach (least developed countries and other low income countires LDCs & other LICs), wyliczony przy stopie dyskontowej 9%,15% dla krajów o średnich i niskich dochodach (lower middle income countries LMICs), wyliczony przy stopie dyskontowej 7%, 10% dla krajów o średniowysokim dochodzie (upper middle income countries UMICs), wyliczony przy stopie dyskontowej 6%.  Do ODA zaliczana jest również pomoc techniczna, mająca na celu rozwój zasobów ludzkich, podniesienie kwalifikacji oraz możliwości technicznych i produkcyjnych krajów rozwijających się. Pomoc ta polega między innymi na przekazywaniu wiedzy i doświadczeń w postaci szkoleń, delegowania ekspertów, inicjowania badań i/lub pokrywania wynikających z tego kosztów. Do ODA nie zalicza się dotacji przeznaczonych na wydatki wojskowe. Warunkiem zaklasyfikowania współpracy jako Oficjalnej Pomocy Rozwojowej jest to, aby kraj partnerski, na rzecz którego udzielane jest wsparcie, znajdował się na liście Komitetu Pomocy Rozwojowej OECD (Development Assistance Committee). W zależności od sposobu realizacji pomocy możemy wyróżnić :  pomoc dwustronną  podejmowana przez donatora bezpośrednio w kraju partnerskim bądź poprzez organizację międzynarodową w formie wpłaty celowej na rzecz kraju partnerskiego (earmarked contribution) lub w formie wpłaty na określony program/fundusz zarządzany przez organizację, pomoc wielostronną  udzielana w formie wpłat do budżetów ogólnych organizacji międzynarodowych, których lista jest corocznie aktualizowana przez Sekretariat DAC OECD.  Oficjalna Pomoc Rozwojowa w Polsce świadczona jest na podstawie ustawy o współpracy rozwojowej z dnia 16 września 2011 r. (Dz.U. 2011 r., Nr 234, poz. 1386). Polska współpraca rozwojowa prowadzona jest w oparciu o Wieloletni Program Współpracy Rozwojowej opracowywany na okres minimum 4 lat. Ustawa definiuje współpracę rozwojową jako ogół działań podejmowanych przez organy administracji rządowej w celu udzielenia państwom rozwijającym się pomocy rozwojowej, pomocy humanitarnej oraz realizację działań edukacyjnych na rzecz podniesienia świadomości i zrozumienia problemów i współzależności globalnych. Za zagadnienia związane z pomocą rozwojową w Polsce odpowiedzialne jest Ministerstwo Spraw Zagranicznych, które opracowało Wieloletni program współpracy rozwojowej na lata 2016-2020', w oparciu o który polska współpraca rozwojowa koncentruje się na krajach Partnerstwa Wschodniego (Białoruś, Gruzja, Mołdawia, Ukraina) oraz Afryki, Azji i Bliskiego Wschodu (Etiopia, Kenia, Liban, Mjanma, Palestyna, Senegal, Tanzania, Ugandę). Polska współpraca rozwojowa służy wzmocnieniu rządów prawa i wspieraniu reform decentralizacyjnych oraz zwalczaniu korupcji, a także przestrzeganiu praw człowieka i swobód obywatelskich. Wśród celów współpracy rozwojowej są: poprawa opieki zdrowotnej i dostępu do edukacji oraz wsparcie dla przedsiębiorczości i rolnictwa, a także ochrona środowiska naturalnego, w tym zapobieganie skutkom klęsk żywiołowych. Działania objęte programem finansowane są ze środków Ministerstwa Spraw Zagranicznych, rezerwy celowej budżetu państwa przeznaczonej na współpracę rozwojową i funduszy innych resortów.",
+                          
+                            "zrodlo": "Ministerstwo Spraw Zagranicznych",
+                          
+                            "czestotliwosc": "Dane roczne; od 2013 r.",
+                          
+                            "uwagi": "Do 2017 r. obowiązywała metodologia DAC OECD zbierania danych na temat pomocy rozwojowej w formacie CRS (Creditor Reporting System), która pozwala na oznaczanie sektora wsparcia jedynie przy przepływach dwustronnych. Do wskaźnika nie zaliczono wydatków w ramach pomocy wielostronnej w formie wpłat do budżetów ogólnych organizacji międzynarodowych, które również działają w obszarze infrastruktury. Od 2018 r. wiodący wskaźnik ODA jest prezentowany w formie ekwiwalentu grantu, uwzględniającej jedynie element grantu pomnożony przez wartość danego przepływu. Nie obowiązuje przy tym podział na wydatkowanie ODA brutto i netto. Dodatkowo trwają prace nad włączeniem do ODA innych przepływów, np. kwot zmobilizowanych przez sektor publiczny z instrumentów sektora prywatnego. Aktualnie konstruowany jest alternatywny do ODA wskaźnik TOSSD (Total Oficial Support for Sustainable Development), który będzie mierzył środki przeznaczane na wdrożenie SDGs."
+                          }
+          ],
+          "dane": [
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "2.22",
+                              
+                                  "2014" :   "1.78",
+                              
+                                  "2015" :   "2.91",
+                              
+                                  "2016" :   "1.52",
+                              
+                                  "2017" :   "1.60",
+                              
+                                  "2018" :   "2.03"
+                              
+                              }
+                          ]
+                        
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-b-1": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.b.1 Udział wartości dodanej przemysłu technologii średniozaawansowanych i wysokich w wartości dodanej ogółem",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.b. Wspierać krajowy rozwój technologiczny, badania i innowacyjność w krajach rozwijających się, w tym poprzez prowadzenie sprzyjającej polityki m.in. dla dywersyfikacji przemysłowej i zwiększania wartości dodanej dla dóbr.",
+                          
+                            "definicja": "Udział wartości dodanej przedsiębiorstw zaawansowanych i średniozaawansowanych technologii w wartości dodanej przedsiębiorstw niefinansowych.",
+                          
+                            "jednostka": "procent [%]",
+                          
+                            "wymiary": "ogółem",
+                          
+                            "metodologia": "Do zaawansowanych technologii według Polskiej Klasyfikacji Działalności 2007 zalicza się:    • Dział 21 Produkcja podstawowych substancji farmaceutycznych oraz leków i pozostałych wyrobów farmaceutycznych,    • Dział 26 Produkcja komputerów, wyrobów elektronicznych i optycznych,    • Grupę 30.3 Produkcja statków powietrznych, statków kosmicznych i podobnych maszyn.  Do średniozaawansowanych technologii według Polskiej Klasyfikacji Działalności 2007 zalicza się:    • Dział 20 Produkcja chemikaliów i wyrobów chemicznych,   • Grupa 25.4 Produkcja broni i amunicji,    • Dział 27 Produkcja urządzeń elektrycznych,    • Dział 28 Produkcja maszyn i urządzeń, gdzie indziej niesklasyfikowana,    • Dział 29 Produkcja pojazdów samochodowych, przyczep i naczep, z wyłączeniem motocykli,    • Dział 30 Produkcja pozostałego sprzętu transportowego (z wyłączeniem Grupy 30.1 Produkcja statków i łodzi oraz Grupy 30.3 Produkcja statków powietrznych, statków kosmicznych i podobnych maszyn),    • Grupa 32.5 Produkcja urządzeń, instrumentów oraz wyrobów medycznych, włączając dentystyczne.  Przedsiębiorstwo niefinansowe jest to podmiot zalkasyfikowany (niezaleznie od liczby pracujących w nim osób) do nastepujących sekcji Polskiej Klasyfikacji Działalności 2007: B Górnictwo i wydobywanie, C Przetwórstwo przemysłowe, D Wytwarzanie i zaopatrywanie w energię elektryczną, gaz, parę wodną, gorącą wodę i powietrze do układów klimatyzacyjnych, E Dostawa wody  gospodarowanie ściekami i odpadami oraz działalność związana z rekultywacją, F Budownictwo, G Handel hurtowy i detaliczny  naprawa pojazdów samochodowych, włączając motocykle, H Transport i gospodarka magazynowa, I Działalność związana z zakwaterowaniem i usługami gastronomicznymi, J Informacja i komunikacja, L Działalność związana z obsługą rynku nieruchomości, M Działalność profesjonalna, naukowa i techniczna, N Działalność w zakresie usług administrowania i działalność wspierająca, P Edukacja (z wyłączeniem szkolnictwa wyższego), Q Opieka zdrowotna i pomoc społeczna (z wyłączeniem samodzielnych publicznych zakładów opieki zdrowotnej), R Działalność związana z kulturą, rozrywką i rekreacją, S Pozostała działalność usługowa (z wyłączeniem Działu 94 Działalność organizacji członkowskich). Wartość dodana w cenach producenta jest zyskiem brutto z działalności operacyjnej po uwzględnieniu dotacji operacyjnych oraz podatków pośrednich. Można ją obliczyć na podstawie obrotu powiększonego o produkcję skapitalizowaną, powiększonego o pozostałe zyski z działalności operacyjnej, powiększonego lub pomniejszonego o zmiany stanu zapasów, pomniejszonego o zakupy towarów i usług, pomniejszonego o inne podatki nakładane na produkty, które są związane z obrotem, ale nie podlegają odliczeniu, pomniejszonego o cła i podatki związane z produkcją.",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne; od 2010 r.",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "7.96",
+                              
+                                  "2011" :   "8.58",
+                              
+                                  "2012" :   "8.06",
+                              
+                                  "2013" :   "8.36",
+                              
+                                  "2014" :   "8.12",
+                              
+                                  "2015" :   "8.08",
+                              
+                                  "2016" :   "8.26",
+                              
+                                  "2017" :   "7.90"
+                              
+                              }
+                          ]
+                        
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-c-1": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "9.c.1 Odsetek ludności objętej siecią telefonii komórkowej według technologii",
+                          
+                            "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                          
+                            "zadanie": "9.c Do 2020 roku znacząco zwiększyć dostęp do technologii informacyjnych i komunikacyjnych oraz dążyć do zapewnienia przystępnego i powszechnego dostępu do Internetu w krajach najmniej rozwiniętych.",
+                          
+                            "definicja": "Odsetek ludności będący w zasięgu sieci komórkowej, z podziałem na technologie, odnosi się do odsetka mieszkańców żyjących w zasięgu sygnału telefonii ruchomej (komórkowej), niezależnie od tego czy są oni abonentami albo użytkownikami. Wskaźnik ten stanowi iloraz liczby mieszkańców w zasięgu danej technologii telefonii ruchomej (komórkowej) do ogólnej liczby ludności pomnożony przez 100.",
+                          
+                            "jednostka": "procent [%]",
+                          
+                            "wymiary": "technologie",
+                          
+                            "metodologia": "Abonent telefonii ruchomej - podmiot, który jest stroną umowy o świadczenie usług telekomunikacyjnych zawartej z dostawcą publicznie dostępnych usług telekomunikacyjnych. Pojęciem tym objęci są również użytkownicy tzw. pre-paid.",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne  od 2014 r.",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {
+                      
+                              "wg technologii": [
+                                  {"odsetek ludności znajdujący się w zasięgu sieci 3G": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "99.9",
+                                          
+                                              "2015" : "99.9",
+                                          
+                                              "2016" : "100.0",
+                                          
+                                              "2017" : "100.0",
+                                          
+                                              "2018" : "100.0"
+                                          
+                                          }
+                                      ],"odsetek ludności znajdujący się w zasięgu sieci 4G/LTE": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "80.0",
+                                          
+                                              "2015" : "99.8",
+                                          
+                                              "2016" : "99.9",
+                                          
+                                              "2017" : "99.9",
+                                          
+                                              "2018" : "100.0"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    }]
+}

@@ -7,9 +7,10 @@
 {%- assign t1 = site.metadane_krajowe | where:"translation_id", slug | first -%}
 {%- assign kategorie = page.kategorie | split: "," -%}
 {% assign content = kategorie | strip_newlines %}
+{% assign zrodlo = page.source_url | strip %}
 
 {
-  "{{ slug }}": [
+  "{{ slug | replace: '-0', "" }}": [
     {
       "metadane": [
         {% assign managed_fields = site.prose.metadata._metadane_krajowe %}
@@ -27,6 +28,7 @@
         {
 
           {%- if content=="[]" -%}
+              {%- if zrodlo=="www.stat.gov.pl" -%}
                     "{{ zmienna_poj }}": [
                         {
                         {%- for data in site.data.krajowe[dataset_name] -%}
@@ -37,6 +39,7 @@
                         {% endfor %}
                         }
                     ]{%- if forloop.last == false -%},{%- endif -%}
+                {% endif %}
               {%- else -%}
                 {% for poj_kategorie in kategorie %}
                       "{{ poj_kategorie | strip }}": [

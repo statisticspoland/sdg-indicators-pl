@@ -1,0 +1,106 @@
+
+
+
+{
+  "11-1-1": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "11.1.1 Share of total population living in a dwelling with a leaking roof, damp walls, floors or foundation, or rot in window frames or floor",
+                      
+                        "goal": "Goal 11. Sustainable cities and communities",
+                      
+                        "target": "11.1 By 2030, ensure access for all to adequate, safe and affordable housing and basic services and upgrade slums",
+                      
+                        "definition": "Percentage of persons that declared, at least in one case, that they live in a dwelling with a leaking roof, damp walls, floors or foundation, or rot in window frames or floor.",
+                      
+                        "unit": "percent [%]",
+                      
+                        "dimensions": "total, urban areas / rural areas",
+                      
+                        "methodology": "The category of households includes persons that, at least in one case, declared that they live in a dwelling with a leaking roof, damp walls, floors or foundation, or rot in window frames or floor. The questions from the EU SILC survay: untill 2014: Does your dwelling have: a leaking roof, damp walls, floors or foundation or rot in window frames or floor? since 2015: Does your dwelling have: A. a leaking roof, B. damp walls/floors/foundation, C. rot in window frames or floor?",
+                      
+                        "source": "Statistics Poland",
+                      
+                        "availability": "Annual data; since 2010.",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {
+                "urban/rural area": [
+                    {"total": [
+                            {
+                            
+                                "2010" :   "15.6",
+                            
+                                "2011" :   "11.5",
+                            
+                                "2012" :   "10.6",
+                            
+                                "2013" :   "10.2",
+                            
+                                "2014" :   "9.5",
+                            
+                                "2015" :   "11.9",
+                            
+                                "2016" :   "11.7",
+                            
+                                "2017" :   "12.1",
+                            
+                                "2018" :   "11.5"
+                            
+                            }
+                        ],"urban areas": [
+                            {
+                            
+                                "2010" :   "13",
+                            
+                                "2011" :   "10.3",
+                            
+                                "2012" :   "9.3",
+                            
+                                "2013" :   "8.8",
+                            
+                                "2014" :   "8.9",
+                            
+                                "2015" :   "10.6",
+                            
+                                "2016" :   "10.1",
+                            
+                                "2017" :   "10.5",
+                            
+                                "2018" :   "10.5"
+                            
+                            }
+                        ],"rural areas": [
+                            {
+                            
+                                "2010" :   "19.6",
+                            
+                                "2011" :   "13.4",
+                            
+                                "2012" :   "12.5",
+                            
+                                "2013" :   "12.4",
+                            
+                                "2014" :   "10.4",
+                            
+                                "2015" :   "13.8",
+                            
+                                "2016" :   "13.9",
+                            
+                                "2017" :   "14.4",
+                            
+                                "2018" :   "13.1"
+                            
+                            }
+                        ]
+                    }
+                ]}
+      ]
+    }
+  ]
+}

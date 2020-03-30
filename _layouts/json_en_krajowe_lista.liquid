@@ -10,7 +10,7 @@
                   {%- assign slug = data.path | remove: "_metadane_krajowe/" | remove: ".md" -%}
                   {%- assign t1 = site.metadane_krajowe | where:"translation_id", slug | first -%}
                   {
-                    "{{ slug }}": [
+                    "{{ slug | replace: '-0', "" }}": [
                       {
                             "name" : "{{t1['en_nazwa_wskaznika']}}"
                       }

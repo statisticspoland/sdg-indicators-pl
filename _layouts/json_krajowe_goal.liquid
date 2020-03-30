@@ -22,11 +22,13 @@
     {%- assign a= my_include | split : 'zmienne:' -%}
     {%- assign b= a[1] | split : 'kategorie:' -%}
     {%- assign zmienne = b[0] | split: ";" -%}
-    {% assign kategorie = b[1] | remove : '---' | split: "," %}
+    {%- assign c = b[1] | split : 'source_url:' -%}
+    {% assign kategorie = c[0] | split: "," %}
+    {% assign zrodlo = c[1] | remove : '---' | strip %}
     {%- assign zmienna_poj = 'ogółem' -%}
 
     {
-      "{{ slug }}": [
+      "{{ slug | replace: '-0', "" }}": [
         {
           "metadane": [
             {% assign managed_fields = site.prose.metadata._metadane_krajowe %}
@@ -44,6 +46,7 @@
             {
                 {%- unless zmienne[0] contains 'null' -%}
                     {%- if kategorie[0] contains 'null' -%}
+                      {%- if zrodlo=="www.stat.gov.pl" -%}
                           "{{ zmienna_poj }}": [
                               {
                               {%- for data in site.data.krajowe[dataset_name] -%}
@@ -54,6 +57,7 @@
                               {% endfor %}
                               }
                           ]
+                        {% endif %}
                     {% else %}
                       {% for poj_kategorie in kategorie %}
                               "{{ poj_kategorie | strip }}": [

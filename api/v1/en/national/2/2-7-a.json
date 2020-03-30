@@ -1,0 +1,107 @@
+
+
+
+{
+  "2-7-a": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "2.7.a Prevalence of obesity among adults",
+                      
+                        "goal": "Goal 2. Zero hunger",
+                      
+                        "priority": "Promotion of healthy lifestyle among adults and children (decrease in proportion of persons with overweight and obesity)",
+                      
+                        "definition": "Percentage of population aged 18 years and more with a BMI equal 30 or more.",
+                      
+                        "unit": "percent [%]",
+                      
+                        "dimensions": "sex",
+                      
+                        "methodology": "Obesity is defined as abnormal or excessive fat accumulation that presents a risk to health. A crude population measure of obesity is the body mass index (BMI). A person with a BMI of 30 or more is generally considered obese. Body mass index (BMI) is defined as a person's weight in kilograms divided by the square of the person's height in metres (kg/m2). For adults over 20 years old, BMI falls into one of the following categories:   18.5 - 24.9 - normal weight, 25.0 - 29.9 - pre-obesity, 30.0 - 34.9 - obesity class I, 35.0 - 39.9 - obesity class II, >=40 - obesity class III.  The BMI ranges are based on the effect excessive body fat has on disease and death and are reasonably well related to adiposity. BMI was developed as a risk indicator of disease; as BMI increases, so does the risk for some diseases. Some common conditions related to overweight and obesity include: premature death, cardiovascular diseases, high blood pressure, osteoarthritis, some cancers and diabetes.",
+                      
+                        "source": "World Health Organization",
+                      
+                        "availability": "Annual data; since 2010",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {
+                    "by sex": [
+                        {
+                        "total": [
+                                {
+                                
+                                    "2010" :   "22.5",
+                                
+                                    "2011" :   "22.9",
+                                
+                                    "2012" :   "23.4",
+                                
+                                    "2013" :   "24.0",
+                                
+                                    "2014" :   "24.5",
+                                
+                                    "2015" :   "25.0",
+                                
+                                    "2016" :   "25.6",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   ""
+                                
+                                }
+                            ],"males": [
+                                {
+                                
+                                    "2010" :   "21.6",
+                                
+                                    "2011" :   "22.2",
+                                
+                                    "2012" :   "22.8",
+                                
+                                    "2013" :   "23.4",
+                                
+                                    "2014" :   "24.1",
+                                
+                                    "2015" :   "24.7",
+                                
+                                    "2016" :   "25.4",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   ""
+                                
+                                }
+                            ],"females": [
+                                {
+                                
+                                    "2010" :   "23.3",
+                                
+                                    "2011" :   "23.7",
+                                
+                                    "2012" :   "24.0",
+                                
+                                    "2013" :   "24.4",
+                                
+                                    "2014" :   "24.9",
+                                
+                                    "2015" :   "25.3",
+                                
+                                    "2016" :   "25.7",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   ""
+                                
+                                }
+                            ]
+                        }
+                    ]}
+      ]
+    }
+  ]
+}

@@ -16,7 +16,7 @@
                   {%- assign nazwa = slug | prepend : '/indicators/' | append: '.md' -%}
                   {%- capture my_include %}{% include_relative {{ nazwa }} -%}{%- endcapture -%}
                   {%- assign a= my_include | split : 'zmienne:' -%}
-                  {%- assign b= a[1] | split : 'indicator_variable_2:' -%}
+                  {%- assign b= a[1] | split : 'indicator_variable_1:' -%}
                   {%- assign zmienne = b[0] | split: ";" -%}
 
 
@@ -24,7 +24,9 @@
                   {%- assign d= c[1] | split : 'kategorie:' -%}
                   {%- assign zmienne2 = d[0] | split: ";" -%}
 
-                  {% assign kategorie = d[1] | remove : '---' | split: "," %}
+                  {%- assign c = d[1] | split : 'source_url:' -%}
+                  {% assign kategorie = c[0] | split: "," %}
+                  {% assign zrodlo = c[1] | remove : '---' | strip %}
 
                   {%- assign zmienna_poj = 'total' -%}
                   {%- assign zmienna_poj2 = 'ogółem' -%}
@@ -48,6 +50,7 @@
                           {
                               {%- unless zmienne[0] contains 'null' -%}
                                   {%- if kategorie[0] contains 'null' -%}
+                                    {%- if zrodlo=="www.stat.gov.pl" -%}
                                         "{{ zmienna_poj }}": [
                                             {
                                             {%- for data in site.data.globalne[dataset_name] -%}
@@ -58,6 +61,7 @@
                                             {% endfor %}
                                             }
                                         ]
+                                    {% endif %}
                                   {% else %}
                                     {% for poj_kategorie in kategorie %}
                                             "{{ poj_kategorie | strip }}": [

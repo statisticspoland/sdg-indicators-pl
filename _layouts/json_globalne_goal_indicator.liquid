@@ -7,6 +7,7 @@
 {%- assign t1 = site.metadane_globalne | where:"translation_id", slug | first -%}
 {%- assign kategorie = page.kategorie | split: "," -%}
 {% assign content = kategorie | strip_newlines %}
+{% assign zrodlo = page.source_url | strip %}
 
 {
   "{{ slug }}": [
@@ -26,6 +27,7 @@
       "dane": [
         {
           {%- if content=="[]" -%}
+                {%- if zrodlo=="www.stat.gov.pl" -%}
                     "{{ zmienna_poj }}": [
                         {
                         {%- for data in site.data.globalne[dataset_name] -%}
@@ -36,6 +38,7 @@
                         {% endfor %}
                         }
                     ]{%- if forloop.last == false -%},{%- endif -%}
+                {% endif %}
               {%- else -%}
                 {% for poj_kategorie in kategorie %}
                       "{{ poj_kategorie | strip }}": [

@@ -1,0 +1,59 @@
+
+
+
+{
+  "10-3-a": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "10.3.a Gini coefficient - distribution of income",
+                      
+                        "goal": "Goal 10. Reduce inequalities",
+                      
+                        "priority": "Reduction of income inequalities",
+                      
+                        "definition": "The measure of income distribution inequality. It ranges between 0 and 100). This indicator would be 0 (homogenous distribution) if all the persons had the same income, whereas it would be 100 if all the persons except one had zero income. Thus the higher the indicator, the higher the income concentration and therefore, the greater the income inequalities.",
+                      
+                        "unit": "points",
+                      
+                        "dimensions": "total",
+                      
+                        "methodology": "The indicator is calculated on the basis of househols' equivalised disposable income obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) whose subject are households and persons aged 16 and more in households. The survey is of a panel character, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview technique using 2 questionnaires; one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Central Statistical Office of Poland implemented EU-SILC survey in 2005. The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Equivalised disposable income is the household's total disposable income, divided by comparable household size. In order to determine a comparable household size, each member of the household (including children) is assigned with a coefficient based on modified OECD scale. Weight 1,0 is assigned to the first adult, weight 0,5 is assigned to every next adult and weight 0,3 is assigned to each child under 14. This means that an exemplary three-person family consisting of 2 adults (i.e. aged at least 14) and one child amounts to 1,8 equivalent units (1+ 0,5 + 0,3). Disposable income is defined as a sum of monetary net (after deduction for personal income taxes, income from properties taxes, contributions to social security and health insurance) incomes (additionally including non-monetary income associated with the use of a company car in case of hired work income) of all household members less: real estate taxes, monetary transfers to other households and balance of settlement with the Tax Office.",
+                      
+                        "source": "Statistics Poland",
+                      
+                        "availability": "Annual data; since 2010",
+                      
+                        "notes": ""
+                      }
+      ],
+      "data": [
+        {"total": [
+                      {
+                      
+                          "2010" :   "31.1",
+                      
+                          "2011" :   "31.1",
+                      
+                          "2012" :   "30.9",
+                      
+                          "2013" :   "30.7",
+                      
+                          "2014" :   "30.8",
+                      
+                          "2015" :   "30.6",
+                      
+                          "2016" :   "29.8",
+                      
+                          "2017" :   "29.2",
+                      
+                          "2018" :   "27.8"
+                      
+                      }
+                  ]
+            }
+      ]
+    }
+  ]
+}
