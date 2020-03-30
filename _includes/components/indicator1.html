@@ -104,12 +104,14 @@
         {% if indicator_num < 10 %} {% assign indicator_num = indicator_num | prepend:0  %} {% endif %}
 
 	{% if language == 'pl' %}
-		<button onclick="window.location.href = '{{ site.baseurl }}/assets/pdf/{{ page.lang }}/{{page.indicator | replace: ".", "-"}}.pdf';" style="float: right;margin-right: 0px;">
-        <i class="fa fa-file-pdf-o" style="font-size:20px;"></i></button>
+		<a href="{{ site.baseurl }}/assets/pdf/{{ page.lang }}/{{page.indicator | replace: ".", "-"}}.pdf" target="_blank">
 	{% else %}
-		<button onclick="window.location.href = '{{ site.baseurl }}/assets/pdf/en/{{page.indicator | replace: ".", "-"}}.pdf';" style="float: right;margin-right: 0px;">
-        <i class="fa fa-file-pdf-o" style="font-size:20px;"></i></button>
+		<a href="{{ site.baseurl }}/assets/pdf/en/{{page.indicator | replace: ".", "-"}}.pdf" target="_blank">
 	{% endif %}
+	
+		<button style="float: right;margin-right: 0px;"><i class="fa fa-file-pdf-o" style="font-size:20px;"></i></button>
+		</a>
+	    
 
         <table id="metadane">
           {% if page.url contains '/statistics_glob/' %}
