@@ -40,7 +40,7 @@ This method allows users to download titles for all global indicators in English
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/en/globalne/lista.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/en/globalne/lista.json', function(data) {
     $('#show-data-glob-lista-en').html(JSON.stringify(data, null, 2));
 });
 
