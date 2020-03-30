@@ -20,7 +20,7 @@ This method allows users to download titles for all national indicators in Engli
 
 <h3 id="przykładowy-curl">Curl example</h3>
 
-<p><code class="highlighter-rouge">curl -X GET --header 'Accept: application/vnd.github.v3.raw' 'https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/national/list.json'</code></p>
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/national/list.json"</code></p>
 
 <h3 id="przykładowy-url">Przykładowy URL</h3>
 
