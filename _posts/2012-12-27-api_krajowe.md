@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wszystkich wskaźników k
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/krajowe.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/krajowe.json', function(data) {
     $('#show-data-kraj').html(JSON.stringify(data, null, 2));
 });
 
