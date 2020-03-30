@@ -39,7 +39,7 @@ Metoda pozwala na uzyskanie tytułów wszystkich wskaźników krajowych w język
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/krajowe/lista.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/krajowe/lista.json', function(data) {
     $('#show-data-kraj-lista').html(JSON.stringify(data, null, 2));
 });
 
