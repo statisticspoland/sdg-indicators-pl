@@ -53,7 +53,7 @@ This method allows users to download data and metadata for chosen global indicat
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/en/globalne/1/1-1-1.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/en/globalne/1/1-1-1.json', function(data) {
     $('#show-data-1-1-1-en').html(JSON.stringify(data, null, 2));
 });
 
