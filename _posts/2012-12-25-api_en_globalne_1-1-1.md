@@ -33,7 +33,7 @@ This method allows users to download data and metadata for chosen global indicat
 
 <h3 id="przykładowy-curl">Curl example</h3>
 
-<p><code class="highlighter-rouge">curl -X GET --header 'Accept: application/json' 'https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global/1/1-1-1.json'</code></p>
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global/1/1-1-1.json"</code></p>
 
 <h3 id="przykładowy-url">URL example</h3>
 
