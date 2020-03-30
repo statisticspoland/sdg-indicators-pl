@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQ
-permalink: /api/
+permalink: /faqs/
 ---
 <article>
 
