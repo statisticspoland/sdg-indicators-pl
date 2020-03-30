@@ -40,7 +40,7 @@ This method allows users to download data and metadata for all global indicators
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/en/globalne.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/en/globalne.json', function(data) {
     $('#show-data-glob-en').html(JSON.stringify(data, null, 2));
 });
 
