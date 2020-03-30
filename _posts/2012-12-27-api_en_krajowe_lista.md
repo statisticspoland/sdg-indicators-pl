@@ -39,7 +39,7 @@ This method allows users to download titles for all national indicators in Engli
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/en/krajowe/lista.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/en/krajowe/lista.json', function(data) {
     $('#show-data-kraj-lista-en').html(JSON.stringify(data, null, 2));
 });
 
