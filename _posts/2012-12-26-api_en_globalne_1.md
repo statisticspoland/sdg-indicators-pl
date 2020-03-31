@@ -1,7 +1,7 @@
 ---
 title: 'Download all global indicators from chosen goal'
 type: 'GET'
-name: '/api/v1/en/global/{cel}.json'
+name: '/api/v1/en/global/{goal}.json'
 lang: 'en'
 ---
 
