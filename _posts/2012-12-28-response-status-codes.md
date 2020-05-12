@@ -12,7 +12,7 @@ lang: 'pl'
   <tr>
     <td><b>200</b></td>
     <td>OK</td>
-    <td>Sformuowane zapytanie jest prawidłowe</td>
+    <td>Sformułowane zapytanie jest prawidłowe</td>
   </tr>
   <tr>
     <td><b>302</b></td>
