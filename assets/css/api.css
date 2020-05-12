@@ -411,7 +411,7 @@ body,
 input,
 textarea {
   color: #191919;
-  font: 14px/140% 'Open Sans', Arial, sans-serif;
+  font: 14px/140% 'Open Sans', FiraSans, sans-serif;
 }
 
 a {
@@ -648,4 +648,17 @@ code {
 
 #api_table th,td{
   padding: 10px;
+}
+
+#przyklad_token{
+    display: block;
+    padding: 2px;
+    white-space: pre;
+    max-height: 450px;
+    overflow: auto;
+    margin-bottom: 15px;
+    border: 1px solid #e2e7ea;
+    background: #eef1f2;
+    -webkit-border-radius: 2px;
+    color: #546974;
 }
