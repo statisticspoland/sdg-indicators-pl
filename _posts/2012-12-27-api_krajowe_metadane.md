@@ -1,7 +1,7 @@
 ---
-title: 'Pobierz wszystkie wskaźniki krajowe'
+title: 'Pobierz metadane dla wszystkich wskaźników krajowych'
 type: 'GET'
-name: '/api/v1/krajowe.json'
+name: '/api/v1/krajowe_metadane.json'
 lang: 'pl'
 ---
 
@@ -20,11 +20,11 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wszystkich wskaźników k
 
 <h3 id="przykładowy-curl">Przykładowy Curl</h3>
 
-<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/krajowe.json"</code></p>
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/krajowe_metadane.json"</code></p>
 
 <h3 id="przykładowy-url">Przykładowy URL</h3>
 
-<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/krajowe.json</code></p>
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/krajowe_metadane.json</code></p>
 
 <h3 id="przykładowy-kod-odpowiedzi">Kod odpowiedzi</h3>
 
@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wszystkich wskaźników k
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/krajowe.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/krajowe_metadane.json', function(data) {
     $('#show-data-kraj').html(JSON.stringify(data, null, 2));
 });
 

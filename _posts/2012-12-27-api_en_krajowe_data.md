@@ -1,11 +1,11 @@
 ---
-title: 'Download all national indicators'
+title: 'Download data for all national indicators'
 type: 'GET'
-name: '/api/v1/en/national.json'
+name: '/api/v1/en/national_data.json'
 lang: 'en'
 ---
 
-This method allows users to download data and metadata for all national indicators in English.
+This method allows users to download data for all national indicators in English.
 
 ### Parameters
 
@@ -20,11 +20,11 @@ This method allows users to download data and metadata for all national indicato
 
 <h3 id="przykładowy-curl">Curl example</h3>
 
-<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/national.json"</code></p>
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/national_data.json"</code></p>
 
 <h3 id="przykładowy-url">URL example</h3>
 
-<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/national.json</code></p>
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/national_data.json</code></p>
 
 <h3 id="przykładowy-kod-odpowiedzi">Response code</h3>
 
@@ -40,7 +40,7 @@ This method allows users to download data and metadata for all national indicato
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/national.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/national_data.json', function(data) {
     $('#show-data-kraj-en').html(JSON.stringify(data, null, 2));
 });
 

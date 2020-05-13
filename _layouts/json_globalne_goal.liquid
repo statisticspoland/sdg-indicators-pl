@@ -54,7 +54,7 @@
     {%- assign c = b[1] | split : 'source_url:' -%}
     {% assign kategorie = c[0] | split: "," %}
     {% assign zrodlo = c[1] | remove : '---' | strip %}
-    
+
     {%- assign zmienna_poj = 'ogółem' -%}
 
     {
@@ -66,7 +66,7 @@
                   {%- for managed_field in managed_fields -%}
                         {%- if  managed_field.name contains "pl_" -%}
                           {% if managed_field.name != 'pl_graph_title' and managed_field.name != 'pl_title' and managed_field.name != 'pl_jednostka' %}
-                            "{{ managed_field.field.api }}": "{{ t1[managed_field.name] | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}"{% unless managed_field.field.label contains 'Uwagi' %},{% endunless %}
+                            "{{ managed_field.field.api }}": "{{ t1[managed_field.name] | replace: '<b>', "" | replace: '</b>', "" | replace: '&nbsp;', " " | replace: '&lt', "<" | replace: '&ge;', ">=" | replace: '&ndash;', "-" | replace: '&lsquo;', "'" | replace: '&rsquo;', "'" | replace: '&rdquo;', ",," | replace: '&ldquo;', ",," | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}"{% unless managed_field.field.label contains 'Uwagi' %},{% endunless %}
                           {% endif %}
                         {%- endif -%}
                   {%- endfor -%}

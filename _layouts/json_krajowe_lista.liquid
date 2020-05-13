@@ -12,7 +12,7 @@
                   {
                     "{{ slug | replace: '-0', "" }}": [
                       {
-                            "nazwa" : "{{t1['pl_nazwa_wskaznika']}}"
+                            "nazwa" : "{{t1['pl_nazwa_wskaznika'] | replace: '<b>', "" | replace: '</b>', "" }}"
                       }
                     ]
                   }{%- if data.next.path contains number -%},{%- endif -%}

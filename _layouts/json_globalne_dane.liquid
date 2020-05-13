@@ -54,18 +54,6 @@
                   {
                     "{{ slug }}": [
                       {
-                        "metadane": [
-                          {% assign managed_fields = site.prose.metadata._metadane_globalne %}
-                          {
-                                {%- for managed_field in managed_fields -%}
-                                      {%- if  managed_field.name contains "pl_" -%}
-                                        {% if managed_field.name != 'pl_graph_title' and managed_field.name != 'pl_title' and managed_field.name != 'pl_jednostka' %}
-                                          "{{ managed_field.field.api }}": "{{ t1[managed_field.name] | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}"{% unless managed_field.field.label contains 'Uwagi' %},{% endunless %}
-                                        {% endif %}
-                                      {%- endif -%}
-                                {%- endfor -%}
-                          }
-                        ],
                         "dane": [
                           {
                               {%- unless zmienne[0] contains 'null' -%}
