@@ -11,7 +11,7 @@ Metoda pozwala na uzyskanie danych dla wszystkich wskaźników krajowych w języ
 
 <p>Usługa nie przyjmuje parametrów wejściowych.</p>
 
-<p style='float:left;margin-top: 7px;'>Typem odpowiedzi jest</p>
+<p style='float:left;margin-top: 7px;'>Typ treści odpowiedzi</p>
 <select style='float:left;padding: 0px 15px;width: 155px;margin-left: 10px;text-align-last: center;'>
   <option>application/json</option>
 </select>
@@ -32,7 +32,7 @@ Metoda pozwala na uzyskanie danych dla wszystkich wskaźników krajowych w języ
 
 <h3 id="przykładowa-odpowiedź">Odpowiedź</h3>
 
-<p><code class="highlighter-rouge" id="show-data-kraj">
+<p><code class="highlighter-rouge" id="show-data-kraj-dane">
 </code></p>
 
 </div>
@@ -41,7 +41,7 @@ Metoda pozwala na uzyskanie danych dla wszystkich wskaźników krajowych w języ
 <script>
 
 $.getJSON('https://sdg.gov.pl/api/v1/krajowe_dane.json', function(data) {
-    $('#show-data-kraj').html(JSON.stringify(data, null, 2));
+    $('#show-data-kraj-dane').html(JSON.stringify(data, null, 2));
 });
 
 </script>

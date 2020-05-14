@@ -1,5 +1,5 @@
 ---
-title: 'Pobierz nazwy wskaźników krajowych'
+title: 'Pobierz tytuły wskaźników krajowych'
 type: 'GET'
 name: '/api/v1/krajowe/lista.json'
 lang: 'pl'
@@ -11,7 +11,7 @@ Metoda pozwala na uzyskanie tytułów wszystkich wskaźników krajowych w język
 
 <p>Usługa nie przyjmuje parametrów wejściowych.</p>
 
-<p style='float:left;margin-top: 7px;'>Typem odpowiedzi jest</p>
+<p style='float:left;margin-top: 7px;'>Typ treści odpowiedzi</p>
 <select style='float:left;padding: 0px 15px;width: 155px;margin-left: 10px;text-align-last: center;'>
   <option>application/json</option>
 </select>

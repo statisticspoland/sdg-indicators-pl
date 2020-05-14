@@ -32,7 +32,7 @@ This method allows users to download data for all national indicators in English
 
 <h3 id="przykładowa-odpowiedź">Response</h3>
 
-<p><code class="highlighter-rouge" id="show-data-kraj-en">
+<p><code class="highlighter-rouge" id="show-data-kraj-en-data">
 </code></p>
 
 </div>
@@ -41,7 +41,7 @@ This method allows users to download data for all national indicators in English
 <script>
 
 $.getJSON('https://sdg.gov.pl/api/v1/en/national_data.json', function(data) {
-    $('#show-data-kraj-en').html(JSON.stringify(data, null, 2));
+    $('#show-data-kraj-en-data').html(JSON.stringify(data, null, 2));
 });
 
 </script>

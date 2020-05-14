@@ -5,7 +5,7 @@ name: '/api/v1/en/national_metadata.json'
 lang: 'en'
 ---
 
-This method allows users to download data and metadata for all national indicators in English.
+This method allows users to download metadata for all national indicators in English.
 
 ### Parameters
 
@@ -32,7 +32,7 @@ This method allows users to download data and metadata for all national indicato
 
 <h3 id="przykładowa-odpowiedź">Response</h3>
 
-<p><code class="highlighter-rouge" id="show-data-kraj-en">
+<p><code class="highlighter-rouge" id="show-data-kraj-en-metadata">
 </code></p>
 
 </div>
@@ -41,7 +41,7 @@ This method allows users to download data and metadata for all national indicato
 <script>
 
 $.getJSON('https://sdg.gov.pl/api/v1/en/national_metadata.json', function(data) {
-    $('#show-data-kraj-en').html(JSON.stringify(data, null, 2));
+    $('#show-data-kraj-en-metadata').html(JSON.stringify(data, null, 2));
 });
 
 </script>

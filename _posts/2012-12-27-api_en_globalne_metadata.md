@@ -32,7 +32,7 @@ This method allows users to download metadata for all global indicators in Engli
 
 <h3 id="przykładowa-odpowiedź">Response</h3>
 
-<p><code class="highlighter-rouge" id="show-data-glob-en">
+<p><code class="highlighter-rouge" id="show-data-glob-en-metadata">
 </code></p>
 
 </div>
@@ -41,7 +41,7 @@ This method allows users to download metadata for all global indicators in Engli
 <script>
 
 $.getJSON('https://sdg.gov.pl/api/v1/en/global_metadata.json', function(data) {
-    $('#show-data-glob-en').html(JSON.stringify(data, null, 2));
+    $('#show-data-glob-en-metadata').html(JSON.stringify(data, null, 2));
 });
 
 </script>
