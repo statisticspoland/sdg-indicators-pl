@@ -48,7 +48,7 @@
               {%- for managed_field in managed_fields -%}
                     {%- if  managed_field.name contains "en_" -%}
                       {% if managed_field.name != 'en_graph_title' and managed_field.name != 'en_title' and managed_field.name != 'en_jednostka' %}
-                        "{{ managed_field.field.api }}": "{{ t1[managed_field.name] | replace: '<b>', "" | replace: '</b>', "" | replace: '&nbsp;', " " | replace: '&lt', "<" | replace: '&ge;', ">=" | replace: '&ndash;', "-" | replace: '&lsquo;', "'" | replace: '&rsquo;', "'" | replace: '&rdquo;', ",," | replace: '&ldquo;', ",," | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}"{% unless managed_field.field.label contains 'Notes' %},{% endunless %}
+                        "{{ managed_field.field.api }}": "{{ t1[managed_field.name] | replace: '<b>', "" | replace: '</b>', "" | replace: '&bdquo;', ",," | replace: '&nbsp;', " " | replace: '&lt', "<" | replace: '&ge;', ">=" | replace: '&ndash;', "-" | replace: '&lsquo;', "'" | replace: '&rsquo;', "'" | replace: '&rdquo;', ",," | replace: '&ldquo;', ",," | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}"{% unless managed_field.field.label contains 'Notes' %},{% endunless %}
                       {% endif %}
                     {%- endif -%}
               {%- endfor -%}

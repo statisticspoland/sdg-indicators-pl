@@ -9,6 +9,7 @@ pl:
   return-to-top: "Do góry"
   nav-monitoring : "Przewodnik"
   nav-development : "FAQs"
+  nav-api : "API"
 en:
   about-heading: "About"
   about-text: "<b>About</b><br />Welcome to the Statistics Poland website dedicated to the 2030 Agenda and Sustainable Development Goals"
@@ -18,4 +19,5 @@ en:
   return-to-top: "Return to top"
   nav-monitoring : "Guide"
   nav-development : "FAQs"
+  nav-api : "API"
 ---
