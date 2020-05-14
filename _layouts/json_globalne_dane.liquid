@@ -77,7 +77,7 @@
                                                 {%- assign gr_zmienne = zmienne[forloop.index0] | split: "," -%}
                                                   {%- for poj_zmienne in gr_zmienne -%}
                                                     {%- assign poj_z= poj_zmienne | strip -%}
-                                                    "{{ poj_z }}": [
+                                                    "{{ poj_z | replace: '_', ""}}": [
                                                         {
                                                         {%- for data in site.data.globalne[dataset_name] -%}
                                                           {% if data["year"] != 'year' %}
