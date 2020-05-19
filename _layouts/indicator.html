@@ -511,8 +511,114 @@ function Zmiana_jednostki3(){
     }
 }
 
+function Zmiana_jednostki5(){
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  labels.shift()
+  var lan='{{language}}'
+
+  if (document.getElementById("Jednostka5").innerHTML=='Zmień jednostkę - [-]' || document.getElementById("Jednostka5").innerHTML=='Change unit - [-]'){
+    var calo={{ row1 | jsonify }}
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
+    calosc=calo.splice(10,20);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+
+    chart.update({labels: labels,series: seria})
+    if(lan=='pl'){
+      document.getElementById("tytul").innerHTML = "[-]";
+      document.getElementById("Jednostka5").innerHTML = "Zmień jednostkę - procent";
+      $(".ct-series-0").text('dynamika PKB (w cenach stałych)').show();
+      $(".ct-series-1").text('dynamika cen towarów i usług konsumpcyjnych').show();
+      $(".ct-series-2").hide();
+
+    }
+    if(window.location.href.indexOf("en") > -1) {
+      document.getElementById("tytul").innerHTML = "[-]";
+      document.getElementById("Jednostka5").innerHTML = "Change unit - percent";
+      $(".ct-series-0").text('indices of GDP (constant prices)').show();
+      $(".ct-series-1").text('indices of prices of consumer goods and services').show();
+      $(".ct-series-2").hide();
+    }
+
+
+  }else if (document.getElementById("Jednostka5").innerHTML=='Zmień jednostkę - procent' || document.getElementById("Jednostka5").innerHTML=='Change unit - percent') {
+
+    var calo={{ row1 | jsonify }}
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
+    calosc=calo.splice(30,58);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+
+    chart.update({labels: labels,series: seria})
+    if(lan=='pl'){
+      document.getElementById("tytul").innerHTML = "%";
+      document.getElementById("Jednostka5").innerHTML = "Zmień jednostkę - PLN";
+      $(".ct-series-0").text('stopa inwestycji').show();
+      $(".ct-series-1").text('dług sektora instytucji rządowych i samorządowych w relacji do PKB').show();
+      $(".ct-series-2").text('wynik sektora instytucji rządowych i samorządowych w relacji do PKB').show();
+
+    }
+    if(window.location.href.indexOf("en") > -1) {
+      document.getElementById("tytul").innerHTML = "%";
+      document.getElementById("Jednostka5").innerHTML = "Change unit - PLN";
+      $(".ct-series-0").text('investment rate').show();
+      $(".ct-series-1").text('general government debt in relation to GDP').show();
+      $(".ct-series-2").text('general government result in relation to GDP').show();
+    }
+
+
+
+  }else{
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "PLN";
+        document.getElementById("Jednostka5").innerHTML = "Zmień jednostkę - [-]";
+        $(".ct-series-0").text('PKB na 1 mieszkańca (ceny bieżące)').show();
+        $(".ct-series-1").hide();
+        $(".ct-series-2").hide();
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "PLN";
+        document.getElementById("Jednostka5").innerHTML = "Change unit - [-]";
+        $(".ct-series-0").text('GDP per capita in EUR (current prices)').show();
+        $(".ct-series-1").hide();
+        $(".ct-series-2").hide();
+      }
+
+    }
+
+}
+
 $(window).on("load", function() {
-  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2'){
+  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '17-13-1'){
     $('.ct-chart').css({'margin-top':'20px'});
 
   }

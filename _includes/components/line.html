@@ -40,20 +40,24 @@ function remove(array, element) {
     var precyz=parseInt({{ precyzja }}) || 2
   }
 
-if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2'){
-  if (window.location.href.indexOf("en") > -1){
-      legenda=["total"]
-  }else{
-    legenda=["ogółem"]
-  }
-
-
-}else{
-    legenda=[]
-    for (j=0;j<legen.length;j++){
-      legenda.push(legen[j].replace(/[_]/g, ''))
+  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2'){
+    if (window.location.href.indexOf("en") > -1){
+        legenda=["total"]
+    }else{
+      legenda=["ogółem"]
     }
-}
+  }else if ('{{id}}'=='17-13-1') {
+    if (window.location.href.indexOf("en") > -1){
+        legenda=["GDP per capita in EUR (current prices)","",""]
+    }else{
+      legenda=["PKB na 1 mieszkańca (ceny bieżące)","",""]
+    }
+  }else{
+      legenda=[]
+      for (j=0;j<legen.length;j++){
+        legenda.push(legen[j].replace(/[_]/g, ''))
+      }
+  }
 
 
 var calosc_liczby =calosc.map(Number)
