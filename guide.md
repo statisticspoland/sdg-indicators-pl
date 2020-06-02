@@ -5,8 +5,8 @@ permalink: /guide/
 ---
 <article>
             <h4>Krajowa Platforma Raportująca (<i>National Reporting Platform</i>) - SDG</h4>
-            <p>Krajowa Platforma Raportująca - SDG jest publicznie dostępnym narzędziem służącym do udostępniania i prezentacji wskaźników monitorujących Cele Zrównoważonego Rozwoju Agendy 2030 (z danymi dla Polski) oraz zestawu wskaźników
-            monitorujących zrównoważony rozwój na poziomie kraju.</p>
+            <p>Krajowa Platforma Raportująca (Platforma SDG) jest publicznie dostępnym narzędziem służącym do udostępniania i prezentacji <a href="https://sdg.gov.pl/"  target="_blank">globalnych</a> i 
+		    <a href="https://sdg.gov.pl/statistics_nat/"  target="_blank">krajowych</a> wskaźników monitorujących Cele Zrównoważonego Rozwoju Agendy 2030 w Polsce.</p>
 </article>
 <hr>
 <article>
