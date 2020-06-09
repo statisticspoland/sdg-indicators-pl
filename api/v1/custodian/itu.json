@@ -1,0 +1,514 @@
+
+{
+  "itu": [
+      {"4-4-1":{
+                "metadane": [
+                      
+                      {
+                                      "nazwa": "4.4.1 Odsetek młodzieży i dorosłych posiadających umiejętności z zakresu technologii informacyjno – telekomunikacyjnych (ICT), według rodzaju umiejętności",
+                                    
+                                      "cel": "Cel 4. Dobra jakość edukacji",
+                                    
+                                      "zadanie": "4.4 Do 2030 roku znacznie zwiększyć liczbę młodzieży i dorosłych, którzy posiadają odpowiednie umiejętności, w tym techniczne i zawodowe, potrzebne przy uzyskaniu zatrudnienia, znalezieniu godziwej pracy i rozwoju przedsiębiorczości",
+                                    
+                                      "definicja": "Odsetek młodzieży (w wieku 16-24 lata) oraz dorosłych (w wieku 16-74 lata), posiadających umiejętności z zakresu technologii informacyjno-telekomunikacyjnych.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem, wiek",
+                                    
+                                      "metodologia": "Technologie informacyjno-telekomunikacyjne ICT (Information and Communication Technologies) - rodzina technologii przetwarzających, gromadzących i przesyłających informacje w formie elektronicznej. Dane dla wskaźnika pochodzą z Badania wykorzystania technologii informacyjno-telekomunikacyjnych w gospodarstwach domowych i przez osoby indywidualne. Badanie wykorzystania technologii informacyjno-telekomunikacyjnych w gospodarstwach domowych i przez użytkowników indywidualnych rozpoczęto w Unii Europejskiej (UE) w 2002 r., wykorzystując głównie metodę wywiadu bezpośredniego bądź telefonicznego.W Polsce monitorowanie wykorzystania ICT w gospodarstwach domowych według metodologii zharmonizowanej z UE rozpoczęto w 2004 r. Jest realizowane corocznie, a udział w nim jest dobrowolny. Badanie realizowane jest metodą wywiadu bezpośredniego, a od 2018 roku również metodą samospisu internetowego. Objęte są nim gospodarstwa domowe z co najmniej jedną osobą w wieku 16-74 lata oraz osoby w tym wieku.  Wskaźniki dotyczą odsetka osób posiadających  umiejętności  cyfrowe  ogółem  (według  poziomu:  niskie,  podstawowe, ponadpodstawowe) oraz umiejętności informacyjnych, komunikacyjnych, rozwiązywania problemów oraz związanych z oprogramowaniem (według  poziomu:  podstawowe, ponadpodstawowe). Dane prezentowane są od 2015 roku, ponieważ wtedy nastąpiła ostatnia rewizja metodologii umiejętności cyfrowych. Poziom umiejętności obliczany jest na podstawie listy czynności związanych z korzystaniem z komputera, oprogramowania lub Internetu, w tym:   • kopiowanie lub przenoszenie pliku lub folderu,   • korzystanie z arkuszy kalkulacyjnych,   • przenoszenie plików między komputerem a innymi urządzeniami,   • zmienianie ustawień dowolnego oprogramowania lub systemu operacyjnego,   • tworzenie prezentacji lub dokumentów łączących tekst, obrazki, tabelki lub wykresy,   • wysyłanie i odbieranie e-maila, ",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2015 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "osoby w wieku 16-74 - wg rodzaju umiejętności": [
+                                            {"kopiowanie lub przenoszenie pliku lub folderu": [
+                                                    {
+                                                    
+                                                        "2015" : "46.4",
+                                                    
+                                                        "2016" : "50.7",
+                                                    
+                                                        "2017" : "51.8",
+                                                    
+                                                        "2018" : "49.9"
+                                                    
+                                                    }
+                                                ],"korzystanie z arkuszy kalkulacyjnych": [
+                                                    {
+                                                    
+                                                        "2015" : "23.8",
+                                                    
+                                                        "2016" : "27.9",
+                                                    
+                                                        "2017" : "28.1",
+                                                    
+                                                        "2018" : "28.9"
+                                                    
+                                                    }
+                                                ],"przenoszenie plików pomiędzy komputerem a innymi urządzeniami": [
+                                                    {
+                                                    
+                                                        "2015" : "43.4",
+                                                    
+                                                        "2016" : "46.7",
+                                                    
+                                                        "2017" : "48.7",
+                                                    
+                                                        "2018" : "47.0"
+                                                    
+                                                    }
+                                                ],"zmienianie ustawień dowolnego oprogramowania lub systemu operacyjnego": [
+                                                    {
+                                                    
+                                                        "2015" : "23.5",
+                                                    
+                                                        "2016" : "29.5",
+                                                    
+                                                        "2017" : "31.7",
+                                                    
+                                                        "2018" : "31.5"
+                                                    
+                                                    }
+                                                ],"tworzenie prezentacji lub dokumentów łączących tekst obrazki tabelki lub wykresy": [
+                                                    {
+                                                    
+                                                        "2015" : "21.2",
+                                                    
+                                                        "2016" : "25.2",
+                                                    
+                                                        "2017" : "26.9",
+                                                    
+                                                        "2018" : "26.9"
+                                                    
+                                                    }
+                                                ],"wysyłanie i odbieranie e-maila": [
+                                                    {
+                                                    
+                                                        "2015" : "54.0",
+                                                    
+                                                        "2016" : "57.8",
+                                                    
+                                                        "2017" : "59.8",
+                                                    
+                                                        "2018" : "60.7"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "osoby w wieku 16-24 - wg rodzaju umiejętności": [
+                                            {"kopiowanie lub przenoszenie pliku lub folderu": [
+                                                    {
+                                                    
+                                                        "2015" : "87.1",
+                                                    
+                                                        "2016" : "87.0",
+                                                    
+                                                        "2017" : "89.2",
+                                                    
+                                                        "2018" : "84.1"
+                                                    
+                                                    }
+                                                ],"korzystanie z arkuszy kalkulacyjnych": [
+                                                    {
+                                                    
+                                                        "2015" : "47.9",
+                                                    
+                                                        "2016" : "52.7",
+                                                    
+                                                        "2017" : "54.6",
+                                                    
+                                                        "2018" : "53.0"
+                                                    
+                                                    }
+                                                ],"przenoszenie plików pomiędzy komputerem a innymi urządzeniami": [
+                                                    {
+                                                    
+                                                        "2015" : "83.5",
+                                                    
+                                                        "2016" : "84.8",
+                                                    
+                                                        "2017" : "84.9",
+                                                    
+                                                        "2018" : "81.4"
+                                                    
+                                                    }
+                                                ],"zmienianie ustawień dowolnego oprogramowania lub systemu operacyjnego": [
+                                                    {
+                                                    
+                                                        "2015" : "46.4",
+                                                    
+                                                        "2016" : "56.3",
+                                                    
+                                                        "2017" : "62.3",
+                                                    
+                                                        "2018" : "58.3"
+                                                    
+                                                    }
+                                                ],"tworzenie prezentacji lub dokumentów łączących tekst obrazki tabelki lub wykresy": [
+                                                    {
+                                                    
+                                                        "2015" : "57.1",
+                                                    
+                                                        "2016" : "61.4",
+                                                    
+                                                        "2017" : "65.7",
+                                                    
+                                                        "2018" : "62.0"
+                                                    
+                                                    }
+                                                ],"wysyłanie i odbieranie e-maila": [
+                                                    {
+                                                    
+                                                        "2015" : "87.8",
+                                                    
+                                                        "2016" : "85.8",
+                                                    
+                                                        "2017" : "87.4",
+                                                    
+                                                        "2018" : "85.9"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"5-b-1":{
+                "metadane": [
+                      
+                      {
+                                      "nazwa": "5.b.1 Odsetek osób posiadających telefon komórkowy",
+                                    
+                                      "cel": "Cel 5. Równość płci",
+                                    
+                                      "zadanie": "5.b Upowszechnić korzystanie z technologii, w szczególności technologii informacyjnych i komunikacyjnych, by przyczyniać się do wzmocnienia pozycji kobiet",
+                                    
+                                      "definicja": "Udział osób posiadających telefon komórkowy w ogólnej liczbie ludności w wieku 15 lat i więcej.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "płeć",
+                                    
+                                      "metodologia": "Dane pochodzą z badania konsumenckiego prowadzonego corocznie na zlecenie Urzędu Komunikacji Elektronicznej. Celem badania jest poznanie opinii klientów indywidualnych na temat rynku usług telekomunikacyjnych w Polsce.  Usługi objęte badaniem to:    • telefonia: stacjonarna, VoIP, komórkowa, w tym usługi Premium Rate;   • internet: dial-up, stacjonarny, mobilny;   • usługi wiązane (pakiety);   • elementy usługi powszechnej - Ogólnopolskie Biuro Numerów, Ogólnopolski Spis Abonentów, Publiczne Aparaty Samoinkasujące, faks.  Dodatkowo zbierane są ogólne opinie konsumentów o rynku telekomunikacyjnym w Polsce i zmianach na nim następujących. Badania przeprowadzane są przy wykorzystaniu metody CAPI (Computer Assisted Personal Interview), tj. bezpośrednich wywiadów z respondentem przy użyciu urządzeń mobilnych (np. laptop), na których zapisywane sa odpowiedzi. W badaniu zastosowano próbę losową, warstwowaną według województwa i objęto nią osoby w wieku 15 lat i więcej. Dane wynikowe z badania zostały zważone według struktury Polaków w wieku 15 lat i więcej. Przy tworzeniu wagi uwzględniono płeć, wiek, wykształcenie oraz wielkość miejscowości zamieszkania.",
+                                    
+                                      "zrodlo": "Urząd Komunikacji Elektronicznej",
+                                    
+                                      "czestotliwosc": "Dane roczne  od 2012 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg płci": [
+                                            {"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "65.0",
+                                                    
+                                                        "2013" : "83.0",
+                                                    
+                                                        "2014" : "84.0",
+                                                    
+                                                        "2015" : "93.0",
+                                                    
+                                                        "2016" : "89.4",
+                                                    
+                                                        "2017" : "91.2",
+                                                    
+                                                        "2018" : "92.0"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "59.0",
+                                                    
+                                                        "2013" : "89.0",
+                                                    
+                                                        "2014" : "91.0",
+                                                    
+                                                        "2015" : "91.0",
+                                                    
+                                                        "2016" : "85.7",
+                                                    
+                                                        "2017" : "92.5",
+                                                    
+                                                        "2018" : "94.2"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"9-c-1":{
+                "metadane": [
+                      
+                      {
+                                      "nazwa": "9.c.1 Odsetek ludności objętej siecią telefonii komórkowej według technologii",
+                                    
+                                      "cel": "Cel 9. Przemysł, Innowacyjność, Infrastruktura",
+                                    
+                                      "zadanie": "9.c Do 2020 roku znacząco zwiększyć dostęp do technologii informacyjnych i komunikacyjnych oraz dążyć do zapewnienia przystępnego i powszechnego dostępu do Internetu w krajach najmniej rozwiniętych.",
+                                    
+                                      "definicja": "Odsetek ludności będący w zasięgu sieci komórkowej, z podziałem na technologie, odnosi się do odsetka mieszkańców żyjących w zasięgu sygnału telefonii ruchomej (komórkowej), niezależnie od tego czy są oni abonentami albo użytkownikami. Wskaźnik ten stanowi iloraz liczby mieszkańców w zasięgu danej technologii telefonii ruchomej (komórkowej) do ogólnej liczby ludności pomnożony przez 100.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "technologie",
+                                    
+                                      "metodologia": "Abonent telefonii ruchomej - podmiot, który jest stroną umowy o świadczenie usług telekomunikacyjnych zawartej z dostawcą publicznie dostępnych usług telekomunikacyjnych. Pojęciem tym objęci są również użytkownicy tzw. pre-paid.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2014 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg technologii": [
+                                            {"odsetek ludności znajdujący się w zasięgu sieci 3G": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "99.9",
+                                                    
+                                                        "2015" : "99.9",
+                                                    
+                                                        "2016" : "100.0",
+                                                    
+                                                        "2017" : "100.0",
+                                                    
+                                                        "2018" : "100.0"
+                                                    
+                                                    }
+                                                ],"odsetek ludności znajdujący się w zasięgu sieci 4G/LTE": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "80.0",
+                                                    
+                                                        "2015" : "99.8",
+                                                    
+                                                        "2016" : "99.9",
+                                                    
+                                                        "2017" : "99.9",
+                                                    
+                                                        "2018" : "100.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"17-6-2":{
+                "metadane": [
+                      
+                      {
+                                      "nazwa": "17.6.2 Liczba abonentów stacjonarnego Internetu szerokopasmowego na 100 mieszkańców",
+                                    
+                                      "cel": "Cel 17. Partnerstwa na rzecz celów",
+                                    
+                                      "zadanie": "17.6 Wzmocnić współpracę Północ-Południe i Południe-Południe oraz trójstronną, współpracę regionalną i międzynarodową w zakresie dostępu do nauki, technologii i innowacji  rozwinąć dzielenie się wiedzą na wspólnie ustalonych warunkach, w tym poprzez wzmocnioną koordynację istniejących już mechanizmów, w szczególności na szczeblu Narodów Zjednoczonych oraz poprzez globalny mechanizm ułatwiania dostępu do technologii",
+                                    
+                                      "definicja": "Liczba abonentów stacjonarnego przewodowego i bezprzewodowego szerokopasmowego Internetu w przeliczeniu na 100 osób.",
+                                    
+                                      "jednostka": "osoby",
+                                    
+                                      "wymiary": "ogółem, wg szybkości połączenia",
+                                    
+                                      "metodologia": "Łącze szerokopasmowe – w statystyce wspólnotowej Unii Europejskiej (UE) wyróżnia się dwa podejścia do definiowania pojęcia łączy szerokopasmowych. Pierwsze z nich używane jest w badaniach wykorzystania technologii informacyjno-komunikacyjnych (ang. Information and Communication Technologies  ICT), prowadzonych przez wszystkie krajowe urzędy statystyczne (w Polsce Główny Urząd Statystyczny), a drugie – w badaniach rynku telekomunikacyjnego, prowadzonych przez krajowych regulatorów rynku telekomunikacyjnego (odpowiednio Urząd Komunikacji Elektronicznej). W statystykach UE dotyczących rynku telekomunikacyjnego stosowanych przez Urząd Komunikacji Elektronicznej i Komisję Europejską za stałe łącza szerokopasmowe uznawane są łącza o przepływności powyżej 144 kb/s. Z kolei na potrzeby badań prowadzonych przez krajowe urzędy statystyczne, koordynowanych przez Eurostat, szerokopasmowe łącze definiuje się przez rodzaj techniki używanej do realizacji połączenia, a nie jego szybkość. Obejmują one technologie z rodziny DSL, takie jak ADSL, HDSL, SDSL, VDSL, łącza Ethernet LANs, które stanowią trzon połączeń szerokopasmowych, oraz inne cechujące się dużą przepustowością łącza stałe (przewodowe lub bezprzewodowe). Dane dla wskaźnika pochodzą z badania przeprowadzanego dwukrotnie w ciągu roku przez Urząd Komunikacji Elektronicznej na potrzeby Komisji Europejskiej (Agenda Cyfrowa). Badanie obejmuje ok. 100-120 największych przedsiębiorców telekomunikacyjnych, których łączny udział w rynku świadczenia usług dostępu do sieci Internet przekracza 95%. Wskaźnik prezentowany jest według szybkości połączenia dla następujących przedziałów prędkości:    • poniżej 30 Mb/s,    • od 30 Mb/s do poniżej 100 Mb/s,    • od 100 Mb/s.  Przedstawia liczbę abonentów stacjonarnego przewodowego i bezprzewodowego szerokopasmowego Internetu w przeliczeniu na 100 osób (wg stanu ludności na koniec roku ogłaszanej przez Główny Urząd Statystyczny). Ludność opracowano na podstawie:    • bilansów ludności zamieszkałej na terenie gminy w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2011 (dla danych od 2010 r.)  dla lat wcześniejszych (2003-2009) w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2002,    • rejestrów Ministerstwa Spraw Wewnętrznych - migracje wewnętrzne i zagraniczne na pobyt stały (od 2006 r. dane są pobierane z rejestru PESEL - Powszechny Elektroniczny System Ewidencji Ludności),    • sprawozdań urzędów stanu cywilnego - małżeństwa, urodzenia, zgony.",
+                                    
+                                      "zrodlo": "Urząd Komunikacji Elektronicznej",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": "Wartość wskaźnika w 2019 r. prezentowana jest według stanu w dniu 1 lipca 2019 r."
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg szybkości połączenia": [
+                                            {"do 30 Mb/s": [
+                                                    {
+                                                    
+                                                        "2010" : "11.34",
+                                                    
+                                                        "2011" : "11.75",
+                                                    
+                                                        "2012" : "11.82",
+                                                    
+                                                        "2013" : "11.31",
+                                                    
+                                                        "2014" : "10.67",
+                                                    
+                                                        "2015" : "9.41",
+                                                    
+                                                        "2016" : "8.12",
+                                                    
+                                                        "2017" : "6.68",
+                                                    
+                                                        "2018" : "5.56",
+                                                    
+                                                        "2019" : "6.29"
+                                                    
+                                                    }
+                                                ],"od 30 Mb/s do 100 Mb/s": [
+                                                    {
+                                                    
+                                                        "2010" : "0.15",
+                                                    
+                                                        "2011" : "0.36",
+                                                    
+                                                        "2012" : "1.41",
+                                                    
+                                                        "2013" : "2.52",
+                                                    
+                                                        "2014" : "3.30",
+                                                    
+                                                        "2015" : "4.05",
+                                                    
+                                                        "2016" : "4.57",
+                                                    
+                                                        "2017" : "4.54",
+                                                    
+                                                        "2018" : "3.45",
+                                                    
+                                                        "2019" : "3.72"
+                                                    
+                                                    }
+                                                ],"powyżej 100 Mb/s": [
+                                                    {
+                                                    
+                                                        "2010" : "0.03",
+                                                    
+                                                        "2011" : "0.09",
+                                                    
+                                                        "2012" : "0.18",
+                                                    
+                                                        "2013" : "0.35",
+                                                    
+                                                        "2014" : "0.79",
+                                                    
+                                                        "2015" : "1.66",
+                                                    
+                                                        "2016" : "2.70",
+                                                    
+                                                        "2017" : "4.23",
+                                                    
+                                                        "2018" : "6.77",
+                                                    
+                                                        "2019" : "7.94"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"17-8-1":{
+                "metadane": [
+                      
+                      {
+                                      "nazwa": "17.8.1 Odsetek osób w wieku 16-74 lata korzystających z Internetu w ciagu ostatnich 3 miesięcy",
+                                    
+                                      "cel": "Cel 17. Partnerstwa na rzecz celów",
+                                    
+                                      "zadanie": "17.8 W pełni zoperacjonalizować bank technologii oraz naukowe, technologiczne i innowacyjne mechanizmy budowania potencjału dla krajów najsłabiej rozwiniętych do 2017 r.  zwiększyć wykorzystanie technologii kluczowych dla rozwoju, w szczególności technologii informacyjnych i komunikacyjnych",
+                                    
+                                      "definicja": "Odsetek osób w wieku 16-74 lata korzystających z Internetu w ciagu ostatnich 3 miesięcy.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Dane dla wskaźnika pochodzą z Badania wykorzystania technologii informacyjno-telekomunikacyjnych w gospodarstwach domowych i przez osoby indywidualne. Badanie wykorzystania technologii informacyjno-telekomunikacyjnych (ang. Information and Communication Technologies  ICT) w gospodarstwach domowych i przez użytkowników indywidualnych rozpoczęto w Unii Europejskiej w 2002 r., wykorzystując głównie metodę wywiadu bezpośredniego bądź telefonicznego. W Polsce monitorowanie wykorzystania ICT w gospodarstwach domowych według metodologii zharmonizowanej z UE rozpoczęto w 2004 r. Od tego czasu badanie jest realizowane corocznie, a udział w nim jest dobrowolny. Badanie realizowane jest metodą wywiadu bezpośredniego i objęte są nim gospodarstwa domowe z co najmniej jedną osobą w wieku 16-74 lata oraz osoby w tym wieku. W badaniu tym wykorzystuje się dwa kwestionariusze zawierających osobne pytania dla gospodarstw domowych (SSI-10G) oraz osób indywidualnych (SSI-10I). Wykorzystywane są głównie pytania jakościowe (niezwiązane z wartościami podawanymi w postaci liczb) oraz pytania zamknięte. W kwestionariuszu indywidualnym znajdują się pytania dotyczące m.in.:    • korzystania z komputera oraz Internetu (kiedy ostatnio?, jak często?, gdzie?)     • korzystania z Internetu za pomocą urządzeń przenośnych     • celów korzystania z Internetu     • dokonywania zakupów przez Internet.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "58.8",
+                                        
+                                            "2011" :   "62.0",
+                                        
+                                            "2012" :   "62.3",
+                                        
+                                            "2013" :   "62.8",
+                                        
+                                            "2014" :   "66.6",
+                                        
+                                            "2015" :   "68.0",
+                                        
+                                            "2016" :   "73.3",
+                                        
+                                            "2017" :   "76.0",
+                                        
+                                            "2018" :   "77.5",
+                                        
+                                            "2019" :   "80.4"
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              }}
+  ]
+}

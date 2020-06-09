@@ -1,0 +1,1401 @@
+
+{
+  "world-bank": [
+      {"1-1-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "1.1.1 At -risk of poverty rate according to international poverty line",
+                                    
+                                      "goal": "Goal 1. No poverty",
+                                    
+                                      "target": "1.1 By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day",
+                                    
+                                      "definition": "Precentage of persons in households whose daily income is below of international poverty threshold (i.e. $1.9 daily).",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Definition of indicator: The percentage of persons with disposable income lower than international poverty threshold, which is defined as daily disposable income in the amount of $ 1.9. Aiming at elimination of differences in measuring poverty of people living in different countries purchasing power parities (PPP) were used. PPPs are types of currency exchange rates that are used to convert economic indicators expressed in local currencies to a common conventional currency. As the socio-economic realities evolve, the international poverty line has to be periodically updated. The current threshold was set in October 2015. Prior to that, in the 2008 update the World Bank set the international poverty line at $1.25.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {"total": [
+                                        {
+                                        
+                                            "2010" :   "0.2",
+                                        
+                                            "2011" :   "0.3",
+                                        
+                                            "2012" :   "0.3",
+                                        
+                                            "2013" :   "0.2",
+                                        
+                                            "2014" :   "0.4",
+                                        
+                                            "2015" :   "0.4",
+                                        
+                                            "2016" :   "0.5",
+                                        
+                                            "2017" :   "0.3",
+                                        
+                                            "2018" :   "0.3"
+                                        
+                                        }
+                                    ]
+                                
+                              
+                          
+                      }
+                    ]
+              },"1-2-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "1.2.1 At-risk of poverty rate after social transfers",
+                                    
+                                      "goal": "Goal 1. No poverty",
+                                    
+                                      "target": "1.2 By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",
+                                    
+                                      "definition": "Percentage of persons with an equivalised disposable income (after social transfers) is below the at-risk-of-poverty threshold set at 60% of the national median of equivalised disposable income.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, sex, age",
+                                    
+                                      "methodology": "The indicator is calculated on the basis of information obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) The subject of the EU-SILC are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview techniqueusing 2 questionnaires one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of the European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). StatisticsPoland implemented EU-SILC survey in 2005. The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Equivalent disposable income in the survey is defined as a sum of the net (after deduction of income tax prepayment, tax on income from property, social and health insurance contributions) annual monetary incomes gained by all the household members reduced by: property tax, inter-household cash transfers paid and balance of offsetting settlements with the Tax Office. For the calculation of income statistics the modified OECD equivalence scale was applied which is calculated as follows: - 1 - for the first adult household member, - 0.5 - for the second and each subsequent household member aged 14 and over, - 0.3 - for every child in the household under 14. And thus, for instance, the extreme and relative poverty threshold for a 4-person household consisting of two adult persons and two children is 2.1 times as high as that for a 1-person household.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "urban/rural area": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "17.6",
+                                                    
+                                                        "2011" : "17.7",
+                                                    
+                                                        "2012" : "17.1",
+                                                    
+                                                        "2013" : "17.3",
+                                                    
+                                                        "2014" : "17.0",
+                                                    
+                                                        "2015" : "17.6",
+                                                    
+                                                        "2016" : "17.3",
+                                                    
+                                                        "2017" : "15.0",
+                                                    
+                                                        "2018" : "14.8"
+                                                    
+                                                    }
+                                                ],"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "12.6",
+                                                    
+                                                        "2011" : "12.7",
+                                                    
+                                                        "2012" : "12.3",
+                                                    
+                                                        "2013" : "12.1",
+                                                    
+                                                        "2014" : "11.7",
+                                                    
+                                                        "2015" : "12.5",
+                                                    
+                                                        "2016" : "12.8",
+                                                    
+                                                        "2017" : "10.7",
+                                                    
+                                                        "2018" : "10.8"
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "25.3",
+                                                    
+                                                        "2011" : "25.2",
+                                                    
+                                                        "2012" : "24.3",
+                                                    
+                                                        "2013" : "24.9",
+                                                    
+                                                        "2014" : "24.7",
+                                                    
+                                                        "2015" : "25.2",
+                                                    
+                                                        "2016" : "24.0",
+                                                    
+                                                        "2017" : "21.5",
+                                                    
+                                                        "2018" : "20.8"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "by sex": [
+                                            {"males": [
+                                                    {
+                                                    
+                                                        "2010" : "17.4",
+                                                    
+                                                        "2011" : "17.8",
+                                                    
+                                                        "2012" : "17.1",
+                                                    
+                                                        "2013" : "17.3",
+                                                    
+                                                        "2014" : "17.2",
+                                                    
+                                                        "2015" : "18.1",
+                                                    
+                                                        "2016" : "17.1",
+                                                    
+                                                        "2017" : "15.1",
+                                                    
+                                                        "2018" : "14.6"
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "17.7",
+                                                    
+                                                        "2011" : "17.6",
+                                                    
+                                                        "2012" : "17.1",
+                                                    
+                                                        "2013" : "17.3",
+                                                    
+                                                        "2014" : "16.8",
+                                                    
+                                                        "2015" : "17.2",
+                                                    
+                                                        "2016" : "17.4",
+                                                    
+                                                        "2017" : "14.9",
+                                                    
+                                                        "2018" : "15.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "by age group": [
+                                            {"under 6 years": [
+                                                    {
+                                                    
+                                                        "2010" : "20.5",
+                                                    
+                                                        "2011" : "19.7",
+                                                    
+                                                        "2012" : "18.6",
+                                                    
+                                                        "2013" : "21.7",
+                                                    
+                                                        "2014" : "19.4",
+                                                    
+                                                        "2015" : "19.7",
+                                                    
+                                                        "2016" : "17.6",
+                                                    
+                                                        "2017" : "11.8",
+                                                    
+                                                        "2018" : "10.7"
+                                                    
+                                                    }
+                                                ],"under 18 years": [
+                                                    {
+                                                    
+                                                        "2010" : "22.5",
+                                                    
+                                                        "2011" : "22.0",
+                                                    
+                                                        "2012" : "21.5",
+                                                    
+                                                        "2013" : "23.2",
+                                                    
+                                                        "2014" : "22.3",
+                                                    
+                                                        "2015" : "22.4",
+                                                    
+                                                        "2016" : "21.1",
+                                                    
+                                                        "2017" : "14.0",
+                                                    
+                                                        "2018" : "13.0"
+                                                    
+                                                    }
+                                                ],"18-24 years": [
+                                                    {
+                                                    
+                                                        "2010" : "20.9",
+                                                    
+                                                        "2011" : "20.7",
+                                                    
+                                                        "2012" : "21.8",
+                                                    
+                                                        "2013" : "21.5",
+                                                    
+                                                        "2014" : "22.0",
+                                                    
+                                                        "2015" : "22.6",
+                                                    
+                                                        "2016" : "23.5",
+                                                    
+                                                        "2017" : "20.9",
+                                                    
+                                                        "2018" : "21.1"
+                                                    
+                                                    }
+                                                ],"18-64 years": [
+                                                    {
+                                                    
+                                                        "2010" : "16.9",
+                                                    
+                                                        "2011" : "17.1",
+                                                    
+                                                        "2012" : "16.5",
+                                                    
+                                                        "2013" : "16.7",
+                                                    
+                                                        "2014" : "16.7",
+                                                    
+                                                        "2015" : "17.6",
+                                                    
+                                                        "2016" : "17.3",
+                                                    
+                                                        "2017" : "15.6",
+                                                    
+                                                        "2018" : "15.2"
+                                                    
+                                                    }
+                                                ],"60 years and more": [
+                                                    {
+                                                    
+                                                        "2010" : "14.0",
+                                                    
+                                                        "2011" : "14.5",
+                                                    
+                                                        "2012" : "14.0",
+                                                    
+                                                        "2013" : "12.3",
+                                                    
+                                                        "2014" : "12.3",
+                                                    
+                                                        "2015" : "13.0",
+                                                    
+                                                        "2016" : "14.0",
+                                                    
+                                                        "2017" : "15.0",
+                                                    
+                                                        "2018" : "16.2"
+                                                    
+                                                    }
+                                                ],"65 years and more": [
+                                                    {
+                                                    
+                                                        "2010" : "14.2",
+                                                    
+                                                        "2011" : "14.7",
+                                                    
+                                                        "2012" : "14.0",
+                                                    
+                                                        "2013" : "12.3",
+                                                    
+                                                        "2014" : "11.7",
+                                                    
+                                                        "2015" : "12.1",
+                                                    
+                                                        "2016" : "12.8",
+                                                    
+                                                        "2017" : "13.8",
+                                                    
+                                                        "2018" : "15.5"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"1-4-2":{
+                "metadata": [
+                      
+                      {
+                                      "name": "1.4.2 Proportion of total adult population with secure tenure rights to land, with legally recognized documentation and who perceive their rights to land as secure, by sex and by type of tenure",
+                                    
+                                      "goal": "Goal 1. No poverty",
+                                    
+                                      "target": "1.4 By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance",
+                                    
+                                      "definition": "",
+                                    
+                                      "unit": "",
+                                    
+                                      "dimensions": "",
+                                    
+                                      "methodology": "",
+                                    
+                                      "source": "",
+                                    
+                                      "availability": "",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                      }
+                    ]
+              },"5-1-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "5.1.1 Whether or not legal frameworks are in place to promote, enforce and monitor equality and non-discrimination on the basis of sex",
+                                    
+                                      "goal": "Goal 5. Gender equality",
+                                    
+                                      "target": "5.1 End all forms of discrimination against all women and girls everywhere",
+                                    
+                                      "definition": "",
+                                    
+                                      "unit": "",
+                                    
+                                      "dimensions": "",
+                                    
+                                      "methodology": "",
+                                    
+                                      "source": "",
+                                    
+                                      "availability": "",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                      }
+                    ]
+              },"7-1-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "7.1.1 Proportion of population with access to electricity",
+                                    
+                                      "goal": "Goal 7. Affordable and clean energy",
+                                    
+                                      "target": "7.1 By 2030, ensure universal access to affordable, reliable and modern energy services",
+                                    
+                                      "definition": "The indicator presents the percentage of population with access to electricity.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "In international statistics, the electricity is considered as primary energy or as derived energy. The primary energy is produced from natural sources such as: water, wind, solar energy, tides and waves energy. The derived energy is produced from heat produced in the process of combustion of primary fuels (coal, natural gas) as well as from derived and renewable energy commodities and combustible wastes. The derived electricity can be also obtained from geothermal or solar heat.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Data for 2012.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {"total": [
+                                        {
+                                        
+                                            "2010" :   "",
+                                        
+                                            "2011" :   "",
+                                        
+                                            "2012" :   "100",
+                                        
+                                            "2013" :   "",
+                                        
+                                            "2014" :   "",
+                                        
+                                            "2015" :   "",
+                                        
+                                            "2016" :   "",
+                                        
+                                            "2017" :   ""
+                                        
+                                        }
+                                    ]
+                                
+                              
+                          
+                      }
+                    ]
+              },"8-10-2":{
+                "metadata": [
+                      
+                      {
+                                      "name": "8.10.2 Percentage of adults (aged 15 years and more) with an account at a bank or other financial institution",
+                                    
+                                      "goal": "Goal 8. Decent work and economic growth",
+                                    
+                                      "target": "8.10 Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all",
+                                    
+                                      "definition": "Percentage of population aged 15 and more having a personal account / checking and savings account with a bank or Co-operative Savings and Credit Union (SKOK).",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, age, sex",
+                                    
+                                      "methodology": "The survey, conducted in 2015, was quantitative in character. 2, 000 personal interviews (N-observations) were carried out via computer-assisted interviewing (CAPI) from March to April 2015. The way that country-wide sample was selected ensured representativeness of the survey results for Poland's population aged 15+ with respect to sex, age and place of residence (locality LAU-1, LAU-2 and voivodship NUTS-2 size). The randomness in respondent selection was ensured thanks to:  • locality sampling in individual classes,  • address sampling (street and number),  • applying the procedure of random route. Locality and address sampling was carried out via Statistics Poland's central catalogue of streets (ULIC), being part of the system of the address identification of streets, real properties, buildings and dwellings (NOBC) (https://bip.stat.gov.pl/dzialalnosc-statystyki-publicznej/rejestr-teryt/zakres-rejestru-teryt/).",
+                                    
+                                      "source": "National Bank of Poland",
+                                    
+                                      "availability": "Data from the survey carried out in 2015.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by sex": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "71",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "71",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "71",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "by age group": [
+                                            {"15-24 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "52",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"25-34 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "75",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"35-44 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "83",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"45-54 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "79",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"55 years and more": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "69",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"9-1-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "9.1.1 Proportion of the rural population who live within 2 km of an all-season road",
+                                    
+                                      "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                                    
+                                      "target": "9.1 Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all",
+                                    
+                                      "definition": "",
+                                    
+                                      "unit": "",
+                                    
+                                      "dimensions": "",
+                                    
+                                      "methodology": "",
+                                    
+                                      "source": "",
+                                    
+                                      "availability": "",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                      }
+                    ]
+              },"9-3-2":{
+                "metadata": [
+                      
+                      {
+                                      "name": "9.3.2 Proportion of entities taking bank credits by long-term and current credits",
+                                    
+                                      "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                                    
+                                      "target": "9.3 Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets",
+                                    
+                                      "definition": "Share of non-financial enterprises taking bank credits in total enterprises.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, long-term credits, current credits",
+                                    
+                                      "methodology": "On the basis of a credit agreement, a bank obliges itself to provide a borrower with a certain amount of money for a specific purpose and specified amount of time outlined in the agreement, whereas the borrower obliges themselves to use the borrowed money in accordance with the agreement terms, to return the amount of the used credit with interest on the agreed redemption dates and to repay commission on the received credit. Long-term credits – credits whose redemption date exceeds 12 months since the balance sheet day. Current credits – credits whose redemption date occurs within 12 months since the balance sheet day.",
+                                    
+                                      "source": "National Bank of Poland / Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "total enterprises - by type of credit": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "49.8",
+                                                    
+                                                        "2011" : "52.8",
+                                                    
+                                                        "2012" : "52.6",
+                                                    
+                                                        "2013" : "50.2",
+                                                    
+                                                        "2014" : "48.9",
+                                                    
+                                                        "2015" : "47.9",
+                                                    
+                                                        "2016" : "46.5",
+                                                    
+                                                        "2017" : "45.5",
+                                                    
+                                                        "2018" : "43.5"
+                                                    
+                                                    }
+                                                ],"long-term credits": [
+                                                    {
+                                                    
+                                                        "2010" : "30.2",
+                                                    
+                                                        "2011" : "32.4",
+                                                    
+                                                        "2012" : "31.5",
+                                                    
+                                                        "2013" : "30.3",
+                                                    
+                                                        "2014" : "29.8",
+                                                    
+                                                        "2015" : "29.4",
+                                                    
+                                                        "2016" : "28.5",
+                                                    
+                                                        "2017" : "27.5",
+                                                    
+                                                        "2018" : "26.0"
+                                                    
+                                                    }
+                                                ],"current credits": [
+                                                    {
+                                                    
+                                                        "2010" : "42.3",
+                                                    
+                                                        "2011" : "45.0",
+                                                    
+                                                        "2012" : "45.5",
+                                                    
+                                                        "2013" : "43.3",
+                                                    
+                                                        "2014" : "41.9",
+                                                    
+                                                        "2015" : "41.2",
+                                                    
+                                                        "2016" : "40.0",
+                                                    
+                                                        "2017" : "39.5",
+                                                    
+                                                        "2018" : "38.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "small and medium-sized enterprises - by type of credit": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "49.5",
+                                                    
+                                                        "2011" : "52.6",
+                                                    
+                                                        "2012" : "52.5",
+                                                    
+                                                        "2013" : "50.1",
+                                                    
+                                                        "2014" : "48.8",
+                                                    
+                                                        "2015" : "47.9",
+                                                    
+                                                        "2016" : "46.5",
+                                                    
+                                                        "2017" : "45.5",
+                                                    
+                                                        "2018" : "43.4"
+                                                    
+                                                    }
+                                                ],"long-term credits": [
+                                                    {
+                                                    
+                                                        "2010" : "30.1",
+                                                    
+                                                        "2011" : "32.3",
+                                                    
+                                                        "2012" : "31.4",
+                                                    
+                                                        "2013" : "30.2",
+                                                    
+                                                        "2014" : "29.7",
+                                                    
+                                                        "2015" : "29.4",
+                                                    
+                                                        "2016" : "28.4",
+                                                    
+                                                        "2017" : "27.4",
+                                                    
+                                                        "2018" : "25.8"
+                                                    
+                                                    }
+                                                ],"current credits": [
+                                                    {
+                                                    
+                                                        "2010" : "41.7",
+                                                    
+                                                        "2011" : "44.5",
+                                                    
+                                                        "2012" : "45.1",
+                                                    
+                                                        "2013" : "42.9",
+                                                    
+                                                        "2014" : "41.6",
+                                                    
+                                                        "2015" : "40.9",
+                                                    
+                                                        "2016" : "39.8",
+                                                    
+                                                        "2017" : "39.1",
+                                                    
+                                                        "2018" : "37.6"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"10-1-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "10.1.1 Annualized average growth rate per capita net disposable income in households",
+                                    
+                                      "goal": "Goal 10. Reduce inequalities",
+                                    
+                                      "target": "10.1 By 2030, progressively achieve and sustain income growth of the bottom 40 per cent of the population at a rate higher than the national average",
+                                    
+                                      "definition": "Annualized average growth rate in per capita net disposable income in households over a 5-year period.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, the first and second quintile with the lowest incomes (bottom 40 per cent of the population)",
+                                    
+                                      "methodology": "The indicator is calculated on the basis of information obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) whose subject are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview techniqueusing 2 questionnaires one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Statistics Poland implemented EU-SILC survey in 2005. The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Equivalent disposable income in the survey is defined as a sum of the net (after deduction of income tax prepayment, tax on income from property, social and health insurance contributions) annual monetary incomes gained by all the household members reduced by:  property tax, inter-household cash transfers paid and balance of offsetting settlements with the Tax Office.  For the calculation of income statistics the modified OECD equivalence scale was applied which is calculated as follows:  1 for the first adult household member, 0.5 for the second and each subsequent household member aged 14 and over, 0.3 for every child in the household under 14.  And thus, for instance, the extreme and relative poverty threshold for a 4-person household consisting of two adult persons and two children is 2,1 times as high as that for a 1-person household. A household is classified into a given quintile groups on the basis of per capita available income in that household. Thus members of all the households in the survey are listed according to the increasing per capita available income using the weights applied in the survey and divided into five groups, equal in number of the weighted persons. The first quintile (I) consists of 20% of persons with the lowest incomes, while the fifth quintile (V) 20% of persons with the highest incomes.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by quintile group": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "9.6",
+                                                    
+                                                        "2011" : "8.8",
+                                                    
+                                                        "2012" : "9.6",
+                                                    
+                                                        "2013" : "6.2",
+                                                    
+                                                        "2014" : "5.0",
+                                                    
+                                                        "2015" : "4.5",
+                                                    
+                                                        "2016" : "4.4",
+                                                    
+                                                        "2017" : "5.0",
+                                                    
+                                                        "2018" : "4.7"
+                                                    
+                                                    }
+                                                ],"the first and second quintile with the lowest incomes (bottom 40 per cent of the population)": [
+                                                    {
+                                                    
+                                                        "2010" : "13.4",
+                                                    
+                                                        "2011" : "11.0",
+                                                    
+                                                        "2012" : "8.9",
+                                                    
+                                                        "2013" : "6.2",
+                                                    
+                                                        "2014" : "4.9",
+                                                    
+                                                        "2015" : "4.6",
+                                                    
+                                                        "2016" : "5.3",
+                                                    
+                                                        "2017" : "6.3",
+                                                    
+                                                        "2018" : "8.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"10-2-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "10.2.1 At-risk-of-poverty rate after social transfers",
+                                    
+                                      "goal": "Goal 10. Reduce inequalities",
+                                    
+                                      "target": "10.2 By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status",
+                                    
+                                      "definition": "Percentage of persons with an equivalised disposable income (after social transfers) below the at-risk-of-poverty threshold set at 60% of the national median of equivalised disposable income.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, sex, age groups",
+                                    
+                                      "methodology": "The indicator is calculated on the basis of information obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) whose subject are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview techniqueusing 2 questionnaires one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Statistics Poland implemented EU-SILC survey in 2005. The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Equivalent disposable income in the survey is defined as a sum of the net (after deduction of income tax prepayment, tax on income from property, social and health insurance contributions) annual monetary incomes gained by all the household members reduced by: property tax, inter-household cash transfers paid and balance of offsetting settlements with the Tax Office. For the calculation of income statistics the modified OECD equivalence scale was applied which is calculated as follows: 1 - for the first adult household member, 0.5 - for the second and each subsequent household member aged 14 and over, 0.3 - for every child in the household under 14.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data since 2010.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by sex": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "17.6",
+                                                    
+                                                        "2011" : "17.7",
+                                                    
+                                                        "2012" : "17.1",
+                                                    
+                                                        "2013" : "17.3",
+                                                    
+                                                        "2014" : "17.0",
+                                                    
+                                                        "2015" : "17.6",
+                                                    
+                                                        "2016" : "17.3",
+                                                    
+                                                        "2017" : "15.0",
+                                                    
+                                                        "2018" : "14.8"
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "17.4",
+                                                    
+                                                        "2011" : "17.8",
+                                                    
+                                                        "2012" : "17.1",
+                                                    
+                                                        "2013" : "17.3",
+                                                    
+                                                        "2014" : "17.2",
+                                                    
+                                                        "2015" : "18.1",
+                                                    
+                                                        "2016" : "17.1",
+                                                    
+                                                        "2017" : "15.1",
+                                                    
+                                                        "2018" : "14.6"
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "17.7",
+                                                    
+                                                        "2011" : "17.6",
+                                                    
+                                                        "2012" : "17.1",
+                                                    
+                                                        "2013" : "17.3",
+                                                    
+                                                        "2014" : "16.8",
+                                                    
+                                                        "2015" : "17.2",
+                                                    
+                                                        "2016" : "17.4",
+                                                    
+                                                        "2017" : "14.9",
+                                                    
+                                                        "2018" : "15.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "by age group": [
+                                            {"under 6 years": [
+                                                    {
+                                                    
+                                                        "2010" : "20.5",
+                                                    
+                                                        "2011" : "19.7",
+                                                    
+                                                        "2012" : "18.6",
+                                                    
+                                                        "2013" : "21.7",
+                                                    
+                                                        "2014" : "19.4",
+                                                    
+                                                        "2015" : "19.7",
+                                                    
+                                                        "2016" : "17.6",
+                                                    
+                                                        "2017" : "11.8",
+                                                    
+                                                        "2018" : "10.7"
+                                                    
+                                                    }
+                                                ],"under 18 years": [
+                                                    {
+                                                    
+                                                        "2010" : "22.5",
+                                                    
+                                                        "2011" : "22.0",
+                                                    
+                                                        "2012" : "21.5",
+                                                    
+                                                        "2013" : "23.2",
+                                                    
+                                                        "2014" : "22.3",
+                                                    
+                                                        "2015" : "22.4",
+                                                    
+                                                        "2016" : "21.1",
+                                                    
+                                                        "2017" : "14.0",
+                                                    
+                                                        "2018" : "13.0"
+                                                    
+                                                    }
+                                                ],"18-24 years": [
+                                                    {
+                                                    
+                                                        "2010" : "20.9",
+                                                    
+                                                        "2011" : "20.7",
+                                                    
+                                                        "2012" : "21.8",
+                                                    
+                                                        "2013" : "21.5",
+                                                    
+                                                        "2014" : "22.0",
+                                                    
+                                                        "2015" : "22.6",
+                                                    
+                                                        "2016" : "23.5",
+                                                    
+                                                        "2017" : "20.9",
+                                                    
+                                                        "2018" : "21.1"
+                                                    
+                                                    }
+                                                ],"18-64 years": [
+                                                    {
+                                                    
+                                                        "2010" : "16.9",
+                                                    
+                                                        "2011" : "17.1",
+                                                    
+                                                        "2012" : "16.5",
+                                                    
+                                                        "2013" : "16.7",
+                                                    
+                                                        "2014" : "16.7",
+                                                    
+                                                        "2015" : "17.6",
+                                                    
+                                                        "2016" : "17.3",
+                                                    
+                                                        "2017" : "15.6",
+                                                    
+                                                        "2018" : "15.2"
+                                                    
+                                                    }
+                                                ],"60 years and more": [
+                                                    {
+                                                    
+                                                        "2010" : "14.0",
+                                                    
+                                                        "2011" : "14.5",
+                                                    
+                                                        "2012" : "14.0",
+                                                    
+                                                        "2013" : "12.3",
+                                                    
+                                                        "2014" : "12.3",
+                                                    
+                                                        "2015" : "13.0",
+                                                    
+                                                        "2016" : "14.0",
+                                                    
+                                                        "2017" : "15.0",
+                                                    
+                                                        "2018" : "16.2"
+                                                    
+                                                    }
+                                                ],"65 years and more": [
+                                                    {
+                                                    
+                                                        "2010" : "14.2",
+                                                    
+                                                        "2011" : "14.7",
+                                                    
+                                                        "2012" : "14.0",
+                                                    
+                                                        "2013" : "12.3",
+                                                    
+                                                        "2014" : "11.7",
+                                                    
+                                                        "2015" : "12.1",
+                                                    
+                                                        "2016" : "12.8",
+                                                    
+                                                        "2017" : "13.8",
+                                                    
+                                                        "2018" : "15.5"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"10-c-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "10.c.1 Remittance costs as a percentage of the amount remitted",
+                                    
+                                      "goal": "Goal 10. Reduce inequalities",
+                                    
+                                      "target": "10.c By 2030, reduce to less than 3 per cent the transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5 per cent",
+                                    
+                                      "definition": "",
+                                    
+                                      "unit": "",
+                                    
+                                      "dimensions": "",
+                                    
+                                      "methodology": "",
+                                    
+                                      "source": "",
+                                    
+                                      "availability": "",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                      }
+                    ]
+              },"16-5-2":{
+                "metadata": [
+                      
+                      {
+                                      "name": "16.5.2 Proportion of businesses who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by these public officials, during the previous 12 months",
+                                    
+                                      "goal": "Goal 16. Peace, justice and strong institutions",
+                                    
+                                      "target": "16.5 Substantially reduce corruption and bribery in all their forms",
+                                    
+                                      "definition": "",
+                                    
+                                      "unit": "",
+                                    
+                                      "dimensions": "",
+                                    
+                                      "methodology": "",
+                                    
+                                      "source": "",
+                                    
+                                      "availability": "",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                      }
+                    ]
+              },"16-6-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "16.6.1 Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)",
+                                    
+                                      "goal": "Goal 16. Peace, justice and strong institutions",
+                                    
+                                      "target": "16.6 Develop effective, accountable and transparent institutions at all levels",
+                                    
+                                      "definition": "",
+                                    
+                                      "unit": "",
+                                    
+                                      "dimensions": "",
+                                    
+                                      "methodology": "",
+                                    
+                                      "source": "",
+                                    
+                                      "availability": "",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                      }
+                    ]
+              },"17-3-2":{
+                "metadata": [
+                      
+                      {
+                                      "name": "17.3.2 Volume of remittances (in United States dollars) as a proportion of total GDP",
+                                    
+                                      "goal": "Goal 17. Partnerships for the goals",
+                                    
+                                      "target": "17.3 Mobilize additional financial resources for developing countries from multiple sources",
+                                    
+                                      "definition": "The ratio of remittances (in US dollars) to GDP - expressed as a percentage.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Gross domestic product (GDP) illustrates the final result of the activity of all entities of the national economy (resident producer units - domestic) in a given year. The exact definition and methodology for calculating GDP is contained in the regulation (EU) No 549/2013 of the European Parliament and of the Council of 21 May 2013 on the European system of national and regional accounts in the European Union (ESA 2010). GDP value can be calculated in three ways:  • from the production side GDP is the sum of value added of all institutional sectors or all sections of the Polish Classification of Activities (PKD) of domestic production entities plus taxes less subsidies on products,  • from the distribution side GDP is calculated as the sum of domestic demand, i.e. final consumption expenditure and gross capital formation as well as external balance of goods and services,  • as the sum of uses in the total economy generation of income account (compensation of employees, taxes less subsidies on production and imports, gross operating surplus and mixed income of the total economy).  Personal remittances comprise personal transfers and compensation of employees. Personal transfers consist of all current transfers in cash or in kind made or received by resident households to or from non-resident households. Personal transfers thus include all current transfers between resident and non-resident individuals. Compensation of employees refers to the income of border, seasonal, and other short-term workers who are employed in an economy where they are not resident and of residents employed by non-resident entities. Data are the sum of two items defined in the sixth edition of the IMF's Balance of Payments Manual: personal transfers and compensation of employees. The methodology used is in line with the Sixth Edition of the IMF's Balance of Payments and International Investment Position Manual (BPM6).",
+                                    
+                                      "source": "National Bank of Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {"total": [
+                                        {
+                                        
+                                            "2010" :   "1.6",
+                                        
+                                            "2011" :   "1.5",
+                                        
+                                            "2012" :   "1.4",
+                                        
+                                            "2013" :   "1.4",
+                                        
+                                            "2014" :   "1.4",
+                                        
+                                            "2015" :   "1.4",
+                                        
+                                            "2016" :   "1.3",
+                                        
+                                            "2017" :   "1.2",
+                                        
+                                            "2018" :   "1.1"
+                                        
+                                        }
+                                    ]
+                                
+                              
+                          
+                      }
+                    ]
+              },"17-4-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "17.4.1 State Treasury debt service as proportion of exports of goods and services",
+                                    
+                                      "goal": "Goal 17. Partnerships for the goals",
+                                    
+                                      "target": "17.4 Assist developing countries in attaining longterm debt sustainability through coordinated policies aimed at fostering debt financing, debt relief and debt restructuring, as appropriate, and address the external debt of highly indebted poor countries to reduce debt distress",
+                                    
+                                      "definition": "The ratio of the cost of public debt service to the value of exports of goods and services in current prices.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Public debt - total nominal debt of entities of the public finance sector, established without the mutual obligations of entities belonging to this sector (gross debt). Pursuant to the Public Finance Act, public debt includes following liabilities: - securities issued for cash claims (other than equity securities) - loans and borrowings taken, - deposits taken, - matured liabilities (i.e. liabilities which payment term expired but are not yet barrred or decommitted), - resulting from separate laws and legally binding court decisions or final administrative decisions, - recognized as uncontested by the relevant public finance sector entity that is the debtor. One of the components of public debt is the State Treasury debt (two other components are local government debt and social security debt). Treasury debt is the government's commitment to cover, amon others, the budget deficit. State Treasury debt typically accounts for about 90% of public debt. The cost of debt service is the state budget expenditure. The costs of debt service includes primarily interest and discount on treasury securities, interest and fees on loans and borrowings received, costs of issuing treasury securities and payments under sureties and guarantees granted by the Treasury. Exports include the value of goods leaving the country within the framework of trade transactions as well as the value of services, among others, transport, construction and communications, net processing turnover, printing services, financial intermediation services indirectly measured (FISIM). The value of exports includes estimated balance of purchases made by Polish citizens abroad as well as purchases made by foreigners in Poland.",
+                                    
+                                      "source": "Statistics Poland / Ministry of Finance",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {"total": [
+                                        {
+                                        
+                                            "2010" :   "5.9",
+                                        
+                                            "2011" :   "5.4",
+                                        
+                                            "2012" :   "5.8",
+                                        
+                                            "2013" :   "5.5",
+                                        
+                                            "2014" :   "4.2",
+                                        
+                                            "2015" :   "3.3",
+                                        
+                                            "2016" :   "3.3",
+                                        
+                                            "2017" :   "2.7",
+                                        
+                                            "2018" :   "2.5",
+                                        
+                                            "2019" :   "2.2"
+                                        
+                                        }
+                                    ]
+                                
+                              
+                          
+                      }
+                    ]
+              },"17-17-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "17.17.1 Amount of United States dollars committed to public-private and civil society partnerships",
+                                    
+                                      "goal": "Goal 17. Partnerships  for the goals",
+                                    
+                                      "target": "17.17 Encourage and promote effective public, publicprivate and civil society partnerships, building on the experience and resourcing strategies of partnerships",
+                                    
+                                      "definition": "",
+                                    
+                                      "unit": "",
+                                    
+                                      "dimensions": "",
+                                    
+                                      "methodology": "",
+                                    
+                                      "source": "",
+                                    
+                                      "availability": "",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                      }
+                    ]
+              }}
+  ]
+}

@@ -1,0 +1,338 @@
+
+{
+  "ipu": [
+      {"16-7-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "16.7.1 Deputies and Senators, by sex and age",
+                                    
+                                      "goal": "Goal 16. Peace, justice and strong institutions",
+                                    
+                                      "target": "16.7 Ensure responsive, inclusive, participatory and representative decision-making at all levels",
+                                    
+                                      "definition": "Share of women in the Sejm / Senate in the total number of Deputies / Senators.Share of Deputies in a given age group in the total number of the Deputies in the Sejm.Share of Senators in a given age group in the total number of the Senators in the Senate.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "sex, age",
+                                    
+                                      "methodology": "The legislative power in the Republic of Poland is exercised by the Sejm and the Senate. The Sejm consists of 460 deputies. The Senate consists of 100 senators. The Sejm and the Senate are elected for four-year terms. The share of women / Deputies / Senators in the parliament (as of the beginning of the term) in 2011 refers to the VII term of the Sejm and VIII term of the Senate (since 8 November 2011 to 11 November 2015 r), and in 2015 - the VIII term of the Sejm and IX term of the Senate (from 12 November 2015).",
+                                    
+                                      "source": "The Chancellery of the Sejm and the Chancellery of the Senate / Statistics Poland",
+                                    
+                                      "availability": "Data every four years; since 2011.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "women - by house of Polish Parliament": [
+                                            {"Sejm of the Republic of Poland": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "23.9",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "27.4",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "28.7"
+                                                    
+                                                    }
+                                                ],"Senate of the Republic of Poland": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "13.0",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "13.0",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "24.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "deputies - by age groups": [
+                                            {"21-29 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "2.2",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "3.7",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "3.0"
+                                                    
+                                                    }
+                                                ],"30-39 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "18.3",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "17.4",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "17.4"
+                                                    
+                                                    }
+                                                ],"40-49 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "28.7",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "24.6",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "26.1"
+                                                    
+                                                    }
+                                                ],"50-59 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "35.7",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "33.3",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "29.8"
+                                                    
+                                                    }
+                                                ],"60 years and more": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "15.2",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "21.1",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "23.7"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "senators - by age groups": [
+                                            {"21-29 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "0.0",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "0.0",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "0.0"
+                                                    
+                                                    }
+                                                ],"30-39 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "4.0",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "6.0",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "4.0"
+                                                    
+                                                    }
+                                                ],"40-49 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "19.0",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "18.0",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "18.0"
+                                                    
+                                                    }
+                                                ],"50-59 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "45.0",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "39.0",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "31.0"
+                                                    
+                                                    }
+                                                ],"60 years and more": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "32.0",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "37.0",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "47.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              }}
+  ]
+}

@@ -1,0 +1,147 @@
+
+{
+  "itc": [
+      {"10-a-1":{
+                "metadane": [
+                      
+                      {
+                                      "nazwa": "10.a.1 Odsetek pozycji taryfowych stosowanych w odniesieniu do przywozu towarów z krajów najmniej rozwiniętych / krajów rozwijających się po zerowej taryfie",
+                                    
+                                      "cel": "Cel 10. Mniej nierówności",
+                                    
+                                      "zadanie": "10.a Wprowadzić w życie zasadę specjalnego i zróżnicowanego traktowania krajów rozwijających się, w szczególności tych najmniej rozwiniętych, zgodnie z wytycznymi Światowej Organizacji Handlu",
+                                    
+                                      "definicja": "Udział pozycji celnych CN (liczby unikatowych kodów towarowych) dotyczących importu towarów z krajów najmniej rozwiniętych i rozwijających się w ogólnej liczbie pozycji celnych CN (w ogólnej liczbie unikatowych kodów towarowych) dla importu ze wszystkich krajów przy zerowej stawce celnej.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Obroty towarowe w handlu zagranicznym prezentowane są według 8-cyfrowej Nomenklatury Scalonej CN, która bazuje na 6-cyfrowym Zharmonizowanym Systemie Oznaczania i Kodowania Towarów (HS) i stanowi podstawową klasyfikację towarową dla całego handlu zagranicznego. Nomenklatura Scalona CN podlega corocznej weryfikacji. Unikatowy kod towarowy CN służy do jednoznacznej identyfikacji towaru. Do krajów najmniej rozwiniętych i rozwijających się zaliczono kraje o niskim poziomie rozwoju społecznego na podstawie wartości Wskaźnika Rozwoju Społecznego HDI (tj. kraje, dla których HDI przyjmował wartości poniżej 0,5 pkt) zgodnie z aktualną definicją ONZ. W przypadku importu z grupy krajów najmniej rozwiniętych i rozwijających się do Polski, określono liczbę wszystkich należności celnych przy zerowej taryfie oraz liczbę przypisanym im unikatowych kodów towarowych. Liczbę takich kodów towarowych (dla których wartość należności wyniosła 0 zł) przedstawiono w relacji do liczby wszystkich unikatowych kodów towarowych, które odnotowano w związku z określeniem należności celnej dla importu z wszystkich krajów eksportujących przy zerowej stawce.",
+                                    
+                                      "zrodlo": "Ministerstwo Finansów",
+                                    
+                                      "czestotliwosc": "Dane roczne, od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "4.34",
+                                        
+                                            "2011" :   "3.94",
+                                        
+                                            "2012" :   "3.64",
+                                        
+                                            "2013" :   "3.78",
+                                        
+                                            "2014" :   "2.13",
+                                        
+                                            "2015" :   "2.01",
+                                        
+                                            "2016" :   "1.83",
+                                        
+                                            "2017" :   "1.93",
+                                        
+                                            "2018" :   "6.19",
+                                        
+                                            "2019" :   "9.53"
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },"17-10-1":{
+                "metadane": [
+                      
+                      {
+                                      "nazwa": "17.10.1 Średnia ważona stawka celna",
+                                    
+                                      "cel": "Cel 17. Partnerstwa na rzecz celów",
+                                    
+                                      "zadanie": "17.10 Promować powszechny, uregulowany, otwarty, nie dyskryminujący i sprawiedliwy wielostronny system handlowy w ramach Światowej Organizacji Handlu, w tym z wykorzystaniem rezultatów negocjacji Agendy Rozwoju z Doha (Doha Development Agenda)",
+                                    
+                                      "definicja": "Średnia ważona stawka celna oznacza średni procentowy poziom cła nakładanego przez państwo na towary w związku z ich wywozem i przywozem, dokonywanym przez granice celne państwa, a także ich tranzytem przez jego obszar celny.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "W oparciu o System Hurtowni Danych Ari@dna2 wyznaczany jest udział pobranych należnośi celnych (łączna wartość w PLN) w łącznej statystycznej wartości celnej, stanowiącej podstawę do naliczenia. Wartość statystyczną oblicza się:    • w przypadku sprzedaży - na podstawie wartości towarów z faktury,    • w pozostałych przypadkach (innych niż transakcje kupna/sprzedaży) - na podstawie wartości, która byłaby zafakturowana.  Wartość statystyczna w wywozie to wartość towarów w miejscu i czasie, w którym towary opuszczają terytorium statystyczne Polski. Wartość statystyczna uwzględnia dodatkowe koszty (np. koszty transportu, ubezpieczenia transportowego), dotyczące tej części przewozu, która odbywa się na obszarze statystycznym Polski. Wartość statystyczna w przywozie to wartość towarów w chwili i miejscu wprowadzenia ich na polskie terytorium statystyczne. Wartość statystyczna uwzględnia dodatkowe koszty (np. koszty transportu, ubezpieczenia transportowego) dotyczące tej części przewozu, która odbywa się poza obszarem statystycznym Polski.",
+                                    
+                                      "zrodlo": "Ministerstwo Finansów",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "1.15",
+                                        
+                                            "2011" :   "1.08",
+                                        
+                                            "2012" :   "1.10",
+                                        
+                                            "2013" :   "1.11",
+                                        
+                                            "2014" :   "1.20",
+                                        
+                                            "2015" :   "1.34",
+                                        
+                                            "2016" :   "1.33",
+                                        
+                                            "2017" :   "1.21",
+                                        
+                                            "2018" :   "1.27",
+                                        
+                                            "2019" :   "1.26"
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },"17-12-1":{
+                "metadane": [
+                      
+                      {
+                                      "nazwa": "17.12.1 Przeciętne stawki celne nakładane na kraje rozwijające się, najsłabiej rozwinięte oraz rozwijające się małe kraje wyspiarskie",
+                                    
+                                      "cel": "cel 17. Partnerstwa na rzecz celów",
+                                    
+                                      "zadanie": "17.12 Zrealizować terminowe wdrożenie bezcłowego i bezkwotowego dostępu do rynku w sposób trwały dla wszystkich najsłabiej rozwiniętych krajów, zgodnie z decyzjami Światowej Organizacji Handlu, w tym poprzez zapewnienie, że preferencyjne reguły pochodzenia mające zastosowanie do przywozu z krajów najsłabiej rozwiniętych są przejrzyste, proste i przyczyniają się do ułatwienia dostępu do rynku",
+                                    
+                                      "definicja": "",
+                                    
+                                      "jednostka": "",
+                                    
+                                      "wymiary": "",
+                                    
+                                      "metodologia": "",
+                                    
+                                      "zrodlo": "",
+                                    
+                                      "czestotliwosc": "",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                      }
+                    ]
+              }}
+  ]
+}

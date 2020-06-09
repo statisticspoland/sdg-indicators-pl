@@ -1,0 +1,166 @@
+
+{
+  "iea": [
+      {"7-2-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "7.2.1 Renewable energy share in the gross final energy consumption",
+                                    
+                                      "goal": "Goal 7. Affordable and clean energy",
+                                    
+                                      "target": "7.2 By 2030, increase substantially the share of renewable energy in the global energy mix",
+                                    
+                                      "definition": "Ratio of gross final energy consumption from renewable sources to gross final energy consumption from all sources.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Energy from renewable sources is the energy derived from natural, repetitive environmental processes, obtained from renewable non-fossil energy sources (energy: water, wind, solar heat, geothermal heat, waves, sea currents and tides and energy obtained from biomass, biogas, biofuels). Gross energy consumption is a final consumption of energy carriers by the consumers (industry, transport sector, service sector, households, agriculture, forestry and fishery sector) including electricity and heat consumption by industry for electricity and heat generation as well as transformation and distribution looses.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {"total": [
+                                        {
+                                        
+                                            "2010" :   "9.25",
+                                        
+                                            "2011" :   "10.29",
+                                        
+                                            "2012" :   "10.90",
+                                        
+                                            "2013" :   "11.37",
+                                        
+                                            "2014" :   "11.50",
+                                        
+                                            "2015" :   "11.74",
+                                        
+                                            "2016" :   "11.27",
+                                        
+                                            "2017" :   "10.96",
+                                        
+                                            "2018" :   "11.28"
+                                        
+                                        }
+                                    ]
+                                
+                              
+                          
+                      }
+                    ]
+              },"7-3-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "7.3.1 Energy intensity measured in terms of primary energy and gross domestic product (GDP)",
+                                    
+                                      "goal": "Goal 7. Affordable and clean energy",
+                                    
+                                      "target": "7.3 By 2030, double the global rate of improvement in energy efficiency",
+                                    
+                                      "definition": "Energy intensity of the economy is the ratio of the gross inland consumption of energy to the gross domestic product (GDP) at 2000 constant prices.",
+                                    
+                                      "unit": "kgoe/euro",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "The indicator defines amount of energy consumed to produce one unit of GDP (expressed in kilograms of oil equivalent per 1 000 euro). Reducing energy consumption suggests the fact that less energy is needed to produce the same amount of GDP and is associated with an increase in energy efficiency. Gross domestic consumption of energy presents the amount of energy required to meet domestic consumption of a geographical unit and is calculated as follows: the acquisition of primary energy + fuel recovery + import + change in inventories - export - 'bunker'. Gross domestic energy consumption includes consumption of coal, electricity, crude oil, natural gas and renewable energy. Kgoe stands for kilogram of oil equivalent (contractual), which is a unit of measurement of energy used in international balance sheets. It indicates the amount of energy that can be produced from the combustion of one metric kilogram of crude oil. One tonne of oil is equal to the contractual 41.868 GJ or 11.63 MWh.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {"total": [
+                                        {
+                                        
+                                            "2010" :   "0.368",
+                                        
+                                            "2011" :   "0.354",
+                                        
+                                            "2012" :   "0.336",
+                                        
+                                            "2013" :   "0.331",
+                                        
+                                            "2014" :   "0.307",
+                                        
+                                            "2015" :   "0.300",
+                                        
+                                            "2016" :   "0.304",
+                                        
+                                            "2017" :   "0.304"
+                                        
+                                        }
+                                    ]
+                                
+                              
+                          
+                      }
+                    ]
+              },"9-4-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "9.4.1 CO 2 emission per unit of value added",
+                                    
+                                      "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                                    
+                                      "target": "9.4 By 2030, upgrade infrastructure and retrofit industries to make them sustainable, with increased resource-use efficiency and greater adoption of clean and environmentally sound technologies and industrial processes, with all countries taking action in accordance with their respective capabilities",
+                                    
+                                      "definition": "The indicator determines the amount of carbon dioxide (CO2) in kg per one unit of gross value added of Gross Domestic Product (2010=100). The indicator CO2 emission per unit of value added is currently being measured by CO2 emission per GDP PPP (Purchasing Power Parity).",
+                                    
+                                      "unit": "kg CO2 / 2010 USD PPP",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Emission means the direct or indirect introduction, as a result of human activity, of the following factors into the air, water, soil or land: a) substances, b) energies, such as heat, noise, vibration or electromagnetic fields. Gross value added (GVA) in the gross domestic product account, is the difference between gross output and intermediate consumption. GVA indicates the input of individual producers, industries and sectors to the GDP creation. Carbon dioxide (CO2) emission per unit of value added is a universal indicator for measuring the impact of industrial production on environment. It captures the intensity of energy use, energy efficiency of production technology and most importantly use of fossil fuels.",
+                                    
+                                      "source": "International Energy Agency",
+                                    
+                                      "availability": "Annual data; since 2010.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {"total": [
+                                        {
+                                        
+                                            "2010" :   "0.38",
+                                        
+                                            "2011" :   "0.36",
+                                        
+                                            "2012" :   "0.35",
+                                        
+                                            "2013" :   "0.34",
+                                        
+                                            "2014" :   "0.31",
+                                        
+                                            "2015" :   "0.30",
+                                        
+                                            "2016" :   "0.31",
+                                        
+                                            "2017" :   "0.30",
+                                        
+                                            "2018" :   "0.29"
+                                        
+                                        }
+                                    ]
+                                
+                              
+                          
+                      }
+                    ]
+              }}
+  ]
+}

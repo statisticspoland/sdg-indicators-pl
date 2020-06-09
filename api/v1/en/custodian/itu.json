@@ -1,0 +1,514 @@
+
+{
+  "itu": [
+      {"4-4-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "4.4.1 Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill",
+                                    
+                                      "goal": "Goal 4. Quality education",
+                                    
+                                      "target": "4.4 By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship",
+                                    
+                                      "definition": "The percentage of young people (aged 16-24) and adults (aged 16-74) who have skills in information and communication technologies.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, age",
+                                    
+                                      "methodology": "Information and Communication Technologies (ICT) - technologies that process, collect and transmit information electronically. Data for the indicator comes from the Study of the use of Information and Communication Technologies in households and by individuals. The study of the use of information and communication technologies in households and by individual users began in the European Union (EU) in 2002, using mainly the method of direct or telephone interview.In Poland, the study on the use of ICT in households according to a methodology harmonized with the EU began in 2004. It is carried out annually and participation in it is voluntary. The survey is carried out using the direct interview method, and from 2018 also via the online self-census method. It covers households with at least one person aged 16-74 and people at that age. The indicators relate to the percentage of people with total digital skills (by level: low, basic, secondary) and information, communication, problem solving and software skills (by level: basic, secondary). Data have been presented since 2015, when the digital skills methodology was last revised.The skill level is calculated on the basis of a list of activities related to the use of the computer, software or the Internet, including:   copying or moving a file or folder, use of spreadsheets, transferring files between your computer and other devices, changing the settings of any software or operating system, creating presentations or documents combining text, pictures, tables or graphs, sending and receiving e-mails. ",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data from 2015",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "persons aged 16-74 - by type of skill": [
+                                            {"copying or moving a file or folder": [
+                                                    {
+                                                    
+                                                        "2015" : "46.4",
+                                                    
+                                                        "2016" : "50.7",
+                                                    
+                                                        "2017" : "51.8",
+                                                    
+                                                        "2018" : "49.9"
+                                                    
+                                                    }
+                                                ],"using a spreadsheet": [
+                                                    {
+                                                    
+                                                        "2015" : "23.8",
+                                                    
+                                                        "2016" : "27.9",
+                                                    
+                                                        "2017" : "28.1",
+                                                    
+                                                        "2018" : "28.9"
+                                                    
+                                                    }
+                                                ],"transferring files between a computer and other devices": [
+                                                    {
+                                                    
+                                                        "2015" : "43.4",
+                                                    
+                                                        "2016" : "46.7",
+                                                    
+                                                        "2017" : "48.7",
+                                                    
+                                                        "2018" : "47.0"
+                                                    
+                                                    }
+                                                ],"changing the settings of any software or operating system": [
+                                                    {
+                                                    
+                                                        "2015" : "23.5",
+                                                    
+                                                        "2016" : "29.5",
+                                                    
+                                                        "2017" : "31.7",
+                                                    
+                                                        "2018" : "31.5"
+                                                    
+                                                    }
+                                                ],"creating presentations or documents combining text pictures tables or graphs": [
+                                                    {
+                                                    
+                                                        "2015" : "21.2",
+                                                    
+                                                        "2016" : "25.2",
+                                                    
+                                                        "2017" : "26.9",
+                                                    
+                                                        "2018" : "26.9"
+                                                    
+                                                    }
+                                                ],"sending and receiving e-mails": [
+                                                    {
+                                                    
+                                                        "2015" : "54.0",
+                                                    
+                                                        "2016" : "57.8",
+                                                    
+                                                        "2017" : "59.8",
+                                                    
+                                                        "2018" : "60.7"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "persons aged 16-24 - by type of skill": [
+                                            {"copying or moving a file or folder": [
+                                                    {
+                                                    
+                                                        "2015" : "87.1",
+                                                    
+                                                        "2016" : "87.0",
+                                                    
+                                                        "2017" : "89.2",
+                                                    
+                                                        "2018" : "84.1"
+                                                    
+                                                    }
+                                                ],"using a spreadsheet": [
+                                                    {
+                                                    
+                                                        "2015" : "47.9",
+                                                    
+                                                        "2016" : "52.7",
+                                                    
+                                                        "2017" : "54.6",
+                                                    
+                                                        "2018" : "53.0"
+                                                    
+                                                    }
+                                                ],"transferring files between a computer and other devices": [
+                                                    {
+                                                    
+                                                        "2015" : "83.5",
+                                                    
+                                                        "2016" : "84.8",
+                                                    
+                                                        "2017" : "84.9",
+                                                    
+                                                        "2018" : "81.4"
+                                                    
+                                                    }
+                                                ],"changing the settings of any software or operating system": [
+                                                    {
+                                                    
+                                                        "2015" : "46.4",
+                                                    
+                                                        "2016" : "56.3",
+                                                    
+                                                        "2017" : "62.3",
+                                                    
+                                                        "2018" : "58.3"
+                                                    
+                                                    }
+                                                ],"creating presentations or documents combining text pictures tables or graphs": [
+                                                    {
+                                                    
+                                                        "2015" : "57.1",
+                                                    
+                                                        "2016" : "61.4",
+                                                    
+                                                        "2017" : "65.7",
+                                                    
+                                                        "2018" : "62.0"
+                                                    
+                                                    }
+                                                ],"sending and receiving e-mails": [
+                                                    {
+                                                    
+                                                        "2015" : "87.8",
+                                                    
+                                                        "2016" : "85.8",
+                                                    
+                                                        "2017" : "87.4",
+                                                    
+                                                        "2018" : "85.9"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"5-b-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "5.b.1 Proportion of individuals who own a mobile telephone",
+                                    
+                                      "goal": "Goal 5. Gender equality",
+                                    
+                                      "target": "5.b Enhance the use of enabling technology, in particular information and communications technology, to promote the empowerment of women",
+                                    
+                                      "definition": "Share of individuals who own a mobile telephone in the total population aged 15 and over.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "sex",
+                                    
+                                      "methodology": "The data comes from a consumer survey carried out annually on behalf of the Office of Electronic Communication. The aim of the study is to seek the views of individual customers on the telecommunications market in Poland.  It covered the following services:  • telephony: fixed, VoIP, mobile, including Premium Rate   • Internet: dial-up, fixed, mobile   • bundled services (packages)  • elements of universal service - National Telephone Directory, National Directory of Public Telephone Numbers. In addition, the general opinions of consumers on the telecommunications market in Poland and the following changes are collected.The study is carried out using the Computer Assisted Personal Interview (CAPI) method, i.e. direct interviews with the respondent using mobile devices (e.g. laptop), where responses are recorded. The study used a random sample stratified according to the voivodship (i.e.the division into sub-sampling and random selection of an object from each of them) and included persons aged 15 and over. The results of the study were weighted according to the structure of Poles aged 15 and over. Age, education and size of the place of residence were taken into consideration when determining the weights.",
+                                    
+                                      "source": "Office of Electronic Communications",
+                                    
+                                      "availability": "Annual data since 2012",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by sex": [
+                                            {"males": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "65.0",
+                                                    
+                                                        "2013" : "83.0",
+                                                    
+                                                        "2014" : "84.0",
+                                                    
+                                                        "2015" : "93.0",
+                                                    
+                                                        "2016" : "89.4",
+                                                    
+                                                        "2017" : "91.2",
+                                                    
+                                                        "2018" : "92.0"
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "59.0",
+                                                    
+                                                        "2013" : "89.0",
+                                                    
+                                                        "2014" : "91.0",
+                                                    
+                                                        "2015" : "91.0",
+                                                    
+                                                        "2016" : "85.7",
+                                                    
+                                                        "2017" : "92.5",
+                                                    
+                                                        "2018" : "94.2"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"9-c-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "9.c.1 Proportion of population covered by a mobile network, by technology",
+                                    
+                                      "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                                    
+                                      "target": "9.c Significantly increase access to information and communications technology and strive to provide universal and affordable access to the Internet in least developed countries by 2020",
+                                    
+                                      "definition": "Proportion of population covered by a mobile network by technology refers to the proportion of inhabitants living within the range of mobile (cellular) network signal regardless of whether they are subscribers or users. The indicator is calculated as a ratio of the number of inhabitants within the range of a given mobile (cellular) technology to the total population multiplied by 100.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "technologies",
+                                    
+                                      "methodology": "Mobile telephone subscriber – entity that is a party to the contract for the telecommunications services provision entered into by a provider of publicly available telecommunications services. This concept also includes the so-called pre-paid users.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2014.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by technology": [
+                                            {"proportion of population within range of 3G": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "99.9",
+                                                    
+                                                        "2015" : "99.9",
+                                                    
+                                                        "2016" : "100.0",
+                                                    
+                                                        "2017" : "100.0",
+                                                    
+                                                        "2018" : "100.0"
+                                                    
+                                                    }
+                                                ],"proportion of population within range of 4G/LTE": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "80.0",
+                                                    
+                                                        "2015" : "99.8",
+                                                    
+                                                        "2016" : "99.9",
+                                                    
+                                                        "2017" : "99.9",
+                                                    
+                                                        "2018" : "100.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"17-6-2":{
+                "metadata": [
+                      
+                      {
+                                      "name": "17.6.2 Fixed Internet broadband subscriptions per 100 inhabitants",
+                                    
+                                      "goal": "Goal 17. Partnerships for the goals",
+                                    
+                                      "target": "17.6 Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge-sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism",
+                                    
+                                      "definition": "Number of fixed line and wireless broadband internet subscribers per 100 persons.",
+                                    
+                                      "unit": "persons",
+                                    
+                                      "dimensions": "total, by speed",
+                                    
+                                      "methodology": "Broadband connection there are two approaches to defining the concept of broadband connection in the European Union's (EU) statistics. The first in the Information and Communication Technologies (ICT) usage research conducted by all national statistical offices (by Central Statistical Office in Poland) and the second in telecommunication market research conducted by national regulators of the telecommunications market (respectively by the Electronic Communications Office). The EU statistics on the telecommunications market used by the Office of Electronic Communications and the European Commission for fixed-line broadband are considered those with speeds above 144 kbps. On the other hand, for research conducted by national statistical offices, coordinated by Eurostat, broadband is defined by the type of technique used for the connection, not its speed. These include DSL technologies such as ADSL, HDSL, SDSL, VDSL, Ethernet LANs, which are the backbone of broadband connections, and others with high bandwidth (wired or wireless). Data for the indicator comes from a survey conducted twice a year by the Office of Electronic Communications for the European Commission (Digital Agenda). The survey covers about 100-120 largest telecommunications undertakings with a combined market share of over 95%. The indicator is presented according to the connection speed for the following speed ranges:  • less than 30 Mbps  • from 30 Mbps to less than 100 Mbps  • from 100 Mbps It presents the number of fixed line and wireless broadband internet subscribers per 100 persons (according to the population at the end of the year announced by the Statistics Poland). Data on population were compiled on the basis of:  • the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010) for previous years (2003 - 2009) on the basis of the 2002 Population and Housing Census,  • the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register - PESEL),  • documentation of Civil Status Offices regarding registered marriages, births and deaths.",
+                                    
+                                      "source": "Office of Electronic Communications",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": "The indicator value in 2019 is presented as of July 1, 2019."
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by connection speed": [
+                                            {"to 30 Mbps": [
+                                                    {
+                                                    
+                                                        "2010" : "11.34",
+                                                    
+                                                        "2011" : "11.75",
+                                                    
+                                                        "2012" : "11.82",
+                                                    
+                                                        "2013" : "11.31",
+                                                    
+                                                        "2014" : "10.67",
+                                                    
+                                                        "2015" : "9.41",
+                                                    
+                                                        "2016" : "8.12",
+                                                    
+                                                        "2017" : "6.68",
+                                                    
+                                                        "2018" : "5.56",
+                                                    
+                                                        "2019" : "6.29"
+                                                    
+                                                    }
+                                                ],"from 30 Mbps to 100 Mbps": [
+                                                    {
+                                                    
+                                                        "2010" : "0.15",
+                                                    
+                                                        "2011" : "0.36",
+                                                    
+                                                        "2012" : "1.41",
+                                                    
+                                                        "2013" : "2.52",
+                                                    
+                                                        "2014" : "3.30",
+                                                    
+                                                        "2015" : "4.05",
+                                                    
+                                                        "2016" : "4.57",
+                                                    
+                                                        "2017" : "4.54",
+                                                    
+                                                        "2018" : "3.45",
+                                                    
+                                                        "2019" : "3.72"
+                                                    
+                                                    }
+                                                ],"above 100 Mbps": [
+                                                    {
+                                                    
+                                                        "2010" : "0.03",
+                                                    
+                                                        "2011" : "0.09",
+                                                    
+                                                        "2012" : "0.18",
+                                                    
+                                                        "2013" : "0.35",
+                                                    
+                                                        "2014" : "0.79",
+                                                    
+                                                        "2015" : "1.66",
+                                                    
+                                                        "2016" : "2.70",
+                                                    
+                                                        "2017" : "4.23",
+                                                    
+                                                        "2018" : "6.77",
+                                                    
+                                                        "2019" : "7.94"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },"17-8-1":{
+                "metadata": [
+                      
+                      {
+                                      "name": "17.8.1 Proportion of individuals aged 16-74 using the Internet in the last 3 months",
+                                    
+                                      "goal": "Goal 17. Partnerships for the goals",
+                                    
+                                      "target": "17.8 Fully operationalize the technology bank and science, technology and innovation capacity-building mechanism for least developed countries by 2017 and enhance the use of enabling technology, in particular information and communications technology",
+                                    
+                                      "definition": "Proportion of individuals aged 17-74 using the Internet during the last 3 months.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Data for the indicator comes from the Study of the use of Information and Communication Technologies in households and by individuals. The study of the use of Information and Communication Technologies (ICT) in households and by individual users started in the European Union (EU) in 2002, using mainly the method of direct or telephone interviews. In Poland, monitoring of the ICT usage in households in accordance with the EU harmonized methodology was launched in 2004. Since then, the survey has been carried out annually and voluntary participation is ongoing. The study is carried out through face-to face interviews and includes households with at least one person aged 16-74 and people of that age. Two separate questionnaires: for households (SSI-10G) and individuals: (SSI-10I) are used in this survey. Mainly qualitative questions (not related to values given in numbers) and closed questions are utilized. Individual questionnaires include questions regarding:  • computer and Internet usage (when lately ?, how often ?, where?)   • Internet usage via mobile devices   • purposes of Internet usage   • making purchases online.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {"total": [
+                                        {
+                                        
+                                            "2010" :   "58.8",
+                                        
+                                            "2011" :   "62.0",
+                                        
+                                            "2012" :   "62.3",
+                                        
+                                            "2013" :   "62.8",
+                                        
+                                            "2014" :   "66.6",
+                                        
+                                            "2015" :   "68.0",
+                                        
+                                            "2016" :   "73.3",
+                                        
+                                            "2017" :   "76.0",
+                                        
+                                            "2018" :   "77.5",
+                                        
+                                            "2019" :   "80.4"
+                                        
+                                        }
+                                    ]
+                                
+                              
+                          
+                      }
+                    ]
+              }}
+  ]
+}

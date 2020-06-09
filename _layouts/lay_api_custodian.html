@@ -1,0 +1,54 @@
+---
+layout: page
+---
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/api.css?v={{ cache_bust }}">
+  <script src="{{ site.baseurl }}/assets/js/api.js"></script>
+
+{% if page.url contains 'en/' %}
+  <h2 style="margin-top: 30px;">Application programming interface (API)</h2>
+  <p>The API application allows to browse and download for further processing the full range of data and metadata on Sustainable Development Goals (SDGs) of the 2030 Agenda (with data for Poland)
+    and a set of indicators for monitoring sustainable development on the level of the country.<br />The data is made available through REST API in JSON format.
+    The list below presents vailable web services provided as part of the API.
+  </p>
+{% else %}
+  <h2 style="margin-top: 30px;">Interfejs programistyczny aplikacji (API)</h2>
+  <p>Interfejs API platformy SDG pozwala przeglądać i pobierać do dalszego przetwarzania pełny zakres danych i metadanych dotyczących Celów Zrównoważonego Rozwoju Agendy 2030 (z danymi dla Polski)
+    oraz zestawu danych monitorujących zrównoważony rozwój na poziomie kraju.<br />Dane udostępniane są poprzez REST-owe API w formacie JSON.
+    Poniższa lista opisuje usługi sieciowe udostępnione w ramach interfejsu API.
+  </p>
+{% endif %}
+
+  <section id='content'>
+    {% if page.url contains 'en/' %}
+      {% assign p = site.posts | sort: 'title' %}
+      {% for post in p %}
+        {% if post.lang == 'en' %}
+          {% if post.url contains '30' %}
+            <article class='{{ post.type }}'>
+              <a name='{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
+              <section class='body'>
+                {{ post.content }}
+              </section>
+            </article>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% assign p = site.posts | sort: 'title' %}
+      {% for post in p %}
+        {% if post.lang == 'pl' %}
+          {% if post.url contains '30' %}
+            <article class='{{ post.type }}'>
+              <a name='{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
+              <section class='body'>
+                {{ post.content }}
+              </section>
+            </article>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </section>
+
+  <script>require('boot');</script>
