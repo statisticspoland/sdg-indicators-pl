@@ -1,5 +1,5 @@
 ---
 layout: lay_api_custodian
-title: API custodian agencies
+title: API organizacje międzynarodowe
 permalink: /api/custodian/
 ---
