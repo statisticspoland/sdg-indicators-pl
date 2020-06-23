@@ -569,9 +569,9 @@
                                     
                                       "definition": "Hazardous waste is defined by The Act of Waste of 27 April 2001 (Journal of Laws, No 3) as ' any substance or object which the holder discards or intends or is required to discard ', and whose features , which displays one or more of the hazardous properties listed in in Annexes 2A, 2B, 3 and 4 to the above-mentioned Act. These annexes are an integral part of art. 3 sec. 2 of the Act of Waste (1) Amount of hazarous waste generated in the country in kilograms and reported according under applicable law. (2) Ratio of amount hazardous waste exposed to recovery to amount hazardous waste generated in the country. (3) Ratio of amount hazardous waste exposed to dispodal to amount hazardous waste generated in the country.",
                                     
-                                      "unit": "kilogram per capita [kg per capita], percent [%]",
+                                      "unit": "kg per capita]",
                                     
-                                      "dimensions": "total",
+                                      "dimensions": "total,recovery of hazardous waste,disposal of hazardous waste",
                                     
                                       "methodology": "Processes of waste recovered R1-R10 are the operation described in the list of recovery operations listed in Annex No. 1 to the Act of 14 December 2012 on Waste (Journal of Laws 2013, item 21). Processes of waste disposal D1-D12 are the operations described in the list of disposal operations listed in Annex No. 2 to the Act of 14 December 2012 on waste (Journal of Laws 2013, item 21). The percentage is calculated as the ratio of the mass of waste recovered, conditioned waste to waste generated.",
                                     
@@ -585,8 +585,8 @@
                     "data": [
                       {
                                 
-                                        "by type of treatment": [
-                                            {"total": [
+                                        "wymiary": [
+                                            {"hazarodus waste generated": [
                                                     {
                                                     
                                                         "2010" : "39",
