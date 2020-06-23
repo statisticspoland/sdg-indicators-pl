@@ -52,6 +52,12 @@ function remove(array, element) {
     }else{
       legenda=["PKB na 1 mieszkańca (ceny bieżące)","",""]
     }
+   }else if ('{{id}}'=='12-4-2') {
+    if (window.location.href.indexOf("en") > -1){
+        legenda=["total","",""]
+    }else{
+      legenda=["ogółem","",""]
+    }
   }else{
       legenda=[]
       for (j=0;j<legen.length;j++){
