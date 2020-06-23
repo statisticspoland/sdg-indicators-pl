@@ -1,6 +1,6 @@
 ---
 permalink: /api/custodian/ipu.json
-layout: json_custodian
+layout: json_wybrane
 wybrane: 16-7-1
 nazwa: ipu
 ---

@@ -19,6 +19,15 @@ layout: page
   </p>
 {% endif %}
 
+<!--<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#unep">Home</a>
+    <a href="#cbd">About</a>
+    <a href="#wto">Contact</a>
+  </div>
+</div>-->
+
   <section id='content'>
     {% if page.url contains 'en/' %}
       {% assign p = site.posts | sort: 'title' %}
@@ -26,7 +35,7 @@ layout: page
         {% if post.lang == 'en' %}
           {% if post.url contains '31' %}
             <article class='{{ post.type }}'>
-              <a name='{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
+              <a name='{{ post.name | replace: "/api/v1/en/custodian/", "" | replace: ".json", "" }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
               <section class='body'>
                 {{ post.content }}
               </section>
@@ -38,7 +47,7 @@ layout: page
         {% if post.lang == 'en' %}
           {% if post.url contains '30' %}
             <article class='{{ post.type }}'>
-              <a name='{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
+              <a name='{{ post.name | replace: "/api/v1/en/custodian/", "" | replace: ".json", "" }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
               <section class='body'>
                 {{ post.content }}
               </section>
@@ -52,7 +61,7 @@ layout: page
         {% if post.lang == 'pl' %}
           {% if post.url contains '30' or post.url contains '31' %}
             <article class='{{ post.type }}'>
-              <a name='{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
+              <a name='{{ post.name | replace: "/api/v1/custodian/", "" | replace: ".json", "" }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
               <section class='body'>
                 {{ post.content }}
               </section>
@@ -63,4 +72,23 @@ layout: page
     {% endif %}
   </section>
 
-  <script>require('boot');</script>
+  <script>require('boot');
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+  </script>

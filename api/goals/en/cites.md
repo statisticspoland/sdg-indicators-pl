@@ -1,6 +1,6 @@
 ---
 permalink: /api/en/custodian/cites.json
-layout: json_en_custodian
+layout: json_en_wybrane
 wybrane: 15-7-1,15-c-1
 nazwa: cites
 ---
