@@ -614,11 +614,111 @@ function Zmiana_jednostki5(){
       }
 
     }
+function Zmiana_jednostki6(){
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  labels.shift()
+  var lan='{{language}}'
 
+  if (document.getElementById("Jednostka6").innerHTML=='Zmień jednostkę - [-]' || document.getElementById("Jednostka6").innerHTML=='Change unit - [-]'){
+    var calo={{ row1 | jsonify }}
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
+    calosc=calo.splice(10,20);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+
+    chart.update({labels: labels,series: seria})
+    if(lan=='pl'){
+      document.getElementById("tytul").innerHTML = "[-]";
+      document.getElementById("Jednostka6").innerHTML = "Zmień jednostkę - procent";
+      $(".ct-series-0").text('odzysk odpadów niebezpiecznych').show();
+      $(".ct-series-1").text('unieszkodliwienie odpadów niebezpiecznych').show();
+
+    }
+    if(window.location.href.indexOf("en") > -1) {
+      document.getElementById("tytul").innerHTML = "[-]";
+      document.getElementById("Jednostka6").innerHTML = "Change unit - percent";
+      $(".ct-series-0").text('recovery of hazarodus waste').show();
+      $(".ct-series-1").text('disposal of hazardous waste').show();
+    }
+
+
+  }else if (document.getElementById("Jednostka6").innerHTML=='Zmień jednostkę - procent' || document.getElementById("Jednostka6").innerHTML=='Change unit - percent') {
+
+    var calo={{ row1 | jsonify }}
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
+    calosc=calo.splice(30,58);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+
+    chart.update({labels: labels,series: seria})
+    if(lan=='pl'){
+      document.getElementById("tytul").innerHTML = "%";
+      document.getElementById("Jednostka6").innerHTML = "Zmień jednostkę - kg na osobę";
+      $(".ct-series-0").text('odzysk odpadów niebezpiecznych').show();
+      $(".ct-series-1").text('unieszkodliwienie odpadów niebezpiecznych').show();
+
+
+    }
+    if(window.location.href.indexOf("en") > -1) {
+      document.getElementById("tytul").innerHTML = "%";
+      document.getElementById("Jednostka6").innerHTML = "Change unit - kg per capita";
+      $(".ct-series-0").text('recovery of hazarodus waste').show();
+      $(".ct-series-1").text('disposal of hazardous waste').show();
+
+    }
+
+
+
+  }else{
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,9);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "kg na osobę";
+        document.getElementById("Jednostka6").innerHTML = "Zmień jednostkę - [-]";
+        $(".ct-series-0").text('ogółem').show();
+        $(".ct-series-1").hide();
+        $(".ct-series-2").hide();
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "kg per capita";
+        document.getElementById("Jednostka6").innerHTML = "Change unit - [-]";
+        $(".ct-series-0").text('total').show();
+        $(".ct-series-1").hide();
+        $(".ct-series-2").hide();
+      }
+
+    }
 }
 
 $(window).on("load", function() {
-  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '17-13-1'){
+  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '17-13-1'  || '{{id}}' == '12-4-2'){
     $('.ct-chart').css({'margin-top':'20px'});
 
   }
