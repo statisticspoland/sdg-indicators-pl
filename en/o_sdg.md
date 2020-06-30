@@ -143,27 +143,27 @@ Poland presented its achievements at HLPF for the first time.
   <p><b>SDGs & me</b></p>
 
   <p>A new digital publication by Eurostat on the 2030 Agenda’s goals reaches out to a wide range of readers. Its intuitive nature and attractive layout encourage each and everyone to take a glance at the SDGs from the statistical point of view. <em>SDGs & me</em> presents progress towards 17 goals in the EU and its member countries by means of interactive visualizations. In order to assess progress in achieving the global goals, metrics from Eurostat’s SDG indicator set were used. The publication enables comparison of progress towards the SDGs between the countries and against the EU. It also makes it possible to guess trends for indicator values before their presentation on the chart.</p>
-
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs_2018/">SDGs & me – 2018 edition</a></p>
+  <br>
+  <br>
 
 
   <hr>
   <div class="image-wrapper">
-  <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+  <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/11011074/KS-02-20-202-EN-N.pdf/334a8cfe-636a-bb8a-294a-73a052882f7f"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</b></p>
 
   <p>The publication, issued in 2017 by Eurostat, is a monitoring report on the progress towards achieving the Sustainable Development Goals in an EU context. This report describes progress made using a set of 100 indicators that are structured along the 17 SDGs. Two periods are considered: the short term, accounting for progress over the past five years, and the long term, looking at the trends over the last 15 years.
   <br><br><br></p>
   <p><b>Archive:</b></p>
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Monitoring report on progress towards the SDGs in an EU context</a></p>  
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-04-17-780?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Monitoring report on progress towards the SDGs in an EU context</a></p>  
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820">Monitoring report on progress towards the SDGs in an EU context - 2019 edition</a></p>  
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Monitoring report on progress towards the SDGs in an EU context - 2018 edition</a></p>  
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-04-17-780?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Monitoring report on progress towards the SDGs in an EU context - 2017 edition</a></p>  
 
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/11010788/KS-01-20-192-EN-N.pdf/ae63aff0-a6f3-1d47-da83-c6886b9daaab"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</b></p>
 
@@ -171,8 +171,9 @@ Poland presented its achievements at HLPF for the first time.
 
   <br><br><br></p>
   <p><b>Archive:</b></p>
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</a></p>
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</a></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2019 edition</a></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2018 edition</a></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2017 edition</a></p>
 
   <hr>
   <div class="image-wrapper">

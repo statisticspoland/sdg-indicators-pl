@@ -138,27 +138,26 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   <p><b>SDGs & me</b></p>
 
   <p>Nowa cyfrowa publikacja Eurostatu nt. celów Agendy 2030 adresowana jest do szerokiego grona odbiorców. Jej intuicyjny charakter i atrakcyjna forma zachęcą każdego do spojrzenia na SDGs z punktu widzenia statystyki. <em>SDGs & me</em> prezentuje postępy całej UE oraz poszczególnych krajów członkowskich we wdrażaniu 17 celów za pomocą interaktywnych wizualizacji. Do oceny realizacji celów globalnych wykorzystano wybrane wskaźniki SDG z zestawu opracowanego przez Eurostat dla Unii Europejskiej. Publikacja umożliwia porównywanie postępów w osiąganiu SDGs między krajami oraz na tle UE. Pozwala także na prognozowanie trendów dla wybranych mierników przed ich zaprezentowaniem na wykresie.</p>
-
-  <p><b>Archiwum:</b></p>
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/">SDGs & me – Edycja 2018 </a></p>
+  <br>
 
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/11011074/KS-02-20-202-EN-N.pdf/334a8cfe-636a-bb8a-294a-73a052882f7f"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</b></p>
 
   <p>Wydawana od 2017 r. publikacja Eurostatu będąca raportem monitorującym postęp w kierunku osiągnięcia Celów Zrównoważonego Rozwoju w kontekście UE. Raport opisuje i analizuje dokonany postęp przy wykorzystaniu zestawu 100 wskaźników, przyporządkowanych do poszczególnych celów SDG. Analizie poddane są dwa okresy: krótki, uwzględniający postęp dokonany w ciągu ostatnich 5 lat oraz długi, obejmujący tendencje z ostatnich 15 lat.
   <br><br><br></p>
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820">Monitoring report on progress towards the SDGs in an EU context – Edycja 2019</a></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Monitoring report on progress towards the SDGs in an EU context – Edycja 2018</a></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-04-17-780?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Monitoring report on progress towards the SDGs in an EU context – Edycja 2017</a></p>  
 
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/11010788/KS-01-20-192-EN-N.pdf/ae63aff0-a6f3-1d47-da83-c6886b9daaab"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</b></p>
 
@@ -166,6 +165,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <br><br><br></p>
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2019</a></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2018</a></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2017</a></p>
 
