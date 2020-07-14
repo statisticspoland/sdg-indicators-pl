@@ -109,13 +109,14 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2019/"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2019.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2020/"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2020.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>The Sustainable Development Goals Report 2019</b></p>
+  <p><b>The Sustainable Development Goals Report 2020</b></p>
 
-  <p>Raport ten stanowi przegląd postępów, jakich dokonano w trzecim już roku realizacji Agendy na rzecz Zrównoważonego Rozwoju 2030. Przedstawia poczyniony progres, ale także wskazuje na konieczne do uzupełnienia luki informacyjne dla wszystkich 17 Celów Zrównoważonego Rozwoju, w oparciu o najnowsze dostępne dane.</p>
+  <p>Raport ten stanowi przegląd postępów, jakich dokonano w piątym już roku realizacji Agendy na rzecz Zrównoważonego Rozwoju 2030. Przedstawia poczyniony progres w oparciu o najnowsze dostępne dane, ale także wskazuje na konieczne do uzupełnienia luki informacyjne dotyczące realizacji 17 Celów Zrównoważonego Rozwoju.</p>
 
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2019/">The Sustainable Development Goals Report 2019</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2018/">The Sustainable Development Goals Report 2018</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2017/">The Sustainable Development Goals Report 2017</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2016/">The Sustainable Development Goals Report 2016</a></p>
