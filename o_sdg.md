@@ -192,15 +192,16 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_23089679"><img src="{{ site.baseurl }}/assets/img/publikacje/8_hows_life.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_23089679"><img src="{{ site.baseurl }}/assets/img/publikacje/9_hows_life.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>How’s Life? 2017. Measuring Well-being</b></p>
+  <p><b>How’s Life? 2020. Measuring Well-being</b></p>
 
 
   <p><em>How’s life? </em>opisuje kluczowe elementy kształtujące dobrobyt ludzi w państwach będących członkami OECD oraz w krajach partnerskich. Obejmuje szeroki wachlarz statystyk, uwzględniając zarówno dobrobyt materialny (tj. dochody, miejsca pracy, mieszkalnictwo), jak i inne aspekty jakości życia (tj. zdrowie, edukacja, równowaga między życiem prywatnym i zawodowym, środowisko). Raport, oprócz wyników najnowszych badań, pokazuje także zmiany, które zaszły na przestrzeni lat oraz jak zmieniła się dystrybucja dobrobytu pomiędzy różnymi grupami społecznymi.</p>
 
   <p><b>Archiwum:</b></p>
-   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en">How’s Life? 2015. Measuring Well-being</a></p>  
+  <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2017_how_life-2017-en">How’s Life? 2017. Measuring Well-being</a></p>  
+  <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en">How’s Life? 2015. Measuring Well-being</a></p>  
   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2013_9789264201392-en">How’s Life? 2013. Measuring Well-being</a></p>  
   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_9789264121164-en">How’s Life? 2011. Measuring Well-being</a></p>  
 
