@@ -198,15 +198,16 @@ Poland presented its achievements at HLPF for the first time.
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_23089679"><img src="{{ site.baseurl }}/assets/img/publikacje/8_hows_life.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_23089679"><img src="{{ site.baseurl }}/assets/img/publikacje/9_hows_life.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>How’s Life? 2017. Measuring Well-being</b></p>
+  <p><b>How’s Life? 2020. Measuring Well-being</b></p>
 
 
   <p>The publication <em>How's Life?</em> describes the key elements that shape people’s well-being in OECD and partner countries. It includes a wide variety of statistics, capturing both material well-being (such as income, jobs, housing), as well as other aspects of quality of people’s life (such as health, education, work-life balance, environment). The report, in addition to the results of the latest research, also shows the changes that have occurred over time and how the distribution of well-being among different groups of the population has changed.</p>
 
   <p><b>Archive:</b></p>
-   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en">How’s Life? 2015. Measuring Well-being</a></p>  
+  <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2017_how_life-2017-en">How’s Life? 2017. Measuring Well-being</a></p>  
+  <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en">How’s Life? 2015. Measuring Well-being</a></p>  
   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life-2013_9789264201392-en">How’s Life? 2013. Measuring Well-being</a></p>  
   <p><a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_9789264121164-en">How’s Life? 2011. Measuring Well-being</a></p>  
 
