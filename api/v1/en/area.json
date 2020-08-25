@@ -1,0 +1,1017 @@
+
+{
+  "area": [
+      {
+          "1-2-1":{
+                
+                "metadata": [
+                      {
+                                      "name": "1.2.1 At-risk of poverty rate after social transfers",
+                                    
+                                      "goal": "Goal 1. No poverty",
+                                    
+                                      "target": "1.2 By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",
+                                    
+                                      "definition": "Percentage of persons with an equivalised disposable income (after social transfers) is below the at-risk-of-poverty threshold set at 60% of the national median of equivalised disposable income.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, sex, age",
+                                    
+                                      "methodology": "The indicator is calculated on the basis of information obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) The subject of the EU-SILC are households and persons aged 16 and more in households. The survey is a panel study, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview techniqueusing 2 questionnaires one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of the European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). StatisticsPoland implemented EU-SILC survey in 2005. The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Equivalent disposable income in the survey is defined as a sum of the net (after deduction of income tax prepayment, tax on income from property, social and health insurance contributions) annual monetary incomes gained by all the household members reduced by: property tax, inter-household cash transfers paid and balance of offsetting settlements with the Tax Office. For the calculation of income statistics the modified OECD equivalence scale was applied which is calculated as follows: - 1 - for the first adult household member, - 0.5 - for the second and each subsequent household member aged 14 and over, - 0.3 - for every child in the household under 14. And thus, for instance, the extreme and relative poverty threshold for a 4-person household consisting of two adult persons and two children is 2.1 times as high as that for a 1-person household.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "urban/rural area": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "17.6",
+                                                    
+                                                        "2011" : "17.7",
+                                                    
+                                                        "2012" : "17.1",
+                                                    
+                                                        "2013" : "17.3",
+                                                    
+                                                        "2014" : "17.0",
+                                                    
+                                                        "2015" : "17.6",
+                                                    
+                                                        "2016" : "17.3",
+                                                    
+                                                        "2017" : "15.0",
+                                                    
+                                                        "2018" : "14.8"
+                                                    
+                                                    }
+                                                ],"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "12.6",
+                                                    
+                                                        "2011" : "12.7",
+                                                    
+                                                        "2012" : "12.3",
+                                                    
+                                                        "2013" : "12.1",
+                                                    
+                                                        "2014" : "11.7",
+                                                    
+                                                        "2015" : "12.5",
+                                                    
+                                                        "2016" : "12.8",
+                                                    
+                                                        "2017" : "10.7",
+                                                    
+                                                        "2018" : "10.8"
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "25.3",
+                                                    
+                                                        "2011" : "25.2",
+                                                    
+                                                        "2012" : "24.3",
+                                                    
+                                                        "2013" : "24.9",
+                                                    
+                                                        "2014" : "24.7",
+                                                    
+                                                        "2015" : "25.2",
+                                                    
+                                                        "2016" : "24.0",
+                                                    
+                                                        "2017" : "21.5",
+                                                    
+                                                        "2018" : "20.8"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "by sex": [
+                                            {"males": [
+                                                    {
+                                                    
+                                                        "2010" : "17.4",
+                                                    
+                                                        "2011" : "17.8",
+                                                    
+                                                        "2012" : "17.1",
+                                                    
+                                                        "2013" : "17.3",
+                                                    
+                                                        "2014" : "17.2",
+                                                    
+                                                        "2015" : "18.1",
+                                                    
+                                                        "2016" : "17.1",
+                                                    
+                                                        "2017" : "15.1",
+                                                    
+                                                        "2018" : "14.6"
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "17.7",
+                                                    
+                                                        "2011" : "17.6",
+                                                    
+                                                        "2012" : "17.1",
+                                                    
+                                                        "2013" : "17.3",
+                                                    
+                                                        "2014" : "16.8",
+                                                    
+                                                        "2015" : "17.2",
+                                                    
+                                                        "2016" : "17.4",
+                                                    
+                                                        "2017" : "14.9",
+                                                    
+                                                        "2018" : "15.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "by age group": [
+                                            {"under 6 years": [
+                                                    {
+                                                    
+                                                        "2010" : "20.5",
+                                                    
+                                                        "2011" : "19.7",
+                                                    
+                                                        "2012" : "18.6",
+                                                    
+                                                        "2013" : "21.7",
+                                                    
+                                                        "2014" : "19.4",
+                                                    
+                                                        "2015" : "19.7",
+                                                    
+                                                        "2016" : "17.6",
+                                                    
+                                                        "2017" : "11.8",
+                                                    
+                                                        "2018" : "10.7"
+                                                    
+                                                    }
+                                                ],"under 18 years": [
+                                                    {
+                                                    
+                                                        "2010" : "22.5",
+                                                    
+                                                        "2011" : "22.0",
+                                                    
+                                                        "2012" : "21.5",
+                                                    
+                                                        "2013" : "23.2",
+                                                    
+                                                        "2014" : "22.3",
+                                                    
+                                                        "2015" : "22.4",
+                                                    
+                                                        "2016" : "21.1",
+                                                    
+                                                        "2017" : "14.0",
+                                                    
+                                                        "2018" : "13.0"
+                                                    
+                                                    }
+                                                ],"18-24 years": [
+                                                    {
+                                                    
+                                                        "2010" : "20.9",
+                                                    
+                                                        "2011" : "20.7",
+                                                    
+                                                        "2012" : "21.8",
+                                                    
+                                                        "2013" : "21.5",
+                                                    
+                                                        "2014" : "22.0",
+                                                    
+                                                        "2015" : "22.6",
+                                                    
+                                                        "2016" : "23.5",
+                                                    
+                                                        "2017" : "20.9",
+                                                    
+                                                        "2018" : "21.1"
+                                                    
+                                                    }
+                                                ],"18-64 years": [
+                                                    {
+                                                    
+                                                        "2010" : "16.9",
+                                                    
+                                                        "2011" : "17.1",
+                                                    
+                                                        "2012" : "16.5",
+                                                    
+                                                        "2013" : "16.7",
+                                                    
+                                                        "2014" : "16.7",
+                                                    
+                                                        "2015" : "17.6",
+                                                    
+                                                        "2016" : "17.3",
+                                                    
+                                                        "2017" : "15.6",
+                                                    
+                                                        "2018" : "15.2"
+                                                    
+                                                    }
+                                                ],"60 years and more": [
+                                                    {
+                                                    
+                                                        "2010" : "14.0",
+                                                    
+                                                        "2011" : "14.5",
+                                                    
+                                                        "2012" : "14.0",
+                                                    
+                                                        "2013" : "12.3",
+                                                    
+                                                        "2014" : "12.3",
+                                                    
+                                                        "2015" : "13.0",
+                                                    
+                                                        "2016" : "14.0",
+                                                    
+                                                        "2017" : "15.0",
+                                                    
+                                                        "2018" : "16.2"
+                                                    
+                                                    }
+                                                ],"65 years and more": [
+                                                    {
+                                                    
+                                                        "2010" : "14.2",
+                                                    
+                                                        "2011" : "14.7",
+                                                    
+                                                        "2012" : "14.0",
+                                                    
+                                                        "2013" : "12.3",
+                                                    
+                                                        "2014" : "11.7",
+                                                    
+                                                        "2015" : "12.1",
+                                                    
+                                                        "2016" : "12.8",
+                                                    
+                                                        "2017" : "13.8",
+                                                    
+                                                        "2018" : "15.5"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "5-4-1":{
+                
+                "metadata": [
+                      {
+                                      "name": "5.4.1 Proportion of time spent on unpaid domestic and care work",
+                                    
+                                      "goal": "Goal 5. Gender equality",
+                                    
+                                      "target": "5.4 Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies and the promotion of shared responsibility within the household and the family as nationally appropriate",
+                                    
+                                      "definition": "Average time spend on unpaid domestic and care work expressed as a percentage of the day.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, sex, age, urban areas/rural areas",
+                                    
+                                      "methodology": "The data comes from the Time Use Survey. Time Use Survey provides information on many aspects of Poles' lives, including the distribution of time spend on its different spheres. The survey takes place every 10 years. The last was held in 2013, lasted throughout the year and included people aged 10 years or more. The time of 24 hours was divided into 10 main groups of activities and additional eleventh group with a small percentage of other non-mentioned activities, i.e.:  • personal care  • household and family care  • employment  • mass media • social life and entertainment  • travel  • hobbies  • sport and outdoor activities • study  • voluntary work and meetings  • unspecified time use.  The group related to household and family care included, among others, household upkeep, food management, childcare, help to an adult family member as well as shopping and services.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Data every few years  since 2013",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "persons aged 15 years or more - by sex and urban/rural area": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "14.3",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "9.9",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "18.3",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"urban areas": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "14.0",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"rural areas": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "14.9",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "by age group": [
+                                            {"10-14 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "3.6",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"15-19 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "5.3",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"20-24 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "9.7",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"25-34 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "15.8",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"35-44 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "15.4",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"45-54 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "14.0",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"55-64 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "15.7",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ],"65 years and more": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "16.0",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "11-1-1":{
+                
+                "metadata": [
+                      {
+                                      "name": "11.1.1 Share of total population living in a dwelling with a leaking roof, damp walls, floors or foundation, or rot in window frames or floor",
+                                    
+                                      "goal": "Goal 11. Sustainable cities and communities",
+                                    
+                                      "target": "11.1 By 2030, ensure access for all to adequate, safe and affordable housing and basic services and upgrade slums",
+                                    
+                                      "definition": "Percentage of persons that declared, at least in one case, that they live in a dwelling with a leaking roof, damp walls, floors or foundation, or rot in window frames or floor.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, urban areas / rural areas",
+                                    
+                                      "methodology": "The category of households includes persons that, at least in one case, declared that they live in a dwelling with a leaking roof, damp walls, floors or foundation, or rot in window frames or floor. The questions from the EU SILC survay: untill 2014: Does your dwelling have: a leaking roof, damp walls, floors or foundation or rot in window frames or floor? since 2015: Does your dwelling have: A. a leaking roof, B. damp walls/floors/foundation, C. rot in window frames or floor?",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "urban/rural area": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "15.6",
+                                                    
+                                                        "2011" : "11.5",
+                                                    
+                                                        "2012" : "10.6",
+                                                    
+                                                        "2013" : "10.2",
+                                                    
+                                                        "2014" : "9.5",
+                                                    
+                                                        "2015" : "11.9",
+                                                    
+                                                        "2016" : "11.7",
+                                                    
+                                                        "2017" : "12.1",
+                                                    
+                                                        "2018" : "11.5"
+                                                    
+                                                    }
+                                                ],"urban areas": [
+                                                    {
+                                                    
+                                                        "2010" : "13",
+                                                    
+                                                        "2011" : "10.3",
+                                                    
+                                                        "2012" : "9.3",
+                                                    
+                                                        "2013" : "8.8",
+                                                    
+                                                        "2014" : "8.9",
+                                                    
+                                                        "2015" : "10.6",
+                                                    
+                                                        "2016" : "10.1",
+                                                    
+                                                        "2017" : "10.5",
+                                                    
+                                                        "2018" : "10.5"
+                                                    
+                                                    }
+                                                ],"rural areas": [
+                                                    {
+                                                    
+                                                        "2010" : "19.6",
+                                                    
+                                                        "2011" : "13.4",
+                                                    
+                                                        "2012" : "12.5",
+                                                    
+                                                        "2013" : "12.4",
+                                                    
+                                                        "2014" : "10.4",
+                                                    
+                                                        "2015" : "13.8",
+                                                    
+                                                        "2016" : "13.9",
+                                                    
+                                                        "2017" : "14.4",
+                                                    
+                                                        "2018" : "13.1"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "11-a-1":{
+                
+                "metadata": [
+                      {
+                                      "name": "11.a.1 Proportion of population living in gminas that have valid local spatial development plans or valid study of local spatial planning directions and determinants, by type of gminas",
+                                    
+                                      "goal": "Goal 11. Sustainable cities and communities",
+                                    
+                                      "target": "11.a Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional development planning",
+                                    
+                                      "definition": "The percentage of the population of gminas that have valid local spatial development plans (regardless of the number of plans) or valid study of local spatial planning directions and determinants in total population, and by type of gminas: rural, urban and urban-rural.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, gmina",
+                                    
+                                      "methodology": "Study of local spatial planning directions and determinants is adopted by the gmina council to determine the spatial policy, including local zoning rules, taking into account, among others, principles set out in the concept of spatial development of the country, the development strategy content and the voivodship spatial development plan, the framework study of local spatial planning of metropolitan organisation and gmina development strategies, and analysis of economic, environmental and social, demographic forecasts. The local spatial development plan is an act of local law adopted by the gmina council in accordance with the content of the study of ocal spatial planning, which specifies the purpose and the ways of developing particular areas, including public purpose investment.",
+                                    
+                                      "source": "Ministry of Infrastructure / Statistics Poland",
+                                    
+                                      "availability": "Annual data  Since 2010.",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "local spatial development plans - by type of gmina": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "96.87",
+                                                    
+                                                        "2011" : "97.19",
+                                                    
+                                                        "2012" : "97.29",
+                                                    
+                                                        "2013" : "97.48",
+                                                    
+                                                        "2014" : "97.59",
+                                                    
+                                                        "2015" : "97.78",
+                                                    
+                                                        "2016" : "97.85",
+                                                    
+                                                        "2017" : "97.98",
+                                                    
+                                                        "2018" : "98.08"
+                                                    
+                                                    }
+                                                ],"urban gminas": [
+                                                    {
+                                                    
+                                                        "2010" : "99.90",
+                                                    
+                                                        "2011" : "99.91",
+                                                    
+                                                        "2012" : "99.93",
+                                                    
+                                                        "2013" : "99.96",
+                                                    
+                                                        "2014" : "99.97",
+                                                    
+                                                        "2015" : "100.00",
+                                                    
+                                                        "2016" : "100.0",
+                                                    
+                                                        "2017" : "100.0",
+                                                    
+                                                        "2018" : "100"
+                                                    
+                                                    }
+                                                ],"rural gminas": [
+                                                    {
+                                                    
+                                                        "2010" : "90.59",
+                                                    
+                                                        "2011" : "91.66",
+                                                    
+                                                        "2012" : "91.90",
+                                                    
+                                                        "2013" : "92.42",
+                                                    
+                                                        "2014" : "92.85",
+                                                    
+                                                        "2015" : "93.32",
+                                                    
+                                                        "2016" : "93.47",
+                                                    
+                                                        "2017" : "93.63",
+                                                    
+                                                        "2018" : "94.04"
+                                                    
+                                                    }
+                                                ],"urban-rural gminas": [
+                                                    {
+                                                    
+                                                        "2010" : "98.16",
+                                                    
+                                                        "2011" : "98.22",
+                                                    
+                                                        "2012" : "98.39",
+                                                    
+                                                        "2013" : "98.54",
+                                                    
+                                                        "2014" : "98.45",
+                                                    
+                                                        "2015" : "98.64",
+                                                    
+                                                        "2016" : "98.74",
+                                                    
+                                                        "2017" : "99.12",
+                                                    
+                                                        "2018" : "99.07"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "study - by type of gmina": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "99.5",
+                                                    
+                                                        "2011" : "99.5",
+                                                    
+                                                        "2012" : "99.7",
+                                                    
+                                                        "2013" : "99.8",
+                                                    
+                                                        "2014" : "99.8",
+                                                    
+                                                        "2015" : "99.8",
+                                                    
+                                                        "2016" : "99.9",
+                                                    
+                                                        "2017" : "99.9",
+                                                    
+                                                        "2018" : "99.9"
+                                                    
+                                                    }
+                                                ],"urban gminas": [
+                                                    {
+                                                    
+                                                        "2010" : "99.8",
+                                                    
+                                                        "2011" : "99.8",
+                                                    
+                                                        "2012" : "99.9",
+                                                    
+                                                        "2013" : "100.0",
+                                                    
+                                                        "2014" : "100.0",
+                                                    
+                                                        "2015" : "100.0",
+                                                    
+                                                        "2016" : "100.0",
+                                                    
+                                                        "2017" : "100.0",
+                                                    
+                                                        "2018" : "100.0"
+                                                    
+                                                    }
+                                                ],"rural gminas": [
+                                                    {
+                                                    
+                                                        "2010" : "98.8",
+                                                    
+                                                        "2011" : "98.9",
+                                                    
+                                                        "2012" : "99.2",
+                                                    
+                                                        "2013" : "99.4",
+                                                    
+                                                        "2014" : "99.5",
+                                                    
+                                                        "2015" : "99.4",
+                                                    
+                                                        "2016" : "99.6",
+                                                    
+                                                        "2017" : "99.8",
+                                                    
+                                                        "2018" : "99.8"
+                                                    
+                                                    }
+                                                ],"urban-rural gminas": [
+                                                    {
+                                                    
+                                                        "2010" : "99.8",
+                                                    
+                                                        "2011" : "99.7",
+                                                    
+                                                        "2012" : "99.7",
+                                                    
+                                                        "2013" : "99.9",
+                                                    
+                                                        "2014" : "99.9",
+                                                    
+                                                        "2015" : "99.9",
+                                                    
+                                                        "2016" : "99.9",
+                                                    
+                                                        "2017" : "100.0",
+                                                    
+                                                        "2018" : "100.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "4-3-g":{
+                
+                "metadata": [
+                      {
+                                      "name": "4.3.g Percentage of children aged 3-5 covered by pre-primary education",
+                                    
+                                      "goal": "Goal 4. Quality education",
+                                    
+                                      "priority": "Creation of conditions for education development all over the country and equalization of educational opportunities",
+                                    
+                                      "definition": "Share of children aged 3-5 covered by pre-primary education in the number of population in the same age group.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, urban, rural areas",
+                                    
+                                      "methodology": " Pre-primary education represents the first stage of education in the education system. Pre-primary education establishments provide children with care and are aimed to prepare them for school education. Children to be taken care of in pre-primary schools, pre-primary sections of primary schools and (since the 2008/09 school year) in pre-primary education groups and pre-primary points. Since September 1, 2011, there has been introduced an obligatory one-year preparation period for children aged 5 in pre-primary education establishments i.e. in pre-primary sections of primary schools and pre-primary establishments schools (including special schools and special pre-primary establishments schools), as well as in pre-primary education groups and pre-primary points. Obligatory pre-primary education starts at the beginning of the school year in the calendar year in which a child turns 5. Data concerning pre-primary education are presented as of 30 September; since 2013/14 school year, including children staying in the units performing health care activities throughout the school year. Since 2007, data have been compiled on the basis of the Educational Information System, administered by the Ministry of National Education.",
+                                    
+                                      "source": "The Ministry of National Education / Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": "Data regarding the population as of 31 December were compiled assuming the balanced number of population: since 2010, on the basis of the results of the National Population and Housing Census 2011 (for 2010, the administrative structure as of 31 December 2011 was applied)."
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "urban/rural area": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "62.6",
+                                                    
+                                                        "2011" : "69.2",
+                                                    
+                                                        "2012" : "69.7",
+                                                    
+                                                        "2013" : "74.1",
+                                                    
+                                                        "2014" : "79.4",
+                                                    
+                                                        "2015" : "84.2",
+                                                    
+                                                        "2016" : "81.1",
+                                                    
+                                                        "2017" : "84.7",
+                                                    
+                                                        "2018" : "87.3"
+                                                    
+                                                    }
+                                                ],"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "78.8",
+                                                    
+                                                        "2011" : "84.0",
+                                                    
+                                                        "2012" : "83.7",
+                                                    
+                                                        "2013" : "87.6",
+                                                    
+                                                        "2014" : "92.9",
+                                                    
+                                                        "2015" : "98.1",
+                                                    
+                                                        "2016" : "95.3",
+                                                    
+                                                        "2017" : "99.3",
+                                                    
+                                                        "2018" : "101.9"
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "41.0",
+                                                    
+                                                        "2011" : "49.3",
+                                                    
+                                                        "2012" : "50.8",
+                                                    
+                                                        "2013" : "55.7",
+                                                    
+                                                        "2014" : "60.8",
+                                                    
+                                                        "2015" : "65.1",
+                                                    
+                                                        "2016" : "61.6",
+                                                    
+                                                        "2017" : "64.5",
+                                                    
+                                                        "2018" : "67.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              }}
+  ]
+}

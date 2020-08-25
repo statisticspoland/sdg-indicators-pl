@@ -1,0 +1,1239 @@
+
+{
+  "płeć_k": [
+      {
+          "2-7-a":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "2.7.a Odsetek osób w wieku 18 lat i więcej cierpiących na otyłość",
+                                    
+                                      "cel": "Cel 2. Zero głodu",
+                                    
+                                      "priorytet": "Promocja zdrowego stylu życia, w tym m.in. zdrowego odżywiania się zarówno wśród dorosłych, jak i dzieci (zmniejszenie odsetka osób z nadwagą i otyłością)",
+                                    
+                                      "definicja": "Odsetek osób w wieku 18 lat i więcej o wartości wskaźnika masy ciała (BMI) wynoszącym 30 lub więcej.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "płeć",
+                                    
+                                      "metodologia": "Otyłość to nadmierne nagromadzenie tkanki tłuszczowej, stanowiące zagrożenie dla zdrowia. Miernikiem najpowszechniej stosowanym do rozpoznania i oceny stopnia otyłości jest wskaźnik masy ciała BMI (body mass index). Otyłość u osób dorosłych diagnozowana jest przy wartości BMI 30,0 kg/m2. Wskaźnik masy ciała BMI (body mass index) oblicza się dzieląc masę ciała (kg) przez wzrost do kwadratu (m2). Klasyfikacja otyłości dla osób dorosłych powyżej 20 roku życia wg WHO w oparciu o BMI:   18,5-24,9 - norma, 25,0-29,9 - nadwaga, 30,0-34,9 - otyłość I stopnia, 35,0-39,9 - otyłość II stopnia, >=40,0 - otyłość III stopnia (olbrzymia).  Przedziały wartości dla BMI określono na podstawie wpływu otyłości na stan zdrowia. BMI jest wskaźnikiem ryzyka wystąpienia chorób i przedwczesnych zgonów; wraz ze wzrostem BMI rośnie zagrożenie dla zdrowia. Skutki otyłości obejmują przede wszystkim: przedwczesną umieralność, choroby układu krążenia, nadciśnienie tętnicze, chorobę zwyrodnieniową stawów, nowotwory oraz cukrzycę.",
+                                    
+                                      "zrodlo": "Światowa Organizacja Zdrowia",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg płci": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "22.5",
+                                                    
+                                                        "2011" : "22.9",
+                                                    
+                                                        "2012" : "23.4",
+                                                    
+                                                        "2013" : "24.0",
+                                                    
+                                                        "2014" : "24.5",
+                                                    
+                                                        "2015" : "25.0",
+                                                    
+                                                        "2016" : "25.6",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "21.6",
+                                                    
+                                                        "2011" : "22.2",
+                                                    
+                                                        "2012" : "22.8",
+                                                    
+                                                        "2013" : "23.4",
+                                                    
+                                                        "2014" : "24.1",
+                                                    
+                                                        "2015" : "24.7",
+                                                    
+                                                        "2016" : "25.4",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : ""
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "23.3",
+                                                    
+                                                        "2011" : "23.7",
+                                                    
+                                                        "2012" : "24.0",
+                                                    
+                                                        "2013" : "24.4",
+                                                    
+                                                        "2014" : "24.9",
+                                                    
+                                                        "2015" : "25.3",
+                                                    
+                                                        "2016" : "25.7",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-1-a":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "3.1.a Oczekiwane lata życia w zdrowiu mężczyzn",
+                                    
+                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                                    
+                                      "priorytet": "Zmniejszenie zapadalności na choroby cywilizacyjne i umieralności z ich powodu",
+                                    
+                                      "definicja": "Średnia liczba lat, w których dana osoba może żyć w pełnym zdrowiu, uwzględniając lata przeżyte w pogorszonym stanie zdrowia spowodowanym chorobą i/lub urazem.",
+                                    
+                                      "jednostka": "lata",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Dane dotyczące przeciętnego trwania życia w zdrowiu pochodzą z badania ankietowego EU-SILC - Europejskiego Badania Warunków Życia Ludności (dział 7. Zdrowie - kwestionariusza indywidualnego EU-SILC). Badaniem objęte są osoby dorosłe w wieku 16 lat i więcej w gospodarstwach domowych.   Europejskie Badanie Warunków Życia Ludności (EU-SILC) jest instrumentem mającym na celu dostarczenie aktualnych i porównywalnych na poziomie krajów członkowskich danych dotyczących dochodów, ubóstwa, wykluczenia społecznego, warunków życia i oceny stanu zdrowia.  Jest to badanie ankietowe prowadzone corocznie (panelowe w cyklu czteroletnim co stwarza możliwość analizowania zmian, jakie zachodzą w czasie w zakresie objętych badaniem zjawisk społecznych). Organizacja i metodologia badania jest regulowana Rozporządzeniem Parlamentu Europejskiego i Rady nr 1177/2003 w zakresie statystyki dochodów i warunków życia ludności. Badanie EU-SILC w Unii Europejskiej wdrażano w latach 2004-2007, a w Polsce jest prowadzone od 2005 r.  Metoda badania - Badanie EU-SILC jest dobrowolnym, reprezentacyjnym badaniem ankietowym prywatnych gospodarstw domowych, realizowanym techniką bezpośredniego wywiadu z respondentem. W przypadku wywiadu indywidualnego dopuszcza się realizację tzw. wywiadu zastępczego przeprowadzonego z inną osobą z gospodarstwa domowego, która może udzielić wiarygodnych informacji o osobie objętej badaniem (dotyczy to osób zaliczonych do składu gospodarstwa domowego, a nieobecnych w miejscu zamieszkania w okresie trwania badania).  Wskaźnik (HLY) służy do mierzenia długości życia, w której człowiek zachowuje pełnię zdrowia. Łączy on informacje dot. śmiertelności (wiek zgonów) oraz podatności na zachorowania (specyficzne proporcje wieku ludzi w dobrym i złym stanie zdrowia). Dobry stan zdrowia jest określony przez brak ograniczeń wynikających z codziennego funkcjonowania/niepełnosprawności. Wskaźnik HLY jest obliczany osobno dla mężczyzn i kobiet.  Wskaźnik lat przeżytych w zdrowiu - Healthy Life Years (HLY) jest jedynym z europejskich wskaźników strukturalnych (European Structural Indicators) i dotyczy on zdrowia jako czynnika związanego z rozwojem i dobrobytem.  HLY został opracowany, jako efekt obserwacji, że nie wszystkie lata, określane przez oczekiwaną długość życia - są przeżywane w pełnym zdrowiu.  Poziom wskaźnika HLY - tak jak inne miary oczekiwanego stanu zdrowia - oblicza się przy pomocy metody Sullivana, używanej powszechnie od lat 70. Metoda ta opiera się na dwóch miarach częstości występowania niepełnosprawności w populacji w określonym wieku (self-perceived disability) oraz umieralności (mortality tables).",
+                                    
+                                      "zrodlo": "Eurostat",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "58.5",
+                                        
+                                            "2011" :   "59.1",
+                                        
+                                            "2012" :   "59.1",
+                                        
+                                            "2013" :   "59.2",
+                                        
+                                            "2014" :   "59.8",
+                                        
+                                            "2015" :   "60.1",
+                                        
+                                            "2016" :   "61.3",
+                                        
+                                            "2017" :   "60.6",
+                                        
+                                            "2018" :   "60.5"
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },
+          "3-1-b":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "3.1.b Oczekiwane lata życia w zdrowiu kobiet",
+                                    
+                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                                    
+                                      "priorytet": "Zmniejszenie zapadalności na choroby cywilizacyjne i umieralności z ich powodu",
+                                    
+                                      "definicja": "Średnia liczba lat, w których dana osoba może żyć w pełnym zdrowiu, uwzględniając lata przeżyte w pogorszonym stanie zdrowia spowodowanym chorobą i / lub urazem.",
+                                    
+                                      "jednostka": "lata",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Dane dotyczące przeciętnego trwania życia w zdrowiu pochodzą z badania ankietowego EU-SILC - Europejskiego Badania Warunków Życia Ludności (dział 7. Zdrowie - kwestionariusza indywidualnego EU-SILC). Badaniem objęte są osoby dorosłe w wieku 16 lat i więcej w gospodarstwach domowych.   Europejskie Badanie Warunków Życia Ludności (EU-SILC) jest instrumentem mającym na celu dostarczenie aktualnych i porównywalnych na poziomie krajów członkowskich danych dotyczących dochodów, ubóstwa, wykluczenia społecznego, warunków życia i oceny stanu zdrowia.  Jest to badanie ankietowe prowadzone corocznie (panelowe w cyklu czteroletnim co stwarza możliwość analizowania zmian, jakie zachodzą w czasie w zakresie objętych badaniem zjawisk społecznych). Organizacja i metodologia badania jest regulowana Rozporządzeniem Parlamentu Europejskiego i Rady nr 1177/2003 w zakresie statystyki dochodów i warunków życia ludności. Badanie EU-SILC w Unii Europejskiej wdrażano w latach 2004-2007, a w Polsce jest prowadzone od 2005 r.  Metoda badania - Badanie EU-SILC jest dobrowolnym, reprezentacyjnym badaniem ankietowym prywatnych gospodarstw domowych, realizowanym techniką bezpośredniego wywiadu z respondentem. W przypadku wywiadu indywidualnego dopuszcza się realizację tzw. wywiadu zastępczego przeprowadzonego z inną osobą z gospodarstwa domowego, która może udzielić wiarygodnych informacji o osobie objętej badaniem (dotyczy to osób zaliczonych do składu gospodarstwa domowego, a nieobecnych w miejscu zamieszkania w okresie trwania badania).  Wskaźnik (HLY) służy do mierzenia długości życia, w której człowiek zachowuje pełnię zdrowia. Łączy on informacje dot. śmiertelności (wiek zgonów) oraz podatności na zachorowania (specyficzne proporcje wieku ludzi w dobrym i złym stanie zdrowia). Dobry stan zdrowia jest określony przez brak ograniczeń wynikających z codziennego funkcjonowania/niepełnosprawności. Wskaźnik HLY jest obliczany osobno dla mężczyzn i kobiet.  Wskaźnik lat przeżytych w zdrowiu - Healthy Life Years (HLY) jest jedynym z europejskich wskaźników strukturalnych (European Structural Indicators) i dotyczy on zdrowia jako czynnika związanego z rozwojem i dobrobytem.  HLY został opracowany, jako efekt obserwacji, że nie wszystkie lata, określane przez oczekiwaną długość życia - są przeżywane w pełnym zdrowiu.  Poziom wskaźnika HLY - tak jak inne miary oczekiwanego stanu zdrowia - oblicza się przy pomocy metody Sullivana, używanej powszechnie od lat 70. Metoda ta opiera się na dwóch miarach częstości występowania niepełnosprawności w populacji w określonym wieku (self-perceived disability) oraz umieralności (mortality tables).",
+                                    
+                                      "zrodlo": "Eurostat",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "62.3",
+                                        
+                                            "2011" :   "63.2",
+                                        
+                                            "2012" :   "62.8",
+                                        
+                                            "2013" :   "62.7",
+                                        
+                                            "2014" :   "62.7",
+                                        
+                                            "2015" :   "63.2",
+                                        
+                                            "2016" :   "64.6",
+                                        
+                                            "2017" :   "63.5",
+                                        
+                                            "2018" :   "64.3"
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },
+          "3-4-a":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "3.4.a Odsetek kobiet w wieku 15 lat i więcej, którym kiedykolwiek wykonano badanie mammograficzne",
+                                    
+                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                                    
+                                      "priorytet": "Zwiększenie wykrywalności chorób we wczesnych stadiach rozwojowych",
+                                    
+                                      "definicja": "Odsetek kobiet w wieku 15 lat i więcej, którym kiedykolwiek wykonano badanie mammograficzne.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Dane pochodzą z Europejskiego Ankietowego Badania Zdrowia (European Health Interview Survey - EHIS), powtarzanego co 5 lat. Wyniki badania umożliwiają poznanie sytuacji zdrowotnej mieszkańców Unii oraz jej uwarunkowań w powiązaniu z charakterystyką demograficzno-społeczną oraz miejscem zamieszkania. Badanie obejmuje cztery obszary:  stan zdrowia (m.in. samoocena stanu zdrowia, choroby przewlekłe, ograniczenia w funkcjonowaniu i ich wpływ na życie codzienne, samopoczucie psychiczne), opieka zdrowotna (korzystanie z opieki medycznej, stosowanie leków, profilaktyka), determinanty zdrowia (głównie styl życia i narażenie na niekorzystne czynniki środowiskowe) oraz charakterystyka demograficzno-społeczna osób i gospodarstw domowych. ",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane co 5 lat; od 2010 r.",
+                                    
+                                      "uwagi": "Dane zaprezentowane dla 2010 r. dotyczą badania przeprowadzonego w 2009 r."
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "40.7",
+                                        
+                                            "2011" :   "",
+                                        
+                                            "2012" :   "",
+                                        
+                                            "2013" :   "",
+                                        
+                                            "2014" :   "47.2",
+                                        
+                                            "2015" :   "",
+                                        
+                                            "2016" :   "",
+                                        
+                                            "2017" :   "",
+                                        
+                                            "2018" :   ""
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },
+          "3-4-b":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "3.4.b Odsetek kobiet w wieku 15 lat i więcej, którym kiedykolwiek wykonano badanie cytologiczne",
+                                    
+                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                                    
+                                      "priorytet": "Zwiększenie wykrywalności chorób we wczesnych stadiach rozwojowych",
+                                    
+                                      "definicja": "Odsetek kobiet w wieku 15 lat i więcej, którym kiedykolwiek wykonano badanie cytologiczne.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Dane pochodzą z Europejskiego Ankietowego Badania Zdrowia (European Health Interview Survey - EHIS), powtarzanego co 5 lat. Wyniki badania umożliwiają poznanie sytuacji zdrowotnej mieszkańców Unii oraz jej uwarunkowań w powiązaniu z charakterystyką demograficzno-społeczną oraz miejscem zamieszkania. Badanie obejmuje cztery obszary:  stan zdrowia (m.in. samoocena stanu zdrowia, choroby przewlekłe, ograniczenia w funkcjonowaniu i ich wpływ na życie codzienne, samopoczucie psychiczne), opieka zdrowotna (korzystanie z opieki medycznej, stosowanie leków, profilaktyka), determinanty zdrowia (głównie styl życia i narażenie na niekorzystne czynniki środowiskowe) oraz charakterystyka demograficzno-społeczna osób i gospodarstw domowych. ",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane co 5 lat; od 2010 r.",
+                                    
+                                      "uwagi": "Dane zaprezentowane dla 2010 r. dotyczą badania przeprowadzonego w 2009 r."
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "79.3",
+                                        
+                                            "2011" :   "",
+                                        
+                                            "2012" :   "",
+                                        
+                                            "2013" :   "",
+                                        
+                                            "2014" :   "85.4",
+                                        
+                                            "2015" :   "",
+                                        
+                                            "2016" :   "",
+                                        
+                                            "2017" :   "",
+                                        
+                                            "2018" :   ""
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },
+          "3-4-c":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "3.4.c Odsetek mężczyzn w wieku 40 lat i więcej, którym kiedykolwiek wykonano lekarskie badanie prostaty ",
+                                    
+                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                                    
+                                      "priorytet": "Zwiększenie wykrywalności chorób we wczesnych stadiach rozwojowych",
+                                    
+                                      "definicja": "Odsetek mężczyzn w wieku 40 lat i więcej, którym kiedykolwiek wykonano lekarskie badanie prostaty.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Dane pochodzą z Europejskiego Ankietowego Badania Zdrowia (European Health Interview Survey - EHIS), powtarzanego co 5 lat. Wyniki badania umożliwiają poznanie sytuacji zdrowotnej mieszkańców Unii oraz jej uwarunkowań w powiązaniu z charakterystyką demograficzno-społeczną oraz miejscem zamieszkania. Badanie obejmuje cztery obszary:  stan zdrowia (m.in. samoocena stanu zdrowia, choroby przewlekłe, ograniczenia w funkcjonowaniu i ich wpływ na życie codzienne, samopoczucie psychiczne), opieka zdrowotna (korzystanie z opieki medycznej, stosowanie leków, profilaktyka), determinanty zdrowia (głównie styl życia i narażenie na niekorzystne czynniki środowiskowe) oraz charakterystyka demograficzno-społeczna osób i gospodarstw domowych. ",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane co 5 lat; od 2010 r.",
+                                    
+                                      "uwagi": "Dane zaprezentowane dla 2010 r. dotyczą badania przeprowadzonego w 2009 r."
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "",
+                                        
+                                            "2011" :   "",
+                                        
+                                            "2012" :   "",
+                                        
+                                            "2013" :   "",
+                                        
+                                            "2014" :   "34.5",
+                                        
+                                            "2015" :   "",
+                                        
+                                            "2016" :   "",
+                                        
+                                            "2017" :   "",
+                                        
+                                            "2018" :   ""
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },
+          "5-1-a":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "5.1.a Zróżnicowanie wynagrodzeń kobiet i mężczyzn (luka płacowa)",
+                                    
+                                      "cel": "Cel 5. Równość płci",
+                                    
+                                      "priorytet": "Pełniejsza realizacja zasady równości kobiet i mężczyzn",
+                                    
+                                      "definicja": "Różnica między średnim wynagrodzeniem brutto na godzinę mężczyzn i kobiet wyrażona jako odsetek średniego wynagrodzenia brutto na godzinę mężczyzn.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Dane dotyczą przedsiębiorstw o liczbie pracujących 10 i więcej osób według:  - PKD 2007 (sekcje B do S z wyłączeniem sekcji O),  - do 2008 r. - PKD 2004 (sekcje C do O z wyłączeniem sekcji L). Wskaźnik jest obliczany w ramach zebranych danych zgodnie z metodologią struktury zarobków -Rozporządzenie Rady (WE) Nr 530/1999 z dnia 9 marca 1999 r. dotyczące statystyk strukturalnychodnoszących się do zarobków i kosztów pracy.",
+                                    
+                                      "zrodlo": "Eurostat",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "4.5",
+                                        
+                                            "2011" :   "5.5",
+                                        
+                                            "2012" :   "6.4",
+                                        
+                                            "2013" :   "7.1",
+                                        
+                                            "2014" :   "7.7",
+                                        
+                                            "2015" :   "7.4",
+                                        
+                                            "2016" :   "7.2",
+                                        
+                                            "2017" :   "7.2",
+                                        
+                                            "2018" :   "8.8"
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },
+          "5-1-b":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "5.1.b Luka w zatrudnieniu kobiet i mężczyzn (w wieku 25-54 lata)",
+                                    
+                                      "cel": "Cel 5. Równość płci",
+                                    
+                                      "priorytet": "Pełniejsza realizacja zasady równości kobiet i mężczyzn",
+                                    
+                                      "definicja": "Różnica między wskaźnikami zatrudnienia mężczyzn i kobiet w wieku 25-54 lata.",
+                                    
+                                      "jednostka": "p.proc.",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Wskaźnik zatrudnienia jest to udział pracujących danej kategorii w ogólnej liczbie ludności danej kategorii. Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym. Badanie prowadzone jest metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15 lat i więcej będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Do pracujących zaliczane są wszystkie osoby w wieku 15 lat i wiecej, które w okresie badanego tygodnia:  1) wykonywały przez co najmniej 1 godzinę pracę przynoszącą dochód lub zarobek, tzn. były zatrudnione w charakterze pracownika najemnego, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem,  2) miały pracę, ale jej nie wykonywały (np. z powodu choroby, urlopu macierzyńskiego lub wypoczynkowego, przerwy w działalności zakładu), w przypadku gdy przerwa w pracy wynosiła mniej niż 3 miesiące; gdy przerwa w pracy wynosiła powyżej 3 miesięcy w odniesieniu do pracowników najemnych dodatkowym kryterium było otrzymywanie co najmniej 50% dotychczasowego wynagrodzenia. Zgodnie z międzynarodowymi standardami, do pracujących zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Ze względu na przyjęte założenia metodologiczne badania, liczba pracujących uzyskana w wyniku BAEL nie obejmuje niektórych kategorii osób, które są wliczane do pracujących w sprawozdawczości z zakresu zatrudnienia, m.in.:  a) pracujących, mieszkających w hotelach pracowniczych,  b) pracujących za granicą na rzecz polskich pracodawców.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "10.8",
+                                        
+                                            "2011" :   "11.5",
+                                        
+                                            "2012" :   "11.4",
+                                        
+                                            "2013" :   "11.5",
+                                        
+                                            "2014" :   "11.2",
+                                        
+                                            "2015" :   "11.0",
+                                        
+                                            "2016" :   "11.6",
+                                        
+                                            "2017" :   "12.0",
+                                        
+                                            "2018" :   "11.6",
+                                        
+                                            "2019" :   "12.8"
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },
+          "5-1-c":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "5.1.c Udział kobiet w ogólnej liczbie osób zatrudnionych na stanowiskach wyższego szczebla",
+                                    
+                                      "cel": "Cel 5. Równość płci",
+                                    
+                                      "priorytet": "Pełniejsza realizacja zasady równości kobiet i mężczyzn",
+                                    
+                                      "definicja": "Wskaźnik określa procentowy udział kobiet w ogólnej liczbie osób zatrudnionych jako przedstawiciele władz publicznych, wyżsi urzędnicy i kierownicy.  Za pracowników zatrudnionych należy uznać osoby, które przepracowały w badanych jednostkach cały miesiąc październik danego roku w pełnym lub niepełnym wymiarze czasu pracy, obowiązującym w danym zakładzie pracy lub na danym stanowisku.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Wskaźnik obliczany jest na podstawie informacji uzyskanych z badania struktury wynagrodzeń według zawodów. Badanie struktury wynagrodzeń według zawodów jest badaniem realizowanym co dwa lata metodą reprezentacyjną, obejmuje podmioty gospodarki narodowej o liczbie pracujących powyżej 9 osób. Dane obejmują osoby pełnozatrudnione oraz niepełnozatrudnione, które przepracowały cały miesiąc październik danego roku, w którym jest realizowane badanie. Badanie nie obejmuje: uczniów, osób wykonujących pracę nakładczą (chałupniczą), słuchaczy szkół odbywających praktykę wakacyjną lub dyplomową, uczestników grup roboczych zorganizowanych przez inne jednostki i delegowanych do pracy w jednostce sprawozdawczej, np. żołnierzy, uczestników hufców pracy, osób skazanych; a ponadto osób korzystających z urlopów macierzyńskich, wychowawczych oraz osób skierowanych do szkół stacjonarnych, na studia doktoranckie, itp., zatrudnionych przy pracach interwencyjnych i robotach publicznych, osób przebywających na zwolnieniach lekarskich. Dane dotyczące udziału kobiet w ogólnej liczbie osób zatrudnionych na stanowiskach wyższego szczebla dotyczą kobiet zatrudnionych w jednej z dziewięciu tzw. ,,wielkich,, grup zawodów (zgodnie z ,,Klasyfikacją zawodów i specjalności,, - ISCO-08), tj. w grupie przedstawicieli władz publicznych, wyższych urzędników i kierowników. Pozostałymi ,,wielkimi,, grupami zawodów są:  Specjaliści Technicy i inny średni personel Pracownicy biurowi Pracownicy usług i sprzedawcy Rolnicy, ogrodnicy, leśnicy i rybacy Robotnicy przemysłowi i rzemieślnicy Operatorzy i monterzy maszyn i urządzeń Pracownicy wykonujący prace proste ",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane co dwa lata; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "przedstawiciele władz publicznych oraz wyżsi urzędnicy i kierownicy": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "45.3",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "45.2",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "45.3",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "45.8",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "46.3"
+                                                    
+                                                    }
+                                                ],"przedstawiciele władz publicznych oraz wyżsi urzędnicy i dyrektorzy generalni": [
+                                                    {
+                                                    
+                                                        "2010" : "27.6",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "28.2",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "28.6",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "28.8",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "30.8"
+                                                    
+                                                    }
+                                                ],"przedstawiciele władz publicznych i wyżsi urzędnicy": [
+                                                    {
+                                                    
+                                                        "2010" : "45.3",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "41.9",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "42.3",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "40.3",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "41.4"
+                                                    
+                                                    }
+                                                ],"dyrektorzy generalni i zarządzający": [
+                                                    {
+                                                    
+                                                        "2010" : "25.4",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "26.9",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "27.3",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "27.8",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "29.8"
+                                                    
+                                                    }
+                                                ],"kierownicy do spraw zarządzania i handlu": [
+                                                    {
+                                                    
+                                                        "2010" : "60.7",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "59.2",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "58.7",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "57.3",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "56.8"
+                                                    
+                                                    }
+                                                ],"kierownicy do spraw produkcji i usług": [
+                                                    {
+                                                    
+                                                        "2010" : "38.3",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "37.3",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "36.4",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "36.7",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "36.1"
+                                                    
+                                                    }
+                                                ],"kierownicy w branży hotelarskiej i handlu oraz innych branżach usługowych": [
+                                                    {
+                                                    
+                                                        "2010" : "55.5",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "58.7",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "61.1",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "63.7",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "65.7"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "5-3-a":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "5.3.a Wskaźnik zatrudnienia kobiet z najmłodszym dzieckiem w wieku do 5 lat wg BAEL",
+                                    
+                                      "cel": "Cel 5. Równość płci",
+                                    
+                                      "priorytet": "Zapewnienie warunków dla powrotu kobiet na rynek pracy po przerwie z tytułu urodzenia i opieki nad dzieckiem",
+                                    
+                                      "definicja": "Udział pracujących kobiet z najmłodszym dzieckiem w wieku do 5 lat w ogólnej liczbie kobiet znajmłodszym dzieckiem w wieku do 5 lat.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL),prowadzonego w cyklu kwartalnym. Badanie prowadzone jest metodą obserwacji ciągłej (ruchomytydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału.Badaniem objęte są osoby w wieku 15 lat i więcej będące członkami gospodarstw domowych wwylosowanych mieszkaniach. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardamiogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernychzawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo.Do pracujących zaliczane są wszystkie osoby w wieku 15 lat i wiecej, które w okresie badanego tygodnia: 1) wykonywały przez co najmniej 1 godzinę pracę przynoszącą dochód lub zarobek, tzn. byłyzatrudnione w charakterze pracownika najemnego, pracowały we własnym (lub dzierżawionym)gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały(bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalnościgospodarczej poza rolnictwem, 2) miały pracę, ale jej nie wykonywały (np. z powodu choroby, urlopu macierzyńskiego lubwypoczynkowego, przerwy w działalności zakładu), w przypadku gdy przerwa w pracy wynosiła mniejniż 3 miesiące; gdy przerwa w pracy wynosiła powyżej 3 miesięcy w odniesieniu do pracownikównajemnych dodatkowym kryterium było otrzymywanie co najmniej 59% dotychczasowegowynagrodzenia. Zgodnie z międzynarodowymi standardami, do pracujących zaliczani są również uczniowie, z którymizakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonejpracy, jeżeli otrzymywali wynagrodzenie. Ze względu na przyjęte założenia metodologiczne badania, liczba pracujących uzyskana w wynikuBAEL nie obejmuje niektórych kategorii osób, które są wliczane do pracujących w sprawozdawczości zzakresu zatrudnienia, m.in.: a) pracujących, mieszkających w hotelach pracowniczych, b) pracujących za granicą na rzecz polskich pracodawców.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "58.5",
+                                        
+                                            "2011" :   "57.7",
+                                        
+                                            "2012" :   "58.3",
+                                        
+                                            "2013" :   "59.1",
+                                        
+                                            "2014" :   "61.8",
+                                        
+                                            "2015" :   "64.1",
+                                        
+                                            "2016" :   "63.0",
+                                        
+                                            "2017" :   "63.4",
+                                        
+                                            "2018" :   "62.4",
+                                        
+                                            "2019" :   "62.5"
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },
+          "8-3-a":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "8.3.a Wskaźnik zatrudnienia osób w wieku 15 lat i więcej (wg BAEL)",
+                                    
+                                      "cel": "Cel 8. Wzrost gospodarczy i godna praca",
+                                    
+                                      "priorytet": "Zwiększanie wskaźnika zatrudnienia",
+                                    
+                                      "definicja": "Udział pracujących w liczbie ludności ogółem.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem, płeć, grupy wieku",
+                                    
+                                      "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym. Badanie prowadzone jest metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15 lat i więcej będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernychzawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Do pracujących zaliczane są wszystkie osoby w wieku 15 lat i wiecej, które w okresie badanego tygodnia: 1) wykonywały przez co najmniej 1 godzinę pracę przynoszącą dochód lub zarobek, tzn. były zatrudnione w charakterze pracownika najemnego, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem,2) miały pracę, ale jej nie wykonywały (np. z powodu choroby, urlopu macierzyńskiego lub wypoczynkowego, przerwy w działalności zakładu), w przypadku gdy przerwa w pracy wynosiła mniej niż 3 miesiące; gdy przerwa w pracy wynosiła powyżej 3 miesięcy w odniesieniu do pracowników najemnych dodatkowym kryterium było otrzymywanie co najmniej 50% dotychczasowego wynagrodzenia. Zgodnie z międzynarodowymi standardami, do pracujących zaliczani są również uczniowie, z ktrymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Ze względu na przyjęte założenia metodologiczne badania, liczba pracujących uzyskana w wyniku BAEL nie obejmuje niektórych kategorii osób, które są wliczane do pracujących w sprawozdawczości z zakresu zatrudnienia, m.in.:a) pracujących, mieszkających w hotelach pracowniczych,b) pracujących za granicą na rzecz polskich pracodawców.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne;od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg płci": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "50.0",
+                                                    
+                                                        "2011" : "50.2",
+                                                    
+                                                        "2012" : "50.2",
+                                                    
+                                                        "2013" : "50.2",
+                                                    
+                                                        "2014" : "51.2",
+                                                    
+                                                        "2015" : "51.9",
+                                                    
+                                                        "2016" : "52.8",
+                                                    
+                                                        "2017" : "53.7",
+                                                    
+                                                        "2018" : "54.2",
+                                                    
+                                                        "2019" : "54.4"
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "57.8",
+                                                    
+                                                        "2011" : "58.3",
+                                                    
+                                                        "2012" : "58.2",
+                                                    
+                                                        "2013" : "58.2",
+                                                    
+                                                        "2014" : "59.2",
+                                                    
+                                                        "2015" : "59.8",
+                                                    
+                                                        "2016" : "60.9",
+                                                    
+                                                        "2017" : "62.0",
+                                                    
+                                                        "2018" : "62.4",
+                                                    
+                                                        "2019" : "63.0"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "42.8",
+                                                    
+                                                        "2011" : "42.8",
+                                                    
+                                                        "2012" : "42.9",
+                                                    
+                                                        "2013" : "42.8",
+                                                    
+                                                        "2014" : "43.8",
+                                                    
+                                                        "2015" : "44.7",
+                                                    
+                                                        "2016" : "45.3",
+                                                    
+                                                        "2017" : "46.1",
+                                                    
+                                                        "2018" : "46.6",
+                                                    
+                                                        "2019" : "46.4"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "wg grup wieku": [
+                                            {"15-24 lata": [
+                                                    {
+                                                    
+                                                        "2010" : "26.4",
+                                                    
+                                                        "2011" : "24.9",
+                                                    
+                                                        "2012" : "24.7",
+                                                    
+                                                        "2013" : "24.2",
+                                                    
+                                                        "2014" : "25.8",
+                                                    
+                                                        "2015" : "26.0",
+                                                    
+                                                        "2016" : "28.4",
+                                                    
+                                                        "2017" : "29.6",
+                                                    
+                                                        "2018" : "31.0",
+                                                    
+                                                        "2019" : "31.7"
+                                                    
+                                                    }
+                                                ],"15-64 lata": [
+                                                    {
+                                                    
+                                                        "2010" : "58.9",
+                                                    
+                                                        "2011" : "59.3",
+                                                    
+                                                        "2012" : "59.7",
+                                                    
+                                                        "2013" : "60.0",
+                                                    
+                                                        "2014" : "61.7",
+                                                    
+                                                        "2015" : "62.9",
+                                                    
+                                                        "2016" : "64.5",
+                                                    
+                                                        "2017" : "66.1",
+                                                    
+                                                        "2018" : "67.4",
+                                                    
+                                                        "2019" : "68.2"
+                                                    
+                                                    }
+                                                ],"20-24 lata": [
+                                                    {
+                                                    
+                                                        "2010" : "44.7",
+                                                    
+                                                        "2011" : "42.3",
+                                                    
+                                                        "2012" : "41.9",
+                                                    
+                                                        "2013" : "41.0",
+                                                    
+                                                        "2014" : "43.8",
+                                                    
+                                                        "2015" : "44.5",
+                                                    
+                                                        "2016" : "48.4",
+                                                    
+                                                        "2017" : "50.7",
+                                                    
+                                                        "2018" : "53.5",
+                                                    
+                                                        "2019" : "55.5"
+                                                    
+                                                    }
+                                                ],"20-64 lata": [
+                                                    {
+                                                    
+                                                        "2010" : "64.3",
+                                                    
+                                                        "2011" : "64.5",
+                                                    
+                                                        "2012" : "64.7",
+                                                    
+                                                        "2013" : "64.9",
+                                                    
+                                                        "2014" : "66.5",
+                                                    
+                                                        "2015" : "67.8",
+                                                    
+                                                        "2016" : "69.3",
+                                                    
+                                                        "2017" : "70.9",
+                                                    
+                                                        "2018" : "72.2",
+                                                    
+                                                        "2019" : "73.0"
+                                                    
+                                                    }
+                                                ],"50 i więcej": [
+                                                    {
+                                                    
+                                                        "2010" : "30.3",
+                                                    
+                                                        "2011" : "31.2",
+                                                    
+                                                        "2012" : "31.5",
+                                                    
+                                                        "2013" : "31.6",
+                                                    
+                                                        "2014" : "32.1",
+                                                    
+                                                        "2015" : "32.5",
+                                                    
+                                                        "2016" : "32.6",
+                                                    
+                                                        "2017" : "33.2",
+                                                    
+                                                        "2018" : "32.9",
+                                                    
+                                                        "2019" : "32.6"
+                                                    
+                                                    }
+                                                ],"55-64 lata": [
+                                                    {
+                                                    
+                                                        "2010" : "34.1",
+                                                    
+                                                        "2011" : "36.9",
+                                                    
+                                                        "2012" : "38.7",
+                                                    
+                                                        "2013" : "40.6",
+                                                    
+                                                        "2014" : "42.5",
+                                                    
+                                                        "2015" : "44.3",
+                                                    
+                                                        "2016" : "46.1",
+                                                    
+                                                        "2017" : "48.3",
+                                                    
+                                                        "2018" : "48.9",
+                                                    
+                                                        "2019" : "49.5"
+                                                    
+                                                    }
+                                                ],"65-69 lat": [
+                                                    {
+                                                    
+                                                        "2010" : "9.4",
+                                                    
+                                                        "2011" : "9.4",
+                                                    
+                                                        "2012" : "9.5",
+                                                    
+                                                        "2013" : "9.4",
+                                                    
+                                                        "2014" : "9.7",
+                                                    
+                                                        "2015" : "9.5",
+                                                    
+                                                        "2016" : "9.9",
+                                                    
+                                                        "2017" : "11.0",
+                                                    
+                                                        "2018" : "10.5",
+                                                    
+                                                        "2019" : "10.8"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "8-5-a":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "8.5.a Wskaźnik zatrudnienia kobiet z najmłodszym dzieckiem w wieku do 5 lat wg BAEL",
+                                    
+                                      "cel": "Cel 8. Wzrost gospodarczy i godna praca",
+                                    
+                                      "priorytet": "Zwiększenie elastyczności w odniesieniu do metod organizacji i świadczenia pracy",
+                                    
+                                      "definicja": "Udział pracujących kobiet z najmłodszym dzieckiem w wieku do 5 lat w ogólnej liczbie kobiet z najmłodszym dzieckiem w wieku do 5 lat.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym. Badanie prowadzone jest metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15 lat i więcej będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Do pracujących zaliczane są wszystkie osoby w wieku 15 lat i wiecej, które w okresie badanego tygodnia: 1) wykonywały przez co najmniej 1 godzinę pracę przynoszącą dochód lub zarobek, tzn. były zatrudnione w charakterze pracownika najemnego, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem, 2) miały pracę, ale jej nie wykonywały (np. z powodu choroby, urlopu macierzyńskiego lub wypoczynkowego, przerwy w działalności zakładu), w przypadku gdy przerwa w pracy wynosiła mniej niż 3 miesiące; gdy przerwa w pracy wynosiła powyżej 3 miesięcy w odniesieniu do pracowników najemnych dodatkowym kryterium było otrzymywanie co najmniej 59% dotychczasowego wynagrodzenia. Zgodnie z międzynarodowymi standardami, do pracujących zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Ze względu na przyjęte założenia metodologiczne badania, liczba pracujących uzyskana w wyniku BAEL nie obejmuje niektórych kategorii osób, które są wliczane do pracujących w sprawozdawczości z zakresu zatrudnienia, m.in.: a) pracujących, mieszkających w hotelach pracowniczych, b) pracujących za granicą na rzecz polskich pracodawców.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "58.5",
+                                        
+                                            "2011" :   "57.7",
+                                        
+                                            "2012" :   "58.3",
+                                        
+                                            "2013" :   "59.1",
+                                        
+                                            "2014" :   "61.8",
+                                        
+                                            "2015" :   "64.1",
+                                        
+                                            "2016" :   "63.0",
+                                        
+                                            "2017" :   "63.4",
+                                        
+                                            "2018" :   "62.4",
+                                        
+                                            "2019" :   "62.5"
+                                        
+                                        }
+                                    ]
+                                  
+                              
+                          
+                      }
+                    ]
+              },
+          "8-7-a":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "8.7.a Współczynnik aktywności zawodowej",
+                                    
+                                      "cel": "Cel 8. Wzrost gospodarczy i godna praca",
+                                    
+                                      "priorytet": "Aktywizacja zawodowa osób młodych, kobiet, osób w wieku 50+, osób długotrwale bezrobotnych, jak również niepełnosprawnych",
+                                    
+                                      "definicja": "Udział aktywnych zawodowo (ogółem lub danej kategorii) w liczbie ludności (ogółem lub danej kategorii). Dane przeciętne w roku.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem, kobiety, grupy wieku, niepełnosprawność",
+                                    
+                                      "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym. Badanie prowadzone jest metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15 lat i więcej będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernychzawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Do pracujących zaliczane są wszystkie osoby w wieku 15 lat i wiecej, które w okresie badanego tygodnia: 1) wykonywały przez co najmniej 1 godzinę pracę przynoszącą dochód lub zarobek, tzn. były zatrudnione w charakterze pracownika najemnego, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem,2) miały pracę, ale jej nie wykonywały (np. z powodu choroby, urlopu macierzyńskiego lub wypoczynkowego, przerwy w działalności zakładu), w przypadku gdy przerwa w pracy wynosiła mniej niż 3 miesiące; gdy przerwa w pracy wynosiła powyżej 3 miesięcy w odniesieniu do pracowników najemnych dodatkowym kryterium było otrzymywanie co najmniej 50% dotychczasowego wynagrodzenia. Zgodnie z międzynarodowymi standardami, do pracujących zaliczani są również uczniowie, z ktrymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Ze względu na przyjęte założenia metodologiczne badania, liczba pracujących uzyskana w wyniku BAEL nie obejmuje niektórych kategorii osób, które są wliczane do pracujących w sprawozdawczości z zakresu zatrudnienia, m.in.:a) pracujących, mieszkających w hotelach pracowniczych,b) pracujących za granicą na rzecz polskich pracodawców.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "aktywność zawodowa": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "55.3",
+                                                    
+                                                        "2011" : "55.5",
+                                                    
+                                                        "2012" : "55.9",
+                                                    
+                                                        "2013" : "55.9",
+                                                    
+                                                        "2014" : "56.2",
+                                                    
+                                                        "2015" : "56.2",
+                                                    
+                                                        "2016" : "56.2",
+                                                    
+                                                        "2017" : "56.4",
+                                                    
+                                                        "2018" : "56.3",
+                                                    
+                                                        "2019" : "56.2"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "47.6",
+                                                    
+                                                        "2011" : "47.8",
+                                                    
+                                                        "2012" : "48.1",
+                                                    
+                                                        "2013" : "48.2",
+                                                    
+                                                        "2014" : "48.5",
+                                                    
+                                                        "2015" : "48.4",
+                                                    
+                                                        "2016" : "48.3",
+                                                    
+                                                        "2017" : "48.4",
+                                                    
+                                                        "2018" : "48.5",
+                                                    
+                                                        "2019" : "48.2"
+                                                    
+                                                    }
+                                                ],"osoby w wieku 15-24 lata": [
+                                                    {
+                                                    
+                                                        "2010" : "34.6",
+                                                    
+                                                        "2011" : "33.5",
+                                                    
+                                                        "2012" : "33.6",
+                                                    
+                                                        "2013" : "33.3",
+                                                    
+                                                        "2014" : "33.9",
+                                                    
+                                                        "2015" : "32.8",
+                                                    
+                                                        "2016" : "34.5",
+                                                    
+                                                        "2017" : "34.8",
+                                                    
+                                                        "2018" : "35.1",
+                                                    
+                                                        "2019" : "35.2"
+                                                    
+                                                    }
+                                                ],"osoby w wieku 50 lat i więcej": [
+                                                    {
+                                                    
+                                                        "2010" : "32.7",
+                                                    
+                                                        "2011" : "33.6",
+                                                    
+                                                        "2012" : "34.0",
+                                                    
+                                                        "2013" : "34.2",
+                                                    
+                                                        "2014" : "34.3",
+                                                    
+                                                        "2015" : "34.4",
+                                                    
+                                                        "2016" : "34.1",
+                                                    
+                                                        "2017" : "34.4",
+                                                    
+                                                        "2018" : "33.8",
+                                                    
+                                                        "2019" : "33.4"
+                                                    
+                                                    }
+                                                ],"osoby niepełnosprawne w wieku 16 lat i więcej": [
+                                                    {
+                                                    
+                                                        "2010" : "16.9",
+                                                    
+                                                        "2011" : "17.0",
+                                                    
+                                                        "2012" : "17.4",
+                                                    
+                                                        "2013" : "17.3",
+                                                    
+                                                        "2014" : "17.4",
+                                                    
+                                                        "2015" : "16.5",
+                                                    
+                                                        "2016" : "16.3",
+                                                    
+                                                        "2017" : "17.6",
+                                                    
+                                                        "2018" : "17.3",
+                                                    
+                                                        "2019" : "17.1"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              }}
+  ]
+}
