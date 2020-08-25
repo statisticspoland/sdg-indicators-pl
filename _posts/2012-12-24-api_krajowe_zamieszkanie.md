@@ -20,11 +20,11 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wszystkich wskaźników K
 
 <h3 id="przykładowy-curl">Przykładowy Curl</h3>
 
-<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/krajowe/zamieszkanie.json"</code></p>
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/krajowe/zamieszkanie_k.json"</code></p>
 
 <h3 id="przykładowy-url">Przykładowy URL</h3>
 
-<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/krajowe/zamieszkanie.json</code></p>
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/krajowe/zamieszkanie_k.json</code></p>
 
 <h3 id="przykładowy-kod-odpowiedzi">Kod odpowiedzi</h3>
 
@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wszystkich wskaźników K
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/krajowe/zamieszkanie.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/krajowe/zamieszkanie_k.json', function(data) {
     $('#show-data-KrajZam').html(JSON.stringify(data, null, 2));
 });
 

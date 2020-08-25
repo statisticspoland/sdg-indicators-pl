@@ -20,11 +20,11 @@ This method allows users to download data and metadata for all global sex-disagg
 
 <h3 id="przykładowy-curl">Curl example</h3>
 
-<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global/sex.json"</code></p>
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global/sex_g.json"</code></p>
 
 <h3 id="przykładowy-url">URL example</h3>
 
-<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global/sex.json</code></p>
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global/sex_g.json</code></p>
 
 <h3 id="przykładowy-kod-odpowiedzi">Response code</h3>
 
@@ -40,7 +40,7 @@ This method allows users to download data and metadata for all global sex-disagg
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/global/sex.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/global/sex_g.json', function(data) {
     $('#show-data-GlobSex').html(JSON.stringify(data, null, 2));
 });
 
