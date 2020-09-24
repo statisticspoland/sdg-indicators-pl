@@ -399,9 +399,9 @@ localStorage.removeItem("nat-toolkit-accepted");
       element.id = "national-toolkit";
       var jez='{{page.lang}}'
       if (jez=='pl'){
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='{{ site.baseurl }}{{ lang }}/api/' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
       }else{
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a id='natio' href='{{ site.baseurl }}{{ lang }}/api/' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/2020/en/index.html' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
       }
       var headers = document.querySelector(".site-navbar");
       headers.after(element);
@@ -421,9 +421,9 @@ localStorage.removeItem("nat-toolkit-accepted");
 	document.addEventListener( "DOMContentLoaded", function() {
     var jez='{{page.lang}}'
     if (jez=='pl'){
-      var toolkit = new BusinessToolkit( "Interfejs API platformy SDG już dostępny!");
+      var toolkit = new BusinessToolkit( "Pierwsza cyfrowa publikacja podsumowująca realizację SDGs już dostępna!");
     }else{
-      var toolkit = new BusinessToolkit( "Application programming interface (API) for SDG is available!");
+      var toolkit = new BusinessToolkit( "The first digital publication summing up progress towards the SDGs is already available!");
     }
 	});
 })();

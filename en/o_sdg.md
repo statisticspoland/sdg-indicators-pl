@@ -73,6 +73,17 @@ a global <a href="https://unstats.un.org/sdgs/indicators/database/"  target="_bl
   <h4><b>PUBLICATIONS</b></h4>
 
   <div class="image-wrapper">
+      <a target="_blank" href="https://raportsdg.stat.gov.pl/2020/en/index.html"  target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2020_en.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Poland on the way to SDGs. Report 2020</b></p>
+  <p>Is the financial situation of Polish households improving? What do inhabitants of Poland think about their health? Do Polish women and men have equal opportunities in the labour market and in public life? Has Poland made any progress towards the Sustainable Development Goals set by the United Nations?</p>
+  <p>These are only some of the questions that can be answered through Statistics Poland’s report entitled Poland on the way to SDGs, which presents the country’s progress towards the goals on the fifth anniversary of the adoption of the 2030 Agenda by Poland. This is Statistics Poland’s first interactive digital publication, which is published at a time when the Internet has become the main channel of communication. The report consists of five chapters, each of which addresses one of the issues included in the ‘5P’ Rule (People, Prosperity, Planet, Peace and Partnership).</p>
+  <p>The report presents Poland’s progress towards the SDGs against the background of the general situation in the EU and taking into consideration the main challenges the world has to face on its way to sustainable development. The digital form of the publication allows access to more detailed statistical data, as well as other websites, studies and databases featuring information about sustainable development.</p>
+
+
+  <hr>
+
+  <div class="image-wrapper">
       <a target="_blank" href="https://stat.gov.pl/en/topics/other-studies/other-aggregated-studies/a-picture-of-poland-statistics-for-sdgs,20,1.html"><img src="{{ site.baseurl }}/assets/img/publikacje/1_a_picture_of_poland.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>A picture of Poland. Statistics for SDGs</b></p>

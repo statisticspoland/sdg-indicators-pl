@@ -70,6 +70,17 @@ permalink: /o_sdg/
   <div role="tabpanel" class="tab-pane" id="publ">
   <h4><b>PUBLIKACJE</b></h4>
 
+
+  <div class="image-wrapper">
+   <a target="_blank" href="https://raportsdg.stat.gov.pl/"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2020_pl.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Polska na drodze zrównoważonego rozwoju. Raport 2020</b></p>
+  <p>Czy sytuacja materialna gospodarstw domowych w Polsce poprawia się? Jak mieszkańcy Polski oceniają swój stan zdrowia? Czy udało się zrównać szanse kobiet i mężczyzn na rynku pracy i w życiu publicznym? Czy Polska zbliżyła się do Celów Zrównoważonego Rozwoju wyznaczonych przez ONZ?</p>
+  <p>To tylko kilka pytań, na które odpowiada raport GUS pt. „Polska na drodze zrównoważonego rozwoju”, podsumowujący postępy kraju w 5. rocznicę przyjęcia Agendy 2030. Jest to pierwsza interaktywna publikacja cyfrowa GUS, wydana w tym szczególnym czasie, gdy naszym głównym środkiem komunikacji stał się Internet. Raport zakłada prezentację pięciu rozdziałów, nawiązujących do Zasady „5P” (<i>People, Prosperity, Planet, Peace and Partnership,</i> tj. Ludzie, Dobrobyt, Planeta, Pokój i Partnerstwo).</p>
+  <p>Postępy Polski zostały zaprezentowane w raporcie na tle sytuacji w UE i ogólnych wyzwań zrównoważonego rozwoju, przed jakimi stoi świat. Wykorzystując możliwości cyfrowej formy, publikacja pozwala na dotarcie do bardziej szczegółowych danych statystycznych oraz innych stron i opracowań i baz danych zawierających informacje na temat równoważonego rozwoju.</p>
+
+
+  <hr>
   <div class="image-wrapper">
       <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/a-picture-of-poland-statistics-for-sdgs,33,1.html"><img src="{{ site.baseurl }}/assets/img/publikacje/1_a_picture_of_poland.png" align="center" alt="GUS" border="0"/></a>
   </div>
