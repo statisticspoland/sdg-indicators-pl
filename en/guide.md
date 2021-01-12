@@ -69,7 +69,6 @@ permalink: /en/guide/
 <article>
             <h4>NRP - planned development</h4>
             <p>- sharing data sets at a lower level of aggregation
-             <br /> - dissemination APIs
              <br /> - implementation of GIS solutions using technology <i> open source </i>
             </p>
 </article>
