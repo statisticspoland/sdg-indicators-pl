@@ -71,7 +71,6 @@ permalink: /guide/
             <h4>NRP - plany rozwojowe</h4>
             <p>
             - udostępnienie zestawów danych na niższym poziomie agregacji
-            <br />- udostępnienie API
             <br />- implementacja rozwiązań GIS z wykorzystaniem technologii <i>open source</i>
             </p>
 </article>
