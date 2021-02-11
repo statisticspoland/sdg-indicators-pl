@@ -22,7 +22,7 @@ permalink: /deklaracja-dostepnosci/
   <p>•	występuje w pełni wyjustowany tekst,</p>
   <p>•	nie ma możliwości powiększenia tekstu do 200% wielkości.</p>
 
-  <p>Oświadczenie sporządzono dnia 2021-02-11. Deklarację sporządzono na podstawie samooceny przeprowadzonej przez podmiot publiczny.</p>
+  <p>Oświadczenie sporządzono dnia 11.02.2021. Deklarację sporządzono na podstawie samooceny przeprowadzonej przez podmiot publiczny.</p>
 
   <p><b>Informacje zwrotne i dane kontaktowe</b></p>
 
