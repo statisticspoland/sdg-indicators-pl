@@ -5,5 +5,5 @@ permalink: /en/deklaracja-dostepnosci/
 ---
 
 <script>
-  window.location.href = '{{ site.url }}';
+  window.location.href = 'https://sdg.gov.pl';
 </script>
