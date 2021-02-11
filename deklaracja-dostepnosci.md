@@ -10,7 +10,7 @@ permalink: /deklaracja-dostepnosci/
 
   <p>Główny Urząd Statystyczny zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z ustawą z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych. Niniejsze oświadczenie w sprawie dostępności ma zastosowanie do strony internetowej <a href="https://sdg.gov.pl"  target="_blank">https://sdg.gov.pl/</a>.</p>
 
-  <p>Data publikacji strony internetowej: 27.01.2019</p>
+  <p>Data publikacji strony internetowej: 31.01.2019</p>
 
   <p>Data ostatniej istotnej aktualizacji: 11.05.2020</p>
 
