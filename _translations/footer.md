@@ -11,6 +11,7 @@ pl:
   nav-development : "FAQs"
   nav-api : "API"
   nav-api-custodian : "API organizacje międzynarodowe"
+  nav-declaration : "Deklaracja dostępności"
 en:
   about-heading: "About"
   about-text: "<b>About</b><br />Welcome to the Statistics Poland website dedicated to the 2030 Agenda and Sustainable Development Goals"
@@ -22,4 +23,5 @@ en:
   nav-development : "FAQs"
   nav-api : "API"
   nav-api-custodian : "API custodian agencies"
+  nav-declaration : "Availability declaration"
 ---
