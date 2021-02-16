@@ -12,23 +12,48 @@
                           
                             "target": "2.1 By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round",
                           
-                            "definition": "",
+                            "definition": "Proportion of population among which normal food consumption is insufficient to provide the dietary energy level necessary to maintain a normal, active and healthy life.",
                           
-                            "unit": "",
+                            "unit": "percent [%]",
                           
-                            "dimensions": "",
+                            "dimensions": "total",
                           
-                            "methodology": "",
+                            "methodology": "The indicator has been used by FAO to monitor among others one of the MDG targets (i.e. halve, between 1990 and 2015, the proportion of people who suffer from hunger). It allows monitoring trends in the extent of dietary energy deficit. The indicator is a result of the combination of changes in the overall availability of food, in the households' ability to access it, and in the socio-demographic characteristics of the population, as well as differences across countries and regions in any given moment in time. Undernourishment is defined by FAO as the condition by which a person has access, on a regular basis, to amounts of food that are insufficient to provide the energy required for conducting a normal, healthy and active life, given his or her own dietary energy requirements. While the undernourishment condition applies to individuals, the indicator can only be referred to a population, or group of individuals (due to conceptual considerations). The prevalence of undernourishment is thus an estimate of the percentage of individuals in that group, but it does not allow for the identification of which individuals in the group are, in fact, undernourished.",
                           
-                            "source": "",
+                            "source": "Food and Agriculture Organization – FAO",
                           
-                            "availability": "",
+                            "availability": "Annual data, since 2010",
                           
-                            "notes": ""
+                            "notes": "Estimated data, calculated by FAO. The value of 2.5 for Poland should be interpreted as lower than 2.5 (<2.5)."
                           }
           ],
           "data": [
-            {
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   ""
+                              
+                              }
+                          ]
+                      
+                    
+                
             }
           ]
         }
@@ -185,6 +210,40 @@
             
             {
                             "name": "2.2.2 Prevalence of malnutrition among children under 5 years of age (weight for height&gt +2 or < -2 standard deviation from the median of the WHO Child Growth Standards), by type (wasting and overweight)",
+                          
+                            "goal": "Goal 2. Zero hunger",
+                          
+                            "target": "2.2 By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons",
+                          
+                            "definition": "",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "",
+                          
+                            "methodology": "",
+                          
+                            "source": "",
+                          
+                            "availability": "",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "2-2-3": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "2.2.3 Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)",
                           
                             "goal": "Goal 2. Zero hunger",
                           
@@ -521,7 +580,7 @@
           "metadata": [
             
             {
-                            "name": "2.5.2 Proportions of breeds classified as being at risk and not being at risk of extinction in the total population covered by protection programme of the animal genetic resources in Poland",
+                            "name": "2.5.2 Proportion of local breeds classified as being at risk of extinction",
                           
                             "goal": "Goal 2. Zero hunger",
                           

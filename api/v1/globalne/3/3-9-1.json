@@ -7,29 +7,83 @@
       "metadane": [
         
         {
-                        "nazwa": "3.9.1 Współczynnik umieralności z powodu zanieczyszczeń pochodzących z powietrza atmosferycznego i gospodarstw domowych",
+                        "nazwa": "3.9.1 Współczynnik umieralności z powodu zanieczyszczeń pochodzących z powietrza atmosferycznego i gospodarstw domowych (na 100 tys. ludności)",
                       
                         "cel": "cel 3. Dobre zdrowie i jakość życia",
                       
                         "zadanie": "3.9 Do 2030 roku znacząco obniżyć liczbę zgonów i chorób powodowanych przez niebezpieczne substancje chemiczne oraz zanieczyszczenie i skażenie powietrza, wody i gleby.",
                       
-                        "definicja": "",
+                        "definicja": "Liczba zgonów z powodu połączonych skutków zanieczyszczenia powietrza w gospodarstwie domowym oraz zanieczyszczenia otaczającego powietrza w przeliczeniu na 100 tys. ludności.",
                       
-                        "jednostka": "",
+                        "jednostka": "osoby",
                       
-                        "wymiary": "",
+                        "wymiary": "ogółem",
                       
-                        "metodologia": "",
+                        "metodologia": "Do oceny narażenia na zanieczyszczenie powietrza bierze się pod uwagę następujące schorzenia:   Ostre infekcje dróg oddechowych u małych dzieci (szacowane poniżej 5 roku życia); Choroby naczyniowo-mózgowe (udar) u osób dorosłych (szacowane powyżej 25 lat); Choroby niedokrwienne serca u osób dorosłych (szacowane powyżej 25 lat); Przewlekłą obturacyjną chorobę płuc u osób dorosłych (szacowana powyżej 25 lat); i Nowotwór płuc u osób dorosłych (szacowany powyżej 25 lat). ",
                       
-                        "zrodlo": "",
+                        "zrodlo": "Światowa Organizacja Zdrowia",
                       
-                        "czestotliwosc": "",
+                        "czestotliwosc": "Dane co kilka lat, od 2016 r.",
                       
-                        "uwagi": ""
+                        "uwagi": "Dane szacunkowe, obliczone przez WHO."
                       }
       ],
       "dane": [
-        {}
+        {
+                      "wg współczynnika": [
+                          {
+                              "współczynnik surowy": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   ""
+                                  
+                                  }
+                              ],
+                              "współczynnik standaryzowany względem wieku": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   ""
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
       ]
     }
   ]

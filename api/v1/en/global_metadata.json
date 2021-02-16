@@ -442,19 +442,19 @@
                                         
                                           "target": "2.1 By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round",
                                         
-                                          "definition": "",
+                                          "definition": "Proportion of population among which normal food consumption is insufficient to provide the dietary energy level necessary to maintain a normal, active and healthy life.",
                                         
-                                          "unit": "",
+                                          "unit": "percent [%]",
                                         
-                                          "dimensions": "",
+                                          "dimensions": "total",
                                         
-                                          "methodology": "",
+                                          "methodology": "The indicator has been used by FAO to monitor among others one of the MDG targets (i.e. halve, between 1990 and 2015, the proportion of people who suffer from hunger). It allows monitoring trends in the extent of dietary energy deficit. The indicator is a result of the combination of changes in the overall availability of food, in the households' ability to access it, and in the socio-demographic characteristics of the population, as well as differences across countries and regions in any given moment in time. Undernourishment is defined by FAO as the condition by which a person has access, on a regular basis, to amounts of food that are insufficient to provide the energy required for conducting a normal, healthy and active life, given his or her own dietary energy requirements. While the undernourishment condition applies to individuals, the indicator can only be referred to a population, or group of individuals (due to conceptual considerations). The prevalence of undernourishment is thus an estimate of the percentage of individuals in that group, but it does not allow for the identification of which individuals in the group are, in fact, undernourished.",
                                         
-                                          "source": "",
+                                          "source": "Food and Agriculture Organization – FAO",
                                         
-                                          "availability": "",
+                                          "availability": "Annual data, since 2010",
                                         
-                                          "notes": ""
+                                          "notes": "Estimated data, calculated by FAO. The value of 2.5 for Poland should be interpreted as lower than 2.5 (<2.5)."
                                         }
                         ]
                       }
@@ -527,6 +527,36 @@
                           
                           {
                                           "name": "2.2.2 Prevalence of malnutrition among children under 5 years of age (weight for height&gt +2 or < -2 standard deviation from the median of the WHO Child Growth Standards), by type (wasting and overweight)",
+                                        
+                                          "goal": "Goal 2. Zero hunger",
+                                        
+                                          "target": "2.2 By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "2-2-3": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "2.2.3 Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)",
                                         
                                           "goal": "Goal 2. Zero hunger",
                                         
@@ -676,7 +706,7 @@
                         "metadata": [
                           
                           {
-                                          "name": "2.5.2 Proportions of breeds classified as being at risk and not being at risk of extinction in the total population covered by protection programme of the animal genetic resources in Poland",
+                                          "name": "2.5.2 Proportion of local breeds classified as being at risk of extinction",
                                         
                                           "goal": "Goal 2. Zero hunger",
                                         
@@ -1312,25 +1342,25 @@
                         "metadata": [
                           
                           {
-                                          "name": "3.8.1 Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, noncommunicable diseases and service capacity and access, among the general and the most disadvantaged population)",
+                                          "name": "Universal health coverage (UHC) service coverage index",
                                         
                                           "goal": "Goal 3. Good health and well-being",
                                         
                                           "target": "3.8 Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable essential medicines and vaccines for all",
                                         
-                                          "definition": "",
+                                          "definition": "Coverage of essential health services defined as the average coverage of essential services based on selected interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable diseases and service capacity and access, among the general and the most disadvantaged population.",
                                         
-                                          "unit": "",
+                                          "unit": "[0 – 100]",
                                         
                                           "dimensions": "",
                                         
-                                          "methodology": "",
+                                          "methodology": "The indicator is reported on a unitless scale of 0 to 100, which is computed as the geometric mean of 14 tracer indicators of health service coverage. The indicators are organized by four categories of service coverage:  I. Reproductive, maternal, newborn and child health  1. Family planning: Percentage of women of reproductive age (15-49 years) who are married or in-union who have their need for family planning satisfied with modern methods. 2. Pregnancy and delivery care: Percentage of women aged 15-49 years with a live birth in a given time period who received antenatal care four or more times. 3. Child immunization: Percentage of infants receiving three doses of diphtheria-tetanus-pertussis containing vaccine. 4. Child treatment: Percentage of children under 5 years of age with suspected pneumonia (cough and difficult breathing NOT due to a problem in the chest and a blocked nose) in the two weeks preceding the survey taken to an appropriate health facility or provider.  II. Infectious diseases 5. Tuberculosis: Percentage of incident TB cases that are detected and successfully treated. 6. HIV/AIDS: Percentage of people living with HIV currently receiving antiretroviral therapy. 7. Malaria: Percentage of population in malaria-endemic areas who slept under an insecticide-treated net the previous night [only for countries with high malaria burden]. 8. Water and sanitation: Percentage of households using at least basic sanitation facilities. III. Noncommunicable diseases  9. Hypertension: Age-standardized prevalence of non-raised blood pressure among adults aged 18 years and older, aged-standarized. 10. Diabetes: Age-standardized mean fasting plasma glucose (mmol/L) for adults aged 18 years and older. 11. Tobacco: Age-standardized prevalence of adults >=15 years not smoking tobacco in last 30 days.  IV. Service capacity and access 12. Hospital access: Hospital beds per capita, relative to a maximum threshold of 18 per 10,000 population. 13. Health workforce: Health professionals (physicians, psychiatrists, and surgeons) per capita, relative to maximum thresholds for each cadre. 14. Health security: International Health Regulations (IHR) core capacity index, which is the average of attributes of 13 core capacities that have been attained.",
                                         
-                                          "source": "",
+                                          "source": "World Health Organization",
                                         
-                                          "availability": "",
+                                          "availability": "Data available every few years, since 2010 (subject to data availability)",
                                         
-                                          "notes": ""
+                                          "notes": "Estimated data, calculated by WHO."
                                         }
                         ]
                       }
@@ -1348,19 +1378,19 @@
                                         
                                           "target": "3.8 Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable essential medicines and vaccines for all",
                                         
-                                          "definition": "",
+                                          "definition": "Proportion of the population with large household expenditure on health as a share of total household expenditure or income.",
                                         
-                                          "unit": "",
+                                          "unit": "percent [%]",
                                         
                                           "dimensions": "",
                                         
-                                          "methodology": "",
+                                          "methodology": "Household expenditure on health is defined as any expenditure to get any type of care (promotive, preventive, curative, rehabilitative, palliative or long-term care) including medicines, vaccines and all health products for all members of the household. Two thresholds are used to define „large household expenditure on health': greater than 10% and greater than 25% of total household expenditure or income.",
                                         
-                                          "source": "",
+                                          "source": "World Health Organization",
                                         
-                                          "availability": "",
+                                          "availability": "Annual data, since 2010",
                                         
-                                          "notes": ""
+                                          "notes": "Estimated data, calculated by WHO"
                                         }
                         ]
                       }
@@ -1372,25 +1402,25 @@
                         "metadata": [
                           
                           {
-                                          "name": "3.9.1 Mortality rate attributed to household and ambient air pollution",
+                                          "name": "3.9.1 Mortality rate attributed to household and ambient air pollution (per 100,000 population)",
                                         
                                           "goal": "Goal 3. Good health and well-being",
                                         
-                                          "target": "3.9 By 2030, substantially reduce the number of 9deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination",
+                                          "target": "3.9 By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination",
                                         
-                                          "definition": "",
+                                          "definition": "Death rate attributed to household and ambient air pollution (deaths per 100,000 population).",
                                         
-                                          "unit": "",
+                                          "unit": "persons",
                                         
-                                          "dimensions": "",
+                                          "dimensions": "total",
                                         
-                                          "methodology": "",
+                                          "methodology": "The estimate of the mortality resulting from exposure to air pollution takes into account the following important diseases:  Acute respiratory infections in young children (estimated under 5 years of age); Cerebrovascular diseases (stroke) in adults (estimated above 25 years); Ischaemic heart diseases (IHD) in adults (estimated above 25 years); Chronic obstructive pulmonary disease (COPD) in adults (estimated above 25 years); and Lung cancer in adults (estimated above 25 years). ",
                                         
-                                          "source": "",
+                                          "source": "World Health Organization",
                                         
-                                          "availability": "",
+                                          "availability": "Data every few years since 2016",
                                         
-                                          "notes": ""
+                                          "notes": "Estimated data, computed by WHO."
                                         }
                         ]
                       }
@@ -1635,6 +1665,36 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "3-d-2": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "3.d.2 Reduce the percentage of bloodstream infections due to selected antimicrobial-resistant organisms",
+                                        
+                                          "goal": "Goal 3. Good health and well-being",
+                                        
+                                          "target": "3.d Strengthen the capacity of all countries, in particular developing countries, for early warning, risk reduction and management of national and global health risks",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
                   }]
 
       },
@@ -1662,7 +1722,7 @@
                                         
                                           "methodology": "The data comes from the Program for International Student Assessment (PIRLS). Programme for International Student Assessment - PISA is internationally coordinated by the Organisation for Economic Co-operation and Development (OECD) and in Poland by the Ministry of National Education. The aim of the programme is to verify the practical application of knowledge acquired in school and outside the school. The survey (representative) is carried out in randomly selected schools, and its results are generalized to the entire population. The success of the survey depends on the participation of all sampled schools and students. PISA standards only allow a small-scale denial. PISA tests students skills in three subject areas: Reading and Interpretation, Mathematics and Scientific literacy. The survey is carried out every three years, since 2000. In each of the subsequent surveys, a particular emphasis is put on the examination of one area, which takes half of the time provided for the student to solve the entire set of tasks. PISA tests (developed by an international consortium, with the cooperation of the countries participating in the project) are different from typical school activities, and on the basis of the results, the level of student skills is estimated. The best students reach level 5 or 6 (tasks with a relatively high degree of difficulty), while results below level 2 - a minimum level of competence - indicate very basic skills, which means an higher risk of not coping with education and adult life. PISA is one of the most important and the biggest educational surveys, which aims to provide objective and internationally comparable data on the same year students skills.",
                                         
-                                          "source": "Organisation for Economic Co-operation and Development / Ministry of Education",
+                                          "source": "Organisation for Economic Co-operation and Development / the Ministry of Education and Science",
                                         
                                           "availability": "Annual data every 5 years; since 2011",
                                         
@@ -1810,9 +1870,9 @@
                                         
                                           "dimensions": "total",
                                         
-                                          "methodology": "Parity (paritas in Latin - equality) - equalization of two or more quantities referring to given groups. Parity index is a ratio of one quantity to the other (within a given index). The quantity referring to the group in a less privileged situation is usually captured in the numerator of a fraction. When the index equals 1, there is equality between the groups. The more the index value differs from 1, the bigger the disproportion between the groups.  Gender parity index is a ratio of given indexvalues for women and men.   The gender parity indices in education are calculated on the basis of the following indicators:  4.1.1.b Percentage of students achieving at least a minimum proficiency level in reading   for gender parity index in reading at the end of lower-secondary school, 4.1.1.c Percentage of students achieving at least a minimum proficiency level in mathematics - for gender parity index in mathematics at the end of lower-secondary school, 4.2.2 Participation rate in organized learning (one year before the official primary entry age) - for gender parity index in pre-primary education for 6-year-old children. ",
+                                          "methodology": "Parity (paritas in Latin - equality) - equalization of two or more quantities referring to given groups. Parity index is a ratio of one quantity to the other (within a given index). The quantity referring to the group in a less privileged situation is usually captured in the numerator of a fraction. When the index equals 1, there is equality between the groups. The more the index value differs from 1, the bigger the disproportion between the groups.  Gender parity index is a ratio of given index values for women and men.   The gender parity indices in education are calculated on the basis of the following indicators:  4.1.1.b Percentage of students achieving at least a minimum proficiency level in reading   for gender parity index in reading at the end of lower-secondary school, 4.1.1.c Percentage of students achieving at least a minimum proficiency level in mathematics - for gender parity index in mathematics at the end of lower-secondary school, 4.2.2 Participation rate in organized learning (one year before the official primary entry age) - for gender parity index in pre-primary education for 6-year-old children. ",
                                         
-                                          "source": "Statistics Poland / Ministry of National Education",
+                                          "source": "Statistics Poland / the Ministry of Education and Science",
                                         
                                           "availability": "Annual data since 2010 – for child participation in pre-primary education. Data every several years since 2009 – for achievement in reading and writing at the end of lower-secondary school.",
                                         
@@ -1902,7 +1962,7 @@
                                         
                                           "methodology": "According to par. 53 Regulation of the Minister of Infrastructure of 12 April 2002 on the technical conditions to be fulfilled by buildings and their location (Journal of Laws of 2015, item 1422), each building, as appropriate for its purpose, should be equipped with an internal electrical installation. In addition,as follows from the the above regulation, public toilets require the separation of sanitary facilities for men and women [para. 85(1)] and the provision of hand washing devices [para. 84(2)]. The Regulation of the Minister of National Education and Sport of 31 December 2002 on safety and hygiene in public and non-public schools and institutions (Journal of Laws of 2003 No. 6, item 69, as amended) regulates access to drinking water. In the absence of a water supply network, another source of water that meets the requirements for drinking water is provided in schools and institutions. Taking into account the above regulations it should be assumed that 100% of schools in Poland have access to electricity and drinking water, as well as separate sanitary facilities for men and women and hand washing devices. Otherwise they could not be used for educational purposes. Data on the percentage of schools with computer labs and schools with access to the Internet are derived from the Education Information System of the Ministry of Education.",
                                         
-                                          "source": "Ministry of National Education",
+                                          "source": "the Ministry of Education and Science",
                                         
                                           "availability": "Annual data  since 2010",
                                         
@@ -1962,7 +2022,7 @@
                                         
                                           "methodology": "The data comes from the Educational Information System (SIO), administered by the Ministry of National Education. The presented values apply only to class teachers in institutions / schools for children and youth, teaching at education levels from 0 to 3 according to the ISCED 2011 classification. In order to avoid double counting, teachers teaching at different levels of education are allocated to the level at which they work the largest number of hours. Reference year: 2011 includes data for the school year 2010/2011, year - 2012 - data for the school year 2011/2012 etc. Classification according to educational levels was made according to the International Standard Classification of Education ISCED 2011, where:  • ISCED 0: Early childhood education (less than primary for educational attainment) • ISCED 1: Primary education • ISCED 2: Lower secondary education • ISCED 3: Upper secondary education • ISCED 4: Post-secondary non-tertiary education • ISCED 5, 6, 7, 8: Tertiary education  The adopted levels of education correspond to the following levels of ISCED 2011:  - pre-school education - ISCED 0 - primary school - ISCED 1 - junior high school - ISCED 2 - upper secondary school - ISCED 3 ",
                                         
-                                          "source": "Ministry of National Education",
+                                          "source": "the Ministry of Education and Science",
                                         
                                           "availability": "Annual data, since 2010",
                                         
@@ -4770,7 +4830,7 @@
                                         
                                           "methodology": "Poland is a part to the following international environmental agreements on hazardous waste and other chemicals:  The Stockholm Convention on Persistent Organic Pollutants (POPs), signed in 2001 and effective from May 2004 (signed by the President of Poland 30 September 2008, effective from 21 January 2009) Protocol on Persistent Organic Pollutants (POPs) to the Geneva Convention (not yet ratified) The Minamata Convention on Mercury, signed in Kumamoto and adopted in 2013 (Poland has signed the Convention on 24 September 2014 in New York. The Convention is not yet in force because of the ongoing ratification procedures) The Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and Their Disposal, done at Basel on 22 March 1989 (until 2010 ratified by 170 States, including Poland - 10 January 1992) The Rotterdam Convention on the Prior Informed Consent Procedure for Certain Hazardous Chemicals and Pesticides in International Trade), adopted in Rotterdam on 10 September 1998 (the Convention entered into force on 24 February 2004, and Poland has acceded to it on September 14, 2005) ",
                                         
-                                          "source": "Ministry of the Environment / Chief Inspectorate of Environmental Protection / Ministry of Health",
+                                          "source": "the Ministry of Climate and Environment / Chief Inspectorate of Environmental Protection / the Ministry of Health",
                                         
                                           "availability": "Annual data  since 2010.",
                                         
@@ -4800,7 +4860,7 @@
                                         
                                           "methodology": "Processes of waste recovered R1-R10 are the operation described in the list of recovery operations listed in Annex No. 1 to the Act of 14 December 2012 on Waste (Journal of Laws 2013, item 21). Processes of waste disposal D1-D12 are the operations described in the list of disposal operations listed in Annex No. 2 to the Act of 14 December 2012 on waste (Journal of Laws 2013, item 21). The percentage is calculated as the ratio of the mass of waste recovered, conditioned waste to waste generated.",
                                         
-                                          "source": "Ministry of Climate, Eurostat",
+                                          "source": "the Ministry of Climate and Environment, Eurostat",
                                         
                                           "availability": "Annual data; since 2010.",
                                         
@@ -4830,7 +4890,7 @@
                                         
                                           "methodology": "Obligation of recovery and recycling of packaging waste by entrepreneurs is defined in the Act of 13 June 2013 on packaging management and packaging waste (Journal of Laws of 2013, item 888). The obligation of recovery, in particular, recycling, can be implemented by the entrepreneur himself or through a recovery organization, which will take over from the entrepreneur obligations associated with recovery. Basic information used to calculate the required and achieved level of recovery, i.e. the mass and number of packaging placed on the market, is determined according to records kept by the entrepreneur. Packaging waste include all packaging, of which multiple use packaging withdrawn from reuse, constituting waste as defined in laws on waste, excluding waste generated in the process of packaging production. Recycling means any recovery operation by which waste materials are reprocessed into products, materials or substances whether for the original or other purposes. It includes the reprocessing of organic material but does not include energy recovery and the reprocessing into materials that are to be used as fuels or for backfilling operations.",
                                         
-                                          "source": "Ministry of the Environment / Eurostat",
+                                          "source": "the Ministry of Climate and Environment / Eurostat",
                                         
                                           "availability": "Annual data  since 2010.",
                                         
@@ -4860,7 +4920,7 @@
                                         
                                           "methodology": "Partnership for the Implementation of the SDGs in Poland was initiated in June 2017. The aim of the Partnership is to integrate representatives of various circles in cooperation for effective achievement of the Sustainable Development Goals. The initiative increases the awareness of the SDGs, adopted by the international community, their importance for individual social groups and the need to cooperate in their effective implementation. The signatories provide an example of active involvement and responsible implementation of the principles of sustainable development within the organisation, providing a valuable source of inspiration for others. The cooperation of a wide group of stakeholders reflects Poland's efforts to actively involve public and private entities, non-governmental organizations, the science sector and civil society in the planning and implementation of development activities. This is to ensure wider communication, increase awareness of the need for cooperation and dialogue. The signatories join the Partnership during conference events organized by the national coordinator of implementing SDGs in Poland – the Ministry of Entrepreneurship and Technology (until January 2018 – the Ministry of Economic Development). During the ceremony of joining the Partnership, the Signatories on one common Partnership Card, successively sign the following declarations: “Aware of global economic, social and environmental challenges and their complexity, we see sustainable development as an opportunity to create a new economic reality, opening new paths of development for business, based on the principles of transparency and building the image of Poland as a reliable economic partner. We recognise that ambitious goals and targets will be achieved through working together in an effective manner, mobilising forces, creating synergies, a lively and strengthened partnership, the result of dialogue that is open to all stakeholders. In an effort to jointly exploit opportunities for change in the country, region and enterprise, to increase the impact on sustainable development, we express our intention to cooperate within the framework of this partnership initiative for the achievement of the SDGs.”",
                                         
-                                          "source": "Ministry of Economic Development",
+                                          "source": "the Ministry of Economic Development, Labour and Technology",
                                         
                                           "availability": "Annual data; Since 2017.",
                                         
@@ -5136,7 +5196,7 @@
                                         
                                           "methodology": "On 29 October 2013 the Council of Ministers adopted a 'Polish National Strategy for Adaptation to Climate Change, with the perspective by 2030' - called NAS 2020 (in Polish: SPA 2020). This is the first Polish strategy document, which directly relates to the issue of adaptation to climate change. The aim of the NAS 2020 is to provide sustainable development and the effective functioning of the economy and society in the face of the risks posed by climate changes. The document indicated the priority directions of adaptation actions that should be taken by 2020 in the most sensitive to climate change areas:  • water management,  • agriculture,  • forestry,  • biodiversity,  • health,  • energy,  • construction and spatial planning,  • urban areas,  • transport,  • mountain areas and coastal zones. NAS 2020 is part of a wider research project called KLIMADA, carried out (in years 2011-2013) on the request of the Ministry of the Environment with funds from the National Fund for Environmental Protection and Water Management, covering the period up to 2070. NAS 2020 strategy is part of the activities of the European Union in terms of adaptation to climate change, which aims to improve the immunity of the Member States on the current and expected climate change, with a focus on better preparation for extreme climatic and weather conditions and the socio-economic costs reduction. Together with the strategy adopted by the Council of Ministers, the special website klimada.mos.gov.pl was launched. It contains information about mitigation and adaptation to climate change.",
                                         
-                                          "source": "Ministry of the Environment",
+                                          "source": "the Ministry of Climate and Environment",
                                         
                                           "availability": "Annual data; since 2010.",
                                         
@@ -5166,7 +5226,7 @@
                                         
                                           "methodology": "The dissemination among children and young people the knowledge about the principles of sustainable development and the shaping of attitudes, to foster its implementation in local, national and global scale is guaranteed by law (article 1, point 11 of the Act on education system Journal of Laws from 2016, item 1943). Minister for education determines the curricula that are mandatory's goals and teaching content, including the skills described in the form of general and specific requirements for skills and knowledge, which should have a student after completion of the particular stage of the educational as well as educational role of the school. Objectives and content of the teaching for sustainable development are carried out in accordance with the basis of a curriculum controlled by Regulation of the Minister of National Education of 27 August 2012 on the core pre-school curriculum and general education curriculum in different types of schools (Journal of Laws: from 2014, item 977, from 2014, item 803, and from 2016, item 895). Starting with the school year 2017/2018, in primary schools and in 1-degree secondary schools will apply the curriculum governed by Regulation of the Minister of National Education of 14 February 2017 on the core pre-school curriculum and general education curriculum for primary education, including for students with intellectual disabilities in moderate or severe, general education for 1-degree trade school, general education for special school adoptive to work and education for post-secondary (Journal of Laws from 2017, item 356).",
                                         
-                                          "source": "Ministry of National Education ",
+                                          "source": "the Ministry of Education and Science",
                                         
                                           "availability": "Annual data since 2010.",
                                         
@@ -5196,7 +5256,7 @@
                                         
                                           "methodology": "The Paris agreement on emission reductions agreed during the COP21 (United Nations Framework Convention on Climate Change, 21st Conference of the Parties) in Paris, in December 2015 - EU countries have ratified on 5 October 2016, Poland ratified on 7 October 2016. The Paris agreement entered into force on 4 November 2016, after its ratification by at least 55 countries representing 55% of the world's emissions. Most countries, including the EU countries, in 2015, has submitted to the United Nations their own climate projects (INDC - Intended Nationally Determined Contributions) setting out the objectives of reduction and adaptation for years 2021-2025 or 2021-2030.",
                                         
-                                          "source": "Ministry of Climate / Chief Inspectorate of Enviornmental Protection",
+                                          "source": "the Ministry of Climate and Environment / Chief Inspectorate of Enviornmental Protection",
                                         
                                           "availability": "Annual data; since 2010.",
                                         
@@ -5412,7 +5472,7 @@
                                         
                                           "methodology": "The indicator specifies the percentage of the coastal waters of the Baltic Sea within the Polish national parks - Słowiński National Park and Woliński National Park - in relation to the general area of the territorial sea of Poland. Coastal waters, in accordance with the Act of 18 July 2001 - Water Law, these are surface marine waters within 1 nautical miles from the baselines: for the Słowiński National Park - this is an area of 11 171.1 ha, for the Woliński National Park - this is an area of 2 725,4 ha (in years 2010-2011) and 2 713,5 ha (from 2012) Sea areas, in accordance with the UN methodology, are areas of the territorial sea of a country. In accordance with the Act of 21 March 1991 on the Maritime Areas of the Republic of Poland and the Maritime Administration (uniform text, Journal of Laws 2013, item 934), territorial sea consists of a marine area of 12 nautical miles wide, measured from the baseline of the sea (baselines of the territorial sea is constituted by the low-water line along the coast or the outer limit of marine internal waters). The area of the territorial sea in Poland is 8 682 km2.",
                                         
-                                          "source": "The Head Office of Geodesy and Cartography / Ministry of the Environment / Statistics Poland",
+                                          "source": "The Head Office of Geodesy and Cartography / the Ministry of Climate and Environment / Statistics Poland",
                                         
                                           "availability": "Annual data; since 2010.",
                                         
@@ -5808,7 +5868,7 @@
                                         
                                           "methodology": "Genetic resources in accordance with Convention on Biological Diversity means genetic material (i.e. any material of plant, animal, microbial or other origin containing functional units of heredity) of actual or potential value. A new instrument of international law, implementing the third objective of the Convention on Biological Diversity (on the right of countries to exploit their own resources pursuant to their own environmental policies) is The Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization. It was adopted by the Conference of the Parties to the Convention at its tenth meeting in 2010. After the entry into force of the Nagoya Protocol, which occurred on 12 October 2014, all entities that obtain their genetic resources originating from countries that have ratified the Protocol, are obliged to respect the provisions of the Protocol and instruments implementing it. Poland signed the Nagoya Protocol on 20 September 2011 and is currently in the process of its ratification. The Nagoya Protocol applies to access to genetic resources and the fair and equitable sharing of benefits arising from their use. Aims to establish a system requiring users of genetic resources to share with donor resources benefits arising as a result of their use. The Nagoya Protocol applies both to genetic resources of organisms occurring in the wild, and used in the economy (with the exception of human genetic resources). Affect the functioning of the donors and recipients of genetic resources, including among others: botanical and zoological gardens, gene banks, the agricultural sector (animal husbandry, cultivation of plants, seed production, feed production), horticulture, forestry, pharmaceutical, cosmetic, biotechnology, food processing, and even industries with the production of fuels and plastics. In the European Union obligations of the users of genetic resources in all the Member States is governed by a Regulation (EU) No 511/2014 of the European Parliament and of the Council of 16 April 2014 on compliance measures for users from the Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization in the Union. The task and the jurisdiction of the public authorities in the exercise of the provisions of Regulation (EU) No 511/2014, the rules and general principle concerning mechanism for control of obtaining, possession and utilization of genetic resources and the principle of liability for infringement of the provisions - in Poland is governed by the Law of 19 July 2016, on access to genetic resources and sharing of benefits arising from their utilization (Journal of Laws 2016, item 1340).",
                                         
-                                          "source": "Ministry of the Environment",
+                                          "source": "the Ministry of Climate and Environment",
                                         
                                           "availability": "Annual data; since 2010.",
                                         
@@ -5868,7 +5928,7 @@
                                         
                                           "methodology": "Poland adopted the following legislation that control of invasive alien species:  1. Act of 16 April 2004 on the Protection of Nature  2. Regulation of the Minister of the Environment of 9 Septemer 2011 on the list of non-native species of plants and animals, which in the case of release into the environment can threaten native species or natural habitats",
                                         
-                                          "source": "Ministry of the Environment",
+                                          "source": "the Ministry of Climate and Environment",
                                         
                                           "availability": "Annual data; since 2010.",
                                         
@@ -6900,7 +6960,7 @@
                                         
                                           "methodology": "The Strategy for Responsible Development defines a new model for the development of the country. The document is an update of the National Development Strategy (SRK 2020). The guiding principle of the Strategy is the balanced development of the whole country in four dimensions:  economic, social, environmental and territorial.  The strategy assumes that all its citizens will benefit from its effects. The document focuses on the knowledge and technology that is being created in Poland, the development and further expansion of Polish companies, the construction of a savings system and the improvement of the quality of institutions and their relations with the public. The importance of inclusion all social groups and all territories in the development processes has also been emphasized. The actions outlined in the Strategy are consistent with the objectives and tasks set out in the UN Agenda 2030. The concept of sustainable and responsible development, which is the basis of the Strategy, is consistent with the UN point of view, i.e. vision of the world free from poverty, where every person has the opportunity to enjoy the development.",
                                         
-                                          "source": "Ministry of Economic Development",
+                                          "source": "the Ministry of Economic Development, Labour and Technology",
                                         
                                           "availability": "Annual data currently available for the year 2017",
                                         

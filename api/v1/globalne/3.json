@@ -1111,29 +1111,54 @@
           "metadane": [
             
             {
-                            "nazwa": "3.8.1 Zasięg podstawowych świadczeń zdrowotnych (określany jako średni zasięg podstawowych świadczeń zdrowotnych na podstawie monitorowanych interwencji, włączając opiekę nad matką, noworodkiem i dzieckiem, choroby zakaźne, choroby niezakaźne, wydajność i dostęp do świadczeń wśród ogółu ludności i w grupach nieuprzywilejowanych)",
+                            "nazwa": "3.8.1 Wskaźnik pokrycia powszechnego ubezpieczenia zdrowotnego",
                           
-                            "cel": "cel 3. Dobre zdrowie i jakość życia",
+                            "cel": "Cel 3. Dobre zdrowie i jakość życia",
                           
-                            "zadanie": "3.8 Zapewnić powszechną opiekę zdrowotną, w tym zabezpieczenie przed ryzykiem finansowym, dostęp do podstawowej opieki zdrowotnej wysokiej jakości oraz bezpiecznych, skutecznych, wysokiej jakości, przystępnych cenowo lekarstw i szczepionek.",
+                            "zadanie": "3.8 Zapewnić powszechną opiekę zdrowotną, w tym zabezpieczenie przed ryzykiem finansowym, dostęp do podstawowej opieki zdrowotnej wysokiej jakości oraz bezpiecznych, skutecznych, wysokiej jakości, przystępnych cenowo lekarstw i szczepionek",
                           
-                            "definicja": "",
+                            "definicja": "Pokrycie podstawowych usług zdrowotnych jest definiowane jako średni zakres podstawowych usług opartych na wybranych rodzajach interwencji, które obejmują: zdrowie reprodukcyjne, macierzyństwo, noworodki i dzieci, choroby zakaźne, choroby niezakaźne oraz możliwości i dostęp do usług w populacji ogólnej i znajdującej się w najbardziej niekorzystnej sytuacji.",
                           
-                            "jednostka": "",
+                            "jednostka": "[0 – 100]",
                           
                             "wymiary": "",
                           
-                            "metodologia": "",
+                            "metodologia": "Wskaźnik jest prezentowany w skali od 0 do 100 i jest obliczany jako średnia geometryczna z 14 wskaźników dot. pokrycia świadczeń zdrowotnych. Wskaźniki te są uporządkowane według czterech kategorii pokrycia usług: I. Zdrowie reprodukcyjne, zdrowie matki, noworodka i dziecka 1. Planowanie rodziny: Odsetek kobiet w wieku rozrodczym (15-49 lat) zamężnych lub pozostających w związkach, których potrzeba planowania rodziny jest satysfakcjonująca, przy wykorzystaniu nowoczesnych metod. 2. Ciąża i opieka w trakcie porodu: Odsetek kobiet w wieku 15-49 lat, które urodziły żywe dziecko i które otrzymały opiekę przedporodową cztery lub więcej razy. 3. Szczepienia dzieci: Odsetek niemowląt, które otrzymały trzy dawki szczepionki przeciwko błonicy, tężcowi i krztuścowi. 4. Leczenie dzieci: Odsetek dzieci w wieku poniżej 5 roku życia z podejrzeniem zapalenia płuc (kaszel i trudności w oddychaniu, które nie są spowodowane problemami klatki piersiowej i zatkanego nosa) w ciągu 2 tygodni poprzedzających badanie, skierowanych do odpowiedniej placówki służby zdrowia lub świadczeniodawcy. II. Choroby zakaźne 5. Gruźlica: Odsetek przypadków gruźlicy, które są wykrywane i skutecznie leczone. 6. HIV/AIDS: Odsetek osób żyjących z HIV, objętych obecnie terapią antyretrowirusową. 7. Malaria: Odsetek ludności na obszarach zagrożonych malarią, która poprzedniej nocy spała pod siatką nasączoną środkami owadobójczymi (dotyczy tylko krajów o wysokiej zachorowalności na malarię). 8. Woda i kanalizacja: Odsetek gospodarstw domowych, korzystających co najmniej z podstawowych urządzeń sanitarnych. III. Choroby niezakaźne 9. Nadciśnienie tętnicze: Występowanie niedociśnienia tętniczego u osób dorosłych (w wieku 18 lat i starszych), standaryzowane pod względem wieku. 10. Cukrzyca: Standaryzowany względem wieku średni poziom glukozy w osoczu na czczo (mmol/l) dla osób dorosłych w wieku 18 lat i starszych. 11. Tytoń: Standaryzowane pod względem wieku rozpowszechnienie wśród osób dorosłych w wieku 15 lat i więcej niepalenia tytoniu w ciągu ostatnich 30 dni. IV. Wydajność i dostęp do usług 12. Dostęp do szpitali: Liczba łóżek szpitalnych na jednego mieszkańca, w odniesieniu do maksymalnego progu 18 łóżek na 10 tys. mieszkańców. 13. Pracownicy służby zdrowia: Liczba pracowników służby zdrowia (lekarze, psychiatrzy i chirurdzy) na jednego mieszkańca, w odniesieniu do maksymalnych progów dla każdej kadry. 14. Bezpieczeństwo zdrowotne: Wskaźnik zdolności podstawowej wg Międzynarodowych Przepisów Zdrowotnych (International Health Regulations - IHR), będący średnią z atrybutów 13 podstawowych zdolności, które zostały osiągnięte.",
                           
-                            "zrodlo": "",
+                            "zrodlo": "Światowa Organizacja Zdrowia",
                           
-                            "czestotliwosc": "",
+                            "czestotliwosc": "Dane co kilka lat, od 2010 r. (w zależności od dostępu danych)",
                           
-                            "uwagi": ""
+                            "uwagi": "Dane szacunkowe, obliczone przez WHO."
                           }
           ],
           "dane": [
-            {
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   ""
+                              
+                              }
+                          ]
+                        
+                    
+                
             }
           ]
         }
@@ -1145,29 +1170,54 @@
           "metadane": [
             
             {
-                            "nazwa": "3.8.2 Odsetek osób w gospodarstwach domowych, ponoszących duże wydatki na zdrowie (jako udział w całkowitych wydatkach gospodarstw domowych lub dochodach)",
+                            "nazwa": "3.8.2 Odsetek ludności z dużymi wydatkami gospodarstw domowych na zdrowie (jako udział w całkowitych wydatkach gospodarstw domowych lub dochodach).",
                           
-                            "cel": "cel 3. Dobre zdrowie i jakość życia",
+                            "cel": "Cel 3. Dobre zdrowie i jakość życia",
                           
-                            "zadanie": "3.8 Zapewnić powszechną opiekę zdrowotną, w tym zabezpieczenie przed ryzykiem finansowym, dostęp do podstawowej opieki zdrowotnej wysokiej jakości oraz bezpiecznych, skutecznych, wysokiej jakości, przystępnych cenowo lekarstw i szczepionek.",
+                            "zadanie": "3.8 Zapewnić powszechną opiekę zdrowotną, w tym zabezpieczenie przed ryzykiem finansowym, dostęp do podstawowej opieki zdrowotnej wysokiej jakości oraz bezpiecznych, skutecznych, wysokiej jakości, przystępnych cenowo lekarstw i szczepionek",
                           
-                            "definicja": "",
+                            "definicja": "Odsetek ludności z dużymi wydatkami gospodarstw domowych na zdrowie (jako udział w całkowitych wydatkach gospodarstw domowych lub dochodach).",
                           
-                            "jednostka": "",
+                            "jednostka": "procent [%]",
                           
                             "wymiary": "",
                           
-                            "metodologia": "",
+                            "metodologia": "Wydatkami gospodarstwa domowego na zdrowie nazywamy wydatki przeznaczane na opiekę (profilaktyczną, leczniczą, rehabilitacyjną, paliatywną lub długoterminową), w tym leki, szczepionki i wszystkie produkty zdrowotne dla wszystkich członków gospodarstwa domowego. Dla określenia „dużych wydatków na zdrowie gospodarstwa domowego' używa się dwóch progów: powyżej 10% i powyżej 25% całkowitych wydatków lub dochodów gospodarstwa domowego.",
                           
-                            "zrodlo": "",
+                            "zrodlo": "Światowa Organizacja Zdrowia",
                           
-                            "czestotliwosc": "",
+                            "czestotliwosc": "Dane roczne, od 2010 r.",
                           
-                            "uwagi": ""
+                            "uwagi": "Dane szacunkowe, obliczone przez WHO."
                           }
           ],
           "dane": [
-            {
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   ""
+                              
+                              }
+                          ]
+                        
+                    
+                
             }
           ]
         }
@@ -1179,29 +1229,84 @@
           "metadane": [
             
             {
-                            "nazwa": "3.9.1 Współczynnik umieralności z powodu zanieczyszczeń pochodzących z powietrza atmosferycznego i gospodarstw domowych",
+                            "nazwa": "3.9.1 Współczynnik umieralności z powodu zanieczyszczeń pochodzących z powietrza atmosferycznego i gospodarstw domowych (na 100 tys. ludności)",
                           
                             "cel": "cel 3. Dobre zdrowie i jakość życia",
                           
                             "zadanie": "3.9 Do 2030 roku znacząco obniżyć liczbę zgonów i chorób powodowanych przez niebezpieczne substancje chemiczne oraz zanieczyszczenie i skażenie powietrza, wody i gleby.",
                           
-                            "definicja": "",
+                            "definicja": "Liczba zgonów z powodu połączonych skutków zanieczyszczenia powietrza w gospodarstwie domowym oraz zanieczyszczenia otaczającego powietrza w przeliczeniu na 100 tys. ludności.",
                           
-                            "jednostka": "",
+                            "jednostka": "osoby",
                           
-                            "wymiary": "",
+                            "wymiary": "ogółem",
                           
-                            "metodologia": "",
+                            "metodologia": "Do oceny narażenia na zanieczyszczenie powietrza bierze się pod uwagę następujące schorzenia:   Ostre infekcje dróg oddechowych u małych dzieci (szacowane poniżej 5 roku życia); Choroby naczyniowo-mózgowe (udar) u osób dorosłych (szacowane powyżej 25 lat); Choroby niedokrwienne serca u osób dorosłych (szacowane powyżej 25 lat); Przewlekłą obturacyjną chorobę płuc u osób dorosłych (szacowana powyżej 25 lat); i Nowotwór płuc u osób dorosłych (szacowany powyżej 25 lat). ",
                           
-                            "zrodlo": "",
+                            "zrodlo": "Światowa Organizacja Zdrowia",
                           
-                            "czestotliwosc": "",
+                            "czestotliwosc": "Dane co kilka lat, od 2016 r.",
                           
-                            "uwagi": ""
+                            "uwagi": "Dane szacunkowe, obliczone przez WHO."
                           }
           ],
           "dane": [
             {
+                      
+                              "wg współczynnika": [
+                                  {"współczynnik surowy": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ],"współczynnik standaryzowany względem wieku": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
             }
           ]
         }
@@ -1386,6 +1491,85 @@
           ],
           "dane": [
             {
+                      
+                              "wg szczepień": [
+                                  {"DTP3": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ],"MCV2": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ],"PCV3": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
             }
           ]
         }
@@ -1651,6 +1835,40 @@
                         
                     
                 
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "3-d-2": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "3.d.2 Zmniejszenie odsetka zakażeń krwi spowodowanych organizmami odpornymi na środki drobnoustrojobójcze",
+                          
+                            "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                          
+                            "zadanie": "3.d Wzmocnić zdolność wszystkich krajów, szczególnie państw rozwijających się, w dziedzinie wczesnego ostrzegania, redukcji ryzyka oraz zarządzania krajowym i globalnym ryzykiem w obszarze zdrowia.",
+                          
+                            "definicja": "",
+                          
+                            "jednostka": "",
+                          
+                            "wymiary": "",
+                          
+                            "metodologia": "",
+                          
+                            "zrodlo": "",
+                          
+                            "czestotliwosc": "",
+                          
+                            "uwagi": ""
+                          }
+          ],
+          "dane": [
+            {
             }
           ]
         }

@@ -7,29 +7,52 @@
       "metadata": [
         
         {
-                        "name": "3.8.1 Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, noncommunicable diseases and service capacity and access, among the general and the most disadvantaged population)",
+                        "name": "Universal health coverage (UHC) service coverage index",
                       
                         "goal": "Goal 3. Good health and well-being",
                       
                         "target": "3.8 Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable essential medicines and vaccines for all",
                       
-                        "definition": "",
+                        "definition": "Coverage of essential health services defined as the average coverage of essential services based on selected interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable diseases and service capacity and access, among the general and the most disadvantaged population.",
                       
-                        "unit": "",
+                        "unit": "[0 – 100]",
                       
                         "dimensions": "",
                       
-                        "methodology": "",
+                        "methodology": "The indicator is reported on a unitless scale of 0 to 100, which is computed as the geometric mean of 14 tracer indicators of health service coverage. The indicators are organized by four categories of service coverage:  I. Reproductive, maternal, newborn and child health  1. Family planning: Percentage of women of reproductive age (15-49 years) who are married or in-union who have their need for family planning satisfied with modern methods. 2. Pregnancy and delivery care: Percentage of women aged 15-49 years with a live birth in a given time period who received antenatal care four or more times. 3. Child immunization: Percentage of infants receiving three doses of diphtheria-tetanus-pertussis containing vaccine. 4. Child treatment: Percentage of children under 5 years of age with suspected pneumonia (cough and difficult breathing NOT due to a problem in the chest and a blocked nose) in the two weeks preceding the survey taken to an appropriate health facility or provider.  II. Infectious diseases 5. Tuberculosis: Percentage of incident TB cases that are detected and successfully treated. 6. HIV/AIDS: Percentage of people living with HIV currently receiving antiretroviral therapy. 7. Malaria: Percentage of population in malaria-endemic areas who slept under an insecticide-treated net the previous night [only for countries with high malaria burden]. 8. Water and sanitation: Percentage of households using at least basic sanitation facilities. III. Noncommunicable diseases  9. Hypertension: Age-standardized prevalence of non-raised blood pressure among adults aged 18 years and older, aged-standarized. 10. Diabetes: Age-standardized mean fasting plasma glucose (mmol/L) for adults aged 18 years and older. 11. Tobacco: Age-standardized prevalence of adults >=15 years not smoking tobacco in last 30 days.  IV. Service capacity and access 12. Hospital access: Hospital beds per capita, relative to a maximum threshold of 18 per 10,000 population. 13. Health workforce: Health professionals (physicians, psychiatrists, and surgeons) per capita, relative to maximum thresholds for each cadre. 14. Health security: International Health Regulations (IHR) core capacity index, which is the average of attributes of 13 core capacities that have been attained.",
                       
-                        "source": "",
+                        "source": "World Health Organization",
                       
-                        "availability": "",
+                        "availability": "Data available every few years, since 2010 (subject to data availability)",
                       
-                        "notes": ""
+                        "notes": "Estimated data, calculated by WHO."
                       }
       ],
       "data": [
-        {}
+        {"total": [
+                      {
+                      
+                          "2010" :   "",
+                      
+                          "2011" :   "",
+                      
+                          "2012" :   "",
+                      
+                          "2013" :   "",
+                      
+                          "2014" :   "",
+                      
+                          "2015" :   "",
+                      
+                          "2016" :   "",
+                      
+                          "2017" :   "",
+                      
+                          "2018" :   ""
+                      
+                      }
+                  ]
+            }
       ]
     }
   ]

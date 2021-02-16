@@ -1111,29 +1111,54 @@
           "metadata": [
             
             {
-                            "name": "3.8.1 Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, noncommunicable diseases and service capacity and access, among the general and the most disadvantaged population)",
+                            "name": "Universal health coverage (UHC) service coverage index",
                           
                             "goal": "Goal 3. Good health and well-being",
                           
                             "target": "3.8 Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable essential medicines and vaccines for all",
                           
-                            "definition": "",
+                            "definition": "Coverage of essential health services defined as the average coverage of essential services based on selected interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable diseases and service capacity and access, among the general and the most disadvantaged population.",
                           
-                            "unit": "",
+                            "unit": "[0 – 100]",
                           
                             "dimensions": "",
                           
-                            "methodology": "",
+                            "methodology": "The indicator is reported on a unitless scale of 0 to 100, which is computed as the geometric mean of 14 tracer indicators of health service coverage. The indicators are organized by four categories of service coverage:  I. Reproductive, maternal, newborn and child health  1. Family planning: Percentage of women of reproductive age (15-49 years) who are married or in-union who have their need for family planning satisfied with modern methods. 2. Pregnancy and delivery care: Percentage of women aged 15-49 years with a live birth in a given time period who received antenatal care four or more times. 3. Child immunization: Percentage of infants receiving three doses of diphtheria-tetanus-pertussis containing vaccine. 4. Child treatment: Percentage of children under 5 years of age with suspected pneumonia (cough and difficult breathing NOT due to a problem in the chest and a blocked nose) in the two weeks preceding the survey taken to an appropriate health facility or provider.  II. Infectious diseases 5. Tuberculosis: Percentage of incident TB cases that are detected and successfully treated. 6. HIV/AIDS: Percentage of people living with HIV currently receiving antiretroviral therapy. 7. Malaria: Percentage of population in malaria-endemic areas who slept under an insecticide-treated net the previous night [only for countries with high malaria burden]. 8. Water and sanitation: Percentage of households using at least basic sanitation facilities. III. Noncommunicable diseases  9. Hypertension: Age-standardized prevalence of non-raised blood pressure among adults aged 18 years and older, aged-standarized. 10. Diabetes: Age-standardized mean fasting plasma glucose (mmol/L) for adults aged 18 years and older. 11. Tobacco: Age-standardized prevalence of adults >=15 years not smoking tobacco in last 30 days.  IV. Service capacity and access 12. Hospital access: Hospital beds per capita, relative to a maximum threshold of 18 per 10,000 population. 13. Health workforce: Health professionals (physicians, psychiatrists, and surgeons) per capita, relative to maximum thresholds for each cadre. 14. Health security: International Health Regulations (IHR) core capacity index, which is the average of attributes of 13 core capacities that have been attained.",
                           
-                            "source": "",
+                            "source": "World Health Organization",
                           
-                            "availability": "",
+                            "availability": "Data available every few years, since 2010 (subject to data availability)",
                           
-                            "notes": ""
+                            "notes": "Estimated data, calculated by WHO."
                           }
           ],
           "data": [
-            {
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   ""
+                              
+                              }
+                          ]
+                      
+                    
+                
             }
           ]
         }
@@ -1151,23 +1176,48 @@
                           
                             "target": "3.8 Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable essential medicines and vaccines for all",
                           
-                            "definition": "",
+                            "definition": "Proportion of the population with large household expenditure on health as a share of total household expenditure or income.",
                           
-                            "unit": "",
+                            "unit": "percent [%]",
                           
                             "dimensions": "",
                           
-                            "methodology": "",
+                            "methodology": "Household expenditure on health is defined as any expenditure to get any type of care (promotive, preventive, curative, rehabilitative, palliative or long-term care) including medicines, vaccines and all health products for all members of the household. Two thresholds are used to define „large household expenditure on health': greater than 10% and greater than 25% of total household expenditure or income.",
                           
-                            "source": "",
+                            "source": "World Health Organization",
                           
-                            "availability": "",
+                            "availability": "Annual data, since 2010",
                           
-                            "notes": ""
+                            "notes": "Estimated data, calculated by WHO"
                           }
           ],
           "data": [
-            {
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   ""
+                              
+                              }
+                          ]
+                      
+                    
+                
             }
           ]
         }
@@ -1179,29 +1229,84 @@
           "metadata": [
             
             {
-                            "name": "3.9.1 Mortality rate attributed to household and ambient air pollution",
+                            "name": "3.9.1 Mortality rate attributed to household and ambient air pollution (per 100,000 population)",
                           
                             "goal": "Goal 3. Good health and well-being",
                           
-                            "target": "3.9 By 2030, substantially reduce the number of 9deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination",
+                            "target": "3.9 By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination",
                           
-                            "definition": "",
+                            "definition": "Death rate attributed to household and ambient air pollution (deaths per 100,000 population).",
                           
-                            "unit": "",
+                            "unit": "persons",
                           
-                            "dimensions": "",
+                            "dimensions": "total",
                           
-                            "methodology": "",
+                            "methodology": "The estimate of the mortality resulting from exposure to air pollution takes into account the following important diseases:  Acute respiratory infections in young children (estimated under 5 years of age); Cerebrovascular diseases (stroke) in adults (estimated above 25 years); Ischaemic heart diseases (IHD) in adults (estimated above 25 years); Chronic obstructive pulmonary disease (COPD) in adults (estimated above 25 years); and Lung cancer in adults (estimated above 25 years). ",
                           
-                            "source": "",
+                            "source": "World Health Organization",
                           
-                            "availability": "",
+                            "availability": "Data every few years since 2016",
                           
-                            "notes": ""
+                            "notes": "Estimated data, computed by WHO."
                           }
           ],
           "data": [
             {
+                      
+                              "by rate": [
+                                  {"crude death rate": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ],"age-standardized morality rate": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
             }
           ]
         }
@@ -1386,6 +1491,85 @@
           ],
           "data": [
             {
+                      
+                              "by vaccines": [
+                                  {"DTP3": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ],"MCV2": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ],"PCV3": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
             }
           ]
         }
@@ -1651,6 +1835,40 @@
                       
                     
                 
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "3-d-2": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "3.d.2 Reduce the percentage of bloodstream infections due to selected antimicrobial-resistant organisms",
+                          
+                            "goal": "Goal 3. Good health and well-being",
+                          
+                            "target": "3.d Strengthen the capacity of all countries, in particular developing countries, for early warning, risk reduction and management of national and global health risks",
+                          
+                            "definition": "",
+                          
+                            "unit": "",
+                          
+                            "dimensions": "",
+                          
+                            "methodology": "",
+                          
+                            "source": "",
+                          
+                            "availability": "",
+                          
+                            "notes": ""
+                          }
+          ],
+          "data": [
+            {
             }
           ]
         }
