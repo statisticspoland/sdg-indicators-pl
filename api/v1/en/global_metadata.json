@@ -1342,7 +1342,7 @@
                         "metadata": [
                           
                           {
-                                          "name": "Universal health coverage (UHC) service coverage index",
+                                          "name": "3.8.1 Universal health coverage (UHC) service coverage index",
                                         
                                           "goal": "Goal 3. Good health and well-being",
                                         
@@ -1414,7 +1414,7 @@
                                         
                                           "dimensions": "total",
                                         
-                                          "methodology": "The estimate of the mortality resulting from exposure to air pollution takes into account the following important diseases:  Acute respiratory infections in young children (estimated under 5 years of age); Cerebrovascular diseases (stroke) in adults (estimated above 25 years); Ischaemic heart diseases (IHD) in adults (estimated above 25 years); Chronic obstructive pulmonary disease (COPD) in adults (estimated above 25 years); and Lung cancer in adults (estimated above 25 years). ",
+                                          "methodology": "The estimate of the mortality resulting from exposure to air pollution takes into account the following important diseases:  • Acute respiratory infections in young children (estimated under 5 years of age); • Cerebrovascular diseases (stroke) in adults (estimated above 25 years); • Ischaemic heart diseases (IHD) in adults (estimated above 25 years); • Chronic obstructive pulmonary disease (COPD) in adults (estimated above 25 years); and • Lung cancer in adults (estimated above 25 years).",
                                         
                                           "source": "World Health Organization",
                                         
@@ -1528,19 +1528,19 @@
                                         
                                           "target": "3.b Support the research and development of vaccines and medicines for the communicable and non-communicable diseases that primarily affect developing countries, provide access to affordable essential medicines and vaccines, in accordance with the Doha Declaration on the TRIPS Agreement and Public Health, which affirms the right of developing countries to use to the full the provisions in the Agreement on Trade-Related Aspects of Intellectual Property Rights regarding flexibilities to protect public health, and, in particular, provide access to medicines for all",
                                         
-                                          "definition": "",
+                                          "definition": "Proportion of the target population covered by all vaccines included in their national programme.",
                                         
-                                          "unit": "",
+                                          "unit": "percent [%]",
                                         
-                                          "dimensions": "",
+                                          "dimensions": "type of vaccinaton",
                                         
-                                          "methodology": "",
+                                          "methodology": "This indicator aims to measure access to vaccines, including the newly available or underutilized vaccines, at the national level. The vaccines taken into consideration are as follows: · DTP3 - third dose of Diphtheria-tetanus-pertussis containing vaccine; data present the percentage of surviving infants who received the 3 doses of diphtheria and tetanus toxoid with pertussis containing vaccine in a given year according to nationally recommended schedule; · MCV2 - second dose of Measles containing vaccine; data present the percentage of children who received two dose of measles containing vaccine according to nationally recommended schedule through routine immunization services in a given year, · PCV3 - third, final dose of Pneumococcal conjugate vaccine; data present the percentage of surviving infants who received the nationally recommended doses of pneumococcal conjugate vaccine in a given year, · HPV - Human papillomavirus infection vaccine (last dose in the schedule); data present the percentage of 15 years old girls received the recommended doses of HPV vaccine.",
                                         
-                                          "source": "",
+                                          "source": "WHO",
                                         
-                                          "availability": "",
+                                          "availability": "Annual data, since 2010 (for PCV3 – since 2018)",
                                         
-                                          "notes": ""
+                                          "notes": "Estimated data, calculated by WHO. No estimate for Poland for the HPV vaccine."
                                         }
                         ]
                       }
@@ -1725,6 +1725,36 @@
                                           "source": "Organisation for Economic Co-operation and Development / the Ministry of Education and Science",
                                         
                                           "availability": "Annual data every 5 years; since 2011",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "4-1-2": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "4.1.2 Completion rate (primary, lower secondary education, upper secondary education)",
+                                        
+                                          "goal": "Goal 4. Quality education",
+                                        
+                                          "target": "4.1 By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
                                         
                                           "notes": ""
                                         }
@@ -2872,19 +2902,19 @@
                                         
                                           "target": "7.1 By 2030, ensure universal access to affordable, reliable and modern energy services",
                                         
-                                          "definition": "",
+                                          "definition": "Proportion of population using clean fuels and technology for cooking, heating or lighting in total population reporting using fuel of any kind for cooking, heating or lighting.",
                                         
-                                          "unit": "",
+                                          "unit": "percent [%]",
                                         
-                                          "dimensions": "",
+                                          "dimensions": "total",
                                         
-                                          "methodology": "",
+                                          "methodology": "Clean fuel can be divided into:  ∙  low emission biofuels (ethanol or biodiesel biogas) and liquefied petroleum gas (LPG) – used in transport;  ∙  biogas, LPG, electricity, ethanol, natural gas, solar cookers and alcohol stoves (providing high efficiency in terms of reducing air pollution in households) – used for cooking and lighting. Clean fuel is defined by the emission rate targets and specific fuel recommendations (i.e. against unprocessed coal and kerosene) included in the normative guidance WHO guidelines for indoor air quality: household fuel combustion. The indicator is modelled with household survey data compiled by WHO. The information on cooking fuel use and cooking practices comes from about 1300 nationally representative survey and censuses. Survey sources include Demographic and Health Surveys (DHS) and Living Standards Measurement Surveys (LSMS), Multi-Indicator Cluster Surveys (MICS), the World Health Survey (WHS), and other nationally developed and implemented surveys. Estimates of primary cooking energy for the total, urban and rural population for a given country and year are obtained together using a single multivariate hierarchical model. Using household survey data as inputs, the model jointly estimates primary reliance on 6 specific fuel types:  ∙ unprocessed biomass (e.g. wood),   ∙ charcoal,   ∙ coal,   ∙ kerosene,   ∙ gaseous fuels (e.g. LPG),   ∙ electricity;   and a final category including other clean fuels (e.g. alcohol).",
                                         
-                                          "source": "",
+                                          "source": " WHO",
                                         
-                                          "availability": "",
+                                          "availability": "Annual data, since 2010",
                                         
-                                          "notes": ""
+                                          "notes": "Estimated data, calculated by the WHO. Countries with no household fuel data but classified as high-income according to the World Bank country classification (37 countries, including Poland) were assumed to have fully transitioned to clean household energy and therefore are reported as >95% access to clean technologies."
                                         }
                         ]
                       }
@@ -2986,7 +3016,7 @@
                         "metadata": [
                           
                           {
-                                          "name": "7.b.1 Investments in energy efficiency as a percentage of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services",
+                                          "name": "7.b.1 Installed renewable energy-generating capacity in developing countries (in watts per capita)",
                                         
                                           "goal": "Goal 7. Affordable and clean energy",
                                         
@@ -4019,6 +4049,36 @@
                     ]
                   },
                   {
+                    "10-4-2": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "10.4.2 Proportion of the population who are refugees, by country of origin",
+                                        
+                                          "goal": "Goal 10. Reduce inequalities",
+                                        
+                                          "target": "10.4 Adopt policies, especially fiscal, wage and social protection policies, and progressively achieve greater equality",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
                     "10-5-1": [
                       {
                         "metadata": [
@@ -4115,6 +4175,66 @@
                           
                           {
                                           "name": "10.7.2 Number of countries with migration policies that facilitate orderly, safe, regular and responsible migration and mobility of people",
+                                        
+                                          "goal": "Goal 10. Reduce inequalities",
+                                        
+                                          "target": "10.7 Facilitate orderly, safe, regular and responsible migration and mobility of people, including through the implementation of planned and well-managed migration policies",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "10-7-3": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "10.7.3 Number of people who died or disappeared in the process of migration towards an international destination",
+                                        
+                                          "goal": "Goal 10. Reduce inequalities",
+                                        
+                                          "target": "10.7 Facilitate orderly, safe, regular and responsible migration and mobility of people, including through the implementation of planned and well-managed migration policies",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "10-7-4": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "10.7.4 Proportion of the population who are refugees, by country of origin",
                                         
                                           "goal": "Goal 10. Reduce inequalities",
                                         

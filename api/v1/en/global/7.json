@@ -69,19 +69,19 @@
                           
                             "target": "7.1 By 2030, ensure universal access to affordable, reliable and modern energy services",
                           
-                            "definition": "",
+                            "definition": "Proportion of population using clean fuels and technology for cooking, heating or lighting in total population reporting using fuel of any kind for cooking, heating or lighting.",
                           
-                            "unit": "",
+                            "unit": "percent [%]",
                           
-                            "dimensions": "",
+                            "dimensions": "total",
                           
-                            "methodology": "",
+                            "methodology": "Clean fuel can be divided into:  ∙  low emission biofuels (ethanol or biodiesel biogas) and liquefied petroleum gas (LPG) – used in transport;  ∙  biogas, LPG, electricity, ethanol, natural gas, solar cookers and alcohol stoves (providing high efficiency in terms of reducing air pollution in households) – used for cooking and lighting. Clean fuel is defined by the emission rate targets and specific fuel recommendations (i.e. against unprocessed coal and kerosene) included in the normative guidance WHO guidelines for indoor air quality: household fuel combustion. The indicator is modelled with household survey data compiled by WHO. The information on cooking fuel use and cooking practices comes from about 1300 nationally representative survey and censuses. Survey sources include Demographic and Health Surveys (DHS) and Living Standards Measurement Surveys (LSMS), Multi-Indicator Cluster Surveys (MICS), the World Health Survey (WHS), and other nationally developed and implemented surveys. Estimates of primary cooking energy for the total, urban and rural population for a given country and year are obtained together using a single multivariate hierarchical model. Using household survey data as inputs, the model jointly estimates primary reliance on 6 specific fuel types:  ∙ unprocessed biomass (e.g. wood),   ∙ charcoal,   ∙ coal,   ∙ kerosene,   ∙ gaseous fuels (e.g. LPG),   ∙ electricity;   and a final category including other clean fuels (e.g. alcohol).",
                           
-                            "source": "",
+                            "source": " WHO",
                           
-                            "availability": "",
+                            "availability": "Annual data, since 2010",
                           
-                            "notes": ""
+                            "notes": "Estimated data, calculated by the WHO. Countries with no household fuel data but classified as high-income according to the World Bank country classification (37 countries, including Poland) were assumed to have fully transitioned to clean household energy and therefore are reported as >95% access to clean technologies."
                           }
           ],
           "data": [
@@ -278,7 +278,7 @@
           "metadata": [
             
             {
-                            "name": "7.b.1 Investments in energy efficiency as a percentage of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services",
+                            "name": "7.b.1 Installed renewable energy-generating capacity in developing countries (in watts per capita)",
                           
                             "goal": "Goal 7. Affordable and clean energy",
                           

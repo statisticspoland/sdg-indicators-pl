@@ -69,19 +69,19 @@
                           
                             "zadanie": "7.1 Do 2030 roku zapewnić powszechny dostęp do przystępnych cenowo, niezawodnych i nowoczesnych usług energetycznych.",
                           
-                            "definicja": "",
+                            "definicja": "Udział ludności, która wykorzystuje czyste paliwa i technologie do gotowania, ogrzewania i oświetlenia w całkowitej liczbie ludności, która wykorzystuje jakiekolwiek paliwo do gotowania, ogrzewania lub oświetlenia.",
                           
-                            "jednostka": "",
+                            "jednostka": "procent [%]",
                           
-                            "wymiary": "",
+                            "wymiary": "ogółem",
                           
-                            "metodologia": "",
+                            "metodologia": " Czystym paliwem  mogą być:  ∙  biopaliwa o niskich poziomach emisji (etanol lub biogaz biodiesla) oraz skroplony gaz ropopochodny (LPG) –  wykorzystywane w transporcie;  ∙  biogaz, LPG, energia elektryczna, etanol, gaz ziemny, kuchenki słoneczne i kuchenki na paliwo alkoholowe (które zapewniają wysoką wydajność pod względem zmniejszenia zanieczyszczenia powietrza w gospodarstwach domowych) – wykorzystywane do gotowania i oświetlenia.  Czyste paliwo jest definiowane przez docelowe wielkości emisji i konkretne zalecenia dotyczące paliwa (tj. takie, które są przeciwne nieprzetworzonemu węglu i nafcie) zawarte w wytycznych WHO dotyczących jakości powietrza w pomieszczeniach, będących efektem spalania paliw w gospodarstwach domowych.  Wskaźnik jest modelowany na podstawie danych pozyskiwanych z badań gospodarstw domowych zbieranych przez WHO. Informacje na temat zużycia paliw do gotowania i praktyk kulinarnych pochodzą z około 1300 reprezentatywnych badań i spisów powszechnych w różnych krajach. Źródła danych obejmują: Demograficzne Badania Zdrowia, badania dotyczące pomiaru standardów życia (LSMS), badania klastrów wielowskaźnikowych (MICS), światowe badanie zdrowia (WHS) oraz inne opracowane i wdrożone na poziomie krajowym badania.  Oszacowania wykorzystania czystej energii jako podstawowej do gotowania dla całej populacji miejskiej i wiejskiej dla danego kraju i roku są uzyskiwane przy użyciu jednego wielowymiarowego modelu hierarchicznego. Wykorzystując dane z badań gospodarstw domowych jako dane wejściowe, model łącznie szacuje podstawowe uzależnienie od sześciu określonych rodzajów paliw:  ∙ nieprzetworzonej biomasy (np. drewna),  ∙ węgla drzewnego,  ∙ węgla,   ∙ nafty,  ∙ paliw gazowych (np. LPG),   ∙ elektyczności;   oraz ostatniej kategorii obejmującej inne czyste paliwa (np. alkohol).",
                           
-                            "zrodlo": "",
+                            "zrodlo": " WHO",
                           
-                            "czestotliwosc": "",
+                            "czestotliwosc": " Dane roczne, od 2010 r.",
                           
-                            "uwagi": ""
+                            "uwagi": "Dane szacunkowe, obliczone przez WHO. Założono, że kraje, dla których nie ma danych dotyczących paliw dla gospodarstw domowych, ale zostały sklasyfikowane, jako kraje o wysokim dochodzie zgodnie z klasyfikacją krajów Banku Światowego (37 krajów, w tym Polska), w pełni przeszły na czystą energię w gospodarstwach domowych, a zatem są zgłaszane jako mające >95% dostępu do czystych technologii."
                           }
           ],
           "dane": [
@@ -278,7 +278,7 @@
           "metadane": [
             
             {
-                            "nazwa": "7.b.1 Inwestycje w wydajność energetyczną jako procent PKB oraz ilość bezpośrednich inwestycji zagranicznych w transferach finansowych na rzecz infrastruktury i technologii dla usług zrównoważonego rozwoju",
+                            "nazwa": "7.b.1 Moc zainstalowana OZE w krajach rozwijających się (w watach na 1 mieszkańca)",
                           
                             "cel": "cel 7. Czysta i dostępna energia",
                           
