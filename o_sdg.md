@@ -223,7 +223,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   <h4><b>SDG4FUN</b></h4>
   <p>Dane statystyczne nie muszą być nudne ani przyprawiać o ból głowy. Chcesz je poznać poprzez zabawę? Zapoznaj się z aplikacjami o SDGs i przekonaj się, jak potrzebna jest statystyka w działaniu na rzecz zrównoważonego rozwoju. </p>
 
-  <p>Chcesz dowiedzieć się więcej o młodych ludziach, którzy nie uczą się ani nie pracują? Poznaj gry i filmy stworzone przez drużyny z całego świata, które w 2017 r. wzięły udział w <a href="https://statswiki.unece.org/display/BST/HLG+Hackathon+2017" target="_blank">hackathonie Telling stories with SDG data</a> zorganizowanym przez Europejską Komisję Gospodarczą Narodów Zjednoczonych. Wśród zawodników znalazły dwie drużyny reprezentujące polską statystykę, w tym zwycięska: <a href="http://153.19.126.235/bluebirds/" target="_blank">Polish Statistical Crew z GUS i US Gdańsk</a>.</p>
+  <p>Chcesz dowiedzieć się więcej o młodych ludziach, którzy nie uczą się ani nie pracują? Poznaj gry i filmy stworzone przez drużyny z całego świata, które w 2017 r. wzięły udział w hackathonie Telling stories with SDG data zorganizowanym przez Europejską Komisję Gospodarczą Narodów Zjednoczonych. Wśród zawodników znalazły dwie drużyny reprezentujące polską statystykę, w tym zwycięska: <a href="http://153.19.126.235/bluebirds/" target="_blank">Polish Statistical Crew z GUS i US Gdańsk</a>.</p>
 
   <p>To nie wszystko! Chcesz przekonać się, że każdy człowiek na Ziemi – nawet najbardziej leniwy może działać na rzecz SDGs? Poznaj <a href="https://www.un.org/sustainabledevelopment/takeaction/" target="_blank">poradnik</a> ONZ, który możesz zastosować w domu, szkole lub pracy.</p>
 
