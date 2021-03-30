@@ -1,0 +1,106 @@
+{% include head.html %}
+
+{% include header.html %}
+
+{% assign ktore = site.data.krajowe %}
+{% if page.url contains '/en/' %}
+  {% assign goals = ktore['en'].sdg_goals %}
+  {% assign goals_priorytet = ktore['en'].sdg_priorytet %}
+  {% assign indicators_priorytet = ktore['en'].sdg_indicator_metadata %}
+  {% assign lang = '/en' %}
+  {% assign title = 'Priority for Poland' %}
+{% else %}
+  {% assign goals = ktore.sdg_goals %}
+  {% assign goals_priorytet = ktore.sdg_priorytet %}
+  {% assign indicators_priorytet = ktore.sdg_indicator_metadata %}
+  {% assign lang = '' %}
+  {% assign title = 'Priorytety krajowe SDG' %}
+{% endif %}
+
+    <div id="main" class="main-content initiative-content status-dashboard">
+
+        <a id="main-content" tabindex="-1"></a>
+
+			<section class="pl-banner-nat">
+
+            <div class="pl-grid">
+                <div class="pl-banner-content">
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="pl-grid">
+            {{ content }}
+        </div>
+
+        <div class="pl-grid initiative-description">
+
+            <div class="goal-list">
+
+
+
+
+            {% for goal in goals %}
+
+                {% assign this_goal = goal.goal | plus:0 %}
+
+                {% if this_goal < 10 %}
+                    {% assign img_path = 0  %}
+                {% else %}
+                    {% assign img_path = ''  %}
+                {% endif %}
+
+                    <div class="media pl-grid-full">
+
+                      <div class="usa-width-one-sixth">
+                        <div class="media-left">
+                          <div>
+
+                            <a href="{{ site.baseurl }}{{ lang }}/statistics_nat/{{ goal.short | slugify }}/">
+                              {% if page.url contains '/en/' %}
+                                <img class="media-object" src="{{ site.baseurl }}/assets/img{{ lang }}{{ lang }}-sdg-goal-{{ img_path }}{{ this_goal }}.png" width="75%" height="calc(1 * width)" alt="{{ goal.short}}">
+                              {% else %}
+                                <img class="media-object" src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-{{ img_path }}{{ this_goal }}.png" width="75%" height="calc(1 * width)" alt="{{ goal.short}}">
+                              {% endif %}
+                            </a>
+                          <span class="sr-only">
+                                {{ goal.title}}
+                          </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="usa-width-five-sixths">
+
+                        {% for goal_p in goals_priorytet %}
+                          {% if goal.goal==goal_p.goal %}
+                          <div style="display: inline-block;width: 100%;border-bottom: 1px solid #cccccc;border-left: 1px solid #cccccc;padding: 5px;">
+                            <div style="width: 50%;float: left;padding-right: 15px;">
+                              <p>{{goal_p.priorytet}}</p>
+
+                            </div>
+                            <div style="width: 50%;float: left;">
+                              {% assign nr_indi = goal_p.indicators | split: "," %}
+                              {% for jeden in nr_indi %}
+                                {% for indicators_p in indicators_priorytet %}
+                                  {% if jeden==indicators_p.target_id %}
+                                    {% assign jeden_myslnik = jeden | replace: '.', '-' %}
+                                    <p><a href="{{ site.baseurl }}{{ lang }}/statistics_nat/{{ jeden_myslnik }}">{{ jeden_myslnik  | replace: '-', '.' | remove: ".0"}} {{ indicators_p.indicator }}</a></p>
+                                  {% endif %}
+                                {% endfor %}
+                              {% endfor %}
+                            </div>
+                          </div>
+                          {% endif %}
+                        {% endfor %}
+                        </div>
+                      </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+{% include footer.html %}

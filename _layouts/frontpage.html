@@ -52,14 +52,14 @@
 
         {% assign img_path = goals.goal | plus:0 %}
 
-        {% if img_path < 10 %} {% assign img_path=0 %} {% else %} {% assign img_path='' %} {% endif %} 
-		
+        {% if img_path < 10 %} {% assign img_path=0 %} {% else %} {% assign img_path='' %} {% endif %}
+
 	{% if page.lang == 'en' %}
               {% assign language = 'en/' %}
         {% else %}
               {% assign language = '' %}
-        {% endif %}	   
-			   
+        {% endif %}
+
 	{% if page.url contains '/statistics_nat/' %}
           <a class="kafelek" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ goals.goal }}.png')" href="{{ site.baseurl }}/{{ language }}statistics_nat/{{ goals.short | slugify }}/"></a>
           {% else %}
@@ -69,20 +69,26 @@
           {% endfor %}
 
 		{% if page.url contains '/statistics_nat/' %}
-			
+
 			{% if page.lang == 'en' %}
-				<a class="kafelek" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/national_sdg_indicators.xlsx" ></a>
+				<a class="kafelek" style="background-position: center;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/national_sdg_indicators.xlsx" ></a>
 			{% else %}
-				<a class="kafelek" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/wskazniki_krajowe.xlsx" ></a>
+				<a class="kafelek" style="background-position: center;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/wskazniki_krajowe.xlsx" ></a>
 			{% endif %}
 
 		{% else %}
 
 			{% if page.lang == 'en' %}
-				<a class="kafelek" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/global_sdg_indicators.xlsx" ></a>
-			{% else %}
-				<a class="kafelek" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/wskazniki_globalne.xlsx" ></a>
-			{% endif %}
+      <div style="display: inline-grid">
+				<a class="kafelek" style="height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/global_sdg_indicators.xlsx" ></a>
+        <a class="kafelek" style="height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo_2.png');margin-top:10%" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/Zadania_globalne_en.xlsx" ></a>
+      </div>
+      {% else %}
+      <div style="display: inline-grid">
+				<a class="kafelek" style="height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/wskazniki_globalne.xlsx" ></a>
+        <a class="kafelek" style="height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo_2.png');margin-top:10%" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/Zadania_globalne_pl.xlsx" ></a>
+      </div>
+      {% endif %}
 
 		{% endif %}
 

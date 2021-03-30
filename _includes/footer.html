@@ -10,10 +10,20 @@
     <div class="pl-grid usa-footer-return-to-top">
       <a href="{{ site.baseurl }}{{ lang }}/api" style="font-size: 15px;margin-right: 30px;">{{ t.nav-api }}</a>
       <a href="{{ site.baseurl }}{{ lang }}/api/custodian" style="font-size: 15px;margin-right: 30px;">{{ t.nav-api-custodian }}</a>
-      <a href="{{ site.baseurl }}{{ lang }}/guide" style="font-size: 15px;margin-right: 30px;">{{ t.nav-monitoring }}</a>
-      <a href="{{ site.baseurl }}{{ lang }}/faqs" style="font-size: 15px;margin-right: 30px;">{{ t.nav-development }}</a>
+      {% if page.url contains '/en/' %}
+      <span class="contrast-default" style="font-size: 15px">Indicators' reporting status: </span>
+      <a href="{{ site.baseurl }}{{ lang }}/statistics_glob/status" style="font-size: 15px;margin-right: 0px;">{{ t.nav-reporting-glob-status }}</a>
+      <a href="{{ site.baseurl }}{{ lang }}/statistics_nat/status" style="font-size: 15px;margin-right: 0px;">{{ t.nav-reporting-nat-status }}</a>
+      {% else %}
+      <span class="contrast-default" style="font-size: 15px">Status raportowania: wskaźniki </span>
+      <a href="{{ site.baseurl }}{{ lang }}/statistics_glob/status" style="font-size: 15px;margin-right: 0px;">{{ t.nav-reporting-glob-status }}</a>
+      <a href="{{ site.baseurl }}{{ lang }}/statistics_nat/status" style="font-size: 15px;margin-right: 0px;">{{ t.nav-reporting-nat-status }}</a>
+      {% endif %}
+      <a href="{{ site.baseurl }}{{ lang }}/guide" style="font-size: 15px;margin-right: 30px;margin-left: 50px;">{{ t.nav-monitoring }}</a>
+      <a href="{{ site.baseurl }}{{ lang }}/faqs" style="font-size: 15px;margin-right: 30px;margin-left: 30px;">{{ t.nav-development }}</a>
       {% if page.url contains '/en/' %}
 	  {% else %}
+	    <br>
 	    <a href="{{ site.baseurl }}{{ lang }}/deklaracja-dostepnosci" style="font-size: 15px;margin-right: 30px;">{{ t.nav-declaration }}</a>
 	  {% endif %}
 
