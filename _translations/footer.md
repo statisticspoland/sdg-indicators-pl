@@ -12,8 +12,8 @@ pl:
   nav-api : "API"
   nav-api-custodian : "API organizacje międzynarodowe"
   nav-declaration : "Deklaracja dostępności"
-  nav-reporting-glob-status : "globalne"
-  nav-reporting-nat-status : "krajowe"
+  nav-reporting-glob-status : "globalnych"
+  nav-reporting-nat-status : "krajowych"
 en:
   about-heading: "About"
   about-text: "<b>About</b><br />Welcome to the Statistics Poland website dedicated to the 2030 Agenda and Sustainable Development Goals"
