@@ -79,15 +79,50 @@
 		{% else %}
 
 			{% if page.lang == 'en' %}
-      <div style="display: inline-grid">
-				<a class="kafelek" style="height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/global_sdg_indicators.xlsx" ></a>
-        <a class="kafelek" style="height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo_2.png');margin-top:10%" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/Zadania_globalne_en.xlsx" ></a>
-      </div>
+		<div style="display: inline-grid">
+			<a class="kafelek" style="margin-left:4px; margin-top:5px; height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/global_sdg_indicators.xlsx" ></a>
+
+		<ul class="usa-unstyled-list">
+			<li class="nav-item" style="width: 150px">
+				<div class="dropdown" style="width: 150px; text-align:center">
+				<a>
+					<div class="dropbtn">
+						<a class="kafelek" style="margin-left:4px; margin-top:5px; height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo_2.png')"></a>
+					<i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+					</div>
+				</a>
+					<div class="dropdown-content" style="width: 150px;">
+					<a class="pod" href="{{ site.baseurl }}/assets/pdf/{{ page.lang }}/Global_targets_en.pdf" style="border-bottom-style:solid; border-color:#dddddd; border-width:thin; text-align: center">PDF</a>
+					<a class="pod" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/Global_targets_en.xlsx" style="border-bottom-style:solid; border-color:#dddddd; border-width:thin; text-align: center">EXCEL</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+		</div>
+
       {% else %}
       <div style="display: inline-grid">
-				<a class="kafelek" style="height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/wskazniki_globalne.xlsx" ></a>
-        <a class="kafelek" style="height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo_2.png');margin-top:10%" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/Zadania_globalne_pl.xlsx" ></a>
-      </div>
+			<a class="kafelek" style="margin-left:4px; margin-top:5px; height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/wskazniki_globalne.xlsx" ></a>
+
+		<ul class="usa-unstyled-list">
+			<li class="nav-item" style="width: 150px">
+				<div class="dropdown" style="width: 150px; text-align:center">
+				<a>
+					<div class="dropbtn">
+						<a class="kafelek" style="margin-left:4px; margin-top:5px; height:70px;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo_2.png')"></a>
+					<i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+					</div>
+				</a>
+					<div class="dropdown-content" style="width: 150px;">
+					<a class="pod" href="{{ site.baseurl }}/assets/pdf/{{ page.lang }}/Zadania_globalne_pl.pdf" style="border-bottom-style:solid; border-color:#dddddd; border-width:thin; text-align: center">PDF</a>
+					<a class="pod" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/Zadania_globalne_pl.xlsx" style="border-bottom-style:solid; border-color:#dddddd; border-width:thin; text-align: center">EXCEL</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+		</div>
       {% endif %}
 
 		{% endif %}

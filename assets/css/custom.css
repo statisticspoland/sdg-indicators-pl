@@ -241,18 +241,29 @@ body.contrast-high {
     z-index: 1;
 }
 
+.dropdown-content:hover, .dropdown-content:active {
+    display: block;
+}
+
 .dropdown-content.contrast-high {
     background-color: black;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: #001d77;
+    padding: 8px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #fff;}
+.dropdown-content.contrast-high a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #fff; display: block;}
 
 .dropdown-content a:hover.contrast-high {background-color: black;}
 
@@ -1961,6 +1972,10 @@ header.fixed-header .site-navbar ul li a {
   #przycisk {
     display: none;
   }
+  .usa-unstyled-list {
+    display: block;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -2005,7 +2020,7 @@ header.fixed-header .site-navbar ul li a {
 
   }
   .usa-unstyled-list {
-    display: none;
+    display: block;
   }
   .navbar{
     display: block;
@@ -2059,7 +2074,7 @@ header.fixed-header .site-navbar ul li .dropbtn:hover {
 }
 
 a.pod:hover{
-  	background-color: blue;
+  	background-color: white;
 }
 
 a.nav-toggle {
