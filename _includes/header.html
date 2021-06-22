@@ -99,6 +99,21 @@
   </div> <!--zamykajacy do usa-disclaimer-->
 
 
+  {% if page.lang == 'pl' %}
+    <div class="usa-disclaimer {{ site.github.environment }} {{ jekyll.environment }}" style="background-color: #000077;">
+      <div class="pl-grid nag" style="text-align: center;background-color: #000077;padding-top: 10px;padding-bottom: 10px;">
+          <a href="https://spis.gov.pl" target="_blank"><span id="krajowa" class="contrast-default" style="color: white;text-decoration: underline;">Weź udział w Narodowym Spisie Powszechnym Ludności i Mieszkań 2021</span></a>
+      </div>
+    </div>
+  {% else %}
+    <div class="usa-disclaimer {{ site.github.environment }} {{ jekyll.environment }}" style="background-color: #000077;">
+      <div class="pl-grid nag" style="text-align: center;background-color: #000077;padding-top: 10px;padding-bottom: 10px;">
+          <a href="https://spis.gov.pl" target="_blank"><span id="krajowa" class="contrast-default" style="color: white;text-decoration: underline;">Take part in the National Census of Population and Housing 2021</span></a>
+      </div>
+    </div>
+  {% endif %}
+
+
 <!--------------------menu małe-------------------------------------------------------------------------------------------------->
   {% if page.layout != 'splash' %}<!--jesli nie strona z intro-->
     <a href="{{ site.baseurl }}{{ lang }}/" class="logo-home-mobile"><h1></h1></a>
