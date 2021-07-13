@@ -125,17 +125,16 @@ Poland presented its achievements at HLPF for the first time.
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2020/"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2020.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2021/"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2021.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>The Sustainable Development Goals Report 2020</b></p>
+  <p><b>The Sustainable Development Goals Report 2021</b></p>
 
-  <p>The report reviews progress in the fifth year of implementation of the 2030 Agenda for Sustainable Development. This overview presents highlights of progress, based on the latest available data, as well as remaining gaps in data coverage on 17 Sustainable Development Goals.</p>
+  <p>The report reviews progress in the sixth year of implementation of the 2030 Agenda for Sustainable Development. This overview presents highlights of progress, based on the latest available data, as well as remaining gaps in data coverage on 17 Sustainable Development Goals.</p>
 
   <p><b>Archive:</b></p>
+  <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2020/">The Sustainable Development Goals Report 2020</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2019/">The Sustainable Development Goals Report 2019</a></p>
   <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2018/">The Sustainable Development Goals Report 2018</a></p>
-  <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2017/">The Sustainable Development Goals Report 2017</a></p>
-  <p><a target="_blank" href="https://unstats.un.org/sdgs/report/2016/">The Sustainable Development Goals Report 2016</a></p>
 
 
   <hr>
@@ -161,21 +160,21 @@ Poland presented its achievements at HLPF for the first time.
 
   <hr>
   <div class="image-wrapper">
-  <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/11011074/KS-02-20-202-EN-N.pdf/334a8cfe-636a-bb8a-294a-73a052882f7f"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+  <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/12878705/KS-03-21-096-EN-N.pdf/8f9812e6-1aaa-7823-928f-03d8dd74df4f?t=1623741433852"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue_2021.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</b></p>
 
   <p>The publication, issued in 2017 by Eurostat, is a monitoring report on the progress towards achieving the Sustainable Development Goals in an EU context. This report describes progress made using a set of 100 indicators that are structured along the 17 SDGs. Two periods are considered: the short term, accounting for progress over the past five years, and the long term, looking at the trends over the last 15 years.
   <br><br><br></p>
   <p><b>Archive:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/11011074/KS-02-20-202-EN-N.pdf/334a8cfe-636a-bb8a-294a-73a052882f7f">Monitoring report on progress towards the SDGs in an EU context - 2020 edition</a></p>  
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820">Monitoring report on progress towards the SDGs in an EU context - 2019 edition</a></p>  
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Monitoring report on progress towards the SDGs in an EU context - 2018 edition</a></p>  
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-04-17-780?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Monitoring report on progress towards the SDGs in an EU context - 2017 edition</a></p>  
 
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/11010788/KS-01-20-192-EN-N.pdf/ae63aff0-a6f3-1d47-da83-c6886b9daaab"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/12878925/KS-03-21-097-EN-N.pdf/c7d90bf7-c3ae-00b5-7804-80526931036b?t=1623827181153"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue_2021.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</b></p>
 
@@ -183,9 +182,9 @@ Poland presented its achievements at HLPF for the first time.
 
   <br><br><br></p>
   <p><b>Archive:</b></p>
+  <p><a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/11010788/KS-01-20-192-EN-N.pdf/ae63aff0-a6f3-1d47-da83-c6886b9daaab">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2020 edition</a></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2019 edition</a></p>
   <p><a target="_blank" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2018 edition</a></p>
-  <p><a target="_blank" href="https://ec.europa.eu/eurostat/web/products-catalogues/-/KS-01-17-796?inheritRedirect=true&redirect=%2Feurostat%2Fweb%2Fsdi%2Fpublications">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2017 edition</a></p>
 
   <hr>
   <div class="image-wrapper">
