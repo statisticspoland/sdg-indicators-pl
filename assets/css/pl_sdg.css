@@ -1,5 +1,5 @@
 /* CSS file based on US uswds.css file.
- * 
+ *
  * Original file was modified according to the needs of Polish National Reporting Platform.
  *
  */
@@ -1880,9 +1880,9 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
-a:visited {
+/*a:visited {
   color: #4c2c92;
-}
+}*/
 
 a.contrast-high {
   color: #fff;
@@ -1894,9 +1894,9 @@ a:hover.contrast-high, a:active.contrast-high {
   text-decoration: underline;
 }
 
-a:visited.contrast-high {
+/*a:visited.contrast-high {
   color: #fff;
-}
+}*/
 
 a:focus {
   box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
