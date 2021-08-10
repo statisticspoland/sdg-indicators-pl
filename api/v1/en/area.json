@@ -954,6 +954,1662 @@
                       }
                     ]
               },
+          "1-1-a":{
+                
+                "metadata": [
+                      {
+                                      "name": "1.1.a At-risk-of-relative poverty rate",
+                                    
+                                      "goal": "Goal 1. No poverty",
+                                    
+                                      "priority": "Increase in real income of households translated into decrease in at-risk-of-relative poverty rate",
+                                    
+                                      "definition": "Percentage of persons in households living below relative poverty threshold which is determined at 50% of the mean expenditure at the level of all households.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total, age",
+                                    
+                                      "methodology": "The indicator is calculated on the basis of information obtained from Household budget survey. The household budget survey is conducted using representative method based on random sample which allows generalisation, within a margin of an error, of the results for all households in the country. The monthly rotation of households implemented since 1993 assumes that every month of the year a different group of households participates in the survey.The survey covers one-person and multi-person households. Households of foreigners with permanent or long-lasting residence in Poland and using Polish language also take part in the survey. The purpose of the survey is to enable the analysis of the living standards of the population as well as evaluate the impact of various factors on the living standard and its diversity among basic groups of households. Household budget survey provides detailed information on:   • the level and the structure of expenditures, sources of acquiring goods and services;   • the consumption level of basic food products according to quantity, but also energetic value and nutrients  prices at which households purchase selected goods and services  the level and sources of their incomes;   • household equipment with durables;   •  dwelling conditions  subjective evaluation of the material condition of households;   •  demographic and social structure of the households i.e. the number, age, gender, education, disability and economic activity of the members of the surveyed household. A household is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). The relative poverty threshold is estimated annually by Statistics Poland on the basis of the Household budget survey. Expenditures cover expenditures on consumer goods and services as well as other expenditures:    • Expenditures on consumer goods and services are are allocated to satisfying household's needs. They include products purchased by cash, also using debt or credit card, on credit, received free of charge and natural consumption (consumer goods and services taken from individual farm or own economic activity to satisfy household's needs). Consumer goods comprise non-durable goods (e.g. food, beverages or medicines), semi-durable goods (e.g. clothes, books, toys) and durable goods (e.g. cars, washing machines, refrigerators, television sets).   • Other expenditures include: gifts donated to other households and non-commercial institutions  certain taxes, such as tax on legacy and donations, tax on real estates, fees for perpetual use of the land, prepayments of personal income tax and social security contributions paid directly by the tax payer  other kinds of expenditures not allocated directly to consumption, including sums lost in gambling and lotteries, losses of cash and bails.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by age group": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "17.4",
+                                                    
+                                                        "2011" : "16.9",
+                                                    
+                                                        "2012" : "16.3",
+                                                    
+                                                        "2013" : "16.2",
+                                                    
+                                                        "2014" : "16.2",
+                                                    
+                                                        "2015" : "15.5",
+                                                    
+                                                        "2016" : "13.9",
+                                                    
+                                                        "2017" : "13.4",
+                                                    
+                                                        "2018" : "14.2",
+                                                    
+                                                        "2019" : "13.0",
+                                                    
+                                                        "2020" : "11.8"
+                                                    
+                                                    }
+                                                ],"persons aged 0-17": [
+                                                    {
+                                                    
+                                                        "2010" : "23.7",
+                                                    
+                                                        "2011" : "23.1",
+                                                    
+                                                        "2012" : "22.0",
+                                                    
+                                                        "2013" : "21.8",
+                                                    
+                                                        "2014" : "21.8",
+                                                    
+                                                        "2015" : "20.6",
+                                                    
+                                                        "2016" : "16.4",
+                                                    
+                                                        "2017" : "15.3",
+                                                    
+                                                        "2018" : "16.2",
+                                                    
+                                                        "2019" : "14.3",
+                                                    
+                                                        "2020" : "13.4"
+                                                    
+                                                    }
+                                                ],"persons aged 18-64": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"persons aged 65 and more": [
+                                                    {
+                                                    
+                                                        "2010" : "12.0",
+                                                    
+                                                        "2011" : "11.2",
+                                                    
+                                                        "2012" : "10.7",
+                                                    
+                                                        "2013" : "9.9",
+                                                    
+                                                        "2014" : "10.6",
+                                                    
+                                                        "2015" : "10.6",
+                                                    
+                                                        "2016" : "10.3",
+                                                    
+                                                        "2017" : "11.0",
+                                                    
+                                                        "2018" : "11.5",
+                                                    
+                                                        "2019" : "11.8",
+                                                    
+                                                        "2020" : "10.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "urban/rural": [
+                                            {"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "by socio-economic groups of households": [
+                                            {"farmers": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"the self-employed": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"retirees": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"pensioners": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "by education level of the head of the household": [
+                                            {"not higher than lower secondary": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"basic vocational": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"secondary": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"tertiary": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "1-3-a":{
+                
+                "metadata": [
+                      {
+                                      "name": "1.3.a Percentage of children aged 1-2 covered by different kinds of institutional care",
+                                    
+                                      "goal": "Goal 1. No poverty",
+                                    
+                                      "priority": "Improvement of access to public services (e.g. support for families with children, child and elderly care) and health services",
+                                    
+                                      "definition": "Share of children covered by institutional care in total number of children aged 1-2.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Different kinds of institutional care have been introduced by the Law on Childcare for children up tothe age of 3 dated 4 February 2011, in force since 4 April 2011 and the provisions concerning nannies -since October 2011. The law provides for the following types of care: nursery, children’s clubs, day carer and nanny, forchildren up to the age of 3. Pursuant to the Act, the nurseries are no longer part of the health caresystem and the care exercised in them is not the health service. By 2011 children were taken care ofin nurseries and nursery wards. Children in nurseries and children’s clubs:  - entered into register referred to in Chapter 3 of the Law on Childcare of children up to the age of 3dated 4 February 2011 (Journal of Laws No.45, item 235, with later amendments), taken from thereport of municipality on the implementation of tasks related to the care for children up to the ageof 3 (public and non-public receiving allocations).  - run by non-public entities providing private childcare services for children up to the age of 3, forwhich municipality (gmina) does not grant allocations (estimation on the basis of the averagenumber of places in public and non-public entities receiving allocations).  Children under the care of a day carer as of the last day of the reporting period (data come fromreports on the implementation of tasks related to the care for children up to the age of 3).   The number of nannies (it is assumed that one child is under the care of one nanny) registered insocial security or health insurance (data are provided, pursuant to the art. 53 of the above-mentioned law, to the Minister responsible for the family policy by the Social Insurance Institution).",
+                                    
+                                      "source": "The Ministry of Family and Social Policy",
+                                    
+                                      "availability": "Annual data;  since 2011",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "urban/rural": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "4.4",
+                                                    
+                                                        "2012" : "6.0",
+                                                    
+                                                        "2013" : "8.3",
+                                                    
+                                                        "2014" : "10.5",
+                                                    
+                                                        "2015" : "12.4",
+                                                    
+                                                        "2016" : "13.9",
+                                                    
+                                                        "2017" : "16.0",
+                                                    
+                                                        "2018" : "19.3",
+                                                    
+                                                        "2019" : "22.6",
+                                                    
+                                                        "2020" : "25.9"
+                                                    
+                                                    }
+                                                ],"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "1-4-a":{
+                
+                "metadata": [
+                      {
+                                      "name": "1.4.a Number of dwellings per 1 thous. population",
+                                    
+                                      "goal": "Goal 1. No poverty",
+                                    
+                                      "priority": "Improvement of housing situation",
+                                    
+                                      "definition": "Number of dwellings per 1,000 population.",
+                                    
+                                      "unit": "[–]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "According to the definition, a dwelling is a premises comprising one or several rooms includingauxiliary spaces, built or remodeled for residential purposes; structurally separated (by permanentwalls) within a building, into which a separate access leads from a staircase, a passageway, acommon hall or directly from the street, a courtyard or a garden.  The indicator shows dwelling stocks of a selected territorial unit. Low indicator values indicate a shortage of dwellings, which could result in social problems, such as problems with the emancipation of young people. High indicator values indicate an oversupply of dwellings, the result of which maybe economic difficulties, such as the difficulty of maintaining unused resources. The value of theindicator is also affected by cultural and demographic factors, such as the average number ofchildren per family, the average age and cultural habits of the extended families living together. The data concerning the number of dwellings are derived from censuses and reports on dwellingstocks, on the costs and revenues of maintaining dwelling stocks, on rates of charges in buildingswith dwellings, as well as from reports on housing and communal economy of the community.",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": "The number of population for the years 2003-2010 is based on the National Census of Population andHousing 2002, and since 2011, it has been based on the Population and Housing Census 2011."
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "urban/rural": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "349.6",
+                                                    
+                                                        "2011" : "352.6",
+                                                    
+                                                        "2012" : "356.1",
+                                                    
+                                                        "2013" : "359.9",
+                                                    
+                                                        "2014" : "363.4",
+                                                    
+                                                        "2015" : "367.3",
+                                                    
+                                                        "2016" : "371.3",
+                                                    
+                                                        "2017" : "375.7",
+                                                    
+                                                        "2018" : "380.5",
+                                                    
+                                                        "2019" : "385.9",
+                                                    
+                                                        "2020" : "392.4"
+                                                    
+                                                    }
+                                                ],"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-1-c":{
+                
+                "metadata": [
+                      {
+                                      "name": "3.1.c Number of deaths due to diseases of the circulatory system per 100 thous. population",
+                                    
+                                      "goal": "Goal 3. Good health and well-being",
+                                    
+                                      "priority": "Decrease in morbidity and mortality due to civilization diseases",
+                                    
+                                      "definition": "Number of deaths due to diseases of the circulatory system per 100 thous. population.",
+                                    
+                                      "unit": "persons",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Death - permanent, irreversible cessation of functions of the essential for life organs, the consequence of which is the cessation of all functions of the whole organism. Diseases of circulatory system - according to the Tenth Revision of the International Statistical Classification of Diseases and Health Problems ICD-10: illnesses I00-I99 - diseases relating to organs and tissues included in the cardiovascular system, especially the heart, arteries and veins. Data on deaths are compiled in territorial division by place of registered for permanent stay of deceased person. When compiling the data on deaths by cause the initial cause of death is assumed. The initial cause is the disease, which was at the beginning of the morbid process and which caused the death it may be also the injury or the poisoning, which caused the death. Data relating to the judicature on the causes of death are given in accordance with the International Statistical Classification of Diseases and Related Health Problems (Revision X). Data on population were compiled on the basis of:  the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010) for previous years (2003 - 2009) on the basis of the 2002 Population and Housing Census, the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register - PESEL), documentation of Civil Status Offices regarding registered marriages, births and deaths. ",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by sex": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "451.8",
+                                                    
+                                                        "2011" : "440.9",
+                                                    
+                                                        "2012" : "460.8",
+                                                    
+                                                        "2013" : "460.8",
+                                                    
+                                                        "2014" : "441.1",
+                                                    
+                                                        "2015" : "469.0",
+                                                    
+                                                        "2016" : "437.1",
+                                                    
+                                                        "2017" : "434.8",
+                                                    
+                                                        "2018" : "437.2",
+                                                    
+                                                        "2019" : "421.0"
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "urban/rural": [
+                                            {"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-1-d":{
+                
+                "metadata": [
+                      {
+                                      "name": "3.1.d Number of deaths due to malignant neoplasms per 100 thous. population",
+                                    
+                                      "goal": "Goal 3. Good health and well-being",
+                                    
+                                      "priority": "Decrease in morbidity and mortality due to civilization diseases",
+                                    
+                                      "definition": "Number of deaths due to malignant neoplasms per 100 thous. population.",
+                                    
+                                      "unit": "persons",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Death - permanent, irreversible cessation of functions of the essential for life organs, the consequence of which is the cessation of all functions of the whole organism. Malignant neoplasm - according to the International Statistical Classification of Diseases and Related Health Problems ICD-10: disease symbol C00-C97 - it expands in an infiltrative way, ie. it doesn' t push surrounding tissue (such as benign neoplasm), but it penetrates between the cells of normal tissue, giving metastases. The source of data on death is the document of the Ministry of Health Death certificate, which is basic document for civil status acts and is in the part secondarily utilized by national statistics (Regulation of the Minister of Health, Journal of Laws 2015, item 231). Data on deaths are compiled in territorial division by place of registered for permanent stay of deceased person.When compiling the data on deaths by cause the initial cause of death is assumed. The initial cause is the disease, which was at the beginning of the morbid process and which caused the death it may be also the injury or the poisoning, which caused the death. Data relating to the judicature on the causes of death are given in accordance with the International Statistical Classification of Diseases and Related Health Problems (Revision X). Data on population were compiled on the basis of:  the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010) for previous years (2003 - 2009) on the basis of the 2002 Population and Housing Census, the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register - PESEL), documentation of Civil Status Offices regarding registered marriages, births and deaths. ",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by sex": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "240.4",
+                                                    
+                                                        "2011" : "239.3",
+                                                    
+                                                        "2012" : "245.9",
+                                                    
+                                                        "2013" : "244.4",
+                                                    
+                                                        "2014" : "248.3",
+                                                    
+                                                        "2015" : "261.6",
+                                                    
+                                                        "2016" : "260.1",
+                                                    
+                                                        "2017" : "259.3",
+                                                    
+                                                        "2018" : "263.9",
+                                                    
+                                                        "2019" : "261.3"
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "urban/rural": [
+                                            {"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-1-e":{
+                
+                "metadata": [
+                      {
+                                      "name": "3.1.e Number of deaths due to diabetes mellitus per 100 thous. population",
+                                    
+                                      "goal": "Goal 3. Good health and well-being",
+                                    
+                                      "priority": "Decrease in morbidity and mortality due to civilization diseases",
+                                    
+                                      "definition": "Number of deaths due to diabetes mellitus per 100 thous. population.",
+                                    
+                                      "unit": "persons",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Death - permanent, irreversible cessation of functions of the essential for life organs, the consequence of which is the cessation of all functions of the whole organism. Diabetes - according to the International Statistical Classification of Diseases and Related Health Problems ICD-10: disease entity symbol E10-E14 - a metabolic disease caused by a deficiency or malfunction of insulin, resulting in elevated levels of sugar in the blood - hyperglycemia.The source of data on death is the document of the Ministry of Health Death certificate, which is basic document for civil status acts and is in the part secondarily utilized by national statistics (Regulation of the Minister of Health, Journal of Laws 2015, item 231). Data on deaths are compiled in territorial division by place of registered for permanent stay of deceased person. When compiling the data on deaths by cause the initial cause of death is assumed. The initial cause is the disease, which was at the beginning of the morbid process and which caused the death it may be also the injury or the poisoning, which caused the death. Data relating to the judicature on the causes of death are given in accordance with the International Statistical Classification of Diseases and Related Health Problems (Revision X). Data on population were compiled on the basis of:  the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010) for previous years (2003 - 2009) on the basis of the 2002 Population and Housing Census, the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register - PESEL), documentation of Civil Status Offices regarding registered marriages, births and deaths. ",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by sex": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "16.9",
+                                                    
+                                                        "2011" : "17.6",
+                                                    
+                                                        "2012" : "18.5",
+                                                    
+                                                        "2013" : "19.3",
+                                                    
+                                                        "2014" : "17.6",
+                                                    
+                                                        "2015" : "21.5",
+                                                    
+                                                        "2016" : "21.6",
+                                                    
+                                                        "2017" : "22.9",
+                                                    
+                                                        "2018" : "23.5",
+                                                    
+                                                        "2019" : "24.2"
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "urban/rural": [
+                                            {"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-1-f":{
+                
+                "metadata": [
+                      {
+                                      "name": "3.1.f Number of deaths due to chronic respiratory disease per 100 thous. population",
+                                    
+                                      "goal": "Goal 3. Good health and well-being",
+                                    
+                                      "priority": "Decrease in morbidity and mortality due to civilization diseases",
+                                    
+                                      "definition": "Number of deaths due to chronic respiratory disease per 100 thous. population.",
+                                    
+                                      "unit": "persons",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Death - permanent, irreversible cessation of functions of the essential for life organs, the consequence of which is the cessation of all functions of the whole organism. Chronic respiratory tract disease - according to the International Classification of Diseases ICD -10: diseases marked with symbols J30-J98 - disorders related to the upper and lower respiratory tract. When compiling the data on deaths by cause the initial cause of death is assumed. The initial cause is the disease, which was at the beginning of the morbid process and which caused the death it may be also the injury or the poisoning, which caused the death. Data relating to the judicature on the causes of death are given in accordance with the International Statistical Classification of Diseases and Related Health Problems (Revision X). Data on population were compiled on the basis of:  the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010) for previous years (2003 - 2009) on the basis of the 2002 Population and Housing Census, the registers of the Ministry of Interior - internal and international migration of population for permanent residence (since 2006 the presented data come from the Common Electronic System of Population Register - PESEL), documentation of Civil Status Offices regarding registered marriages, births and deaths. ",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Annual data; since 2010",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by sex": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "25.3",
+                                                    
+                                                        "2011" : "25.6",
+                                                    
+                                                        "2012" : "23.4",
+                                                    
+                                                        "2013" : "24.5",
+                                                    
+                                                        "2014" : "21.0",
+                                                    
+                                                        "2015" : "24.7",
+                                                    
+                                                        "2016" : "24.7",
+                                                    
+                                                        "2017" : "26.4",
+                                                    
+                                                        "2018" : "24.6",
+                                                    
+                                                        "2019" : "22.6"
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "urban/rural": [
+                                            {"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-3-b":{
+                
+                "metadata": [
+                      {
+                                      "name": "3.3.b Percentage of persons who have ever been vaccinated against virus hepatitis B",
+                                    
+                                      "goal": "Goal 3. Good health and well-being",
+                                    
+                                      "priority": "Increase in health awareness",
+                                    
+                                      "definition": "Percentage of persons who have ever been vaccinated against virus hepatitis B.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Data comes from the European Health Interview Survey (EHIS), repeated every 5 years. The results of the study enable to get to know the health situation of the inhabitants of the Union and its conditions in connection with the demographic and social characteristics and the place of residence. The study covers four areas:  health status (including self-assessment of health status, chronic diseases, limitations in functioning and their impact on everyday life, psychological well-being), health care (use of medical care, use of medicines, prophylaxis), health determinants (mainly lifestyle and exposure to adverse environmental factors) and demographic and social characteristics of persons and households. ",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Data every 5 years; since 2010",
+                                    
+                                      "notes": "Data presented for 2010 relate to the survey carried out in 2009."
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by sex": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "28.2",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "33.6",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : ""
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : ""
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "urban/rural": [
+                                            {"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-3-c":{
+                
+                "metadata": [
+                      {
+                                      "name": "3.3.c Percentage of persons who have ever been vaccinated against influenza",
+                                    
+                                      "goal": "Goal 3. Good health and well-being",
+                                    
+                                      "priority": "Increase in health awareness",
+                                    
+                                      "definition": "Percentage of persons who have ever been vaccinated against influenza.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Data comes from the European Health Interview Survey (EHIS), repeated every 5 years. The results of the study enable to get to know the health situation of the inhabitants of the Union and its conditions in connection with the demographic and social characteristics and the place of residence. The study covers four areas:  health status (including self-assessment of health status, chronic diseases, limitations in functioning and their impact on everyday life, psychological well-being), health care (use of medical care, use of medicines, prophylaxis), health determinants (mainly lifestyle and exposure to adverse environmental factors) and demographic and social characteristics of persons and households. ",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Data every 5 years; since 2010",
+                                    
+                                      "notes": "Data presented for 2010 relate to the survey carried out in 2009."
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "urban/rural": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "21.9",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "21.8",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "21.3"
+                                                    
+                                                    }
+                                                ],"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-4-c":{
+                
+                "metadata": [
+                      {
+                                      "name": "3.4.c Percentage of men aged 40 and more who have ever had medical examination of their prostate performed",
+                                    
+                                      "goal": "Goal 3. Good health and well-being",
+                                    
+                                      "priority": "Increase in early disease detectability",
+                                    
+                                      "definition": "Percentage of men aged 40 and more who have ever had medical examination of their prostate performed.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Data comes from the European Health Interview Survey (EHIS), repeated every 5 years. The results of the study enable to get to know the health situation of the inhabitants of the Union and its conditions in connection with the demographic and social characteristics and the place of residence. The study covers four areas:  health status (including self-assessment of health status, chronic diseases, limitations in functioning and their impact on everyday life, psychological well-being), health care (use of medical care, use of medicines, prophylaxis), health determinants (mainly lifestyle and exposure to adverse environmental factors) and demographic and social characteristics of persons and households. ",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Data every 5 years; since 2010",
+                                    
+                                      "notes": "Data presented for 2010 relate to the survey carried out in 2009."
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "urban/rural": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "34.5",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "40.2"
+                                                    
+                                                    }
+                                                ],"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
           "4-3-g":{
                 
                 "metadata": [
@@ -1053,6 +2709,121 @@
                                                         "2018" : "67.0",
                                                     
                                                         "2019" : "68.5"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "5-2-a":{
+                
+                "metadata": [
+                      {
+                                      "name": "5.2.a Percentage of children aged 1-2 covered by different kinds of institutional care",
+                                    
+                                      "goal": "Goal 5. Gender equality",
+                                    
+                                      "priority": "Active pro-family policy",
+                                    
+                                      "definition": "Share of children covered by institutional care in total number of children aged 1-2.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "total",
+                                    
+                                      "methodology": "Different kinds of institutional care have been introduced by the Law on Childcare for children up tothe age of 3 dated 4 February 2011, in force since 4 April 2011 and the provisions concerning nannies -since October 2011. The law provides for the following types of care: nursery, children’s clubs, day carer and nanny, forchildren up to the age of 3. Pursuant to the Act, the nurseries are no longer part of the health caresystem and the care exercised in them is not the health service. By 2011 children were taken care ofin nurseries and nursery wards. Children in nurseries and children’s clubs: - entered into register referred to in Chapter 3 of the Law on Childcare of children up to the age of 3dated 4 February 2011 (Journal of Laws No.45, item 235, with later amendments), taken from thereport of municipality on the implementation of tasks related to the care for children up to the ageof 3 (public and non-public receiving allocations). - run by non-public entities providing private childcare services for children up to the age of 3, forwhich municipality (gmina) does not grant allocations (estimation on the basis of the averagenumber of places in public and non-public entities receiving allocations). Children under the care of a day carer as of the last day of the reporting period (data come fromreports on the implementation of tasks related to the care for children up to the age of 3). The number of nannies (it is assumed that one child is under the care of one nanny) registered insocial security or health insurance (data are provided, pursuant to the art. 53 of the above-mentioned law, to the Minister responsible for the family policy by the Social Insurance Institution).",
+                                    
+                                      "source": "the Ministry of Family and Social Policy",
+                                    
+                                      "availability": "Annual data; since 2011",
+                                    
+                                      "notes": ""
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "urban/rural": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "4.4",
+                                                    
+                                                        "2012" : "6.0",
+                                                    
+                                                        "2013" : "8.3",
+                                                    
+                                                        "2014" : "10.5",
+                                                    
+                                                        "2015" : "12.4",
+                                                    
+                                                        "2016" : "13.9",
+                                                    
+                                                        "2017" : "16.0",
+                                                    
+                                                        "2018" : "19.3",
+                                                    
+                                                        "2019" : "22.6",
+                                                    
+                                                        "2020" : "25.9"
+                                                    
+                                                    }
+                                                ],"urban area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"rural area": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
                                                     
                                                     }
                                                 ]
