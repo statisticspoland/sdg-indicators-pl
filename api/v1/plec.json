@@ -5805,6 +5805,121 @@
                       }
                     ]
               },
+          "4-4-a":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "4.4.a Młodzież niekontynuująca nauki ",
+                                    
+                                      "cel": "Cel 4. Dobra jakość edukacji",
+                                    
+                                      "priorytet": "Tworzenie warunków do większego zaangażowania osób dorosłych w podnoszenie / aktualizację kwalifikacji",
+                                    
+                                      "definicja": "Udział liczby osób w wieku 18–24 lata z wykształceniem co najwyżej gimnazjalnym, które nie kontynuują nauki i nie dokształcają się w ogólnej liczbie ludności w tej samej grupie wieku.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym. Badanie prowadzone jest metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15 lat i więcej będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Gimnazjum to szkoła kształcąca młodzież w cyklu trzyletnim (w wieku 13-16 lat). Nauka w gimnazjum jest obowiązkowa. Warunkiem formalnym przyjęcia do gimnazjum jest ukończenie szkoły podstawowej.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg płci": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "5.4",
+                                                    
+                                                        "2011" : "5.6",
+                                                    
+                                                        "2012" : "5.7",
+                                                    
+                                                        "2013" : "5.6",
+                                                    
+                                                        "2014" : "5.4",
+                                                    
+                                                        "2015" : "5.3",
+                                                    
+                                                        "2016" : "5.2",
+                                                    
+                                                        "2017" : "5.0",
+                                                    
+                                                        "2018" : "4.8",
+                                                    
+                                                        "2019" : "5.2",
+                                                    
+                                                        "2020" : "5.4"
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
           "5-1-a":{
                 
                 "metadane": [
@@ -5888,34 +6003,90 @@
                                     }
                     ],
                     "dane": [
-                      {"ogółem": [
-                                        {
-                                        
-                                            "2010" :   "10.8",
-                                        
-                                            "2011" :   "11.5",
-                                        
-                                            "2012" :   "11.4",
-                                        
-                                            "2013" :   "11.5",
-                                        
-                                            "2014" :   "11.2",
-                                        
-                                            "2015" :   "11.0",
-                                        
-                                            "2016" :   "11.6",
-                                        
-                                            "2017" :   "12.0",
-                                        
-                                            "2018" :   "11.6",
-                                        
-                                            "2019" :   "12.8",
-                                        
-                                            "2020" :   "13.0"
-                                        
-                                        }
-                                    ]
-                                  
+                      {
+                                
+                                        "miasto/wieś": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "10.8",
+                                                    
+                                                        "2011" : "11.5",
+                                                    
+                                                        "2012" : "11.4",
+                                                    
+                                                        "2013" : "11.5",
+                                                    
+                                                        "2014" : "11.2",
+                                                    
+                                                        "2015" : "11.0",
+                                                    
+                                                        "2016" : "11.6",
+                                                    
+                                                        "2017" : "12.0",
+                                                    
+                                                        "2018" : "11.6",
+                                                    
+                                                        "2019" : "12.8",
+                                                    
+                                                        "2020" : "13.0"
+                                                    
+                                                    }
+                                                ],"miasto": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"wieś": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
                               
                           
                       }
@@ -6138,34 +6309,90 @@
                                     }
                     ],
                     "dane": [
-                      {"ogółem": [
-                                        {
-                                        
-                                            "2010" :   "58.5",
-                                        
-                                            "2011" :   "57.7",
-                                        
-                                            "2012" :   "58.3",
-                                        
-                                            "2013" :   "59.1",
-                                        
-                                            "2014" :   "61.8",
-                                        
-                                            "2015" :   "64.1",
-                                        
-                                            "2016" :   "63.0",
-                                        
-                                            "2017" :   "63.4",
-                                        
-                                            "2018" :   "62.4",
-                                        
-                                            "2019" :   "62.5",
-                                        
-                                            "2020" :   "62.9"
-                                        
-                                        }
-                                    ]
-                                  
+                      {
+                                
+                                        "miasto/wieś": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "58.5",
+                                                    
+                                                        "2011" : "57.7",
+                                                    
+                                                        "2012" : "58.3",
+                                                    
+                                                        "2013" : "59.1",
+                                                    
+                                                        "2014" : "61.8",
+                                                    
+                                                        "2015" : "64.1",
+                                                    
+                                                        "2016" : "63.0",
+                                                    
+                                                        "2017" : "63.4",
+                                                    
+                                                        "2018" : "62.4",
+                                                    
+                                                        "2019" : "62.5",
+                                                    
+                                                        "2020" : "62.9"
+                                                    
+                                                    }
+                                                ],"miasto": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"wieś": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
                               
                           
                       }
@@ -6498,34 +6725,90 @@
                                     }
                     ],
                     "dane": [
-                      {"ogółem": [
-                                        {
-                                        
-                                            "2010" :   "58.5",
-                                        
-                                            "2011" :   "57.7",
-                                        
-                                            "2012" :   "58.3",
-                                        
-                                            "2013" :   "59.1",
-                                        
-                                            "2014" :   "61.8",
-                                        
-                                            "2015" :   "64.1",
-                                        
-                                            "2016" :   "63.0",
-                                        
-                                            "2017" :   "63.4",
-                                        
-                                            "2018" :   "62.4",
-                                        
-                                            "2019" :   "62.5",
-                                        
-                                            "2020" :   "62.9"
-                                        
-                                        }
-                                    ]
-                                  
+                      {
+                                
+                                        "miasto/wieś": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "58.5",
+                                                    
+                                                        "2011" : "57.7",
+                                                    
+                                                        "2012" : "58.3",
+                                                    
+                                                        "2013" : "59.1",
+                                                    
+                                                        "2014" : "61.8",
+                                                    
+                                                        "2015" : "64.1",
+                                                    
+                                                        "2016" : "63.0",
+                                                    
+                                                        "2017" : "63.4",
+                                                    
+                                                        "2018" : "62.4",
+                                                    
+                                                        "2019" : "62.5",
+                                                    
+                                                        "2020" : "62.9"
+                                                    
+                                                    }
+                                                ],"miasto": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"wieś": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
                               
                           
                       }
