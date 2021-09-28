@@ -138,8 +138,13 @@ lista.forEach(function(el,elind) {
     var iDiv = document.createElement('div');
     iDiv.className = 'panel-group';
     iDiv.id = 'filtry'+ilosc;
+    if(ilosc=="4"){
+      iDiv.style.zIndex='8';
+    }else{
+      iDiv.style.zIndex='11';
+    }
     iDiv.style.position='relative';
-    iDiv.style.zIndex='11';
+    
     iDiv.style.float = 'left';
     iDiv.style.width = '100%';
     Div.appendChild(iDiv);
