@@ -75,7 +75,7 @@ permalink: /o_sdg/
    <a target="_blank" href="https://raportsdg.stat.gov.pl/"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2021_pl.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy. Raport 2021</b></p>
-  <p>Czy sytuacja osób najbardziej narażonych na wykluczenie społeczne zmienia się na lepsze? Czy zmniejszają się różnice między regionami Polski? Na te pytania odpowiada najnowszy Raport GUS pt. “Inkluzywny wzrost gospodarczy. Polska na drodze zrównoważonego rozwoju”.</p>
+  <p>Czy sytuacja osób najbardziej narażonych na wykluczenie społeczne zmienia się na lepsze? Czy zmniejszają się różnice między regionami Polski? Na te pytania odpowiada najnowszy Raport GUS pt. “Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy”.</p>
   <p>Utrzymana w formie cyfrowej publikacja stanowi drugą edycję statystycznego Raportu SDG podsumowującego realizację przez nasz kraj Celów Agendy 2030. Postępy Polski zostały zaprezentowane w Raporcie z perspektywy inkluzywnego wzrostu gospodarczego, stanowiącego jeden z aspektów zrównoważonego rozwoju. Część analityczną Raportu dopełnia rozdział, który w graficzny sposób przedstawia postępy Polski w ramach wszystkich 17 Celów, w obszarach uznanych przez rząd za priorytetowe. </p>
   <p>Zapraszamy do zapoznania się z lekturą nt. zrównoważonego rozwoju widzianym okiem statystyki!</p>
   <p><b>Archiwum:</b></p>

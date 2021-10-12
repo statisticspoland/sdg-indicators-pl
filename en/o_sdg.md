@@ -73,13 +73,14 @@ a global <a href="https://unstats.un.org/sdgs/indicators/database/"  target="_bl
   <h4><b>PUBLICATIONS</b></h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://raportsdg.stat.gov.pl/2020/en/index.html"  target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2020_en.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://raportsdg.stat.gov.pl/en/index.html"  target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2021_pl.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Poland on the way to SDGs. Report 2020</b></p>
-  <p>Is the financial situation of Polish households improving? What do inhabitants of Poland think about their health? Do Polish women and men have equal opportunities in the labour market and in public life? Has Poland made any progress towards the Sustainable Development Goals set by the United Nations?</p>
-  <p>These are only some of the questions that can be answered through Statistics Poland’s report entitled Poland on the way to SDGs, which presents the country’s progress towards the goals on the fifth anniversary of the adoption of the 2030 Agenda by Poland. This is Statistics Poland’s first interactive digital publication, which is published at a time when the Internet has become the main channel of communication. The report consists of five chapters, each of which addresses one of the issues included in the ‘5P’ Rule (People, Prosperity, Planet, Peace and Partnership).</p>
-  <p>The report presents Poland’s progress towards the SDGs against the background of the general situation in the EU and taking into consideration the main challenges the world has to face on its way to sustainable development. The digital form of the publication allows access to more detailed statistical data, as well as other websites, studies and databases featuring information about sustainable development.</p>
-
+  <p><b>Poland on the way to SDGs. Inclusive economic growth. Report 2021</b></p>
+  <p>Is the situation of persons most at risk of social exclusion changing for the better? Are the differences between Polish regions narrowing? The answers can be found in Statistics Poland’s latest report Poland on the way to SDGs. Inclusive economic growth.</p>
+  <p>The publication, kept in digital form, is the second edition of the statistical SDG Report summarizing the implementation of the 2030 Agenda Goals by our country. Poland's progress has been presented in the Report from the perspective of inclusive economic growth, which is one of the aspects of sustainable development. The analytical part of the Report is complemented by a graphical chapter presenting Poland’s progress under all 17 Goals, in areas defined by the government as priorities.</p>
+  <p>We wish you a pleasant reading on sustainable development seen through the eyes of statistics!</p>
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" href="https://raportsdg.stat.gov.pl/2020/en/index.html">Poland on the way to SDGs. Report 2020</a></p>
 
   <hr>
 
