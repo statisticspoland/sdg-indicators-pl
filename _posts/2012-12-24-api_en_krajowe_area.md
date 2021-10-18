@@ -40,7 +40,7 @@ This method allows users to download data and metadata for area-disaggregated na
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/national/area_n.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/national/area_n.json', function(data) {
     $('#show-data-NatArea').html(JSON.stringify(data, null, 2));
 });
 

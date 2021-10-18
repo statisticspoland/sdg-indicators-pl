@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wszystkich wskaźników g
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/globalne/zamieszkanie_g.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/globalne/zamieszkanie_g.json', function(data) {
     $('#show-data-GlobZam').html(JSON.stringify(data, null, 2));
 });
 

@@ -14,4 +14,4 @@ National reporting platform - SDG is a publicly available tool serving dissemina
 - Bootstrap: framework CSS
 
 ##
-The project is available - https://sdg.gov.pl
+The project is available - http://sdg.gov.pl

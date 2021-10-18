@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wskaźników globalnych U
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/custodian/un-doalos.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/custodian/un-doalos.json', function(data) {
     $('#show-data-un-doalos').html(JSON.stringify(data, null, 2));
 });
 

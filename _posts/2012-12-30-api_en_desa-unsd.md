@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all DESA-UNSD global 
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/desa-unsd.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/desa-unsd.json', function(data) {
     $('#show-data-en-desa-unsd').html(JSON.stringify(data, null, 2));
 });
 

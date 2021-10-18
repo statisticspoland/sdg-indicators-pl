@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych dla wszystkich wskaźników krajowych w języ
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/krajowe_dane.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/krajowe_dane.json', function(data) {
     $('#show-data-kraj-dane').html(JSON.stringify(data, null, 2));
 });
 

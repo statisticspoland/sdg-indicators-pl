@@ -39,7 +39,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wszystkich wskaźników g
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/krajowe/plec_k.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/krajowe/plec_k.json', function(data) {
     $('#show-data-KrajPlec').html(JSON.stringify(data, null, 2));
 });
 

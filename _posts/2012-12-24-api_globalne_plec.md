@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wszystkich wskaźników g
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/globalne/plec_g.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/globalne/plec_g.json', function(data) {
     $('#show-data-GlobPlec').html(JSON.stringify(data, null, 2));
 });
 

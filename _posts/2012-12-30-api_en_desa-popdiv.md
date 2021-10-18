@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all DESA-PopDiv globa
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/desa-popdiv.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/desa-popdiv.json', function(data) {
     $('#show-data-en-desa-popdiv').html(JSON.stringify(data, null, 2));
 });
 

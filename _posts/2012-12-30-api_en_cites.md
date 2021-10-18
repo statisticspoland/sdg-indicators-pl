@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all CITES global indi
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/cites.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/cites.json', function(data) {
     $('#show-data-en-cites').html(JSON.stringify(data, null, 2));
 });
 

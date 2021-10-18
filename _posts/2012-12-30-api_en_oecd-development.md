@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all OECD-Development 
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/oecd-development.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/oecd-development.json', function(data) {
     $('#show-data-en-oecd-development').html(JSON.stringify(data, null, 2));
 });
 

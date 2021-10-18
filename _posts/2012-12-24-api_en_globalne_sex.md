@@ -40,7 +40,7 @@ This method allows users to download data and metadata for all global sex-disagg
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/global/sex_g.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/global/sex_g.json', function(data) {
     $('#show-data-GlobSex').html(JSON.stringify(data, null, 2));
 });
 

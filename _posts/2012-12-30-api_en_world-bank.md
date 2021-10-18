@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all World-Bank global
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/world-bank.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/world-bank.json', function(data) {
     $('#show-data-en-world-bank').html(JSON.stringify(data, null, 2));
 });
 

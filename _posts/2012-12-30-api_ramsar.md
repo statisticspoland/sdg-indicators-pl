@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wskaźników globalnych R
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/custodian/ramsar.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/custodian/ramsar.json', function(data) {
     $('#show-data-ramsar').html(JSON.stringify(data, null, 2));
 });
 

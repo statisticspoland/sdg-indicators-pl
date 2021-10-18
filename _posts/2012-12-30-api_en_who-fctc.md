@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all WHO-FCTC global i
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/who-fctc.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/who-fctc.json', function(data) {
     $('#show-data-en-who-fctc').html(JSON.stringify(data, null, 2));
 });
 

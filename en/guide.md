@@ -6,7 +6,7 @@ permalink: /en/guide/
 ---
 <article>
             <h4>National reporting platform - SDG</h4>
-            <p>National Reporting Platform (SDG Platform) is a publicly available tool for dissemination and presentation of <a href="https://sdg.gov.pl/en/"  target="_blank">global</a> and <a href="https://sdg.gov.pl/en/statistics_nat/"  target="_blank">national</a> indicators monitoring the Sustainable Development Goals (SDGs) of the 2030 Agenda in Poland.</p>
+            <p>National Reporting Platform (SDG Platform) is a publicly available tool for dissemination and presentation of <a href="http://sdg.gov.pl/en/"  target="_blank">global</a> and <a href="http://sdg.gov.pl/en/statistics_nat/"  target="_blank">national</a> indicators monitoring the Sustainable Development Goals (SDGs) of the 2030 Agenda in Poland.</p>
 </article>
 <hr>
 <article>

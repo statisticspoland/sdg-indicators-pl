@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNCCD global indi
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/unccd.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/unccd.json', function(data) {
     $('#show-data-en-unccd').html(JSON.stringify(data, null, 2));
 });
 

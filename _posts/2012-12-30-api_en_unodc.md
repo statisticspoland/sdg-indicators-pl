@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNODC global indi
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/unodc.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/unodc.json', function(data) {
     $('#show-data-en-unodc').html(JSON.stringify(data, null, 2));
 });
 

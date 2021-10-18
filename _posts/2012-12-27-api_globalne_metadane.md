@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie metadanych dla wszystkich wskaźników globalnych w 
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/globalne_metadane.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/globalne_metadane.json', function(data) {
     $('#show-data-glob-metadane').html(JSON.stringify(data, null, 2));
 });
 

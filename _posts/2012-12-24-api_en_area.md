@@ -40,7 +40,7 @@ This method allows users to download data and metadata for area-disaggregated gl
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/area.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/area.json', function(data) {
     $('#show-data-Area').html(JSON.stringify(data, null, 2));
 });
 

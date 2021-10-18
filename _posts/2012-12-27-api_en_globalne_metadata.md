@@ -40,7 +40,7 @@ This method allows users to download metadata for all global indicators in Engli
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/global_metadata.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/global_metadata.json', function(data) {
     $('#show-data-glob-en-metadata').html(JSON.stringify(data, null, 2));
 });
 

@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wskaźników globalnych D
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/custodian/desa-unsd.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/custodian/desa-unsd.json', function(data) {
     $('#show-data-desa-unsd').html(JSON.stringify(data, null, 2));
 });
 

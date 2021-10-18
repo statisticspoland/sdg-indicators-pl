@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all Ramsar global ind
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/ramsar.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/ramsar.json', function(data) {
     $('#show-data-en-ramsar').html(JSON.stringify(data, null, 2));
 });
 

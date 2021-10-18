@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNWoman global in
 
 <script>
 
-$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/unwoman.json', function(data) {
+$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/unwoman.json', function(data) {
     $('#show-data-en-unwoman').html(JSON.stringify(data, null, 2));
 });
 
