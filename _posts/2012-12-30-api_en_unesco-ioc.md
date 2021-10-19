@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNESCO-IOC global
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/unesco-ioc.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/unesco-ioc.json', function(data) {
     $('#show-data-en-unesco-ioc').html(JSON.stringify(data, null, 2));
 });
 

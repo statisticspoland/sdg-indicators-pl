@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNFCCC global ind
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/unfccc.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/unfccc.json', function(data) {
     $('#show-data-en-unfccc').html(JSON.stringify(data, null, 2));
 });
 

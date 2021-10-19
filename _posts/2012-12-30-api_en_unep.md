@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNEP global indic
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/unep.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/unep.json', function(data) {
     $('#show-data-en-unep').html(JSON.stringify(data, null, 2));
 });
 

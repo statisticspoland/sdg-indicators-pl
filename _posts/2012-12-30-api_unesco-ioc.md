@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wskaźników globalnych U
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/custodian/unesco-ioc.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/custodian/unesco-ioc.json', function(data) {
     $('#show-data-unesco-ioc').html(JSON.stringify(data, null, 2));
 });
 

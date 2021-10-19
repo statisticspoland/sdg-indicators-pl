@@ -5,5 +5,5 @@ permalink: /en/deklaracja-dostepnosci/
 ---
 
 <script>
-  location.replace("http://sdg.gov.pl/en/")
+  location.replace("https://sdg.gov.pl/en/")
 </script>

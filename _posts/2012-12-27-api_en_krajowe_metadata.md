@@ -40,7 +40,7 @@ This method allows users to download metadata for all national indicators in Eng
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/national_metadata.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/national_metadata.json', function(data) {
     $('#show-data-kraj-en-metadata').html(JSON.stringify(data, null, 2));
 });
 

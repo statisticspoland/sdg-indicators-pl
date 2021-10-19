@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie tytułów wszystkich wskaźników globalnych w języ
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/globalne/lista.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/globalne/lista.json', function(data) {
     $('#show-data-glob-lista').html(JSON.stringify(data, null, 2));
 });
 

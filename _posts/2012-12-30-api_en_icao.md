@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all ICAO global indic
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/icao.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/icao.json', function(data) {
     $('#show-data-en-icao').html(JSON.stringify(data, null, 2));
 });
 

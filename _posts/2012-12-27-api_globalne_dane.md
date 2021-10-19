@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych dla wszystkich wskaźników globalnych w jęz
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/globalne_dane.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/globalne_dane.json', function(data) {
     $('#show-data-glob-dane').html(JSON.stringify(data, null, 2));
 });
 

@@ -52,7 +52,7 @@ This method allows users to download data and metadata for chosen national indic
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/national/1/1-1-b.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/national/1/1-1-b.json', function(data) {
     $('#show-data-1-1-b-en').html(JSON.stringify(data, null, 2));
 });
 

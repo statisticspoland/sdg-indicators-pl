@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all DESA-Financing gl
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/desa-financing.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/desa-financing.json', function(data) {
     $('#show-data-en-desa-financing').html(JSON.stringify(data, null, 2));
 });
 

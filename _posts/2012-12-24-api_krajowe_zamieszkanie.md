@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wszystkich wskaźników K
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/krajowe/zamieszkanie_k.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/krajowe/zamieszkanie_k.json', function(data) {
     $('#show-data-KrajZam').html(JSON.stringify(data, null, 2));
 });
 

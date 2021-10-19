@@ -48,7 +48,7 @@ This method allows users to download data and metadata for all national indicato
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/national/1.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/national/1.json', function(data) {
     $('#show-data-kraj-1-en').html(JSON.stringify(data, null, 2));
 });
 

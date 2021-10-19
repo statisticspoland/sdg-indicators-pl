@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNWTO global indi
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/unwto.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/unwto.json', function(data) {
     $('#show-data-en-unwto').html(JSON.stringify(data, null, 2));
 });
 

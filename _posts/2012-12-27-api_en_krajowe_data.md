@@ -40,7 +40,7 @@ This method allows users to download data for all national indicators in English
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/national_data.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/national_data.json', function(data) {
     $('#show-data-kraj-en-data').html(JSON.stringify(data, null, 2));
 });
 

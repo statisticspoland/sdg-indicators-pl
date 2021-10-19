@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNEP-WCMC global 
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/unep-wcmc.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/unep-wcmc.json', function(data) {
     $('#show-data-en-unep-wcmc').html(JSON.stringify(data, null, 2));
 });
 

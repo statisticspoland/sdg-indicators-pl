@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNESCO global ind
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/unesco.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/unesco.json', function(data) {
     $('#show-data-en-unesco').html(JSON.stringify(data, null, 2));
 });
 

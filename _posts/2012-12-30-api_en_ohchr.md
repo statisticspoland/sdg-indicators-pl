@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all OHCHR global indi
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/ohchr.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/ohchr.json', function(data) {
     $('#show-data-en-ohchr').html(JSON.stringify(data, null, 2));
 });
 

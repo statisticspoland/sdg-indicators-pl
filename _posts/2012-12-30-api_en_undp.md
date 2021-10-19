@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNDP global indic
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/undp.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/undp.json', function(data) {
     $('#show-data-en-undp').html(JSON.stringify(data, null, 2));
 });
 

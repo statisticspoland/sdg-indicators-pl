@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all UNICEF global ind
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/unicef.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/unicef.json', function(data) {
     $('#show-data-en-unicef').html(JSON.stringify(data, null, 2));
 });
 

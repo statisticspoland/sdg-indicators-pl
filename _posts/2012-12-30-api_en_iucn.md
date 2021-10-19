@@ -39,7 +39,7 @@ This method allows users to download data and metadata for all IUCN global indic
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/en/custodian/iucn.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/en/custodian/iucn.json', function(data) {
     $('#show-data-en-iucn').html(JSON.stringify(data, null, 2));
 });
 

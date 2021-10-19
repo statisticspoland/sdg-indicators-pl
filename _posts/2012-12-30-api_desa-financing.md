@@ -40,7 +40,7 @@ Metoda pozwala na uzyskanie danych oraz metadanych dla wskaźników globalnych D
 
 <script>
 
-$.getJSON('http://sdg.gov.pl/api/v1/custodian/desa-financing.json', function(data) {
+$.getJSON('https://sdg.gov.pl/api/v1/custodian/desa-financing.json', function(data) {
     $('#show-data-desa-financing').html(JSON.stringify(data, null, 2));
 });
 
