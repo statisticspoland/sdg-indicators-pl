@@ -1469,17 +1469,17 @@
           "metadane": [
             
             {
-                            "nazwa": "11.b.1 Liczba krajów, które przyjęły i wdrożyły krajowe strategie redukcji ryzyka klęsk żywiołowych zgodne z Ramowym Programem Działań na lata 2015-2030 z Sendai w sprawie ograniczania ryzyka katastrof",
+                            "nazwa": "11.b.1 Kraje, które przyjęły i wdrożyły krajowe strategie redukcji ryzyka katastrof zgodne z Ramowym Programem Działań na lata 2015-2030 z Sendai w sprawie ograniczania ryzyka katastrof",
                           
-                            "cel": "cel 11. Zrównoważone miasta i społeczności",
+                            "cel": "Cel 11. Zrównoważone miasta i społeczności",
                           
                             "zadanie": "11.b Do 2020 roku znacząco zwiększyć liczbę miast i osiedli ludzkich korzystających z opracowań i wdrażających zintegrowane polityki i plany dążących do zwiększenia inkluzywności i wydajności wykorzystywania zasobów, łagodzenia skutków i przystosowania do zmian klimatycznych, odporności na skutki katastrof. Należy rozwijać i wdrażać kompleksowe zarządzanie ryzykiem katastrof na wszystkich poziomach, zgodnie z Ramami Działania na Rzecz Ograniczania Ryzyka Katastrof na lata 2015 – 2030 (Sendai Framework for Disaster Risk Reduction 2015- 2030)",
                           
                             "definicja": "",
                           
-                            "jednostka": "",
+                            "jednostka": "liczba",
                           
-                            "wymiary": "",
+                            "wymiary": "ogółem, zakres zgodności strategii krajowej z Programem z Sendai 2015-2030",
                           
                             "metodologia": "",
                           
@@ -1492,6 +1492,19 @@
           ],
           "dane": [
             {
+                      
+                              "wg przyjęcia i wdrożenia strategii krajowej": [
+                                  {"ogółem": [
+                                          {
+                                          }
+                                      ],"zakres zgodności strategii krajowej z Programem z Sendai 2015-2030": [
+                                          {
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
             }
           ]
         }
@@ -1503,17 +1516,17 @@
           "metadane": [
             
             {
-                            "nazwa": "11.b.2 Odsetek jednostek samorządu terytorialnego, które przyjęły i wdrożyły lokalne strategie redukcji ryzyka klęsk żywiołowych zgodne z krajową strategią redukcji ryzyka klęsk żywiołowych",
+                            "nazwa": "11.b.2 Jednostki samorządu terytorialnego, które przyjęły i wdrożyły lokalne strategie redukcji ryzyka katastrof zgodne z krajową strategią redukcji ryzyka katastrof",
                           
-                            "cel": "cel 11. Zrównoważone miasta i społeczności",
+                            "cel": "Cel 11. Zrównoważone miasta i społeczności",
                           
                             "zadanie": "11.b Do 2020 roku znacząco zwiększyć liczbę miast i osiedli ludzkich korzystających z opracowań i wdrażających zintegrowane polityki i plany dążących do zwiększenia inkluzywności i wydajności wykorzystywania zasobów, łagodzenia skutków i przystosowania do zmian klimatycznych, odporności na skutki katastrof. Należy rozwijać i wdrażać kompleksowe zarządzanie ryzykiem katastrof na wszystkich poziomach, zgodnie z Ramami Działania na Rzecz Ograniczania Ryzyka Katastrof na lata 2015 – 2030 (Sendai Framework for Disaster Risk Reduction 2015- 2030)",
                           
                             "definicja": "",
                           
-                            "jednostka": "",
+                            "jednostka": "liczba (województw)",
                           
-                            "wymiary": "",
+                            "wymiary": "ogółem, procent",
                           
                             "metodologia": "",
                           
@@ -1525,7 +1538,13 @@
                           }
           ],
           "dane": [
-            {
+            {"ogółem": [
+                              {
+                              }
+                          ]
+                        
+                    
+                
             }
           ]
         }

@@ -1469,7 +1469,7 @@
           "metadata": [
             
             {
-                            "name": "11.b.1 Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030",
+                            "name": "11.b.1 Countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030",
                           
                             "goal": "Goal 11. Sustainable cities and communities",
                           
@@ -1477,9 +1477,9 @@
                           
                             "definition": "",
                           
-                            "unit": "",
+                            "unit": "number",
                           
-                            "dimensions": "",
+                            "dimensions": "total, the scope of compliance of the national strategy with the Sendai Program 2015-2030",
                           
                             "methodology": "",
                           
@@ -1492,6 +1492,19 @@
           ],
           "data": [
             {
+                      
+                              "by adoption and implementation of the national strategy": [
+                                  {"total": [
+                                          {
+                                          }
+                                      ],"the scope of compliance of the national strategy with the Sendai Program 2015-2030": [
+                                          {
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
             }
           ]
         }
@@ -1503,7 +1516,7 @@
           "metadata": [
             
             {
-                            "name": "11.b.2 Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
+                            "name": "11.b.2 Local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
                           
                             "goal": "Goal 11. Sustainable cities and communities",
                           
@@ -1511,9 +1524,9 @@
                           
                             "definition": "",
                           
-                            "unit": "",
+                            "unit": "number (voivodships)",
                           
-                            "dimensions": "",
+                            "dimensions": "total, percent",
                           
                             "methodology": "",
                           
@@ -1525,7 +1538,13 @@
                           }
           ],
           "data": [
-            {
+            {"total": [
+                              {
+                              }
+                          ]
+                      
+                    
+                
             }
           ]
         }

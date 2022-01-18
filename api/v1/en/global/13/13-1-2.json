@@ -7,7 +7,7 @@
       "metadata": [
         
         {
-                        "name": "13.1.2 Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030",
+                        "name": "13.1.2 Countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030",
                       
                         "goal": "Goal 13. Climate action",
                       
@@ -15,9 +15,9 @@
                       
                         "definition": "",
                       
-                        "unit": "",
+                        "unit": "number",
                       
-                        "dimensions": "",
+                        "dimensions": "total, the scope of compliance of the national strategy with the Sendai Program 2015-2030",
                       
                         "methodology": "",
                       
@@ -29,7 +29,17 @@
                       }
       ],
       "data": [
-        {}
+        {
+                "by adoption and implementation of the national strategy": [
+                    {"total": [
+                            {
+                            }
+                        ],"the scope of compliance of the national strategy with the Sendai Program 2015-2030": [
+                            {
+                            }
+                        ]
+                    }
+                ]}
       ]
     }
   ]
