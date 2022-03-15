@@ -3,163 +3,163 @@
   "icao": [
       {
           "9-1-2":{
-
+                
                 "metadane": [
                       {
                                       "nazwa": "9.1.2 Rozmiary transportu pasażerskiego i towarowego według rodzaju ",
-
+                                    
                                       "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
-
+                                    
                                       "zadanie": "9.1 Rozwijać niezawodną, zrównoważoną i odporną infrastrukturę dobrej jakości, w tym infrastrukturę regionalną i transgraniczną, wspierającą rozwój gospodarczy i dobrobyt ludzi. Zapewnić wszystkim ludziom równy dostęp do infrastruktury po przystępnej cenie.",
-
+                                    
                                       "definicja": "Liczba pasażerów (w tysiącach pasażerów) i wielkość przewiezionych ładunków (w tysiącach ton) według rodzaju transportu.",
-
+                                    
                                       "jednostka": "tys. pasażerów, tys. ton",
-
+                                    
                                       "wymiary": "rodzaj transportu",
-
+                                    
                                       "metodologia": "Przewozy pasażerów transportem kolejowym Liczba wszystkich pasażerów przewiezionych na sieci kolei normalnotorowych i wąskotorowych pociągami osobowymi, pośpiesznymi i ekspresowymi (łącznie z pasażerami przewiezionymi w wagonach sypialnych i w wagonach z miejscami do leżenia) z biletami płatnymi oraz pasażerów korzystających z bezpłatnych przejazdów na podstawie odpowiednich przepisów w ramach komunikacji wewnętrznej i międzynarodowej.  Przewozy pasażerów transportem samochodowym Przewozy pasażerów taborem autobusowym to suma pasażerów przewiezionych w komunikacji krajowej i międzynarodowej autobusami w ramach komunikacji regularnej (tj. na podstawie rozkładu jazdy), regularnej specjalnej (np. przewozy pracownicze, szkolne) oraz w przewozach pozostałych (np. wycieczkowe). Dane o przewozach pasażerów transportem samochodowym nie obejmują przewozów osób taborem autobusowym przedsiębiorstw komunikacji miejskiej oraz taborem autobusowym będącym w transporcie samochodowym gospodarczym. Dane nie obejmują przewozów dokonywanych przez podmioty o liczbie pracujących do 9 osób.  Przewozy pasażerów transportem lotniczym  Dane o przewozach pasażerów transportem lotniczym obejmują pasażerów przewiezionych w lotach rozkładowych, dodatkowych i wynajętych (czarterowych) samolotami polskich przewoźników transportu lotniczego rozkładowego (transport pasażerów na stałych trasach i według stałych rozkładów lotów) oraz innych polskich przewoźników świadczących zarobkowo tego rodzaju usługi w komunikacji międzynarodowej i w komunikacji krajowej.  Przewozy ładunków morską flotą transportową Przewozy ładunków wykonane w rejsach zakończonych statkami własnymi i statkami dzierżawionymi pływającymi pod banderą polską i obcą. Obejmują przewozy ładunków wykonane we wszystkich relacjach, tj. przywożonych do portów polskich z portów obcych, wywożonych z portów polskich do portów obcych, przewożonych pomiędzy portami obcymi, przewożonych pomiędzy portami polskimi.Nie ujmuje się przewozów ładunków wykonanych statkami przekazanymi w czarter obcemu (zagranicznemu) armatorowi.  Przewozy taborem żeglugi śródlądowej Dane o przewozach taborem żeglugi śródlądowej odnoszą się do taboru będącego w eksploatacji polskich przedsiębiorstw żeglugi śródlądowej (łącznie z jednostkami pływającymi będącymi w dyspozycji przedsiębiorstw zagranicznych w okresie przerwy nawigacyjnej na polskich drogach wodnych) oraz od 2001 r. również podmiotów, których podstawowa działalność jest inna niż świadczenie tych usług. Dane o przewozach ładunków żeglugą śródlądową nie obejmują ładunków przewożonych w przesyłkach drobnych na statkach pasażerskich. Przewozy pasażerów taborem żeglugii śródlądowej obejmują również transport przybrzeżny. Przewozy ładunków transportem lotniczym  Dane o przewozach ładunków transportem lotniczym obejmują ładunki przewiezione w lotach rozkładowych, dodatkowych i wynajętych (czarterowych) samolotami polskich przewoźników transportu lotniczego rozkładowego (ładunków na stałych trasach i według stałych rozkładów lotów) oraz innych polskich przewoźników świadczących zarobkowo tego rodzaju usługi w komunikacji międzynarodowej i w komunikacji krajowej.  Przewozy ładunków transportem kolejowym  Dane te obejmują sumę masy brutto wszystkich przesyłek handlowych i służbowych (tj. łącznie z wagą opakowań, a w przypadku przewozów w kontenerach również łącznie z wagą kontenerów) przewiezionych w wagonach towarowych w komunikacji wewnętrznej (krajowej) i międzynarodowej wszystkimi rodzajami pociągów. Dane nie obejmują przewozów manewrowych. Przewozy ładunków transportem samochodowym  Dane o przewozach ładunków transportem samochodowym dotyczą całego transportu samochodowego, tj. zarobkowego i gospodarczego w sektorze publicznym i prywatnym. Przez transport samochodowy zarobkowy rozumie się świadczenie usług przewozowych za opłatą, a przez transport samochodowy gospodarczy - wykonywanie przewozów ładunków na własne potrzeby, tj. bez opłaty (wliczanych w koszt przedsiębiorstwa). Dane częściowo szacunkowe.  Przewozy ładunków transportem rurociągowym  Obejmują ropę naftową i produkty naftowe przetłoczone rurociągami magistralnymi na potrzeby wewnętrzne kraju (w tym z importu) i tranzytem przez terytorium kraju. Ilość ropy naftowej (produktów naftowych) ustala się jako sumę masy netto poszczególnych partii ropy (produktów) przyjętych do zbiorników odbiorcy za protokółami zdawczo-odbiorczymi.",
-
+                                    
                                       "zrodlo": "Główny Urząd Statystyczny",
-
+                                    
                                       "czestotliwosc": "Dane roczne; od 2010 r.",
-
+                                    
                                       "uwagi": ""
                                     }
                     ],
                     "dane": [
                       {
-
+                                
                                         "przewozy pasażerskie wg rodzaju transportu": [
                                             {"transport kolejowy": [
                                                     {
-
+                                                    
                                                         "2010" : "261314",
-
+                                                    
                                                         "2011" : "263609",
-
+                                                    
                                                         "2012" : "273182",
-
+                                                    
                                                         "2013" : "269815",
-
+                                                    
                                                         "2014" : "268204",
-
+                                                    
                                                         "2015" : "277321",
-
+                                                    
                                                         "2016" : "291981",
-
+                                                    
                                                         "2017" : "303001",
-
+                                                    
                                                         "2018" : "309722",
-
+                                                    
                                                         "2019" : "335264",
-
+                                                    
                                                         "2020" : "208651"
-
+                                                    
                                                     }
                                                 ],"transport samochodowy": [
                                                     {
-
+                                                    
                                                         "2010" : "569652",
-
+                                                    
                                                         "2011" : "534885",
-
+                                                    
                                                         "2012" : "497288",
-
+                                                    
                                                         "2013" : "459947",
-
+                                                    
                                                         "2014" : "431516",
-
+                                                    
                                                         "2015" : "416774",
-
+                                                    
                                                         "2016" : "390410",
-
+                                                    
                                                         "2017" : "378610",
-
+                                                    
                                                         "2018" : "336511",
-
+                                                    
                                                         "2019" : "327494",
-
+                                                    
                                                         "2020" : "159700"
-
+                                                    
                                                     }
                                                 ],"transport morski": [
                                                     {
-
+                                                    
                                                         "2010" : "671",
-
+                                                    
                                                         "2011" : "637",
-
+                                                    
                                                         "2012" : "642",
-
+                                                    
                                                         "2013" : "606",
-
+                                                    
                                                         "2014" : "611",
-
+                                                    
                                                         "2015" : "597",
-
+                                                    
                                                         "2016" : "632",
-
+                                                    
                                                         "2017" : "644",
-
+                                                    
                                                         "2018" : "632",
-
+                                                    
                                                         "2019" : "754",
-
+                                                    
                                                         "2020" : "572"
-
+                                                    
                                                     }
                                                 ],"śródlądowy transport wodny": [
                                                     {
-
+                                                    
                                                         "2010" : "1397",
-
+                                                    
                                                         "2011" : "1519",
-
+                                                    
                                                         "2012" : "1515",
-
+                                                    
                                                         "2013" : "1540",
-
+                                                    
                                                         "2014" : "1579",
-
+                                                    
                                                         "2015" : "1762",
-
+                                                    
                                                         "2016" : "2024",
-
+                                                    
                                                         "2017" : "1262",
-
+                                                    
                                                         "2018" : "1395",
-
+                                                    
                                                         "2019" : "1362",
-
+                                                    
                                                         "2020" : "682"
-
+                                                    
                                                     }
                                                 ],"transport lotniczy": [
                                                     {
-
+                                                    
                                                         "2010" : "4990",
-
+                                                    
                                                         "2011" : "6491",
-
+                                                    
                                                         "2012" : "7170",
-
+                                                    
                                                         "2013" : "7648",
-
+                                                    
                                                         "2014" : "7788",
-
+                                                    
                                                         "2015" : "7288",
-
+                                                    
                                                         "2016" : "8779",
-
+                                                    
                                                         "2017" : "11846",
-
+                                                    
                                                         "2018" : "13850",
-
+                                                    
                                                         "2019" : "21883",
-
+                                                    
                                                         "2020" : "3629"
-
+                                                    
                                                     }
                                                 ]
                                             }
@@ -167,165 +167,165 @@
                                         "przewozy towarowe wg rodzaju transportu": [
                                             {"transport kolejowy": [
                                                     {
-
+                                                    
                                                         "2010" : "234568",
-
+                                                    
                                                         "2011" : "248606",
-
+                                                    
                                                         "2012" : "230878",
-
+                                                    
                                                         "2013" : "232596",
-
+                                                    
                                                         "2014" : "227820",
-
+                                                    
                                                         "2015" : "224320",
-
+                                                    
                                                         "2016" : "222523",
-
+                                                    
                                                         "2017" : "239501",
-
+                                                    
                                                         "2018" : "249260",
-
+                                                    
                                                         "2019" : "233744",
-
+                                                    
                                                         "2020" : "218381"
-
+                                                    
                                                     }
                                                 ],"transport samochodowy": [
                                                     {
-
+                                                    
                                                         "2010" : "1491253",
-
+                                                    
                                                         "2011" : "1596209",
-
+                                                    
                                                         "2012" : "1493386",
-
+                                                    
                                                         "2013" : "1553050",
-
+                                                    
                                                         "2014" : "1547883",
-
+                                                    
                                                         "2015" : "1505719",
-
+                                                    
                                                         "2016" : "1546572",
-
+                                                    
                                                         "2017" : "1747266",
-
+                                                    
                                                         "2018" : "1873022",
-
+                                                    
                                                         "2019" : "1921073",
-
+                                                    
                                                         "2020" : "2331758"
-
+                                                    
                                                     }
                                                 ],"transport rurociągowy": [
                                                     {
-
+                                                    
                                                         "2010" : "56208",
-
+                                                    
                                                         "2011" : "54482",
-
+                                                    
                                                         "2012" : "52985",
-
+                                                    
                                                         "2013" : "50656",
-
+                                                    
                                                         "2014" : "49810",
-
+                                                    
                                                         "2015" : "54850",
-
+                                                    
                                                         "2016" : "54058",
-
+                                                    
                                                         "2017" : "52393",
-
+                                                    
                                                         "2018" : "55287",
-
+                                                    
                                                         "2019" : "52376",
-
+                                                    
                                                         "2020" : "51489"
-
+                                                    
                                                     }
                                                 ],"transport morski": [
                                                     {
-
+                                                    
                                                         "2010" : "8362",
-
+                                                    
                                                         "2011" : "7737",
-
+                                                    
                                                         "2012" : "7476",
-
+                                                    
                                                         "2013" : "6965",
-
+                                                    
                                                         "2014" : "6781",
-
+                                                    
                                                         "2015" : "6963",
-
+                                                    
                                                         "2016" : "7248",
-
+                                                    
                                                         "2017" : "8254",
-
+                                                    
                                                         "2018" : "9149",
-
+                                                    
                                                         "2019" : "8727",
-
+                                                    
                                                         "2020" : "8135"
-
+                                                    
                                                     }
                                                 ],"śródlądowy transport wodny": [
                                                     {
-
+                                                    
                                                         "2010" : "5141",
-
+                                                    
                                                         "2011" : "5093",
-
+                                                    
                                                         "2012" : "4579",
-
+                                                    
                                                         "2013" : "5044",
-
+                                                    
                                                         "2014" : "7629",
-
+                                                    
                                                         "2015" : "11928",
-
+                                                    
                                                         "2016" : "6210",
-
+                                                    
                                                         "2017" : "5778",
-
+                                                    
                                                         "2018" : "5108",
-
+                                                    
                                                         "2019" : "4681",
-
+                                                    
                                                         "2020" : "3991"
-
+                                                    
                                                     }
                                                 ],"transport lotniczy": [
                                                     {
-
+                                                    
                                                         "2010" : "41",
-
+                                                    
                                                         "2011" : "45",
-
+                                                    
                                                         "2012" : "41",
-
+                                                    
                                                         "2013" : "37",
-
+                                                    
                                                         "2014" : "38",
-
+                                                    
                                                         "2015" : "38",
-
+                                                    
                                                         "2016" : "41",
-
+                                                    
                                                         "2017" : "53",
-
+                                                    
                                                         "2018" : "63",
-
+                                                    
                                                         "2019" : "77",
-
+                                                    
                                                         "2020" : "63"
-
+                                                    
                                                     }
                                                 ]
                                             }
                                         ]
-
-
+                              
+                          
                       }
                     ]
               }}
