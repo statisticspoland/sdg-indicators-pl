@@ -16,8 +16,10 @@
 
 {% if page.lang == 'pl' %}
 {% assign sdg_goals = ktore.sdg_goals %}
+{% assign text = "Przejdź do wskaźnika " %}
 {% else %}
 {% assign sdg_goals = ktore[page.lang].sdg_goals %}
+{% assign text = "Go to indicator nr " %}
 {% endif %}
 
 {% for goals in sdg_goals %}
@@ -75,12 +77,12 @@
     {% endif %}
   	{% if page.lang == 'pl' %}
   	<ol class="breadcrumb">
-  		<li><a href="{{ site.baseurl }}{{rodzaj}}">Strona Główna</a></li>
+  		<li><a title="Przejdź do strony głównej" href="{{ site.baseurl }}{{rodzaj}}">Strona Główna</a></li>
   		<li class="active"> / Cel {{ page.sdg_goal }}</li>
   	</ol>
   	{% else %}
   	<ol class="breadcrumb">
-  		<li><a href="{{ site.baseurl }}/{{page.lang}}{{rodzaj}}">Home</a></li>
+  		<li><a title="Go to home page" href="{{ site.baseurl }}/{{page.lang}}{{rodzaj}}">Home</a></li>
   		<li class="active"> / Goal {{ page.sdg_goal }}</li>
   	</ol>
   	{% endif %}
@@ -90,16 +92,16 @@
       <thead>
         <tr style="padding: 1.5rem; text-align: left; height: 45px;">
           {% if page.lang == 'pl' %}
-              <th scope="col">Status</th>
-              <th scope="col">Opis wskaźnika</th>
+              <th scope="col" style="text-align: center;">Status</th>
+              <th scope="col" style="text-align: center;">Opis wskaźnika</th>
               {% if rodzaj == '/' %}
-                <th scope="col" style="padding: 7px"><a href="{{ site.baseurl }}{{ lang }}/faqs" style="color: black;">Zastępczy</a></th>
+                <th scope="col" style="padding: 7px"><a title="Przejdź do podstrony FAQs" href="{{ site.baseurl }}{{ lang }}/faqs" style="color: black;">Zastępczy</a></th>
               {% endif %}
           {% else %}
-            <th scope="col">Status</th>
-            <th scope="col">Indicator description</th>
+            <th scope="col" style="text-align: center;">Status</th>
+            <th scope="col" style="text-align: center;">Indicator description</th>
             {% if rodzaj == '/' %}
-              <th scope="col" style="padding: 7px"><a href="{{ site.baseurl }}{{ lang }}/faqs" style="color: black;">Proxy</a></th>
+              <th scope="col" style="padding: 7px"><a title="Go to FAQs page" href="{{ site.baseurl }}{{ lang }}/faqs" style="color: black;">Proxy</a></th>
             {% endif %}
           {% endif %}
         </tr>
@@ -135,14 +137,14 @@
         {% endif %}
 
         <tr>
-		
+
 		{% if indicator.permalink contains '/statistics_nat/' %}
-			<td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_nat/status/"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
+			<td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_nat/status/" alt="{{indicator_status}}" title="{{indicator_status}}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
 		{% else %}
-			<td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_glob/status/"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
+			<td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_glob/status/" alt="{{indicator_status}}" title="{{indicator_status}}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
 		{% endif %}
-			<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
-          
+			<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
+
 		  {% if indicator.indicator == "1.5.1" or indicator.indicator == "2.5.2" or indicator.indicator == "2.a.2" or indicator.indicator == "3.3.5" or indicator.indicator == "4.2.1" or indicator.indicator == "5.2.1" or indicator.indicator == "5.3.1" or indicator.indicator == "5.a.1.a" or indicator.indicator == "5.a.1.b"
           or indicator.indicator == "7.a.1" or indicator.indicator == "8.3.1" or indicator.indicator == "8.4.1" or indicator.indicator == "8.8.1"
           or indicator.indicator == "9.3.2" or indicator.indicator == "10.2.1" or indicator.indicator == "11.1.1" or indicator.indicator == "11.5.1"
@@ -152,7 +154,7 @@
           or indicator.indicator == "15.7.1" or indicator.indicator == "16.1.2"
           or indicator.indicator == "16.2.3" or indicator.indicator == "16.3.2"
           or indicator.indicator == "16.5.1" or indicator.indicator == "16.7.1"   %}
-			<td><i class="fa fa-check" style="font-size:20px; width: 100%; text-align: center;"></i></td>
+			<td><i class="fa fa-check" style="font-size:20px; width: 100%; text-align: center;" title="check" alt="check"></i></td>
 
           {% else %}
 

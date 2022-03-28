@@ -12,6 +12,8 @@ pl:
   provided : ", chyba że wskazano inaczej, dane pochodzą z GUS"
   available : "Ta tabela zawiera informacje o metadanych dla wskaźnika najbliższego tym z SDG"
   global-metadata: "Informacje o wskaźniku"
+  data-title: "Wyświetl zakładkę z danymi"
+  metadata-title : "Wyświetl zakładkę z informacjami o wskaźniku"
 en:
   sub-subtitle : "Indicator"
   tab-instructions : "See metadata tab for sources, definitions, and methodology information"
@@ -24,4 +26,6 @@ en:
   provided : ""
   available : ""
   global-metadata: "Information about indicator"
+  data-title: "Show data tab"
+  metadata-title : "Show metadata tab"
 ---

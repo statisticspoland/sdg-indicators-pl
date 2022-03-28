@@ -8,7 +8,7 @@ permalink: /deklaracja-dostepnosci/
 
   <p><b>Oświadczenie w sprawie dostępności</b></p>
 
-  <p>Główny Urząd Statystyczny zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z ustawą z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych. Niniejsze oświadczenie w sprawie dostępności ma zastosowanie do strony internetowej <a href="https://sdg.gov.pl"  target="_blank">https://sdg.gov.pl/</a>.</p>
+  <p>Główny Urząd Statystyczny zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z ustawą z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych. Niniejsze oświadczenie w sprawie dostępności ma zastosowanie do strony internetowej <a title="Przejdź na stronę główną" href="https://sdg.gov.pl"  target="_blank">https://sdg.gov.pl/</a>.</p>
 
   <p>Data publikacji strony internetowej: 31.01.2019</p>
 
@@ -26,7 +26,7 @@ permalink: /deklaracja-dostepnosci/
 
   <p><b>Informacje zwrotne i dane kontaktowe</b></p>
 
-  <p>W przypadku problemów z dostępnością strony internetowej prosimy o kontakt pod adresem e-mail <a href="mailto:sdg_support@stat.gov.pl">sdg_support@stat.gov.pl</a>. Tą samą drogą można składać wnioski o udostępnienie informacji niedostępnej oraz składać skargi na brak zapewnienia dostępności.</p>
+  <p>W przypadku problemów z dostępnością strony internetowej prosimy o kontakt pod adresem e-mail <a title="Wyślij maila do sdg_support" href="mailto:sdg_support@stat.gov.pl">sdg_support@stat.gov.pl</a>. Tą samą drogą można składać wnioski o udostępnienie informacji niedostępnej oraz składać skargi na brak zapewnienia dostępności.</p>
 
   <p>Każdy ma prawo do wystąpienia z żądaniem zapewnienia dostępności cyfrowej strony internetowej, aplikacji mobilnej lub jakiegoś ich elementu. Można także zażądać udostępnienia informacji za pomocą alternatywnego sposobu dostępu, na przykład przez odczytanie niedostępnego cyfrowo dokumentu, opisanie zawartości filmu bez audiodeskrypcji itp. Żądanie powinno zawierać dane osoby zgłaszającej żądanie, wskazanie, o którą stronę internetową lub aplikację mobilną chodzi oraz sposób kontaktu. Jeżeli osoba żądająca zgłasza potrzebę otrzymania informacji za pomocą alternatywnego sposobu dostępu, powinna także określić dogodny dla niej sposób przedstawienia tej informacji.</p>
 
@@ -34,7 +34,7 @@ permalink: /deklaracja-dostepnosci/
 
   <p>W przypadku, gdy podmiot publiczny odmówi realizacji żądania zapewnienia dostępności lub alternatywnego sposobu dostępu do informacji, wnoszący żądanie możne złożyć skargę w sprawie zapewniana dostępności cyfrowej strony internetowej, aplikacji mobilnej lub elementu strony internetowej, lub aplikacji mobilnej.</p>
 
-  <p>Po wyczerpaniu wskazanej wyżej procedury można także złożyć wniosek do <a href="https://www.rpo.gov.pl/content/jak-zglosic-sie-do-rzecznika-praw-obywatelskich"  target="_blank">Rzecznika Praw Obywatelskich</a>.
+  <p>Po wyczerpaniu wskazanej wyżej procedury można także złożyć wniosek do <a title="Zgłoś się do Rzecznika Praw Obywatelskich" href="https://www.rpo.gov.pl/content/jak-zglosic-sie-do-rzecznika-praw-obywatelskich"  target="_blank">Rzecznika Praw Obywatelskich</a>.
 
   <p><b>Dostępność architektoniczna</b></p>
 

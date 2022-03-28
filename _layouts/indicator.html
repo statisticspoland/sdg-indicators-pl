@@ -190,8 +190,8 @@
           {% assign numer1 = page.sdg_goal | downcase %}
             {% if numer == numer1 %}
                 <ol class="breadcrumb">
-              <li><a href="{{ site.baseurl }}{{ rodzaj }}">Strona Główna</a> / </li>
-              <li><a href="{{ site.baseurl }}{{ rodzaj }}{{ goals.short | slugify }}">Cel {{ page.sdg_goal }}</a></li>
+              <li><a title="Przejdź do strony głównej" href="{{ site.baseurl }}{{ rodzaj }}">Strona Główna</a> / </li>
+              <li><a title="Przejdź do celu nr {{ page.sdg_goal }}" href="{{ site.baseurl }}{{ rodzaj }}{{ goals.short | slugify }}">Cel {{ page.sdg_goal }}</a></li>
               <li class="active"> / Wskaźnik {{ page.indicator | remove: ".0" }}</li>
               </ol>
             {% endif %}
@@ -204,8 +204,8 @@
           {% assign numer1 = page.sdg_goal | downcase %}
             {% if numer == numer1 %}
                 <ol class="breadcrumb">
-              <li><a href="{{ site.baseurl }}/{{ language }}{{ rodzaj }}">Home</a> / </li>
-              <li><a href="{{ site.baseurl }}/{{ language }}{{ rodzaj }}{{ goals.short | slugify }}">Goal {{ page.sdg_goal }}</a></li>
+              <li><a title="Go to home page" href="{{ site.baseurl }}/{{ language }}{{ rodzaj }}">Home</a> / </li>
+              <li><a title="Go to goal nr {{ page.sdg_goal }}" href="{{ site.baseurl }}/{{ language }}{{ rodzaj }}{{ goals.short | slugify }}">Goal {{ page.sdg_goal }}</a></li>
               <li class="active"> / Indicator {{ page.indicator | remove: ".0" }}</li>
               </ol>
             {% endif %}
@@ -234,8 +234,8 @@
 
           <h3>{{ t.sub-subtitle }} {{ page.indicator | remove: ".0" }} - {{ indicator_title }} </h3>
           <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">{{ t.data }}</a></li>
-            <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab">{{ t.metadata }}</a></li>
+            <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab" title="{{t.data-title}}">{{ t.data }}</a></li>
+            <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab" title="{{t.metadata-title}}">{{ t.metadata }}</a></li>
 
           </ul>
 

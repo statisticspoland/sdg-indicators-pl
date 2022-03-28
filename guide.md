@@ -5,8 +5,8 @@ permalink: /guide/
 ---
 <article>
             <h4>Krajowa Platforma Raportująca (<i>National Reporting Platform</i>) - SDG</h4>
-            <p>Krajowa Platforma Raportująca (Platforma SDG) jest publicznie dostępnym narzędziem służącym do udostępniania i prezentacji <a href="https://sdg.gov.pl/"  target="_blank">globalnych</a> i 
-		    <a href="https://sdg.gov.pl/statistics_nat/"  target="_blank">krajowych</a> wskaźników monitorujących Cele Zrównoważonego Rozwoju Agendy 2030 w Polsce.</p>
+            <p>Krajowa Platforma Raportująca (Platforma SDG) jest publicznie dostępnym narzędziem służącym do udostępniania i prezentacji <a title="Przejdź do wskaźników globalnych" href="https://sdg.gov.pl/"  target="_blank">globalnych</a> i
+		    <a title="Przejdź do wskaźników krajowych" href="https://sdg.gov.pl/statistics_nat/"  target="_blank">krajowych</a> wskaźników monitorujących Cele Zrównoważonego Rozwoju Agendy 2030 w Polsce.</p>
 </article>
 <hr>
 <article>
@@ -33,20 +33,20 @@ permalink: /guide/
             Aktualna wersja polskiej platformy raportującej została opracowana na podstawie
             udostępnionej wersji USA NRP oraz dostosowana przez nas do naszych potrzeb.</p>
             <p>Kod projektu dostępny jest w publicznym repozytorium
-            <a href="https://github.com/statisticspoland/sdg-indicators-pl"  target="_blank">
+            <a title="Przejdź do repozytorium sdg na stronie github.com" href="https://github.com/statisticspoland/sdg-indicators-pl"  target="_blank">
             https://github.com/statisticspoland/sdg-indicators-pl</a>
             </p>
             <p>
             Aktualnie dostępna jest nowa wersja platformy <b><i>open-sdg</i></b> opracowana przez US, UK, CODE.
-            Zachęcamy do zapoznania się z krajowymi platformami US, UK oraz z <a href="https://open-sdg.readthedocs.io/en/latest/"  target="_blank">dokumentacją projektu</a>.
+            Zachęcamy do zapoznania się z krajowymi platformami US, UK oraz z <a title="Zapoznaj się z dokumentacją projektu" href="https://open-sdg.readthedocs.io/en/latest/"  target="_blank">dokumentacją projektu</a>.
             </p>
             <p>
             - US NPR SDG -
-            <a href="https://github.com/GSA/sdg-indicators-usa" target="_blank">https://github.com/GSA/sdg-indicators-usa</a>
+            <a title="Przejdź do strony krajowej platformy sdg US" href="https://github.com/GSA/sdg-indicators-usa" target="_blank">https://github.com/GSA/sdg-indicators-usa</a>
             </p>
             <p>
             - UK NPR SDG -
-            <a href="https://sustainabledevelopment-uk.github.io" target="_blank">https://sustainabledevelopment-uk.github.io</a>
+            <a title="Przejdź do strony krajowej platformy sdg UK" href="https://sustainabledevelopment-uk.github.io" target="_blank">https://sustainabledevelopment-uk.github.io</a>
             </p>
 </article>
 <hr>

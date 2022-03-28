@@ -9701,19 +9701,20 @@ $('#sidebar a').each(function () {
 if (window.location.href.indexOf('en') > -1){
   s='Show all'
   h='Hide all'
+  var show = $('<a title="Show all information" class=\'control show\'>'+s+'</a>');
+  var hide = $('<a title="Hide all information" class=\'control hide\'style="display: block !important;">'+h+'</a>');
 }else{
   s='Pokaż'
   h='Ukryj'
+  var show = $('<a title="Pokaż wszystkie informacje" class=\'control show\'>'+s+'</a>');
+  var hide = $('<a title="Ukryj wszystkie informacje" class=\'control hide\'style="display: block !important;">'+h+'</a>');
 }
 
-var show = $('<a class=\'control show\'>'+s+'</a>');
 show.click(function () {
   $('#content article:not(".active") > a').trigger('click');
 });
 $('#content').prepend(show);
 
-
-var hide = $('<a class=\'control hide\'style="display: block !important;">'+h+'</a>');
 hide.click(function () {
   $('#content article.active > a').trigger('click');
 });

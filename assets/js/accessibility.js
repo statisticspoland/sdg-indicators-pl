@@ -134,9 +134,16 @@ var accessibilitySwitcher = function(language) {
 
   ////////////////////////////////////////////////////////////////////////////////////
 
+if(language=="pl"){
+  var title="zmiana kontrastu"
+}else{
+  var title="change contrast"
+}
     _.each(contrastIdentifiers, function(contrast) {
       $('.kontrast').append($('<a />').attr({
         'href': 'javascript:void(0)',
+        'title': title,
+        'alt': title,
         'data-contrast': contrast
       }).append($('<img />').attr({
          class: contrast,

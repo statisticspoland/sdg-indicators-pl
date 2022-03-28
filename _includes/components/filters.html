@@ -110,9 +110,17 @@ var jez='{{include.content2}}'
 if (jez=='pl'){
   wymiar_n='Wymiar - Zaznacz wszystko'
   wymiar_n_us='Wymiar - Usuń wszystko'
+  wymiar_n_title='Zaznacz wszystkie wymiary w danej kategorii'
+  wymiar_n_us_title='Usuń wymiary z danej kategorii'
+  kat="Wybierz kategorię "
+  wym="Wybierz wymiar "
 }else{
   wymiar_n='Dimension - Select All'
   wymiar_n_us='Dimension - Diselect All'
+  wymiar_n_title='Select all dimensions in category'
+  wymiar_n_us_title='Diselect all dimensions in category'
+  kat="Choose category "
+  wym="Choose dimension "
 }
 ilosc=0;
 
@@ -144,7 +152,7 @@ lista.forEach(function(el,elind) {
       iDiv.style.zIndex='11';
     }
     iDiv.style.position='relative';
-    
+
     iDiv.style.float = 'left';
     iDiv.style.width = '100%';
     Div.appendChild(iDiv);
@@ -182,7 +190,8 @@ lista.forEach(function(el,elind) {
     var napisek = document.createElement('h5');
     napisek.innerHTML = el;
     napisek.style.fontSize="1.6rem";
-	napisek.style.wordWrap= "break-word";
+    napisek.title=kat+el;
+	  napisek.style.wordWrap= "break-word";
     napis.appendChild(napisek);
 
     var imgh5 = document.createElement('i');
@@ -201,6 +210,7 @@ lista.forEach(function(el,elind) {
     var element = document.createElement('li');
     element.className='dropdown-header';
     element.textContent = wymiar_n;
+    element.title=wymiar_n_title;
     lista.appendChild(element);
 
     var przycisk=document.createElement('button');
@@ -226,6 +236,7 @@ lista.forEach(function(el,elind) {
     var element1 = document.createElement('li');
     element1.className='dropdown-header';
     element1.textContent = wymiar_n_us;
+    element1.title=wymiar_n_us_title;
     lista.appendChild(element1);
 
     var przycisk1=document.createElement('button');
@@ -293,6 +304,7 @@ lista.forEach(function(el,elind) {
           },
             span.style.marginLeft = "15px";
             span.innerHTML = lista1[ilosc][jak];
+            span.title=wym+lista1[ilosc][jak];
             element.appendChild(span);
             lista.appendChild(element);
 
