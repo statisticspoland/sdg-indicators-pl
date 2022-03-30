@@ -1815,11 +1815,11 @@ table {
 
 table thead th {
   background-color: #ededed;
-  /*text-align: center;*/
+  text-align: center;
 }
 
 table th {
-  text-align: left;
+  text-align: center;
 }
 
 table tbody th {
@@ -1831,7 +1831,7 @@ table td,
 table th {
   background-color: #ffffff;
   border: 1px solid #cecece;
-  text-align: left;
+  text-align: center;
     padding-left: 5px;
 }
 
