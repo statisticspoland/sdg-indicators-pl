@@ -79,7 +79,7 @@
                           
                             "dimensions": "moderate or severe food insecurity, severe food insecurity",
                           
-                            "methodology": "Food insecurity as measured by this indicator refers to limited access to food, at the level of individuals or households, due to lack of money or other resources. The severity of food insecurity is measured through the application of the Food Insecurity Experience Scale survey module (FIES-SM), a set of eight questions about experiences related to lack of access to food. The FIES methodology established by FAO provides a global measurement standard of food insecurity and permits the production of internationally comparable measures of food insecurity severity for individual respondents, as well as comparable national prevalence rates.",
+                            "methodology": "Food insecurity as measured by this indicator refers to limited access to food, at the level of individuals or households, due to lack of money or other resources. The severity of food insecurity is measured through the application of the Food Insecurity Experience Scale survey module (FIES-SM), a set of eight questions to the population aged 15 or more about experiences related to lack of access to food. The FIES methodology established by FAO provides a global measurement standard of food insecurity and permits the production of internationally comparable measures of food insecurity severity for individual respondents, as well as comparable national prevalence rates.",
                           
                             "source": "FAO",
                           
@@ -91,8 +91,8 @@
           "data": [
             {
                       
-                              "by level of food insecurity": [
-                                  {"moderate or severe": [
+                              "moderate or severe level of food insecurity": [
+                                  {"total": [
                                           {
                                           
                                               "2010" : "",
@@ -116,7 +116,59 @@
                                               "2019" : "5.8"
                                           
                                           }
-                                      ],"severe": [
+                                      ],"females": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ],"males": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ],
+                              "severe level of food insecurity": [
+                                  {"total": [
                                           {
                                           
                                               "2010" : "",
@@ -138,6 +190,54 @@
                                               "2018" : "0.5",
                                           
                                               "2019" : "0.5"
+                                          
+                                          }
+                                      ],"females": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ],"males": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
                                           
                                           }
                                       ]

@@ -448,6 +448,191 @@
                       }
                     ]
               },
+          "2-1-2":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "2.1.2 Częstotliwość występowania umiarkowanego lub dużego braku bezpieczeństwa żywnościowego w populacji, w oparciu o Skalę Bezpieczeństwa Żywnościowego (FIES)",
+                                    
+                                      "cel": "Cel 2. Zero głodu",
+                                    
+                                      "zadanie": "2.1 Do 2030 roku wyeliminować głód i zapewnić wszystkim ludziom, w szczególności ubogim i narażonym na zagrożenia, w tym niemowlętom, dostęp do bezpiecznej i pożywnej żywności w wystarczającej ilości przez cały rok",
+                                    
+                                      "definicja": "Odsetek osób, które doświadczyły umiarkowanego lub dużego braku bezpieczeństwa żywnościowego w badanym okresie. Brak bezpieczeństwa żywnościowego, definiowany jako cecha ukryta, określany jest w oparciu globalną Skalę Bezpieczeństwa Żywnościowego (Food Insecurity Experience Scale – FIES), opracowaną przez FAO w wyniku zastosowania FIES w 140 krajach na świecie, począwszy od 2014 r.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "umiarkowany lub duży brak bezpieczeństwa żywnościowegoduży brak bezpieczeństwa żywnościowego",
+                                    
+                                      "metodologia": "Brak bezpieczeństwa żywnościowego oznacza ograniczony dostęp do żywności w gospodarstwach domowych ze względu na brak środków finansowych lub niedobór innych zasobów.  Poziom braku bezpieczeństwa żywnościowego określany jest na podstawie badania modułowego z wykorzystaniem Skali Bezpieczeństwa Żywnościowego (FIES-SM). Podczas badania respondentom (w wieku 15 lat i więcej) zdawanych jest osiem pytań na temat doświadczeń oraz okoliczności związanych z brakiem bezpieczeństwa żywnościowego. Metodologia FIES opracowana przez FAO umożliwia pomiar braku bezpieczeństwa żywnościowego w skali globu, a także pozwala na uzyskanie porównywalności między krajami w obszarze braku bezpieczeństwa żywnościowego.",
+                                    
+                                      "zrodlo": "FAO",
+                                    
+                                      "czestotliwosc": "Dane uśrednione z czterech lat: 2014-2016, 2015-2017, 2016-2018, 2017-2019.",
+                                    
+                                      "uwagi": "Wartość dla dużego braku bezpieczeństwa żywnościowego w 2018 r. należy interpretować jako mniejszą od 0,5 (<0,5)."
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "umiarkowany lub duży poziom braku bezpieczeństwa żywnościowego": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "8.9",
+                                                    
+                                                        "2016" : "6.3",
+                                                    
+                                                        "2017" : "5.3",
+                                                    
+                                                        "2018" : "4.3",
+                                                    
+                                                        "2019" : "5.8"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "duży poziom braku bezpieczeństwa żywnościowego": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "1.8",
+                                                    
+                                                        "2016" : "1.2",
+                                                    
+                                                        "2017" : "0.7",
+                                                    
+                                                        "2018" : "0.5",
+                                                    
+                                                        "2019" : "0.5"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
           "3-1-1":{
                 
                 "metadane": [
@@ -502,6 +687,599 @@
                                         }
                                     ]
                                   
+                              
+                          
+                      }
+                    ]
+              },
+          "3-2-1":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "3.2.1 Współczynnik umieralności dzieci w wieku 0-4 lata",
+                                    
+                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                                    
+                                      "zadanie": "3.2 Do 2030 roku wyeliminować przypadki zgonów wśród noworodków i dzieci poniżej pięciu lat, którym można zapobiec. Wszystkie państwa będą dążyć do ograniczenia umieralności noworodków co najwyżej do poziomu 12 przypadków na tysiąc żywych urodzeń i umieralność dzieci poniżej piątego roku życia co najwyżej do poziomu 25 przypadków na tysiąc żywych urodzeń.",
+                                    
+                                      "definicja": "Liczba zgonów dzieci w wieku poniżej 5 roku życia w przeliczeniu na 1000 urodzeń żywych.",
+                                    
+                                      "jednostka": "osoby",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Zgon  trwałe, nieodwracalne ustanie czynności narządów niezbędnych dla życia, konsekwencją czego jest ustanie czynności całego ustroju. Źródłem informacji o zgonach jest wykorzystywany wtórnie przez statystykę publiczną indywidualny dokument 'Karta zgonu' (Rozporządzenie Ministra Zdrowia w sprawie wzoru karty zgonu i sposobu jej wypełniania Dz. U. 2015 r., poz. 231). Urodzenia żywe – całkowite wydalenie lub wydobycie z ustroju matki noworodka, niezależnie od okresu trwania ciąży, który po takim oddzieleniu oddycha bądź wykazuje jakiekolwiek inne oznaki życia, jak czynność serca, tętnienie pępowiny lub wyraźne skurcze mięśni zależnych od woli (mięśni szkieletowych), bez względu na to, czy sznur pępowiny został przecięty lub łożysko zostało oddzielone  każdy taki noworodek jest uważany za żywo urodzonego. Współczynnik wyliczany w oparciu o dane o zgonach według wieku z badania 'Zgony. Umieralność. Trwanie życia.' oraz w oparciu o dane o liczbie urodzeń żywych z badania 'Urodzenia. Dzietność.'.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne  od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg płci": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "5.8",
+                                                    
+                                                        "2011" : "5.6",
+                                                    
+                                                        "2012" : "5.4",
+                                                    
+                                                        "2013" : "5.4",
+                                                    
+                                                        "2014" : "5.0",
+                                                    
+                                                        "2015" : "4.7",
+                                                    
+                                                        "2016" : "4.6",
+                                                    
+                                                        "2017" : "4.6",
+                                                    
+                                                        "2018" : "4.5",
+                                                    
+                                                        "2019" : "4.4",
+                                                    
+                                                        "2020" : "4.2"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-2-2":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "3.2.2 Współczynnik zgonów noworodków, tj. dzieci w wieku 0-27 dni",
+                                    
+                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                                    
+                                      "zadanie": "3.2 Do 2030 roku wyeliminować przypadki zgonów wśród noworodków i dzieci poniżej pięciu lat, którym można zapobiec. Wszystkie państwa będą dążyć do ograniczenia umieralności noworodków co najwyżej do poziomu 12 przypadków na tysiąc żywych urodzeń i umieralność dzieci poniżej piątego roku życia co najwyżej do poziomu 25 przypadków na tysiąc żywych urodzeń.",
+                                    
+                                      "definicja": "Stosunek liczby zgonów noworodków (tj. dzieci w wieku 0-27 dni) do liczby urodzeń żywych w tym samym okresie.",
+                                    
+                                      "jednostka": "osoby",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Zgon  trwałe, nieodwracalne ustanie czynności narządów niezbędnych dla życia, konsekwencją czego jest ustanie czynności całego ustroju. Zgony noworodków  zgony dzieci, które nie osiągnęły wieku czterech tygodni (0-27 dni). Przez 0 dni określa się wiek żywo urodzonego noworodka, który nie przeżył 24 godzin. Umieralność noworodków określana jest także mianem umieralności neonatalnej. Wyróżnia się:    - wczesne zgony noworodków, tj. następujące w ciągu pierwszych 7 dób życia (0-6 dni) (wczesna umieralność noworodkowa),    - późne zgony noworodków, tj. następujące po upływie 7 dób życia, lecz przed upływem 28 ukończonych dób życia. Źródłem informacji o zgonach jest wykorzystywany wtórnie przez statystykę publiczną indywidualny dokument 'Karta zgonu' (Rozporządzenie Ministra Zdrowia w sprawie wzoru karty zgonu i sposobu jej wypełniania Dz. U. 2015 r., poz. 231). Urodzenia żywe – całkowite wydalenie lub wydobycie z ustroju matki noworodka, niezależnie od okresu trwania ciąży, który po takim oddzieleniu oddycha bądź wykazuje jakiekolwiek inne oznaki życia, jak czynność serca, tętnienie pępowiny lub wyraźne skurcze mięśni zależnych od woli (mięśni szkieletowych), bez względu na to, czy sznur pępowiny został przecięty lub łożysko zostało oddzielone  każdy taki noworodek jest uważany za żywo urodzonego. Współczynnik jest liczony w oparciu o dane z zgonach według wieku z badania 'Zgony. Umieralność. Trwanie życia.' oraz w opraciu o dane o urodzeniach żywych z badania 'Urodzenia. Dzietność.'.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny",
+                                    
+                                      "czestotliwosc": "Dane roczne  od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg płci": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "3.5",
+                                                    
+                                                        "2011" : "3.2",
+                                                    
+                                                        "2012" : "3.3",
+                                                    
+                                                        "2013" : "3.1",
+                                                    
+                                                        "2014" : "2.9",
+                                                    
+                                                        "2015" : "2.9",
+                                                    
+                                                        "2016" : "2.9",
+                                                    
+                                                        "2017" : "2.8",
+                                                    
+                                                        "2018" : "2.8",
+                                                    
+                                                        "2019" : "2.7",
+                                                    
+                                                        "2020" : "2.6"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-3-1":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "3.3.1 Liczba nowych zakażeń wirusem HIV",
+                                    
+                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                                    
+                                      "zadanie": "3.3 Do 2030 roku wyeliminować epidemie AIDS, gruźlicy, malarii i zaniedbanych chorób tropikalnych oraz zwalczyć wirusowe zapalenie wątroby, choroby przenoszone przez wodę oraz inne choroby zakaźne.",
+                                    
+                                      "definicja": "Liczba nowych zakażeń wirusem HIV.",
+                                    
+                                      "jednostka": "osoby",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Oszacowanie nowych zakażeń wirusem HIV na podstawie ECDC Modelling Tool. Jest to nowe narzędzie opracowane przez Europejskie Centrum ds. Zapobiegania i Kontroli Chorób (European Centre for Disease Prevention and Control - ECDC) we współpracy z partnerami międzynarodowymi w celu zapewnienia szacunkowej liczby osób żyjących z HIV, w tym osób jeszcze nie zdiagnozowanych. Narzędzie to może również oszacować roczną liczbę nowych zakażeń HIV, średni czas pomiędzy zakażeniem a diagnozą oraz liczbę osób potrzebujących leczenia zgodnie z liczbą komórek CD4 (białe krwinki, które kierują reakcjami systemu immunologicznego). Wirus HIV (ang. Human Immunodeficiency Virus) - ludzki wirus upośledzenia odporności, który atakuje, osłabia i niszczy system odpornościowy organizmu, czego rezultatem jest utrata przez człowieka zdolności zwalczania różnych chorób i infekcji. Wirus HIV jest przenoszony:   przez krew,  w drodze kontaktów seksualnych,  z zakażonej matki na dziecko (dziecko może zakazić się od matki podczas ciąży, porodu lub karmienia piersią). Wskaźnik obliczany jest na podstawie sprawozdania MZ-56 o zachorowaniach na choroby zakaźne, zakażeniach i zatruciach oraz sprawozdania MZ-57 o zachorowaniach na wybrane choroby zakaźne według płci, wieku, miejsca zamieszkania oraz ich sezonowości. Dotyczy nowych zakażeń, które wg Międzynarodowej Statystycznej Klasyfikacji Chorób i Problemów Zdrowotnych ICD-10 klasyfikowane są pod jednostką chorobową o symbolu:   Z21 - bezobjawowy stan zakażenia wirusem HIV  oraz B20 - B24:  B20 - Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są choroby zakaźne i pasożytnicze, B21 - Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są nowotwory złośliwe, B22 - Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są inne określone choroby, B23 - Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są inne stany, B24 - Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV]. Nie określona. ",
+                                    
+                                      "zrodlo": "Narodowy Instytut Zdrowia Publicznego – Państwowy Zakład Higieny",
+                                    
+                                      "czestotliwosc": "Dane roczne  od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg płci": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "1235",
+                                                    
+                                                        "2011" : "1247",
+                                                    
+                                                        "2012" : "1271",
+                                                    
+                                                        "2013" : "1302",
+                                                    
+                                                        "2014" : "1334",
+                                                    
+                                                        "2015" : "1387",
+                                                    
+                                                        "2016" : "1449",
+                                                    
+                                                        "2017" : "1488",
+                                                    
+                                                        "2018" : "1504",
+                                                    
+                                                        "2019" : "1497",
+                                                    
+                                                        "2020" : "1102",
+                                                    
+                                                        "2021" : "1116"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-3-3":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "3.3.3 Liczba zachorowań na malarię",
+                                    
+                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                                    
+                                      "zadanie": "3.3 Do 2030 roku wyeliminować epidemie AIDS, gruźlicy, malarii i zaniedbanych chorób tropikalnych oraz zwalczyć wirusowe zapalenie wątroby, choroby przenoszone przez wodę oraz inne choroby zakaźne.",
+                                    
+                                      "definicja": "Liczba zarejestrowanych zachorowań na malarię.",
+                                    
+                                      "jednostka": "osoby",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Malaria (zimnica) jest chorobą pasożytniczą, przenoszoną przez komary. Choroba objawia się regularnymi nawrotami gorączki i dreszczy. Dane obliczane na podstawie sprawozdania MZ-56 o zachorowaniach na choroby zakaźne, zakażeniach i zatruciach. Według Międzynarodowej Statystycznej Klasyfikacji Chorób i Problemów Zdrowotnych ICD-10: jednostka chorobowa o symbolu B50.",
+                                    
+                                      "zrodlo": "Narodowy Instytut Zdrowia Publicznego – Państwowy Zakład Higieny",
+                                    
+                                      "czestotliwosc": "Dane roczne  od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg płci": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "35",
+                                                    
+                                                        "2011" : "14",
+                                                    
+                                                        "2012" : "21",
+                                                    
+                                                        "2013" : "36",
+                                                    
+                                                        "2014" : "19",
+                                                    
+                                                        "2015" : "29",
+                                                    
+                                                        "2016" : "38",
+                                                    
+                                                        "2017" : "27",
+                                                    
+                                                        "2018" : "28",
+                                                    
+                                                        "2019" : "24",
+                                                    
+                                                        "2020" : "7",
+                                                    
+                                                        "2021" : "15"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "3-3-5":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "3.3.5 Liczba zachorowań na wybrane choroby tropikalne",
+                                    
+                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                                    
+                                      "zadanie": "3.3 Do 2030 roku wyeliminować epidemie AIDS, gruźlicy, malarii i zaniedbanych chorób tropikalnych oraz zwalczyć wirusowe zapalenie wątroby, choroby przenoszone przez wodę oraz inne choroby zakaźne.",
+                                    
+                                      "definicja": "Liczba zachorowań na wybrane choroby tropikalne.",
+                                    
+                                      "jednostka": "osoby",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Choroby tropikalne  choroby, występujące w krajach o klimacie tropikalnym. Choroby tropikalne mogą być wywoływane przez: bakterie, wirusy, grzyby oraz pasożyty jedno- i wielokomórkowe. Dane obliczane na podstawie sprawozdania MZ-56 o zachorowaniach na choroby zakaźne, zakażeniach i zatruciach. Według Międzynarodowej Statystycznej Klasyfikacji Chorób i Problemów Zdrowotnych ICD-10, do chorób tropikalnych zaliczamy jednostki chorobowe o symbolu:    • A30 (trąd, zwana chorobą Hansena)    • A31.1 (owrzodzenie Buruli)    • A66 (frambezja)    • A71 (jaglica)    • A82 (wścieklizna)    • A90 (gorączka denga)    • A91 (gorączka krwotoczna Denga)    • A92.0 (Chikungunya) B55 (leiszmanioza)    • B56 (śpiączka afrykańska, zwana trypanosomatozą afrykańską)    • B57 (choroba Chagasa)    • B65 (Schistosomatoza)    • B66 (choroby przenoszone droga pokarmową wywoływane przez przywry)    • B67 (Bąblowica - echinokokoza)    • B68 (Tasiemczyca)    • B69 (wągrzyca, zwana cysticerkozą)    • B72 (drakunkuloza)    • B73 (Onchocerkoza - ślepota rzeczna)    • B74 (filarioza)    • B83.0 (Larwa wędrująca trzewna)  Spośród ww. chorób w Polsce podlegają zgłoszeniom i są wyodrębniane w rejestracji zachorowań następujące choroby zakaźne:    • Bąblowica    • Wągrzyca    • Chikungunya    • Gorączka denga    • Wścieklizna  Dla Polski największe znaczenia mają: bąblowica (większość przypadków to przypadki rodzime) oraz wścieklizna (z uwagi na istniejącą wściekliznę zwierząt w Polsce, a tym samym istniejące zagrożenie wystąpienia przypadków u ludzi).",
+                                    
+                                      "zrodlo": "Narodowy Instytut Zdrowia Publicznego – Państwowy Zakład Higieny",
+                                    
+                                      "czestotliwosc": "Dane roczne od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg płci": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "43",
+                                                    
+                                                        "2011" : "26",
+                                                    
+                                                        "2012" : "33",
+                                                    
+                                                        "2013" : "55",
+                                                    
+                                                        "2014" : "63",
+                                                    
+                                                        "2015" : "60",
+                                                    
+                                                        "2016" : "105",
+                                                    
+                                                        "2017" : "104",
+                                                    
+                                                        "2018" : "84",
+                                                    
+                                                        "2019" : "126",
+                                                    
+                                                        "2020" : "28",
+                                                    
+                                                        "2021" : "30"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
                               
                           
                       }
@@ -4634,6 +5412,177 @@
                                                         "2019" : "93",
                                                     
                                                         "2020" : "63"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
+          "16-3-2":{
+                
+                "metadane": [
+                      {
+                                      "nazwa": "16.3.2 Udział osób tymczasowo aresztowanych w ogólnej liczbie osób przebywających w zakładach karnych i aresztach śledczych",
+                                    
+                                      "cel": "Cel 16. Pokój, sprawiedliwość i silne instytucje",
+                                    
+                                      "zadanie": "16.3 Promować rządy prawa na poziomie krajowym i międzynarodowym oraz zapewnić wszystkim równy dostęp do wymiaru sprawiedliwości",
+                                    
+                                      "definicja": "Udział osób, które są tymczasowo aresztowane w ogólnej liczbie osób, które przebywają w zakładach karnych i aresztach śledczych.",
+                                    
+                                      "jednostka": "procent [%]",
+                                    
+                                      "wymiary": "ogółem",
+                                    
+                                      "metodologia": "Tymczasowe aresztowanie jest jedynym izolacyjnym środkiem zapobiegawczym.  Środki zapobiegawcze stosuje się w celu zabezpieczenia prawidłowego toku postępowania, a wyjątkowo także w celu zapobiegnięcia popełnieniu przez oskarżonego nowego, ciężkiego przestępstwa. Można je stosować tylko wtedy, gdy zebrane dowody wskazują na duże prawdopodobieństwo, że oskarżony popełnił przestępstwo.  Poza tymczasowym aresztowaniem pozostałe środki zapobiegawcze mają nieizolacyjny charakter i są to: poręczenie, dozór, zawieszenie w czynnościach służbowych lub w wykonywaniu zawodu, zakaz opuszczania kraju oraz zatrzymanie prawa jazdy.  Tymczasowe aresztowanie może nastąpić tylko na mocy postanowienia sądu i jest to środek ostateczny stosowany wyłącznie, gdy inny środek zapobiegawczy jest niewystarczający.  Tymczasowe aresztowanie wykonuje się w aresztach śledczych. Areszty śledcze mogą być tworzone jako samodzielne areszty lub jako wyodrębnione oddziały zakładów karnych.  Areszty śledcze podlegają Ministrowi Sprawiedliwości.",
+                                    
+                                      "zrodlo": "Główny Urząd Statystyczny / Ministerstwo Sprawiedliwości",
+                                    
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                    
+                                      "uwagi": ""
+                                    }
+                    ],
+                    "dane": [
+                      {
+                                
+                                        "wg płci": [
+                                            {"ogółem": [
+                                                    {
+                                                    
+                                                        "2010" : "10.4",
+                                                    
+                                                        "2011" : "10.0",
+                                                    
+                                                        "2012" : "8.3",
+                                                    
+                                                        "2013" : "8.3",
+                                                    
+                                                        "2014" : "8.1",
+                                                    
+                                                        "2015" : "5.9",
+                                                    
+                                                        "2016" : "7.5",
+                                                    
+                                                        "2017" : "9.8",
+                                                    
+                                                        "2018" : "10.2",
+                                                    
+                                                        "2019" : "11.5",
+                                                    
+                                                        "2020" : "12.8"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "wg grup wieku": [
+                                            {"18 lat i więcej": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
+                                                    
+                                                    }
+                                                ],"15-21 lat": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : ""
                                                     
                                                     }
                                                 ]

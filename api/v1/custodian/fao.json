@@ -75,7 +75,7 @@
                                     
                                       "wymiary": "umiarkowany lub duży brak bezpieczeństwa żywnościowegoduży brak bezpieczeństwa żywnościowego",
                                     
-                                      "metodologia": "Brak bezpieczeństwa żywnościowego oznacza ograniczony dostęp do żywności w gospodarstwach domowych ze względu na brak środków finansowych lub niedobór innych zasobów.  Poziom braku bezpieczeństwa żywnościowego określany jest na podstawie badania modułowego z wykorzystaniem Skali Bezpieczeństwa Żywnościowego (FIES-SM). Podczas badania respondentom zdawanych jest osiem pytań na temat doświadczeń oraz okoliczności związanych z brakiem bezpieczeństwa żywnościowego. Metodologia FIES opracowana przez FAO umożliwia pomiar braku bezpieczeństwa żywnościowego w skali globu, a także pozwala na uzyskanie porównywalności między krajami w obszarze braku bezpieczeństwa żywnościowego.",
+                                      "metodologia": "Brak bezpieczeństwa żywnościowego oznacza ograniczony dostęp do żywności w gospodarstwach domowych ze względu na brak środków finansowych lub niedobór innych zasobów.  Poziom braku bezpieczeństwa żywnościowego określany jest na podstawie badania modułowego z wykorzystaniem Skali Bezpieczeństwa Żywnościowego (FIES-SM). Podczas badania respondentom (w wieku 15 lat i więcej) zdawanych jest osiem pytań na temat doświadczeń oraz okoliczności związanych z brakiem bezpieczeństwa żywnościowego. Metodologia FIES opracowana przez FAO umożliwia pomiar braku bezpieczeństwa żywnościowego w skali globu, a także pozwala na uzyskanie porównywalności między krajami w obszarze braku bezpieczeństwa żywnościowego.",
                                     
                                       "zrodlo": "FAO",
                                     
@@ -87,8 +87,8 @@
                     "dane": [
                       {
                                 
-                                        "wg poziomu braku bezpieczeństwa żywnościowego": [
-                                            {"umiarkowany lub duży": [
+                                        "umiarkowany lub duży poziom braku bezpieczeństwa żywnościowego": [
+                                            {"ogółem": [
                                                     {
                                                     
                                                         "2010" : "",
@@ -112,7 +112,59 @@
                                                         "2019" : "5.8"
                                                     
                                                     }
-                                                ],"duży": [
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "duży poziom braku bezpieczeństwa żywnościowego": [
+                                            {"ogółem": [
                                                     {
                                                     
                                                         "2010" : "",
@@ -134,6 +186,54 @@
                                                         "2018" : "0.5",
                                                     
                                                         "2019" : "0.5"
+                                                    
+                                                    }
+                                                ],"kobiety": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : ""
                                                     
                                                     }
                                                 ]
@@ -1139,7 +1239,9 @@
                                                     
                                                         "2019" : "95.0",
                                                     
-                                                        "2020" : "95.4"
+                                                        "2020" : "95.0",
+                                                    
+                                                        "2021" : "95.0"
                                                     
                                                     }
                                                 ],"K1": [
@@ -1165,7 +1267,9 @@
                                                     
                                                         "2019" : "",
                                                     
-                                                        "2020" : ""
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : ""
                                                     
                                                     }
                                                 ],"K2": [
@@ -1191,7 +1295,9 @@
                                                     
                                                         "2019" : "",
                                                     
-                                                        "2020" : ""
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : ""
                                                     
                                                     }
                                                 ],"K3": [
@@ -1217,7 +1323,9 @@
                                                     
                                                         "2019" : "",
                                                     
-                                                        "2020" : ""
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : ""
                                                     
                                                     }
                                                 ],"K4": [
@@ -1243,7 +1351,9 @@
                                                     
                                                         "2019" : "67.1",
                                                     
-                                                        "2020" : "67.1"
+                                                        "2020" : "66.6",
+                                                    
+                                                        "2021" : "66.6"
                                                     
                                                     }
                                                 ],"K5": [
@@ -1269,7 +1379,9 @@
                                                     
                                                         "2019" : "99.2",
                                                     
-                                                        "2020" : "99.4"
+                                                        "2020" : "99.0",
+                                                    
+                                                        "2021" : "99.2"
                                                     
                                                     }
                                                 ],"K6": [
@@ -1295,7 +1407,9 @@
                                                     
                                                         "2019" : "95.3",
                                                     
-                                                        "2020" : "95.4"
+                                                        "2020" : "94.6",
+                                                    
+                                                        "2021" : "94.4"
                                                     
                                                     }
                                                 ]

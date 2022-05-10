@@ -79,7 +79,7 @@
                           
                             "wymiary": "umiarkowany lub duży brak bezpieczeństwa żywnościowegoduży brak bezpieczeństwa żywnościowego",
                           
-                            "metodologia": "Brak bezpieczeństwa żywnościowego oznacza ograniczony dostęp do żywności w gospodarstwach domowych ze względu na brak środków finansowych lub niedobór innych zasobów.  Poziom braku bezpieczeństwa żywnościowego określany jest na podstawie badania modułowego z wykorzystaniem Skali Bezpieczeństwa Żywnościowego (FIES-SM). Podczas badania respondentom zdawanych jest osiem pytań na temat doświadczeń oraz okoliczności związanych z brakiem bezpieczeństwa żywnościowego. Metodologia FIES opracowana przez FAO umożliwia pomiar braku bezpieczeństwa żywnościowego w skali globu, a także pozwala na uzyskanie porównywalności między krajami w obszarze braku bezpieczeństwa żywnościowego.",
+                            "metodologia": "Brak bezpieczeństwa żywnościowego oznacza ograniczony dostęp do żywności w gospodarstwach domowych ze względu na brak środków finansowych lub niedobór innych zasobów.  Poziom braku bezpieczeństwa żywnościowego określany jest na podstawie badania modułowego z wykorzystaniem Skali Bezpieczeństwa Żywnościowego (FIES-SM). Podczas badania respondentom (w wieku 15 lat i więcej) zdawanych jest osiem pytań na temat doświadczeń oraz okoliczności związanych z brakiem bezpieczeństwa żywnościowego. Metodologia FIES opracowana przez FAO umożliwia pomiar braku bezpieczeństwa żywnościowego w skali globu, a także pozwala na uzyskanie porównywalności między krajami w obszarze braku bezpieczeństwa żywnościowego.",
                           
                             "zrodlo": "FAO",
                           
@@ -91,8 +91,8 @@
           "dane": [
             {
                       
-                              "wg poziomu braku bezpieczeństwa żywnościowego": [
-                                  {"umiarkowany lub duży": [
+                              "umiarkowany lub duży poziom braku bezpieczeństwa żywnościowego": [
+                                  {"ogółem": [
                                           {
                                           
                                               "2010" : "",
@@ -116,7 +116,59 @@
                                               "2019" : "5.8"
                                           
                                           }
-                                      ],"duży": [
+                                      ],"kobiety": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ],"mężczyźni": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ],
+                              "duży poziom braku bezpieczeństwa żywnościowego": [
+                                  {"ogółem": [
                                           {
                                           
                                               "2010" : "",
@@ -138,6 +190,54 @@
                                               "2018" : "0.5",
                                           
                                               "2019" : "0.5"
+                                          
+                                          }
+                                      ],"kobiety": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
+                                          
+                                          }
+                                      ],"mężczyźni": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : ""
                                           
                                           }
                                       ]
