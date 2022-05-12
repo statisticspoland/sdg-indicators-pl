@@ -33,7 +33,7 @@ en:
   nav-development : "FAQs"
   nav-api : "API"
   nav-api-custodian : "API custodian agencies"
-  nav-declaration : "Availability declaration"
+  nav-declaration : "Accessibility declaration"
   nav-reporting-glob-status : "global"
   nav-reporting-nat-status : "national"
   nav-api-title : "Go to API subpage"
@@ -43,5 +43,5 @@ en:
   nav-reporting-glob-status-title : "Go to global indicators' reporting status subpage"
   nav-reporting-nat-status-title : "Go to national indicators' reporting status subpage"
   contact-text-title: "Send e-mail to SDG@stat.gov.pl"
-  declaration-title: ""
+  declaration-title: "Go to Accessibility declaration"
 ---
