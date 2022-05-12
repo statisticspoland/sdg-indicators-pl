@@ -12,17 +12,11 @@ permalink: /deklaracja-dostepnosci/
 
   <p>Data publikacji strony internetowej: 31.01.2019</p>
 
-  <p>Data ostatniej istotnej aktualizacji: 11.05.2020</p>
+  <p>Data ostatniej istotnej aktualizacji: 28.03.2022</p>
 
-  <p>Strona internetowa jest częściowo zgodna z ustawą z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych z powodu niezgodności wymienionych poniżej:
+  <p>Strona internetowa jest zgodna z ustawą z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych.
 
-  <p>•	część plików PDF nie jest dostępnych cyfrowo (nie ma w nich dobrze zaznaczonej logicznej struktury),</p>
-  <p>•	część z opublikowanych zdjęć nie posiada opisu alternatywnego,</p>
-  <p>•	dostępne są linki, których tytuł jest taki sam jak treść linku,</p>
-  <p>•	występuje w pełni wyjustowany tekst,</p>
-  <p>•	nie ma możliwości powiększenia tekstu do 200% wielkości.</p>
-
-  <p>Oświadczenie sporządzono dnia <b>11.02.2021</b>. Deklarację sporządzono na podstawie samooceny przeprowadzonej przez podmiot publiczny.</p>
+  <p>Oświadczenie sporządzono dnia <b>12.05.2022</b>. Deklarację sporządzono na podstawie samooceny przeprowadzonej przez podmiot publiczny.</p>
 
   <p><b>Informacje zwrotne i dane kontaktowe</b></p>
 
