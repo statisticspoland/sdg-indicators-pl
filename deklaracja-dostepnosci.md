@@ -48,4 +48,4 @@ permalink: /deklaracja-dostepnosci/
 
   <p>W budynku GUS nie ma pętli indukcyjnych.</p>
 
-  <p>W budynku nie ma oznaczeń w alfabecie brajla ani oznaczeń kontrastowych lub w druku powiększonym dla osób niewidomych i słabowidzących.</p>
+  <p>W budynku nie ma oznaczeń w alfabecie Braille’a ani oznaczeń kontrastowych lub w druku powiększonym dla osób niewidomych i słabowidzących.</p>
