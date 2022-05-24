@@ -211,13 +211,13 @@
                 
                 "metadane": [
                       {
-                                      "nazwa": "3.3.2 Liczba nowych zachorowań na gruźlicę czynną płuc na 100 tys. ludności",
+                                      "nazwa": "3.3.2 Liczba nowych zachorowań na gruźlicę na 100 tys. ludności",
                                     
                                       "cel": "Cel 3. Dobre zdrowie i jakość życia",
                                     
                                       "zadanie": "3.3 Do 2030 roku wyeliminować epidemie AIDS, gruźlicy, malarii i zaniedbanych chorób tropikalnych oraz zwalczyć wirusowe zapalenie wątroby, choroby przenoszone przez wodę oraz inne choroby zakaźne.",
                                     
-                                      "definicja": "Liczba nowych przypadków zachorowań na gruźlicę w przeliczeniu na 1 tys. ludności.",
+                                      "definicja": "Liczba nowych przypadków zachorowań na gruźlicę w przeliczeniu na 100 tys. ludności.",
                                     
                                       "jednostka": "osoby",
                                     
@@ -280,7 +280,7 @@
                                     
                                       "jednostka": "osoby",
                                     
-                                      "wymiary": "ogółem",
+                                      "wymiary": "ogółemwg płci",
                                     
                                       "metodologia": "Malaria (zimnica) jest chorobą pasożytniczą, przenoszoną przez komary. Choroba objawia się regularnymi nawrotami gorączki i dreszczy. Dane obliczane na podstawie sprawozdania MZ-56 o zachorowaniach na choroby zakaźne, zakażeniach i zatruciach. Według Międzynarodowej Statystycznej Klasyfikacji Chorób i Problemów Zdrowotnych ICD-10: jednostka chorobowa o symbolu B50.",
                                     
@@ -326,27 +326,27 @@
                                                 ],"kobiety": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "11",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "4",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "5",
                                                     
-                                                        "2013" : "",
+                                                        "2013" : "8",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "7",
                                                     
-                                                        "2015" : "",
+                                                        "2015" : "8",
                                                     
-                                                        "2016" : "",
+                                                        "2016" : "13",
                                                     
-                                                        "2017" : "",
+                                                        "2017" : "6",
                                                     
-                                                        "2018" : "",
+                                                        "2018" : "6",
                                                     
-                                                        "2019" : "",
+                                                        "2019" : "4",
                                                     
-                                                        "2020" : "",
+                                                        "2020" : "1",
                                                     
                                                         "2021" : ""
                                                     
@@ -354,27 +354,27 @@
                                                 ],"mężczyźni": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "24",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "10",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "16",
                                                     
-                                                        "2013" : "",
+                                                        "2013" : "28",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "12",
                                                     
-                                                        "2015" : "",
+                                                        "2015" : "21",
                                                     
-                                                        "2016" : "",
+                                                        "2016" : "25",
                                                     
-                                                        "2017" : "",
+                                                        "2017" : "21",
                                                     
-                                                        "2018" : "",
+                                                        "2018" : "22",
                                                     
-                                                        "2019" : "",
+                                                        "2019" : "20",
                                                     
-                                                        "2020" : "",
+                                                        "2020" : "6",
                                                     
                                                         "2021" : ""
                                                     
@@ -468,7 +468,7 @@
                                     
                                       "czestotliwosc": "Dane roczne od 2010 r.",
                                     
-                                      "uwagi": ""
+                                      "uwagi": "Prezentowany wskaźnik (3.3.5 Liczba zachorowań na wybrane choroby tropikalne) jest zastępczym wobec miernika z oficjalnej listy wskaźników monitorujących Cele Zrównoważonego Rozwoju ONZ. Zastąpienie wskaźnika oryginalnego (3.3.5 Liczba osób wymagających interwencji z powodu zaniedbania chorób tropikalnych) wynika z braku możliwości pozyskania dla niego danych. Wskaźnik zastępczy został dobrany tak, aby jak najpełniej oddawał istotę obserwowanego zjawiska."
                                     }
                     ],
                     "dane": [
@@ -506,27 +506,27 @@
                                                 ],"kobiety": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "34",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "13",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "22",
                                                     
-                                                        "2013" : "",
+                                                        "2013" : "45",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "49",
                                                     
-                                                        "2015" : "",
+                                                        "2015" : "35",
                                                     
-                                                        "2016" : "",
+                                                        "2016" : "57",
                                                     
-                                                        "2017" : "",
+                                                        "2017" : "59",
                                                     
-                                                        "2018" : "",
+                                                        "2018" : "49",
                                                     
-                                                        "2019" : "",
+                                                        "2019" : "76",
                                                     
-                                                        "2020" : "",
+                                                        "2020" : "19",
                                                     
                                                         "2021" : ""
                                                     
@@ -534,27 +534,27 @@
                                                 ],"mężczyźni": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "9",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "13",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "11",
                                                     
-                                                        "2013" : "",
+                                                        "2013" : "10",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "14",
                                                     
-                                                        "2015" : "",
+                                                        "2015" : "25",
                                                     
-                                                        "2016" : "",
+                                                        "2016" : "48",
                                                     
-                                                        "2017" : "",
+                                                        "2017" : "45",
                                                     
-                                                        "2018" : "",
+                                                        "2018" : "35",
                                                     
-                                                        "2019" : "",
+                                                        "2019" : "50",
                                                     
-                                                        "2020" : "",
+                                                        "2020" : "9",
                                                     
                                                         "2021" : ""
                                                     
@@ -1590,7 +1590,7 @@
                                     
                                       "czestotliwosc": "Dane za 2012 r.",
                                     
-                                      "uwagi": ""
+                                      "uwagi": "Prezentowany wskaźnik (5.2.1 Odsetek kobiet w wieku 18-74 lata, które doświadczyły przemocy fizycznej, seksualnej lub psychicznej ze strony obecnego lub byłego partnera) jest zastępczym wobec miernika z oficjalnej listy wskaźników monitorujących Cele Zrównoważonego Rozwoju ONZ. Zastąpienie wskaźnika oryginalnego (5.2.1 Odsetek kobiet i dziewcząt w wieku 15 lat i starszych, będących obecnie lub w przeszłości w związku małżeńskim lub mieszkających z partnerem, wobec których obecny lub były partner stosował przemoc fizyczną, seksualną lub psychiczną w okresie ostatnich 12 miesięcy, według formy przemocy i według grupy wiekowej) wynika z braku możliwości pozyskania dla niego danych. Wskaźnik zastępczy został dobrany tak, aby jak najpełniej oddawał istotę obserwowanego zjawiska."
                                     }
                     ],
                     "dane": [
@@ -1998,7 +1998,7 @@
                                     
                                       "czestotliwosc": "Dane roczne  od 2010 r.",
                                     
-                                      "uwagi": ""
+                                      "uwagi": "Prezentowany wskaźnik (11.6.2 Średnioroczne poziomy pyłu zawieszonego w 12 aglomeracjach) jest zastępczym wobec miernika z oficjalnej listy wskaźników monitorujących Cele Zrównoważonego Rozwoju ONZ. Zastąpienie wskaźnika oryginalnego (11.6.2 Średnioroczne poziomy drobnego pyłu zawieszonego (np. PM2,5 i PM10) w miastach (ważone liczbą ludności)) wynika z braku możliwości pozyskania dla niego danych. Wskaźnik zastępczy został dobrany tak, aby jak najpełniej oddawał istotę obserwowanego zjawiska."
                                     }
                     ],
                     "dane": [
