@@ -6,25 +6,25 @@
                 
                 "metadata": [
                       {
-                                      "name": "2.7.a Prevalence of obesity among adults",
+                                      "name": "2.7.a Prevalence of obesity among people aged 15 and more according to BMI",
                                     
                                       "goal": "Goal 2. Zero hunger",
                                     
                                       "priority": "Promotion of healthy lifestyle, including healthy nutrition, among adults and children (decrease in proportion of persons with overweight and obesity)",
                                     
-                                      "definition": "Percentage of population aged 18 years and more with a BMI equal 30 or more.",
+                                      "definition": "Percentage of population aged 15 years and more with a BMI equal 30 or more.",
                                     
                                       "unit": "percent [%]",
                                     
                                       "dimensions": "sex",
                                     
-                                      "methodology": "Obesity is defined as abnormal or excessive fat accumulation that presents a risk to health. A crude population measure of obesity is the body mass index (BMI). A person with a BMI of 30 or more is generally considered obese. Body mass index (BMI) is defined as a person's weight in kilograms divided by the square of the person's height in metres (kg/m2). For adults over 20 years old, BMI falls into one of the following categories:   18.5 - 24.9 - normal weight, 25.0 - 29.9 - pre-obesity, 30.0 - 34.9 - obesity class I, 35.0 - 39.9 - obesity class II, >=40 - obesity class III.  The BMI ranges are based on the effect excessive body fat has on disease and death and are reasonably well related to adiposity. BMI was developed as a risk indicator of disease; as BMI increases, so does the risk for some diseases. Some common conditions related to overweight and obesity include: premature death, cardiovascular diseases, high blood pressure, osteoarthritis, some cancers and diabetes.",
+                                      "methodology": "Obesity is defined as abnormal or excessive fat accumulation that presents a risk to health. A crude population measure of obesity is the body mass index (BMI). A person with a BMI of 30 or more is generally considered obese. Body mass index (BMI) is defined as a person's weight in kilograms divided by the square of the person's height in metres (kg/m2). For adults over 20 years old, BMI falls into one of the following categories:   18.5 - 24.9 - normal weight, 25.0 - 29.9 - pre-obesity, 30.0 - 34.9 - obesity class I, 35.0 - 39.9 - obesity class II, >=40 - obesity class III.  The BMI ranges are based on the effect excessive body fat has on disease and death and are reasonably well related to adiposity. BMI was developed as a risk indicator of disease; as BMI increases, so does the risk for some diseases. Some common conditions related to overweight and obesity include: premature death, cardiovascular diseases, high blood pressure, osteoarthritis, some cancers and diabetes. Data comes from the European Health Interview Survey (EHIS), repeated every 5 years. The results of the study enable to get to know the health situation of the inhabitants of the Union and its conditions in connection with the demographic and social characteristics and the place of residence. The study covers four areas:  health status (including self-assessment of health status, chronic diseases, limitations in functioning and their impact on everyday life, psychological well-being), health care (use of medical care, use of medicines, prophylaxis), health determinants (mainly lifestyle and exposure to adverse environmental factors) and demographic and social characteristics of persons and households. ",
                                     
-                                      "source": "World Health Organization",
+                                      "source": "Statistics Poland",
                                     
-                                      "availability": "Annual data; since 2010",
+                                      "availability": "Data every 5 years; since 2010",
                                     
-                                      "notes": ""
+                                      "notes": "Data presented for 2010 relate to the survey carried out in 2009."
                                     }
                     ],
                     "data": [
@@ -34,67 +34,73 @@
                                             {"total": [
                                                     {
                                                     
-                                                        "2010" : "22.5",
+                                                        "2010" : "15.8",
                                                     
-                                                        "2011" : "22.9",
+                                                        "2011" : "",
                                                     
-                                                        "2012" : "23.4",
+                                                        "2012" : "",
                                                     
-                                                        "2013" : "24.0",
+                                                        "2013" : "",
                                                     
-                                                        "2014" : "24.5",
+                                                        "2014" : "16.7",
                                                     
-                                                        "2015" : "25.0",
+                                                        "2015" : "",
                                                     
-                                                        "2016" : "25.6",
+                                                        "2016" : "",
                                                     
                                                         "2017" : "",
                                                     
-                                                        "2018" : ""
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "18.5"
                                                     
                                                     }
                                                 ],"males": [
                                                     {
                                                     
-                                                        "2010" : "21.6",
+                                                        "2010" : "16.6",
                                                     
-                                                        "2011" : "22.2",
+                                                        "2011" : "",
                                                     
-                                                        "2012" : "22.8",
+                                                        "2012" : "",
                                                     
-                                                        "2013" : "23.4",
+                                                        "2013" : "",
                                                     
-                                                        "2014" : "24.1",
+                                                        "2014" : "18.1",
                                                     
-                                                        "2015" : "24.7",
+                                                        "2015" : "",
                                                     
-                                                        "2016" : "25.4",
+                                                        "2016" : "",
                                                     
                                                         "2017" : "",
                                                     
-                                                        "2018" : ""
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "19.5"
                                                     
                                                     }
                                                 ],"females": [
                                                     {
                                                     
-                                                        "2010" : "23.3",
+                                                        "2010" : "15.2",
                                                     
-                                                        "2011" : "23.7",
+                                                        "2011" : "",
                                                     
-                                                        "2012" : "24.0",
+                                                        "2012" : "",
                                                     
-                                                        "2013" : "24.4",
+                                                        "2013" : "",
                                                     
-                                                        "2014" : "24.9",
+                                                        "2014" : "15.6",
                                                     
-                                                        "2015" : "25.3",
+                                                        "2015" : "",
                                                     
-                                                        "2016" : "25.7",
+                                                        "2016" : "",
                                                     
                                                         "2017" : "",
                                                     
-                                                        "2018" : ""
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "17.6"
                                                     
                                                     }
                                                 ]
@@ -1053,7 +1059,7 @@
                                             {"15-19 years": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "26.8",
                                                     
                                                         "2011" : "",
                                                     
@@ -1061,7 +1067,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "81.0",
                                                     
                                                         "2015" : "",
                                                     
@@ -1075,7 +1081,7 @@
                                                 ],"20-29 years": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "25.9",
                                                     
                                                         "2011" : "",
                                                     
@@ -1083,7 +1089,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "27.6",
                                                     
                                                         "2015" : "",
                                                     
@@ -1097,7 +1103,7 @@
                                                 ],"30-39 years": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "24.4",
                                                     
                                                         "2011" : "",
                                                     
@@ -1105,7 +1111,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "28.0",
                                                     
                                                         "2015" : "",
                                                     
@@ -1119,7 +1125,7 @@
                                                 ],"40-49 years": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "26.8",
                                                     
                                                         "2011" : "",
                                                     
@@ -1127,7 +1133,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "28.3",
                                                     
                                                         "2015" : "",
                                                     
@@ -1141,7 +1147,7 @@
                                                 ],"50-59 years": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "32.0",
                                                     
                                                         "2011" : "",
                                                     
@@ -1149,7 +1155,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "32.3",
                                                     
                                                         "2015" : "",
                                                     
@@ -1163,7 +1169,7 @@
                                                 ],"60-69 years": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "34.3",
                                                     
                                                         "2011" : "",
                                                     
@@ -1171,7 +1177,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "35.9",
                                                     
                                                         "2015" : "",
                                                     
@@ -1185,7 +1191,7 @@
                                                 ],"70-79 years": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "31.1",
                                                     
                                                         "2011" : "",
                                                     
@@ -1193,7 +1199,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "35.5",
                                                     
                                                         "2015" : "",
                                                     
@@ -1207,7 +1213,7 @@
                                                 ],"80 years and more": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "23.1",
                                                     
                                                         "2011" : "",
                                                     
@@ -1215,7 +1221,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "25.5",
                                                     
                                                         "2015" : "",
                                                     
