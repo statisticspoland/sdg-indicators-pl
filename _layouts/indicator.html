@@ -321,13 +321,13 @@ function Zmiana_jednostki4(){
   labels.shift()
   var lan='{{language}}'
 
-    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonne'){
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tony' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonnes'){
       var calo={{ row1 | jsonify }}
       for (i=0;i<naglowek_ang.length;i++){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(9,16);
+      calosc=calo.splice(11,18);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -337,13 +337,13 @@ function Zmiana_jednostki4(){
 
       chart.update({labels: labels,series: seria})
       if(lan=='pl'){
-        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("tytul").innerHTML = "tony";
         document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
         $(".ct-series-0").text('na 1 mieszkańca');
 
       }
       if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("tytul").innerHTML = "tonnes";
         document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
         $(".ct-series-0").text('per capita');
       }
@@ -355,7 +355,7 @@ function Zmiana_jednostki4(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(0,9);
+      calosc=calo.splice(0,11);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -366,12 +366,12 @@ function Zmiana_jednostki4(){
       chart.update({labels: labels,series: seria})
       if(lan='pl'){
         document.getElementById("tytul").innerHTML = "tys. ton";
-        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tona";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tony";
         $(".ct-series-0").text('ogółem');
       }
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "thous. tonnes";
-        document.getElementById("Jednostka4").innerHTML = "Change unit - tonne";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonnes";
         $(".ct-series-0").text('total');
       }
 
