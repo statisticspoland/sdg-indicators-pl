@@ -8,13 +8,19 @@
   {% assign goals_priorytet = ktore['en'].sdg_priorytet %}
   {% assign indicators_priorytet = ktore['en'].sdg_indicator_metadata %}
   {% assign lang = '/en' %}
-  {% assign title = 'Priority for Poland' %}
+  {% assign title = 'Priorities for Poland' %}
+  {% assign g1 = 'SDGs' %}
+  {% assign g2 = 'Priorities for Poland' %}
+  {% assign g3 = 'Indicators' %}
 {% else %}
   {% assign goals = ktore.sdg_goals %}
   {% assign goals_priorytet = ktore.sdg_priorytet %}
   {% assign indicators_priorytet = ktore.sdg_indicator_metadata %}
   {% assign lang = '' %}
-  {% assign title = 'Priorytety krajowe SDG' %}
+  {% assign title = 'Priorytety SDGs dla Polski' %}
+  {% assign g1 = 'Cele SDGs' %}
+  {% assign g2 = 'Priorytety dla Polski' %}
+  {% assign g3 = 'Wskaźniki' %}
 {% endif %}
 
     <div id="main" class="main-content initiative-content status-dashboard">
@@ -30,15 +36,38 @@
             </div>
         </section>
 
+
         <div class="pl-grid">
             {{ content }}
         </div>
 
         <div class="pl-grid initiative-description">
 
+          {% if page.url contains '/en/' %}
+            <br/>
+            <p>A set of over 120 indicators to monitor Polish priorities (67) was created to analyze changes over time and assess Poland's progress in areas that constitute challenges for our country from the point of view of SDGs. Contrary to global targets and indicators concerning the whole world, the priorities for Poland and indicators are tailor-made to the needs of our country.</p>
+            <p>The premise for defining Polish priorities and, consequently, selection the indicators, were experiences and conclusions from the period of Poland’s preparation for its first Voluntary National Review of the SDG’s implementation during UN High Level Political Forum. This review was an opportunity to present the vision of the implementation of SDGs by Poland and the effects of the actions taken so far. Poland's approach to the 2030 Agenda was presented in the report adopted by the Government of the Republic of Poland, entitled <a title="Go to 2018 national report" href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030">Implementation of the Sustainable Development Goals in Poland. The 2018 National Report.</a></p>
+            <p>Indicators proposed by the Statistics Poland were consulted with the ministries responsible for implementing the priorities, with the leading role of the Ministry of Economic Development and Technology – the coordinator of the 2030 Agenda implementation process in Poland.</p>
+          {% else %}
+            <br/>
+            <p>Zestaw ponad 120 wskaźników monitorujących priorytety krajowe (67) powstał na potrzeby analizowania zmian w czasie i oceny postępów Polski obszarach stanowiących wyzwania dla naszego kraju z punktu widzenia SDGs. W odróżnieniu od zadań i wskaźników globalnych dotyczących całego świata, priorytety dla Polski oraz odpowiadające im mierniki są szyte na miarę naszego kraju.</p>
+            <p>Przesłanką do zdefiniowania krajowych priorytetów, a w ślad za tym dobór wskaźników monitorujących, stały się doświadczenia i wnioski z okresu przygotowywania do pierwszego wystąpienia Polski podczas dobrowolnego przeglądu krajów z wdrażania SDGs (<i>Voluntary National Review</i>) na Forum Politycznym Wysokiego Szczebla ONZ. Przegląd ten był okazją do zaprezentowania wizji wdrażania SDGs przez Polskę oraz dotychczasowych efektów podejmowanych działań. Podejście Polski do Agendy 2030 zostało przedstawione w przyjętym przez Rząd RP raporcie pt. „<a title="Przejdź do raportu 2018" href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030">Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</a>”.</p>
+            <p>Zgłoszone przez GUS propozycje wskaźników zostały skonsultowane z resortami odpowiedzialnymi za wdrażanie priorytetów, przy wiodącej roli Ministerstwa Rozwoju i Technologii – koordynatora procesu wdrażania Agendy 2030 w Polsce. </p>
+          {% endif %}
+
+
             <div class="goal-list" style="margin-bottom: 32px">
 
+              <div class="media pl-grid-full" style="font-weight: bold;border-bottom: 1px solid #cecece;border-left: 1px solid #cecece;border-top: 1px solid #cecece;border-right: 1px solid #cecece;margin-top: -1px">
 
+                        <div class="usa-width-one-sixth" style="padding-left: 5px;border-left: 1px solid #cecece;padding-right: 5px;margin-top: 16px;">{{g1}}</div>
+                        <div class="usa-width-five-sixths" style="border-left: 1px solid #cecece">
+                            <div style="display: inline-block;width: 100%;border-bottom: 1px solid #cecece;padding-left: 5px;margin-bottom: -7px">
+                              <div style="width: 50%;float: left;padding-right: 15px;border-right: 1px solid #cecece;margin-right: -1px"><p>{{g2}}</p></div>
+                              <div style="width: 50%;float: left;padding-left:5px;border-left: 1px solid #cecece;padding-right: 5px;margin-top: 16px">{{g3}}<br><br></div>
+                            </div>
+                        </div>
+              </div>
 
 
             {% for goal in goals %}

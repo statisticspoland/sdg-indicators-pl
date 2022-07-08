@@ -1,14 +1,15 @@
 ---
-layout: page
-title: O SDG
+layout: page_aboutsdg
+title: O AGENDZIE 2030 i SDGs
 permalink: /o_sdg/
 ---
 <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#sdg" aria-controls="data" role="tab" data-toggle="tab">O AGENDZIE 2030 i SDGs</a></li>
-            <li role="presentation"><a href="#ini" aria-controls="data" role="tab" data-toggle="tab">SDG w UE i OECD</a></li>
-            <li role="presentation"><a href="#stat" aria-controls="metadata" role="tab" data-toggle="tab">STATYSTYKA PUBLICZNA</a></li>
-            <li role="presentation"><a href="#publ" aria-controls="metadata" role="tab" data-toggle="tab">PUBLIKACJE</a></li>
-            <li role="presentation"><a href="#gus" aria-controls="metadata" role="tab" data-toggle="tab">SDG4FUN</a></li>
+            <li role="presentation" class="active"><a href="#sdg" aria-controls="data" role="tab" data-toggle="tab" style="margin-top: 21px;">O AGENDZIE 2030 i SDGs</a></li>
+            <li role="presentation"><a href="#ini" aria-controls="data" role="tab" data-toggle="tab" style="margin-top: 21px;">SDG w UE i OECD</a></li>
+            <li role="presentation" style="width: 200px;"><a href="#stat" aria-controls="metadata" role="tab" data-toggle="tab">STATYSTYKA PUBLICZNA NA RZECZ SDGs</a></li>
+            <li role="presentation"><a href="#bis" aria-controls="metadata" role="tab" data-toggle="tab" style="margin-top: 21px;">WSKAŹNIKI DLA BIZNESU</a></li>
+            <li role="presentation"><a href="#publ" aria-controls="metadata" role="tab" data-toggle="tab" style="margin-top: 21px;">PUBLIKACJE</a></li>
+            <li role="presentation"><a href="#gus" aria-controls="metadata" role="tab" data-toggle="tab" style="margin-top: 21px;">SDG4FUN</a></li>
 
 
 </ul>
@@ -38,34 +39,138 @@ permalink: /o_sdg/
   <div role="tabpanel" class="tab-pane" id="ini">
   <h4><b>SDG w UE i OECD</b></h4>
 
-  <p><b>Zaangażowanie UE na rzecz zrównoważonego rozwoju </b></p>
+  <p><b>Zaangażowanie UE na rzecz zrównoważonego rozwoju</b></p>
 
-  <p>Kierunek działań na rzecz zrównoważonego rozwoju w Unii Europejskiej został po raz pierwszy nakreślony w Strategii Zrównoważonego Rozwoju UE przyjętej w 2001 r. i odnowionej w 2006 r. Pomiarowi realizacji celów Strategii służył zestaw odpowiednio dobranych mierników.</p>
-  <p>Włączając się w globalną inicjatywę Agendy 2030, w 2016 r. Komisja Europejska ogłosiła komunikat „Kolejne kroki w kierunku zrównoważonej przyszłości Europy”. W dokumencie zadeklarowano uwzględnienie celów SDG w unijnych politykach oraz regularne raportowanie postępów. Biorąc pod uwagę, że priorytety rozwojowe UE zostały określone m.in. poprzez Strategię Europa 2020, 10 Priorytetów Komisji Europejskiej oraz pakiet gospodarki o obiegu zamkniętym, do monitorowania Celów Zrównoważonego Rozwoju w regionie zdecydowano się przyjąć specjalny zestaw <a target="_blank" title="Zobacz wskaźniki monitorujące rozwój przyjęte przez UE" href="https://ec.europa.eu/eurostat/web/sdi/main-tables">100 wskaźników monitorujących</a>, odmienny od przyjętego przez ONZ i uwzględniający wyzwania stojące przed państwami wspólnotowymi. Zestaw jest w całości oparty o zasoby Europejskiego Systemu Statystycznego. </p>
+  <p>Koncepcja zrównoważonego rozwoju była obecna w Unii Europejskiej na długo przed przyjęciem Agendy 2030. Zrównoważony rozwój został uznany za ogólną zasadę działania UE w Traktacie o Unii Europejskiej, natomiast kierunek szczegółowych działań na rzecz zrównoważonego rozwoju w UE został po raz pierwszy nakreślony w Strategii Zrównoważonego Rozwoju UE, przyjętej w 2001 r. i odnowionej w 2006 r. Pomiarowi realizacji celów Strategii służył zestaw odpowiednio dobranych mierników.</p>
+
+  <p>Włączając się w globalną inicjatywę Agendy 2030, w 2016 r. Komisja Europejska ogłosiła komunikat pt. <a href="https://eur-lex.europa.eu/legal-content/PL/TXT/PDF/?uri=CELEX:52016DC0739&from=PL" title="Przejdź do komunikatu">„Kolejne kroki w kierunku zrównoważonej przyszłości Europy. Europejskie działania na rzecz zrównoważonego rozwoju”</a>. W dokumencie zadeklarowano uwzględnienie celów SDG w unijnych politykach oraz regularne raportowanie postępów. Cele Agendy 2030 powiązano m.in. z obowiązującą wówczas Strategią Europa 2020, 10 Priorytetami Komisji Europejskiej oraz pakietem gospodarki o obiegu zamkniętym. Obecnie <a href="https://ec.europa.eu/info/strategy/international-strategies/sustainable-development-goals/eu-holistic-approach-sustainable-development_pl" title="Przejdź do raportu">kompleksowe podejście UE do SDGs</a> znajduje wyraz m.in. w <a href="https://ec.europa.eu/info/strategy/priorities-2019-2024_pl" title="Przejdź do priorytetów">6 Priorytetach KE na lata 2019-2024</a>, które mają bezpośredni związek z 17 Celami. W najszerszym zakresie do celów Agendy 2030 nawiązuje pierwszy priorytet KE – <a href="https://eur-lex.europa.eu/resource.html?uri=cellar:b828d165-1c22-11ea-8c1f-01aa75ed71a1.0016.02/DOC_1&format=PDF" title="Przejdź do komunikatu">Europejski Zielony Ład</a> (zaprezentowany przez KE w grudniu 2019 r.), czyli nowa strategia rozwoju UE, której zadaniem jest przekształcenie UE w nowoczesną, zasobooszczędną i neutralną dla klimatu gospodarkę, gdzie żadna osoba, ani żaden region nie zostaną pominięte.</p>
+
+  <p>W UE monitorowanie realizacji celów Agendy 2030 jest prowadzone za pomocą <a href="https://ec.europa.eu/eurostat/web/sdi/database" title="Przejdź do zestawu wskaźników">zestawu ok. 100 wskaźników zrównoważonego rozwoju</a>. Zestaw wskaźników unijnych zasadniczo różni się od zestawu wskaźników globalnych, bowiem jest ściśle powiązany z politykami UE, które są adekwatne do poziomu rozwoju, potencjału i wyzwań, stojących przed Państwami Członkowskimi UE. Zestaw jest oparty przede wszystkim na zasobach Europejskiego Systemu Statystycznego. Wskaźniki monitorujące unijne priorytety SDG są wykorzystywane m.in. w corocznych <a href="https://ec.europa.eu/eurostat/web/sdi/publications" title="Przejdź do raportów Eurostatu">raportach Eurostatu</a> dot. postępów Unii Europejskiej w realizacji celów Agendy 2030 oraz w <a href="https://ec.europa.eu/info/publications/2020-european-semester-country-reports_pl" title="Przejdź do sprawozdań krajowych">sprawozdaniach krajowych</a> w ramach procedury Semestru Europejskiego, koordynującej politykę społeczno-gospodarczą i budżetową w UE. </p>
 
 
-  <p><b>Zaangażowanie OECD na rzecz zrównoważonego rozwoju </b></p>
+  <p><b>Zaangażowanie OECD na rzecz zrównoważonego rozwoju</b></p>
 
-  <p>Organizacja Współpracy Gospodarczej i Rozwoju również aktywnie włącza się w działania z zakresu zrównoważonego rozwoju, w tym w realizację Agendy na rzecz Zrównoważonego Rozwoju 2030. OECD wspiera kraje członkowskie we wdrażaniu celów SDG, m.in. poprzez pomoc w mobilizowaniu zasobów krajowych, jak również w dokonywaniu przeglądu polityk i dopasowania ich do określonych celów. Do najważniejszych inicjatyw OECD związanych ze zrównoważonym rozwojem należą ogłoszone w 2011 r. Inicjatywa na rzecz lepszego życia oraz Zielony wzrost i zrównoważony rozwój.</p>
+  <p>Organizacja Współpracy Gospodarczej i Rozwoju (OECD) również aktywnie włącza się w działania z zakresu zrównoważonego rozwoju. W 2016 r. OECD przyjęła <a href="https://www.oecd.org/dac/Better%20Policies%20for%202030.pdf" title="Przejdź do planu działań na rzecz Celów Zrównoważonego Rozwoju">„Plan działań na rzecz Celów Zrównoważonego Rozwoju”</a>, określający obszary aktywności organizacji w tym zakresie. Należy do nich przede wszystkim wspieranie krajów członkowskich we wdrażaniu SDGs m.in. poprzez dokonywanie przeglądów polityk i wyzwań krajowych oraz dopasowywanie ich do określonych celów Agendy 2030. Wnioski z przeglądów OECD prezentowane są w publikacjach z serii <a href="https://www.oecd-ilibrary.org/economics/better-policies_23081392" title="Przejdź do publikacji">Better Policies</a>, wśród nich jest również opracowanie dot. Polski (<a href="https://www.oecd.org/poland/Better-Policy-Series-Poland-Nov-2017-PL.pdf" title="Przejdź do opracowania">„Agenda 2030 na rzecz Zrównoważonego rozwoju: w kierunku pomyślnego wdrożenia w Polsce”</a>).</p>
 
-  <p><b><a target="_blank" title="Zapoznaj się z inicjatywą lepszego życia" href="http://www.oecd.org/statistics/better-life-initiative.htm">Inicjatywa na rzecz lepszego życia</a></b> (<em>Better Life Initiative</em>) – projekt OECD mający na celu promowanie lepszych polityk w myśl hasła „Lepsze polityki dla lepszego życia”. Inicjatywa angażuje świat polityki w działania na rzecz osiągania dobrobytu, a także wzmacnia zaangażowanie społeczne. Częścią projektu OECD było opracowanie wskaźnika poprawy jakości życia (ang. <em>Better Life Index</em>), pozwalającego na całościowe spojrzenie na kwestię dobrobytu społeczeństw. Wyniki najnowszych badań na temat jakości życia prezentowane są w kolejnych seriach publikacji tematycznej pt. How’s life? Measuring Well-being.</p>
+  <p>Dodatkowo OECD wspiera kraje w integrowaniu SDGs z politykami krajowymi, aby zapewnić im większą spójność z Agendą 2030, a w rezultacie skoordynowane podejście do wdrażania SDGs. W tym celu OECD opracowało rekomendacje ws. spójności polityk na rzecz zrównoważonego rozwoju (<a href="https://www.oecd.org/gov/pcsd/oecd-recommendation-on-policy-coherence-for-sustainable-development.htm" title="Przejdź do rekomendacji">OECD Recommendation on Policy Coherence for Sustainable Development</a>), oparte na trzech ogólnych filarach (spójnej wizji strategicznej, efektywnym zarządzaniu i ewaluacji działań) oraz ośmiu szczegółowych zasadach, służących zwiększeniu zgodności priorytetów krajowych z Agendą 2030.</p>
 
-  <p><b><a target="_blank" title="Zapoznaj się z zielonym wzrostem i zrównoważonym rozwojem" href="http://www.oecd.org/greengrowth/">Zielony wzrost i zrównoważony rozwój</a></b> (<em>Green growth and Sustainable development</em>) – działania ukierunkowane na wzmocnienie polityki sprzyjającej wzrostowi gospodarczemu, przy jednoczesnym zachowaniu dóbr środowiskowych i rozwoju infrastruktury przyjaznej środowisku. Podstawę aktywności OECD w zakresie zielonego wzrostu stanowi przyjęta w 2011 r. Strategia Zielonego Wzrostu (<em>Green Growth Strategy</em>). Postępy poszczególnych krajów we wdrażaniu wyznaczonych w Strategii priorytetów gospodarczych i ekologicznych są przedstawione w kolejnych seriach publikacjach pn. <em>Towards Green Growth? Tracking Progress.</em></p>
+  <p>Wśród aktywności OECD w zakresie SDGs, wynikających z „Planu działań…” tej organizacji, jest również pomiar dystansu, jaki dzieli kraje OECD od pełnej realizacji celów Agendy 2030. W ramach inicjatywy <a href="https://www.oecd.org/wise/measuring-distance-to-the-sdgs-targets.htm" title="Przejdź do raportów">Measuring Distance to the SDG Targets</a>, OECD publikuje co kilka lat raporty, prezentujące oddalenie krajów OECD od wartości docelowych, przewidzianych w zadaniach i celach Agendy 2030, na podstawie danych z baz ONZ i OECD. </p>
+
+  <p>Ponadto w ramach monitorowania SDGs, OECD udostępnia wyspecjalizowane <a href="https://www.oecd.org/about/civil-society/sdgs/" title="Przejdź do narzędzi">narzędzia</a> do śledzenia postępów z ich realizacji:</p>
+  <p>•	ramy do monitorowania SDGs w regionach i miastach krajów OECD (Measuring the distance to the SDGs in regions and cities),</p>
+  <p>•	instrument do pomiaru pomocy finansowej na rzecz SDGs (SDG Financing Lab), </p>
+  <p>•	wyszukiwarka powiązań między aktualnymi politykami i wyzwaniami a SDGs (SDG Pathfinder).</p>
+
+  <p>Do pozostałych aktywności OECD, powiązanych ze zrównoważonym rozwojem, należą m.in.:</p>
+  <p>•	<a href="https://www.oecd.org/wise/better-life-initiative.htm" title="Przejdź do Inicjatywy na rzecz lepszego życia">Inicjatywa na rzecz lepszego życia</a> (Better Life Initiative) – projekt OECD mający na celu promowanie lepszych polityk w myśl hasła „Lepsze polityki dla lepszego życia”. Inicjatywa angażuje świat polityki w działania na rzecz osiągania dobrobytu, a także wzmacnia zaangażowanie społeczne. Częścią projektu OECD było opracowanie wskaźnika poprawy jakości życia (ang. <a href="https://www.oecdbetterlifeindex.org/#/11111111111" title="Przejdź do wskaźnika">Better Life Index</a>), pozwalającego na całościowe spojrzenie na kwestię dobrobytu społeczeństw. Wyniki najnowszych badań na temat jakości życia prezentowane są w kolejnych seriach publikacji tematycznej pt. <a href="https://www.oecd.org/wise/how-s-life-23089679.htm" title="Przejdź do publikacji">„How’s life? Measuring Well-being.”</a></p>
+  <p>•	<a href="https://www.oecd.org/greengrowth/" title="Przejdź do zielonego wzrostu">Zielony wzrost i zrównoważony rozwój</a> (Green growth and sustainable development) – działania ukierunkowane na wzmocnienie polityki sprzyjającej wzrostowi gospodarczemu, przy jednoczesnym zachowaniu dóbr środowiskowych i rozwoju infrastruktury przyjaznej środowisku. Podstawę aktywności OECD w zakresie zielonego wzrostu stanowi przyjęta w 2011 r. Strategia Zielonego Wzrostu (<a href="https://www.oecd.org/greengrowth/towards-green-growth-9789264111318-en.htm" title="Przejdź do strategii"> Green Growth Strategy</a>). Postępy poszczególnych krajów we wdrażaniu wyznaczonych w Strategii priorytetów gospodarczych i ekologicznych są przedstawione w kolejnych seriach publikacji pt. <a href="https://www.oecd.org/env/towards-green-growth-9789264234437-en.htm" title="Przejdź do publikacji">„Towards Green Growth? Tracking Progress”</a>. </p>
 
   </div>
+
+
   <div role="tabpanel" class="tab-pane" id="stat">
   <h4><b>STATYSTYKA PUBLICZNA NA RZECZ SDGs</b></h4>
+
   <p>Zadaniem statystyki publicznej, wskazanym w Agendzie 2030, jest monitorowanie postępów w osiąganiu Celów Zrównoważonego Rozwoju. Monitorowanie odbywa się na trzech poziomach:</p>
-<p>•	globalnym – ten poziom koordynuje Komisja Statystyczna ONZ;</p>
-<p>•	regionów świata  – tu odpowiedzialne są regionalne agendy ONZ (w naszym regionie Europejska Komisja Gospodarcza ONZ –  UNECE);</p>
-<p>•	krajowym – za który odpowiadają krajowe urzędy statystyczne (w Polsce GUS).</p>
-<p>Do oceny postępów na poziomie globalnym i regionalnym stosowany jest zestaw tzw. <a title="Przejdź do podstrony z FAQs" href="https://sdg.gov.pl/faqs/">wskaźników globalnych</a> (<a title="Przejdź do listy wskaźników ONZ" href="https://unstats.un.org/sdgs/indicators/indicators-list/"  target="_blank">SDG indicators</a>). Wartości dla całego świata i jego regionów są obliczane przez organizacje międzynarodowe, głównie na podstawie oficjalnych danych statystycznych pozyskiwanych z poszczególnych krajów. Na poziomie krajowym, zamiast wskaźników globalnych, państwa mogą wykorzystywać własne zestawy wskaźników, pozwalające na monitorowanie tych obszarów i problemów, które są najważniejsze dla danego kraju. Takie rozwiązanie przyjęto w Polsce (patrz – <a title="Przejdź do podstrony z FAQs" href="https://sdg.gov.pl/faqs/">wskaźniki monitorujące priorytety krajowe</a>). Wskaźniki dla priorytetów krajowych udostępniono po raz pierwszy w 2018 r. W wyniku prac rozwojowych, zestaw został zaktualizowany i silniej powiązany z krajowymi priorytetami w realizacji SDGs. <a title="Przejdź do wskaźników dla priorytetów krajowych" href="https://sdg.gov.pl/statistics_nat/">Aktualnie obowiązujący zestaw</a> jest dostępny na Platformie SDG. </p>
+  <p>•	globalnym – ten poziom koordynuje Komisja Statystyczna ONZ,</p>
+  <p>•	regionów świata – tu odpowiedzialne są regionalne agendy ONZ (w naszym regionie Europejska Komisja Gospodarcza ONZ – UNECE),</p>
+  <p>•	krajowym – za który odpowiadają krajowe urzędy statystyczne (w Polsce GUS).</p>
 
-<p>Postępy poczynione w skali całego świata i jego regionów są prezentowane przez ONZ w wydawanych co roku <a title="Przejdź do raportów ONZ" href="https://unstats.un.org/sdgs/report/2018/"  target="_blank">raportach</a>. Dodatkowo, dla użytkowników poszukujących szczegółowych danych dla świata, regionów i poszczególnych krajów udostępniono <a title="Przejdź do bazy danych ONZ" href="https://unstats.un.org/sdgs/indicators/database/"  target="_blank">bazę danych</a>. Działania podejmowane przez poszczególne kraje są monitorowane w ramach tzw. dobrowolnych krajowych przeglądów (<a title="Przejdź do dobrowolnych krajowych przeglądów" href="https://sustainabledevelopment.un.org/vnrs/"  target="_blank">Voluntary National Reviews – VNR</a>), które odbywają się w lipcu każdego roku na Forum Wysokiego Szczebla ONZ w Nowym Jorku. W 2018 r. po raz pierwszy na przeglądzie zaprezentowała się Polska. Główny Urząd Statystyczny brał udział w przygotowaniu <a title="Przejdź do strony rządowej o monitoringu realizacji agendy 2030" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank">raportu</a> z postępów Polski, jako instytucja odpowiedzialna za wskaźniki monitorujące i zapewnienie potrzebnych informacji statystycznych.</p>
+  <p>Do oceny postępów na poziomie globalnym i regionalnym stosowany jest zestaw tzw. <a href="https://sdg.gov.pl/faqs/" title="Przejdź do faqs">wskaźników globalnych</a> (<a href="https://unstats.un.org/sdgs/indicators/indicators-list/" title="Przejdź do listy wskaźników"> SDG indicators</a>). Wartości dla całego świata i jego regionów są obliczane przez organizacje międzynarodowe, głównie na podstawie oficjalnych danych statystycznych pozyskiwanych z poszczególnych krajów. Na poziomie krajowym, zamiast wskaźników globalnych, państwa mogą wykorzystywać własne zestawy wskaźników, pozwalające na monitorowanie tych obszarów i problemów, które są najważniejsze dla danego kraju. Takie rozwiązanie przyjęto w Polsce (patrz – <a href="https://sdg.gov.pl/faqs/" title="Przejdź do faqs">wskaźniki monitorujące priorytety krajowe</a>). Wskaźniki dla priorytetów krajowych udostępniono po raz pierwszy w 2018 r. W wyniku prac rozwojowych, zestaw został zaktualizowany i silniej powiązany z <a href="https://sdg.gov.pl/priorytet/" title="Przejdź do krajowych priorytetów">krajowymi priorytetami</a> w realizacji SDGs. <a href="https://sdg.gov.pl/statistics_nat/" title="Przejdź do wskaźników krajowych">Aktualnie obowiązujący zestaw</a> jest dostępny na Platformie SDG.</p>
 
-<p>Monitorowanie postępów z realizacji Agendy 2030 jest dużym wyzwaniem dla statystyki publicznej. Wymaga koordynacji prac wielu instytucji i współpracy pomiędzy szczeblem międzynarodowym a krajowym. Dla wsparcia instytucji statystycznych w regionie Europejskiej Komisji Gospodarczej ONZ powołano Grupę Sterującą ds. Statystyki dla SDGs. Od 2018 r. grupie tej współprzewodniczy Polska (GUS). Jednym z najważniejszych dokonań grupy jest przygotowanie mapy drogowej (<a target="_blank" title="Przejdź do mapy drogowej celów zrównoważonego rozwoju" href="http://www.unece.org/index.php?id=47510"  target="_blank">Road Map on statistics for Sustainable Development Goals</a>), która ułatwia krajom organizację procesu monitorowania Agendy 2030.</p>
+  <p>Postępy poczynione w skali całego świata i jego regionów są prezentowane przez <a href="https://unstats.un.org/sdgs/" title="Przejdź do strony ONZ">ONZ</a> w wydawanych co roku raportach, dostępnych na stronie ONZ w zakładce „Reports”. Dodatkowo, dla użytkowników poszukujących szczegółowych danych dla świata, regionów i poszczególnych krajów udostępniono <a href="https://unstats.un.org/sdgs/dataportal" title="Przejdź do bazy danych">bazę danych</a>. Działania podejmowane przez poszczególne kraje są monitorowane w ramach tzw. dobrowolnych krajowych przeglądów (<a href="https://sustainabledevelopment.un.org/vnrs/" title="Przejdź do przeglądów">Voluntary National Reviews – VNR</a>), które odbywają się w lipcu każdego roku na Forum Wysokiego Szczebla ONZ w Nowym Jorku. W 2018 r. po raz pierwszy na przeglądzie zaprezentowała się Polska. Główny Urząd Statystyczny brał udział w przygotowaniu <a href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030" title="Przejdź do raportu">raportu</a> z postępów Polski, jako instytucja odpowiedzialna za wskaźniki monitorujące i zapewnienie potrzebnych informacji statystycznych.</p>
 
-<p>W 2022 r. ukazała się druga edycja mapy drogowej (<a target="_blank" title="Przejdź do mapy drogowej celów zrównoważonego rozwoju (wersja 2022)" href="https://unece.org/statistics/publications/CES-roadmap-sdg-2">Road Map on Statistics for Sustainable Development Goals – Second Edition</a>), oparta na wnioskach z dotychczasowych doświadczeń związanych z monitorowaniem SDGs w regionie EKG i nowych wyzwaniach dla statystyki publicznej w tym zakresie. Polska (GUS) jest autorem dwóch rozdziałów opracowania (<i>Tracking progress at various levels</i> oraz <i>Voluntary National Reviews</i>). W drugiej edycji mapy drogowej wykorzystano również dwie inicjatywy GUS jako <a target="_blank" title="Przejdź do przypadków użycia" href="https://unece.org/statistics/rm-country-case-studies">case studies</a> w obszarze SDGs (m.in. udział w rozwoju zestawu wskaźników dla biznesu <a target="_blank" title="Przejdź do podstrony Barometr Wpływu" href="https://sdg.gov.pl/business/">Barometr Wpływu</a>).</p>
+  <h4><b>AKTYWNOŚĆ GUS NA RZECZ SDGs NA ARENIE MIĘDZYNARODOWEJ</b></h4>
+
+  <p>Monitorowanie postępów z realizacji Agendy 2030 jest dużym wyzwaniem dla statystyki publicznej. Wymaga koordynacji prac wielu instytucji i współpracy pomiędzy poziomem globalnym, regionalnym i krajowym. W celu zapewnienia strategicznego przywództwa w realizacji Agendy 2030 (w zakresie monitorowania i raportowania SDGs) na poziomie międzynarodowym, powołano w ramach ONZ <a href="https://unstats.un.org/sdgs/hlg/" title="Przejdź do opisu grupy">Grupę Wysokiego Szczebla ds. Partnerstwa, Koordynacji i Budowania Potencjału ds. Statystyk dla Agendy 2030</a> (High-level Group for Partnership, Coordination and Capacity-Building for statistics for the 2030 Agenda for Sustainable Development – HLG-PCCB). Od 2021 r. Polska (GUS) jest członkiem Grupy HLG-PCCB. GUS reprezentuje w Grupie cały region Europy Wschodniej. Poza wyznaczaniem strategicznych celów w ramach monitoringu realizacji SDGs, do zadań Grupy należy również rozwój potencjału statystyki, poszukiwanie nowych źródeł danych i budowa partnerstw na rzecz SDGs, a także organizacja Światowego Forum Danych (<a href="https://unstats.un.org/unsd/undataforum/index.html" title="Przejdź do Światowego Forum Danych">World Data Forum</a>).</p>
+
+  <p>Dla wsparcia instytucji statystycznych w regionie Europejskiej Komisji Gospodarczej ONZ w 2016 r. powołano <a href="https://unece.org/statistics/networks-of-experts/ces-steering-group-statistics-sustainable-development-goals" title="Przejdź do informacji o grupie">Grupę Sterującą ds. Statystyki dla SDGs</a> w ramach Konferencji Statystyków Europejskich (Conference of European Statisticians – CES). Podstawowym zadaniem Grupy jest wspieranie krajowych urzędów statystycznych regionu EKG we wdrażaniu rozwiązań służących pomiarowi i monitorowaniu celów zrównoważonego rozwoju. Polska (GUS) od 2018 r. współprzewodniczy pracom Grupy (wraz ze Szwecją) oraz bierze udział w pracach zespołów zadaniowych powołanych przez Grupę Sterującą. Jednym z najważniejszych dokonań grupy jest przygotowanie mapy drogowej (<a href="http://www.unece.org/index.php?id=47510" title="Przejdź do mapy drogowej">Road Map on statistics for Sustainable Development Goals</a>), która ułatwia krajom organizację procesu monitorowania Agendy 2030.</p>
+
+  <p>W 2022 r. ukazała się 2. edycja mapy drogowej (<a href="https://unece.org/statistics/publications/CES-roadmap-sdg-2" title="Przejdź do mapy drogowej">Road Map on Statistics for Sustainable Development Goals – Second Edition</a>), oparta na wnioskach z dotychczasowych doświadczeń związanych z monitorowaniem SDGs w regionie EKG i nowych wyzwaniach dla statystyki publicznej w tym zakresie. Polska (GUS) jest autorem dwóch rozdziałów opracowania (Tracking progress at various levels oraz Voluntary National Reviews). W 2. edycji mapy drogowej wykorzystano również dwie inicjatywy GUS jako <a href="https://unece.org/statistics/rm-country-case-studies" title="Przejdź do inicjatyw">case studies</a> w obszarze SDGs (m.in. udział w rozwoju zestawu wskaźników dla biznesu <a href="https://sdg.gov.pl/o_sdg/#bis" title="Przejdź do barometru wpływu">Barometr Wpływu</a>). Uzupełnieniem mapy drogowej jest regionalna platforma dla statystyk SDG (<a href="https://w3.unece.org/SDG/en" title="Przejdź do platformy UNECE">UNECE Regional Platform on Statistics for SDGs</a>), służąca do prezentowania postępów w monitorowaniu 17 Celów w regionie EKG oraz zapewniająca łatwy dostęp do wskaźników SDG z danymi dla krajów regionu.</p>
+
+  <h4><b>PARTNERSTWA GUS NA RZECZ SDGs </b></h4>
+
+  <p>Efekty działalności GUS w zakresie monitorowania SDGs są dostrzegane przez różne środowiska, które zapraszają statystykę do współdziałania w inicjatywach powiązanych z Agendą 2030. Do przykładów tego typu współpracy należą m.in.:</p>
+
+  <p>•	zaproszenie GUS do współorganizacji wydarzenia <a href="https://stat.gov.pl/wydarzenia/wydarzenia-miedzynarodowe/wydarzenie-harnessing-remote-sensing-for-sustainable-cities,6,1.html" title="Przejdź do wydarzenia">Harnessing Remote Sensing for Sustainable Cities</a> (w ramach cyklu spotkań Road to Bern, poprzedzających Światowe Forum Danych w Bernie), poświęconego innowacyjnym metodom i rozwiązaniom w zrównoważonym rozwoju miast, wykorzystującym nowe źródła danych, w tym teledetekcję,</p>
+  <p>•	udział GUS w opracowaniu <a href="https://sdg.gov.pl/o_sdg/#bis" title="Przejdź do barometru wpływu">Barometru Wpływu</a> – pierwszego w Polsce narzędzia, pozwalającego przedsiębiorstwom na samodzielne i bezpłatne zmierzenie indywidualnego wkładu w realizację SDGs,</p>
+  <p>•	włączenie się GUS na zaproszenie UN Global Compact w przygotowanie raportu pt. <a href="https://ungc.org.pl/raport-edukacja-klimatyczna-w-polsce/" title="Przejdź do raportu">„Edukacja Klimatyczna w Polsce”</a>; raport gromadzi informacje stanowiące punkt wyjścia do debaty nt. edukacji klimatycznej w polskim systemie oświaty; jeden z rozdziałów jest poświęcony prezentacji źródeł wiedzy o klimacie, gdzie znajduje się część poświęcona ofercie informacyjnej statystyki publicznej,</p>
+  <p>•	udział GUS w ogólnopolskiej kampanii konsumenckiej <a href="https://dobrecele.pl" title="Przejdź do kampanii">Dobre Cele</a>, której zadaniem jest zapoznanie polskich konsumentów z Celami Zrównoważonego Rozwoju i zachęcenie ich do podejmowania w codziennym życiu działań na rzecz Agendy 2030; w ramach kampanii powstał adresowany do polskiego konsumenta <a href="https://dobrecele.pl/dobre-cele/" title="Przejdź do portalu">portal informacyjny</a> dot. poszczególnych celów zrównoważonego rozwoju, oparty m.in. na statystykach SDGs, udostępnianych przez GUS na <a href="https://sdg.gov.pl" title="Przejdź na platformę SDG">Platformie SDG</a> oraz w <a href="https://raportsdg.stat.gov.pl" title="Przejdź do raportów"> raportach cyfrowych SDG.</a></p>
+
+  </div>
+
+  <div role="tabpanel" class="tab-pane" id="bis">
+
+  <div>
+  <p>Przedsiębiorcy mają szczególny wpływ na zrównoważony rozwój, choć trudny do zmierzenia. Nie wystarczą do tego wskaźniki, które zostały wybrane do monitorowania postępów krajów i całego świata wobec SDGs.</p>
+
+  <p>Dlatego przedsiębiorcom proponujemy <a href="https://kampania17celow.pl/barometrwplywu/" target="_blank" title="Przejdź do barometru wpływu na stronie kampania17celow.pl">Barometr Wpływu</a> – bezpłatne narzędzie, dzięki któremu firmy mogą samodzielnie ocenić swój wkład w zrównoważony rozwój, a wspólne wyniki dadzą obraz wpływu polskiego biznesu na SDGs. Narzędzie to zestaw wskaźników dopasowanych do specyfiki biznesu wraz z instrukcją wyliczania, opracowany w ramach <a href="https://kampania17celow.pl" target="_blank" title="Odwiedź stronę kampania17celow.pl">Kampanii 17 Celów</a>, przy wsparciu merytorycznym GUS i współpracy ekspertów ze świata biznesu i nauki.</p>
+
+  <section class="usa-section">
+      <div>
+            <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
+                <a href="https://kampania17celow.pl/cele/cel-3-dobre-zdrowie-i-jakosc-zycia/" title="Przejdź do celu Dobre zdrowie i jakość życia na kampania17celow.pl" alt="Dobre zdrowie i jakość życia"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-03.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <figcaption class="caption" style="display: block;">
+                <p align="left"><b>3.1</b> Średnie wydatki na zdrowie pracownika</p>
+                </figcaption>
+            </figure>
+            <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
+                <a href="https://kampania17celow.pl/cele/cel-4-dobra-jakosc-edukacji/" title="Przejdź do celu Dobra jakość edukacji na kampania17celow.pl" alt="Dobra jakość edukacji"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-04.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <figcaption class="caption" style="display: block;">
+                <p align="left"><b>4.1</b> Średnia liczba godzin szkoleniowych przypadających na pracownika</p>
+                <p align="left"><b>4.2</b> Liczba uczniów i studentów objętych wsparciem edukacyjnym w stosunku do liczby pracowników</p>
+                <p align="left"><b>4.3</b> Odsetek pracowników przeszkolonych w zakresie zrównoważonego rozwoju</p>
+                <p align="left"><b>4.4</b> Odsetek pracowników zaangażowanych w inicjatywy na rzecz zrównoważonego rozwoju</p>
+                <p align="left"><b>4.5</b> Liczba osób objętych edukacją na temat zrównoważonego rozwoju w stosunku do liczby pracowników</p>
+            </figcaption>
+            </figure>
+            <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
+                <a href="https://kampania17celow.pl/cele/cel-5-rownosc-plci/" title="Przejdź do celu Równość płci na kampania17celow.pl" alt="Równość płci"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-05.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <figcaption class="caption" style="display: block;">
+                <p align="left"><b>5.1</b> Odsetek kobiet na stanowiskach kierowniczych</p>
+                <p align="left"><b>5.2</b> Stosunek wynagrodzenia kobiet do mężczyzn</p>
+                <p align="left"><b>5.3</b> Różnica w przyjęciach aplikujących w rekrutacjach kobiet w stosunku do mężczyzn</p>
+                <p align="left"><b>5.4</b> Odsetek pracowników przeszkolonych w zakresie przeciwdziałania mobbingowi, molestowaniu seksualnemu, przemocy lub dyskryminacji</p>
+                <p align="left"><b>5.5</b> Różnica w korzystaniu z programów wsparcia ułatwiających opiekę nad dziećmi, starszymi rodzicami i innymi osobami zależnymi przez kobiety w stosunku do mężczyzn</p>
+                <p align="left"><b>5.6</b> Różnica w korzystaniu z urlopów rodzicielskich przez kobiety w stosunku do mężczyzn</p>
+                </figcaption>
+            </figure>
+            <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
+                <a href="https://kampania17celow.pl/cele/cel-8-wzrost-gospodarczy-i-godna-praca/" title="Przejdź do celu Wzrost gospodarczy i godna praca na kampania17celow.pl" alt="Wzrost gospodarczy i godna praca"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-08.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <figcaption class="caption" style="display: block;">
+                <p align="left"><b>8.1</b> Wartość dodana firmy w przeliczeniu na pracownika</p>
+                <p align="left"><b>8.2</b> Odsetek zatrudnionych na podstawie umowy o pracę</p>
+                <p align="left"><b>8.3</b> Stosunek najwyższego do najniższego wynagrodzenia w firmie</p>
+                <p align="left"><b>8.4</b> Stosunek wynagrodzenia pracowników najniższego szczebla do płacy minimalnej</p>
+                <p align="left"><b>8.5</b> Fluktuacja pracowników</p>
+                <p align="left"><b>8.6</b> Odsetek osób z niepełnosprawnościami wśród pracowników</p>
+                <p align="left"><b>8.7</b> Stosunek liczby zgłoszonych naruszeń kodeksu etycznego do liczby pracowników</p>
+                <p align="left"><b>8.8</b> Odsetek zakupów, których dostawcy podlegają weryfikacji w zakresie kryteriów CSR</p>
+                </figcaption>
+            </figure>
+            <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
+                <a href="https://kampania17celow.pl/cele/cel-9-innowacyjnosc-przemysl-infrastruktura/" title="Przejdź do celu Innowacyjność, przemysł, infrastruktura na kampania17celow.pl" alt="Innowacyjność, przemysł, infrastruktura"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-09.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <figcaption class="caption" style="display: block;">
+                <p align="left"><b>9.1</b> Wydatki na działalność innowacyjną w odniesieniu do przychodu</p>
+                <p align="left"><b>9.2</b> Odsetek wydatków przeznaczonych na zrównoważone rozwiązania w ramach wydatków działalność innowacyjną</p>
+                <p align="left"><b>9.3</b> Liczba projektów badawczych prowadzonych we współpracy z instytucjami naukowymi w ostatnich 3 latach</p>
+                </figcaption>
+            </figure>
+            <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
+                <a href="https://kampania17celow.pl/cele/cel-12-odpowiedzialna-konsumpcja-i-produkcja/" title="Przejdź do celu Odpowiedzialna konsumpcja i produkcja na kampania17celow.pl" alt="Odpowiedzialna konsumpcja i produkcja"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-12.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <figcaption class="caption" style="display: block;">
+                <p align="left"><b>12.1</b> Efektywność materiałowa</p>
+                <p align="left"><b>12.2</b> Efektywność energetyczna</p>
+                <p align="left"><b>12.3</b> Udział wykorzystywanej energii ze źródeł odnawialnych</p>
+                <p align="left"><b>12.4</b> Emisja gazów cieplarnianych</p>
+                <p align="left"><b>12.5</b> Efektywność wodna</p>
+                <p align="left"><b>12.6</b> Odsetek odpadów poddanych recyklingowi lub ponownemu wykorzystaniu</p>
+                <p align="left"><b>12.7</b> Odsetek surowców i materiałów pochodzących ze zrównoważonych źródeł</p>
+                </figcaption>
+            </figure>
+      </div>
+    </section>
+  </div>
 
   </div>
 

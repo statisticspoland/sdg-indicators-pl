@@ -144,12 +144,28 @@
             <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_nat" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-nat-title}}">{{ t.nav-nat }}</a>
           </li>
           <li class="nav-item small">
-            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/priorytet" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-prior-title}}">{{ t.nav-prior }}</a>
-          </li>
-          <li class="nav-item small">
-            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/business" style="text-decoration: none;color: #000;width: 100%" title="{{t.nav-bis-title}}">{{ t.nav-bis }}</a>
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/priorytet" style="width: 100%;text-decoration: none;color: #000;" title="{{t.nav-prior-title}}">{{ t.nav-prior }}</a>
           </li>
 
+
+          <li class="nav-item small" style="pointer-events: none;">
+                <a class="nav-link" style="color: #000;" title="{{t.nav-raport-title}}">{{ t.nav-raport }} </a>
+              </li>
+              {% if page.lang == 'pl' %}
+                <li class="nav-item small">
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/2020/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2020}}">{{ t.nav-raport-2020 }}</a>
+                </li>
+                <li class="nav-item small">
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/ " style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+                </li>
+              {% else %}
+                <li class="nav-item small">
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/2020/en/index.html" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2020}}">{{ t.nav-raport-2020 }}</a>
+                </li>
+                <li class="nav-item small">
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/en/index.html" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+                </li>
+              {% endif %}
         </ul>
       </div> <!--zamykający do collapse navbar-collapse-->
     </nav> <!--zamknięcie menu małego-->
@@ -196,10 +212,30 @@
           </div>
         </li>
 
-        <li class="nav-item"><a href="{{ site.baseurl }}{{ lang }}/priorytet" title="{{t.nav-prior-title}}">{{ t.nav-prior }}</a></li>
+        <li class="nav-item" style="width: 200px;"><a href="{{ site.baseurl }}{{ lang }}/priorytet" title="{{t.nav-prior-title}}">{{ t.nav-prior }}</a></li>
 
         <!--------------------element menu III-------------------------------------------------------------------------------------------------->
-        <li class="nav-item"><a href="{{ site.baseurl }}{{ lang }}/business" title="{{t.nav-bis-title}}">{{ t.nav-bis }}</a></li>
+
+        <li class="nav-item" style="width: 190px">
+          <div class="dropdown" style="width: 150px; text-align:center">
+            <a>
+              <div class="dropbtn" style="padding-left: 15px;" title="{{t.nav-raport-title}}">{{ t.nav-raport }}
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+            {% if page.lang == 'pl' %}
+               <div class="dropdown-content" style="margin-right: 15px;">
+                <a class="pod" href="https://raportsdg.stat.gov.pl/2020/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2020}}">{{ t.nav-raport-2020 }}</a>
+                <a class="pod" href="https://raportsdg.stat.gov.pl/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+              </div>
+            {% else %}
+              <div class="dropdown-content" style="margin-right: 15px;">
+               <a class="pod" href="https://raportsdg.stat.gov.pl/2020/en/index.html" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2020}}">{{ t.nav-raport-2020 }}</a>
+               <a class="pod" href="https://raportsdg.stat.gov.pl/en/index.html" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+             </div>
+            {% endif %}
+          </div>
+        </li>
         <!--------------------element menu IV-------------------------------------------------------------------------------------------------->
       </ul>
     </nav>

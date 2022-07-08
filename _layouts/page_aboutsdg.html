@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+        <div id="main" class="main-content" role="main">
+
+            <a id="main-content" tabindex="-1"></a>
+            <section class="pl-banner">
+                <div class="pl-grid">
+
+                    <div class="pl-banner-content">
+                        <h1 id="title_ban">
+                            {{ page.title}}
+                        </h1>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="pl-grid">
+                {{ content }}
+            </div>
+
+        </div>
+
+        <script>
+          if (window.location.href.includes("#")==true){
+            val=window.location.href;
+            id=val.substr(val.indexOf("#"))
+            $("#title_ban").text($("a[href*='"+id+"']").first().text());
+          }
+
+
+          $(".nav-tabs li").on('click', function(event){
+            //var interest = this.text()
+            $("#title_ban").text($(this).text());
+          });
+
+          </script>
