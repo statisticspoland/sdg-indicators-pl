@@ -42,6 +42,13 @@
       <p class="contact">{{ t.contact-text }}<a href="mailto:SDG@stat.gov.pl" class="contact" title="{{t.contact-text-title}}">{{ t.contact-text-continue }}</a></p>
         </div>
 		</div>
+		<div style="display: flex;justify-content: center;">
+		{% if lang contains 'en' %}
+		<a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" title="Go to International Public License Creative Commons Attribution 4.0">International Public License Creative Commons Attribution 4.0</a>
+		{% else %}
+		<a href="https://creativecommons.org/licenses/by/4.0/legalcode.pl" target="_blank" title="Otwórz stronę z Licencją międzynarodową Creative Commons 4.0 Uznanie autorstwa">Licencja międzynarodowa Creative Commons BY 4.0 - Uznanie autorstwa</a>
+		{% endif %}
+		</div>
       </div>
     </div>
   </footer>
