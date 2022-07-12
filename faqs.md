@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FAQ
+title: FAQs
 permalink: /faqs/
 ---
 <article>
@@ -12,7 +12,7 @@ permalink: /faqs/
 
   <p><b>2. Czym jest zestaw wskaźników monitorujących priorytety krajowe?</b></p>
   <p><a title="Przejdź do wskaźników priorytetów krajowych" href="{{ site.baseurl }}/statistics_nat/">Zestaw wskaźników monitorujących priorytety krajowe</a> został zbudowany w celu monitorowania priorytetów zrównoważonego rozwoju Polski, ustalonych na szczeblu ministerialnym i zdefiniowanych w Raporcie pn.
-    <a title="Przejdź do strony rządowej o monitoringu realizacji Agendy 2030" href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030"  target="_blank">„Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018”</a>. Jego podstawę stanowią mierniki monitorujące najważniejszy obecnie w Polsce dokument strategiczny <a title="Zobacz strategię zrównoważonego rozwoju" href="https://www.gov.pl/web/fundusze-regiony/informacje-o-strategii-na-rzecz-odpowiedzialnego-rozwoju"  target="_blank">– Strategię na rzecz Odpowiedzialnego Rozwoju</a>. Zgodnie z założeniami Agendy 2030, kraje-sygnatariusze są zachęcane do ustalania własnych priorytetów zrównoważonego rozwoju, uwzględniających krajowe uwarunkowania oraz specyfikę i pomiaru ich wdrażania za pomocą własnych zestawów wskaźników.
+    <a title="Przejdź do strony rządowej o monitoringu realizacji Agendy 2030" href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030"  target="_blank">„Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018”</a>. Jego podstawę stanowią mierniki monitorujące najważniejszy obecnie w Polsce dokument strategiczny – <a title="Zobacz strategię zrównoważonego rozwoju" href="https://www.gov.pl/web/fundusze-regiony/informacje-o-strategii-na-rzecz-odpowiedzialnego-rozwoju"  target="_blank">Strategię na rzecz Odpowiedzialnego Rozwoju</a>. Zgodnie z założeniami Agendy 2030, kraje-sygnatariusze są zachęcane do ustalania własnych priorytetów zrównoważonego rozwoju, uwzględniających krajowe uwarunkowania oraz specyfikę i pomiaru ich wdrażania za pomocą własnych zestawów wskaźników.
   </p>
 
     <p><b>3. Co oznaczają poszczególne statusy: Statystyki opublikowane, Statystyki w przygotowaniu oraz Analiza źródeł?</b></p>

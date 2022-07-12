@@ -152,9 +152,17 @@ for (i=1;i<licznik+1;i++){
       }),
       Chartist.plugins.ctAxisTitle({
       axisX: {},
-      axisY: {
-        axisTitle: '{{jednostka}}',
-        axisClass: 'ct-axis-title',
+	  axisY: {
+		{% if id == '12-2-2' %}
+			{% if {{language}} == 'en' %}
+			axisTitle: 'thous. tonnes',
+			{% else %}
+			axisTitle: 'tys. ton',
+			{% endif %}
+		{% else %}
+		axisTitle: '{{jednostka}}',
+		{% endif %}
+		axisClass: 'ct-axis-title',
         offset: {
           x: 0,
           y: 0

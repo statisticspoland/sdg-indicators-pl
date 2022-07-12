@@ -1,7 +1,7 @@
 ---
 layout: page
 lang: en
-title: FAQ
+title: FAQs
 permalink: /en/faqs/
 ---
 <article>
@@ -12,7 +12,7 @@ permalink: /en/faqs/
 
   <p><b>2. What is the indicator set monitoring national priorities?</b></p>
   <p><a title="Go to national indicators" href="{{ site.baseurl }}/en/statistics_nat/">The indicator set monitoring national priorities</a> was developed in order to monitor Poland’s sustainable development priorities, established at ministerial level and defined in the Report
-    <a title="Go to Implementation of the Sustainable Development Goals in Poland Report" href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030"  target="_blank">Implementation of the Sustainable Development Goals in Poland. The 2018 National Report</a>. It is based on the indicators monitoring currently the most important strategic document in Poland – <a title="Open Strategy for Responsible Development" href="https://www.miir.gov.pl/strony/strategia-na-rzecz-odpowiedzialnego-rozwoju/informacje-o-strategii/"  target="_blank">the Strategy for Responsible Development</a>. In line with the 2030 Agenda’s assumption, the signatory countries are encouraged to determine their own sustainable development priorities, taking into account the country situation and its specificity, and measure their implementation with their own indicator sets.    
+    <a title="Go to Implementation of the Sustainable Development Goals in Poland Report" href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030"  target="_blank">Implementation of the Sustainable Development Goals in Poland. The 2018 National Report</a>. It is based on the indicators monitoring currently the most important strategic document in Poland – <a title="Open Strategy for Responsible Development" href="https://www.gov.pl/web/fundusze-regiony/informacje-o-strategii-na-rzecz-odpowiedzialnego-rozwoju"  target="_blank">the Strategy for Responsible Development</a>. In line with the 2030 Agenda’s assumption, the signatory countries are encouraged to determine their own sustainable development priorities, taking into account the country situation and its specificity, and measure their implementation with their own indicator sets.    
   </p>
 
     <p><b>3. What is the meaning of the following statuses: Reported online, Statistics in progress and Exploring data sources?</b></p>
