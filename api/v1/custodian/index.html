@@ -46,8 +46,8 @@
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/chartist.css">
         <link rel="stylesheet" href="/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2022-07-06-08-14-56-+0200">
-        <link rel="stylesheet" href="/assets/css/custom.css?v=2022-07-06-08-14-56-+0200">
+        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2022-07-12-09-00-22-+0200">
+        <link rel="stylesheet" href="/assets/css/custom.css?v=2022-07-12-09-00-22-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/jquery-ui.css">
 
@@ -185,12 +185,21 @@
             <a class="nav-link" href="/statistics_nat" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Wybierz wskaźniki dla priorytetów krajowych">Wskaźniki dla priorytetów krajowych</a>
           </li>
           <li class="nav-item small">
-            <a class="nav-link" href="/priorytet" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Przejdź do podstrony priorytety dla Polski">Priorytety dla Polski</a>
-          </li>
-          <li class="nav-item small">
-            <a class="nav-link" href="/business" style="text-decoration: none;color: #000;width: 100%" title="Przejdź do podstrony wskaźniki dla biznesu">Wskaźniki dla biznesu</a>
+            <a class="nav-link" href="/priorytet" style="width: 100%;text-decoration: none;color: #000;" title="Przejdź do podstrony priorytety dla Polski">Priorytety SDGs dla Polski</a>
           </li>
 
+
+          <li class="nav-item small" style="pointer-events: none;">
+                <a class="nav-link" style="color: #000;" title="Przejdź do podstrony raporty SDG">Raporty SDG </a>
+              </li>
+              
+                <li class="nav-item small">
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/2020/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Przejdź do raportu SDG w 2020">Raport SDG. Edycja 2020</a>
+                </li>
+                <li class="nav-item small">
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/ " style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Przejdź do raportu SDG w 2021">Raport SDG. Edycja 2021</a>
+                </li>
+              
         </ul>
       </div> <!--zamykający do collapse navbar-collapse-->
     </nav> <!--zamknięcie menu małego-->
@@ -227,10 +236,25 @@
           </div>
         </li>
 
-        <li class="nav-item"><a href="/priorytet" title="Przejdź do podstrony priorytety dla Polski">Priorytety dla Polski</a></li>
+        <li class="nav-item" style="width: 200px;"><a href="/priorytet" title="Przejdź do podstrony priorytety dla Polski">Priorytety SDGs dla Polski</a></li>
 
         <!--------------------element menu III-------------------------------------------------------------------------------------------------->
-        <li class="nav-item"><a href="/business" title="Przejdź do podstrony wskaźniki dla biznesu">Wskaźniki dla biznesu</a></li>
+
+        <li class="nav-item" style="width: 190px">
+          <div class="dropdown" style="width: 150px; text-align:center">
+            <a>
+              <div class="dropbtn" style="padding-left: 15px;" title="Przejdź do podstrony raporty SDG">Raporty SDG
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+            
+               <div class="dropdown-content" style="margin-right: 15px;">
+                <a class="pod" href="https://raportsdg.stat.gov.pl/2020/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Przejdź do raportu SDG w 2020">Raport SDG. Edycja 2020</a>
+                <a class="pod" href="https://raportsdg.stat.gov.pl/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Przejdź do raportu SDG w 2021">Raport SDG. Edycja 2021</a>
+              </div>
+            
+          </div>
+        </li>
         <!--------------------element menu IV-------------------------------------------------------------------------------------------------->
       </ul>
     </nav>
@@ -3138,6 +3162,11 @@ $.getJSON('https://sdg.gov.pl/api/v1/custodian/world-bank.json', function(data) 
       <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
       <p class="contact"><b>Główny Urząd Statystyczny</b><br />Aleja Niepodległości 208<br />00-925 Warszawa<br /><a href="mailto:SDG@stat.gov.pl" class="contact" title="Wyślij e-mail na SDG@stat.gov.pl">SDG@stat.gov.pl <br /></a></p>
         </div>
+		</div>
+		<div style="display: flex;justify-content: center;">
+		
+		<a href="https://creativecommons.org/licenses/by/4.0/legalcode.pl" target="_blank" title="Otwórz stronę z Licencją międzynarodową Creative Commons 4.0 Uznanie autorstwa">Licencja międzynarodowa Creative Commons BY 4.0 - Uznanie autorstwa</a>
+		
 		</div>
       </div>
     </div>
