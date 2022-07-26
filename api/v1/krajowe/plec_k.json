@@ -1260,13 +1260,13 @@
                                     
                                       "wymiary": "ogółem",
                                     
-                                      "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym. Badanie prowadzone jest metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15 lat i więcej będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Gimnazjum to szkoła kształcąca młodzież w cyklu trzyletnim (w wieku 13-16 lat). Nauka w gimnazjum jest obowiązkowa. Warunkiem formalnym przyjęcia do gimnazjum jest ukończenie szkoły podstawowej.",
+                                      "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15-89 lat będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Poza zakresem badania pozostają członkowie gospodarstw domowych  przebywający (uwzględniany jest całkowity czas pobytu faktyczny i planowany) 12 miesięcy lub więcej za granicą oraz w  gospodarstwach zbiorowych (takich jak: hotele pracownicze, domy studenckie, internaty, domy opieki społecznej, itp.) oraz osoby bezdomne. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Gimnazjum to szkoła 3-letnia kończąca się egzaminem, która daje możliwość dalszego kształcenia się w branżowych szkołach I stopnia, liceach ogólnokształcących lub technikach. Struktura organizacyjna gimnazjum obejmuje klasy I-III. Nauka w gimnazjum jest obowiązkowa. Od roku szkolnego 2017/18 nie odbywa się nabór do klas pierwszych, a uczniowie klas drugich i trzecich kontynuowali naukę w wygaszanych gimnazjach lub w oddziałach gimnazjalnych działających w innych typach szkół.",
                                     
                                       "zrodlo": "Główny Urząd Statystyczny",
                                     
                                       "czestotliwosc": "Dane roczne; od 2010 r.",
                                     
-                                      "uwagi": ""
+                                      "uwagi": "Od 1 kwartału 2016 r. dane BAEL dotyczące dziedziny kształcenia prezentowane są wg nowej klasyfikacji dziedzin (kierunków) kształcenia - Międzynarodowej Klasyfikacji Kierunków Kształcenia - ISCED-F 2013 (ISCED Fields of Education and Training 2013), w miejsce stosowanej dotychczas klasyfikacji ISCED 1997. Ze względu na wprowadzone zmiany pełna porównywalność danych dotyczących dziedzin kształcenia może nie być możliwa. Od 1 kwartału 2018 r. zmieniono sposób zadawania pytań o  uczestnictwo w szkoleniu/nauce poza formalnym systemem edukacji, w związku z tym wskaźnik do którego wyliczenia brana jest pod uwagę edukacja pozaformalna, nie jest w pełni porównywalny z wynikami z poprzednich lat."
                                     }
                     ],
                     "dane": [
@@ -1296,7 +1296,9 @@
                                                     
                                                         "2019" : "5.2",
                                                     
-                                                        "2020" : "5.4"
+                                                        "2020" : "5.4",
+                                                    
+                                                        "2021" : "5.9"
                                                     
                                                     }
                                                 ],"mężczyźni": [
@@ -1322,7 +1324,9 @@
                                                     
                                                         "2019" : "6.7",
                                                     
-                                                        "2020" : "7.0"
+                                                        "2020" : "7.0",
+                                                    
+                                                        "2021" : "7.2"
                                                     
                                                     }
                                                 ],"kobiety": [
@@ -1348,7 +1352,9 @@
                                                     
                                                         "2019" : "3.6",
                                                     
-                                                        "2020" : "3.7"
+                                                        "2020" : "3.7",
+                                                    
+                                                        "2021" : "4.5"
                                                     
                                                     }
                                                 ]
@@ -1871,7 +1877,7 @@
                 
                 "metadane": [
                       {
-                                      "nazwa": "8.3.a Wskaźnik zatrudnienia osób w wieku 15 lat i więcej (wg BAEL)",
+                                      "nazwa": "8.3.a Wskaźnik zatrudnienia osób w wieku 15-89 lat (wg BAEL)",
                                     
                                       "cel": "Cel 8. Wzrost gospodarczy i godna praca",
                                     
@@ -2033,27 +2039,27 @@
                                                 ],"w wieku 18-59/64": [
                                                     {
                                                     
-                                                        "2010" : "",
+                                                        "2010" : "64.6",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "65.0",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "65.4",
                                                     
-                                                        "2013" : "",
+                                                        "2013" : "65.7",
                                                     
-                                                        "2014" : "",
+                                                        "2014" : "67.5",
                                                     
-                                                        "2015" : "",
+                                                        "2015" : "68.7",
                                                     
-                                                        "2016" : "",
+                                                        "2016" : "70.4",
                                                     
-                                                        "2017" : "",
+                                                        "2017" : "72.1",
                                                     
-                                                        "2018" : "",
+                                                        "2018" : "73.6",
                                                     
-                                                        "2019" : "",
+                                                        "2019" : "74.5",
                                                     
-                                                        "2020" : ""
+                                                        "2020" : "74.9"
                                                     
                                                     }
                                                 ],"20-24 lata": [
@@ -2108,7 +2114,7 @@
                                                         "2020" : "73.6"
                                                     
                                                     }
-                                                ],"50 i więcej": [
+                                                ],"50-89 lat": [
                                                     {
                                                     
                                                         "2010" : "30.3",
@@ -2718,7 +2724,7 @@
                                                         "2020" : "77.4"
                                                     
                                                     }
-                                                ],"osoby w wieku 50 lat i więcej": [
+                                                ],"osoby w wieku 50-89 lat": [
                                                     {
                                                     
                                                         "2010" : "32.7",
@@ -2748,7 +2754,7 @@
                                             }
                                         ],
                                         "osoby niepełnosprawne": [
-                                            {"w wieku 16 lat i więcej": [
+                                            {"w wieku 16-89 lat": [
                                                     {
                                                     
                                                         "2010" : "16.9",
