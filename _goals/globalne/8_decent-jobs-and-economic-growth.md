@@ -1,6 +1,6 @@
 ---
 title: Wzrost gospodarczy i godna praca
-permalink: /decent-jobs-and-economic-growth/
+permalink: /decent-work-and-economic-growth/
 sdg_goal: 8
 layout: goal
 ---
