@@ -174,15 +174,15 @@ permalink: /en/o_sdg/
   </div>
 
   <div role="tabpanel" class="tab-pane" id="publ">
-  <h4><b>PUBLICATIONS</b></h4>
+  <h4><b style="letter-spacing: 5px;color: #001d77;">NATIONAL PUBLICATIONS</b></h4>
+  <h4><b>STATISTICS POLAND</b> (coordinator of SDG monitoring in Poland)</h4>
 
   <div class="image-wrapper">
       <a target="_blank" href="https://raportsdg.stat.gov.pl/en/index.html" alt="Poland on the way to SDGs. Inclusive economic growth. Report 2021" title="Read a publication Poland on the way to SDGs. Inclusive economic growth. Report 2021" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2021_pl.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Poland on the way to SDGs. Inclusive economic growth. Report 2021</b></p>
-  <p>Is the situation of persons most at risk of social exclusion changing for the better? Are the differences between Polish regions narrowing? The answers can be found in Statistics Poland’s latest report Poland on the way to SDGs. Inclusive economic growth.</p>
-  <p>The publication, kept in digital form, is the second edition of the statistical SDG Report summarizing the implementation of the 2030 Agenda Goals by our country. Poland's progress has been presented in the Report from the perspective of inclusive economic growth, which is one of the aspects of sustainable development. The analytical part of the Report is complemented by a graphical chapter presenting Poland’s progress under all 17 Goals, in areas defined by the government as priorities.</p>
-  <p>We wish you a pleasant reading on sustainable development seen through the eyes of statistics!</p>
+  <p>Since 2020, Statistics Poland has been publishing digital SDG Reports summing up Poland’s progress towards the 2030 Agenda’s goals. The publications are released on an annual basis, and their thematic scope covers selected aspects of sustainable development.</p>
+  <p>The latest edition of digital SDG Report “Poland on the way to SDGs. Inclusive economic growth” addresses the predicament of persons and regions at risk of marginalization and exclusion. The analytical part of the Report is complemented with a graphical chapter presenting Poland’s progress towards all 17 Goals, in areas defined by the government as priorities.</p>
   <p><b>Archive:</b></p>
   <p><a target="_blank" title="Read Poland on the way to SDGs. Report 2020" href="https://raportsdg.stat.gov.pl/2020/en/index.html">Poland on the way to SDGs. Report 2020</a></p>
 
@@ -192,9 +192,44 @@ permalink: /en/o_sdg/
       <a target="_blank" href="https://stat.gov.pl/en/topics/other-studies/other-aggregated-studies/a-picture-of-poland-statistics-for-sdgs,20,1.html" alt="Read a publication A picture of Poland. Statistics for SDGs" title="A picture of Poland. Statistics for SDGs"><img src="{{ site.baseurl }}/assets/img/publikacje/1_a_picture_of_poland.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>A picture of Poland. Statistics for SDGs</b></p>
-  <p>In 2015, Poland became one of 193 countries that signed the UN Resolution on the 2030 Agenda for Sustainable Development. In July 2018, Poland is presenting for the first time its advancement towards reaching the Sustainable Development Goals (<em>SDGs</em>) under Voluntary National Review (VNR) at the UN High Level Political Forum. On this occasion, Statistics Poland, as the coordinator of the SDGs monitoring process in Poland, has prepared the publication <em>A picture of Poland. Statistics for SDGs</em>, , which aims to introduce foreign readers to a picture of our country and the role that Poland has to fulfill in achieving the Goals of the 2030 Agenda.</p>
-  <p>The information set out in the publication was inspired by the development priorities for the country, indicated in the document <a target="_blank" title="Read document about development priorities for the country" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank"> Implementation of Sustainable Development Goals in Poland. Report 2018</a>, prepared for this year's VNR by the Ministry of Entrepreneurship and Technology.
-Publication, as it is addressed mainly to foreign recipients, is available only in the English version.</p>
+  <p>In 2015, Poland became one of 193 countries that signed the UN Resolution on the 2030 Agenda for Sustainable Development. In July 2018, Poland, for the first time, presented its progress towards the Sustainable Development Goals (SDGs) under the Voluntary National Review (VNR) at the UN High Level Political Forum. On this occasion, Statistics Poland, as the coordinator of SDG monitoring in Poland, prepared a publication <em>A picture of Poland. Statistics for SDGs</em>, with an aim to familiarize foreign readers with our country and its role in achieving the 2030 Agenda's goals.</p>
+  <p>The content of the publication was inspired by the development priorities for Poland, indicated in the document <a target="_blank" title="Read document about development priorities for Poland" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank"> Implementation of Sustainable Development Goals in Poland. Report 2018</a>, prepared for the VNR by the Ministry of Economic Development and Technology.
+  <p>The brochure, being dedicated mainly to foreign readers, is available in English.</p>
+
+  <hr>
+  <div class="image-wrapper">
+      <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html" alt="On the sustainable development’s path" title="Read a publication On the sustainable development’s path"><img src="{{ site.baseurl }}/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>On the sustainable development’s path</b></p>
+  <p>The publication was prepared on the occasion of setting out the Sustainable Development Goals by the UN, included in the 2030 Agenda. It is addressed to everyone who wants to learn and understand what an idea of sustainable development is about and what connects it with the official statistics.</p>
+  <p>The publication is available only in Polish.
+
+  <br><br><br><br><br><br></p>
+  <hr>
+
+  <h4><b>MINISTRY OF ECONOMIC DEVELOPMENT AND TECHNOLOGY</b> (coordinator of SDG implementation in Poland)</h4>
+
+  <div class="image-wrapper">
+      <a target="_blank" href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72" alt="Monitoring of the implementation of the Sustainable Development Goals in Poland" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/10_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Monitoring of the implementation of the Sustainable Development Goals in Poland</b></p>
+  <p>The publication by the Ministry of Economic Development and Technology presents the selected activities for 2030 Agenda in Poland performed by Polish government, local government and stakeholders. It describes important national and regional strategic projects and operational programs, the implementation of which may contribute to bringing the country closer to achieving progress in all dimensions of sustainable development. The publication is complemented with information on the monitoring of SDGs in Poland, the EU and in the World with a set of indicators monitoring <a title="Go to subpage with polish priorities" href="https://sdg.gov.pl/en/priorytet/"  target="_blank">Polish priorities</a> of the 2030 Agenda from the <a title="Go to SDG's homepage" href="https://sdg.gov.pl/en/"  target="_blank">SDG NRP</a>.
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland in 2020" href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitorowanie celów zrównoważonego rozwoju w Polsce – informacja wg stanu na koniec 2020 r.</a></p>
+
+ </p>
+
+<hr>
+<div class="image-wrapper">
+   <a target="_blank" href="https://www.gov.pl/attachment/f18da2e5-5384-4040-8fc7-c55d67e56378" alt="The 2030 Agenda in Poland. National priorities – joint actions" title="Read a publication The 2030 Agenda in Poland. National priorities – joint actions"><img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/></a>
+</div>
+<p><b>The 2030 Agenda in Poland. National priorities – joint actions</b></p>
+<p>The publication by the Ministry of Entrepreneurship and Technology, released in relation to this year’s  <a title="Read about National Forum of th 2030 Agenda" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030" target="_blank">National Forum of the 2030 Agenda Stakeholders</a>, outlines SDG priorities for Poland as well as progress in their implementation. It presents selected governmental actions and strategic projects within individual SDGs as well as examples of the 2030 Agenda stakeholders’ engagement, including Statistics Poland as an initiator of the action “Statistics without barriers ‘cause everybody counts” (related to SDG 8. Economic growth and decent work). The priorities and relevant actions are accompanied by charts presenting indicators from <a title="Go to national indicators" href="https://sdg.gov.pl/en/statistics_nat/" target="_blank">the national set of SDG indicators </a> developed by Statistics Poland (national coordinator of SDG monitoring) in cooperation with the Ministry of Entrepreneurship and Technology (coordinator of SDG implementation in Poland). The publication may also serve as an inspiration for further actions for sustainable development goals in Poland.
+
+
+<br><br></p>
+
+
 
 <hr>
 <div class="image-wrapper">
@@ -207,71 +242,87 @@ Poland presented its achievements at HLPF for the first time.
 
 
 <br><br><br></p>
-<hr>
-<div class="image-wrapper">
-   <a target="_blank" href="https://www.gov.pl/attachment/f18da2e5-5384-4040-8fc7-c55d67e56378" alt="The 2030 Agenda in Poland. National priorities – joint actions" title="Read a publication The 2030 Agenda in Poland. National priorities – joint actions"><img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/></a>
-</div>
-<p><b>The 2030 Agenda in Poland. National priorities – joint actions</b></p>
-<p>The publication by the Ministry of Entrepreneurship and Technology, released in relation to this year’s  <a title="Read about National Forum of th 2030 Agenda" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030" target="_blank">National Forum of the 2030 Agenda Stakeholders</a>, outlines SDG priorities for Poland as well as progress in their implementation. It presents selected governmental actions and strategic projects within individual SDGs as well as examples of the 2030 Agenda stakeholders’ engagement, including Statistics Poland as an initiator of the action “Statistics without barriers ‘cause everybody counts” (related to SDG 8. Economic growth and decent work). The priorities and relevant actions are accompanied by charts presenting indicators from <a title="Go to national indicators" href="https://sdg.gov.pl/en/statistics_nat/" target="_blank">the national set of SDG indicators </a> developed by Statistics Poland (national coordinator of SDG monitoring) in cooperation with the Ministry of Entrepreneurship and Technology (coordinator of SDG implementation in Poland). The publication may also serve as an inspiration for further actions for sustainable development goals in Poland.
+
+  <hr style="border-top-width: 10px;">
 
 
-<br><br><br></p>
-  <hr>
+  <h4><b style="letter-spacing: 5px;color: #001d77;">PUBLICATIONS OF INTERNATIONAL ORGANIZATIONS</b></h4>
+  <h4><b>UNITED NATIONS (UN)</b></h4>
+
   <div class="image-wrapper">
-      <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html" alt="On the sustainable development’s path" title="Read a publication On the sustainable development’s path"><img src="{{ site.baseurl }}/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2022/" alt="The Sustainable Development Goals Report 2022" title="Read a publication The Sustainable Development Goals Report 2022"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>On the sustainable development’s path</b></p>
-  <p>Publication has been prepared on the occasion of setting the sustainable development goals by UN, included in the 2030 Agenda. It is addressed to everyone who wants to learn and understand what an idea of sustainable development is about and what connects it with statistics.</p>
+  <p><b>The Sustainable Development Goals Report</b></p>
 
-<p>Publication is available only in the Polish version.
-
-  <br><br><br><br><br><br><br></p>
-
-
-  <hr>
-  <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2021/" alt="The Sustainable Development Goals Report 2021" title="Read a publication The Sustainable Development Goals Report 2021"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2021.png" align="center" alt="GUS" border="0"/></a>
-  </div>
-  <p><b>The Sustainable Development Goals Report 2021</b></p>
-
-  <p>The report reviews progress in the sixth year of implementation of the 2030 Agenda for Sustainable Development. This overview presents highlights of progress, based on the latest available data, as well as remaining gaps in data coverage on 17 Sustainable Development Goals.</p>
+  <p>The report reviews progress in the following years of implementation of the 2030 Agenda for Sustainable Development. This overview presents highlights of progress, based on the latest available data, as well as remaining gaps in data coverage on 17 Sustainable Development Goals. The report is based on <a title="Go to global UN database" href="https://unstats.un.org/sdgs/dataportal"  target="_blank">UN SDG Global Database</a>.</p>
 
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2021" href="https://unstats.un.org/sdgs/report/2021/">The Sustainable Development Goals Report 2021</a></p>
   <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2020" href="https://unstats.un.org/sdgs/report/2020/">The Sustainable Development Goals Report 2020</a></p>
   <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2019" href="https://unstats.un.org/sdgs/report/2019/">The Sustainable Development Goals Report 2019</a></p>
   <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2018" href="https://unstats.un.org/sdgs/report/2018/">The Sustainable Development Goals Report 2018</a></p>
 
 
   <hr>
-  <div class="image-wrapper">
-      <a target="_blank" href="https://sdgstorybook.com/foreword" alt="Fairy Tales for a Fairer World" title="Read a publication Fairy Tales for a Fairer World"><img src="{{ site.baseurl }}/assets/img/publikacje/3a_fairy_tales.png" align="center" alt="GUS" border="0"/></a>
+  
+    <div class="image-wrapper">
+      <a target="_blank" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/" alt="Sustainable Development Report" title="Read a publication Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Fairy Tales for a Fairer World</b></p>
+  <p><b>Sustainable Development Report</b></p>
 
-  <p>Thanks to its use of well-known fairy tale motifs from different parts of the world, this book appeals most to little readers. Its individual tales refer to current challenges and 17 SDGs, featuring both heroes and villains, e.g. Little Red Riding Hood or Baba Yaga. <i>Fairy tales</i>… have been created by the Perception Change Project under the Director General of the United Nations Office in Geneva. In line with the intention of its authors, the book is an invitation to bridging the generation gap in a discussion on our planet.</p>
-  <br>
+  <p>The Sustainable Development Report (SDR), developed by Sustainable Development Solutions Network (UN SDSN) and the Bertelsmann Stiftung, reviews progress on SDGs made each year by UN Member States. The SDR contains the SDG index and SDG dashboard, tools allowing the assessment of each country’s overall performance on the SDGs and identifying country's strengths and weaknesses in relation to the 17 Goals both with the global trends in this area.</p>
+
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Sustainable Development Report 2021" href="https://www.sdgindex.org/reports/sustainable-development-report-2021/">Sustainable Development Report 2021</a></p>
+  <p><a target="_blank" title="Read a publication Sustainable Development Report 2020" href="https://www.sdgindex.org/reports/sustainable-development-report-2020/">Sustainable Development Report 2020</a></p>
+  <p><a target="_blank" title="Read a publication Sustainable Development Report 2019" href="https://www.sdgindex.org/reports/sustainable-development-report-2019/">Sustainable Development Report 2019</a></p>
 
 
   <hr>
-  <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/" alt="SDGs & me" title="Read a publication SDGs & me"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
+  <h4><b>UN ECONOMIC COMMISSION FOR EUROPE (UNECE)</b></h4>
+    <div class="image-wrapper">
+      <a target="_blank" href="https://unece.org/info/Statistics/pub/365798" alt="Halfway to 2030: How many targets will be achieved in the UNECE region" title="Read a publication Halfway to 2030: How many targets will be achieved in the UNECE region"><img src="{{ site.baseurl }}/assets/img/publikacje/12_halfway.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>SDGs & me</b></p>
+  <p><b>Halfway to 2030: How many targets will be achieved in the UNECE region</b></p>
 
-  <p>A new digital publication by Eurostat on the 2030 Agenda’s goals reaches out to a wide range of readers. Its intuitive nature and attractive layout encourage each and everyone to take a glance at the SDGs from the statistical point of view. <em>SDGs & me</em> presents progress towards 17 goals in the EU and its member countries by means of interactive visualizations. In order to assess progress in achieving the global goals, metrics from Eurostat’s SDG indicator set were used. The publication enables comparison of progress towards the SDGs between the countries and against the EU. It also makes it possible to guess trends for indicator values before their presentation on the chart.</p>
-  <br>
-  <br>
+  <p>The report provides a progress assessment of the 2030 Agenda’s implementation in the UNECE region, based on the data available in the <a title="Go to UNECE global SDG database" href="https://unstats.un.org/sdgs/dataportal" target="_blank">United Nations Global SDG Indicators Database</a>.</p>
+  <p>The latest edition of the report <em>Halfway to 2030: How many targets will be achieved in the UNECE region</em>, beside assessing advancement on SDG targets, also explores progress towards gender equality in the UNECE region – a contribution by UN Women.</p>
+
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Is the UNECE region on track for 2030?" href="https://unece.org/info/Statistics/pub/353864">Is the UNECE region on track for 2030?</a></p>
 
 
   <hr>
+    <div class="image-wrapper">
+      <a target="_blank" href="https://unece.org/statistics/publications/CES-roadmap-sdg-2" alt="Road Map on Statistics for Sustainable Development Goals – Second Edition" title="Read a publication Road Map on Statistics for Sustainable Development Goals – Second Edition"><img src="{{ site.baseurl }}/assets/img/publikacje/13_roadmap.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Road Map on Statistics for Sustainable Development Goals – Second Edition</b></p>
+
+  <p>The Road Map provides guidance on how to organize the process of the 2030 Agenda monitoring in the UNECE region. Its first edition (2017) lays out the foundations and frames for tracking SDGs, whereas the second edition – sums up conclusions and experiences in that area, gained by countries in the UNECE region so far, and presents challenges currently faced by statistical systems:</p>
+  <p>• data disaggregation and searching for new data sources to provide information on vulnerable and marginalized groups in line with <em>Leave No One Behind</em> principle,
+  <br>• SDG monitoring tailored to user needs (subnational level, private sector),
+  <br>• implementation of solutions facilitating monitoring: Application Programming Interface (API) and uniform data transmission format (SDG-SDMX),
+  <br>• statistical production under pandemic circumstances.</p>
+  <p>The Road Map was prepared by the Steering Group on Statistics for SDGs, established in February 2016 by the CES Bureau within the UN Economic Commission for Europe. The Group has been co-chaired by Poland and Sweden since 2018.</p>
+  <p>Poland’s representatives played an in important part in developing of the Road Map as its editors and authors of two sections in it (Beyond global monitoring and Voluntary National Reviews). The publication also includes examples of Polish initiatives (<a title="Go to examples of Polish initiatives" href="https://unece.org/statistics/rm-country-case-studies" target="_blank">case studies</a>) i.a. Statistics Poland’s involvement in development of SDG indicators for business (<a title="Go to SDG indicators for business" href="https://sdg.gov.pl/en/o_sdg/#bis" target="_blank">Impact Barometer</a>).</p>
+
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Road Map on Statistics for Sustainable Development Goals" href="https://unece.org/statistics/publications/road-map-statistics-sustainable-development-goals">Road Map on Statistics for Sustainable Development Goals</a></p>
+
+
+  <hr>
+  <h4><b>EUROPEAN UNION (EU)</b></h4>
+
+
   <div class="image-wrapper">
-  <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/12878705/KS-03-21-096-EN-N.pdf/8f9812e6-1aaa-7823-928f-03d8dd74df4f?t=1623741433852" alt="Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue_2021.png" align="center" alt="GUS" border="0"/></a>
+  <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/14665254/KS-09-22-019-EN-N.pdf/2edccd6a-c90d-e2ed-ccda-7e3419c7c271?t=1654253664613" alt="Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</b></p>
 
-  <p>The publication, issued in 2017 by Eurostat, is a monitoring report on the progress towards achieving the Sustainable Development Goals in an EU context. This report describes progress made using a set of 100 indicators that are structured along the 17 SDGs. Two periods are considered: the short term, accounting for progress over the past five years, and the long term, looking at the trends over the last 15 years.
+  <p>The publication, issued in 2017 by Eurostat, is a monitoring report on the progress towards achieving the Sustainable Development Goals in an EU context. This report describes progress made using a set of 100 indicators that are structured along the 17 SDGs. Two periods are considered: the short term, accounting for progress over the past five years, and the long term, looking at the trends over the last 15 years. The report is based on the <a title="Go to Eurostat SDG database" href="https://ec.europa.eu/eurostat/web/sdi/overview" target="_blank">Eurostat database</a> with about 100 SDG indicators (closely linked to EU policies).
   <br><br><br></p>
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2021)" href="https://ec.europa.eu/eurostat/documents/3217494/14665254/KS-09-22-019-EN-N.pdf/2edccd6a-c90d-e2ed-ccda-7e3419c7c271?t=1654253664613">Monitoring report on progress towards the SDGs in an EU context - 2021 edition</a></p>  
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/3217494/11011074/KS-02-20-202-EN-N.pdf/334a8cfe-636a-bb8a-294a-73a052882f7f">Monitoring report on progress towards the SDGs in an EU context - 2020 edition</a></p>  
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2019)" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820">Monitoring report on progress towards the SDGs in an EU context - 2019 edition</a></p>  
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2018)" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Monitoring report on progress towards the SDGs in an EU context - 2018 edition</a></p>  
@@ -279,27 +330,58 @@ Poland presented its achievements at HLPF for the first time.
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/12878925/KS-03-21-097-EN-N.pdf/c7d90bf7-c3ae-00b5-7804-80526931036b?t=1623827181153" alt="Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue_2021.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/14665125/KS-06-22-017-EN-N.pdf/8febd4ca-49e4-abd3-23ca-76c48eb4b4e6?t=1653033908879" alt="Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</b></p>
 
-  <p>The brochure is a concise version of Eurostat’s publication on the realisation of SDGs in the European Union: <a target="_blank" title="Read brochure about realisation of SDGs in EU" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</a>. Progress made in the implementation of the 2030 Agenda in EU is assessed over the past five years on the basis of EU SDG indicator set, and presented in a graphic form. More detailed analysis of the 2030 Agenda realisation in EU is available in the full Eurostat SDG publication.
+  <p>The brochure is a concise version of Eurostat’s publication on the realisation of SDGs in the European Union: <strong>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</strong>. Progress made in the implementation of the 2030 Agenda in EU is assessed over the past five years on the basis of EU SDG indicator set, and presented in a graphic form.
 
-  <br><br><br></p>
+  <br><br><br><br></p>
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2021)" href="https://ec.europa.eu/eurostat/documents/4031688/14665125/KS-06-22-017-EN-N.pdf/8febd4ca-49e4-abd3-23ca-76c48eb4b4e6?t=1653033908879">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2021 edition</a></p>
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/4031688/11010788/KS-01-20-192-EN-N.pdf/ae63aff0-a6f3-1d47-da83-c6886b9daaab">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2020 edition</a></p>
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2019)" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2019 edition</a></p>
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2018)" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2018 edition</a></p>
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-02-16-996" alt="Sustainable development in the European Union — A statistical glance from the viewpoint of the UN Sustainable Development Goals" title="Read a publication Sustainable development in the European Union — A statistical glance from the viewpoint of the UN Sustainable Development Goals"><img src="{{ site.baseurl }}/assets/img/publikacje/6_statistical_glance.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://s3.amazonaws.com/sustainabledevelopment.report/2021/Europe+Sustainable+Development+Report+2021.pdf" alt="Europe Sustainable Development Report" title="Read a publication Europe Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/14_europe_sustainable.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Sustainable development in the European Union — A statistical glance from the viewpoint of the UN Sustainable Development Goals</b></p>
+  <p><b>Europe Sustainable Development Report</b></p>
 
-  <p>This publication builds on Eurostat’s long experience in monitoring the EU Sustainable Development Strategy. It provides a statistical glance at the current situation in the EU and its Member States, but now from the viewpoint of the SDGs. The publication is based on a limited number of indicators which are relevant for the EU and aims to capture the broader ambition of each SDG. In total, 51 indicators are presented, mainly produced and disseminated by Eurostat. For each indicator the publication presents data for the most recent available year for the EU-28 and the EU Member States and trends (in general from 2000) for the EU-28.<br><br></p>
+  <p>The report is a publication on the progress of the Europe, including European Union, EU Member States and other European countries towards Sustainable Development Goals (SDGs). Report prepared by Sustainable Development Solutions Network (SDSN) and the Institute for European Environmental Policy (IEEP) presents SDG Index and SDG Dashboard that allow the assessment of the overall performance on the 2030 Agenda and its goals in Europe.
+
+  <br><br><br></p>
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Europe Sustainable Development Report 2020" href="https://s3.amazonaws.com/sustainabledevelopment.report/2020/europe_sustainable_development_report_2020.pdf">Europe Sustainable Development Report 2020</a></p>
 
   <hr>
+  <h4><b>ORGANIZATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD)</b></h4>
+
+  <div class="image-wrapper">
+      <a target="_blank" href="https://www.oecd.org/publications/the-short-and-winding-road-to-2030-af4b630d-en.htm#country-notes" alt="The Short and Winding Road to 2030" title="Read a publication The Short and Winding Road to 2030"><img src="{{ site.baseurl }}/assets/img/publikacje/15_short_and_winding.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>The Short and Winding Road to 2030 - Measuring Distance to the SDG Targets</b></p>
+
+  <p>The publication assesses the distance that OECD countries need to travel to meet SDG targets. It is based on the IAEG Global Indicator List and using data from the <a title="Go to UN SDG Database" href="https://unstats.un.org/sdgs/dataportal" target="_blank">UN SDG Database</a> and <a title="Go to OECD SDG Database" href="https://www.oecd.org/statistics/listofoecddatabases.htm" target="_blank">OECD Databases</a>.</p>
+  <p>The latest edition of the report <em>The Short and Winding Road to 2030: Measuring Distance to the SDG Targets</em> evaluates the direction and pace of SDG realization in OECD countries, but it goes one step further and deepens the analysis by identifying long-term trends, considering also how these trends may be impacted by the COVID-19 pandemic. The publication is supplemented with country profiles including information on country strengths and weaknesses in terms of SDGs as well as the distance they need to travel to meet the SDG targets.</p>
+  <br><br></p>
+  <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Measuring Distance to the SDG Targets 2019. An Assessment of Where OECD Countries Stand" href="https://www.oecd.org/wise/measuring-distance-to-the-sdg-targets-2019-a8caf3fa-en.htm">Measuring Distance to the SDG Targets 2019. An Assessment of Where OECD Countries Stand</a></p>
+  <p><a target="_blank" title="Read a publication Measuring Distance to the SDG Targets 2017. An Assessment of Where OECD Countries Stand" href="https://www.oecd.org/economy/measuring-distance-to-the-sdg-targets-2017-9789264308183-en.htm">Measuring Distance to the SDG Targets 2017. An Assessment of Where OECD Countries Stand</a></p>
+
+
+  <hr>
+    <div class="image-wrapper">
+      <a target="_blank" href="https://www.oecd.org/cfe/a-territorial-approach-to-the-sustainable-development-goals-e86fa715-en.htm" alt="A Territorial Approach to the Sustainable Development Goals. Synthesis report" title="Read a publication A Territorial Approach to the Sustainable Development Goals. Synthesis report"><img src="{{ site.baseurl }}/assets/img/publikacje/16_territorial.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>A Territorial Approach to the Sustainable Development Goals. Synthesis report</b></p>
+
+  <p>The publication argues that cities and regions play a critical role in the achievement of sustainable development goals. It estimates that at least 105 of the 169 SDG targets will not be reached without proper engagement of OECD cities and regions. With reference to SDGs, the report analyzes, in parallel, the impact of global megatrends (demographic change, climate change, digitalization and so-called “geography of discontent”) manifesting in different forms depending on local and regional circumstances. The main body of the report includes an OECD localized indicator framework that measures the distance towards the SDGs for cities and regions in OECD countries.
+  <br><br><br><br><br></p>
+
+  <hr>
+
   <div class="image-wrapper">
       <a target="_blank" href="http://www.oecd.org/environment/towards-green-growth-9789264234437-en.htm" alt="Towards Green Growth? Tracking Progress" title="Read a publication Towards Green Growth? Tracking Progress"><img src="{{ site.baseurl }}/assets/img/publikacje/7_towards_green_growth.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -337,6 +419,27 @@ Poland presented its achievements at HLPF for the first time.
   <p>But that’s not all! Wanna see that each and everyone, including the laziest person in the world, can act for the SDGs? Read the UN <a title="Read about actions for the SDGs" href="https://www.un.org/sustainabledevelopment/takeaction/" target="_blank">guide</a> that you can use at home, school or workplace. </p>
 
   <p>Good luck!</p>
+  <hr>
+  <div class="image-wrapper">
+      <a target="_blank" href="https://sdgstorybook.com/foreword" alt="Fairy Tales for a Fairer World" title="Read a publication Fairy Tales for a Fairer World"><img src="{{ site.baseurl }}/assets/img/publikacje/3a_fairy_tales.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Fairy Tales for a Fairer World</b></p>
+
+  <p>Thanks to its use of well-known fairy tale motifs from different parts of the world, this book appeals most to little readers. Its individual tales refer to current challenges and 17 SDGs, featuring both heroes and villains, e.g. Little Red Riding Hood or Baba Yaga. <i>Fairy tales</i>… have been created by the Perception Change Project under the Director General of the United Nations Office in Geneva. In line with the intention of its authors, the book is an invitation to bridging the generation gap in a discussion on our planet.</p>
+  <br>
+
+
+  <hr>
+  <div class="image-wrapper">
+      <a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/" alt="SDGs & me" title="Read a publication SDGs & me"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>SDGs & me</b></p>
+
+  <p>A new digital publication by Eurostat on the 2030 Agenda’s goals reaches out to a wide range of readers. Its intuitive nature and attractive layout encourage each and everyone to take a glance at the SDGs from the statistical point of view. <em>SDGs & me</em> presents progress towards 17 goals in the EU and its member countries by means of interactive visualizations. In order to assess progress in achieving the global goals, metrics from Eurostat’s SDG indicator set were used. The publication enables comparison of progress towards the SDGs between the countries and against the EU. It also makes it possible to guess trends for indicator values before their presentation on the chart.</p>
+  <br>
+  <br>
+
+
 
   </div>
 

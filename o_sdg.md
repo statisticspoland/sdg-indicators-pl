@@ -176,16 +176,15 @@ permalink: /o_sdg/
   </div>
 
   <div role="tabpanel" class="tab-pane" id="publ">
-  <h4><b>PUBLIKACJE</b></h4>
-
+  <h4><b style="letter-spacing: 5px;color: #001d77;">PUBLIKACJE KRAJOWE</b></h4>
+  <h4><b>GŁÓWNY URZĄD STATYSTYCZNY</b> (koordynator monitorowania SDG w Polsce)</h4>
 
   <div class="image-wrapper">
    <a target="_blank" href="https://raportsdg.stat.gov.pl/" alt="Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy. Raport 2021" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy (2021)"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2021_pl.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy. Raport 2021</b></p>
-  <p>Czy sytuacja osób najbardziej narażonych na wykluczenie społeczne zmienia się na lepsze? Czy zmniejszają się różnice między regionami Polski? Na te pytania odpowiada najnowszy Raport GUS pt. “Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy”.</p>
-  <p>Utrzymana w formie cyfrowej publikacja stanowi drugą edycję statystycznego Raportu SDG podsumowującego realizację przez nasz kraj Celów Agendy 2030. Postępy Polski zostały zaprezentowane w Raporcie z perspektywy inkluzywnego wzrostu gospodarczego, stanowiącego jeden z aspektów zrównoważonego rozwoju. Część analityczną Raportu dopełnia rozdział, który w graficzny sposób przedstawia postępy Polski w ramach wszystkich 17 Celów, w obszarach uznanych przez rząd za priorytetowe. </p>
-  <p>Zapraszamy do zapoznania się z lekturą nt. zrównoważonego rozwoju widzianym okiem statystyki!</p>
+  <p>Wydawane przez GUS od 2020 r. cyfrowe Raporty SDG podsumowują osiągnięcia Polski we wdrażaniu celów Agendy 2030. Publikacje są opracowywane corocznie, a ich tematyka dotyczy wybranych aspektów zrównoważonego rozwoju.</p>
+  <p>Najnowsza edycja cyfrowego Raportu SDG pt. „Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy” odpowiada na pytania o sytuację osób i regionów najbardziej narażonych na marginalizację i wykluczenie. Część analityczną Raportu dopełnia rozdział, który w graficzny sposób przedstawia postępy Polski w ramach wszystkich 17 Celów, w obszarach uznanych przez rząd za priorytetowe.</p>
   <p><b>Archiwum:</b></p>
   <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju (2020)" href="https://raportsdg.stat.gov.pl/2020/">Polska na drodze zrównoważonego rozwoju. Raport 2020</a></p>
 
@@ -194,11 +193,43 @@ permalink: /o_sdg/
       <a target="_blank" title="Zapoznaj się z publikacją A picture of Poland. Statistics for SDGs" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/a-picture-of-poland-statistics-for-sdgs,33,1.html" alt="A picture of Poland. Statistics for SDGs"><img src="{{ site.baseurl }}/assets/img/publikacje/1_a_picture_of_poland.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>A picture of Poland. Statistics for SDGs</b></p>
-  <p>W 2015 r. Polska została jednym z 193 sygnatariuszy Rezolucji ONZ w sprawie Agendy 2030 na rzecz Zrównoważonego Rozwoju. W lipcu 2018 r. po raz pierwszy zaprezentowała swoje postępy we wdrażaniu Celów Zrównoważonego Rozwoju (<em>Sustainable Development Goals – SDGs</em>) podczas krajowych przeglądów na Forum Politycznym Wysokiego Szczebla ONZ. Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował publikację <em>A picture of Poland. Statistics for SDGs</em>, której celem było przybliżenie czytelnikom z innych państw obraz naszego kraju oraz roli, jaką ma do spełnienia Polska w osiąganiu celów Agendy 2030.</p>
-  <p>Informacje zawarte w publikacji zostały zainspirowane priorytetami rozwojowymi dla kraju, wskazanymi w dokumencie <a title="Przejdź do strony rządowej o monitoringu realizacji agendy 2030" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  target="_blank">Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</a>, przygotowanym na przegląd przez Ministerstwo Przedsiębiorczości i Technologii.</p>
-  <p>Publikacja, jako wydawnictwo skierowane głównie do odbiorców zagranicznych, dostępne jest wyłącznie w wersji anglojęzycznej.</p>
+  <p>W 2015 r. Polska została jednym z 193 sygnatariuszy Rezolucji ONZ w sprawie Agendy 2030 na rzecz Zrównoważonego Rozwoju, a w 2018 r. zaprezentowała po raz pierwszy postępy we wdrażaniu Celów Zrównoważonego Rozwoju (<em>Sustainable Development Goals – SDGs</em>) podczas dobrowolnego przeglądu krajowego (<em>Voluntary National Review</em>) na Forum Politycznym Wysokiego Szczebla ONZ. Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował publikację <em>A picture of Poland. Statistics for SDGs</em>, której celem było przybliżenie czytelnikom z innych państw naszego kraju oraz roli, jaką ma do spełnienia w osiąganiu celów Agendy 2030.</p>
+  <p>Informacje zawarte w publikacji zostały zainspirowane priorytetami rozwojowymi dla kraju, wskazanymi w dokumencie <a title="Przejdź do strony rządowej o monitoringu realizacji agendy 2030" href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030"  target="_blank">Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</a>, przygotowanym na przegląd przez Ministerstwo Rozwoju i Technologii.</p>
+  <p>Publikacja, jako wydawnictwo skierowane głównie do odbiorców zagranicznych, dostępna jest wyłącznie w wersji anglojęzycznej.</p>
+
+  <hr>
+  <div class="image-wrapper">
+      <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html" alt="Na ścieżce zrównoważonego rozwoju" title="Zapoznaj się z publikacją Na ścieżce zrównoważonego rozwoju"><img src="{{ site.baseurl }}/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Na ścieżce zrównoważonego rozwoju</b></p>
+  <p>Publikacja <em>Na ścieżce zrównoważonego rozwoju </em>została przygotowana w związku z wyznaczeniem przez ONZ celów zrównoważonego rozwoju, ujętych w tzw. Agendzie 2030. Jest ona adresowana do wszystkich, którzy chcą dowiedzieć się i zrozumieć, na czym polega idea zrównoważonego rozwoju oraz co ją łączy ze statystyką.
+ <br><br><br><br><br><br><br></p>
+  <hr>
+
+  <h4><b>MINISTERSTWO ROZWOJU I TECHNOLOGII</b> (koordynator wdrażania SDG w Polsce)</h4>
 
 
+  <div class="image-wrapper">
+      <a target="_blank" href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72" alt="Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2021 r." title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2021 r." target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/10_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2021 r.</b></p>
+  <p>Publikacja Ministerstwa Rozwoju i Technologii prezentuje opis wybranych działań zrealizowanych na rzecz Agendy 2030 i jej celów (SDGs) w Polsce przez rząd, samorządy oraz interesariuszy. Opisane zostały w niej istotne projekty strategiczne i programy operacyjne szczebla krajowego oraz regionalnego, których realizacja może przyczyniać się do przybliżania kraju do osiągnięcia postępów w zakresie wszystkich wymiarów zrównoważonego rozwoju. Dopełnienie publikacji stanowi informacja o monitorowaniu SDGs w Polsce, UE i na świecie oraz zestawienie tabelaryczne z pochodzącymi z <a title="Przejdź do podstrony ze wskaźnikami krajowymi" href="https://sdg.gov.pl/statistics_nat/"  target="_blank">Platformy SDG</a> danymi dla wskaźników monitorujących <a title="Przejdź do podstrony z priorytetami" href="https://sdg.gov.pl/priorytet/"  target="_blank">polskie priorytety</a> w realizacji Agendy 2030.
+  <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2020 r." href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitorowanie celów zrównoważonego rozwoju w Polsce – informacja wg stanu na koniec 2020 r.</a></p>
+
+ </p>
+ 
+   <hr>
+  <div class="image-wrapper">
+   <a target="_blank" href="https://www.gov.pl/attachment/f18da2e5-5384-4040-8fc7-c55d67e56378" alt="Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania" title="Zapoznaj się z publikacją Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania"><img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania</b></p>
+  <p>Publikacja Ministerstwa Przedsiębiorczości i Technologii (MPiT), wydana w związku z tegorocznym <a title="Przejdź do informacji na temat II edycji krajowego forum interesariuszy" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030"  target="_blank">Krajowym Forum Interesariuszy Agendy 2030</a>, prezentuje priorytety SDGs dla Polski oraz postępy w ich wdrażaniu. Przedstawiono w niej wybrane rządowe działania i projekty strategiczne w ramach poszczególnych celów oraz konkretne przykłady zaangażowania interesariuszy Agendy 2030, w tym Głównego Urzędu Statystycznego – inicjatora akcji „Statystyka bez barier, bo liczą się wszyscy” (w ramach Celu 8. Wzrost gospodarczy i godna praca). Priorytetom i podejmowanym w ich ramach działaniom towarzyszą przedstawione na wykresach wskaźniki, pochodzące z <a title="Przejdź do wskaźników dla priorytetów krajowych" href="https://sdg.gov.pl/statistics_nat/"  target="_blank">krajowego zestawu wskaźników monitorujących SDGs w Polsce </a>, wypracowanego przez Główny Urząd Statystyczny (krajowego koordynatora procesu monitorowania celów SDGs) we współpracy z MPiT (koordynatorem wdrażania celów SDGs w Polsce). Publikacja stanowi również inspirację do podejmowania kolejnych działań na rzecz realizacji celów zrównoważonego rozwoju w kraju.
+
+  <br><br></p>
+
+
+ 
   <hr>
   <div class="image-wrapper">
       <a target="_blank" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030" alt="Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018" title="Zapoznaj się z raportem Realizacja Celów Zrównoważonego Rozwoju w Polsce (2018)" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/2_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
@@ -209,67 +240,91 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
  <br><br><br></p>
 
-  <hr>
+
+  <hr style="border-top-width: 10px;">
+  
+  
+    <h4><b style="letter-spacing: 5px;color: #001d77;">PUBLIKACJE ORGANIZACJI MIĘDZYNARODOWYCH</b></h4>
+  <h4><b>ORGANIZACJA NARODÓW ZJEDNOCZONYCH (ONZ)</b></h4>
+
+  
+  
+  
   <div class="image-wrapper">
-   <a target="_blank" href="https://www.gov.pl/attachment/f18da2e5-5384-4040-8fc7-c55d67e56378" alt="Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania" title="Zapoznaj się z publikacją Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania"><img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2022/" alt="The Sustainable Development Goals Report 2022" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2022)"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania</b></p>
-  <p>Publikacja Ministerstwa Przedsiębiorczości i Technologii (MPiT), wydana w związku z tegorocznym <a title="Przejdź do informacji na temat II edycji krajowego forum interesariuszy" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030"  target="_blank">Krajowym Forum Interesariuszy Agendy 2030</a>, prezentuje priorytety SDGs dla Polski oraz postępy w ich wdrażaniu. Przedstawiono w niej wybrane rządowe działania i projekty strategiczne w ramach poszczególnych celów oraz konkretne przykłady zaangażowania interesariuszy Agendy 2030, w tym Głównego Urzędu Statystycznego – inicjatora akcji „Statystyka bez barier, bo liczą się wszyscy” (w ramach Celu 8. Wzrost gospodarczy i godna praca). Priorytetom i podejmowanym w ich ramach działaniom towarzyszą przedstawione na wykresach wskaźniki, pochodzące z <a title="Przejdź do wskaźników dla priorytetów krajowych" href="https://sdg.gov.pl/statistics_nat/"  target="_blank">krajowego zestawu wskaźników monitorujących SDGs w Polsce </a>, wypracowanego przez Główny Urząd Statystyczny (krajowego koordynatora procesu monitorowania celów SDGs) we współpracy z MPiT (koordynatorem wdrażania celów SDGs w Polsce). Publikacja stanowi również inspirację do podejmowania kolejnych działań na rzecz realizacji celów zrównoważonego rozwoju w kraju.
+  <p><b>The Sustainable Development Goals Report</b></p>
 
-  <br><br><br></p>
-
-  <hr>
-  <div class="image-wrapper">
-      <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html" alt="Na ścieżce zrównoważonego rozwoju" title="Zapoznaj się z publikacją Na ścieżce zrównoważonego rozwoju"><img src="{{ site.baseurl }}/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0"/></a>
-  </div>
-  <p><b>Na ścieżce zrównoważonego rozwoju</b></p>
-  <p>Publikacja <em>Na ścieżce zrównoważonego rozwoju </em>została przygotowana w związku z wyznaczeniem przez ONZ celów zrównoważonego rozwoju, ujętych w tzw. Agendzie 2030. Jest ona adresowana do wszystkich, którzy chcą dowiedzieć się i zrozumieć, na czym polega idea zrównoważonego rozwoju oraz co ją łączy ze statystyką.
- <br><br><br><br><br><br><br><br><br></p>
-
-
-  <hr>
-  <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2021/" alt="The Sustainable Development Goals Report 2021" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2021)"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2021.png" align="center" alt="GUS" border="0"/></a>
-  </div>
-  <p><b>The Sustainable Development Goals Report 2021</b></p>
-
-  <p>Raport ten stanowi przegląd postępów, jakich dokonano w szóstym roku realizacji Agendy na rzecz Zrównoważonego Rozwoju 2030. Przedstawia poczyniony progres w oparciu o najnowsze dostępne dane, ale także wskazuje na konieczne do uzupełnienia luki informacyjne dotyczące realizacji 17 Celów Zrównoważonego Rozwoju.</p>
+  <p>Raport stanowi przegląd postępów, jakich dokonywano w kolejnych latach z realizacji Agendy 2030. Przedstawia najważniejsze tendencje w oparciu o najnowsze dostępne dane, a także wskazuje luki informacyjne dotyczące realizacji 17 SDGs. Raport oparty jest o wskaźniki dostępne w <a title="Przejdź do globalnej bazy danych ONZ" href="https://unstats.un.org/sdgs/dataportal"  target="_blank">globalnej bazie danych SDG ONZ</a>.</p>
 
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2021)" href="https://unstats.un.org/sdgs/report/2021/">The Sustainable Development Goals Report 2021</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2020)" href="https://unstats.un.org/sdgs/report/2020/">The Sustainable Development Goals Report 2020</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2019)" href="https://unstats.un.org/sdgs/report/2019/">The Sustainable Development Goals Report 2019</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2018)" href="https://unstats.un.org/sdgs/report/2018/">The Sustainable Development Goals Report 2018</a></p>
 
 
   <hr>
-  <div class="image-wrapper">
-      <a target="_blank" href="https://sdgstorybook.com/przedmowa" alt="Baśnie i dziwy, by świat był sprawiedliwy" title="Zapoznaj się z publikacją Baśnie i dziwy, by świat był sprawiedliwy"><img src="{{ site.baseurl }}/assets/img/publikacje/3a_fairy_tales.png" align="center" alt="GUS" border="0"/></a>
+  
+    <div class="image-wrapper">
+      <a target="_blank" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/" alt="Sustainable Development Report" title="Zapoznaj się z publikacją Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Baśnie i dziwy, by świat był sprawiedliwy</b></p>
+  <p><b>Sustainable Development Report</b></p>
 
-  <p>Opracowanie, dzięki wykorzystaniu motywów ze znanych bajek i baśni z różnych stron świata, jest adresowane do najmłodszych czytelników. Poszczególne opowieści nawiązują do wyzwań współczesności i 17 celów zrównoważonego rozwoju, a ich bohaterami są postaci o dobrych i złych charakterach, np. Czerwony Kapturek i Baba Jaga. „Baśnie i dziwy…” powstały w ramach projektu „Zmiana Percepcji” z inicjatywy Dyrektora Generalnego ONZ w Genewie. Książka, zgodnie z intencją jej twórców, stanowi zaproszenie do budowania pokoleniowych mostów w dyskusji o naszej planecie.</p>
-  <br>
+  <p>Raport Zrównoważonego Rozwoju, opracowywany przez Sieć Rozwiązań na Rzecz Zrównoważonego Rozwoju (UN SDSN) oraz Fundację Bertelsmanna, zawiera przegląd corocznych postępów państw członkowskich ONZ w zakresie SDGs. Publikacja  prezentuje  Indeks SDG i Dashboard SDG, narzędzia umożliwiające ocenę ogólnych wyników krajów w zakresie SDGs oraz identyfikację ich mocnych i słabych stron w odniesieniu do 17 Celów, a także pozwala na analizę światowych tendencji w tym zakresie.</p>
+
+  <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2021)" href="https://www.sdgindex.org/reports/sustainable-development-report-2021/">Sustainable Development Report 2021</a></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2020)" href="https://www.sdgindex.org/reports/sustainable-development-report-2020/">Sustainable Development Report 2020</a></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2019)" href="https://www.sdgindex.org/reports/sustainable-development-report-2019/">Sustainable Development Report 2019</a></p>
 
 
   <hr>
-  <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/" alt="SDGs & me" title="Zapoznaj się z publikacją SDGs & me"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
+  <h4><b>EUROPEJSKA KOMISJA GOSPODARCZA (EKG)</b></h4>
+    <div class="image-wrapper">
+      <a target="_blank" href="https://unece.org/info/Statistics/pub/365798" alt="Halfway to 2030: How many targets will be achieved in the UNECE region" title="Zapoznaj się z publikacją Halfway to 2030: How many targets will be achieved in the UNECE region"><img src="{{ site.baseurl }}/assets/img/publikacje/12_halfway.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>SDGs & me</b></p>
+  <p><b>Halfway to 2030: How many targets will be achieved in the UNECE region</b></p>
 
-  <p>Nowa cyfrowa publikacja Eurostatu nt. celów Agendy 2030 adresowana jest do szerokiego grona odbiorców. Jej intuicyjny charakter i atrakcyjna forma zachęcą każdego do spojrzenia na SDGs z punktu widzenia statystyki. <em>SDGs & me</em> prezentuje postępy całej UE oraz poszczególnych krajów członkowskich we wdrażaniu 17 celów za pomocą interaktywnych wizualizacji. Do oceny realizacji celów globalnych wykorzystano wybrane wskaźniki SDG z zestawu opracowanego przez Eurostat dla Unii Europejskiej. Publikacja umożliwia porównywanie postępów w osiąganiu SDGs między krajami oraz na tle UE. Pozwala także na prognozowanie trendów dla wybranych mierników przed ich zaprezentowaniem na wykresie.</p>
-  <br>
+  <p>Raport analizuje postępy w realizacji Agendy 2030 w regionie EKG na podstawie danych z <a title="Przejdź do strony z bazą danych ONZ" href="https://unstats.un.org/sdgs/dataportal"  target="_blank">bazy ONZ</a>, prezentującej globalne wskaźniki dla celów zrównoważonego rozwoju z oficjalnej listy ONZ.</p>
+  <p>Najnowsza edycja raportu pt. <em>Halfway to 2030: How many targets will be achieved in the UNECE region</em>, obok oceny zaawansowania regionu EKG we wdrażaniu poszczególnych zadań i celów SDG, zawiera pogłębioną analizę postępu w zakresie osiągania równości płci, opracowaną przez agendę ONZ ds. równości płci i wzmocnienia kobiet (UN Women).</p>
+
+  <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Is the UNECE region on track for 2030?" href="https://unece.org/info/Statistics/pub/353864">Is the UNECE region on track for 2030?</a></p>
 
 
   <hr>
+      <div class="image-wrapper">
+      <a target="_blank" href="https://unece.org/statistics/publications/CES-roadmap-sdg-2" alt="Road Map on Statistics for Sustainable Development Goals – Second Edition" title="Zapoznaj się z publikacją Road Map on Statistics for Sustainable Development Goals – Second Edition"><img src="{{ site.baseurl }}/assets/img/publikacje/13_roadmap.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Road Map on Statistics for Sustainable Development Goals – Second Edition</b></p>
+
+  <p>Mapa Drogowa dla Statystyk SDG ma na celu ułatwienie organizacji procesu monitorowania Agendy 2030 w regionie EKG. Pierwsza edycja Mapy (z 2017 r.) określa podstawy i ramy monitorowania SDGs, druga (z 2022 r.) – podsumowuje wnioski z dotychczasowych doświadczeń krajowych i definiuje aktualne wyzwania przed systemami statystycznymi, takie jak:</p>
+  <p>• dezagregacja statystyk i poszukiwanie nowych źródeł informacji w celu objęcia monitorowaniem grup narażonych na wykluczenie zgodnie z zasadą <em>Leave No One Behind</em>,
+  <br>• monitorowanie SDGs dopasowane odpowiednio do potrzeb (poziom subkrajowy, sektor prywatny),
+  <br>• implementacja rozwiązań usprawniających proces raportowania – Interfejs Programowania Aplikacji (API), ujednolicony format przesyłania danych (SDG-SDMX),
+  <br>• produkcja statystyk SDG w warunkach pandemii.</p>
+  <p>Za opracowanie Mapy Drogowej odpowiada Grupa Sterująca ds. statystyk SDG, powołana w lutym 2016 r. przez Biuro CES w ramach Europejskiej Komisji Gospodarczej ONZ. Od 2018 r. Grupie współprzewodniczą Polska oraz Szwecja.</p>
+  <p>W przygotowanie Mapy Drogowej znaczący wkład wnieśli przedstawiciele Polski, którzy brali udział w kształtowaniu publikacji i są autorami dwóch rozdziałów (<em>Beyond global</em> monitoring oraz <em>Voluntary National Reviews</em>). W publikacji zostały także opisane przykłady polskich inicjatyw (<a title="Przejdź do strony z przykładami polskich inicjatyw" href="https://unece.org/statistics/rm-country-case-studies"  target="_blank"><em>case studies</em></a>), m.in. zaangażowanie GUS w budowę zestawu wskaźników SDG dla biznesu (<a title="Przejdź do strony ze wskaźnikami SDG dla biznesu" href="https://sdg.gov.pl/o_sdg/#bis"  target="_blank">Barometr Wpływu</a>).
+</p>
+
+  <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Road Map on Statistics for Sustainable Development Goals" href="https://unece.org/statistics/publications/road-map-statistics-sustainable-development-goals">Road Map on Statistics for Sustainable Development Goals</a></p>
+
+
+  <hr>
+  <h4><b>UNIA EUROPEJSKA (UE)</b></h4>
+
+
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/12878705/KS-03-21-096-EN-N.pdf/8f9812e6-1aaa-7823-928f-03d8dd74df4f?t=1623741433852" alt="Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context" title="Zapoznaj się z publikacją Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue_2021.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/3217494/14665254/KS-09-22-019-EN-N.pdf/2edccd6a-c90d-e2ed-ccda-7e3419c7c271?t=1654253664613" alt="Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context" title="Zapoznaj się z publikacją Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</b></p>
 
-  <p>Wydawana od 2017 r. publikacja Eurostatu będąca raportem monitorującym postęp w kierunku osiągnięcia Celów Zrównoważonego Rozwoju w kontekście UE. Raport opisuje i analizuje dokonany postęp przy wykorzystaniu zestawu ok. 100 wskaźników, przyporządkowanych do poszczególnych celów SDG. Analizie poddane są dwa okresy: krótki, uwzględniający postęp dokonany w ciągu ostatnich 5 lat oraz długi, obejmujący tendencje z ostatnich 15 lat.
+  <p>Wydawane przez Eurostat regularnie (od 2017 r.) raporty przedstawiają postęp w kierunku osiągnięcia Celów Zrównoważonego Rozwoju przez UE i kraje członkowskie. Sprawozdanie z monitorowania przedstawia dwa okresy: krótkoterminowy, uwzględniający postęp dokonany w ciągu ostatnich 5 lat oraz długoterminowy, obejmujący tendencje z ostatnich 15 lat. Analiza przedstawiona w raportach opiera się na zestawie ok. 100 wskaźników (przyporządkowanych do poszczególnych Celów i ściśle powiązanych z politykami unijnymi), dostępnych w <a title="Przejdź do strony Eurostatu z bazą danych SDG" href="https://ec.europa.eu/eurostat/web/sdi/overview"  target="_blank">bazie danych Eurostatu.</a>
   <br><br><br></p>
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2021)" href="https://ec.europa.eu/eurostat/documents/3217494/14665254/KS-09-22-019-EN-N.pdf/2edccd6a-c90d-e2ed-ccda-7e3419c7c271?t=1654253664613">Monitoring report on progress towards the SDGs in an EU context – Edycja 2021</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/3217494/11011074/KS-02-20-202-EN-N.pdf/334a8cfe-636a-bb8a-294a-73a052882f7f">Monitoring report on progress towards the SDGs in an EU context – Edycja 2020</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2019)" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820">Monitoring report on progress towards the SDGs in an EU context – Edycja 2019</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2018)" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Monitoring report on progress towards the SDGs in an EU context – Edycja 2018</a></p>
@@ -277,28 +332,59 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/12878925/KS-03-21-097-EN-N.pdf/c7d90bf7-c3ae-00b5-7804-80526931036b?t=1623827181153" title="Zapoznaj się z publikacją Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context" alt="Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue_2021.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/14665125/KS-06-22-017-EN-N.pdf/8febd4ca-49e4-abd3-23ca-76c48eb4b4e6?t=1653033908879" title="Zapoznaj się z publikacją Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context" alt="Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</b></p>
 
-  <p>Opracowanie stanowi skróconą wersję raportu Eurostatu z realizacji SDGs w Unii Europejskiej pn. <a href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-01-18-656">Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</a>. Postęp we wdrażaniu Agendy 2030 w UE oceniany jest w okresie krótkim na podstawie nowego zestawu wskaźników SDG dla UE i prezentowany w formie graficznej. Szczegółowa analiza realizacji Agendy 2030 w UE dostępna jest w pełnej wersji raportu.
+  <p>Opracowanie stanowi skróconą wersję raportu Eurostatu z realizacji SDGs w Unii Europejskiej pn. <strong>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</strong>. Postęp we wdrażaniu Agendy 2030 w UE oceniany jest w okresie krótkim na podstawie zestawu wskaźników SDG dla UE i prezentowany w formie graficznej.
 
-  <br><br><br></p>
+  <br><br><br><br></p>
   <p><b>Archiwum:</b></p>
-    <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/4031688/11010788/KS-01-20-192-EN-N.pdf/ae63aff0-a6f3-1d47-da83-c6886b9daaab">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2020</a></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2021)" href="https://ec.europa.eu/eurostat/documents/3217494/12878705/KS-03-21-096-EN-N.pdf/8f9812e6-1aaa-7823-928f-03d8dd74df4f?t=1623741433852">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2021</a></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/4031688/11010788/KS-01-20-192-EN-N.pdf/ae63aff0-a6f3-1d47-da83-c6886b9daaab">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2020</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2019)" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2019</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2018)" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context – Edycja 2018</a></p>
 
-
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/web/products-statistical-books/-/KS-02-16-996" alt="Zapoznaj się z publikacją Sustainable development in the European Union — A statistical glance from the viewpoint of the UN Sustainable Development Goals" title="Sustainable development in the European Union — A statistical glance from the viewpoint of the UN Sustainable Development Goals"><img src="{{ site.baseurl }}/assets/img/publikacje/6_statistical_glance.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://s3.amazonaws.com/sustainabledevelopment.report/2021/Europe+Sustainable+Development+Report+2021.pdf" title="Zapoznaj się z publikacją Europe Sustainable Development Report" alt="Europe Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/14_europe_sustainable.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Sustainable development in the European Union — A statistical glance from the viewpoint of the UN Sustainable Development Goals</b></p>
+  <p><b>Europe Sustainable Development Report</b></p>
 
-  <p>Publikacja Sustainable development in the European Union bazuje na wieloletnim doświadczeniu Eurostatu w monitorowaniu Strategii Zrównoważonego Rozwoju Unii Europejskiej. Zapewnia statystyczne spojrzenie na obecną sytuację w UE i państwach członkowskich z punktu widzenia realizacji Celów Zrównoważonego Rozwoju SDGs. Opiera się na ograniczonej liczbie wskaźników, które są istotne dla UE i ma na celu uchwycenie szerszego kontekstu każdego z celów SDG. W publikacji przedstawiono 51 wskaźników, opracowywanych i rozpowszechnianych głównie przez Eurostat. Dla każdego z nich prezentowane są dane za ostatni dostępny rok (dla UE-28 i państw członkowskich) oraz ogólne tendencje (dla UE-28).<br><br></p>
+  <p>Publikacja jest opracowaniem na temat postępów Europy, w tym Unii Europejskiej i jej państw członkowskich oraz pozostałych krajów europejskich, w realizacji Celów Zrównoważonego Rozwoju. Publikacja, przygotowana przez Sieć Rozwiązań na rzecz Zrównoważonego Rozwoju (UN SDSN) oraz Instytut Europejskiej Polityki Ochrony Środowiska Naturalnego (IEEP), prezentuje Indeks SDG i Dashboard SDG, które pozwalają na ocenę stopnia realizacji całej Agendy 2030 i jej poszczególnych celów w Europie.
+
+  <br><br><br></p>
+  <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Europe Sustainable Development Report 2020" href="https://s3.amazonaws.com/sustainabledevelopment.report/2020/europe_sustainable_development_report_2020.pdf">Europe Sustainable Development Report 2020</a></p>
 
   <hr>
+  <h4><b>ORGANIZACJA WSPÓŁPRACY GOSPODARCZEJ I ROZWOJU (OECD)</b></h4>
+
+  <div class="image-wrapper">
+      <a target="_blank" href="https://www.oecd.org/publications/the-short-and-winding-road-to-2030-af4b630d-en.htm#country-notes" alt="Zapoznaj się z publikacją The Short and Winding Road to 2030" title="The Short and Winding Road to 2030"><img src="{{ site.baseurl }}/assets/img/publikacje/15_short_and_winding.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>The Short and Winding Road to 2030 - Measuring Distance to the SDG Targets</b></p>
+
+  <p>Publikacja prezentuje dystans, jaki dzieli kraje OECD od pełnej realizacji zadań i celów Agendy 2030. Opracowanie wykorzystuje wskaźniki dla Celów Zrównoważonego Rozwoju z oficjalnej listy ONZ, bazując na danych z baz <a title="Przejdź do strony ONZ z bazą wskaźników SDG" href="https://unstats.un.org/sdgs/dataportal"  target="_blank">ONZ</a> i <a title="Przejdź do strony OECD z bazą wskaźników SDG" href="https://www.oecd.org/statistics/listofoecddatabases.htm"  target="_blank">OECD</a>.</p>
+  <p>Najnowsza edycja raportu pt. <em>The Short and Winding Road to 2030: Measuring Distance to the SDG Targets</em> poza oceną kierunku i tempa realizacji poszczególnych zadań i celów SDG, przedstawia trendy długookresowe w tym obszarze oraz wpływ pandemii COVID-19 na realizację celów Agendy 2030 w regionie OECD. Publikacji towarzyszą profile krajów OECD ze szczegółową informacją na temat ich osiągnięć i wyzwań oraz dystansu do pokonania w zakresie zadań i celów SDG.
+
+  <br></p>
+  <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Measuring Distance to the SDG Targets 2019. An Assessment of Where OECD Countries Stand" href="https://www.oecd.org/wise/measuring-distance-to-the-sdg-targets-2019-a8caf3fa-en.htm">Measuring Distance to the SDG Targets 2019. An Assessment of Where OECD Countries Stand</a></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Measuring Distance to the SDG Targets 2017. An Assessment of Where OECD Countries Stand" href="https://www.oecd.org/economy/measuring-distance-to-the-sdg-targets-2017-9789264308183-en.htm">Measuring Distance to the SDG Targets 2017. An Assessment of Where OECD Countries Stand</a></p>
+
+  <hr>
+    <div class="image-wrapper">
+      <a target="_blank" href="https://www.oecd.org/cfe/a-territorial-approach-to-the-sustainable-development-goals-e86fa715-en.htm" alt="Zapoznaj się z publikacją A Territorial Approach to the Sustainable Development Goals. Synthesis report" title="A Territorial Approach to the Sustainable Development Goals. Synthesis report"><img src="{{ site.baseurl }}/assets/img/publikacje/16_territorial.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>A Territorial Approach to the Sustainable Development Goals. Synthesis report</b></p>
+
+  <p>Opracowanie dotyczy roli miast i regionów OECD w osiąganiu celów zrównoważonego rozwoju. Według autorów raportu realizacja co najmniej 105 spośród 169 zadań Agendy 2030 zależy od zaangażowania miast i regionów OECD. Jednocześnie wpływ na osiąganie celów SDG w OECD mają megatrendy globalne, tj. zmiany demograficzne i klimatyczne, digitalizacja i tzw. geografia niezadowolenia, które przyjmują różną postać w zależności od uwarunkowań lokalnych i regionalnych. Kluczową część raportu stanowią ramy do monitorowania celów SDG na poziomie niższym niż krajowy, które umożliwiają pomiar dystansu, jaki dzieli miasta i regiony OECD od pełnej realizacji Agendy 2030.
+
+  <br><br><br><br><br></p>
+
+  <hr>
+
   <div class="image-wrapper">
       <a target="_blank" href="http://www.oecd.org/environment/towards-green-growth-9789264234437-en.htm" alt="Towards Green Growth? Tracking Progress" title="Zapoznaj się z publikacją Towards Green Growth? Tracking Progress"><img src="{{ site.baseurl }}/assets/img/publikacje/7_towards_green_growth.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -337,6 +423,26 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   <p>To nie wszystko! Chcesz przekonać się, że każdy człowiek na Ziemi – nawet najbardziej leniwy może działać na rzecz SDGs? Poznaj <a title="Zapoznaj się z poradnikiem ONZ o tym jak można działać na rzecz SDG" href="https://www.un.org/sustainabledevelopment/takeaction/" target="_blank">poradnik</a> ONZ, który możesz zastosować w domu, szkole lub pracy.</p>
 
   <p>Powodzenia!</p>
+  <hr>
+  <div class="image-wrapper">
+      <a target="_blank" href="https://sdgstorybook.com/przedmowa" alt="Baśnie i dziwy, by świat był sprawiedliwy" title="Zapoznaj się z publikacją Baśnie i dziwy, by świat był sprawiedliwy"><img src="{{ site.baseurl }}/assets/img/publikacje/3a_fairy_tales.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Baśnie i dziwy, by świat był sprawiedliwy</b></p>
+
+  <p>Opracowanie, dzięki wykorzystaniu motywów ze znanych bajek i baśni z różnych stron świata, jest adresowane do najmłodszych czytelników. Poszczególne opowieści nawiązują do wyzwań współczesności i 17 celów zrównoważonego rozwoju, a ich bohaterami są postaci o dobrych i złych charakterach, np. Czerwony Kapturek i Baba Jaga. „Baśnie i dziwy…” powstały w ramach projektu „Zmiana Percepcji” z inicjatywy Dyrektora Generalnego ONZ w Genewie. Książka, zgodnie z intencją jej twórców, stanowi zaproszenie do budowania pokoleniowych mostów w dyskusji o naszej planecie.</p>
+  <br>
+
+
+  <hr>
+  <div class="image-wrapper">
+      <a target="_blank" href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/" alt="SDGs & me" title="Zapoznaj się z publikacją SDGs & me"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg&me.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>SDGs & me</b></p>
+
+  <p>Nowa cyfrowa publikacja Eurostatu nt. celów Agendy 2030 adresowana jest do szerokiego grona odbiorców. Jej intuicyjny charakter i atrakcyjna forma zachęcą każdego do spojrzenia na SDGs z punktu widzenia statystyki. <em>SDGs & me</em> prezentuje postępy całej UE oraz poszczególnych krajów członkowskich we wdrażaniu 17 celów za pomocą interaktywnych wizualizacji. Do oceny realizacji celów globalnych wykorzystano wybrane wskaźniki SDG z zestawu opracowanego przez Eurostat dla Unii Europejskiej. Publikacja umożliwia porównywanie postępów w osiąganiu SDGs między krajami oraz na tle UE. Pozwala także na prognozowanie trendów dla wybranych mierników przed ich zaprezentowaniem na wykresie.</p>
+  <br>
+
+
 
   </div>
 
