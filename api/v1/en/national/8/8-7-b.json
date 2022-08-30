@@ -13,19 +13,19 @@
                       
                         "priority": "Work activation of young people, women, persons aged 50+ , long-term unemployed as well as persons with disabilities",
                       
-                        "definition": "Share of the unemployed persons aged 20-64 looking for a job for one year or more in the total number of the unemployed expressed as a percentage.",
+                        "definition": "Ratio of unemployed people aged 20-64 looking for work for more than 12 months (13 months or more) in the total number of unemployed in the same age group.",
                       
                         "unit": "percent [%]",
                       
                         "dimensions": "total",
                       
-                        "methodology": "Data come from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis as continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15 and more who are members of households in dwellings selected on a random basis. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and ecomically inactive persons. The employed, unemployed are the economically active population. Among the employed are included all persons aged 15 years or more who during the reference week: 1) performed for at least one hour any work generating pay or income, i.e. were employed as paid employees, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in conducting family agricultural farm or family economic activity outside agriculture, 2) had work but did not perform it: a) due to sickness, maternity leave or vacation, b) due to other reasons, but duration of the break in employment: - did not exceed 3 months, - was longer than 3 months in case when these persons were paid employees and received during that period at least 50% of the hitherto earnings. Due to the survey methodological assumptions the number of the employed obtained from the LFS does not comprise some categories of persons, who are considered as employed in the establishment survey, i.a.: a) employees living in lodging houses for workers, b) employees working abroad for their Polish employers. Unemployed persons are persons aged 15-74 who simultaneously fulfil three conditions: - within the reference week were not employed, - were actively looking for work, i.e. for over 4 weeks (the reference week being the fourth one) had been involved in concrete actions aimed at finding a job, - were available to take up work within two weeks after the reference week. Persons who were not seeking work because they had already found a job, were only waiting to start work within the period no longer than 3 months, and were available for this job are also included in the category of the unemployed.",
+                        "methodology": "Data comes from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89 who are members of households in dwellings selected on a random basis. Outside the scope of the survey are members of households staying (the total duration of actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as staff hotels, dormitories, boarding schools, nursing homes, etc.) and homeless people. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and ecomically inactive persons. The employed, unemployed are the economically active population. Unemployed according to LFS are persons aged 15-74 who simultaneously fulfil three conditions: - within the reference week were not employed, - were actively looking for work, i.e. for over 4 weeks (the reference week being the fourth one) had been involved in concrete actions aimed at finding a job, - were available to take up work within two weeks after the reference week. Persons who were not seeking work because they had already found a job, were only waiting to start work within the period no longer than 3 months, and were available for this job are also included in the category of the unemployed. The LFS results allow the unemployed to be classified into one of four categories: - unemployed who lost their jobs, i.e., those who left their last job not on their own initiative and immediately (i.e., within three months) began looking for work, - the unemployed who quit their jobs, i.e., those who left their jobs on their own initiative and immediately began looking for work, - unemployed who return to work after a break during which they did not look for work for a minimum of three months, - the unemployed who have never worked and are looking for their first ever job. Long-term unemployed - according to the national definition, these are unemployed people looking for a job for 13 months or more; while according to the definition used by Eurostat, these are unemployed people looking for a job for 12 months or more.",
                       
                         "source": "Statistics Poland",
                       
                         "availability": "Annual data; since 2010",
                       
-                        "notes": ""
+                        "notes": "Due to the implementation of methodological changes in the survey, LFS data from 2021 onward cannot be compared with previous years (except for data recalculated for 2010-2020)."
                       }
       ],
       "data": [
@@ -35,79 +35,85 @@
                         "total": [
                                 {
                                 
-                                    "2010" :   "31.8",
+                                    "2010" :   "26.1",
                                 
-                                    "2011" :   "38.0",
+                                    "2011" :   "32.3",
                                 
-                                    "2012" :   "41.3",
+                                    "2012" :   "35.5",
                                 
-                                    "2013" :   "43.3",
+                                    "2013" :   "37.3",
                                 
-                                    "2014" :   "43.5",
+                                    "2014" :   "37.1",
                                 
-                                    "2015" :   "40.2",
+                                    "2015" :   "32.9",
                                 
-                                    "2016" :   "36.0",
+                                    "2016" :   "27.9",
                                 
-                                    "2017" :   "31.7",
+                                    "2017" :   "24.2",
                                 
-                                    "2018" :   "27.5",
+                                    "2018" :   "20.6",
                                 
-                                    "2019" :   "22.0",
+                                    "2019" :   "15.3",
                                 
-                                    "2020" :   "20.5"
+                                    "2020" :   "14.5",
+                                
+                                    "2021" :   "18.1"
                                 
                                 }
                             ],"females": [
                                 {
                                 
-                                    "2010" :   "32.3",
+                                    "2010" :   "26.5",
                                 
-                                    "2011" :   "39.0",
+                                    "2011" :   "33.2",
                                 
-                                    "2012" :   "42.7",
+                                    "2012" :   "36.3",
                                 
-                                    "2013" :   "44.3",
+                                    "2013" :   "37.9",
                                 
-                                    "2014" :   "43.2",
+                                    "2014" :   "36.8",
                                 
-                                    "2015" :   "39.6",
+                                    "2015" :   "31.8",
                                 
-                                    "2016" :   "34.9",
+                                    "2016" :   "27.3",
                                 
-                                    "2017" :   "30.7",
+                                    "2017" :   "22.4",
                                 
-                                    "2018" :   "27.2",
+                                    "2018" :   "19.7",
                                 
-                                    "2019" :   "20.3",
+                                    "2019" :   "14.3",
                                 
-                                    "2020" :   "20.2"
+                                    "2020" :   "13.6",
+                                
+                                    "2021" :   "19.3"
                                 
                                 }
                             ],"males": [
                                 {
                                 
-                                    "2010" :   "31.5",
+                                    "2010" :   "25.8",
                                 
-                                    "2011" :   "37.0",
+                                    "2011" :   "31.4",
                                 
-                                    "2012" :   "39.9",
+                                    "2012" :   "34.8",
                                 
-                                    "2013" :   "42.3",
+                                    "2013" :   "36.8",
                                 
-                                    "2014" :   "43.7",
+                                    "2014" :   "37.2",
                                 
-                                    "2015" :   "40.7",
+                                    "2015" :   "33.7",
                                 
-                                    "2016" :   "36.9",
+                                    "2016" :   "28.5",
                                 
-                                    "2017" :   "32.6",
+                                    "2017" :   "25.6",
                                 
-                                    "2018" :   "27.8",
+                                    "2018" :   "21.3",
                                 
-                                    "2019" :   "23.6",
+                                    "2019" :   "16.2",
                                 
-                                    "2020" :   "20.8"
+                                    "2020" :   "15.2",
+                                
+                                    "2021" :   "17.5"
                                 
                                 }
                             ]
@@ -118,53 +124,57 @@
                         "urban area": [
                                 {
                                 
-                                    "2010" :   "31.4",
+                                    "2010" :   "25.6",
                                 
-                                    "2011" :   "37.7",
+                                    "2011" :   "31.9",
                                 
-                                    "2012" :   "41.2",
+                                    "2012" :   "35.6",
                                 
-                                    "2013" :   "43.2",
+                                    "2013" :   "37.2",
                                 
-                                    "2014" :   "44.3",
+                                    "2014" :   "37.8",
                                 
-                                    "2015" :   "39.7",
+                                    "2015" :   "33.0",
                                 
-                                    "2016" :   "35.2",
+                                    "2016" :   "27.4",
                                 
-                                    "2017" :   "30.5",
+                                    "2017" :   "23.5",
                                 
-                                    "2018" :   "26.7",
+                                    "2018" :   "20.2",
                                 
-                                    "2019" :   "21.2",
+                                    "2019" :   "14.8",
                                 
-                                    "2020" :   "17.3"
+                                    "2020" :   "11.6",
+                                
+                                    "2021" :   "17.5"
                                 
                                 }
                             ],"rural area": [
                                 {
                                 
-                                    "2010" :   "32.7",
+                                    "2010" :   "27.0",
                                 
-                                    "2011" :   "38.6",
+                                    "2011" :   "32.8",
                                 
-                                    "2012" :   "41.3",
+                                    "2012" :   "35.4",
                                 
-                                    "2013" :   "43.5",
+                                    "2013" :   "37.6",
                                 
-                                    "2014" :   "42.4",
+                                    "2014" :   "35.9",
                                 
-                                    "2015" :   "41.0",
+                                    "2015" :   "32.7",
                                 
-                                    "2016" :   "37.1",
+                                    "2016" :   "28.6",
                                 
-                                    "2017" :   "33.5",
+                                    "2017" :   "25.1",
                                 
-                                    "2018" :   "28.6",
+                                    "2018" :   "21.1",
                                 
-                                    "2019" :   "22.7",
+                                    "2019" :   "16.0",
                                 
-                                    "2020" :   "25.2"
+                                    "2020" :   "18.3",
+                                
+                                    "2021" :   "19.0"
                                 
                                 }
                             ]

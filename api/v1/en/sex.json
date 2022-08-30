@@ -960,96 +960,36 @@
                                     }
                     ],
                     "data": [
-                      {
+                      {"total": [
+                                        {
+                                        
+                                            "2010" :   "1235",
+                                        
+                                            "2011" :   "1247",
+                                        
+                                            "2012" :   "1271",
+                                        
+                                            "2013" :   "1302",
+                                        
+                                            "2014" :   "1334",
+                                        
+                                            "2015" :   "1387",
+                                        
+                                            "2016" :   "1449",
+                                        
+                                            "2017" :   "1488",
+                                        
+                                            "2018" :   "1504",
+                                        
+                                            "2019" :   "1497",
+                                        
+                                            "2020" :   "1102",
+                                        
+                                            "2021" :   "1116"
+                                        
+                                        }
+                                    ]
                                 
-                                        "by sex": [
-                                            {"total": [
-                                                    {
-                                                    
-                                                        "2010" : "1235",
-                                                    
-                                                        "2011" : "1247",
-                                                    
-                                                        "2012" : "1271",
-                                                    
-                                                        "2013" : "1302",
-                                                    
-                                                        "2014" : "1334",
-                                                    
-                                                        "2015" : "1387",
-                                                    
-                                                        "2016" : "1449",
-                                                    
-                                                        "2017" : "1488",
-                                                    
-                                                        "2018" : "1504",
-                                                    
-                                                        "2019" : "1497",
-                                                    
-                                                        "2020" : "1102",
-                                                    
-                                                        "2021" : "1116"
-                                                    
-                                                    }
-                                                ],"females": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "",
-                                                    
-                                                        "2020" : "",
-                                                    
-                                                        "2021" : ""
-                                                    
-                                                    }
-                                                ],"males": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "",
-                                                    
-                                                        "2020" : "",
-                                                    
-                                                        "2021" : ""
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ]
                               
                           
                       }
@@ -4386,7 +4326,7 @@
                 
                 "metadata": [
                       {
-                                      "name": "8.5.2 Unemployment rate (according to LFS)",
+                                      "name": "8.5.2 Unemployment rate aged 15-89 (according to LFS)",
                                     
                                       "goal": "Goal 8. Decent work and economic growth",
                                     
@@ -4398,13 +4338,13 @@
                                     
                                       "dimensions": "total, sex, age",
                                     
-                                      "methodology": "Data comes from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis. The survey is conducted as continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15 and more who are members of households in dwellings selected on a random basis.In the context of economic activity –work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and ecomically inactive persons. The employed, unemployed are the economically active population.The employed are defined as all persons aged 15 and more who during the reference week: – performed for at least one hour any work generating pay or income, i.e. were employed as employees, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in work on family agricultural farm or in conducting family economic activity outside agriculture, – had work but did not perform it due to:  • due to sickness,  • maternity leave, paternal leave or vacation,  •  due to other reasons, but the break in employment:  – did not exceed 3 months, – excedeed 3 months but these persons worked as employees and during that period received at least 50% of the hitherto remuneration. In accordance with the international standards, among the employed, there are also included apprentices who entered into occupational training or occupational preparation contract with a private or public employer if they received remuneration. Unemployed persons are persons aged 15-74 who simultaneously fulfil three conditions: – within the reference week were not employed, – were actively looking for work, i.e. for over 4 weeks (the reference week being the fourth one) had been involved in concrete actions aimed at finding a job, – were available to take up work within two weeks after the reference week. Persons who were not seeking work because they had already found a job, were only waiting to start work within the period no longer than 3 months, and were available for this job are also included in the category of the unemployed.",
+                                      "methodology": "Data comes from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89 who are members of households in dwellings selected on a random basis. Outside the scope of the survey are members of households staying (the total duration of actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as staff hotels, dormitories, boarding schools, nursing homes, etc.) and homeless people. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and ecomically inactive persons. The employed, unemployed are the economically active population. The employed are defined as all persons aged 15-89 who during the reference week: 1. performed for at least one hour any work generating pay or income, i.e. were employed by a public company/institution or private employer,, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in work on family agricultural farm or in conducting family economic activity outside agriculture, 2. had work but did not perform it due to: • sickness, or rest leave, leave related to parenthood (maternity, parental, paternity or childcare), organization of working time (work system or overtime receipt), job-related training, • the seasonal nature of the work, if they continued to regularly fulfill work or business-related tasks and duties (excluding legal or administrative duties) during the off-season, • other reasons, if the expected period of absence from work does not exceed 3 months - did not exceed 3 months. In accordance with the international standards, among the employed, there are also included apprentices who entered into occupational training or occupational preparation contract with a private or public employer if they received remuneration. The employed do not include: volunteers and unpaid interns, people working in individual agriculture engaged in the production of agricultural products exclusively or primarily for their own consumption. Unemployed persons are persons aged 15-74 who simultaneously fulfil three conditions: • within the reference week were not employed, • were actively looking for work, i.e. for over 4 weeks (the reference week being the fourth one) had been involved in concrete actions aimed at finding a job, • were available to take up work within two weeks after the reference week. Persons who were not seeking work because they had already found a job, were only waiting to start work within the period no longer than 3 months, and were available for this job are also included in the category of the unemployed.",
                                     
                                       "source": "Statistics Poland",
                                     
                                       "availability": "Annual data; since 2010.",
                                     
-                                      "notes": ""
+                                      "notes": "Due to the implementation of methodological changes in the survey, LFS data from 2021 onward cannot be compared with previous years (except for data recalculated for 2010-2020)."
                                     }
                     ],
                     "data": [
@@ -4414,15 +4354,43 @@
                                             {"total": [
                                                     {
                                                     
-                                                        "2010" : "9.6",
+                                                        "2010" : "10.0",
                                                     
-                                                        "2011" : "9.6",
+                                                        "2011" : "9.7",
                                                     
-                                                        "2012" : "10.1",
+                                                        "2012" : "10.4",
                                                     
-                                                        "2013" : "10.3",
+                                                        "2013" : "10.6",
                                                     
-                                                        "2014" : "9.0",
+                                                        "2014" : "9.2",
+                                                    
+                                                        "2015" : "7.7",
+                                                    
+                                                        "2016" : "6.3",
+                                                    
+                                                        "2017" : "4.9",
+                                                    
+                                                        "2018" : "3.9",
+                                                    
+                                                        "2019" : "3.3",
+                                                    
+                                                        "2020" : "3.2",
+                                                    
+                                                        "2021" : "3.4"
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "9.7",
+                                                    
+                                                        "2011" : "9.3",
+                                                    
+                                                        "2012" : "9.7",
+                                                    
+                                                        "2013" : "10.0",
+                                                    
+                                                        "2014" : "8.7",
                                                     
                                                         "2015" : "7.5",
                                                     
@@ -4430,63 +4398,41 @@
                                                     
                                                         "2017" : "4.9",
                                                     
-                                                        "2018" : "3.8",
+                                                        "2018" : "3.9",
                                                     
-                                                        "2019" : "3.3",
+                                                        "2019" : "3.1",
                                                     
-                                                        "2020" : "3.2"
+                                                        "2020" : "3.1",
                                                     
-                                                    }
-                                                ],"males": [
-                                                    {
-                                                    
-                                                        "2010" : "9.3",
-                                                    
-                                                        "2011" : "9.0",
-                                                    
-                                                        "2012" : "9.4",
-                                                    
-                                                        "2013" : "9.7",
-                                                    
-                                                        "2014" : "8.5",
-                                                    
-                                                        "2015" : "7.3",
-                                                    
-                                                        "2016" : "6.1",
-                                                    
-                                                        "2017" : "4.9",
-                                                    
-                                                        "2018" : "3.8",
-                                                    
-                                                        "2019" : "3.0",
-                                                    
-                                                        "2020" : "3.1"
+                                                        "2021" : "3.3"
                                                     
                                                     }
                                                 ],"females": [
                                                     {
                                                     
-                                                        "2010" : "10.0",
+                                                        "2010" : "10.3",
                                                     
-                                                        "2011" : "10.4",
+                                                        "2011" : "10.7",
                                                     
-                                                        "2012" : "10.9",
+                                                        "2012" : "11.2",
                                                     
-                                                        "2013" : "11.1",
+                                                        "2013" : "11.4",
                                                     
-                                                        "2014" : "9.6",
+                                                        "2014" : "9.8",
                                                     
-                                                        "2015" : "7.7",
+                                                        "2015" : "7.8",
                                                     
-                                                        "2016" : "6.2",
+                                                        "2016" : "6.3",
                                                     
                                                         "2017" : "4.9",
                                                     
-                                                        "2018" : "3.8",
+                                                        "2018" : "3.9",
                                                     
                                                         "2019" : "3.6",
                                                     
-                                                        "2020" : "3.3"
+                                                        "2020" : "3.3",
+                                                    
+                                                        "2021" : "3.4"
                                                     
                                                     }
                                                 ]
@@ -4496,27 +4442,29 @@
                                             {"15-24 years": [
                                                     {
                                                     
-                                                        "2010" : "23.7",
+                                                        "2010" : "24.0",
                                                     
-                                                        "2011" : "25.8",
+                                                        "2011" : "26.1",
                                                     
-                                                        "2012" : "26.5",
+                                                        "2012" : "26.8",
                                                     
-                                                        "2013" : "27.3",
+                                                        "2013" : "27.6",
                                                     
-                                                        "2014" : "23.8",
+                                                        "2014" : "24.1",
                                                     
-                                                        "2015" : "20.8",
+                                                        "2015" : "20.9",
                                                     
-                                                        "2016" : "17.7",
+                                                        "2016" : "17.8",
                                                     
-                                                        "2017" : "14.8",
+                                                        "2017" : "14.9",
                                                     
-                                                        "2018" : "11.7",
+                                                        "2018" : "11.8",
                                                     
                                                         "2019" : "9.9",
                                                     
-                                                        "2020" : "10.8"
+                                                        "2020" : "10.9",
+                                                    
+                                                        "2021" : "11.9"
                                                     
                                                     }
                                                 ],"25-34 years": [
@@ -4524,7 +4472,7 @@
                                                     
                                                         "2010" : "10.0",
                                                     
-                                                        "2011" : "10.0",
+                                                        "2011" : "10.1",
                                                     
                                                         "2012" : "10.7",
                                                     
@@ -4534,93 +4482,101 @@
                                                     
                                                         "2015" : "8.2",
                                                     
-                                                        "2016" : "6.7",
+                                                        "2016" : "6.8",
                                                     
                                                         "2017" : "5.1",
                                                     
-                                                        "2018" : "4.3",
+                                                        "2018" : "4.2",
                                                     
                                                         "2019" : "3.7",
                                                     
-                                                        "2020" : "3.8"
+                                                        "2020" : "3.8",
+                                                    
+                                                        "2021" : "3.9"
                                                     
                                                     }
                                                 ],"35-44 years": [
                                                     {
                                                     
-                                                        "2010" : "6.9",
+                                                        "2010" : "7.1",
                                                     
-                                                        "2011" : "6.7",
+                                                        "2011" : "6.9",
                                                     
-                                                        "2012" : "7.4",
+                                                        "2012" : "7.6",
                                                     
-                                                        "2013" : "7.9",
+                                                        "2013" : "8.1",
                                                     
-                                                        "2014" : "6.7",
+                                                        "2014" : "6.9",
                                                     
-                                                        "2015" : "5.6",
+                                                        "2015" : "5.7",
                                                     
                                                         "2016" : "4.7",
-                                                    
-                                                        "2017" : "3.7",
-                                                    
-                                                        "2018" : "2.9",
-                                                    
-                                                        "2019" : "2.6",
-                                                    
-                                                        "2020" : "2.4"
-                                                    
-                                                    }
-                                                ],"45-54 years": [
-                                                    {
-                                                    
-                                                        "2010" : "7.7",
-                                                    
-                                                        "2011" : "7.7",
-                                                    
-                                                        "2012" : "7.9",
-                                                    
-                                                        "2013" : "7.9",
-                                                    
-                                                        "2014" : "7.0",
-                                                    
-                                                        "2015" : "6.0",
-                                                    
-                                                        "2016" : "4.6",
                                                     
                                                         "2017" : "3.8",
                                                     
                                                         "2018" : "2.9",
                                                     
-                                                        "2019" : "2.4",
+                                                        "2019" : "2.6",
                                                     
-                                                        "2020" : "2.2"
+                                                        "2020" : "2.5",
+                                                    
+                                                        "2021" : "2.7"
                                                     
                                                     }
-                                                ],"55 years and more": [
+                                                ],"45-54 years": [
                                                     {
                                                     
-                                                        "2010" : "6.5",
+                                                        "2010" : "8.1",
                                                     
-                                                        "2011" : "6.3",
+                                                        "2011" : "8.0",
                                                     
-                                                        "2012" : "6.9",
+                                                        "2012" : "8.2",
                                                     
-                                                        "2013" : "7.2",
+                                                        "2013" : "8.2",
                                                     
-                                                        "2014" : "6.3",
+                                                        "2014" : "7.3",
                                                     
-                                                        "2015" : "5.1",
+                                                        "2015" : "6.2",
                                                     
-                                                        "2016" : "4.1",
+                                                        "2016" : "4.7",
                                                     
-                                                        "2017" : "3.4",
+                                                        "2017" : "3.9",
                                                     
-                                                        "2018" : "2.5",
+                                                        "2018" : "2.9",
+                                                    
+                                                        "2019" : "2.4",
+                                                    
+                                                        "2020" : "2.2",
+                                                    
+                                                        "2021" : "2.3"
+                                                    
+                                                    }
+                                                ],"55-89 years": [
+                                                    {
+                                                    
+                                                        "2010" : "7.2",
+                                                    
+                                                        "2011" : "6.9",
+                                                    
+                                                        "2012" : "7.4",
+                                                    
+                                                        "2013" : "7.7",
+                                                    
+                                                        "2014" : "6.7",
+                                                    
+                                                        "2015" : "5.3",
+                                                    
+                                                        "2016" : "4.2",
+                                                    
+                                                        "2017" : "3.5",
+                                                    
+                                                        "2018" : "2.6",
                                                     
                                                         "2019" : "2.2",
                                                     
-                                                        "2020" : "2.0"
+                                                        "2020" : "2.0",
+                                                    
+                                                        "2021" : "2.2"
                                                     
                                                     }
                                                 ]
@@ -4630,27 +4586,29 @@
                                             {"total": [
                                                     {
                                                     
-                                                        "2010" : "14.3",
+                                                        "2010" : "15.9",
                                                     
-                                                        "2011" : "14.6",
+                                                        "2011" : "16.1",
                                                     
-                                                        "2012" : "15.4",
+                                                        "2012" : "16.7",
                                                     
-                                                        "2013" : "16.9",
+                                                        "2013" : "18.3",
                                                     
-                                                        "2014" : "14.8",
+                                                        "2014" : "15.7",
                                                     
-                                                        "2015" : "12.3",
+                                                        "2015" : "12.9",
                                                     
-                                                        "2016" : "10.9",
+                                                        "2016" : "11.2",
                                                     
-                                                        "2017" : "8.4",
+                                                        "2017" : "8.6",
                                                     
-                                                        "2018" : "6.5",
+                                                        "2018" : "6.7",
                                                     
-                                                        "2019" : "6.5",
+                                                        "2019" : "6.7",
                                                     
-                                                        "2020" : "4.7"
+                                                        "2020" : "4.8",
+                                                    
+                                                        "2021" : "6.0"
                                                     
                                                     }
                                                 ]
@@ -7404,13 +7362,13 @@
                                     
                                       "dimensions": "total",
                                     
-                                      "methodology": "Employment rate is a share of the employed people of a given category in the total population of a given category. The indicator is based on the EU Labour Force Survey (LFS). LFS is conducted on a quarterly basis. The survey is conducted as continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter.The survey covers persons aged 15 and more who are members of  households in dwellings selected on a random basis. In the context of economic activity – work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population. Among the employed are included all persons aged 15 years or more who during the reference week:  1) performed for at least one hour any work generating pay or income, i.e. were employed as paid employees, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in conducting family agricultural farm or family economic activity outside agriculture,  2) had work but did not perform it: (e.g. due to illness, maternity leave or vacation, a break in company activity) if the break in employment did not exceed 3 months; if the break was longer than 3 months in case when persons were paid employees the additional criterion is receiving during that period at least 50% of the hitherto earnings. According to international standards, among employees are also included persons performing outwork and apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). Due to the survey methodological assumptions the number of the employed obtained from the LFS does not comprise some categories of persons, who are considered as employed in the establishment survey, i.a.:  a) employees living in lodging houses for workers,  b) employees working abroad for their Polish employers.",
+                                      "methodology": "Data come from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using the continuous observation method (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89, who are members of households in dwellings selected on a random basis. The scope of the survey does not include household members staying (the total actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as: employee hotels, student dormitories, boarding houses, social care centres etc.) and the homeless. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the three main categories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population. The employment rate is the share of employed in a given category in the total population of the same category. Among the employed are included all persons aged 15-89 who during the reference week: 1. performed for at least one hour any work generating pay or income, i.e. were employed in a company/public institution or by a private employer, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in conducting family agricultural farm or family economic activity outside agriculture, 2. had work but did not perform it: • due to illness or holiday leave, leave related to parenthood (maternity, childcare, paternity or parental leave), organisation of working time (work system or overtime collection), training related to the performed work • due to the seasonal character of the work, if they still regularly performed off-season their work or business conducting related tasks and responsibilities (excluding legal or administrative obligations) • for other reasons, if the anticipated break in employment did not exceed 3 months According to international standards, among employees are also included persons performing outwork and apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). The employed do not include: volunteers and interns who do not receive remuneration, people working in private engaged in the production of agricultural products solely or mainly for their own needs.",
                                     
                                       "source": "Statistics Poland",
                                     
                                       "availability": "Annual data; since 2010",
                                     
-                                      "notes": ""
+                                      "notes": "Due to the implementation of methodological changes in the study, the LFS data from 2021 cannot be compared with the previous years (except for the data converted for the years 2010-2020)."
                                     }
                     ],
                     "data": [
@@ -7420,79 +7378,85 @@
                                             {"total": [
                                                     {
                                                     
-                                                        "2010" : "10.8",
+                                                        "2010" : "10.0",
                                                     
-                                                        "2011" : "11.5",
+                                                        "2011" : "10.5",
                                                     
-                                                        "2012" : "11.4",
+                                                        "2012" : "10.4",
                                                     
-                                                        "2013" : "11.5",
+                                                        "2013" : "10.7",
                                                     
-                                                        "2014" : "11.2",
+                                                        "2014" : "10.7",
                                                     
-                                                        "2015" : "11.0",
+                                                        "2015" : "10.2",
                                                     
-                                                        "2016" : "11.6",
+                                                        "2016" : "10.9",
                                                     
-                                                        "2017" : "12.0",
+                                                        "2017" : "11.4",
                                                     
-                                                        "2018" : "11.6",
+                                                        "2018" : "10.9",
                                                     
-                                                        "2019" : "12.8",
+                                                        "2019" : "12.2",
                                                     
-                                                        "2020" : "13.0"
+                                                        "2020" : "12.2",
+                                                    
+                                                        "2021" : "10.3"
                                                     
                                                     }
                                                 ],"urban area": [
                                                     {
                                                     
-                                                        "2010" : "8.9",
+                                                        "2010" : "7.6",
                                                     
-                                                        "2011" : "9.8",
+                                                        "2011" : "8.4",
                                                     
-                                                        "2012" : "9.7",
+                                                        "2012" : "8.4",
                                                     
-                                                        "2013" : "9.0",
+                                                        "2013" : "8.0",
                                                     
-                                                        "2014" : "9.2",
+                                                        "2014" : "8.4",
                                                     
-                                                        "2015" : "8.5",
+                                                        "2015" : "7.9",
                                                     
-                                                        "2016" : "9.3",
+                                                        "2016" : "8.5",
                                                     
-                                                        "2017" : "10.0",
+                                                        "2017" : "9.2",
                                                     
-                                                        "2018" : "9.1",
+                                                        "2018" : "8.2",
                                                     
-                                                        "2019" : "9.7",
+                                                        "2019" : "8.8",
                                                     
-                                                        "2020" : "9.5"
+                                                        "2020" : "8.7",
+                                                    
+                                                        "2021" : "6.8"
                                                     
                                                     }
                                                 ],"rural area": [
                                                     {
                                                     
-                                                        "2010" : "14.0",
+                                                        "2010" : "14.4",
                                                     
-                                                        "2011" : "14.5",
+                                                        "2011" : "14.3",
                                                     
-                                                        "2012" : "14.3",
+                                                        "2012" : "13.9",
                                                     
-                                                        "2013" : "15.4",
+                                                        "2013" : "15.3",
                                                     
                                                         "2014" : "14.6",
                                                     
-                                                        "2015" : "14.9",
+                                                        "2015" : "14.3",
                                                     
-                                                        "2016" : "15.4",
+                                                        "2016" : "14.7",
                                                     
-                                                        "2017" : "15.3",
+                                                        "2017" : "15.0",
                                                     
-                                                        "2018" : "15.5",
+                                                        "2018" : "15.2",
                                                     
-                                                        "2019" : "17.6",
+                                                        "2019" : "17.4",
                                                     
-                                                        "2020" : "18.4"
+                                                        "2020" : "17.6",
+                                                    
+                                                        "2021" : "15.5"
                                                     
                                                     }
                                                 ]
@@ -7754,79 +7718,85 @@
                                             {"total": [
                                                     {
                                                     
-                                                        "2010" : "58.5",
+                                                        "2010" : "66.0",
                                                     
-                                                        "2011" : "57.7",
+                                                        "2011" : "65.3",
                                                     
-                                                        "2012" : "58.3",
+                                                        "2012" : "66.0",
                                                     
-                                                        "2013" : "59.1",
+                                                        "2013" : "65.5",
                                                     
-                                                        "2014" : "61.8",
+                                                        "2014" : "67.2",
                                                     
-                                                        "2015" : "64.1",
+                                                        "2015" : "65.8",
                                                     
-                                                        "2016" : "63.0",
+                                                        "2016" : "65.4",
                                                     
-                                                        "2017" : "63.4",
+                                                        "2017" : "64.6",
                                                     
-                                                        "2018" : "62.4",
+                                                        "2018" : "64.6",
                                                     
-                                                        "2019" : "62.5",
+                                                        "2019" : "64.9",
                                                     
-                                                        "2020" : "62.9"
+                                                        "2020" : "64.9",
+                                                    
+                                                        "2021" : "69.2"
                                                     
                                                     }
                                                 ],"urban area": [
                                                     {
                                                     
-                                                        "2010" : "61.5",
+                                                        "2010" : "77.0",
                                                     
-                                                        "2011" : "61.7",
+                                                        "2011" : "70.5",
                                                     
-                                                        "2012" : "62.2",
+                                                        "2012" : "70.9",
                                                     
-                                                        "2013" : "63.0",
+                                                        "2013" : "70.5",
                                                     
-                                                        "2014" : "65.9",
+                                                        "2014" : "72.3",
                                                     
-                                                        "2015" : "69.1",
+                                                        "2015" : "71.6",
                                                     
-                                                        "2016" : "67.8",
+                                                        "2016" : "70.7",
                                                     
-                                                        "2017" : "68.4",
+                                                        "2017" : "69.6",
                                                     
-                                                        "2018" : "66.6",
+                                                        "2018" : "70.0",
                                                     
-                                                        "2019" : "67.1",
+                                                        "2019" : "70.5",
                                                     
-                                                        "2020" : "69.5"
+                                                        "2020" : "71.9",
+                                                    
+                                                        "2021" : "75.7"
                                                     
                                                     }
                                                 ],"rural area": [
                                                     {
                                                     
-                                                        "2010" : "54.2",
+                                                        "2010" : "58.9",
                                                     
-                                                        "2011" : "51.6",
+                                                        "2011" : "58.0",
                                                     
-                                                        "2012" : "52.4",
+                                                        "2012" : "59.0",
                                                     
-                                                        "2013" : "53.3",
+                                                        "2013" : "58.6",
                                                     
-                                                        "2014" : "55.7",
+                                                        "2014" : "60.1",
                                                     
-                                                        "2015" : "56.7",
+                                                        "2015" : "57.3",
                                                     
-                                                        "2016" : "56.4",
+                                                        "2016" : "57.8",
                                                     
-                                                        "2017" : "56.4",
+                                                        "2017" : "57.6",
                                                     
-                                                        "2018" : "56.5",
+                                                        "2018" : "57.0",
                                                     
-                                                        "2019" : "55.8",
+                                                        "2019" : "57.0",
                                                     
-                                                        "2020" : "53.5"
+                                                        "2020" : "54.9",
+                                                    
+                                                        "2021" : "60.6"
                                                     
                                                     }
                                                 ]
@@ -7899,9 +7869,9 @@
                                                     
                                                         "2010" : "55.6",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "56.1",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "56.3",
                                                     
                                                         "2013" : "56.4",
                                                     
@@ -7927,9 +7897,9 @@
                                                     
                                                         "2010" : "41.5",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "41.7",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "42.0",
                                                     
                                                         "2013" : "42.0",
                                                     
@@ -8015,9 +7985,9 @@
                                                     
                                                         "2010" : "62.5",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "63.1",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "63.7",
                                                     
                                                         "2013" : "64.1",
                                                     
@@ -8247,9 +8217,9 @@
                                                     
                                                         "2010" : "76.9",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "76.4",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "76.1",
                                                     
                                                         "2013" : "76.1",
                                                     
@@ -8275,9 +8245,9 @@
                                                     
                                                         "2010" : "59.7",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "59.8",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "59.4",
                                                     
                                                         "2013" : "58.5",
                                                     
@@ -8303,9 +8273,9 @@
                                                     
                                                         "2010" : "41.0",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "40.8",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "41.5",
                                                     
                                                         "2013" : "41.8",
                                                     
@@ -8331,9 +8301,9 @@
                                                     
                                                         "2010" : "53.0",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "52.6",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "51.5",
                                                     
                                                         "2013" : "50.6",
                                                     
@@ -8359,9 +8329,9 @@
                                                     
                                                         "2010" : "13.5",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "13.5",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "13.5",
                                                     
                                                         "2013" : "13.0",
                                                     
@@ -8406,13 +8376,13 @@
                                     
                                       "dimensions": "total",
                                     
-                                      "methodology": "Data come from a sample survey Labour Force Survey (LFS). The survey is conducted on a quarterly basis. The survey is conducted as continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15 and more who are members of households in dwellings selected on a random basis. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population. Among the employed are included all persons aged 15 years or more who during the reference week: 1) performed for at least one hour any work generating pay or income, i.e. were employed as paid employees, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in conducting family agricultural farm or family economic activity outside agriculture, 2) had work but did not perform it: (e.g. due to illness, maternity leave or vacation, a break in company activity) if the break in employment did not exceed 3 months; if the break was longer than 3 months in case when persons were paid employees the additional criterion is receiving during that period at least 50% of the hitherto earnings. Among employees are also included persons performing outwork and apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). Due to the survey methodological assumptions the number of the employed obtained from the LFS does not comprise some categories of persons, who are considered as employed in the establishment survey, i.a.: a) employees living in lodging houses for workers, >b) employees working abroad for their Polish employers.",
+                                      "methodology": "Data come from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using the continuous observation method (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89, who are members of households in dwellings selected on a random basis. The scope of the survey does not include household members staying (the total actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as: employee hotels, student dormitories, boarding houses, social care centres etc.) and the homeless. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the three maincategories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population. Among the employed are included all persons aged 15-89 who during the reference week: 1. performed for at least one hour any work generating pay or income, i.e. were employed in a company/public institution or by a private employer, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in conducting family agricultural farm or family economic activity outside agriculture, 2. had work but did not perform it: • due to illness or holiday leave, leave related to parenthood (maternity, childcare, paternity or parental leave), organisation of working time (work system or overtime collection), training related to the performed work; • due to the seasonal character of the work, if they still regularly performed off-season their work or business conducting related tasks and responsibilities (excluding legal or administrative obligations); • for other reasons, if the anticipated break in employment did not exceed 3 months. In accordance with international standards, among employees are also included apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). The employed do not include: volunteers and interns who do not receive remuneration, people working in private engaged in the production of agricultural products solely or mainly for their own needs.",
                                     
                                       "source": "Statistics Poland",
                                     
                                       "availability": "Annual data; since 2010",
                                     
-                                      "notes": ""
+                                      "notes": "Due to the implementation of methodological changes in the study, the LFS data from 2021 cannot be compared with the previous years (except for the data converted for the years 2010-2020)."
                                     }
                     ],
                     "data": [
@@ -8422,79 +8392,85 @@
                                             {"total": [
                                                     {
                                                     
-                                                        "2010" : "58.5",
+                                                        "2010" : "66.0",
                                                     
-                                                        "2011" : "57.7",
+                                                        "2011" : "65.3",
                                                     
-                                                        "2012" : "58.3",
+                                                        "2012" : "66.0",
                                                     
-                                                        "2013" : "59.1",
+                                                        "2013" : "65.5",
                                                     
-                                                        "2014" : "61.8",
+                                                        "2014" : "67.2",
                                                     
-                                                        "2015" : "64.1",
+                                                        "2015" : "65.8",
                                                     
-                                                        "2016" : "63.0",
+                                                        "2016" : "65.4",
                                                     
-                                                        "2017" : "63.4",
+                                                        "2017" : "64.6",
                                                     
-                                                        "2018" : "62.4",
+                                                        "2018" : "64.6",
                                                     
-                                                        "2019" : "62.5",
+                                                        "2019" : "64.9",
                                                     
-                                                        "2020" : "62.9"
+                                                        "2020" : "64.9",
+                                                    
+                                                        "2021" : "69.2"
                                                     
                                                     }
                                                 ],"urban area": [
                                                     {
                                                     
-                                                        "2010" : "61.5",
+                                                        "2010" : "77.0",
                                                     
-                                                        "2011" : "61.7",
+                                                        "2011" : "70.5",
                                                     
-                                                        "2012" : "62.2",
+                                                        "2012" : "70.9",
                                                     
-                                                        "2013" : "63.0",
+                                                        "2013" : "70.5",
                                                     
-                                                        "2014" : "65.9",
+                                                        "2014" : "72.3",
                                                     
-                                                        "2015" : "69.1",
+                                                        "2015" : "71.6",
                                                     
-                                                        "2016" : "67.8",
+                                                        "2016" : "70.7",
                                                     
-                                                        "2017" : "68.4",
+                                                        "2017" : "69.6",
                                                     
-                                                        "2018" : "66.6",
+                                                        "2018" : "70.0",
                                                     
-                                                        "2019" : "67.1",
+                                                        "2019" : "70.5",
                                                     
-                                                        "2020" : "69.5"
+                                                        "2020" : "71.9",
+                                                    
+                                                        "2021" : "75.7"
                                                     
                                                     }
                                                 ],"rural area": [
                                                     {
                                                     
-                                                        "2010" : "54.2",
+                                                        "2010" : "58.9",
                                                     
-                                                        "2011" : "51.6",
+                                                        "2011" : "58.0",
                                                     
-                                                        "2012" : "52.4",
+                                                        "2012" : "59.0",
                                                     
-                                                        "2013" : "53.3",
+                                                        "2013" : "58.6",
                                                     
-                                                        "2014" : "55.7",
+                                                        "2014" : "60.1",
                                                     
-                                                        "2015" : "56.7",
+                                                        "2015" : "57.3",
                                                     
-                                                        "2016" : "56.4",
+                                                        "2016" : "57.8",
                                                     
-                                                        "2017" : "56.4",
+                                                        "2017" : "57.6",
                                                     
-                                                        "2018" : "56.5",
+                                                        "2018" : "57.0",
                                                     
-                                                        "2019" : "55.8",
+                                                        "2019" : "57.0",
                                                     
-                                                        "2020" : "53.5"
+                                                        "2020" : "54.9",
+                                                    
+                                                        "2021" : "60.6"
                                                     
                                                     }
                                                 ]
@@ -8539,9 +8515,9 @@
                                                     
                                                         "2010" : "53.6",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "54.0",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "54.5",
                                                     
                                                         "2013" : "54.7",
                                                     
@@ -8567,9 +8543,9 @@
                                                     
                                                         "2010" : "46.3",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "46.7",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "47.3",
                                                     
                                                         "2013" : "47.4",
                                                     
@@ -8595,9 +8571,9 @@
                                                     
                                                         "2010" : "61.5",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "61.9",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "62.4",
                                                     
                                                         "2013" : "62.7",
                                                     
@@ -8627,9 +8603,9 @@
                                                     
                                                         "2010" : "55.5",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "55.8",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "56.1",
                                                     
                                                         "2013" : "56.1",
                                                     
@@ -8655,9 +8631,9 @@
                                                     
                                                         "2010" : "50.6",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "51.1",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "52.0",
                                                     
                                                         "2013" : "52.5",
                                                     
@@ -8687,9 +8663,9 @@
                                                     
                                                         "2010" : "34.2",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "33.2",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "33.2",
                                                     
                                                         "2013" : "32.9",
                                                     
@@ -8715,9 +8691,9 @@
                                                     
                                                         "2010" : "69.6",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "70.2",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "71.2",
                                                     
                                                         "2013" : "71.8",
                                                     
@@ -8743,9 +8719,9 @@
                                                     
                                                         "2010" : "30.6",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "31.6",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "32.2",
                                                     
                                                         "2013" : "32.5",
                                                     
@@ -8775,9 +8751,9 @@
                                                     
                                                         "2010" : "15.3",
                                                     
-                                                        "2011" : "",
+                                                        "2011" : "15.5",
                                                     
-                                                        "2012" : "",
+                                                        "2012" : "16.2",
                                                     
                                                         "2013" : "16.1",
                                                     

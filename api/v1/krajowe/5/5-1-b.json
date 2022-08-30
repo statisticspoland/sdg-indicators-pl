@@ -19,13 +19,13 @@
                       
                         "wymiary": "ogółem",
                       
-                        "metodologia": "Wskaźnik zatrudnienia jest to udział pracujących danej kategorii w ogólnej liczbie ludności danej kategorii. Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym. Badanie prowadzone jest metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15 lat i więcej będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Do pracujących zaliczane są wszystkie osoby w wieku 15 lat i wiecej, które w okresie badanego tygodnia:  1) wykonywały przez co najmniej 1 godzinę pracę przynoszącą dochód lub zarobek, tzn. były zatrudnione w charakterze pracownika najemnego, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem,  2) miały pracę, ale jej nie wykonywały (np. z powodu choroby, urlopu macierzyńskiego lub wypoczynkowego, przerwy w działalności zakładu), w przypadku gdy przerwa w pracy wynosiła mniej niż 3 miesiące; gdy przerwa w pracy wynosiła powyżej 3 miesięcy w odniesieniu do pracowników najemnych dodatkowym kryterium było otrzymywanie co najmniej 50% dotychczasowego wynagrodzenia. Zgodnie z międzynarodowymi standardami, do pracujących zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Ze względu na przyjęte założenia metodologiczne badania, liczba pracujących uzyskana w wyniku BAEL nie obejmuje niektórych kategorii osób, które są wliczane do pracujących w sprawozdawczości z zakresu zatrudnienia, m.in.:  a) pracujących, mieszkających w hotelach pracowniczych,  b) pracujących za granicą na rzecz polskich pracodawców.",
+                        "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15-89 lat będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Poza zakresem badania pozostają członkowie gospodarstw domowych przebywający (uwzględniany jest całkowity czas pobytu faktyczny i planowany) 12 miesięcy lub więcej za granicą oraz w gospodarstwach zbiorowych (takich jak: hotele pracownicze, domy studenckie, internaty, domy opieki społecznej, itp.) oraz osoby bezdomne. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Wskaźnik zatrudnienia jest to udział pracujących danej kategorii w ogólnej liczbie ludności danej kategorii. Do pracujących zaliczane są wszystkie osoby w wieku 15-89 lat, które w okresie badanego tygodnia: 1. wykonywały przez co najmniej 1 godzinę pracę przynoszącą dochód lub zarobek, były zatrudnione w firmie/instytucji publicznej lub u prywatnego pracodawcy, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem, 2. miały pracę, ale jej nie wykonywały: • z powodu choroby lub urlopu wypoczynkowego, urlopu związanego z rodzicielstwem (macierzyńskiego, rodzicielskiego, ojcowskiego lub wychowawczego), organizacji czasu pracy (systemu pracy lub odbioru nadgodzin), szkolenia związanego z wykonywaną pracą, • z powodu sezonowego charakteru pracy, jeśli w okresie poza sezonem nadal regularnie wypełniały zadania i obowiązki związane z pracą lub prowadzeniem działalności (z wyłączeniem obowiązków prawnych lub administracyjnych), • z innych powodów, jeśli przewidywany okres nieobecności w pracy nie przekracza 3 miesięcy. Zgodnie z międzynarodowymi standardami, do pracujących zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Do pracujących nie są zaliczani: wolontariusze oraz stażyści nieotrzymujący wynagrodzenia, osoby pracujące w rolnictwie indywidualnym zajmujące się wytwarzaniem produktów rolnych wyłącznie lub głównie na własne potrzeby.",
                       
                         "zrodlo": "Główny Urząd Statystyczny",
                       
                         "czestotliwosc": "Dane roczne; od 2010 r.",
                       
-                        "uwagi": ""
+                        "uwagi": "W związku z wdrożeniem w badaniu zmian metodologicznych, dane BAEL od 2021 r. nie mogą być porównywane z poprzednimi latami (z wyjątkiem danych przeliczonych za lata 2010-2020)."
                       }
       ],
       "dane": [
@@ -35,81 +35,87 @@
                               "ogółem": [
                                   {
                                   
-                                      "2010" :   "10.8",
+                                      "2010" :   "10.0",
                                   
-                                      "2011" :   "11.5",
+                                      "2011" :   "10.5",
                                   
-                                      "2012" :   "11.4",
+                                      "2012" :   "10.4",
                                   
-                                      "2013" :   "11.5",
+                                      "2013" :   "10.7",
                                   
-                                      "2014" :   "11.2",
+                                      "2014" :   "10.7",
                                   
-                                      "2015" :   "11.0",
+                                      "2015" :   "10.2",
                                   
-                                      "2016" :   "11.6",
+                                      "2016" :   "10.9",
                                   
-                                      "2017" :   "12.0",
+                                      "2017" :   "11.4",
                                   
-                                      "2018" :   "11.6",
+                                      "2018" :   "10.9",
                                   
-                                      "2019" :   "12.8",
+                                      "2019" :   "12.2",
                                   
-                                      "2020" :   "13.0"
+                                      "2020" :   "12.2",
+                                  
+                                      "2021" :   "10.3"
                                   
                                   }
                               ],
                               "miasto": [
                                   {
                                   
-                                      "2010" :   "8.9",
+                                      "2010" :   "7.6",
                                   
-                                      "2011" :   "9.8",
+                                      "2011" :   "8.4",
                                   
-                                      "2012" :   "9.7",
+                                      "2012" :   "8.4",
                                   
-                                      "2013" :   "9.0",
+                                      "2013" :   "8.0",
                                   
-                                      "2014" :   "9.2",
+                                      "2014" :   "8.4",
                                   
-                                      "2015" :   "8.5",
+                                      "2015" :   "7.9",
                                   
-                                      "2016" :   "9.3",
+                                      "2016" :   "8.5",
                                   
-                                      "2017" :   "10.0",
+                                      "2017" :   "9.2",
                                   
-                                      "2018" :   "9.1",
+                                      "2018" :   "8.2",
                                   
-                                      "2019" :   "9.7",
+                                      "2019" :   "8.8",
                                   
-                                      "2020" :   "9.5"
+                                      "2020" :   "8.7",
+                                  
+                                      "2021" :   "6.8"
                                   
                                   }
                               ],
                               "wieś": [
                                   {
                                   
-                                      "2010" :   "14.0",
+                                      "2010" :   "14.4",
                                   
-                                      "2011" :   "14.5",
+                                      "2011" :   "14.3",
                                   
-                                      "2012" :   "14.3",
+                                      "2012" :   "13.9",
                                   
-                                      "2013" :   "15.4",
+                                      "2013" :   "15.3",
                                   
                                       "2014" :   "14.6",
                                   
-                                      "2015" :   "14.9",
+                                      "2015" :   "14.3",
                                   
-                                      "2016" :   "15.4",
+                                      "2016" :   "14.7",
                                   
-                                      "2017" :   "15.3",
+                                      "2017" :   "15.0",
                                   
-                                      "2018" :   "15.5",
+                                      "2018" :   "15.2",
                                   
-                                      "2019" :   "17.6",
+                                      "2019" :   "17.4",
                                   
-                                      "2020" :   "18.4"
+                                      "2020" :   "17.6",
+                                  
+                                      "2021" :   "15.5"
                                   
                                   }
                               ]
