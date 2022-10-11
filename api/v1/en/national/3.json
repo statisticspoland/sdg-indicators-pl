@@ -2360,9 +2360,9 @@
                           
                             "unit": "percent [%]",
                           
-                            "dimensions": "total",
+                            "dimensions": "total, type of expenditure (according to functions)",
                           
-                            "methodology": "The data comes from the survey on National Health Account (NHA), which aims to summarize public health and public health expenditure according to the International Classification for Health Accounts (ICHA). The subjective scope of the NHA survey are the patterns of public / compulsory and private / non-compulsory expenditures for health care, while the subject matter - current expenditure on health care) Compiled in accordance with ICHA (HP - suppliers, HF - financing schemes and HC - functional classification of provided health services) and in interrelationships: HCxHF, HPxHF, HCxHP. The amount of expenditures included in NHA, in accordance with the applicable methodology, covers current expenditures, so it does not include capital expenditure, which includes, for example, investment expenditures, research and development, education. The source of information for NHA in the area of public spending (HF.1), which consists of government diagrams, obligatory schemes - insurance premiums, are, among others, administrative systems of institutions which collect data on expenditure on health care (i.e. Ministry of Health, National Health Fund, Social Insurance Institution, Agricultural Social Insurance Fund, Ministry of the Interior and Administration, Ministry of National Defense, Ministry of Justice, Ministry of Family, Labour and Social Policy, State Fund for Rehabilitation of Disabled People). The results of other research carried out as part of the program of statistical surveys of official statistics and other available sources of information, mainly for estimating private expenditure, are also used. ",
+                            "methodology": "The data comes from the survey on National Health Account (NHA), which aims to summarize public health and public health expenditure according to the International Classification for Health Accounts (ICHA). The subjective scope of the NHA survey are the patterns of public / compulsory and private / non-compulsory expenditures for health care, while the subject matter - current expenditure on health care) Compiled in accordance with ICHA (HP - suppliers, HF - financing schemes and HC - functional classification of provided health services) and in interrelationships: HCxHF, HPxHF, HCxHP. The amount of expenditures included in NHA, in accordance with the applicable methodology, covers current expenditures, so it does not include capital expenditure, which includes, for example, investment expenditures, research and development, education. The source of information for NHA in the area of public spending (HF.1), which consists of government diagrams, obligatory schemes - insurance premiums, are, among others, administrative systems of institutions which collect data on expenditure on health care (i.e. Ministry of Health, National Health Fund, Social Insurance Institution, Agricultural Social Insurance Fund, Ministry of the Interior and Administration, Ministry of National Defense, Ministry of Justice, Ministry of Family, Labour and Social Policy, State Fund for Rehabilitation of Disabled People). The results of other research carried out as part of the program of statistical surveys of official statistics and other available sources of information, mainly for estimating private expenditure, are also used. Based on the classification of the health care function (ICHA-HC), two types of expenditures were distinguished: expenditures on individual services and expenditures on collective services. Individual services are medical products and services used directly by individual persons according to their needs, belonging to the functional categories: curative care (HC.1), rehabilitative care (HC.2), long-term care (health) (HC.3), ancillary services (non-specified by function) (HC.4) and medical goods (non-specified by function) (HC.5). Collective services are services that can be applied to all population groups, belonging to the functional categories preventive care (HC.6) and governance and health system and financing administration (HC.7).",
                           
                             "source": "Statistics Poland",
                           
@@ -2571,9 +2571,11 @@
                               
                                   "2018" :   "22",
                               
-                                  "2019" :   "21",
+                                  "2019" :   "19",
                               
-                                  "2020" :   "19"
+                                  "2020" :   "19",
+                              
+                                  "2021" :   "17"
                               
                               }
                           ]
