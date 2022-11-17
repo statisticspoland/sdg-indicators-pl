@@ -174,7 +174,24 @@ permalink: /en/o_sdg/
   </div>
 
   <div role="tabpanel" class="tab-pane" id="publ">
-  <h4><b style="letter-spacing: 5px;color: #001d77;">NATIONAL PUBLICATIONS</b></h4>
+
+  <div style="background-color: #ffffff;padding-left: 5px; padding-top: 0.1em;padding-bottom: 0.1em;border-top: 1px solid #bfbfbf;border-bottom: 1px solid #bfbfbf; position: sticky; top: 125px;margin-top: 0px;">
+  <table id="mytable" style="margin: 0px;">
+    <tr id = "tr1">
+      <td id="td1" style="width: 25% ;">
+        <a id="lab1" href="#pub_krajowe" onClick="changeLinkColor(this)">
+          <h4><b style="font-size:20px;text-decoration: none;display:inline;">NATIONAL PUBLICATIONS</b></h4>
+        </a>
+      </td>
+      <td id="td2" style="width: 25% ;">
+        <a id="lab2" href="#pub_zagraniczne" onClick="changeLinkColor(this)">
+          <h4><b style="font-size:20px;text-decoration: none;display:inline;">INTERNATIONAL PUBLICATIONS</b></h4>
+        </a>
+      </td>
+    </tr>
+  </table>
+  </div>
+  <a name="pub_krajowe"><h4><b style="color: #000000;font-size:20px;text-decoration: none;">NATIONAL PUBLICATIONS</b></h4></a>
   <h4><b>STATISTICS POLAND</b> (coordinator of SDG monitoring in Poland)</h4>
 
   <div class="image-wrapper">
@@ -200,7 +217,7 @@ permalink: /en/o_sdg/
   <div class="image-wrapper">
       <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html" alt="On the sustainable development’s path" title="Read a publication On the sustainable development’s path"><img src="{{ site.baseurl }}/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>On the sustainable development’s path</b></p>
+  <p><b>On the path to sustainable development</b></p>
   <p>The publication was prepared on the occasion of setting out the Sustainable Development Goals by the UN, included in the 2030 Agenda. It is addressed to everyone who wants to learn and understand what an idea of sustainable development is about and what connects it with the official statistics.</p>
   <p>The publication is available only in Polish.
 
@@ -224,7 +241,9 @@ permalink: /en/o_sdg/
    <a target="_blank" href="https://www.gov.pl/attachment/f18da2e5-5384-4040-8fc7-c55d67e56378" alt="The 2030 Agenda in Poland. National priorities – joint actions" title="Read a publication The 2030 Agenda in Poland. National priorities – joint actions"><img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/></a>
 </div>
 <p><b>The 2030 Agenda in Poland. National priorities – joint actions</b></p>
-<p>The publication by the Ministry of Entrepreneurship and Technology, released in relation to this year’s  <a title="Read about National Forum of th 2030 Agenda" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030" target="_blank">National Forum of the 2030 Agenda Stakeholders</a>, outlines SDG priorities for Poland as well as progress in their implementation. It presents selected governmental actions and strategic projects within individual SDGs as well as examples of the 2030 Agenda stakeholders’ engagement, including Statistics Poland as an initiator of the action “Statistics without barriers ‘cause everybody counts” (related to SDG 8. Economic growth and decent work). The priorities and relevant actions are accompanied by charts presenting indicators from <a title="Go to national indicators" href="https://sdg.gov.pl/en/statistics_nat/" target="_blank">the national set of SDG indicators </a> developed by Statistics Poland (national coordinator of SDG monitoring) in cooperation with the Ministry of Entrepreneurship and Technology (coordinator of SDG implementation in Poland). The publication may also serve as an inspiration for further actions for sustainable development goals in Poland.
+<p>The publication by the Ministry of Economic Development and Technology (former Ministry of Entrepreneurship and Technology), released in connection with <a title="Read about National Forum of th 2030 Agenda" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030" target="_blank">the 2nd National Forum of the 2030 Agenda Stakeholders,</a> outlines SDG priorities for Poland as well as progress in their implementation. It presents selected governmental actions and strategic projects within individual SDGs as well as examples of the 2030 Agenda stakeholders’ engagement, including Statistics Poland as an initiator of the action “Statistics without barriers - because everybody counts” (related to SDG 8. Decent work and economic growth). The priorities and relevant actions are accompanied by charts presenting indicators from <a title="Read about national SDG indicators" href="https://sdg.gov.pl/en/statistics_nat/" target="_blank">the national set of SDG indicators</a> developed by Statistics Poland (national coordinator of SDG monitoring) in cooperation with the Ministry of Economic Development and Technology (coordinator of SDG implementation in Poland). The publication may also serve as an inspiration for further actions for sustainable development goals in Poland.
+<br>The publication is available only in Polish.
+
 
 
 <br><br></p>
@@ -236,7 +255,7 @@ permalink: /en/o_sdg/
     <a target="_blank" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  alt="Implementation of the Sustainable Development Goals in Poland. The 2018 National Report." title="Read a publication Implementation of the Sustainable Development Goals in Poland. The 2018 National Report." target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/3_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
 </div>
 <p><b>Implementation of the Sustainable Development Goals in Poland. The 2018 National Report.</b></p>
-<p>The report was compiled by the Ministry of Entrepreneurship and Technology (coordinator of the implementation process of the 2030 Agenda in Poland) for the review of realisation of the Sustainable Development Goals in Poland. The publication indicates Poland’s experiences so far, national development priorities and national approach to the realisation of individual SDGs. The report is supplemented with a statistical annex, containing a list of national indicators indispensable for assessing the results of actions undertaken for the realisation of each SDG.
+<p>The report was compiled by the Ministry of Economic Development and Technology (former Ministry of Entrepreneurship and Technology), for the review of realisation of the Sustainable Development Goals in Poland. The publication indicates Poland’s experiences so far, national development priorities and national approach to the realisation of individual SDGs. The report is supplemented with a statistical annex, containing a list of national indicators indispensable for assessing the results of actions undertaken for the realisation of each SDG.
 Voluntary national reviews are conducted every year in New York by the UN High-Level Political Forum. In 2018,
 Poland presented its achievements at HLPF for the first time.
 
@@ -246,7 +265,7 @@ Poland presented its achievements at HLPF for the first time.
   <hr style="border-top-width: 10px;">
 
 
-  <h4><b style="letter-spacing: 5px;color: #001d77;">PUBLICATIONS OF INTERNATIONAL ORGANIZATIONS</b></h4>
+  <a name="pub_zagraniczne"><h4><b style="color: #000000;font-size:20px;text-decoration: none;">INTERNATIONAL PUBLICATIONS</b></h4></a>
   <h4><b>UNITED NATIONS (UN)</b></h4>
 
   <div class="image-wrapper">
@@ -264,7 +283,7 @@ Poland presented its achievements at HLPF for the first time.
 
 
   <hr>
-  
+
     <div class="image-wrapper">
       <a target="_blank" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/" alt="Sustainable Development Report" title="Read a publication Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -454,9 +473,21 @@ $(document).ready(function() {
     $(document.body).on("click", "a[data-toggle]", function(event) {
         location.hash = this.getAttribute("href");
     });
-});
+
+}
+
+);
 $(window).on("popstate", function() {
     var anchor = location.hash || $("a[data-toggle='tab']").first().attr("href");
     $("a[href='" + anchor + "']").tab("show");
 });
+
+var currentLink = null;
+        function changeLinkColor(link){
+            if(currentLink!=null){
+                currentLink.style.color = link.style.color;
+            }
+            link.style.color = 'blue';
+            currentLink = link;
+        }
 </script>

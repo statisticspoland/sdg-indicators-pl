@@ -176,7 +176,26 @@ permalink: /o_sdg/
   </div>
 
   <div role="tabpanel" class="tab-pane" id="publ">
-  <h4><b style="letter-spacing: 5px;color: #001d77;">PUBLIKACJE KRAJOWE</b></h4>
+
+  <div style="background-color: #ffffff;padding-left: 5px; padding-top: 0.1em;padding-bottom: 0.1em;border-top: 1px solid #bfbfbf;border-bottom: 1px solid #bfbfbf; position: sticky; top: 125px;margin-top: 0px;">
+  <table id="mytable" style="margin: 0px;">
+    <tr id = "tr1">
+      <td id="td1" style="width: 25% ;">
+        <a id="lab1" href="#pub_krajowe" onClick="changeLinkColor(this)">
+          <h4><b style="font-size:20px;text-decoration: none;display:inline;">PUBLIKACJE KRAJOWE</b></h4>
+        </a>
+      </td>
+      <td id="td2" style="width: 25% ;">
+        <a id="lab2" href="#pub_zagraniczne" onClick="changeLinkColor(this)">
+          <h4><b style="font-size:20px;text-decoration: none;display:inline;">PUBLIKACJE MIĘDZYNARODOWE</b></h4>
+        </a>
+      </td>
+    </tr>
+  </table>
+  </div>
+
+  <a name="pub_krajowe"><h4><b style="color: #000000;font-size:20px;text-decoration: none;">PUBLIKACJE KRAJOWE</b></h4></a>
+
   <h4><b>GŁÓWNY URZĄD STATYSTYCZNY</b> (koordynator monitorowania SDG w Polsce)</h4>
 
   <div class="image-wrapper">
@@ -193,7 +212,7 @@ permalink: /o_sdg/
       <a target="_blank" title="Zapoznaj się z publikacją A picture of Poland. Statistics for SDGs" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/a-picture-of-poland-statistics-for-sdgs,33,1.html" alt="A picture of Poland. Statistics for SDGs"><img src="{{ site.baseurl }}/assets/img/publikacje/1_a_picture_of_poland.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>A picture of Poland. Statistics for SDGs</b></p>
-  <p>W 2015 r. Polska została jednym z 193 sygnatariuszy Rezolucji ONZ w sprawie Agendy 2030 na rzecz Zrównoważonego Rozwoju, a w 2018 r. zaprezentowała po raz pierwszy postępy we wdrażaniu Celów Zrównoważonego Rozwoju (<em>Sustainable Development Goals – SDGs</em>) podczas dobrowolnego przeglądu krajowego (<em>Voluntary National Review</em>) na Forum Politycznym Wysokiego Szczebla ONZ. Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował publikację <em>A picture of Poland. Statistics for SDGs</em>, której celem było przybliżenie czytelnikom z innych państw naszego kraju oraz roli, jaką ma do spełnienia w osiąganiu celów Agendy 2030.</p>
+  <p>W 2015 r. Polska została jednym z 193 sygnatariuszy Rezolucji ONZ w sprawie Agendy 2030 na rzecz Zrównoważonego Rozwoju, a w 2018 r. zaprezentowała po raz pierwszy postępy we wdrażaniu Celów Zrównoważonego Rozwoju (<em>Sustainable Development Goals – SDGs</em>) podczas dobrowolnego przeglądu krajowego (<em>Voluntary National Review - VNR</em>) na Forum Politycznym Wysokiego Szczebla ONZ. Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował publikację <em>A picture of Poland. Statistics for SDGs</em>, której celem było przybliżenie czytelnikom z innych państw naszego kraju oraz roli, jaką ma do spełnienia w osiąganiu celów Agendy 2030.</p>
   <p>Informacje zawarte w publikacji zostały zainspirowane priorytetami rozwojowymi dla kraju, wskazanymi w dokumencie <a title="Przejdź do strony rządowej o monitoringu realizacji agendy 2030" href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030"  target="_blank">Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</a>, przygotowanym na przegląd przez Ministerstwo Rozwoju i Technologii.</p>
   <p>Publikacja, jako wydawnictwo skierowane głównie do odbiorców zagranicznych, dostępna jest wyłącznie w wersji anglojęzycznej.</p>
 
@@ -202,7 +221,7 @@ permalink: /o_sdg/
       <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/na-sciezce-zrownowazonego-rozwoju,23,1.html" alt="Na ścieżce zrównoważonego rozwoju" title="Zapoznaj się z publikacją Na ścieżce zrównoważonego rozwoju"><img src="{{ site.baseurl }}/assets/img/publikacje/2_sciezka_zrownowazonego.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Na ścieżce zrównoważonego rozwoju</b></p>
-  <p>Publikacja <em>Na ścieżce zrównoważonego rozwoju </em>została przygotowana w związku z wyznaczeniem przez ONZ celów zrównoważonego rozwoju, ujętych w tzw. Agendzie 2030. Jest ona adresowana do wszystkich, którzy chcą dowiedzieć się i zrozumieć, na czym polega idea zrównoważonego rozwoju oraz co ją łączy ze statystyką.
+  <p>Publikacja <em>"Na ścieżce zrównoważonego rozwoju" </em>została przygotowana w związku z wyznaczeniem przez ONZ celów zrównoważonego rozwoju, ujętych w Agendzie 2030. Jest ona adresowana do wszystkich, którzy chcą dowiedzieć się i zrozumieć, na czym polega idea zrównoważonego rozwoju oraz co ją łączy ze statystyką publiczną.
  <br><br><br><br><br><br><br></p>
   <hr>
 
@@ -218,38 +237,33 @@ permalink: /o_sdg/
   <p><a target="_blank" title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2020 r." href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitorowanie celów zrównoważonego rozwoju w Polsce – informacja wg stanu na koniec 2020 r.</a></p>
 
  </p>
- 
+
    <hr>
   <div class="image-wrapper">
    <a target="_blank" href="https://www.gov.pl/attachment/f18da2e5-5384-4040-8fc7-c55d67e56378" alt="Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania" title="Zapoznaj się z publikacją Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania"><img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania</b></p>
-  <p>Publikacja Ministerstwa Przedsiębiorczości i Technologii (MPiT), wydana w związku z tegorocznym <a title="Przejdź do informacji na temat II edycji krajowego forum interesariuszy" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030"  target="_blank">Krajowym Forum Interesariuszy Agendy 2030</a>, prezentuje priorytety SDGs dla Polski oraz postępy w ich wdrażaniu. Przedstawiono w niej wybrane rządowe działania i projekty strategiczne w ramach poszczególnych celów oraz konkretne przykłady zaangażowania interesariuszy Agendy 2030, w tym Głównego Urzędu Statystycznego – inicjatora akcji „Statystyka bez barier, bo liczą się wszyscy” (w ramach Celu 8. Wzrost gospodarczy i godna praca). Priorytetom i podejmowanym w ich ramach działaniom towarzyszą przedstawione na wykresach wskaźniki, pochodzące z <a title="Przejdź do wskaźników dla priorytetów krajowych" href="https://sdg.gov.pl/statistics_nat/"  target="_blank">krajowego zestawu wskaźników monitorujących SDGs w Polsce </a>, wypracowanego przez Główny Urząd Statystyczny (krajowego koordynatora procesu monitorowania celów SDGs) we współpracy z MPiT (koordynatorem wdrażania celów SDGs w Polsce). Publikacja stanowi również inspirację do podejmowania kolejnych działań na rzecz realizacji celów zrównoważonego rozwoju w kraju.
+  <p>Publikacja Ministerstwa Rozwoju i Technologii (ówczesnego Ministerstwa Przedsiębiorczości i Technologii), wydana w 2019 r. w związku z <a target="_blank" title="Przejdź do strony II Krajowego Forum Interesariuszy Agendy" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/ii-edycja-krajowego-forum-interesariuszy-agendy-2030">II Krajowym Forum Interesariuszy Agendy 2030,</a> prezentuje priorytety SDGs dla Polski oraz postępy w ich wdrażaniu. Przedstawiono w niej wybrane rządowe działania i projekty strategiczne w ramach poszczególnych celów oraz konkretne przykłady zaangażowania interesariuszy Agendy 2030, w tym Głównego Urzędu Statystycznego – inicjatora akcji „Statystyka bez barier, bo liczą się wszyscy” (w ramach Celu 8. Wzrost gospodarczy i godna praca). Priorytetom i podejmowanym w ich ramach działaniom towarzyszą przedstawione na wykresach wskaźniki, pochodzące <a target="_blank" href="https://sdg.gov.pl/statistics_nat/">z krajowego zestawu wskaźników monitorujących SDGs w Polsce</a>, wypracowanego przez Główny Urząd Statystyczny (krajowego koordynatora procesu monitorowania celów SDGs) we współpracy z MRiT (koordynatorem wdrażania celów SDGs w Polsce). Publikacja stanowi również inspirację do podejmowania kolejnych działań na rzecz realizacji celów zrównoważonego rozwoju w kraju.
 
   <br><br></p>
 
 
- 
+
   <hr>
   <div class="image-wrapper">
       <a target="_blank" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030" alt="Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018" title="Zapoznaj się z raportem Realizacja Celów Zrównoważonego Rozwoju w Polsce (2018)" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/2_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</b></p>
-  <p>Raport został opracowany przez Ministerstwo Przedsiębiorczości i Technologii (koordynatora procesu wdrażania Agendy 2030 w Polsce) na potrzeby przeglądu realizacji przez Polskę Celów Zrównoważonego Rozwoju. W publikacji zostały wskazane dotychczasowe doświadczenia, krajowe priorytety rozwoju Polski oraz krajowe podejście do realizacji poszczególnych SDGs. Raport został uzupełniony aneksem statystycznym, zawierającym listę krajowych wskaźników niezbędnych do mierzenia efektów działań podejmowanych na rzecz realizacji każdego z SDGs.
+  <p>Raport został opracowany przez Ministerstwo Rozwoju i Technologii (wówczas: Ministerstwo Przedsiębiorczości i Technologii) na potrzeby przeglądu realizacji przez Polskę Celów Zrównoważonego Rozwoju. W publikacji zostały wskazane dotychczasowe doświadczenia, krajowe priorytety rozwoju Polski oraz krajowe podejście do realizacji poszczególnych SDGs. Raport został uzupełniony aneksem statystycznym, zawierającym listę krajowych wskaźników niezbędnych do mierzenia efektów działań podejmowanych na rzecz realizacji każdego z SDGs.
 Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane corocznie w Nowym Jorku przez Forum Polityczne Wysokiego Szczebla ONZ. W 2018 r. Polska, w 2018 r., prezentowała swoje osiągnięcia po raz pierwszy.
 
  <br><br><br></p>
 
 
-  <hr style="border-top-width: 10px;">
-  
-  
-    <h4><b style="letter-spacing: 5px;color: #001d77;">PUBLIKACJE ORGANIZACJI MIĘDZYNARODOWYCH</b></h4>
+<a name="pub_zagraniczne"><h4><b style="color: #000000;font-size:20px;text-decoration: none;">PUBLIKACJE MIĘDZYNARODOWE</b></h4></a>
+
   <h4><b>ORGANIZACJA NARODÓW ZJEDNOCZONYCH (ONZ)</b></h4>
 
-  
-  
-  
   <div class="image-wrapper">
       <a target="_blank" href="https://unstats.un.org/sdgs/report/2022/" alt="The Sustainable Development Goals Report 2022" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2022)"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -265,7 +279,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
 
 
   <hr>
-  
+
     <div class="image-wrapper">
       <a target="_blank" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/" alt="Sustainable Development Report" title="Zapoznaj się z publikacją Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2022.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -466,4 +480,13 @@ $(window).on("popstate", function() {
     var anchor = location.hash || $("a[data-toggle='tab']").first().attr("href");
     $("a[href='" + anchor + "']").tab("show");
 });
+
+var currentLink = null;
+        function changeLinkColor(link){
+            if(currentLink!=null){
+                currentLink.style.color = link.style.color;
+            }
+            link.style.color = 'blue';
+            currentLink = link;
+        }
 </script>
