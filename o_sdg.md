@@ -489,4 +489,9 @@ var currentLink = null;
             link.style.color = 'blue';
             currentLink = link;
         }
+
+window.addEventListener("hashchange", function () {
+        window.scrollTo(window.scrollX, window.scrollY - 200);
+    });
+
 </script>
