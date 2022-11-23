@@ -19,7 +19,7 @@ permalink: /en/o_sdg/
 
 <div class="tab-content">
 
-  <div role="tabpanel" class="tab-pane active" id="sdg">
+  <div role="tabpanel" class="tab-pane active" id="sdg" style="scroll-margin-top: 500px;">
   <h4><b>ON THE 2030 AGENDA AND SDGs (SUSTAINABLE DEVELOPMENT GOALS)</b></h4>
 
   <p><a target="_blank" title="Go to UN Agenda for Sustainable Development" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/70/1&Lang=E">The 2030 Agenda for Sustainable Development</a>, adopted in September 2015, is a comprehensive plan of action for the world in a 2030 perspective, established by UN via negotiations amongst its member states. The adoption of the 2030 Agenda is an unprecedented event in the history of mankind. All 193 UN member states committed themselves to working for the realisation of  <a target="_blank" title="Go to UN 17 Sustainable Development Goals" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">17 Sustainable Development Goals – SDGs</a>. The Goals are focused on ensuring decent lives, peace and economic progress for all people in the world while taking care of the natural environment and combating climate change.</p>
@@ -37,7 +37,7 @@ permalink: /en/o_sdg/
 
   </div>
 
-  <div role="tabpanel" class="tab-pane" id="ini">
+  <div role="tabpanel" class="tab-pane" id="ini" style="scroll-margin-top: 500px;">
   <h4><b>SDG in EU & OECD</b></h4>
 
   <p><b>EU’s engagement with sustainable development</b></p>
@@ -67,7 +67,7 @@ permalink: /en/o_sdg/
   <p>•	<a target="_blank" href="https://www.oecd.org/greengrowth/" title="Go to publications">Green growth and sustainable development</a> – actions towards policy enhancement for economic growth, while preserving natural environment assets and developing environment-friendly infrastructure. OECD’s activity in the area of green growth is based on the <a target="_blank" href="https://www.oecd.org/greengrowth/towards-green-growth-9789264111318-en.htm" title="Go to strategy"> Green Growth Strategy</a>, adopted in 2011. Progress made by individual countries in implementing economic and environmental priorities, outlined in the Strategy, is presented in the successive editions of the publication <a target="_blank" href="https://www.oecd.org/env/towards-green-growth-9789264234437-en.htm" title="Go to publication">„Towards Green Growth? Tracking Progress”</a>. </p>
 
   </div>
-  <div role="tabpanel" class="tab-pane" id="stat">
+  <div role="tabpanel" class="tab-pane" id="stat" style="scroll-margin-top: 500px;">
   <h4><b>OFFICIAL STATISTICS FOR SDGs</b></h4>
 
   <p>The task of official statistics, indicated in the 2030 Agenda, is to monitor progress in achieving the Sustainable Development Goals. The monitoring is carried out on the three following levels:</p>
@@ -98,7 +98,7 @@ permalink: /en/o_sdg/
 
   </div>
 
-  <div role="tabpanel" class="tab-pane" id="bis">
+  <div role="tabpanel" class="tab-pane" id="bis" style="scroll-margin-top: 500px;">
   <h4><b>BUSINESS INDICATORS</b></h4>
 
     <div>
@@ -173,7 +173,7 @@ permalink: /en/o_sdg/
     </div>
   </div>
 
-  <div role="tabpanel" class="tab-pane" id="publ">
+  <div role="tabpanel" class="tab-pane" id="publ" style="scroll-margin-top: 500px;">
 
   <div style="background-color: #ffffff;padding-left: 5px; padding-top: 0.1em;padding-bottom: 0.1em;border-top: 1px solid #bfbfbf;border-bottom: 1px solid #bfbfbf; position: sticky; top: 125px;margin-top: 0px;">
   <table id="mytable" style="margin: 0px;">
@@ -191,7 +191,7 @@ permalink: /en/o_sdg/
     </tr>
   </table>
   </div>
-  <a name="pub_krajowe"><h4><b style="color: #000000;font-size:20px;text-decoration: none;">NATIONAL PUBLICATIONS</b></h4></a>
+  <a name="pub_krajowe" style="scroll-margin-top: 180px;"></a><h4><b style="font-size:20px;text-decoration: none;">NATIONAL PUBLICATIONS</b></h4>
   <h4><b>STATISTICS POLAND</b> (coordinator of SDG monitoring in Poland)</h4>
 
   <div class="image-wrapper">
@@ -265,7 +265,7 @@ Poland presented its achievements at HLPF for the first time.
   <hr style="border-top-width: 10px;">
 
 
-  <a name="pub_zagraniczne"><h4><b style="color: #000000;font-size:20px;text-decoration: none;">INTERNATIONAL PUBLICATIONS</b></h4></a>
+  <a name="pub_zagraniczne" style="scroll-margin-top: 197px;"></a><h4><b style="font-size:20px;text-decoration: none;">INTERNATIONAL PUBLICATIONS</b></h4>
   <h4><b>UNITED NATIONS (UN)</b></h4>
 
   <div class="image-wrapper">
@@ -429,7 +429,7 @@ Poland presented its achievements at HLPF for the first time.
 
   </div>
 
-  <div role="tabpanel" class="tab-pane" id="gus">
+  <div role="tabpanel" class="tab-pane" id="gus" style="scroll-margin-top: 500px;">
   <h4><b>SDG4FUN</b></h4>
   <p>Statistical data don’t need to be boring or cause a headache. Wanna get to know them through fun? Explore SDG applications and you’ll find out the relevance of statistics to sustainable development.</p>
 
@@ -491,8 +491,5 @@ var currentLink = null;
             currentLink = link;
         }
 
-        window.addEventListener("hashchange", function () {
-                window.scrollTo(window.scrollX, window.scrollY - 200);
-            });
 
 </script>

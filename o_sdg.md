@@ -18,7 +18,7 @@ permalink: /o_sdg/
 
 <div class="tab-content">
 
-  <div role="tabpanel" class="tab-pane active" id="sdg">
+  <div role="tabpanel" class="tab-pane active" id="sdg" style="scroll-margin-top: 500px;">
   <h4><b>O AGENDZIE 2030 i SDGs (CELACH ZRÓWNOWAŻONEGO ROZWOJU)</b></h4>
 
   <p>Przyjęta we wrześniu 2015 r. <a target="_blank" title="Zapoznaj się z rezolucją przyjętą przez Zgromadzenie Ogólne" href="https://www.gov.pl/documents/910151/911704/Agenda_2030_na_rzecz_zrownowazonego_rozwoju.pdf/d56cd332-4ba5-2035-9439-5a8a5212cbed">Agenda na rzecz Zrównoważonego Rozwoju 2030</a> jest ustalonym przez ONZ, w drodze negocjacji pomiędzy krajami członkowskimi, kompleksowym planem rozwoju dla świata z perspektywą do 2030 r. Przyjęcie Agendy 2030 jest wydarzeniem bezprecedensowym w historii ludzkości. Wszystkie 193 kraje członkowskie ONZ zobowiązały się do podejmowania działań na rzecz realizacji 17 Celów Zrównoważonego Rozwoju (<a target="_blank" title="Przejdź do 17 Celów Zrównoważonego Rozwoju ONZ" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">Sustainable Development Goals – SDGs</a>). Cele te skupiają się na zapewnieniu godnego życia dla wszystkich mieszkańców świata, pokoju i postępu gospodarczego, przy równoczesnej ochronie środowiska naturalnego i przeciwdziałaniu zmianom klimatu.</p>
@@ -36,7 +36,7 @@ permalink: /o_sdg/
 
   </div>
 
-  <div role="tabpanel" class="tab-pane" id="ini">
+  <div role="tabpanel" class="tab-pane" id="ini" style="scroll-margin-top: 500px;">
   <h4><b>SDG w UE i OECD</b></h4>
 
   <p><b>Zaangażowanie UE na rzecz zrównoważonego rozwoju</b></p>
@@ -68,7 +68,7 @@ permalink: /o_sdg/
   </div>
 
 
-  <div role="tabpanel" class="tab-pane" id="stat">
+  <div role="tabpanel" class="tab-pane" id="stat" style="scroll-margin-top: 500px;">
   <h4><b>STATYSTYKA PUBLICZNA NA RZECZ SDGs</b></h4>
 
   <p>Zadaniem statystyki publicznej, wskazanym w Agendzie 2030, jest monitorowanie postępów w osiąganiu Celów Zrównoważonego Rozwoju. Monitorowanie odbywa się na trzech poziomach:</p>
@@ -99,7 +99,7 @@ permalink: /o_sdg/
 
   </div>
 
-  <div role="tabpanel" class="tab-pane" id="bis">
+  <div role="tabpanel" class="tab-pane" id="bis" style="scroll-margin-top: 500px;">
   <h4><b>WSKAŹNIKI DLA BIZNESU</b></h4>
 
   <div>
@@ -175,7 +175,7 @@ permalink: /o_sdg/
 
   </div>
 
-  <div role="tabpanel" class="tab-pane" id="publ">
+  <div role="tabpanel" class="tab-pane" id="publ" style="scroll-margin-top: 500px;">
 
   <div style="background-color: #ffffff;padding-left: 5px; padding-top: 0.1em;padding-bottom: 0.1em;border-top: 1px solid #bfbfbf;border-bottom: 1px solid #bfbfbf; position: sticky; top: 125px;margin-top: 0px;">
   <table id="mytable" style="margin: 0px;">
@@ -194,7 +194,7 @@ permalink: /o_sdg/
   </table>
   </div>
 
-  <a name="pub_krajowe"><h4><b style="color: #000000;font-size:20px;text-decoration: none;">PUBLIKACJE KRAJOWE</b></h4></a>
+  <a name="pub_krajowe" style="scroll-margin-top: 180px;"></a><h4><b style="font-size:20px;text-decoration: none;">PUBLIKACJE KRAJOWE</b></h4>
 
   <h4><b>GŁÓWNY URZĄD STATYSTYCZNY</b> (koordynator monitorowania SDG w Polsce)</h4>
 
@@ -260,7 +260,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
  <br><br><br></p>
 
 
-<a name="pub_zagraniczne"><h4><b style="color: #000000;font-size:20px;text-decoration: none;">PUBLIKACJE MIĘDZYNARODOWE</b></h4></a>
+<a name="pub_zagraniczne" style="scroll-margin-top: 195px;"></a><h4><b style="font-size:20px;text-decoration: none;">PUBLIKACJE MIĘDZYNARODOWE</b></h4>
 
   <h4><b>ORGANIZACJA NARODÓW ZJEDNOCZONYCH (ONZ)</b></h4>
 
@@ -428,7 +428,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
   </div>
 
 
-  <div role="tabpanel" class="tab-pane" id="gus">
+  <div role="tabpanel" class="tab-pane" id="gus" style="scroll-margin-top: 500px;">
   <h4><b>SDG4FUN</b></h4>
   <p>Dane statystyczne nie muszą być nudne ani przyprawiać o ból głowy. Chcesz je poznać poprzez zabawę? Zapoznaj się z aplikacjami o SDGs i przekonaj się, jak potrzebna jest statystyka w działaniu na rzecz zrównoważonego rozwoju. </p>
 
@@ -490,8 +490,6 @@ var currentLink = null;
             currentLink = link;
         }
 
-window.addEventListener("hashchange", function () {
-        window.scrollTo(window.scrollX, window.scrollY - 200);
-    });
+
 
 </script>
