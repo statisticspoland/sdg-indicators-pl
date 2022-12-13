@@ -156,14 +156,20 @@
                   <a class="nav-link" href="https://raportsdg.stat.gov.pl/2020/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2020}}">{{ t.nav-raport-2020 }}</a>
                 </li>
                 <li class="nav-item small">
-                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/ " style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/2021/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+                </li>
+                <li class="nav-item small">
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2022}}">{{ t.nav-raport-2022 }}</a>
                 </li>
               {% else %}
                 <li class="nav-item small">
                   <a class="nav-link" href="https://raportsdg.stat.gov.pl/2020/en/index.html" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2020}}">{{ t.nav-raport-2020 }}</a>
                 </li>
                 <li class="nav-item small">
-                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/en/index.html" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/2021/en/index.html" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+                </li>
+                <li class="nav-item small">
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/en/index.html" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="{{t.nav-raport-title-2022}}">{{ t.nav-raport-2022 }}</a>
                 </li>
               {% endif %}
         </ul>
@@ -226,12 +232,14 @@
             {% if page.lang == 'pl' %}
                <div class="dropdown-content" style="margin-right: 15px;">
                 <a class="pod" href="https://raportsdg.stat.gov.pl/2020/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2020}}">{{ t.nav-raport-2020 }}</a>
-                <a class="pod" href="https://raportsdg.stat.gov.pl/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+                <a class="pod" href="https://raportsdg.stat.gov.pl/2021/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+                <a class="pod" href="https://raportsdg.stat.gov.pl/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2022}}">{{ t.nav-raport-2022 }}</a>
               </div>
             {% else %}
               <div class="dropdown-content" style="margin-right: 15px;">
                <a class="pod" href="https://raportsdg.stat.gov.pl/2020/en/index.html" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2020}}">{{ t.nav-raport-2020 }}</a>
-               <a class="pod" href="https://raportsdg.stat.gov.pl/en/index.html" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+               <a class="pod" href="https://raportsdg.stat.gov.pl/2021/en/index.html" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2021}}">{{ t.nav-raport-2021 }}</a>
+               <a class="pod" href="https://raportsdg.stat.gov.pl/en/index.html" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="{{t.nav-raport-title-2022}}">{{ t.nav-raport-2022 }}</a>
              </div>
             {% endif %}
           </div>
@@ -398,11 +406,35 @@ $(".default").attr("src", '{{ site.baseurl }}/assets/img/default.png');
 			setTimeout(function() {
 				self.element.className = "visible";
 			}, 500);
+      const el_pl = document.getElementById('publ_cookies_pl');
+      if (el_pl !== null) {
+        document.getElementById("publ_cookies_pl").style.top="200px";
+        document.getElementById("pub_krajowe_pl").style.scrollMarginTop="255px";
+        document.getElementById("pub_zagraniczne_pl").style.scrollMarginTop="270px";
+      }
+      const el_en = document.getElementById('publ_cookies_en');
+      if (el_en !== null) {
+        document.getElementById("publ_cookies_en").style.top="200px";
+        document.getElementById("pub_krajowe_en").style.scrollMarginTop="255px";
+        document.getElementById("pub_zagraniczne_en").style.scrollMarginTop="272px";
+      }
     },
 		_hide: function() {
       var self = this;
 			self.element.className = "";
 			self.element.style.display = "none";
+      const el_pl = document.getElementById('publ_cookies_pl');
+      if (el_pl !== null) {
+        document.getElementById("publ_cookies_pl").style.top="125px";
+        document.getElementById("pub_krajowe_pl").style.scrollMarginTop="180px";
+        document.getElementById("pub_zagraniczne_pl").style.scrollMarginTop="195px";
+      }
+      const el_en = document.getElementById('publ_cookies_en');
+      if (el_en !== null) {
+        document.getElementById("publ_cookies_en").style.top="125px";
+        document.getElementById("pub_krajowe_en").style.scrollMarginTop="180px";
+        document.getElementById("pub_zagraniczne_en").style.scrollMarginTop="197px";
+      }
     }
 	};
 
@@ -490,7 +522,7 @@ localStorage.removeItem("nat-toolkit-accepted");
       if (jez=='pl'){
         element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
       }else{
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/2020/en/index.html' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/en/index.html' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
       }
       var headers = document.querySelector(".site-navbar");
       headers.after(element);
@@ -510,9 +542,9 @@ localStorage.removeItem("nat-toolkit-accepted");
 	document.addEventListener( "DOMContentLoaded", function() {
 	var jez='{{page.lang}}'
 	if (jez=='pl'){
-	  //var toolkit = new BusinessToolkit( "Najnowszy Raport SDG 2021 już dostępny! Zapraszamy!");
+	  var toolkit = new BusinessToolkit( "Raport SDG 2022 już dostępny!");
 	}else{
-	  //var toolkit = new BusinessToolkit( "New SDG 2021 Report is now available! Have a good read!");
+	  var toolkit = new BusinessToolkit( "Report SDG 2022 available!");
 	}
 	});
 })();

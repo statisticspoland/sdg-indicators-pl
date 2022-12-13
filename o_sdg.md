@@ -177,16 +177,16 @@ permalink: /o_sdg/
 
   <div role="tabpanel" class="tab-pane" id="publ" style="scroll-margin-top: 500px;">
 
-  <div style="background-color: #ffffff;padding-left: 5px; padding-top: 0.1em;padding-bottom: 0.1em;border-top: 1px solid #bfbfbf;border-bottom: 1px solid #bfbfbf; position: sticky; top: 125px;margin-top: 0px;">
+  <div id="publ_cookies_pl" style="background-color: #ffffff;padding-left: 5px; padding-top: 0.1em;padding-bottom: 0.1em;border-top: 1px solid #bfbfbf;border-bottom: 1px solid #bfbfbf; position: sticky; top: 125px;margin-top: 0px;">
   <table id="mytable" style="margin: 0px;">
     <tr id = "tr1">
       <td id="td1" style="width: 25% ;">
-        <a id="lab1" href="#pub_krajowe" onClick="changeLinkColor(this)">
+        <a id="lab1" href="#pub_krajowe_pl" onClick="changeLinkColor(this)">
           <h4><b style="font-size:20px;text-decoration: none;display:inline;">PUBLIKACJE KRAJOWE</b></h4>
         </a>
       </td>
       <td id="td2" style="width: 25% ;">
-        <a id="lab2" href="#pub_zagraniczne" onClick="changeLinkColor(this)">
+        <a id="lab2" href="#pub_zagraniczne_pl" onClick="changeLinkColor(this)">
           <h4><b style="font-size:20px;text-decoration: none;display:inline;">PUBLIKACJE MIĘDZYNARODOWE</b></h4>
         </a>
       </td>
@@ -194,17 +194,18 @@ permalink: /o_sdg/
   </table>
   </div>
 
-  <a name="pub_krajowe" style="scroll-margin-top: 180px;"></a><h4><b style="font-size:20px;text-decoration: none;">PUBLIKACJE KRAJOWE</b></h4>
+  <a id="pub_krajowe_pl" style="scroll-margin-top: 180px;"></a><h4><b style="font-size:20px;text-decoration: none;">PUBLIKACJE KRAJOWE</b></h4>
 
   <h4><b>GŁÓWNY URZĄD STATYSTYCZNY</b> (koordynator monitorowania SDG w Polsce)</h4>
 
   <div class="image-wrapper">
-   <a target="_blank" href="https://raportsdg.stat.gov.pl/" alt="Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy. Raport 2021" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy (2021)"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2021_pl.png" align="center" alt="GUS" border="0"/></a>
+   <a target="_blank" href="https://raportsdg.stat.gov.pl/" alt="Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo. Raport 2022" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo (2022)"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2022_pl.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy. Raport 2021</b></p>
+  <p><b>Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo. Raport 2022</b></p>
   <p>Wydawane przez GUS od 2020 r. cyfrowe Raporty SDG podsumowują osiągnięcia Polski we wdrażaniu celów Agendy 2030. Publikacje są opracowywane corocznie, a ich tematyka dotyczy wybranych aspektów zrównoważonego rozwoju.</p>
-  <p>Najnowsza edycja cyfrowego Raportu SDG pt. „Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy” odpowiada na pytania o sytuację osób i regionów najbardziej narażonych na marginalizację i wykluczenie. Część analityczną Raportu dopełnia rozdział, który w graficzny sposób przedstawia postępy Polski w ramach wszystkich 17 Celów, w obszarach uznanych przez rząd za priorytetowe.</p>
+  <p>Najnowsza edycja cyfrowego Raportu SDG pt. „<b>Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo</b>” odpowiada m.in. na pytania: jaki jest stan i jakość środowiska naturalnego w Polsce oraz czy wzrostowi gospodarczemu towarzyszy efektywne wykorzystanie zasobów. Część analityczną Raportu dopełnia rozdział, który w graficzny sposób przedstawia postępy Polski w ramach wszystkich 17 Celów, w obszarach uznanych przez rząd za priorytetowe.</p>
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju (2021)" href="https://raportsdg.stat.gov.pl/2021/">Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy. Raport 2021</a></p>
   <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju (2020)" href="https://raportsdg.stat.gov.pl/2020/">Polska na drodze zrównoważonego rozwoju. Raport 2020</a></p>
 
   <hr>
@@ -260,7 +261,7 @@ Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane coroc
  <br><br><br></p>
 
 
-<a name="pub_zagraniczne" style="scroll-margin-top: 195px;"></a><h4><b style="font-size:20px;text-decoration: none;">PUBLIKACJE MIĘDZYNARODOWE</b></h4>
+<a id="pub_zagraniczne_pl" style="scroll-margin-top: 195px;"></a><h4><b style="font-size:20px;text-decoration: none;">PUBLIKACJE MIĘDZYNARODOWE</b></h4>
 
   <h4><b>ORGANIZACJA NARODÓW ZJEDNOCZONYCH (ONZ)</b></h4>
 

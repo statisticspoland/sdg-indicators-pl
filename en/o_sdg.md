@@ -175,32 +175,33 @@ permalink: /en/o_sdg/
 
   <div role="tabpanel" class="tab-pane" id="publ" style="scroll-margin-top: 500px;">
 
-  <div style="background-color: #ffffff;padding-left: 5px; padding-top: 0.1em;padding-bottom: 0.1em;border-top: 1px solid #bfbfbf;border-bottom: 1px solid #bfbfbf; position: sticky; top: 125px;margin-top: 0px;">
+  <div id="publ_cookies_en" style="background-color: #ffffff;padding-left: 5px; padding-top: 0.1em;padding-bottom: 0.1em;border-top: 1px solid #bfbfbf;border-bottom: 1px solid #bfbfbf; position: sticky; top: 125px;margin-top: 0px;">
   <table id="mytable" style="margin: 0px;">
     <tr id = "tr1">
       <td id="td1" style="width: 25% ;">
-        <a id="lab1" href="#pub_krajowe" onClick="changeLinkColor(this)">
+        <a id="lab1" href="#pub_krajowe_en" onClick="changeLinkColor(this)">
           <h4><b style="font-size:20px;text-decoration: none;display:inline;">NATIONAL PUBLICATIONS</b></h4>
         </a>
       </td>
       <td id="td2" style="width: 25% ;">
-        <a id="lab2" href="#pub_zagraniczne" onClick="changeLinkColor(this)">
+        <a id="lab2" href="#pub_zagraniczne_en" onClick="changeLinkColor(this)">
           <h4><b style="font-size:20px;text-decoration: none;display:inline;">INTERNATIONAL PUBLICATIONS</b></h4>
         </a>
       </td>
     </tr>
   </table>
   </div>
-  <a name="pub_krajowe" style="scroll-margin-top: 180px;"></a><h4><b style="font-size:20px;text-decoration: none;">NATIONAL PUBLICATIONS</b></h4>
+  <a id="pub_krajowe_en" style="scroll-margin-top: 180px;"></a><h4><b style="font-size:20px;text-decoration: none;">NATIONAL PUBLICATIONS</b></h4>
   <h4><b>STATISTICS POLAND</b> (coordinator of SDG monitoring in Poland)</h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://raportsdg.stat.gov.pl/en/index.html" alt="Poland on the way to SDGs. Inclusive economic growth. Report 2021" title="Read a publication Poland on the way to SDGs. Inclusive economic growth. Report 2021" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2021_pl.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://raportsdg.stat.gov.pl/en/index.html" alt="Poland on the way to SDGs. Environmentally sustainable development. Report 2022" title="Read a publication Poland on the way to SDGs. Environmentally sustainable development. Report 2022" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2022_en.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Poland on the way to SDGs. Inclusive economic growth. Report 2021</b></p>
+  <p><b>Poland on the way to SDGs. Environmentally sustainable development. Report 2022</b></p>
   <p>Since 2020, Statistics Poland has been publishing digital SDG Reports summing up Poland’s progress towards the 2030 Agenda’s goals. The publications are released on an annual basis, and their thematic scope covers selected aspects of sustainable development.</p>
-  <p>The latest edition of digital SDG Report “Poland on the way to SDGs. Inclusive economic growth” addresses the predicament of persons and regions at risk of marginalization and exclusion. The analytical part of the Report is complemented with a graphical chapter presenting Poland’s progress towards all 17 Goals, in areas defined by the government as priorities.</p>
+  <p>The latest edition of digital SDG Report “<b>Poland on the way to SDGs. Environmentally sustainable development. Report 2022</b>” answers the questions, among others, what is a state and quality of the natural environment in Poland and whether economic growth is accompanied by efficient use of resources. The analytical part of the Report is complemented with a graphical chapter presenting Poland’s progress towards all 17 Goals, in areas defined by the government as priorities. </p>
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read Poland on the way to SDGs. Report 2021" href="https://raportsdg.stat.gov.pl/2021/en/index.html">Poland on the way to SDGs. Inclusive economic growth. Report 2021</a></p>
   <p><a target="_blank" title="Read Poland on the way to SDGs. Report 2020" href="https://raportsdg.stat.gov.pl/2020/en/index.html">Poland on the way to SDGs. Report 2020</a></p>
 
   <hr>
@@ -265,7 +266,7 @@ Poland presented its achievements at HLPF for the first time.
   <hr style="border-top-width: 10px;">
 
 
-  <a name="pub_zagraniczne" style="scroll-margin-top: 197px;"></a><h4><b style="font-size:20px;text-decoration: none;">INTERNATIONAL PUBLICATIONS</b></h4>
+  <a id="pub_zagraniczne_en" style="scroll-margin-top: 197px;"></a><h4><b style="font-size:20px;text-decoration: none;">INTERNATIONAL PUBLICATIONS</b></h4>
   <h4><b>UNITED NATIONS (UN)</b></h4>
 
   <div class="image-wrapper">
