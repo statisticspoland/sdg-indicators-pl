@@ -46,8 +46,8 @@
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/chartist.css">
         <link rel="stylesheet" href="/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2022-11-15-09-39-27-+0100">
-        <link rel="stylesheet" href="/assets/css/custom.css?v=2022-11-15-09-39-27-+0100">
+        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2022-12-13-10-20-41-+0100">
+        <link rel="stylesheet" href="/assets/css/custom.css?v=2022-12-13-10-20-41-+0100">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/jquery-ui.css">
 
@@ -199,6 +199,9 @@
                 <li class="nav-item small">
                   <a class="nav-link" href="https://raportsdg.stat.gov.pl/ " style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Przejdź do raportu SDG w 2021">Raport SDG. Edycja 2021</a>
                 </li>
+                <li class="nav-item small">
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/2022/ " style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="">Raport SDG. Edycja 2022</a>
+                </li>
               
         </ul>
       </div> <!--zamykający do collapse navbar-collapse-->
@@ -251,6 +254,7 @@
                <div class="dropdown-content" style="margin-right: 15px;">
                 <a class="pod" href="https://raportsdg.stat.gov.pl/2020/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Przejdź do raportu SDG w 2020">Raport SDG. Edycja 2020</a>
                 <a class="pod" href="https://raportsdg.stat.gov.pl/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Przejdź do raportu SDG w 2021">Raport SDG. Edycja 2021</a>
+                <a class="pod" href="https://raportsdg.stat.gov.pl/2022/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="">Raport SDG. Edycja 2022</a>
               </div>
             
           </div>
@@ -396,11 +400,35 @@ $(".default").attr("src", '/assets/img/default.png');
 			setTimeout(function() {
 				self.element.className = "visible";
 			}, 500);
+      const el_pl = document.getElementById('publ_cookies_pl');
+      if (el_pl !== null) {
+        document.getElementById("publ_cookies_pl").style.top="200px";
+        document.getElementById("pub_krajowe_pl").style.scrollMarginTop="255px";
+        document.getElementById("pub_zagraniczne_pl").style.scrollMarginTop="270px";
+      }
+      const el_en = document.getElementById('publ_cookies_en');
+      if (el_en !== null) {
+        document.getElementById("publ_cookies_en").style.top="200px";
+        document.getElementById("pub_krajowe_en").style.scrollMarginTop="255px";
+        document.getElementById("pub_zagraniczne_en").style.scrollMarginTop="272px";
+      }
     },
 		_hide: function() {
       var self = this;
 			self.element.className = "";
 			self.element.style.display = "none";
+      const el_pl = document.getElementById('publ_cookies_pl');
+      if (el_pl !== null) {
+        document.getElementById("publ_cookies_pl").style.top="125px";
+        document.getElementById("pub_krajowe_pl").style.scrollMarginTop="180px";
+        document.getElementById("pub_zagraniczne_pl").style.scrollMarginTop="195px";
+      }
+      const el_en = document.getElementById('publ_cookies_en');
+      if (el_en !== null) {
+        document.getElementById("publ_cookies_en").style.top="125px";
+        document.getElementById("pub_krajowe_en").style.scrollMarginTop="180px";
+        document.getElementById("pub_zagraniczne_en").style.scrollMarginTop="197px";
+      }
     }
 	};
 
