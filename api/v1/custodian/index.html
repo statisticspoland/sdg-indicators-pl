@@ -46,8 +46,8 @@
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/chartist.css">
         <link rel="stylesheet" href="/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2022-12-13-10-20-41-+0100">
-        <link rel="stylesheet" href="/assets/css/custom.css?v=2022-12-13-10-20-41-+0100">
+        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2023-01-10-12-07-52-+0100">
+        <link rel="stylesheet" href="/assets/css/custom.css?v=2023-01-10-12-07-52-+0100">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/jquery-ui.css">
 
@@ -197,10 +197,10 @@
                   <a class="nav-link" href="https://raportsdg.stat.gov.pl/2020/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Przejdź do raportu SDG w 2020">Raport SDG. Edycja 2020</a>
                 </li>
                 <li class="nav-item small">
-                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/ " style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Przejdź do raportu SDG w 2021">Raport SDG. Edycja 2021</a>
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/2021/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Przejdź do raportu SDG w 2021">Raport SDG. Edycja 2021</a>
                 </li>
                 <li class="nav-item small">
-                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/2022/ " style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="">Raport SDG. Edycja 2022</a>
+                  <a class="nav-link" href="https://raportsdg.stat.gov.pl/" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="">Raport SDG. Edycja 2022</a>
                 </li>
               
         </ul>
@@ -253,8 +253,8 @@
             
                <div class="dropdown-content" style="margin-right: 15px;">
                 <a class="pod" href="https://raportsdg.stat.gov.pl/2020/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Przejdź do raportu SDG w 2020">Raport SDG. Edycja 2020</a>
-                <a class="pod" href="https://raportsdg.stat.gov.pl/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Przejdź do raportu SDG w 2021">Raport SDG. Edycja 2021</a>
-                <a class="pod" href="https://raportsdg.stat.gov.pl/2022/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="">Raport SDG. Edycja 2022</a>
+                <a class="pod" href="https://raportsdg.stat.gov.pl/2021/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Przejdź do raportu SDG w 2021">Raport SDG. Edycja 2021</a>
+                <a class="pod" href="https://raportsdg.stat.gov.pl/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="">Raport SDG. Edycja 2022</a>
               </div>
             
           </div>
@@ -516,7 +516,7 @@ localStorage.removeItem("nat-toolkit-accepted");
       if (jez=='pl'){
         element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
       }else{
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/2020/en/index.html' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/en/index.html' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
       }
       var headers = document.querySelector(".site-navbar");
       headers.after(element);
@@ -536,9 +536,9 @@ localStorage.removeItem("nat-toolkit-accepted");
 	document.addEventListener( "DOMContentLoaded", function() {
 	var jez='pl'
 	if (jez=='pl'){
-	  //var toolkit = new BusinessToolkit( "Najnowszy Raport SDG 2021 już dostępny! Zapraszamy!");
+	  var toolkit = new BusinessToolkit( "Raport SDG 2022 już dostępny!");
 	}else{
-	  //var toolkit = new BusinessToolkit( "New SDG 2021 Report is now available! Have a good read!");
+	  var toolkit = new BusinessToolkit( "Report SDG 2022 available!");
 	}
 	});
 })();
@@ -3193,7 +3193,9 @@ $.getJSON('https://sdg.gov.pl/api/v1/custodian/world-bank.json', function(data) 
 		</div>
 		<div style="display: flex;justify-content: center;">
 		
-		<a href="https://creativecommons.org/licenses/by/4.0/legalcode.pl" target="_blank" title="Otwórz stronę z Licencją międzynarodową Creative Commons 4.0 Uznanie autorstwa">Licencja międzynarodowa Creative Commons BY 4.0 - Uznanie autorstwa</a>
+		<p style="font-family: FiraSans;font-size: 12px;line-height: 1.42857143;text-align:center;">Dane są możliwe do wykorzystywania w oparciu o licencję międzynarodową Creative Commons by 4.0 – Uznanie autorstwa
+    <br />
+    <a href="https://creativecommons.org/licenses/by/4.0/legalcode.pl" style="color: #001d77;" target="_blank" title="Otwórz stronę z Licencją międzynarodową Creative Commons 4.0 Uznanie autorstwa">https://creativecommons.org/licenses/by/4.0/legalcode.pl</a></p>
 		
 		</div>
       </div>
