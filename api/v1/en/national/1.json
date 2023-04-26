@@ -6,549 +6,11 @@
           "metadata": [
             
             {
-                            "name": "1.1.a At-risk-of-relative poverty rate",
+                            "name": "1.1.a Number of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population",
                           
                             "goal": "Goal 1. No poverty",
                           
-                            "priority": "Increase in real income of households translated into decrease in at-risk-of-relative poverty rate",
-                          
-                            "definition": "Percentage of persons in households living below relative poverty threshold which is determined at 50% of the mean expenditure at the level of all households.",
-                          
-                            "unit": "percent [%]",
-                          
-                            "dimensions": "total, age",
-                          
-                            "methodology": "The indicator is calculated on the basis of information obtained from Household budget survey. The household budget survey is conducted using representative method based on random sample which allows generalisation, within a margin of an error, of the results for all households in the country. The monthly rotation of households implemented since 1993 assumes that every month of the year a different group of households participates in the survey.The survey covers one-person and multi-person households. Households of foreigners with permanent or long-lasting residence in Poland and using Polish language also take part in the survey. The purpose of the survey is to enable the analysis of the living standards of the population as well as evaluate the impact of various factors on the living standard and its diversity among basic groups of households. Household budget survey provides detailed information on:   • the level and the structure of expenditures, sources of acquiring goods and services;   • the consumption level of basic food products according to quantity, but also energetic value and nutrients  prices at which households purchase selected goods and services  the level and sources of their incomes;   • household equipment with durables;   •  dwelling conditions  subjective evaluation of the material condition of households;   •  demographic and social structure of the households i.e. the number, age, gender, education, disability and economic activity of the members of the surveyed household. A household is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). The relative poverty threshold is estimated annually by Statistics Poland on the basis of the Household budget survey. Expenditures cover expenditures on consumer goods and services as well as other expenditures:    • Expenditures on consumer goods and services are are allocated to satisfying household's needs. They include products purchased by cash, also using debt or credit card, on credit, received free of charge and natural consumption (consumer goods and services taken from individual farm or own economic activity to satisfy household's needs). Consumer goods comprise non-durable goods (e.g. food, beverages or medicines), semi-durable goods (e.g. clothes, books, toys) and durable goods (e.g. cars, washing machines, refrigerators, television sets).   • Other expenditures include: gifts donated to other households and non-commercial institutions  certain taxes, such as tax on legacy and donations, tax on real estates, fees for perpetual use of the land, prepayments of personal income tax and social security contributions paid directly by the tax payer  other kinds of expenditures not allocated directly to consumption, including sums lost in gambling and lotteries, losses of cash and bails.",
-                          
-                            "source": "Statistics Poland",
-                          
-                            "availability": "Annual data; since 2010",
-                          
-                            "notes": ""
-                          }
-          ],
-          "data": [
-            {
-                      
-                              "by age group": [
-                                  {"total": [
-                                          {
-                                          
-                                              "2010" : "17.4",
-                                          
-                                              "2011" : "16.9",
-                                          
-                                              "2012" : "16.3",
-                                          
-                                              "2013" : "16.2",
-                                          
-                                              "2014" : "16.2",
-                                          
-                                              "2015" : "15.5",
-                                          
-                                              "2016" : "13.9",
-                                          
-                                              "2017" : "13.4",
-                                          
-                                              "2018" : "14.2",
-                                          
-                                              "2019" : "13.0",
-                                          
-                                              "2020" : "11.8",
-                                          
-                                              "2021" : "12.0"
-                                          
-                                          }
-                                      ],"persons aged 0-17": [
-                                          {
-                                          
-                                              "2010" : "23.7",
-                                          
-                                              "2011" : "23.1",
-                                          
-                                              "2012" : "22.0",
-                                          
-                                              "2013" : "21.8",
-                                          
-                                              "2014" : "21.8",
-                                          
-                                              "2015" : "20.6",
-                                          
-                                              "2016" : "16.4",
-                                          
-                                              "2017" : "15.3",
-                                          
-                                              "2018" : "16.2",
-                                          
-                                              "2019" : "14.3",
-                                          
-                                              "2020" : "13.4",
-                                          
-                                              "2021" : "13.6"
-                                          
-                                          }
-                                      ],"persons aged 18-64": [
-                                          {
-                                          
-                                              "2010" : "16.3",
-                                          
-                                              "2011" : "15.9",
-                                          
-                                              "2012" : "15.5",
-                                          
-                                              "2013" : "16.5",
-                                          
-                                              "2014" : "15.5",
-                                          
-                                              "2015" : "14.8",
-                                          
-                                              "2016" : "13.9",
-                                          
-                                              "2017" : "13.3",
-                                          
-                                              "2018" : "14.1",
-                                          
-                                              "2019" : "12.8",
-                                          
-                                              "2020" : "11.7",
-                                          
-                                              "2021" : "12.0"
-                                          
-                                          }
-                                      ],"persons aged 65 and more": [
-                                          {
-                                          
-                                              "2010" : "12.0",
-                                          
-                                              "2011" : "11.2",
-                                          
-                                              "2012" : "10.7",
-                                          
-                                              "2013" : "9.9",
-                                          
-                                              "2014" : "10.6",
-                                          
-                                              "2015" : "10.6",
-                                          
-                                              "2016" : "10.3",
-                                          
-                                              "2017" : "11.0",
-                                          
-                                              "2018" : "11.5",
-                                          
-                                              "2019" : "11.8",
-                                          
-                                              "2020" : "10.0",
-                                          
-                                              "2021" : "9.9"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "urban/rural": [
-                                  {"urban area": [
-                                          {
-                                          
-                                              "2010" : "11.9",
-                                          
-                                              "2011" : "11.4",
-                                          
-                                              "2012" : "11.0",
-                                          
-                                              "2013" : "11.2",
-                                          
-                                              "2014" : "11.0",
-                                          
-                                              "2015" : "10.0",
-                                          
-                                              "2016" : "9.5",
-                                          
-                                              "2017" : "9.0",
-                                          
-                                              "2018" : "8.7",
-                                          
-                                              "2019" : "8.0",
-                                          
-                                              "2020" : "6.6",
-                                          
-                                              "2021" : "7.1"
-                                          
-                                          }
-                                      ],"rural area": [
-                                          {
-                                          
-                                              "2010" : "25.9",
-                                          
-                                              "2011" : "25.4",
-                                          
-                                              "2012" : "24.5",
-                                          
-                                              "2013" : "24.0",
-                                          
-                                              "2014" : "24.4",
-                                          
-                                              "2015" : "24.0",
-                                          
-                                              "2016" : "20.8",
-                                          
-                                              "2017" : "20.4",
-                                          
-                                              "2018" : "22.7",
-                                          
-                                              "2019" : "20.8",
-                                          
-                                              "2020" : "19.9",
-                                          
-                                              "2021" : "19.6"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "by socio-economic groups of households": [
-                                  {"employees": [
-                                          {
-                                          
-                                              "2010" : "16.6",
-                                          
-                                              "2011" : "15.6",
-                                          
-                                              "2012" : "15.3",
-                                          
-                                              "2013" : "14.9",
-                                          
-                                              "2014" : "15.2",
-                                          
-                                              "2015" : "14.4",
-                                          
-                                              "2016" : "12.5",
-                                          
-                                              "2017" : "11.9",
-                                          
-                                              "2018" : "12.9",
-                                          
-                                              "2019" : "12.0",
-                                          
-                                              "2020" : "10.7",
-                                          
-                                              "2021" : "11.2"
-                                          
-                                          }
-                                      ],"farmers": [
-                                          {
-                                          
-                                              "2010" : "26.5",
-                                          
-                                              "2011" : "29.3",
-                                          
-                                              "2012" : "26.4",
-                                          
-                                              "2013" : "26.7",
-                                          
-                                              "2014" : "28.0",
-                                          
-                                              "2015" : "28.9",
-                                          
-                                              "2016" : "26.5",
-                                          
-                                              "2017" : "25.8",
-                                          
-                                              "2018" : "27.7",
-                                          
-                                              "2019" : "25.9",
-                                          
-                                              "2020" : "28.7",
-                                          
-                                              "2021" : "26.3"
-                                          
-                                          }
-                                      ],"the self-employed": [
-                                          {
-                                          
-                                              "2010" : "9.8",
-                                          
-                                              "2011" : "10.0",
-                                          
-                                              "2012" : "7.9",
-                                          
-                                              "2013" : "9.2",
-                                          
-                                              "2014" : "8.9",
-                                          
-                                              "2015" : "8.9",
-                                          
-                                              "2016" : "8.3",
-                                          
-                                              "2017" : "8.5",
-                                          
-                                              "2018" : "8.9",
-                                          
-                                              "2019" : "7.6",
-                                          
-                                              "2020" : "7.9",
-                                          
-                                              "2021" : "9.1"
-                                          
-                                          }
-                                      ],"retirees": [
-                                          {
-                                          
-                                              "2010" : "13.2",
-                                          
-                                              "2011" : "12.5",
-                                          
-                                              "2012" : "11.9",
-                                          
-                                              "2013" : "11.4",
-                                          
-                                              "2014" : "12.1",
-                                          
-                                              "2015" : "11.4",
-                                          
-                                              "2016" : "10.9",
-                                          
-                                              "2017" : "11.9",
-                                          
-                                              "2018" : "12.0",
-                                          
-                                              "2019" : "11.3",
-                                          
-                                              "2020" : "9.6",
-                                          
-                                              "2021" : "9.5"
-                                          
-                                          }
-                                      ],"pensioners": [
-                                          {
-                                          
-                                              "2010" : "25.7",
-                                          
-                                              "2011" : "26.4",
-                                          
-                                              "2012" : "25.8",
-                                          
-                                              "2013" : "26.3",
-                                          
-                                              "2014" : "25.5",
-                                          
-                                              "2015" : "23.2",
-                                          
-                                              "2016" : "21.8",
-                                          
-                                              "2017" : "20.0",
-                                          
-                                              "2018" : "21.8",
-                                          
-                                              "2019" : "19.0",
-                                          
-                                              "2020" : "17.3",
-                                          
-                                              "2021" : "16.6"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "by education level of the head of the household": [
-                                  {"not higher than lower secondary": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "32.9",
-                                          
-                                              "2012" : "32.4",
-                                          
-                                              "2013" : "32.3",
-                                          
-                                              "2014" : "33.3",
-                                          
-                                              "2015" : "32.2",
-                                          
-                                              "2016" : "28.3",
-                                          
-                                              "2017" : "27.2",
-                                          
-                                              "2018" : "28.0",
-                                          
-                                              "2019" : "26.2",
-                                          
-                                              "2020" : "23.3",
-                                          
-                                              "2021" : "26.7"
-                                          
-                                          }
-                                      ],"basic vocational": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "23.6",
-                                          
-                                              "2012" : "22.7",
-                                          
-                                              "2013" : "23.0",
-                                          
-                                              "2014" : "23.0",
-                                          
-                                              "2015" : "22.4",
-                                          
-                                              "2016" : "20.1",
-                                          
-                                              "2017" : "20.0",
-                                          
-                                              "2018" : "20.8",
-                                          
-                                              "2019" : "18.9",
-                                          
-                                              "2020" : "17.8",
-                                          
-                                              "2021" : "18.0"
-                                          
-                                          }
-                                      ],"secondary": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "11.2",
-                                          
-                                              "2012" : "10.6",
-                                          
-                                              "2013" : "10.8",
-                                          
-                                              "2014" : "11.2",
-                                          
-                                              "2015" : "10.8",
-                                          
-                                              "2016" : "9.9",
-                                          
-                                              "2017" : "9.7",
-                                          
-                                              "2018" : "11.2",
-                                          
-                                              "2019" : "10.4",
-                                          
-                                              "2020" : "10.5",
-                                          
-                                              "2021" : "11.5"
-                                          
-                                          }
-                                      ],"tertiary": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "2.5",
-                                          
-                                              "2012" : "2.6",
-                                          
-                                              "2013" : "3.1",
-                                          
-                                              "2014" : "2.9",
-                                          
-                                              "2015" : "2.7",
-                                          
-                                              "2016" : "3.4",
-                                          
-                                              "2017" : "3.6",
-                                          
-                                              "2018" : "4.5",
-                                          
-                                              "2019" : "4.6",
-                                          
-                                              "2020" : "4.4",
-                                          
-                                              "2021" : "4.4"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "1-1-b": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "1.1.b Real gross disposable income of households per capita (2008=100)",
-                          
-                            "goal": "Goal 1. No poverty",
-                          
-                            "priority": "Increase in real income of households translated into decrease in at-risk-of-relative poverty rate",
-                          
-                            "definition": "The real gross disposable income of households per capita (index = 2008) is calculated as the unadjusted gross disposable income of households and Non-Profit Institutions Serving Households (NPISH) divided by the price deflator (price index) of household final consumption expenditure and by the total resident population. Then the indicator is indexed with base year 2008.",
-                          
-                            "unit": "index: 2008=100",
-                          
-                            "dimensions": "total",
-                          
-                            "methodology": "Households sector includes households, i.e., natural persons or groups of natural persons living together and jointly maintaining themselves (sharing income, expenditures and property) as well as collective households (e.g., residents of social welfare homes, care and education centres, convents, prisons). Non-profit institutions serving households sector (NPISH) includes: social organisations, political parties, trade unions, associations, foundations and units of religious organisations. Gross disposable income of households is obtained as a result of correcting their gross primary income (comprising among others: income obtained from conducted economic activity, wages, salaries and other income connected with hired work, property income) by current taxes (on income, wealth, etc.) and net social contributions, as well as - by social benefits (retirement and other pensions, allowances, etc.) and other current transfers.",
-                          
-                            "source": "Statistics Poland",
-                          
-                            "availability": "Annual data; since 2010",
-                          
-                            "notes": ""
-                          }
-          ],
-          "data": [
-            {"total": [
-                              {
-                              
-                                  "2010" :   "109.15",
-                              
-                                  "2011" :   "109.42",
-                              
-                                  "2012" :   "110.79",
-                              
-                                  "2013" :   "111.76",
-                              
-                                  "2014" :   "118.02",
-                              
-                                  "2015" :   "121.58",
-                              
-                                  "2016" :   "128.92",
-                              
-                                  "2017" :   "133.32",
-                              
-                                  "2018" :   "138.63",
-                              
-                                  "2019" :   "144.88",
-                              
-                                  "2020" :   "150.78",
-                              
-                                  "2021" :   "146.35"
-                              
-                              }
-                          ]
-                      
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "1-2-a": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "1.2.a Number of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population",
-                          
-                            "goal": "Goal 1. No poverty",
-                          
-                            "priority": "Increase in activation of socially excluded persons i.a. through development of social economy sector",
+                            "priority": "Enabling real and full social integration of persons with disabilities and psychological, social, functional and economic support for their families",
                           
                             "definition": "Number of social integration centres, vocational activity workshops and occupational therapy workshops calculated per 100 thous. population.",
                           
@@ -604,16 +66,16 @@
       ]
     },
     {
-      "1-2-b": [
+      "1-1-b": [
         {
           "metadata": [
             
             {
-                            "name": "1.2.b Number of participants of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population",
+                            "name": "1.1.b Number of participants of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population",
                           
                             "goal": "Goal 1. No poverty",
                           
-                            "priority": "Increase in activation of socially excluded persons i.a. through development of social economy sector",
+                            "priority": "Enabling real and full social integration of persons with disabilities and psychological, social, functional and economic support for their families",
                           
                             "definition": "Number of participants of the social integration centres, vocational activity workshops ans occupational therapy workshops calculated per 100 thous. population.",
                           
@@ -669,12 +131,12 @@
       ]
     },
     {
-      "1-3-a": [
+      "1-2-a": [
         {
           "metadata": [
             
             {
-                            "name": "1.3.a Percentage of children aged 1-2 covered by different kinds of institutional care",
+                            "name": "1.2.a Percentage of children aged 1-2 covered by different kinds of institutional care",
                           
                             "goal": "Goal 1. No poverty",
                           
@@ -693,6 +155,56 @@
                             "availability": "Annual data;  since 2011",
                           
                             "notes": "Data for 2022 do not include information on the number of nannies due to the ongoing works on closing the reporting period for this year."
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "urban/rural": [
+                                  {"total": [
+                                          {
+                                          }
+                                      ],"urban area": [
+                                          {
+                                          }
+                                      ],"rural area": [
+                                          {
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "1-3-a": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "1.3.a Number of dwellings per 1 thous. population",
+                          
+                            "goal": "Goal 1. No poverty",
+                          
+                            "priority": "Improvement of housing situation",
+                          
+                            "definition": "Number of dwellings per 1,000 population.",
+                          
+                            "unit": "[–]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "According to the definition, a dwelling is a premises comprising one or several rooms includingauxiliary spaces, built or remodeled for residential purposes; structurally separated (by permanentwalls) within a building, into which a separate access leads from a staircase, a passageway, acommon hall or directly from the street, a courtyard or a garden.  The indicator shows dwelling stocks of a selected territorial unit. Low indicator values indicate a shortage of dwellings, which could result in social problems, such as problems with the emancipation of young people. High indicator values indicate an oversupply of dwellings, the result of which maybe economic difficulties, such as the difficulty of maintaining unused resources. The value of theindicator is also affected by cultural and demographic factors, such as the average number ofchildren per family, the average age and cultural habits of the extended families living together. The data concerning the number of dwellings are derived from censuses and reports on dwellingstocks, on the costs and revenues of maintaining dwelling stocks, on rates of charges in buildingswith dwellings, as well as from reports on housing and communal economy of the community.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": "The number of population for the years 2003-2010 is based on the National Census of Population andHousing 2002, and since 2011, it has been based on the Population and Housing Census 2011."
                           }
           ],
           "data": [
@@ -787,131 +299,6 @@
                                               "2021" : "14.7",
                                           
                                               "2022" : "17.1"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "1-4-a": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "1.4.a Number of dwellings per 1 thous. population",
-                          
-                            "goal": "Goal 1. No poverty",
-                          
-                            "priority": "Improvement of housing situation",
-                          
-                            "definition": "Number of dwellings per 1,000 population.",
-                          
-                            "unit": "[–]",
-                          
-                            "dimensions": "total",
-                          
-                            "methodology": "According to the definition, a dwelling is a premises comprising one or several rooms includingauxiliary spaces, built or remodeled for residential purposes; structurally separated (by permanentwalls) within a building, into which a separate access leads from a staircase, a passageway, acommon hall or directly from the street, a courtyard or a garden.  The indicator shows dwelling stocks of a selected territorial unit. Low indicator values indicate a shortage of dwellings, which could result in social problems, such as problems with the emancipation of young people. High indicator values indicate an oversupply of dwellings, the result of which maybe economic difficulties, such as the difficulty of maintaining unused resources. The value of theindicator is also affected by cultural and demographic factors, such as the average number ofchildren per family, the average age and cultural habits of the extended families living together. The data concerning the number of dwellings are derived from censuses and reports on dwellingstocks, on the costs and revenues of maintaining dwelling stocks, on rates of charges in buildingswith dwellings, as well as from reports on housing and communal economy of the community.",
-                          
-                            "source": "Statistics Poland",
-                          
-                            "availability": "Annual data; since 2010",
-                          
-                            "notes": "The number of population for the years 2003-2010 is based on the National Census of Population andHousing 2002, and since 2011, it has been based on the Population and Housing Census 2011."
-                          }
-          ],
-          "data": [
-            {
-                      
-                              "urban/rural": [
-                                  {"total": [
-                                          {
-                                          
-                                              "2010" : "349.6",
-                                          
-                                              "2011" : "352.6",
-                                          
-                                              "2012" : "356.1",
-                                          
-                                              "2013" : "359.9",
-                                          
-                                              "2014" : "363.4",
-                                          
-                                              "2015" : "367.3",
-                                          
-                                              "2016" : "371.3",
-                                          
-                                              "2017" : "375.7",
-                                          
-                                              "2018" : "380.5",
-                                          
-                                              "2019" : "385.9",
-                                          
-                                              "2020" : "398.8",
-                                          
-                                              "2021" : "405.2"
-                                          
-                                          }
-                                      ],"urban area": [
-                                          {
-                                          
-                                              "2010" : "388.1",
-                                          
-                                              "2011" : "391.9",
-                                          
-                                              "2012" : "396.5",
-                                          
-                                              "2013" : "401.4",
-                                          
-                                              "2014" : "405.9",
-                                          
-                                              "2015" : "410.8",
-                                          
-                                              "2016" : "415.9",
-                                          
-                                              "2017" : "421.5",
-                                          
-                                              "2018" : "427.7",
-                                          
-                                              "2019" : "434.5",
-                                          
-                                              "2020" : "452.1",
-                                          
-                                              "2021" : "460.3"
-                                          
-                                          }
-                                      ],"rural area": [
-                                          {
-                                          
-                                              "2010" : "290.0",
-                                          
-                                              "2011" : "291.8",
-                                          
-                                              "2012" : "294.1",
-                                          
-                                              "2013" : "296.4",
-                                          
-                                              "2014" : "298.7",
-                                          
-                                              "2015" : "301.5",
-                                          
-                                              "2016" : "304.0",
-                                          
-                                              "2017" : "306.7",
-                                          
-                                              "2018" : "309.6",
-                                          
-                                              "2019" : "313.0",
-                                          
-                                              "2020" : "319.6",
-                                          
-                                              "2021" : "323.7"
                                           
                                           }
                                       ]

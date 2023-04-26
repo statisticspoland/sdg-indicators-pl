@@ -10,7 +10,7 @@
                           
                             "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
                           
-                            "priorytet": "Poprawa środowiska prawno-instytucjonalnego sprzyjającego podejmowaniu ryzykownej działalności innowacyjnej",
+                            "priorytet": "Wzrost innowacyjności, poprawa środowiska prawno-instytucjonalnego stymulującego podejmowanie działalności innowacyjnej",
                           
                             "definicja": "Miernik syntetyczny publikowany przez Uniwersytet Cornella we współpracy z agendą ONZ World Intellectual Property Organization (WIPO). Dostarcza szczegółowych danych na temat innowacyjności gospodarek na całym świecie.",
                           
@@ -73,265 +73,7 @@
           "metadane": [
             
             {
-                            "nazwa": "9.2.a Nakłady krajowe brutto na działalność B+R w relacji do PKB",
-                          
-                            "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
-                          
-                            "priorytet": "Rozwój przemysłów i usług wiedzochłonnych",
-                          
-                            "definicja": "Suma nakładów wewnętrznych na działalność B+R prowadzoną na terytorium danego kraju w relacji do Produktu Krajowego Brutto.",
-                          
-                            "jednostka": "procent [%]",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "Działalność badawcza i rozwojowa (B+R) to systematyczna praca twórcza prowadzona w celu zwiększenia zasobów wiedzy (np. o człowieku, kulturze i społeczeństwie) oraz znalezienia nowych zastosowań dla tej wiedzy. Działalność badawcza i rozwojowa obejmuje: badania naukowe (badania podstawowe - prace teoretyczne i eksperymentalne nie ukierunkowane w zasadzie na uzyskanie konkretnych zastosowań praktycznych, badania stosowane - prace badawcze podejmowane w celu zdobycia nowej wiedzy mającej konkretne zastosowania praktyczne, badania przemysłowe - prace badawcze podejmowane w celu zdobycia nowej wiedzy w celu opracowania nowych lub istotnie ulepszonych wyrobów, procesów i usług) oraz prace rozwojowe (polegające na zastosowaniu istniejącej już wiedzy do opracowania nowych lub istotnego ulepszenia istniejących wyrobów, procesów czy usług). Działalność B+R odróżnia od innych rodzajów działalności dostrzegalny element nowości i eliminacja niepewności naukowej i/lub technicznej. Badanie działalności B+R prowadzone jest w oparciu o międzynarodową metodologię (Podręcznik Frascati). Nakłady wewnętrzne na działalność B+R to nakłady poniesione w roku sprawozdawczym na prace B+R wykonane w jednostce sprawozdawczej, niezależnie od źródła pochodzenia środków, czyli łącznie ze środkami uzyskanymi z zagranicy (eksport prac B+R). Obejmują zarówno nakłady bieżące, jak i nakłady inwestycyjne na środki trwałe związane z działalnością B+R, lecz nie obejmują amortyzacji środków trwałych. Nakłady bieżące na działalność B+R to nakłady osobowe; koszty zużycia materiałów, przedmiotów nietrwałych i energii; koszty usług obcych (innych niż B+R) obejmujące: obróbkę obcą, usługi transportowe, remontowe, bankowe, pocztowe, telekomunikacyjne, informatyczne, wydawnicze, komunalne itp.; koszty podróży służbowych oraz pozostałe koszty bieżące obejmujące w szczególności podatki i opłaty obciążające koszty działalności i zyski, ubezpieczenia majątkowe i ekwiwalenty na rzecz pracowników - w części, w której dotyczą działalności B+R. Nakłady bieżące ogółem nie obejmują amortyzacji środów trwałych i podatku VAT. Nakłady inwestycyjne na działalność B+R obejmują nakłady na nowe środki trwałe związane z działalnością B+R; zakup (przejęcie) używanych środków trwałych oraz na pierwsze wyposażenie inwestycji (nie zaliczane do środków trwałych, a nabyte ze środków inwestycyjnych). Produkt Krajowy Brutto (PKB) obrazuje końcowy rezultat działalności wszystkich podmiotów gospodarki narodowej. Jest obliczany na podstawie obowiązującej w Unii Europejskiej metodologii ESA.",
-                          
-                            "zrodlo": "Główny Urząd Statystyczny",
-                          
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
-                          
-                            "uwagi": ""
-                          }
-          ],
-          "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "0.72",
-                              
-                                  "2011" :   "0.75",
-                              
-                                  "2012" :   "0.88",
-                              
-                                  "2013" :   "0.88",
-                              
-                                  "2014" :   "0.94",
-                              
-                                  "2015" :   "1.00",
-                              
-                                  "2016" :   "0.96",
-                              
-                                  "2017" :   "1.03",
-                              
-                                  "2018" :   "1.21",
-                              
-                                  "2019" :   "1.32",
-                              
-                                  "2020" :   "1.39",
-                              
-                                  "2021" :   "1.44"
-                              
-                              }
-                          ]
-                        
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "9-2-b": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "9.2.b Nakłady sektora przedsiębiorstw na działalność B+R w relacji do PKB",
-                          
-                            "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
-                          
-                            "priorytet": "Rozwój przemysłów i usług wiedzochłonnych",
-                          
-                            "definicja": "Suma nakładów wewnętrznych poniesionych na działalność badawczą i rozwojową w sektorze przedsiębiorstw (BERD)  w relacji do Produktu Krajowego Brutto.",
-                          
-                            "jednostka": "procent [%]",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "Działalność badawcza i rozwojowa (B+R) to systematyczna praca twórcza prowadzona w celu zwiększenia zasobów wiedzy (np. o człowieku, kulturze i społeczeństwie) oraz znalezienia nowych zastosowań dla tej wiedzy. Obejmuje badania naukowe (podstawowe, stosowane, przemysłowe) oraz prace rozwojowe. Nakłady wewnętrzne na działalność B+R to nakłady poniesione w roku sprawozdawczym na prace B+R wykonane w jednostce sprawozdawczej, niezależnie od źródła pochodzenia środków, czyli łącznie ze środkami uzyskanymi z zagranicy (eksport prac B+R). Obejmują zarówno nakłady bieżące, jak i nakłady inwestycyjne na środki trwałe związane z działalnością B+R, lecz nie obejmują amortyzacji środków trwałych. Sektor przedsiębiorstw (BES) to jeden z 4 sektorów wykonawczych wg Podręcznika Frascati, który obejmuje: wszystkie firmy, organizacje i instytucje, których głównym przedmiotem działalności jest wytwarzanie towarów i usług (z wyjątkiem szkolnictwa wyższego) w celu ich sprzedaży na rynku po cenach mających znaczenie ekonomiczne oraz jednostki kooperujące z sektorem przedsiębiorstw (wywodzące się z sektora rządowego oraz sektora prywatnych instytucji niekomercyjnych), które wykazały wysoki odsetek środków na prace B+R pozyskanych w wyniku współpracy z przedsiębiorstwami. Produkt Krajowy Brutto (PKB) obrazuje końcowy rezultat działalności wszystkich podmiotów gospodarki narodowej. Jest obliczany na podstawie obowiązującej w Unii Europejskiej metodologii ESA.",
-                          
-                            "zrodlo": "Główny Urząd Statystyczny",
-                          
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
-                          
-                            "uwagi": ""
-                          }
-          ],
-          "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "0.19",
-                              
-                                  "2011" :   "0.23",
-                              
-                                  "2012" :   "0.33",
-                              
-                                  "2013" :   "0.38",
-                              
-                                  "2014" :   "0.44",
-                              
-                                  "2015" :   "0.47",
-                              
-                                  "2016" :   "0.63",
-                              
-                                  "2017" :   "0.67",
-                              
-                                  "2018" :   "0.80",
-                              
-                                  "2019" :   "0.83",
-                              
-                                  "2020" :   "0.87",
-                              
-                                  "2021" :   "0.91"
-                              
-                              }
-                          ]
-                        
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "9-2-c": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "9.2.c Udział przychodów netto ze sprzedaży produktów nowych lub ulepszonych w przychodach netto ze sprzedaży ogółem w przedsiębiorstwach przemysłowych",
-                          
-                            "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
-                          
-                            "priorytet": "Rozwój przemysłów i usług wiedzochłonnych",
-                          
-                            "definicja": "Udział wartości przychodów netto ze sprzedaży produktów innowacyjnych w ogólnej wartości przychodów netto ze sprzedaży produktów przedsiębiorstw przemysłowych, w których liczba pracujących wynosi 10 osób i więcej. Wskaźnik stanowi informację o wpływie innowacji produktowych na ogólną strukturę sprzedaży i poziom innowacyjności przedsiębiorstw.",
-                          
-                            "jednostka": "procent [%]",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "Dane dotyczą przedsiębiorstw przemysłowych, tj. tych, których przeważająca działalność została zaliczona do jednej z 4 sekcji klasyfikacji PKD 2007: B - Górnictwo i wydobywanie, C -  Przetwórstwo przemysłowe, D - Wytwarzanie i zaopatrywanie w energię elektryczną, gaz, parę wodną, gorącą wodę i powietrze do ukłów klimatyzacyjnych i E - Dostawa wody; gospodarowanie ściekami i odpadami oraz działalność związana z rekultywacją. Przychody netto ze sprzedaży produktów obejmują kwoty należne - bez podatku od towarów i usług - z tytułu sprzedaży produktów (wyrobów i usług), towarów i materiałów. Nowy produkt to wyrób lub usługa, który różni się znacząco swoimi cechami lub przeznaczeniem od produktów dotychczas wytwarzanych przez przedsiębiorstwo. Działalność innowacyjna polega na angażowaniu się przedsiębiorstw w różnego rodzaju działania naukowe, techniczne, organizacyjne, finansowe i komercyjne, które prowadzą lub mają w zamierzeniu prowadzić do wdrażania innowacji. Niektóre z tych działań mają charakter innowacyjny, natomiast inne nie są nowością, lecz są konieczne do wdrażania innowacji. Działalność innowacyjna obejmuje także działalność badawczo-rozwojową (B+R), która nie jest bezpośrednio związana z tworzeniem konkretnej innowacji. Innowacja produktowa jest to wprowadzenie na rynek wyrobu lub usługi, które są nowe lub istotnie ulepszone w zakresie swoich cech lub zastosowań. Zalicza się tu znaczące udoskonalenia pod względem specyfikacji technicznych, komponentów i materiałów, wbudowanego oprogramowania, łatwości obsługi i innych cech funkcjonalnych. Innowacja produktowa może być wynikiem zastosowania nowej wiedzy lub technologii bądź nowych zastosowań lub kombinacji istniejącej wiedzy i technologii. Innowacje produktowe w zakresie usług polegają na wprowadzeniu znaczących udoskonaleń w sposobie świadczenia usług, na dodaniu nowych funkcji lub cech do istniejących usług lub na wprowadzeniu całkowicie nowych usług. Produkty, aby zostały zaliczone do innowacji, nie muszą być nowością dla rynku, na którym operuje przedsiębiorstwo, ale muszą być nowością przynajmniej dla samego przedsiębiorstwa. Badanie innowacyjności jest prowadzone w oparciu o międzynarodową metodologię (Podręcznik Oslo). Przykładowe innowacje produktowe to: margaryna redukująca poziom cholesterolu , systemy lokalizacji GPS, karta zbliżeniowa, wbudowana możliwość korzystania z sieci bezprzewodowej w laptopach",
-                          
-                            "zrodlo": "Główny Urząd Statystyczny",
-                          
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
-                          
-                            "uwagi": "Dane pochodzą z badania działalności innowacyjnej przedsiębiorstw. Obejmuje ono przedsiębiorstwa przemysłowe z sekcji B, C, D, E PKD 2007, w których pracuje 10 i więcej osób. Badanie prowadzone jest na pełnej populacji przedsiębiorstw o liczbie pracujących 50 i więcej osób oraz na próbie pozostałych przedsiębiorstw wynoszącej 25% populacji (z wyjątkiem 2010 r., gdy badanie zostało przeprowadzone na pełnej zbiorowości)."
-                          }
-          ],
-          "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "11.3",
-                              
-                                  "2011" :   "8.9",
-                              
-                                  "2012" :   "9.2",
-                              
-                                  "2013" :   "8.7",
-                              
-                                  "2014" :   "8.8",
-                              
-                                  "2015" :   "9.5",
-                              
-                                  "2016" :   "8.1",
-                              
-                                  "2017" :   "7.1",
-                              
-                                  "2018" :   "9.1",
-                              
-                                  "2019" :   "9.3",
-                              
-                                  "2020" :   "10.0",
-                              
-                                  "2021" :   "8.9"
-                              
-                              }
-                          ]
-                        
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "9-2-d": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "9.2.d Udział eksportu wyrobów wysokiej techniki w eksporcie ogółem",
-                          
-                            "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
-                          
-                            "priorytet": "Rozwój przemysłów i usług wiedzochłonnych",
-                          
-                            "definicja": "Udział wartości przychodów netto ze sprzedaży produktów innowacyjnych w ogólnej wartości przychodów netto ze sprzedaży produktów przedsiębiorstw przemysłowych, w których liczba pracujących wynosi 10 osób i więcej.",
-                          
-                            "jednostka": "procent [%]",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "W badaniach stopnia zaawansowania techniki stosowane są na ogół dwie metody: według dziedzin oraz według wyrobów. Metoda według wyrobów stanowi rozwinięcie i uzupełnienie metody dziedzinowej. Opisuje dział wysokiej techniki i jest używana głównie w analizach handlu zagranicznego. Klasyfikacja wyrobó;w utworzona została na podstawie analiz dotyczących zawartości komponentu B+R (zawartości technologii). Jako mierniki zawartości/intensywności komponentu B+R zastosowano następujące wskaźniki: relacja nakładów bezpośrednich na działalność B+R do wartości dodanej, relacja nakładów bezpośrednich na działalność B+R do wartości produkcji (sprzedaży), relacja nakładów bezpośrednich na działalność B+R powiększonych o nakłady pośrednie wcielone w dobrach inwestycyjnych i półwyrobach do wartości produkcji (sprzedaży). Aktualna lista wyrobów wysokiej techniki obejmuje 9 grup wyrobów, których produkcja wymaga wysokich nakładów na działalność B+R: sprzęt lotniczy, komputery - maszyny biurowe, elektronikę - telekomunikację, środki farmaceutyczne, aparaturę naukowo-badawczą, maszyny elektryczne, maszyny nieelektryczne, chemikalia oraz uzbrojenie. Eksport to wywóz za granicę dóbr, które zostały wytworzone w danym kraju. Handel zagraniczny wysokiej techniki jest jedną z metod oszacowania, w jakim stopniu prace badawczo-rozwojowe i rozwiązania wytworzone w danym kraju przekształcane są w dobra wysokiej techniki, które mogą być sprzedane na rynku globalnym. W związku ze zmianą Międzynarodowej Standardowej Klasyfikacji Handlu (klasyfikacji SITC) dane do 2006 r. publikowane są wg SITC Rev.3, a od 2007 r. dane publikowane są zgodnie z SITC Rev. 4. Różnice pomiędzy klasyfikacjami są znaczące szczególnie dla dwóch grup produktów: Komputery - maszyny biurowe i Elektronika - telekomunikacja, a te grupy produktów odpowiadają za 2/3 handlu wysokiej techniki. Dane dla okresu przed i po 2006 r. o wielkości handlu zagranicznego wysokiej techniki nie są porównywalne. Od 2007 r. do wyrobów wysokiej techniki na podstawie listy OECD SITC Rev. 4 (zatwierdzonej przez Eurostat w kwietniu 2009 r.) zaliczono 9 następujących kategorii wyrobów: 1. Sprzęt lotniczy (m.in. śmigłowce, samoloty i pozostałe statki powietrzne statki kosmiczne i pojazdy nośne statków kosmicznych, śmigła i wirniki oraz ich części, silniki i siłowniki, kompasy i busole morskie); 2. Komputery - maszyny biurowe (m.in. maszyny do automatycznego przetwarzania danych i urządzenia do nich, maszyny, które wykonują dwie lub więcej funkcji drukowania, kopiowania lub transmisji telefaksowej); 3. Elektronika - telekomunikacja (m.in. aparatura wideo do zapisu i odtwarzania obrazu i dźwięku, aparatura uruchamiana monetami, banknotami, kartami bankowymi, żetonami lub innymi środkami płatniczymi, obwody drukowane, kable z włókien światłowodowych, lampy mikrofalowe, diody, tranzystory i podobne urządzenia półprzewodnikowe; nośniki optyczne); 4. Środki farmaceutyczne (m.in. antybiotyki, hormony, prostaglandyny, tromboksany i leukotrieny, naturalne lub syntetyczne; ich pochodne i analogi strukturalne); 5. Aparatura naukowo-badawcza (m.in. aparatura elektrodiagnostyczna do zastosowań medycznych, chirurgicznych, stomatologicznych lub weterynaryjnych i aparatura radiologiczna, wiertarki dentystyczne, przyrządy i aparatura, pomiarowa, kontrolna i analityczna, aparaty fotograficzne, kamery kinematograficzne, soczewki kontaktowe, włókna optyczne i wiązki włókien optycznych, urządzenia ortopedyczne); 6. Maszyny elektryczne (m.in. elektryczna aparatura do sygnalizacji dźwiękowej lub wizualnej, kondensatory elektryczne, stałe, nastawne lub strojeniowe); 7. Maszyny nieelektryczne (m.in. turbiny gazowe, reaktory jądrowe i części do nich; maszyny i aparatura do rozdzielania izotopów, obrabiarki do obróbki dowolnych materiałów przez usuwanie nadmiaru materiału za pomocą lasera lub innej wiązki świetlnej lub fotonowej, tokarki, wiertarki, frezarki, maszyny i aparatura, do oporowego zgrzewania metali); 8. Chemikalia (m.in. selen, tellur, fosfor, arsen i bor, krzem, materiały promieniotwórcze i pokrewne, środki barwiące organiczne syntetyczne i laki barwnikowe, środki owadobójcze, gryzoniobójcze, grzybobójcze, chwastobójcze, opóźniające kiełkowanie, regulatory wzrostu roślin, środki odkażające i podobne produkty); 9. Uzbrojenie (broń i amunicja). Do 2006 r. do wyrobów wysokiej techniki wg SITC Rev. 3 zaliczono 9 następujących grup wyrobów: sprzęt lotniczy (m.in. statki powietrzne i związane z nimi urządzenia; statki kosmiczne i pojazdy nośne dla statków kosmicznych; silniki nieelektryczne, kompasy oraz przyrządy i pomoce nawigacyjne); komputery - maszyny biurowe (m.in. maszyny do pisania i maszyny do redagowania tekstów automatyczne, fotokopiarki, komputery, czytniki magnetyczne lub optyczne); elektronika - telekomunikacja (m.in. urządzenia do zapisu i odtwarzania obrazu i dźwięku, kable światłowodowe, układy scalone elektroniczne); środki farmaceutyczne (m.in. antybiotyki, hormony naturalne lub syntetyczne); aparatura naukowo-badawcza (m.in. aparatura elektrodiagnostyczna i narzędzia do zastosowań medycznych, chirurgicznych, stomatologicznych lub weterynaryjnych oraz aparatura radiologiczna, przyrządy i aparatura pomiarowa, kontrolna i analityczna, aparaty fotograficzne i kamery filmowe); maszyny elektryczne (m.in. kondensatory urządzenia do sygnalizacji dźwiękowej lub wzrokowej); maszyny nieelektryczne (m.in. turbiny gazowe, reaktory jądrowe i ich części, obrabiarki, tokarki do metalu, wiertarki); chemikalia (m.in. materiały promieniotwórcze, barwniki organiczne syntetyczne i laki barwnikowe, środki owadobójcze, gryzoniobójcze, grzybobójcze i chwastobójcze) oraz uzbrojenie (broń i amunicja).",
-                          
-                            "zrodlo": "Główny Urząd Statystyczny",
-                          
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
-                          
-                            "uwagi": ""
-                          }
-          ],
-          "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "6.0",
-                              
-                                  "2011" :   "5.1",
-                              
-                                  "2012" :   "6.0",
-                              
-                                  "2013" :   "6.7",
-                              
-                                  "2014" :   "7.9",
-                              
-                                  "2015" :   "8.5",
-                              
-                                  "2016" :   "8.5",
-                              
-                                  "2017" :   "8.4",
-                              
-                                  "2018" :   "8.3",
-                              
-                                  "2019" :   "8.6",
-                              
-                                  "2020" :   "9.0"
-                              
-                              }
-                          ]
-                        
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "9-3-a": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "9.3.a Odsetek gospodarstw domowych korzystających z dostępu do Internetu o przepustowości przynajmniej 100 Mb/s",
+                            "nazwa": "9.2.a Odsetek gospodarstw domowych korzystających z dostępu do Internetu o przepustowości przynajmniej 100 Mb/s",
                           
                             "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
                           
@@ -391,12 +133,12 @@
       ]
     },
     {
-      "9-4-a": [
+      "9-3-a": [
         {
           "metadane": [
             
             {
-                            "nazwa": "9.4.a Udział przychodów ze sprzedaży na eksport w przychodach netto MŚP ze sprzedaży produktów, towarów i materiałów",
+                            "nazwa": "9.3.a Udział przychodów ze sprzedaży na eksport w przychodach netto MŚP ze sprzedaży produktów, towarów i materiałów",
                           
                             "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
                           
@@ -461,23 +203,23 @@
           "metadane": [
             
             {
-                            "nazwa": "9.5.a Wskaźnik Międzygałęziowej dostępności transportowej (WMDT)",
+                            "nazwa": "",
                           
-                            "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
+                            "cel": "",
                           
-                            "priorytet": "Rozwój infrastruktury transportowej",
+                            "priorytet": "",
                           
-                            "definicja": "Wskaźnik stanowi syntetyczną miarę jakościową wzajemnej potencjalnej dostępności czasowej najważniejszych krajowych ośrodków osadniczych oraz węzłów transportowych (wewnętrznych i granicznych) uwzględniającą wszystkie podstawowe rodzaje transportu (w proporcji do ich udziału w pracy przewozowej) oraz ważoną poziomem rozwoju społeczno-gospodarczego.",
+                            "definicja": "",
                           
-                            "jednostka": "[–]",
+                            "jednostka": "",
                           
-                            "wymiary": "ogółem",
+                            "wymiary": "",
                           
-                            "metodologia": "Wskaźnik WMDT jest miarą dostępności potencjałowej w układzie multimodalnym przy uwzględnieniu znaczenia/atrakcyjności jednostek przestrzennych, a także czasów podróży między jednostkami różnymi gałęziami transportu (tj. transportem drogowym, transportem kolejowym, lotniczymi i wodnym-śródlądowym). Istnieją dwie wersje wskaźnika - pierwsza (WMDT I) - wykorzystywana w badaniach w 2008 i 2010 r., druga (WMDT II) - funkcjonująca od 2013 r. w pełni dostosowana do potrzeb stałego monitoringu zjawiska w ujęciu dynamicznym (pełne możliwości badania zmian dostępności od momentu akcesji Polski do Unii Europejskiej). Stworzenie wskaźnika WMDT II było związane z potrzebami ewaluacji inwestycji transportowych finansowanych w latach 2014-2020, a także umożliwienia pełnego monitoringu postępów realizacji dokumentów strategicznych. Od 2013 r. wskaźnik WMDT jest wyliczany według zweryfikowanej metodologii (wskaźnik WMDT II). W obu przypadkach (WMDT I i WMDT II) wskaźnik bazuje na tzw. modelu potencjału, co w języku polskim zostało określone jako tzw. dostępność potencjałowa (potential accessibility).",
+                            "metodologia": "",
                           
-                            "zrodlo": "Polska Akademia Nauk / Ministerstwo Funduszy i Polityki Regionalnej",
+                            "zrodlo": "",
                           
-                            "czestotliwosc": "Dane nieregularne; w zależności od przeprowadzonego badania",
+                            "czestotliwosc": "",
                           
                             "uwagi": ""
                           }
@@ -485,29 +227,6 @@
           "dane": [
             {"ogółem": [
                               {
-                              
-                                  "2010" :   "30.8",
-                              
-                                  "2011" :   "",
-                              
-                                  "2012" :   "",
-                              
-                                  "2013" :   "33.4",
-                              
-                                  "2014" :   "34.5",
-                              
-                                  "2015" :   "35.2",
-                              
-                                  "2016" :   "35.9",
-                              
-                                  "2017" :   "36.6",
-                              
-                                  "2018" :   "37.5",
-                              
-                                  "2019" :   "38.8",
-                              
-                                  "2020" :   "38.7"
-                              
                               }
                           ]
                         
@@ -524,23 +243,23 @@
           "metadane": [
             
             {
-                            "nazwa": "9.5.b Gęstość dróg ekspresowych i autostrad na 1000 km2",
+                            "nazwa": "",
                           
-                            "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
+                            "cel": "",
                           
-                            "priorytet": "Rozwój infrastruktury transportowej",
+                            "priorytet": "",
                           
-                            "definicja": "Długość dróg ekspresowych i autostrad wyrażona w kilometrach na 1000 km2 powierzchni.",
+                            "definicja": "",
                           
-                            "jednostka": "km",
+                            "jednostka": "",
                           
-                            "wymiary": "ogółem",
+                            "wymiary": "",
                           
-                            "metodologia": "Podstawę do wyliczania wskaźnika stanowi łączna długość dróg ekspresowych i autostrad według stanu w dniu 31 XII. Zgodnie z przepisami ustawy z dnia 21 marca 1985 r. o drogach publicznych (tekst jednolity Dz. U. 2015 poz. 460):a) droga ekspresowa jest to droga przeznaczona wyłącznie do ruchu pojazdów samochodowych: - wyposażona w jedną lub dwie jezdnie, - posiadająca wielopoziomowe skrzyżowania z przecinającymi ją innymi drogami transportu lądowego i wodnego, z dopuszczeniem wyjątkowo jednopoziomowych skrzyżowań z drogami publicznymi, - wyposażona w urządzenia obsługi podróżnych, pojazdów i przesyłek, przeznaczone wyłącznie dla użytkowników drogi.b) autostrada jest to droga przeznaczona wyłącznie do ruchu pojazdów samochodowych: - wyposażona przynajmniej w dwie trwale rozdzielone jednokierunkowe jezdnie, - posiadająca wielopoziomowe skrzyżowania ze wszystkimi przecinającymi ją drogami transportu lądowego i wodnego, - wyposażona w urządzenia obsługi podróżnych, pojazdów i przesyłek, przeznaczone wyłącznie dla użytkowników autostrady.",
+                            "metodologia": "",
                           
-                            "zrodlo": "Główny Urząd Statystyczny",
+                            "zrodlo": "",
                           
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
+                            "czestotliwosc": "",
                           
                             "uwagi": ""
                           }
@@ -548,31 +267,6 @@
           "dane": [
             {"ogółem": [
                               {
-                              
-                                  "2010" :   "4.9",
-                              
-                                  "2011" :   "5.8",
-                              
-                                  "2012" :   "7.7",
-                              
-                                  "2013" :   "8.7",
-                              
-                                  "2014" :   "9.6",
-                              
-                                  "2015" :   "9.8",
-                              
-                                  "2016" :   "10.1",
-                              
-                                  "2017" :   "10.9",
-                              
-                                  "2018" :   "11.9",
-                              
-                                  "2019" :   "13.1",
-                              
-                                  "2020" :   "13.6",
-                              
-                                  "2021" :   "14.6"
-                              
                               }
                           ]
                         

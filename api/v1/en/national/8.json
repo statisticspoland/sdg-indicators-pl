@@ -51,7 +51,9 @@
                               
                                   "2019" :   "8.6",
                               
-                                  "2020" :   "9.0"
+                                  "2020" :   "9.0",
+                              
+                                  "2021" :   "8.8"
                               
                               }
                           ]
@@ -938,307 +940,7 @@
           "metadata": [
             
             {
-                            "name": "8.5.a Employment rate of women with the youngest child up to 5 years old (LFS)",
-                          
-                            "goal": "Goal 8. Decent work and economic growth",
-                          
-                            "priority": "Increase in flexibility related to organization and provision of work",
-                          
-                            "definition": "Share of employed women with the youngest child up to 5 years old in the total number of women with the youngest child up to 5 years old.",
-                          
-                            "unit": "percent [%]",
-                          
-                            "dimensions": "total",
-                          
-                            "methodology": "Data come from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using the continuous observation method (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89, who are members of households in dwellings selected on a random basis. The scope of the survey does not include household members staying (the total actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as: employee hotels, student dormitories, boarding houses, social care centres etc.) and the homeless. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the three maincategories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population. Among the employed are included all persons aged 15-89 who during the reference week: 1. performed for at least one hour any work generating pay or income, i.e. were employed in a company/public institution or by a private employer, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in conducting family agricultural farm or family economic activity outside agriculture, 2. had work but did not perform it: • due to illness or holiday leave, leave related to parenthood (maternity, childcare, paternity or parental leave), organisation of working time (work system or overtime collection), training related to the performed work; • due to the seasonal character of the work, if they still regularly performed off-season their work or business conducting related tasks and responsibilities (excluding legal or administrative obligations); • for other reasons, if the anticipated break in employment did not exceed 3 months. In accordance with international standards, among employees are also included apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). The employed do not include: volunteers and interns who do not receive remuneration, people working in private engaged in the production of agricultural products solely or mainly for their own needs.",
-                          
-                            "source": "Statistics Poland",
-                          
-                            "availability": "Annual data; since 2010",
-                          
-                            "notes": "Due to the implementation of methodological changes in the study, the LFS data from 2021 cannot be compared with the previous years (except for the data converted for the years 2010-2020)."
-                          }
-          ],
-          "data": [
-            {
-                      
-                              "urban/rural": [
-                                  {"total": [
-                                          {
-                                          
-                                              "2010" : "66.0",
-                                          
-                                              "2011" : "65.3",
-                                          
-                                              "2012" : "66.0",
-                                          
-                                              "2013" : "65.5",
-                                          
-                                              "2014" : "67.2",
-                                          
-                                              "2015" : "65.8",
-                                          
-                                              "2016" : "65.4",
-                                          
-                                              "2017" : "64.6",
-                                          
-                                              "2018" : "64.6",
-                                          
-                                              "2019" : "64.9",
-                                          
-                                              "2020" : "64.9",
-                                          
-                                              "2021" : "69.2"
-                                          
-                                          }
-                                      ],"urban area": [
-                                          {
-                                          
-                                              "2010" : "77.0",
-                                          
-                                              "2011" : "70.5",
-                                          
-                                              "2012" : "70.9",
-                                          
-                                              "2013" : "70.5",
-                                          
-                                              "2014" : "72.3",
-                                          
-                                              "2015" : "71.6",
-                                          
-                                              "2016" : "70.7",
-                                          
-                                              "2017" : "69.6",
-                                          
-                                              "2018" : "70.0",
-                                          
-                                              "2019" : "70.5",
-                                          
-                                              "2020" : "71.9",
-                                          
-                                              "2021" : "75.7"
-                                          
-                                          }
-                                      ],"rural area": [
-                                          {
-                                          
-                                              "2010" : "58.9",
-                                          
-                                              "2011" : "58.0",
-                                          
-                                              "2012" : "59.0",
-                                          
-                                              "2013" : "58.6",
-                                          
-                                              "2014" : "60.1",
-                                          
-                                              "2015" : "57.3",
-                                          
-                                              "2016" : "57.8",
-                                          
-                                              "2017" : "57.6",
-                                          
-                                              "2018" : "57.0",
-                                          
-                                              "2019" : "57.0",
-                                          
-                                              "2020" : "54.9",
-                                          
-                                              "2021" : "60.6"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "8-6-a": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "8.6.a Percentage of employees receiving monthly gross earnings of up to 50% of the average monthly gross earnings in the national economy",
-                          
-                            "goal": "Goal 8. Decent work and economic growth",
-                          
-                            "priority": "Suitable creation of labour market to provide decent work for everyone",
-                          
-                            "definition": "Share of employees receiving monthly gross earnings of up to 50% of the average monthly gross earnings in the national economy in the total number of employees in the national economy.",
-                          
-                            "unit": "percent [%]",
-                          
-                            "dimensions": "total, women, age groups, persons with disabilities",
-                          
-                            "methodology": "Wages and salaries (total) are cash payments paid to employees or other natural persons, constituting expenditures incurred by the employers to for the payment of the performed work, regardless of the sources of funds (self-financing or refund) and regardless of the basis for employment contracts or other legal relationship or activity on the basis of which the work or service is performed. Earnings in the national economy cover all entities of the national economy, including units employing up to 9 persons. Data on average earnings in the national economy concern full-time and part-time employees recalculated in terms of full-time employees. Monthly gross earnings do not include payments such as: anniversary prizes, gratifications, retirement severance payments, one–time payments (compensatory), paid due to proposition and acceptance of inventive project causing a change in labour standards, equivalents for unused leave. The source of the presented data is the survey on the structure of earnings by occupations for 2016 (the questionnaire survey of Z-12 symbol). The survey is carried out with biennial frequency. It is a sample survey and it covers entities of national economy with the number of the employed exceeding 9 persons.",
-                          
-                            "source": "Statistics Poland",
-                          
-                            "availability": "Data every 2 years; since 2010",
-                          
-                            "notes": ""
-                          }
-          ],
-          "data": [
-            {
-                      
-                              "by sex": [
-                                  {"total": [
-                                          {
-                                          
-                                              "2010" : "17.9",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "18.9",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "19.0",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "17.5",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "16.2",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "13.4"
-                                          
-                                          }
-                                      ],"females": [
-                                          {
-                                          
-                                              "2010" : "19.0",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "20.4",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "20.1",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "17.7",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "16.1",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "12.6"
-                                          
-                                          }
-                                      ],"males": [
-                                          {
-                                          
-                                              "2010" : "16.7",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "17.4",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "17.9",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "17.2",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "16.3",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "14.1"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "urban/rural": [
-                                  {"urban area": [
-                                          {
-                                          
-                                              "2010" : "16.5",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "17.4",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "17.5",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "16.0",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "14.6",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "11.9"
-                                          
-                                          }
-                                      ],"rural area": [
-                                          {
-                                          
-                                              "2010" : "24.4",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "26.3",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "26.3",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "24.1",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "23.3",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "19.5"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "8-7-a": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "8.7.a Activity rate (LFS)",
+                            "name": "8.5.a Activity rate (LFS)",
                           
                             "goal": "Goal 8. Decent work and economic growth",
                           
@@ -1538,12 +1240,12 @@
       ]
     },
     {
-      "8-7-b": [
+      "8-5-b": [
         {
           "metadata": [
             
             {
-                            "name": "8.7.b Long-term unemployment as a percentage of the total unempolyment (LFS)",
+                            "name": "8.5.b Long-term unemployment as a percentage of the total unempolyment (LFS)",
                           
                             "goal": "Goal 8. Decent work and economic growth",
                           
@@ -1723,12 +1425,12 @@
       ]
     },
     {
-      "8-7-c": [
+      "8-5-c": [
         {
           "metadata": [
             
             {
-                            "name": "8.7.c Percentage of young people neither in employment nor in education and training (NEET)",
+                            "name": "8.5.c Percentage of young people neither in employment nor in education and training (NEET)",
                           
                             "goal": "Goal 8. Decent work and economic growth",
                           
@@ -1848,137 +1550,12 @@
       ]
     },
     {
-      "8-8-a": [
+      "8-6-a": [
         {
           "metadata": [
             
             {
-                            "name": "8.8.a Share of employed persons in the non-agricultural sector in the rural area in the total number of employed persons in the rural area",
-                          
-                            "goal": "Goal 8. Decent work and economic growth",
-                          
-                            "priority": "Improvement in transfer of unused labour force from agriculture to other sectors",
-                          
-                            "definition": "The indicator covers all persons employed in the rural area outside the agricultural sector in relation to the total number of persons employed in the rural area.",
-                          
-                            "unit": "percent [%]",
-                          
-                            "dimensions": "total",
-                          
-                            "methodology": "Data come from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using the continuous observation method (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89, who are members of households in dwellings selected on a random basis. The scope of the survey does not include household members staying (the total actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as: employee hotels, student dormitories, boarding houses, social care centres etc.) and the homeless. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the three main categories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population.  Among the employed are included all persons aged 15-89 who during the reference week:  performed for at least one hour any work generating pay or income, i.e. were employed in a company/public institution or by a private employer, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in conducting family agricultural farm or family economic activity outside agriculture,   had work but did not perform it:   due to illness or holiday leave, leave related to parenthood (maternity, childcare, paternity or parental leave), organisation of working time (work system or overtime collection), training related to the performed work,   due to the seasonal character of the work, if they still regularly performed off-season their work or business conducting related tasks and responsibilities (excluding legal or administrative obligations),   for other reasons, if the anticipated break in employment did not exceed 3 months.  According to international standards, among employees are also included persons performing outwork and apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). The employed do not include: volunteers and interns who do not receive remuneration, people working in private engaged in the production of agricultural products solely or mainly for their own needs. Data relating to economic sectors have been prepared on the basis of the Polish Classification of Activities (PKD 2007). The non-agricultural sector includes sections B-U: 'Mining and quarrying', 'Manufacturing', 'Electricity, gas, steam and air conditioning supply', 'Water supply; sewerage, waste management and remediation activities', 'Construction', 'Wholesale and retail trade; repair of motor vehicles and motorcycles', 'Transportation and storage', 'Accommodation and food service activities',' Information and communication', 'Financial and insurance activities', 'Real estate activities', 'Professional, scientific and technical activities',' Administrative and support service activities', 'Public administration and defence; compulsory social security','Education', 'Human health and social work activities',' Arts, entertainment and recreation', 'Other service activities',' Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use',' Activities of extraterritorial organisations and bodies'.",
-                          
-                            "source": "Statistics Poland",
-                          
-                            "availability": "Annual data; since 2021",
-                          
-                            "notes": "Due to the implementation of methodological changes in the survey, LFS data from 2021 onward cannot be compared with previous years. Due to the lack of comparability with previous years, data are presented from 2021."
-                          }
-          ],
-          "data": [
-            {
-                      
-                              "by sex": [
-                                  {"total": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "",
-                                          
-                                              "2021" : "80.6"
-                                          
-                                          }
-                                      ],"males": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "",
-                                          
-                                              "2021" : "79.2"
-                                          
-                                          }
-                                      ],"females": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "",
-                                          
-                                              "2021" : "82.4"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "8-9-a": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "8.9.a Net international migration for permanent residence",
+                            "name": "8.6.a Net international migration for permanent residence",
                           
                             "goal": "Goal 8. Decent work and economic growth",
                           

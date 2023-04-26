@@ -7,158 +7,57 @@
       "metadane": [
         
         {
-                        "nazwa": "3.4.b Odsetek kobiet w wieku 15 lat i więcej, którym kiedykolwiek wykonano badanie cytologiczne",
+                        "nazwa": "3.4.b Odsetek podmiotów leczniczych posiadających rozwiązania informatyczne umożliwiające prowadzenie dokumentacji medycznej w postaci elektronicznej",
                       
                         "cel": "Cel 3. Dobre zdrowie i jakość życia",
                       
-                        "priorytet": "Zwiększenie wykrywalności chorób we wczesnych stadiach rozwojowych",
+                        "priorytet": "Poprawa poziomu jakości systemu opieki zdrowotnej i bezpieczeństwa pacjenta, w tym rozwój obszaru e-zdrowie",
                       
-                        "definicja": "Odsetek kobiet w wieku 15 lat i więcej, którym kiedykolwiek wykonano badanie cytologiczne.",
+                        "definicja": "Udział liczby podmiotów leczniczych posiadających rozwiązania informatyczne, umożliwiające prowadzenie dokumentacji medycznej w postaci elektronicznej (w roku przeprowadzenia badania ankietowego) w liczbie ankietowanych podmiotów leczniczych.",
                       
                         "jednostka": "procent [%]",
                       
                         "wymiary": "ogółem",
                       
-                        "metodologia": "Dane pochodzą z Europejskiego Ankietowego Badania Zdrowia (European Health Interview Survey - EHIS), powtarzanego co 5 lat. Wyniki badania umożliwiają poznanie sytuacji zdrowotnej mieszkańców Unii oraz jej uwarunkowań w powiązaniu z charakterystyką demograficzno-społeczną oraz miejscem zamieszkania. Badanie obejmuje cztery obszary:  stan zdrowia (m.in. samoocena stanu zdrowia, choroby przewlekłe, ograniczenia w funkcjonowaniu i ich wpływ na życie codzienne, samopoczucie psychiczne), opieka zdrowotna (korzystanie z opieki medycznej, stosowanie leków, profilaktyka), determinanty zdrowia (głównie styl życia i narażenie na niekorzystne czynniki środowiskowe) oraz charakterystyka demograficzno-społeczna osób i gospodarstw domowych. ",
+                        "metodologia": "Dane pozyskiwane są na podstawie badań ankietowych podmiotów leczniczych. Do podmiotów leczniczych zalicza się: szpitale, jednostki oferujące stacjonarne i całodobowe świadczenia zdrowotne inne niż szpitale, podmioty oferujące ambulatoryjne świadczenia zdrowotne, ośrodki POZ. Elektroniczna dokumentacja medyczna (zgodnie z ustawą z dnia 28 kwietnia 2011 r. o systemie informacji w ochronie zdrowia) (Dz. U. z 2019 r., poz. 408, z późn. zm.) są to dokumenty wytworzone w postaci elektronicznej opatrzone kwalifikowanym podpisem elektronicznym, podpisem zaufanym, podpisem osobistym albo z wykorzystaniem sposobu potwierdzania pochodzenia oraz integralności danych dostępnego w systemie teleinformatycznym udostępnionym bezpłatnie przez Zakład Ubezpieczeń Społecznych:  recepty, określone w przepisach wydanych na podstawie art. 13a, skierowania określone w przepisach wydanych na podstawie art. 59aa ust. 2 ustawy z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych (Dz. U. z 2018 r. poz. 1510, z późn. zm.).  Od 1 stycznia 2019 r. został wprowadzony obowiązek prowadzenia dokumentacji medycznej w postaci elektronicznej, o czym mowa w przepisach wydanych na podstawie art. 13a ustawy o systemie informacji w ochronie zdrowia. Obowiązek ten obejmuje następujące rodzaje dokumentacji medycznej: 1. informacja o rozpoznaniu choroby, problemu zdrowotnego lub urazu, wynikach przeprowadzonych badań, przyczynie odmowy przyjęcia do szpitala, udzielonych świadczeniach zdrowotnych oraz ewentualnych zaleceniach - w przypadku odmowy przyjęcia do szpitala, 2. informacja dla lekarza kierującego świadczeniobiorcę do poradni specjalistycznej lub leczenia szpitalnego o rozpoznaniu, 3. karta informacyjna z leczenia szpitalnego.",
                       
-                        "zrodlo": "Główny Urząd Statystyczny",
+                        "zrodlo": "Centrum e-Zdrowia (CeZ)",
                       
-                        "czestotliwosc": "Dane co 5 lat; od 2010 r.",
+                        "czestotliwosc": "Dane co 2 lata; od 2014 r.",
                       
-                        "uwagi": "Dane zaprezentowane dla 2010 r. dotyczą badania przeprowadzonego w 2009 r."
+                        "uwagi": "W 2018 r. CSIOZ wykorzystał do badania 4184 wypełnione, pozytywnie zweryfikowane ankiety. W 2016 r. – 4101 ankiet. W 2014 r. – 3939 ankiet."
                       }
       ],
       "dane": [
-        {
-                      "wg grup wieku": [
-                          {
-                              "ogółem": [
-                                  {
-                                  
-                                      "2010" :   "79.3",
-                                  
-                                      "2011" :   "",
-                                  
-                                      "2012" :   "",
-                                  
-                                      "2013" :   "",
-                                  
-                                      "2014" :   "85.4",
-                                  
-                                      "2015" :   "",
-                                  
-                                      "2016" :   "",
-                                  
-                                      "2017" :   "",
-                                  
-                                      "2018" :   "",
-                                  
-                                      "2019" :   "86.7"
-                                  
-                                  }
-                              ],
-                              "w wieku 15-29 lat": [
-                                  {
-                                  
-                                      "2010" :   "53.4",
-                                  
-                                      "2011" :   "",
-                                  
-                                      "2012" :   "",
-                                  
-                                      "2013" :   "",
-                                  
-                                      "2014" :   "58.3",
-                                  
-                                      "2015" :   "",
-                                  
-                                      "2016" :   "",
-                                  
-                                      "2017" :   "",
-                                  
-                                      "2018" :   "",
-                                  
-                                      "2019" :   "56.9"
-                                  
-                                  }
-                              ],
-                              "w wieku 30-49 lat": [
-                                  {
-                                  
-                                      "2010" :   "92.3",
-                                  
-                                      "2011" :   "",
-                                  
-                                      "2012" :   "",
-                                  
-                                      "2013" :   "",
-                                  
-                                      "2014" :   "95.1",
-                                  
-                                      "2015" :   "",
-                                  
-                                      "2016" :   "",
-                                  
-                                      "2017" :   "",
-                                  
-                                      "2018" :   "",
-                                  
-                                      "2019" :   "95.5"
-                                  
-                                  }
-                              ],
-                              "w wieku 50-69 lat": [
-                                  {
-                                  
-                                      "2010" :   "88.5",
-                                  
-                                      "2011" :   "",
-                                  
-                                      "2012" :   "",
-                                  
-                                      "2013" :   "",
-                                  
-                                      "2014" :   "94.6",
-                                  
-                                      "2015" :   "",
-                                  
-                                      "2016" :   "",
-                                  
-                                      "2017" :   "",
-                                  
-                                      "2018" :   "",
-                                  
-                                      "2019" :   "94.7"
-                                  
-                                  }
-                              ],
-                              "w wieku 70 lat i więcej": [
-                                  {
-                                  
-                                      "2010" :   "72.0",
-                                  
-                                      "2011" :   "",
-                                  
-                                      "2012" :   "",
-                                  
-                                      "2013" :   "",
-                                  
-                                      "2014" :   "79.5",
-                                  
-                                      "2015" :   "",
-                                  
-                                      "2016" :   "",
-                                  
-                                      "2017" :   "",
-                                  
-                                      "2018" :   "",
-                                  
-                                      "2019" :   "86.0"
-                                  
-                                  }
-                              ]
-                          }
-                      ]}
+        {"ogółem": [
+                        {
+                        
+                            "2010" :   "",
+                        
+                            "2011" :   "",
+                        
+                            "2012" :   "",
+                        
+                            "2013" :   "",
+                        
+                            "2014" :   "23.26",
+                        
+                            "2015" :   "",
+                        
+                            "2016" :   "35.34",
+                        
+                            "2017" :   "",
+                        
+                            "2018" :   "56.60",
+                        
+                            "2019" :   "",
+                        
+                            "2020" :   "",
+                        
+                            "2021" :   "68.36"
+                        
+                        }
+                    ]}
       ]
     }
   ]

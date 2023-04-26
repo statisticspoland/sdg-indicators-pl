@@ -7,25 +7,25 @@
       "metadata": [
         
         {
-                        "name": "8.6.a Percentage of employees receiving monthly gross earnings of up to 50% of the average monthly gross earnings in the national economy",
+                        "name": "8.6.a Net international migration for permanent residence",
                       
                         "goal": "Goal 8. Decent work and economic growth",
                       
-                        "priority": "Suitable creation of labour market to provide decent work for everyone",
+                        "priority": "Development of responsible migration policy",
                       
-                        "definition": "Share of employees receiving monthly gross earnings of up to 50% of the average monthly gross earnings in the national economy in the total number of employees in the national economy.",
+                        "definition": "Net international migration for permanent residence, i.e. the difference between registrations (inflow) for permanent residence in Poland and deregistrations (outflow) from permanent residence in Poland.",
                       
-                        "unit": "percent [%]",
+                        "unit": "persons",
                       
-                        "dimensions": "total, women, age groups, persons with disabilities",
+                        "dimensions": "total",
                       
-                        "methodology": "Wages and salaries (total) are cash payments paid to employees or other natural persons, constituting expenditures incurred by the employers to for the payment of the performed work, regardless of the sources of funds (self-financing or refund) and regardless of the basis for employment contracts or other legal relationship or activity on the basis of which the work or service is performed. Earnings in the national economy cover all entities of the national economy, including units employing up to 9 persons. Data on average earnings in the national economy concern full-time and part-time employees recalculated in terms of full-time employees. Monthly gross earnings do not include payments such as: anniversary prizes, gratifications, retirement severance payments, one–time payments (compensatory), paid due to proposition and acceptance of inventive project causing a change in labour standards, equivalents for unused leave. The source of the presented data is the survey on the structure of earnings by occupations for 2016 (the questionnaire survey of Z-12 symbol). The survey is carried out with biennial frequency. It is a sample survey and it covers entities of national economy with the number of the employed exceeding 9 persons.",
+                        "methodology": "Net migration - as recognized in the period in a given area as a difference between the two values. Migration - moves of the people in order to change the place of residence. The migration is divided as follows: - internal migration - changes in the place of residence within the country; - international migration - moves of the people related to the change of country of residence. Data on international migration for permanent residence were compiled on the basis of gmina gmina documentation regarding the registration of people arriving in Poland for permanent residence (immigration for permanent residence) as well as deregistration of inhabitants of Poland leaving the country for permanent residence abroad (emigration for permanent residence). Data on internal and international migration for permanent residence based on gminas records are taken directly from the Common Electronic System of Population Register - PESEL. Data on population were compiled on the basis of:  - the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010),  - the Common Electronic System of Population Register - PESEL),  - documentation of Civil Status Offices regarding registered marriages, births and deaths.",
                       
                         "source": "Statistics Poland",
                       
-                        "availability": "Data every 2 years; since 2010",
+                        "availability": "Annual data; since 2010",
                       
-                        "notes": ""
+                        "notes": "Due to inaedequate data quality on international migration for permanent residence, they are not published."
                       }
       ],
       "data": [
@@ -35,136 +35,85 @@
                         "total": [
                                 {
                                 
-                                    "2010" :   "17.9",
+                                    "2010" :   "-2114",
                                 
-                                    "2011" :   "",
+                                    "2011" :   "-4334",
                                 
-                                    "2012" :   "18.9",
+                                    "2012" :   "-6617",
                                 
-                                    "2013" :   "",
+                                    "2013" :   "-19904",
                                 
-                                    "2014" :   "19.0",
-                                
-                                    "2015" :   "",
-                                
-                                    "2016" :   "17.5",
-                                
-                                    "2017" :   "",
-                                
-                                    "2018" :   "16.2",
-                                
-                                    "2019" :   "",
-                                
-                                    "2020" :   "13.4"
-                                
-                                }
-                            ],"females": [
-                                {
-                                
-                                    "2010" :   "19.0",
-                                
-                                    "2011" :   "",
-                                
-                                    "2012" :   "20.4",
-                                
-                                    "2013" :   "",
-                                
-                                    "2014" :   "20.1",
+                                    "2014" :   "-15750",
                                 
                                     "2015" :   "",
                                 
-                                    "2016" :   "17.7",
+                                    "2016" :   "1505",
                                 
-                                    "2017" :   "",
+                                    "2017" :   "1436",
                                 
-                                    "2018" :   "16.1",
+                                    "2018" :   "3612",
                                 
-                                    "2019" :   "",
+                                    "2019" :   "6183",
                                 
-                                    "2020" :   "12.6"
+                                    "2020" :   "4483",
+                                
+                                    "2021" :   "3404"
                                 
                                 }
                             ],"males": [
                                 {
                                 
-                                    "2010" :   "16.7",
+                                    "2010" :   "-3150",
                                 
-                                    "2011" :   "",
+                                    "2011" :   "-4043",
                                 
-                                    "2012" :   "17.4",
+                                    "2012" :   "-4772",
                                 
-                                    "2013" :   "",
+                                    "2013" :   "-11884",
                                 
-                                    "2014" :   "17.9",
+                                    "2014" :   "-8724",
                                 
                                     "2015" :   "",
                                 
-                                    "2016" :   "17.2",
+                                    "2016" :   "401",
                                 
-                                    "2017" :   "",
+                                    "2017" :   "166",
                                 
-                                    "2018" :   "16.3",
+                                    "2018" :   "1074",
                                 
-                                    "2019" :   "",
+                                    "2019" :   "2279",
                                 
-                                    "2020" :   "14.1"
+                                    "2020" :   "1850",
+                                
+                                    "2021" :   "1043"
                                 
                                 }
-                            ]
-                        }
-                    ],
-                    "urban/rural": [
-                        {
-                        "urban area": [
+                            ],"females": [
                                 {
                                 
-                                    "2010" :   "16.5",
+                                    "2010" :   "1036",
                                 
-                                    "2011" :   "",
+                                    "2011" :   "-291",
                                 
-                                    "2012" :   "17.4",
+                                    "2012" :   "-1845",
                                 
-                                    "2013" :   "",
+                                    "2013" :   "-8020",
                                 
-                                    "2014" :   "17.5",
+                                    "2014" :   "-7026",
                                 
                                     "2015" :   "",
                                 
-                                    "2016" :   "16.0",
+                                    "2016" :   "1104",
                                 
-                                    "2017" :   "",
+                                    "2017" :   "1270",
                                 
-                                    "2018" :   "14.6",
+                                    "2018" :   "2538",
                                 
-                                    "2019" :   "",
+                                    "2019" :   "3904",
                                 
-                                    "2020" :   "11.9"
+                                    "2020" :   "2633",
                                 
-                                }
-                            ],"rural area": [
-                                {
-                                
-                                    "2010" :   "24.4",
-                                
-                                    "2011" :   "",
-                                
-                                    "2012" :   "26.3",
-                                
-                                    "2013" :   "",
-                                
-                                    "2014" :   "26.3",
-                                
-                                    "2015" :   "",
-                                
-                                    "2016" :   "24.1",
-                                
-                                    "2017" :   "",
-                                
-                                    "2018" :   "23.3",
-                                
-                                    "2019" :   "",
-                                
-                                    "2020" :   "19.5"
+                                    "2021" :   "2361"
                                 
                                 }
                             ]

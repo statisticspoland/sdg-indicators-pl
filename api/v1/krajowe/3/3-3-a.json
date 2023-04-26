@@ -7,57 +7,158 @@
       "metadane": [
         
         {
-                        "nazwa": "3.3.a Odsetek osób w wieku 16 lat i więcej, które zgłosiły, że ich potrzeby w zakresie usług opieki zdrowotnej nie zostały zaspokojone",
+                        "nazwa": "3.3.a Odsetek kobiet w wieku 15 lat i więcej, którym kiedykolwiek wykonano badanie mammograficzne",
                       
                         "cel": "Cel 3. Dobre zdrowie i jakość życia",
                       
-                        "priorytet": "Zwiększenie świadomości zdrowotnej",
+                        "priorytet": "Zwiększenie wykrywalności chorób we wczesnych stadiach rozwojowych oraz zwiększenie dostępu do nowoczesnych terapii",
                       
-                        "definicja": "Odsetek osób w wieku 16 lat i więcej, które zgłosiły, że ich potrzeby w zakresie usług opieki zdrowotnej nie zostały zaspokojone.",
+                        "definicja": "Odsetek kobiet w wieku 15 lat i więcej, którym kiedykolwiek wykonano badanie mammograficzne.",
                       
-                        "jednostka": "procent",
+                        "jednostka": "procent [%]",
                       
                         "wymiary": "ogółem",
                       
-                        "metodologia": "Wskaźnik prezentuje odsetek ludności w wieku 16 lat i więcej, zgłaszającej niezaspokojone potrzeby opieki medycznej z jednego z następujących powodów: Powody finansowe, Lista oczekujących i Zbyt duża odległość (wszystkie trzy kategorie są kumulowane). Zgłoszone niezaspokojone potrzeby dotyczą samooceny, czy osoba potrzebowała badania lekarskiego lub leczenia (z wyłączeniem opieki stomatologicznej), ale jej nie uzyskała lub nie poszukiwała. Wskaźnik obliczany jest na podstawie informacji uzyskanych z Badania EU-SILC. Badanie EU-SILC (Europejskie Badanie Dochodów i Warunków Życia) jest badaniem stałym (prowadzonym co roku), którego podmiotem są gospodarstwa domowe oraz osoby w wieku 16 lat i więcej w gospodarstwach domowych. Badanie ma charakter panelowy, tzn. wylosowaną grupę respondentów poddaje się kilkukrotnej 'obserwacji' w odstępach czasu, dzięki czemu można zaobserwować i przeanalizować zmieniającą się sytuację, postawy, zachowania lub opinie badanej grupy. Badanie jest realizowane metodą wywiadu bezpośredniego z wykorzystaniem 2 kwestionariuszy, z których jeden służy do pozyskiwania danych dotyczących gospodarstw domowych, a drugi - danych o osobach indywidualnych. Celem badania EU-SILC jest pozyskiwanie informacji, które umożliwiają ocenę warunków życia polskiego społeczeństwa oraz pozwalają porównać je z warunkami życia w innych krajach Unii Europejskiej. Służy temu przyjęta przez Eurostat jednolita metodologia. W miarę potrzeb organów Unii Europejskiej w ramach badania EU-SILC prowadzone są również badania modułowe poświęcone wybranemu zagadnieniu (jest to dodatkowa ankieta realizowana jednocześnie z badaniem podstawowym). Główny Urząd Statystyczny wdrożył badanie EU-SILC w 2005 r.",
+                        "metodologia": "Dane pochodzą z Europejskiego Ankietowego Badania Zdrowia (European Health Interview Survey - EHIS), powtarzanego co 5 lat. Wyniki badania umożliwiają poznanie sytuacji zdrowotnej mieszkańców Unii oraz jej uwarunkowań w powiązaniu z charakterystyką demograficzno-społeczną oraz miejscem zamieszkania. Badanie obejmuje cztery obszary:  stan zdrowia (m.in. samoocena stanu zdrowia, choroby przewlekłe, ograniczenia w funkcjonowaniu i ich wpływ na życie codzienne, samopoczucie psychiczne), opieka zdrowotna (korzystanie z opieki medycznej, stosowanie leków, profilaktyka), determinanty zdrowia (głównie styl życia i narażenie na niekorzystne czynniki środowiskowe) oraz charakterystyka demograficzno-społeczna osób i gospodarstw domowych. ",
                       
                         "zrodlo": "Główny Urząd Statystyczny",
                       
-                        "czestotliwosc": "Dane roczne; od 2010 r.",
+                        "czestotliwosc": "Dane co 5 lat; od 2010 r.",
                       
-                        "uwagi": "W 2021 r. dane wstępne."
+                        "uwagi": "Dane zaprezentowane dla 2010 r. dotyczą badania przeprowadzonego w 2009 r."
                       }
       ],
       "dane": [
-        {"ogółem": [
-                        {
-                        
-                            "2010" :   "8.3",
-                        
-                            "2011" :   "7.9",
-                        
-                            "2012" :   "9.0",
-                        
-                            "2013" :   "8.8",
-                        
-                            "2014" :   "7.8",
-                        
-                            "2015" :   "7.3",
-                        
-                            "2016" :   "6.6",
-                        
-                            "2017" :   "3.3",
-                        
-                            "2018" :   "4.2",
-                        
-                            "2019" :   "4.2",
-                        
-                            "2020" :   "1.9",
-                        
-                            "2021" :   "2.7"
-                        
-                        }
-                    ]}
+        {
+                      "wg grup wieku": [
+                          {
+                              "ogółem": [
+                                  {
+                                  
+                                      "2010" :   "40.7",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "47.2",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   "49.1"
+                                  
+                                  }
+                              ],
+                              "w wieku 15-29 lat": [
+                                  {
+                                  
+                                      "2010" :   "5.4",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "6.0",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   "6.8"
+                                  
+                                  }
+                              ],
+                              "w wieku 30-49 lat": [
+                                  {
+                                  
+                                      "2010" :   "29.6",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "29.8",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   "28.4"
+                                  
+                                  }
+                              ],
+                              "w wieku 50-69 lat": [
+                                  {
+                                  
+                                      "2010" :   "77.4",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "84.9",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   "83.5"
+                                  
+                                  }
+                              ],
+                              "w wieku 70 lat i więcej": [
+                                  {
+                                  
+                                      "2010" :   "43.2",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "61.7",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   "72.9"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
       ]
     }
   ]

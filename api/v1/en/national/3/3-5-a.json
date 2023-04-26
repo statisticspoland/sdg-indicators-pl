@@ -7,112 +7,33 @@
       "metadata": [
         
         {
-                        "name": "3.5.a Current public expenditure on health care as % of GDP",
+                        "name": "3.5.a National indicator of average exposure to PM2.5",
                       
                         "goal": "Goal 3. Good health and well-being",
                       
-                        "priority": "Improvement of healthcare system quality and patient safety",
+                        "priority": "Comprehensive improvement of air quality reaching the state of no risk to health and environment in accordance with EU legislation and, in a longer-term perspective, WHO guidelines by reducing emissions of pollutants into the air",
                       
-                        "definition": "Share of current public expenditure on health care in GDP.",
+                        "definition": "Average level of substances in the air, determined on the basis of measurements carried out within the municipal background areas in cities with number of residents exceeding 100 thousand and agglomerations within the whole country; the calculation manner for KW is provided for in the regulation by the Minister of Environment of 13.09.2012 for calculation of the average exposure indicator and evaluation of keeping the concentration exposure threshold (Official Journal Dz.U. item 1029).",
                       
-                        "unit": "percent [%]",
+                        "unit": "μg/m3",
                       
-                        "dimensions": "total, type of expenditure (according to functions)",
+                        "dimensions": "total",
                       
-                        "methodology": "The data comes from the survey on National Health Account (NHA), which aims to summarize public health and public health expenditure according to the International Classification for Health Accounts (ICHA). The subjective scope of the NHA survey are the patterns of public / compulsory and private / non-compulsory expenditures for health care, while the subject matter - current expenditure on health care) Compiled in accordance with ICHA (HP - suppliers, HF - financing schemes and HC - functional classification of provided health services) and in interrelationships: HCxHF, HPxHF, HCxHP. The amount of expenditures included in NHA, in accordance with the applicable methodology, covers current expenditures, so it does not include capital expenditure, which includes, for example, investment expenditures, research and development, education. The source of information for NHA in the area of public spending (HF.1), which consists of government diagrams, obligatory schemes - insurance premiums, are, among others, administrative systems of institutions which collect data on expenditure on health care (i.e. Ministry of Health, National Health Fund, Social Insurance Institution, Agricultural Social Insurance Fund, Ministry of the Interior and Administration, Ministry of National Defense, Ministry of Justice, Ministry of Family, Labour and Social Policy, State Fund for Rehabilitation of Disabled People). The results of other research carried out as part of the program of statistical surveys of official statistics and other available sources of information, mainly for estimating private expenditure, are also used. Based on the classification of the health care function (ICHA-HC), two types of expenditures were distinguished: expenditures on individual services and expenditures on collective services. Individual services are medical products and services used directly by individual persons according to their needs, belonging to the functional categories: curative care (HC.1), rehabilitative care (HC.2), long-term care (health) (HC.3), ancillary services (non-specified by function) (HC.4) and medical goods (non-specified by function) (HC.5). Collective services are services that can be applied to all population groups, belonging to the functional categories preventive care (HC.6) and governance and health system and financing administration (HC.7).",
+                        "methodology": "Measurements for the needs of calculating national indicator were started in 2010. According to the above the national average exposure indicator for 2010 was calculated as the arithmetic mean of the average annual PM2.5 concentrations in 2011. The index for 2011 was calculated as the arithmetic mean of the average annual PM2.5 concentrations in 2010-2011 in 2012. For 2012 and subsequent years, the national average exposure indicator is calculated as the arithmetic average of the average annual PM2,5 concentrations from the last three years (eg for 2015 the indicator was calculated in 2016 as the arithmetic mean of the average annual PM2,5 concentrations for 2013-2015). For the purposes of calculating national indicator, 30 measuring stations were created whose locations were approved by the Chief Inspectorate of Environmental Protection. Measuring stations are located in areas with a very high population density remote from dust emission sources. In cities over 100,000 inhabitants and agglomerations not exceeding 1 million inhabitants, these measurements are carried out on one measuring station. In the Warsaw Agglomeration and the Upper Silesian Agglomeration, measurements are carried out on two measurement stations. Detailed information on the location of air pollutant measuring stations PM2,5 for the purposes of calculating KW are included in voivodship environmental monitoring programs. Measurements are made using low-flow PM2.5 dust collectors, i.e. the reference method by voivodships inspectorates for environmental protection. Measurements are carried out continuously.",
                       
-                        "source": "Statistics Poland",
+                        "source": "Chief Inspectorate of Environmental Protection",
                       
-                        "availability": "Annual data; since 2013",
+                        "availability": "Annual data; since 2010",
                       
                         "notes": ""
                       }
       ],
       "data": [
-        {
-                    "Expenditure type (according to functions)": [
-                        {
-                        "total": [
-                                {
-                                
-                                    "2010" :   "",
-                                
-                                    "2011" :   "",
-                                
-                                    "2012" :   "",
-                                
-                                    "2013" :   "4.5",
-                                
-                                    "2014" :   "4.5",
-                                
-                                    "2015" :   "4.5",
-                                
-                                    "2016" :   "4.5",
-                                
-                                    "2017" :   "4.5",
-                                
-                                    "2018" :   "4.5",
-                                
-                                    "2019" :   "4.6",
-                                
-                                    "2020" :   "4.5"
-                                
-                                }
-                            ],"individual services": [
-                                {
-                                
-                                    "2010" :   "",
-                                
-                                    "2011" :   "",
-                                
-                                    "2012" :   "",
-                                
-                                    "2013" :   "4.2",
-                                
-                                    "2014" :   "4.2",
-                                
-                                    "2015" :   "4.2",
-                                
-                                    "2016" :   "4.3",
-                                
-                                    "2017" :   "4.3",
-                                
-                                    "2018" :   "4.3",
-                                
-                                    "2019" :   "4.4",
-                                
-                                    "2020" :   "4.3"
-                                
-                                }
-                            ],"collective services": [
-                                {
-                                
-                                    "2010" :   "",
-                                
-                                    "2011" :   "",
-                                
-                                    "2012" :   "",
-                                
-                                    "2013" :   "0.3",
-                                
-                                    "2014" :   "0.2",
-                                
-                                    "2015" :   "0.2",
-                                
-                                    "2016" :   "0.2",
-                                
-                                    "2017" :   "0.2",
-                                
-                                    "2018" :   "0.2",
-                                
-                                    "2019" :   "0.2",
-                                
-                                    "2020" :   "0.2"
-                                
-                                }
-                            ]
-                        }
-                    ]}
+        {"total": [
+                      {
+                      }
+                  ]
+            }
       ]
     }
   ]

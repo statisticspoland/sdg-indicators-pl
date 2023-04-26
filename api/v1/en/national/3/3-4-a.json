@@ -7,149 +7,107 @@
       "metadata": [
         
         {
-                        "name": "3.4.a Percentage of women aged 15 and more who have ever had mammography",
+                        "name": "3.4.a Current public expenditure on health care as % of GDP",
                       
                         "goal": "Goal 3. Good health and well-being",
                       
-                        "priority": "Increase in early disease detectability",
+                        "priority": "Improvement of healthcare system quality and patient safety including the development of e-health area",
                       
-                        "definition": "Percentage of women aged 15 and more who have ever had mammography.",
+                        "definition": "Share of current public expenditure on health care in GDP.",
                       
                         "unit": "percent [%]",
                       
-                        "dimensions": "total",
+                        "dimensions": "total, type of expenditure (according to functions)",
                       
-                        "methodology": "Data comes from the European Health Interview Survey (EHIS), repeated every 5 years. The results of the study enable to get to know the health situation of the inhabitants of the Union and its conditions in connection with the demographic and social characteristics and the place of residence. The study covers four areas:  health status (including self-assessment of health status, chronic diseases, limitations in functioning and their impact on everyday life, psychological well-being), health care (use of medical care, use of medicines, prophylaxis), health determinants (mainly lifestyle and exposure to adverse environmental factors) and demographic and social characteristics of persons and households. ",
+                        "methodology": "The data comes from the survey on National Health Account (NHA), which aims to summarize public health and public health expenditure according to the International Classification for Health Accounts (ICHA). The subjective scope of the NHA survey are the patterns of public / compulsory and private / non-compulsory expenditures for health care, while the subject matter - current expenditure on health care) Compiled in accordance with ICHA (HP - suppliers, HF - financing schemes and HC - functional classification of provided health services) and in interrelationships: HCxHF, HPxHF, HCxHP. The amount of expenditures included in NHA, in accordance with the applicable methodology, covers current expenditures, so it does not include capital expenditure, which includes, for example, investment expenditures, research and development, education. The source of information for NHA in the area of public spending (HF.1), which consists of government diagrams, obligatory schemes - insurance premiums, are, among others, administrative systems of institutions which collect data on expenditure on health care (i.e. Ministry of Health, National Health Fund, Social Insurance Institution, Agricultural Social Insurance Fund, Ministry of the Interior and Administration, Ministry of National Defense, Ministry of Justice, Ministry of Family, Labour and Social Policy, State Fund for Rehabilitation of Disabled People). The results of other research carried out as part of the program of statistical surveys of official statistics and other available sources of information, mainly for estimating private expenditure, are also used. Based on the classification of the health care function (ICHA-HC), two types of expenditures were distinguished: expenditures on individual services and expenditures on collective services. Individual services are medical products and services used directly by individual persons according to their needs, belonging to the functional categories: curative care (HC.1), rehabilitative care (HC.2), long-term care (health) (HC.3), ancillary services (non-specified by function) (HC.4) and medical goods (non-specified by function) (HC.5). Collective services are services that can be applied to all population groups, belonging to the functional categories preventive care (HC.6) and governance and health system and financing administration (HC.7).",
                       
                         "source": "Statistics Poland",
                       
-                        "availability": "Data every 5 years; since 2010",
+                        "availability": "Annual data; since 2013",
                       
-                        "notes": "Data presented for 2010 relate to the survey carried out in 2009."
+                        "notes": ""
                       }
       ],
       "data": [
         {
-                    "by age group": [
+                    "Expenditure type (according to functions)": [
                         {
                         "total": [
                                 {
                                 
-                                    "2010" :   "40.7",
+                                    "2010" :   "",
                                 
                                     "2011" :   "",
                                 
                                     "2012" :   "",
                                 
-                                    "2013" :   "",
+                                    "2013" :   "4.5",
                                 
-                                    "2014" :   "47.2",
+                                    "2014" :   "4.5",
                                 
-                                    "2015" :   "",
+                                    "2015" :   "4.5",
                                 
-                                    "2016" :   "",
+                                    "2016" :   "4.5",
                                 
-                                    "2017" :   "",
+                                    "2017" :   "4.5",
                                 
-                                    "2018" :   "",
+                                    "2018" :   "4.5",
                                 
-                                    "2019" :   "49.1"
+                                    "2019" :   "4.6",
+                                
+                                    "2020" :   "4.5"
                                 
                                 }
-                            ],"aged 15-29": [
+                            ],"individual services": [
                                 {
                                 
-                                    "2010" :   "5.4",
+                                    "2010" :   "",
                                 
                                     "2011" :   "",
                                 
                                     "2012" :   "",
                                 
-                                    "2013" :   "",
+                                    "2013" :   "4.2",
                                 
-                                    "2014" :   "6.0",
+                                    "2014" :   "4.2",
                                 
-                                    "2015" :   "",
+                                    "2015" :   "4.2",
                                 
-                                    "2016" :   "",
+                                    "2016" :   "4.3",
                                 
-                                    "2017" :   "",
+                                    "2017" :   "4.3",
                                 
-                                    "2018" :   "",
+                                    "2018" :   "4.3",
                                 
-                                    "2019" :   "6.8"
+                                    "2019" :   "4.4",
+                                
+                                    "2020" :   "4.3"
                                 
                                 }
-                            ],"aged 30-49": [
+                            ],"collective services": [
                                 {
                                 
-                                    "2010" :   "29.6",
+                                    "2010" :   "",
                                 
                                     "2011" :   "",
                                 
                                     "2012" :   "",
                                 
-                                    "2013" :   "",
+                                    "2013" :   "0.3",
                                 
-                                    "2014" :   "29.8",
+                                    "2014" :   "0.2",
                                 
-                                    "2015" :   "",
+                                    "2015" :   "0.2",
                                 
-                                    "2016" :   "",
+                                    "2016" :   "0.2",
                                 
-                                    "2017" :   "",
+                                    "2017" :   "0.2",
                                 
-                                    "2018" :   "",
+                                    "2018" :   "0.2",
                                 
-                                    "2019" :   "28.4"
+                                    "2019" :   "0.2",
                                 
-                                }
-                            ],"aged 50-69": [
-                                {
-                                
-                                    "2010" :   "77.4",
-                                
-                                    "2011" :   "",
-                                
-                                    "2012" :   "",
-                                
-                                    "2013" :   "",
-                                
-                                    "2014" :   "84.9",
-                                
-                                    "2015" :   "",
-                                
-                                    "2016" :   "",
-                                
-                                    "2017" :   "",
-                                
-                                    "2018" :   "",
-                                
-                                    "2019" :   "83.5"
-                                
-                                }
-                            ],"aged 70 and more": [
-                                {
-                                
-                                    "2010" :   "43.2",
-                                
-                                    "2011" :   "",
-                                
-                                    "2012" :   "",
-                                
-                                    "2013" :   "",
-                                
-                                    "2014" :   "61.7",
-                                
-                                    "2015" :   "",
-                                
-                                    "2016" :   "",
-                                
-                                    "2017" :   "",
-                                
-                                    "2018" :   "",
-                                
-                                    "2019" :   "72.9"
+                                    "2020" :   "0.2"
                                 
                                 }
                             ]

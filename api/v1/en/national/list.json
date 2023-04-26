@@ -6,37 +6,25 @@
           "1":[{
                     "1-1-a": [
                       {
-                            "name" : "1.1.a At-risk-of-relative poverty rate"
+                            "name" : "1.1.a Number of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population"
                       }
                     ]
                   },{
                     "1-1-b": [
                       {
-                            "name" : "1.1.b Real gross disposable income of households per capita (2008=100)"
+                            "name" : "1.1.b Number of participants of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population"
                       }
                     ]
                   },{
                     "1-2-a": [
                       {
-                            "name" : "1.2.a Number of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population"
-                      }
-                    ]
-                  },{
-                    "1-2-b": [
-                      {
-                            "name" : "1.2.b Number of participants of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population"
+                            "name" : "1.2.a Percentage of children aged 1-2 covered by different kinds of institutional care"
                       }
                     ]
                   },{
                     "1-3-a": [
                       {
-                            "name" : "1.3.a Percentage of children aged 1-2 covered by different kinds of institutional care"
-                      }
-                    ]
-                  },{
-                    "1-4-a": [
-                      {
-                            "name" : "1.4.a Number of dwellings per 1 thous. population"
+                            "name" : "1.3.a Number of dwellings per 1 thous. population"
                       }
                     ]
                   }]
@@ -95,25 +83,13 @@
                   },{
                     "2-5-a": [
                       {
-                            "name" : "2.5.a Percentage of length of public improved hard surface roads in non-urban areas"
+                            "name" : "2.5.a Prevalence of obesity among people aged 15 and more according to BMI"
                       }
                     ]
                   },{
-                    "2-6-a": [
+                    "2-5-b": [
                       {
-                            "name" : "2.6.a Number of plant and animal genetic resources for food and agriculture secured in gene banks collections"
-                      }
-                    ]
-                  },{
-                    "2-7-a": [
-                      {
-                            "name" : "2.7.a Prevalence of obesity among people aged 15 and more according to BMI"
-                      }
-                    ]
-                  },{
-                    "2-7-b": [
-                      {
-                            "name" : "2.7.b Prevalence of overweight or obesity among children aged 6-10 according to BMI"
+                            "name" : "2.5.b Prevalence of overweight or obesity among children aged 6-10 according to BMI"
                       }
                     ]
                   }]
@@ -172,67 +148,49 @@
                   },{
                     "3-3-a": [
                       {
-                            "name" : "3.3.a Self-reported unmet need for medical examination and care"
+                            "name" : "3.3.a Percentage of women aged 15 and more who have ever had mammography"
                       }
                     ]
                   },{
                     "3-3-b": [
                       {
-                            "name" : "3.3.b Percentage of persons who have ever been vaccinated against virus hepatitis B"
+                            "name" : "3.3.b Percentage of women aged 15 and more who have ever had cervical smear test"
                       }
                     ]
                   },{
                     "3-3-c": [
                       {
-                            "name" : "3.3.c Percentage of persons who have ever been vaccinated against influenza"
+                            "name" : "3.3.c Percentage of men aged 40 and more who have ever had medical examination of their prostate performed"
+                      }
+                    ]
+                  },{
+                    "3-3-d": [
+                      {
+                            "name" : "3.3.d Percentage of newborns included in screening tests for rare metabolic disorders"
+                      }
+                    ]
+                  },{
+                    "3-3-e": [
+                      {
+                            "name" : "3.3.e Number of screening tests for early detection of colorectal cancer at 10 thous. population"
                       }
                     ]
                   },{
                     "3-4-a": [
                       {
-                            "name" : "3.4.a Percentage of women aged 15 and more who have ever had mammography"
+                            "name" : "3.4.a Current public expenditure on health care as % of GDP"
                       }
                     ]
                   },{
                     "3-4-b": [
                       {
-                            "name" : "3.4.b Percentage of women aged 15 and more who have ever had cervical smear test"
-                      }
-                    ]
-                  },{
-                    "3-4-c": [
-                      {
-                            "name" : "3.4.c Percentage of men aged 40 and more who have ever had medical examination of their prostate performed"
-                      }
-                    ]
-                  },{
-                    "3-4-d": [
-                      {
-                            "name" : "3.4.d Percentage of newborns included in screening tests for rare metabolic disorders"
-                      }
-                    ]
-                  },{
-                    "3-4-e": [
-                      {
-                            "name" : "3.4.e Number of screening tests for early detection of colorectal cancer at 10 thous. population"
+                            "name" : "3.4.b Percentage of medical entities with IT solutions that enable keeping medical records in electronic form"
                       }
                     ]
                   },{
                     "3-5-a": [
                       {
-                            "name" : "3.5.a Current public expenditure on health care as % of GDP"
-                      }
-                    ]
-                  },{
-                    "3-6-a": [
-                      {
-                            "name" : "3.6.a Percentage of medical entities with IT solutions that enable keeping medical records in electronic form"
-                      }
-                    ]
-                  },{
-                    "3-7-a": [
-                      {
-                            "name" : "3.7.a National indicator of average exposure to PM2.5"
+                            "name" : "3.5.a National indicator of average exposure to PM2.5"
                       }
                     ]
                   }]
@@ -411,18 +369,6 @@
                             "name" : "7.3.b SAIDI (System Average Interruption Duration Index)"
                       }
                     ]
-                  },{
-                    "7-4-a": [
-                      {
-                            "name" : "7.4.a Percentage of households (with income below 60% median) declaring inability to keep home adequately warm"
-                      }
-                    ]
-                  },{
-                    "7-4-b": [
-                      {
-                            "name" : "7.4.b Share of average monthly expenditures on electricity, gas and other fuels in total household expenditures "
-                      }
-                    ]
                   }]
       },
       
@@ -467,43 +413,25 @@
                   },{
                     "8-5-a": [
                       {
-                            "name" : "8.5.a Employment rate of women with the youngest child up to 5 years old (LFS)"
+                            "name" : "8.5.a Activity rate (LFS)"
+                      }
+                    ]
+                  },{
+                    "8-5-b": [
+                      {
+                            "name" : "8.5.b Long-term unemployment as a percentage of the total unempolyment (LFS)"
+                      }
+                    ]
+                  },{
+                    "8-5-c": [
+                      {
+                            "name" : "8.5.c Percentage of young people neither in employment nor in education and training (NEET)"
                       }
                     ]
                   },{
                     "8-6-a": [
                       {
-                            "name" : "8.6.a Percentage of employees receiving monthly gross earnings of up to 50% of the average monthly gross earnings in the national economy"
-                      }
-                    ]
-                  },{
-                    "8-7-a": [
-                      {
-                            "name" : "8.7.a Activity rate (LFS)"
-                      }
-                    ]
-                  },{
-                    "8-7-b": [
-                      {
-                            "name" : "8.7.b Long-term unemployment as a percentage of the total unempolyment (LFS)"
-                      }
-                    ]
-                  },{
-                    "8-7-c": [
-                      {
-                            "name" : "8.7.c Percentage of young people neither in employment nor in education and training (NEET)"
-                      }
-                    ]
-                  },{
-                    "8-8-a": [
-                      {
-                            "name" : "8.8.a Share of employed persons in the non-agricultural sector in the rural area in the total number of employed persons in the rural area"
-                      }
-                    ]
-                  },{
-                    "8-9-a": [
-                      {
-                            "name" : "8.9.a Net international migration for permanent residence"
+                            "name" : "8.6.a Net international migration for permanent residence"
                       }
                     ]
                   }]
@@ -520,49 +448,25 @@
                   },{
                     "9-2-a": [
                       {
-                            "name" : "9.2.a Gross domestic expenditures on R&D in relation to GDP"
-                      }
-                    ]
-                  },{
-                    "9-2-b": [
-                      {
-                            "name" : "9.2.b Business enterprise expenditure on R&D in relation to GDP"
-                      }
-                    ]
-                  },{
-                    "9-2-c": [
-                      {
-                            "name" : "9.2.c Share of net revenues from sales of new or improved products in total turnover in industrial enterprises"
-                      }
-                    ]
-                  },{
-                    "9-2-d": [
-                      {
-                            "name" : "9.2.d Share of export of high technology products in total export"
+                            "name" : "9.2.a Percentage of households within range of Internet access with bandwidth at least 100 Mb/s"
                       }
                     ]
                   },{
                     "9-3-a": [
                       {
-                            "name" : "9.3.a Percentage of households within range of Internet access with bandwidth at least 100 Mb/s"
-                      }
-                    ]
-                  },{
-                    "9-4-a": [
-                      {
-                            "name" : "9.4.a Share of revenues from sales for exports in net revenues of SMEs from sales of products, goods and materials"
+                            "name" : "9.3.a Share of revenues from sales for exports in net revenues of SMEs from sales of products, goods and materials"
                       }
                     ]
                   },{
                     "9-5-a": [
                       {
-                            "name" : "9.5.a Index of multimodal accessibility of transport"
+                            "name" : ""
                       }
                     ]
                   },{
                     "9-5-b": [
                       {
-                            "name" : "9.5.b Density of expressways and motorways per 1000 km²"
+                            "name" : ""
                       }
                     ]
                   }]
@@ -858,7 +762,7 @@
                   },{
                     "13-6-a": [
                       {
-                            "name" : "13.6.a Number of conducted educational campaigns promoting issues related to the problem of invasive species entering the natural environment"
+                            "name" : "13.6.a Number of conducted educational campaigns promoting issues related to the problem of invasive alien species entering the natural environment"
                       }
                     ]
                   },{

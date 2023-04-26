@@ -51,7 +51,9 @@
                               
                                   "2019" :   "8.6",
                               
-                                  "2020" :   "9.0"
+                                  "2020" :   "9.0",
+                              
+                                  "2021" :   "8.8"
                               
                               }
                           ]
@@ -938,307 +940,7 @@
           "metadane": [
             
             {
-                            "nazwa": "8.5.a Wskaźnik zatrudnienia kobiet z najmłodszym dzieckiem w wieku do 5 lat wg BAEL",
-                          
-                            "cel": "Cel 8. Wzrost gospodarczy i godna praca",
-                          
-                            "priorytet": "Zwiększenie elastyczności w odniesieniu do metod organizacji i świadczenia pracy",
-                          
-                            "definicja": "Udział pracujących kobiet z najmłodszym dzieckiem w wieku do 5 lat w ogólnej liczbie kobiet z najmłodszym dzieckiem w wieku do 5 lat.",
-                          
-                            "jednostka": "procent [%]",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15-89 lat będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Poza zakresem badania pozostają członkowie gospodarstw domowych przebywający (uwzględniany jest całkowity czas pobytu faktyczny i planowany) 12 miesięcy lub więcej za granicą oraz w gospodarstwach zbiorowych (takich jak: hotele pracownicze, domy studenckie, internaty, domy opieki społecznej, itp.) oraz osoby bezdomne. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Do pracujących zaliczane są wszystkie osoby w wieku 15-89 lat, które w okresie badanego tygodnia: 1. wykonywały przez co najmniej 1 godzinę pracę przynoszącą dochód lub zarobek, były zatrudnione w firmie/instytucji publicznej lub u prywatnego pracodawcy, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem, 2. miały pracę, ale jej nie wykonywały: • z powodu choroby lub urlopu wypoczynkowego, urlopu związanego z rodzicielstwem (macierzyńskiego, rodzicielskiego, ojcowskiego lub wychowawczego), organizacji czasu pracy (systemu pracy lub odbioru nadgodzin), szkolenia związanego z wykonywaną pracą, • z powodu sezonowego charakteru pracy, jeśli w okresie poza sezonem nadal regularnie wypełniały zadania i obowiązki związane z pracą lub prowadzeniem działalności (z wyłączeniem obowiązków prawnych lub administracyjnych), • z innych powodów, jeśli przewidywany okres nieobecności w pracy nie przekracza 3 miesięcy. Zgodnie z międzynarodowymi standardami, do pracujących zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Do pracujących nie są zaliczani: wolontariusze oraz stażyści nieotrzymujący wynagrodzenia, osoby pracujące w rolnictwie indywidualnym zajmujące się wytwarzaniem produktów rolnych wyłącznie lub głownie na własne potrzeby.",
-                          
-                            "zrodlo": "Główny Urząd Statystyczny",
-                          
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
-                          
-                            "uwagi": "W związku z wdrożeniem w badaniu zmian metodologicznych, dane BAEL od 2021 r. nie mogą być porównywane z poprzednimi latami (z wyjątkiem danych przeliczonych za lata 2010-2020)."
-                          }
-          ],
-          "dane": [
-            {
-                      
-                              "miasto/wieś": [
-                                  {"ogółem": [
-                                          {
-                                          
-                                              "2010" : "66.0",
-                                          
-                                              "2011" : "65.3",
-                                          
-                                              "2012" : "66.0",
-                                          
-                                              "2013" : "65.5",
-                                          
-                                              "2014" : "67.2",
-                                          
-                                              "2015" : "65.8",
-                                          
-                                              "2016" : "65.4",
-                                          
-                                              "2017" : "64.6",
-                                          
-                                              "2018" : "64.6",
-                                          
-                                              "2019" : "64.9",
-                                          
-                                              "2020" : "64.9",
-                                          
-                                              "2021" : "69.2"
-                                          
-                                          }
-                                      ],"miasto": [
-                                          {
-                                          
-                                              "2010" : "77.0",
-                                          
-                                              "2011" : "70.5",
-                                          
-                                              "2012" : "70.9",
-                                          
-                                              "2013" : "70.5",
-                                          
-                                              "2014" : "72.3",
-                                          
-                                              "2015" : "71.6",
-                                          
-                                              "2016" : "70.7",
-                                          
-                                              "2017" : "69.6",
-                                          
-                                              "2018" : "70.0",
-                                          
-                                              "2019" : "70.5",
-                                          
-                                              "2020" : "71.9",
-                                          
-                                              "2021" : "75.7"
-                                          
-                                          }
-                                      ],"wieś": [
-                                          {
-                                          
-                                              "2010" : "58.9",
-                                          
-                                              "2011" : "58.0",
-                                          
-                                              "2012" : "59.0",
-                                          
-                                              "2013" : "58.6",
-                                          
-                                              "2014" : "60.1",
-                                          
-                                              "2015" : "57.3",
-                                          
-                                              "2016" : "57.8",
-                                          
-                                              "2017" : "57.6",
-                                          
-                                              "2018" : "57.0",
-                                          
-                                              "2019" : "57.0",
-                                          
-                                              "2020" : "54.9",
-                                          
-                                              "2021" : "60.6"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "8-6-a": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "8.6.a Odsetek pracowników otrzymujących wynagrodzenie miesięczne ogółem w wysokości do 50% przeciętnego wynagrodzenia brutto w gospodarce narodowej",
-                          
-                            "cel": "Cel 8. Wzrost gospodarczy i godna praca",
-                          
-                            "priorytet": "Odpowiednie kreowanie rynku pracy dla zapewnienia godnej pracy dla wszystkich",
-                          
-                            "definicja": "Udział pracowników otrzymujących wynagrodzenie miesięczne ogółem w wysokości do 50% przeciętnego wynagrodzenia brutto w gospodarce narodowej w ogólnej liczbie pracowników w gospodarce narodowej.",
-                          
-                            "jednostka": "procent [%]",
-                          
-                            "wymiary": "ogółem, kobiety, grupy wieku, osoby z niepełnosprawnością",
-                          
-                            "metodologia": "Wynagrodzenie ogółem to wypłaty pieniężne wypłacane pracownikom lub innym osobom fizycznym, stanowiące wydatki ponoszone przez pracodawców na opłacenie wykonywanej pracy, niezależnie od źródeł ich finansowania oraz bez względu na podstawę stosunku pracy bądź innego stosunku prawnego lub czynności prawnej, na podstawie których jest świadczona praca lub pełniona służba. Wynagrodzenie w gospodarce narodowej obejmuje wszystkie podmioty gospodarki narodowej, w tym jednostki o liczbie pracujących do 9 osób. Dane o tym przeciętnym wynagrodzeniu dotyczą pełnozatrudnionych i niepełnozatrudnionych w przeliczeniu na pełnozatrudnionych.  W wynagrodzeniach miesięcznych nie uwzględniono takich wypłat, jak: nagrody jubileuszowe, gratyfikacje, odprawy wypłacone przy przejściu na emeryturę, jednorazowe wynagrodzenia (wyrównawcze) wypłacone w związku ze zgłoszeniem i przyjęciem projektu wynalazczego powodującego zmianę norm pracy, ekwiwalenty za niewykorzystany urlop. Źródłem danych jest badanie struktury wynagrodzeń według zawodów (badanie na formularzu o symbolu Z-12). Badanie jest realizowane z częstotliwością dwuletnią, ma charakter reprezentacyjny i obejmuje podmioty gospodarki narodowej o liczbie pracujących powyżej 9 osób.",
-                          
-                            "zrodlo": "Główny Urząd Statystyczny",
-                          
-                            "czestotliwosc": "Dane co dwa lata; od 2010 r.",
-                          
-                            "uwagi": ""
-                          }
-          ],
-          "dane": [
-            {
-                      
-                              "wg płci": [
-                                  {"ogółem": [
-                                          {
-                                          
-                                              "2010" : "17.9",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "18.9",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "19.0",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "17.5",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "16.2",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "13.4"
-                                          
-                                          }
-                                      ],"kobiety": [
-                                          {
-                                          
-                                              "2010" : "19.0",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "20.4",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "20.1",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "17.7",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "16.1",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "12.6"
-                                          
-                                          }
-                                      ],"mężczyźni": [
-                                          {
-                                          
-                                              "2010" : "16.7",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "17.4",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "17.9",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "17.2",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "16.3",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "14.1"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "miasto/wieś": [
-                                  {"miasto": [
-                                          {
-                                          
-                                              "2010" : "16.5",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "17.4",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "17.5",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "16.0",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "14.6",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "11.9"
-                                          
-                                          }
-                                      ],"wieś": [
-                                          {
-                                          
-                                              "2010" : "24.4",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "26.3",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "26.3",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "24.1",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "23.3",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "19.5"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "8-7-a": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "8.7.a Współczynnik aktywności zawodowej",
+                            "nazwa": "8.5.a Współczynnik aktywności zawodowej",
                           
                             "cel": "Cel 8. Wzrost gospodarczy i godna praca",
                           
@@ -1538,12 +1240,12 @@
       ]
     },
     {
-      "8-7-b": [
+      "8-5-b": [
         {
           "metadane": [
             
             {
-                            "nazwa": "8.7.b Udział osób długotrwale bezrobotnych w ogólnej liczbie bezrobotnych (20-64 lata)",
+                            "nazwa": "8.5.b Udział osób długotrwale bezrobotnych w ogólnej liczbie bezrobotnych (20-64 lata)",
                           
                             "cel": "Cel 8. Wzrost gospodarczy i godna praca",
                           
@@ -1723,12 +1425,12 @@
       ]
     },
     {
-      "8-7-c": [
+      "8-5-c": [
         {
           "metadane": [
             
             {
-                            "nazwa": "8.7.c Osoby młode niepracujące, nieuczące się i niedokształcające się (w wieku 15-24 lata) - NEET",
+                            "nazwa": "8.5.c Osoby młode niepracujące, nieuczące się i niedokształcające się (w wieku 15-24 lata) - NEET",
                           
                             "cel": "Cel 8. Wzrost gospodarczy i godna praca",
                           
@@ -1848,137 +1550,12 @@
       ]
     },
     {
-      "8-8-a": [
+      "8-6-a": [
         {
           "metadane": [
             
             {
-                            "nazwa": "8.8.a Udział osób pracujących na wsi w sektorze pozarolniczym w ogólnej liczbie osób pracujących na wsi",
-                          
-                            "cel": "Cel 8. Wzrost gospodarczy i godna praca",
-                          
-                            "priorytet": "Poprawa przepływu niewykorzystanych zasobów pracy z rolnictwa do innych sektorów",
-                          
-                            "definicja": "Wskaźnik obejmuje wszystkie osoby pracujące na wsi poza rolnictwem w relacji do osób pracujących na wsi ogółem.",
-                          
-                            "jednostka": "procent [%]",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15-89 lat będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Poza zakresem badania pozostają członkowie gospodarstw domowych  przebywający (uwzględniany jest całkowity czas pobytu faktyczny i planowany) 12 miesięcy lub więcej za granicą oraz w  gospodarstwach zbiorowych (takich jak: hotele pracownicze, domy studenckie, internaty, domy opieki społecznej, itp.) oraz osoby bezdomne. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Do pracujących zaliczane są wszystkie osoby w wieku 15-89 lat, które w okresie badanego tygodnia: 1. wykonywały przez co najmniej 1 godzinę, pracę przynoszącą zarobek lub dochód tzn. były zatrudnione w firmie/instytucji publicznej lub u prywatnego pracodawcy, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem, 2. miały pracę, ale jej nie wykonywały:  z powodu choroby lub urlopu wypoczynkowego, urlopu związanego z rodzicielstwem (macierzyńskiego, rodzicielskiego, ojcowskiego lub wychowawczego), organizacji czasu pracy (systemu pracy lub odbioru nadgodzin), szkolenia związanego z wykonywaną pracą; z powodu sezonowego charakteru pracy, jeśli w okresie poza sezonem nadal regularnie wypełniały zadania i obowiązki związane z pracą lub prowadzeniem działalności (z wyłączeniem obowiązków prawnych lub administracyjnych); z innych powodów, jeśli przewidywany okres nieobecności w pracy nie przekracza 3 miesięcy.  Do pracujących - zgodnie z międzynarodowymi standardami - zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Do pracujących nie są zaliczani: wolontariusze oraz stażyści nieotrzymujący wynagrodzenia, osoby pracujące w rolnictwie indywidualnym zajmujące się wytwarzaniem produktów rolnych wyłącznie lub głównie na własne potrzeby. Dane dotyczące sektorów ekonomicznych zostały opracowane w oparciu o Polską Klasyfikację Działalności (PKD 2007). Sektor pozarolniczy obejmuje sekcje B-U: ,,Górnictwo i wydobywanie,,, ,,Przetwórstwo przemysłowe,,, ,,Wytwarzanie i zaopatrywanie w energię elektryczną, gaz, parę wodą, gorącą wodę i powietrze do układów klimatyzacyjnych,,, ,,Dostawa wody, gospodarowanie ściekami i odpadami oraz działalność związana z rekultywacją,,, ,,Budownictwo,,, ,,Handel; naprawa pojazdów samochodowych,,, ,,Transport i gospodarka magazynowa,,, ,,Zakwaterowanie i gastronomia,,, ,,Informacja i komunikacja,,, ,,Działalność finansowa i ubezpieczeniowa,,, ,,Obsługa rynku nieruchomości,,, ,,Działalność profesjonalna, naukowa i techniczna,,, ,,Administrowanie i działalność wspierająca,,, ,,Administracja publiczna i obrona narodowa; obowiązkowe zabezpieczenia społeczne,,, ,,Edukacja,,, ,,Opieka zdrowotna i pomoc społeczna,,, ,,Działalność związana z kulturą, rozrywką i rekreacją,,, ,,Pozostała działalność usługowa,,, ,,Gospodarstwa domowe zatrudniające pracowników oraz wytwarzające produkty na własne potrzeby,,, ,,Organizacje i zespoły eksterytorialne,,.",
-                          
-                            "zrodlo": "Główny Urząd Statystyczny",
-                          
-                            "czestotliwosc": "Dane roczne; od 2021 r.",
-                          
-                            "uwagi": "W związku z wdrożeniem w badaniu zmian metodologicznych, dane BAEL od 2021 r. nie mogą być porównywane z poprzednimi latami. Z uwagi na brak porównywalności z poprzednimi latami, dane są prezentowane od  2021 r."
-                          }
-          ],
-          "dane": [
-            {
-                      
-                              "wg płci": [
-                                  {"ogółem": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "",
-                                          
-                                              "2021" : "80.6"
-                                          
-                                          }
-                                      ],"kobiety": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "",
-                                          
-                                              "2021" : "79.2"
-                                          
-                                          }
-                                      ],"mężczyźni": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "",
-                                          
-                                              "2021" : "82.4"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "8-9-a": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "8.9.a Saldo migracji zagranicznych na pobyt stały",
+                            "nazwa": "8.6.a Saldo migracji zagranicznych na pobyt stały",
                           
                             "cel": "Cel 8. Wzrost gospodarczy i godna praca",
                           

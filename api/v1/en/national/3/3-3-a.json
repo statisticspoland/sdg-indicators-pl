@@ -7,58 +7,154 @@
       "metadata": [
         
         {
-                        "name": "3.3.a Self-reported unmet need for medical examination and care",
+                        "name": "3.3.a Percentage of women aged 15 and more who have ever had mammography",
                       
                         "goal": "Goal 3. Good health and well-being",
                       
-                        "priority": "Increase in health awareness",
+                        "priority": "Increase in early disease detectability and increase in access to modern therapies",
                       
-                        "definition": "The percentage of population aged 16 and over who reported unmet needs for medical care.",
+                        "definition": "Percentage of women aged 15 and more who have ever had mammography.",
                       
                         "unit": "percent [%]",
                       
                         "dimensions": "total",
                       
-                        "methodology": "The indicator measures the share of the population aged 16 and over reporting unmet needs for medical care due to one of the following reasons: Financial reasons, Waiting list and Too far to travel (all three categories are cumulated). Self-reported unmet needs concern a person's own assessment of whether he or she needed medical examination or treatment (dental care excluded), but did not have it or did not seek it. The indicator is calculated on the basis of househols' equivalised disposable income obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) whose subject are households and persons aged 16 and more in households. The survey is of a panel character, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview technique using 2 questionnaires; one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Central Statistical Office of Poland implemented EU-SILC survey in 2005.",
+                        "methodology": "Data comes from the European Health Interview Survey (EHIS), repeated every 5 years. The results of the study enable to get to know the health situation of the inhabitants of the Union and its conditions in connection with the demographic and social characteristics and the place of residence. The study covers four areas:  health status (including self-assessment of health status, chronic diseases, limitations in functioning and their impact on everyday life, psychological well-being), health care (use of medical care, use of medicines, prophylaxis), health determinants (mainly lifestyle and exposure to adverse environmental factors) and demographic and social characteristics of persons and households. ",
                       
                         "source": "Statistics Poland",
                       
-                        "availability": "Annual data; since 2010",
+                        "availability": "Data every 5 years; since 2010",
                       
-                        "notes": "2021 - preliminary data."
+                        "notes": "Data presented for 2010 relate to the survey carried out in 2009."
                       }
       ],
       "data": [
-        {"total": [
-                      {
-                      
-                          "2010" :   "8.3",
-                      
-                          "2011" :   "7.9",
-                      
-                          "2012" :   "9.0",
-                      
-                          "2013" :   "8.8",
-                      
-                          "2014" :   "7.8",
-                      
-                          "2015" :   "7.3",
-                      
-                          "2016" :   "6.6",
-                      
-                          "2017" :   "3.3",
-                      
-                          "2018" :   "4.2",
-                      
-                          "2019" :   "4.2",
-                      
-                          "2020" :   "1.9",
-                      
-                          "2021" :   "2.7"
-                      
-                      }
-                  ]
-            }
+        {
+                    "by age group": [
+                        {
+                        "total": [
+                                {
+                                
+                                    "2010" :   "40.7",
+                                
+                                    "2011" :   "",
+                                
+                                    "2012" :   "",
+                                
+                                    "2013" :   "",
+                                
+                                    "2014" :   "47.2",
+                                
+                                    "2015" :   "",
+                                
+                                    "2016" :   "",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   "",
+                                
+                                    "2019" :   "49.1"
+                                
+                                }
+                            ],"aged 15-29": [
+                                {
+                                
+                                    "2010" :   "5.4",
+                                
+                                    "2011" :   "",
+                                
+                                    "2012" :   "",
+                                
+                                    "2013" :   "",
+                                
+                                    "2014" :   "6.0",
+                                
+                                    "2015" :   "",
+                                
+                                    "2016" :   "",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   "",
+                                
+                                    "2019" :   "6.8"
+                                
+                                }
+                            ],"aged 30-49": [
+                                {
+                                
+                                    "2010" :   "29.6",
+                                
+                                    "2011" :   "",
+                                
+                                    "2012" :   "",
+                                
+                                    "2013" :   "",
+                                
+                                    "2014" :   "29.8",
+                                
+                                    "2015" :   "",
+                                
+                                    "2016" :   "",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   "",
+                                
+                                    "2019" :   "28.4"
+                                
+                                }
+                            ],"aged 50-69": [
+                                {
+                                
+                                    "2010" :   "77.4",
+                                
+                                    "2011" :   "",
+                                
+                                    "2012" :   "",
+                                
+                                    "2013" :   "",
+                                
+                                    "2014" :   "84.9",
+                                
+                                    "2015" :   "",
+                                
+                                    "2016" :   "",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   "",
+                                
+                                    "2019" :   "83.5"
+                                
+                                }
+                            ],"aged 70 and more": [
+                                {
+                                
+                                    "2010" :   "43.2",
+                                
+                                    "2011" :   "",
+                                
+                                    "2012" :   "",
+                                
+                                    "2013" :   "",
+                                
+                                    "2014" :   "61.7",
+                                
+                                    "2015" :   "",
+                                
+                                    "2016" :   "",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   "",
+                                
+                                    "2019" :   "72.9"
+                                
+                                }
+                            ]
+                        }
+                    ]}
       ]
     }
   ]

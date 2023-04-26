@@ -7,58 +7,43 @@
       "metadata": [
         
         {
-                        "name": "1.2.a Number of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population",
+                        "name": "1.2.a Percentage of children aged 1-2 covered by different kinds of institutional care",
                       
                         "goal": "Goal 1. No poverty",
                       
-                        "priority": "Increase in activation of socially excluded persons i.a. through development of social economy sector",
+                        "priority": "Improvement of access to public services (e.g. support for families with children, child and elderly care) and health services",
                       
-                        "definition": "Number of social integration centres, vocational activity workshops and occupational therapy workshops calculated per 100 thous. population.",
+                        "definition": "Share of children covered by institutional care in total number of children aged 1-2.",
                       
-                        "unit": "number of objects",
+                        "unit": "percent [%]",
                       
                         "dimensions": "total",
                       
-                        "methodology": "Social Integration Centres (SIC) are educationally-oriented establishments involving such elements of education as participants’ engagement in service, trade and manufacturing activities. Among recipients of SIC social services, there are e.g. the long-term unemployed, the homeless, the disabled, alcohol and drug addicts (after finishing treatment), the mentally ill, the disabled, the released from penitentiary institutions and refugees. Vocational Activity Workshops (VAW) are units that join socio-vocational rehabilitation of the disabled with conducting economic activity. VAW employs the disabled with a certificate of significant degree of disability, in some cases – persons w with moderate degree of disability if they were diagnosed with autism, mental retardation or mental illness. Occupational Therapy Workshops (OTW) support the rehabilitation process of the disabled by developing their skills for everyday functioning, their psychophysical fitness and occupational qualifications. Among the recipients of OTW social services, there are the motorically or mentally retarded with a certificate of significant or moderate degree of disability including recommendation for occupational therapy.",
+                        "methodology": "Different kinds of institutional care have been introduced by the Law on Childcare for children up tothe age of 3 dated 4 February 2011, in force since 4 April 2011 and the provisions concerning nannies -since October 2011. The law provides for the following types of care: nursery, children’s clubs, day carer and nanny, forchildren up to the age of 3. Pursuant to the Act, the nurseries are no longer part of the health caresystem and the care exercised in them is not the health service. By 2011 children were taken care ofin nurseries and nursery wards. Children in nurseries and children’s clubs:  - entered into register referred to in Chapter 3 of the Law on Childcare of children up to the age of 3dated 4 February 2011 (Journal of Laws No.45, item 235, with later amendments), taken from thereport of municipality on the implementation of tasks related to the care for children up to the ageof 3 (public and non-public receiving allocations).  - run by non-public entities providing private childcare services for children up to the age of 3, forwhich municipality (gmina) does not grant allocations (estimation on the basis of the averagenumber of places in public and non-public entities receiving allocations).  Children under the care of a day carer as of the last day of the reporting period (data come fromreports on the implementation of tasks related to the care for children up to the age of 3).   The number of nannies (it is assumed that one child is under the care of one nanny) registered insocial security or health insurance (data are provided, pursuant to the art. 53 of the above-mentioned law, to the Minister responsible for the family policy by the Social Insurance Institution).",
                       
-                        "source": "Statistics Poland",
+                        "source": "The Ministry of Family and Social Policy",
                       
-                        "availability": "Annual data; since 2012",
+                        "availability": "Annual data;  since 2011",
                       
-                        "notes": ""
+                        "notes": "Data for 2022 do not include information on the number of nannies due to the ongoing works on closing the reporting period for this year."
                       }
       ],
       "data": [
-        {"total": [
-                      {
-                      
-                          "2010" :   "",
-                      
-                          "2011" :   "",
-                      
-                          "2012" :   "2.2",
-                      
-                          "2013" :   "2.3",
-                      
-                          "2014" :   "2.3",
-                      
-                          "2015" :   "2.4",
-                      
-                          "2016" :   "2.5",
-                      
-                          "2017" :   "2.6",
-                      
-                          "2018" :   "2.7",
-                      
-                          "2019" :   "2.7",
-                      
-                          "2020" :   "2.7",
-                      
-                          "2021" :   "2.8"
-                      
-                      }
-                  ]
-            }
+        {
+                    "urban/rural": [
+                        {
+                        "total": [
+                                {
+                                }
+                            ],"urban area": [
+                                {
+                                }
+                            ],"rural area": [
+                                {
+                                }
+                            ]
+                        }
+                    ]}
       ]
     }
   ]

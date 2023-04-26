@@ -7,57 +7,108 @@
       "metadane": [
         
         {
-                        "nazwa": "2.5.a Odsetek długości dróg publicznych o nawierzchni twardej ulepszonej na terenach zamiejskich",
+                        "nazwa": "2.5.a Odsetek osób w wieku 15 lat i więcej cierpiących na otyłość wg BMI",
                       
                         "cel": "Cel 2. Zero głodu",
                       
-                        "priorytet": "Rozwój infrastruktury na wsi",
+                        "priorytet": "Promocja zdrowego stylu życia wśród dorosłych i dzieci",
                       
-                        "definicja": "Stosunek długości dróg publicznych zamiejskich o nawierzchni twardej ulepszonej do długości dróg publicznych ogółem.",
+                        "definicja": "Odsetek osób w wieku 15 lat i więcej o wartości wskaźnika masy ciała (BMI) wynoszącym 30 lub więcej.",
                       
                         "jednostka": "procent [%]",
                       
-                        "wymiary": "ogółem",
+                        "wymiary": "płeć",
                       
-                        "metodologia": "Drogi publiczne ze względu na funkcje w sieci drogowej dzielą się według przepisów ustawy z dnia 21 marca 1985 r. o drogach publicznych (tekst jednolity Dz.U. 2015 poz. 460) na następujące kategorie:  - drogi krajowe, - drogi wojewódzkie, - drogi powiatowe, - drogi gminne. Do dróg o nawierzchni twardej ulepszonej zalicza się drogi o nawierzchni z kostki kamiennej, klinkieru, betonu, z płyt kamienno-betonowych i bitumu.",
+                        "metodologia": "Otyłość to nadmierne nagromadzenie tkanki tłuszczowej, stanowiące zagrożenie dla zdrowia. Miernikiem najpowszechniej stosowanym do rozpoznania i oceny stopnia otyłości jest wskaźnik masy ciała BMI (body mass index). Otyłość u osób dorosłych diagnozowana jest przy wartości BMI 30,0 kg/m2. Wskaźnik masy ciała BMI (body mass index) oblicza się dzieląc masę ciała (kg) przez wzrost do kwadratu (m2). Klasyfikacja otyłości dla osób dorosłych powyżej 20 roku życia wg WHO w oparciu o BMI:   18,5-24,9 - norma, 25,0-29,9 - nadwaga, 30,0-34,9 - otyłość I stopnia, 35,0-39,9 - otyłość II stopnia, >=40,0 - otyłość III stopnia (olbrzymia).  Przedziały wartości dla BMI określono na podstawie wpływu otyłości na stan zdrowia. BMI jest wskaźnikiem ryzyka wystąpienia chorób i przedwczesnych zgonów; wraz ze wzrostem BMI rośnie zagrożenie dla zdrowia. Skutki otyłości obejmują przede wszystkim: przedwczesną umieralność, choroby układu krążenia, nadciśnienie tętnicze, chorobę zwyrodnieniową stawów, nowotwory oraz cukrzycę. Dane pochodzą z Europejskiego Ankietowego Badania Zdrowia (European Health Interview Survey - EHIS), powtarzanego co 5 lat. Wyniki badania umożliwiają poznanie sytuacji zdrowotnej mieszkańców Unii oraz jej uwarunkowań w powiązaniu z charakterystyką demograficzno-społeczną oraz miejscem zamieszkania. Badanie obejmuje cztery obszary:  stan zdrowia (m.in. samoocena stanu zdrowia, choroby przewlekłe, ograniczenia w funkcjonowaniu i ich wpływ na życie codzienne, samopoczucie psychiczne), opieka zdrowotna (korzystanie z opieki medycznej, stosowanie leków, profilaktyka), determinanty zdrowia (głównie styl życia i narażenie na niekorzystne czynniki środowiskowe) oraz charakterystyka demograficzno-społeczna osób i gospodarstw domowych. ",
                       
                         "zrodlo": "Główny Urząd Statystyczny",
                       
-                        "czestotliwosc": "Dane roczne; od 2010 r.",
+                        "czestotliwosc": "Dane co 5 lat; od 2010 r.",
                       
-                        "uwagi": ""
+                        "uwagi": "Dane zaprezentowane dla 2010 r. dotyczą badania przeprowadzonego w 2009 r."
                       }
       ],
       "dane": [
-        {"ogółem": [
-                        {
-                        
-                            "2010" :   "48.6",
-                        
-                            "2011" :   "49.4",
-                        
-                            "2012" :   "49.5",
-                        
-                            "2013" :   "49.7",
-                        
-                            "2014" :   "50.3",
-                        
-                            "2015" :   "50.6",
-                        
-                            "2016" :   "51.2",
-                        
-                            "2017" :   "52.1",
-                        
-                            "2018" :   "52.6",
-                        
-                            "2019" :   "53.2",
-                        
-                            "2020" :   "53.9",
-                        
-                            "2021" :   "54.3"
-                        
-                        }
-                    ]}
+        {
+                      "wg płci": [
+                          {
+                              "ogółem": [
+                                  {
+                                  
+                                      "2010" :   "15.8",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "16.7",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   "18.5"
+                                  
+                                  }
+                              ],
+                              "mężczyźni": [
+                                  {
+                                  
+                                      "2010" :   "16.6",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "18.1",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   "19.5"
+                                  
+                                  }
+                              ],
+                              "kobiety": [
+                                  {
+                                  
+                                      "2010" :   "15.2",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "15.6",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   "17.6"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
       ]
     }
   ]

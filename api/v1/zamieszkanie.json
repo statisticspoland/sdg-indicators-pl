@@ -54,7 +54,11 @@
                                                     
                                                         "2019" : "15.4",
                                                     
-                                                        "2020" : "14.8"
+                                                        "2020" : "14.8",
+                                                    
+                                                        "2021" : "14.8",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ],"miasto": [
@@ -80,7 +84,11 @@
                                                     
                                                         "2019" : "11.1",
                                                     
-                                                        "2020" : "10.0"
+                                                        "2020" : "10.0",
+                                                    
+                                                        "2021" : "10.6",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ],"wieś": [
@@ -106,7 +114,11 @@
                                                     
                                                         "2019" : "21.9",
                                                     
-                                                        "2020" : "21.9"
+                                                        "2020" : "21.9",
+                                                    
+                                                        "2021" : "20.8",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ]
@@ -136,7 +148,11 @@
                                                     
                                                         "2019" : "15.0",
                                                     
-                                                        "2020" : "13.9"
+                                                        "2020" : "13.9",
+                                                    
+                                                        "2021" : "14.1",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ],"kobiety": [
@@ -162,7 +178,11 @@
                                                     
                                                         "2019" : "15.8",
                                                     
-                                                        "2020" : "15.7"
+                                                        "2020" : "15.7",
+                                                    
+                                                        "2021" : "15.4",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ]
@@ -192,7 +212,11 @@
                                                     
                                                         "2019" : "12.5",
                                                     
-                                                        "2020" : "12.1"
+                                                        "2020" : "12.1",
+                                                    
+                                                        "2021" : "13.0",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ],"poniżej 18 lat": [
@@ -218,7 +242,11 @@
                                                     
                                                         "2019" : "13.4",
                                                     
-                                                        "2020" : "13.5"
+                                                        "2020" : "13.5",
+                                                    
+                                                        "2021" : "14.6",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ],"18-24 lata": [
@@ -244,7 +272,11 @@
                                                     
                                                         "2019" : "22.1",
                                                     
-                                                        "2020" : "19.5"
+                                                        "2020" : "19.5",
+                                                    
+                                                        "2021" : "18.0",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ],"18-64 lata": [
@@ -270,7 +302,11 @@
                                                     
                                                         "2019" : "15.5",
                                                     
-                                                        "2020" : "14.2"
+                                                        "2020" : "14.2",
+                                                    
+                                                        "2021" : "14.0",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ],"60 lat i więcej": [
@@ -296,7 +332,11 @@
                                                     
                                                         "2019" : "17.7",
                                                     
-                                                        "2020" : "18.3"
+                                                        "2020" : "18.3",
+                                                    
+                                                        "2021" : "17.8",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ],"65 lat i więcej": [
@@ -322,7 +362,11 @@
                                                     
                                                         "2019" : "17.4",
                                                     
-                                                        "2020" : "18.2"
+                                                        "2020" : "18.2",
+                                                    
+                                                        "2021" : "17.5",
+                                                    
+                                                        "" : ""
                                                     
                                                     }
                                                 ]
@@ -1018,466 +1062,58 @@
                 
                 "metadane": [
                       {
-                                      "nazwa": "1.1.a Stopa ubóstwa relatywnego",
+                                      "nazwa": "1.1.a Liczba centrów integracji społecznej, zakładów aktywności zawodowej i warsztatów terapii zajęciowej na 100 tys. ludności",
                                     
                                       "cel": "Cel 1. Koniec z ubóstwem",
                                     
-                                      "priorytet": "Wzrost realnych dochodów gospodarstw domowych, który powinien przełożyć się na spadek wskaźnika zagrożenia ubóstwem relatywnym",
+                                      "priorytet": "Umożliwienie rzeczywistej i pełnej integracji społecznej osób niepełnosprawnych oraz wsparcie psychologiczne, społeczne, funkcjonalne i ekonomiczne ich rodzin",
                                     
-                                      "definicja": "Odsetek osób w gospodarstwach domowych żyjących poniżej relatywnej granicy ubóstwa, za którą przyjmuje się 50% średnich wydatków ogółu gospodarstw domowych.",
+                                      "definicja": "Liczba centrów integracji społecznej, zakładów aktywności zawodowej i warsztatów terapii zajęciowej w przeliczeniu na 100 tys. ludności.",
                                     
-                                      "jednostka": "procent [%]",
+                                      "jednostka": "sztuki",
                                     
-                                      "wymiary": "ogółem, wiek",
+                                      "wymiary": "ogółem",
                                     
-                                      "metodologia": "Wskaźnik obliczany jest na podstawie informacji uzyskanych z Badania budżetów gospodarstw domowych. Badanie budżetów gospodarstw domowych prowadzone jest metodą reprezentacyjną, opartą na próbie losowej, która daje możliwość uogólniania z określonym błędem, uzyskanych wyników na wszystkie gospodarstwa domowe w kraju. Od 1993 r. badanie budżetów prowadzone jest metodą rotacji miesięcznej, tzn., że w ciągu roku w każdym miesiącu badane są inne gospodarstwa domowe. Badaniem objęte są gospodarstwa domowe jedno- i wieloosobowe. Biorą w nim również udział gospodarstwa domowe obywateli państw obcych zamieszkujących w Polsce na stałe lub przez dłuższy okres czasu i posługujących się językiem polskim. Celem badania jest umożliwienie dokonywania analiz poziomu życia ludności, a także oceny wpływu różnych czynników na kształtowanie się poziomu i zróżnicowania sytuacji bytowej podstawowych grup gospodarstw domowych. Badanie budżetów gospodarstw domowych dostarcza szczegółowych informacji o:   • poziomie i strukturze realizowanych wydatków, źródłach pozyskiwania towarów i usług;   • poziomie spożycia podstawowych artykułów żywnościowych w ujęciu ilościowym oraz w przeliczeniu na wartości energetyczne i składniki odżywcze;    • cenach płaconych przez gospodarstwa domowe za wybrane towary i usługi  poziomie i źródłach osiąganych dochodów  wyposażeniu gospodarstw domowych w dobra trwałego użytku;   • warunkach mieszkaniowych;   • subiektywnej ocenie sytuacji materialnej gospodarstw domowych;    • strukturze demograficzno-społecznej gospodarstw domowych, tj. o liczbie, wieku, płci, wykształceniu, niepełnosprawności, aktywności ekonomicznej osób wchodzących w skład badanego gospodarstwa domowego. Gospodarstwo domowe stanowią osoby, które są lub nie są ze sobą spokrewnione, mieszkają razem i wspólnie utrzymują się (gospodarstwo wieloosobowe). Gospodarstwo domowe może również tworzyć jedna osoba, która utrzymuje się samodzielnie, bez względu na to, czy mieszka sama, czy z innymi osobami (gospodarstwo jednoosobowe). Relatywna granica ubóstwa szacowana jest co roku przez GUS na podstawie wyników Badania budżetów gospodarstw domowych. Wydatki obejmują wydatki na towary i usługi konsumpcyjne oraz pozostałe wydatki:  • Wydatki na towary i usługi konsumpcyjne przeznaczone są na zaspokojenie potrzeb gospodarstwa domowego. Obejmują one towary zakupione za gotówkę (również przy użyciu karty płatniczej lub kredytowej), na kredyt, otrzymane bezpłatnie oraz spożycie naturalne (towary i usługi konsumpcyjne pobrane na potrzeby gospodarstwa domowego z działalności rolniczej bądź działalności gospodarczej na własny rachunek). Towary konsumpcyjne obejmują dobra nietrwałego użytkowania (np.: żywność, napoje, lekarstwa), półtrwałego użytkowania (np.: odzież, książki, zabawki) i trwałego użytkowania (np.: samochody, pralki, lodówki, telewizory). Pozostałe wydatki, które składają się z: darów przekazanych innym gospodarstwom domowym i instytucjom niekomercyjnym, niektórych podatków, w tym podatku od spadków i darowizn, podatku od nieruchomości, opłaty za wieczyste użytkowanie gruntu, zaliczek na podatek od dochodów osobistych oraz składek na ubezpieczenia społeczne płaconych samodzielnie przez podatnika, pozostałych rodzajów wydatków nie przeznaczonych bezpośrednio na cele konsumpcyjne, w tym strat pieniężnych, odszkodowań za wyrządzone szkody.",
+                                      "metodologia": "Centra integracji społecznej (CIS) są placówkami o charakterze edukacyjnym, w których jednym z elementów edukacji może być praca uczestników w ramach działalności handlowej, usługowej lub wytwórczej. Odbiorcami usług społecznych CIS są uczestnicy zajęć, którymi mogą być osoby długotrwale bezrobotne, bezdomne, niepełnosprawne, uzależnione od alkoholu i narkotyków (po zakończonej terapii), chore psychicznie, zwalniane z zakładów karnych oraz uchodźcy. Zakłady aktywności zawodowej (ZAZ) są jednostkami, które łączą w swojej działalności prowadzenie rehabilitacji społeczno-zawodowej osób niepełnosprawnych z prowadzeniem działalności gospodarczej. W ramach ZAZ zatrudniane są osoby niepełnosprawne, które posiadają orzeczenie o znacznym stopniu niepełnosprawności, ewentualnie osoby z umiarkowanym stopniem niepełnosprawności, jeżeli stwierdzono u nich autyzm, upośledzenie umysłowe lub chorobę psychiczną. Niepełnosprawni pracownicy z ww. grup ustawowo muszą stanowić co najmniej 70% osób zatrudnionych w zakładzie – w rozdziale osoby te określane są jako odbiorcy usług ZAZ. Warsztaty terapii zajęciowej (WTZ) mają wspomagać proces rehabilitacji osób niepełnosprawnych poprzez rozwijanie umiejętności codziennego funkcjonowania, zaradności osobistej, sprawności psychofizycznej oraz kompetencji zawodowych. Odbiorcami usług społecznych WTZ są uczestnicy warsztatów, którymi są osoby niepełnosprawne intelektualnie bądź ruchowo, posiadające orzeczenie o znacznym lub umiarkowanym stopniu niepełnosprawności oraz z wpisanym w orzeczeniu wskazaniem do terapii zajęciowej. Personel WTZ stanowią natomiast osoby zatrudnione jako kadra kierownicza, administracyjna, merytoryczna oraz pomocnicza.",
                                     
                                       "zrodlo": "Główny Urząd Statystyczny",
                                     
-                                      "czestotliwosc": "Dane roczne; od 2010 r.",
+                                      "czestotliwosc": "Dane roczne; od 2012 r.",
                                     
                                       "uwagi": ""
                                     }
                     ],
                     "dane": [
-                      {
-                                
-                                        "wg grup wieku": [
-                                            {"ogółem": [
-                                                    {
-                                                    
-                                                        "2010" : "17.4",
-                                                    
-                                                        "2011" : "16.9",
-                                                    
-                                                        "2012" : "16.3",
-                                                    
-                                                        "2013" : "16.2",
-                                                    
-                                                        "2014" : "16.2",
-                                                    
-                                                        "2015" : "15.5",
-                                                    
-                                                        "2016" : "13.9",
-                                                    
-                                                        "2017" : "13.4",
-                                                    
-                                                        "2018" : "14.2",
-                                                    
-                                                        "2019" : "13.0",
-                                                    
-                                                        "2020" : "11.8",
-                                                    
-                                                        "2021" : "12.0"
-                                                    
-                                                    }
-                                                ],"osoby w wieku 0-17 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "23.7",
-                                                    
-                                                        "2011" : "23.1",
-                                                    
-                                                        "2012" : "22.0",
-                                                    
-                                                        "2013" : "21.8",
-                                                    
-                                                        "2014" : "21.8",
-                                                    
-                                                        "2015" : "20.6",
-                                                    
-                                                        "2016" : "16.4",
-                                                    
-                                                        "2017" : "15.3",
-                                                    
-                                                        "2018" : "16.2",
-                                                    
-                                                        "2019" : "14.3",
-                                                    
-                                                        "2020" : "13.4",
-                                                    
-                                                        "2021" : "13.6"
-                                                    
-                                                    }
-                                                ],"osoby w wieku 18-64 lata": [
-                                                    {
-                                                    
-                                                        "2010" : "16.3",
-                                                    
-                                                        "2011" : "15.9",
-                                                    
-                                                        "2012" : "15.5",
-                                                    
-                                                        "2013" : "16.5",
-                                                    
-                                                        "2014" : "15.5",
-                                                    
-                                                        "2015" : "14.8",
-                                                    
-                                                        "2016" : "13.9",
-                                                    
-                                                        "2017" : "13.3",
-                                                    
-                                                        "2018" : "14.1",
-                                                    
-                                                        "2019" : "12.8",
-                                                    
-                                                        "2020" : "11.7",
-                                                    
-                                                        "2021" : "12.0"
-                                                    
-                                                    }
-                                                ],"osoby w wieku 65 lat i więcej": [
-                                                    {
-                                                    
-                                                        "2010" : "12.0",
-                                                    
-                                                        "2011" : "11.2",
-                                                    
-                                                        "2012" : "10.7",
-                                                    
-                                                        "2013" : "9.9",
-                                                    
-                                                        "2014" : "10.6",
-                                                    
-                                                        "2015" : "10.6",
-                                                    
-                                                        "2016" : "10.3",
-                                                    
-                                                        "2017" : "11.0",
-                                                    
-                                                        "2018" : "11.5",
-                                                    
-                                                        "2019" : "11.8",
-                                                    
-                                                        "2020" : "10.0",
-                                                    
-                                                        "2021" : "9.9"
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "miasto/wieś": [
-                                            {"miasto": [
-                                                    {
-                                                    
-                                                        "2010" : "11.9",
-                                                    
-                                                        "2011" : "11.4",
-                                                    
-                                                        "2012" : "11.0",
-                                                    
-                                                        "2013" : "11.2",
-                                                    
-                                                        "2014" : "11.0",
-                                                    
-                                                        "2015" : "10.0",
-                                                    
-                                                        "2016" : "9.5",
-                                                    
-                                                        "2017" : "9.0",
-                                                    
-                                                        "2018" : "8.7",
-                                                    
-                                                        "2019" : "8.0",
-                                                    
-                                                        "2020" : "6.6",
-                                                    
-                                                        "2021" : "7.1"
-                                                    
-                                                    }
-                                                ],"wieś": [
-                                                    {
-                                                    
-                                                        "2010" : "25.9",
-                                                    
-                                                        "2011" : "25.4",
-                                                    
-                                                        "2012" : "24.5",
-                                                    
-                                                        "2013" : "24.0",
-                                                    
-                                                        "2014" : "24.4",
-                                                    
-                                                        "2015" : "24.0",
-                                                    
-                                                        "2016" : "20.8",
-                                                    
-                                                        "2017" : "20.4",
-                                                    
-                                                        "2018" : "22.7",
-                                                    
-                                                        "2019" : "20.8",
-                                                    
-                                                        "2020" : "19.9",
-                                                    
-                                                        "2021" : "19.6"
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "wg grup społ.-ekonom. gospodarstw domowych": [
-                                            {"pracownicy": [
-                                                    {
-                                                    
-                                                        "2010" : "16.6",
-                                                    
-                                                        "2011" : "15.6",
-                                                    
-                                                        "2012" : "15.3",
-                                                    
-                                                        "2013" : "14.9",
-                                                    
-                                                        "2014" : "15.2",
-                                                    
-                                                        "2015" : "14.4",
-                                                    
-                                                        "2016" : "12.5",
-                                                    
-                                                        "2017" : "11.9",
-                                                    
-                                                        "2018" : "12.9",
-                                                    
-                                                        "2019" : "12.0",
-                                                    
-                                                        "2020" : "10.7",
-                                                    
-                                                        "2021" : "11.2"
-                                                    
-                                                    }
-                                                ],"rolnicy": [
-                                                    {
-                                                    
-                                                        "2010" : "26.5",
-                                                    
-                                                        "2011" : "29.3",
-                                                    
-                                                        "2012" : "26.4",
-                                                    
-                                                        "2013" : "26.7",
-                                                    
-                                                        "2014" : "28.0",
-                                                    
-                                                        "2015" : "28.9",
-                                                    
-                                                        "2016" : "26.5",
-                                                    
-                                                        "2017" : "25.8",
-                                                    
-                                                        "2018" : "27.7",
-                                                    
-                                                        "2019" : "25.9",
-                                                    
-                                                        "2020" : "28.7",
-                                                    
-                                                        "2021" : "26.3"
-                                                    
-                                                    }
-                                                ],"pracujący na własny rachunek": [
-                                                    {
-                                                    
-                                                        "2010" : "9.8",
-                                                    
-                                                        "2011" : "10.0",
-                                                    
-                                                        "2012" : "7.9",
-                                                    
-                                                        "2013" : "9.2",
-                                                    
-                                                        "2014" : "8.9",
-                                                    
-                                                        "2015" : "8.9",
-                                                    
-                                                        "2016" : "8.3",
-                                                    
-                                                        "2017" : "8.5",
-                                                    
-                                                        "2018" : "8.9",
-                                                    
-                                                        "2019" : "7.6",
-                                                    
-                                                        "2020" : "7.9",
-                                                    
-                                                        "2021" : "9.1"
-                                                    
-                                                    }
-                                                ],"emeryci": [
-                                                    {
-                                                    
-                                                        "2010" : "13.2",
-                                                    
-                                                        "2011" : "12.5",
-                                                    
-                                                        "2012" : "11.9",
-                                                    
-                                                        "2013" : "11.4",
-                                                    
-                                                        "2014" : "12.1",
-                                                    
-                                                        "2015" : "11.4",
-                                                    
-                                                        "2016" : "10.9",
-                                                    
-                                                        "2017" : "11.9",
-                                                    
-                                                        "2018" : "12.0",
-                                                    
-                                                        "2019" : "11.3",
-                                                    
-                                                        "2020" : "9.6",
-                                                    
-                                                        "2021" : "9.5"
-                                                    
-                                                    }
-                                                ],"renciści": [
-                                                    {
-                                                    
-                                                        "2010" : "25.7",
-                                                    
-                                                        "2011" : "26.4",
-                                                    
-                                                        "2012" : "25.8",
-                                                    
-                                                        "2013" : "26.3",
-                                                    
-                                                        "2014" : "25.5",
-                                                    
-                                                        "2015" : "23.2",
-                                                    
-                                                        "2016" : "21.8",
-                                                    
-                                                        "2017" : "20.0",
-                                                    
-                                                        "2018" : "21.8",
-                                                    
-                                                        "2019" : "19.0",
-                                                    
-                                                        "2020" : "17.3",
-                                                    
-                                                        "2021" : "16.6"
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "wg poziomu wykształcenia głowy gospodarstwa domowego": [
-                                            {"co najwyżej gimnazjalne": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "32.9",
-                                                    
-                                                        "2012" : "32.4",
-                                                    
-                                                        "2013" : "32.3",
-                                                    
-                                                        "2014" : "33.3",
-                                                    
-                                                        "2015" : "32.2",
-                                                    
-                                                        "2016" : "28.3",
-                                                    
-                                                        "2017" : "27.2",
-                                                    
-                                                        "2018" : "28.0",
-                                                    
-                                                        "2019" : "26.2",
-                                                    
-                                                        "2020" : "23.3",
-                                                    
-                                                        "2021" : "26.7"
-                                                    
-                                                    }
-                                                ],"zasadnicze zawodowe": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "23.6",
-                                                    
-                                                        "2012" : "22.7",
-                                                    
-                                                        "2013" : "23.0",
-                                                    
-                                                        "2014" : "23.0",
-                                                    
-                                                        "2015" : "22.4",
-                                                    
-                                                        "2016" : "20.1",
-                                                    
-                                                        "2017" : "20.0",
-                                                    
-                                                        "2018" : "20.8",
-                                                    
-                                                        "2019" : "18.9",
-                                                    
-                                                        "2020" : "17.8",
-                                                    
-                                                        "2021" : "18.0"
-                                                    
-                                                    }
-                                                ],"średnie": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "11.2",
-                                                    
-                                                        "2012" : "10.6",
-                                                    
-                                                        "2013" : "10.8",
-                                                    
-                                                        "2014" : "11.2",
-                                                    
-                                                        "2015" : "10.8",
-                                                    
-                                                        "2016" : "9.9",
-                                                    
-                                                        "2017" : "9.7",
-                                                    
-                                                        "2018" : "11.2",
-                                                    
-                                                        "2019" : "10.4",
-                                                    
-                                                        "2020" : "10.5",
-                                                    
-                                                        "2021" : "11.5"
-                                                    
-                                                    }
-                                                ],"wyższe": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "2.5",
-                                                    
-                                                        "2012" : "2.6",
-                                                    
-                                                        "2013" : "3.1",
-                                                    
-                                                        "2014" : "2.9",
-                                                    
-                                                        "2015" : "2.7",
-                                                    
-                                                        "2016" : "3.4",
-                                                    
-                                                        "2017" : "3.6",
-                                                    
-                                                        "2018" : "4.5",
-                                                    
-                                                        "2019" : "4.6",
-                                                    
-                                                        "2020" : "4.4",
-                                                    
-                                                        "2021" : "4.4"
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ]
+                      {"ogółem": [
+                                        {
+                                        
+                                            "2010" :   "",
+                                        
+                                            "2011" :   "",
+                                        
+                                            "2012" :   "2.2",
+                                        
+                                            "2013" :   "2.3",
+                                        
+                                            "2014" :   "2.3",
+                                        
+                                            "2015" :   "2.4",
+                                        
+                                            "2016" :   "2.5",
+                                        
+                                            "2017" :   "2.6",
+                                        
+                                            "2018" :   "2.7",
+                                        
+                                            "2019" :   "2.7",
+                                        
+                                            "2020" :   "2.7",
+                                        
+                                            "2021" :   "2.8"
+                                        
+                                        }
+                                    ]
+                                  
                               
                           
                       }
@@ -1487,25 +1123,25 @@
                 
                 "metadane": [
                       {
-                                      "nazwa": "1.3.a Odsetek dzieci w wieku 1-2 lata objętych różnymi formami opieki instytucjonalnej",
+                                      "nazwa": "1.3.a Liczba mieszkań przypadających na 1000 ludności ",
                                     
                                       "cel": "Cel 1. Koniec z ubóstwem",
                                     
-                                      "priorytet": "Poprawa dostępności do usług społecznych (np. wsparcie dla rodzin z dziećmi, opieka nad dziećmi, nad starszymi osobami) i zdrowotnych",
+                                      "priorytet": "Poprawa sytuacji mieszkaniowej",
                                     
-                                      "definicja": "Udział dzieci objętych opieką instytucjonalną w ogólnej liczbie dzieci w wieku od 1 roku do 2 lat.",
+                                      "definicja": "Liczba mieszkań w przeliczeniu na 1000 ludności.",
                                     
-                                      "jednostka": "procent [%]",
+                                      "jednostka": "[–]",
                                     
                                       "wymiary": "ogółem",
                                     
-                                      "metodologia": "Zróżnicowane formy opieki nad małym dzieckiem zostały wprowadzone ustawą z dnia 4 lutego 2011 r. o opiece nad dziećmi w wieku do lat 3, która weszła w życie z dniem 4 kwietnia 2011 r., natomiast przepisy dotyczące niań – od października 2011 r. Ustawa przewiduje sprawowanie opieki nad dziećmi w: żłobkach, klubach dziecięcych, przez dziennego opiekuna oraz przez nianię do ukończenia przez dziecko 3 roku życia. Na mocy ustawy żłobki przestały być częścią systemu opieki zdrowotnej, a opieka w nich sprawowana nie jest świadczeniem zdrowotnym. Do 2011 r. dzieci były objęte opieką w żłobkach i oddziałach żłobkowych. Dzieci w żłobkach i klubach dziecięcych: – wpisanych do rejestru, o których mowa w rozdz. 3 ustawy o opiece nad dziećmi w wieku do lat 3 (Dz.U. z 2011 r. Nr 45, poz. 235, z późn. zm.) pochodzące ze sprawozdania sporządzanego przez gminę z wykonania zadań z zakresu opieki nad dziećmi w wieku do lat 3 (publiczne i niepubliczne otrzymujące dotacje); – prowadzonych przez podmioty niepubliczne na zasadzie działalności gospodarczej w zakresie świadczenia usług opieki nad dziećmi w wieku do lat 3, za które gmina nie przekazuje dotacji (szacunek na podstawie przeciętnej liczby miejsc w podmiotach publicznych i niepublicznych otrzymujących dotacje). Dzieci znajdujące się pod opieką dziennego opiekuna na ostatni dzień okresu sprawozdawczego(dane pochodzą ze sprawozdań z wykonywania zadań z zakresu opieki nad dziećmi w wieku do lat 3). Liczba niań (przyjmuje się, że pod opieką jednej niani znajduje się 1 dziecko) zgłoszonych do ubezpieczeń społecznych lub ubezpieczenia zdrowotnego (dane są przekazywane, zgodnie z art. 53 ww. ustawy, ministrowi właściwemu ds. rodziny przez Zakład Ubezpieczeń Społecznych).",
+                                      "metodologia": "Zgodnie z definicją, mieszkanie to lokal składający się z jednej lub kilku izb i pomieszczeńpomocniczych, przeznaczony na stały pobyt osób - wybudowany lub przebudowany do celówmieszkalnych; konstrukcyjnie wydzielony trwałymi ścianami w obrębie budynku, do którego to lokaluprowadzi niezależne wejście z klatki schodowej, ogólnego korytarza, wspólnej sieni bądź z ulicy,podwórza lub ogrodu. Wskaźnik prezentujący zasoby mieszkaniowe wybranej jednostki terytorialnej. Niskie wartości wskaźnika oznaczają niedobór mieszkań, czego skutkiem mogą być problemy społeczne, np. ludzimłodych z usamodzielnieniem się. Wysokie wartości wskaźnika oznaczają nadmiar mieszkań, czegoefektem mogą być trudności ekonomiczne, np. w utrzymaniu niewykorzystywanych zasobów. Nawartość wskaźnika mają również wpływ czynniki kulturowo-demograficzne, takie jak średnia liczbadzieci w rodzinie, przeciętny wiek oraz kulturowe nawyki wspólnego mieszkania wielopokoleniowych rodzin. Dane dotyczące liczby mieszkań pochodzą ze spisów powszechnych oraz sprawozdań o zasobach mieszkaniowych, kosztach i przychodach utrzymania zasobów lokalowych oraz stawkach opłat wbudynkach z lokalami mieszkalnymi oraz ze sprawozdań o gospodarce mieszkaniowej i komunalnej gminy.",
                                     
-                                      "zrodlo": "Ministerstwo Rodziny i Polityki Społecznej",
+                                      "zrodlo": "Główny Urząd Statystyczny",
                                     
-                                      "czestotliwosc": "Dane roczne; od 2011 r.",
+                                      "czestotliwosc": "Dane roczne; od 2010 r.",
                                     
-                                      "uwagi": "Dane za 2022 r. nie uwzględniają informacji o liczbie niań z uwagi na trwające prace nad zamknięciem okresu sprawozdawczego za ten rok."
+                                      "uwagi": "Liczba ludności dla lat 2003–2010 na podstawie Narodowego Spisu Powszechnego Ludności iMieszkań 2002, a od 2011 r. na podstawie NSP 2011."
                                     }
                     ],
                     "dane": [
@@ -1610,127 +1246,7 @@
                       }
                     ]
               },
-          "1-4-a":{
-                
-                "metadane": [
-                      {
-                                      "nazwa": "1.4.a Liczba mieszkań przypadających na 1000 ludności ",
-                                    
-                                      "cel": "Cel 1. Koniec z ubóstwem",
-                                    
-                                      "priorytet": "Poprawa sytuacji mieszkaniowej",
-                                    
-                                      "definicja": "Liczba mieszkań w przeliczeniu na 1000 ludności.",
-                                    
-                                      "jednostka": "[–]",
-                                    
-                                      "wymiary": "ogółem",
-                                    
-                                      "metodologia": "Zgodnie z definicją, mieszkanie to lokal składający się z jednej lub kilku izb i pomieszczeńpomocniczych, przeznaczony na stały pobyt osób - wybudowany lub przebudowany do celówmieszkalnych; konstrukcyjnie wydzielony trwałymi ścianami w obrębie budynku, do którego to lokaluprowadzi niezależne wejście z klatki schodowej, ogólnego korytarza, wspólnej sieni bądź z ulicy,podwórza lub ogrodu. Wskaźnik prezentujący zasoby mieszkaniowe wybranej jednostki terytorialnej. Niskie wartości wskaźnika oznaczają niedobór mieszkań, czego skutkiem mogą być problemy społeczne, np. ludzimłodych z usamodzielnieniem się. Wysokie wartości wskaźnika oznaczają nadmiar mieszkań, czegoefektem mogą być trudności ekonomiczne, np. w utrzymaniu niewykorzystywanych zasobów. Nawartość wskaźnika mają również wpływ czynniki kulturowo-demograficzne, takie jak średnia liczbadzieci w rodzinie, przeciętny wiek oraz kulturowe nawyki wspólnego mieszkania wielopokoleniowych rodzin. Dane dotyczące liczby mieszkań pochodzą ze spisów powszechnych oraz sprawozdań o zasobach mieszkaniowych, kosztach i przychodach utrzymania zasobów lokalowych oraz stawkach opłat wbudynkach z lokalami mieszkalnymi oraz ze sprawozdań o gospodarce mieszkaniowej i komunalnej gminy.",
-                                    
-                                      "zrodlo": "Główny Urząd Statystyczny",
-                                    
-                                      "czestotliwosc": "Dane roczne; od 2010 r.",
-                                    
-                                      "uwagi": "Liczba ludności dla lat 2003–2010 na podstawie Narodowego Spisu Powszechnego Ludności iMieszkań 2002, a od 2011 r. na podstawie NSP 2011."
-                                    }
-                    ],
-                    "dane": [
-                      {
-                                
-                                        "miasto/wieś": [
-                                            {"ogółem": [
-                                                    {
-                                                    
-                                                        "2010" : "349.6",
-                                                    
-                                                        "2011" : "352.6",
-                                                    
-                                                        "2012" : "356.1",
-                                                    
-                                                        "2013" : "359.9",
-                                                    
-                                                        "2014" : "363.4",
-                                                    
-                                                        "2015" : "367.3",
-                                                    
-                                                        "2016" : "371.3",
-                                                    
-                                                        "2017" : "375.7",
-                                                    
-                                                        "2018" : "380.5",
-                                                    
-                                                        "2019" : "385.9",
-                                                    
-                                                        "2020" : "398.8",
-                                                    
-                                                        "2021" : "405.2"
-                                                    
-                                                    }
-                                                ],"miasto": [
-                                                    {
-                                                    
-                                                        "2010" : "388.1",
-                                                    
-                                                        "2011" : "391.9",
-                                                    
-                                                        "2012" : "396.5",
-                                                    
-                                                        "2013" : "401.4",
-                                                    
-                                                        "2014" : "405.9",
-                                                    
-                                                        "2015" : "410.8",
-                                                    
-                                                        "2016" : "415.9",
-                                                    
-                                                        "2017" : "421.5",
-                                                    
-                                                        "2018" : "427.7",
-                                                    
-                                                        "2019" : "434.5",
-                                                    
-                                                        "2020" : "452.1",
-                                                    
-                                                        "2021" : "460.3"
-                                                    
-                                                    }
-                                                ],"wieś": [
-                                                    {
-                                                    
-                                                        "2010" : "290.0",
-                                                    
-                                                        "2011" : "291.8",
-                                                    
-                                                        "2012" : "294.1",
-                                                    
-                                                        "2013" : "296.4",
-                                                    
-                                                        "2014" : "298.7",
-                                                    
-                                                        "2015" : "301.5",
-                                                    
-                                                        "2016" : "304.0",
-                                                    
-                                                        "2017" : "306.7",
-                                                    
-                                                        "2018" : "309.6",
-                                                    
-                                                        "2019" : "313.0",
-                                                    
-                                                        "2020" : "319.6",
-                                                    
-                                                        "2021" : "323.7"
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                              
-                          
-                      }
-                    ]
-              },
+          "1-4-a":{},
           "3-1-c":{
                 
                 "metadane": [
@@ -2459,344 +1975,13 @@
                 
                 "metadane": [
                       {
-                                      "nazwa": "3.3.b Odsetek osób, które kiedykolwiek zaszczepiły się przeciw WZW typu B",
+                                      "nazwa": "3.3.b Odsetek kobiet w wieku 15 lat i więcej, którym kiedykolwiek wykonano badanie cytologiczne",
                                     
                                       "cel": "Cel 3. Dobre zdrowie i jakość życia",
                                     
-                                      "priorytet": "Zwiększenie świadomości zdrowotnej",
+                                      "priorytet": "Zwiększenie wykrywalności chorób we wczesnych stadiach rozwojowych oraz zwiększenie dostępu do nowoczesnych terapii",
                                     
-                                      "definicja": "Odsetek osób, które kiedykolwiek zaszczepiły się przeciw WZW typu B.",
-                                    
-                                      "jednostka": "procent [%]",
-                                    
-                                      "wymiary": "ogółem",
-                                    
-                                      "metodologia": "Dane pochodzą z Europejskiego Ankietowego Badania Zdrowia (European Health Interview Survey - EHIS), powtarzanego co 5 lat. Wyniki badania umożliwiają poznanie sytuacji zdrowotnej mieszkańców Unii oraz jej uwarunkowań w powiązaniu z charakterystyką demograficzno-społeczną oraz miejscem zamieszkania. Badanie obejmuje cztery obszary:  stan zdrowia (m.in. samoocena stanu zdrowia, choroby przewlekłe, ograniczenia w funkcjonowaniu i ich wpływ na życie codzienne, samopoczucie psychiczne), opieka zdrowotna (korzystanie z opieki medycznej, stosowanie leków, profilaktyka), determinanty zdrowia (głównie styl życia i narażenie na niekorzystne czynniki środowiskowe) oraz charakterystyka demograficzno-społeczna osób i gospodarstw domowych. ",
-                                    
-                                      "zrodlo": "Główny Urząd Statystyczny",
-                                    
-                                      "czestotliwosc": "Dane co 5 lat; od 2010 r.",
-                                    
-                                      "uwagi": "Dane zaprezentowane dla 2010 r. dotyczą badania przeprowadzonego w 2009 r.  Brak danych za 2019 r. spowodowany jest nieumieszczeniem w trzeciej rundzie EHIS (2019) pytania dotyczącego szczepień przeciw WZW typu B."
-                                    }
-                    ],
-                    "dane": [
-                      {
-                                
-                                        "wg płci": [
-                                            {"ogółem": [
-                                                    {
-                                                    
-                                                        "2010" : "28.2",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "33.6",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ],"mężczyźni": [
-                                                    {
-                                                    
-                                                        "2010" : "25.3",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "30.4",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ],"kobiety": [
-                                                    {
-                                                    
-                                                        "2010" : "30.8",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "36.2",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "miasto/wieś": [
-                                            {"miasto": [
-                                                    {
-                                                    
-                                                        "2010" : "32.7",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "38.0",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ],"wieś": [
-                                                    {
-                                                    
-                                                        "2010" : "20.9",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "26.6",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "wg grup wieku": [
-                                            {"15-19 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "26.8",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "81.0",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ],"20-29 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "25.9",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "27.6",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ],"30-39 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "24.4",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "28.0",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ],"40-49 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "26.8",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "28.3",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ],"50-59 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "32.0",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "32.3",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ],"60-69 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "34.3",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "35.9",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ],"70-79 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "31.1",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "35.5",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ],"80 lat i więcej": [
-                                                    {
-                                                    
-                                                        "2010" : "23.1",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "25.5",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : ""
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                              
-                          
-                      }
-                    ]
-              },
-          "3-3-c":{
-                
-                "metadane": [
-                      {
-                                      "nazwa": "3.3.c Odsetek osób, które kiedykolwiek zaszczepiły się przeciw grypie",
-                                    
-                                      "cel": "Cel 3. Dobre zdrowie i jakość życia",
-                                    
-                                      "priorytet": "Zwiększenie świadomości zdrowotnej",
-                                    
-                                      "definicja": "Odsetek osób, które kiedykolwiek zaszczepiły się przeciw grypie.",
+                                      "definicja": "Odsetek kobiet w wieku 15 lat i więcej, którym kiedykolwiek wykonano badanie cytologiczne.",
                                     
                                       "jednostka": "procent [%]",
                                     
@@ -2814,11 +1999,11 @@
                     "dane": [
                       {
                                 
-                                        "miasto/wieś": [
+                                        "wg grup wieku": [
                                             {"ogółem": [
                                                     {
                                                     
-                                                        "2010" : "20.0",
+                                                        "2010" : "79.3",
                                                     
                                                         "2011" : "",
                                                     
@@ -2826,7 +2011,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "19.5",
+                                                        "2014" : "85.4",
                                                     
                                                         "2015" : "",
                                                     
@@ -2836,13 +2021,13 @@
                                                     
                                                         "2018" : "",
                                                     
-                                                        "2019" : "19.0"
+                                                        "2019" : "86.7"
                                                     
                                                     }
-                                                ],"miasto": [
+                                                ],"w wieku 15-29 lat": [
                                                     {
                                                     
-                                                        "2010" : "23.5",
+                                                        "2010" : "53.4",
                                                     
                                                         "2011" : "",
                                                     
@@ -2850,7 +2035,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "23.4",
+                                                        "2014" : "58.3",
                                                     
                                                         "2015" : "",
                                                     
@@ -2860,13 +2045,13 @@
                                                     
                                                         "2018" : "",
                                                     
-                                                        "2019" : "22.7"
+                                                        "2019" : "56.9"
                                                     
                                                     }
-                                                ],"wieś": [
+                                                ],"w wieku 30-49 lat": [
                                                     {
                                                     
-                                                        "2010" : "14.6",
+                                                        "2010" : "92.3",
                                                     
                                                         "2011" : "",
                                                     
@@ -2874,7 +2059,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "13.5",
+                                                        "2014" : "95.1",
                                                     
                                                         "2015" : "",
                                                     
@@ -2884,17 +2069,13 @@
                                                     
                                                         "2018" : "",
                                                     
-                                                        "2019" : "13.4"
+                                                        "2019" : "95.5"
                                                     
                                                     }
-                                                ]
-                                            }
-                                        ],
-                                        "wg płci": [
-                                            {"kobiety": [
+                                                ],"w wieku 50-69 lat": [
                                                     {
                                                     
-                                                        "2010" : "19.7",
+                                                        "2010" : "88.5",
                                                     
                                                         "2011" : "",
                                                     
@@ -2902,7 +2083,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "19.1",
+                                                        "2014" : "94.6",
                                                     
                                                         "2015" : "",
                                                     
@@ -2912,13 +2093,13 @@
                                                     
                                                         "2018" : "",
                                                     
-                                                        "2019" : "18.3"
+                                                        "2019" : "94.7"
                                                     
                                                     }
-                                                ],"mężczyźni": [
+                                                ],"w wieku 70 lat i więcej": [
                                                     {
                                                     
-                                                        "2010" : "20.5",
+                                                        "2010" : "72.0",
                                                     
                                                         "2011" : "",
                                                     
@@ -2926,7 +2107,7 @@
                                                     
                                                         "2013" : "",
                                                     
-                                                        "2014" : "19.9",
+                                                        "2014" : "79.5",
                                                     
                                                         "2015" : "",
                                                     
@@ -2936,275 +2117,7 @@
                                                     
                                                         "2018" : "",
                                                     
-                                                        "2019" : "19.8"
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "wg grup wieku": [
-                                            {"0-4 lata": [
-                                                    {
-                                                    
-                                                        "2010" : "4.5",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "3.8",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "3.6"
-                                                    
-                                                    }
-                                                ],"5-9 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "10.1",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "7.7",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "8.7"
-                                                    
-                                                    }
-                                                ],"10-14 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "14.5",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "12.4",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "7.7"
-                                                    
-                                                    }
-                                                ],"15-19 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "17.4",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "14.7",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "14.0"
-                                                    
-                                                    }
-                                                ],"20-29 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "20.0",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "19.1",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "17.2"
-                                                    
-                                                    }
-                                                ],"30-39 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "24.4",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "23.0",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "20.7"
-                                                    
-                                                    }
-                                                ],"40-49 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "21.2",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "21.7",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "23.3"
-                                                    
-                                                    }
-                                                ],"50-59 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "20.9",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "20.4",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "20.3"
-                                                    
-                                                    }
-                                                ],"60-69 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "22.0",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "23.1",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "21.8"
-                                                    
-                                                    }
-                                                ],"70-79 lat": [
-                                                    {
-                                                    
-                                                        "2010" : "27.7",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "27.5",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "27.9"
-                                                    
-                                                    }
-                                                ],"80 lat i więcej": [
-                                                    {
-                                                    
-                                                        "2010" : "24.4",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "27.0",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "25.6"
+                                                        "2019" : "86.0"
                                                     
                                                     }
                                                 ]
@@ -3215,15 +2128,15 @@
                       }
                     ]
               },
-          "3-4-c":{
+          "3-3-c":{
                 
                 "metadane": [
                       {
-                                      "nazwa": "3.4.c Odsetek mężczyzn w wieku 40 lat i więcej, którym kiedykolwiek wykonano lekarskie badanie prostaty ",
+                                      "nazwa": "3.3.c Odsetek mężczyzn w wieku 40 lat i więcej, którym kiedykolwiek wykonano lekarskie badanie prostaty ",
                                     
                                       "cel": "Cel 3. Dobre zdrowie i jakość życia",
                                     
-                                      "priorytet": "Zwiększenie wykrywalności chorób we wczesnych stadiach rozwojowych",
+                                      "priorytet": "Zwiększenie wykrywalności chorób we wczesnych stadiach rozwojowych oraz zwiększenie dostępu do nowoczesnych terapii",
                                     
                                       "definicja": "Odsetek mężczyzn w wieku 40 lat i więcej, którym kiedykolwiek wykonano lekarskie badanie prostaty.",
                                     
@@ -3324,6 +2237,7 @@
                       }
                     ]
               },
+          "3-4-c":{},
           "4-3-g":{
                 
                 "metadane": [
@@ -4282,85 +3196,85 @@
                                             {"ogółem": [
                                                     {
                                                     
-                                                        "2010" : "66.0",
+                                                        "2010" : "53.6",
                                                     
-                                                        "2011" : "65.3",
+                                                        "2011" : "54.0",
                                                     
-                                                        "2012" : "66.0",
+                                                        "2012" : "54.5",
                                                     
-                                                        "2013" : "65.5",
+                                                        "2013" : "54.7",
                                                     
-                                                        "2014" : "67.2",
+                                                        "2014" : "55.2",
                                                     
-                                                        "2015" : "65.8",
+                                                        "2015" : "55.3",
                                                     
-                                                        "2016" : "65.4",
+                                                        "2016" : "55.6",
                                                     
-                                                        "2017" : "64.6",
+                                                        "2017" : "56.0",
                                                     
-                                                        "2018" : "64.6",
+                                                        "2018" : "56.0",
                                                     
-                                                        "2019" : "64.9",
+                                                        "2019" : "56.0",
                                                     
-                                                        "2020" : "64.9",
+                                                        "2020" : "55.8",
                                                     
-                                                        "2021" : "69.2"
+                                                        "2021" : "57.8"
                                                     
                                                     }
                                                 ],"miasto": [
                                                     {
                                                     
-                                                        "2010" : "77.0",
+                                                        "2010" : "55.5",
                                                     
-                                                        "2011" : "70.5",
+                                                        "2011" : "55.8",
                                                     
-                                                        "2012" : "70.9",
+                                                        "2012" : "56.1",
                                                     
-                                                        "2013" : "70.5",
+                                                        "2013" : "56.1",
                                                     
-                                                        "2014" : "72.3",
+                                                        "2014" : "56.6",
                                                     
-                                                        "2015" : "71.6",
+                                                        "2015" : "56.6",
                                                     
-                                                        "2016" : "70.7",
+                                                        "2016" : "56.6",
                                                     
-                                                        "2017" : "69.6",
+                                                        "2017" : "56.8",
                                                     
-                                                        "2018" : "70.0",
+                                                        "2018" : "56.9",
                                                     
-                                                        "2019" : "70.5",
+                                                        "2019" : "56.7",
                                                     
-                                                        "2020" : "71.9",
+                                                        "2020" : "56.3",
                                                     
-                                                        "2021" : "75.7"
+                                                        "2021" : "58.0"
                                                     
                                                     }
                                                 ],"wieś": [
                                                     {
                                                     
-                                                        "2010" : "58.9",
+                                                        "2010" : "50.6",
                                                     
-                                                        "2011" : "58.0",
+                                                        "2011" : "51.1",
                                                     
-                                                        "2012" : "59.0",
+                                                        "2012" : "52.0",
                                                     
-                                                        "2013" : "58.6",
+                                                        "2013" : "52.5",
                                                     
-                                                        "2014" : "60.1",
+                                                        "2014" : "53.1",
                                                     
-                                                        "2015" : "57.3",
+                                                        "2015" : "53.3",
                                                     
-                                                        "2016" : "57.8",
+                                                        "2016" : "54.1",
                                                     
-                                                        "2017" : "57.6",
+                                                        "2017" : "54.8",
                                                     
-                                                        "2018" : "57.0",
+                                                        "2018" : "54.7",
                                                     
-                                                        "2019" : "57.0",
+                                                        "2019" : "54.8",
                                                     
                                                         "2020" : "54.9",
                                                     
-                                                        "2021" : "60.6"
+                                                        "2021" : "57.4"
                                                     
                                                     }
                                                 ]
@@ -4496,19 +3410,19 @@
                 
                 "metadane": [
                       {
-                                      "nazwa": "8.5.a Wskaźnik zatrudnienia kobiet z najmłodszym dzieckiem w wieku do 5 lat wg BAEL",
+                                      "nazwa": "8.5.a Współczynnik aktywności zawodowej",
                                     
                                       "cel": "Cel 8. Wzrost gospodarczy i godna praca",
                                     
-                                      "priorytet": "Zwiększenie elastyczności w odniesieniu do metod organizacji i świadczenia pracy",
+                                      "priorytet": "Aktywizacja zawodowa osób młodych, kobiet, osób w wieku 50+, osób długotrwale bezrobotnych, jak również niepełnosprawnych",
                                     
-                                      "definicja": "Udział pracujących kobiet z najmłodszym dzieckiem w wieku do 5 lat w ogólnej liczbie kobiet z najmłodszym dzieckiem w wieku do 5 lat.",
+                                      "definicja": "Udział aktywnych zawodowo (ogółem lub danej kategorii) w liczbie ludności (ogółem lub danej kategorii). Dane przeciętne w roku.",
                                     
                                       "jednostka": "procent [%]",
                                     
-                                      "wymiary": "ogółem",
+                                      "wymiary": "ogółem, kobiety, grupy wieku, niepełnosprawność",
                                     
-                                      "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15-89 lat będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Poza zakresem badania pozostają członkowie gospodarstw domowych przebywający (uwzględniany jest całkowity czas pobytu faktyczny i planowany) 12 miesięcy lub więcej za granicą oraz w gospodarstwach zbiorowych (takich jak: hotele pracownicze, domy studenckie, internaty, domy opieki społecznej, itp.) oraz osoby bezdomne. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Do pracujących zaliczane są wszystkie osoby w wieku 15-89 lat, które w okresie badanego tygodnia: 1. wykonywały przez co najmniej 1 godzinę pracę przynoszącą dochód lub zarobek, były zatrudnione w firmie/instytucji publicznej lub u prywatnego pracodawcy, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem, 2. miały pracę, ale jej nie wykonywały: • z powodu choroby lub urlopu wypoczynkowego, urlopu związanego z rodzicielstwem (macierzyńskiego, rodzicielskiego, ojcowskiego lub wychowawczego), organizacji czasu pracy (systemu pracy lub odbioru nadgodzin), szkolenia związanego z wykonywaną pracą, • z powodu sezonowego charakteru pracy, jeśli w okresie poza sezonem nadal regularnie wypełniały zadania i obowiązki związane z pracą lub prowadzeniem działalności (z wyłączeniem obowiązków prawnych lub administracyjnych), • z innych powodów, jeśli przewidywany okres nieobecności w pracy nie przekracza 3 miesięcy. Zgodnie z międzynarodowymi standardami, do pracujących zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Do pracujących nie są zaliczani: wolontariusze oraz stażyści nieotrzymujący wynagrodzenia, osoby pracujące w rolnictwie indywidualnym zajmujące się wytwarzaniem produktów rolnych wyłącznie lub głownie na własne potrzeby.",
+                                      "metodologia": "Dane pochodzą z reprezentacyjnego Badania Aktywności Ekonomicznej Ludności (BAEL), prowadzonego w cyklu kwartalnym metodą obserwacji ciągłej (ruchomy tydzień badania), pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego kwartału. Badaniem objęte są osoby w wieku 15-89 lat będące członkami gospodarstw domowych w wylosowanych mieszkaniach. Poza zakresem badania pozostają członkowie gospodarstw domowych  przebywający (uwzględniany jest całkowity czas pobytu faktyczny i planowany) 12 miesięcy lub więcej za granicą oraz w  gospodarstwach zbiorowych (takich jak: hotele pracownicze, domy studenckie, internaty, domy opieki społecznej, itp.) oraz osoby bezdomne. Podstawowym kryterium podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi standardami ogół ludności można podzielić na trzy podstawowe kategorie: pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią populację aktywnych zawodowo. Do pracujących zaliczane są wszystkie osoby w wieku 15-89 lat, które w okresie badanego tygodnia: 1) wykonywały przez co najmniej 1 godzinę pracę przynoszącą dochód lub zarobek, były zatrudnione w firmie/instytucji publicznej lub u prywatnego pracodawcy, pracowały we własnym (lub dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza rolnictwem, 2) miały pracę, ale jej nie wykonywały:  z powodu choroby lub urlopu wypoczynkowego, urlopu związanego z rodzicielstwem (macierzyńskiego, rodzicielskiego, ojcowskiego lub wychowawczego), organizacji czasu pracy (systemu pracy lub odbioru nadgodzin), szkolenia związanego z wykonywaną pracą, z powodu sezonowego charakteru pracy, jeśli w okresie poza sezonem nadal regularnie wypełniały zadania i obowiązki związane z pracą lub prowadzeniem działalności (z wyłączeniem obowiązków prawnych lub administracyjnych), z innych powodów, jeśli przewidywany okres nieobecności w pracy nie przekracza 3 miesięcy.  Zgodnie z międzynarodowymi standardami, do pracujących zaliczani są również uczniowie, z którymi zakłady pracy lub osoby fizyczne zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli otrzymywali wynagrodzenie. Do pracujących nie są zaliczani: wolontariusze oraz stażyści nieotrzymujący wynagrodzenia, osoby pracujące w rolnictwie indywidualnym zajmujące się wytwarzaniem produktów rolnych wyłącznie lub głównie na własne potrzeby. Bezrobotni wg BAEL to osoby w wieku 15-74 lata, które spełniają jednocześnie trzy warunki: - w okresie badanego tygodnia nie były osobami pracującymi, - aktywnie poszukiwały pracy, tzn. podjęły konkretne działania w ciągu 4 tygodni (wliczając jako ostatni - tydzień badany), aby znaleźć pracę, - były gotowe (zdolne) podjąć pracę w ciągu dwóch tygodni następujących po tygodniu badanym. Do bezrobotnych zaliczane są  także osoby, które nie poszukiwały pracy, ponieważ miały pracę załatwioną i oczekiwały na jej rozpoczęcie przez okres nie dłuższy niż 3 miesiące oraz były gotowe  ją podjąć.",
                                     
                                       "zrodlo": "Główny Urząd Statystyczny",
                                     
@@ -4520,89 +3434,269 @@
                     "dane": [
                       {
                                 
-                                        "miasto/wieś": [
+                                        "wg płci": [
                                             {"ogółem": [
                                                     {
                                                     
-                                                        "2010" : "66.0",
+                                                        "2010" : "53.6",
                                                     
-                                                        "2011" : "65.3",
+                                                        "2011" : "54.0",
                                                     
-                                                        "2012" : "66.0",
+                                                        "2012" : "54.5",
                                                     
-                                                        "2013" : "65.5",
+                                                        "2013" : "54.7",
                                                     
-                                                        "2014" : "67.2",
+                                                        "2014" : "55.2",
                                                     
-                                                        "2015" : "65.8",
+                                                        "2015" : "55.3",
                                                     
-                                                        "2016" : "65.4",
+                                                        "2016" : "55.6",
                                                     
-                                                        "2017" : "64.6",
+                                                        "2017" : "56.0",
                                                     
-                                                        "2018" : "64.6",
+                                                        "2018" : "56.0",
                                                     
-                                                        "2019" : "64.9",
+                                                        "2019" : "56.0",
                                                     
-                                                        "2020" : "64.9",
+                                                        "2020" : "55.8",
                                                     
-                                                        "2021" : "69.2"
+                                                        "2021" : "57.8"
                                                     
                                                     }
-                                                ],"miasto": [
+                                                ],"kobiety": [
                                                     {
                                                     
-                                                        "2010" : "77.0",
+                                                        "2010" : "46.3",
                                                     
-                                                        "2011" : "70.5",
+                                                        "2011" : "46.7",
                                                     
-                                                        "2012" : "70.9",
+                                                        "2012" : "47.3",
                                                     
-                                                        "2013" : "70.5",
+                                                        "2013" : "47.4",
                                                     
-                                                        "2014" : "72.3",
+                                                        "2014" : "47.8",
                                                     
-                                                        "2015" : "71.6",
+                                                        "2015" : "48.0",
                                                     
-                                                        "2016" : "70.7",
+                                                        "2016" : "48.1",
                                                     
-                                                        "2017" : "69.6",
+                                                        "2017" : "48.4",
                                                     
-                                                        "2018" : "70.0",
+                                                        "2018" : "48.5",
                                                     
-                                                        "2019" : "70.5",
+                                                        "2019" : "48.3",
                                                     
-                                                        "2020" : "71.9",
+                                                        "2020" : "47.9",
                                                     
-                                                        "2021" : "75.7"
+                                                        "2021" : "50.2"
+                                                    
+                                                    }
+                                                ],"mężczyźni": [
+                                                    {
+                                                    
+                                                        "2010" : "61.5",
+                                                    
+                                                        "2011" : "61.9",
+                                                    
+                                                        "2012" : "62.4",
+                                                    
+                                                        "2013" : "62.7",
+                                                    
+                                                        "2014" : "63.2",
+                                                    
+                                                        "2015" : "63.2",
+                                                    
+                                                        "2016" : "63.8",
+                                                    
+                                                        "2017" : "64.3",
+                                                    
+                                                        "2018" : "64.2",
+                                                    
+                                                        "2019" : "64.4",
+                                                    
+                                                        "2020" : "64.3",
+                                                    
+                                                        "2021" : "66.0"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "miasto/wieś": [
+                                            {"miasto": [
+                                                    {
+                                                    
+                                                        "2010" : "55.5",
+                                                    
+                                                        "2011" : "55.8",
+                                                    
+                                                        "2012" : "56.1",
+                                                    
+                                                        "2013" : "56.1",
+                                                    
+                                                        "2014" : "56.6",
+                                                    
+                                                        "2015" : "56.6",
+                                                    
+                                                        "2016" : "56.6",
+                                                    
+                                                        "2017" : "56.8",
+                                                    
+                                                        "2018" : "56.9",
+                                                    
+                                                        "2019" : "56.7",
+                                                    
+                                                        "2020" : "56.3",
+                                                    
+                                                        "2021" : "58.0"
                                                     
                                                     }
                                                 ],"wieś": [
                                                     {
                                                     
-                                                        "2010" : "58.9",
+                                                        "2010" : "50.6",
                                                     
-                                                        "2011" : "58.0",
+                                                        "2011" : "51.1",
                                                     
-                                                        "2012" : "59.0",
+                                                        "2012" : "52.0",
                                                     
-                                                        "2013" : "58.6",
+                                                        "2013" : "52.5",
                                                     
-                                                        "2014" : "60.1",
+                                                        "2014" : "53.1",
                                                     
-                                                        "2015" : "57.3",
+                                                        "2015" : "53.3",
                                                     
-                                                        "2016" : "57.8",
+                                                        "2016" : "54.1",
                                                     
-                                                        "2017" : "57.6",
+                                                        "2017" : "54.8",
                                                     
-                                                        "2018" : "57.0",
+                                                        "2018" : "54.7",
                                                     
-                                                        "2019" : "57.0",
+                                                        "2019" : "54.8",
                                                     
                                                         "2020" : "54.9",
                                                     
-                                                        "2021" : "60.6"
+                                                        "2021" : "57.4"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "wg grup wieku": [
+                                            {"osoby w wieku 15-24 lata": [
+                                                    {
+                                                    
+                                                        "2010" : "34.2",
+                                                    
+                                                        "2011" : "33.2",
+                                                    
+                                                        "2012" : "33.2",
+                                                    
+                                                        "2013" : "32.9",
+                                                    
+                                                        "2014" : "33.5",
+                                                    
+                                                        "2015" : "32.5",
+                                                    
+                                                        "2016" : "34.2",
+                                                    
+                                                        "2017" : "34.5",
+                                                    
+                                                        "2018" : "35.0",
+                                                    
+                                                        "2019" : "35.1",
+                                                    
+                                                        "2020" : "31.6",
+                                                    
+                                                        "2021" : "31.0"
+                                                    
+                                                    }
+                                                ],"w wieku 18-59/64 lat": [
+                                                    {
+                                                    
+                                                        "2010" : "69.6",
+                                                    
+                                                        "2011" : "70.2",
+                                                    
+                                                        "2012" : "71.2",
+                                                    
+                                                        "2013" : "71.8",
+                                                    
+                                                        "2014" : "72.8",
+                                                    
+                                                        "2015" : "73.1",
+                                                    
+                                                        "2016" : "74.0",
+                                                    
+                                                        "2017" : "75.0",
+                                                    
+                                                        "2018" : "75.8",
+                                                    
+                                                        "2019" : "76.4",
+                                                    
+                                                        "2020" : "76.5",
+                                                    
+                                                        "2021" : "79.4"
+                                                    
+                                                    }
+                                                ],"osoby w wieku 50-89 lat": [
+                                                    {
+                                                    
+                                                        "2010" : "30.6",
+                                                    
+                                                        "2011" : "31.6",
+                                                    
+                                                        "2012" : "32.2",
+                                                    
+                                                        "2013" : "32.5",
+                                                    
+                                                        "2014" : "33.1",
+                                                    
+                                                        "2015" : "33.4",
+                                                    
+                                                        "2016" : "33.3",
+                                                    
+                                                        "2017" : "33.8",
+                                                    
+                                                        "2018" : "33.3",
+                                                    
+                                                        "2019" : "33.0",
+                                                    
+                                                        "2020" : "33.3",
+                                                    
+                                                        "2021" : "35.6"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "osoby niepełnosprawne": [
+                                            {"w wieku 16-89 lat": [
+                                                    {
+                                                    
+                                                        "2010" : "15.3",
+                                                    
+                                                        "2011" : "15.5",
+                                                    
+                                                        "2012" : "16.2",
+                                                    
+                                                        "2013" : "16.1",
+                                                    
+                                                        "2014" : "16.5",
+                                                    
+                                                        "2015" : "16.0",
+                                                    
+                                                        "2016" : "16.1",
+                                                    
+                                                        "2017" : "17.4",
+                                                    
+                                                        "2018" : "17.1",
+                                                    
+                                                        "2019" : "17.1",
+                                                    
+                                                        "2020" : "17.4",
+                                                    
+                                                        "2021" : "19.5"
                                                     
                                                     }
                                                 ]

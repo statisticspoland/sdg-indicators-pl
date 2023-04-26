@@ -1006,844 +1006,11 @@
           "metadata": [
             
             {
-                            "name": "3.3.a Self-reported unmet need for medical examination and care",
+                            "name": "3.3.a Percentage of women aged 15 and more who have ever had mammography",
                           
                             "goal": "Goal 3. Good health and well-being",
                           
-                            "priority": "Increase in health awareness",
-                          
-                            "definition": "The percentage of population aged 16 and over who reported unmet needs for medical care.",
-                          
-                            "unit": "percent [%]",
-                          
-                            "dimensions": "total",
-                          
-                            "methodology": "The indicator measures the share of the population aged 16 and over reporting unmet needs for medical care due to one of the following reasons: Financial reasons, Waiting list and Too far to travel (all three categories are cumulated). Self-reported unmet needs concern a person's own assessment of whether he or she needed medical examination or treatment (dental care excluded), but did not have it or did not seek it. The indicator is calculated on the basis of househols' equivalised disposable income obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) whose subject are households and persons aged 16 and more in households. The survey is of a panel character, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview technique using 2 questionnaires; one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Central Statistical Office of Poland implemented EU-SILC survey in 2005.",
-                          
-                            "source": "Statistics Poland",
-                          
-                            "availability": "Annual data; since 2010",
-                          
-                            "notes": "2021 - preliminary data."
-                          }
-          ],
-          "data": [
-            {"total": [
-                              {
-                              
-                                  "2010" :   "8.3",
-                              
-                                  "2011" :   "7.9",
-                              
-                                  "2012" :   "9.0",
-                              
-                                  "2013" :   "8.8",
-                              
-                                  "2014" :   "7.8",
-                              
-                                  "2015" :   "7.3",
-                              
-                                  "2016" :   "6.6",
-                              
-                                  "2017" :   "3.3",
-                              
-                                  "2018" :   "4.2",
-                              
-                                  "2019" :   "4.2",
-                              
-                                  "2020" :   "1.9",
-                              
-                                  "2021" :   "2.7"
-                              
-                              }
-                          ]
-                      
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "3-3-b": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "3.3.b Percentage of persons who have ever been vaccinated against virus hepatitis B",
-                          
-                            "goal": "Goal 3. Good health and well-being",
-                          
-                            "priority": "Increase in health awareness",
-                          
-                            "definition": "Percentage of persons who have ever been vaccinated against virus hepatitis B.",
-                          
-                            "unit": "percent [%]",
-                          
-                            "dimensions": "total",
-                          
-                            "methodology": "Data comes from the European Health Interview Survey (EHIS), repeated every 5 years. The results of the study enable to get to know the health situation of the inhabitants of the Union and its conditions in connection with the demographic and social characteristics and the place of residence. The study covers four areas:  health status (including self-assessment of health status, chronic diseases, limitations in functioning and their impact on everyday life, psychological well-being), health care (use of medical care, use of medicines, prophylaxis), health determinants (mainly lifestyle and exposure to adverse environmental factors) and demographic and social characteristics of persons and households. ",
-                          
-                            "source": "Statistics Poland",
-                          
-                            "availability": "Data every 5 years; since 2010",
-                          
-                            "notes": "Data presented for 2010 relate to the survey carried out in 2009. Lack of data for 2019 results from the fact that in the third round of EHIS (2019) there was no question about vaccination against virus hepatitis B."
-                          }
-          ],
-          "data": [
-            {
-                      
-                              "by sex": [
-                                  {"total": [
-                                          {
-                                          
-                                              "2010" : "28.2",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "33.6",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ],"males": [
-                                          {
-                                          
-                                              "2010" : "25.3",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "30.4",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ],"females": [
-                                          {
-                                          
-                                              "2010" : "30.8",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "36.2",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "urban/rural": [
-                                  {"urban area": [
-                                          {
-                                          
-                                              "2010" : "32.7",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "38.0",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ],"rural area": [
-                                          {
-                                          
-                                              "2010" : "20.9",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "26.6",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "by age group": [
-                                  {"15-19 years": [
-                                          {
-                                          
-                                              "2010" : "26.8",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "81.0",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ],"20-29 years": [
-                                          {
-                                          
-                                              "2010" : "25.9",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "27.6",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ],"30-39 years": [
-                                          {
-                                          
-                                              "2010" : "24.4",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "28.0",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ],"40-49 years": [
-                                          {
-                                          
-                                              "2010" : "26.8",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "28.3",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ],"50-59 years": [
-                                          {
-                                          
-                                              "2010" : "32.0",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "32.3",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ],"60-69 years": [
-                                          {
-                                          
-                                              "2010" : "34.3",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "35.9",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ],"70-79 years": [
-                                          {
-                                          
-                                              "2010" : "31.1",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "35.5",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ],"80 years and more": [
-                                          {
-                                          
-                                              "2010" : "23.1",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "25.5",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : ""
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "3-3-c": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "3.3.c Percentage of persons who have ever been vaccinated against influenza",
-                          
-                            "goal": "Goal 3. Good health and well-being",
-                          
-                            "priority": "Increase in health awareness",
-                          
-                            "definition": "Percentage of persons who have ever been vaccinated against influenza.",
-                          
-                            "unit": "percent [%]",
-                          
-                            "dimensions": "total",
-                          
-                            "methodology": "Data comes from the European Health Interview Survey (EHIS), repeated every 5 years. The results of the study enable to get to know the health situation of the inhabitants of the Union and its conditions in connection with the demographic and social characteristics and the place of residence. The study covers four areas:  health status (including self-assessment of health status, chronic diseases, limitations in functioning and their impact on everyday life, psychological well-being), health care (use of medical care, use of medicines, prophylaxis), health determinants (mainly lifestyle and exposure to adverse environmental factors) and demographic and social characteristics of persons and households. ",
-                          
-                            "source": "Statistics Poland",
-                          
-                            "availability": "Data every 5 years; since 2010",
-                          
-                            "notes": "Data presented for 2010 relate to the survey carried out in 2009."
-                          }
-          ],
-          "data": [
-            {
-                      
-                              "urban/rural": [
-                                  {"total": [
-                                          {
-                                          
-                                              "2010" : "20.0",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "19.5",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "19.0"
-                                          
-                                          }
-                                      ],"urban area": [
-                                          {
-                                          
-                                              "2010" : "23.5",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "23.4",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "22.7"
-                                          
-                                          }
-                                      ],"rural area": [
-                                          {
-                                          
-                                              "2010" : "14.6",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "13.5",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "13.4"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "by sex": [
-                                  {"females": [
-                                          {
-                                          
-                                              "2010" : "19.7",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "19.1",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "18.3"
-                                          
-                                          }
-                                      ],"males": [
-                                          {
-                                          
-                                              "2010" : "20.5",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "19.9",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "19.8"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "by age group": [
-                                  {"0-4 years": [
-                                          {
-                                          
-                                              "2010" : "4.5",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "3.8",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "3.6"
-                                          
-                                          }
-                                      ],"5-9 years": [
-                                          {
-                                          
-                                              "2010" : "10.1",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "7.7",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "8.7"
-                                          
-                                          }
-                                      ],"10-14 years": [
-                                          {
-                                          
-                                              "2010" : "14.5",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "12.4",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "7.7"
-                                          
-                                          }
-                                      ],"15-19 years": [
-                                          {
-                                          
-                                              "2010" : "17.4",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "14.7",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "14.0"
-                                          
-                                          }
-                                      ],"20-29 years": [
-                                          {
-                                          
-                                              "2010" : "20.0",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "19.1",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "17.2"
-                                          
-                                          }
-                                      ],"30-39 years": [
-                                          {
-                                          
-                                              "2010" : "24.4",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "23.0",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "20.7"
-                                          
-                                          }
-                                      ],"40-49 years": [
-                                          {
-                                          
-                                              "2010" : "21.2",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "21.7",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "23.3"
-                                          
-                                          }
-                                      ],"50-59 years": [
-                                          {
-                                          
-                                              "2010" : "20.9",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "20.4",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "20.3"
-                                          
-                                          }
-                                      ],"60-69 years": [
-                                          {
-                                          
-                                              "2010" : "22.0",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "23.1",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "21.8"
-                                          
-                                          }
-                                      ],"70-79 years": [
-                                          {
-                                          
-                                              "2010" : "27.7",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "27.5",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "27.9"
-                                          
-                                          }
-                                      ],"80 years and more": [
-                                          {
-                                          
-                                              "2010" : "24.4",
-                                          
-                                              "2011" : "",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "27.0",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "25.6"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "3-4-a": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "3.4.a Percentage of women aged 15 and more who have ever had mammography",
-                          
-                            "goal": "Goal 3. Good health and well-being",
-                          
-                            "priority": "Increase in early disease detectability",
+                            "priority": "Increase in early disease detectability and increase in access to modern therapies",
                           
                             "definition": "Percentage of women aged 15 and more who have ever had mammography.",
                           
@@ -1995,16 +1162,16 @@
       ]
     },
     {
-      "3-4-b": [
+      "3-3-b": [
         {
           "metadata": [
             
             {
-                            "name": "3.4.b Percentage of women aged 15 and more who have ever had cervical smear test",
+                            "name": "3.3.b Percentage of women aged 15 and more who have ever had cervical smear test",
                           
                             "goal": "Goal 3. Good health and well-being",
                           
-                            "priority": "Increase in early disease detectability",
+                            "priority": "Increase in early disease detectability and increase in access to modern therapies",
                           
                             "definition": "Percentage of women aged 15 and more who have ever had cervical smear test.",
                           
@@ -2156,16 +1323,16 @@
       ]
     },
     {
-      "3-4-c": [
+      "3-3-c": [
         {
           "metadata": [
             
             {
-                            "name": "3.4.c Percentage of men aged 40 and more who have ever had medical examination of their prostate performed",
+                            "name": "3.3.c Percentage of men aged 40 and more who have ever had medical examination of their prostate performed",
                           
                             "goal": "Goal 3. Good health and well-being",
                           
-                            "priority": "Increase in early disease detectability",
+                            "priority": "Increase in early disease detectability and increase in access to modern therapies",
                           
                             "definition": "Percentage of men aged 40 and more who have ever had medical examination of their prostate performed.",
                           
@@ -2269,16 +1436,16 @@
       ]
     },
     {
-      "3-4-d": [
+      "3-3-d": [
         {
           "metadata": [
             
             {
-                            "name": "3.4.d Percentage of newborns included in screening tests for rare metabolic disorders",
+                            "name": "3.3.d Percentage of newborns included in screening tests for rare metabolic disorders",
                           
                             "goal": "Goal 3. Good health and well-being",
                           
-                            "priority": "Increase in early disease detectability",
+                            "priority": "Increase in early disease detectability and increase in access to modern therapies",
                           
                             "definition": "Share of number of newborns included in screening tests for rare metabolic disorders  in the total number of newborns.",
                           
@@ -2336,16 +1503,16 @@
       ]
     },
     {
-      "3-4-e": [
+      "3-3-e": [
         {
           "metadata": [
             
             {
-                            "name": "3.4.e Number of screening tests for early detection of colorectal cancer at 10 thous. population",
+                            "name": "3.3.e Number of screening tests for early detection of colorectal cancer at 10 thous. population",
                           
                             "goal": "Goal 3. Good health and well-being",
                           
-                            "priority": "Increase in early disease detectability",
+                            "priority": "Increase in early disease detectability and increase in access to modern therapies",
                           
                             "definition": "Number of tests carried out as part of the Screening Research Program for the early detection of colorectal cancer per 10 thous. population (opportunistic system and invited).",
                           
@@ -2401,16 +1568,16 @@
       ]
     },
     {
-      "3-5-a": [
+      "3-4-a": [
         {
           "metadata": [
             
             {
-                            "name": "3.5.a Current public expenditure on health care as % of GDP",
+                            "name": "3.4.a Current public expenditure on health care as % of GDP",
                           
                             "goal": "Goal 3. Good health and well-being",
                           
-                            "priority": "Improvement of healthcare system quality and patient safety",
+                            "priority": "Improvement of healthcare system quality and patient safety including the development of e-health area",
                           
                             "definition": "Share of current public expenditure on health care in GDP.",
                           
@@ -2520,16 +1687,16 @@
       ]
     },
     {
-      "3-6-a": [
+      "3-4-b": [
         {
           "metadata": [
             
             {
-                            "name": "3.6.a Percentage of medical entities with IT solutions that enable keeping medical records in electronic form",
+                            "name": "3.4.b Percentage of medical entities with IT solutions that enable keeping medical records in electronic form",
                           
                             "goal": "Goal 3. Good health and well-being",
                           
-                            "priority": "Development of e-health area",
+                            "priority": "Improvement of healthcare system quality and patient safety including the development of e-health area",
                           
                             "definition": "Share of the number of medical entities with IT solutions that enable keeping medical records in electronic form (in the year of conducting the questionnaire survey) in the number of surveyed medical entities.",
                           
@@ -2585,16 +1752,16 @@
       ]
     },
     {
-      "3-7-a": [
+      "3-5-a": [
         {
           "metadata": [
             
             {
-                            "name": "3.7.a National indicator of average exposure to PM2.5",
+                            "name": "3.5.a National indicator of average exposure to PM2.5",
                           
                             "goal": "Goal 3. Good health and well-being",
                           
-                            "priority": "Comprehensive improvement of air quality  reaching the state of no risk to health and environment in accordance with EU legislation and, in a longer-term perspective, WHO guidelines",
+                            "priority": "Comprehensive improvement of air quality reaching the state of no risk to health and environment in accordance with EU legislation and, in a longer-term perspective, WHO guidelines by reducing emissions of pollutants into the air",
                           
                             "definition": "Average level of substances in the air, determined on the basis of measurements carried out within the municipal background areas in cities with number of residents exceeding 100 thousand and agglomerations within the whole country; the calculation manner for KW is provided for in the regulation by the Minister of Environment of 13.09.2012 for calculation of the average exposure indicator and evaluation of keeping the concentration exposure threshold (Official Journal Dz.U. item 1029).",
                           
@@ -2614,31 +1781,6 @@
           "data": [
             {"total": [
                               {
-                              
-                                  "2010" :   "28",
-                              
-                                  "2011" :   "27",
-                              
-                                  "2012" :   "26",
-                              
-                                  "2013" :   "25",
-                              
-                                  "2014" :   "24",
-                              
-                                  "2015" :   "23",
-                              
-                                  "2016" :   "22",
-                              
-                                  "2017" :   "22",
-                              
-                                  "2018" :   "22",
-                              
-                                  "2019" :   "21",
-                              
-                                  "2020" :   "19",
-                              
-                                  "2021" :   "17"
-                              
                               }
                           ]
                       

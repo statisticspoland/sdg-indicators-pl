@@ -10,7 +10,7 @@
                           
                             "cel": "Cel 2. Zero głodu",
                           
-                            "priorytet": "Wsparcie przekształceń strukturalnych zapewniających wzrost konkurencyjności rolnictwa, w tym wzrost konkurencyjności gospodarstw rolnych i producentów rolno-spożywczych",
+                            "priorytet": "Wsparcie przekształceń strukturalnych zapewniających wzrost konkurencyjności gospodarstw rolnych i producentów rolno-spożywczych",
                           
                             "definicja": "Udział wydatków rządowych przeznaczonych na rolnictwo w wydatkach rządowych ogółem, odniesiony do udziału rolnictwa w PKB.",
                           
@@ -51,7 +51,9 @@
                               
                                   "2019" :   "0.50",
                               
-                                  "2020" :   "0.45"
+                                  "2020" :   "0.45",
+                              
+                                  "2021" :   "0.41"
                               
                               }
                           ]
@@ -73,7 +75,7 @@
                           
                             "cel": "Cel 2. Zero głodu",
                           
-                            "priorytet": "Wsparcie przekształceń strukturalnych zapewniających wzrost konkurencyjności rolnictwa, w tym wzrost konkurencyjności gospodarstw rolnych i producentów rolno-spożywczych",
+                            "priorytet": "Wsparcie przekształceń strukturalnych zapewniających wzrost konkurencyjności gospodarstw rolnych i producentów rolno-spożywczych",
                           
                             "definicja": "Relacja nakładów na działalność badawczą i rozwojową w dziedzinie nauk rolniczych i weterynaryjnych do Produktu Krajowego Brutto.",
                           
@@ -138,7 +140,7 @@
                           
                             "cel": "Cel 2. Zero głodu",
                           
-                            "priorytet": "Wsparcie przekształceń strukturalnych zapewniających wzrost konkurencyjności rolnictwa, w tym wzrost konkurencyjności gospodarstw rolnych i producentów rolno-spożywczych",
+                            "priorytet": "Wsparcie przekształceń strukturalnych zapewniających wzrost konkurencyjności gospodarstw rolnych i producentów rolno-spożywczych",
                           
                             "definicja": "Powierzchnia użytków rolnych w gospodarstwach rolnych o powierzchni użytków rolnych powyżej 30 ha w stosunku do powierzchni użytków rolnych ogółem w gospodarstwach rolnych posiadających użytki rolne.",
                           
@@ -327,7 +329,7 @@
                           
                             "cel": "Cel 2. Zero głodu",
                           
-                            "priorytet": "Wzrost zróżnicowania źródeł dochodów mieszkańców obszarów wiejskich",
+                            "priorytet": "Poprawa sytuacji dochodowej gospodarstw domowych na wsi w relacji do miasta, w tym poprzez wzrost zróżnicowania źródeł dochodów mieszkańców obszarów wiejskich",
                           
                             "definicja": "Stosunek sumy przeciętnych miesięcznych dochodów z pracy najemnej i przeciętnych miesięcznych dochodów z pracy na własny rachunek na 1 osobę w wiejskich gospodarstwach domowych do przeciętnego miesięcznego dochodu rozporządzalnego na 1 osobę w tych gospodarstwach.",
                           
@@ -392,7 +394,7 @@
                           
                             "cel": "Cel 2. Zero głodu",
                           
-                            "priorytet": "Zwiększenie udziału produktów sektora rolniczego (w tym żywności wysokiej jakości) w polskim eksporcie",
+                            "priorytet": "Promocja produktów sektora rolno-spożywczego (w tym żywności wysokiej jakości) oraz wsparcie jego ekspansji zagranicznej",
                           
                             "definicja": "Wartość towarów wywiezionych poza granicę Polski zaliczanych do grupy artykułów rolno-spożywczych wyrażona w złotówkach w przeliczeniu na 1 mieszkańca.",
                           
@@ -457,7 +459,7 @@
                           
                             "cel": "Cel 2. Zero głodu",
                           
-                            "priorytet": "Zwiększenie udziału produktów sektora rolniczego (w tym żywności wysokiej jakości) w polskim eksporcie",
+                            "priorytet": "Promocja produktów sektora rolno-spożywczego (w tym żywności wysokiej jakości) oraz wsparcie jego ekspansji zagranicznej",
                           
                             "definicja": "Udział wartości wyeksportowanych towarów rolno-spożywczych w wartości polskiego eksportu ogółem.",
                           
@@ -518,301 +520,11 @@
           "metadane": [
             
             {
-                            "nazwa": "2.5.a Odsetek długości dróg publicznych o nawierzchni twardej ulepszonej na terenach zamiejskich",
+                            "nazwa": "2.5.a Odsetek osób w wieku 15 lat i więcej cierpiących na otyłość wg BMI",
                           
                             "cel": "Cel 2. Zero głodu",
                           
-                            "priorytet": "Rozwój infrastruktury na wsi",
-                          
-                            "definicja": "Stosunek długości dróg publicznych zamiejskich o nawierzchni twardej ulepszonej do długości dróg publicznych ogółem.",
-                          
-                            "jednostka": "procent [%]",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "Drogi publiczne ze względu na funkcje w sieci drogowej dzielą się według przepisów ustawy z dnia 21 marca 1985 r. o drogach publicznych (tekst jednolity Dz.U. 2015 poz. 460) na następujące kategorie:  - drogi krajowe, - drogi wojewódzkie, - drogi powiatowe, - drogi gminne. Do dróg o nawierzchni twardej ulepszonej zalicza się drogi o nawierzchni z kostki kamiennej, klinkieru, betonu, z płyt kamienno-betonowych i bitumu.",
-                          
-                            "zrodlo": "Główny Urząd Statystyczny",
-                          
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
-                          
-                            "uwagi": ""
-                          }
-          ],
-          "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "48.6",
-                              
-                                  "2011" :   "49.4",
-                              
-                                  "2012" :   "49.5",
-                              
-                                  "2013" :   "49.7",
-                              
-                                  "2014" :   "50.3",
-                              
-                                  "2015" :   "50.6",
-                              
-                                  "2016" :   "51.2",
-                              
-                                  "2017" :   "52.1",
-                              
-                                  "2018" :   "52.6",
-                              
-                                  "2019" :   "53.2",
-                              
-                                  "2020" :   "53.9",
-                              
-                                  "2021" :   "54.3"
-                              
-                              }
-                          ]
-                        
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "2-6-a": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "2.6.a Liczba zasobów genetycznych roślin i zwierząt dla wyżywienia i rolnictwa zabezpieczonych w kolekcjach banków genów",
-                          
-                            "cel": "Cel 2. Zero głodu",
-                          
-                            "priorytet": "Poszanowanie różnorodności biologicznej poprzez jej zwiększanie lub co najmniej niepogarszanie jej stanu",
-                          
-                            "definicja": "Wskaźnik określa zasoby genetyczne roślin dla wyżywienia i rolnictwa (zabezpieczone w kolekcjach banków genów, przechowywane w postaci generatywnej – w formie nasion oraz w postaci wegetatywnej – w formie plantacji polowych, kultur in vitro, mikrobulwek itp.) oraz zasoby genetyczne zwierząt gospodarskich metodami ex situ in vitro i ex situ in vivo.",
-                          
-                            "jednostka": "sztuki",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "Kolekcje roślin utrzymywanych w banku genów obejmują rośliny: rolnicze (zboża, okopowe, specjalne, zielarskie, pastewne, rekultywacyjne i energetyczne, motylkowate drobnonasienne, marginalne rośliny strączkowe gruboziarniste), warzywne, sadownicze (w tym podkładki drzew ziarnkowych, podkładki drzew pestkowych, rzadkie gatunki roślin sadowniczych, rośliny jagodowe), miododajne i ozdobne. Zasoby genetyczne roślin obliczane są na podstawie bazy danych, zawierającej liczbę obiektów oraz dane na ich temat. Informacje dostępne są w IHAR-PIB, pod adresem: http://egiset.ihar.edu.pl/index.aspx?lang=pl-PL. Baza danych obejmuje zasoby przechowywane w kolekcjach banku genów, w różnych formach, zlokalizowanych w IHAR Radzików (centralna przechowalnia nasion) oraz w szeregu innych instytucji, m.in.: Instytut Ogrodnictwa w Skierniewicach, Arboretum i Zakład Fizjografii w Bolestraszycach Polska Akademia Nauk Ogród Botaniczny - Centrum Zachowania Bioróżnorodności Biologicznej w Powsinie Szkoła Główna Gospodarstwa Wiejskiego w Warszawie Uniwersytet Przyrodniczy w Poznaniu Towarzystwo Przyjaciół Dolnej Wisły w Grucznie Poznańska Hodowla Roślin Sp. z o.o. w Tulcach Instytut Włókien Naturalnych i Roślin Zielarskich w Poznaniu Instytut Uprawy Nawożenia i Gleboznawstwa - PIB w Puławach. Liczba zasobów genetycznych zwierząt określana jest  metodami ex situ in vitro i ex situ in vivo. Istnieją następujące metody ochrony populacji zwierząt przed wyginięciem: - in situ - polegającą na ochronie żywych zwierząt w ich naturalnym środowisku, - ex-situ -ochrona zasobów genetycznych poza miejscem ich naturalnego występowania, w tym:  ex-situ in vitro - kriokonserwowanego materiału w bankach materiału genetycznego, ex situ in vivo - kolekcje żywych zwierząt utrzymywane poza miejscem występowania.  W przypadku kolekcji ex situ in vivo, aby można je było uznać za utrzymywane w sposób długookresowy i stabilny, przyjmuje się, że są one w placówkach należących do sektora publicznego.",
-                          
-                            "zrodlo": "Ministerstwo Rolnictwa i Rozwoju Wsi / Instytut Hodowli i Aklimatyzacji Roślin - PIB in Radzików / Instytut Ogrodnictwa w Skierniewicach/ Instytut Zootechniki",
-                          
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
-                          
-                            "uwagi": "W liczbie obiektów bazy danych IHAR-PIB zawarte są także dane historyczne."
-                          }
-          ],
-          "dane": [
-            {
-                      
-                              "zasoby genetyczne roślin": [
-                                  {"ogółem": [
-                                          {
-                                          
-                                              "2010" : "73660",
-                                          
-                                              "2011" : "74215",
-                                          
-                                              "2012" : "75551",
-                                          
-                                              "2013" : "76951",
-                                          
-                                              "2014" : "80430",
-                                          
-                                              "2015" : "81807",
-                                          
-                                              "2016" : "82514",
-                                          
-                                              "2017" : "88362",
-                                          
-                                              "2018" : "85855",
-                                          
-                                              "2019" : "85876",
-                                          
-                                              "2020" : "85876",
-                                          
-                                              "2021" : "89880",
-                                          
-                                              "2022" : "90374"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "zasoby genetyczne zwierząt": [
-                                  {"gęsi w żywych kolekcjach": [
-                                          {
-                                          
-                                              "2010" : "3681",
-                                          
-                                              "2011" : "3716",
-                                          
-                                              "2012" : "3675",
-                                          
-                                              "2013" : "3959",
-                                          
-                                              "2014" : "3981",
-                                          
-                                              "2015" : "3907",
-                                          
-                                              "2016" : "4256",
-                                          
-                                              "2017" : "3979",
-                                          
-                                              "2018" : "4197",
-                                          
-                                              "2019" : "4453",
-                                          
-                                              "2020" : "4350",
-                                          
-                                              "2021" : "4185",
-                                          
-                                              "2022" : "4164"
-                                          
-                                          }
-                                      ],"kaczki w żywych kolekcjach": [
-                                          {
-                                          
-                                              "2010" : "1293",
-                                          
-                                              "2011" : "1277",
-                                          
-                                              "2012" : "1296",
-                                          
-                                              "2013" : "1319",
-                                          
-                                              "2014" : "1314",
-                                          
-                                              "2015" : "1394",
-                                          
-                                              "2016" : "1307",
-                                          
-                                              "2017" : "1373",
-                                          
-                                              "2018" : "1455",
-                                          
-                                              "2019" : "1497",
-                                          
-                                              "2020" : "1578",
-                                          
-                                              "2021" : "1470",
-                                          
-                                              "2022" : "1488"
-                                          
-                                          }
-                                      ],"kury w żywych kolekcjach": [
-                                          {
-                                          
-                                              "2010" : "7225",
-                                          
-                                              "2011" : "7210",
-                                          
-                                              "2012" : "7884",
-                                          
-                                              "2013" : "8168",
-                                          
-                                              "2014" : "8207",
-                                          
-                                              "2015" : "8239",
-                                          
-                                              "2016" : "8170",
-                                          
-                                              "2017" : "8137",
-                                          
-                                              "2018" : "8125",
-                                          
-                                              "2019" : "8198",
-                                          
-                                              "2020" : "8160",
-                                          
-                                              "2021" : "8150",
-                                          
-                                              "2022" : "8135"
-                                          
-                                          }
-                                      ],"bydło od którego pobrano materiał genetyczny do banku genów": [
-                                          {
-                                          
-                                              "2010" : "31",
-                                          
-                                              "2011" : "47",
-                                          
-                                              "2012" : "52",
-                                          
-                                              "2013" : "57",
-                                          
-                                              "2014" : "60",
-                                          
-                                              "2015" : "76",
-                                          
-                                              "2016" : "85",
-                                          
-                                              "2017" : "125",
-                                          
-                                              "2018" : "120",
-                                          
-                                              "2019" : "144",
-                                          
-                                              "2020" : "156",
-                                          
-                                              "2021" : "169",
-                                          
-                                              "2022" : "212"
-                                          
-                                          }
-                                      ],"materiał genetyczny bydła w banku genów": [
-                                          {
-                                          
-                                              "2010" : "7565",
-                                          
-                                              "2011" : "9315",
-                                          
-                                              "2012" : "10315",
-                                          
-                                              "2013" : "11315",
-                                          
-                                              "2014" : "11915",
-                                          
-                                              "2015" : "28838",
-                                          
-                                              "2016" : "30638",
-                                          
-                                              "2017" : "34511",
-                                          
-                                              "2018" : "33679",
-                                          
-                                              "2019" : "37589",
-                                          
-                                              "2020" : "40100",
-                                          
-                                              "2021" : "42445",
-                                          
-                                              "2022" : "50707"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "2-7-a": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "2.7.a Odsetek osób w wieku 15 lat i więcej cierpiących na otyłość wg BMI",
-                          
-                            "cel": "Cel 2. Zero głodu",
-                          
-                            "priorytet": "Promocja zdrowego stylu życia, w tym m.in. zdrowego odżywiania się zarówno wśród dorosłych, jak i dzieci (zmniejszenie odsetka osób z nadwagą i otyłością)",
+                            "priorytet": "Promocja zdrowego stylu życia wśród dorosłych i dzieci",
                           
                             "definicja": "Odsetek osób w wieku 15 lat i więcej o wartości wskaźnika masy ciała (BMI) wynoszącym 30 lub więcej.",
                           
@@ -916,16 +628,16 @@
       ]
     },
     {
-      "2-7-b": [
+      "2-5-b": [
         {
           "metadane": [
             
             {
-                            "nazwa": "2.7.b Odsetek dzieci w wieku 6-10 lat cierpiących na nadwagę lub otyłość wg BMI",
+                            "nazwa": "2.5.b Odsetek dzieci w wieku 6-10 lat cierpiących na nadwagę lub otyłość wg BMI",
                           
                             "cel": "Cel 2. Zero głodu",
                           
-                            "priorytet": "Promocja zdrowego stylu życia, w tym m.in. zdrowego odżywiania się zarówno wśród dorosłych, jak i dzieci (zmniejszenie odsetka osób z nadwagą i otyłością)",
+                            "priorytet": "Promocja zdrowego stylu życia wśród dorosłych i dzieci",
                           
                             "definicja": "Udział dzieci w wieku 6-10 lat cierpiących na nadwagę lub otyłość w ogólnej liczbie dzieci w tej grupie wieku.",
                           
