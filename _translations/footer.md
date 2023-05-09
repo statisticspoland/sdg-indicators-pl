@@ -11,7 +11,7 @@ pl:
   nav-development : "FAQs"
   nav-api : "API"
   nav-api-custodian : "API organizacje międzynarodowe"
-  nav-declaration : "Deklaracja dostępności"
+  nav-declaration : "Polityka prywatności oraz oświadczenie o dostępności"
   nav-reporting-glob-status : "globalnych"
   nav-reporting-nat-status : "krajowych"
   nav-api-title : "Otwórz podstronę API"
