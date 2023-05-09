@@ -2,7 +2,115 @@
 {
   "sex_n": [
       {
-          "2-7-a":{},
+          "2-5-a":{
+                
+                "metadata": [
+                      {
+                                      "name": "2.5.a Prevalence of obesity among people aged 15 and more according to BMI",
+                                    
+                                      "goal": "Goal 2. Zero hunger",
+                                    
+                                      "priority": "Promotion of healthy lifestyle among adults and children",
+                                    
+                                      "definition": "Percentage of population aged 15 years and more with a BMI equal 30 or more.",
+                                    
+                                      "unit": "percent [%]",
+                                    
+                                      "dimensions": "sex",
+                                    
+                                      "methodology": "Obesity is defined as abnormal or excessive fat accumulation that presents a risk to health. A crude population measure of obesity is the body mass index (BMI). A person with a BMI of 30 or more is generally considered obese. Body mass index (BMI) is defined as a person's weight in kilograms divided by the square of the person's height in metres (kg/m2). For adults over 20 years old, BMI falls into one of the following categories:   18.5 - 24.9 - normal weight, 25.0 - 29.9 - pre-obesity, 30.0 - 34.9 - obesity class I, 35.0 - 39.9 - obesity class II, >=40 - obesity class III.  The BMI ranges are based on the effect excessive body fat has on disease and death and are reasonably well related to adiposity. BMI was developed as a risk indicator of disease; as BMI increases, so does the risk for some diseases. Some common conditions related to overweight and obesity include: premature death, cardiovascular diseases, high blood pressure, osteoarthritis, some cancers and diabetes. Data comes from the European Health Interview Survey (EHIS), repeated every 5 years. The results of the study enable to get to know the health situation of the inhabitants of the Union and its conditions in connection with the demographic and social characteristics and the place of residence. The study covers four areas:  health status (including self-assessment of health status, chronic diseases, limitations in functioning and their impact on everyday life, psychological well-being), health care (use of medical care, use of medicines, prophylaxis), health determinants (mainly lifestyle and exposure to adverse environmental factors) and demographic and social characteristics of persons and households. ",
+                                    
+                                      "source": "Statistics Poland",
+                                    
+                                      "availability": "Data every 5 years; since 2010",
+                                    
+                                      "notes": "Data presented for 2010 relate to the survey carried out in 2009."
+                                    }
+                    ],
+                    "data": [
+                      {
+                                
+                                        "by sex": [
+                                            {"total": [
+                                                    {
+                                                    
+                                                        "2010" : "15.8",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "16.7",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "18.5"
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "16.6",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "18.1",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "19.5"
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "15.2",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "",
+                                                    
+                                                        "2014" : "15.6",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "17.6"
+                                                    
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                              
+                          
+                      }
+                    ]
+              },
           "3-1-a":{
                 
                 "metadata": [
@@ -849,163 +957,6 @@
                       }
                     ]
               },
-          "3-3-b":{
-                
-                "metadata": [
-                      {
-                                      "name": "3.3.b Percentage of women aged 15 and more who have ever had cervical smear test",
-                                    
-                                      "goal": "Goal 3. Good health and well-being",
-                                    
-                                      "priority": "Increase in early disease detectability and increase in access to modern therapies",
-                                    
-                                      "definition": "Percentage of women aged 15 and more who have ever had cervical smear test.",
-                                    
-                                      "unit": "percent [%]",
-                                    
-                                      "dimensions": "total",
-                                    
-                                      "methodology": "Data comes from the European Health Interview Survey (EHIS), repeated every 5 years. The results of the study enable to get to know the health situation of the inhabitants of the Union and its conditions in connection with the demographic and social characteristics and the place of residence. The study covers four areas:  health status (including self-assessment of health status, chronic diseases, limitations in functioning and their impact on everyday life, psychological well-being), health care (use of medical care, use of medicines, prophylaxis), health determinants (mainly lifestyle and exposure to adverse environmental factors) and demographic and social characteristics of persons and households. ",
-                                    
-                                      "source": "Statistics Poland",
-                                    
-                                      "availability": "Data every 5 years; since",
-                                    
-                                      "notes": "Data presented for 2010 relate to the survey carried out in 2009."
-                                    }
-                    ],
-                    "data": [
-                      {
-                                
-                                        "by age group": [
-                                            {"total": [
-                                                    {
-                                                    
-                                                        "2010" : "79.3",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "85.4",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "86.7"
-                                                    
-                                                    }
-                                                ],"aged 15-29": [
-                                                    {
-                                                    
-                                                        "2010" : "53.4",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "58.3",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "56.9"
-                                                    
-                                                    }
-                                                ],"aged 30-49": [
-                                                    {
-                                                    
-                                                        "2010" : "92.3",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "95.1",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "95.5"
-                                                    
-                                                    }
-                                                ],"aged 50-69": [
-                                                    {
-                                                    
-                                                        "2010" : "88.5",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "94.6",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "94.7"
-                                                    
-                                                    }
-                                                ],"aged 70 and more": [
-                                                    {
-                                                    
-                                                        "2010" : "72.0",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "",
-                                                    
-                                                        "2014" : "79.5",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : "",
-                                                    
-                                                        "2018" : "",
-                                                    
-                                                        "2019" : "86.0"
-                                                    
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                              
-                          
-                      }
-                    ]
-              },
           "4-4-a":{
                 
                 "metadata": [
@@ -1560,85 +1511,85 @@
                                             {"total": [
                                                     {
                                                     
-                                                        "2010" : "53.6",
+                                                        "2010" : "66.0",
                                                     
-                                                        "2011" : "54.0",
+                                                        "2011" : "65.3",
                                                     
-                                                        "2012" : "54.5",
+                                                        "2012" : "66.0",
                                                     
-                                                        "2013" : "54.7",
+                                                        "2013" : "65.5",
                                                     
-                                                        "2014" : "55.2",
+                                                        "2014" : "67.2",
                                                     
-                                                        "2015" : "55.3",
+                                                        "2015" : "65.8",
                                                     
-                                                        "2016" : "55.6",
+                                                        "2016" : "65.4",
                                                     
-                                                        "2017" : "56.0",
+                                                        "2017" : "64.6",
                                                     
-                                                        "2018" : "56.0",
+                                                        "2018" : "64.6",
                                                     
-                                                        "2019" : "56.0",
+                                                        "2019" : "64.9",
                                                     
-                                                        "2020" : "55.8",
+                                                        "2020" : "64.9",
                                                     
-                                                        "2021" : "57.8"
+                                                        "2021" : "69.2"
                                                     
                                                     }
                                                 ],"urban area": [
                                                     {
                                                     
-                                                        "2010" : "55.5",
+                                                        "2010" : "77.0",
                                                     
-                                                        "2011" : "55.8",
+                                                        "2011" : "70.5",
                                                     
-                                                        "2012" : "56.1",
+                                                        "2012" : "70.9",
                                                     
-                                                        "2013" : "56.1",
+                                                        "2013" : "70.5",
                                                     
-                                                        "2014" : "56.6",
+                                                        "2014" : "72.3",
                                                     
-                                                        "2015" : "56.6",
+                                                        "2015" : "71.6",
                                                     
-                                                        "2016" : "56.6",
+                                                        "2016" : "70.7",
                                                     
-                                                        "2017" : "56.8",
+                                                        "2017" : "69.6",
                                                     
-                                                        "2018" : "56.9",
+                                                        "2018" : "70.0",
                                                     
-                                                        "2019" : "56.7",
+                                                        "2019" : "70.5",
                                                     
-                                                        "2020" : "56.3",
+                                                        "2020" : "71.9",
                                                     
-                                                        "2021" : "58.0"
+                                                        "2021" : "75.7"
                                                     
                                                     }
                                                 ],"rural area": [
                                                     {
                                                     
-                                                        "2010" : "50.6",
+                                                        "2010" : "58.9",
                                                     
-                                                        "2011" : "51.1",
+                                                        "2011" : "58.0",
                                                     
-                                                        "2012" : "52.0",
+                                                        "2012" : "59.0",
                                                     
-                                                        "2013" : "52.5",
+                                                        "2013" : "58.6",
                                                     
-                                                        "2014" : "53.1",
+                                                        "2014" : "60.1",
                                                     
-                                                        "2015" : "53.3",
+                                                        "2015" : "57.3",
                                                     
-                                                        "2016" : "54.1",
+                                                        "2016" : "57.8",
                                                     
-                                                        "2017" : "54.8",
+                                                        "2017" : "57.6",
                                                     
-                                                        "2018" : "54.7",
+                                                        "2018" : "57.0",
                                                     
-                                                        "2019" : "54.8",
+                                                        "2019" : "57.0",
                                                     
                                                         "2020" : "54.9",
                                                     
-                                                        "2021" : "57.4"
+                                                        "2021" : "60.6"
                                                     
                                                     }
                                                 ]
@@ -2502,7 +2453,6 @@
                           
                       }
                     ]
-              },
-          "8-7-a":{}}
+              }}
   ]
 }
