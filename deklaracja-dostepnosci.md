@@ -1,12 +1,24 @@
 ---
 layout: page
-title: Deklaracja dostępności
+title: Polityka prywatności oraz oświadczenie o dostępności
 permalink: /deklaracja-dostepnosci/
 ---
 <article>
+<h2><b>Polityka prywatności</b></h2>
 
+<p>Przywiązujemy szczególną wagę do poszanowania prywatności użytkowników odwiedzających serwis <a href="https://sdg.gov.pl">https://sdg.gov.pl</a> (zwanego dalej Serwisem). Nie udostępniamy osobom trzecim informacji pochodzących z poczty e-mail przesyłanej bezpośrednio chyba, że stosowny organ administracji publicznej lub sąd wystąpi o ich udostępnienie. (USTAWA z dnia 29 sierpnia 1997 r. o ochronie danych osobowych. - Dz. U. z dnia 29 października 1997 r.). Nasz Serwis można odwiedzać bez konieczności podawania swoich danych.</p>
 
-  <p><b>Oświadczenie w sprawie dostępności</b></p>
+<p><b>Jakie dane zbieramy o użytkowniku?</b></p>
+<p>Podczas Twojej wizyty nasz system automatycznie zapisuje tzw. logi - anonimowe informacje, takie jak czas twojej wizyty, adres ip, adres url, informacje o przeglądarce internetowej.</p>
+
+<p><b>Cel przechowywania</b></p>
+<p>Gromadzone w dziennikach logów dane są wykorzystywane wyłącznie do celów administrowania Serwisem. Wszelkie dane użytkowników uzyskane za pośrednictwem Serwisu przeznaczone są na użytek GUS i nie są przekazywane jakiejkolwiek stronie trzeciej. Zapisywane podczas twojej wizyty logi systemowe przechowywane są przez czas nieokreślony jako materiał pomocniczy, służący do generowania statystyk pomocnych w administrowaniu Serwisem. Informacje zawarte w logach nie są ujawniane nikomu poza osobami upoważnionymi do administrowania serwerem oraz siecią. Serwis zapisuje dane lokalnie ("Local Storage") w celu dostosowania wyglądu Serwisu do Twoich preferencji. Na Twoim komputerze są zapisywane pliki z informacją o wybranej wielkości czcionki, o wybranym języku, kontraście oraz ip urządzenia z którego korzystasz. Przekazywane nam dane osobowe wykorzystywane są tylko i wyłącznie w celach kontaktowych - przesłania odpowiedzi na zadane nam pytanie.</p>
+
+<p><b>Odnośniki do innych stron</b></p>
+
+<p>Serwis zawiera odnośniki do innych stron internetowych. Nie możemy ponosić odpowiedzialności za zasady zachowania prywatności obowiązujące na innych stronach. Zachęcamy, by po przejściu na inną stronę internetową zapoznać się z ich polityką prywatności.</p>
+
+  <h2><b>Oświadczenie w sprawie dostępności</b></h2>
 
   <p>Główny Urząd Statystyczny zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z ustawą z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych. Niniejsze oświadczenie w sprawie dostępności ma zastosowanie do strony internetowej <a title="Przejdź na stronę główną" href="https://sdg.gov.pl"  target="_blank">https://sdg.gov.pl/</a>.</p>
 
