@@ -1,13 +1,27 @@
 ---
 layout: page
 lang: en
-title: Accessibility declaration
+title: Privacy policy and accessibility statement
 permalink: /en/deklaracja-dostepnosci/
 ---
 <article>
 
+<h2><b>Privacy policy</b></h2>
 
-  <p><b>Accessibility Statement</b></p>
+<p>We value the privacy of users visiting <a href="https://sdg.gov.pl">https://sdg.gov.pl</a> website (hereafter referred to as the Site). We do not share any information provided by email unless it is requested by an authorised government agency or a court (The Act of 29 August 1997 on the Protection of Personal Data - Journal of Laws of 2014, item 1182 with amendments). Our Site can be visited without the need to register with your personal data.</p>
+
+<p><b>What user data do we collect?</b></p>
+<p>During your visit our system automatically stores the so-called log data – anonymous information, such as the time of your visit, your IP address, your URL address, information about your web browser.</p>
+
+<p><b>Purpose of collecting user data</b></p>
+<p>Log data are stored only for purposes of administering the Site. Any user data collected via the Site are used by the CSO and are not transferred to third parties. Log data collected during your visit are stored for an indefinite period of time to generate statistics for website administration. Information contained in log data is only available to authorised staff responsible for the site and network administration. The Local Storage stores informations to adjust its appearance to your preferences. The informations are stored on your computer and contain information about the selected font, page contrast mode, chosen language and your computer’s IP address. Your personal data are only used to contact you with a reply to the question you have asked.</p>
+
+<p><b>Links to other websites</b></p>
+
+<p>The Site contains links to other Internet websites. We do not take responsibility for privacy policies used on external websites. You are encouraged to check the privacy policy of a website you are directed to.</p>
+
+
+  <h2><b>Accessibility Statement</b></h2>
 
   <p>Statistics Poland undertakes to ensure the availability of its website in accordance with the Act of 4 April 2019 on digital accessibility of websites and mobile applications of public entities. The following accessibility statement applies to the website <a title="Go to main page" href="https://sdg.gov.pl"  target="_blank">https://sdg.gov.pl/</a>.</p>
 
