@@ -33,7 +33,7 @@ en:
   nav-development : "FAQs"
   nav-api : "API"
   nav-api-custodian : "API custodian agencies"
-  nav-declaration : "Accessibility declaration"
+  nav-declaration : "Privacy policy and accessibility statement"
   nav-reporting-glob-status : "global"
   nav-reporting-nat-status : "national"
   nav-api-title : "Go to API subpage"
