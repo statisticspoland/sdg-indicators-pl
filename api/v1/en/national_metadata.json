@@ -958,23 +958,23 @@
                         "metadata": [
                           
                           {
-                                          "name": "4.2.a Percentage of foreign students studying in Polish higher education institutions in Poland",
+                                          "name": "4.2.a Percentage of students with statements of special educational needs attending public schools",
                                         
                                           "goal": "Goal 4. Quality education",
                                         
-                                          "priority": "Improvement in quality of higher education system",
+                                          "priority": "Education for sustainable development",
                                         
-                                          "definition": "Percentage of the number of foreign students studying in Polish higher education institutions in the total number of population in that age group – calculated in %.",
+                                          "definition": "",
                                         
                                           "unit": "percent [%]",
                                         
                                           "dimensions": "total",
                                         
-                                          "methodology": "Higher education institutions (tertiary education) operate according to the Higher Education Law dated 27 July 2005 (Journal of Laws No. 164, item 1365 with later amendments). Education is realised in public and non-public higher education institutions, on first-, second- or long-cycle programmes in the form of full-time studies and part-time studies. Students of higher education institutions are persons entered to the students registers in higher education institutions, including students having completed the last year of studies without passing the final exam and those benefiting from a dean's leave. Foreign students are persons who intending to study in Poland at least one academic year. Students of higher education institutions are indicated as of 30 November, according to the actual location of the university / organisational unit (as for 2012 without organizational units of Polish higher education institutions operating abroad, which were formerly shown in the place of location of parent high education institution). Data since 2012, including academies of the Ministry of National Defence and the Ministry of Internal and Administration.",
+                                          "methodology": "",
                                         
-                                          "source": "Statistics Poland",
+                                          "source": "",
                                         
-                                          "availability": "Annual data; since 2010",
+                                          "availability": "",
                                         
                                           "notes": ""
                                         }
@@ -1202,7 +1202,7 @@
                                         
                                           "goal": "Goal 4. Quality education",
                                         
-                                          "priority": "Creation of conditions for adults' greater engagement in broadening and upgrading their skills",
+                                          "priority": "Creation of conditions for adults' wider engagement in learning in various forms and places and for the recognition of learning outcomes acquired outside formal education ",
                                         
                                           "definition": "Percentage of the number of persons aged 18-24, having completed at most lower secondary school, and who do not participate in the education and training, in the total number population in this age group.",
                                         
@@ -1232,7 +1232,7 @@
                                         
                                           "goal": "Goal 4. Quality education",
                                         
-                                          "priority": "Creation of conditions for adults' greater engagement in broadening and upgrading their skills",
+                                          "priority": "Creation of conditions for adults' wider engagement in learning in various forms and places and for the recognition of learning outcomes acquired outside formal education ",
                                         
                                           "definition": "Share of the number of persons aged 25-64 participating in education or training (in the period of four weeks before the survey); in the total number of population in the same age group.",
                                         
@@ -1262,7 +1262,7 @@
                                         
                                           "goal": "Goal 4. Quality education",
                                         
-                                          "priority": "Improvement in education innovativeness achieved by i.a. curriculum change with an emphasis on universal skills and digital skills, command of foreign languages, creativity, initiative-taking skills,  entrepreneurship, innovativeness, teamwork skills and support for pupils with special educational needs",
+                                          "priority": "Improvement in education innovativeness",
                                         
                                           "definition": "Percentage of persons aged 18-69 declaring knowledge of at least one foreign language.",
                                         
@@ -1292,7 +1292,7 @@
                                         
                                           "goal": "Goal 4. Quality education",
                                         
-                                          "priority": "Improvement in education innovativeness achieved by i.a. curriculum change with an emphasis on universal skills and digital skills, command of foreign languages, creativity, initiative-taking skills,  entrepreneurship, innovativeness, teamwork skills and support for pupils with special educational needs",
+                                          "priority": "Improvement in education innovativeness",
                                         
                                           "definition": "Proportion of persons aged 16-74 having above basic overall digital skills.",
                                         
@@ -2303,6 +2303,36 @@
                                           "availability": "Annual data; since 2010",
                                         
                                           "notes": "Incomplete time series for presented dimensions are caused by the lack of calculated values for them for some years."
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "10-4-a": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "10.4.a Number of adapted multi-family housing and public utility buildings",
+                                        
+                                          "goal": "Goal 10. Reduce inequalities",
+                                        
+                                          "priority": "Ensuring social and economic inclusion and accessibility for people with disabilities, including reducing barriers to access to infrastructure",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
                                         }
                         ]
                       }
@@ -3728,7 +3758,7 @@
                                         
                                           "goal": "Goal 15. Life on land",
                                         
-                                          "priority": "Protection and improvement of environment quality state via protection of biodiversity, including protection of environment in the form of areas, waste management system,  improvement of water quality and protection of water purity",
+                                          "priority": "Protection and improvement of the environment quality state via protection of biodiversity, including area forms of nature protection, improvement of water quality and protection of water purity",
                                         
                                           "definition": "Aggregated index of population condition of 22 bird species typical for rural habitat (base year 2000=100).",
                                         
@@ -3758,7 +3788,7 @@
                                         
                                           "goal": "Goal 15. Life on land",
                                         
-                                          "priority": "Protection and improvement of environment quality state via protection of biodiversity, including protection of environment in the form of areas, waste management system,  improvement of water quality and protection of water purity",
+                                          "priority": "Protection and improvement of the environment quality state via protection of biodiversity, including area forms of nature protection, improvement of water quality and protection of water purity",
                                         
                                           "definition": "The share of land which lost its utility value due to the man’s activities or other factors (devastated land) and land whose utility, agricultural or forestry value diminished (degraded land) in total geodesic area of the country.",
                                         
@@ -3788,7 +3818,7 @@
                                         
                                           "goal": "Goal 15. Life on land",
                                         
-                                          "priority": "Protection and improvement of environment quality state via protection of biodiversity, including protection of environment in the form of areas, waste management system,  improvement of water quality and protection of water purity",
+                                          "priority": "Protection and improvement of the environment quality state via protection of biodiversity, including area forms of nature protection, improvement of water quality and protection of water purity",
                                         
                                           "definition": "The ratio of the area of forest land to the total geodetic area of the country.",
                                         
@@ -3818,7 +3848,7 @@
                                         
                                           "goal": "Goal 15. Life on land",
                                         
-                                          "priority": "Modernization and expansion of wastewater treatment plants and sewage system, air protection (elimination of pollution sources or reduction of their impact) and soil protection",
+                                          "priority": "Modernization and expansion of wastewater treatment plants and sewage system, as well as air protection (elimination of pollution sources or reduction of their impact)",
                                         
                                           "definition": "Average level of substances in the air, determined on the basis of measurements carried out within the municipal background areas in cities with number of residents exceeding 100 thousand and agglomerations within the whole country; the calculation manner for KW is provided for in the regulation by the Minister of Environment of 13.09.2012 for calculation of the average exposure indicator and evaluation of keeping the concentration exposure threshold (Official Journal Dz.U. item 1029).",
                                         
@@ -3848,7 +3878,7 @@
                                         
                                           "goal": "Goal 15. Life on land",
                                         
-                                          "priority": "Modernization and expansion of wastewater treatment plants and sewage system, air protection (elimination of pollution sources or reduction of their impact) and soil protection",
+                                          "priority": "Modernization and expansion of wastewater treatment plants and sewage system, as well as air protection (elimination of pollution sources or reduction of their impact)",
                                         
                                           "definition": "The share of population connected to wastewater treatment plants in total population.",
                                         
@@ -3878,7 +3908,7 @@
                                         
                                           "goal": "Goal 15. Life on land",
                                         
-                                          "priority": "Modernization and expansion of wastewater treatment plants and sewage system, air protection (elimination of pollution sources or reduction of their impact) and soil protection",
+                                          "priority": "Modernization and expansion of wastewater treatment plants and sewage system, as well as air protection (elimination of pollution sources or reduction of their impact)",
                                         
                                           "definition": "Industrial and municipal wastewater treated biologically, chemically and with increased biogene removal in % of wastewater requiring treatment.",
                                         
@@ -3891,6 +3921,66 @@
                                           "source": "Statistics Poland",
                                         
                                           "availability": "Annual data; since 2010",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "15-3-a": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "15.3.a Expenditures on fixed assets for the protection and restoration of the use value of soils, the protection of underground and surface waters",
+                                        
+                                          "goal": "Goal 15. Life on land",
+                                        
+                                          "priority": "Protection and sustainable use of soils and restoring degraded soils to their proper condition through their remediation and reclamation",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "15-3-b": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "15.3.b Reclaimed and managed land in relation to the area of devastated and degraded land",
+                                        
+                                          "goal": "Goal 15. Life on land",
+                                        
+                                          "priority": "Protection and sustainable use of soils and restoring degraded soils to their proper condition through their remediation and reclamation",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
                                         
                                           "notes": ""
                                         }
@@ -4130,7 +4220,7 @@
                                         
                                           "goal": "Goal 17. Partnerships  for the goals",
                                         
-                                          "priority": "Geographic priorities of Polish development assistance include countries of Eastern Partnership, Africa, Asia and Middle East",
+                                          "priority": "Supporting development of 'Polish Aid' partner countries, in particular priority countries (Belarus, Ethiopia, Georgia, Kenya, Lebanon, Moldova, Palestine, Senegal, Tanzania and Ukraine)",
                                         
                                           "definition": "Total value of the Official development assistance in mln USD (current prices).",
                                         
@@ -4160,7 +4250,7 @@
                                         
                                           "goal": "Goal 17. Partnerships  for the goals",
                                         
-                                          "priority": "Geographic priorities of Polish development assistance include countries of Eastern Partnership, Africa, Asia and Middle East",
+                                          "priority": "Supporting development of “Polish Aid” partner countries, in particular priority countries (Belarus, Ethiopia, Georgia, Kenya, Lebanon, Moldova, Palestine, Senegal, Tanzania and Ukraine)",
                                         
                                           "definition": "Total value of the bilateral official development assistance in mln USD (current prices).",
                                         
@@ -4190,7 +4280,7 @@
                                         
                                           "goal": "Goal 17. Partnerships  for the goals",
                                         
-                                          "priority": "For the period of 2016-2020, there have been chosen the following thematic areas of assistance: good governance, democracy and human rights, human capital, entrepreneurship and private sector, sustainable development and development of rural areas, environmental protection",
+                                          "priority": "Supporting development in thematic priority areas, with particular emphasis on the assumptions of the following sustainable development goals: 16. Peace, justice and strong institutions, 4. Quality education, 8. Decent work and economic growth, 10. Reduced inequalities, 3. Good health and well-being 6. Clean water and sanitation, 11. Sustainable cities and communities, and 13. Climate action",
                                         
                                           "definition": "Official development assistance in relation to the Gross National Income.",
                                         
@@ -4205,6 +4295,186 @@
                                           "availability": "Annual data; since 2010",
                                         
                                           "notes": "Until 2017, DAC OECD methodology for data collection in Creditor Reporting System allowed for marking the sector of support only for bilateral flows. Therefore, the indicator did not cover expenditures within multilateral assistance in the form of contributions to the general budgets of international organisations working in the area of capacity building in developing countries. Since 2018, the leading ODA indicator has been presented as a grant equivalent including only the grant element multiplied by the value of a given flow. As a result, there is no differentiation into net and gross ODA. Additionally, some methodological activities are being conducted to incorporate other flows into ODA, such as mobilised amount of money by the public sector from the private sector instruments. Furthermore, an alternative to ODA, TOSSD (Total Official Support for Sustainable Development) is being developed as an instrument for measuring means for SDGs implementation."
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "17-3-a": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "17.3.a Official Development Assistance (ODA) for gender equality",
+                                        
+                                          "goal": "Goal 17. Partnerships  for the goals",
+                                        
+                                          "priority": "Promotion of inclusion of issues related to equal opportunities and climate protection in all activities of 'Polish Aid'",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "17-3-b": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "17.3.b Official Development Assistance for climate change mitigation and adaptation ",
+                                        
+                                          "goal": "Goal 17. Partnerships  for the goals",
+                                        
+                                          "priority": "Promotion of inclusion of issues related to equal opportunities and climate protection in all activities of 'Polish Aid'",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "17-4-a": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "17.4.a Participation of National Revenue Administration in twinning projects, activities financed from Taiex and from domestic resources",
+                                        
+                                          "goal": "Goal 17. Partnerships  for the goals",
+                                        
+                                          "priority": "Increase in mobilization of domestic resources of developing countries through technical and substantive support for these countries in improving tax collection",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "17-5-a": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "17.5.a Concluding agreements, contracts and declarations on cooperation, information exchange and mutual assistance with other countries",
+                                        
+                                          "goal": "Goal 17. Partnerships  for the goals",
+                                        
+                                          "priority": "Strengthening the global partnership for sustainable development on tax expertise and technology sharing to support the implementation of the SDGs",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "17-6-a": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "17.6.a Conferences and trainings conducted by National Revenue Administration experts in countries covered by assistance",
+                                        
+                                          "goal": "Goal 17. Partnerships  for the goals",
+                                        
+                                          "priority": "Implementation of effective methods of combating economic crime and preventing it in countries that are also beneficiaries of aid projects",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "17-7-a": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "17.7.a Number of participants who completed e-learning courses on issues related to sustainable development",
+                                        
+                                          "goal": "Goal 17. Partnerships  for the goals",
+                                        
+                                          "priority": "Increasing policy coherence for sustainable development",
+                                        
+                                          "definition": "",
+                                        
+                                          "unit": "",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "",
+                                        
+                                          "source": "",
+                                        
+                                          "availability": "",
+                                        
+                                          "notes": ""
                                         }
                         ]
                       }
