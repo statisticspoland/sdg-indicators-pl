@@ -338,7 +338,19 @@ for (i = 0; i < lista_nazw.length; i++) {
 
      source: function(request, response) {
         var results = $.ui.autocomplete.filter(availableTags, request.term);
-        response(results.slice(0, 7));
+        var results2 = results.slice(0, 7);
+		if (results.length <= 7) {
+		response(results2.slice(0, 7));
+		} else {
+		if ('{{page.lang}}'!='en') {
+		results2.push({value: "Więcej...", label: "Więcej...", html: "{{ site.baseurl }}/search/?search="+request.term})
+		} else {
+		results2.push({value: "More...", label: "More...", html: "{{ site.baseurl }}/en/search/?search="+request.term})
+		}
+		response(results2.slice(0, 8));
+		}
+		console.log(results);
+		console.log(results2);
     },
      select: function( event, ui ) {
             window.location.href = ui.item.html;

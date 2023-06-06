@@ -107,7 +107,7 @@
                 <div class="progress-bar progress-bar-warning" style="width:{{ compiling_percent }}%">
                   <span class="sr-only">{{t.warning-text }} {{ compiling_percent  }}%</span>
                 </div>
-                <div class="progress-bar progress-bar-success" style="width:{{ finalized_percent }}%">
+                <div class="progress-bar progress-bar-success" style="max-width:{{ 100 | minus: unsourced_percent | minus: compiling_percent }}%;width:{{ finalized_percent }}%">
                   <span class="sr-only">{{ t.success-text }} {{ finalized_percent  }}%</span>
                 </div>
               </div>
@@ -236,7 +236,7 @@
                                 <div class="progress-bar progress-bar-warning" style="width:{{ compiling_percent }}%">
                                   <span class="sr-only">{{ t.warning-text }} {{ compiling_percent }}%</span>
                                 </div>
-                                <div class="progress-bar progress-bar-success" style="width:{{ finalized_percent }}%">
+                                <div class="progress-bar progress-bar-success" style="max-width:{{ 100 | minus: unsourced_percent | minus: compiling_percent }}%;width:{{ finalized_percent }}%">
                                   <span class="sr-only">{{ t.success-text }} {{ finalized_percent }}%</span>
                                 </div>
                               </div>

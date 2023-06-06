@@ -1766,7 +1766,7 @@ ul li {
 
 ul li::before {
   content: '';
-  display: table-cell;
+/*  display: table-cell;*/
 }
 
 ol li {

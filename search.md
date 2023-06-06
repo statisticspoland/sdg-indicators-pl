@@ -1,5 +1,5 @@
 ---
 layout: search
-title: Search
+title: Wyszukaj
 permalink: /search/
 ---

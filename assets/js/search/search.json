@@ -12,7 +12,7 @@ sitemap: null
     "lang": {{ page.lang | jsonify }},
     "excerpt": {{ page.excerpt | markdownify | strip_html | jsonify }},
     "content": {{ page.content | markdownify | strip_html | jsonify }},
-    "url": {{ site.baseurl | append: page.url | jsonify }}
+    "url": {{ site.baseurl | append: page.url | replace: "metadane_globalne", "statistics_glob" | replace: "metadane_krajowe", "statistics_nat" | replace: ".html", "/" | remove: "-0" | jsonify }}
   },
   {% endfor %}{% for page in pages1 %}
   {
@@ -21,7 +21,7 @@ sitemap: null
     "lang": {{ page.lang | jsonify }},
     "excerpt": {{ page.excerpt | markdownify | strip_html | jsonify }},
     "content": {{ page.content | markdownify | strip_html | jsonify }},
-    "url": {{ site.baseurl | append: page.url | jsonify }}
+    "url": {{ site.baseurl | append: page.url | replace: "metadane_globalne", "statistics_glob" | replace: "metadane_krajowe", "statistics_nat" | replace: ".html", "/" | remove: "-0" | jsonify }}
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

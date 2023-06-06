@@ -22,7 +22,7 @@
     <form id="search-form" action="" style="max-width: 100%;display: contents;">
 
       <br/>
-      <input class="input" id="search" type="text" name="search" placeholder="search:" autocomplete="on">
+      <input class="input" id="search" type="text" name="search" placeholder="Search:" autocomplete="on">
       <ul class="list  list--results" id="list">
 
       </ul>
@@ -34,8 +34,7 @@
         '{{ site.baseurl }}/assets/js/search/search_en.json',
         '#search',
         '#list',
-		'{{ site.url }}/'
-
+		''
       );
       search.init();
     </script>
