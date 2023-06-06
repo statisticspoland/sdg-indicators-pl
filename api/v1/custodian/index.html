@@ -46,8 +46,8 @@
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/chartist.css">
         <link rel="stylesheet" href="/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2023-05-24-12-30-14-+0200">
-        <link rel="stylesheet" href="/assets/css/custom.css?v=2023-05-24-12-30-14-+0200">
+        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2023-06-06-12-47-51-+0200">
+        <link rel="stylesheet" href="/assets/css/custom.css?v=2023-06-06-12-47-51-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/jquery-ui.css">
 
@@ -332,7 +332,19 @@ for (i = 0; i < lista_nazw.length; i++) {
 
      source: function(request, response) {
         var results = $.ui.autocomplete.filter(availableTags, request.term);
-        response(results.slice(0, 7));
+        var results2 = results.slice(0, 7);
+		if (results.length <= 7) {
+		response(results2.slice(0, 7));
+		} else {
+		if ('pl'!='en') {
+		results2.push({value: "Więcej...", label: "Więcej...", html: "/search/?search="+request.term})
+		} else {
+		results2.push({value: "More...", label: "More...", html: "/en/search/?search="+request.term})
+		}
+		response(results2.slice(0, 8));
+		}
+		console.log(results);
+		console.log(results2);
     },
      select: function( event, ui ) {
             window.location.href = ui.item.html;
