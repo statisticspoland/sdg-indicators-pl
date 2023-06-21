@@ -166,6 +166,11 @@ prose:
             label: "Uwagi"
             api: "uwagi"
             scope: global
+      - name: "pl_last_modified"
+        field:
+            element: "hidden"
+            label: "Data ostatniej aktualizacji"
+            value: CURRENT_DATETIME
       - name: "en_nazwa_wskaznika"
         field:
             element: text
@@ -226,6 +231,11 @@ prose:
             label: "Notes"
             api: "notes"
             scope: global
+      - name: "en_last_modified"
+        field:
+            element: "hidden"
+            label: "Date of last update"
+            value: CURRENT_DATETIME
       - name: "en_graph_title"
         field:
             element: hidden
