@@ -171,7 +171,7 @@ prose:
             element: button
             label: "Data ostatniej aktualizacji"
             on: CURRENT_DATETIME
-            off: 
+            off: null
       - name: "en_nazwa_wskaznika"
         field:
             element: text
@@ -237,7 +237,7 @@ prose:
             element: button
             label: "Date of last update"
             on: CURRENT_DATETIME
-            off: 
+            off: null
       - name: "en_graph_title"
         field:
             element: hidden
