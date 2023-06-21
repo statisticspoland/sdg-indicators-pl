@@ -168,9 +168,10 @@ prose:
             scope: global
       - name: "pl_last_modified"
         field:
-            element: text
+            element: button
             label: "Data ostatniej aktualizacji"
-            value: CURRENT_DATETIME
+            on: CURRENT_DATETIME
+            off: 
       - name: "en_nazwa_wskaznika"
         field:
             element: text
@@ -233,9 +234,10 @@ prose:
             scope: global
       - name: "en_last_modified"
         field:
-            element: text
+            element: button
             label: "Date of last update"
-            value: CURRENT_DATETIME
+            on: CURRENT_DATETIME
+            off: 
       - name: "en_graph_title"
         field:
             element: hidden
