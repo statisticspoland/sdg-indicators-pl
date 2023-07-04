@@ -253,14 +253,16 @@ permalink: /en/o_sdg/
 
 <hr>
 <div class="image-wrapper">
-    <a target="_blank" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  alt="Implementation of the Sustainable Development Goals in Poland. The 2018 National Report." title="Read a publication Implementation of the Sustainable Development Goals in Poland. The 2018 National Report." target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/3_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
+    <a target="_blank" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030"  alt="Implementation of the Sustainable Development Goals in Poland. The 2023 National Report." title="Read a publication Implementation of the Sustainable Development Goals in Poland. The 2023 National Report." target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/3_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
 </div>
-<p><b>Implementation of the Sustainable Development Goals in Poland. The 2018 National Report.</b></p>
-<p>The report was compiled by the Ministry of Economic Development and Technology (former Ministry of Entrepreneurship and Technology), for the review of realisation of the Sustainable Development Goals in Poland. The publication indicates Poland’s experiences so far, national development priorities and national approach to the realisation of individual SDGs. The report is supplemented with a statistical annex, containing a list of national indicators indispensable for assessing the results of actions undertaken for the realisation of each SDG.
-Voluntary national reviews are conducted every year in New York by the UN High-Level Political Forum. In 2018,
-Poland presented its achievements at HLPF for the first time.
+<p><b>Implementation of the Sustainable Development Goals in Poland. The 2023 National Report.</b></p>
+<p>The report was compiled by the Ministry of Economic Development and Technology for the review of realisation of the Sustainable Development Goals in Poland in New York by the UN High-Level Political Forum in 2023.</p>
+<p>The publication indicates Poland’s experiences so far, updated national development priorities and national approach to the realisation of individual SDGs in context of challenges related to the recovery after the COVID-19 pandemic and Russian aggression in Ukraine.</p>
+<p>The report is supplemented with a Statistical Annex, prepared by Statistics Poland; it contains a graphic presentation of Poland’s progress in the implementation of the SDGs. It presents the selected indicators (two for each SDG) contained in the set monitoring the <a target="_blank" title="Read about priorities for Poland" href="https://sdg.gov.pl/en/priorytet/ "> national sustainable development priorities</a>.</p>
 
-
+<p><b>Archive:</b></p>
+<p><a target="_blank" title="Read a publication Implementation of the Sustainable Development Goals in Poland. The 2018 National Report." href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030">Implementation of the Sustainable Development Goals in Poland. The 2018 National Report.</a></p>
+<p>
 <br><br><br></p>
 
   <hr style="border-top-width: 10px;">

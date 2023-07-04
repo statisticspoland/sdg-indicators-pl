@@ -252,14 +252,22 @@ permalink: /o_sdg/
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030" alt="Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018" title="Zapoznaj się z raportem Realizacja Celów Zrównoważonego Rozwoju w Polsce (2018)" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/2_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.gov.pl/web/przedsiebiorczosc-technologia/monitoring-realizacji-agendy-2030" alt="Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2023" title="Zapoznaj się z raportem Realizacja Celów Zrównoważonego Rozwoju w Polsce (2023)" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/2_realizacja_celow.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018</b></p>
-  <p>Raport został opracowany przez Ministerstwo Rozwoju i Technologii (wówczas: Ministerstwo Przedsiębiorczości i Technologii) na potrzeby przeglądu realizacji przez Polskę Celów Zrównoważonego Rozwoju. W publikacji zostały wskazane dotychczasowe doświadczenia, krajowe priorytety rozwoju Polski oraz krajowe podejście do realizacji poszczególnych SDGs. Raport został uzupełniony aneksem statystycznym, zawierającym listę krajowych wskaźników niezbędnych do mierzenia efektów działań podejmowanych na rzecz realizacji każdego z SDGs.
-Krajowe dobrowolne przeglądy (Voluntary National Review) są organizowane corocznie w Nowym Jorku przez Forum Polityczne Wysokiego Szczebla ONZ. W 2018 r. Polska, w 2018 r., prezentowała swoje osiągnięcia po raz pierwszy.
+  <p><b>Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2023 </b></p>
+  <p>Raport, opracowany przez Ministerstwo Rozwoju i Technologii, został przygotowany na potrzeby przeglądu realizacji przez Polskę Celów Zrównoważonego Rozwoju podczas Forum Politycznego Wysokiego Szczebla ONZ w Nowym Jorku w 2023 r.</p>
 
- <br><br><br></p>
+  <p>W raporcie zostały wskazane dotychczasowe doświadczenia, zaktualizowane krajowe priorytety rozwoju Polski oraz krajowe podejście do realizacji poszczególnych SDGs, zwłaszcza w kontekście wyzwań związanych z sytuacją po pandemii COVID-19 oraz agresją Rosji na Ukrainę.</p>
 
+  <p>Raport został uzupełniony Aneksem Statystycznym opracowanym przez GUS; zawiera on graficzną prezentację postępów Polski w realizacji SDG. Zaprezentowano w nim wybrane wskaźniki (po dwa dla każdego SDG) znajdujące się w zestawie monitorującym <a target="_blank" title="Zapoznaj się z krajowymi priorytetami zrównoważonego rozwoju" href="https://sdg.gov.pl/priorytet/">krajowe priorytety zrównoważonego rozwoju</a>. </p>
+
+  <p><b>Archiwum: </b></p>
+  <p><a target="_blank" title="Zapoznaj się z raportem Realizacja Celów Zrównoważonego Rozwoju w Polsce (2018)" href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030">Realizacja Celów Zrównoważonego Rozwoju w Polsce. Raport 2018 </a></p>
+
+  <p>
+  <br><br><br></p>
+
+<hr style="border-top-width: 10px;">
 
 <a id="pub_zagraniczne_pl" style="scroll-margin-top: 195px;"></a><h4><b style="font-size:20px;text-decoration: none;">PUBLIKACJE MIĘDZYNARODOWE</b></h4>
 
