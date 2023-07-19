@@ -209,6 +209,17 @@ permalink: /o_sdg/
   <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju (2020)" href="https://raportsdg.stat.gov.pl/2020/">Polska na drodze zrównoważonego rozwoju. Raport 2020</a></p>
 
   <hr>
+
+  <div class="image-wrapper">
+   <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/polish-sdg-statistics-in-a-nutshell,48,1.html#" alt="Polish SDG Statistics in a nutshell" title="Zapoznaj się z folderem Polish SDG statistics in a nutshell"><img src="{{ site.baseurl }}/assets/img/publikacje/polish_SDG_statistics_in_a_nutshell.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Polish SDG statistics in a nutshell</b></p>
+  <p>W lipcu 2023 r., na półmetku realizacji Agendy 2030, Polska po raz drugi prezentuje swoje postępy we wdrażaniu Celów Zrównoważonego Rozwoju (<i>Sustainable Development Goals – SDGs</i>) podczas dobrowolnych przeglądów krajowych (<i>Voluntary National Reviews – VNRs</i>) na Forum Politycznym Wysokiego Szczebla ONZ ds. Zrównoważonego Rozwoju.</p>
+  <p>Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował folder <i>Polish SDG Statistics in a nutshell</i>, które w formie graficznej prezentuje postępy Polski z realizacji Celów Zrównoważonego Rozwoju. W opracowaniu zaprezentowano wybrane wskaźniki z zestawu monitorującego krajowe priorytety zrównoważonego rozwoju.</p>
+  <p>Publikacja, jako wydawnictwo skierowane głównie do odbiorców zagranicznych, dostępna jest wyłącznie w wersji anglojęzycznej.</p>
+
+  <hr>
+
   <div class="image-wrapper">
       <a target="_blank" title="Zapoznaj się z publikacją A picture of Poland. Statistics for SDGs" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/a-picture-of-poland-statistics-for-sdgs,33,1.html" alt="A picture of Poland. Statistics for SDGs"><img src="{{ site.baseurl }}/assets/img/publikacje/1_a_picture_of_poland.png" align="center" alt="GUS" border="0"/></a>
   </div>

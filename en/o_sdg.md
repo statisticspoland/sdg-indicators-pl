@@ -207,6 +207,15 @@ permalink: /en/o_sdg/
   <hr>
 
   <div class="image-wrapper">
+   <a target="_blank" href="https://stat.gov.pl/en/topics/other-studies/other-aggregated-studies/polish-sdg-statistics-in-a-nutshell,33,1.html" alt="Polish SDG Statistics in a nutshell" title="Read a publication Polish SDG statistics in a nutshell"><img src="{{ site.baseurl }}/assets/img/publikacje/polish_SDG_statistics_in_a_nutshell.png" align="center" alt="GUS" border="0"/></a>
+  </div>
+  <p><b>Polish SDG statistics in a nutshell</b></p>
+  <p>In July 2O23, halfway through the 2030 Agenda, Poland presents for the second time its progress towards the Sustainable Development Goals (SDGs) within the Voluntary National Review (VNR) at the UN High-Level Political Forum on Sustainable Development.  </p>
+  <p>On this occasion, Statistics Poland, as a coordinator of SDG monitoring in Poland, prepared a brochure entitled <i>Polish SDG Statistics in a nutshell</i>, presenting Poland’s progress towards SDGs in a graphical form. The publication presents selected indicators from the set of measures monitoring Poland’s national sustainable development priorities.</p>
+
+  <hr>
+
+  <div class="image-wrapper">
       <a target="_blank" href="https://stat.gov.pl/en/topics/other-studies/other-aggregated-studies/a-picture-of-poland-statistics-for-sdgs,20,1.html" alt="Read a publication A picture of Poland. Statistics for SDGs" title="A picture of Poland. Statistics for SDGs"><img src="{{ site.baseurl }}/assets/img/publikacje/1_a_picture_of_poland.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>A picture of Poland. Statistics for SDGs</b></p>
