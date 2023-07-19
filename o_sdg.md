@@ -211,7 +211,7 @@ permalink: /o_sdg/
   <hr>
 
   <div class="image-wrapper">
-   <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/polish-sdg-statistics-in-a-nutshell,48,1.html#" alt="Polish SDG Statistics in a nutshell" title="Zapoznaj się z folderem Polish SDG statistics in a nutshell"><img src="{{ site.baseurl }}/assets/img/publikacje/polish_SDG_statistics_in_a_nutshell.png" align="center" alt="GUS" border="0"/></a>
+   <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/polish-sdg-statistics-in-a-nutshell,48,1.html#" alt="Polish SDG Statistics in a nutshell" title="Zapoznaj się z folderem Polish SDG statistics in a nutshell"><img src="{{ site.baseurl }}/assets/img/publikacje/polish_SDG_statistics_in_a_nutshell.PNG" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Polish SDG statistics in a nutshell</b></p>
   <p>W lipcu 2023 r., na półmetku realizacji Agendy 2030, Polska po raz drugi prezentuje swoje postępy we wdrażaniu Celów Zrównoważonego Rozwoju (<i>Sustainable Development Goals – SDGs</i>) podczas dobrowolnych przeglądów krajowych (<i>Voluntary National Reviews – VNRs</i>) na Forum Politycznym Wysokiego Szczebla ONZ ds. Zrównoważonego Rozwoju.</p>

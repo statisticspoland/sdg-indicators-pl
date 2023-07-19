@@ -207,7 +207,7 @@ permalink: /en/o_sdg/
   <hr>
 
   <div class="image-wrapper">
-   <a target="_blank" href="https://stat.gov.pl/en/topics/other-studies/other-aggregated-studies/polish-sdg-statistics-in-a-nutshell,33,1.html" alt="Polish SDG Statistics in a nutshell" title="Read a publication Polish SDG statistics in a nutshell"><img src="{{ site.baseurl }}/assets/img/publikacje/polish_SDG_statistics_in_a_nutshell.png" align="center" alt="GUS" border="0"/></a>
+   <a target="_blank" href="https://stat.gov.pl/en/topics/other-studies/other-aggregated-studies/polish-sdg-statistics-in-a-nutshell,33,1.html" alt="Polish SDG Statistics in a nutshell" title="Read a publication Polish SDG statistics in a nutshell"><img src="{{ site.baseurl }}/assets/img/publikacje/polish_SDG_statistics_in_a_nutshell.PNG" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Polish SDG statistics in a nutshell</b></p>
   <p>In July 2O23, halfway through the 2030 Agenda, Poland presents for the second time its progress towards the Sustainable Development Goals (SDGs) within the Voluntary National Review (VNR) at the UN High-Level Political Forum on Sustainable Development.  </p>
