@@ -215,7 +215,7 @@ permalink: /o_sdg/
   </div>
   <p><b>Polish SDG statistics in a nutshell</b></p>
   <p>W lipcu 2023 r., na półmetku realizacji Agendy 2030, Polska po raz drugi prezentuje swoje postępy we wdrażaniu Celów Zrównoważonego Rozwoju (<i>Sustainable Development Goals – SDGs</i>) podczas dobrowolnych przeglądów krajowych (<i>Voluntary National Reviews – VNRs</i>) na Forum Politycznym Wysokiego Szczebla ONZ ds. Zrównoważonego Rozwoju.</p>
-  <p>Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował folder <i>Polish SDG Statistics in a nutshell</i>, które w formie graficznej prezentuje postępy Polski z realizacji Celów Zrównoważonego Rozwoju. W opracowaniu zaprezentowano wybrane wskaźniki z zestawu monitorującego krajowe priorytety zrównoważonego rozwoju.</p>
+  <p>Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował folder <i>Polish SDG Statistics in a nutshell</i>, który w formie graficznej prezentuje postępy Polski z realizacji Celów Zrównoważonego Rozwoju. W opracowaniu zaprezentowano wybrane wskaźniki z zestawu monitorującego krajowe priorytety zrównoważonego rozwoju.</p>
   <p>Publikacja, jako wydawnictwo skierowane głównie do odbiorców zagranicznych, dostępna jest wyłącznie w wersji anglojęzycznej.</p>
 
   <hr>
