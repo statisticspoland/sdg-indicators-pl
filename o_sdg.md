@@ -285,13 +285,14 @@ permalink: /o_sdg/
   <h4><b>ORGANIZACJA NARODÓW ZJEDNOCZONYCH (ONZ)</b></h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2022/" alt="The Sustainable Development Goals Report 2022" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2022)"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2022.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2023/" alt="The Sustainable Development Goals Report 2023" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2023)"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2023.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>The Sustainable Development Goals Report</b></p>
 
-  <p>Raport stanowi przegląd postępów, jakich dokonywano w kolejnych latach z realizacji Agendy 2030. Przedstawia najważniejsze tendencje w oparciu o najnowsze dostępne dane, a także wskazuje luki informacyjne dotyczące realizacji 17 SDGs. Raport oparty jest o wskaźniki dostępne w <a title="Przejdź do globalnej bazy danych ONZ" href="https://unstats.un.org/sdgs/dataportal"  target="_blank">globalnej bazie danych SDG ONZ</a>.</p>
+  <p>Raport stanowi przegląd postępów, jakich dokonywano w kolejnych latach z realizacji Agendy 2030. Opublikowana w 2023 r. specjalna edycja Raportu (w związku z półmetkiem realizacji Agendy 20230) przedstawia najważniejsze tendencje w oparciu o najnowsze dostępne dane, uwzględniające m.in. skutki kryzysu klimatycznego, wojny w Ukrainie czy utrzymujących się konsekwencji pandemii COVID-19. Raport oparty jest o wskaźniki dostępne <a title="Przejdź do globalnej bazy danych ONZ" href="https://unstats.un.org/sdgs/dataportal"  target="_blank">globalnej bazie danych SDG ONZ</a>.</p>
 
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2022)" href="https://unstats.un.org/sdgs/report/2022/">The Sustainable Development Goals Report 2022</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2021)" href="https://unstats.un.org/sdgs/report/2021/">The Sustainable Development Goals Report 2021</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2020)" href="https://unstats.un.org/sdgs/report/2020/">The Sustainable Development Goals Report 2020</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2019)" href="https://unstats.un.org/sdgs/report/2019/">The Sustainable Development Goals Report 2019</a></p>
@@ -301,13 +302,14 @@ permalink: /o_sdg/
   <hr>
 
     <div class="image-wrapper">
-      <a target="_blank" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/" alt="Sustainable Development Report" title="Zapoznaj się z publikacją Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2022.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.sdgindex.org/reports/sustainable-development-report-2023/" alt="Sustainable Development Report" title="Zapoznaj się z publikacją Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2023.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable Development Report</b></p>
 
   <p>Raport Zrównoważonego Rozwoju, opracowywany przez Sieć Rozwiązań na Rzecz Zrównoważonego Rozwoju (UN SDSN) oraz Fundację Bertelsmanna, zawiera przegląd corocznych postępów państw członkowskich ONZ w zakresie SDGs. Publikacja  prezentuje  Indeks SDG i Dashboard SDG, narzędzia umożliwiające ocenę ogólnych wyników krajów w zakresie SDGs oraz identyfikację ich mocnych i słabych stron w odniesieniu do 17 Celów, a także pozwala na analizę światowych tendencji w tym zakresie.</p>
 
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2022)" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/">Sustainable Development Report 2022</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2021)" href="https://www.sdgindex.org/reports/sustainable-development-report-2021/">Sustainable Development Report 2021</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2020)" href="https://www.sdgindex.org/reports/sustainable-development-report-2020/">Sustainable Development Report 2020</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2019)" href="https://www.sdgindex.org/reports/sustainable-development-report-2019/">Sustainable Development Report 2019</a></p>

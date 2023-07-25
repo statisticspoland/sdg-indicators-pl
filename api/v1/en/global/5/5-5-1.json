@@ -17,9 +17,9 @@
                       
                         "unit": "percent [%]",
                       
-                        "dimensions": "total",
+                        "dimensions": "by house of Polish Parliament, by local government organ",
                       
-                        "methodology": "Legislative power in the Republic of Poland is exercised by the Sejm and the Senate. The Sejm consists of 460 Members of Parliament (MPs). The Senate consists of 100 senators. The Sejm and the Senate are elected for four-year terms. The participation of women / MPs / Senators in the parliament (as of the beginning of the term) in 2011 corresponds to the 7th term of the Sejm and the 8th term of the Senate (from November 8, 2011 to November 11, 2015), in 2015 to the 8th term of the Sejm and the 9th term of the Senate (from November 12, 2015 to November 11, 2019) and in 2019 to the 9th term of the Sejm and the 10th term of the Senate (from November 12, 2019). The legislative bodies (i.e constituting) of local government units include gmina council, powiat council and voivodship regional council. The gmina council is a constituting and controlling body in the gmina. Since 2018, members of these bodies (councilors) are elected for a five-year term (in the years 1990-2018, the term of office lasted 4 years). Pursuant to the Act of September 29, 2022 on the extension of the term of office of local government units (Journal of Laws of 2022, item 2418), the term of office of the authorities expiring in 2023 was extended once until April 30, 2024. The executive authority in rural gminas is exercised by a village mayor. The mayor is the executive body of the gmina where the seat of the authorities is located in a city located on the territory of the gmina. In cities with more than 100,000 inhabitants, the executive body is the president of the city. This also applies to cities in which, until the entry into force of the Act of 8 March 1990 on Local Self-Government, the president of the city was the executive and managing body.",
+                        "methodology": "Legislative power in the Republic of Poland is exercised by the Sejm and the Senate. The Sejm consists of 460 Members of Parliament (MPs). The Senate consists of 100 senators. The Sejm and the Senate are elected for four-year terms.  The participation of women / MPs / Senators in the parliament (as of the beginning of the term) in 2011 corresponds to the 7th term of the Sejm and the 8th term of the Senate (from November 8, 2011 to November 11, 2015), in 2015 to the 8th term of the Sejm and the 9th term of the Senate (from November 12, 2015 to November 11, 2019) and in 2019 to the 9th term of the Sejm and the 10th term of the Senate (from November 12, 2019).  The legislative bodies (i.e constituting) of local government units include gmina council, powiat council and voivodship regional council. The gmina council is a constituting and controlling body in the gmina. Since 2018, members of these bodies (councilors) are elected for a five-year term (in the years 1990-2018, the term of office lasted 4 years). Pursuant to the Act of September 29, 2022 on the extension of the term of office of local government units (Journal of Laws of 2022, item 2418), the term of office of the authorities expiring in 2023 was extended once until April 30, 2024.  The executive authority in rural gminas is exercised by a village mayor. The mayor is the executive body of the gmina where the seat of the authorities is located in a city located on the territory of the gmina. In cities with more than 100,000 inhabitants, the executive body is the president of the city. This also applies to cities in which, until the entry into force of the Act of 8 March 1990 on Local Self-Government, the president of the city was the executive and managing body.",
                       
                         "source": "Chancellery of the Sejm and Senate / Statistics Poland",
                       
@@ -56,7 +56,9 @@
                             
                                 "2020" :   "",
                             
-                                "2021" :   ""
+                                "2021" :   "",
+                            
+                                "2022" :   ""
                             
                             }
                         ],"Senate of the Republic of Poland": [
@@ -84,14 +86,16 @@
                             
                                 "2020" :   "",
                             
-                                "2021" :   ""
+                                "2021" :   "",
+                            
+                                "2022" :   ""
                             
                             }
                         ]
                     }
                 ],
                 "by local government organ": [
-                    {"Village mayor mayor president of city": [
+                    {"Village mayor/mayor/president of city": [
                             {
                             
                                 "2010" :   "9.5",
@@ -116,7 +120,9 @@
                             
                                 "2020" :   "12.2",
                             
-                                "2021" :   "12.4"
+                                "2021" :   "12.4",
+                            
+                                "2022" :   "12.2"
                             
                             }
                         ],"Gmina councils": [
@@ -144,7 +150,9 @@
                             
                                 "2020" :   "31.0",
                             
-                                "2021" :   "31.2"
+                                "2021" :   "31.2",
+                            
+                                "2022" :   "31.3"
                             
                             }
                         ],"City councils in cities with powiat status": [
@@ -172,7 +180,9 @@
                             
                                 "2020" :   "32.6",
                             
-                                "2021" :   "32.9"
+                                "2021" :   "32.9",
+                            
+                                "2022" :   "33.3"
                             
                             }
                         ],"Powiat councils": [
@@ -200,7 +210,9 @@
                             
                                 "2020" :   "24.4",
                             
-                                "2021" :   "24.6"
+                                "2021" :   "24.6",
+                            
+                                "2022" :   "24.8"
                             
                             }
                         ],"Voivodship regional councils": [
@@ -228,7 +240,9 @@
                             
                                 "2020" :   "29.2",
                             
-                                "2021" :   "29.5"
+                                "2021" :   "29.5",
+                            
+                                "2022" :   "29.8"
                             
                             }
                         ]
