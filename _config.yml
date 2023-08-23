@@ -261,6 +261,30 @@ prose:
             element: hidden
             label: "translation_id"
             scope: global
+      - name: "pl_data_aktualizacji_danych"
+        field:
+            element: hidden
+            label: "Data aktualizacji danych"
+            api: "data_aktualizacji_danych"
+            scope: global
+      - name: "pl_data_aktualizacji_metadanych"
+        field:
+            element: hidden
+            label: "Data aktualizacji metadanych"
+            api: "data_aktualizacji_metadanych"
+            scope: global
+      - name: "en_data_aktualizacji_danych"
+        field:
+            element: hidden
+            label: "Data updated on"
+            api: "data_updated_on"
+            scope: global
+      - name: "en_data_aktualizacji_metadanych"
+        field:
+            element: hidden
+            label: "Metadata updated on"
+            api: "metadata_updated_on"
+            scope: global
     _metadane_krajowe:
       - name: "pl_nazwa_wskaznika"
         field:
@@ -416,4 +440,28 @@ prose:
         field:
             element: hidden
             label: "translation_id"
+            scope: global
+      - name: "pl_data_aktualizacji_danych"
+        field:
+            element: hidden
+            label: "Data aktualizacji danych"
+            api: "data_aktualizacji_danych"
+            scope: global
+      - name: "pl_data_aktualizacji_metadanych"
+        field:
+            element: hidden
+            label: "Data aktualizacji metadanych"
+            api: "data_aktualizacji_metadanych"
+            scope: global
+      - name: "en_data_aktualizacji_danych"
+        field:
+            element: hidden
+            label: "Data updated on"
+            api: "data_updated_on"
+            scope: global
+      - name: "en_data_aktualizacji_metadanych"
+        field:
+            element: hidden
+            label: "Metadata updated on"
+            api: "metadata_updated_on"
             scope: global
