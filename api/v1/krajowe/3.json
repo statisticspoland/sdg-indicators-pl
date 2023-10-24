@@ -1551,75 +1551,6 @@
       ]
     },
     {
-      "3-3-e": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "3.3.e Liczba badań przesiewowych dla wczesnego wykrywania raka jelita grubego na 10 tys. ludności ",
-                          
-                            "cel": "Cel 3. Dobre zdrowie i jakość życia",
-                          
-                            "priorytet": "Zwiększenie wykrywalności chorób we wczesnych stadiach rozwojowych oraz zwiększenie dostępu do nowoczesnych terapii",
-                          
-                            "definicja": "Liczba wykonanych badań w ramach Programu Badań Przesiewowych dla wczesnego wykrywania raka jelita grubego w przeliczeniu na 10 tys. ludności (system oportunistyczny i zapraszany).",
-                          
-                            "jednostka": "sztuki",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "Wskaźnik = L / M, gdzie: L=Liczba badań wykonanych w ramach Programu Badań Przesiewowych dla wczesnego wykrywania raka jelita grubego wykonana w danym roku w systemie zapraszanym i oportunistycznym M=Liczba ludności (stan w końcu roku) na podstawie danych Głównego Urzędu Statystycznego Program Badań Przesiewowych raka jelita grubego (PBP) jest zadaniem Narodowego Programu Zwalczania Chorób Nowotworowych. Od 2012 r. w ramach PBP wysyłane są imienne, jednokrotne zaproszenia na kolonoskopię do osób w wieku 55-64 lata. Celem programu jest zmniejszenie liczby zachorowań i zgonów z powodu raka jelita grubego. Rak jelita grubego jest nowotworem rozwijającym się ze zmian łagodnych, tzw. polipów (jego rozwijanie się trwa najczęściej kilkanaście lat). Dzięki odpowiednio wczesnemu wykryciu i usunięciu polipów można zapobiec rozwojowi raka jelita grubego. Takie badania profilaktyczne pozwalają zmniejszyć ryzyko zachorowania na raka jelita grubego nawet o 60-90%. Ludność opracowano na podstawie:  bilansów ludności zamieszkałej na terenie gminy w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2011 (dla danych od 2010 r.); dla lat wcześniejszych (2003-2009) w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2002, rejestrów Ministerstwa Spraw Wewnętrznych - migracje wewnętrzne i zagraniczne na pobyt stały (od 2006 r. dane są pobierane z rejestru PESEL - Powszechny Elektroniczny System Ewidencji Ludności), sprawozdań urzędów stanu cywilnego - małżeństwa, urodzenia, zgony.  Zgodnie z krajową definicją zamieszkania do ludności danej gminy zalicza się osoby tam zamieszkujące (przebywające) przez okres co najmniej 3 miesięcy. Oznacza to, ze w liczbie ludności danej gminy są ujęci: - stali mieszkańcy (osoby tam zameldowane lub stale mieszkające bez zameldowania), z wyjątkiem tych mieszkańców, którzy wyjechali do innej gminy w kraju na ponad 3 miesiące, - osoby przybyłe z innego miejsca w kraju na okres ponad 3 miesiące.",
-                          
-                            "zrodlo": "Centrum Onkologii – Instytut im. Marii Skłodowskiej – Curie w Warszawie",
-                          
-                            "czestotliwosc": "Dane roczne; od 2012 r.",
-                          
-                            "uwagi": "",
-                          
-                            "data_aktualizacji_danych": "26-04-2023",
-                          
-                            "data_aktualizacji_metadanych": "26-04-2023"
-                          }
-          ],
-          "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "3.18",
-                              
-                                  "2011" :   "6.72",
-                              
-                                  "2012" :   "9.46",
-                              
-                                  "2013" :   "10.91",
-                              
-                                  "2014" :   "9.14",
-                              
-                                  "2015" :   "16.23",
-                              
-                                  "2016" :   "10.38",
-                              
-                                  "2017" :   "27.36",
-                              
-                                  "2018" :   "30.50",
-                              
-                                  "2019" :   "24.77",
-                              
-                                  "2020" :   "27.22",
-                              
-                                  "2021" :   "28.96"
-                              
-                              }
-                          ]
-                        
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
       "3-4-a": [
         {
           "metadane": [
@@ -1645,7 +1576,7 @@
                           
                             "uwagi": "Ze względu na specyfikę metodologii SHA2011 (A System of Health Accounts 2011) dane są przekazywane z dwuletnim opóźnieniem.",
                           
-                            "data_aktualizacji_danych": "26-04-2023",
+                            "data_aktualizacji_danych": "24-10-2023",
                           
                             "data_aktualizacji_metadanych": "26-04-2023"
                           }
@@ -1669,15 +1600,17 @@
                                           
                                               "2015" : "4.5",
                                           
-                                              "2016" : "4.5",
+                                              "2016" : "4.6",
                                           
-                                              "2017" : "4.5",
+                                              "2017" : "4.6",
                                           
                                               "2018" : "4.5",
                                           
                                               "2019" : "4.6",
                                           
-                                              "2020" : "4.5"
+                                              "2020" : "4.7",
+                                          
+                                              "2021" : "4.7"
                                           
                                           }
                                       ],"usługi indywidualne": [
@@ -1691,7 +1624,7 @@
                                           
                                               "2013" : "4.2",
                                           
-                                              "2014" : "4.2",
+                                              "2014" : "4.3",
                                           
                                               "2015" : "4.2",
                                           
@@ -1703,7 +1636,9 @@
                                           
                                               "2019" : "4.4",
                                           
-                                              "2020" : "4.3"
+                                              "2020" : "4.5",
+                                          
+                                              "2021" : "4.3"
                                           
                                           }
                                       ],"usługi zbiorowe": [
@@ -1719,9 +1654,9 @@
                                           
                                               "2014" : "0.2",
                                           
-                                              "2015" : "0.2",
+                                              "2015" : "0.3",
                                           
-                                              "2016" : "0.2",
+                                              "2016" : "0.3",
                                           
                                               "2017" : "0.2",
                                           
@@ -1729,7 +1664,9 @@
                                           
                                               "2019" : "0.2",
                                           
-                                              "2020" : "0.2"
+                                              "2020" : "0.2",
+                                          
+                                              "2021" : "0.3"
                                           
                                           }
                                       ]
