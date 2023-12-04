@@ -195,12 +195,22 @@ permalink: /en/o_sdg/
   <h4><b>STATISTICS POLAND</b> (coordinator of SDG monitoring in Poland)</h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://raportsdg.stat.gov.pl/en/index.html" alt="Poland on the way to SDGs. Environmentally sustainable development. Report 2022" title="Read a publication Poland on the way to SDGs. Environmentally sustainable development. Report 2022" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2022_en.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://raportsdg.stat.gov.pl/en/index.html" alt="Women on the way to sustainable development. Report 2023" title="Read a publication Women on the way to sustainable development. Report 2023" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2023_en.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Poland on the way to SDGs. Environmentally sustainable development. Report 2022</b></p>
+  <p><b>Women on the way to sustainable development. Report 2023</b></p>
+
   <p>Since 2020, Statistics Poland has been publishing digital SDG Reports summing up Poland’s progress towards the 2030 Agenda’s goals. The publications are released on an annual basis, and their thematic scope covers selected aspects of sustainable development.</p>
-  <p>The latest edition of digital SDG Report “<b>Poland on the way to SDGs. Environmentally sustainable development. Report 2022</b>” answers the questions, among others, what is a state and quality of the natural environment in Poland and whether economic growth is accompanied by efficient use of resources. The analytical part of the Report is complemented with a graphical chapter presenting Poland’s progress towards all 17 Goals, in areas defined by the government as priorities. </p>
+
+  <p>The latest edition of digital SDG Report "<b>Women on the way to sustainable development</b>" answers the questions, among others:</p>
+      <p>• More women in Poland complete higher education than men, but are they promoted just as often??
+      <br>•	How much do they earn compared to men holding similar positions?
+      <br>•	What is the percentage of female managers?
+      <br>•	Polish women are more likely to undergo preventive examinations, but do they suffer from modern-age diseases less often than men?
+      <br>•	What is the situation of women aged 60 and more in Poland and do they age as actively as men the same age?
+      </p>
+
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read Poland on the way to SDGs. Environmentally sustainable development. Report 2022" href="https://raportsdg.stat.gov.pl/2022/en/index.html">Poland on the way to SDGs. Environmentally sustainable development. Report 2022</a></p>
   <p><a target="_blank" title="Read Poland on the way to SDGs. Report 2021" href="https://raportsdg.stat.gov.pl/2021/en/index.html">Poland on the way to SDGs. Inclusive economic growth. Report 2021</a></p>
   <p><a target="_blank" title="Read Poland on the way to SDGs. Report 2020" href="https://raportsdg.stat.gov.pl/2020/en/index.html">Poland on the way to SDGs. Report 2020</a></p>
 

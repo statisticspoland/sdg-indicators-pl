@@ -199,12 +199,21 @@ permalink: /o_sdg/
   <h4><b>GŁÓWNY URZĄD STATYSTYCZNY</b> (koordynator monitorowania SDG w Polsce)</h4>
 
   <div class="image-wrapper">
-   <a target="_blank" href="https://raportsdg.stat.gov.pl/" alt="Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo. Raport 2022" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo (2022)"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2022_pl.png" align="center" alt="GUS" border="0"/></a>
+   <a target="_blank" href="https://raportsdg.stat.gov.pl/" alt="Kobiety na drodze zrównoważonego rozwoju. Raport 2023" title="Zapoznaj się z raportem Kobiety na drodze zrównoważonego rozwoju (2023)"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2023_pl.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo. Raport 2022</b></p>
+  <p><b>Kobiety na drodze zrównoważonego rozwoju. Raport 2023</b></p>
+
   <p>Wydawane przez GUS od 2020 r. cyfrowe Raporty SDG podsumowują osiągnięcia Polski we wdrażaniu celów Agendy 2030. Publikacje są opracowywane corocznie, a ich tematyka dotyczy wybranych aspektów zrównoważonego rozwoju.</p>
-  <p>Najnowsza edycja cyfrowego Raportu SDG pt. „<b>Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo</b>” odpowiada m.in. na pytania: jaki jest stan i jakość środowiska naturalnego w Polsce oraz czy wzrostowi gospodarczemu towarzyszy efektywne wykorzystanie zasobów. Część analityczną Raportu dopełnia rozdział, który w graficzny sposób przedstawia postępy Polski w ramach wszystkich 17 Celów, w obszarach uznanych przez rząd za priorytetowe.</p>
+
+  <p>W najnowszej edycji cyfrowego Raportu SDG pt. „<b>Kobiety na drodze zrównoważonego rozwoju</b>” poszukujemy odpowiedzi m.in. na takie pytania jak:</p>
+      <p>• czy kobiety w Polsce, które częściej niż mężczyźni posiadają wyższe wykształcenie, równie często awansują?
+      <br>• ile zarabiają w porównaniu z mężczyznami na podobnych stanowiskach?
+      <br>• jaki jest odsetek kobiet w Polsce pełniących funkcje kierownicze?
+      <br>• czy Polki, mimo że częściej wykonują badania profilaktyczne, rzadziej zapadają na choroby cywilizacyjne niż Polacy?
+      <br>• jak wygląda życie seniorek w Polsce i czy starzeją się one równie aktywnie co ich rówieśnicy?</p>
+
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo (2022)" href="https://raportsdg.stat.gov.pl/2022/"> Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo. Raport 2022</a></p>
   <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju (2021)" href="https://raportsdg.stat.gov.pl/2021/">Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy. Raport 2021</a></p>
   <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju (2020)" href="https://raportsdg.stat.gov.pl/2020/">Polska na drodze zrównoważonego rozwoju. Raport 2020</a></p>
 
