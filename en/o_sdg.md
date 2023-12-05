@@ -202,7 +202,7 @@ permalink: /en/o_sdg/
   <p>Since 2020, Statistics Poland has been publishing digital SDG Reports summing up Poland’s progress towards the 2030 Agenda’s goals. The publications are released on an annual basis, and their thematic scope covers selected aspects of sustainable development.</p>
 
   <p>The latest edition of digital SDG Report "<b>Women on the way to sustainable development</b>" answers the questions, among others:</p>
-      <p>• More women in Poland complete higher education than men, but are they promoted just as often??
+      <p>• More women in Poland complete higher education than men, but are they promoted just as often?
       <br>•	How much do they earn compared to men holding similar positions?
       <br>•	What is the percentage of female managers?
       <br>•	Polish women are more likely to undergo preventive examinations, but do they suffer from modern-age diseases less often than men?
