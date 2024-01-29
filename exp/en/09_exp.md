@@ -288,7 +288,7 @@ layout: page_exp
 									<p><b>5.</b> Based on data from the p. 4, the indicator 9.1.1. Proportion of the rural population who live within 2 km of an all-season road was determined.</p>
 								</div>
 							</div>
-							<p>Detailed information on calculations based on the <a target="_blank" href="https://unstats.un.org/sdgs/metadata/files/Metadata-09-01-01.pdf" alt="UN methodology for 9.1.1 indicator" title="UN methodology for 9.1.1 indicator">UN methodology</a> can be found in the indicator metadata on the <a target="_blank" href="https://sdg.gov.pl/en/statistics_glob/9-1-1/" alt="UN methodology for 9.1.1 indicator" title="UN methodology for 9.1.1 indicator">SDG Platform.</a></p>
+							<p>Detailed information on calculations based on the <a target="_blank" href="https://unstats.un.org/sdgs/metadata/files/Metadata-09-01-01.pdf" alt="UN methodology for 9.1.1 indicator" title="UN methodology for 9.1.1 indicator">UN methodology</a> can be found in the <a target="_blank" href="{{ site.baseurl }}/assets/pdf/exp/en/9.1.1_metadata.pdf" alt="UN methodology for 9.1.1 indicator" title="UN methodology for 9.1.1 indicator">indicator metadata</a>.</p>
 						</div>
 <!--------------Źródła----------------------------------------->
 						<div role="tabpanel" class="tab-pane" id="sources" style="scroll-margin-top: 500px;">
