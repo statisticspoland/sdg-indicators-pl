@@ -43,11 +43,13 @@
 
             {% assign unsourced_data = 0 %}
             {% assign compiling_statistic = 0 %}
+            {% assign experimental_reporting = 0 %}
             {% assign finalized_reporting = 0 %}
             {% assign tier3 = 0 %}
 
             {% assign unsourced_percent = 0 %}
             {% assign compiling_percent = 0 %}
+            {% assign experimental_percent = 0 %}
             {% assign finalized_percent = 0 %}
             {% assign tier3_percent = 0 %}
 
@@ -63,6 +65,11 @@
                         {% if indicator.source_url != nil and indicator.source_url != "" %}
                           {% assign unsourced_data = unsourced_data | minus:1 %}
                           {% assign compiling_statistic = compiling_statistic | plus:1 %}
+
+                        {% if indicator.source_url == "experimental" %}
+                          {% assign compiling_statistic = compiling_statistic | minus:1 %}
+                          {% assign experimental_reporting = experimental_reporting | plus:1 %}
+                        {% endif %}
 
                           {% if indicator.graph != nil and indicator.graph != "" %}
                             {% assign compiling_statistic = compiling_statistic | minus:1 %}
@@ -83,18 +90,22 @@
             {% assign tier3_percent = tier3 | times: 100.0  | divided_by: indicators_count | round %}
             {% assign unsourced_percent = unsourced_data | times: 100.0  | divided_by: indicators_count | round %}
             {% assign compiling_percent = compiling_statistic | times: 100.0  | divided_by: indicators_count | round %}
+            {% assign experimental_percent = experimental_reporting | times: 100.0  | divided_by: indicators_count | round %}
             {% assign finalized_percent = finalized_reporting | times: 100.0  | divided_by: indicators_count | round %}
 
 			<h4>{{ t.page-subtitle }} <span class="badge dark-badge">{{ t.indicators }} {{ indicators_count  }}</span></h4>
 
             <div class="container-fluid status-traffic-statbox">
-              <div class="col-md-4">
+              <div class="col-sm-3" style="padding-left: 0px;padding-right: 0px;">
                 <span class="label label-danger">{{ unsourced_data }}</span> {{ t.danger-text }} <br>{{ unsourced_percent }}%
               </div>
-              <div class="col-md-4">
+              <div class="col-sm-3" style="padding-left: 0px;padding-right: 0px;">
                 <span class="label label-warning">{{ compiling_statistic }}</span> {{t.warning-text }} <br>{{ compiling_percent  }}%
               </div>
-              <div class="col-md-4">
+              <div class="col-sm-3" style="padding-left: 0px;padding-right: 0px;">
+                <span class="label label-experimental">{{ experimental_reporting }}</span> {{ t.experimental-text }} <br>{{ experimental_percent  }}%
+              </div>
+              <div class="col-sm-3" style="padding-left: 0px;padding-right: 0px;">
                 <span class="label label-success">{{ finalized_reporting }}</span> {{ t.success-text }} <br>{{ finalized_percent  }}%
               </div>
             </div>
@@ -107,7 +118,10 @@
                 <div class="progress-bar progress-bar-warning" style="width:{{ compiling_percent }}%">
                   <span class="sr-only">{{t.warning-text }} {{ compiling_percent  }}%</span>
                 </div>
-                <div class="progress-bar progress-bar-success" style="max-width:{{ 100 | minus: unsourced_percent | minus: compiling_percent }}%;width:{{ finalized_percent }}%">
+                <div class="progress-bar progress-bar-experimental" style="width:{{ experimental_percent }}%">
+                  <span class="sr-only">{{ t.experimental-text }} {{ experimental_percent  }}%</span>
+                </div>
+                <div class="progress-bar progress-bar-success" style="max-width:{{ 100 | minus: unsourced_percent | minus: compiling_percent | minus: experimental_percent }}%;width:{{ finalized_percent }}%">
                   <span class="sr-only">{{ t.success-text }} {{ finalized_percent  }}%</span>
                 </div>
               </div>
@@ -133,11 +147,13 @@
                 {% assign unsourced_data = 0 %}
                 {% assign compiling_statistic = 0 %}
                 {% assign finalized_reporting = 0 %}
+                {% assign experimental_reporting = 0 %}
                 {% assign tier3 = 0 %}
 
                 {% assign unsourced_percent = 0 %}
                 {% assign compiling_percent = 0 %}
                 {% assign finalized_percent = 0 %}
+                {% assign experimental_percent = 0 %}
                 {% assign tier3_percent = 0 %}
 
                 {% for indicator in site.indicators %}
@@ -154,6 +170,11 @@
                                 {% if indicator.source_url != nil and indicator.source_url != "" %}
                                   {% assign unsourced_data = unsourced_data | minus:1 %}
                                   {% assign compiling_statistic = compiling_statistic | plus:1 %}
+
+                                {% if indicator.source_url == "experimental" %}
+                                  {% assign compiling_statistic = compiling_statistic | minus:1 %}
+                                  {% assign experimental_reporting = experimental_reporting | plus:1 %}
+                                {% endif %}
 
                                   {% if indicator.graph != nil and indicator.graph != "" %}
                                     {% assign compiling_statistic = compiling_statistic | minus:1 %}
@@ -175,6 +196,7 @@
                 {% assign tier3_percent = tier3 | times: 100.0  | divided_by: indicators_count | round  %}
                 {% assign unsourced_percent = unsourced_data | times: 100.0  | divided_by: indicators_count | round %}
                 {% assign compiling_percent = compiling_statistic | times: 100.0  | divided_by: indicators_count | round  %}
+                {% assign experimental_percent = experimental_reporting | times: 100.0  | divided_by: indicators_count | round  %}
                 {% assign finalized_percent = finalized_reporting | times: 100.0  | divided_by: indicators_count | round  %}
 
                 {% assign indicators_count = indicators_count  %}
@@ -217,13 +239,16 @@
 						    <h4>{{ goal.title }} <span class="badge dark-badge">{{ t.indicators }} {{ indicators_count  }}</span></h4>
 
                             <div class="container-fluid status-traffic-statbox">
-                              <div class="col-md-4">
+                              <div class="col-sm-3" style="padding-left: 0px;padding-right: 0px;">
                                 <span class="label label-danger">{{ unsourced_data }}</span> {{ t.danger-text }} <br>{{ unsourced_percent  }}%
                               </div>
-                              <div class="col-md-4">
+                              <div class="col-sm-3" style="padding-left: 0px;padding-right: 0px;">
                                 <span class="label label-warning">{{ compiling_statistic }}</span> {{ t.warning-text }} <br>{{ compiling_percent  }}%
                               </div>
-                              <div class="col-md-4">
+                              <div class="col-sm-3" style="padding-left: 0px;padding-right: 0px;">
+                                <span class="label label-experimental">{{ experimental_reporting }}</span> {{ t.experimental-text }} <br>{{ experimental_percent  }}%
+                              </div>
+                              <div class="col-sm-3" style="padding-left: 0px;padding-right: 0px;">
                                 <span class="label label-success">{{ finalized_reporting }}</span> {{ t.success-text }} <br>{{ finalized_percent  }}%
                               </div>
                             </div>
@@ -236,7 +261,10 @@
                                 <div class="progress-bar progress-bar-warning" style="width:{{ compiling_percent }}%">
                                   <span class="sr-only">{{ t.warning-text }} {{ compiling_percent }}%</span>
                                 </div>
-                                <div class="progress-bar progress-bar-success" style="max-width:{{ 100 | minus: unsourced_percent | minus: compiling_percent }}%;width:{{ finalized_percent }}%">
+                                <div class="progress-bar progress-bar-experimental" style="width:{{ experimental_percent }}%">
+                                  <span class="sr-only">{{ t.experimental-text }} {{ experimental_percent }}%</span>
+                                </div>
+                                <div class="progress-bar progress-bar-success" style="max-width:{{ 100 | minus: unsourced_percent | minus: compiling_percent | minus: experimental_percent }}%;width:{{ finalized_percent }}%">
                                   <span class="sr-only">{{ t.success-text }} {{ finalized_percent }}%</span>
                                 </div>
                               </div>

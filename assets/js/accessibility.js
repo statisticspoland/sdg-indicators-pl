@@ -6,12 +6,15 @@ var accessibilitySwitcher = function(language) {
     _.each(contrastIdentifiers, function(id) {
       $('body').removeClass('contrast-' + id);
       $('.pl-banner').removeClass('contrast-' + id);
-	  $('.pl-banner-glob').removeClass('contrast-' + id);
-	  $('.pl-banner-nat').removeClass('contrast-' + id);
+	    $('.pl-banner-glob').removeClass('contrast-' + id);
+	    $('.pl-banner-nat').removeClass('contrast-' + id);
+      $('.pl-banner-exp').removeClass('contrast-' + id);
+      $('.pl-banner-exp-indicator').removeClass('contrast-' + id);
       $('header.fixed-header').removeClass('contrast-' + id);
       $('header.fixed-header .site-navbar ul li a').removeClass('contrast-' + id);
       $('.usa-footer-secondary_section').removeClass('contrast-' + id);
       $('.usa-footer').removeClass('contrast-' + id);
+      $('.usa-footer-exp').removeClass('contrast-' + id);
       $('.main-content').removeClass('contrast-' + id);
       $('.pl-grid').removeClass('contrast-' + id);
       $('.media-body').removeClass('contrast-' + id);
@@ -45,10 +48,13 @@ var accessibilitySwitcher = function(language) {
     $('.pl-banner').addClass('contrast-' + contrast);
     $('.pl-banner-glob').addClass('contrast-' + contrast);
     $('.pl-banner-nat').addClass('contrast-' + contrast);
+    $('.pl-banner-exp').addClass('contrast-' + contrast);
+    $('.pl-banner-exp-indicator').addClass('contrast-' + contrast);
     $('header.fixed-header').addClass('contrast-' + contrast);
     $('header.fixed-header .site-navbar ul li a').addClass('contrast-' + contrast);
     $('.usa-footer-secondary_section').addClass('contrast-' + contrast);
     $('.usa-footer').addClass('contrast-' + contrast);
+    $('.usa-footer-exp').addClass('contrast-' + contrast);
     $('.main-content').addClass('contrast-' + contrast);
     $('.pl-grid').addClass('contrast-' + contrast);
     $('.media-body').addClass('contrast-' + contrast);
@@ -157,7 +163,7 @@ if(language=="pl"){
 
   function imageFix(contrast) {
   if (contrast == 'high') {
-    _.each($('img:not([src*=high-contrast])'), function(goalImage){
+    _.each($('img:not([src*=high-contrast])').not('img[src*=eksperymentalne]'), function(goalImage){
       $(goalImage).attr('src', $(goalImage).attr('src').replace('img/', 'img/'+ language +'/high-contrast/'));
     })
   } else {

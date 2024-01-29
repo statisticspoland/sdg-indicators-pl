@@ -5277,6 +5277,14 @@ a.label:focus, a.label:hover {
   background-color: #449d44
 }
 
+.label-experimental {
+  background-color: #9617d1
+}
+
+.label-experimental[href]:focus, .label-experimental[href]:hover {
+  background-color: #ba52eb
+}
+
 .label-info {
   background-color: #5bc0de
 }
@@ -5590,6 +5598,10 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 
 .progress-bar-success {
   background-color: #3f7e44
+}
+
+.progress-bar-experimental {
+  background-color: #9617d1
 }
 
 .progress-striped .progress-bar-success {

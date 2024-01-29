@@ -6,7 +6,16 @@
   {% assign t = t[page.lang] %}
 {% endif %}
 
-<footer class="usa-footer usa-footer-big usa-sans" role="contentinfo">
+{% if page.url contains '_exp' %}
+  <footer class="usa-footer-exp usa-footer-big usa-sans" role="contentinfo">
+{% else %}
+  <footer class="usa-footer usa-footer-big usa-sans" role="contentinfo">
+{% endif %}
+
+{% if page.url contains '_exp' %}
+    <div class="pl-grid usa-footer-return-to-top">
+    </div>
+{% else %}
     <div class="pl-grid usa-footer-return-to-top">
       <a href="{{ site.baseurl }}{{ lang }}/api" style="font-size: 15px;margin-right: 30px;" title="{{t.nav-api-title}}">{{ t.nav-api }}</a>
       <a href="{{ site.baseurl }}{{ lang }}/api/custodian" style="font-size: 15px;margin-right: 30px;" title="{{t.nav-api-custodian-title}}">{{ t.nav-api-custodian }}</a>
@@ -20,8 +29,10 @@
       <a href="{{ site.baseurl }}{{ lang }}/statistics_glob/status" style="font-size: 15px;margin-right: 0px;" title="{{t.nav-reporting-glob-status-title}}">{{ t.nav-reporting-glob-status }}</a>
       <a href="{{ site.baseurl }}{{ lang }}/statistics_nat/status" style="font-size: 15px;margin-right: 0px;" title="{{t.nav-reporting-nat-status-title}}">{{ t.nav-reporting-nat-status }}</a>
     </div>
+{% endif %}
 
-    <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
+  		<div class="usa-footer-secondary_section usa-footer-big-secondary-section">
+
       <div class="pl-grid">
         <div class="usa-footer-contact-links usa-width-one-half" style="margin-right: 0px">
             <p> {{ t.about-text }} <br />

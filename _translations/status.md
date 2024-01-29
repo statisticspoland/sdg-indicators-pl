@@ -10,7 +10,8 @@ pl:
   default-text : "Opracowywanie wskaźników"
   danger-text : "Analiza źródeł"
   warning-text : "Statystyki w przygotowaniu"
-  success-text : "Statystyki opublikowane"
+  success-text : "Statystyki oficjalne"
+  experimental-text : "Wskaźniki eksperymentalne"
   indicators: "Liczba wskaźników:"
 en:
   page-title: "Global Reporting Status"
@@ -23,5 +24,6 @@ en:
   danger-text : "Exploring data"
   warning-text : "Statistics in progress"
   success-text : "Reported online"
+  experimental-text : "Experimental statistics"
   indicators: "Number of indicators:"
 ---

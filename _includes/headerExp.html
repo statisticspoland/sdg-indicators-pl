@@ -1,0 +1,580 @@
+{% assign t = site.translations | where:"translation_id", "header"  | first %}
+{% assign t = t[page.lang] %}
+
+<header role="banner" class="fixed-header {{ page.layout }}">
+  <!------------------pasek z ikonami i wyszukiwarką------------------------------------------------------------>
+  <div class="usa-disclaimer {{ site.github.environment }} {{ jekyll.environment }}">
+    <div class="pl-grid nag">
+	  <div class="usa-disclaimer-official" style="width: 28%; padding-left: 0px">
+        <span id="krajowa" class="contrast-default">{{ t.government-site }}</span>
+      </div>
+    <!------------------ikony na gornym pasku------------------------------------------------------------>
+      <div style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 4px; padding-left: 6px; border-width: thin; float: left;">
+        <a href="https://stat.gov.pl/" target="_blank" alt="{{ t.stronaGus }}" title="{{ t.stronaGus }}" class="pos-1" style=" color: #999999;">
+          <img src="{{ site.baseurl }}/assets/img/gus_cz.png" height="25px"></img>
+        </a>
+      </div>
+	  <div class="icons">
+        <a href="https://www.youtube.com/channel/UC0wiQMElFgYszpAoYgTnXtg/featured" target="_blank" alt="{{t.yt}}" title="{{t.yt}}" class="pos-3" style="color: #999999;">
+          <i class="fa fa-youtube-play" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/GlownyUrzadStatystyczny/" target="_blank" alt="{{t.fb}}" title="{{t.fb}}" class="pos-4" style=" color: #999999;">
+          <i class="fa fa-facebook-square" style="font-size:20px;"></i>
+        </a>
+      </div>
+      <div class="icons">
+	  {% if page.url contains '/en/' %}
+		<a href="https://twitter.com/StatPoland" target="_blank" alt="{{t.twit}}" title="{{t.twit}}" class="pos-5" style=" color: #999999;">
+          <i class="fa fa-twitter" style="font-size:20px;"></i>
+        </a>
+	  {% else %}
+        <a href="https://twitter.com/GUS_STAT" target="_blank" alt="{{t.twit}}" title="{{t.twit}}" class="pos-5" style=" color: #999999;">
+          <i class="fa fa-twitter" style="font-size:20px;"></i>
+        </a>
+	  {% endif %}
+      </div>
+      <div class="icons">
+        <a href="https://www.linkedin.com/company/532930" target="_blank" alt="{{t.linked}}" title="{{t.linked}}" class="pos-6" style=" ">
+          <i class="fa fa-linkedin-square" style="font-size:20px;color: #999999;"></i>
+        </a>
+      </div>
+    <!------------------kontrast na gornym pasku------------------------------------------------------------------------------------->
+      <div class="kontrast" style="border-right-style: solid; float: left; height: 35px;  border-color: #ddd;  padding: 4px 8px;;border-width: thin;">
+      </div>
+      <!------------------powiększenie na gornym pasku------------------------------------------------------------------------------------->
+        <div class="zoom" style="border-right-style: solid; float: left; height: 35px;  border-color: #ddd;  padding: 4px 8px;;border-width: thin;">
+          <img src="{{ site.baseurl }}/assets/img/zoomout.png" height="25px" alt="{{t.zoom}}" title="{{t.zoom}}" onclick="FuncZoom()">
+        </div>
+    <!------------------flaga z jezykami na gornym pasku------------------------------------------------------------------------------------->
+      <div class="language-toggle"style="border-right-style: solid;border-color: #ddd;height: 35px;padding: 6px;border-width: thin;">
+        {% if page.lang == 'pl' %}
+          <a class='pull-right lang en' data-lang='en' alt="{{t.lang}}" title="{{t.lang}}" href='{{site.baseurl}}/en{{page.url | remove: 'index.html'}}'>
+            <img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/flaga.png" height="16px" width="25px">
+          </a>
+        {% else %}
+          {% assign language_path_part = '/' | append: page.lang %}
+          <a class='pull-right lang'  data-lang='pl' alt="{{t.lang}}" title="{{t.lang}}" href='{{site.baseurl}}{{page.url | replace_first:language_path_part, ''}}'>
+            <img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/flaga.png" height="16px" width="25px">
+          </a>
+        {% endif %}
+      </div>
+    <!------------------duża wyszukiwarka na gornym pasku------------------------------------------------------------------------------------->
+      {% if page.lang == 'pl' %}
+        <a class="wyszukiwarka">
+          <div class ="topnav">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="search-container">
+              <form action="{{ site.baseurl }}/search/?search=" style="width: 300px;">
+                <input id="tags" type="text" placeholder="Wyszukaj wskaźnik.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <button type="submit" alt="{{t.search}}" title="{{t.search}}"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </a>
+      {% else %}
+        <a class="wyszukiwarka">
+          <div class ="topnav">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="search-container">
+              <form action="{{ site.baseurl }}/en/search/?search=" style="width: 300px;">
+                <input id="tags" type="text" placeholder="Search indicator.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <button type="submit" alt="{{t.search}}" title="{{t.search}}"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </a>
+      {% endif %}
+    <!--------------------wyszukiwarka dla małej wersji-------------------------------------------------------------------------------------------->
+      {% if page.lang == 'pl' %}
+        <div id="wyszukiwarka_small" style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 6px; border-width: thin; float: left;">
+          <a href="{{ site.baseurl }}/search/?search=" class="pos-6" style=" " alt="{{t.search}}" title="{{t.search}}">
+            <i class="fa fa-search" style="font-size:20px;color: #999999;"></i>
+          </a>
+        </div>
+      {% else %}
+        <div id="wyszukiwarka_small" style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 6px; border-width: thin; float: left;">
+          <a href="{{ site.baseurl }}/en/search/?search=" class="pos-6" style=" " alt="{{t.search}}" title="{{t.search}}">
+            <i class="fa fa-search" style="font-size:20px;color: #999999;"></i></a>
+        </div>
+      {% endif %}
+    </div> <!--zamykajacy do pl-grid nag-->
+  </div> <!--zamykajacy do usa-disclaimer-->
+
+
+  <!--{% if page.lang == 'pl' %}
+    <div class="usa-disclaimer {{ site.github.environment }} {{ jekyll.environment }}" style="background-color: #000077;">
+      <div class="pl-grid nag" style="text-align: center;background-color: #000077;padding-top: 10px;padding-bottom: 10px;">
+          <a href="https://spis.gov.pl" target="_blank"><span id="krajowa" class="contrast-default" style="color: white;text-decoration: underline;">Weź udział w Narodowym Spisie Powszechnym Ludności i Mieszkań 2021</span></a>
+      </div>
+    </div>
+  {% else %}
+    <div class="usa-disclaimer {{ site.github.environment }} {{ jekyll.environment }}" style="background-color: #000077;">
+      <div class="pl-grid nag" style="text-align: center;background-color: #000077;padding-top: 10px;padding-bottom: 10px;">
+          <a href="https://nsp2021.spis.gov.pl/#/login?redirect=%2Fobligations" target="_blank"><span id="krajowa" class="contrast-default" style="color: white;text-decoration: underline;">Take part in the National Census of Population and Housing 2021</span></a>
+      </div>
+    </div>
+  {% endif %}-->
+
+
+<!--------------------menu małe-------------------------------------------------------------------------------------------------->
+  {% if page.layout != 'splash' %}<!--jesli nie strona z intro-->
+    <a href="{{ site.baseurl }}{{ lang }}/" class="logo-home-mobile" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}"><h1></h1></a>
+    <nav class="navbar navbar-light light-blue lighten-4">
+      <!--------------------menu jako przycisk-------------------------------------------------------------------------------------------------->
+      <button class="navbar-toggler toggler-example" alt="menu" title="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+      aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom:0px; margin-top: 0px;background-color:white; padding-bottom: 0;width: 100%; box-shadow: 0 0 3px #ffffff, 0 0 7px #ffffff;">
+        <a class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/logo_GUS_mobile.png" style="max-height: 100%" /></a>
+        <i class="fa fa-bars" style="color:gray;padding: 15px;float: right;"></i>
+      </button>
+      <!--------------------menu zakładki-------------------------------------------------------------------------------------------------->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto" id="hamburger">
+          {% if page.url contains '/en/' %}
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/introduction_exp" style="text-decoration: none;color: #000;width: 100%" title="Introduction">Introduction</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/09_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="9.1.1 Proportion of the rural population who live within 2 km of an all-season road">9.1.1 Proportion of the rural population who live within 2 km of an all-season road</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_3_1_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="11.3.1 Ratio of land consumption rate to population growth rate">11.3.1 Ratio of land consumption rate to population growth rate</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_7_1_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="11.7.1 Average share of the built-up area of cities that is open space for public use for all">11.7.1 Average share of the built-up area of cities that is open space for public use for all</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/faqs_exp" style="width: 100%;text-decoration: none;color: #000;" title="FAQs">FAQs</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="https://sdg.gov.pl/en" style="width: 100%;text-decoration: none;color: #000;" title="SDG Platform">SDG Platform</a>
+          </li>
+          {% else %}
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/introduction_exp" style="text-decoration: none;color: #000;width: 100%" title="Wprowadzenie">Wprowadzenie</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/09_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="9.1.1 Odsetek ludności wiejskiej zamieszkałej w promieniu 2 km od dostępnej przez cały rok drogi">9.1.1 Odsetek ludności wiejskiej zamieszkałej w promieniu 2 km od dostępnej przez cały rok drogi</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_3_1_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="11.3.1 Relacja wskaźnika zużycia gruntów do tempa wzrostu liczby ludności">11.3.1 Relacja wskaźnika zużycia gruntów do tempa wzrostu liczby ludności</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_7_1_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="11.7.1 Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem">11.7.1 Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/faqs_exp" style="width: 100%;text-decoration: none;color: #000;" title="FAQs">FAQs</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="https://sdg.gov.pl" style="width: 100%;text-decoration: none;color: #000;" title="Platforma SDG">Platforma SDG</a>
+          </li>
+          {% endif %}
+        </ul>
+      </div> <!--zamykający do collapse navbar-collapse-->
+    </nav> <!--zamknięcie menu małego-->
+
+<!--------------------menu duże-------------------------------------------------------------------------------------------------->
+    <nav class="site-navbar nav-collapse pl-grid" style="overflow: visible;height: 80px;">
+      <!--------------------logo-------------------------------------------------------------------------------------------------->
+      {% if page.lang == 'pl' %}
+		{% if page.url contains '/statistics_exp/' %}
+			<a href="{{ site.baseurl }}{{ lang }}/statistics_exp" alt="{{t.logo_SDG_GUS}}"  title="{{t.logo_SDG_GUS}}" class="logo-home"><h1></h1></a>
+		{% elsif page.url contains '/statistics_nat/' %}
+			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" alt="{{t.logo_SDG_GUS}}"  title="{{t.logo_SDG_GUS}}" class="logo-home"><h1></h1></a>
+		{% else %}
+			<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home"><h1></h1></a>
+		{% endif %}
+	  {% else %}
+		{% if page.url contains '/statistics_exp/' %}
+			<a href="{{ site.baseurl }}{{ lang }}/statistics_exp" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><h1></h1></a>
+		{% elsif page.url contains '/statistics_nat/' %}
+			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><h1></h1></a>
+		{% else %}
+			<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><h1></h1></a>
+		{% endif %}
+      {% endif %}
+      <ul class="usa-unstyled-list">
+        <!--------------------element menu 0-------------------------------------------------------------------------------------------------->
+		<li class="nav-item" style="width: 100px">
+			{% if page.url contains '/en/' %}
+			<a style="margin-left: 50px;"href="{{ site.baseurl }}{{ lang }}/statistics_exp/introduction_exp" title="Introduction">
+			{% else %}
+			<a style="margin-left: 70px;"href="{{ site.baseurl }}{{ lang }}/statistics_exp/introduction_exp" title="Wprowadzenie">
+			{% endif %}
+
+			{% if page.url contains '/en/' %}
+				Introduction
+			{% else %}
+				Wprowadzenie
+			{% endif %}
+			</a>
+		</li>
+		<!--------------------lista rozwijana I-------------------------------------------------------------------------------------------------->
+		<li class="nav-item" style="width: 190px">
+			<div class="dropdown" style="width: 200px; text-align:center;position:relative">
+				<a>
+				{% if page.url contains '/en/' %}
+				<div class="dropbtn" style="padding-left: 50px;" title="Select indicator">
+				{% else %}
+				<div class="dropbtn" style="padding-left: 70px;" title="Wybierz wskaźnik">
+				{% endif %}
+
+				{% if page.url contains '/en/' %}
+					Select indicator
+				{% else %}
+					Wybierz wskaźnik
+				{% endif %}
+                <i class="fa fa-caret-down" style="margin-left: 5px;color: #0071bc;"></i>
+              </div>
+            </a>
+			{% if page.url contains '/en/' %}
+			<div class="dropdown-content" style="margin-left: 10px; width: 210px;">
+			{% else %}
+			<div class="dropdown-content" style="margin-left: 15px; width: 230px;">
+			{% endif %}
+
+				{% if page.url contains '/en/' %}
+                  <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/09_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 210px;" title="9.1.1 Proportion of the rural population who live within 2 km of an all-season road">9.1.1 Proportion of the rural population who live within 2 km of an all-season road</a>
+                  <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_3_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 210px;" title="11.3.1 Ratio of land consumption rate to population growth rate">11.3.1 Ratio of land consumption rate to population growth rate</a>
+                  <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_7_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 210px;" title="11.7.1 Average share of the built-up area of cities that is open space for public use for all">11.7.1 Average share of the built-up area of cities that is open space for public use for all</a>
+				{% else %}
+                  <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/09_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 230px;" title="9.1.1 Odsetek ludności wiejskiej zamieszkałej w promieniu 2 km od dostępnej przez cały rok drogi">9.1.1 Odsetek ludności wiejskiej zamieszkałej w promieniu 2 km od dostępnej przez cały rok drogi</a>
+                  <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_3_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 230px;" title="11.3.1 Relacja wskaźnika zużycia gruntów do tempa wzrostu liczby ludności">11.3.1 Relacja wskaźnika zużycia gruntów do tempa wzrostu liczby ludności</a>
+                  <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_7_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 230px;" title="11.7.1 Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem">11.7.1 Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem</a>
+				{% endif %}
+            </div>
+          </div>
+        </li>
+
+		<li class="nav-item" style="width: 100px">
+			{% if page.url contains '/en/' %}
+			<a style="margin-left: 40px;"href="{{ site.baseurl }}{{ lang }}/statistics_exp/faqs_exp" title="FAQs">
+			{% else %}
+			<a style="margin-left: 65px;"href="{{ site.baseurl }}{{ lang }}/statistics_exp/faqs_exp" title="FAQs">
+			{% endif %}
+
+				{% if page.url contains '/en/' %}
+					FAQs
+				{% else %}
+					FAQs
+				{% endif %}
+			</a>
+		</li>
+
+		<li class="nav-item" style="width: 220px">
+				{% if page.url contains '/en/' %}
+					<a style="margin-left: 60px;"href="https://sdg.gov.pl/en" title="SDG platform">
+					SDG Platform
+				{% else %}
+					<a style="margin-left: 60px;"href="https://sdg.gov.pl" title="Platforma SDG">
+					Platforma SDG
+				{% endif %}
+			</a>
+		</li>
+
+        <!--------------------element menu IV-------------------------------------------------------------------------------------------------->
+      </ul>
+    </nav>
+  {% endif %} <!--zakończenie page.layout != 'splash'-->
+
+{% if page.layout == 'goal' %}
+  {% include carousel.html name=carousel data=site.data.carousel %}
+{% endif %}
+
+<!--potrzebne do wyszukiwarki------------------->
+{% if page.url contains '/statistics_nat/' %}
+{% assign ktore = site.data.krajowe %}
+{% assign kt = "/statistics_nat/" %}
+{% else %}
+{% assign ktore = site.data.globalne %}
+{% assign kt = "/statistics_glob/" %}
+{% endif %}
+
+{% if page.lang == 'pl' %}
+{% assign sdg_indicators = ktore.sdg_indicator_metadata %}
+{% else %}
+{% assign sdg_indicators = ktore[page.lang].sdg_indicator_metadata %}
+{% assign kt =  "/en" | append: kt %}
+{% endif %}
+
+{% assign nazwy = "" | split: ',' %}
+{% assign html = "" | split: ',' %}
+{% for indicatorr in sdg_indicators %}
+  {% assign indic = indicatorr.target_id | append: " " | append: indicatorr.indicator | jsonify | append: "," %}
+  {% assign nazwy = nazwy | push: indic %}
+
+
+  {% assign ht = indicatorr.target_id | replace: '.','-' %}
+  {% assign indic2 = site.baseurl | append: kt | append: ht | append: "/" | jsonify | append: "," %}
+  {% assign html = html | push: indic2 %}
+{% endfor %}
+<!----------------------------------------------->
+
+</header>
+
+
+
+<script>
+
+  $(document).ready(function () {
+      name = "scala";
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) {
+              var cookieFont = c.substring(nameEQ.length, c.length);
+          }
+      }
+
+      document.body.style.webkitTransform =       // Chrome, Opera, Safari
+          document.body.style.msTransform =          // IE 9
+          document.body.style.transform = cookieFont;
+      document.body.style.transformOrigin = "0 0";
+
+      if (cookieFont=='scale(2)') {
+                var srl = 'auto';
+                var hd='unset';
+            } else {
+                var srl = 'hidden';
+                var hd='sticky';
+            }
+      document.body.style.overflowX=srl;
+      $('.fixed-header').css('position',hd);
+
+  });
+
+$( function() {
+
+lista_nazw=[{{ nazwy }}];
+lista_url=[{{ html }}];
+
+var availableTags = [];
+
+for (i = 0; i < lista_nazw.length; i++) {
+   availableTags.push(
+   {
+     value: lista_nazw[i],
+     label: lista_nazw[i],
+     html:  lista_url[i]
+   })
+}
+
+
+   $( "#tags" ).autocomplete({
+
+     source: function(request, response) {
+        var results = $.ui.autocomplete.filter(availableTags, request.term);
+        response(results.slice(0, 7));
+    },
+     select: function( event, ui ) {
+            window.location.href = ui.item.html;
+        },
+    open: function() {
+        $("ul.ui-menu").width( "236px" );
+
+    }
+   });
+
+ } );
+
+$(document).ready(function(){
+  $('.dropdown-toggle').dropdown()
+});
+
+var switcher = new accessibilitySwitcher('{{page.lang}}');
+$(".high").attr("src", '{{ site.baseurl }}/assets/img/high.png');
+$(".default").attr("src", '{{ site.baseurl }}/assets/img/default.png');
+
+(function() {
+	var CookieToolkit = function( text, acceptText ) {
+		this.text = text;
+		this.acceptText = acceptText;
+		this.element = null;
+		this.init();
+	};
+
+	CookieToolkit.prototype = {
+		init: function() {
+			this.create();
+			this.load();
+			this.actions();
+		},
+		load: function() {
+			if( localStorage.getItem( "cookie-toolkit-accepted" ) === null ) {
+				this._show();
+			}
+		},
+		actions: function() {
+			var accept = document.querySelector( "#cookie-toolkit-accept" ),
+				self = this;
+
+				accept.addEventListener( "click", function( e ) {
+					e.preventDefault();
+					localStorage.setItem( "cookie-toolkit-accepted", "yes" );
+					self._hide();
+				}, false);
+
+		},
+    create: function() {
+      var element = document.createElement( "div" );
+      this.element = element;
+      element.id = "cookie-toolkit";
+      element.innerHTML = "<div id='cookie-toolkit-wrap'><div id='cookie-toolkit-text'>" + this.text + "</div><div id='cookie-toolkit-btns'><button type='button' id='cookie-toolkit-accept'>" + this.acceptText + "</button></div></div>";
+      var headers = document.querySelector(".usa-disclaimer");
+      headers.after(element);
+
+    },
+		_show: function() {
+      var self = this;
+			self.element.style.display = "block";
+			self.element.style.paddingBottom=".5rem";
+			self.element.style.paddingTop=".5rem";
+			setTimeout(function() {
+				self.element.className = "visible";
+			}, 500);
+      const el_pl = document.getElementById('publ_cookies_pl');
+      if (el_pl !== null) {
+        document.getElementById("publ_cookies_pl").style.top="200px";
+        document.getElementById("pub_krajowe_pl").style.scrollMarginTop="255px";
+        document.getElementById("pub_zagraniczne_pl").style.scrollMarginTop="270px";
+      }
+      const el_en = document.getElementById('publ_cookies_en');
+      if (el_en !== null) {
+        document.getElementById("publ_cookies_en").style.top="200px";
+        document.getElementById("pub_krajowe_en").style.scrollMarginTop="255px";
+        document.getElementById("pub_zagraniczne_en").style.scrollMarginTop="272px";
+      }
+    },
+		_hide: function() {
+      var self = this;
+			self.element.className = "";
+			self.element.style.display = "none";
+      const el_pl = document.getElementById('publ_cookies_pl');
+      if (el_pl !== null) {
+        document.getElementById("publ_cookies_pl").style.top="125px";
+        document.getElementById("pub_krajowe_pl").style.scrollMarginTop="180px";
+        document.getElementById("pub_zagraniczne_pl").style.scrollMarginTop="195px";
+      }
+      const el_en = document.getElementById('publ_cookies_en');
+      if (el_en !== null) {
+        document.getElementById("publ_cookies_en").style.top="125px";
+        document.getElementById("pub_krajowe_en").style.scrollMarginTop="180px";
+        document.getElementById("pub_zagraniczne_en").style.scrollMarginTop="197px";
+      }
+    }
+	};
+
+	document.addEventListener( "DOMContentLoaded", function() {
+    var jez='{{page.lang}}'
+    if (jez=='pl'){
+      var toolkit = new CookieToolkit( "Strona wykorzystuje pliki cookies. Korzystanie z witryny bez zmiany ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Zawsze możesz zmienić te ustawienia.", "OK" );
+    }else{
+      var toolkit = new CookieToolkit( "We use cookies to help our site work, to understand how it is used, and to tailor the adverts presented on our site. By clicking “OK”, you agree to us doing so. You can read more in our cookie notice. ", "OK" );
+    }
+	});
+})();
+
+function FuncKrajo(){
+  window.location.href="{{ site.baseurl }}{{ lang }}/statistics_nat";
+  FuncZamk();
+}
+
+function FuncZamk(){
+  var self = document.getElementById("national-toolkit");
+  self.className = "";
+  self.style.display = "none";
+  localStorage.setItem( "nat-toolkit-accepted", "yes" );
+}
+function FuncZoom(){
+  if (document.body.style.transform == "" || document.body.style.transform == "none") {
+            var skala = 'scale(2)';
+            var srl = 'auto';
+            var hd='unset';
+        } else {
+            var skala = "none";
+            var srl = 'hidden';
+            var hd='sticky';
+        }
+
+        document.cookie = "scala" + "=" + skala + "; expires=5" + "; path=/";
+
+        document.body.style.webkitTransform =       // Chrome, Opera, Safari
+            document.body.style.msTransform =          // IE 9
+        document.body.style.transform = skala;
+        document.body.style.transformOrigin = "0 0";
+        document.body.style.overflowX=srl;
+
+        $('.fixed-header').css('position',hd);
+
+}
+
+$(window).bind('click', function(event) {
+    if(event.target.href)
+        $(window).unbind('beforeunload');
+});
+$(window).bind('beforeunload', function(event) {
+
+    $.ajax({
+      url:"",
+      async:false,
+      success: function(data) {
+localStorage.removeItem("nat-toolkit-accepted");
+  }
+});
+});
+
+
+/*(function() {
+	var BusinessToolkit = function( text) {
+		this.text = text;
+		this.element = null;
+		this.init();
+	};
+	BusinessToolkit.prototype = {
+		init: function() {
+			this.create();
+			this.load();
+		},
+		load: function() {
+      if( localStorage.getItem( "nat-toolkit-accepted" ) === null ) {
+          this._show();
+        }
+		},
+    create: function() {
+      var element = document.createElement( "div" );
+      this.element = element;
+      element.id = "national-toolkit";
+      var jez='{{page.lang}}'
+      if (jez=='pl'){
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
+      }else{
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/en/index.html' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
+      }
+      var headers = document.querySelector(".site-navbar");
+      headers.after(element);
+
+    },
+		_show: function() {
+      var self = this;
+			self.element.style.display = "block";
+			self.element.style.paddingBottom=".5rem";
+			self.element.style.paddingTop=".5rem";
+			setTimeout(function() {
+				self.element.className = "visible";
+			}, 500);
+    }
+	};
+
+	document.addEventListener( "DOMContentLoaded", function() {
+	var jez='{{page.lang}}'
+	if (jez=='pl'){
+	  var toolkit = new BusinessToolkit( "Raport SDG 2022 już dostępny!");
+	}else{
+	  var toolkit = new BusinessToolkit( "Report SDG 2022 available!");
+	}
+	});
+})();*/
+</script>
