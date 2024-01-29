@@ -114,8 +114,7 @@ layout: page_exp
 	<div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 5px;">
 
 		<div class="grid-child" style="width:100%; height: 500px;">
-			<div style="width: 90%; display: inline-block;"><b id="tytuł_1">Population by place of residence (2015=100)</b></div>
-			<div style="width: 86%; display: inline-block;"></div>
+			<div style="width: 90%; display: inline-block;"><b id="tytuł_1">Population by place of residence <br />(2015=100)</b></div>
 			<div style="width: 86%; display: inline-block;">
 				<label for="wojs" style="margin-top: 0px; margin-right: 5px; max-width: 100px; display: inline; font-weight: normal;">Select:</label>
 					<select id="wojBox" onchange="wyborWoj()" name="woj-name" style="padding: 5px;max-width: 250px; display: inline;">

@@ -3,7 +3,7 @@ function createchart1(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w Polsce (rok 2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w Polsce <br />(rok 2015=100)";
 }
 if (d==1) {
 	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w województwie dolnośląskim (rok 2015=100)";

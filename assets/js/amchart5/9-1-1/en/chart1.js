@@ -3,7 +3,7 @@ function createchart1(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in Poland (2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in Poland <br />(2015=100)";
 }
 if (d==1) {
 	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in Dolnośląskie Voivodeship (2015=100)";

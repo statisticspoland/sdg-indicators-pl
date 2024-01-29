@@ -111,7 +111,7 @@ layout: page_exp
 	<div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 5px;">
 
 		<div class="grid-child" style="width:100%; height: 500px;">
-			<div style="width: 90%; display: inline-block;"><b id="tytuł_1">Dynamika zmian liczby ludności w Polsce (rok 2015=100)</b></div>
+			<div style="width: 90%; display: inline-block;"><b id="tytuł_1">Dynamika zmian liczby ludności w Polsce <br />(rok 2015=100)</b></div>
 			<div style="width: 86%; display: inline-block;">
 				<label for="wojs" style="margin-top: 0px; margin-right: 5px; max-width: 100px; display: inline; font-weight: normal;">Wybierz:</label>
 					<select id="wojBox" onchange="wyborWoj()" name="woj-name" style="padding: 5px;max-width: 250px; display: inline;">
@@ -137,12 +137,12 @@ layout: page_exp
 			<div style="width: 10%; display: inline-block; text-align: right;">
 				<a title="Link do pliku csv zawierającego dane do wykresu 1" href="{{ site.baseurl }}/data/exp/9-1-1-chart1.csv"><img alt="Grafika przedstawiająca plik csv" style="vertical-align: bottom; max-width: 30px;" src="{{ site.baseurl }}/assets/img/icon_csv_dash.png"></a>
 			</div>
-			<div id="chart1" style="height: 85%;"></div>
+			<div id="chart1" style="height: 80%;"></div>
 		</div>
 
 		<div class="grid-child" style="width:100%; height: 500px;">
 			<div style="width: 86%; display: inline-block;"><b id="tytuł_2">Gęstość zaludnienia ogółem (os/km<sup>2</sup>)</b></div>
-			<div id="selector" style="width: 86%; display: inline-block;">Wybierz:
+			<div id="selector" style="width: 86%; display: inline-block; margin-top: 26px;">Wybierz:
 				<div class="form-check form-check-inline" style="display: inline-block;margin-left: 10px;">
 					<input class="form-check-input" type="radio" name="dataset2" id="inlineRadio2_1" value="ogółem" onclick="createchart2('chart2', 0, 400, 0, ['2015', '2022'], 0);" checked="checked">
 					<label class="form-check-label" for="inlineRadio2_1" style="margin-top:  5px;">ogółem</label>
@@ -159,7 +159,7 @@ layout: page_exp
 			<div style="width: 10%; display: inline-block; text-align: right;">
 				<a title="Link do pliku csv zawierającego dane do wykresu 2" href="{{ site.baseurl }}/data/exp/9-1-1-chart2.csv"><img alt="Grafika przedstawiająca plik csv" style="vertical-align: bottom; max-width: 30px;" src="{{ site.baseurl }}/assets/img/icon_csv_dash.png"></a>
 			</div>
-			<div id="chart2" style="height: 85%;"></div>
+			<div id="chart2" style="height: 80%;"></div>
 		</div>
 
 	</div>
