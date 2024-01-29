@@ -1,0 +1,332 @@
+var Poland = ee.FeatureCollection("users/stat/POL"),
+    s2Sr_2016 = ee.ImageCollection("COPERNICUS/S2"),
+    s2Sr_2021 = ee.ImageCollection("COPERNICUS/S2_SR"),
+    s2Clouds = ee.ImageCollection("COPERNICUS/S2_CLOUD_PROBABILITY"),
+    sentinel1 = ee.ImageCollection("COPERNICUS/S1_GRD"),
+    urban_points = ee.FeatureCollection("users/stat/urban_points"),
+    non_urban_points = ee.FeatureCollection("users/stat/non_urban_points"),
+    urban = ee.Image("users/stat/Miasta_buffer_2km_no_agruculture"),
+    gminy_miejskie_buffer = ee.FeatureCollection("users/stat/Miasta_buffer_2km_PL");
+
+Map.centerObject(Poland, 6);
+
+//Define input parameters
+var START_DATE_2016 = ee.Date('2016-05-01');
+var END_DATE_2016 = ee.Date('2016-09-30');
+var START_DATE_2021 = ee.Date('2021-05-01');
+var END_DATE_2021 = ee.Date('2021-09-30');
+var MAX_CLOUD_PROBABILITY = 60;
+var urban_region = urban.clip(Poland);
+
+//Calculate population in 2015 and 2020
+var population_2015 = ee.ImageCollection("WorldPop/GP/100m/pop").filterDate('2015').filterBounds(Poland).toBands();
+var population_2020 = ee.ImageCollection("WorldPop/GP/100m/pop").filterDate('2020').filterBounds(Poland).toBands();
+
+var population_2015_PL = population_2015.clip(Poland);
+var population_2020_PL = population_2020.clip(Poland);
+var population_2020_2015_diff = (population_2020_PL).subtract(population_2015_PL);
+
+var population_count2015 = population_2015_PL.select('POL_2015_population').reduceRegion({
+  reducer: ee.Reducer.sum(),
+  geometry: Poland,
+  //scale: 100,
+  maxPixels: 1e20
+}).values().get(0);
+
+var population_count2015Num = population_count2015.getInfo();
+
+var population_count2015round = ee.Number(population_count2015).multiply(1).round().divide(1);
+//print('Population in 2015 for city of '+value+': ', population_count2015round);
+
+var population_count2020 = population_2020_PL.select('POL_2020_population').reduceRegion({
+  reducer: ee.Reducer.sum(),
+  geometry: Poland,
+  //scale: 100,
+  maxPixels: 1e20
+}).values().get(0);
+
+var population_count2020Num = population_count2020.getInfo();
+
+var population_count2020round = ee.Number(population_count2020).multiply(1).round().divide(1);
+
+//print('Population in 2020 for city of '+value+': ', population_count2020round);
+
+var population_diff_count = population_2020_2015_diff.select('POL_2020_population').reduceRegion({
+  reducer: ee.Reducer.sum(),
+  geometry: Poland,
+  //scale: 100,
+  maxPixels: 1e20
+}).values().get(0);
+
+var population_diff_countNum = population_diff_count.getInfo();
+
+var population_diff_countround = ee.Number(population_diff_count).multiply(1).round().divide(1);
+
+//print('Population change from 2015 to 2020 for city of '+value+': ', population_diff_countround);
+
+Map.addLayer(population_2015_PL, {bands: 'POL_2015_population', min:0,max:100, palette:['24126c', '1fff4f', 'd4ff50']},'Population 2015 for Poland', false);
+Map.addLayer(population_2020_PL, {bands: 'POL_2020_population', min:0,max:100, palette:['24126c', '1fff4f', 'd4ff50']},'Population 2020 for Poland', false);
+Map.addLayer(population_2020_2015_diff, {bands: 'POL_2020_population', min:-5,max:20, palette:['24126c', '1fff4f', 'd4ff50']},'Population change from 2015 to 2020 for Poland', false);
+
+// Display as default and with a custom color.
+Map.addLayer(Poland, {color: 'FF0000'}, 'City borders with 2 km buffer ', false);
+
+//Creating Sentinel-2 cloudless mosaic
+function maskClouds(img) {
+  var clouds = ee.Image(img.get('cloud_mask')).select('probability');
+  var isNotCloud = clouds.lt(MAX_CLOUD_PROBABILITY);
+  return img.updateMask(isNotCloud);
+}
+
+// The masks for the 10m bands sometimes do not exclude bad data at
+// scene edges, so we apply masks from the 20m and 60m bands as well.
+// Example asset that needs this operation:
+function maskEdges(s2_img) {
+  return s2_img.updateMask(
+      s2_img.select('B8A').mask().updateMask(s2_img.select('B9').mask()));
+}
+
+// Filter input collections by desired data range and region for 2016.
+var criteria_2016 = ee.Filter.and(
+    ee.Filter.bounds(Poland), 
+    ee.Filter.date(START_DATE_2016, END_DATE_2016));
+s2Sr_2016 = s2Sr_2016.filter(criteria_2016).map(maskEdges);
+var s2Clouds_2016 = s2Clouds.filter(criteria_2016);
+
+print('2016 image collection', s2Sr_2016);
+
+// Join S2 SR with cloud probability dataset to add cloud mask.
+var s2SrWithCloudMask_2016 = ee.Join.saveFirst('cloud_mask').apply({
+  primary: s2Sr_2016,
+  secondary: s2Clouds_2016,
+  condition:
+      ee.Filter.equals({leftField: 'system:index', rightField: 'system:index'})
+});
+
+var s2CloudMasked_2016 =
+    ee.ImageCollection(s2SrWithCloudMask_2016).map(maskClouds).median().clip(gminy_miejskie_buffer);
+
+//print('s2CloudMasked_2016',s2CloudMasked_2016);
+
+// Filter input collections by desired data range and region for 2021.
+var criteria_2021 = ee.Filter.and(
+    ee.Filter.bounds(Poland), ee.Filter.date(START_DATE_2021, END_DATE_2021));
+s2Sr_2021 = s2Sr_2021.filter(criteria_2021).map(maskEdges);
+var s2Clouds_2021 = s2Clouds.filter(criteria_2021);
+
+print('2021 image collection', s2Sr_2021);
+
+// Join S2 SR with cloud probability dataset to add cloud mask.
+var s2SrWithCloudMask_2021 = ee.Join.saveFirst('cloud_mask').apply({
+  primary: s2Sr_2021,
+  secondary: s2Clouds_2021,
+  condition:
+      ee.Filter.equals({leftField: 'system:index', rightField: 'system:index'})
+});
+
+var s2CloudMasked_2021 =
+    ee.ImageCollection(s2SrWithCloudMask_2021).map(maskClouds).median().clip(gminy_miejskie_buffer);
+
+//print('s2CloudMasked_2016',s2CloudMasked_2016);
+
+//Define urban areas by binary mask
+var urban_mask = urban_region.eq(1);
+
+// Calculating NDVI index
+var NDVI_2016 = s2CloudMasked_2016.normalizedDifference(['B8','B4']).updateMask(urban_mask);
+var NDVI_2021 = s2CloudMasked_2021.normalizedDifference(['B8','B4']).updateMask(urban_mask);
+
+// Create Sentinel-1 composites.
+// Filter by metadata properties.
+var vvS1_2016 = sentinel1.filterDate('2016-05-01', '2016-08-31')
+  // Filter to get images with VV and VH dual polarization.
+  .filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV'))
+  // Filter to get images collected in interferometric wide swath mode.
+  .filter(ee.Filter.eq('instrumentMode', 'IW'));
+
+// Create a composite from means at different polarizations and look angles.
+var compositeS1_2016 = ee.Image.cat([
+  vvS1_2016.select('VV').median(),
+]).focal_median().clip(gminy_miejskie_buffer).updateMask(urban_mask);
+
+var vvS1_2021 = sentinel1.filterDate('2021-07-01', '2021-07-12')
+  // Filter to get images with VV and VH dual polarization.
+  .filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV'))
+  // Filter to get images collected in interferometric wide swath mode.
+  .filter(ee.Filter.eq('instrumentMode', 'IW'));
+
+// Create a composite from means at different polarizations and look angles.
+var compositeS1_2021 = ee.Image.cat([
+  vvS1_2021.select('VV').median(),
+]).focal_median().clip(gminy_miejskie_buffer).updateMask(urban_mask);
+
+//Define visualization parameters for RBG composition
+var visRGB = {min: 0, max: 2500, bands: ['B4', 'B3', 'B2'],'gamma': 1.1};
+
+//Add layers to map
+Map.addLayer(s2CloudMasked_2016.clip(Poland), visRGB, '2016 S2 masked at ' + MAX_CLOUD_PROBABILITY + '%',true);
+Map.addLayer(s2CloudMasked_2016.updateMask(urban_mask).clip(Poland), visRGB, '2016 S2 urban masked',false);
+Map.addLayer(s2CloudMasked_2021.clip(Poland), visRGB, '2021 S2 masked at ' + MAX_CLOUD_PROBABILITY + '%',true);
+Map.addLayer(s2CloudMasked_2021.updateMask(urban_mask).clip(Poland), visRGB, '2021 S2 urban masked',false);
+Map.addLayer(NDVI_2016.clip(Poland), {min: -1, max:1, palette: ['000000', 'FFFFFF']}, '2016 NDVI masked ',false);
+Map.addLayer(NDVI_2021.clip(Poland), {min: -1, max:1, palette: ['000000', 'FFFFFF']}, '2021 NDVI masked ',false);
+Map.addLayer(compositeS1_2016.clip(Poland), {min: -12, max: -4}, '2016 S1 VV masked ',false);
+Map.addLayer(compositeS1_2021.clip(Poland), {min: -12, max: -4}, '2021 S1 VV masked ',false);
+
+//Perform segmentation for 2016 and 2021
+var snic_2016 = ee.Algorithms.Image.Segmentation.SNIC({
+  image: NDVI_2016,
+  compactness: 1,
+  connectivity: 4,
+  neighborhoodSize: 20,
+  size: 3,
+}).reproject({
+  crs: 'EPSG:4326',
+  scale: 10
+});
+
+var clusters_2016 = snic_2016.select('clusters');
+Map.addLayer(clusters_2016.randomVisualizer(), {}, '2016 Clusters',false);
+
+var snic_2021 = ee.Algorithms.Image.Segmentation.SNIC({
+  image: NDVI_2021,
+  compactness: 1,
+  connectivity: 4,
+  neighborhoodSize: 20,
+  size: 3,
+}).reproject({
+  crs: 'EPSG:4326',
+  scale: 10
+});
+
+var clusters_2021 = snic_2021.select('clusters');
+Map.addLayer(clusters_2021.randomVisualizer(), {}, '2021 Clusters',false);
+
+// Compute per-cluster mean.
+var meanNDVI_2016 = NDVI_2016.addBands(clusters_2016).reduceConnectedComponents(ee.Reducer.mean(), 'clusters', 256);
+var meanNDVI_2021 = NDVI_2021.addBands(clusters_2021).reduceConnectedComponents(ee.Reducer.mean(), 'clusters', 256);
+var meanS1VV_2016 = compositeS1_2016.addBands(clusters_2016).reduceConnectedComponents(ee.Reducer.mean(), 'clusters', 256);
+var meanS1VV_2021 = compositeS1_2021.addBands(clusters_2021).reduceConnectedComponents(ee.Reducer.mean(), 'clusters', 256);
+
+//Merging image layers into one multiband image
+var objectPropertiesImage_2016 = ee.Image.cat([meanNDVI_2016, meanS1VV_2016]).float();
+var objectPropertiesImage_2021 = ee.Image.cat([meanNDVI_2021, meanS1VV_2021]).float();
+
+//Setting training and control samples
+var training_points = non_urban_points.merge(urban_points);
+var training_points_test = training_points.randomColumn();
+print(training_points);
+
+var split = 0.7;
+var training = training_points_test.filter(ee.Filter.lt('random', split));
+var validation = training_points_test.filter(ee.Filter.gte('random', split));
+
+var training_data_2016 = objectPropertiesImage_2016.sampleRegions({
+                    collection:training,
+                    properties: ['class'],
+                    tileScale: 16,
+                    scale: 10});
+
+var training_data_2021 = objectPropertiesImage_2021.sampleRegions({
+                    collection:training,
+                    properties: ['class'],
+                    tileScale: 16,
+                    scale: 10});                   
+
+//Training classifiers                   
+var classifier_2016 = ee.Classifier.libsvm({
+  kernelType: 'RBF',
+  gamma: 0.05,
+  cost: 10
+}).train(training_data_2016, 'class');
+
+var classifier_2021 = ee.Classifier.libsvm({
+  kernelType: 'RBF',
+  gamma: 0.05,
+  cost: 10
+}).train(training_data_2021, 'class');
+
+var builtup_2016 = objectPropertiesImage_2016.classify(classifier_2016);
+var builtup_2021 = objectPropertiesImage_2021.classify(classifier_2021);
+
+Map.addLayer(builtup_2016.clip(Poland), {min:0, max:1}, '2016 Builtup classification', false);
+Map.addLayer(builtup_2021.clip(Poland), {min:0, max:1}, '2021 Builtup classification', false);
+
+var accuracy_2016 = builtup_2016.sampleRegions({
+  collection: validation,
+  properties: ['class'],
+  tileScale: 16,
+  scale: 10
+});
+
+// Accuracy assesment for 2016
+var testAccuracy_2016 = accuracy_2016.errorMatrix('class','classification');
+print('Error matrix for 2016: ', testAccuracy_2016);
+print('Overall accuracy for 2016: ', testAccuracy_2016.accuracy());
+//print('User accuracy for 2016:', testAccuracy_2016.consumersAccuracy());
+//print('Producer accuracy for 2016:', testAccuracy_2016.producersAccuracy());
+print('Kappa index for 2016:', testAccuracy_2016.kappa());
+
+// Accuracy assesment for 2021
+var accuracy_2021 = builtup_2021.sampleRegions({
+  collection: validation,
+  properties: ['class'],
+  tileScale: 16,
+  scale: 10
+});// accuracy assesment based on asset
+
+var testAccuracy_2021 = accuracy_2021.errorMatrix('class', 'classification');
+print('Error matrix for 2021: ', testAccuracy_2021);
+print('Overall accuracy for 2021: ', testAccuracy_2021.accuracy());
+//print('User accuracy for 2021:', testAccuracy_2021.consumersAccuracy());
+//print('Producer accuracy for 2021:', testAccuracy_2021.producersAccuracy());
+print('Kappa index for 2021:', testAccuracy_2021.kappa());
+
+// Remap values for export for no zeros in exported image
+var builtup_2016_export = builtup_2016.remap([0,1],[1,2]);
+var builtup_2021_export = builtup_2021.remap([0,1],[1,2]);
+
+var PL_population_2015 = 26656496;
+var PL_population_2020 = 26968384;
+
+var PL_builtup_2016 = 4480;
+var PL_builtup_2021 = 4915;
+
+var LCR_PL = ((Math.log(PL_builtup_2021/PL_builtup_2016))/5)*100;
+print ('Land consumption rate for Poland (in %)', LCR_PL.toFixed(2));
+
+var PGR_PL = ((Math.log(PL_population_2020/PL_population_2015))/5)*100;
+print ('Population growth rate for Poland (in %)', PGR_PL.toFixed(2));
+
+var LCRPGR_PL = LCR_PL/PGR_PL;
+print ('Land consumption rate to population growth rate for Poland', LCRPGR_PL.toFixed(2));
+
+var LCPC2016_PL = (PL_builtup_2016/PL_population_2015)*1000000;
+print ('Land consumption rate per capita in 2015 for Poland (in m2/person)', LCPC2016_PL.toFixed(2));
+
+var LCPC2021_PL = (PL_builtup_2021/PL_population_2020)*1000000;
+print ('Land consumption rate per capita in 2020 for Poland (in m2/person)', LCPC2021_PL.toFixed(2));
+
+var CLCPC_PL = ((LCPC2021_PL - LCPC2016_PL)/LCPC2016_PL)*100;
+print ('Change in land consumption per capita for Poland (in %)', CLCPC_PL.toFixed(2));
+
+// Export the image, specifying scale (resolution), coordinate system and region.
+Export.image.toDrive({
+  image: builtup_2016_export,
+  description: '2016_classified_builtup',
+  folder: 'SDG',
+  crs: 'EPSG:2180',
+  scale: 10,
+  maxPixels: 1e13,
+  region: Poland
+});
+
+Export.image.toDrive({
+  image: builtup_2021_export,
+  description: '2021_classified_builtup',
+  folder: 'SDG',
+  crs: 'EPSG:2180',
+  scale: 10,
+  maxPixels: 1e13,
+  region: Poland
+});
