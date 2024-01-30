@@ -106,7 +106,7 @@ layout: page_exp
 
 <h4><b>Wskaźniki kontekstowe</b></h4>
 
-<p>Znajdziesz tu zestaw wskaźników kontekstowych, dla których źródłem danych są oficjalne statystyki GUS. Zadaniem wskaźników kontekstowych jest uzupełnienie wyników statystyk eksperymentalnych, pogłębienie informacji na temat monitorowanego zjawiska oraz zapewnienie wsparcia w ocenie postępu w realizacji zrównoważonego rozwoju.</p>
+<p style="margin-bottom: 24px;">Znajdziesz tu zestaw wskaźników kontekstowych, dla których źródłem danych są oficjalne statystyki GUS. Zadaniem wskaźników kontekstowych jest uzupełnienie wyników statystyk eksperymentalnych, pogłębienie informacji na temat monitorowanego zjawiska oraz zapewnienie wsparcia w ocenie postępu w realizacji zrównoważonego rozwoju.</p>
 
 	<div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 5px;">
 
@@ -284,7 +284,7 @@ layout: page_exp
 									<p><b>5.</b> Na postawie danych z punktu 4 dokonano przeliczeń wskaźnika 9.1.1. Odsetek ludności wiejskiej zamieszkałej w promieniu 2 km od dostępnej przez cały rok drogi.</p>
 								</div>
 							</div>
-							<p>Szczegółowa informacja nt. obliczeń dokonanych w oparciu o <a target="_blank" href="https://unstats.un.org/sdgs/metadata/files/Metadata-09-01-01.pdf" alt="Metodologia obliczania wskaźnika 9.1.1 SDG" title="Metodologia obliczania wskaźnika 9.1.1 SDG">metodologię ONZ</a>, znajduje się w metryce wskaźnika na <a target="_blank" href="https://sdg.gov.pl/statistics_glob/9-1-1/" alt="Metodologia obliczania wskaźnika 9.1.1 SDG" title="Metodologia obliczania wskaźnika 9.1.1 SDG">Platformie SDG.</a></p>
+							<p>Szczegółowa informacja nt. obliczeń dokonanych w oparciu o <a target="_blank" href="https://unstats.un.org/sdgs/metadata/files/Metadata-09-01-01.pdf" alt="Metodologia obliczania wskaźnika 9.1.1 SDG" title="Metodologia obliczania wskaźnika 9.1.1 SDG">metodologię ONZ</a>, znajduje się w <a target="_blank" href="{{ site.baseurl }}/assets/pdf/exp/pl/9.1.1_metryka.pdf" alt="Metodologia obliczania wskaźnika 9.1.1 SDG" title="Metodologia obliczania wskaźnika 9.1.1 SDG">metryce wskaźnika</a>.</p>
 						</div>
 <!--------------Źródła----------------------------------------->
 						<div role="tabpanel" class="tab-pane" id="sources" style="scroll-margin-top: 500px;">
