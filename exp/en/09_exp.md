@@ -96,9 +96,9 @@ layout: page_exp
 
 								<div style="overflow:auto; width:100% px;">
 									<h4><b>Interpretation</b></h4>
-									<p>The indicator measures the share of the rural population living within 2 km of an all-season road in a given region in the total rural population of that region in 2020.</p>
+									<p>The indicator measures the share of the rural population living within 2 km of an all-season road in a given region in the total rural population of that powiat/voivodship in 2020.</p>
 
-									<p>National, regional, district and communal roads with bituminous surfaces (asphalt) were considered as roads that meet the condition of all-season road.</p>
+									<p>National, regional, district and communal roads with bituminous surfaces (asphalt) were considered as roads that meet the condition of all-season road. Due to the nature of the indicator, the data does not apply to cities with powiat status (marked with grey areas on the map).</p>
 
 									<p>The higher the value of the indicator, the greater the percentage of the rural population in a given voivodship or powiat has access to all-season road at a distance of 2 km from their place of residence.</p>
 
