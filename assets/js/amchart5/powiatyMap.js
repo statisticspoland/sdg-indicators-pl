@@ -6,10 +6,10 @@ function createMapPow(div, dane, jez){
   // Create root
   root = am5.Root.new(div);
 
-  var brak_danych = "NO DATA"
+  var brak_danych = "not available"
   if(jez != "en"){
     root.locale = am5locales_pl_PL;
-    brak_danych = "BRAK DANYCH"
+    brak_danych = "brak danych"
   }
   root.numberFormatter.set("numberFormat", "#,###.00");
 
