@@ -40,7 +40,7 @@ function createMapPow(div, dane, jez){
   }));
 
   polygonSeries.mapPolygons.template.setAll({
-    tooltipText: "{JPT_NAZWA_}: {value.formatNumber('#,###.00')}",
+    tooltipText: "{JPT_NAZWA_}: {value}",
     fill: am5.color(0xbfbfbf),  //kolor dla braku danych
     stroke: am5.color(0xe0ccff) //kolor krawedzi
   });
@@ -49,9 +49,31 @@ function createMapPow(div, dane, jez){
   polygonSeries.set("heatRules", [{
     target: polygonSeries.mapPolygons.template,
     dataField: "value",
-    min: am5.color(0xf0e6ff),
+    /*min: am5.color(0xf0e6ff),
     max: am5.color(0xb380ff),
-    key: "fill"
+    key: "fill",*/
+    customFunction: function(sprite, min, max, value) {
+      var diff = (max-min)/5;
+      console.log(diff);
+      if(value <= max && value > max-diff){
+        sprite.set("fill", am5.color(0xb380ff));
+      }
+      else if (value <= max-diff && value > max-2*diff) {
+        sprite.set("fill", am5.color(0xc299ff));
+      }
+      else if (value <= max-2*diff && value > max-3*diff){
+        sprite.set("fill", am5.color(0xccaaff));
+      }
+      else if(value <= max-3*diff && value > max-4*diff){
+        sprite.set("fill", am5.color(0xe3d1ff));
+      }
+      else{
+        sprite.set("fill", am5.color(0xf0e6ff));
+      }
+      if (value == "BRAK DANYCH"){
+        sprite.set("fill", am5.color(0xbfbfbf));
+      }
+    }
   }]);
 
   polygonSeries.mapPolygons.template.events.on("pointerover", function(ev) {
@@ -91,5 +113,4 @@ function createMapPow(div, dane, jez){
   polygonSeries.mapPolygons.template.states.create("hover", {
     fill: am5.color(0xffeecc)
   });
-//  }); // end am5.ready()
 }
