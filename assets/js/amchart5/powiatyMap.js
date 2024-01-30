@@ -6,8 +6,10 @@ function createMapPow(div, dane, jez){
   // Create root
   root = am5.Root.new(div);
 
+  var brak_danych = "NO DATA"
   if(jez != "en"){
     root.locale = am5locales_pl_PL;
+    brak_danych = "BRAK DANYCH"
   }
   root.numberFormatter.set("numberFormat", "#,###.00");
 
@@ -19,7 +21,7 @@ function createMapPow(div, dane, jez){
   //set ids to polygon
   for (var i = 0; i < am4geodata_powiaty.features.length; i++){
       am4geodata_powiaty.features[i].id = am4geodata_powiaty.features[i].properties.JPT_KOD_JE;
-      am4geodata_powiaty.features[i].properties.value = "BRAK DANYCH";
+      am4geodata_powiaty.features[i].properties.value = brak_danych;
   }
   //console.log(am4geodata_powiaty);
 
@@ -70,7 +72,7 @@ function createMapPow(div, dane, jez){
       else{
         sprite.set("fill", am5.color(0xf0e6ff));
       }
-      if (value == "BRAK DANYCH"){
+      if (value == brak_danych){
         sprite.set("fill", am5.color(0xbfbfbf));
       }
     }
