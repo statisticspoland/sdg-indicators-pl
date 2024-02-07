@@ -13,31 +13,27 @@
                       
                         "target": "9.1 Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all",
                       
-                        "definition": "",
+                        "definition": "The indicator (commonly known as the Rural Access Index or RAI) measures the share of a country’s rural population that lives within 2 km of an all-season road.",
                       
-                        "unit": "",
+                        "unit": "%",
                       
                         "dimensions": "",
                       
-                        "methodology": "",
+                        "methodology": "The indicator was calculated as a result of the experimental statistics research work answering the needs connected to the monitoring of the Sustainable Development Goals of 2030 Agenda.Experimental statistics is a type of research exceeding the standard practice of official statistics, which can cover the identified information gaps. Presented work may also contain the results of research being in the development phase. Moreover, this research has been conducted in an innovative way using experimental methods and a new methodological approach. The results of the experimental statistics are not official statistics.The indicator was calculated by Statistical Office in Olsztyn basing on the methodology proposed by the United Nations using data from three databases: two databases maintained by Head Office of Land Surveying and Cartography (GUGiK) (the BDOT10k and PRG databases) as well as the WorldPop database.The Topographic Objects Database (BDOT10k) is a vector database containing the spatial location of topographic features along with a basic description of their properties. The content and detail level of the BDOT10k database generally corresponds to a traditional topographic map at the scale of 1:10,000. Database contains information on road type and category, road surface type, as well as road width and length.The National Register of Boundaries (PRG) is an official reference database providing  the basis for other spatial information systems and using data concerning administrative units of the country. The PRG covers the area of the whole country and contains information about boundaries and areas of the fundamental three-level administrative division of the country (i.e. gminas, powiats, and voivodships), registration units, registration precincts, special borders, as well as addresses and their spatial location.The WorldPop database contains high-resolution global data on the distribution of the human population in the form of a 100x100m raster. The datasets provide an estimate of the number of people living in each grid cell.In order to calculate the index, the following steps were carried out: 1. Exclusion of the city areas and designation of a mask for rural areas analysis based on data from the PRG database. 2. Designation of the roads from the BDOT10k database that meet the 'all-season road' condition, with the exception of city areas. 3. Designation of a road buffer with a radius of 2 kilometres. 4. Calculation of population within the buffer limits based on WorldPop database data and total population for rural areas. 5. Calculation of the indicator.",
                       
-                        "source": "",
+                        "source": "Statistical Office in Olsztyn",
                       
-                        "availability": "",
+                        "availability": "Data every 5 years since 2020",
                       
-                        "notes": "",
+                        "notes": "The results of experimental work do not constitute official statistics. Additional disaggregations and visualizations of the indicator in the map form are available on the experimental SDG statistics platform.",
                       
                         "data_updated_on": "",
                       
-                        "metadata_updated_on": "15-03-2022"
+                        "metadata_updated_on": "06-02-2024"
                       }
       ],
       "data": [
-        {"total": [
-                      {
-                      }
-                  ]
-            }
+        {}
       ]
     }
   ]

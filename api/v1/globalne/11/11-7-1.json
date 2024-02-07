@@ -13,30 +13,27 @@
                       
                         "zadanie": "11.7 Do 2030 roku zapewnić łatwy i powszechny dostęp do bezpiecznych i inkluzywnych terenów zielonych i przestrzeni publicznej, szczególnie kobietom, dzieciom, osobom starszym i osobom z niepełnosprawnością",
                       
-                        "definicja": "",
+                        "definicja": "Przeciętny udział terenów miejskich stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miast ogółem.Przestrzeń publiczna dostępna dla wszystkich (OPS - open public space) - każdy dostępny bez opłat, otwarty teren niezabudowany lub bez budynków i innych obiektów budowlanych, zapewniający tereny rekreacyjne dla mieszkańców oraz wpływający na poprawę jakości środowiskowej sąsiedztwa.",
                       
-                        "jednostka": "",
+                        "jednostka": "%",
                       
-                        "wymiary": "",
+                        "wymiary": "ogółem",
                       
-                        "metodologia": "",
+                        "metodologia": "Wskaźnik został opracowany w ramach prac statystyki eksperymentalnej w odpowiedzi na potrzeby związane z monitorowaniem Celów Zrównoważonego Rozwoju Agendy 2030. Statystyka eksperymentalna stanowi rodzaj prac badawczych wykraczający poza standardową praktykę działań statystyki publicznej, który można wykorzystać do wypełniania luk informacyjnych. Efekty prac statystyki eksperymentalnej mogą zawierać wyniki badań w fazie rozwoju, które zostały opracowane w nowatorski sposób z zastosowaniem eksperymentalnych metod i nowego podejścia metodologicznego. Wyniki prac eksperymentalnych nie stanowią oficjalnych statystyk.Wskaźnik został obliczony przez Urząd Statystyczny w Olsztynie w oparciu o metodologię zaproponowaną przez ONZ za pomocą danych pochodzących z pięciu źródeł: z danych satelitarnych Sentinel, z prowadzonych przez GUGiK baz BDOT10k i PRG, bazy WorldPop i OpenStreetMap.Dane satelitarne Sentinel – dane radarowe (Sentinel 1 GRD) i optyczne (Sentinel 2) o rozdzielczości 10m.Baza Danych Obiektów Topograficznych (BDOT10k) to wektorowa baza danych zawierająca lokalizację przestrzenną obiektów topograficznych wraz z ich podstawową charakterystyką opisową, odpowiadająca w szczegółowości tradycyjnej mapie topograficznej w skali 1:10 000. Baza zawiera informacje o rodzaju i kategorii dróg, rodzaju nawierzchni drogi, a także o szerokości i długości drogi.Państwowy Rejestr Granic (PRG) jest urzędową, referencyjną bazą danych stanowiącą podstawę dla innych systemów informacji przestrzennej, wykorzystujących dane dotyczące podziałów terytorialnych kraju oraz ewidencji miejscowości, ulic i adresów. W rejestrze PRG gromadzi się dane, obejmujące obszar całego kraju w zakresie przebiegu granic oraz powierzchni jednostek zasadniczego trójstopniowego podziału terytorialnego kraju (tj. gmin, powiatów, województw), jednostek ewidencyjnych, obrębów ewidencyjnych, granic specjalnych, a także adresów i ich lokalizacji przestrzennej.Baza WorldPop zawiera globalne dane o wysokiej rozdzielczości dotyczące rozmieszczenia populacji ludzkiej w postaci rastra o rozdzielczości 100x100 m. Zestawy danych przedstawiają szacunkową liczbę osób mieszkających w każdej komórce siatki.Baza OpenStreetMap to projekt społeczności internetowej mający na celu stworzenie darmowej, ogólnodostępnej mapy kuli ziemskiej. Jest ona edytowalna przez zarejestrowanych użytkowników. Dane i stworzone na ich podstawie mapy publikowane są obecnie na Open Database License.W celu obliczenia wskaźnika przeprowadzono następujące kroki: 1. Z bazy PRG wyznaczono granice administracyjne miast. 2. Z bazy OpenStreetMap wyznaczono tzw. ogólnodostępne tereny publiczne służące odpoczynkowi i rekreacji (parki, skwery, lasy, place zabaw, inne tereny rekreacyjne) położone w granicach miast. 3. Z bazy BDOT10k wyznaczono powierzchnie gruntów pod drogami. 4. Wyznaczono powierzchnie terenów zabudowanych w granicach miast z wykorzystaniem danych satelitarnych Sentinel-2 i Sentinel-1 (metodyka analogiczna do tej zastosowanej dla wskaźnika 11.3.1): * Wykluczono z analizy grunty pod wodami i grunty orne w celu zwiększenia precyzji klasyfikacji terenów zabudowanych z wykorzystaniem danych satelitarnych,  * Wyznaczono wskaźniki radiometryczne dla danych Sentinel-2 (NDVI, NBI, SAVI, BSI), Sentinel-1 (sigma nought w polaryzacji pionowej), * Opracowano bezchmurne mozaiki danych radarowych i danych optycznych, oraz wykonano ich maskowanie do analizowanych obszarów miast i terenów przylegających, * Przeprowadzono klasyfikację obiektową i opracowano mapy terenów zurbanizowanych, a także obliczano ich powierzchnię. 5. Wyznaczono wskaźniki dostępności przestrzeni publicznych otwartych dla wszystkich na terenach miast ogółem, wg grup wieku i płci: * Za pomocą algorytmu Douglas-Peucker uproszczono geometrię poligonów przestrzeni publicznych w granicach miast i zredukowano ilość wierzchołków poligonów, a następnie wyodrębniono wierzchołki tych poligonów, * Utworzono 100-metrowe bufory wokół dróg (przyjmując założenie, że punkt wejścia do OPS nie może znajdować się zbyt daleko od drogi), * Wyselekcjonowano wierzchołki poligonów znajdujących się w 100 m buforze od dróg (dla określenia punktów wejścia przy rozległych obiektach takich jak np. lasy), * Wyznaczono drogi, dla których trasa pieszego do wejścia OPS jest nie dłuższa niż 400 m, * Wyznaczono 100-metrowy bufor dla tras dojścia do OPS, * Obliczono wskaźnik dostępności otwartych przestrzeni publicznych w odległości do 400 m wg płci i wieku.",
                       
-                        "zrodlo": "",
+                        "zrodlo": "Urząd Statystyczny w Olsztynie",
                       
-                        "czestotliwosc": "",
+                        "czestotliwosc": "Dane co 5 lat; od 2020 r.",
                       
-                        "uwagi": "",
+                        "uwagi": "Wyniki prac eksperymentalnych nie stanowią oficjalnych statystyk. Dodatkowe dezagregacje i wizualizacje wskaźnika w formie map znajdują się na platformie dla  eksperymentalnych statystyk SDG.",
                       
                         "data_aktualizacji_danych": "",
                       
-                        "data_aktualizacji_metadanych": "18-12-2019"
+                        "data_aktualizacji_metadanych": "06-02-2024"
                       }
       ],
       "dane": [
-        {"ogółem": [
-                        {
-                        }
-                    ]}
+        {}
       ]
     }
   ]

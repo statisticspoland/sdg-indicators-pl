@@ -13,31 +13,27 @@
                       
                         "target": "11.3 By 2030, enhance inclusive and sustainable urbanization and capacity for participatory, integrated and sustainable human settlement planning and management in all countries",
                       
-                        "definition": "",
+                        "definition": "The indicator is defined as the ratio of land consumption rate to population growth rate. Land consumption rate (LCR) is the rate at which urbanized land or land occupied by a city or urban area changes during a period of time, expressed as a percentage of the land occupied by the city or urban area at the start of that time.Population growth rate (PGR) is the change of a population in a defined area (country, city, etc) during a given period, expressed as a percentage of the population at the start of that period.",
                       
-                        "unit": "",
+                        "unit": "-",
                       
-                        "dimensions": "",
+                        "dimensions": "total, ratio of land consumption rate, population growth rate",
                       
-                        "methodology": "",
+                        "methodology": "The indicator was calculated as a result of the experimental statistics research work answering the needs connected to the monitoring of the Sustainable Development Goals of 2030 Agenda.Experimental statistics is a type of research exceeding the standard practice of official statistics, which can cover the identified information gaps. Presented work may also contain the results of research being in the development phase. Moreover, this research has been conducted in an innovative way using experimental methods and a new methodological approach. The results of the experimental statistics are not official statistics.The indicator was calculated by Statistical Office in Olsztyn basing on the methodology proposed by the United Nations using data from three sources: Sentinel satellite data, PRG database maintained by Head Office of Land Surveying and Cartography (GUGiK), as well as the WorldPop database.Sentinel satellite data - radiometric data (Sentinel 1 GRD) and optical data (Sentinel 2) with 10 m spatial resolution.The National Register of Boundaries (PRG) is an official reference database providing  the basis for other spatial information systems and using data concerning administrative units of the country. The PRG covers the area of the whole country and contains information about boundaries and areas of the fundamental three-level administrative division of the country (i.e. gminas, powiats, and voivodships), registration units, registration precincts, special borders, as well as addresses and their spatial location. The WorldPop database contains high-resolution global data on the distribution of the human population in the form of a 100x100 m raster. The datasets provide an estimate of the number of people living in each grid cell.In order to calculate the index, the following steps were carried out: 1. Determining the administrative borders of cities from the PRG database. 2. Designating a buffer with a radius of 2 km from the city limits (the growth of urbanized areas is mainly at the expense of rural gminas bordering cities). 3. Excluding underwater and arable land from the analysis (to increase the precision of the classification of built-up areas using satellite data). 4. Development of cloudless mosaics of radar and optical data and their masking to the analysed areas of cities and adjacent areas. 5. Determination of radiometric indicators for Sentinel-2 (NDVI, NBI, SAVI, BSI) and Sentinel-1 data (sigma nought in vertical polarization). 6. Execution of object based image classification and development of maps of urbanized areas, and calculation of their area for 2015 and 2020. 7. Development of a script automating calculations in the Google Earth Engine environment. 8. Calculating the number of people in the analysed area for the indicator for 2015 and 2020.",
                       
-                        "source": "",
+                        "source": "Statistical Office in Olsztyn",
                       
-                        "availability": "",
+                        "availability": "Data every 5 years since 2020",
                       
-                        "notes": "",
+                        "notes": "The results of experimental work do not constitute official. Additional disaggregations and visualizations of the indicator in the map form are available on the  experimental SDG statistics platform.",
                       
                         "data_updated_on": "",
                       
-                        "metadata_updated_on": "18-12-2019"
+                        "metadata_updated_on": "06-02-2024"
                       }
       ],
       "data": [
-        {"total": [
-                      {
-                      }
-                  ]
-            }
+        {}
       ]
     }
   ]

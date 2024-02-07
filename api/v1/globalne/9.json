@@ -12,31 +12,27 @@
                           
                             "zadanie": "9.1 Rozwijać niezawodną, zrównoważoną i odporną infrastrukturę dobrej jakości, w tym infrastrukturę regionalną i transgraniczną, wspierającą rozwój gospodarczy i dobrobyt ludzi. Zapewnić wszystkim ludziom równy dostęp do infrastruktury po przystępnej cenie.",
                           
-                            "definicja": "",
+                            "definicja": "Wskaźnik (Rural Access Index - RAI) mierzy udział ludności wiejskiej zamieszkałej w promieniu 2 km od drogi dostępnej przez cały rok w ludności wiejskiej ogółem.",
                           
-                            "jednostka": "",
+                            "jednostka": "%",
                           
                             "wymiary": "",
                           
-                            "metodologia": "",
+                            "metodologia": "Wskaźnik został opracowany w ramach prac statystyki eksperymentalnej w odpowiedzi na potrzeby związane z monitorowaniem Celów Zrównoważonego Rozwoju Agendy 2030. Statystyka eksperymentalna stanowi rodzaj prac badawczych wykraczający poza standardową praktykę działań statystyki publicznej, który można wykorzystać do wypełniania luk informacyjnych. Efekty prac statystyki eksperymentalnej mogą zawierać wyniki badań w fazie rozwoju, które zostały opracowane w nowatorski sposób z zastosowaniem eksperymentalnych metod i nowego podejścia metodologicznego. Wyniki prac eksperymentalnych nie stanowią oficjalnych statystyk.Wskaźnik został obliczony przez Urząd Statystyczny w Olsztynie w oparciu o metodologię wskaźnika zaproponowaną przez ONZ za pomocą danych pochodzących z trzech źródeł: dwóch baz prowadzonych przez GUGiK (BDOT10k i PRG), a także z bazy WorldPop.Baza Danych Obiektów Topograficznych (BDOT10k) to wektorowa baza danych zawierająca lokalizację przestrzenną obiektów topograficznych wraz z ich podstawową charakterystyką opisową, odpowiadająca w szczegółowości tradycyjnej mapie topograficznej w skali 1:10 000. Baza zawiera informacje o rodzaju i kategorii dróg, rodzaju nawierzchni drogi, a także o szerokości i długości drogi.Państwowy Rejestr Granic (PRG) jest urzędową, referencyjną bazą danych stanowiącą podstawę dla innych systemów informacji przestrzennej, wykorzystujących dane dotyczące podziałów terytorialnych kraju oraz ewidencji miejscowości, ulic i adresów. W rejestrze PRG gromadzi się dane, obejmujące obszar całego kraju w zakresie przebiegu granic oraz powierzchni jednostek zasadniczego trójstopniowego podziału terytorialnego kraju (tj. gmin, powiatów, województw), jednostek ewidencyjnych, obrębów ewidencyjnych, granic specjalnych, a także adresów i ich lokalizacji przestrzennej.Baza WorldPop zawiera globalne dane o wysokiej rozdzielczości dotyczące rozmieszczenia populacji ludzkiej w postaci rastra o rozdzielczości 100x100m. Zestawy danych przedstawiają szacunkową liczbę osób mieszkających w każdej komórce siatki.W celu obliczenia wskaźnika zrealizowano następujące etapy: 1. Wykluczono obszary miast i na tej podstawie wyznaczono tzw. maski do analiz obszarów wiejskich w oparciu o dane z bazy PRG. 2. Z bazy BDOT10k wyznaczono drogi spełniające warunek dostępności przez cały rok z wyłączeniem obszarów miast. 3. Wyznaczono bufor dróg o promieniu 2 km. 4. W oparciu o dane z bazy WorldPop obliczono liczbę ludności w granicach bufora oraz liczbę ludności ogółem dla obszarów wiejskich. 5. Dokonano obliczenia wartości wskaźnika.",
                           
-                            "zrodlo": "",
+                            "zrodlo": "Urząd Statystyczny w Olsztynie",
                           
-                            "czestotliwosc": "",
+                            "czestotliwosc": "Dane co 5 lat; od 2020 r.",
                           
-                            "uwagi": "",
+                            "uwagi": "Wyniki prac eksperymentalnych nie stanowią oficjalnych statystyk. Dodatkowe dezagregacje i wizualizacje wskaźnika w formie map znajdują się na platformie dla eksperymentalnych statystyk SDG.",
                           
                             "data_aktualizacji_danych": "",
                           
-                            "data_aktualizacji_metadanych": "15-03-2022"
+                            "data_aktualizacji_metadanych": "06-02-2024"
                           }
           ],
           "dane": [
-            {"ogółem": [
-                              {
-                              }
-                          ]
-                        
+            {
                     
                 
             }
@@ -520,7 +516,7 @@
                           
                             "uwagi": "",
                           
-                            "data_aktualizacji_danych": "19-01-2023",
+                            "data_aktualizacji_danych": "06-02-2024",
                           
                             "data_aktualizacji_metadanych": "15-03-2022"
                           }
@@ -551,7 +547,9 @@
                               
                                   "2020" :   "17.5",
                               
-                                  "2021" :   "18.8"
+                                  "2021" :   "18.8",
+                              
+                                  "2022" :   "18.6"
                               
                               }
                           ]
@@ -658,7 +656,7 @@
                           
                             "uwagi": "Prezentowany wskaźnik (9.3.2 Odsetek podmiotów korzystających z kredytów bankowych w podziale na długo- i krótkoterminowe) jest zastępczym wobec miernika z oficjalnej listy wskaźników monitorujących Cele Zrównoważonego Rozwoju ONZ. Zastąpienie wskaźnika oryginalnego (9.3.2 Procent drobnego przemysłu z udzieloną pożyczką lub otwartą linią kredytową) wynika z braku możliwości pozyskania dla niego danych. Wskaźnik zastępczy został dobrany tak, aby jak najpełniej oddawał istotę obserwowanego zjawiska.",
                           
-                            "data_aktualizacji_danych": "19-01-2023",
+                            "data_aktualizacji_danych": "06-02-2024",
                           
                             "data_aktualizacji_metadanych": "13-05-2022"
                           }
@@ -692,7 +690,9 @@
                                           
                                               "2020" : "39.8",
                                           
-                                              "2021" : "40.8"
+                                              "2021" : "40.8",
+                                          
+                                              "2022" : "38.9"
                                           
                                           }
                                       ],"kredyty długoterminowe": [
@@ -720,7 +720,9 @@
                                           
                                               "2020" : "25.2",
                                           
-                                              "2021" : "26.5"
+                                              "2021" : "26.5",
+                                          
+                                              "2022" : "22.1"
                                           
                                           }
                                       ],"kredyty krótkoterminowe": [
@@ -748,7 +750,9 @@
                                           
                                               "2020" : "33.9",
                                           
-                                              "2021" : "34.6"
+                                              "2021" : "34.6",
+                                          
+                                              "2022" : "33.6"
                                           
                                           }
                                       ]
@@ -780,7 +784,9 @@
                                           
                                               "2020" : "39.8",
                                           
-                                              "2021" : "40.9"
+                                              "2021" : "40.9",
+                                          
+                                              "2022" : "38.9"
                                           
                                           }
                                       ],"kredyty długoterminowe": [
@@ -808,7 +814,9 @@
                                           
                                               "2020" : "25.1",
                                           
-                                              "2021" : "26.5"
+                                              "2021" : "26.5",
+                                          
+                                              "2022" : "21.8"
                                           
                                           }
                                       ],"kredyty krótkoterminowe": [
@@ -836,7 +844,9 @@
                                           
                                               "2020" : "33.7",
                                           
-                                              "2021" : "34.4"
+                                              "2021" : "34.4",
+                                          
+                                              "2022" : "33.4"
                                           
                                           }
                                       ]
@@ -938,7 +948,7 @@
                           
                             "uwagi": "",
                           
-                            "data_aktualizacji_danych": "19-01-2023",
+                            "data_aktualizacji_danych": "06-02-2024",
                           
                             "data_aktualizacji_metadanych": "15-03-2022"
                           }
@@ -947,21 +957,21 @@
             {"ogółem": [
                               {
                               
-                                  "2010" :   "0.72",
+                                  "2010" :   "0.73",
                               
                                   "2011" :   "0.75",
                               
-                                  "2012" :   "0.88",
+                                  "2012" :   "0.89",
                               
                                   "2013" :   "0.88",
                               
-                                  "2014" :   "0.94",
+                                  "2014" :   "0.95",
                               
                                   "2015" :   "1.00",
                               
-                                  "2016" :   "0.96",
+                                  "2016" :   "0.97",
                               
-                                  "2017" :   "1.03",
+                                  "2017" :   "1.04",
                               
                                   "2018" :   "1.21",
                               
@@ -969,7 +979,9 @@
                               
                                   "2020" :   "1.39",
                               
-                                  "2021" :   "1.44"
+                                  "2021" :   "1.43",
+                              
+                                  "2022" :   "1.46"
                               
                               }
                           ]
@@ -1007,7 +1019,7 @@
                           
                             "uwagi": "",
                           
-                            "data_aktualizacji_danych": "19-01-2023",
+                            "data_aktualizacji_danych": "06-02-2024",
                           
                             "data_aktualizacji_metadanych": "15-03-2022"
                           }
@@ -1016,7 +1028,7 @@
             {"ogółem": [
                               {
                               
-                                  "2010" :   "1689.4",
+                                  "2010" :   "1674.9",
                               
                                   "2011" :   "1664.7",
                               
@@ -1038,7 +1050,9 @@
                               
                                   "2020" :   "2729.9",
                               
-                                  "2021" :   "2966.6"
+                                  "2021" :   "2966.6",
+                              
+                                  "2022" :   "3146.1"
                               
                               }
                           ]
@@ -1076,7 +1090,7 @@
                           
                             "uwagi": "Od 2018 r. wiodący wskaźnik ODA jest prezentowany w formie ekwiwalentu grantu, uwzględniającej jedynie element grantu pomnożony przez wartość danego przepływu. Element grantu jest wyliczany w szczególności dla kredytów pomocy wiązanej.  Dodatkowo trwają prace nad włączeniem do ODA innych przepływów, np. kwot zmobilizowanych przez sektor publiczny z instrumentów sektora prywatnego. Ponadto od 2019 r. Polska raportuje nowy wskaźnik TOSSD (Total Oficial Support for Sustainable Development), który mierzy wsparcie udzielone na wdrożenie SDGs na poziomie globalnym.",
                           
-                            "data_aktualizacji_danych": "21-07-2023",
+                            "data_aktualizacji_danych": "06-02-2024",
                           
                             "data_aktualizacji_metadanych": "10-08-2023"
                           }
@@ -1109,7 +1123,7 @@
                               
                                   "2021" :   "10.50",
                               
-                                  "2022" :   "24.51"
+                                  "2022" :   "28.89"
                               
                               }
                           ]

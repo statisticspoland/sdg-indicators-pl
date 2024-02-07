@@ -13,30 +13,27 @@
                       
                         "zadanie": "11.3 Do 2030 roku zwiększyć stopień inkluzywności, zapewnić zrównoważoną urbanizację i partycypację w zintegrowanym i zrównoważonym planowaniu i gospodarowaniu osiedlami ludzkimi we wszystkich krajach",
                       
-                        "definicja": "",
+                        "definicja": "Wskaźnik definiuje się jako stosunek tempa zużycia gruntów (wynikającego z zabudowy terenów miejskich) do tempa wzrostu liczby ludności. Wskaźnik zużycia gruntów (LCR - land consumption rate) to tempo w jakim zmienia się zabudowa terenu zurbanizowanego lub zajmowanego przez miasto lub obszar miejski w danym okresie, wyrażone jako odsetek gruntów zajmowanych przez miasto lub obszar miejski na początku tego okresu.Tempo wzrostu liczby ludności (PGR - population growth rate) to zmiana liczby ludności w określonym obszarze (kraju, mieście, etc.) w danym okresie, wyrażona jako odsetek ludności na początku tego okresu.",
                       
-                        "jednostka": "",
+                        "jednostka": "-",
                       
-                        "wymiary": "",
+                        "wymiary": "ogółem, wskaźnik zużycia gruntów, tempo wzrostu liczby ludności",
                       
-                        "metodologia": "",
+                        "metodologia": "Wskaźnik został opracowany w ramach prac statystyki eksperymentalnej w odpowiedzi na potrzeby związane z monitorowaniem Celów Zrównoważonego Rozwoju Agendy 2030. Statystyka eksperymentalna stanowi rodzaj prac badawczych wykraczający poza standardową praktykę działań statystyki publicznej, który można wykorzystać do wypełniania luk informacyjnych. Efekty prac statystyki eksperymentalnej mogą zawierać wyniki badań w fazie rozwoju, które zostały opracowane w nowatorski sposób z zastosowaniem eksperymentalnych metod i nowego podejścia metodologicznego. Wyniki prac eksperymentalnych nie stanowią oficjalnych statystyk.Wskaźnik został obliczony przez Urząd Statystyczny w Olsztynie w oparciu o metodologię zaproponowaną przez ONZ na podstawie danych pochodzących z trzech źródeł: z danych satelitarnych Sentinel, z bazy PRG GUGiK, a także z bazy WorldPop.Dane satelitarne Sentinel – dane radarowe (Sentinel 1 GRD) i optyczne (Sentinel 2) o rozdzielczości 10 metrów.Państwowy Rejestr Granic (PRG) jest urzędową, referencyjną bazą danych stanowiącą podstawę dla innych systemów informacji przestrzennej, wykorzystujących dane dotyczące podziałów terytorialnych kraju oraz ewidencji miejscowości, ulic i adresów. W rejestrze PRG gromadzi się dane, obejmujące obszar całego kraju w zakresie przebiegu granic oraz powierzchni jednostek zasadniczego trójstopniowego podziału terytorialnego kraju (tj. gmin, powiatów, województw), jednostek ewidencyjnych, obrębów ewidencyjnych, granic specjalnych, a także adresów i ich lokalizacji przestrzennej.Baza WorldPop zawiera globalne dane o wysokiej rozdzielczości dotyczące rozmieszczenia populacji ludzkiej w postaci rastra o rozdzielczości 100x100m. Zestawy danych przedstawiają szacunkową liczbę osób mieszkających w każdej komórce siatki.W celu obliczenia wskaźnika przeprowadzono następujące kroki: 1. Z bazy PRG wyznaczono granice administracyjne miast. 2. Wyznaczono bufor o promieniu 2 km od granic miast (rozrost obszarów zurbanizowanych w głównej mierze odbywa się kosztem terenów gmin wiejskich graniczących z miastami).  3. Wykluczono z analizy grunty pod wodami i grunty orne w celu zwiększenia precyzji klasyfikacji terenów zabudowanych z wykorzystaniem danych satelitarnych.   4. Opracowano bezchmurne mozaiki danych radarowych i danych optycznych oraz wykonano ich maskowanie do analizowanych obszarów miast i terenów przylegających. 5. Wyznaczono wskaźniki radiometryczne dla danych Sentinel-2 (NDVI, NBI, SAVI, BSI), Sentinel-1 (sigma nought w polaryzacji pionowej). 6. Przeprowadzono klasyfikację obiektową i opracowano mapy terenów  zurbanizowanych, a także obliczono ich powierzchnię dla roku 2015 i 2020. 7. Opracowano skrypt automatyzujący obliczenia w środowisku Google Earth Engine. 8. Obliczono liczbę ludności w analizowanym obszarze dla wskaźnika dla roku 2015 i 2020.",
                       
-                        "zrodlo": "",
+                        "zrodlo": "Urząd Statystyczny w Olsztynie",
                       
-                        "czestotliwosc": "",
+                        "czestotliwosc": "Dane co 5 lat; od 2020 r.",
                       
-                        "uwagi": "",
+                        "uwagi": "Wyniki prac eksperymentalnych nie stanowią oficjalnych statystyk. Dodatkowe dezagregacje i wizualizacje wskaźnika w formie map znajdują się na platformie dla eksperymentalnych statystyk SDG.",
                       
                         "data_aktualizacji_danych": "",
                       
-                        "data_aktualizacji_metadanych": "18-12-2019"
+                        "data_aktualizacji_metadanych": "06-02-2024"
                       }
       ],
       "dane": [
-        {"ogółem": [
-                        {
-                        }
-                    ]}
+        {}
       ]
     }
   ]

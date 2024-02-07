@@ -13,31 +13,27 @@
                       
                         "target": "11.7 By 2030, provide universal access to safe, inclusive and accessible, green and public spaces, in particular for women and children, older persons and persons with disabilities",
                       
-                        "definition": "",
+                        "definition": "Average share of the built-up area of cities that is open space for public use for all in the total build-up area.Open public space (OPS) - any open piece of land that is undeveloped or land with no buildings (or other built structures) that is accessible to the public without charge, and provides recreational areas for residents and helps to enhance the beauty and environmental quality of neighbourhoods.",
                       
-                        "unit": "",
+                        "unit": "%",
                       
-                        "dimensions": "",
+                        "dimensions": "total",
                       
-                        "methodology": "",
+                        "methodology": "The indicator was calculated as a result of the experimental statistics research work answering the needs connected to the monitoring of the Sustainable Development Goals of 2030 Agenda.Experimental statistics is a type of research exceeding the standard practice of official statistics, which can cover the identified information gaps. Presented work may also contain the results of research being in the development phase. Moreover, this research has been conducted in an innovative way using experimental methods and a new methodological approach. The results of the experimental statistics are not official statistics.The indicator was calculated by Statistical Office in Olsztyn using data from five sources, basing on the methodology proposed by the United Nations: Sentinel satellite data, the BDOT10k and PRG databases maintained by Head Office of Land Surveying and Cartography (GUGiK), the WorldPop database and OpenStreetMap.Sentinel satellite data - radiometric data (Sentinel 1 GRD) and optical data (Sentinel 2) with 10 m spatial resolution.The Topographic Objects Database (BDOT10k) is a vector database containing the spatial location of topographic features along with a basic description of their properties. The content and detail level of the BDOT10k database generally corresponds to a traditional topographic map at the scale of 1:10,000. Database contains information on: road type and category, road surface type, as well as road width and length.The National Register of Boundaries (PRG) is an official reference database providing  the basis for other spatial information systems and using data concerning administrative units of the country. The PRG covers the area of the whole country and contains information about boundaries and areas of the fundamental three-level administrative division of the country (i.e. gminas, powiats, and voivodships), registration units, registration precincts, special borders, as well as addresses and their spatial location. The WorldPop database contains high-resolution global data on the distribution of the human population in the form of a 100x100m raster. The datasets provide an estimate of the number of people living in each grid cell.OpenStreetMap database is a community project aimed at creating a free, openly available map of the entire globe, editable by registered users. Data and maps based on the database are being published on the Open Database License.In order to calculate the index, the following steps were carried out: 1. Determining the administrative borders of cities from the PRG database. 2. Designating open spaces for public use for all within city limits (parks, squares, forests, playgrounds, other recreational areas) from OpenStreetMap database. 3. Determining the areas of land under the roads basing on BDOT10k database. 4. The built-up areas within city limits were determined with the use of Sentinel-2 and Sentinel-1 satellite data (methodology similar to that used for indicator 11.3.1): * Excluding underwater and arable land from the analysis (to increase the precision of the classification of built-up areas using satellite data), * Determination of radiometric indicators for Sentinel-2 (NDVI, NBI, SAVI, BSI) and Sentinel-1 data (sigma nought in vertical polarization), * Development of cloudless mosaics of radar data and optical data and their masking to the analysed areas of cities and adjacent areas, * Execution of object classification and development of maps of urbanized areas, and calculation of their area. 5. Calculating the indicators of open public spaces for public use for all in cities in general, by age and gender groups: * The geometry of the polygons of public spaces within the city limits was simplified using the Douglas-Peucker algorithm, the number of polygon vertices was reduced, and then the vertices of these polygons were separated, * Creating 100-meter buffers around the roads (assuming that the entry point to the OPS cannot be too far from the road), * Selecting the tops of the polygons located in a 100 m buffer from the roads (in order to designate entry points for large objects such as forests), * Designating the roads for which the pedestrian route to the OPS entrance is no longer than 400 m, * Designating a 100 m buffer for the routes to reach the OPS, * Calculating the indicator of the availability of open public spaces up to 400 m by gender and age.",
                       
-                        "source": "",
+                        "source": "Statistical Office in Olsztyn",
                       
-                        "availability": "",
+                        "availability": "Data every 5 years since 2020",
                       
-                        "notes": "",
+                        "notes": "The results of experimental work do not constitute official. Additional disaggregations and visualizations of the indicator in the map form are available on the  experimental SDG statistics platform.",
                       
                         "data_updated_on": "",
                       
-                        "metadata_updated_on": "18-12-2019"
+                        "metadata_updated_on": "06-02-2024"
                       }
       ],
       "data": [
-        {"total": [
-                      {
-                      }
-                  ]
-            }
+        {}
       ]
     }
   ]
