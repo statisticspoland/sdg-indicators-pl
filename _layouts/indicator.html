@@ -391,14 +391,13 @@ function Zmiana_jednostki7(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(11,22);
+      calosc=calo.splice(14,27);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
         b[i] = calosc.splice(0,labels.length);
         seria.push(b[i])
       }
-
       chart.update({labels: labels,series: seria})
       if(lan=='pl'){
         document.getElementById("tytul").innerHTML = "%";
@@ -419,7 +418,7 @@ function Zmiana_jednostki7(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(0,11);
+      calosc=calo.splice(0,14);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -595,7 +594,7 @@ function Zmiana_jednostki5(){
       remove(calo, naglowek_ang[i]);
 
     }
-    calosc=calo.splice(13,26);
+    calosc=calo.splice(14,28);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -628,7 +627,7 @@ function Zmiana_jednostki5(){
       remove(calo, naglowek_ang[i]);
 
     }
-    calosc=calo.splice(39,65);
+    calosc=calo.splice(42,84);
     var b = [[]];
     seria=[]
     for (i=1;i<licznik+1;i++){
@@ -661,7 +660,7 @@ function Zmiana_jednostki5(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(0,13);
+      calosc=calo.splice(0,14);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
