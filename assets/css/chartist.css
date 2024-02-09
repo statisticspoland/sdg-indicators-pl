@@ -298,11 +298,34 @@ pointer-events: none; }
     fill: #b2c326; }
 
   .ct-series-u .ct-point, .ct-series-u .ct-line, .ct-series-u .ct-bar, .ct-series-u .ct-slice-donut {
-    stroke: #6188e2; }
+    stroke: #a748ca; }
 
   .ct-series-u .ct-slice-pie, .ct-series-u .ct-area {
-    fill: #6188e2; }
+    fill: #a748ca; }
 
+  .ct-series-v .ct-point, .ct-series-v .ct-line, .ct-series-v .ct-bar, .ct-series-v .ct-slice-donut {
+    stroke: #800080; }
+
+  .ct-series-v .ct-slice-pie, .ct-series-v .ct-area {
+    fill: #800080; }
+
+  .ct-series-w .ct-point, .ct-series-w .ct-line, .ct-series-w .ct-bar, .ct-series-w .ct-slice-donut {
+    stroke: #0099cc; }
+
+  .ct-series-w .ct-slice-pie, .ct-series-w .ct-area {
+    fill: #0099cc; }
+
+  .ct-series-x .ct-point, .ct-series-x .ct-line, .ct-series-x .ct-bar, .ct-series-x .ct-slice-donut {
+    stroke: #ff99ff; }
+
+  .ct-series-x .ct-slice-pie, .ct-series-x .ct-area {
+    fill: #ff99ff; }
+
+  .ct-series-y .ct-point, .ct-series-y .ct-line, .ct-series-y .ct-bar, .ct-series-y .ct-slice-donut {
+    stroke: #ff99ff; }
+
+  .ct-series-y .ct-slice-pie, .ct-series-y .ct-area {
+    fill: #ff99ff; }
 
 .ct-square {
   display: block;

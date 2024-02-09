@@ -164,6 +164,22 @@
            background-color: #a748ca;
            border-color: #a748ca;
        }
+       .ct-legend .ct-series-22:before {
+           background-color: #800080;
+           border-color: #800080;
+       }
+       .ct-legend .ct-series-23:before {
+           background-color: #0099cc;
+           border-color: #0099cc;
+       }
+       .ct-legend .ct-series-24:before {
+           background-color: #a748ca;
+           border-color: #a748ca;
+       }
+       .ct-legend .ct-series-25:before {
+           background-color: #a748ca;
+           border-color: #a748ca;
+       }
 
        .ct-legend .ct-series-0 {
            color: #205493;
@@ -230,4 +246,16 @@
        }
        .ct-legend .ct-series-21 {
            color: #a748ca;
+       }
+       .ct-legend .ct-series-22 {
+           color: #800080;
+       }
+       .ct-legend .ct-series-23 {
+           color: #0099cc;
+       }
+       .ct-legend .ct-series-24 {
+           color: #66ff66;
+       }
+       .ct-legend .ct-series-25 {
+           color: #66ff66;
        }
