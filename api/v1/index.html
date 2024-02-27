@@ -46,8 +46,8 @@
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/chartist.css">
         <link rel="stylesheet" href="/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2024-02-09-11-07-12-+0100">
-        <link rel="stylesheet" href="/assets/css/custom.css?v=2024-02-09-11-07-12-+0100">
+        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2024-02-27-11-46-49-+0100">
+        <link rel="stylesheet" href="/assets/css/custom.css?v=2024-02-27-11-46-49-+0100">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/jquery-ui.css">
 
@@ -531,9 +531,9 @@ localStorage.removeItem("nat-toolkit-accepted");
       element.id = "national-toolkit";
       var jez='pl'
       if (jez=='pl'){
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://sdg.gov.pl/statistics_exp/' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
       }else{
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/en/index.html' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://sdg.gov.pl/en/statistics_exp/' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
       }
       var headers = document.querySelector(".site-navbar");
       headers.after(element);
@@ -553,9 +553,9 @@ localStorage.removeItem("nat-toolkit-accepted");
 	document.addEventListener( "DOMContentLoaded", function() {
 	var jez='pl'
 	if (jez=='pl'){
-	  var toolkit = new BusinessToolkit( "Raport SDG 2023 już dostępny!");
+	  var toolkit = new BusinessToolkit( "Statystyki eksperymentalne SDG już dostępne!");
 	}else{
-	  var toolkit = new BusinessToolkit( "The SDG 2023 Report is now available!");
+	  var toolkit = new BusinessToolkit( "Experimental SDG statistics are now available!");
 	}
 	});
 })();
