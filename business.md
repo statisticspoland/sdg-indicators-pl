@@ -14,7 +14,7 @@ permalink: /business/
           <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
               <a href="https://kampania17celow.pl/cele/cel-3-dobre-zdrowie-i-jakosc-zycia/" title="Przejdź do celu Dobre zdrowie i jakość życia na kampania17celow.pl" alt="Dobre zdrowie i jakość życia"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-03.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
               <figcaption class="caption" style="display: block;">
-              <p align="left"><b>3.1</b> Średnie wydatki na zdrowie pracownika </p>
+              <p align="left"><b>3.1</b> Średnie wydatki na zdrowie pracownika</p>
               </figcaption>
           </figure>
           <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
