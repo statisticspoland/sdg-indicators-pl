@@ -19,12 +19,12 @@ layout: page_exp
     <div class="pl-grid">
       <div class="usa-font-lead intro-paragraph">
         <div style="font-weight: bold">O SDG</div>
-        <p style="font-size: 16px;">Cele Zrównoważonego Rozwoju (<i>Sustainable Development Goals</i> – SDGs) zostały zdefiniowane w <a href="{{ site.baseurl }}/o_sdg" title="O Agendzie na rzecz Zrównoważonego Rozwoju">Agendzie na rzecz Zrównoważonego Rozwoju 2030</a>, przyjętej we wrześniu 2015 r. przez państwa członkowskie ONZ. Realizacja 17 SDGs (i 169 powiązanych z nimi zadań) zakłada zapewnienie godnego życia, pokoju i rozwoju gospodarczego na świecie, przy racjonalnym wykorzystaniu zasobów naturalnych planety.</p>
+        <p style="font-size: 16px;">Cele Zrównoważonego Rozwoju (<i>Sustainable Development Goals</i> – SDGs) zostały zdefiniowane w <a href="{{ site.baseurl }}/o_sdg" title="O Agendzie na rzecz Zrównoważonego Rozwoju" target="_blank">Agendzie na rzecz Zrównoważonego Rozwoju 2030</a>, przyjętej we wrześniu 2015 r. przez państwa członkowskie ONZ. Realizacja 17 SDGs (i 169 powiązanych z nimi zadań) zakłada zapewnienie godnego życia, pokoju i rozwoju gospodarczego na świecie, przy racjonalnym wykorzystaniu zasobów naturalnych planety.</p>
       </div>
 
       <div class="usa-font-lead intro-paragraph">
         <div style="font-weight: bold">O wskaźnikach SDG</div>
-        <p style="font-size: 16px;">Śledzenie postępów w realizacji Agendy 2030 w skali świata umożliwia opracowany przez ONZ zestaw około 250 wskaźników globalnych do monitorowania 17 SDGs. Obecnie Polska statystyka publiczna zapewnia dane dla blisko 70% wskaźników SDG z listy ONZ (<a href="https://sdg.gov.pl" title="Platforma SDG">sdg.gov.pl</a>).</p>
+        <p style="font-size: 16px;">Śledzenie postępów w realizacji Agendy 2030 w skali świata umożliwia opracowany przez ONZ zestaw około 250 wskaźników globalnych do monitorowania 17 SDGs. Obecnie Polska statystyka publiczna zapewnia dane dla blisko 70% wskaźników SDG z listy ONZ (<a href="https://sdg.gov.pl" title="Platforma SDG" target="_blank">sdg.gov.pl</a>).</p>
       </div>
 
       <div class="usa-font-lead intro-paragraph">
