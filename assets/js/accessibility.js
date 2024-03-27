@@ -141,9 +141,11 @@ var accessibilitySwitcher = function(language) {
   ////////////////////////////////////////////////////////////////////////////////////
 
 if(language=="pl"){
-  var title="zmiana kontrastu"
+  var title="zmiana kontrastu";
+  var alt="zmiana kontrastu"
 }else{
-  var title="change contrast"
+  var title="change contrast";
+  var alt="change contrast"
 }
     _.each(contrastIdentifiers, function(contrast) {
       $('.kontrast').append($('<a />').attr({
@@ -153,7 +155,8 @@ if(language=="pl"){
         'data-contrast': contrast
       }).append($('<img />').attr({
          class: contrast,
-        'height': '25px'
+        'height': '25px',
+        'alt': alt
 
       })).click(function() {
         setActiveContrast($(this).data('contrast'));

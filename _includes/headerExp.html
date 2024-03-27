@@ -11,7 +11,7 @@
     <!------------------ikony na gornym pasku------------------------------------------------------------>
       <div style="border-right-style: solid; border-color: #ddd; height: 35px; padding: 4px; padding-left: 6px; border-width: thin; float: left;">
         <a href="https://stat.gov.pl/" target="_blank" alt="{{ t.stronaGus }}" title="{{ t.stronaGus }}" class="pos-1" style=" color: #999999;">
-          <img src="{{ site.baseurl }}/assets/img/gus_cz.png" height="25px"></img>
+          <img src="{{ site.baseurl }}/assets/img/gus_cz.png" alt="Logo GUS" height="25px"></img>
         </a>
       </div>
 	  <div class="icons">
@@ -51,12 +51,12 @@
       <div class="language-toggle"style="border-right-style: solid;border-color: #ddd;height: 35px;padding: 6px;border-width: thin;">
         {% if page.lang == 'pl' %}
           <a class='pull-right lang en' data-lang='en' alt="{{t.lang}}" title="{{t.lang}}" href='{{site.baseurl}}/en{{page.url | remove: 'index.html'}}'>
-            <img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/flaga.png" height="16px" width="25px">
+            <img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/flaga.png" alt="Flaga Wielkiej Brytanii" height="16px" width="25px">
           </a>
         {% else %}
           {% assign language_path_part = '/' | append: page.lang %}
           <a class='pull-right lang'  data-lang='pl' alt="{{t.lang}}" title="{{t.lang}}" href='{{site.baseurl}}{{page.url | replace_first:language_path_part, ''}}'>
-            <img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/flaga.png" height="16px" width="25px">
+            <img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/flaga.png" alt="Flag of Poland" height="16px" width="25px">
           </a>
         {% endif %}
       </div>
@@ -67,7 +67,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <div class="search-container">
               <form action="{{ site.baseurl }}/search/?search=" style="width: 300px;">
-                <input id="tags" type="text" placeholder="Wyszukaj wskaźnik.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <input id="tags" type="text" title="Formularz wyszukiwania" placeholder="Wyszukaj wskaźnik.." name="search" style="margin-top: 0;margin-right: 0.2em;">
                 <button type="submit" alt="{{t.search}}" title="{{t.search}}"><i class="fa fa-search"></i></button>
               </form>
             </div>
@@ -79,7 +79,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <div class="search-container">
               <form action="{{ site.baseurl }}/en/search/?search=" style="width: 300px;">
-                <input id="tags" type="text" placeholder="Search indicator.." name="search" style="margin-top: 0;margin-right: 0.2em;">
+                <input id="tags" type="text" title="Search form" placeholder="Search indicator.." name="search" style="margin-top: 0;margin-right: 0.2em;">
                 <button type="submit" alt="{{t.search}}" title="{{t.search}}"><i class="fa fa-search"></i></button>
               </form>
             </div>
@@ -120,12 +120,12 @@
 
 <!--------------------menu małe-------------------------------------------------------------------------------------------------->
   {% if page.layout != 'splash' %}<!--jesli nie strona z intro-->
-    <a href="{{ site.baseurl }}{{ lang }}/" class="logo-home-mobile" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}"><h1></h1></a>
+    <a href="{{ site.baseurl }}{{ lang }}/" class="logo-home-mobile" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
     <nav class="navbar navbar-light light-blue lighten-4">
       <!--------------------menu jako przycisk-------------------------------------------------------------------------------------------------->
       <button class="navbar-toggler toggler-example" alt="menu" title="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
       aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom:0px; margin-top: 0px;background-color:white; padding-bottom: 0;width: 100%; box-shadow: 0 0 3px #ffffff, 0 0 7px #ffffff;">
-        <a class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/logo_GUS_mobile.png" style="max-height: 100%" /></a>
+        <a class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/logo_GUS_mobile.png" alt="{{t.logo_SDG_GUS}}" style="max-height: 100%" /></a>
         <i class="fa fa-bars" style="color:gray;padding: 15px;float: right;"></i>
       </button>
       <!--------------------menu zakładki-------------------------------------------------------------------------------------------------->
@@ -179,19 +179,19 @@
       <!--------------------logo-------------------------------------------------------------------------------------------------->
       {% if page.lang == 'pl' %}
 		{% if page.url contains '/statistics_exp/' %}
-			<a href="{{ site.baseurl }}{{ lang }}/statistics_exp" alt="{{t.logo_SDG_GUS}}"  title="{{t.logo_SDG_GUS}}" class="logo-home"><h1></h1></a>
+			<a href="{{ site.baseurl }}{{ lang }}/statistics_exp" alt="{{t.logo_SDG_GUS}}"  title="{{t.logo_SDG_GUS}}" class="logo-home"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
 		{% elsif page.url contains '/statistics_nat/' %}
-			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" alt="{{t.logo_SDG_GUS}}"  title="{{t.logo_SDG_GUS}}" class="logo-home"><h1></h1></a>
+			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" alt="{{t.logo_SDG_GUS}}"  title="{{t.logo_SDG_GUS}}" class="logo-home"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
 		{% else %}
-			<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home"><h1></h1></a>
+			<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
 		{% endif %}
 	  {% else %}
 		{% if page.url contains '/statistics_exp/' %}
-			<a href="{{ site.baseurl }}{{ lang }}/statistics_exp" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><h1></h1></a>
+			<a href="{{ site.baseurl }}{{ lang }}/statistics_exp" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
 		{% elsif page.url contains '/statistics_nat/' %}
-			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><h1></h1></a>
+			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
 		{% else %}
-			<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><h1></h1></a>
+			<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
 		{% endif %}
       {% endif %}
       <ul class="usa-unstyled-list">

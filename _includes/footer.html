@@ -44,12 +44,12 @@
 
 		</div>
 		<div class="usa-footer-logo usa-width-one-half" style="width: 310px; margin-right: 15px">
-            <h3 class="usa-footer-contact-heading footer-about-heading dis"></h3>
+            <h3 class="usa-footer-contact-heading footer-about-heading dis"><span role="img" aria-label="{{t.contact-heading}}"></span></h3>
 
         </div>
 		<div class="usa-footer-logo usa-width-one-half" title="{{t.contact-heading}}" alt="{{t.contact-heading}}" style="width: 230px; display: inline-flex;">
-        <img src="{{ site.baseurl }}/assets/img/gus_cz_2.png" style="max-height: 85px; margin-right: 15px; margin-top: 0px; margin-left: ">
-      <h3 class="usa-footer-contact-heading footer-about-heading"></h3>
+        <img src="{{ site.baseurl }}/assets/img/gus_cz_2.png" alt="Logo GUS" style="max-height: 85px; margin-right: 15px; margin-top: 0px; margin-left: ">
+      <h3 class="usa-footer-contact-heading footer-about-heading"><span role="img" aria-label="{{t.contact-heading}}"></span></h3>
       <p class="contact">{{ t.contact-text }}<a href="mailto:SDG@stat.gov.pl" class="contact" title="{{t.contact-text-title}}">{{ t.contact-text-continue }}</a></p>
         </div>
 		</div>
@@ -57,11 +57,11 @@
 		{% if lang contains 'en' %}
 		<p style="font-family: FiraSans;font-size: 12px;line-height: 1.42857143;text-align:center;">The use of data is possible on the basis of Attribution 4.0 International licence  (CC BY 4.0.)
     <br />
-    <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #001d77;" target="_blank" title="Go to International Public License Creative Commons Attribution 4.0" >https://creativecommons.org/licenses/by/4.0/</a></p>
+    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" title="Go to International Public License Creative Commons Attribution 4.0" >https://creativecommons.org/licenses/by/4.0/</a></p>
 		{% else %}
 		<p style="font-family: FiraSans;font-size: 12px;line-height: 1.42857143;text-align:center;">Dane są możliwe do wykorzystywania w oparciu o licencję międzynarodową Creative Commons by 4.0 – Uznanie autorstwa
     <br />
-    <a href="https://creativecommons.org/licenses/by/4.0/legalcode.pl" style="color: #001d77;" target="_blank" title="Otwórz stronę z Licencją międzynarodową Creative Commons 4.0 Uznanie autorstwa">https://creativecommons.org/licenses/by/4.0/legalcode.pl</a></p>
+    <a href="https://creativecommons.org/licenses/by/4.0/legalcode.pl" target="_blank" title="Otwórz stronę z Licencją międzynarodową Creative Commons 4.0 Uznanie autorstwa">https://creativecommons.org/licenses/by/4.0/legalcode.pl</a></p>
 		{% endif %}
 		</div>
       </div>
