@@ -19,12 +19,12 @@ layout: page_exp
     <div class="pl-grid">
       <div class="usa-font-lead intro-paragraph">
         <div style="font-weight: bold">About SDGs</div>
-        <p style="font-size: 16px;">Sustainable Development Goals (SDGs) were defined in the <a href="{{ site.baseurl }}/{{ page.lang }}/o_sdg" title="About Agenda for Sustainable Development">2030 Agenda for Sustainable Development</a> and adopted in September 2015 by UN member states. The implementation of 17 SDGs (and the related 169 tasks) focuses on ensuring decent lives, worldwide peace and economic development based on a rational exploitation of the planet’s natural resources.</p>
+        <p style="font-size: 16px;">Sustainable Development Goals (SDGs) were defined in the <a href="{{ site.baseurl }}/{{ page.lang }}/o_sdg" title="About Agenda for Sustainable Development" target="_blank">2030 Agenda for Sustainable Development</a> and adopted in September 2015 by UN member states. The implementation of 17 SDGs (and the related 169 tasks) focuses on ensuring decent lives, worldwide peace and economic development based on a rational exploitation of the planet’s natural resources.</p>
       </div>
 
       <div class="usa-font-lead intro-paragraph">
         <div style="font-weight: bold">About SDG indicators</div>
-        <p style="font-size: 16px;">Tracking the progress in the implementation of the 2030 Agenda on a world scale is possible thanks to a set of 250 global indicators designed by the UN to monitor the 17 SDGs. At present, Polish official statistics provides data for nearly 70% of the SDG indicators listed by the UN (<a href="https://sdg.gov.pl/en" title="Platforma SDG">sdg.gov.pl/en</a>).</p>
+        <p style="font-size: 16px;">Tracking the progress in the implementation of the 2030 Agenda on a world scale is possible thanks to a set of 250 global indicators designed by the UN to monitor the 17 SDGs. At present, Polish official statistics provides data for nearly 70% of the SDG indicators listed by the UN (<a href="https://sdg.gov.pl/en" title="Platforma SDG" target="_blank">sdg.gov.pl/en</a>).</p>
       </div>
 
       <div class="usa-font-lead intro-paragraph">

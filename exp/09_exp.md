@@ -95,7 +95,7 @@ layout: page_exp
 
 								<div style="overflow:auto; width:100% px;">
 									<h4><b>Interpretacja wskaźnika</b></h4>
-									<p>Wskaźnik prezentuje udział ludności wiejskiej zamieszkałej w promieniu 2 km od drogi dostępnej przez cały rok w ogólnej liczbie ludności wiejskiej (w danym powiecie/województwie) w 2020 r.</p>
+									<p>Wskaźnik prezentuje udział ludności wiejskiej zamieszkałej w promieniu 2 km od drogi dostępnej przez cały rok w ogólnej liczbie ludności wiejskiej (w danym województwie/powiecie) w 2020 r.</p>
 									<p>Za drogi spełniające warunek dostępności przez cały rok uznano drogi krajowe, wojewódzkie, powiatowe i gminne o nawierzchni z masy bitumicznej (asfaltu). Ze względu na specyfikę wskaźnika dane nie dotyczą miast na prawach powiatu (na mapie oznaczone szarymi obszarami).</p>
 									<p>Im wyższa wartość wskaźnika, tym większy odsetek ludności wiejskiej w danym województwie lub powiecie ma dostęp do całorocznie przejezdnej drogi w odległości 2 km od swojego miejsca zamieszkania.</p>
 								</div>
@@ -104,7 +104,7 @@ layout: page_exp
 
 <div role="tabpanel" class="tab-pane" id="dashboard" style="scroll-margin-top: 500px;">
 
-<h4><b>Wskaźniki kontekstowe</b></h4>
+<!--<h4><b>Wskaźniki kontekstowe</b></h4>-->
 
 <p style="margin-bottom: 24px;">Znajdziesz tu zestaw wskaźników kontekstowych, dla których źródłem danych są oficjalne statystyki GUS. Zadaniem wskaźników kontekstowych jest uzupełnienie wyników statystyk eksperymentalnych, pogłębienie informacji na temat monitorowanego zjawiska oraz zapewnienie wsparcia w ocenie postępu w realizacji zrównoważonego rozwoju.</p>
 

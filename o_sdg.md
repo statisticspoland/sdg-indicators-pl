@@ -110,13 +110,13 @@ permalink: /o_sdg/
   <section class="usa-section">
       <div>
             <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-                <a href="https://kampania17celow.pl/cele/cel-3-dobre-zdrowie-i-jakosc-zycia/" title="Przejdź do celu Dobre zdrowie i jakość życia na kampania17celow.pl" alt="Dobre zdrowie i jakość życia"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-03.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <a href="https://kampania17celow.pl/cele/cel-3-dobre-zdrowie-i-jakosc-zycia/" title="Przejdź do celu Dobre zdrowie i jakość życia na kampania17celow.pl" alt="Dobre zdrowie i jakość życia"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-03.png" alt="Dobre zdrowie i jakość życia" style="width: 149px;height: 149px;background-color: grey;"/></a>
                 <figcaption class="caption" style="display: block;">
                 <p align="left"><b>3.1</b> Średnie wydatki na zdrowie pracownika</p>
                 </figcaption>
             </figure>
             <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-                <a href="https://kampania17celow.pl/cele/cel-4-dobra-jakosc-edukacji/" title="Przejdź do celu Dobra jakość edukacji na kampania17celow.pl" alt="Dobra jakość edukacji"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-04.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <a href="https://kampania17celow.pl/cele/cel-4-dobra-jakosc-edukacji/" title="Przejdź do celu Dobra jakość edukacji na kampania17celow.pl" alt="Dobra jakość edukacji"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-04.png" alt="Dobra jakość edukacji" style="width: 149px;height: 149px;background-color: grey;"/></a>
                 <figcaption class="caption" style="display: block;">
                 <p align="left"><b>4.1</b> Średnia liczba godzin szkoleniowych przypadających na pracownika</p>
                 <p align="left"><b>4.2</b> Liczba uczniów i studentów objętych wsparciem edukacyjnym w stosunku do liczby pracowników</p>
@@ -126,7 +126,7 @@ permalink: /o_sdg/
             </figcaption>
             </figure>
             <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-                <a href="https://kampania17celow.pl/cele/cel-5-rownosc-plci/" title="Przejdź do celu Równość płci na kampania17celow.pl" alt="Równość płci"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-05.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <a href="https://kampania17celow.pl/cele/cel-5-rownosc-plci/" title="Przejdź do celu Równość płci na kampania17celow.pl" alt="Równość płci"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-05.png" alt="Równość płci" style="width: 149px;height: 149px;background-color: grey;"/></a>
                 <figcaption class="caption" style="display: block;">
                 <p align="left"><b>5.1</b> Odsetek kobiet na stanowiskach kierowniczych</p>
                 <p align="left"><b>5.2</b> Stosunek wynagrodzenia kobiet do mężczyzn</p>
@@ -137,7 +137,7 @@ permalink: /o_sdg/
                 </figcaption>
             </figure>
             <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-                <a href="https://kampania17celow.pl/cele/cel-8-wzrost-gospodarczy-i-godna-praca/" title="Przejdź do celu Wzrost gospodarczy i godna praca na kampania17celow.pl" alt="Wzrost gospodarczy i godna praca"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-08.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <a href="https://kampania17celow.pl/cele/cel-8-wzrost-gospodarczy-i-godna-praca/" title="Przejdź do celu Wzrost gospodarczy i godna praca na kampania17celow.pl" alt="Wzrost gospodarczy i godna praca"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-08.png" alt="Wzrost gospodarczy i godna praca" style="width: 149px;height: 149px;background-color: grey;"/></a>
                 <figcaption class="caption" style="display: block;">
                 <p align="left"><b>8.1</b> Wartość dodana firmy w przeliczeniu na pracownika</p>
                 <p align="left"><b>8.2</b> Odsetek zatrudnionych na podstawie umowy o pracę</p>
@@ -150,7 +150,7 @@ permalink: /o_sdg/
                 </figcaption>
             </figure>
             <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-                <a href="https://kampania17celow.pl/cele/cel-9-innowacyjnosc-przemysl-infrastruktura/" title="Przejdź do celu Innowacyjność, przemysł, infrastruktura na kampania17celow.pl" alt="Innowacyjność, przemysł, infrastruktura"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-09.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <a href="https://kampania17celow.pl/cele/cel-9-innowacyjnosc-przemysl-infrastruktura/" title="Przejdź do celu Innowacyjność, przemysł, infrastruktura na kampania17celow.pl" alt="Innowacyjność, przemysł, infrastruktura"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-09.png" alt="Innowacyjność, przemysł, infrastruktura" style="width: 149px;height: 149px;background-color: grey;"/></a>
                 <figcaption class="caption" style="display: block;">
                 <p align="left"><b>9.1</b> Wydatki na działalność innowacyjną w odniesieniu do przychodu</p>
                 <p align="left"><b>9.2</b> Odsetek wydatków przeznaczonych na zrównoważone rozwiązania w ramach wydatków działalność innowacyjną</p>
@@ -158,7 +158,7 @@ permalink: /o_sdg/
                 </figcaption>
             </figure>
             <figure class="item" style="vertical-align: top;display: inline-block;text-align: center;width: 150px;margin: 4px;">
-                <a href="https://kampania17celow.pl/cele/cel-12-odpowiedzialna-konsumpcja-i-produkcja/" title="Przejdź do celu Odpowiedzialna konsumpcja i produkcja na kampania17celow.pl" alt="Odpowiedzialna konsumpcja i produkcja"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-12.png" style="width: 149px;height: 149px;background-color: grey;"/></a>
+                <a href="https://kampania17celow.pl/cele/cel-12-odpowiedzialna-konsumpcja-i-produkcja/" title="Przejdź do celu Odpowiedzialna konsumpcja i produkcja na kampania17celow.pl" alt="Odpowiedzialna konsumpcja i produkcja"><img src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-12.png" alt="Odpowiedzialna konsumpcja i produkcja" style="width: 149px;height: 149px;background-color: grey;"/></a>
                 <figcaption class="caption" style="display: block;">
                 <p align="left"><b>12.1</b> Efektywność materiałowa</p>
                 <p align="left"><b>12.2</b> Efektywność energetyczna</p>
