@@ -158,16 +158,22 @@
     	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
     {% endif %}
 
-		  {% if indicator.indicator == "1.5.1" or indicator.indicator == "2.5.2" or indicator.indicator == "2.a.2" or indicator.indicator == "3.3.5" or indicator.indicator == "4.2.1" or indicator.indicator == "5.2.1" or indicator.indicator == "5.3.1" or indicator.indicator == "5.a.1.a" or indicator.indicator == "5.a.1.b"
-          or indicator.indicator == "7.a.1" or indicator.indicator == "8.3.1" or indicator.indicator == "8.4.1" or indicator.indicator == "8.8.1"
-          or indicator.indicator == "9.3.2" or indicator.indicator == "10.2.1" or indicator.indicator == "11.1.1" or indicator.indicator == "11.5.1"
-          or indicator.indicator == "11.6.1" or indicator.indicator == "11.6.2" or indicator.indicator == "11.a.1"
-          or indicator.indicator == "12.2.1" or indicator.indicator == "12.6.1" or indicator.indicator == "13.1.1"
-          or indicator.indicator == "13.a.1"
-          or indicator.indicator == "15.7.1" or indicator.indicator == "16.1.2"
-          or indicator.indicator == "16.2.3" or indicator.indicator == "16.3.2"
-          or indicator.indicator == "16.5.1" or indicator.indicator == "16.7.1"   %}
-			<td><i class="fa fa-check" style="font-size:20px; width: 100%; text-align: center;" title="check" alt="check"></i></td>
+          {% if indicator.indicator == "1.5.1"
+          or indicator.indicator == "2.5.2" or indicator.indicator == "2.a.2"
+          or indicator.indicator == "3.3.5"
+          or indicator.indicator == "4.2.1"
+          or indicator.indicator == "5.2.1" or indicator.indicator == "5.3.1" or indicator.indicator == "5.a.1.a" or indicator.indicator == "5.a.1.b"
+          or indicator.indicator == "7.a.1"
+          or indicator.indicator == "8.3.1" or indicator.indicator == "8.4.1" or indicator.indicator == "8.8.1"
+          or indicator.indicator == "9.3.2"
+          or indicator.indicator == "10.2.1"
+          or indicator.indicator == "11.1.1" or indicator.indicator == "11.5.1" or indicator.indicator == "11.6.1" or indicator.indicator == "11.6.2" or indicator.indicator == "11.a.1"
+          or indicator.indicator == "12.2.1" or indicator.indicator == "12.6.1"
+          or indicator.indicator == "13.1.1" or indicator.indicator == "13.a.1"
+          or indicator.indicator == "15.7.1"
+          or indicator.indicator == "16.1.2" or indicator.indicator == "16.2.3" or indicator.indicator == "16.3.2" or indicator.indicator == "16.5.1" or indicator.indicator == "16.7.1"
+          or indicator.indicator == "17.14.1"   %}
+          <td><i class="fa fa-check" style="font-size:20px; width: 100%; text-align: center;" title="check" alt="check"></i></td>
 
           {% else %}
 
