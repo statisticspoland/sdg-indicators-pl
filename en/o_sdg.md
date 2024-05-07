@@ -324,14 +324,15 @@ permalink: /en/o_sdg/
   <hr>
   <h4><b>UN ECONOMIC COMMISSION FOR EUROPE (UNECE)</b></h4>
     <div class="image-wrapper">
-      <a target="_blank" href="https://unece.org/info/Statistics/pub/365798" alt="Halfway to 2030: How many targets will be achieved in the UNECE region" title="Read a publication Halfway to 2030: How many targets will be achieved in the UNECE region"><img src="{{ site.baseurl }}/assets/img/publikacje/12_halfway.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unece.org/statistics/publications/growing-challenges-sustainable-development-can-unece-region-turn-tide-2023" alt="Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?" title="Read a publication Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?"><img src="{{ site.baseurl }}/assets/img/publikacje/12_halfway.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Halfway to 2030: How many targets will be achieved in the UNECE region</b></p>
+  <p><b>Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?</b></p>
 
   <p>The report provides a progress assessment of the 2030 Agenda’s implementation in the UNECE region, based on the data available in the <a title="Go to UNECE global SDG database" href="https://unstats.un.org/sdgs/dataportal" target="_blank">United Nations Global SDG Indicators Database</a>.</p>
-  <p>The latest edition of the report <em>Halfway to 2030: How many targets will be achieved in the UNECE region</em>, beside assessing advancement on SDG targets, also explores progress towards gender equality in the UNECE region – a contribution by UN Women.</p>
+  <p>The latest edition of the report <em>Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?</em> beside assessing the advancement of SDG targets and goals in the UNECE region, also provides <a target="_blank" href="https://w3.unece.org/sdg2023/stories.html" alt="UNECE Stories" title="Read UNECE Stories">stories</a> about the ways in which regional and country-level actions relate to sustainable development outcomes.</p>
 
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Halfway to 2030: How many targets will be achieved in the UNECE region?" href="https://unece.org/info/Statistics/pub/365798">Halfway to 2030: How many targets will be achieved in the UNECE region?</a></p>
   <p><a target="_blank" title="Read a publication Is the UNECE region on track for 2030?" href="https://unece.org/info/Statistics/pub/353864">Is the UNECE region on track for 2030?</a></p>
 
 

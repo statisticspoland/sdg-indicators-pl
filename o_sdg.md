@@ -327,14 +327,15 @@ permalink: /o_sdg/
   <hr>
   <h4><b>EUROPEJSKA KOMISJA GOSPODARCZA (EKG)</b></h4>
     <div class="image-wrapper">
-      <a target="_blank" href="https://unece.org/info/Statistics/pub/365798" alt="Halfway to 2030: How many targets will be achieved in the UNECE region" title="Zapoznaj się z publikacją Halfway to 2030: How many targets will be achieved in the UNECE region"><img src="{{ site.baseurl }}/assets/img/publikacje/12_halfway.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unece.org/statistics/publications/growing-challenges-sustainable-development-can-unece-region-turn-tide-2023" alt="Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?" title="Zapoznaj się z publikacją Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?"><img src="{{ site.baseurl }}/assets/img/publikacje/12_halfway.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Halfway to 2030: How many targets will be achieved in the UNECE region</b></p>
+  <p><b>Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?</b></p>
 
   <p>Raport analizuje postępy w realizacji Agendy 2030 w regionie EKG na podstawie danych z <a title="Przejdź do strony z bazą danych ONZ" href="https://unstats.un.org/sdgs/dataportal"  target="_blank">bazy ONZ</a>, prezentującej globalne wskaźniki dla celów zrównoważonego rozwoju z oficjalnej listy ONZ.</p>
-  <p>Najnowsza edycja raportu pt. <em>Halfway to 2030: How many targets will be achieved in the UNECE region</em>, obok oceny zaawansowania regionu EKG we wdrażaniu poszczególnych zadań i celów SDG, zawiera pogłębioną analizę postępu w zakresie osiągania równości płci, opracowaną przez agendę ONZ ds. równości płci i wzmocnienia kobiet (UN Women).</p>
+  <p>Najnowsza edycja raportu pt. <em>Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?</em> obok oceny zaawansowania regionu EKG we wdrażaniu poszczególnych zadań i celów SDG, prezentuje <a target="_blank" href="https://w3.unece.org/sdg2023/stories.html" alt="UNECE Stories" title="Zapoznaj się z stroną UNECE Stories">przykłady działań</a> podejmowanych na szczeblu regionalnym i krajowym w odpowiedzi na Agendę 2030 oraz ich wpływ na realizację zrównoważonego rozwoju. </p>
 
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją Halfway to 2030: How many targets will be achieved in the UNECE region?" href="https://unece.org/info/Statistics/pub/365798">Halfway to 2030: How many targets will be achieved in the UNECE region?</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją Is the UNECE region on track for 2030?" href="https://unece.org/info/Statistics/pub/353864">Is the UNECE region on track for 2030?</a></p>
 
 
