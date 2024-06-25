@@ -308,13 +308,15 @@ permalink: /en/o_sdg/
   <hr>
 
     <div class="image-wrapper">
-      <a target="_blank" href="https://www.sdgindex.org/reports/sustainable-development-report-2023/" alt="Sustainable Development Report" title="Read a publication Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2023.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://dashboards.sdgindex.org/" alt="Sustainable Development Report" title="Read a publication Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2024.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable Development Report</b></p>
 
   <p>The Sustainable Development Report (SDR), developed by Sustainable Development Solutions Network (UN SDSN) and the Bertelsmann Stiftung, reviews progress on SDGs made each year by UN Member States. The SDR contains the SDG index and SDG dashboard, tools allowing the assessment of each country’s overall performance on the SDGs and identifying country's strengths and weaknesses in relation to the 17 Goals both with the global trends in this area.</p>
+  <p>This year’s edition also presents a new index of countries’ support to UN-based multilateralism and discusses long-term pathways to attain sustainable food and land systems.</p>
 
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Sustainable Development Report 2023" href="https://sdgtransformationcenter.org/reports/sustainable-development-report-2023">Sustainable Development Report 2023</a></p>
   <p><a target="_blank" title="Read a publication Sustainable Development Report 2022" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/">Sustainable Development Report 2022</a></p>
   <p><a target="_blank" title="Read a publication Sustainable Development Report 2021" href="https://www.sdgindex.org/reports/sustainable-development-report-2021/">Sustainable Development Report 2021</a></p>
   <p><a target="_blank" title="Read a publication Sustainable Development Report 2020" href="https://www.sdgindex.org/reports/sustainable-development-report-2020/">Sustainable Development Report 2020</a></p>
@@ -359,14 +361,15 @@ permalink: /en/o_sdg/
 
 
   <div class="image-wrapper">
-  <a target="_blank" href="https://ec.europa.eu/eurostat/documents/15234730/16817772/KS-04-23-184-EN-N.pdf/845a1782-998d-a767-b097-f22ebe93d422?version=2.0&t=1688373085450" alt="Sustainable development in the European Union – Monitoring report on progress towards the SDGs in an EU context" title="Read a publication Sustainable development in the European Union – Monitoring report on progress towards the SDGs in an EU context"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue_2023.png" align="center" alt="GUS" border="0"/></a>
+  <a target="_blank" href="https://ec.europa.eu/eurostat/documents/15234730/19397895/KS-05-24-071-EN-N.pdf/730c983a-fa93-6ce2-7905-2379de04f3e9?version=1.0&t=1718611411114" alt="Sustainable development in the European Union – Monitoring report on progress towards the SDGs in an EU context" title="Read a publication Sustainable development in the European Union – Monitoring report on progress towards the SDGs in an EU context"><img src="{{ site.baseurl }}/assets/img/publikacje/4_sdg_in_ue_2024.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context</b></p>
 
   <p>The publication, issued by Eurostat annually since 2017, is a monitoring report on the progress towards achieving the Sustainable Development Goals in an EU context. The reports consider two periods: the short term, accounting for progress over the past five years, and the long term, looking at the trends over the last 15 years. The analysis presented in the reports is based on a set of about 100 SDG indicators (structured along the 17 SDGs and closely linked to EU policies), available in the <a title="Go to Eurostat SDG database" href="https://ec.europa.eu/eurostat/web/sdi/overview" target="_blank">Eurostat database</a>.
-  <p>The report published in 2023 was presented within the Voluntary National Review (VNR) at the UN High-Level Political Forum on Sustainable Development. In July 2023, the EU as a group of countries presented its achievements in implementing the SDGs for the first time.</p>
+  <p>The report published in 2024 analyzes, among others: the impact of recent events affecting the implementation of the Sustainable Development Goals (these events include the COVID-19 pandemic, Russia's invasion of Ukraine and the subsequent energy crisis). In addition it contains a section on the analysis of the EU in the world, including a comparison of the EU with other large economies, as well as an analysis of global spillover effects caused by consumption in the EU.</p>
   <br><br></p>
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2023)" href="https://ec.europa.eu/eurostat/documents/15234730/16817772/KS-04-23-184-EN-N.pdf/845a1782-998d-a767-b097-f22ebe93d422?version=2.0&t=1688373085450">Monitoring report on progress towards the SDGs in an EU context - 2023 edition</a></p>
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2022)" href="https://ec.europa.eu/eurostat/documents/3217494/14665254/KS-09-22-019-EN-N.pdf/2edccd6a-c90d-e2ed-ccda-7e3419c7c271?t=1654253664613">Monitoring report on progress towards the SDGs in an EU context - 2022 edition</a></p>
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2021)" href="https://ec.europa.eu/eurostat/documents/15234730/15241861/KS-03-21-096-EN-N.pdf/e8413539-6c6a-131f-45d7-6af7178a0b67?t=1667395592318">Monitoring report on progress towards the SDGs in an EU context - 2021 edition</a></p>  
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/3217494/11011074/KS-02-20-202-EN-N.pdf/334a8cfe-636a-bb8a-294a-73a052882f7f">Monitoring report on progress towards the SDGs in an EU context - 2020 edition</a></p>  
@@ -376,14 +379,15 @@ permalink: /en/o_sdg/
 
   <hr>
   <div class="image-wrapper">
-      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/7870049/16817926/KS-05-23-188-EN-N.pdf/3b2ee0b2-5bc8-d139-ed93-af99827dc50a?version=2.0&t=1688373164670" alt="Sustainable development in the European Union Statistical annex to the EU voluntary review 2023 edition" title="Read a publication Sustainable development in the European Union Statistical annex to the EU voluntary review 2023 edition"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue_2023.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/19398139/KS-05-24-072-EN-N.pdf/021a09dd-277d-87d1-e347-867f0263ab59?version=1.1&t=1718618520865" alt="Sustainable development in the European Union Statistical annex to the EU voluntary review 2023 edition" title="Read a publication Sustainable development in the European Union Statistical annex to the EU voluntary review 2023 edition"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue_2024.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Sustainable development in the European Union Statistical annex to the EU voluntary review 2023 edition</b></p>
+  <p><b>Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context</b></p>
 
-  <p>The publication presents a statistical annex accompanying the Report presented within the Voluntary National Review (VNR) on progress in the implementation of the 2030 Agenda. The annex presents the course of implementation and development of SDG indicators for the EU over the years in a graphic form. Progress towards achieving the Sustainable Development Goals has been presented since the adoption of the 2030 Agenda (i.e. since 2015).</p>
+  <p>The publication is a simplified version of the publication "Sustainable development in the European Union - Monitoring report on progress towards the SDGs in an EU context". It presents in a concise and graphical way progress towards achieving the Sustainable Development Goals in the EU. The brochure is based on a set of about 100 EU indicators assigned to the 17 Sustainable Development Goals.</p>
 
   <br><br><br><br></p>
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2023)" href="https://ec.europa.eu/eurostat/documents/7870049/16817926/KS-05-23-188-EN-N.pdf/3b2ee0b2-5bc8-d139-ed93-af99827dc50a?version=2.0&t=1688373164670">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2023 edition</a></p>
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2022)" href="https://ec.europa.eu/eurostat/documents/4031688/14665125/KS-06-22-017-EN-N.pdf/8febd4ca-49e4-abd3-23ca-76c48eb4b4e6?t=1653033908879">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2022 edition</a></p>
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2021)" href="https://ec.europa.eu/eurostat/documents/4031688/12878925/KS-03-21-097-EN-N.pdf/c7d90bf7-c3ae-00b5-7804-80526931036b?t=1623827181153">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2021 edition</a></p>
   <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/4031688/11010788/KS-01-20-192-EN-N.pdf/ae63aff0-a6f3-1d47-da83-c6886b9daaab">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2020 edition</a></p>
