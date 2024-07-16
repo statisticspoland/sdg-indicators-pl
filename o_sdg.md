@@ -294,13 +294,14 @@ permalink: /o_sdg/
   <h4><b>ORGANIZACJA NARODÓW ZJEDNOCZONYCH (ONZ)</b></h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2023/" alt="The Sustainable Development Goals Report 2023" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2023)"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2023.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2024/" alt="The Sustainable Development Goals Report 2024" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2024)"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2024.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>The Sustainable Development Goals Report</b></p>
 
-  <p>Raport stanowi przegląd postępów, jakich dokonywano w kolejnych latach z realizacji Agendy 2030. Opublikowana w 2023 r. specjalna edycja Raportu (w związku z półmetkiem realizacji Agendy 20230) przedstawia najważniejsze tendencje w oparciu o najnowsze dostępne dane, uwzględniające m.in. skutki kryzysu klimatycznego, wojny w Ukrainie czy utrzymujących się konsekwencji pandemii COVID-19. Raport oparty jest o wskaźniki dostępne <a title="Przejdź do globalnej bazy danych ONZ" href="https://unstats.un.org/sdgs/dataportal"  target="_blank">globalnej bazie danych SDG ONZ</a>.</p>
+  <p>Raport stanowi przegląd postępów, jakich dokonywano w kolejnych latach z realizacji Agendy 2030. Edycja z 2024 r. szczegółowo opisuje najważniejsze wyzwania, przed którymi stoi świat w zakresie osiągania Celów Zrównoważonego Rozwoju, w oparciu o najnowsze statystyki. Raport przedstawia obszary, w których występują niepowodzenia (np. postępująca utrata bioróżnorodności czy niewystarczające postępy przy wyrównywaniu różnic między płciami), a jednocześnie pokazuje, gdzie poczyniono wymierne postępy (np. w ograniczaniu śmiertelności dzieci na świecie, zapobieganiu zakażeniom wirusem HIV oraz dostępie do energii i mobilnego Internetu szerokopasmowego). W raporcie wskazano również, w których obszarach należy zwiększyć wysiłki i przyspieszyć działania. Szczególnie zwrócono uwagę na obszary krytyczne utrudniające postęp w zakresie Celów Zrównoważonego Rozwoju – m.in. zmiany klimatyczne, pokój i bezpieczeństwo czy nierówności między krajami.</p>
 
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2023)" href="https://unstats.un.org/sdgs/report/2023/">The Sustainable Development Goals Report 2023</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2022)" href="https://unstats.un.org/sdgs/report/2022/">The Sustainable Development Goals Report 2022</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2021)" href="https://unstats.un.org/sdgs/report/2021/">The Sustainable Development Goals Report 2021</a></p>
   <p><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2020)" href="https://unstats.un.org/sdgs/report/2020/">The Sustainable Development Goals Report 2020</a></p>

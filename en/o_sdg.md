@@ -291,13 +291,14 @@ permalink: /en/o_sdg/
   <h4><b>UNITED NATIONS (UN)</b></h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2023/" alt="The Sustainable Development Goals Report 2023" title="Read a publication The Sustainable Development Goals Report 2023"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2023.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2024/" alt="The Sustainable Development Goals Report 2024" title="Read a publication The Sustainable Development Goals Report 2024"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2024.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>The Sustainable Development Goals Report</b></p>
 
-  <p>The report reviews progress in the following years of implementation of the 2030 Agenda for Sustainable Development. The special edition of the Report, published in 2023 (due to the halfway through the 20230 Agenda), presents highlights of progress, based on the latest available data, taking into account, among others, the effects of the climate crisis, the war in Ukraine or the lingering effects of the COVID-19 pandemic. The report is based on <a title="Go to global UN database" href="https://unstats.un.org/sdgs/dataportal"  target="_blank">UN SDG Global Database</a>.</p>
+  <p>The report reviews progress in the following years of implementation of the 2030 Agenda for Sustainable Development. The 2024 edition details the significant challenges the world is facing in making substantial strides towards achieving the SDGs based on the latest data and estimates. It features areas with setbacks (e.g. progressive loss of biodiversity or insufficient progress in equalizing gender differences) while also showcasing where tangible progress has been made (e.g. in reducing global child mortality, preventing HIV infection, and access to energy and mobile broadband). The report also highlights where action needs to be accelerated. Particular attention was paid to critical areas undermining SDG progress, including: climate change, peace and security or inequalities between countries.</p>
 
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2023" href="https://unstats.un.org/sdgs/report/2023/">The Sustainable Development Goals Report 2023</a></p>
   <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2022" href="https://unstats.un.org/sdgs/report/2022/">The Sustainable Development Goals Report 2022</a></p>
   <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2021" href="https://unstats.un.org/sdgs/report/2021/">The Sustainable Development Goals Report 2021</a></p>
   <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2020" href="https://unstats.un.org/sdgs/report/2020/">The Sustainable Development Goals Report 2020</a></p>
