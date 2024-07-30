@@ -143,7 +143,7 @@
                                     
                                       "dimensions": "total, sex, age, urban areas/rural areas",
                                     
-                                      "methodology": "The data comes from the Time Use Survey. Time Use Survey provides information on many aspects of Poles' lives, including the distribution of time spend on its different spheres. The survey takes place every 10 years. The last was held in 2013, lasted throughout the year and included people aged 10 years or more. The time of 24 hours was divided into 10 main groups of activities and additional eleventh group with a small percentage of other non-mentioned activities, i.e.:  • personal care  • household and family care  • employment  • mass media • social life and entertainment  • travel  • hobbies  • sport and outdoor activities • study  • voluntary work and meetings  • unspecified time use.  The group related to household and family care included, among others, household upkeep, food management, childcare, help to an adult family member as well as shopping and services.",
+                                      "methodology": "The data comes from the Time Use Survey. Time Use Survey provides information on many aspects of Poles' lives, including the distribution of time spend on its different spheres. The survey takes place every 10 years. The last was held in 2023, lasted throughout the year and included people aged 10 years or more. The time of 24 hours was divided into 10 main groups of activities, i.e.:  • personal care;  • household and family care;  • employment;  • mass media; • social life and entertainment;  • travel and unspecified time us;e  • hobbies;  • sport and outdoor activities; • study;  • voluntary work and meetings.   The group related to household and family care included, among others, household upkeep, food management, childcare, help to an adult family member as well as shopping and services.",
                                     
                                       "source": "Statistics Poland",
                                     
@@ -151,9 +151,9 @@
                                     
                                       "notes": "Data for total persons, females and males, and for urban and rural areas refer to people aged 15 or more.",
                                     
-                                      "data_updated_on": "10-03-2020",
+                                      "data_updated_on": "30-07-2024",
                                     
-                                      "metadata_updated_on": "23-04-2024"
+                                      "metadata_updated_on": "30-07-2024"
                                     }
                     ],
                     "data": [
@@ -161,66 +161,6 @@
                                 
                                         "persons aged 15 years or more - by sex and urban/rural area": [
                                             {"total": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "14.3",
-                                                    
-                                                        "2014" : "",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : ""
-                                                    
-                                                    }
-                                                ],"males": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "9.9",
-                                                    
-                                                        "2014" : "",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : ""
-                                                    
-                                                    }
-                                                ],"females": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "18.3",
-                                                    
-                                                        "2014" : "",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : ""
-                                                    
-                                                    }
-                                                ],"urban areas": [
                                                     {
                                                     
                                                         "2010" : "",
@@ -237,7 +177,115 @@
                                                     
                                                         "2016" : "",
                                                     
-                                                        "2017" : ""
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "15.0"
+                                                    
+                                                    }
+                                                ],"males": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "9.8",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "11.2"
+                                                    
+                                                    }
+                                                ],"females": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "17.9",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "18.2"
+                                                    
+                                                    }
+                                                ],"urban areas": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "13.6",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "14.2"
                                                     
                                                     }
                                                 ],"rural areas": [
@@ -249,7 +297,7 @@
                                                     
                                                         "2012" : "",
                                                     
-                                                        "2013" : "14.9",
+                                                        "2013" : "14.6",
                                                     
                                                         "2014" : "",
                                                     
@@ -257,7 +305,19 @@
                                                     
                                                         "2016" : "",
                                                     
-                                                        "2017" : ""
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "16.5"
                                                     
                                                     }
                                                 ]
@@ -273,7 +333,7 @@
                                                     
                                                         "2012" : "",
                                                     
-                                                        "2013" : "3.6",
+                                                        "2013" : "3.5",
                                                     
                                                         "2014" : "",
                                                     
@@ -281,7 +341,19 @@
                                                     
                                                         "2016" : "",
                                                     
-                                                        "2017" : ""
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "4.9"
                                                     
                                                     }
                                                 ],"15-19 years": [
@@ -301,7 +373,19 @@
                                                     
                                                         "2016" : "",
                                                     
-                                                        "2017" : ""
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "5.0"
                                                     
                                                     }
                                                 ],"20-24 years": [
@@ -313,7 +397,7 @@
                                                     
                                                         "2012" : "",
                                                     
-                                                        "2013" : "9.7",
+                                                        "2013" : "9.6",
                                                     
                                                         "2014" : "",
                                                     
@@ -321,70 +405,22 @@
                                                     
                                                         "2016" : "",
                                                     
-                                                        "2017" : ""
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "10.4"
                                                     
                                                     }
                                                 ],"25-34 years": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "15.8",
-                                                    
-                                                        "2014" : "",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : ""
-                                                    
-                                                    }
-                                                ],"35-44 years": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "15.4",
-                                                    
-                                                        "2014" : "",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : ""
-                                                    
-                                                    }
-                                                ],"45-54 years": [
-                                                    {
-                                                    
-                                                        "2010" : "",
-                                                    
-                                                        "2011" : "",
-                                                    
-                                                        "2012" : "",
-                                                    
-                                                        "2013" : "14.0",
-                                                    
-                                                        "2014" : "",
-                                                    
-                                                        "2015" : "",
-                                                    
-                                                        "2016" : "",
-                                                    
-                                                        "2017" : ""
-                                                    
-                                                    }
-                                                ],"55-64 years": [
                                                     {
                                                     
                                                         "2010" : "",
@@ -401,7 +437,115 @@
                                                     
                                                         "2016" : "",
                                                     
-                                                        "2017" : ""
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "16.4"
+                                                    
+                                                    }
+                                                ],"35-44 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "15.2",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "16.1"
+                                                    
+                                                    }
+                                                ],"45-54 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "13.8",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "13.9"
+                                                    
+                                                    }
+                                                ],"55-64 years": [
+                                                    {
+                                                    
+                                                        "2010" : "",
+                                                    
+                                                        "2011" : "",
+                                                    
+                                                        "2012" : "",
+                                                    
+                                                        "2013" : "15.2",
+                                                    
+                                                        "2014" : "",
+                                                    
+                                                        "2015" : "",
+                                                    
+                                                        "2016" : "",
+                                                    
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "15.0"
                                                     
                                                     }
                                                 ],"65 years and more": [
@@ -413,7 +557,7 @@
                                                     
                                                         "2012" : "",
                                                     
-                                                        "2013" : "16.0",
+                                                        "2013" : "15.3",
                                                     
                                                         "2014" : "",
                                                     
@@ -421,7 +565,19 @@
                                                     
                                                         "2016" : "",
                                                     
-                                                        "2017" : ""
+                                                        "2017" : "",
+                                                    
+                                                        "2018" : "",
+                                                    
+                                                        "2019" : "",
+                                                    
+                                                        "2020" : "",
+                                                    
+                                                        "2021" : "",
+                                                    
+                                                        "2022" : "",
+                                                    
+                                                        "2023" : "15.8"
                                                     
                                                     }
                                                 ]
@@ -456,7 +612,7 @@
                                     
                                       "notes": "Data on village mayors/mayors/presidents of cities are presented together with mayors of districts of the Capital City of Warsaw. Data on gmina councilors are presented excluding councilors of cities with powiat rights. Data on councilors of cities with powiat rights are presented together with councilors of districts of the Capital City of Warsaw.",
                                     
-                                      "data_updated_on": "06-02-2024",
+                                      "data_updated_on": "30-07-2024",
                                     
                                       "metadata_updated_on": "24-07-2023"
                                     }
@@ -562,7 +718,7 @@
                                                     
                                                         "2022" : "12.2",
                                                     
-                                                        "2023" : ""
+                                                        "2023" : "12.4"
                                                     
                                                     }
                                                 ],"Gmina councils": [
@@ -594,7 +750,7 @@
                                                     
                                                         "2022" : "31.3",
                                                     
-                                                        "2023" : ""
+                                                        "2023" : "31.4"
                                                     
                                                     }
                                                 ],"City councils in cities with powiat status": [
@@ -626,7 +782,7 @@
                                                     
                                                         "2022" : "33.3",
                                                     
-                                                        "2023" : ""
+                                                        "2023" : "33.4"
                                                     
                                                     }
                                                 ],"Powiat councils": [
@@ -658,7 +814,7 @@
                                                     
                                                         "2022" : "24.8",
                                                     
-                                                        "2023" : ""
+                                                        "2023" : "25.2"
                                                     
                                                     }
                                                 ],"Voivodship regional councils": [
@@ -690,7 +846,7 @@
                                                     
                                                         "2022" : "29.8",
                                                     
-                                                        "2023" : ""
+                                                        "2023" : "30.6"
                                                     
                                                     }
                                                 ]

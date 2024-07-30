@@ -13,23 +13,23 @@
                       
                         "priority": "Work activation of young people, women, persons aged 50+ , long-term unemployed as well as persons with disabilities",
                       
-                        "definition": "Share of unemployed or inactive 15-24 year olds who do not continue their education in the formal education system and do not further their education/training in the non-formal education system (within 4 weeks before the survey) in the total population in the same age group. Indicator's numerator refers to those who meet two conditions:  are not employed (i.e. are unemployed or economically inactive), did not participate in any form of education during four weeks preceding the survey.  Indicator's denominator is a population in a given age group, which the indicator concerns, excluding persons who did not answer the question concerning ,,participation in regular education and training.,,  ",
+                        "definition": "Share of unemployed or inactive 15-24 year olds who do not continue their education in the formal education system and do not further their education/training in the non-formal education system (within 4 weeks before the survey) in the total population in the same age group. Indicator's numerator refers to those who meet two conditions:  - are not employed (i.e. are unemployed or economically inactive), - did not participate in any form of education during four weeks preceding the survey.  Indicator's denominator is a population in a given age group, which the indicator concerns, excluding persons who did not answer the question concerning 'participation in regular education and training'.",
                       
                         "unit": "percent [%]",
                       
                         "dimensions": "total",
                       
-                        "methodology": "The data comes from the representative Labour Force Survey (LFS), conducted on a quarterly basis using the continuous observation method (movable survey week), allowing to illustrate the labor market situation over the entire quarter. The survey covers persons aged 15-89 who are members of households in drawn dwellings. Outside the scope of the survey are members of households residing (the total duration of actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as staff hotels, dormitories, dormitories, nursing homes, etc.) and homeless persons. The basic criterion for dividing the population from the point of view of labor force participation is work, i.e. the fact of doing, having or seeking work. According to international standards, the general population can be divided into three basic categories: employed, unemployed and economically inactive. The employed and unemployed constitute the economically active population.    ",
+                        "methodology": "The data comes from the representative Labour Force Survey (LFS), conducted on a quarterly basis using the continuous observation method (movable survey week), allowing to illustrate the labor market situation over the entire quarter. The survey covers persons aged 15-89 who are members of households in drawn dwellings. Outside the scope of the survey are members of households residing (the total duration of actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as staff hotels, dormitories, dormitories, nursing homes, etc.) and homeless persons. The basic criterion for dividing the population from the point of view of labor force participation is work, i.e. the fact of doing, having or seeking work. According to international standards, the general population can be divided into three basic categories: employed, unemployed and economically inactive. The employed and unemployed constitute the economically active population.",
                       
                         "source": "Statistics Poland",
                       
                         "availability": "Annual data; since 2010.",
                       
-                        "notes": "Due to the implementation of methodological changes in the survey, LFS data from 2021 onward cannot be compared with previous years (except for data recalculated for 2010-2020).  ",
+                        "notes": "From 2023 onwards, data on Poland's resident population living in dwellings, derived from balance sheets compiled on the basis of Census 2021 results, were used to generalise the LFS results to the general population. Data for 2021-2022 were compiled according to the new basis of generalisation. Due to the changes introduced, the LFS results are not fully comparable with the survey results for the years prior to 2021. In addition, the lack of comparability of the data time series is also affected by methodological changes introduced to the LFS from Q1 2021. Data for 2010-2020 have been recalculated and presented taking into account the new methodology. These recalculations do not take into account the change in the basis for generalising data to balances based on the Census 2021.",
                       
-                        "data_updated_on": "20-07-2023",
+                        "data_updated_on": "30-07-2024",
                       
-                        "metadata_updated_on": "26-04-2023"
+                        "metadata_updated_on": "30-07-2024"
                       }
       ],
       "data": [
@@ -63,7 +63,9 @@
                                 
                                     "2021" :   "11.2",
                                 
-                                    "2022" :   "8.0"
+                                    "2022" :   "8.1",
+                                
+                                    "2023" :   "6.9"
                                 
                                 }
                             ],"males": [
@@ -91,9 +93,11 @@
                                 
                                     "2020" :   "9.6",
                                 
-                                    "2021" :   "11.9",
+                                    "2021" :   "11.8",
                                 
-                                    "2022" :   "8.6"
+                                    "2022" :   "8.6",
+                                
+                                    "2023" :   "6.7"
                                 
                                 }
                             ],"females": [
@@ -121,9 +125,11 @@
                                 
                                     "2020" :   "8.1",
                                 
-                                    "2021" :   "10.5",
+                                    "2021" :   "10.6",
                                 
-                                    "2022" :   "7.5"
+                                    "2022" :   "7.5",
+                                
+                                    "2023" :   "7.1"
                                 
                                 }
                             ]

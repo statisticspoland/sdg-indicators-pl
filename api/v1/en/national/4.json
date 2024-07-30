@@ -12,23 +12,23 @@
                           
                             "priority": "Improvement in quality and attractiveness of vocational education, improvement in adjustment of vocational training and education to labour market needs",
                           
-                            "definition": "Share of unemployed graduates aged 15-30 who have completed post-secondary, secondary vocational or basic vocational education in the last 12 months, and do not continue education in the total number of economically active graduates aged 15-30 with post-secondary, secondary vocational or basic vocational education.",
+                            "definition": "Share of unemployed graduates aged 15-30 who have completed post-secondary, secondary vocational or basic vocational/sectoral education in the last 12 months, and do not continue education in the total number of economically active graduates aged 15-30 with post-secondary, secondary vocational or basic vocational/sectoral education.",
                           
                             "unit": "percent [%]",
                           
                             "dimensions": "total",
                           
-                            "methodology": "Data come from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using the continuous observation method (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89,  who are members of households in dwellings selected on a random basis. The scope of the survey does not include household members staying (the total actual and planned stay is taken into account) 12 months or more abroad and in collective  households (such as: employee hotels, student dormitories, boarding houses, social care centres etc.) and the homeless. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the three main categories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population. Among the employed are included all persons aged 15-89 who during the reference week:  performed for at least one hour any work generating pay or income, i.e. were employed in a company/public institution or by a private employer, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in conducting family agricultural farm or family economic activity outside agriculture, had work but did not perform it:    due to illness or holiday leave, leave related to parenthood (maternity, childcare, paternity or parental leave), organisation of working time (work system or overtime collection), training related to the performed work, due to the seasonal character of the work, if they still regularly performed off-season their work or business conducting related tasks and responsibilities (excluding legal or administrative obligations), for other reasons, if the anticipated break in employment did not exceed 3 months.  In accordance with international standards, among employees are also included apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). The employed do not include: volunteers and interns who do not receive remuneration, people working in private engaged in  the production of agricultural products solely or mainly for their own needs. Unemployed persons are persons aged 15-74 who simultaneously fulfil three conditions:  within the reference week were not employed, were actively looking for work, i.e. for over 4 weeks (the reference week being the fourth one) had been involved in concrete actions aimed at finding a job, were available to take up work within two weeks after the reference week.  Persons who were not seeking work because they had already found a job, were only waiting to start work within the period no longer than 3 months, and were available for this job are also included in the category of the unemployed. Among school-leavers are included persons at the age 15-30 years who completed school during the last 12 months and who do not continue education.",
+                            "methodology": "Data come from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using the continuous observation method (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89, who are members of households in dwellings selected on a random basis. The scope of the survey does not include household members staying (the total actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as: employee hotels, student dormitories, boarding houses, social care centres etc.) and the homeless. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the three main categories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population. Among the employed are included all persons aged 15-89 who during the reference week:  - performed for at least one hour any work generating pay or income, i.e. were employed in a company/public institution or by a private employer, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in conducting family agricultural farm or family economic activity outside agriculture, - had work but did not perform it:   • due to illness or holiday leave, leave related to parenthood (maternity, childcare, paternity or parental leave), organisation of working time (work system or overtime collection), training related to the performed work, • due to the seasonal character of the work, if they still regularly performed off-season their work or business conducting related tasks and responsibilities (excluding legal or administrative obligations), • for other reasons, if the anticipated break in employment did not exceed 3 months.  In accordance with international standards, among employees are also included apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). The employed do not include: volunteers and interns who do not receive remuneration, people working in private engaged in the production of agricultural products solely or mainly for their ownneeds. Unemployed persons are persons aged 15-74 who simultaneously fulfil three conditions:  - within the reference week were not employed, - were actively looking for work, i.e. for over 4 weeks (the reference week being the fourth one) had been involved in concrete actions aimed at finding a job, - were available to take up work within two weeks after the reference week.  Persons who were not seeking work because they had already found a job, were only waiting to start work within the period no longer than 3 months, and were available for this job are also included in the category of the unemployed. Among school-leavers are included persons at the age 15-30 years who completed school during the last 12 months and who do not continue education.",
                           
                             "source": "Statistics Poland",
                           
                             "availability": "Annual data; since 2010",
                           
-                            "notes": "Due to the implementation of methodological changes in the study, the LFS data from 2021 cannot be compared with the previous years (except for the data converted for the years 2010-2020).",
+                            "notes": "From 2023 onwards, data on Poland's resident population living in dwellings, derived from balance sheets compiled on the basis of Census 2021 results, were used to generalise the LFS results to the general population. Data for 2021-2022 were compiled according to the new basis of generalisation. Due to the changes introduced, the LFS results are not fully comparable with the survey results for the years prior to 2021. In addition, the lack of comparability of the data time series is also affected by methodological changes introduced to the LFS from Q1 2021. Data for 2010-2020 have been recalculated and presented taking into account the new methodology. These recalculations do not take into account the change in the basis for generalising data to balances based on the Census 2021.",
                           
-                            "data_updated_on": "20-07-2023",
+                            "data_updated_on": "30-07-2024",
                           
-                            "metadata_updated_on": "14-11-2022"
+                            "metadata_updated_on": "30-07-2024"
                           }
           ],
           "data": [
@@ -57,9 +57,11 @@
                               
                                   "2020" :   "22.2",
                               
-                                  "2021" :   "28.8",
+                                  "2021" :   "27.9",
                               
-                                  "2022" :   "36.1"
+                                  "2022" :   "36.5",
+                              
+                                  "2023" :   "38.9"
                               
                               }
                           ]
@@ -715,7 +717,7 @@
                           
                             "goal": "Goal 4. Quality education",
                           
-                            "priority": "Creation of conditions for adults' wider engagement in learning in various forms and places and for the recognition of learning outcomes acquired outside formal education ",
+                            "priority": "Creation of conditions for adults' wider engagement in learning in various forms and places and for the recognition of learning outcomes acquired outside formal education",
                           
                             "definition": "Percentage of the number of persons aged 18-24, having completed at most lower secondary school, and who do not participate in the education and training, in the total number population in this age group.",
                           
@@ -723,17 +725,17 @@
                           
                             "dimensions": "total",
                           
-                            "methodology": "Data come from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using the continuous observation method (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89,  who are members of households in dwellings selected on a random basis. The scope of the survey does not include household members staying (the total actual and planned stay is taken into account) 12 months or more abroad and in collective  households (such as: employee hotels, student dormitories, boarding houses, social care centres etc.) and the homeless. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the three main categories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population. Lower secondary school  - a three-year school ending with examination enabling pupils to continue education in stage I sectoral vocational schools, general secondary schools or technical secondary schools. The organisation structure of a lower secondary school comprises grades 1-3. Education in lower secondary school is compulsory. Since the 2017/18 school year there is no recruitment to grade 1 and students of grades 2 and 3 continued education in gradually liquidated lower secondary schools or lower secondary school sections in other types of schools.",
+                            "methodology": "Data come from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using the continuous observation method (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89, who are members of households in dwellings selected on a random basis. The scope of the survey does not include household members staying (the total actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as: employee hotels, student dormitories, boarding houses, social care centres etc.) and the homeless. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the three main categories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population.",
                           
                             "source": "Statistics Poland",
                           
                             "availability": "Annual data; since 2010",
                           
-                            "notes": "Since the first quarter of 2016, the LFS data on the fields of education have been presented in accordance with the new classification of fields (programmes) of education - International Standard Classification of Education - ISCED-F 2013 (ISCED Fields of Education and Training 2013), which replaced the previously used classification ISCED 1997. Due to the introduced changes, the full comparability of data on the fields of education with the data presented for the previous periods may not be possible.   Since the first quarter of 2018, the way of asking questions about participation in training/ education outside the formal education system has been changed, therefore the indicators in calculation of which the non-formal education is taken into account are not fully comparable with results from previous years.",
+                            "notes": "Since the 1st quarter of 2018, the question on participation in training/education outside the formal education system has been changed, so the indicator for which non-formal education is taken into account for the calculation is not fully comparable with the results of previous years. From 2023 onwards, data on Poland's resident population living in dwellings, derived from balance sheets compiled on the basis of Census 2021 results, were used to generalise the LFS results to the general population. Data for 2021-2022 were compiled according to the new basis of generalisation. Due to the changes introduced, the LFS results are not fully comparable with the survey results for the years prior to 2021.",
                           
-                            "data_updated_on": "29-05-2023",
+                            "data_updated_on": "30-07-2024",
                           
-                            "metadata_updated_on": "23-05-2023"
+                            "metadata_updated_on": "30-07-2024"
                           }
           ],
           "data": [
@@ -765,9 +767,11 @@
                                           
                                               "2020" : "5.4",
                                           
-                                              "2021" : "5.9",
+                                              "2021" : "5.8",
                                           
-                                              "2022" : "4.8"
+                                              "2022" : "4.7",
+                                          
+                                              "2023" : "3.7"
                                           
                                           }
                                       ],"males": [
@@ -797,7 +801,9 @@
                                           
                                               "2021" : "7.2",
                                           
-                                              "2022" : "5.8"
+                                              "2022" : "5.7",
+                                          
+                                              "2023" : "4.9"
                                           
                                           }
                                       ],"females": [
@@ -825,9 +831,11 @@
                                           
                                               "2020" : "3.7",
                                           
-                                              "2021" : "4.5",
+                                              "2021" : "4.4",
                                           
-                                              "2022" : "3.7"
+                                              "2022" : "3.7",
+                                          
+                                              "2023" : "2.5"
                                           
                                           }
                                       ]
@@ -850,7 +858,7 @@
                           
                             "goal": "Goal 4. Quality education",
                           
-                            "priority": "Creation of conditions for adults' wider engagement in learning in various forms and places and for the recognition of learning outcomes acquired outside formal education ",
+                            "priority": "Creation of conditions for adults' wider engagement in learning in various forms and places and for the recognition of learning outcomes acquired outside formal education",
                           
                             "definition": "Share of the number of persons aged 25-64 participating in education or training (in the period of four weeks before the survey); in the total number of population in the same age group.",
                           
@@ -864,11 +872,11 @@
                           
                             "availability": "The average data per yer; since 2010",
                           
-                            "notes": "Since the third quarter of 2012, there have been introduced methodological changes targeted at the harmonization of population covered by the survey in accordance with Eurostat recommendations, as a result of which, persons absent from the household, i.e., staying abroad or living in institutional households in Poland for 12 months or longer (until the second quarter of 2012, the duration of absence was over 3 months) are excluded from the survey.",
+                            "notes": "Since the 1st quarter of 2018, the question on participation in training/education outside the formal education system has been changed, so the indicator for which non-formal education is taken into account for the calculation is not fully comparable with the results of previous years. From 2023 onwards, data on Poland's resident population living in dwellings, derived from balance sheets compiled on the basis of Census 2021 results, were used to generalise the LFS results to the general population. Data for 2021-2022 were compiled according to the new basis of generalisation. Due to the changes introduced, the LFS results are not fully comparable with the survey results for the years prior to 2021.",
                           
-                            "data_updated_on": "20-07-2023",
+                            "data_updated_on": "30-07-2024",
                           
-                            "metadata_updated_on": "23-05-2023"
+                            "metadata_updated_on": "30-07-2024"
                           }
           ],
           "data": [
@@ -900,9 +908,11 @@
                                           
                                               "2020" : "3.7",
                                           
-                                              "2021" : "5.4",
+                                              "2021" : "5.6",
                                           
-                                              "2022" : "7.6"
+                                              "2022" : "7.8",
+                                          
+                                              "2023" : "8.7"
                                           
                                           }
                                       ],"aged 25-34": [
@@ -930,9 +940,11 @@
                                           
                                               "2020" : "6.3",
                                           
-                                              "2021" : "8.1",
+                                              "2021" : "8.4",
                                           
-                                              "2022" : "11.3"
+                                              "2022" : "11.7",
+                                          
+                                              "2023" : "13.1"
                                           
                                           }
                                       ],"aged 25-49": [
@@ -960,9 +972,11 @@
                                           
                                               "2020" : "4.8",
                                           
-                                              "2021" : "6.9",
+                                              "2021" : "7.1",
                                           
-                                              "2022" : "9.4"
+                                              "2022" : "9.6",
+                                          
+                                              "2023" : "10.6"
                                           
                                           }
                                       ],"aged 25-74": [
@@ -990,9 +1004,11 @@
                                           
                                               "2020" : "3.1",
                                           
-                                              "2021" : "4.5",
+                                              "2021" : "4.7",
                                           
-                                              "2022" : "6.4"
+                                              "2022" : "6.5",
+                                          
+                                              "2023" : "7.4"
                                           
                                           }
                                       ],"aged 35-44": [
@@ -1020,9 +1036,11 @@
                                           
                                               "2020" : "4.4",
                                           
-                                              "2021" : "6.7",
+                                              "2021" : "6.8",
                                           
-                                              "2022" : "9.0"
+                                              "2022" : "9.1",
+                                          
+                                              "2023" : "9.7"
                                           
                                           }
                                       ],"aged 45-54": [
@@ -1052,7 +1070,9 @@
                                           
                                               "2021" : "4.7",
                                           
-                                              "2022" : "6.6"
+                                              "2022" : "6.6",
+                                          
+                                              "2023" : "8.0"
                                           
                                           }
                                       ],"aged 50-74": [
@@ -1080,9 +1100,11 @@
                                           
                                               "2020" : "1.2",
                                           
-                                              "2021" : "1.8",
+                                              "2021" : "1.9",
                                           
-                                              "2022" : "2.9"
+                                              "2022" : "2.9",
+                                          
+                                              "2023" : "3.7"
                                           
                                           }
                                       ],"aged 55-64": [
@@ -1112,7 +1134,9 @@
                                           
                                               "2021" : "2.0",
                                           
-                                              "2022" : "3.3"
+                                              "2022" : "3.3",
+                                          
+                                              "2023" : "3.8"
                                           
                                           }
                                       ]
@@ -1151,7 +1175,7 @@
                           
                             "notes": "",
                           
-                            "data_updated_on": "24-09-2021",
+                            "data_updated_on": "30-07-2024",
                           
                             "metadata_updated_on": "23-05-2023"
                           }
@@ -1179,7 +1203,15 @@
                                           
                                               "2017" : "",
                                           
-                                              "2018" : ""
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "72.8"
                                           
                                           }
                                       ],"tertiary": [
@@ -1187,7 +1219,7 @@
                                           
                                               "2010" : "",
                                           
-                                              "2011" : "",
+                                              "2011" : "93.3",
                                           
                                               "2012" : "",
                                           
@@ -1201,7 +1233,15 @@
                                           
                                               "2017" : "",
                                           
-                                              "2018" : ""
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "93.8"
                                           
                                           }
                                       ],"post-secondary": [
@@ -1209,7 +1249,7 @@
                                           
                                               "2010" : "",
                                           
-                                              "2011" : "",
+                                              "2011" : "80.4",
                                           
                                               "2012" : "",
                                           
@@ -1223,7 +1263,15 @@
                                           
                                               "2017" : "",
                                           
-                                              "2018" : ""
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "85.2"
                                           
                                           }
                                       ],"secondary vocational": [
@@ -1231,7 +1279,7 @@
                                           
                                               "2010" : "",
                                           
-                                              "2011" : "",
+                                              "2011" : "70.4",
                                           
                                               "2012" : "",
                                           
@@ -1245,7 +1293,15 @@
                                           
                                               "2017" : "",
                                           
-                                              "2018" : ""
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "70.7"
                                           
                                           }
                                       ],"general secondary": [
@@ -1253,7 +1309,7 @@
                                           
                                               "2010" : "",
                                           
-                                              "2011" : "",
+                                              "2011" : "81.1",
                                           
                                               "2012" : "",
                                           
@@ -1267,7 +1323,15 @@
                                           
                                               "2017" : "",
                                           
-                                              "2018" : ""
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "77.5"
                                           
                                           }
                                       ],"basic vocational": [
@@ -1275,7 +1339,7 @@
                                           
                                               "2010" : "",
                                           
-                                              "2011" : "",
+                                              "2011" : "42.5",
                                           
                                               "2012" : "",
                                           
@@ -1289,7 +1353,15 @@
                                           
                                               "2017" : "",
                                           
-                                              "2018" : ""
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "46.1"
                                           
                                           }
                                       ],"not higher than lower secondary": [
@@ -1297,7 +1369,7 @@
                                           
                                               "2010" : "",
                                           
-                                              "2011" : "",
+                                              "2011" : "35.0",
                                           
                                               "2012" : "",
                                           
@@ -1311,7 +1383,15 @@
                                           
                                               "2017" : "",
                                           
-                                              "2018" : ""
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "50.3"
                                           
                                           }
                                       ]

@@ -19,17 +19,17 @@
                       
                         "dimensions": "total, sex, age groups",
                       
-                        "methodology": "Data comes from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89 who are members of households in dwellings selected on a random basis. Outside the scope of the survey are members of households staying (the total duration of actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as staff hotels, dormitories, boarding schools, nursing homes, etc.) and homeless people. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and economically inactive persons.The employed and unemployed are the economically active population. The employed are defined as all persons aged 15-89 who during the reference week: - performed for at least one hour any work generating pay or income, i.e. were employed by a public company/institution or private employer,, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in work on family agricultural farm or in conducting family economic activity outside agriculture, - had work but did not perform it due to:  sickness, or rest leave, leave related to parenthood (maternity, parental, paternity or childcare), organization of working time (work system or overtime receipt), job-related training, the seasonal nature of the work, if they continued to regularly fulfill work or business-related tasks and duties (excluding legal or administrative duties) during the off-season, other reasons, if the expected period of absence from work does not exceed 3 months.- did not exceed 3 months.  According to international standards, among employees are also included persons performing outwork and apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). The employed do not include: volunteers and unpaid interns, people working in individual agriculture engaged in the production of agricultural products exclusively or primarily for their own consumption.",
+                        "methodology": "Data comes from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89 who are members of households in dwellings selected on a random basis. Outside the scope of the survey are members of households staying (the total duration of actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as staff hotels, dormitories, boarding schools, nursing homes, etc.) and homeless people. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and economically inactive persons.The employed and unemployed are the economically active population. The employed are defined as all persons aged 15-89 who during the reference week: - performed for at least one hour any work generating pay or income, i.e. were employed by a public company/institution or private employer,, worked on their own (or leased) agricultural farm, or conducted their own economic activity outside agriculture, assisted (without pay) in work on family agricultural farm or in conducting family economic activity outside agriculture, - had work but did not perform it due to:  • sickness, or rest leave, leave related to parenthood (maternity, parental, paternity or childcare), organization of working time (work system or overtime receipt), job-related training, • the seasonal nature of the work, if they continued to regularly fulfill work or business-related tasks and duties (excluding legal or administrative duties) during the off-season, • other reasons, if the expected period of absence from work does not exceed 3 months. - did not exceed 3 months.  According to international standards, among employees are also included persons performing outwork and apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment). The employed do not include: volunteers and unpaid interns, people working in individual agriculture engaged in the production of agricultural products exclusively or primarily for their own consumption.",
                       
                         "source": "Statistics Poland",
                       
                         "availability": "Annual data; since 2010",
                       
-                        "notes": "Due to the implementation of methodological changes in the survey, LFS data from 2021 onward cannot be compared with previous years (except for data recalculated for 2010-2020).  From 2022, post-secondary and  secondary vocational education, including secondary sectoral vocational education. From 2020, basic vocational education, including basic sectoral vocational education.",
+                        "notes": "From 2023 onwards, data on Poland's resident population living in dwellings, derived from balance sheets compiled on the basis of Census 2021 results, were used to generalise the LFS results to the general population. Data for 2021-2022 were compiled according to the new basis of generalisation. Due to the changes introduced, the LFS results are not fully comparable with the survey results for the years prior to 2021. In addition, the lack of comparability of the data time series is also affected by methodological changes introduced to the LFS from Q1 2021. Data for 2010-2020 have been recalculated and presented taking into account the new methodology. These recalculations do not take into account the change in the basis for generalising data to balances based on the Census 2021.",
                       
-                        "data_updated_on": "20-07-2023",
+                        "data_updated_on": "30-07-2024",
                       
-                        "metadata_updated_on": "21-07-2023"
+                        "metadata_updated_on": "30-07-2024"
                       }
       ],
       "data": [
@@ -61,9 +61,11 @@
                                 
                                     "2020" :   "54.0",
                                 
-                                    "2021" :   "55.8",
+                                    "2021" :   "56.2",
                                 
-                                    "2022" :   "56.3"
+                                    "2022" :   "56.7",
+                                
+                                    "2023" :   "57.0"
                                 
                                 }
                             ],"males": [
@@ -91,9 +93,11 @@
                                 
                                     "2020" :   "62.3",
                                 
-                                    "2021" :   "63.8",
+                                    "2021" :   "64.1",
                                 
-                                    "2022" :   "64.0"
+                                    "2022" :   "64.4",
+                                
+                                    "2023" :   "64.3"
                                 
                                 }
                             ],"females": [
@@ -121,9 +125,11 @@
                                 
                                     "2020" :   "46.3",
                                 
-                                    "2021" :   "48.5",
+                                    "2021" :   "48.9",
                                 
-                                    "2022" :   "49.3"
+                                    "2022" :   "49.7",
+                                
+                                    "2023" :   "50.3"
                                 
                                 }
                             ]
@@ -156,9 +162,11 @@
                                 
                                     "2020" :   "28.2",
                                 
-                                    "2021" :   "27.3",
+                                    "2021" :   "27.6",
                                 
-                                    "2022" :   "27.8"
+                                    "2022" :   "28.3",
+                                
+                                    "2023" :   "28.7"
                                 
                                 }
                             ],"aged 15-64": [
@@ -186,9 +194,11 @@
                                 
                                     "2020" :   "67.8",
                                 
-                                    "2021" :   "70.3",
+                                    "2021" :   "70.4",
                                 
-                                    "2022" :   "71.3"
+                                    "2022" :   "71.5",
+                                
+                                    "2023" :   "72.4"
                                 
                                 }
                             ],"aged 18-59/64": [
@@ -218,7 +228,9 @@
                                 
                                     "2021" :   "76.6",
                                 
-                                    "2022" :   "77.8"
+                                    "2022" :   "77.8",
+                                
+                                    "2023" :   "78.9"
                                 
                                 }
                             ],"aged 20-24": [
@@ -246,9 +258,11 @@
                                 
                                     "2020" :   "50.1",
                                 
-                                    "2021" :   "49.3",
+                                    "2021" :   "48.9",
                                 
-                                    "2022" :   "51.0"
+                                    "2022" :   "50.7",
+                                
+                                    "2023" :   "52.5"
                                 
                                 }
                             ],"aged 20-64": [
@@ -276,9 +290,11 @@
                                 
                                     "2020" :   "72.7",
                                 
-                                    "2021" :   "75.4",
+                                    "2021" :   "75.5",
                                 
-                                    "2022" :   "76.7"
+                                    "2022" :   "76.7",
+                                
+                                    "2023" :   "77.9"
                                 
                                 }
                             ],"aged 50-89": [
@@ -306,9 +322,11 @@
                                 
                                     "2020" :   "32.6",
                                 
-                                    "2021" :   "34.7",
+                                    "2021" :   "35.0",
                                 
-                                    "2022" :   "35.1"
+                                    "2022" :   "35.5",
+                                
+                                    "2023" :   "35.7"
                                 
                                 }
                             ],"aged 55-64": [
@@ -338,7 +356,9 @@
                                 
                                     "2021" :   "54.7",
                                 
-                                    "2022" :   "56.4"
+                                    "2022" :   "56.5",
+                                
+                                    "2023" :   "58.1"
                                 
                                 }
                             ],"aged 65-69": [
@@ -366,9 +386,11 @@
                                 
                                     "2020" :   "10.9",
                                 
-                                    "2021" :   "11.5",
+                                    "2021" :   "11.4",
                                 
-                                    "2022" :   "12.3"
+                                    "2022" :   "12.2",
+                                
+                                    "2023" :   "12.0"
                                 
                                 }
                             ]
@@ -401,9 +423,11 @@
                                 
                                     "2020" :   "54.6",
                                 
-                                    "2021" :   "56.0",
+                                    "2021" :   "56.8",
                                 
-                                    "2022" :   "56.3"
+                                    "2022" :   "57.2",
+                                
+                                    "2023" :   "57.4"
                                 
                                 }
                             ],"rural area": [
@@ -431,9 +455,11 @@
                                 
                                     "2020" :   "53.0",
                                 
-                                    "2021" :   "55.5",
+                                    "2021" :   "55.2",
                                 
-                                    "2022" :   "56.3"
+                                    "2022" :   "56.0",
+                                
+                                    "2023" :   "56.5"
                                 
                                 }
                             ]
@@ -466,9 +492,11 @@
                                 
                                     "2020" :   "78.7",
                                 
-                                    "2021" :   "79.7",
+                                    "2021" :   "80.5",
                                 
-                                    "2022" :   "80.3"
+                                    "2022" :   "80.8",
+                                
+                                    "2023" :   "80.7"
                                 
                                 }
                             ],"post-secondary and secondary vocational": [
@@ -496,9 +524,11 @@
                                 
                                     "2020" :   "58.1",
                                 
-                                    "2021" :   "59.8",
+                                    "2021" :   "59.9",
                                 
-                                    "2022" :   "59.9"
+                                    "2022" :   "60.2",
+                                
+                                    "2023" :   "58.9"
                                 
                                 }
                             ],"general secondary": [
@@ -528,7 +558,9 @@
                                 
                                     "2021" :   "51.0",
                                 
-                                    "2022" :   "52.5"
+                                    "2022" :   "52.7",
+                                
+                                    "2023" :   "53.6"
                                 
                                 }
                             ],"basic vocational": [
@@ -556,9 +588,11 @@
                                 
                                     "2020" :   "51.3",
                                 
-                                    "2021" :   "53.2",
+                                    "2021" :   "53.5",
                                 
-                                    "2022" :   "53.2"
+                                    "2022" :   "53.4",
+                                
+                                    "2023" :   "51.5"
                                 
                                 }
                             ],"lower secondary or primary or without formal education": [
@@ -586,9 +620,11 @@
                                 
                                     "2020" :   "14.7",
                                 
-                                    "2021" :   "16.5",
+                                    "2021" :   "16.7",
                                 
-                                    "2022" :   "16.3"
+                                    "2022" :   "16.5",
+                                
+                                    "2023" :   "15.5"
                                 
                                 }
                             ]

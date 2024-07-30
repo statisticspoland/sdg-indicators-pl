@@ -1707,7 +1707,7 @@
                           
                             "target": "8.6 By 2020, substantially reduce the proportion of youth not in employment, education or training",
                           
-                            "definition": "Share of unemployed or inactive 15-24 year olds who do not continue their education in the formal education system and do not further their education/training in the non-formal education system (within 4 weeks before the survey) in the total population in the same age group. Indicator's numerator refers to those who meet two conditions:  are not employed (i.e. are unemployed or economically inactive), did not participate in any form of education during four weeks preceding the survey.  Indicator's denominator is a population in a given age group, which the indicator concerns, excluding persons who did not answer the question concerning ,,participation in regular education and training.,,",
+                            "definition": "Share of unemployed or inactive 15-24 year olds who do not continue their education in the formal education system and do not further their education/training in the non-formal education system (within 4 weeks before the survey) in the total population in the same age group. Indicator's numerator refers to those who meet two conditions:  - are not employed (i.e. are unemployed or economically inactive), - did not participate in any form of education during four weeks preceding the survey.  Indicator's denominator is a population in a given age group, which the indicator concerns, excluding persons who did not answer the question concerning 'participation in regular education and training'.",
                           
                             "unit": "percent [%]",
                           
@@ -1719,11 +1719,11 @@
                           
                             "availability": "Annual data; since 2010.",
                           
-                            "notes": "Due to the implementation of methodological changes in the survey, LFS data from 2021 onward cannot be compared with previous years (except for data recalculated for 2010-2020).",
+                            "notes": "From 2023 onwards, data on Poland's resident population living in dwellings, derived from balance sheets compiled on the basis of Census 2021 results, were used to generalise the LFS results to the general population. Data for 2021-2022 were compiled according to the new basis of generalisation. Due to the changes introduced, the LFS results are not fully comparable with the survey results for the years prior to 2021. In addition, the lack of comparability of the data time series is also affected by methodological changes introduced to the LFS from Q1 2021. Data for 2010-2020 have been recalculated and presented taking into account the new methodology. These recalculations do not take into account the change in the basis for generalising data to balances based on the Census 2021.",
                           
-                            "data_updated_on": "19-07-2023",
+                            "data_updated_on": "30-07-2024",
                           
-                            "metadata_updated_on": "26-07-2022"
+                            "metadata_updated_on": "30-07-2024"
                           }
           ],
           "data": [
@@ -1754,7 +1754,9 @@
                               
                                   "2021" :   "11.2",
                               
-                                  "2022" :   "8.0"
+                                  "2022" :   "8.1",
+                              
+                                  "2023" :   "6.9"
                               
                               }
                           ]

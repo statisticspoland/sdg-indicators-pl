@@ -19,17 +19,17 @@
                       
                         "dimensions": "total",
                       
-                        "methodology": "Data comes from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89 who are members of households in dwellings selected on a random basis. Outside the scope of the survey are members of households staying (the total duration of actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as staff hotels, dormitories, boarding schools, nursing homes, etc.) and homeless people. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and ecomically inactive persons. The employed, unemployed are the economically active population. Unemployed according to LFS are persons aged 15-74 who simultaneously fulfil three conditions: - within the reference week were not employed, - were actively looking for work, i.e. for over 4 weeks (the reference week being the fourth one) had been involved in concrete actions aimed at finding a job, - were available to take up work within two weeks after the reference week. Persons who were not seeking work because they had already found a job, were only waiting to start work within the period no longer than 3 months, and were available for this job are also included in the category of the unemployed. The LFS results allow the unemployed to be classified into one of four categories: - unemployed who lost their jobs, i.e., those who left their last job not on their own initiative and immediately (i.e., within three months) began looking for work, - the unemployed who quit their jobs, i.e., those who left their jobs on their own initiative and immediately began looking for work, - unemployed who return to work after a break during which they did not look for work for a minimum of three months, - the unemployed who have never worked and are looking for their first ever job. Long-term unemployed - according to the national definition, these are unemployed people looking for a job for 13 months or more; while according to the definition used by Eurostat, these are unemployed people looking for a job for 12 months or more.",
+                        "methodology": "Data comes from a sample survey: Labour Force Survey (LFS). The survey is conducted on a quarterly basis, using continuous observation (movable survey week) what allows presenting the situation on the labour market during a whole quarter. The survey covers persons aged 15-89 who are members of households in dwellings selected on a random basis. Outside the scope of the survey are members of households staying (the total duration of actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as staff hotels, dormitories, boarding schools, nursing homes, etc.) and homeless people. In the context of economic activity - work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and ecomically inactive persons. The employed, unemployed are the economically active population. Unemployed according to LFS are persons aged 15-74 who simultaneously fulfil three conditions: - within the reference week were not employed, - were actively looking for work, i.e. for over 4 weeks (the reference week being the fourth one) had been involved in concrete actions aimed at finding a job, - were available to take up work within two weeks after the reference week. Persons who were not seeking work because they had already found a job, were only waiting to start work within the period no longer than 3 months, and were available for this job are also included in the category of the unemployed. The LFS results allow the unemployed to be classified into one of four categories: unemployed who lost their jobs, i.e., those who left their last job not on their own initiative and immediately (i.e., within three months) began looking for work, unemployed who quit their jobs, i.e., those who left their jobs on their own initiative and immediately began looking for work, unemployed who return to work after a break during which they did not look for work for a minimum of three months, unemployed who have never worked and are looking for their first ever job. Long-term unemployed - according to the national definition, these are unemployed people looking for a job for 13 months or more; while according to the definition used by Eurostat, these are unemployed people looking for a job for 12 months or more.",
                       
                         "source": "Statistics Poland",
                       
                         "availability": "Annual data; since 2010",
                       
-                        "notes": "Due to the implementation of methodological changes in the survey, LFS data from 2021 onward cannot be compared with previous years (except for data recalculated for 2010-2020).",
+                        "notes": "From 2023 onwards, data on Poland's resident population living in dwellings, derived from balance sheets compiled on the basis of Census 2021 results, were used to generalise the LFS results to the general population. Data for 2021-2022 were compiled according to the new basis of generalisation. Due to the changes introduced, the LFS results are not fully comparable with the survey results for the years prior to 2021. In addition, the lack of comparability of the data time series is also affected by methodological changes introduced to the LFS from Q1 2021. Data for 2010-2020 have been recalculated and presented taking into account the new methodology. These recalculations do not take into account the change in the basis for generalising data to balances based on the Census 2021.",
                       
-                        "data_updated_on": "20-07-2023",
+                        "data_updated_on": "30-07-2024",
                       
-                        "metadata_updated_on": "26-04-2023"
+                        "metadata_updated_on": "30-07-2024"
                       }
       ],
       "data": [
@@ -61,9 +61,11 @@
                                 
                                     "2020" :   "14.5",
                                 
-                                    "2021" :   "18.1",
+                                    "2021" :   "18.3",
                                 
-                                    "2022" :   "22.1"
+                                    "2022" :   "21.7",
+                                
+                                    "2023" :   "18.3"
                                 
                                 }
                             ],"females": [
@@ -91,9 +93,11 @@
                                 
                                     "2020" :   "13.6",
                                 
-                                    "2021" :   "19.3",
+                                    "2021" :   "19.4",
                                 
-                                    "2022" :   "21.3"
+                                    "2022" :   "20.8",
+                                
+                                    "2023" :   "16.7"
                                 
                                 }
                             ],"males": [
@@ -121,9 +125,11 @@
                                 
                                     "2020" :   "15.2",
                                 
-                                    "2021" :   "17.5",
+                                    "2021" :   "17.4",
                                 
-                                    "2022" :   "22.8"
+                                    "2022" :   "22.5",
+                                
+                                    "2023" :   "19.8"
                                 
                                 }
                             ]
@@ -156,9 +162,11 @@
                                 
                                     "2020" :   "11.6",
                                 
-                                    "2021" :   "17.5",
+                                    "2021" :   "17.7",
                                 
-                                    "2022" :   "21.0"
+                                    "2022" :   "20.6",
+                                
+                                    "2023" :   "18.8"
                                 
                                 }
                             ],"rural area": [
@@ -186,9 +194,11 @@
                                 
                                     "2020" :   "18.3",
                                 
-                                    "2021" :   "19.0",
+                                    "2021" :   "19.6",
                                 
-                                    "2022" :   "23.6"
+                                    "2022" :   "23.4",
+                                
+                                    "2023" :   "17.7"
                                 
                                 }
                             ]
