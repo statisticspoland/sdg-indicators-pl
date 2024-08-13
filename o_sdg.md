@@ -250,16 +250,15 @@ permalink: /o_sdg/
 
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72" alt="Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2021 r." title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2021 r." target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/10_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.gov.pl/attachment/22950221-b985-4cdd-8b76-8a3edaa3f247" alt="Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2023 r." title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2023 r." target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/11_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2021 r.</b></p>
-  <p>Publikacja Ministerstwa Rozwoju i Technologii prezentuje opis wybranych działań zrealizowanych na rzecz Agendy 2030 i jej celów (SDGs) w Polsce przez rząd, samorządy oraz interesariuszy. Opisane zostały w niej istotne projekty strategiczne i programy operacyjne szczebla krajowego oraz regionalnego, których realizacja może przyczyniać się do przybliżania kraju do osiągnięcia postępów w zakresie wszystkich wymiarów zrównoważonego rozwoju. Dopełnienie publikacji stanowi informacja o monitorowaniu SDGs w Polsce, UE i na świecie oraz zestawienie tabelaryczne z pochodzącymi z <a title="Przejdź do podstrony ze wskaźnikami krajowymi" href="https://sdg.gov.pl/statistics_nat/"  target="_blank">Platformy SDG</a> danymi dla wskaźników monitorujących <a title="Przejdź do podstrony z priorytetami" href="https://sdg.gov.pl/priorytet/"  target="_blank">polskie priorytety</a> w realizacji Agendy 2030.
+  <p><b>Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2023 r.</b></p>
+  <p>Publikacja Ministerstwa Rozwoju i Technologii prezentuje opis wybranych działań zrealizowanych na rzecz Agendy 2030 i jej celów (SDGs) w Polsce przez rząd, samorządy, interesariuszy i uczelnie wyższe. Opisane zostały w niej istotne projekty strategiczne i programy operacyjne szczebla krajowego oraz regionalnego, których realizacja może przyczyniać się do przybliżania kraju do osiągnięcia postępów w zakresie wszystkich wymiarów zrównoważonego rozwoju. W publikacji zasygnalizowane zostały także aktualne inicjatywy podejmowane w związku z inwazją Rosji w Ukrainie. Dopełnieniem publikacji są: informacje o monitorowaniu SDGs w Polsce, UE i na świecie oraz zaprezentowane w formie graficznej wybrane wskaźniki monitorujące <a title="Przejdź do podstrony z priorytetami" href="https://sdg.gov.pl/priorytet/"  target="_blank">polskie priorytety</a>, pochodzące z <a title="Przejdź do podstrony ze wskaźnikami krajowymi" href="https://sdg.gov.pl/statistics_nat/"  target="_blank">Platformy SDG</a>.</p>
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2021 r." href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72">Monitorowanie celów zrównoważonego rozwoju w Polsce – informacja wg stanu na koniec 2021 r.</a></p>
   <p><a target="_blank" title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2020 r." href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitorowanie celów zrównoważonego rozwoju w Polsce – informacja wg stanu na koniec 2020 r.</a></p>
 
- </p>
-
-   <hr>
+  <hr>
   <div class="image-wrapper">
    <a target="_blank" href="https://www.gov.pl/attachment/f18da2e5-5384-4040-8fc7-c55d67e56378" alt="Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania" title="Zapoznaj się z publikacją Agenda 2030 w Polsce. Krajowe priorytety – wspólne działania"><img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/></a>
   </div>

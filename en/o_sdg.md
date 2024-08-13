@@ -247,14 +247,15 @@ permalink: /en/o_sdg/
   <h4><b>MINISTRY OF ECONOMIC DEVELOPMENT AND TECHNOLOGY</b> (coordinator of SDG implementation in Poland)</h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72" alt="Monitoring of the implementation of the Sustainable Development Goals in Poland" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/10_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.gov.pl/attachment/22950221-b985-4cdd-8b76-8a3edaa3f247" alt="Monitoring of the implementation of the Sustainable Development Goals in Poland" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/11_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Monitoring of the implementation of the Sustainable Development Goals in Poland</b></p>
-  <p>The publication by the Ministry of Economic Development and Technology presents the selected activities for 2030 Agenda in Poland performed by Polish government, local government and stakeholders. It describes important national and regional strategic projects and operational programs, the implementation of which may contribute to bringing the country closer to achieving progress in all dimensions of sustainable development. The publication is complemented with information on the monitoring of SDGs in Poland, the EU and in the World with a set of indicators monitoring <a title="Go to subpage with polish priorities" href="https://sdg.gov.pl/en/priorytet/"  target="_blank">Polish priorities</a> of the 2030 Agenda from the <a title="Go to SDG's homepage" href="https://sdg.gov.pl/en/"  target="_blank">SDG NRP</a>.
+  <p>The publication by the Ministry of Economic Development and Technology presents the selected activities for 2030 Agenda in Poland performed by Polish government, local government, stakeholders and universities. It describes important national and regional strategic projects and operational programs, the implementation of which may contribute to bringing the country closer to achieving progress in all dimensions of sustainable development. The publication also highlights current initiatives undertaken in connection with the Russian invasion of Ukraine. The publication is complemented with information on the monitoring of SDGs in Poland, the EU and in the World as well as selected indicators from the set of measures monitoring <a title="Go to subpage with polish priorities" href="https://sdg.gov.pl/en/priorytet/"  target="_blank">Polish priorities</a> from the <a title="Go to SDG's homepage" href="https://sdg.gov.pl/en/"  target="_blank">SDG NRP</a>, presented in graphic form.</p>
+  <p>The publication is available only in Polish.</p>
+  
   <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland in 2020" href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitorowanie celów zrównoważonego rozwoju w Polsce – informacja wg stanu na koniec 2020 r.</a></p>
-
- </p>
+  <p><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021" href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72">Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021</a></p>
+  <p><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland in 2020" href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitoring of the implementation of the Sustainable Development Goals in Poland – 2020</a></p>
 
 <hr>
 <div class="image-wrapper">
