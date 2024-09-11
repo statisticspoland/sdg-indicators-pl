@@ -56,7 +56,7 @@ function createMapPow(div, dane, jez){
     key: "fill",*/
     customFunction: function(sprite, min, max, value) {
       var diff = (max-min)/5;
-      console.log(diff);
+      //console.log(diff);
       if(value <= max && value > max-diff){
         sprite.set("fill", am5.color(0xb380ff));
       }

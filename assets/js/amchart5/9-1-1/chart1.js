@@ -109,6 +109,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 97.1,
 	"wieś": 100.0,
 	"year": "2022"
+	}, {
+	"w1": "Polska",
+	"ogółem": 97.9,
+	"miasto": 96.6,
+	"wieś": 99.9,
+	"year": "2023"
 	}],
     // Data set #2
     [{
@@ -153,6 +159,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 97.1,
 	"wieś": 104.7,
 	"year": "2022"
+	}, {
+	"w1": "dolnośląskie",
+	"ogółem": 99.1,
+	"miasto": 96.5,
+	"wieś": 105.0,
+	"year": "2023"
 	}],
 	// Data set #3
     [{
@@ -197,6 +209,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 93.7,
 	"wieś": 99.8,
 	"year": "2022"
+	}, {
+	"w1": "kujawsko-pomorskie",
+	"ogółem": 95.7,
+	"miasto": 92.9,
+	"wieś": 99.8,
+	"year": "2023"
 	}],
 	// Data set #4
     [{
@@ -241,6 +259,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 94.6,
 	"wieś": 94.6,
 	"year": "2022"
+	}, {
+	"w1": "lubelskie",
+	"ogółem": 94.0,
+	"miasto": 93.8,
+	"wieś": 94.1,
+	"year": "2023"
 	}],
 	// Data set #5
     [{
@@ -285,6 +309,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 95.2,
 	"wieś": 98.2,
 	"year": "2022"
+	}, {
+	"w1": "lubuskie",
+	"ogółem": 95.8,
+	"miasto": 94.4,
+	"wieś": 98.2,
+	"year": "2023"
 	}],
 	// Data set #6
     [{
@@ -329,6 +359,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 93.4,
 	"wieś": 98.8,
 	"year": "2022"
+	}, {
+	"w1": "łódzkie",
+	"ogółem": 94.7,
+	"miasto": 92.8,
+	"wieś": 98.1,
+	"year": "2023"
 	}],
 	// Data set #7
     [{
@@ -373,6 +409,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 100.3,
 	"wieś": 102.9,
 	"year": "2022"
+	}, {
+	"w1": "małopolskie",
+	"ogółem": 101.7,
+	"miasto": 100.4,
+	"wieś": 102.9,
+	"year": "2023"
 	}],
 	// Data set #8
     [{
@@ -417,6 +459,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 103.6,
 	"wieś": 101.9,
 	"year": "2022"
+	}, {
+	"w1": "mazowieckie",
+	"ogółem": 103.0,
+	"miasto": 103.6,
+	"wieś": 102.0,
+	"year": "2023"
 	}],
 	// Data set #9
     [{
@@ -461,6 +509,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 96.4,
 	"wieś": 92.7,
 	"year": "2022"
+	}, {
+	"w1": "opolskie",
+	"ogółem": 94.0,
+	"miasto": 95.5,
+	"wieś": 92.5,
+	"year": "2023"
 	}],
 	// Data set #10
     [{
@@ -505,6 +559,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 97.3,
 	"wieś": 98.0,
 	"year": "2022"
+	}, {
+	"w1": "podkarpackie",
+	"ogółem": 97.4,
+	"miasto": 96.8,
+	"wieś": 97.8,
+	"year": "2023"
 	}],
 	// Data set #11
     [{
@@ -549,6 +609,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 96.7,
 	"wieś": 95.4,
 	"year": "2022"
+	}, {
+	"w1": "podlaskie",
+	"ogółem": 95.7,
+	"miasto": 96.1,
+	"wieś": 95.1,
+	"year": "2023"
 	}],
 	// Data set #12
     [{
@@ -593,6 +659,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 99.3,
 	"wieś": 107.5,
 	"year": "2022"
+	}, {
+	"w1": "pomorskie",
+	"ogółem": 102.2,
+	"miasto": 98.9,
+	"wieś": 108.3,
+	"year": "2023"
 	}],
 	// Data set #13
     [{
@@ -637,6 +709,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 93.6,
 	"wieś": 100.2,
 	"year": "2022"
+	}, {
+	"w1": "śląskie",
+	"ogółem": 94.5,
+	"miasto": 92.9,
+	"wieś": 100.0,
+	"year": "2023"
 	}],
 	// Data set #14
     [{
@@ -681,6 +759,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 94.1,
 	"wieś": 93.4,
 	"year": "2022"
+	}, {
+	"w1": "świętokrzyskie",
+	"ogółem": 92.9,
+	"miasto": 93.8,
+	"wieś": 92.2,
+	"year": "2023"
 	}],
 	// Data set #15
     [{
@@ -725,6 +809,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 94.8,
 	"wieś": 95.0,
 	"year": "2022"
+	}, {
+	"w1": "warmińsko-mazurskie",
+	"ogółem": 94.3,
+	"miasto": 94.1,
+	"wieś": 94.7,
+	"year": "2023"
 	}],
 	// Data set #16
     [{
@@ -769,6 +859,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 97.6,
 	"wieś": 104.0,
 	"year": "2022"
+	}, {
+	"w1": "wielkopolskie",
+	"ogółem": 100.4,
+	"miasto": 97.0,
+	"wieś": 104.5,
+	"year": "2023"
 	}],
 	// Data set #17
     [{
@@ -813,6 +909,12 @@ am5.array.each(am5.registry.rootElements,
 	"miasto": 95.2,
 	"wieś": 97.4,
 	"year": "2022"
+	}, {
+	"w1": "zachodniopomorskie",
+	"ogółem": 95.4,
+	"miasto": 94.7,
+	"wieś": 97.0,
+	"year": "2023"
 	}]
   ];
 

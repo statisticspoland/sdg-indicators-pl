@@ -32,6 +32,7 @@ layout: page_exp
         <p style="font-size: 16px;">Due to the wide scope of the SDGs, not all SDG measures are possible to obtain based on traditional data sources (e.g. surveys, reporting, censuses, registers). In order to fill in any information gaps, seeking new data sources for SDG indicators is a must. Statistics Poland conducts research and development work in this regard using non-traditional methods and new methodological approaches.</p>
         <p style="font-size: 16px;">In 2023, using satellite remote sensing and integrating various data sources, Statistics Poland developed the first experimental SDG indicators to evaluate sustainable development. These indicators monitor:</p>
         <p style="font-size: 16px;">• access to roads in rural areas (Goal 9. Industry, innovation and infrastructure),<br />
+           • convenient access to public transport (Goal 11. Sustainable cities and communities),<br />
            • access to open public areas (Goal 11. Sustainable cities and communities),<br />
            • management of urban land (Goal 11. Sustainable cities and communities).</p>
         <p style="font-size: 16px;">Work is underway to make further experimental SDG indicators available.</p>

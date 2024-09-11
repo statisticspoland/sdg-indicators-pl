@@ -44,6 +44,9 @@ layout: page_exp
 		      </thead>
 		      <tbody>
 						<tr>
+							<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}/en/statistics_exp/11_2_1_exp" title="11.2.1 Proportion of population that has convenient access to public transport">11.2.1 Proportion of population that has convenient access to public transport</a></td>
+						</tr>
+						<tr>
 							<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}/en/statistics_exp/11_3_1_exp" title="11.3.1 Ratio of land consumption rate to population growth rate">11.3.1 Ratio of land consumption rate to population growth rate</a></td>
 						</tr>
 						<tr>

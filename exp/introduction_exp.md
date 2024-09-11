@@ -32,6 +32,7 @@ layout: page_exp
         <p style="font-size: 16px;">Ze względu na szeroki zakres tematyczny SDGs, nie wszystkie mierniki SDG są możliwe do pozyskania z tradycyjnych źródeł danych (np. badań ankietowych, sprawozdawczości, spisów powszechnych, rejestrów). Aby uzupełnić luki informacyjne, konieczne jest poszukiwanie nowych źródeł danych dla wskaźników SDG. Główny Urząd Statystyczny prowadzi prace badawczo-rozwojowe w tym zakresie z zastosowaniem nietradycyjnych metod i nowych podejść metodologicznych.</p>
         <p style="font-size: 16px;">W 2023 r. dzięki wykorzystaniu teledetekcji satelitarnej oraz integracji różnych źródeł danych, GUS opracował na potrzebę oceny zrównoważonego rozwoju pierwsze eksperymentalne wskaźniki SDG monitorujące:</p>
         <p style="font-size: 16px;">• dostęp do dróg na obszarach wiejskich (Cel 9. Innowacyjność, przemysł, infrastruktura),<br />
+           • dogodny dostęp do transportu publicznego (Cel 11. Zrównoważone miasta i społeczności),<br />
            • dostęp do otwartych przestrzeni publicznych (Cel 11. Zrównoważone miasta i społeczności),<br />
            • gospodarkę gruntami miejskimi (Cel 11. Zrównoważone miasta i społeczności).</p>
         <p style="font-size: 16px;">Prace nad udostępnieniem kolejnych wskaźników eksperymentalnych SDG są w toku.</p>

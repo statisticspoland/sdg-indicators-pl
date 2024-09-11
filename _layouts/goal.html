@@ -150,6 +150,8 @@
 
     {% if indicator.indicator contains '9.1.1' %}
     	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/09_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
+    {% elsif indicator.indicator contains '11.2.1' %}
+    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_2_1_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
     {% elsif indicator.indicator contains '11.3.1' %}
     	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_3_1_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
     {% elsif indicator.indicator contains '11.7.1' %}

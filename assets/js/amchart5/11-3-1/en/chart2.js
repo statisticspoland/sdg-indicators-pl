@@ -3,24 +3,27 @@ function createchart2(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2022 (2015=100)";
+	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2023 (2015=100)";
 }
 if (d==1) {
-	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2021 (2015=100)";
+	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2022 (2015=100)";
 }
 if (d==2) {
-	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2020 (2015=100)";
+	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2021 (2015=100)";
 }
 if (d==3) {
-	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2019 (2015=100)";
+	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2020 (2015=100)";
 }
 if (d==4) {
-	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2018 (2015=100)";
+	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2019 (2015=100)";
 }
 if (d==5) {
-	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2017 (2015=100)";
+	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2018 (2015=100)";
 }
 if (d==6) {
+	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2017 (2015=100)";
+}
+if (d==7) {
 	document.getElementById("tytuł_2").innerHTML = "Population by place of residence in 2016 (2015=100)";
 }
 
@@ -37,6 +40,80 @@ am5.array.each(am5.registry.rootElements,
 	function getData(index) {
 		var data = [
     // Data set #1
+    [{
+	"w1": "2023",
+	"ogółem": 98.5,
+	"year": "Białystok"
+	}, {
+	"w1": "2023",
+	"ogółem": 91.8,
+	"year": "Bydgoszcz"
+	}, {
+	"w1": "2023",
+	"ogółem": 105.4,
+	"year": "Gdańsk"
+	}, {
+	"w1": "2023",
+	"ogółem": 93.1,
+	"year": "Gorzów Wielkopolski"
+	}, {
+	"w1": "2023",
+	"ogółem": 93.1,
+	"year": "Katowice"
+	}, {
+	"w1": "2023",
+	"ogółem": 92.0,
+	"year": "Kielce"
+	}, {
+	"w1": "2023",
+	"ogółem": 105.9,
+	"year": "Kraków"
+	}, {
+	"w1": "2023",
+	"ogółem": 96.7,
+	"year": "Lublin"
+	}, {
+	"w1": "2023",
+	"ogółem": 93.0,
+	"year": "Łódź"
+	}, {
+	"w1": "2023",
+	"ogółem": 96.5,
+	"year": "Olsztyn"
+	}, {
+	"w1": "2023",
+	"ogółem": 106.0,
+	"year": "Opole"
+	}, {
+	"w1": "2023",
+	"ogółem": 99.3,
+	"year": "Poznań"
+	}, {
+	"w1": "2023",
+	"ogółem": 106.1,
+	"year": "Rzeszów"
+	}, {
+	"w1": "2023",
+	"ogółem": 95.9,
+	"year": "Szczecin"
+	}, {
+	"w1": "2023",
+	"ogółem": 96.1,
+	"year": "Toruń"
+	}, {
+	"w1": "2023",
+	"ogółem": 106.7,
+	"year": "Warszawa"
+	}, {
+	"w1": "2023",
+	"ogółem": 106.0,
+	"year": "Wrocław"
+	}, {
+	"w1": "2023",
+	"ogółem": 100.2,
+	"year": "Zielona Góra"
+	}],
+    // Data set #2
     [{
 	"w1": "2022",
 	"ogółem": 98.9,
@@ -110,7 +187,7 @@ am5.array.each(am5.registry.rootElements,
 	"ogółem": 100.4,
 	"year": "Zielona Góra"
 	}],
-    // Data set #2
+    // Data set #3
     [{
 	"w1": "2021",
 	"ogółem": 99.1,
@@ -184,7 +261,7 @@ am5.array.each(am5.registry.rootElements,
 	"ogółem": 100.7,
 	"year": "Zielona Góra"
 	}],
-    // Data set #3
+    // Data set #4
     [{
 	"w1": "2020",
 	"ogółem": 99.6,
@@ -258,7 +335,7 @@ am5.array.each(am5.registry.rootElements,
 	"ogółem": 101.0,
 	"year": "Zielona Góra"
 	}],
-    // Data set #4
+    // Data set #5
     [{
 	"w1": "2019",
 	"ogółem": 100.5,
@@ -332,7 +409,7 @@ am5.array.each(am5.registry.rootElements,
 	"ogółem": 101.8,
 	"year": "Zielona Góra"
 	}],
-    // Data set #5
+    // Data set #6
     [{
 	"w1": "2018",
 	"ogółem": 100.5,
@@ -406,7 +483,7 @@ am5.array.each(am5.registry.rootElements,
 	"ogółem": 101.1,
 	"year": "Zielona Góra"
 	}],
-    // Data set #6
+    // Data set #7
     [{
 	"w1": "2017",
 	"ogółem": 100.4,
@@ -480,7 +557,7 @@ am5.array.each(am5.registry.rootElements,
 	"ogółem": 100.8,
 	"year": "Zielona Góra"
 	}],
-    // Data set #7
+    // Data set #8
     [{
 	"w1": "2016",
 	"ogółem": 100.2,

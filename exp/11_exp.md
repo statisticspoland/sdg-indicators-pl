@@ -43,10 +43,13 @@ layout: page_exp
 		      </thead>
 		      <tbody>
 						<tr>
-							<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}/statistics_exp/11_3_1_exp" title="11.3.1  Relacja wskaźnika zużycia gruntów do tempa wzrostu liczby ludności">11.3.1  Relacja wskaźnika zużycia gruntów do tempa wzrostu liczby ludności</a></td>
+							<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}/statistics_exp/11_2_1_exp" title="11.2.1 Odsetek ludności z dogodnym dostępem do środków transportu publicznego">11.2.1 Odsetek ludności z dogodnym dostępem do środków transportu publicznego</a></td>
 						</tr>
 						<tr>
-							<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}/statistics_exp/11_7_1_exp" title="11.7.1  Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem">11.7.1  Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem</a></td>
+							<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}/statistics_exp/11_3_1_exp" title="11.3.1 Relacja wskaźnika zużycia gruntów do tempa wzrostu liczby ludności">11.3.1 Relacja wskaźnika zużycia gruntów do tempa wzrostu liczby ludności</a></td>
+						</tr>
+						<tr>
+							<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}/statistics_exp/11_7_1_exp" title="11.7.1 Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem">11.7.1 Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem</a></td>
 						</tr>
 		      </tbody>
 		    </table>
