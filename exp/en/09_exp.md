@@ -257,15 +257,15 @@ layout: page_exp
 			<div style="width: 88%; display: inline-block;"><b id="tytuł_9">National regular bus transport lines - regional (km)</b></div>
 			<div id="selector" style="width: 88%; display: inline-block;">Select:
 				<div class="form-check form-check-inline" style="display: inline-block;margin-left: 10px;">
-					<input class="form-check-input" type="radio" name="dataset9" id="inlineRadio9_1" value="regionalne" onclick="createchart9('chart9', 0, 200000, 0, ['2015', '2022'], 0);" checked="checked">
+					<input class="form-check-input" type="radio" name="dataset9" id="inlineRadio9_1" value="regionalne" onclick="createchart9('chart9', 0, 200000, 0, ['2015', '2023'], 0);" checked="checked">
 					<label class="form-check-label" for="inlineRadio9_1" style="margin-top:  5px;">regional</label>
 				</div>
 				<div class="form-check form-check-inline" style="display: inline-block;margin-left: 10px;">
-					<input class="form-check-input" type="radio" name="dataset9" id="inlineRadio9_2" value="podmiejskie" onclick="createchart9('chart9', 0, 400000, 0, ['2015', '2022'], 1);">
+					<input class="form-check-input" type="radio" name="dataset9" id="inlineRadio9_2" value="podmiejskie" onclick="createchart9('chart9', 0, 400000, 0, ['2015', '2023'], 1);">
 					<label class="form-check-label" for="inlineRadio9_2" style="margin-top:  5px;">suburban</label>
 				</div>
 				<div class="form-check form-check-inline" style="display: inline-block;margin-left: 10px;">
-					<input class="form-check-input" type="radio" name="dataset9" id="inlineRadio9_3" value="miejskie" onclick="createchart9('chart9', 0, 2500, 0, ['2015', '2022'], 2);">
+					<input class="form-check-input" type="radio" name="dataset9" id="inlineRadio9_3" value="miejskie" onclick="createchart9('chart9', 0, 2500, 0, ['2015', '2023'], 2);">
 					<label class="form-check-label" for="inlineRadio9_3" style="margin-top:  5px;">urban</label>
 				</div>
 			</div>
@@ -502,7 +502,7 @@ var dane5 = [{"w1":"POLAND","w2":"ogółem","2015":34.66,"2022":29.07},{"w1":"Do
 
 			createchart8("chart8", 30);
 
-			createchart9("chart9", 0, 200000, 0, ["2015", "2022"], 0);
+			createchart9("chart9", 0, 200000, 0, ["2015", "2023"], 0);
 
 
 
