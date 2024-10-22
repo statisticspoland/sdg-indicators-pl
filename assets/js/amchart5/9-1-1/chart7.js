@@ -39,72 +39,72 @@ var chart = root.container.children.push(am5xy.XYChart.new(root, {
 
 var data = [{
   "woj": "POLSKA",
-  "miasto": 59.6,
-  "wieś": 40.4
+  "miasto": 59.5,
+  "wieś": 40.5
 }, {
   "woj": "Dolnośląskie",
-  "miasto": 67.5,
-  "wieś": 32.5
+  "miasto": 67.4,
+  "wieś": 32.6
 }, {
   "woj": "Kujawsko-Pomorskie",
-  "miasto": 58.1,
-  "wieś": 41.9
+  "miasto": 57.9,
+  "wieś": 42.1
 }, {
   "woj": "Lubelskie",
-  "miasto": 46.2,
-  "wieś": 53.8
+  "miasto": 46.1,
+  "wieś": 53.9
 }, {
   "woj": "Lubuskie",
-  "miasto": 64.3,
-  "wieś": 35.7
+  "miasto": 64.1,
+  "wieś": 35.9
 }, {
   "woj": "Łódzkie",
   "miasto": 61.8,
   "wieś": 38.2
 }, {
   "woj": "Małopolskie",
-  "miasto": 47.8,
-  "wieś": 52.2
+  "miasto": 47.9,
+  "wieś": 52.1
 }, {
   "woj": "Mazowieckie",
-  "miasto": 64.7,
-  "wieś": 35.3
+  "miasto": 64.6,
+  "wieś": 35.4
 }, {
   "woj": "Opolskie",
-  "miasto": 52.9,
-  "wieś": 47.1
+  "miasto": 52.7,
+  "wieś": 47.3
 }, {
   "woj": "Podkarpackie",
-  "miasto": 41.1,
-  "wieś": 58.9
+  "miasto": 41.0,
+  "wieś": 59.0
 }, {
   "woj": "Podlaskie",
-  "miasto": 60.9,
-  "wieś": 39.1
+  "miasto": 60.8,
+  "wieś": 39.2
 }, {
   "woj": "Pomorskie",
-  "miasto": 62.6,
-  "wieś": 37.4
+  "miasto": 62.3,
+  "wieś": 37.7
 }, {
   "woj": "Śląskie",
-  "miasto": 75.9,
-  "wieś": 24.1
+  "miasto": 75.8,
+  "wieś": 24.2
 }, {
   "woj": "Świętokrzyskie",
-  "miasto": 44.8,
-  "wieś": 55.2
+  "miasto": 45.1,
+  "wieś": 54.9
 }, {
   "woj": "Warmińsko-Mazurskie",
-  "miasto": 59.0,
-  "wieś": 41.0
+  "miasto": 58.9,
+  "wieś": 41.1
 }, {
   "woj": "Wielkopolskie",
-  "miasto": 53.3,
-  "wieś": 46.7
+  "miasto": 53.0,
+  "wieś": 47.0
 }, {
   "woj": "Zachodniopomorskie",
-  "miasto": 68.1,
-  "wieś": 31.9
+  "miasto": 68.0,
+  "wieś": 32.0
 }]
 
 
@@ -175,10 +175,10 @@ function makeSeries(name, fieldName) {
     tooltipText: "{categoryX}, {name}: {valueYTotalPercent.formatNumber('#,###.0')}%",
     tooltipY: am5.percent(10)
   });
-  
-  
-  
-  
+
+
+
+
   series.columns.template.adapters.add("fill", function(fill, target) {
   if (target.dataItem.get("categoryX") == "POLSKA") {
     if (series.get("name") == "wieś"){

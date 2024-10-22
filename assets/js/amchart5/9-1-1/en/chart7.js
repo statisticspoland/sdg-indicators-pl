@@ -38,74 +38,75 @@ var chart = root.container.children.push(am5xy.XYChart.new(root, {
 //}));
 
 var data = [{
-  "woj": "POLAND",
-  "townss": 59.6,
-  "the rural area": 40.4
-}, {
-  "woj": "Dolnośląskie",
-  "townss": 67.5,
-  "the rural area": 32.5
-}, {
-  "woj": "Kujawsko-Pomorskie",
-  "towns": 58.1,
-  "the rural area": 41.9
-}, {
-  "woj": "Lubelskie",
-  "towns": 46.2,
-  "the rural area": 53.8
-}, {
-  "woj": "Lubuskie",
-  "towns": 64.3,
-  "the rural area": 35.7
-}, {
-  "woj": "Łódzkie",
-  "towns": 61.8,
-  "the rural area": 38.2
-}, {
-  "woj": "Małopolskie",
-  "towns": 47.8,
-  "the rural area": 52.2
-}, {
-  "woj": "Mazowieckie",
-  "towns": 64.7,
-  "the rural area": 35.3
-}, {
-  "woj": "Opolskie",
-  "towns": 52.9,
-  "the rural area": 47.1
-}, {
-  "woj": "Podkarpackie",
-  "towns": 41.1,
-  "the rural area": 58.9
-}, {
-  "woj": "Podlaskie",
-  "towns": 60.9,
-  "the rural area": 39.1
-}, {
-  "woj": "Pomorskie",
-  "towns": 62.6,
-  "the rural area": 37.4
-}, {
-  "woj": "Śląskie",
-  "towns": 75.9,
-  "the rural area": 24.1
-}, {
-  "woj": "Świętokrzyskie",
-  "towns": 44.8,
-  "the rural area": 55.2
-}, {
-  "woj": "Warmińsko-Mazurskie",
-  "towns": 59.0,
-  "the rural area": 41.0
-}, {
-  "woj": "Wielkopolskie",
-  "towns": 53.3,
-  "the rural area": 46.7
-}, {
-  "woj": "Zachodniopomorskie",
-  "towns": 68.1,
-  "the rural area": 31.9
-}]
+    "woj": "POLAND",
+    "towns": 59.5,
+    "the rural area": 40.5
+  }, {
+    "woj": "Dolnośląskie",
+    "towns": 67.4,
+    "the rural area": 32.6
+  }, {
+    "woj": "Kujawsko-Pomorskie",
+    "towns": 57.9,
+    "the rural area": 42.1
+  }, {
+    "woj": "Lubelskie",
+    "towns": 46.1,
+    "the rural area": 53.9
+  }, {
+    "woj": "Lubuskie",
+    "towns": 64.1,
+    "the rural area": 35.9
+  }, {
+    "woj": "Łódzkie",
+    "towns": 61.8,
+    "the rural area": 38.2
+  }, {
+    "woj": "Małopolskie",
+    "towns": 47.9,
+    "the rural area": 52.1
+  }, {
+    "woj": "Mazowieckie",
+    "towns": 64.6,
+    "the rural area": 35.4
+  }, {
+    "woj": "Opolskie",
+    "towns": 52.7,
+    "the rural area": 47.3
+  }, {
+    "woj": "Podkarpackie",
+    "towns": 41.0,
+    "the rural area": 59.0
+  }, {
+    "woj": "Podlaskie",
+    "towns": 60.8,
+    "the rural area": 39.2
+  }, {
+    "woj": "Pomorskie",
+    "towns": 62.3,
+    "the rural area": 37.7
+  }, {
+    "woj": "Śląskie",
+    "towns": 75.8,
+    "the rural area": 24.2
+  }, {
+    "woj": "Świętokrzyskie",
+    "towns": 45.1,
+    "the rural area": 54.9
+  }, {
+    "woj": "Warmińsko-Mazurskie",
+    "towns": 58.9,
+    "the rural area": 41.1
+  }, {
+    "woj": "Wielkopolskie",
+    "towns": 53.0,
+    "the rural area": 47.0
+  }, {
+    "woj": "Zachodniopomorskie",
+    "towns": 68.0,
+    "the rural area": 32.0
+  }]
+
 
 
 // Create axes

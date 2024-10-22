@@ -230,7 +230,7 @@ layout: page_exp
 
 	<div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 5px;">
 		<div class="grid-child" style="width:100%; height: 500px;">
-			<div style="width: 86%; display: inline-block; margin-top: 15px; margin-bottom: 5px;"><b>Odsetek ludności zamieszkującej na wsi i w mieście w 2022 roku (%)</b></div>
+			<div style="width: 86%; display: inline-block; margin-top: 15px; margin-bottom: 5px;"><b>Odsetek ludności zamieszkującej na wsi i w mieście w 2023 roku (%)</b></div>
 			<div style="width: 10%; display: inline-block; text-align: right;">
 				<a title="Link do pliku csv zawierającego dane do wykresu 7" href="{{ site.baseurl }}/data/exp/9-1-1-chart7.csv"><img alt="Grafika przedstawiająca plik csv" style="vertical-align: bottom; max-width: 30px;" src="{{ site.baseurl }}/assets/img/icon_csv_dash.png"></a>
 			</div>
