@@ -3,31 +3,35 @@ function createchart1(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2022 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2023 roku (km<sup>2</sup>)";
 }
 if (d==1) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2021 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2022 roku (km<sup>2</sup>)";
 }
 if (d==2) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2020 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2021 roku (km<sup>2</sup>)";
 }
 if (d==3) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2019 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2020 roku (km<sup>2</sup>)";
 }
 if (d==4) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2018 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2019 roku (km<sup>2</sup>)";
 }
 if (d==5) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2017 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2018 roku (km<sup>2</sup>)";
 }
 if (d==6) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2016 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2017 roku (km<sup>2</sup>)";
 }
 if (d==7) {
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2016 roku (km<sup>2</sup>)";
+}
+if (d==8) {
 	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2015 roku (km<sup>2</sup>)";
 }
 
-am5.array.each(am5.registry.rootElements, 
+
+am5.array.each(am5.registry.rootElements,
 	function(root) {
 		if (typeof root !== "undefined") {
 			if (root.dom.id == div) {
@@ -39,6 +43,81 @@ am5.array.each(am5.registry.rootElements,
 
 	function getData(index) {
 		var data = [
+			// Data set #1
+	    [ {
+			"w1": "2023",
+			"ogółem": 683,
+			"year": "Gdańsk"
+			}, {
+		"w1": "2023",
+		"ogółem": 517,
+		"year": "Warszawa"
+		}, {
+		"w1": "2023",
+		"ogółem": 327,
+		"year": "Kraków"
+		}, {
+		"w1": "2023",
+		"ogółem": 301,
+		"year": "Szczecin"
+		}, {
+		"w1": "2023",
+		"ogółem": 293,
+		"year": "Łódź"
+		}, {
+		"w1": "2023",
+		"ogółem": 293,
+		"year": "Wrocław"
+		}, {
+		"w1": "2023",
+		"ogółem": 278,
+		"year": "Zielona Góra"
+		},{
+		"w1": "2023",
+		"ogółem": 262,
+		"year": "Poznań"
+		}, {
+		"w1": "2023",
+		"ogółem": 176,
+		"year": "Bydgoszcz"
+		}, {
+		"w1": "2023",
+		"ogółem": 165,
+		"year": "Katowice"
+		}, {
+		"w1": "2023",
+		"ogółem": 149,
+		"year": "Opole"
+		}, {
+		"w1": "2023",
+		"ogółem": 147,
+		"year": "Lublin"
+		}, {
+		"w1": "2023",
+		"ogółem": 129,
+		"year": "Rzeszów"
+		}, {
+		"w1": "2023",
+		"ogółem": 116,
+		"year": "Toruń"
+		}, {
+		"w1": "2023",
+		"ogółem": 110,
+		"year": "Kielce"
+		}, {
+		"w1": "2023",
+		"ogółem": 102,
+		"year": "Białystok"
+		}, {
+		"w1": "2023",
+		"ogółem": 88,
+		"year": "Olsztyn"
+		}, {
+		"w1": "2023",
+		"ogółem": 86,
+		"year": "Gorzów Wielkopolski"
+		}],
+
     // Data set #1
     [{
 	"w1": "2022",
