@@ -3,22 +3,24 @@ function createchart4(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2022";
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2023";
 }
 if (d==1) {
-	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2021";
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2022";
 }
 if (d==2) {
-	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2020";
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2021";
 }
 if (d==3) {
-	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2019";
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2020";
 }
 if (d==4) {
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2019";
+}
+if (d==5) {
 	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2018";
 }
-
-am5.array.each(am5.registry.rootElements, 
+am5.array.each(am5.registry.rootElements,
 	function(root) {
 		if (typeof root !== "undefined") {
 			if (root.dom.id == div) {
@@ -30,7 +32,81 @@ am5.array.each(am5.registry.rootElements,
 
 	function getData(index) {
 		var data = [
-    // Data set #1
+			// Data set #1
+			[{
+			"w1": "2023",
+			"ogółem": 14.5,
+			"city": "Zielona Góra"
+			}, {
+			"w1": "2023",
+			"ogółem": 52.9,
+			"city": "Wrocław"
+			}, {
+			"w1": "2023",
+			"ogółem": 82.6,
+			"city": "Warszawa"
+			}, {
+			"w1": "2023",
+			"ogółem": 66.5,
+			"city": "Toruń"
+			}, {
+			"w1": "2023",
+			"ogółem": 46.5,
+			"city": "Szczecin"
+			}, {
+			"w1": "2023",
+			"ogółem": 49.9,
+			"city": "Rzeszów"
+			}, {
+			"w1": "2023",
+			"ogółem": 54.8,
+			"city": "Poznań"
+			}, {
+			"w1": "2023",
+			"ogółem": 31.8,
+			"city": "Opole"
+			}, {
+			"w1": "2023",
+			"ogółem": 49.9,
+			"city": "Olsztyn"
+			}, {
+			"w1": "2023",
+			"ogółem": 71.8,
+			"city": "Łódź"
+			}, {
+			"w1": "2023",
+			"ogółem": 53.1,
+			"city": "Lublin"
+			}, {
+			"w1": "2023",
+			"ogółem": 58.7,
+			"city": "Kraków"
+			}, {
+			"w1": "2023",
+			"ogółem": 58.5,
+			"city": "Kielce"
+			}, {
+			"w1": "2023",
+			"ogółem": 44.4,
+			"city": "Katowice"
+			}, {
+			"w1": "2023",
+			"ogółem": 47.9,
+			"city": "Gorzów Wielkopolski"
+			}, {
+			"w1": "2023",
+			"ogółem": 18.6,
+			"city": "Gdańsk"
+			}, {
+			"w1": "2023",
+			"ogółem": 56.8,
+			"city": "Bydgoszcz"
+			}, {
+			"w1": "2023",
+			"ogółem": 68.5,
+			"city": "Białystok"
+			}],
+		// Data set #1
     [{
 	"w1": "2022",
 	"ogółem": 13.9,
@@ -402,6 +478,7 @@ am5.array.each(am5.registry.rootElements,
 	}]
 	];
 
+console.log(data);
   return data[index];
 }
 
