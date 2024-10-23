@@ -3,28 +3,32 @@ function createchart7(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2022";
+	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2023";
 }
 if (d==1) {
-	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2021";
+	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2022";
 }
 if (d==2) {
-	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2020";
+	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2021";
 }
 if (d==3) {
-	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2019";
+	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2020";
 }
 if (d==4) {
-	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2018";
+	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2019";
 }
 if (d==5) {
-	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2017";
+	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2018";
 }
 if (d==6) {
+	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2017";
+}
+
+if (d==7) {
 	document.getElementById("tytuł_7").innerHTML = "Parkings in Park and Ride system in 2016";
 }
 
-am5.array.each(am5.registry.rootElements, 
+am5.array.each(am5.registry.rootElements,
 	function(root) {
 		if (typeof root !== "undefined") {
 			if (root.dom.id == div) {
@@ -36,6 +40,66 @@ am5.array.each(am5.registry.rootElements,
 
 	function getData(index) {
 		var data = [
+			// Data set #1
+			[{
+			"w1": "2023",
+			"ogółem": 37,
+			"city": "Wrocław"
+			}, {
+			"w1": "2023",
+			"ogółem": 17,
+			"city": "Warszawa"
+			}, {
+			"w1": "2023",
+			"ogółem": 8,
+			"city": "Gdańsk"
+			}, {
+			"w1": "2023",
+			"ogółem": 6,
+			"city": "Kraków"
+			}, {
+			"w1": "2023",
+			"ogółem": 5,
+			"city": "Bydgoszcz"
+			}, {
+			"w1": "2023",
+			"ogółem": 4,
+			"city": "Lublin"
+			}, {
+			"w1": "2023",
+			"ogółem": 4,
+			"city": "Poznań"
+			}, {
+			"w1": "2023",
+			"ogółem": 4,
+			"city": "Szczecin"
+			}, {
+			"w1": "2023",
+			"ogółem": 3,
+			"city": "Katowice"
+			}, {
+			"w1": "2023",
+			"ogółem": 3,
+			"city": "Opole"
+			}, {
+			"w1": "2023",
+			"ogółem": 5,
+			"city": "Toruń"
+			}, {
+			"w1": "2023",
+			"ogółem": 1,
+			"city": "Białystok"
+			}, {
+			"w1": "2023",
+			"ogółem": 0,
+			"city": "Gorzów Wielkopolski"
+			}, {
+			"w1": "2023",
+			"ogółem": 1,
+			"city": "Kielce"
+			}],
+
+
     // Data set #1
     [{
 	"w1": "2022",
