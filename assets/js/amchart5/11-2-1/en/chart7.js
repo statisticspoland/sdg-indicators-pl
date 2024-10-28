@@ -63,9 +63,9 @@ am5.array.each(am5.registry.rootElements,
 			"city": "Bydgoszcz"
 			}, {
 			"w1": "2023",
-			"ogółem": 4,
-			"city": "Lublin"
-			}, {
+			"ogółem": 5,
+			"city": "Toruń"
+		}, {
 			"w1": "2023",
 			"ogółem": 4,
 			"city": "Poznań"
@@ -74,6 +74,10 @@ am5.array.each(am5.registry.rootElements,
 			"ogółem": 4,
 			"city": "Szczecin"
 			}, {
+				"w1": "2023",
+				"ogółem": 4,
+				"city": "Lublin"
+				},{
 			"w1": "2023",
 			"ogółem": 3,
 			"city": "Katowice"
@@ -83,21 +87,17 @@ am5.array.each(am5.registry.rootElements,
 			"city": "Opole"
 			}, {
 			"w1": "2023",
-			"ogółem": 5,
-			"city": "Toruń"
-			}, {
-			"w1": "2023",
-			"ogółem": 1,
-			"city": "Białystok"
-			}, {
-			"w1": "2023",
-			"ogółem": 0,
-			"city": "Gorzów Wielkopolski"
-			}, {
-			"w1": "2023",
 			"ogółem": 1,
 			"city": "Kielce"
-			}],
+		}, {
+		"w1": "2023",
+		"ogółem": 1,
+		"city": "Białystok"
+		}, {
+		"w1": "2023",
+		"ogółem": 0,
+		"city": "Gorzów Wielkopolski"
+		}],
 
 
     // Data set #1

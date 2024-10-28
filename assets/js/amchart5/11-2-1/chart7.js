@@ -39,52 +39,57 @@ am5.array.each(am5.registry.rootElements,
 );
 
 	function getData(index) {
-		var data = [
-			// Data set #1
-			[{
-			"w1": "2023",
-			"ogółem": 37,
-			"city": "Wrocław"
+
+			var data = [
+				// Data set #1
+				[{
+				"w1": "2023",
+				"ogółem": 37,
+				"city": "Wrocław"
+				}, {
+				"w1": "2023",
+				"ogółem": 17,
+				"city": "Warszawa"
+				}, {
+				"w1": "2023",
+				"ogółem": 8,
+				"city": "Gdańsk"
+				}, {
+				"w1": "2023",
+				"ogółem": 6,
+				"city": "Kraków"
+				}, {
+				"w1": "2023",
+				"ogółem": 5,
+				"city": "Bydgoszcz"
+				}, {
+				"w1": "2023",
+				"ogółem": 5,
+				"city": "Toruń"
 			}, {
-			"w1": "2023",
-			"ogółem": 17,
-			"city": "Warszawa"
-			}, {
-			"w1": "2023",
-			"ogółem": 8,
-			"city": "Gdańsk"
-			}, {
-			"w1": "2023",
-			"ogółem": 6,
-			"city": "Kraków"
-			}, {
-			"w1": "2023",
-			"ogółem": 5,
-			"city": "Bydgoszcz"
-			}, {
-			"w1": "2023",
-			"ogółem": 4,
-			"city": "Lublin"
-			}, {
-			"w1": "2023",
-			"ogółem": 4,
-			"city": "Poznań"
-			}, {
-			"w1": "2023",
-			"ogółem": 4,
-			"city": "Szczecin"
-			}, {
-			"w1": "2023",
-			"ogółem": 3,
-			"city": "Katowice"
-			}, {
-			"w1": "2023",
-			"ogółem": 3,
-			"city": "Opole"
-			}, {
-			"w1": "2023",
-			"ogółem": 5,
-			"city": "Toruń"
+				"w1": "2023",
+				"ogółem": 4,
+				"city": "Poznań"
+				}, {
+				"w1": "2023",
+				"ogółem": 4,
+				"city": "Szczecin"
+				}, {
+					"w1": "2023",
+					"ogółem": 4,
+					"city": "Lublin"
+					},{
+				"w1": "2023",
+				"ogółem": 3,
+				"city": "Katowice"
+				}, {
+				"w1": "2023",
+				"ogółem": 3,
+				"city": "Opole"
+				}, {
+				"w1": "2023",
+				"ogółem": 1,
+				"city": "Kielce"
 			}, {
 			"w1": "2023",
 			"ogółem": 1,
@@ -93,10 +98,6 @@ am5.array.each(am5.registry.rootElements,
 			"w1": "2023",
 			"ogółem": 0,
 			"city": "Gorzów Wielkopolski"
-			}, {
-			"w1": "2023",
-			"ogółem": 1,
-			"city": "Kielce"
 			}],
 
 
