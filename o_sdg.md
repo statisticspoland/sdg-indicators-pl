@@ -329,7 +329,7 @@ permalink: /o_sdg/
   <hr>
   <h4><b>EUROPEJSKA KOMISJA GOSPODARCZA (EKG)</b></h4>
     <div class="image-wrapper">
-      <a target="_blank" href="https://unece.org/info/publications/pub/388336" alt="Sustainable Development in the UNECE Region: Facing a Headwind in 2024" title="Zapoznaj się z publikacją Sustainable Development in the UNECE Region: Facing a Headwind in 2024"><img src="{{ site.baseurl }}/assets/img/publikacje/12_sustainable.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unece.org/info/publications/pub/388336" alt="Sustainable Development in the UNECE Region: Facing a Headwind in 2024" title="Zapoznaj się z publikacją Sustainable Development in the UNECE Region: Facing a Headwind in 2024"><img src="{{ site.baseurl }}/assets/img/publikacje/12_sustainable.PNG" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>SDG Progress Report in the UNECE Region</b></p>
 
