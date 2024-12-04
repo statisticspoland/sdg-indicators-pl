@@ -199,22 +199,22 @@ permalink: /o_sdg/
   <h4><b>GŁÓWNY URZĄD STATYSTYCZNY</b> (koordynator monitorowania SDG w Polsce)</h4>
 
   <div class="image-wrapper">
-   <a target="_blank" href="https://raportsdg.stat.gov.pl/" alt="Kobiety na drodze zrównoważonego rozwoju. Raport 2023" title="Zapoznaj się z raportem Kobiety na drodze zrównoważonego rozwoju (2023)"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2023_pl.png" align="center" alt="GUS" border="0"/></a>
+   <a target="_blank" href="https://raportsdg.stat.gov.pl/" alt="Dzieci w kontekście zrównoważonego rozwoju. Raport 2024" title="Zapoznaj się z raportem Dzieci w kontekście zrównoważonego rozwoju (2024)"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2024_pl.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Kobiety na drodze zrównoważonego rozwoju. Raport 2023</b></p>
+  <p><b>Dzieci w kontekście zrównoważonego rozwoju. Raport 2024</b></p>
 
   <p>Wydawane przez GUS od 2020 r. cyfrowe Raporty SDG podsumowują osiągnięcia Polski we wdrażaniu celów Agendy 2030. Publikacje są opracowywane corocznie, a ich tematyka dotyczy wybranych aspektów zrównoważonego rozwoju.</p>
 
-  <p>W najnowszej edycji cyfrowego Raportu SDG pt. „<b>Kobiety na drodze zrównoważonego rozwoju</b>” poszukujemy odpowiedzi m.in. na takie pytania jak:</p>
-      <p>• czy kobiety w Polsce, które częściej niż mężczyźni posiadają wyższe wykształcenie, równie często awansują?
-      <br>• ile zarabiają w porównaniu z mężczyznami na podobnych stanowiskach?
-      <br>• jaki jest odsetek kobiet w Polsce pełniących funkcje kierownicze?
-      <br>• czy Polki, mimo że częściej wykonują badania profilaktyczne, rzadziej zapadają na choroby cywilizacyjne niż Polacy?
-      <br>• jak wygląda życie seniorek w Polsce i czy starzeją się one równie aktywnie co ich rówieśnicy?</p>
+  <p>W najnowszej edycji cyfrowego Raportu SDG pt. <b>„Dzieci w kontekście zrównoważonego rozwoju”</b> poszukujemy odpowiedzi m.in. na takie pytania jak:</p>
+      <p>• w jakich warunkach żyją dzieci?
+      <br>• w jakich rodzinach się wychowują?
+      <br>• jaką mają kondycję zdrowotną?
+      <br>• jak radzą sobie w świecie cyfrowym?</p>
 
   <p><b>Archiwum:</b></p>
+  <p><a target="_blank" title="Zapoznaj się z raportem Kobiety na drodze zrównoważonego rozwoju (2023)" href="https://raportsdg.stat.gov.pl/2023/"> Kobiety na drodze zrównoważonego rozwoju. Raport 2023</a></p>
   <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo (2022)" href="https://raportsdg.stat.gov.pl/2022/"> Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo. Raport 2022</a></p>
-  <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju (2021)" href="https://raportsdg.stat.gov.pl/2021/">Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy. Raport 2021</a></p>
+  <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy (2021)" href="https://raportsdg.stat.gov.pl/2021/">Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy. Raport 2021</a></p>
   <p><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju (2020)" href="https://raportsdg.stat.gov.pl/2020/">Polska na drodze zrównoważonego rozwoju. Raport 2020</a></p>
 
   <hr>

@@ -195,23 +195,22 @@ permalink: /en/o_sdg/
   <h4><b>STATISTICS POLAND</b> (coordinator of SDG monitoring in Poland)</h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://raportsdg.stat.gov.pl/en/index.html" alt="Women on the way to sustainable development. Report 2023" title="Read a publication Women on the way to sustainable development. Report 2023" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2023_en.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://raportsdg.stat.gov.pl/en/index.html" alt="Children in the context of sustainable development. Report 2024" title="Read a publication Children in the context of sustainable development. Report 2024" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2024_en.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Women on the way to sustainable development. Report 2023</b></p>
+  <p><b>Children in the context of sustainable development. Report 2024</b></p>
 
   <p>Since 2020, Statistics Poland has been publishing digital SDG Reports summing up Poland’s progress towards the 2030 Agenda’s goals. The publications are released on an annual basis, and their thematic scope covers selected aspects of sustainable development.</p>
 
-  <p>The latest edition of digital SDG Report "<b>Women on the way to sustainable development</b>" answers the questions, among others:</p>
-      <p>• More women in Poland complete higher education than men, but are they promoted just as often?
-      <br>•	How much do they earn compared to men holding similar positions?
-      <br>•	What is the percentage of female managers?
-      <br>•	Polish women are more likely to undergo preventive examinations, but do they suffer from modern-age diseases less often than men?
-      <br>•	What is the situation of women aged 60 and more in Poland and do they age as actively as men the same age?
-      </p>
+  <p>The latest edition of digital SDG Report <b>"Children in the context of sustainable development"</b> answers the questions, among others:</p>
+      <p>• In what conditions do children live?
+      <br>•	In what kind of families do they grow up?
+      <br>•	What is their health condition?
+      <br>• How do they deal with the digital world?</p>
 
   <p><b>Archive:</b></p>
+  <p><a target="_blank" title="Read Women on the way to sustainable development. Report 2023" href="https://raportsdg.stat.gov.pl/2023/en/index.html">Women on the way to sustainable development. Report 2023</a></p>
   <p><a target="_blank" title="Read Poland on the way to SDGs. Environmentally sustainable development. Report 2022" href="https://raportsdg.stat.gov.pl/2022/en/index.html">Poland on the way to SDGs. Environmentally sustainable development. Report 2022</a></p>
-  <p><a target="_blank" title="Read Poland on the way to SDGs. Report 2021" href="https://raportsdg.stat.gov.pl/2021/en/index.html">Poland on the way to SDGs. Inclusive economic growth. Report 2021</a></p>
+  <p><a target="_blank" title="Read Poland on the way to SDGs. Inclusive economic growth. Report 2021" href="https://raportsdg.stat.gov.pl/2021/en/index.html">Poland on the way to SDGs. Inclusive economic growth. Report 2021</a></p>
   <p><a target="_blank" title="Read Poland on the way to SDGs. Report 2020" href="https://raportsdg.stat.gov.pl/2020/en/index.html">Poland on the way to SDGs. Report 2020</a></p>
 
   <hr>
@@ -222,7 +221,7 @@ permalink: /en/o_sdg/
   <p><b>Polish SDG statistics in a nutshell</b></p>
   <p>In July 2O23, halfway through the 2030 Agenda, Poland presents for the second time its progress towards the Sustainable Development Goals (SDGs) within the Voluntary National Review (VNR) at the UN High-Level Political Forum on Sustainable Development.  </p>
   <p>On this occasion, Statistics Poland, as a coordinator of SDG monitoring in Poland, prepared a brochure entitled <i>Polish SDG Statistics in a nutshell</i>, presenting Poland’s progress towards SDGs in a graphical form. The publication presents selected indicators from the set of measures monitoring Poland’s national sustainable development priorities.</p>
-
+  <br>
   <hr>
 
   <div class="image-wrapper">
@@ -252,7 +251,7 @@ permalink: /en/o_sdg/
   <p><b>Monitoring of the implementation of the Sustainable Development Goals in Poland</b></p>
   <p>The publication by the Ministry of Economic Development and Technology presents the selected activities for 2030 Agenda in Poland performed by Polish government, local government, stakeholders and universities. It describes important national and regional strategic projects and operational programs, the implementation of which may contribute to bringing the country closer to achieving progress in all dimensions of sustainable development. The publication also highlights current initiatives undertaken in connection with the Russian invasion of Ukraine. The publication is complemented with information on the monitoring of SDGs in Poland, the EU and in the World as well as selected indicators from the set of measures monitoring <a title="Go to subpage with polish priorities" href="https://sdg.gov.pl/en/priorytet/"  target="_blank">Polish priorities</a> from the <a title="Go to SDG's homepage" href="https://sdg.gov.pl/en/"  target="_blank">SDG NRP</a>, presented in graphic form.</p>
   <p>The publication is available only in Polish.</p>
-  
+
   <p><b>Archive:</b></p>
   <p><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021" href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72">Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021</a></p>
   <p><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland in 2020" href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitoring of the implementation of the Sustainable Development Goals in Poland – 2020</a></p>
