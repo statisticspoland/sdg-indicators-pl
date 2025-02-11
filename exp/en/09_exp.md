@@ -101,15 +101,16 @@ layout: page_exp
 								</div>
 
 								</div>
+								
+								<a href="{{ site.baseurl }}/assets/excel/exp/en/9.1.1_ENG.xlsx" target="_blank">
+								<button style="float: right;margin-right: 0px;"><i class="fa fa-file-excel-o" alt="Download Excel file" title="Download units' ranking in Excel" style="font-size:20px;"></i></button>
+								</a>
 
-								<div style="overflow:auto; width:100% px;">
+								<div style="overflow:auto; width:100%;">
 									<h4><b>Interpretation</b></h4>
 									<p>The indicator measures the share of the rural population living within 2 km of an all-season road in a given region in the total rural population of that voivodship/powiat/gmina in 2020.</p>
-
 									<p>National, regional, district and communal roads with bituminous surfaces (asphalt) were considered as roads that meet the condition of all-season road. Due to the nature of the indicator, the data does not apply to cities with powiat status (marked with grey areas on the map).</p>
-
 									<p>The higher the value of the indicator, the greater the percentage of the rural population in a given voivodship or powiat has access to all-season road at a distance of 2 km from their place of residence.</p>
-
 								</div>
 					  </div>
 <!-----------------Wykresy--------------------------------------->
@@ -117,6 +118,7 @@ layout: page_exp
 <div role="tabpanel" class="tab-pane" id="dashboard" style="scroll-margin-top: 500px;">
 
 <!--<h4><b>Context indicators</b></h4>-->
+
 <p style="margin-bottom: 24px;">Here you can find a set of context indicators, the data for which come from official statistics of Statistics Poland. The purpose of context indicators is to complement the results of experimental SDG statistics, deepen information on the monitored phenomena and provide support in assessing progress in implementing sustainable development.</p>
 
 	<div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 5px;">

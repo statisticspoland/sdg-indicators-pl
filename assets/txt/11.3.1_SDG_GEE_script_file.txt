@@ -292,7 +292,7 @@ var PL_population_2020 = 26968384;
 var PL_builtup_2016 = 4480;
 var PL_builtup_2021 = 4915;
 
-var LCR_PL = ((Math.log(PL_builtup_2021/PL_builtup_2016))/5)*100;
+var LCR_PL = (((PL_builtup_2021 - PL_builtup_2016) / PL_builtup_2016))/5) * 100;
 print ('Land consumption rate for Poland (in %)', LCR_PL.toFixed(2));
 
 var PGR_PL = ((Math.log(PL_population_2020/PL_population_2015))/5)*100;
