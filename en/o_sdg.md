@@ -17,7 +17,7 @@ permalink: /en/o_sdg/
 
 
 
-<div class="tab-content">
+<div class="tab-content" style="margin-bottom: 0px;">
 
   <div role="tabpanel" class="tab-pane active" id="sdg" style="scroll-margin-top: 500px;">
   <h4><b>ON THE 2030 AGENDA AND SDGs (SUSTAINABLE DEVELOPMENT GOALS)</b></h4>
@@ -207,13 +207,29 @@ permalink: /en/o_sdg/
       <br>•	What is their health condition?
       <br>• How do they deal with the digital world?</p>
 
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read Women on the way to sustainable development. Report 2023" href="https://raportsdg.stat.gov.pl/2023/en/index.html">Women on the way to sustainable development. Report 2023</a></p>
-  <p><a target="_blank" title="Read Poland on the way to SDGs. Environmentally sustainable development. Report 2022" href="https://raportsdg.stat.gov.pl/2022/en/index.html">Poland on the way to SDGs. Environmentally sustainable development. Report 2022</a></p>
-  <p><a target="_blank" title="Read Poland on the way to SDGs. Inclusive economic growth. Report 2021" href="https://raportsdg.stat.gov.pl/2021/en/index.html">Poland on the way to SDGs. Inclusive economic growth. Report 2021</a></p>
-  <p><a target="_blank" title="Read Poland on the way to SDGs. Report 2020" href="https://raportsdg.stat.gov.pl/2020/en/index.html">Poland on the way to SDGs. Report 2020</a></p>
 
-  <hr>
+
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample1">
+  <div class="card card-body">
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read Women on the way to sustainable development. Report 2023" href="https://raportsdg.stat.gov.pl/2023/en/index.html">Women on the way to sustainable development. Report 2023</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read Poland on the way to SDGs. Environmentally sustainable development. Report 2022" href="https://raportsdg.stat.gov.pl/2022/en/index.html">Poland on the way to SDGs. Environmentally sustainable development. Report 2022</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read Poland on the way to SDGs. Inclusive economic growth. Report 2021" href="https://raportsdg.stat.gov.pl/2021/en/index.html">Poland on the way to SDGs. Inclusive economic growth. Report 2021</a></p>
+	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read Poland on the way to SDGs. Report 2020" href="https://raportsdg.stat.gov.pl/2020/en/index.html">Poland on the way to SDGs. Report 2020</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
 
   <div class="image-wrapper">
    <a target="_blank" href="https://stat.gov.pl/en/topics/other-studies/other-aggregated-studies/polish-sdg-statistics-in-a-nutshell,33,1.html" alt="Polish SDG Statistics in a nutshell" title="Read a publication Polish SDG statistics in a nutshell"><img src="{{ site.baseurl }}/assets/img/publikacje/polish_SDG_statistics_in_a_nutshell.PNG" align="center" alt="GUS" border="0"/></a>
@@ -252,11 +268,28 @@ permalink: /en/o_sdg/
   <p>The publication by the Ministry of Economic Development and Technology presents the selected activities for 2030 Agenda in Poland performed by Polish government, local government, stakeholders and universities. It describes important national and regional strategic projects and operational programs, the implementation of which may contribute to bringing the country closer to achieving progress in all dimensions of sustainable development. The publication also highlights current initiatives undertaken in connection with the Russian invasion of Ukraine. The publication is complemented with information on the monitoring of SDGs in Poland, the EU and in the World as well as selected indicators from the set of measures monitoring <a title="Go to subpage with polish priorities" href="https://sdg.gov.pl/en/priorytet/"  target="_blank">Polish priorities</a> from the <a title="Go to SDG's homepage" href="https://sdg.gov.pl/en/"  target="_blank">SDG NRP</a>, presented in graphic form.</p>
   <p>The publication is available only in Polish.</p>
 
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021" href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72">Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021</a></p>
-  <p><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland in 2020" href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitoring of the implementation of the Sustainable Development Goals in Poland – 2020</a></p>
 
-<hr>
+
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample2">
+  <div class="card card-body">
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021" href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72">Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021</a></p>
+	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland in 2020" href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitoring of the implementation of the Sustainable Development Goals in Poland – 2020</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
+
 <div class="image-wrapper">
    <a target="_blank" href="https://www.gov.pl/attachment/f18da2e5-5384-4040-8fc7-c55d67e56378" alt="The 2030 Agenda in Poland. National priorities – joint actions" title="Read a publication The 2030 Agenda in Poland. National priorities – joint actions"><img src="{{ site.baseurl }}/assets/img/publikacje/9_agenda2030.png" align="center" alt="GUS" border="0"/></a>
 </div>
@@ -279,13 +312,29 @@ permalink: /en/o_sdg/
 <p>The publication indicates Poland’s experiences so far, updated national development priorities and national approach to the realisation of individual SDGs in context of challenges related to the recovery after the COVID-19 pandemic and Russian aggression in Ukraine.</p>
 <p>The report is supplemented with a Statistical Annex, prepared by Statistics Poland; it contains a graphic presentation of Poland’s progress in the implementation of the SDGs. It presents the selected indicators (two for each SDG) contained in the set monitoring the <a target="_blank" title="Read about priorities for Poland" href="https://sdg.gov.pl/en/priorytet/ "> national sustainable development priorities</a>.</p>
 
-<p><b>Archive:</b></p>
-<p><a target="_blank" title="Read a publication Implementation of the Sustainable Development Goals in Poland. The 2018 National Report." href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030">Implementation of the Sustainable Development Goals in Poland. The 2018 National Report.</a></p>
-<p>
-<br><br><br></p>
 
-  <hr style="border-top-width: 10px;">
 
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample3">
+  <div class="card card-body">
+	<p style="margin-bottom: 20px;margin-top: 0px;"><a target="_blank" title="Read a publication Implementation of the Sustainable Development Goals in Poland. The 2018 National Report." href="https://www.gov.pl/web/rozwoj-technologia/monitoring-realizacji-agendy-2030">Implementation of the Sustainable Development Goals in Poland. The 2018 National Report.</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <p style="margin-top: 0px;margin-bottom: 0px;">
+  <br><br><br></p>
+
+<hr style="border-top-width: 10px;margin-top: 0px;">
 
   <a id="pub_zagraniczne_en" style="scroll-margin-top: 197px;"></a><h4><b style="font-size:20px;text-decoration: none;">INTERNATIONAL PUBLICATIONS</b></h4>
   <h4><b>UNITED NATIONS (UN)</b></h4>
@@ -297,16 +346,31 @@ permalink: /en/o_sdg/
 
   <p>The report reviews progress in the following years of implementation of the 2030 Agenda for Sustainable Development. The 2024 edition details the significant challenges the world is facing in making substantial strides towards achieving the SDGs based on the latest data and estimates. It features areas with setbacks (e.g. progressive loss of biodiversity or insufficient progress in equalizing gender differences) while also showcasing where tangible progress has been made (e.g. in reducing global child mortality, preventing HIV infection, and access to energy and mobile broadband). The report also highlights where action needs to be accelerated. Particular attention was paid to critical areas undermining SDG progress, including: climate change, peace and security or inequalities between countries.</p>
 
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2023" href="https://unstats.un.org/sdgs/report/2023/">The Sustainable Development Goals Report 2023</a></p>
-  <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2022" href="https://unstats.un.org/sdgs/report/2022/">The Sustainable Development Goals Report 2022</a></p>
-  <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2021" href="https://unstats.un.org/sdgs/report/2021/">The Sustainable Development Goals Report 2021</a></p>
-  <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2020" href="https://unstats.un.org/sdgs/report/2020/">The Sustainable Development Goals Report 2020</a></p>
-  <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2019" href="https://unstats.un.org/sdgs/report/2019/">The Sustainable Development Goals Report 2019</a></p>
-  <p><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2018" href="https://unstats.un.org/sdgs/report/2018/">The Sustainable Development Goals Report 2018</a></p>
 
 
-  <hr>
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample4">
+  <div class="card card-body">
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2023" href="https://unstats.un.org/sdgs/report/2023/">The Sustainable Development Goals Report 2023</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2022" href="https://unstats.un.org/sdgs/report/2022/">The Sustainable Development Goals Report 2022</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2021" href="https://unstats.un.org/sdgs/report/2021/">The Sustainable Development Goals Report 2021</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2020" href="https://unstats.un.org/sdgs/report/2020/">The Sustainable Development Goals Report 2020</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2019" href="https://unstats.un.org/sdgs/report/2019/">The Sustainable Development Goals Report 2019</a></p>
+	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2018" href="https://unstats.un.org/sdgs/report/2018/">The Sustainable Development Goals Report 2018</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
 
     <div class="image-wrapper">
       <a target="_blank" href="https://dashboards.sdgindex.org/" alt="Sustainable Development Report" title="Read a publication Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2024.png" align="center" alt="GUS" border="0"/></a>
@@ -316,15 +380,31 @@ permalink: /en/o_sdg/
   <p>The Sustainable Development Report (SDR), developed by Sustainable Development Solutions Network (UN SDSN) and the Bertelsmann Stiftung, reviews progress on SDGs made each year by UN Member States. The SDR contains the SDG index and SDG dashboard, tools allowing the assessment of each country’s overall performance on the SDGs and identifying country's strengths and weaknesses in relation to the 17 Goals both with the global trends in this area.</p>
   <p>This year’s edition also presents a new index of countries’ support to UN-based multilateralism and discusses long-term pathways to attain sustainable food and land systems.</p>
 
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a publication Sustainable Development Report 2023" href="https://sdgtransformationcenter.org/reports/sustainable-development-report-2023">Sustainable Development Report 2023</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable Development Report 2022" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/">Sustainable Development Report 2022</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable Development Report 2021" href="https://www.sdgindex.org/reports/sustainable-development-report-2021/">Sustainable Development Report 2021</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable Development Report 2020" href="https://www.sdgindex.org/reports/sustainable-development-report-2020/">Sustainable Development Report 2020</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable Development Report 2019" href="https://www.sdgindex.org/reports/sustainable-development-report-2019/">Sustainable Development Report 2019</a></p>
 
 
-  <hr>
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample5">
+  <div class="card card-body">
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication Sustainable Development Report 2023" href="https://sdgtransformationcenter.org/reports/sustainable-development-report-2023">Sustainable Development Report 2023</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable Development Report 2022" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/">Sustainable Development Report 2022</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable Development Report 2021" href="https://www.sdgindex.org/reports/sustainable-development-report-2021/">Sustainable Development Report 2021</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable Development Report 2020" href="https://www.sdgindex.org/reports/sustainable-development-report-2020/">Sustainable Development Report 2020</a></p>
+	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable Development Report 2019" href="https://www.sdgindex.org/reports/sustainable-development-report-2019/">Sustainable Development Report 2019</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
+
   <h4><b>UN ECONOMIC COMMISSION FOR EUROPE (UNECE)</b></h4>
     <div class="image-wrapper">
       <a target="_blank" href="https://unece.org/info/publications/pub/388336" alt="Sustainable Development in the UNECE Region: Facing a Headwind in 2024" title="Read a publication Sustainable Development in the UNECE Region: Facing a Headwind in 2024"><img src="{{ site.baseurl }}/assets/img/publikacje/12_sustainable.PNG" align="center" alt="GUS" border="0"/></a>
@@ -334,13 +414,29 @@ permalink: /en/o_sdg/
   <p>The report provides a progress assessment of the 2030 Agenda’s implementation in the UNECE region, based on the data available in the <a title="Go to UNECE global SDG database" href="https://unstats.un.org/sdgs/dataportal" target="_blank">United Nations Global SDG Indicators Database</a>.</p>
   <p>The latest edition of the report <em>Sustainable Development in the UNECE Region: Facing a Headwind in 2024</em> beside assessing the advancement of SDG targets and goals in the UNECE region, also provides <a target="_blank" href="https://w3.unece.org/sdg2023/stories.html" alt="UNECE Stories" title="Read UNECE Stories">stories</a> about the ways in which regional and country-level actions relate to sustainable development outcomes.</p>
 
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a publication Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?" href="https://unece.org/statistics/publications/growing-challenges-sustainable-development-can-unece-region-turn-tide-2023">Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?</a></p>
-  <p><a target="_blank" title="Read a publication Halfway to 2030: How many targets will be achieved in the UNECE region?" href="https://unece.org/info/Statistics/pub/365798">Halfway to 2030: How many targets will be achieved in the UNECE region?</a></p>
-  <p><a target="_blank" title="Read a publication Is the UNECE region on track for 2030?" href="https://unece.org/info/Statistics/pub/353864">Is the UNECE region on track for 2030?</a></p>
 
 
-  <hr>
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample6">
+  <div class="card card-body">
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?" href="https://unece.org/statistics/publications/growing-challenges-sustainable-development-can-unece-region-turn-tide-2023">Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Halfway to 2030: How many targets will be achieved in the UNECE region?" href="https://unece.org/info/Statistics/pub/365798">Halfway to 2030: How many targets will be achieved in the UNECE region?</a></p>
+	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a publication Is the UNECE region on track for 2030?" href="https://unece.org/info/Statistics/pub/353864">Is the UNECE region on track for 2030?</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
+
     <div class="image-wrapper">
       <a target="_blank" href="https://unece.org/statistics/publications/CES-roadmap-sdg-2" alt="Road Map on Statistics for Sustainable Development Goals – Second Edition" title="Read a publication Road Map on Statistics for Sustainable Development Goals – Second Edition"><img src="{{ site.baseurl }}/assets/img/publikacje/13_roadmap.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -354,11 +450,27 @@ permalink: /en/o_sdg/
   <p>The Road Map was prepared by the Steering Group on Statistics for SDGs, established in February 2016 by the CES Bureau within the UN Economic Commission for Europe. The Group has been co-chaired by Poland and Sweden since 2018.</p>
   <p>Poland’s representatives played an in important part in developing of the Road Map as its editors and authors of two sections in it (Beyond global monitoring and Voluntary National Reviews). The publication also includes examples of Polish initiatives (<a title="Go to examples of Polish initiatives" href="https://unece.org/statistics/rm-country-case-studies" target="_blank">case studies</a>) i.a. Statistics Poland’s involvement in development of SDG indicators for business (<a title="Go to SDG indicators for business" href="https://sdg.gov.pl/en/o_sdg/#bis" target="_blank">Impact Barometer</a>).</p>
 
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a publication Road Map on Statistics for Sustainable Development Goals" href="https://unece.org/statistics/publications/road-map-statistics-sustainable-development-goals">Road Map on Statistics for Sustainable Development Goals</a></p>
 
 
-  <hr>
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample7">
+  <div class="card card-body">
+	<p style="margin-bottom: 20px;margin-top: 0px;"><a target="_blank" title="Read a publication Road Map on Statistics for Sustainable Development Goals" href="https://unece.org/statistics/publications/road-map-statistics-sustainable-development-goals">Road Map on Statistics for Sustainable Development Goals</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
+
   <h4><b>EUROPEAN UNION (EU)</b></h4>
 
 
@@ -369,17 +481,34 @@ permalink: /en/o_sdg/
 
   <p>The publication, issued by Eurostat annually since 2017, is a monitoring report on the progress towards achieving the Sustainable Development Goals in an EU context. The reports consider two periods: the short term, accounting for progress over the past five years, and the long term, looking at the trends over the last 15 years. The analysis presented in the reports is based on a set of about 100 SDG indicators (structured along the 17 SDGs and closely linked to EU policies), available in the <a title="Go to Eurostat SDG database" href="https://ec.europa.eu/eurostat/web/sdi/overview" target="_blank">Eurostat database</a>.
   <p>The report published in 2024 analyzes, among others: the impact of recent events affecting the implementation of the Sustainable Development Goals (these events include the COVID-19 pandemic, Russia's invasion of Ukraine and the subsequent energy crisis). In addition it contains a section on the analysis of the EU in the world, including a comparison of the EU with other large economies, as well as an analysis of global spillover effects caused by consumption in the EU.</p>
-  <br><br></p>
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2023)" href="https://ec.europa.eu/eurostat/documents/15234730/16817772/KS-04-23-184-EN-N.pdf/845a1782-998d-a767-b097-f22ebe93d422?version=2.0&t=1688373085450">Monitoring report on progress towards the SDGs in an EU context - 2023 edition</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2022)" href="https://ec.europa.eu/eurostat/documents/3217494/14665254/KS-09-22-019-EN-N.pdf/2edccd6a-c90d-e2ed-ccda-7e3419c7c271?t=1654253664613">Monitoring report on progress towards the SDGs in an EU context - 2022 edition</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2021)" href="https://ec.europa.eu/eurostat/documents/15234730/15241861/KS-03-21-096-EN-N.pdf/e8413539-6c6a-131f-45d7-6af7178a0b67?t=1667395592318">Monitoring report on progress towards the SDGs in an EU context - 2021 edition</a></p>  
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/3217494/11011074/KS-02-20-202-EN-N.pdf/334a8cfe-636a-bb8a-294a-73a052882f7f">Monitoring report on progress towards the SDGs in an EU context - 2020 edition</a></p>  
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2019)" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820">Monitoring report on progress towards the SDGs in an EU context - 2019 edition</a></p>  
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2018)" href="https://ec.europa.eu/eurostat/documents/15234730/15229310/KS-01-18-656-EN-N.pdf/af0d775e-7874-d79b-548a-2c0055d8d24b?t=1667250557724">Monitoring report on progress towards the SDGs in an EU context - 2018 edition</a></p>  
+  </p>
 
 
-  <hr>
+
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample8">
+  <div class="card card-body">
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2023)" href="https://ec.europa.eu/eurostat/documents/15234730/16817772/KS-04-23-184-EN-N.pdf/845a1782-998d-a767-b097-f22ebe93d422?version=2.0&t=1688373085450">Monitoring report on progress towards the SDGs in an EU context - 2023 edition</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2022)" href="https://ec.europa.eu/eurostat/documents/3217494/14665254/KS-09-22-019-EN-N.pdf/2edccd6a-c90d-e2ed-ccda-7e3419c7c271?t=1654253664613">Monitoring report on progress towards the SDGs in an EU context - 2022 edition</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2021)" href="https://ec.europa.eu/eurostat/documents/15234730/15241861/KS-03-21-096-EN-N.pdf/e8413539-6c6a-131f-45d7-6af7178a0b67?t=1667395592318">Monitoring report on progress towards the SDGs in an EU context - 2021 edition</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/3217494/11011074/KS-02-20-202-EN-N.pdf/334a8cfe-636a-bb8a-294a-73a052882f7f">Monitoring report on progress towards the SDGs in an EU context - 2020 edition</a></p>  
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2019)" href="https://ec.europa.eu/eurostat/documents/3217494/9940483/KS-02-19-165-EN-N.pdf/1965d8f5-4532-49f9-98ca-5334b0652820">Monitoring report on progress towards the SDGs in an EU context - 2019 edition</a></p>
+	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable development in the European Union — Monitoring report on progress towards the SDGs in an EU context (2018)" href="https://ec.europa.eu/eurostat/documents/15234730/15229310/KS-01-18-656-EN-N.pdf/af0d775e-7874-d79b-548a-2c0055d8d24b?t=1667250557724">Monitoring report on progress towards the SDGs in an EU context - 2018 edition</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
+
   <div class="image-wrapper">
       <a target="_blank" href="https://ec.europa.eu/eurostat/documents/4031688/19398139/KS-05-24-072-EN-N.pdf/021a09dd-277d-87d1-e347-867f0263ab59?version=1.1&t=1718618520865" alt="Sustainable development in the European Union Statistical annex to the EU voluntary review 2023 edition" title="Read a publication Sustainable development in the European Union Statistical annex to the EU voluntary review 2023 edition"><img src="{{ site.baseurl }}/assets/img/publikacje/5_sdg_in_ue_2024.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -387,16 +516,34 @@ permalink: /en/o_sdg/
 
   <p>The publication is a simplified version of the publication "Sustainable development in the European Union - Monitoring report on progress towards the SDGs in an EU context". It presents in a concise and graphical way progress towards achieving the Sustainable Development Goals in the EU. The brochure is based on a set of about 100 EU indicators assigned to the 17 Sustainable Development Goals.</p>
 
-  <br><br><br><br></p>
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2023)" href="https://ec.europa.eu/eurostat/documents/7870049/16817926/KS-05-23-188-EN-N.pdf/3b2ee0b2-5bc8-d139-ed93-af99827dc50a?version=2.0&t=1688373164670">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2023 edition</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2022)" href="https://ec.europa.eu/eurostat/documents/4031688/14665125/KS-06-22-017-EN-N.pdf/8febd4ca-49e4-abd3-23ca-76c48eb4b4e6?t=1653033908879">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2022 edition</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2021)" href="https://ec.europa.eu/eurostat/documents/4031688/12878925/KS-03-21-097-EN-N.pdf/c7d90bf7-c3ae-00b5-7804-80526931036b?t=1623827181153">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2021 edition</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/4031688/11010788/KS-01-20-192-EN-N.pdf/ae63aff0-a6f3-1d47-da83-c6886b9daaab">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2020 edition</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2019)" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2019 edition</a></p>
-  <p><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2018)" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2018 edition</a></p>
+  <br><br><br></p>
 
-  <hr>
+
+
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample9">
+  <div class="card card-body">
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2023)" href="https://ec.europa.eu/eurostat/documents/7870049/16817926/KS-05-23-188-EN-N.pdf/3b2ee0b2-5bc8-d139-ed93-af99827dc50a?version=2.0&t=1688373164670">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2023 edition</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2022)" href="https://ec.europa.eu/eurostat/documents/4031688/14665125/KS-06-22-017-EN-N.pdf/8febd4ca-49e4-abd3-23ca-76c48eb4b4e6?t=1653033908879">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2022 edition</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2021)" href="https://ec.europa.eu/eurostat/documents/4031688/12878925/KS-03-21-097-EN-N.pdf/c7d90bf7-c3ae-00b5-7804-80526931036b?t=1623827181153">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2021 edition</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2020)" href="https://ec.europa.eu/eurostat/documents/4031688/11010788/KS-01-20-192-EN-N.pdf/ae63aff0-a6f3-1d47-da83-c6886b9daaab">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2020 edition</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2019)" href="https://ec.europa.eu/eurostat/documents/4031688/9925908/KS-02-19-166-EN-N.pdf/e985fa37-b510-4cae-b30e-c247989163d9">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2019 edition</a></p>
+	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context (2018)" href="https://ec.europa.eu/eurostat/en/web/products-catalogues/-/KS-02-18-827">Sustainable development in the European Union – Overview of progress towards the SDGs in an EU context - 2018 edition</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
+
   <div class="image-wrapper">
       <a target="_blank" href="https://s3.amazonaws.com/sustainabledevelopment.report/2021/Europe+Sustainable+Development+Report+2021.pdf" alt="Europe Sustainable Development Report" title="Read a publication Europe Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/14_europe_sustainable.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -405,10 +552,28 @@ permalink: /en/o_sdg/
   <p>The report is a publication on the progress of the Europe, including European Union, EU Member States and other European countries towards Sustainable Development Goals (SDGs). Report prepared by Sustainable Development Solutions Network (SDSN) and the Institute for European Environmental Policy (IEEP) presents SDG Index and SDG Dashboard that allow the assessment of the overall performance on the 2030 Agenda and its goals in Europe.
 
   <br><br><br></p>
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a publication Europe Sustainable Development Report 2020" href="https://s3.amazonaws.com/sustainabledevelopment.report/2020/europe_sustainable_development_report_2020.pdf">Europe Sustainable Development Report 2020</a></p>
 
-  <hr>
+
+
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample10">
+  <div class="card card-body">
+	<p style="margin-bottom: 20px;margin-top: 0px;"><a target="_blank" title="Read a publication Europe Sustainable Development Report 2020" href="https://s3.amazonaws.com/sustainabledevelopment.report/2020/europe_sustainable_development_report_2020.pdf">Europe Sustainable Development Report 2020</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
+
   <h4><b>ORGANIZATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD)</b></h4>
 
   <div class="image-wrapper">
@@ -417,14 +582,31 @@ permalink: /en/o_sdg/
   <p><b>The Short and Winding Road to 2030 - Measuring Distance to the SDG Targets</b></p>
 
   <p>The publication assesses the distance that OECD countries need to travel to meet SDG targets. It is based on the IAEG Global Indicator List and using data from the <a title="Go to UN SDG Database" href="https://unstats.un.org/sdgs/dataportal" target="_blank">UN SDG Database</a> and <a title="Go to OECD SDG Database" href="https://www.oecd.org/statistics/listofoecddatabases.htm" target="_blank">OECD Databases</a>.</p>
-  <p>The latest edition of the report <em>The Short and Winding Road to 2030: Measuring Distance to the SDG Targets</em> evaluates the direction and pace of SDG realization in OECD countries, but it goes one step further and deepens the analysis by identifying long-term trends, considering also how these trends may be impacted by the COVID-19 pandemic. The publication is supplemented with country profiles including information on country strengths and weaknesses in terms of SDGs as well as the distance they need to travel to meet the SDG targets.</p>
-  <br><br></p>
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a publication Measuring Distance to the SDG Targets 2019. An Assessment of Where OECD Countries Stand" href="https://www.oecd.org/wise/measuring-distance-to-the-sdg-targets-2019-a8caf3fa-en.htm">Measuring Distance to the SDG Targets 2019. An Assessment of Where OECD Countries Stand</a></p>
-  <p><a target="_blank" title="Read a publication Measuring Distance to the SDG Targets 2017. An Assessment of Where OECD Countries Stand" href="https://www.oecd.org/economy/measuring-distance-to-the-sdg-targets-2017-9789264308183-en.htm">Measuring Distance to the SDG Targets 2017. An Assessment of Where OECD Countries Stand</a></p>
+  <p>The latest edition of the report <em>The Short and Winding Road to 2030: Measuring Distance to the SDG Targets</em> evaluates the direction and pace of SDG realization in OECD countries, but it goes one step further and deepens the analysis by identifying long-term trends, considering also how these trends may be impacted by the COVID-19 pandemic. The publication is supplemented with country profiles including information on country strengths and weaknesses in terms of SDGs as well as the distance they need to travel to meet the SDG targets.
+  <br></p>
 
 
-  <hr>
+
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample11">
+  <div class="card card-body">
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication Measuring Distance to the SDG Targets 2019. An Assessment of Where OECD Countries Stand" href="https://www.oecd.org/wise/measuring-distance-to-the-sdg-targets-2019-a8caf3fa-en.htm">Measuring Distance to the SDG Targets 2019. An Assessment of Where OECD Countries Stand</a></p>
+	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a publication Measuring Distance to the SDG Targets 2017. An Assessment of Where OECD Countries Stand" href="https://www.oecd.org/economy/measuring-distance-to-the-sdg-targets-2017-9789264308183-en.htm">Measuring Distance to the SDG Targets 2017. An Assessment of Where OECD Countries Stand</a></p>
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
+
     <div class="image-wrapper">
       <a target="_blank" href="https://www.oecd.org/cfe/a-territorial-approach-to-the-sustainable-development-goals-e86fa715-en.htm" alt="A Territorial Approach to the Sustainable Development Goals. Synthesis report" title="Read a publication A Territorial Approach to the Sustainable Development Goals. Synthesis report"><img src="{{ site.baseurl }}/assets/img/publikacje/16_territorial.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -442,11 +624,27 @@ permalink: /en/o_sdg/
 
   <p>The Green Growth Strategy adopted in 2011 by OECD provides guidance on how to achieve economic growth and development, while preventing costly environmental damage and inefficient resource use. The report Towards Green Growth? Tracking Progress attempts to evaluate progress that countries have made since the adoption of the Strategy in aligning economic and environmental priorities.</p>
 
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" href="http://www.oecd.org/env/towards-green-growth-9789264111318-en.htm" title="Read a publication Towards Green Growth">Towards Green Growth</a></p>  
 
 
-  <hr>
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample12" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample12">
+  <div class="card card-body">
+	<p style="margin-bottom: 20px;margin-top: 0px;"><a target="_blank" href="http://www.oecd.org/env/towards-green-growth-9789264111318-en.htm" title="Read a publication Towards Green Growth">Towards Green Growth</a></p> 
+  </div>
+</div>
+
+
+
+
+
+  <hr style="margin-top: 0px;">
+
   <div class="image-wrapper">
       <a target="_blank" href="https://www.oecd-ilibrary.org/economics/how-s-life_23089679" alt="How’s Life? 2020. Measuring Well-being" title="Read a publication How’s Life? 2020. Measuring Well-being"><img src="{{ site.baseurl }}/assets/img/publikacje/9_hows_life.png" align="center" alt="GUS" border="0"/></a>
   </div>
@@ -455,13 +653,30 @@ permalink: /en/o_sdg/
 
   <p>The publication <em>How's Life?</em> describes the key elements that shape people’s well-being in OECD and partner countries. It includes a wide variety of statistics, capturing both material well-being (such as income, jobs, housing), as well as other aspects of quality of people’s life (such as health, education, work-life balance, environment). The report, in addition to the results of the latest research, also shows the changes that have occurred over time and how the distribution of well-being among different groups of the population has changed.</p>
 
-  <p><b>Archive:</b></p>
-  <p><a target="_blank" title="Read a publication How’s Life? 2017. Measuring Well-being" href="https://www.oecd-ilibrary.org/economics/how-s-life-2017_how_life-2017-en">How’s Life? 2017. Measuring Well-being</a></p>  
-  <p><a target="_blank" title="Read a publication How’s Life? 2015. Measuring Well-being" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en">How’s Life? 2015. Measuring Well-being</a></p>  
-  <p><a target="_blank" title="Read a publication How’s Life? 2013. Measuring Well-being" href="https://www.oecd-ilibrary.org/economics/how-s-life-2013_9789264201392-en">How’s Life? 2013. Measuring Well-being</a></p>  
-  <p><a target="_blank" title="Read a publication How’s Life? 2011. Measuring Well-being" href="https://www.oecd-ilibrary.org/economics/how-s-life_9789264121164-en">How’s Life? 2011. Measuring Well-being</a></p>  
+
+
+
+
+<p style="margin-bottom: 20px;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample13" style="background-color: grey;">
+    Archive
+  </button>
+</p>
+<div class="collapse" id="collapseExample13">
+  <div class="card card-body">
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication How’s Life? 2017. Measuring Well-being" href="https://www.oecd-ilibrary.org/economics/how-s-life-2017_how_life-2017-en">How’s Life? 2017. Measuring Well-being</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication How’s Life? 2015. Measuring Well-being" href="https://www.oecd-ilibrary.org/economics/how-s-life-2015_how_life-2015-en">How’s Life? 2015. Measuring Well-being</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication How’s Life? 2013. Measuring Well-being" href="https://www.oecd-ilibrary.org/economics/how-s-life-2013_9789264201392-en">How’s Life? 2013. Measuring Well-being</a></p>
+	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a publication How’s Life? 2011. Measuring Well-being" href="https://www.oecd-ilibrary.org/economics/how-s-life_9789264121164-en">How’s Life? 2011. Measuring Well-being</a></p>
+  </div>
+</div>
+
+
+
+
 
   </div>
+
 
   <div role="tabpanel" class="tab-pane" id="gus" style="scroll-margin-top: 500px;">
   <h4><b>SDG4FUN</b></h4>
@@ -497,7 +712,10 @@ permalink: /en/o_sdg/
   </div>
 
 </div>
-<hr>
+
+
+
+
 
 <script>
 $(document).ready(function() {
