@@ -216,7 +216,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -276,7 +276,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -319,7 +319,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -354,7 +354,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -388,7 +388,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -422,7 +422,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -459,7 +459,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -492,7 +492,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -526,7 +526,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -561,7 +561,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -594,7 +594,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -634,7 +634,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample12" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample12" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
@@ -663,7 +663,7 @@ permalink: /o_sdg/
 
 
 <p style="margin-bottom: 20px;">
-  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample13" style="background-color: grey;">
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample13" style="background-color: dimgray;">
     Archiwum
   </button>
 </p>
