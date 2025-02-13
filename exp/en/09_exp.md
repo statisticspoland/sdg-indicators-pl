@@ -103,7 +103,7 @@ layout: page_exp
 								</div>
 								
 								<a href="{{ site.baseurl }}/assets/excel/exp/en/9.1.1_ENG.xlsx" target="_blank">
-								<button style="float: right;margin-right: 0px;"><i class="fa fa-file-excel-o" alt="Download Excel file" title="Download units' ranking in Excel" style="font-size:20px;"></i></button>
+								<button style="float: right;margin-right: 0px;">Download data for all units</button>
 								</a>
 
 								<div style="overflow:auto; width:100%;">
