@@ -30,11 +30,17 @@ layout: page_exp
       <div class="usa-font-lead intro-paragraph">
         <div style="font-weight: bold">About experimental SDG indicators</div>
         <p style="font-size: 16px;">Due to the wide scope of the SDGs, not all SDG measures are possible to obtain based on traditional data sources (e.g. surveys, reporting, censuses, registers). In order to fill in any information gaps, seeking new data sources for SDG indicators is a must. Statistics Poland conducts research and development work in this regard using non-traditional methods and new methodological approaches.</p>
-        <p style="font-size: 16px;">In 2023, using satellite remote sensing and integrating various data sources, Statistics Poland developed the first experimental SDG indicators to evaluate sustainable development. These indicators monitor:</p>
-        <p style="font-size: 16px;">• access to roads in rural areas (Goal 9. Industry, innovation and infrastructure),<br />
-           • convenient access to public transport (Goal 11. Sustainable cities and communities),<br />
-           • access to open public areas (Goal 11. Sustainable cities and communities),<br />
-           • management of urban land (Goal 11. Sustainable cities and communities).</p>
+
+        <p style="font-size: 16px;">In 2023, Statistics Poland developed the first experimental SDG indicators to assess sustainable development (published in 2024). For their calculation – depending on the type of indicator – various data sources were integrated, such as satellite remote sensing, geolocational data, and information from open databases. They focused on:</p>
+        <p style="font-size: 16px;margin-left: 15px;">
+           • access to roads in rural areas (Goal 9: Industry, Innovation, and Infrastructure),<br />
+           • convenient access to public transport (Goal 11: Sustainable Cities and Communities),<br />
+           • access to open public spaces (Goal 11: Sustainable Cities and Communities),<br />
+           • urban land management (Goal 11: Sustainable Cities and Communities).</p>
+        <p style="font-size: 16px;">In 2024, Statistics Poland developed (and made available in 2025) additional experimental SDG indicators related to biodiversity, using geospatial analysis. These include:</p>
+        <p style="font-size: 16px;margin-left: 15px;">
+           • the percentage of terrestrial and surface water areas critical for biodiversity covered by protection (Goal 15: Life on Land),<br />
+           • the percentage of key biodiversity areas in mountain regions covered by protection (Goal 15: Life on Land).</p>
         <p style="font-size: 16px;">Work is underway to make further experimental SDG indicators available.</p>
       </div>
 
@@ -42,7 +48,7 @@ layout: page_exp
         <div style="font-weight: bold">About the experimental SDG indicators website</div>
         <p style="font-size: 16px;">A new tool for sharing experimental SDG statistics is being developed in response to the growing demand for SDG data that goes beyond the standard scope of information offered by statistics.</p>
         <p style="font-size: 16px;">To meet the recipients’ expectations, the experimental SDG statistics website contains:</p>
-        <p style="font-size: 16px;">• innovative SDG indicators in new cross sections,<br />
+        <p style="font-size: 16px;margin-left: 15px;">• innovative SDG indicators in new cross sections,<br />
            • interactive visualisations in the form of maps and figures,<br />
            • interpretation, meaning and context for the new measures,<br />
            • data necessary for evidence-based decision-making.</p>

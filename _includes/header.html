@@ -195,17 +195,9 @@
     <nav class="site-navbar nav-collapse pl-grid" style="overflow: visible;height: 80px;">
       <!--------------------logo-------------------------------------------------------------------------------------------------->
       {% if page.lang == 'pl' %}
-		{% if page.url contains '/statistics_nat/' %}
-			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
-		{% else %}
-			<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
-		{% endif %}
+		<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
 	  {% else %}
-		{% if page.url contains '/statistics_nat/' %}
-			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
-		{% else %}
-			<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
-		{% endif %}
+		<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
       {% endif %}
       <ul class="usa-unstyled-list">
         <!--------------------element menu 0-------------------------------------------------------------------------------------------------->

@@ -81,7 +81,7 @@ body.contrast-high {
 	margin-bottom: 0.5em;
   margin-top: 0.5em;
   float: left;
-  font-size:: 16px;
+  font-size: 16px;
 }
 
 #cookie-toolkit-btns {
@@ -318,14 +318,14 @@ body.contrast-high {
 .logo-home.contrast-high {
     background: url('../../assets/img/pl/high-contrast/pl/logo_GUS_monochromatyczny.png');
     background-size : 288px 62px;
-    width : 395px;
+    width : 288px;
     background-repeat: no-repeat;
 }
 
 .logo-home-en.contrast-high {
     background: url('../../assets/img/en/high-contrast/en/logo_GUS_en_monochromatyczny.png');
-    background-size : 395px 62px;
-    width : 395px;
+    background-size : 396px 62px;
+    width : 396px;
     background-repeat: no-repeat;
 }
 
@@ -343,7 +343,7 @@ header.fixed-header .logo-home {
 
 header.fixed-header .logo-home-en {
     margin : 8px 0 0 0;
-    width : 398px;
+    width : 396px;
     height : 62px;
 
 }
@@ -2834,12 +2834,8 @@ background-position: 445px 0px;
 
   .topnav input[type="text"] {
     display: none;
-}
+  }
 
-  header.fixed-header {
-  }
-  .main-content {
-  }
   .logo-home {
       display: none;
   }
@@ -2935,8 +2931,6 @@ background-position: 445px 0px;
 }
 
 @media only screen and (max-width: 450px) {
-  header.fixed-header {
-  }
   .site-navbar.nav-collapse.pl-grid{
     display: none;
   }
@@ -3113,10 +3107,6 @@ a.nav-toggle {
 
 .goal-heading a:hover {
     color : #dce4ef;
-}
-
-.goal-heading {
-
 }
 
 ul.nav-tabs {
@@ -3366,7 +3356,7 @@ article p {
     text-align: left;
 }
 .image-wrapper {
-    height: : 200px;
+    height: 200px;
     float: right;
     padding: 15px;
 }

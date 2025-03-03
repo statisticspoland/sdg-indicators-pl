@@ -54,7 +54,7 @@ permalink: /o_sdg/
 
   <p>Dodatkowo OECD wspiera kraje w integrowaniu SDGs z politykami krajowymi, aby zapewnić im większą spójność z Agendą 2030, a w rezultacie skoordynowane podejście do wdrażania SDGs. W tym celu OECD opracowało rekomendacje ws. spójności polityk na rzecz zrównoważonego rozwoju (<a target="_blank" href="https://www.oecd.org/gov/pcsd/oecd-recommendation-on-policy-coherence-for-sustainable-development.htm" title="Przejdź do rekomendacji">OECD Recommendation on Policy Coherence for Sustainable Development</a>), oparte na trzech ogólnych filarach (spójnej wizji strategicznej, efektywnym zarządzaniu i ewaluacji działań) oraz ośmiu szczegółowych zasadach, służących zwiększeniu zgodności priorytetów krajowych z Agendą 2030.</p>
 
-  <p>Wśród aktywności OECD w zakresie SDGs, wynikających z „Planu działań…” tej organizacji, jest również pomiar dystansu, jaki dzieli kraje OECD od pełnej realizacji celów Agendy 2030. W ramach inicjatywy <a target="_blank" href="https://www.oecd.org/wise/measuring-distance-to-the-sdgs-targets.htm" title="Przejdź do raportów">Measuring Distance to the SDG Targets</a>, OECD publikuje co kilka lat raporty, prezentujące oddalenie krajów OECD od wartości docelowych, przewidzianych w zadaniach i celach Agendy 2030, na podstawie danych z baz ONZ i OECD. </p>
+  <p>Wśród aktywności OECD w zakresie SDGs, wynikających z „Planu działań...” tej organizacji, jest również pomiar dystansu, jaki dzieli kraje OECD od pełnej realizacji celów Agendy 2030. W ramach inicjatywy <a target="_blank" href="https://www.oecd.org/wise/measuring-distance-to-the-sdgs-targets.htm" title="Przejdź do raportów">Measuring Distance to the SDG Targets</a>, OECD publikuje co kilka lat raporty, prezentujące oddalenie krajów OECD od wartości docelowych, przewidzianych w zadaniach i celach Agendy 2030, na podstawie danych z baz ONZ i OECD. </p>
 
   <p>Ponadto w ramach monitorowania SDGs, OECD udostępnia wyspecjalizowane <a target="_blank" href="https://www.oecd.org/about/civil-society/sdgs/" title="Przejdź do narzędzi">narzędzia</a> do śledzenia postępów z ich realizacji:</p>
   <p>•	ramy do monitorowania SDGs w regionach i miastach krajów OECD (Measuring the distance to the SDGs in regions and cities),</p>
@@ -698,7 +698,7 @@ permalink: /o_sdg/
   </div>
   <p><b>Baśnie i dziwy, by świat był sprawiedliwy</b></p>
 
-  <p>Opracowanie, dzięki wykorzystaniu motywów ze znanych bajek i baśni z różnych stron świata, jest adresowane do najmłodszych czytelników. Poszczególne opowieści nawiązują do wyzwań współczesności i 17 celów zrównoważonego rozwoju, a ich bohaterami są postaci o dobrych i złych charakterach, np. Czerwony Kapturek i Baba Jaga. „Baśnie i dziwy…” powstały w ramach projektu „Zmiana Percepcji” z inicjatywy Dyrektora Generalnego ONZ w Genewie. Książka, zgodnie z intencją jej twórców, stanowi zaproszenie do budowania pokoleniowych mostów w dyskusji o naszej planecie.</p>
+  <p>Opracowanie, dzięki wykorzystaniu motywów ze znanych bajek i baśni z różnych stron świata, jest adresowane do najmłodszych czytelników. Poszczególne opowieści nawiązują do wyzwań współczesności i 17 celów zrównoważonego rozwoju, a ich bohaterami są postaci o dobrych i złych charakterach, np. Czerwony Kapturek i Baba Jaga. „Baśnie i dziwy...” powstały w ramach projektu „Zmiana Percepcji” z inicjatywy Dyrektora Generalnego ONZ w Genewie. Książka, zgodnie z intencją jej twórców, stanowi zaproszenie do budowania pokoleniowych mostów w dyskusji o naszej planecie.</p>
   <br>
 
 

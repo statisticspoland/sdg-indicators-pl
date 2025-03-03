@@ -148,6 +148,12 @@
             <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_7_1_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="11.7.1 Average share of the built-up area of cities that is open space for public use for all">11.7.1 Average share of the built-up area of cities that is open space for public use for all</a>
           </li>
           <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_1_2_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="15.1.2 Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type">15.1.2 Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_4_1_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="15.4.1 Coverage by protected areas of important sites for mountain biodiversity">15.4.1 Coverage by protected areas of important sites for mountain biodiversity</a>
+          </li>
+          <li class="nav-item small">
             <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/faqs_exp" style="width: 100%;text-decoration: none;color: #000;" title="FAQs">FAQs</a>
           </li>
           <li class="nav-item small">
@@ -170,6 +176,12 @@
             <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_7_1_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="11.7.1 Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem">11.7.1 Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem</a>
           </li>
           <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_1_2_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="15.1.2 Odsetek terenów lądowych i wód powierzchniowych istotnych dla różnorodności biologicznej objętych ochroną - według typu ekosystemu">15.1.2 Odsetek terenów lądowych i wód powierzchniowych istotnych dla różnorodności biologicznej objętych ochroną - według typu ekosystemu</a>
+          </li>
+          <li class="nav-item small">
+            <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_4_1_exp" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="15.4.1 Odsetek obszarów chronionych istotnych dla różnorodności biologicznej obszarów górskich">15.4.1 Odsetek obszarów chronionych istotnych dla różnorodności biologicznej obszarów górskich</a>
+          </li>
+          <li class="nav-item small">
             <a class="nav-link" href="{{ site.baseurl }}{{ lang }}/statistics_exp/faqs_exp" style="width: 100%;text-decoration: none;color: #000;" title="FAQs">FAQs</a>
           </li>
           <li class="nav-item small">
@@ -184,21 +196,9 @@
     <nav class="site-navbar nav-collapse pl-grid" style="overflow: visible;height: 80px;">
       <!--------------------logo-------------------------------------------------------------------------------------------------->
       {% if page.lang == 'pl' %}
-		{% if page.url contains '/statistics_exp/' %}
-			<a href="{{ site.baseurl }}{{ lang }}/statistics_exp" alt="{{t.logo_SDG_GUS}}"  title="{{t.logo_SDG_GUS}}" class="logo-home"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
-		{% elsif page.url contains '/statistics_nat/' %}
-			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" alt="{{t.logo_SDG_GUS}}"  title="{{t.logo_SDG_GUS}}" class="logo-home"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
-		{% else %}
-			<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
-		{% endif %}
+		<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
 	  {% else %}
-		{% if page.url contains '/statistics_exp/' %}
-			<a href="{{ site.baseurl }}{{ lang }}/statistics_exp" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
-		{% elsif page.url contains '/statistics_nat/' %}
-			<a href="{{ site.baseurl }}{{ lang }}/statistics_nat" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
-		{% else %}
-			<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
-		{% endif %}
+		<a href="{{ site.baseurl }}{{ lang }}/" alt="{{t.logo_SDG_GUS}}" title="{{t.logo_SDG_GUS}}" class="logo-home-en"><span role="img" aria-label="{{t.logo_SDG_GUS}}"></span></a>
       {% endif %}
       <ul class="usa-unstyled-list">
         <!--------------------element menu 0-------------------------------------------------------------------------------------------------->
@@ -245,11 +245,15 @@
                   <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_2_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 210px;" title="11.2.1 Proportion of population that has convenient access to public transport">11.2.1 Proportion of population that has convenient access to public transport</a>
                   <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_3_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 210px;" title="11.3.1 Ratio of land consumption rate to population growth rate">11.3.1 Ratio of land consumption rate to population growth rate</a>
                   <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_7_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 210px;" title="11.7.1 Average share of the built-up area of cities that is open space for public use for all">11.7.1 Average share of the built-up area of cities that is open space for public use for all</a>
+                  <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_1_2_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 210px;" title="15.1.2 Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type">15.1.2 Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type</a>
+                  <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_4_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 210px;" title="15.4.1 Coverage by protected areas of important sites for mountain biodiversity">15.4.1 Coverage by protected areas of important sites for mountain biodiversity</a>
 				{% else %}
                   <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/09_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 230px;" title="9.1.1 Odsetek ludności wiejskiej zamieszkałej w promieniu 2 km od dostępnej przez cały rok drogi">9.1.1 Odsetek ludności wiejskiej zamieszkałej w promieniu 2 km od dostępnej przez cały rok drogi</a>
                   <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_2_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 230px;" title="11.2.1 Odsetek ludności z dogodnym dostępem do środków transportu publicznego">11.2.1 Odsetek ludności z dogodnym dostępem do środków transportu publicznego</a>
                   <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_3_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 230px;" title="11.3.1 Relacja wskaźnika zużycia gruntów do tempa wzrostu liczby ludności">11.3.1 Relacja wskaźnika zużycia gruntów do tempa wzrostu liczby ludności</a>
                   <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_7_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 230px;" title="11.7.1 Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem">11.7.1 Przeciętny udział terenów stanowiących przestrzeń publiczną dostępną dla wszystkich w powierzchni miasta ogółem</a>
+                  <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_1_2_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 230px;" title="15.1.2 Odsetek terenów lądowych i wód powierzchniowych istotnych dla różnorodności biologicznej objętych ochroną - według typu ekosystemu">15.1.2 Odsetek terenów lądowych i wód powierzchniowych istotnych dla różnorodności biologicznej objętych ochroną - według typu ekosystemu</a>
+                  <a class="pod" href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_4_1_exp" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 230px;" title="15.4.1 Odsetek obszarów chronionych istotnych dla różnorodności biologicznej obszarów górskich">15.4.1 Odsetek obszarów chronionych istotnych dla różnorodności biologicznej obszarów górskich</a>
 				{% endif %}
             </div>
           </div>
