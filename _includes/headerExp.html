@@ -125,7 +125,7 @@
       <!--------------------menu jako przycisk-------------------------------------------------------------------------------------------------->
       <button class="navbar-toggler toggler-example" alt="menu" title="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
       aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom:0px; margin-top: 0px;background-color:white; padding-bottom: 0;width: 100%; box-shadow: 0 0 3px #ffffff, 0 0 7px #ffffff;">
-        <a class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/logo_GUS_mobile.png" alt="{{t.logo_SDG_GUS}}" style="max-height: 100%" /></a>
+        <a class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/logo_GUS_mobile.svg" alt="{{t.logo_SDG_GUS}}" style="max-height: 90%; height: 50px;" /></a>
         <i class="fa fa-bars" style="color:gray;padding: 15px;float: right;"></i>
       </button>
       <!--------------------menu zakładki-------------------------------------------------------------------------------------------------->
@@ -206,7 +206,7 @@
 			{% if page.url contains '/en/' %}
 			<a style="margin-left: 50px;"href="{{ site.baseurl }}{{ lang }}/statistics_exp/introduction_exp" title="Introduction">
 			{% else %}
-			<a style="margin-left: 70px;"href="{{ site.baseurl }}{{ lang }}/statistics_exp/introduction_exp" title="Wprowadzenie">
+			<a style="margin-left: 50px;"href="{{ site.baseurl }}{{ lang }}/statistics_exp/introduction_exp" title="Wprowadzenie">
 			{% endif %}
 
 			{% if page.url contains '/en/' %}
@@ -223,7 +223,7 @@
 				{% if page.url contains '/en/' %}
 				<div class="dropbtn" style="padding-left: 50px;" title="Select indicator">
 				{% else %}
-				<div class="dropbtn" style="padding-left: 70px;" title="Wybierz wskaźnik">
+				<div class="dropbtn" style="padding-left: 50px;" title="Wybierz wskaźnik">
 				{% endif %}
 
 				{% if page.url contains '/en/' %}

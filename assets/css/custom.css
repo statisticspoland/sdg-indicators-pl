@@ -298,34 +298,35 @@ body.contrast-high {
 
 .logo-home {
     float: left;
-    margin-top: 7px;
+    margin-top: 9px;
     overflow : hidden;
     background-position-y: center;
-    background: url('../../assets/img/pl/logo_GUS.png');
+    background: url('../../assets/img/pl/logo_GUS.svg');
     background-size : 288px 62px;
     background-repeat: no-repeat;
 }
 
 .logo-home-en {
     float: left;
-    text-indent: -99999em;
+    margin-top: 9px;
     overflow : hidden;
-    background: url('../../assets/img/en/logo_GUS_en.png');
-    background-size : cover;
+    background-position-y: center;
+    background: url('../../assets/img/en/logo_GUS_en.svg');
+    background-size : 288px 62px;
     background-repeat: no-repeat;
 }
 
 .logo-home.contrast-high {
-    background: url('../../assets/img/pl/high-contrast/pl/logo_GUS_monochromatyczny.png');
+    background: url('../../assets/img/pl/high-contrast/pl/logo_GUS_monochromatyczny.svg');
     background-size : 288px 62px;
     width : 288px;
     background-repeat: no-repeat;
 }
 
 .logo-home-en.contrast-high {
-    background: url('../../assets/img/en/high-contrast/en/logo_GUS_en_monochromatyczny.png');
-    background-size : 396px 62px;
-    width : 396px;
+    background: url('../../assets/img/en/high-contrast/en/logo_GUS_en_monochromatyczny.svg');
+    background-size : 288px 62px;
+    width : 288px;
     background-repeat: no-repeat;
 }
 
@@ -338,14 +339,13 @@ header.fixed-header .logo-home {
     padding: 0 0 100 0;
     width : 290px;
     height : 62px;
-
 }
 
 header.fixed-header .logo-home-en {
-    margin : 8px 0 0 0;
-    width : 396px;
+    margin : 8px 0 100 0;
+    padding: 0 0 100 0;
+    width : 290px;
     height : 62px;
-
 }
 
 

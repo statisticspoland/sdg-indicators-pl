@@ -125,7 +125,7 @@
       <!--------------------menu jako przycisk-------------------------------------------------------------------------------------------------->
       <button class="navbar-toggler toggler-example" alt="menu" title="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
       aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom:0px; margin-top: 0px;background-color:white; padding-bottom: 0;width: 100%; box-shadow: 0 0 3px #ffffff, 0 0 7px #ffffff;">
-        <a class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/logo_GUS_mobile.png" alt="{{t.logo_SDG_GUS}}" style="max-height: 100%" /></a>
+        <a class="navbar-brand"><img src="{{ site.baseurl }}/assets/img/{{ page.lang }}/logo_GUS_mobile.svg" alt="{{t.logo_SDG_GUS}}" style="max-height: 90%; height: 50px" /></a>
         <i class="fa fa-bars" style="color:gray;padding: 15px;float: right;"></i>
       </button>
       <!--------------------menu zakładki-------------------------------------------------------------------------------------------------->
@@ -206,8 +206,8 @@
 		{% if page.lang == 'pl' %}
 			padding-left: 50px; width: 100px;
 		{% else %}
-			padding-left: 30px; width: 110px;
-        {% endif %}
+			padding-left: 50px; width: 140px;
+    {% endif %}
 
 		text-align: left">{{ t.nav-about }}</a></li>
 		<!--------------------lista rozwijana I-------------------------------------------------------------------------------------------------->
@@ -225,7 +225,7 @@
           </div>
         </li>
 
-        <li class="nav-item" style="width: 200px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp" title="{{t.nav-exp-title}}">{{ t.nav-exp }}</a></li>
+        <li class="nav-item" style="width: 250px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp" title="{{t.nav-exp-title}}">{{ t.nav-exp }}</a></li>
 
         <!--------------------element menu III-------------------------------------------------------------------------------------------------->
 
