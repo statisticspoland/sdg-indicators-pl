@@ -98,6 +98,21 @@ function createchart3(div, dane, wymiary){
         tooltipText: "{categoryY}, {name}: {valueX.formatNumber('#,###.0')}",
         tooltipY: am5.percent(90)
       });
+
+      series.columns.template.adapters.add("tooltipText", function(text, target) {
+        if (target.dataItem.get("categoryY") == "Gdańsk") {
+          if (series.get("name") == "2023"){
+            return "{categoryY}, {name}: {valueX.formatNumber('#,###.0')}\n[fontStyle: italic]Spadek gęstości zaludnienia w Gdańsku\nw 2023 r. wynikał ze wzrostu jego powierzchni\nspowodowanej włączeniem morskich wód wewnętrznych\nczęści Zatoki Gdańskiej.[/]";
+          }
+          else {
+          return "{categoryY}, {name}: {valueX.formatNumber('#,###.0')}";
+          }
+        }
+        else {
+          return text;
+        }
+        });   
+
       series.data.setAll(dane);
 
       // Make stuff animate on load

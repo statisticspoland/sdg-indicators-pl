@@ -1,6 +1,6 @@
 function createchart1(div, yMin, yMax, precyzja, lata, d){
 
-console.log("ROOT: "+root);
+//console.log("ROOT: "+root);
 
 if (d==0) {
 	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2023 roku (km<sup>2</sup>)";
@@ -812,6 +812,20 @@ root.numberFormatter.set("numberFormat", "#,###");
       tooltipY: 0,
       strokeOpacity: 0
     });
+
+	series.columns.template.adapters.add("tooltipText", function(text, target) {
+		if (target.dataItem.get("categoryX") == "Gdańsk") {
+		  if (d == 0){
+			return "{categoryX}: {valueY.formatNumber('#,###')}\n[fontStyle: italic]Wzrost powierzchni Gdańska w 2023 r.\nwynikał z włączenia morskich wód wewnętrznych\nczęści Zatoki Gdańskiej.[/]";
+		  }
+		  else {
+			return "{categoryX}: {valueY.formatNumber('#,###')}";
+		  }
+		}
+		else {
+		  return text;
+		}
+	  });
 
     series.data.setAll(getData(d));
 

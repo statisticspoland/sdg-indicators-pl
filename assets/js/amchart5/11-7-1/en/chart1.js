@@ -808,6 +808,20 @@ root.numberFormatter.set("numberFormat", "#,###");
       strokeOpacity: 0
     });
 
+	series.columns.template.adapters.add("tooltipText", function(text, target) {
+		if (target.dataItem.get("categoryX") == "Gdańsk") {
+		  if (d == 0){
+			return "{categoryX}: {valueY.formatNumber('#,###')}\n[fontStyle: italic]The increase in the area of Gdańsk\nin 2023 was due to the inclusion\nof the internal marine waters\nof part of the Gdańsk Bay.[/]";
+		  }
+		  else {
+			return "{categoryX}: {valueY.formatNumber('#,###')}";
+		  }
+		}
+		else {
+		  return text;
+		}
+	  });
+
     series.data.setAll(getData(d));
 
     // Make stuff animate on load

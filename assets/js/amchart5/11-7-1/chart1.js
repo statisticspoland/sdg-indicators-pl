@@ -812,6 +812,20 @@ root.numberFormatter.set("numberFormat", "#,###");
       strokeOpacity: 0
     });
 
+	series.columns.template.adapters.add("tooltipText", function(text, target) {
+		if (target.dataItem.get("categoryX") == "Gdańsk") {
+		  if (d == 0){
+			return "{categoryX}: {valueY.formatNumber('#,###')}\n[fontStyle: italic]Wzrost powierzchni Gdańska w 2023 r.\nwynikał z włączenia morskich wód wewnętrznych\nczęści Zatoki Gdańskiej.[/]";
+		  }
+		  else {
+			return "{categoryX}: {valueY.formatNumber('#,###')}";
+		  }
+		}
+		else {
+		  return text;
+		}
+	  });
+
     series.data.setAll(getData(d));
 
     // Make stuff animate on load
