@@ -96,6 +96,21 @@ function createchart2(div, dane, wymiary){
         tooltipText: "{categoryY}, {name}: {valueX.formatNumber('#,###.0')}",
         tooltipY: am5.percent(90)
       });
+
+      series.columns.template.adapters.add("tooltipText", function(text, target) {
+        if (target.dataItem.get("categoryY") == "Gdańsk") {
+          if (series.get("name") == "2023"){
+            return "{categoryY}, {name}: {valueX.formatNumber('#,###.0')}\n[fontStyle: italic]The decrease in population density\nin Gdańsk in 2023 was due to the increase\nin its area caused by the inclusion\nof the internal marine waters\nof part of the Gdańsk Bay.[/]";
+          }
+          else {
+          return "{categoryY}, {name}: {valueX.formatNumber('#,###.0')}";
+          }
+        }
+        else {
+          return text;
+        }
+        });
+        
       series.data.setAll(dane);
 
       // Make stuff animate on load
