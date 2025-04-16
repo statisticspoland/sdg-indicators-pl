@@ -393,6 +393,22 @@ header.fixed-header .logo-home-en {
     color : #fff;
 }
 
+.pl-banner-reg {
+    background-color : #ededed;
+    padding : 5rem 0 4rem 0;
+    color : rgb(51, 51, 51);
+	background-image: url('../../assets/img/regionalny.png');
+    background-repeat: no-repeat;
+    background-position: 980px 0px;
+	background-size: 437px 194px;
+}
+
+.pl-banner-reg.contrast-high {
+    background-color : #000000;
+    padding : 5rem 0 4rem 0;
+    color : #fff;
+}
+
 .pl-banner-exp {
     background-color :#eee6ff;
     padding : 5rem 0 4rem 0;
@@ -509,6 +525,9 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-image: none;
 	}
+  .pl-banner-reg {
+  background-image: none;
+  }
   .pl-banner-exp {
 	background-image: none;
 	}
@@ -530,6 +549,9 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 445px 0px;
 	}
+  .pl-banner-reg {
+  background-position: 445px 0px;
+  }
   .pl-banner-exp {
 background-position: 445px 0px;
 }
