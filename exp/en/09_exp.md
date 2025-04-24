@@ -127,24 +127,24 @@ layout: page_exp
 			<div style="width: 90%; display: inline-block;"><b id="tytuł_1">Population by place of residence <br />(2015=100)</b></div>
 			<div style="width: 86%; display: inline-block;">
 				<label for="wojs" style="margin-top: 0px; margin-right: 5px; max-width: 100px; display: inline; font-weight: normal;">Select:</label>
-					<select id="wojBox" onchange="wyborWoj()" name="woj-name" style="padding: 5px;max-width: 250px; display: inline;">
-					<option style="font-family: FiraSans" value="POLSKA" selected>POLAND</option>
-					<option style="font-family: FiraSans" value="Dolnośląskie">Dolnośląskie</option>
-					<option style="font-family: FiraSans" value="Kujawsko-Pomorskie">Kujawsko-Pomorskie</option>
-					<option style="font-family: FiraSans" value="Lubelskie">Lubelskie</option>
-					<option style="font-family: FiraSans" value="Lubuskie">Lubuskie</option>
-					<option style="font-family: FiraSans" value="Łódzkie">Łódzkie</option>
-					<option style="font-family: FiraSans" value="Małopolskie">Małopolskie</option>
-					<option style="font-family: FiraSans" value="Mazowieckie">Mazowieckie</option>
-					<option style="font-family: FiraSans" value="Opolskie">Opolskie</option>
-					<option style="font-family: FiraSans" value="Podkarpackie">Podkarpackie</option>
-					<option style="font-family: FiraSans" value="Podlaskie">Podlaskie</option>
-					<option style="font-family: FiraSans" value="Pomorskie">Pomorskie</option>
-					<option style="font-family: FiraSans" value="Śląskie">Śląskie</option>
-					<option style="font-family: FiraSans" value="Świętokrzyskie">Świętokrzyskie</option>
-					<option style="font-family: FiraSans" value="Warmińsko-Mazurskie">Warmińsko-Mazurskie</option>
-					<option style="font-family: FiraSans" value="Wielkopolskie">Wielkopolskie</option>
-					<option style="font-family: FiraSans" value="Zachodniopomorskie">Zachodniopomorskie</option>
+				<select id="wojBox" onchange="wyborWoj()" name="woj-name" style="padding: 5px;max-width: 250px; display: inline;">
+					<option style="font-family: Fira Sans" value="POLSKA" selected>POLAND</option>
+					<option style="font-family: Fira Sans" value="Dolnośląskie">Dolnośląskie</option>
+					<option style="font-family: Fira Sans" value="Kujawsko-Pomorskie">Kujawsko-Pomorskie</option>
+					<option style="font-family: Fira Sans" value="Lubelskie">Lubelskie</option>
+					<option style="font-family: Fira Sans" value="Lubuskie">Lubuskie</option>
+					<option style="font-family: Fira Sans" value="Łódzkie">Łódzkie</option>
+					<option style="font-family: Fira Sans" value="Małopolskie">Małopolskie</option>
+					<option style="font-family: Fira Sans" value="Mazowieckie">Mazowieckie</option>
+					<option style="font-family: Fira Sans" value="Opolskie">Opolskie</option>
+					<option style="font-family: Fira Sans" value="Podkarpackie">Podkarpackie</option>
+					<option style="font-family: Fira Sans" value="Podlaskie">Podlaskie</option>
+					<option style="font-family: Fira Sans" value="Pomorskie">Pomorskie</option>
+					<option style="font-family: Fira Sans" value="Śląskie">Śląskie</option>
+					<option style="font-family: Fira Sans" value="Świętokrzyskie">Świętokrzyskie</option>
+					<option style="font-family: Fira Sans" value="Warmińsko-Mazurskie">Warmińsko-Mazurskie</option>
+					<option style="font-family: Fira Sans" value="Wielkopolskie">Wielkopolskie</option>
+					<option style="font-family: Fira Sans" value="Zachodniopomorskie">Zachodniopomorskie</option>
 				</select>
 			</div>
 			<div style="width: 10%; display: inline-block; text-align: right;">
