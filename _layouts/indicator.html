@@ -15,7 +15,6 @@
   {% assign ktore = site.data.krajowe %}
 {% elsif page.url contains '/statistics_reg/' %}
     {% assign ktore = site.data.regionalne %}
-  {% else %}
 {% else %}
   {% assign ktore = site.data.globalne %}
 {% endif %}
@@ -833,9 +832,11 @@ $('body').click(function( e ){
 
 
 $(function () {
-  console.log('{{t1}}');
-  console.log('{{t1.pl_jednostka_prezentacji}}');
-console.log('{{jednostka}}');
+  console.log('site','{{site}}');
+  console.log('site_meta','{{site.metadane_regionalne}}');
+  console.log('t1','{{t1}}');
+  console.log('t1_jednostka_prezentacji','{{t1.pl_jednostka_prezentacji}}');
+console.log('jednostka','{{jednostka}}');
 
 $('.list-group.checked-list-box .list-group-item').each(function () {
 

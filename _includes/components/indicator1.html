@@ -221,7 +221,13 @@
 
 
 <script>
-  $( document ).ready(function() {
+  $( document ).ready(function(){
+    console.log('site_met','{{site.metadane_regionalne}}');
+    console.log('site_','{{site.translations}}');
+    console.log('trans','{{translation_id}}');
+console.log('indicator1','{{jednostka}}');
+
+
       if ('{{metadane["jednostka_prezentacji"]}}'==''){
           $('.usa-button').css('display','none');
       }
