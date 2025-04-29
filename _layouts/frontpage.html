@@ -7,8 +7,6 @@
 
 {% if page.url contains '/statistics_nat/' %}
 {% assign ktore = site.data.krajowe %}
-{% elsif page.url contains '/statistics_reg/' %}
-{% assign ktore = site.data.regionalne %}
 {% else %}
 {% assign ktore = site.data.globalne %}
 {% endif %}
@@ -18,8 +16,6 @@
   <a id="main-content" tabindex="-1"></a>
   {% if page.url contains '/statistics_nat/' %}
     <section class="pl-banner-nat">
-    {% elsif page.url contains '/statistics_reg/'%}
-  	<section class="pl-banner-reg">
 		{% elsif page.url contains '/'%}
 		<section class="pl-banner-glob">
 		{% else %}
@@ -30,8 +26,6 @@
                         <h1>
                           {% if page.url contains '/statistics_nat/' %}
                             {{ t.main-heading2 }}
-                          {% elsif page.url contains '/statistics_reg/' %}
-                              {{ t.main-heading3 }}
                           {% else %}
                             {{ t.main-heading }}
                           {% endif %}
@@ -55,18 +49,6 @@
           <br />
           Click on Sustainable Development Goal for indicators:
         {% endif %}
-        {% elsif page.url contains '/statistics_reg/' %}
-          {% if page.lang == 'pl' %}
-            Tu znajdziesz zestaw wskaźników regionalnych.
-            <br />
-            <br />
-            Wybierz Cel, aby przejść do wskaźników:
-          {% else %}
-            Here will be regional indicators
-            <br />
-            <br />
-            Click on Sustainable Development Goal for indicators:
-          {% endif %}
       {% else %}
         {{ t.intro-text }}
       {% endif %}
@@ -96,10 +78,6 @@
 
 	{% if page.url contains '/statistics_nat/' %}
           <a class="kafelek" alt="{{ goals.title }}" title="{{text}}{{ goals.title }}" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ goals.goal }}.png')" href="{{ site.baseurl }}/{{ language }}statistics_nat/{{ goals.short | slugify }}/"></a>
-          {% elsif page.url contains '/statistics_reg/' %}
-          <a class="kafelek" alt="{{ goals.title }}" title="{{text}}{{ goals.title }}" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ goals.goal }}.png')" href="{{ site.baseurl }}/{{ language }}statistics_reg/{{ goals.short | slugify }}/"></a>
-
-
           {% else %}
           <a class="kafelek" alt="{{ goals.title }}" title="{{text}}{{ goals.title }}" style="background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goal-{{ img_path }}{{ goals.goal }}.png')" href="{{ site.baseurl }}/{{ language }}{{ goals.short | slugify }}/" ></a>
           {% endif %}
@@ -113,13 +91,7 @@
 			{% else %}
 				<a class="kafelek" alt="Pobierz wszystkie dane SDG" title="Pobierz wszystkie dane SDG" style="background-position: center;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/wskazniki_krajowe.xlsx" ></a>
 			{% endif %}
-    {% elsif page.url contains '/statistics_reg/' %}
 
-  			{% if page.lang == 'en' %}
-  				<a class="kafelek" alt="Download all SDG data" title="Download all SDG data" style="background-position: center;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/regional_sdg_indicators.xlsx" ></a>
-  			{% else %}
-  				<a class="kafelek" alt="Pobierz wszystkie dane SDG" title="Pobierz wszystkie dane SDG" style="background-position: center;background-image:url('{{ site.baseurl }}/assets/img/{{ page.lang }}/{{ page.lang }}-sdg-goals-logo.png')" href="{{ site.baseurl }}/assets/excel/{{ page.lang }}/wskazniki_regionalne.xlsx" ></a>
-  			{% endif %}
 		{% else %}
 
 			{% if page.lang == 'en' %}

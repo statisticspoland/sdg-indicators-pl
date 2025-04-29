@@ -13,8 +13,6 @@
 
 {% if page.url contains '/statistics_nat/' %}
   {% assign ktore = site.data.krajowe %}
-{% elsif page.url contains '/statistics_reg/' %}
-    {% assign ktore = site.data.regionalne %}
 {% else %}
   {% assign ktore = site.data.globalne %}
 {% endif %}
@@ -40,8 +38,6 @@
 		{% else %}
 			{% if page.url contains '/statistics_nat/' %}
 			<section class="pl-banner-nat">
-      {% elsif page.url contains '/statistics_reg/' %}
-  		<section class="pl-banner-reg">
 			{% else %}
 			<section class="pl-banner">
 			{% endif %}
@@ -52,8 +48,6 @@
 
                     {% if page.url contains '/statistics_nat/' %}
                     {% assign rodzaj = '/statistics_nat/' %}
-                    {% elsif page.url contains '/statistics_reg/' %}
-                    {% assign rodzaj = '/statistics_reg/' %}
                     {% else %}
                     {% assign rodzaj = '/statistics_glob/' %}
                     {% endif %}
@@ -186,8 +180,6 @@
 
           {% if page.url contains '/statistics_nat/' %}
             {% assign rodzaj = '/statistics_nat/' %}
-          {% elsif page.url contains '/statistics_reg/' %}
-              {% assign rodzaj = '/statistics_reg/' %}
           {% else %}
             {% assign rodzaj = '/' %}
           {% endif %}
@@ -234,22 +226,13 @@
 			{% endif %}
 		  {% endif %}
 
-      {% if page.url contains '/statistics_reg/' %}
-			{% assign t1 = site.metadane_regionalne | where:"translation_id", slug | first %}
-			{% if language == 'pl' %}
-				<p style="font-size: 21px;"> Priorytet dla Polski - {{ t1.pl_priorytet }} </p>
-			{% else %}
-				<p style="font-size: 21px;"> Priority for Poland - {{ t1.en_priorytet }} </p>
-			{% endif %}
-		  {% endif %}
 
 
 
 
 
 
-
-          <h3>{{ t.sub-subtitle }} {{ page.indicator | remove: ".reg" }} - {{ indicator_title }} </h3>
+          <h3>{{ t.sub-subtitle }} {{ page.indicator | remove: ".0" }} - {{ indicator_title }} </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab" title="{{t.data-title}}">{{ t.data }}</a></li>
             <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab" title="{{t.metadata-title}}">{{ t.metadata }}</a></li>
@@ -832,12 +815,6 @@ $('body').click(function( e ){
 
 
 $(function () {
-  console.log('site','{{site}}');
-  console.log('site_meta','{{site.metadane_regionalne}}');
-  console.log('t1','{{t1}}');
-  console.log('t1_jednostka_prezentacji','{{t1.pl_jednostka_prezentacji}}');
-console.log('jednostka','{{jednostka}}');
-
 $('.list-group.checked-list-box .list-group-item').each(function () {
 
           var zmienna={{licznik}}

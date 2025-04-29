@@ -4,8 +4,6 @@
 {% assign slug = page.indicator | replace: '.', '-' %}
 {% if page.url contains '/statistics_nat/' %}
   {% assign t1 = site.metadane_krajowe | where:"translation_id", slug | first %}
-{% elsif page.url contains '/statistics_reg/' %}
-    {% assign t1 = site.metadane_regionalne | where:"translation_id", slug | first %}
 {% else %}
   {% assign t1 = site.metadane_globalne | where:"translation_id", slug | first %}
 {% endif %}
@@ -189,26 +187,6 @@
               {% endif %}
             {% endfor %}
           {% endif %}
-
-          {% if page.url contains '/statistics_reg/' %}
-            {% for indicator_metadata in site.prose.metadata._metadane_regionalne %}
-              {% if indicator_metadata.name != 'pl_graph_title' and indicator_metadata.name != 'pl_title' and indicator_metadata.name != 'pl_jednostka' and indicator_metadata.name != 'en_graph_title' and indicator_metadata.name != 'en_title' and indicator_metadata.name != 'en_jednostka'%}
-                <tr>
-                  {% if language == 'pl' %}
-                    {% if indicator_metadata.name contains 'pl_' %}
-                      <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
-                      <td style="padding: 10px; text-align: left; height: 45px;">  {{ t1.[indicator_metadata.name] }} </td>
-                    {% endif %}
-                  {% else %}
-                    {% if indicator_metadata.name contains 'en_' %}
-                      <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
-                      <td style="padding: 10px; text-align: left; height: 45px;">  {{ t1.[indicator_metadata.name] }} </td>
-                    {% endif %}
-                  {% endif %}
-                </tr>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
         </table>
 
 
@@ -221,13 +199,7 @@
 
 
 <script>
-  $( document ).ready(function(){
-    console.log('site_met','{{site.metadane_regionalne}}');
-    console.log('site_','{{site.translations}}');
-    console.log('trans','{{translation_id}}');
-console.log('indicator1','{{jednostka}}');
-
-
+  $( document ).ready(function() {
       if ('{{metadane["jednostka_prezentacji"]}}'==''){
           $('.usa-button').css('display','none');
       }
