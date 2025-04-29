@@ -14,6 +14,8 @@
 {% assign slug = page.indicator | replace: '.', '-' %}
 {% if page.url contains '/statistics_nat/' %}
   {% assign t1 = site.metadane_krajowe | where:"translation_id", slug | first %}
+{% elsif page.url contains '/statistics_reg/' %}
+    {% assign t1 = site.metadane_regionalne | where:"translation_id", slug | first %}
 {% else %}
   {% assign t1 = site.metadane_globalne | where:"translation_id", slug | first %}
 {% endif %}
