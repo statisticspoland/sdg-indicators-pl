@@ -1,0 +1,416 @@
+{% assign table_template = 'components/table1.html' %}
+{% assign id = page.indicator | slugify %}
+
+{% assign slug = page.indicator | replace: '.', '-' %}
+{% assign t1 = site.metadane_regionalne | where:"translation_id", slug | first %}
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="data">
+    <div style="display: flow-root;">
+    {% if page.graph == 'bar' or page.graph == 'longitudinal' or page.graph == 'scatter'%}
+
+      {% assign graph_type = page.graph %}
+
+      {% if page.graph == 'longitudinal' %}
+        {% assign graph_type = 'line' %}
+      {% endif %}
+
+      {% assign graph_template = 'components/' | append: graph_type | append: '.html' %}
+      {% assign indicator_template = 'components/indicator1' | append: '.html' %}
+
+      <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/locales/pl_PL.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/geodata/polandLow.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
+  
+      <div style="width: 86%; display: inline-block; margin-top: 10px;">
+<!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
+        {% if language == 'pl' %}
+          Rok:
+        {% else %}
+          Year:
+        {% endif %}
+        </label>
+ -->          
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 15px; max-width: 200px; display: inline; height: 62px; color: rgb(51,51,51)">
+            <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+            <option style="font-family: Fira Sans" value="2014">2014</option>
+            <option style="font-family: Fira Sans" value="2013">2013</option>
+            <option style="font-family: Fira Sans" value="2012">2012</option>
+            <option style="font-family: Fira Sans" value="2010">2010</option>
+          </select>
+      </div>
+  
+      <div class="grid-container" style="width: 50%; margin: auto; margin-top: 10px; display: grid; grid-template-columns: 1fr;grid-gap: 20px;">
+        <div id = "map1" class="grid-child">
+          <div id="mapdiv" style="width: 100%;height: 300px">
+            <div id="mapWoj" style="width: 100%;height: 300px"></div>
+          </div>
+        </div>
+      </div>
+  
+  
+  <script>
+  
+  function processData(data_processed) {
+  //console.log("Dane gotowe:", data_processed);
+  // użyj data gdzie chcesz
+  createMapWoj("mapWoj", data_processed, "pl");
+  }
+  
+  function loadDataAndRenderMap(rok) {
+  am5.ready(function() {
+  
+  am5.net.load("/data/regionalne/indicator_1-A-1-map.csv").then(function(result) {
+    
+    // Parse data
+    var data = am5.CSVParser.parse(result.response, {
+      delimiter: ";",
+      reverse: true,
+      skipEmpty: true,
+      useColumnNames: true
+    });
+    
+    var data_filtered = data
+      .filter(item => item.OKRES !== "POLSKA")  // usuwa wpis dla całej Polski
+      .map(item => {
+    let newName;
+  
+    switch (item.OKRES) {
+      case "DOLNOŚLĄSKIE":
+        newName = "PL-02";
+        break;
+      case "KUJAWSKO-POMORSKIE":
+        newName = "PL-04";
+        break;
+      case "LUBELSKIE":
+        newName = "PL-06";
+        break;
+      case "LUBUSKIE":
+        newName = "PL-08";
+        break;
+      case "ŁÓDZKIE":
+        newName = "PL-10";
+        break;
+      case "MAŁOPOLSKIE":
+        newName = "PL-12";
+        break;
+      case "MAZOWIECKIE":
+        newName = "PL-14";
+        break;
+      case "OPOLSKIE":
+        newName = "PL-16";
+        break;
+      case "PODKARPACKIE":
+        newName = "PL-18";
+        break;
+      case "PODLASKIE":
+        newName = "PL-20";
+        break;
+      case "POMORSKIE":
+        newName = "PL-22";
+        break;
+      case "ŚLĄSKIE":
+        newName = "PL-24";
+        break;
+      case "ŚWIĘTOKRZYSKIE":
+        newName = "PL-26";
+        break;
+      case "WARMIŃSKO-MAZURSKIE":
+        newName = "PL-28";
+        break;
+      case "WIELKOPOLSKIE":
+        newName = "PL-30";
+        break;
+      case "ZACHODNIOPOMORSKIE":
+        newName = "PL-32";
+        break;
+      default:
+        newName = "PL-PL";
+    }
+  
+    return {
+      id: newName,
+      value: Number(item[rok])
+    };
+  });
+  
+  //console.log("data", data);
+  //console.log("data_filtered", data_filtered);
+  
+  processData(data_filtered);
+  });
+  
+    //var daneWoj = [{"id":"PL-02","value":97.223785641},{"id":"PL-04","value":94.4174451195},{"id":"PL-06","value":96.3942170481},{"id":"PL-08","value":96.8237887052},{"id":"PL-10","value":96.5128258255},{"id":"PL-12","value":98.3907790671},{"id":"PL-14","value":98.012883452},{"id":"PL-16","value":99.210081905},{"id":"PL-18","value":94.2844886674},{"id":"PL-20","value":89.8130658568},{"id":"PL-22","value":94.7017846298},{"id":"PL-24","value":98.471359928},{"id":"PL-26","value":97.4958489946},{"id":"PL-28","value":92.3905090752},{"id":"PL-30","value":95.6207943758},{"id":"PL-32","value":94.3770711078},{"id":"PL-PL","value":96.1862414329}];
+    //console.log("daneWoj", daneWoj);
+  }); // end am5.ready()
+  
+  };
+  
+  loadDataAndRenderMap("2023");
+  
+  function wyborYear() {
+    var yearBox = document.getElementById("yearBox");
+    var selectedYear = yearBox.options[yearBox.selectedIndex].index;
+    //console.log(selectedYear);
+    if(selectedYear===0){
+    loadDataAndRenderMap("2023");
+    }
+    if(selectedYear===1){
+    loadDataAndRenderMap("2022");
+    }
+    if(selectedYear===2){
+    loadDataAndRenderMap("2021");
+    }
+    if(selectedYear===3){
+    loadDataAndRenderMap("2020");
+    }
+    if(selectedYear===4){
+    loadDataAndRenderMap("2019");
+    }
+    if(selectedYear===5){
+    loadDataAndRenderMap("2018");
+    }
+    if(selectedYear===6){
+    loadDataAndRenderMap("2017");
+    }
+    if(selectedYear===7){
+    loadDataAndRenderMap("2016");
+    }
+    if(selectedYear===8){
+    loadDataAndRenderMap("2015");
+    }
+    if(selectedYear===9){
+    loadDataAndRenderMap("2014");
+    }
+    if(selectedYear===10){
+    loadDataAndRenderMap("2013");
+    }
+    if(selectedYear===11){
+    loadDataAndRenderMap("2012");
+    }
+    if(selectedYear===12){
+    loadDataAndRenderMap("2011");
+    }
+    if(selectedYear===13){
+    loadDataAndRenderMap("2010");
+    }
+   };
+  
+  </script>
+  
+
+      {% if licznik>1 %}
+        {% if language == 'pl' %}
+          <div id="filtry">.</div>
+          {% if id != '12-2-2' and id != '1-5-4' and id != '11-b-2' and id != '13-1-3' and id != '8-4-2' and id != '17-13-1' and id != '12-4-2'%}
+          <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;" title="Pokaż wszystkie wymiary na wykresie">Zaznacz wszystko</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;" title="Wyszyść wykres do stanu początkowego">Usuń zaznaczenia</button></div>
+          {% endif %}
+          <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
+          <div id="Legenda" align="center" style="pointer-events: none;"></div>
+        {% else %}
+          <div id="filtry">.</div>
+          {% if id != '12-2-2' and id != '1-5-4' and id != '11-b-2' and id != '13-1-3' and id != '8-4-2' and id != '17-13-1' and id != '12-4-2'%}
+          <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;" title="Show all dimensions on chart">Select All</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;" title="Clear the chart">Clear All</button></div>
+          {% endif %}
+          <br>
+          <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
+          <div id="Legenda" align="center" style="pointer-events: none;"></div>
+        {% endif %}
+        <div>{% include components/filters.html content=filtry content1=foo content2=language%}</div>
+      {%else%}
+        <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
+        <div id="Legenda" align="center" style="pointer-events: none;"></div>
+      {% endif %}
+
+      {% if language == 'pl' %}
+        <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px;" title="Pobierz dane w formacie .csv">Pobierz całość</button>
+        {% if filtry.size>0 %}
+          <button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px;" title="Pobierz wybrane dane w formacie .csv">Pobierz wybrane</button>
+        {% endif %}
+      {% else %}
+        <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px;" title="Download all data in csv format">Download All</button>
+        {% if filtry.size>0 %}
+          <button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px;" title="Download selected data in csv format">Download Selected</button>
+        {% endif %}
+      {% endif %}
+
+      {% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%}
+      {% if language == 'pl' %}
+        Jednostka prezentacji: {{ t1.pl_jednostka_prezentacji }} <br />
+        Źródło danych: {{ t1.pl_zrodlo_danych }}
+      {% endif %}
+      {% if language == 'en' %}
+        Unit: {{ t1.en_jednostka_prezentacji }} <br />
+        Source of data: {{ t1.en_zrodlo_danych }}
+      {% endif %}
+      <p></p>
+    {% else %}
+      {% if language == 'pl' %}
+        <p style="text-align: center;">W przyszłości pojawi się tu tabela</p>
+      {% else %}
+        <p style="text-align: center;">The table will appear here</p>
+      {% endif %}
+    {% endif %}
+    </div>
+    </div>
+
+
+    <div role="tabpanel" class="tab-pane" id="metadata">
+      <div class="metadata-table">
+        <h2 style="display: contents;">{{ t.global-metadata }}</h2>
+
+        {% assign indicator_decimals = page.indicator | split: '.'  %}
+        {% assign goal_num = indicator_decimals[0] | plus:0  %}
+        {% assign target_num = indicator_decimals[1] | plus:0  %}
+        {% assign indicator_num = indicator_decimals[2] | plus:0  %}
+
+        {% if goal_num < 10 %} {% assign goal_num = goal_num | prepend:0  %} {% endif %}
+        {% if target_num < 10 %} {% assign target_num = target_num | prepend:0  %} {% endif %}
+        {% if indicator_num < 10 %} {% assign indicator_num = indicator_num | prepend:0  %} {% endif %}
+
+    {% if language == 'pl' %}
+      <a href="{{ site.baseurl }}/assets/pdf/{{ page.lang }}/{{page.indicator | replace: ".", "-"}}.pdf" target="_blank">
+      <button style="float: right;margin-right: 0px;"><i class="fa fa-file-pdf-o" alt="Pobierz PDF" title="Pobierz metadane w formacie PDF" style="font-size:20px;"></i></button>
+      </a>
+    {% else %}
+      <a href="{{ site.baseurl }}/assets/pdf/en/{{page.indicator | replace: ".", "-"}}.pdf" target="_blank">
+      <button style="float: right;margin-right: 0px;"><i class="fa fa-file-pdf-o" alt="Save as PDF" title="Save metadata in PDF format" style="font-size:20px;"></i></button>
+      </a>
+    {% endif %}
+
+
+
+
+        <table id="metadane">
+          {% if page.url contains '/statistics_reg/' %}
+            {% for indicator_metadata in site.prose.metadata._metadane_regionalne %}
+              {% if indicator_metadata.name != 'pl_graph_title' and indicator_metadata.name != 'pl_title' and indicator_metadata.name != 'pl_jednostka' and indicator_metadata.name != 'en_graph_title' and indicator_metadata.name != 'en_title' and indicator_metadata.name != 'en_jednostka'%}
+                <tr>
+                  {% if language == 'pl' %}
+                    {% if indicator_metadata.name contains 'pl_' %}
+                      <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
+                      <td style="padding: 10px; text-align: left; height: 45px;">  {{ t1.[indicator_metadata.name] }} </td>
+                    {% endif %}
+                  {% else %}
+                    {% if indicator_metadata.name contains 'en_' %}
+                      <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
+                      <td style="padding: 10px; text-align: left; height: 45px;">  {{ t1.[indicator_metadata.name] }} </td>
+                    {% endif %}
+                  {% endif %}
+                </tr>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </table>
+
+
+      </div>
+    </div>
+
+
+</div>
+
+
+
+<script>
+				function onChangeOption(value){
+					//console.log(value);
+
+					var wojMap = document.getElementById("mapWoj");
+
+					if(value==="Woj"){
+						wojMap.removeAttribute("hidden");
+					}
+				}
+
+
+  $( document ).ready(function(){
+    //console.log('site_met','{{site.metadane_regionalne}}');
+    //console.log('site_','{{site.translations}}');
+    //console.log('trans','{{translation_id}}');
+    //console.log('indicator1','{{jednostka}}');
+
+
+      if ('{{metadane["jednostka_prezentacji"]}}'==''){
+          $('.usa-button').css('display','none');
+      }
+
+  });
+
+function Wybrane(jez){
+  var filename='{{ page.indicator }}'
+  var html = document.querySelector(".gridtable").outerHTML;
+  var csv = [];
+	var rows = document.querySelectorAll(".gridtable tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++)
+        if(rows[i].style.display != 'none'){
+            row.push(cols[j].innerText);
+        }
+    if(rows[i].style.display != 'none'){
+
+      if(jez==2){
+        csv.push(row.join(","));
+      }else{
+        csv.push(row.join(";"));
+      }
+
+    }
+  }
+  if(jez==2){
+    var reszta='selected';
+  }else{
+    var reszta='wybrane';
+  }
+  download_csv(csv.join("\n"), filename+'_'+reszta+'.csv');
+}
+
+function Calosc(jez){
+  var filename='{{ page.indicator }}'
+  var html = document.querySelector(".gridtable").outerHTML;
+  var csv = [];
+	var rows = document.querySelectorAll(".gridtable tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++)
+          row.push(cols[j].innerText);
+          if(jez==2){
+            csv.push(row.join(","));
+          }else{
+            csv.push(row.join(";"));
+          }
+  }
+  download_csv(csv.join("\n"), filename+'.csv');
+}
+
+function download_csv(csv, filename) {
+    var csvFile;
+    var downloadLink;
+
+    csvFile = new Blob(["\ufeff",csv], {type: "text/csv;"});
+    downloadLink = document.createElement("a");
+    downloadLink.download = filename;
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+}
+
+
+
+</script>

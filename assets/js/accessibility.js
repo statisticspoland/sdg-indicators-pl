@@ -10,6 +10,7 @@ var accessibilitySwitcher = function(language) {
 	    $('.pl-banner-nat').removeClass('contrast-' + id);
       $('.pl-banner-exp').removeClass('contrast-' + id);
       $('.pl-banner-exp-indicator').removeClass('contrast-' + id);
+      $('.pl-banner-reg').removeClass('contrast-' + id);
       $('header.fixed-header').removeClass('contrast-' + id);
       $('header.fixed-header .site-navbar ul li a').removeClass('contrast-' + id);
       $('.usa-footer-secondary_section').removeClass('contrast-' + id);
@@ -50,6 +51,7 @@ var accessibilitySwitcher = function(language) {
     $('.pl-banner-nat').addClass('contrast-' + contrast);
     $('.pl-banner-exp').addClass('contrast-' + contrast);
     $('.pl-banner-exp-indicator').addClass('contrast-' + contrast);
+    $('.pl-banner-reg').addClass('contrast-' + contrast);
     $('header.fixed-header').addClass('contrast-' + contrast);
     $('header.fixed-header .site-navbar ul li a').addClass('contrast-' + contrast);
     $('.usa-footer-secondary_section').addClass('contrast-' + contrast);
