@@ -1,5 +1,6 @@
 {% assign table_template = 'components/table1.html' %}
 {% assign id = page.indicator | slugify %}
+{% assign id_map = id | replace: '-reg', '' %}
 
 {% assign slug = page.indicator | replace: '.', '-' %}
 {% assign t1 = site.metadane_regionalne | where:"translation_id", slug | first %}
@@ -72,22 +73,23 @@
   function loadDataAndRenderMap(rok) {
   am5.ready(function() {
   
-  am5.net.load("/data/regionalne/indicator_1-A-1-map.csv").then(function(result) {
+  am5.net.load("/data/regionalne/indicator_{{ id_map }}-map.csv").then(function(result) {
     
     // Parse data
     var data = am5.CSVParser.parse(result.response, {
-      delimiter: ";",
+      delimiter: ",",
       reverse: true,
       skipEmpty: true,
       useColumnNames: true
     });
-    
+
     var data_filtered = data
-      .filter(item => item.OKRES !== "POLSKA")  // usuwa wpis dla całej Polski
+      .filter(item => item.REGION !== "POLSKA")  // usuwa wpis dla całej Polski
       .map(item => {
+        
     let newName;
   
-    switch (item.OKRES) {
+    switch (item.REGION) {
       case "DOLNOŚLĄSKIE":
         newName = "PL-02";
         break;

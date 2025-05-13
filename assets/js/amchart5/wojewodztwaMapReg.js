@@ -43,14 +43,17 @@ function createMapWoj(div, dane, jez){
   polygonSeries.mapPolygons.template.setAll({
     tooltipText: "{name}: {value.formatNumber('#,###')}",
     fill: am5.color(0xbfbfbf),  //kolor dla braku danych
-    stroke: am5.color(0xe0ccff) //kolor krawedzi
+    stroke: am5.color(0x99ff99) //kolor krawedzi
+    //stroke: am5.color(0xe0ccff) //kolor krawedzi
   });
 
   polygonSeries.set("heatRules", [{
     target: polygonSeries.mapPolygons.template,
     dataField: "value",
-    min: am5.color(0xf0e6ff),
-    max: am5.color(0xb380ff),
+    min: am5.color(0x99ff99),
+    //min: am5.color(0xf0e6ff),
+    max: am5.color(0x006600),
+    //max: am5.color(0xb380ff),
     key: "fill"
   }]);
 
@@ -62,14 +65,16 @@ function createMapWoj(div, dane, jez){
 
   var heatLegend = chart.children.push(am5.HeatLegend.new(root, {
     orientation: "vertical",
-    startColor: am5.color(0xf0e6ff),
-    endColor: am5.color(0xb380ff),
+    startColor: am5.color(0x99ff99),
+    //startColor: am5.color(0xf0e6ff),
+    endColor: am5.color(0x004700),
+    //endColor: am5.color(0xb380ff),
     startText: Math.min(...dane.map(o => o.value)),
     //startText: 89.00,
     endText: Math.max(...dane.map(o => o.value), 0),
     //endText: 100.00,
     stepCount: 5,
-    height: 200
+    height: 300
   }));
 
   heatLegend.startLabel.setAll({
