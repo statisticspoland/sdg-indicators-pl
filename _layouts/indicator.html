@@ -257,7 +257,11 @@
           </ul>
 
     {% if page.url contains '/statistics_reg/' %}
-      <div style="float: left;width: 100%;">{% include components/indicator_reg.html %}</div>
+      {% if page.url contains '/1-G-1/' %}
+        <div style="float: left;width: 100%;">{% include components/indicator_reg_param.html %}</div>
+      {% else %}
+        <div style="float: left;width: 100%;">{% include components/indicator_reg.html %}</div>
+      {% endif %}
     {% else %}
       <div style="float: left;width: 100%;">{% include components/indicator1.html %}</div>
     {% endif %}

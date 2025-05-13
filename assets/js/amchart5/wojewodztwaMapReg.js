@@ -19,7 +19,7 @@ function createMapWoj(div, dane, jez){
   if(jez != "en"){
     root.locale = am5locales_pl_PL;
   }
-  root.numberFormatter.set("numberFormat", "#,###");
+  root.numberFormatter.set("numberFormat", "#,##0.0");
 
   // Set themes
   root.setThemes([
@@ -41,7 +41,7 @@ function createMapWoj(div, dane, jez){
   }));
 
   polygonSeries.mapPolygons.template.setAll({
-    tooltipText: "{name}: {value.formatNumber('#,###')}",
+    tooltipText: "{name}: {value.formatNumber('#,##0.0')}",
     fill: am5.color(0xbfbfbf),  //kolor dla braku danych
     stroke: am5.color(0x99ff99) //kolor krawedzi
     //stroke: am5.color(0xe0ccff) //kolor krawedzi
@@ -67,11 +67,11 @@ function createMapWoj(div, dane, jez){
     orientation: "vertical",
     startColor: am5.color(0x99ff99),
     //startColor: am5.color(0xf0e6ff),
-    endColor: am5.color(0x004700),
+    endColor: am5.color(0x006600),
     //endColor: am5.color(0xb380ff),
-    startText: Math.min(...dane.map(o => o.value)),
+    startText: Math.min(...dane.map(o => o.value)).toFixed(1),
     //startText: 89.00,
-    endText: Math.max(...dane.map(o => o.value), 0),
+    endText: Math.max(...dane.map(o => o.value), 0).toFixed(1),
     //endText: 100.00,
     stepCount: 5,
     height: 300

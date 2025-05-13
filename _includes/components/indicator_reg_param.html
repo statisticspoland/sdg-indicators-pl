@@ -53,6 +53,22 @@
             <option style="font-family: Fira Sans" value="2010">2010</option>
           </select>
       </div>
+
+      <div style="width: 20%; display: inline-block; margin-top: 10px;">
+<!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
+        {% if language == 'pl' %}
+          Rok:
+        {% else %}
+          Year:
+        {% endif %}
+        </label>
+ -->          
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 15px; max-width: 150px; display: inline; height: 62px; color: rgb(51,51,51)">
+            <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
+            <option style="font-family: Fira Sans" value="miasto">miasto</option>
+            <option style="font-family: Fira Sans" value="wieś">wieś</option>
+          </select>
+      </div>
   
       <div class="grid-container" style="width: 50%; margin: auto; margin-top: 10px; display: grid; grid-template-columns: 1fr;grid-gap: 20px;">
         <div id = "map1" class="grid-child">
@@ -71,7 +87,7 @@
   createMapWoj("mapWoj", data_processed, "pl");
   }
   
-  function loadDataAndRenderMap(rok) {
+  function loadDataAndRenderMap(rok, param) {
   am5.ready(function() {
   
   am5.net.load("/data/regionalne/indicator_{{ id_map }}-map.csv").then(function(result) {
@@ -86,6 +102,7 @@
 
     var data_filtered = data
       .filter(item => item.REGION !== "POLSKA")  // usuwa wpis dla całej Polski
+      .filter(item => item.PARAM == param)  // wybiera wpisy dla param
       .map(item => {
         
     let newName;
@@ -161,53 +178,72 @@
   
   };
   
-  loadDataAndRenderMap("2023");
+  loadDataAndRenderMap("2023","ogółem");
   
   function wyborYear() {
     var yearBox = document.getElementById("yearBox");
+    var paramBox = document.getElementById("paramBox");
     var selectedYear = yearBox.options[yearBox.selectedIndex].index;
+    var selectedParam = paramBox.value;
     //console.log(selectedYear);
     if(selectedYear===0){
-    loadDataAndRenderMap("2023");
+    loadDataAndRenderMap("2023",selectedParam);
     }
     if(selectedYear===1){
-    loadDataAndRenderMap("2022");
+    loadDataAndRenderMap("2022",selectedParam);
     }
     if(selectedYear===2){
-    loadDataAndRenderMap("2021");
+    loadDataAndRenderMap("2021",selectedParam);
     }
     if(selectedYear===3){
-    loadDataAndRenderMap("2020");
+    loadDataAndRenderMap("2020",selectedParam);
     }
     if(selectedYear===4){
-    loadDataAndRenderMap("2019");
+    loadDataAndRenderMap("2019",selectedParam);
     }
     if(selectedYear===5){
-    loadDataAndRenderMap("2018");
+    loadDataAndRenderMap("2018",selectedParam);
     }
     if(selectedYear===6){
-    loadDataAndRenderMap("2017");
+    loadDataAndRenderMap("2017",selectedParam);
     }
     if(selectedYear===7){
-    loadDataAndRenderMap("2016");
+    loadDataAndRenderMap("2016",selectedParam);
     }
     if(selectedYear===8){
-    loadDataAndRenderMap("2015");
+    loadDataAndRenderMap("2015",selectedParam);
     }
     if(selectedYear===9){
-    loadDataAndRenderMap("2014");
+    loadDataAndRenderMap("2014",selectedParam);
     }
     if(selectedYear===10){
-    loadDataAndRenderMap("2013");
+    loadDataAndRenderMap("2013",selectedParam);
     }
     if(selectedYear===11){
-    loadDataAndRenderMap("2012");
+    loadDataAndRenderMap("2012",selectedParam);
     }
     if(selectedYear===12){
-    loadDataAndRenderMap("2011");
+    loadDataAndRenderMap("2011",selectedParam);
     }
     if(selectedYear===13){
-    loadDataAndRenderMap("2010");
+    loadDataAndRenderMap("2010",selectedParam);
+    }
+   };
+
+  function wyborParam() {
+    var yearBox = document.getElementById("yearBox");
+    var paramBox = document.getElementById("paramBox");
+    var selectedParam = paramBox.options[paramBox.selectedIndex].index;
+    var selectedYear = yearBox.value;
+    //console.log(selectedYear);
+    if(selectedParam===0){
+    loadDataAndRenderMap(selectedYear,"ogółem");
+    }
+    if(selectedParam===1){
+    loadDataAndRenderMap(selectedYear,"miasto");
+    }
+    if(selectedParam===2){
+    loadDataAndRenderMap(selectedYear,"wieś");
     }
    };
   
