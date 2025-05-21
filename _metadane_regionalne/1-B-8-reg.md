@@ -1,28 +1,29 @@
 ---
-translation_id: 1-B-7-reg
+translation_id: 1-B-8-reg
 pl_title: >-
-  Liczba centrów integracji społecznej, zakładów aktywności zawodowej i warsztatów terapii zajęciowej na 100 tys. ludności
+   Liczba uczestników w centrach integracji społecznej i warsztatach terapii zajęciowej na 100 tys. ludności
 pl_graph_title: >-
-  Liczba centrów integracji społecznej, zakładów aktywności zawodowej i warsztatów terapii zajęciowej na 100 tys. ludności
+   Liczba uczestników w centrach integracji społecznej i warsztatach terapii zajęciowej na 100 tys. ludności
 en_title: >-
-  Number of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population
+  Number of participants of the social integration centres and occupational therapy workshops per 100 thous. population
 en_graph_title: >-
-  Number of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population
+  Number of participants of the social integration centres and occupational therapy workshops per 100 thous. population
 pl_nazwa_wskaznika: >-
-  <b>1.B.7  Liczba centrów integracji społecznej, zakładów aktywności zawodowej i warsztatów terapii zajęciowej na 100 tys. ludności</b>
+  <b>1.B.8   Liczba uczestników w centrach integracji społecznej i warsztatach terapii zajęciowej na 100 tys. ludności</b>
 pl_cel: Cel 1. Koniec z ubóstwem
 pl_zadanie: null
 pl_priorytet: >-
   Dostęp do usług dla osób starszych i opieka nad osobami starszymi i z niepełnosprawnościami
 pl_definicja: >-
-  Liczba centrów integracji społecznej, zakładów aktywności zawodowej i
-  warsztatów terapii zajęciowej w przeliczeniu na 100 tys. ludności.
+  Liczba uczestników centrów integracji społecznej, zakładów aktywności
+  zawodowej i warsztatów terapii zajęciowej w przeliczeniu na 100 tys.
+  mieszkańców.
 pl_jednostka_prezentacji: sztuki
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
 en_nazwa_wskaznika: >-
-  <b>1.B.7 Number of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population</b>
+  <b>1.B.8 Number of participants of the social integration centres and occupational therapy workshops per 100 thous. population</b>
 en_cel: Goal 1. No poverty
 en_zadanie: null
 en_priorytet: >-
@@ -37,8 +38,8 @@ pl_wyjasnienia_metodologiczne: >-
   edukacyjnym, w których jednym z elementów edukacji może być praca uczestników
   w ramach działalności handlowej, usługowej lub wytwórczej. Odbiorcami usług
   społecznych CIS są uczestnicy zajęć, którymi mogą być osoby długotrwale
-  bezrobotne, bezdomne, niepełnosprawne, uzależnione od alkoholu i narkotyków
-  (po zakończonej terapii), chore psychicznie, zwalniane z zakładów karnych oraz
+  bezrobotne, bezdomne, niepełnosprawne, uzależnione od alkoholu i narkotyków po
+  zakończonej terapii), chore psychicznie, zwalniane z zakładów karnych oraz
   uchodźcy.</p> <p><b>Zakłady aktywności zawodowej (ZAZ)</b> są jednostkami,
   które łączą w swojej działalności prowadzenie rehabilitacji
   społeczno-zawodowej osób niepełnosprawnych z prowadzeniem działalności
@@ -54,9 +55,7 @@ pl_wyjasnienia_metodologiczne: >-
   Odbiorcami usług społecznych WTZ są uczestnicy warsztatów, którymi są osoby
   niepełnosprawne intelektualnie bądź ruchowo, posiadające orzeczenie o znacznym
   lub umiarkowanym stopniu niepełnosprawności oraz z wpisanym w orzeczeniu
-  wskazaniem do terapii zajęciowej. Personel WTZ stanowią natomiast osoby
-  zatrudnione jako kadra kierownicza, administracyjna, merytoryczna oraz
-  pomocnicza.</p>
+  wskazaniem do terapii  zajęciowej.</p>
 en_wyjasnienia_metodologiczne: >-
   <p><b>Social Integration Centres (SIC)</b> are educationally-oriented
   establishments involving such elements of education as participants’
@@ -76,8 +75,9 @@ en_wyjasnienia_metodologiczne: >-
   retarded with a certificate of significant or moderate degree of disability
   including recommendation for occupational therapy.</p>
 en_definicja: >-
-  Number of social integration centres, vocational activity workshops and
-  occupational therapy workshops calculated per 100 thous. population.
+  Number of participants of the social integration centres, vocational activity
+  workshops ans occupational therapy workshops calculated per 100 thous.
+  population.
 pl_data_aktualizacji_danych:
 pl_data_aktualizacji_metadanych:
 en_data_aktualizacji_danych:
