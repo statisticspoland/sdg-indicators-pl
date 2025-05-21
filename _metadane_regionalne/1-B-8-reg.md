@@ -1,0 +1,85 @@
+---
+translation_id: 1-B-8-reg
+pl_title: >-
+   Liczba uczestników w centrach integracji społecznej i warsztatach terapii zajęciowej na 100 tys. ludności
+pl_graph_title: >-
+   Liczba uczestników w centrach integracji społecznej i warsztatach terapii zajęciowej na 100 tys. ludności
+en_title: >-
+  Number of participants of the social integration centres and occupational therapy workshops per 100 thous. population
+en_graph_title: >-
+  Number of participants of the social integration centres and occupational therapy workshops per 100 thous. population
+pl_nazwa_wskaznika: >-
+  <b>1.B.8   Liczba uczestników w centrach integracji społecznej i warsztatach terapii zajęciowej na 100 tys. ludności</b>
+pl_cel: Cel 1. Koniec z ubóstwem
+pl_zadanie: null
+pl_priorytet: >-
+  Dostęp do usług dla osób starszych i opieka nad osobami starszymi i z niepełnosprawnościami
+pl_definicja: >-
+  Liczba uczestników centrów integracji społecznej, zakładów aktywności
+  zawodowej i warsztatów terapii zajęciowej w przeliczeniu na 100 tys.
+  mieszkańców.
+pl_jednostka_prezentacji: sztuki
+pl_dostepne_wymiary: ogółem
+pl_zrodlo_danych: Główny Urząd Statystyczny
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_nazwa_wskaznika: >-
+  <b>1.B.8 Number of participants of the social integration centres and occupational therapy workshops per 100 thous. population</b>
+en_cel: Goal 1. No poverty
+en_zadanie: null
+en_priorytet: >-
+  Access to services for older people and care for older people and people with disabilities
+en_jednostka_prezentacji: pieces
+en_dostepne_wymiary: total
+en_zrodlo_danych: Statistics Poland
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
+published: true
+pl_wyjasnienia_metodologiczne: >-
+  <p><b>Centra integracji społecznej (CIS)</b> są placówkami o charakterze
+  edukacyjnym, w których jednym z elementów edukacji może być praca uczestników
+  w ramach działalności handlowej, usługowej lub wytwórczej. Odbiorcami usług
+  społecznych CIS są uczestnicy zajęć, którymi mogą być osoby długotrwale
+  bezrobotne, bezdomne, niepełnosprawne, uzależnione od alkoholu i narkotyków po
+  zakończonej terapii), chore psychicznie, zwalniane z zakładów karnych oraz
+  uchodźcy.</p> <p><b>Zakłady aktywności zawodowej (ZAZ)</b> są jednostkami,
+  które łączą w swojej działalności prowadzenie rehabilitacji
+  społeczno-zawodowej osób niepełnosprawnych z prowadzeniem działalności
+  gospodarczej. W ramach ZAZ zatrudniane są osoby niepełnosprawne, które
+  posiadają orzeczenie o znacznym stopniu niepełnosprawności, ewentualnie osoby
+  z umiarkowanym stopniem niepełnosprawności, jeżeli stwierdzono u nich autyzm,
+  upośledzenie umysłowe lub chorobę psychiczną. Niepełnosprawni pracownicy z ww.
+  grup ustawowo muszą stanowić co najmniej 70% osób zatrudnionych w zakładzie –
+  w rozdziale osoby te określane są jako odbiorcy usług ZAZ.</p> <p><b>Warsztaty
+  terapii zajęciowej (WTZ)</b> mają wspomagać proces rehabilitacji osób
+  niepełnosprawnych poprzez rozwijanie umiejętności codziennego funkcjonowania,
+  zaradności osobistej, sprawności psychofizycznej oraz kompetencji zawodowych.
+  Odbiorcami usług społecznych WTZ są uczestnicy warsztatów, którymi są osoby
+  niepełnosprawne intelektualnie bądź ruchowo, posiadające orzeczenie o znacznym
+  lub umiarkowanym stopniu niepełnosprawności oraz z wpisanym w orzeczeniu
+  wskazaniem do terapii  zajęciowej.</p>
+en_wyjasnienia_metodologiczne: >-
+  <p><b>Social Integration Centres (SIC)</b> are educationally-oriented
+  establishments involving such elements of education as participants’
+  engagement in service, trade and manufacturing activities. Among recipients of
+  SIC social services, there are e.g. the long-term unemployed, the homeless,
+  the disabled, alcohol and drug addicts (after finishing treatment), the
+  mentally ill, the disabled, the released from penitentiary institutions and
+  refugees.</p> <p><b>Vocational Activity Workshops (VAW)</b> are units that
+  join socio-vocational rehabilitation of the disabled with conducting economic
+  activity. VAW employs the disabled with a certificate of significant degree of
+  disability, in some cases – persons w with moderate degree of disability if
+  they were diagnosed with autism, mental retardation or mental illness.</p>
+  <p><b>Occupational Therapy Workshops (OTW)</b> support the rehabilitation
+  process of the disabled by developing their skills for everyday functioning,
+  their psychophysical fitness and occupational qualifications. Among the
+  recipients of OTW social services, there are the motorically or mentally
+  retarded with a certificate of significant or moderate degree of disability
+  including recommendation for occupational therapy.</p>
+en_definicja: >-
+  Number of participants of the social integration centres, vocational activity
+  workshops ans occupational therapy workshops calculated per 100 thous.
+  population.
+pl_data_aktualizacji_danych:
+pl_data_aktualizacji_metadanych:
+en_data_aktualizacji_danych:
+en_data_aktualizacji_metadanych:
+---
