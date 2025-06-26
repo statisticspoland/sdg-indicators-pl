@@ -16,7 +16,7 @@ pl_priorytet: >-
   Wspieranie rodzin z dziećmi i opieka nad dziećmi
 pl_definicja: >-
   Udział dzieci w wieku 3–5 lat objętych wychowaniem przedszkolnym w ogólnej liczbie ludności w tej grupie wieku.
-pl_jednostka_prezentacji: procent [%]
+pl_jednostka_prezentacji: 'procent [%]'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Ministerstwo Edukacji i Nauki / Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
@@ -26,7 +26,7 @@ en_cel: Goal 1. No poverty
 en_zadanie: null
 en_priorytet: >-
   Supporting families with children and childcare
-en_jednostka_prezentacji: percent [%]
+en_jednostka_prezentacji: 'percent [%]'
 en_dostepne_wymiary: total
 en_zrodlo_danych: The Ministry of Education and Science / Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010

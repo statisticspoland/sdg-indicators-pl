@@ -16,7 +16,7 @@ pl_priorytet: >-
   Dostęp do usług dla osób starszych i opieka nad osobami starszymi i z niepełnosprawnościami
 pl_definicja: >-
 
-pl_jednostka_prezentacji: sztuki
+pl_jednostka_prezentacji: osoby
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
@@ -26,7 +26,7 @@ en_cel: Goal 1. No poverty
 en_zadanie: null
 en_priorytet: >-
   Access to services for older people and care for older people and people with disabilities
-en_jednostka_prezentacji: pieces
+en_jednostka_prezentacji: persons
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010

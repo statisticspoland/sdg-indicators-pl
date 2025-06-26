@@ -1,6 +1,6 @@
 ---
 layout: status
 lang: en
-title: National Reporting Status
+title: Regional Reporting Status
 permalink: /en/statistics_reg/status/
 ---

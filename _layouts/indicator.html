@@ -249,7 +249,7 @@
 
 
 
-          <h3>{{ t.sub-subtitle }} {{ page.indicator | remove: ".reg" }} - {{ indicator_title }} </h3>
+          <h3>{{ t.sub-subtitle }} {{ page.indicator | remove: ".0" | remove: ".reg" }} - {{ indicator_title }} </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab" title="{{t.data-title}}">{{ t.data }}</a></li>
             <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab" title="{{t.metadata-title}}">{{ t.metadata }}</a></li>

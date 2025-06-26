@@ -1,5 +1,5 @@
 ---
 layout: status
-title: Wskaźniki krajowe - stan raportowania
+title: Wskaźniki regionalne - stan raportowania
 permalink: /statistics_reg/status/
 ---
