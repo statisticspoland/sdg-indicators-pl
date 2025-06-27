@@ -105,7 +105,7 @@
   function loadDataAndRenderMap(rok, param) {
   am5.ready(function() {
 
-  am5.net.load("/data/regionalne/indicator_{{ id_map }}-map.csv").then(function(result) {
+  am5.net.load("{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv").then(function(result) {
 
     // Parse data
     var data = am5.CSVParser.parse(result.response, {
