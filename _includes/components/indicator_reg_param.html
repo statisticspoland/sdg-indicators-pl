@@ -110,7 +110,7 @@
   function processData(data_processed) {
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
-  createMapWoj("mapWoj", data_processed, "pl");
+  createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
   }
 
   function loadDataAndRenderMap(rok, param) {
