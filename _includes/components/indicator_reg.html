@@ -27,7 +27,7 @@
       <script src="https://cdn.amcharts.com/lib/5/geodata/polandLow.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
   
-      <div style="width: 20%; display: inline-block; margin-top: 10px;">
+      <div style="width: 15%; display: inline-block; margin-top: 6px; margin-left: 5px; vertical-align: top;">
 <!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
         {% if language == 'pl' %}
           Rok:
@@ -54,21 +54,32 @@
           </select>
       </div>
   
-      <div class="grid-container" style="width: 50%; margin: auto; margin-top: 10px; display: grid; grid-template-columns: 1fr;grid-gap: 20px;">
+      <div style="width: 75%; margin: auto; margin-top: 28px; display: inline-block; vertical-align: top;">
+        <p id="wartoscPolska" style="margin: 0 auto; text-align: center;">
+          {% if language == 'pl' %}
+            Wczytywanie danych...
+          {% else %}
+            Loading data...
+          {% endif %}
+        </p>
+      </div>
+
+      <div class="grid-container" style="width: 75%; margin: auto; display: inline-block; margin-left: 16%;">
         <div id = "map1" class="grid-child">
-          <div id="mapdiv" style="width: 100%;height: 300px">
-            <div id="mapWoj" style="width: 100%;height: 300px"></div>
+          <div id="mapdiv" style="width: 100%;height: 400px">
+            <div id="mapWoj" style="width: 100%;height: 400px"></div>
           </div>
         </div>
       </div>
   
+
   
   <script>
   
   function processData(data_processed) {
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
-  createMapWoj("mapWoj", data_processed, "pl");
+  createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
   }
   
   function loadDataAndRenderMap(rok) {
@@ -212,7 +223,74 @@
    };
   
   </script>
-  
+
+  <script>
+    // Adres do Twojego pliku CSV – zamień na właściwy
+    const CSV_URL = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv';
+
+    const i18n = {
+      naglowek: "{% if language == 'pl' %}Polska w{% else %}Poland in{% endif %}",
+      blad: "{% if language == 'pl' %}Brak danych dla roku{% else %}No data for {% endif %}",
+      no_data: "{% if language == 'pl' %}Nie znaleziono danych dla Polski{% else %}No data for Poland{% endif %}"
+    };
+
+    // Zmienna na dane Polski
+    let danePolski = {};
+
+    // Funkcja pomocnicza – wczytuje CSV jako obiekt
+    function parseCSV(csv) {
+      const lines = csv.trim().split("\n");
+      const headers = lines[0].split(",");
+      const rows = lines.slice(1);
+
+      return rows.map(line => {
+        const values = line.split(",");
+        let obj = {};
+        headers.forEach((h, i) => obj[h.trim()] = values[i]?.trim());
+        return obj;
+      });
+    }
+
+    // Funkcja do aktualizacji wartości na stronie
+    function updateWartosc(rok) {
+      const wartosc = danePolski[rok];
+      const paragraf = document.getElementById("wartoscPolska");
+      if (wartosc) {
+        const locale = "{% if language == 'pl' %}pl-PL{% else %}en-US{% endif %}";
+        const czesci = wartosc.split('.');
+        const miejscaPoPrzecinku = czesci.length === 2 ? czesci[1].length : 0;
+        const wartoscLiczbowa = Number(wartosc);
+        const wartoscSformatowana = wartoscLiczbowa.toLocaleString(locale, {
+          minimumFractionDigits: miejscaPoPrzecinku,
+          maximumFractionDigits: miejscaPoPrzecinku
+          });
+        paragraf.textContent = `${i18n.naglowek} ${rok}: ${wartoscSformatowana}`;
+      } else {
+        paragraf.textContent = `${i18n.blad} ${rok}`;
+      }
+    }
+
+    // Główne ładowanie
+    fetch(CSV_URL)
+      .then(response => response.text())
+      .then(csvText => {
+        const data = parseCSV(csvText);
+        const polska = data.find(row => row.REGION?.toUpperCase() === "POLSKA");
+
+        if (polska) {
+          danePolski = polska;
+          const domyslnyRok = document.getElementById("yearBox").value;
+          updateWartosc(domyslnyRok);
+        } else {
+          document.getElementById("wartoscPolska").textContent = `${i18n.no_data}`;
+        }
+      });
+
+    // Obsługa zmiany selecta
+    document.getElementById("yearBox").addEventListener("change", function() {
+      updateWartosc(this.value);
+    });
+  </script>
 
       {% if licznik>1 %}
         {% if language == 'pl' %}

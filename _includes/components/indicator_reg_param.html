@@ -27,7 +27,7 @@
       <script src="https://cdn.amcharts.com/lib/5/geodata/polandLow.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
 
-      <div style="width: 20%; display: inline-block; margin-top: 10px;">
+      <div style="width: 15%; display: inline-block; margin-top: 6px; margin-left: 5px; vertical-align: top;">
 <!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
         {% if language == 'pl' %}
           Rok:
@@ -54,7 +54,7 @@
           </select>
       </div>
 
-      <div style="width: 20%; display: inline-block; margin-top: 10px;">
+      <div style="width: 15%; display: inline-block; margin-top: 6px; margin-left: 5px; vertical-align: top;">
 <!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
         {% if language == 'pl' %}
           Rok:
@@ -85,13 +85,24 @@
   {% endif %}
       </div>
 
-      <div class="grid-container" style="width: 50%; margin: auto; margin-top: 10px; display: grid; grid-template-columns: 1fr;grid-gap: 20px;">
+      <div style="width: 55%; margin: auto; margin-top: 28px; display: inline-block; vertical-align: top;">
+        <p id="wartoscPolska" style="margin: 0 auto; text-align: center; margin-left: 20%;">
+          {% if language == 'pl' %}
+            Wczytywanie danych...
+          {% else %}
+            Loading data...
+          {% endif %}
+        </p>
+      </div>
+
+      <div class="grid-container" style="width: 65%; margin: auto; display: inline-block; margin-left: 32%;">
         <div id = "map1" class="grid-child">
-          <div id="mapdiv" style="width: 100%;height: 300px">
-            <div id="mapWoj" style="width: 100%;height: 300px"></div>
+          <div id="mapdiv" style="width: 100%;height: 400px">
+            <div id="mapWoj" style="width: 100%;height: 400px"></div>
           </div>
         </div>
       </div>
+
 
 
   <script>
@@ -263,6 +274,99 @@
    };
 
   </script>
+
+
+
+  <script>
+  const CSV_URL = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv';
+
+  const i18n = {
+    naglowek: "{% if language == 'pl' %}Polska w{% else %}Poland in{% endif %}",
+    blad: "{% if language == 'pl' %}Brak danych dla roku{% else %}No data for {% endif %}",
+    no_data: "{% if language == 'pl' %}Nie znaleziono danych dla Polski{% else %}No data for Poland{% endif %}"
+  };
+
+  const paramLabels = {
+  pl: {
+    "ogółem": "ogółem",
+    "miasto": "miasto",
+    "wieś": "wieś"
+  },
+  en: {
+    "ogółem": "total",
+    "miasto": "urban areas",
+    "wieś": "rural areas"
+  }
+  };
+
+  const locale = "{% if language == 'pl' %}pl-PL{% else %}en-US{% endif %}";
+
+  let danePolski = []; // teraz to będzie tablica z wszystkimi wierszami dla Polski
+
+  function parseCSV(csv) {
+    const lines = csv.trim().split("\n");
+    const headers = lines[0].split(",");
+    const rows = lines.slice(1);
+
+    return rows.map(line => {
+      const values = line.split(",");
+      let obj = {};
+      headers.forEach((h, i) => obj[h.trim()] = values[i]?.trim());
+      return obj;
+    });
+  }
+
+  function updateWartosc(rok) {
+    const param = document.getElementById("paramBox").value;
+    const paragraf = document.getElementById("wartoscPolska");
+
+    const wpis = danePolski.find(
+      row => row.PARAM === param
+    );
+
+    if (wpis && wpis[rok]) {
+      const wartosc = wpis[rok];
+      const czesci = wartosc.split('.');
+      const miejscaPoPrzecinku = czesci.length === 2 ? czesci[1].length : 0;
+      const wartoscLiczbowa = Number(wartosc);
+      const wartoscSformatowana = wartoscLiczbowa.toLocaleString(locale, {
+        minimumFractionDigits: miejscaPoPrzecinku,
+        maximumFractionDigits: miejscaPoPrzecinku
+      });
+      const lang = "{% if language == 'pl' %}pl{% else %}en{% endif %}";
+      const paramLabel = paramLabels[lang][param] || param; // fallback jeśli brak tłumaczenia
+
+      paragraf.textContent = `${i18n.naglowek} ${rok} – ${paramLabel}: ${wartoscSformatowana}`;
+    } else {
+      paragraf.textContent = `${i18n.blad} ${rok}`;
+    }
+  }
+
+  // Główne ładowanie
+  fetch(CSV_URL)
+    .then(response => response.text())
+    .then(csvText => {
+      const data = parseCSV(csvText);
+      danePolski = data.filter(row => row.REGION?.toUpperCase() === "POLSKA");
+
+      if (danePolski.length > 0) {
+        updateWartosc(document.getElementById("yearBox").value);
+      } else {
+        document.getElementById("wartoscPolska").textContent = i18n.no_data;
+      }
+    });
+
+  // Obsługa zmiany roku i parametru
+  document.getElementById("yearBox").addEventListener("change", function() {
+    updateWartosc(this.value);
+  });
+
+  document.getElementById("paramBox").addEventListener("change", function() {
+    const rok = document.getElementById("yearBox").value;
+    updateWartosc(rok);
+  });
+</script>
+
 
 
       {% if licznik>1 %}

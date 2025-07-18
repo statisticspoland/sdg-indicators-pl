@@ -47,7 +47,7 @@ pl_wyjasnienia_metodologiczne: >-
   <p>Dane dotyczące wychowania przedszkolnego prezentowane są według stanu w
   dniu 30 IX; od roku szkolnego 2013/14 łącznie z dziećmi przebywającymi przez
   cały rok szkolny w placówkach wykonujących działalność leczniczą.</p> <p>Od
-  2007 r. dane opracowane są na podstawie systemu informacji oświatowej (SIO)
+  2007 r. dane opracowane są na podstawie Systemu Informacji Oświatowej (SIO)
   administrowanego przez Ministerstwo Edukacji Narodowej.</p>
 en_wyjasnienia_metodologiczne: >-
   <p> <b>Pre-primary education</b> represents the first stage of education in

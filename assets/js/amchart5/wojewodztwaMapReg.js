@@ -1,6 +1,6 @@
 
   //am5.ready(function() {
-function createMapWoj(div, dane, jez){
+function createMapWoj(div, dane, jez, precyzja){
   
   am5.array.each(am5.registry.rootElements,
     function(root) {
@@ -13,13 +13,13 @@ function createMapWoj(div, dane, jez){
   );
 
   // Create root
-  //console.log("Tworzenie mapy...");
+  // console.log("dane...",dane);
   var root = am5.Root.new(div);
 
   if(jez != "en"){
     root.locale = am5locales_pl_PL;
   }
-  root.numberFormatter.set("numberFormat", "#,##0.0");
+  //root.numberFormatter.set("numberFormat", "#,##0.0");
 
   // Set themes
   root.setThemes([
@@ -40,8 +40,30 @@ function createMapWoj(div, dane, jez){
     calculateAggregates: true
   }));
 
+  function formatNumberLocalized(value, precyzja, jez) {
+  let parts = Number(value).toFixed(precyzja).split(".");
+
+  // Dodaj separator tysięcy
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, jez === "pl" ? " " : ",");
+
+  // Połącz z separatorem dziesiętnym
+  const decimalSeparator = jez === "pl" ? "," : ".";
+  return parts.join(decimalSeparator);
+  }
+
+  polygonSeries.mapPolygons.template.adapters.add("tooltipText", function(_, target) {
+  const name = target.dataItem?.dataContext?.name;
+  const value = target.dataItem?.dataContext?.value;
+
+  if (name != null && value != null) {
+    const formattedValue = formatNumberLocalized(value, precyzja, jez);
+    return `${name}: ${formattedValue}`;
+  }
+  return "";
+  });
+
   polygonSeries.mapPolygons.template.setAll({
-    tooltipText: "{name}: {value.formatNumber('#,##0.0')}",
+    //tooltipText: "{name}: {value.formatNumber('#,##0.0')}",
     fill: am5.color(0xbfbfbf),  //kolor dla braku danych
     stroke: am5.color(0x99ff99) //kolor krawedzi
     //stroke: am5.color(0xe0ccff) //kolor krawedzi
@@ -57,6 +79,14 @@ function createMapWoj(div, dane, jez){
     key: "fill"
   }]);
 
+  function formatDecimal(value, precyzja, jez) {
+  let formatted = Number(value).toFixed(precyzja);
+  if (jez === "pl") {
+    formatted = formatted.replace(".", ",");
+  }
+  return formatted;
+  }
+
   polygonSeries.mapPolygons.template.events.on("pointerover", function(ev) {
     heatLegend.showValue(ev.target.dataItem.get("value"));
   });
@@ -69,9 +99,9 @@ function createMapWoj(div, dane, jez){
     //startColor: am5.color(0xf0e6ff),
     endColor: am5.color(0x006600),
     //endColor: am5.color(0xb380ff),
-    startText: Math.min(...dane.map(o => o.value)).toFixed(1),
+    startText: formatNumberLocalized(Math.min(...dane.map(o => o.value)), precyzja, jez),
     //startText: 89.00,
-    endText: Math.max(...dane.map(o => o.value), 0).toFixed(1),
+    endText: formatNumberLocalized(Math.max(...dane.map(o => o.value)), precyzja, jez),
     //endText: 100.00,
     stepCount: 5,
     height: 300
