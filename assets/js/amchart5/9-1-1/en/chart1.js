@@ -115,6 +115,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 96.6,
 	"in rural area": 99.9,
 	"year": "2023"
+	}, {
+	"w1": "Polska",
+	"total": 97.5,
+	"in urban area": 96.2,
+	"in rural area": 99.6,
+	"year": "2024"
 	}],
     // Data set #2
     [{
@@ -165,6 +171,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 96.5,
 	"in rural area": 105.0,
 	"year": "2023"
+	}, {
+	"w1": "dolnośląskie",
+	"total": 98.8,
+	"in urban area": 95.8,
+	"in rural area": 105.4,
+	"year": "2024"
 	}],
 	// Data set #3
     [{
@@ -215,6 +227,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 92.9,
 	"in rural area": 99.8,
 	"year": "2023"
+	}, {
+	"w1": "kujawsko-pomorskie",
+	"total": 95.1,
+	"in urban area": 92.4,
+	"in rural area": 99.1,
+	"year": "2024"
 	}],
 	// Data set #4
     [{
@@ -265,6 +283,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 93.8,
 	"in rural area": 94.1,
 	"year": "2023"
+	}, {
+	"w1": "lubelskie",
+	"total": 93.3,
+	"in urban area": 93.4,
+	"in rural area": 93.2,
+	"year": "2024"
 	}],
 	// Data set #5
     [{
@@ -315,6 +339,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 94.4,
 	"in rural area": 98.2,
 	"year": "2023"
+	}, {
+	"w1": "lubuskie",
+	"total": 95.3,
+	"in urban area": 93.8,
+	"in rural area": 97.9,
+	"year": "2024"
 	}],
 	// Data set #6
     [{
@@ -365,6 +395,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 92.8,
 	"in rural area": 98.1,
 	"year": "2023"
+	}, {
+	"w1": "łódzkie",
+	"total": 94.1,
+	"in urban area": 92.4,
+	"in rural area": 97.0,
+	"year": "2024"
 	}],
 	// Data set #7
     [{
@@ -415,6 +451,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 100.4,
 	"in rural area": 102.9,
 	"year": "2023"
+	}, {
+	"w1": "małopolskie",
+	"total": 101.7,
+	"in urban area": 100.3,
+	"in rural area": 103.0,
+	"year": "2024"
 	}],
 	// Data set #8
     [{
@@ -465,6 +507,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 103.6,
 	"in rural area": 102.0,
 	"year": "2023"
+	}, {
+	"w1": "mazowieckie",
+	"total": 103.0,
+	"in urban area": 103.8,
+	"in rural area": 101.5,
+	"year": "2024"
 	}],
 	// Data set #9
     [{
@@ -515,6 +563,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 95.5,
 	"in rural area": 92.5,
 	"year": "2023"
+	}, {
+	"w1": "opolskie",
+	"total": 93.4,
+	"in urban area": 94.9,
+	"in rural area": 91.8,
+	"year": "2024"
 	}],
 	// Data set #10
     [{
@@ -565,6 +619,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 96.8,
 	"in rural area": 97.8,
 	"year": "2023"
+	}, {
+	"w1": "podkarpackie",
+	"total": 97.0,
+	"in urban area": 96.5,
+	"in rural area": 97.3,
+	"year": "2024"
 	}],
 	// Data set #11
     [{
@@ -615,6 +675,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 96.1,
 	"in rural area": 95.1,
 	"year": "2023"
+	}, {
+	"w1": "podlaskie",
+	"total": 95.3,
+	"in urban area": 95.6,
+	"in rural area": 94.8,
+	"year": "2024"
 	}],
 	// Data set #12
     [{
@@ -665,6 +731,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 98.9,
 	"in rural area": 108.3,
 	"year": "2023"
+	}, {
+	"w1": "pomorskie",
+	"total": 102.2,
+	"in urban area": 98.6,
+	"in rural area": 108.9,
+	"year": "2024"
 	}],
 	// Data set #13
     [{
@@ -715,6 +787,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 92.9,
 	"in rural area": 100.0,
 	"year": "2023"
+	}, {
+	"w1": "śląskie",
+	"total": 93.9,
+	"in urban area": 92.1,
+	"in rural area": 99.8,
+	"year": "2024"
 	}],
 	// Data set #14
     [{
@@ -765,6 +843,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 93.8,
 	"in rural area": 92.2,
 	"year": "2023"
+	}, {
+	"w1": "świętokrzyskie",
+	"total": 92.1,
+	"in urban area": 93.1,
+	"in rural area": 91.3,
+	"year": "2024"
 	}],
 	// Data set #15
     [{
@@ -815,6 +899,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 94.1,
 	"in rural area": 94.7,
 	"year": "2023"
+	}, {
+	"w1": "warmińsko-mazurskie",
+	"total": 93.7,
+	"in urban area": 93.2,
+	"in rural area": 94.5,
+	"year": "2024"
 	}],
 	// Data set #16
     [{
@@ -865,6 +955,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 97.0,
 	"in rural area": 104.5,
 	"year": "2023"
+	}, {
+	"w1": "wielkopolskie",
+	"total": 100.1,
+	"in urban area": 96.5,
+	"in rural area": 104.5,
+	"year": "2024"
 	}],
 	// Data set #17
     [{
@@ -915,6 +1011,12 @@ am5.array.each(am5.registry.rootElements,
 	"in urban area": 94.7,
 	"in rural area": 97.0,
 	"year": "2023"
+	}, {
+	"w1": "zachodniopomorskie",
+	"total": 94.9,
+	"in urban area": 94.0,
+	"in rural area": 96.8,
+	"year": "2024"
 	}]
   ];
 

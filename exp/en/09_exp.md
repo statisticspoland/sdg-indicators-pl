@@ -157,15 +157,15 @@ layout: page_exp
 			<div style="width: 86%; display: inline-block;"><b id="tytuł_2">Density of population (persons per square kilometres)</b></div>
 			<div id="selector" style="width: 86%; display: inline-block;">Select:
 				<div class="form-check form-check-inline" style="display: inline-block;margin-left: 10px;">
-					<input class="form-check-input" type="radio" name="dataset2" id="inlineRadio2_1" value="ogółem" onclick="createchart2('chart2', 0, 400, 0, ['2015', '2023'], 0);" checked="checked">
+					<input class="form-check-input" type="radio" name="dataset2" id="inlineRadio2_1" value="ogółem" onclick="createchart2('chart2', 0, 400, 0, ['2015', '2024'], 0);" checked="checked">
 					<label class="form-check-label" for="inlineRadio2_1" style="margin-top:  5px;">total</label>
 				</div>
 				<div class="form-check form-check-inline" style="display: inline-block;margin-left: 10px;">
-					<input class="form-check-input" type="radio" name="dataset2" id="inlineRadio2_2" value="w miastach" onclick="createchart2('chart2', 0, 2000, 0, ['2015', '2023'], 1);">
+					<input class="form-check-input" type="radio" name="dataset2" id="inlineRadio2_2" value="w miastach" onclick="createchart2('chart2', 0, 2000, 0, ['2015', '2024'], 1);">
 					<label class="form-check-label" for="inlineRadio2_2" style="margin-top:  5px;">in urban area</label>
 				</div>
 				<div class="form-check form-check-inline" style="display: inline-block;margin-left: 10px;">
-					<input class="form-check-input" type="radio" name="dataset2" id="inlineRadio2_3" value="na wsi" onclick="createchart2('chart2', 0, 140, 0, ['2015', '2023'], 2);">
+					<input class="form-check-input" type="radio" name="dataset2" id="inlineRadio2_3" value="na wsi" onclick="createchart2('chart2', 0, 140, 0, ['2015', '2024'], 2);">
 					<label class="form-check-label" for="inlineRadio2_3" style="margin-top:  5px;">in rural area</label>
 				</div>
 			</div>
@@ -192,15 +192,15 @@ layout: page_exp
 			<div style="width: 86%;"><b id="tytuł_4">Percentage of the length of public roads with improved hard surface (%)</b></div>
 			<div id="selector" style="width: 86%; display: inline-block;">Select:
 				<div class="form-check form-check-inline" style="display: inline-block;margin-left: 10px;">
-					<input class="form-check-input" type="radio" name="dataset4" id="inlineRadio4_1" value="ogółem" onclick="createchart4('chart4', 0, 100, 0, ['2015', '2022'], 0);" checked="checked">
+					<input class="form-check-input" type="radio" name="dataset4" id="inlineRadio4_1" value="ogółem" onclick="createchart4('chart4', 0, 100, 0, ['2015', '2023'], 0);" checked="checked">
 					<label class="form-check-label" for="inlineRadio4_1" style="margin-top:  5px;">total</label>
 				</div>
 				<div class="form-check form-check-inline" style="display: inline-block;margin-left: 10px;">
-					<input class="form-check-input" type="radio" name="dataset4" id="inlineRadio4_2" value="in urban area" onclick="createchart4('chart4', 0, 40, 0, ['2015', '2022'], 1);">
+					<input class="form-check-input" type="radio" name="dataset4" id="inlineRadio4_2" value="in urban area" onclick="createchart4('chart4', 0, 50, 0, ['2015', '2023'], 1);">
 					<label class="form-check-label" for="inlineRadio4_2" style="margin-top:  5px;">in urban area</label>
 				</div>
 				<div class="form-check form-check-inline" style="display: inline-block;margin-left: 10px;">
-					<input class="form-check-input" type="radio" name="dataset4" id="inlineRadio4_3" value="na wsi" onclick="createchart4('chart4', 0, 80, 0, ['2015', '2022'], 2);">
+					<input class="form-check-input" type="radio" name="dataset4" id="inlineRadio4_3" value="na wsi" onclick="createchart4('chart4', 0, 80, 0, ['2015', '2023'], 2);">
 					<label class="form-check-label" for="inlineRadio4_3" style="margin-top:  5px;">in rural area</label>
 				</div>
 			</div>
@@ -235,7 +235,7 @@ layout: page_exp
 
 	<div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 5px;">
 		<div class="grid-child" style="width:100%; height: 500px;">
-			<div style="width: 86%; display: inline-block;"><b>Share of population living in the rural area and in towns in 2023 (%)</b></div>
+			<div style="width: 86%; display: inline-block;"><b>Share of population living in the rural area and in towns in 2024 (%)</b></div>
 			<div style="width: 10%; display: inline-block; text-align: right;">
 				<a title= "Link to csv file containing chart 7 data" href="{{ site.baseurl }}/data/exp/en/9-1-1-chart7.csv"><img alt="CSV file graphics" style="vertical-align: bottom; max-width: 30px;" src="{{ site.baseurl }}/assets/img/icon_csv_dash.png"></a>
 			</div>
@@ -460,11 +460,11 @@ var dane3 = [{
 	"powiats": 101458.1,
 	"gminas": 91828.0
 	}, {
-	"year": "2022",
-	"national": 15367.5,
-	"voivodships": 24571.7,
-	"powiats": 102055.5,
-	"gminas": 112080.6
+	"year": "2023",
+	"national": 15401.1,
+	"voivodships": 24518.4,
+	"powiats": 102525.0,
+	"gminas": 113427.4
 	}];
 
 
@@ -474,7 +474,7 @@ var dane3 = [{
 //	});
 
 
-var dane5 = [{"w1":"POLAND","w2":"ogółem","2015":34.66,"2022":29.07},{"w1":"Dolnośląskie","w2":"ogółem","2015":22.03,"2022":18.51},{"w1":"Kujawsko-Pomorskie","w2":"ogółem","2015":40.39,"2022":31.67},{"w1":"Lubelskie","w2":"ogółem","2015":44.48,"2022":40.10},{"w1":"Lubuskie","w2":"ogółem","2015":51.01,"2022":51.26},{"w1":"Łódzkie","w2":"ogółem","2015":26.02,"2022":19.53},{"w1":"Małopolskie","w2":"ogółem","2015":19.94,"2022":17.57},{"w1":"Mazowieckie","w2":"ogółem","2015":36.21,"2022":28.92},{"w1":"Opolskie","w2":"ogółem","2015":23.88,"2022":20.56},{"w1":"Podkarpackie","w2":"ogółem","2015":23.98,"2022":19.99},{"w1":"Podlaskie","w2":"ogółem","2015":56.21,"2022":51.02},{"w1":"Pomorskie","w2":"ogółem","2015":46.90,"2022":32.87},{"w1":"Śląskie","w2":"ogółem","2015":16.62,"2022":13.14},{"w1":"Świętokrzyskie","w2":"ogółem","2015":21.50,"2022":15.93},{"w1":"Warmińsko-Mazurskie","w2":"ogółem","2015":48.28,"2022":40.50},{"w1":"Wielkopolskie","w2":"ogółem","2015":33.99,"2022":28.38},{"w1":"Zachodniopomorskie","w2":"ogółem","2015":35.53,"2022":31.92}];
+var dane5 = [{"w1":"POLAND","w2":"ogółem","2015":34.7,"2023":28.6},{"w1":"Dolnośląskie","w2":"ogółem","2015":22.0,"2023":19.1},{"w1":"Kujawsko-Pomorskie","w2":"ogółem","2015":40.4,"2023":30.7},{"w1":"Lubelskie","w2":"ogółem","2015":44.5,"2023":38.5},{"w1":"Lubuskie","w2":"ogółem","2015":51.0,"2023":50.6},{"w1":"Łódzkie","w2":"ogółem","2015":26.0,"2023":18.7},{"w1":"Małopolskie","w2":"ogółem","2015":19.9,"2023":17.7},{"w1":"Mazowieckie","w2":"ogółem","2015":36.2,"2023":28.2},{"w1":"Opolskie","w2":"ogółem","2015":23.9,"2023":20.3},{"w1":"Podkarpackie","w2":"ogółem","2015":24.0,"2023":20.2},{"w1":"Podlaskie","w2":"ogółem","2015":56.2,"2023":49.9},{"w1":"Pomorskie","w2":"ogółem","2015":46.9,"2023":31.5},{"w1":"Śląskie","w2":"ogółem","2015":16.6,"2023":12.8},{"w1":"Świętokrzyskie","w2":"ogółem","2015":21.5,"2023":15.5},{"w1":"Warmińsko-Mazurskie","w2":"ogółem","2015":48.3,"2023":40.3},{"w1":"Wielkopolskie","w2":"ogółem","2015":34.0,"2023":28.4},{"w1":"Zachodniopomorskie","w2":"ogółem","2015":35.5,"2023":32.0}];
 
 
 //var dane9_org = [{"w1":"POLSKA","w2":"regionalne","2015":191483,"2022":75701},{"w1":"POLSKA","w2":"podmiejskie","2015":351801,"2022":250547},{"w1":"POLSKA","w2":"miejskie","2015":2092,"2022":808},{"w1":"Dolnośląskie","w2":"regionalne","2015":9272,"2022":2615},{"w1":"Dolnośląskie","w2":"podmiejskie","2015":27221,"2022":23288},{"w1":"Dolnośląskie","w2":"miejskie","2015":135,"2022":218},{"w1":"Kujawsko-Pomorskie","w2":"regionalne","2015":26568,"2022":5006},{"w1":"Kujawsko-Pomorskie","w2":"podmiejskie","2015":39944,"2022":23160},{"w1":"Kujawsko-Pomorskie","w2":"miejskie","2015":131,"2022":0},{"w1":"Lubelskie","w2":"regionalne","2015":17814,"2022":6270},{"w1":"Lubelskie","w2":"podmiejskie","2015":30667,"2022":15262},{"w1":"Lubelskie","w2":"miejskie","2015":20,"2022":0},{"w1":"Lubuskie","w2":"regionalne","2015":6238,"2022":4195},{"w1":"Lubuskie","w2":"podmiejskie","2015":15883,"2022":12656},{"w1":"Lubuskie","w2":"miejskie","2015":62,"2022":0},{"w1":"Łódzkie","w2":"regionalne","2015":12600,"2022":5240},{"w1":"Łódzkie","w2":"podmiejskie","2015":20231,"2022":14888},{"w1":"Łódzkie","w2":"miejskie","2015":100,"2022":138},{"w1":"Małopolskie","w2":"regionalne","2015":3023,"2022":2697},{"w1":"Małopolskie","w2":"podmiejskie","2015":7422,"2022":3594},{"w1":"Małopolskie","w2":"miejskie","2015":89,"2022":0},{"w1":"Mazowieckie","w2":"regionalne","2015":30436,"2022":4407},{"w1":"Mazowieckie","w2":"podmiejskie","2015":56062,"2022":21302},{"w1":"Mazowieckie","w2":"miejskie","2015":476,"2022":10},{"w1":"Opolskie","w2":"regionalne","2015":3505,"2022":908},{"w1":"Opolskie","w2":"podmiejskie","2015":9771,"2022":13488},{"w1":"Opolskie","w2":"miejskie","2015":70,"2022":70},{"w1":"Podkarpackie","w2":"regionalne","2015":6137,"2022":6611},{"w1":"Podkarpackie","w2":"podmiejskie","2015":18118,"2022":22649},{"w1":"Podkarpackie","w2":"miejskie","2015":60,"2022":0},{"w1":"Podlaskie","w2":"regionalne","2015":8949,"2022":7782},{"w1":"Podlaskie","w2":"podmiejskie","2015":15205,"2022":10939},{"w1":"Podlaskie","w2":"miejskie","2015":50,"2022":35},{"w1":"Pomorskie","w2":"regionalne","2015":11728,"2022":9645},{"w1":"Pomorskie","w2":"podmiejskie","2015":18495,"2022":17578},{"w1":"Pomorskie","w2":"miejskie","2015":220,"2022":60},{"w1":"Śląskie","w2":"regionalne","2015":6481,"2022":1205},{"w1":"Śląskie","w2":"podmiejskie","2015":16019,"2022":7857},{"w1":"Śląskie","w2":"miejskie","2015":253,"2022":229},{"w1":"Świętokrzyskie","w2":"regionalne","2015":3412,"2022":380},{"w1":"Świętokrzyskie","w2":"podmiejskie","2015":9601,"2022":6580},{"w1":"Świętokrzyskie","w2":"miejskie","2015":0,"2022":0},{"w1":"Warmińsko-Mazurskie","w2":"regionalne","2015":12870,"2022":4018},{"w1":"Warmińsko-Mazurskie","w2":"podmiejskie","2015":16317,"2022":7760},{"w1":"Warmińsko-Mazurskie","w2":"miejskie","2015":313,"2022":0},{"w1":"Wielkopolskie","w2":"regionalne","2015":12797,"2022":7766},{"w1":"Wielkopolskie","w2":"podmiejskie","2015":31262,"2022":27344},{"w1":"Wielkopolskie","w2":"miejskie","2015":62,"2022":0},{"w1":"Zachodniopomorskie","w2":"regionalne","2015":19653,"2022":6956},{"w1":"Zachodniopomorskie","w2":"podmiejskie","2015":19583,"2022":22202},{"w1":"Zachodniopomorskie","w2":"miejskie","2015":51,"2022":48}];
@@ -490,13 +490,13 @@ var dane5 = [{"w1":"POLAND","w2":"ogółem","2015":34.66,"2022":29.07},{"w1":"Do
 
 			createchart1("chart1", 96, 101, 1, ['total', 'in urban area', 'in rural area'], 0);
 
-			createchart2("chart2", 0, 400, 0, ["2015", "2023"], 0);
+			createchart2("chart2", 0, 400, 0, ["2015", "2024"], 0);
 
 			createchart3("chart3", dane3, ["national", "voivodships", "powiats", "gminas"]);
 
-			createchart4("chart4", 0, 100, 0, ["2015", "2022"], 0);
+			createchart4("chart4", 0, 100, 0, ["2015", "2023"], 0);
 
-			createchart5("chart5", dane5, 0, 60, 0, ["2015", "2022"]);
+			createchart5("chart5", dane5, 0, 60, 0, ["2015", "2023"]);
 
 			createchart6("chart6");
 
@@ -527,7 +527,7 @@ function wyborWoj() {
 		createchart1('chart1', 96, 101, 1, ['total', 'in urban area', 'in rural area'], 0);
 		}
 		if(selectedWoj===1){    
-		createchart1('chart1', 96, 106, 1, ['total', 'in urban area', 'in rural area'], 1);
+		createchart1('chart1', 95, 106, 1, ['total', 'in urban area', 'in rural area'], 1);
 		}
 		if(selectedWoj===2){    
 		createchart1('chart1', 92, 102, 1, ['total', 'in urban area', 'in rural area'], 2);
@@ -536,25 +536,25 @@ function wyborWoj() {
 		createchart1('chart1', 93, 101, 1, ['total', 'in urban area', 'in rural area'], 3);
 		}		
 		if(selectedWoj===4){    
-		createchart1('chart1', 94, 101, 1, ['total', 'in urban area', 'in rural area'], 4);
+		createchart1('chart1', 93, 101, 1, ['total', 'in urban area', 'in rural area'], 4);
 		}
 		if(selectedWoj===5){    
 		createchart1('chart1', 92, 101, 1, ['total', 'in urban area', 'in rural area'], 5);
 		}
 		if(selectedWoj===6){    
-		createchart1('chart1', 100, 103, 1, ['total', 'in urban area', 'in rural area'], 6);
+		createchart1('chart1', 100, 104, 1, ['total', 'in urban area', 'in rural area'], 6);
 		}		
 		if(selectedWoj===7){    
 		createchart1('chart1', 100, 104, 1, ['total', 'in urban area', 'in rural area'], 7);
 		}
 		if(selectedWoj===8){    
-		createchart1('chart1', 92, 102, 1, ['total', 'in urban area', 'in rural area'], 8);
+		createchart1('chart1', 91, 102, 1, ['total', 'in urban area', 'in rural area'], 8);
 		}
 		if(selectedWoj===9){    
 		createchart1('chart1', 96, 101, 1, ['total', 'in urban area', 'in rural area'], 9);
 		}
 		if(selectedWoj===10){    
-		createchart1('chart1', 95, 100, 1, ['total', 'in urban area', 'in rural area'], 10);
+		createchart1('chart1', 94, 100, 1, ['total', 'in urban area', 'in rural area'], 10);
 		}
 		if(selectedWoj===11){    
 		createchart1('chart1', 98, 109, 1, ['total', 'in urban area', 'in rural area'], 11);
@@ -563,16 +563,16 @@ function wyborWoj() {
 		createchart1('chart1', 92, 102, 1, ['total', 'in urban area', 'in rural area'], 12);
 		}
 		if(selectedWoj===13){    
-		createchart1('chart1', 92, 100, 1, ['total', 'in urban area', 'in rural area'], 13);
+		createchart1('chart1', 91, 100, 1, ['total', 'in urban area', 'in rural area'], 13);
 		}
 		if(selectedWoj===14){    
-		createchart1('chart1', 94, 100, 1, ['total', 'in urban area', 'in rural area'], 14);
+		createchart1('chart1', 93, 100, 1, ['total', 'in urban area', 'in rural area'], 14);
 		}
 		if(selectedWoj===15){    
 		createchart1('chart1', 96, 105, 1, ['total', 'in urban area', 'in rural area'], 15);
 		}
 		if(selectedWoj===16){    
-		createchart1('chart1', 94, 101, 1, ['total', 'in urban area', 'in rural area'], 16);
+		createchart1('chart1', 93, 101, 1, ['total', 'in urban area', 'in rural area'], 16);
 		}
    }
 

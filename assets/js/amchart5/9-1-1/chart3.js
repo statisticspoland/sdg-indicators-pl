@@ -5,7 +5,7 @@ function createchart3(div, dane, wymiary){
     var root = am5.Root.new(div);
 
     root.locale = am5locales_pl_PL;
-    root.numberFormatter.set("numberFormat", "#,###.");
+    root.numberFormatter.set("numberFormat", "#,###.0");
 
     var myTheme = am5.Theme.new(root);
 
@@ -96,7 +96,7 @@ function createchart3(div, dane, wymiary){
       }));
 
       series.columns.template.setAll({
-        tooltipText: "{categoryY}, {name}: {valueX.formatNumber('#,###.')}",
+        tooltipText: "{categoryY}, {name}: {valueX.formatNumber('#,###.0')}",
         tooltipY: am5.percent(90)
       });
       series.data.setAll(dane);

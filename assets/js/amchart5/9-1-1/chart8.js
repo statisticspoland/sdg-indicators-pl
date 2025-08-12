@@ -130,9 +130,9 @@ var series3 = chart.series.push(am5xy.ColumnSeries.new(root, {
   })
 }));
 
-  var data1 = [{"date":"2015","value":15.4},{"date":"2016","value":14.6},{"date":"2017","value":13.8},{"date":"2018","value":12.6},{"date":"2019","value":12.4},{"date":"2020","value":10.8},{"date":"2021","value":12.1},{"date":"2022","value":10.5}];
-  var data2 = [{"date":"2015","value":20.0},{"date":"2016","value":18.0},{"date":"2017","value":17.4},{"date":"2018","value":15.3},{"date":"2019","value":15.3},{"date":"2020","value":13.7},{"date":"2021","value":14.1},{"date":"2022","value":14.2}];
-  var data3 = [{"date":"2015","value":29.3},{"date":"2016","value":26.6},{"date":"2017","value":23.3},{"date":"2018","value":24.6},{"date":"2019","value":24.0},{"date":"2020","value":24.2},{"date":"2021","value":23.2},{"date":"2022","value":22.1}];
+  var data1 = [{"date":"2015","value":15.4},{"date":"2016","value":14.6},{"date":"2017","value":13.8},{"date":"2018","value":12.6},{"date":"2019","value":12.4},{"date":"2020","value":10.8},{"date":"2021","value":12.1},{"date":"2022","value":10.5},{"date":"2023","value":10.8},{"date":"2024","value":12.2}];
+  var data2 = [{"date":"2015","value":20.0},{"date":"2016","value":18.0},{"date":"2017","value":17.4},{"date":"2018","value":15.3},{"date":"2019","value":15.3},{"date":"2020","value":13.7},{"date":"2021","value":14.1},{"date":"2022","value":14.2},{"date":"2023","value":15.4},{"date":"2024","value":14.1}];
+  var data3 = [{"date":"2015","value":29.3},{"date":"2016","value":26.6},{"date":"2017","value":23.3},{"date":"2018","value":24.6},{"date":"2019","value":24.0},{"date":"2020","value":24.2},{"date":"2021","value":23.2},{"date":"2022","value":22.1},{"date":"2023","value":21.3},{"date":"2024","value":20.9}];
   series1.data.processor = am5.DataProcessor.new(root, {
   dateFormat: "yyyy",
   dateFields: ["date"]

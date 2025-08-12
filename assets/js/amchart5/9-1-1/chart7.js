@@ -39,72 +39,72 @@ var chart = root.container.children.push(am5xy.XYChart.new(root, {
 
 var data = [{
   "woj": "POLSKA",
-  "miasto": 59.5,
-  "wieś": 40.5
+  "miasto": 59.4,
+  "wieś": 40.6
 }, {
   "woj": "Dolnośląskie",
-  "miasto": 67.4,
-  "wieś": 32.6
+  "miasto": 67.1,
+  "wieś": 32.9
 }, {
   "woj": "Kujawsko-Pomorskie",
   "miasto": 57.9,
   "wieś": 42.1
 }, {
   "woj": "Lubelskie",
-  "miasto": 46.1,
-  "wieś": 53.9
+  "miasto": 46.2,
+  "wieś": 53.8
 }, {
   "woj": "Lubuskie",
-  "miasto": 64.1,
-  "wieś": 35.9
+  "miasto": 64.0,
+  "wieś": 36.0
 }, {
   "woj": "Łódzkie",
-  "miasto": 61.8,
-  "wieś": 38.2
+  "miasto": 61.9,
+  "wieś": 38.1
 }, {
   "woj": "Małopolskie",
-  "miasto": 47.9,
-  "wieś": 52.1
+  "miasto": 47.8,
+  "wieś": 52.2
 }, {
   "woj": "Mazowieckie",
-  "miasto": 64.6,
-  "wieś": 35.4
+  "miasto": 64.8,
+  "wieś": 35.2
 }, {
   "woj": "Opolskie",
-  "miasto": 52.7,
-  "wieś": 47.3
+  "miasto": 52.8,
+  "wieś": 47.2
 }, {
   "woj": "Podkarpackie",
   "miasto": 41.0,
   "wieś": 59.0
 }, {
   "woj": "Podlaskie",
-  "miasto": 60.8,
-  "wieś": 39.2
+  "miasto": 60.7,
+  "wieś": 39.3
 }, {
   "woj": "Pomorskie",
-  "miasto": 62.3,
-  "wieś": 37.7
+  "miasto": 62.1,
+  "wieś": 37.9
 }, {
   "woj": "Śląskie",
-  "miasto": 75.8,
-  "wieś": 24.2
+  "miasto": 75.7,
+  "wieś": 24.3
 }, {
   "woj": "Świętokrzyskie",
   "miasto": 45.1,
   "wieś": 54.9
 }, {
   "woj": "Warmińsko-Mazurskie",
-  "miasto": 58.9,
-  "wieś": 41.1
+  "miasto": 58.7,
+  "wieś": 41.3
 }, {
   "woj": "Wielkopolskie",
-  "miasto": 53.0,
-  "wieś": 47.0
+  "miasto": 52.9,
+  "wieś": 47.1
 }, {
   "woj": "Zachodniopomorskie",
-  "miasto": 68.0,
-  "wieś": 32.0
+  "miasto": 67.9,
+  "wieś": 32.1
 }]
 
 

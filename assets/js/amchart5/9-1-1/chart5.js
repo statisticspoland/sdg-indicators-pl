@@ -84,7 +84,7 @@ root.numberFormatter.set("numberFormat", "#,###.0");
     }));
 
     series.columns.template.setAll({
-      tooltipText: "{categoryX}, {name}: {valueY.formatNumber('#,###.00')}",
+      tooltipText: "{categoryX}, {name}: {valueY.formatNumber('#,###.0')}",
       width: am5.percent(75),
       tooltipY: 0,
       strokeOpacity: 0
@@ -93,7 +93,7 @@ root.numberFormatter.set("numberFormat", "#,###.0");
 
 series.columns.template.adapters.add("fill", function(fill, target) {
   if (target.dataItem.get("categoryX") == "POLSKA") {
-    if (series.get("name") == "2022"){
+    if (series.get("name") == "2023"){
       return am5.color(0x674EA7);
     }
     else {
