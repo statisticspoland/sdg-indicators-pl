@@ -3,34 +3,35 @@ function createchart1(div, yMin, yMax, precyzja, lata, d){
 //console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2023 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2024 roku (km<sup>2</sup>)";
 }
 if (d==1) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2022 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2023 roku (km<sup>2</sup>)";
 }
 if (d==2) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2021 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2022 roku (km<sup>2</sup>)";
 }
 if (d==3) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2020 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2021 roku (km<sup>2</sup>)";
 }
 if (d==4) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2019 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2020 roku (km<sup>2</sup>)";
 }
 if (d==5) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2018 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2019 roku (km<sup>2</sup>)";
 }
 if (d==6) {
-	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2017 roku (km<sup>2</sup>)";
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2018 roku (km<sup>2</sup>)";
 }
 if (d==7) {
+	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2017 roku (km<sup>2</sup>)";
+}
+if (d==8) {
 	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2016 roku (km<sup>2</sup>)";
 }
-
-if (d==8) {
+if (d==9) {
 	document.getElementById("tytuł_1").innerHTML = "Powierzchnia miast w 2015 roku (km<sup>2</sup>)";
 }
-
 am5.array.each(am5.registry.rootElements,
 	function(root) {
 		if (typeof root !== "undefined") {
@@ -44,6 +45,80 @@ am5.array.each(am5.registry.rootElements,
 	function getData(index) {
 		var data = [
 			// Data set #1
+			[{
+			"w1": "2024",
+			"ogółem": 683,
+			"year": "Gdańsk"
+			}, {
+			"w1": "2024",
+			"ogółem": 517,
+			"year": "Warszawa"
+			}, {
+			"w1": "2024",
+			"ogółem": 327,
+			"year": "Kraków"
+			}, {
+			"w1": "2024",
+			"ogółem": 301,
+			"year": "Szczecin"
+			}, {
+			"w1": "2024",
+			"ogółem": 293,
+			"year": "Wrocław"
+			}, {
+			"w1": "2024",
+			"ogółem": 293,
+			"year": "Łódź"
+			}, {
+			"w1": "2024",
+			"ogółem": 275,
+			"year": "Zielona Góra"
+			}, {
+			"w1": "2024",
+			"ogółem": 262,
+			"year": "Poznań"
+			}, {
+			"w1": "2024",
+			"ogółem": 176,
+			"year": "Bydgoszcz"
+			}, {
+			"w1": "2024",
+			"ogółem": 165,
+			"year": "Katowice"
+			}, {
+			"w1": "2024",
+			"ogółem": 149,
+			"year": "Opole"
+			}, {
+			"w1": "2024",
+			"ogółem": 147,
+			"year": "Lublin"
+			}, {
+			"w1": "2024",
+			"ogółem": 129,
+			"year": "Rzeszów"
+			}, {
+			"w1": "2024",
+			"ogółem": 116,
+			"year": "Toruń"
+			}, {
+			"w1": "2024",
+			"ogółem": 110,
+			"year": "Kielce"
+			}, {
+			"w1": "2024",
+			"ogółem": 102,
+			"year": "Białystok"
+			}, {
+			"w1": "2024",
+			"ogółem": 88,
+			"year": "Olsztyn"
+			}, {
+			"w1": "2024",
+			"ogółem": 86,
+			"year": "Gorzów Wielkopolski"
+			}],
+			// Data set #2
 			[{
 			"w1": "2023",
 			"ogółem": 683,
@@ -119,7 +194,7 @@ am5.array.each(am5.registry.rootElements,
 			}],
 
 
-		// Data set #1
+		// Data set #3
     [{
 	"w1": "2022",
 	"ogółem": 517,
@@ -193,7 +268,7 @@ am5.array.each(am5.registry.rootElements,
 	"ogółem": 86,
 	"year": "Gorzów Wielkopolski"
 	}],
-    // Data set #2
+    // Data set #4
 	[{
 	"w1": "2021",
 	"ogółem": 517,
@@ -267,230 +342,230 @@ am5.array.each(am5.registry.rootElements,
 	"ogółem": 86,
 	"year": "Gorzów Wielkopolski"
 	}],
-    // Data set #3
-	[{
-	"w1": "2020",
-	"ogółem": 517,
-	"year": "Warszawa"
-	}, {
-	"w1": "2020",
-	"ogółem": 327,
-	"year": "Kraków"
-	}, {
-	"w1": "2020",
-	"ogółem": 301,
-	"year": "Szczecin"
-	}, {
-	"w1": "2020",
-	"ogółem": 293,
-	"year": "Łódź"
-	}, {
-	"w1": "2020",
-	"ogółem": 293,
-	"year": "Wrocław"
-	}, {
-	"w1": "2020",
-	"ogółem": 277,
-	"year": "Zielona Góra"
-	}, {
-	"w1": "2020",
-	"ogółem": 262,
-	"year": "Gdańsk"
-	}, {
-	"w1": "2020",
-	"ogółem": 262,
-	"year": "Poznań"
-	}, {
-	"w1": "2020",
-	"ogółem": 176,
-	"year": "Bydgoszcz"
-	}, {
-	"w1": "2020",
-	"ogółem": 165,
-	"year": "Katowice"
-	}, {
-	"w1": "2020",
-	"ogółem": 149,
-	"year": "Opole"
-	}, {
-	"w1": "2020",
-	"ogółem": 148,
-	"year": "Lublin"
-	}, {
-	"w1": "2020",
-	"ogółem": 126,
-	"year": "Rzeszów"
-	}, {
-	"w1": "2020",
-	"ogółem": 116,
-	"year": "Toruń"
-	}, {
-	"w1": "2020",
-	"ogółem": 110,
-	"year": "Kielce"
-	}, {
-	"w1": "2020",
-	"ogółem": 102,
-	"year": "Białystok"
-	}, {
-	"w1": "2020",
-	"ogółem": 88,
-	"year": "Olsztyn"
-	}, {
-	"w1": "2020",
-	"ogółem": 86,
-	"year": "Gorzów Wielkopolski"
-	}],
-    // Data set #4
-	[{
-	"w1": "2019",
-	"ogółem": 517,
-	"year": "Warszawa"
-	}, {
-	"w1": "2019",
-	"ogółem": 327,
-	"year": "Kraków"
-	}, {
-	"w1": "2019",
-	"ogółem": 301,
-	"year": "Szczecin"
-	}, {
-	"w1": "2019",
-	"ogółem": 293,
-	"year": "Łódź"
-	}, {
-	"w1": "2019",
-	"ogółem": 293,
-	"year": "Wrocław"
-	}, {
-	"w1": "2019",
-	"ogółem": 277,
-	"year": "Zielona Góra"
-	}, {
-	"w1": "2019",
-	"ogółem": 262,
-	"year": "Gdańsk"
-	}, {
-	"w1": "2019",
-	"ogółem": 262,
-	"year": "Poznań"
-	}, {
-	"w1": "2019",
-	"ogółem": 176,
-	"year": "Bydgoszcz"
-	}, {
-	"w1": "2019",
-	"ogółem": 165,
-	"year": "Katowice"
-	}, {
-	"w1": "2019",
-	"ogółem": 149,
-	"year": "Opole"
-	}, {
-	"w1": "2019",
-	"ogółem": 148,
-	"year": "Lublin"
-	}, {
-	"w1": "2019",
-	"ogółem": 126,
-	"year": "Rzeszów"
-	}, {
-	"w1": "2019",
-	"ogółem": 116,
-	"year": "Toruń"
-	}, {
-	"w1": "2019",
-	"ogółem": 110,
-	"year": "Kielce"
-	}, {
-	"w1": "2019",
-	"ogółem": 102,
-	"year": "Białystok"
-	}, {
-	"w1": "2019",
-	"ogółem": 88,
-	"year": "Olsztyn"
-	}, {
-	"w1": "2019",
-	"ogółem": 86,
-	"year": "Gorzów Wielkopolski"
-	}],
     // Data set #5
 	[{
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 517,
 	"year": "Warszawa"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 327,
 	"year": "Kraków"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 301,
 	"year": "Szczecin"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 293,
 	"year": "Łódź"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 293,
 	"year": "Wrocław"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 277,
 	"year": "Zielona Góra"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 262,
 	"year": "Gdańsk"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 262,
 	"year": "Poznań"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 176,
 	"year": "Bydgoszcz"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 165,
 	"year": "Katowice"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 149,
 	"year": "Opole"
 	}, {
-	"w1": "2018",
-	"ogółem": 147,
+	"w1": "2020",
+	"ogółem": 148,
 	"year": "Lublin"
 	}, {
-	"w1": "2018",
-	"ogółem": 120,
+	"w1": "2020",
+	"ogółem": 126,
 	"year": "Rzeszów"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 116,
 	"year": "Toruń"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 110,
 	"year": "Kielce"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 102,
 	"year": "Białystok"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 88,
 	"year": "Olsztyn"
 	}, {
-	"w1": "2018",
+	"w1": "2020",
 	"ogółem": 86,
 	"year": "Gorzów Wielkopolski"
 	}],
     // Data set #6
 	[{
+	"w1": "2019",
+	"ogółem": 517,
+	"year": "Warszawa"
+	}, {
+	"w1": "2019",
+	"ogółem": 327,
+	"year": "Kraków"
+	}, {
+	"w1": "2019",
+	"ogółem": 301,
+	"year": "Szczecin"
+	}, {
+	"w1": "2019",
+	"ogółem": 293,
+	"year": "Łódź"
+	}, {
+	"w1": "2019",
+	"ogółem": 293,
+	"year": "Wrocław"
+	}, {
+	"w1": "2019",
+	"ogółem": 277,
+	"year": "Zielona Góra"
+	}, {
+	"w1": "2019",
+	"ogółem": 262,
+	"year": "Gdańsk"
+	}, {
+	"w1": "2019",
+	"ogółem": 262,
+	"year": "Poznań"
+	}, {
+	"w1": "2019",
+	"ogółem": 176,
+	"year": "Bydgoszcz"
+	}, {
+	"w1": "2019",
+	"ogółem": 165,
+	"year": "Katowice"
+	}, {
+	"w1": "2019",
+	"ogółem": 149,
+	"year": "Opole"
+	}, {
+	"w1": "2019",
+	"ogółem": 148,
+	"year": "Lublin"
+	}, {
+	"w1": "2019",
+	"ogółem": 126,
+	"year": "Rzeszów"
+	}, {
+	"w1": "2019",
+	"ogółem": 116,
+	"year": "Toruń"
+	}, {
+	"w1": "2019",
+	"ogółem": 110,
+	"year": "Kielce"
+	}, {
+	"w1": "2019",
+	"ogółem": 102,
+	"year": "Białystok"
+	}, {
+	"w1": "2019",
+	"ogółem": 88,
+	"year": "Olsztyn"
+	}, {
+	"w1": "2019",
+	"ogółem": 86,
+	"year": "Gorzów Wielkopolski"
+	}],
+    // Data set #7
+	[{
+	"w1": "2018",
+	"ogółem": 517,
+	"year": "Warszawa"
+	}, {
+	"w1": "2018",
+	"ogółem": 327,
+	"year": "Kraków"
+	}, {
+	"w1": "2018",
+	"ogółem": 301,
+	"year": "Szczecin"
+	}, {
+	"w1": "2018",
+	"ogółem": 293,
+	"year": "Łódź"
+	}, {
+	"w1": "2018",
+	"ogółem": 293,
+	"year": "Wrocław"
+	}, {
+	"w1": "2018",
+	"ogółem": 277,
+	"year": "Zielona Góra"
+	}, {
+	"w1": "2018",
+	"ogółem": 262,
+	"year": "Gdańsk"
+	}, {
+	"w1": "2018",
+	"ogółem": 262,
+	"year": "Poznań"
+	}, {
+	"w1": "2018",
+	"ogółem": 176,
+	"year": "Bydgoszcz"
+	}, {
+	"w1": "2018",
+	"ogółem": 165,
+	"year": "Katowice"
+	}, {
+	"w1": "2018",
+	"ogółem": 149,
+	"year": "Opole"
+	}, {
+	"w1": "2018",
+	"ogółem": 147,
+	"year": "Lublin"
+	}, {
+	"w1": "2018",
+	"ogółem": 120,
+	"year": "Rzeszów"
+	}, {
+	"w1": "2018",
+	"ogółem": 116,
+	"year": "Toruń"
+	}, {
+	"w1": "2018",
+	"ogółem": 110,
+	"year": "Kielce"
+	}, {
+	"w1": "2018",
+	"ogółem": 102,
+	"year": "Białystok"
+	}, {
+	"w1": "2018",
+	"ogółem": 88,
+	"year": "Olsztyn"
+	}, {
+	"w1": "2018",
+	"ogółem": 86,
+	"year": "Gorzów Wielkopolski"
+	}],
+    // Data set #8
+	[{
 	"w1": "2017",
 	"ogółem": 517,
 	"year": "Warszawa"
@@ -563,7 +638,7 @@ am5.array.each(am5.registry.rootElements,
 	"ogółem": 86,
 	"year": "Gorzów Wielkopolski"
 	}],
-    // Data set #7
+    // Data set #9
 	[{
 	"w1": "2016",
 	"ogółem": 517,
@@ -637,7 +712,7 @@ am5.array.each(am5.registry.rootElements,
 	"ogółem": 86,
 	"year": "Gorzów Wielkopolski"
 	}],
-    // Data set #8
+    // Data set #10
 	[{
 	"w1": "2015",
 	"ogółem": 517,
@@ -815,7 +890,7 @@ root.numberFormatter.set("numberFormat", "#,###");
 
 	series.columns.template.adapters.add("tooltipText", function(text, target) {
 		if (target.dataItem.get("categoryX") == "Gdańsk") {
-		  if (d == 0){
+		  if (d == 1){
 			return "{categoryX}: {valueY.formatNumber('#,###')}\n[fontStyle: italic]Wzrost powierzchni Gdańska w 2023 r.\nwynikał z włączenia morskich wód wewnętrznych\nczęści Zatoki Gdańskiej.[/]";
 		  }
 		  else {

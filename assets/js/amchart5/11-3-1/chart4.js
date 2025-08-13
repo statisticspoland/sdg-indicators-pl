@@ -108,12 +108,17 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 203837,
 		"wymeldowania ogółem": 255933,
 		"year": "2022"
-	},{
-	"w1": "POLSKA - miasta",
-	"zameldowania ogółem": 213221,
-	"wymeldowania ogółem": 255261,
-	"year": "2023"
-	}],
+		},{
+		"w1": "POLSKA - miasta",
+		"zameldowania ogółem": 213221,
+		"wymeldowania ogółem": 255261,
+		"year": "2023"
+		},{
+		"w1": "POLSKA - miasta",
+		"zameldowania ogółem": 264268,
+		"wymeldowania ogółem": 228805,
+		"year": "2024"
+		}],
 			// Data set #2
 			[{
 		"w1": "Białystok",
@@ -155,6 +160,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 2583,
 		"wymeldowania ogółem": 3329,
 		"year": "2023"
+		}, {
+		"w1": "Białystok",
+		"zameldowania ogółem": 2707,
+		"wymeldowania ogółem": 3419,
+		"year": "2024"
 		}],
 			// Data set #3
 			[{
@@ -197,6 +207,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 2296,
 		"wymeldowania ogółem": 3875,
 		"year": "2023"
+		}, {
+		"w1": "Bydgoszcz",
+		"zameldowania ogółem": 2512,
+		"wymeldowania ogółem": 3603,
+		"year": "2024"
 		}],
 			// Data set #4
 			[{
@@ -239,6 +254,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 6157,
 		"wymeldowania ogółem": 4609,
 		"year": "2023"
+		}, {
+		"w1": "Gdańsk",
+		"zameldowania ogółem": 6639,
+		"wymeldowania ogółem": 4808,
+		"year": "2024"
 		}],
 			// Data set #5
 			[{
@@ -281,6 +301,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 880,
 		"wymeldowania ogółem": 1433,
 		"year": "2023"
+		}, {
+		"w1": "Gorzów Wielkopolski",
+		"zameldowania ogółem": 884,
+		"wymeldowania ogółem": 1468,
+		"year": "2024"
 		}],
 			// Data set #6
 			[{
@@ -323,6 +348,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 3368,
 		"wymeldowania ogółem": 3105,
 		"year": "2023"
+		}, {
+		"w1": "Katowice",
+		"zameldowania ogółem": 3388,
+		"wymeldowania ogółem": 3355,
+		"year": "2024"
 		}],
 			// Data set #7
 			[{
@@ -365,6 +395,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 1449,
 		"wymeldowania ogółem": 2133,
 		"year": "2023"
+		}, {
+		"w1": "Kielce",
+		"zameldowania ogółem": 1560,
+		"wymeldowania ogółem": 2299,
+		"year": "2024"
 		}],
 			// Data set #8
 			[{
@@ -407,6 +442,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 10534,
 		"wymeldowania ogółem": 7273,
 		"year": "2023"
+		}, {
+		"w1": "Kraków",
+		"zameldowania ogółem": 10790,
+		"wymeldowania ogółem": 7519,
+		"year": "2024"
 		}],
 			// Data set #9
 			[{
@@ -449,6 +489,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 3369,
 		"wymeldowania ogółem": 3792,
 		"year": "2023"
+		}, {
+		"w1": "Lublin",
+		"zameldowania ogółem": 3656,
+		"wymeldowania ogółem": 3913,
+		"year": "2024"
 		}],
 			// Data set #10
 			[{
@@ -491,6 +536,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 3514,
 		"wymeldowania ogółem": 5043,
 		"year": "2023"
+		}, {
+		"w1": "Łódź",
+		"zameldowania ogółem": 4000,
+		"wymeldowania ogółem": 5228,
+		"year": "2024"
 		}],
 			// Data set #11
 			[{
@@ -533,6 +583,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 1700,
 		"wymeldowania ogółem": 2117,
 		"year": "2023"
+		}, {
+		"w1": "Olsztyn",
+		"zameldowania ogółem": 1835,
+		"wymeldowania ogółem": 2303,
+		"year": "2024"
 		}],
 			// Data set #12
 			[{
@@ -575,6 +630,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 1215,
 		"wymeldowania ogółem": 1226,
 		"year": "2023"
+		}, {
+		"w1": "Opole",
+		"zameldowania ogółem": 1244,
+		"wymeldowania ogółem": 1329,
+		"year": "2024"
 		}],
 			// Data set #13
 			[{
@@ -617,6 +677,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 5534,
 		"wymeldowania ogółem": 6605,
 		"year": "2023"
+		}, {
+		"w1": "Poznań",
+		"zameldowania ogółem": 5454,
+		"wymeldowania ogółem": 6546,
+		"year": "2024"
 		}],
 			// Data set #14
 			[{
@@ -659,6 +724,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 2730,
 		"wymeldowania ogółem": 2108,
 		"year": "2023"
+		}, {
+		"w1": "Rzeszów",
+		"zameldowania ogółem": 2753,
+		"wymeldowania ogółem": 2285,
+		"year": "2024"
 		}],
 			// Data set #15
 			[{
@@ -701,6 +771,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 3081,
 		"wymeldowania ogółem": 3662,
 		"year": "2023"
+		}, {
+		"w1": "Szczecin",
+		"zameldowania ogółem": 3246,
+		"wymeldowania ogółem": 3757,
+		"year": "2024"
 		}],
 			// Data set #16
 			[{
@@ -743,6 +818,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 1815,
 		"wymeldowania ogółem": 2192,
 		"year": "2023"
+		}, {
+		"w1": "Toruń",
+		"zameldowania ogółem": 2151,
+		"wymeldowania ogółem": 2229,
+		"year": "2024"
 		}],
 			// Data set #17
 			[{
@@ -785,6 +865,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 20666,
 		"wymeldowania ogółem": 17559,
 		"year": "2023"
+		}, {
+		"w1": "Warszawa",
+		"zameldowania ogółem": 21796,
+		"wymeldowania ogółem": 17406,
+		"year": "2024"
 		}],
 			// Data set #18
 			[{
@@ -827,6 +912,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 8652,
 		"wymeldowania ogółem": 7686,
 		"year": "2023"
+		}, {
+		"w1": "Wrocław",
+		"zameldowania ogółem": 8444,
+		"wymeldowania ogółem": 7814,
+		"year": "2024"
 		}],
 			// Data set #19
 			[{
@@ -869,6 +959,11 @@ am5.array.each(am5.registry.rootElements,
 		"zameldowania ogółem": 1372,
 		"wymeldowania ogółem": 1188,
 		"year": "2023"
+		}, {
+		"w1": "Zielona Góra",
+		"zameldowania ogółem": 1552,
+		"wymeldowania ogółem": 1169,
+		"year": "2024"
 		}]
 		];
 
