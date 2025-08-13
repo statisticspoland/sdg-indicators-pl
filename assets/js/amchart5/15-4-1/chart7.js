@@ -3,30 +3,33 @@ function createchart7(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2023 r. (%)";
+	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2024 r. (%)";
 }
 if (d==1) {
-	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2022 r. (%)";
+	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2023 r. (%)";
 }
 if (d==2) {
-	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2021 r. (%)";
+	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2022 r. (%)";
 }
 if (d==3) {
-	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2020 r. (%)";
+	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2021 r. (%)";
 }
 if (d==4) {
-	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2019 r. (%)";
+	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2020 r. (%)";
 }
 if (d==5) {
-	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2018 r. (%)";
+	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2019 r. (%)";
 }
 if (d==6) {
-	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2017 r. (%)";
+	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2018 r. (%)";
 }
 if (d==7) {
-	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2016 r. (%)";
+	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2017 r. (%)";
 }
 if (d==8) {
+	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2016 r. (%)";
+}
+if (d==9) {
 	document.getElementById("tytuł_7").innerHTML = "Powierzchnia specjalnych obszarów ochrony siedlisk w powierzchni ogółem w 2015 r. (%)";
 }
 
@@ -43,7 +46,77 @@ am5.array.each(am5.registry.rootElements,
 
 	function getData(index) {
 		var data = [
-		// Data set #0
+		// Data set #1
+	    [{
+		"w1": "2024",
+		"ogółem": 11.2,
+		"year": "POLSKA"
+		}, {
+		"w1": "2024",
+		"ogółem": 17.8,
+		"year": "Dolnośląskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 4.9,
+		"year": "Kujawsko-Pomorskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 6.6,
+		"year": "Lubelskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 14.9,
+		"year": "Lubuskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 3.0,
+		"year": "Łódzkie"
+		}, {
+		"w1": "2024",
+		"ogółem": 10.1,
+		"year": "Małopolskie"
+		},{
+		"w1": "2024",
+		"ogółem": 5.5,
+		"year": "Mazowieckie"
+		}, {
+		"w1": "2024",
+		"ogółem": 3.0,
+		"year": "Opolskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 19.7,
+		"year": "Podkarpackie"
+		}, {
+		"w1": "2024",
+		"ogółem": 26.9,
+		"year": "Podlaskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 10.3,
+		"year": "Pomorskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 7.6,
+		"year": "Śląskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 13.3,
+		"year": "Świętokrzyskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 10.7,
+		"year": "Warmińsko-Mazurskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 8.2,
+		"year": "Wielkopolskie"
+		}, {
+		"w1": "2024",
+		"ogółem": 18.7,
+		"year": "Zachodniopomorskie"
+		}],
+		// Data set #2
 	    [{
 		"w1": "2023",
 		"ogółem": 11.2,
@@ -114,7 +187,7 @@ am5.array.each(am5.registry.rootElements,
 		"year": "Zachodniopomorskie"
 		}],
 
-		// Data set #1
+		// Data set #3
 	    [{
 			"w1": "2022",
 			"ogółem": 11.2,
@@ -184,7 +257,7 @@ am5.array.each(am5.registry.rootElements,
 			"ogółem": 18.7,
 			"year": "Zachodniopomorskie"
 			}],
-					// Data set #2
+					// Data set #4
 					[{
 						"w1": "2021",
 						"ogółem": 11.2,
@@ -254,7 +327,7 @@ am5.array.each(am5.registry.rootElements,
 						"ogółem": 18.7,
 						"year": "Zachodniopomorskie"
 						}],
-									// Data set #3
+									// Data set #5
 									[{
 										"w1": "2020",
 										"ogółem": 11.2,
@@ -324,7 +397,7 @@ am5.array.each(am5.registry.rootElements,
 										"ogółem": 18.6,
 										"year": "Zachodniopomorskie"
 										}],
-											// Data set #4
+											// Data set #6
 											[{
 												"w1": "2019",
 												"ogółem": 11.2,
@@ -394,7 +467,7 @@ am5.array.each(am5.registry.rootElements,
 												"ogółem": 18.6,
 												"year": "Zachodniopomorskie"
 												}],
-									// Data set #5
+									// Data set #7
 									[{
 										"w1": "2018",
 										"ogółem": 11.2,
@@ -464,7 +537,7 @@ am5.array.each(am5.registry.rootElements,
 										"ogółem": 18.6,
 										"year": "Zachodniopomorskie"
 										}],
-					// Data set #6
+					// Data set #8
 					[{
 						"w1": "2017",
 						"ogółem": 11.2,
@@ -534,7 +607,7 @@ am5.array.each(am5.registry.rootElements,
 						"ogółem": 18.6,
 						"year": "Zachodniopomorskie"
 						}],
-				// Data set #7
+				// Data set #9
 				[{
 					"w1": "2016",
 					"ogółem": 11.2,
@@ -604,7 +677,7 @@ am5.array.each(am5.registry.rootElements,
 					"ogółem": 18.6,
 					"year": "Zachodniopomorskie"
 					}],
-									// Data set #8
+									// Data set #10
 									[{
 										"w1": "2015",
 										"ogółem": 11.2,

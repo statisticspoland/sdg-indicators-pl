@@ -3,30 +3,33 @@ function createchart5(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2023 r.";
+	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2024 r.";
 }
 if (d==1) {
-	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2022 r.";
+	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2023 r.";
 }
 if (d==2) {
-	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2021 r.";
+	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2022 r.";
 }
 if (d==3) {
-	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2020 r.";
+	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2021 r.";
 }
 if (d==4) {
-	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2019 r.";
+	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2020 r.";
 }
 if (d==5) {
-	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2018 r.";
+	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2019 r.";
 }
 if (d==6) {
-	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2017 r.";
+	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2018 r.";
 }
 if (d==7) {
-	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2016 r.";
+	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2017 r.";
 }
 if (d==8) {
+	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2016 r.";
+}
+if (d==9) {
 	document.getElementById("tytuł_5").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2015 r.";
 }
 am5.array.each(am5.registry.rootElements,
@@ -41,7 +44,77 @@ am5.array.each(am5.registry.rootElements,
 
 	function getData(index) {
 		var data = [
-			// Data set #0
+			// Data set #1
+			[{
+			"w1": "2024",
+			"ogółem": 10.9,
+			"city": "Zachodniopomorskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 12.7,
+			"city": "Wielkopolskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 9.6,
+			"city": "Warmińsko-Mazurskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 6.9,
+			"city": "Świętokrzyskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 12.4,
+			"city": "Śląskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 14.5,
+			"city": "Pomorskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 9.7,
+			"city": "Podlaskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 12.7,
+			"city": "Podkarpackie"
+			}, {
+			"w1": "2024",
+			"ogółem": 8.0,
+			"city": "Opolskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 11.3,
+			"city": "Mazowieckie"
+			}, {
+			"w1": "2024",
+			"ogółem": 15.0,
+			"city": "Małopolskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 11.6,
+			"city": "Łódzkie"
+			}, {
+			"w1": "2024",
+			"ogółem": 10.4,
+			"city": "Lubuskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 5.8,
+			"city": "Lubelskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 12.9,
+			"city": "Kujawsko-Pomorskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 13.4,
+			"city": "Dolnośląskie"
+			}, {
+			"w1": "2024",
+			"ogółem": 11.2,
+			"city": "POLSKA"
+			}],
+			// Data set #2
 			[{
 			"w1": "2023",
 			"ogółem": 11.1,
@@ -111,7 +184,7 @@ am5.array.each(am5.registry.rootElements,
 			"ogółem": 11.1,
 			"city": "POLSKA"
 			}],
-			// Data set #1
+			// Data set #3
 			[{
 				"w1": "2022",
 				"ogółem": 11.3,
@@ -181,7 +254,7 @@ am5.array.each(am5.registry.rootElements,
 				"ogółem": 11.2,
 				"city": "POLSKA"
 				}],
-			// Data set #2
+			// Data set #4
 			[{
 				"w1": "2021",
 				"ogółem": 11.6,
@@ -251,7 +324,7 @@ am5.array.each(am5.registry.rootElements,
 				"ogółem": 11.2,
 				"city": "POLSKA"
 				}],
-			// Data set #3
+			// Data set #5
 			[{
 				"w1": "2020",
 				"ogółem": 11.8,
@@ -321,7 +394,7 @@ am5.array.each(am5.registry.rootElements,
 				"ogółem": 11.2,
 				"city": "POLSKA"
 				}],
-			// Data set #4
+			// Data set #6
 			[{
 				"w1": "2019",
 				"ogółem": 11.5,
@@ -391,7 +464,7 @@ am5.array.each(am5.registry.rootElements,
 				"ogółem": 11.2,
 				"city": "POLSKA"
 				}],
-			// Data set #5
+			// Data set #7
 			[{
 				"w1": "2018",
 				"ogółem": 12.0,
@@ -461,7 +534,7 @@ am5.array.each(am5.registry.rootElements,
 				"ogółem": 11.2,
 				"city": "POLSKA"
 				}],
-			// Data set #6
+			// Data set #8
 			[{
 				"w1": "2017",
 				"ogółem": 12.7,
@@ -531,7 +604,7 @@ am5.array.each(am5.registry.rootElements,
 				"ogółem": 11.6,
 				"city": "POLSKA"
 				}],
-			// Data set #7
+			// Data set #9
 			[{
 				"w1": "2016",
 				"ogółem": 12.9,
@@ -601,7 +674,7 @@ am5.array.each(am5.registry.rootElements,
 				"ogółem": 11.7,
 				"city": "POLSKA"
 				}],
-			// Data set #8
+			// Data set #10
 			[{
 				"w1": "2015",
 				"ogółem": 12.9,
