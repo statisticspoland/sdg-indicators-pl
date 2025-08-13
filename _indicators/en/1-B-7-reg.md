@@ -6,7 +6,7 @@ sdg_goal: 1
 indicator:  1.B.7.reg
 target_id:  '1.B.7'
 permalink: /en/statistics_reg/1-B-7/
-pre:  0
+pre:  1
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  en
