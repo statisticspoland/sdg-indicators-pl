@@ -52,14 +52,20 @@ function createMapWoj(div, dane, jez, precyzja){
   }
 
   polygonSeries.mapPolygons.template.adapters.add("tooltipText", function(_, target) {
-  const name = target.dataItem?.dataContext?.name;
-  const value = target.dataItem?.dataContext?.value;
+    const name = target.dataItem?.dataContext?.name;
+    const value = target.dataItem?.dataContext?.value;
 
-  if (name != null && value != null) {
-    const formattedValue = formatNumberLocalized(value, precyzja, jez);
-    return `${name}: ${formattedValue}`;
-  }
-  return "";
+    if (name != null && !isNaN(value)) {
+      const formattedValue = formatNumberLocalized(value, precyzja, jez);
+      return `${name}: ${formattedValue}`;
+    }
+
+    if (name != null && isNaN(value)) {
+      const noDataText = jez === "pl" ? "Brak danych" : "No data";
+      return `${name}: ${noDataText}`;
+    }
+
+    return "";
   });
 
   polygonSeries.mapPolygons.template.setAll({
@@ -88,21 +94,36 @@ function createMapWoj(div, dane, jez, precyzja){
   }
 
   polygonSeries.mapPolygons.template.events.on("pointerover", function(ev) {
-    heatLegend.showValue(ev.target.dataItem.get("value"));
+    const value = ev.target.dataItem.get("value");
   });
-
+  
+  console.log("data_filtered", dane);
   polygonSeries.data.setAll(dane);
+
+  const numericValues = dane.map(o => o.value).filter(v => !isNaN(v));
+
+  let startText, endText;
+  let startColor = am5.color(0x99ff99);
+  let endColor = am5.color(0x006600);
+
+  if (numericValues.length > 0) {
+    startText = formatNumberLocalized(Math.min(...numericValues), precyzja, jez);
+    endText = formatNumberLocalized(Math.max(...numericValues), precyzja, jez);
+  } else {
+    // brak danych w ogóle
+    startText = jez === "pl" ? "Brak danych" : "No data";
+    endText = startText;
+
+    // opcjonalnie ustaw oba kolory na szary
+    startColor = endColor = am5.color(0xcccccc);
+  }
 
   var heatLegend = chart.children.push(am5.HeatLegend.new(root, {
     orientation: "vertical",
-    startColor: am5.color(0x99ff99),
-    //startColor: am5.color(0xf0e6ff),
-    endColor: am5.color(0x006600),
-    //endColor: am5.color(0xb380ff),
-    startText: formatNumberLocalized(Math.min(...dane.map(o => o.value)), precyzja, jez),
-    //startText: 89.00,
-    endText: formatNumberLocalized(Math.max(...dane.map(o => o.value)), precyzja, jez),
-    //endText: 100.00,
+    startColor: startColor,
+    endColor: endColor,
+    startText: startText,
+    endText: endText,
     stepCount: 5,
     height: 300
   }));
