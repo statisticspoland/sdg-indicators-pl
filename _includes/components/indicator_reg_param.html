@@ -336,7 +336,7 @@
       const lang = "{% if language == 'pl' %}pl{% else %}en{% endif %}";
       const paramLabel = paramLabels[lang][param] || param; // fallback jeśli brak tłumaczenia
 
-      paragraf.textContent = `${i18n.naglowek} ${rok} – ${paramLabel}: ${wartoscSformatowana}`;
+      paragraf.textContent = `${i18n.naglowek} ${rok} – ${paramLabel}: ${wartoscSformatowana} [{% if language == 'pl' %}{{ t1.pl_jednostka_prezentacji }}{% else %}{{ t1.en_jednostka_prezentacji }}{% endif %}]`;
     } else {
       paragraf.textContent = `${i18n.blad} ${rok}`;
     }
