@@ -26,7 +26,7 @@
       <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
       <script src="https://cdn.amcharts.com/lib/5/geodata/polandLow.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
-  
+
       <div style="width: 15%; display: inline-block; margin-top: 6px; margin-left: 5px; vertical-align: top;">
 <!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
         {% if language == 'pl' %}
@@ -35,7 +35,7 @@
           Year:
         {% endif %}
         </label>
- -->          
+ -->
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 15px; max-width: 150px; display: inline; height: 62px; color: rgb(51,51,51)">
             <option style="font-family: Fira Sans" value="2023" selected>2023</option>
             <option style="font-family: Fira Sans" value="2022">2022</option>
@@ -53,7 +53,7 @@
             <option style="font-family: Fira Sans" value="2010">2010</option>
           </select>
       </div>
-  
+
       <div style="width: 75%; margin: auto; margin-top: 28px; display: inline-block; vertical-align: top;">
         <p id="wartoscPolska" style="margin: 0 auto; text-align: center;">
           {% if language == 'pl' %}
@@ -71,22 +71,22 @@
           </div>
         </div>
       </div>
-  
 
-  
+
+
   <script>
-  
+
   function processData(data_processed) {
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
   createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
   }
-  
+
   function loadDataAndRenderMap(rok) {
   am5.ready(function() {
-  
+
   am5.net.load("{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv").then(function(result) {
-    
+
     // Parse data
     var data = am5.CSVParser.parse(result.response, {
       delimiter: ",",
@@ -108,9 +108,9 @@
     var data_filtered = data
       .filter(item => item.REGION !== "POLSKA")  // usuwa wpis dla całej Polski
       .map(item => {
-        
+
     let newName;
-  
+
     switch (item.REGION) {
       case "DOLNOŚLĄSKIE":
         newName = "PL-02";
@@ -163,27 +163,27 @@
       default:
         newName = "PL-PL";
     }
-  
+
     return {
       id: newName,
       value: Number(item[rok])
     };
   });
-  
+
   //console.log("data", data);
   //console.log("data_filtered", data_filtered);
-  
+
   processData(data_filtered);
   });
-  
+
     //var daneWoj = [{"id":"PL-02","value":97.223785641},{"id":"PL-04","value":94.4174451195},{"id":"PL-06","value":96.3942170481},{"id":"PL-08","value":96.8237887052},{"id":"PL-10","value":96.5128258255},{"id":"PL-12","value":98.3907790671},{"id":"PL-14","value":98.012883452},{"id":"PL-16","value":99.210081905},{"id":"PL-18","value":94.2844886674},{"id":"PL-20","value":89.8130658568},{"id":"PL-22","value":94.7017846298},{"id":"PL-24","value":98.471359928},{"id":"PL-26","value":97.4958489946},{"id":"PL-28","value":92.3905090752},{"id":"PL-30","value":95.6207943758},{"id":"PL-32","value":94.3770711078},{"id":"PL-PL","value":96.1862414329}];
     //console.log("daneWoj", daneWoj);
   }); // end am5.ready()
-  
+
   };
-  
+
   loadDataAndRenderMap("2023");
-  
+
   function wyborYear() {
     var yearBox = document.getElementById("yearBox");
     var selectedYear = yearBox.options[yearBox.selectedIndex].index;
@@ -231,7 +231,7 @@
     loadDataAndRenderMap("2010");
     }
    };
-  
+
   </script>
 
   <script>
@@ -319,7 +319,7 @@
           <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
           <div id="Legenda" align="center" style="pointer-events: none;"></div>
         {% endif %}
-        <div>{% include components/filters.html content=filtry content1=foo content2=language%}</div>
+        <div>{% include components/filters_reg.html content=filtry content1=foo content2=language%}</div>
       {%else%}
         <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
         <div id="Legenda" align="center" style="pointer-events: none;"></div>
