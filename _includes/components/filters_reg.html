@@ -354,28 +354,30 @@ lista.forEach(function(el,elind) {
     wymiar=wymiar+halo;
 });
 
-console.log("TEST");
-const listItems = document.querySelectorAll('.ct-legend li');
-for (var index = 0, len = listItems.length; index < len; index++){
-    console.log(index);
+$(document).ready(function() {
+  setTimeout(function() {
+    console.log("TEST");
+    const listItems = document.querySelectorAll('.ct-legend li');
+    console.log("Długość listItems:", listItems.length);
+    for (var index = 0, len = listItems.length; index < len; index++){
+        console.log(index);
 
-      if(index==0){
-        listItems[index].style.display='none'
-        listItems[index].click();
-      }
-      else{
-        listItems[index].style.display='inline-block'
-      }
+          if(index==0){
+            listItems[index].style.display='none'
+            listItems[index].click();
+          }
+          else {
+            listItems[index].style.display='inline-block'
+          }
 
-      listItems[index].click();
-      $("#infoToggler"+index).find('img').toggle();
-      $('#row-'+index).toggle();
-
-
-}
-
+          listItems[index].click();
+          $("#infoToggler"+index).find('img').toggle();
+          $('#row-'+index).toggle();
+    }
+  }, 500); // pół sekundy opóźnienia – można dopasować
 });
 
+});
 /*$(window).load(function() {
 
 $(".ct-legend li").click(function() {
