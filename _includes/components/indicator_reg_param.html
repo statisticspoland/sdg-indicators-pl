@@ -36,6 +36,19 @@
         {% endif %}
         </label>
  -->
+          {% if id_map == '1-g-2' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 15px; max-width: 150px; display: inline; height: 62px; color: rgb(51,51,51)">
+            <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+          </select>
+          {% else %}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 15px; max-width: 150px; display: inline; height: 62px; color: rgb(51,51,51)">
             <option style="font-family: Fira Sans" value="2023" selected>2023</option>
             <option style="font-family: Fira Sans" value="2022">2022</option>
@@ -52,6 +65,7 @@
             <option style="font-family: Fira Sans" value="2011">2011</option>
             <option style="font-family: Fira Sans" value="2010">2010</option>
           </select>
+          {% endif %}
       </div>
 
       <div style="width: 15%; display: inline-block; margin-top: 6px; margin-left: 5px; vertical-align: top;">
@@ -103,7 +117,7 @@
         </div>
       </div>
 
-
+      <hr>
 
   <script>
 
@@ -219,68 +233,71 @@
   function wyborYear() {
     var yearBox = document.getElementById("yearBox");
     var paramBox = document.getElementById("paramBox");
-    var selectedYear = yearBox.options[yearBox.selectedIndex].index;
-    var selectedParam = paramBox.value;
+    var selectedYear = yearBox.options[yearBox.selectedIndex].value;
+    var selectedParam = paramBox.options[paramBox.selectedIndex].value;
     //console.log(selectedYear);
-    if(selectedYear===0){
-    loadDataAndRenderMap("2023",selectedParam);
-    }
-    if(selectedYear===1){
-    loadDataAndRenderMap("2022",selectedParam);
-    }
-    if(selectedYear===2){
-    loadDataAndRenderMap("2021",selectedParam);
-    }
-    if(selectedYear===3){
-    loadDataAndRenderMap("2020",selectedParam);
-    }
-    if(selectedYear===4){
-    loadDataAndRenderMap("2019",selectedParam);
-    }
-    if(selectedYear===5){
-    loadDataAndRenderMap("2018",selectedParam);
-    }
-    if(selectedYear===6){
-    loadDataAndRenderMap("2017",selectedParam);
-    }
-    if(selectedYear===7){
-    loadDataAndRenderMap("2016",selectedParam);
-    }
-    if(selectedYear===8){
-    loadDataAndRenderMap("2015",selectedParam);
-    }
-    if(selectedYear===9){
-    loadDataAndRenderMap("2014",selectedParam);
-    }
-    if(selectedYear===10){
-    loadDataAndRenderMap("2013",selectedParam);
-    }
-    if(selectedYear===11){
-    loadDataAndRenderMap("2012",selectedParam);
-    }
-    if(selectedYear===12){
-    loadDataAndRenderMap("2011",selectedParam);
-    }
-    if(selectedYear===13){
-    loadDataAndRenderMap("2010",selectedParam);
-    }
+    loadDataAndRenderMap(selectedYear,selectedParam);
+    //if(selectedYear===0){
+    //loadDataAndRenderMap("2023",selectedParam);
+    //}
+    //if(selectedYear===1){
+    //loadDataAndRenderMap("2022",selectedParam);
+    //}
+    //if(selectedYear===2){
+    //loadDataAndRenderMap("2021",selectedParam);
+    //}
+    //if(selectedYear===3){
+    //loadDataAndRenderMap("2020",selectedParam);
+    //}
+    //if(selectedYear===4){
+    //loadDataAndRenderMap("2019",selectedParam);
+    //}
+    //if(selectedYear===5){
+    //loadDataAndRenderMap("2018",selectedParam);
+    //}
+    //if(selectedYear===6){
+    //loadDataAndRenderMap("2017",selectedParam);
+    //}
+    //if(selectedYear===7){
+    //loadDataAndRenderMap("2016",selectedParam);
+    //}
+    //if(selectedYear===8){
+    //loadDataAndRenderMap("2015",selectedParam);
+    //}
+    //if(selectedYear===9){
+    //loadDataAndRenderMap("2014",selectedParam);
+    //}
+    //if(selectedYear===10){
+    //loadDataAndRenderMap("2013",selectedParam);
+    //}
+    //if(selectedYear===11){
+    //loadDataAndRenderMap("2012",selectedParam);
+    //}
+    //if(selectedYear===12){
+    //loadDataAndRenderMap("2011",selectedParam);
+    //}
+    //if(selectedYear===13){
+    //loadDataAndRenderMap("2010",selectedParam);
+    //}
    };
 
   function wyborParam() {
     var yearBox = document.getElementById("yearBox");
     var paramBox = document.getElementById("paramBox");
-    var selectedParam = paramBox.options[paramBox.selectedIndex].index;
-    var selectedYear = yearBox.value;
-    //console.log(selectedYear);
-    if(selectedParam===0){
-    loadDataAndRenderMap(selectedYear,"ogółem");
-    }
-    if(selectedParam===1){
-    loadDataAndRenderMap(selectedYear,"miasto");
-    }
-    if(selectedParam===2){
-    loadDataAndRenderMap(selectedYear,"wieś");
-    }
+    var selectedParam = paramBox.options[paramBox.selectedIndex].value;
+    var selectedYear = yearBox.options[yearBox.selectedIndex].value;
+    console.log(selectedYear);
+    console.log(selectedParam);
+    loadDataAndRenderMap(selectedYear,selectedParam);
+    //if(selectedParam===0){
+    //loadDataAndRenderMap(selectedYear,"ogółem");
+    //}
+    //if(selectedParam===1){
+    //loadDataAndRenderMap(selectedYear,"miasto");
+    //}
+    //if(selectedParam===2){
+    //loadDataAndRenderMap(selectedYear,"wieś");
+    //}
    };
 
   </script>
@@ -402,16 +419,18 @@
         <div id="Legenda" align="center" style="pointer-events: none;"></div>
       {% endif %}
 
+      <hr>
+
       {% if language == 'pl' %}
-        <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px;" title="Pobierz dane w formacie .csv">Pobierz całość</button>
         {% if filtry.size>0 %}
-          <button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px;" title="Pobierz wybrane dane w formacie .csv">Pobierz wybrane</button>
+          <button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px; float: right;" title="Pobierz wybrane dane w formacie .csv">Pobierz wybrane</button>
         {% endif %}
+        <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px; float: right;" title="Pobierz dane w formacie .csv">Pobierz całość</button>
       {% else %}
-        <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px;" title="Download all data in csv format">Download All</button>
         {% if filtry.size>0 %}
-          <button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px;" title="Download selected data in csv format">Download Selected</button>
+          <button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px; float: right;" title="Download selected data in csv format">Download Selected</button>
         {% endif %}
+        <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px; float: right;" title="Download all data in csv format">Download All</button>
       {% endif %}
 
       {% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%}
