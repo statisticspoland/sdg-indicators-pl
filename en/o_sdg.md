@@ -280,10 +280,10 @@ permalink: /en/o_sdg/
   <h4><b>MINISTRY OF ECONOMIC DEVELOPMENT AND TECHNOLOGY</b> (coordinator of SDG implementation in Poland)</h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.gov.pl/attachment/22950221-b985-4cdd-8b76-8a3edaa3f247" alt="Monitoring of the implementation of the Sustainable Development Goals in Poland" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/11_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.gov.pl/attachment/bfb5fdbb-f6f9-4dd0-b46d-7079e5ac5677" alt="Monitoring of the implementation of the Sustainable Development Goals in Poland" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/11_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Monitoring of the implementation of the Sustainable Development Goals in Poland</b></p>
-  <p>The publication by the Ministry of Economic Development and Technology presents the selected activities for 2030 Agenda in Poland performed by Polish government, local government, stakeholders and universities. It describes important national and regional strategic projects and operational programs, the implementation of which may contribute to bringing the country closer to achieving progress in all dimensions of sustainable development. The publication also highlights current initiatives undertaken in connection with the Russian invasion of Ukraine. The publication is complemented with information on the monitoring of SDGs in Poland, the EU and in the World as well as selected indicators from the set of measures monitoring <a title="Go to subpage with polish priorities" href="https://sdg.gov.pl/en/priorytet/"  target="_blank">Polish priorities</a> from the <a title="Go to SDG's homepage" href="https://sdg.gov.pl/en/"  target="_blank">SDG NRP</a>, presented in graphic form.</p>
+  <p>The publication by the Ministry of Economic Development and Technology presents the selected activities for 2030 Agenda in Poland performed by Polish government, local government, universities and other stakeholders. It describes important national and regional strategic projects and operational programs, the implementation of which may contribute to bringing the country closer to achieving progress in all dimensions of sustainable development. The publication also takes into account the global context, including the consequences of Russia’s aggression against Ukraine and climate challenges. The publication is complemented with information on the monitoring of SDGs in Poland, the EU and in the World as well as selected indicators from the set of measures monitoring <a title="Go to subpage with polish priorities" href="https://sdg.gov.pl/en/priorytet/"  target="_blank">Polish priorities</a> from the <a title="Go to SDG's homepage" href="https://sdg.gov.pl/en/"  target="_blank">SDG NRP</a>, presented in graphic form.</p>
   <p>The publication is available only in Polish.</p>
 
 
@@ -297,6 +297,7 @@ permalink: /en/o_sdg/
 </p>
 <div class="collapse" id="collapseExample2">
   <div class="card card-body">
+  <p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland - 2023" href="https://www.gov.pl/attachment/22950221-b985-4cdd-8b76-8a3edaa3f247">Monitoring of the implementation of the Sustainable Development Goals in Poland - 2023</a></p>
 	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021" href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72">Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021</a></p>
 	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland in 2020" href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitoring of the implementation of the Sustainable Development Goals in Poland – 2020</a></p>
   </div>
@@ -662,7 +663,7 @@ permalink: /en/o_sdg/
 </p>
 <div class="collapse" id="collapseExample12">
   <div class="card card-body">
-	<p style="margin-bottom: 20px;margin-top: 0px;"><a target="_blank" href="http://www.oecd.org/env/towards-green-growth-9789264111318-en.htm" title="Read a publication Towards Green Growth">Towards Green Growth</a></p> 
+	<p style="margin-bottom: 20px;margin-top: 0px;"><a target="_blank" href="http://www.oecd.org/env/towards-green-growth-9789264111318-en.htm" title="Read a publication Towards Green Growth">Towards Green Growth</a></p>
   </div>
 </div>
 
