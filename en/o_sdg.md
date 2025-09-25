@@ -243,9 +243,20 @@ permalink: /en/o_sdg/
   </div>
 </div>
 
+<hr style="margin-top: 0px;">
 
+<div class="image-wrapper">
+ <a target="_blank" href="https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5501/54/1/1/sdg_w_liczbach._10_lat_agendy_2030_w_polsce.pdf" alt="SDG in numbers. 10 years of the 2030 Agenda in Poland" title="See SDG in numbers. 10 years of the 2030 Agenda in Poland"><img src="{{ site.baseurl }}/assets/img/publikacje/17_10_lat_agendy.png" align="center" alt="SDG in numbers. 10 years of the 2030 Agenda in Poland" border="0"/></a>
+</div>
+<p><b>SDG in numbers. 10 years of the 2030 Agenda in Poland</b></p>
 
+<p>In September 2025, it will be 10 years since the UN member states adopted the 2030 Agenda, setting global directions for sustainable development.</p>
 
+<p>On this occasion, Statistics Poland, as the coordinator of the SDG monitoring process in Poland, has prepared the brochure <em>‘SDG in numbers. 10 years of the 2030 Agenda in Poland’</em>. It presents Poland’s progress toward the Sustainable Development Goals in a clear and visual way, highlighting key changes over the past decade and identifying areas that need urgent attention, based on selected indicators tracking national priorities related to the SDGs.</p>
+
+<p>More information about the 2030 Agenda and the SDG monitoring indicators can be found on the interactive SDG National Platform at (<a target="_blank" href="https://sdg.gov.pl/en/" alt="SDG platform" title="SDG platform">sdg.gov.pl/en</a>).</p>
+
+<p>The publication, primarily intended for domestic audience, is available only in Polish.</p>
 
   <hr style="margin-top: 0px;">
 

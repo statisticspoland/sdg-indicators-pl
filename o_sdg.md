@@ -247,6 +247,18 @@ permalink: /o_sdg/
   </div>
 </div>
 
+<hr style="margin-top: 0px;">
+
+<div class="image-wrapper">
+ <a target="_blank" href="https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5501/54/1/1/sdg_w_liczbach._10_lat_agendy_2030_w_polsce.pdf" alt="SDG w liczbach. 10 lat Agendy 2030 w Polsce" title="Zapoznaj się z folderem SDG w liczbach. 10 lat Agendy 2030 w Polsce"><img src="{{ site.baseurl }}/assets/img/publikacje/17_10_lat_agendy.png" align="center" alt="SDG w liczbach. 10 lat Agendy 2030 w Polsce" border="0"/></a>
+</div>
+<p><b>SDG w liczbach. 10 lat Agendy 2030 w Polsce</b></p>
+
+<p>We wrześniu 2025 r. mija 10 lat od przyjęcia przez kraje członkowskie ONZ Agendy 2030, wyznaczającej globalne kierunki działań na rzecz zrównoważonego rozwoju.</p>
+
+<p>Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował folder <em>„SDG w liczbach. 10 lat Agendy 2030 w Polsce”</em>. W przejrzystej, graficznej formie prezentuje on postępy Polski w realizacji Celów Zrównoważonego Rozwoju, wskazując najważniejsze zmiany ostatniej dekady oraz obszary wymagające pilnych działań, w oparciu o wybrane wskaźniki monitorujące krajowe priorytety związane z SDG.</p>
+
+<p>Więcej informacji o Agendzie 2030 i wskaźnikach monitorujących SDG znajdziesz na interaktywnej <br />Platformie SDG (<a target="_blank" href="https://sdg.gov.pl" alt="Platforma SDG" title="Platforma SDG">sdg.gov.pl</a>).</p>
 
 
 
