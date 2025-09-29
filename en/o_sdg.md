@@ -254,8 +254,6 @@ permalink: /en/o_sdg/
 
 <p>On this occasion, Statistics Poland, as the coordinator of the SDG monitoring process in Poland, has prepared the brochure <em>‘SDG in numbers. 10 years of the 2030 Agenda in Poland’</em>. It presents Poland’s progress toward the Sustainable Development Goals in a clear and visual way, highlighting key changes over the past decade and identifying areas that need urgent attention, based on selected indicators tracking national priorities related to the SDGs.</p>
 
-<p>More information about the 2030 Agenda and the SDG monitoring indicators can be found on the interactive SDG National Platform at (<a target="_blank" href="https://sdg.gov.pl/en/" alt="SDG platform" title="SDG platform">sdg.gov.pl/en</a>).</p>
-
 <p>The publication, primarily intended for domestic audience, is available only in Polish.</p>
 
   <hr style="margin-top: 0px;">

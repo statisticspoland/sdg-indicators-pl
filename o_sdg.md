@@ -258,8 +258,6 @@ permalink: /o_sdg/
 
 <p>Z tej okazji GUS, jako koordynator procesu monitorowania SDGs w Polsce, przygotował folder <em>„SDG w liczbach. 10 lat Agendy 2030 w Polsce”</em>. W przejrzystej, graficznej formie prezentuje on postępy Polski w realizacji Celów Zrównoważonego Rozwoju, wskazując najważniejsze zmiany ostatniej dekady oraz obszary wymagające pilnych działań, w oparciu o wybrane wskaźniki monitorujące krajowe priorytety związane z SDG.</p>
 
-<p>Więcej informacji o Agendzie 2030 i wskaźnikach monitorujących SDG znajdziesz na interaktywnej <br />Platformie SDG (<a target="_blank" href="https://sdg.gov.pl" alt="Platforma SDG" title="Platforma SDG">sdg.gov.pl</a>).</p>
-
 
 
 
