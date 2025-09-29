@@ -26,6 +26,8 @@
       <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
       <script src="https://cdn.amcharts.com/lib/5/geodata/polandLow.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line.js"></script>
+
 
       <div style="width: 15%; display: inline-block; margin-top: 6px; margin-left: 5px; vertical-align: top;">
 <!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
@@ -402,7 +404,7 @@
     var yearBox = document.getElementById("yearBox");
     var selectedYear = yearBox.options[yearBox.selectedIndex].value;
     //console.log("TESTER" + selectedYear);
-    loadDataAndRenderMap(selectedYear);	
+    loadDataAndRenderMap(selectedYear);
     // if(selectedYear===0){
     // loadDataAndRenderMap("2023");
     // }
@@ -517,7 +519,8 @@
     });
   </script>
 
-      {% if licznik>1 %}
+<!-----------------------------------------------------STARA WERSJA WYKRESU---------------------------------------------------------------------->
+    <!--  {% if licznik>1 %}
         {% if language == 'pl' %}
           <div id="filtry">.</div>
           {% if id != '12-2-2' and id != '1-5-4' and id != '11-b-2' and id != '13-1-3' and id != '8-4-2' and id != '17-13-1' and id != '12-4-2'%}
@@ -543,6 +546,10 @@
         <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
         <div id="Legenda" align="center" style="pointer-events: none;"></div>
       {% endif %}
+-->
+<!-----------------------------------------------------NOWA WERSJA WYKRESU - AMCHART---------------------------------------------------------------------->
+      <div id="chartLine" style="width: 100%;height: 400px"></div>
+
 
       <hr>
 
@@ -557,7 +564,7 @@
         {% endif %}
         <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px; float: right;" title="Download all data in csv format">Download All</button>
       {% endif %}
-      
+
       {% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%}
       {% if language == 'pl' %}
         Jednostka prezentacji: {{ t1.pl_jednostka_prezentacji }} <br />
@@ -724,5 +731,8 @@ function download_csv(csv, filename) {
 }
 
 
+am5.ready(function() {
+  createchart6("chartLine");
+});
 
 </script>
