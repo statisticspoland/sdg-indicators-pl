@@ -1,0 +1,893 @@
+{% include head.html %}
+
+{% include header.html %}
+
+{% assign t = site.translations | where:"translation_id", "indicator"  | first %}
+{% assign t = t[page.lang] %}
+
+
+{% assign slug = page.indicator | replace: '.', '-' %}
+
+
+{% assign id = page.indicator | slugify %}
+
+{% if page.url contains '/statistics_nat/' %}
+  {% assign ktore = site.data.krajowe %}
+{% elsif page.url contains '/statistics_reg/' %}
+    {% assign ktore = site.data.regionalne %}
+{% else %}
+  {% assign ktore = site.data.globalne %}
+{% endif %}
+
+{% if page.lang == 'pl' %}
+    {% assign sdg_goals = ktore.sdg_goals %}
+{% else %}
+    {% assign sdg_goals = ktore[page.lang].sdg_goals %}
+{% endif %}
+
+<div id="main" class="main-content initiative-content">
+
+  {% for goals in sdg_goals %}
+
+    {% assign page_goal_num = page.sdg_goal | plus:0 %}
+    {% assign goals_goal_num = goals.goal | plus:0 %}
+
+    {% if page_goal_num == goals_goal_num %}
+
+        <a id="main-content" tabindex="-1"></a>
+        {% if page.url contains '/statistics_glob/' %}
+		<section class="pl-banner-glob">
+		{% else %}
+			{% if page.url contains '/statistics_nat/' %}
+			<section class="pl-banner-nat">
+      {% elsif page.url contains '/statistics_reg/' %}
+  		<section class="pl-banner-reg">
+			{% else %}
+			<section class="pl-banner">
+			{% endif %}
+		{% endif %}
+            <div class="pl-grid">
+                <div class="pl-banner-content">
+                  <h1>
+
+                    {% if page.url contains '/statistics_nat/' %}
+                    {% assign rodzaj = '/statistics_nat/' %}
+                    {% elsif page.url contains '/statistics_reg/' %}
+                    {% assign rodzaj = '/statistics_reg/' %}
+                    {% else %}
+                    {% assign rodzaj = '/statistics_glob/' %}
+                    {% endif %}
+
+                          {% if page.lang == 'en' %}
+  							                 Goal {{ goals.goal }} - {{ goals.title }}
+  						            {% else %}
+  							                 Cel {{ goals.goal }} - {{ goals.title }}
+  						            {% endif %}
+                      {% endif %}
+
+                    {% endfor %}
+                  </h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="pl-grid initiative-description">
+
+
+          {% if slug=='8-4-1' %}
+            {% assign dataset_name = 'indicator_12-2-1' %}
+          {% elsif slug=='8-4-2' %}
+            {% assign dataset_name = 'indicator_12-2-2' %}
+          {% elsif slug=='10-3-1' %}
+            {% assign dataset_name = 'indicator_16-b-1' %}
+          {% elsif slug=='15-a-1' %}
+            {% assign dataset_name = 'indicator_15-b-1' %}
+          {% elsif slug=='1-5-1' or slug=='11-5-1' %}
+            {% assign dataset_name = 'indicator_13-1-1' %}
+          {% elsif slug=='11-b-1' or slug=='13-1-2' %}
+            {% assign dataset_name = 'indicator_1-5-3' %}
+          {% elsif slug=='11-b-2' or slug=='13-1-3' %}
+            {% assign dataset_name = 'indicator_1-5-4' %}
+          {% elsif slug=='4-7-1' or slug=='12-8-1' %}
+            {% assign dataset_name = 'indicator_13-3-1' %}
+          {% elsif slug=='3-5-a-0' %}
+            {% assign dataset_name = 'indicator_15-2-a-0' %}
+          {% elsif slug=='13-3-b-0' %}
+            {% assign dataset_name = 'indicator_15-2-a-0' %}
+          {% elsif slug=='13-4-b-0' %}
+            {% assign dataset_name = 'indicator_6-1-a-0' %}
+          {% elsif slug=='1-2-a-0' %}
+            {% assign dataset_name = 'indicator_5-2-a-0' %}
+          {% elsif slug=='15-2-b-0' %}
+            {% assign dataset_name = 'indicator_6-2-a-0' %}
+          {% elsif slug=='15-c-1' %}
+            {% assign dataset_name = 'indicator_15-7-1' %}
+          {% elsif slug=='6-2-b-0' %}
+            {% assign dataset_name = 'indicator_15-2-c-0' %}
+          {% elsif slug=='7-2-a-0' %}
+            {% assign dataset_name = 'indicator_13-2-a-0' %}
+          {% elsif slug=='2-2-a-0' %}
+            {% assign dataset_name = 'indicator_12-2-a-0' %}
+          {% else %}
+            {% assign dataset_name = 'indicator_' | append: slug %}
+          {% endif %}
+
+          {% assign array = "" | split: ""  %}
+          {% assign precyzja = array %}
+          {% assign header_csv = array %}
+          {% assign filtry = array %}
+          {% assign wszystkie = array %}
+          {% assign jednostka = array %}
+          {% assign tytul = array %}
+          {% assign metadane = array %}
+
+
+          {% if page.lang == 'pl' %}
+              {% assign precyzja = page.pre %}
+              {% assign metadane =page %}
+              {% assign tytul = page.graph_title %}
+              {% assign jednostka = t1.pl_jednostka_prezentacji %}
+              {% assign wszystkie = page.zmienne | split: ";" %}
+              {% assign filtry = page.kategorie | split: "," %}
+              {% assign header_csv = page.indicator_variable_1 | split: "," %}
+              {% assign sdg_indicator = ktore[dataset_name] %}
+              {% assign sdg_indicators = ktore.sdg_indicator_metadata %}
+              {% assign language = 'pl' %}
+
+          {% else %}
+              {% assign precyzja = page.pre %}
+              {% assign metadane =page %}
+              {% assign tytul = page.graph_title %}
+              {% assign jednostka = t1.en_jednostka_prezentacji %}
+              {% assign wszystkie = page.zmienne | split: ";" %}
+              {% assign filtry = page.kategorie | split: "," %}
+              {% assign header_csv = page.indicator_variable_1 | split: "," %}
+              {% assign sdg_indicator = ktore[dataset_name] %}
+              {% assign sdg_indicators = ktore[page.lang].sdg_indicator_metadata %}
+              {% assign page = site.indicators | where:"indicator", page.indicator  | first %}
+              {% assign language = 'en' %}
+          {% endif %}
+
+
+          {% assign t1 = site.translations | where:"translation_id", slug | first %}
+          {% assign t1 = t1[language] %}
+
+          {% assign foo = array %}
+          {% for wszy in wszystkie %}
+          {% assign ha = wszy | split: "," | jsonify | append:','%}
+          {% assign foo = foo | push: ha %}
+          {% endfor %}
+
+          {% for indicators in sdg_indicators %}
+          {% if indicators.indicator_id == page.indicator %}
+            {% assign this_sdg_indicator_metadata = indicators %}
+          {% endif %}
+          {% endfor %}
+
+          {% assign indicator_title = this_sdg_indicator_metadata.indicator %}
+
+          {% assign licznik = header_csv | size %}
+
+          {% assign row = array %}
+
+          {% assign labels = array %}
+
+          {% assign row1 = array %}
+          {%for i in (0..licznik) %}
+          {% for indicator in sdg_indicator %}
+            {% assign a = header_csv[i] %}
+            {% assign row1 = row1 | push: indicator[a] %}
+          {%endfor%}
+          {%endfor%}
+
+          {% for indicator in sdg_indicator %}
+            {% assign labels = labels | push: indicator.year %}
+          {% endfor %}
+
+          {% if page.url contains '/statistics_nat/' %}
+            {% assign rodzaj = '/statistics_nat/' %}
+          {% elsif page.url contains '/statistics_reg/' %}
+              {% assign rodzaj = '/statistics_reg/' %}
+          {% else %}
+            {% assign rodzaj = '/' %}
+          {% endif %}
+
+          {% if language == 'pl' %}
+          {% for goals in sdg_goals %}
+          {% assign numer = goals.goal %}
+          {% assign numer1 = page.sdg_goal | downcase %}
+            {% if numer == numer1 %}
+                <ol class="breadcrumb">
+              <li><a title="Przejdź do strony głównej" href="{{ site.baseurl }}{{ rodzaj }}">Strona Główna</a> / </li>
+              <li><a title="Przejdź do celu nr {{ page.sdg_goal }}" href="{{ site.baseurl }}{{ rodzaj }}{{ goals.short | slugify }}">Cel {{ page.sdg_goal }}</a></li>
+              <li class="active"> / Wskaźnik {{ page.indicator | remove: ".0" | remove: ".reg" }}</li>
+              </ol>
+            {% endif %}
+          {% endfor %}
+
+          {% else %}
+
+          {% for goals in sdg_goals %}
+              {% assign numer = goals.goal %}
+          {% assign numer1 = page.sdg_goal | downcase %}
+            {% if numer == numer1 %}
+                <ol class="breadcrumb">
+              <li><a title="Go to home page" href="{{ site.baseurl }}/{{ language }}{{ rodzaj }}">Home</a> / </li>
+              <li><a title="Go to goal nr {{ page.sdg_goal }}" href="{{ site.baseurl }}/{{ language }}{{ rodzaj }}{{ goals.short | slugify }}">Goal {{ page.sdg_goal }}</a></li>
+              <li class="active"> / Indicator {{ page.indicator | remove: ".0" | remove: ".reg" }}</li>
+              </ol>
+            {% endif %}
+          {% endfor %}
+          {% endif %}
+
+
+
+
+
+
+		  {% if page.url contains '/statistics_nat/' %}
+			{% assign t1 = site.metadane_krajowe | where:"translation_id", slug | first %}
+			{% if language == 'pl' %}
+				<p style="font-size: 21px;"> Priorytet dla Polski - {{ t1.pl_priorytet }} </p>
+			{% else %}
+				<p style="font-size: 21px;"> Priority for Poland - {{ t1.en_priorytet }} </p>
+			{% endif %}
+		  {% endif %}
+
+      {% if page.url contains '/statistics_reg/' %}
+			{% assign t1 = site.metadane_regionalne | where:"translation_id", slug | first %}
+			{% if language == 'pl' %}
+				<p style="font-size: 21px;"> Priorytet regionalny - {{ t1.pl_priorytet }} </p>
+			{% else %}
+				<p style="font-size: 21px;"> Regional piority - {{ t1.en_priorytet }} </p>
+			{% endif %}
+		  {% endif %}
+
+
+
+
+
+
+
+          <h3>{{ t.sub-subtitle }} {{ page.indicator | remove: ".0" | remove: ".reg" }} - {{ indicator_title }} </h3>
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab" title="{{t.data-title}}">{{ t.data }}</a></li>
+            <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab" title="{{t.metadata-title}}">{{ t.metadata }}</a></li>
+
+          </ul>
+
+    {% if page.url contains '/statistics_reg/' %}
+      {% if page.url contains '/1-G-1/' or page.url contains '/1-G-2/' %}
+        <div style="float: left;width: 100%;">{% include components/indicator_reg_param.html %}</div>
+      {% else %}
+        <div style="float: left;width: 100%;">{% include components/indicator_reg.html %}</div>
+      {% endif %}
+    {% else %}
+      <div style="float: left;width: 100%;">{% include components/indicator1.html %}</div>
+    {% endif %}
+
+        </div>
+
+</div>
+
+<script>
+
+var naglowek_ang={{ page.indicator_variable_2 | split: "," | jsonify}}
+
+function Zmiana_jednostki(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  labels.shift()
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(12,24);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,12);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki4(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  labels.shift()
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tony' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonnes'){
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(12,24);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tony";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        $(".ct-series-0").text('na 1 mieszkańca');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        $(".ct-series-0").text('per capita');
+      }
+
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,12);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tony";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonnes";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki7(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  labels.shift()
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka7").innerHTML=='Zmień jednostkę - %' || document.getElementById("Jednostka7").innerHTML=='Change unit - %'){
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(14,27);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "%";
+        document.getElementById("Jednostka7").innerHTML = "Zmień jednostkę - liczba (województw)";
+        $(".ct-series-0").text('procent');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "%";
+        document.getElementById("Jednostka7").innerHTML = "Change unit - number (voivodships)";
+        $(".ct-series-0").text('percent');
+      }
+
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,14);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "liczba (województw)";
+        document.getElementById("Jednostka7").innerHTML = "Zmień jednostkę - %";
+        $(".ct-series-0").text('ogółem');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "number (voivodships)";
+        document.getElementById("Jednostka7").innerHTML = "Change unit - %";
+        $(".ct-series-0").text('total');
+      }
+
+    }
+}
+
+function Zmiana_jednostki2(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  labels.shift();
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka2").innerHTML=='Zmień jednostkę - sztuki' || document.getElementById("Jednostka2").innerHTML=='Change unit - number'){
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(27,45);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "sztuki";
+        document.getElementById("Jednostka2").innerHTML = "Zmień jednostkę - liczba zwierząt";
+      }
+
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "number";
+        document.getElementById("Jednostka2").innerHTML = "Change unit - number of animals";
+      }
+
+      $('.ct-series-0').css({'display':'none'});
+      $('.ct-series-1').css({'display':'none'});
+      $('.ct-series-2').css({'display':'none'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'inline-block'});
+      $('.ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut').css({'stroke':'#453d3f'});
+      $('.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut').css({'stroke':'#d17905'});
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,27);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "liczba zwierząt";
+        document.getElementById("Jednostka2").innerHTML = "Zmień jednostkę - sztuki";
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "number of animals";
+        document.getElementById("Jednostka2").innerHTML = "Change unit - number";
+      }
+
+      $('.ct-series-0').css({'display':'inline-block'});
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'none'});
+      $('.ct-series-4').css({'display':'none'});
+
+    }
+}
+
+function Zmiana_jednostki3(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  labels.shift()
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka3").innerHTML=='Zmień jednostkę - tys. ton' || document.getElementById("Jednostka3").innerHTML=='Change unit - thous. tonnes'){
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(40,72);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka3").innerHTML = "Zmień jednostkę - tys. pasażerów";
+      }
+
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka3").innerHTML = "Change unit - thous. passengers";
+      }
+
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
+      calosc=calo.splice(0,40);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "tys. pasażerów";
+        document.getElementById("Jednostka3").innerHTML = "Zmień jednostkę - tys. ton";
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "thous. people";
+        document.getElementById("Jednostka3").innerHTML = "Change unit - thous. tonnes";
+      }
+
+      $('.ct-series-1').css({'display':'inline-block'});
+      $('.ct-series-2').css({'display':'inline-block'});
+      $('.ct-series-3').css({'display':'inline-block'});
+      $('.ct-series-4').css({'display':'inline-block'});
+
+    }
+}
+
+function Zmiana_jednostki5(){
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  labels.shift()
+  var lan='{{language}}'
+
+  if (document.getElementById("Jednostka5").innerHTML=='Zmień jednostkę - [-]' || document.getElementById("Jednostka5").innerHTML=='Change unit - [-]'){
+    var calo={{ row1 | jsonify }}
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
+    calosc=calo.splice(15,30);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+
+    chart.update({labels: labels,series: seria})
+    if(lan=='pl'){
+      document.getElementById("tytul").innerHTML = "[-]";
+      document.getElementById("Jednostka5").innerHTML = "Zmień jednostkę - procent";
+      $(".ct-series-0").text('dynamika PKB (w cenach stałych)').show();
+      $(".ct-series-1").text('dynamika cen towarów i usług konsumpcyjnych').show();
+      $(".ct-series-2").hide();
+
+    }
+    if(window.location.href.indexOf("en") > -1) {
+      document.getElementById("tytul").innerHTML = "[-]";
+      document.getElementById("Jednostka5").innerHTML = "Change unit - percent";
+      $(".ct-series-0").text('indices of GDP (constant prices)').show();
+      $(".ct-series-1").text('indices of prices of consumer goods and services').show();
+      $(".ct-series-2").hide();
+    }
+
+
+  }else if (document.getElementById("Jednostka5").innerHTML=='Zmień jednostkę - procent' || document.getElementById("Jednostka5").innerHTML=='Change unit - percent') {
+
+    var calo={{ row1 | jsonify }}
+    for (i=0;i<naglowek_ang.length;i++){
+      remove(calo, naglowek_ang[i]);
+
+    }
+    calosc=calo.splice(45,90);
+    var b = [[]];
+    seria=[]
+    for (i=1;i<licznik+1;i++){
+      b[i] = calosc.splice(0,labels.length);
+      seria.push(b[i])
+    }
+
+    chart.update({labels: labels,series: seria})
+    if(lan=='pl'){
+      document.getElementById("tytul").innerHTML = "%";
+      document.getElementById("Jednostka5").innerHTML = "Zmień jednostkę - PLN";
+      $(".ct-series-0").text('stopa inwestycji').show();
+      $(".ct-series-1").text('dług sektora instytucji rządowych i samorządowych w relacji do PKB').show();
+      $(".ct-series-2").text('wynik sektora instytucji rządowych i samorządowych w relacji do PKB').show();
+
+    }
+    if(window.location.href.indexOf("en") > -1) {
+      document.getElementById("tytul").innerHTML = "%";
+      document.getElementById("Jednostka5").innerHTML = "Change unit - PLN";
+      $(".ct-series-0").text('investment rate').show();
+      $(".ct-series-1").text('general government debt in relation to GDP').show();
+      $(".ct-series-2").text('general government result in relation to GDP').show();
+    }
+
+
+
+  }else{
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,15);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "PLN";
+        document.getElementById("Jednostka5").innerHTML = "Zmień jednostkę - [-]";
+        $(".ct-series-0").text('PKB na 1 mieszkańca (ceny bieżące)').show();
+        $(".ct-series-1").hide();
+        $(".ct-series-2").hide();
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "PLN";
+        document.getElementById("Jednostka5").innerHTML = "Change unit - [-]";
+        $(".ct-series-0").text('GDP per capita in EUR (current prices)').show();
+        $(".ct-series-1").hide();
+        $(".ct-series-2").hide();
+      }
+
+    }
+
+}
+
+function Zmiana_jednostki6(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  labels.shift()
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka6").innerHTML=='Zmień jednostkę - procent' || document.getElementById("Jednostka6").innerHTML=='Change unit - percent'){
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(11,22);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "procent";
+        document.getElementById("Jednostka6").innerHTML = "Zmień jednostkę - kg na osobę";
+
+        $(".ct-series-0").text('odzysk odpadów niebezpiecznych').show();
+        $(".ct-series-1").text('unieszkodliwienie odpadów niebezpiecznych').show();
+      }
+
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "percent";
+        document.getElementById("Jednostka6").innerHTML = "Change unit - kg per capita";
+
+        $(".ct-series-0").text('recovery of hazarodus waste').show();
+        $(".ct-series-1").text('disposal of hazardous waste').show();
+      }
+
+
+
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+      }
+      calosc=calo.splice(0,11);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "kg na osobę";
+        document.getElementById("Jednostka6").innerHTML = "Zmień jednostkę - procent";
+
+        $(".ct-series-0").text('odpady niebezpieczne wytworzone').show();
+        $(".ct-series-1").hide();
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "kg per capita";
+        document.getElementById("Jednostka6").innerHTML = "Change unit - percent";
+
+        $(".ct-series-0").text('hazarodus waste generated').show();
+        $(".ct-series-1").hide();
+      }
+
+
+
+    }
+}
+
+
+$(window).on("load", function() {
+  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '1-5-4' || '{{id}}' == '11-b-2' || '{{id}}' == '13-1-3' || '{{id}}' == '17-13-1'  || '{{id}}' == '12-4-2'){
+    $('.ct-chart').css({'margin-top':'20px'});
+
+  }
+
+  if ('{{id}}'=='4-6-1'){
+    $('.ct-chart').css({'margin-top':'200px'});
+
+  }
+
+  <!--if ('{{id}}'=='1-1-a-0'){$('.ct-chart').css({'margin-top':'200px'});}-->
+
+  if ('{{id}}'=='16-4-a-0'){
+    $('.ct-chart').css({'margin-top':'200px'});
+
+  }
+  if ('{{id}}'=='4-5-b-0'){
+    $('.ct-chart').css({'margin-top':'200px'});
+
+  }
+  if ('{{id}}'=='8-3-a-0'){
+    $('.ct-chart').css({'margin-top':'230px'});
+
+  }
+  if ('{{id}}'=='8-5-a-0'){
+    $('.ct-chart').css({'margin-top':'230px'});
+
+  }
+
+
+
+$('body').click(function( e ){
+    try{
+
+      var name = e.target.className;
+      if (!(e.target.className.includes('ct-series') || e.target.classList.contains('list-group-item') || e.target.id.includes('infoToggler'))){
+        if(!(e.target.src)){
+          $('.collapse').collapse('hide');
+        }
+
+      }
+
+    }catch(e){
+
+      $('.collapse').collapse('hide');
+    }
+});
+
+
+$(function () {
+  //console.log('site','{{site}}');
+  //console.log('site_meta','{{site.metadane_regionalne}}');
+  //console.log('t1','{{t1}}');
+  //console.log('t1_jednostka_prezentacji','{{t1.pl_jednostka_prezentacji}}');
+  //console.log('jednostka','{{jednostka}}');
+
+$('.list-group.checked-list-box .list-group-item').each(function () {
+
+          var zmienna={{licznik}}
+          var $widget = $(this),
+          $checkbox = $('<input type="checkbox"/>')
+          $widget.css('cursor', 'pointer')
+          $widget.append($checkbox);
+
+          $widget.on('click', function (e) {
+              $checkbox.prop('checked', !$checkbox.is(':checked'));
+              $checkbox.triggerHandler('change');
+
+              var isChecked = $checkbox.is(':checked');
+          });
+
+          $checkbox.on('change', function () {
+              var isChecked = $checkbox.is(':checked');
+
+              for (ola=0;ola<zmienna;ola++){
+                if($widget.val()===ola){
+                  $('li.ct-series-'+ola).click();
+                  if(document.querySelector('li.ct-series-'+ola).style.display=='none'){
+                    document.querySelector('li.ct-series-'+ola).style.display='inline-block'
+                  }else{
+                    if ($('.ct-legend > li:visible').length >1){
+                      document.querySelector('li.ct-series-'+ola).style.display='none'
+                    }
+
+                  }
+                }
+              }
+            });
+
+            console.log($widget.data('checked'));
+              if ($widget.data('checked') == true) {
+                  $checkbox.prop('checked', !$checkbox.is(':checked'));
+
+              }
+
+              var isChecked = $checkbox.is(':checked');
+            });
+});
+});
+</script>
+
+{% include footer.html content2=language%}

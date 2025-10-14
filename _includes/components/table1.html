@@ -12,6 +12,10 @@ var naglowek={{include.content | jsonify}}
 var naglowek_ang={{ page.indicator_variable_2 | split: "," | jsonify}}
 DATA.shift();
 
+console.log("TABELA");
+console.log(naglowek);
+console.log(naglowek_ang);
+console.log(DATA);
 
 if (jez=='pl'){
   rokk='Wymiar'
@@ -80,6 +84,7 @@ function buildTable(data) {
     });
     table.appendChild(tbody);
 
+    console.log(table);
     return table;
 }
 
