@@ -717,23 +717,44 @@
           border: 0 !important;
         }
 
-        ul li {
-          border-radius: 3px;
-          margin: 0;
-          padding: 4px 2px;
-        }
 
-        ul li:hover {
-          background: #eee;
-        }
+                #chooseWojLine ul li {
+                  border-radius: 3px;
+                  margin: 0;
+                  padding: 4px 2px;
+                }
 
-        ul li::after
-        {
-          margin-bottom: 0 !important;
-        }
-        ul li label {
-          display: inline-block;
-          font-weight: 400;
+                #chooseWojLine ul li:hover {
+                  background: #eee;
+                }
+
+                #chooseWojLine ul li::after
+                {
+                  margin-bottom: 0 !important;
+                }
+                #chooseWojLine ul li label {
+                  display: inline-block;
+                  font-weight: 400;
+                }
+
+                #chooseWojBar ul li {
+                  border-radius: 3px;
+                  margin: 0;
+                  padding: 4px 2px;
+                }
+
+                #chooseWojBar ul li:hover {
+                  background: #eee;
+                }
+
+                #chooseWojBar ul li::after
+                {
+                  margin-bottom: 0 !important;
+                }
+                #chooseWojBar ul li label {
+                  display: inline-block;
+                  font-weight: 400;
+                }
         }
       </style>
 
@@ -822,7 +843,7 @@
       </details>
       </div>
 
-      <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;">
+      <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
           <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
           <option style="font-family: Fira Sans" value="miasto">miasto</option>
@@ -920,7 +941,7 @@
 
       </details>
       </div>
-      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;">
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;top: 6px;left: 242px;position: relative;">
         <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
           <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
           <option style="font-family: Fira Sans" value="miasto">miasto</option>
@@ -1282,30 +1303,38 @@ function updateChartLine(){
 
   checkboxes.forEach((cb,i) => {
     if (cb.checked && cb.value !== 'all') {
-
       if(selectedLine === "ogółem"){
         checkedValues.push(cb.value);
-        tr[i+1].style.display = '';
+        tr[i].style.display = '';
+      }
+      else{
+        tr[i].style.display = 'none';
       }
       if(selectedLine === "miasto"){
         checkedValues.push(cb.value+"_");
-        tr[i+18].style.display = '';
+        tr[i+17].style.display = '';
+      }
+      else{
+        tr[i+17].style.display = 'none';
       }
       if(selectedLine === "wieś"){
         checkedValues.push(cb.value+"__");
-        tr[i+35].style.display = '';
+        tr[i+34].style.display = '';
+      }
+      else{
+        tr[i+34].style.display = 'none';
       }
 
     }
     if (!cb.checked && cb.value !== 'all'){
       if(selectedLine === "ogółem"){
-        tr[i+1].style.display = 'none';
+        tr[i].style.display = 'none';
       }
       if(selectedLine === "miasto"){
-        tr[i+18].style.display = 'none';
+        tr[i+17].style.display = 'none';
       }
       if(selectedLine === "wieś"){
-        tr[i+35].style.display = 'none';
+        tr[i+34].style.display = 'none';
       }
     }
   });
