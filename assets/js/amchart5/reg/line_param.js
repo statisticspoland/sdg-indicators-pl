@@ -1,6 +1,6 @@
-function createchartLineParam(div, dane, idx){
+function createchartLineParam(div, dane, idx, jez,precyzja){
 
-  console.log(dane);
+  console.log(jez);
 
   const wojTemp = ["Polska","Dolnośląskie","Kujawsko-Pomorskie","Lubelskie","Lubuskie","Łódzkie","Małopolskie","Mazowieckie","Opolskie","Podkarpackie","Podlaskie","Pomorskie","Śląskie","Świętokrzyskie","Warmińsko-Mazurskie","Wielkopolskie","Zachodniopomorskie"];
 
@@ -38,8 +38,16 @@ am5.array.each(am5.registry.rootElements,
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
 var root = am5.Root.new(div);
 
-root.locale = am5locales_pl_PL;
-root.numberFormatter.set("numberFormat", "#,###.0");
+//root.locale = am5locales_pl_PL;
+//root.numberFormatter.set("numberFormat", "#,###.0");
+if(jez != "en"){
+  root.locale = am5locales_pl_PL;
+  //root.numberFormatter.set("numberFormat", "# ###,0")
+}
+else
+{
+  root.numberFormatter.set("numberFormat", "#,###.0")
+}
 
 root.dateFormatter.setAll({
   dateFormat: "yyyy",

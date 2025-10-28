@@ -1,4 +1,4 @@
-function createchartBar(div, dane, yMin, yMax, precyzja, lata){
+function createchartBar(div, dane, yMin, yMax, precyzja, lata, jez){
 
   console.log(dane);
 
@@ -46,8 +46,14 @@ am5.array.each(am5.registry.rootElements,
   // https://www.amcharts.com/docs/v5/getting-started/#Root_element
   var root = am5.Root.new(div);
 
-root.locale = am5locales_pl_PL;
-root.numberFormatter.set("numberFormat", "#,###");
+  if(jez != "en"){
+    root.locale = am5locales_pl_PL;
+    //root.numberFormatter.set("numberFormat", "# ###,0")
+  }
+  else
+  {
+    root.numberFormatter.set("numberFormat", "#,###.0")
+  }
 
   // Set themes
   // https://www.amcharts.com/docs/v5/concepts/themes/

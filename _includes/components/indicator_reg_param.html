@@ -685,6 +685,7 @@
 
         details summary::after {
           content: url("../../assets/img/arrow-down.svg");
+          content: url("../../../assets/img/arrow-down.svg");
           display: inline-block;
           font-size: 0.6rem;
           height: 1rem;
@@ -759,195 +760,398 @@
       </style>
 
       <div id="chooseWojBar" style="display: inline-flex;margin-right: 5px;">
-      <details id="chooseWojBar">
-        <summary>Wybierz województwo</summary>
-        <form style="float: left;">
-          <fieldset>
-            <ul style="list-style: none; margin: 0; padding: 0;">
-              <li>
-                <label style="margin-top:0;color: #777;" for="all">Zaznacz/Usuń wszystko</label>
-                <input type="checkbox" id="all" name="all" value="all" onchange="addAllBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Polska">Polska</label>
-                <input type="checkbox" id="Polska" name="Polska" value="Polska" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Dolnośląskie">Dolnośląskie</label>
-                <input type="checkbox" id="Dolnośląskie" name="Dolnośląskie" value="Dolnośląskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Kujawsko-Pomorskie">Kujawsko-Pomorskie</label>
-                <input type="checkbox" id="Kujawsko-Pomorskie" name="Kujawsko-Pomorskie" value="Kujawsko-Pomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Lubelskie">Lubelskie</label>
-                <input type="checkbox" id="Lubelskie" name="Lubelskie" value="Lubelskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Lubuskie">Lubuskie</label>
-                <input type="checkbox" id="Lubuskie" name="Lubuskie" value="Lubuskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Łódzkie">Łódzkie</label>
-                <input type="checkbox" id="Łódzkie" name="Łódzkie" value="Łódzkie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Małopolskie">Małopolskie</label>
-                <input type="checkbox" id="Małopolskie" name="Małopolskie" value="Małopolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Mazowieckie">Mazowieckie</label>
-                <input type="checkbox" id="Mazowieckie" name="Mazowieckie" value="Mazowieckie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Opolskie">Opolskie</label>
-                <input type="checkbox" id="Opolskie" name="Opolskie" value="Opolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Podkarpackie">Podkarpackie</label>
-                <input type="checkbox" id="Podkarpackie" name="Podkarpackie" value="Podkarpackie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Kujawsko-Pomorskie">Podlaskie</label>
-                <input type="checkbox" id="Podlaskie" name="Podlaskie" value="Podlaskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Pomorskie">Pomorskie</label>
-                <input type="checkbox" id="Pomorskie" name="Pomorskie" value="Pomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Śląskie">Śląskie</label>
-                <input type="checkbox" id="Śląskie" name="Śląskie" value="Śląskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Świętokrzyskie">Świętokrzyskie</label>
-                <input type="checkbox" id="Świętokrzyskie" name="Świętokrzyskie" value="Świętokrzyskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Warmińsko-Mazurskie">Warmińsko-Mazurskie</label>
-                <input type="checkbox" id="Warmińsko-Mazurskie" name="Warmińsko-Mazurskie" value="Warmińsko-Mazurskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Wielkopolskie">Wielkopolskie</label>
-                <input type="checkbox" id="Wielkopolskie" name="Wielkopolskie" value="Wielkopolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Zachodniopomorskie">Zachodniopomorskie</label>
-                <input type="checkbox" id="Zachodniopomorskie" name="Zachodniopomorskie" value="Zachodniopomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
+      {% if language == 'pl' %}
+        <details id="chooseWojBar">
+          <summary>Wybierz województwo</summary>
+          <form style="float: left;">
+            <fieldset>
+              <ul style="list-style: none; margin: 0; padding: 0;">
+                <li>
+                  <label style="margin-top:0;color: #777;" for="all">Zaznacz/Usuń wszystko</label>
+                  <input type="checkbox" id="all" name="all" value="all" onchange="addAllBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Polska">Polska</label>
+                  <input type="checkbox" id="Polska" name="Polska" value="Polska" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Dolnośląskie">Dolnośląskie</label>
+                  <input type="checkbox" id="Dolnośląskie" name="Dolnośląskie" value="Dolnośląskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-Pomorskie">Kujawsko-Pomorskie</label>
+                  <input type="checkbox" id="Kujawsko-Pomorskie" name="Kujawsko-Pomorskie" value="Kujawsko-Pomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Lubelskie">Lubelskie</label>
+                  <input type="checkbox" id="Lubelskie" name="Lubelskie" value="Lubelskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Lubuskie">Lubuskie</label>
+                  <input type="checkbox" id="Lubuskie" name="Lubuskie" value="Lubuskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Łódzkie">Łódzkie</label>
+                  <input type="checkbox" id="Łódzkie" name="Łódzkie" value="Łódzkie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Małopolskie">Małopolskie</label>
+                  <input type="checkbox" id="Małopolskie" name="Małopolskie" value="Małopolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Mazowieckie">Mazowieckie</label>
+                  <input type="checkbox" id="Mazowieckie" name="Mazowieckie" value="Mazowieckie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Opolskie">Opolskie</label>
+                  <input type="checkbox" id="Opolskie" name="Opolskie" value="Opolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Podkarpackie">Podkarpackie</label>
+                  <input type="checkbox" id="Podkarpackie" name="Podkarpackie" value="Podkarpackie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-Pomorskie">Podlaskie</label>
+                  <input type="checkbox" id="Podlaskie" name="Podlaskie" value="Podlaskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Pomorskie">Pomorskie</label>
+                  <input type="checkbox" id="Pomorskie" name="Pomorskie" value="Pomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Śląskie">Śląskie</label>
+                  <input type="checkbox" id="Śląskie" name="Śląskie" value="Śląskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Świętokrzyskie">Świętokrzyskie</label>
+                  <input type="checkbox" id="Świętokrzyskie" name="Świętokrzyskie" value="Świętokrzyskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Warmińsko-Mazurskie">Warmińsko-Mazurskie</label>
+                  <input type="checkbox" id="Warmińsko-Mazurskie" name="Warmińsko-Mazurskie" value="Warmińsko-Mazurskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Wielkopolskie">Wielkopolskie</label>
+                  <input type="checkbox" id="Wielkopolskie" name="Wielkopolskie" value="Wielkopolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Zachodniopomorskie">Zachodniopomorskie</label>
+                  <input type="checkbox" id="Zachodniopomorskie" name="Zachodniopomorskie" value="Zachodniopomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
 
-      </details>
+        </details>
+      {% else %}
+        <details id="chooseWojBar">
+          <summary>Choose voivodeship</summary>
+          <form style="float: left;">
+            <fieldset>
+              <ul style="list-style: none; margin: 0; padding: 0;">
+                <li>
+                  <label style="margin-top:0;color: #777;" for="all">Select/Diselect all</label>
+                  <input type="checkbox" id="all" name="all" value="all" onchange="addAllBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Polska">Poland</label>
+                  <input type="checkbox" id="Polska" name="Polska" value="Polska" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Dolnośląskie">Dolnośląskie</label>
+                  <input type="checkbox" id="Dolnośląskie" name="Dolnośląskie" value="Dolnośląskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-Pomorskie">Kujawsko-Pomorskie</label>
+                  <input type="checkbox" id="Kujawsko-Pomorskie" name="Kujawsko-Pomorskie" value="Kujawsko-Pomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Lubelskie">Lubelskie</label>
+                  <input type="checkbox" id="Lubelskie" name="Lubelskie" value="Lubelskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Lubuskie">Lubuskie</label>
+                  <input type="checkbox" id="Lubuskie" name="Lubuskie" value="Lubuskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Łódzkie">Łódzkie</label>
+                  <input type="checkbox" id="Łódzkie" name="Łódzkie" value="Łódzkie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Małopolskie">Małopolskie</label>
+                  <input type="checkbox" id="Małopolskie" name="Małopolskie" value="Małopolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Mazowieckie">Mazowieckie</label>
+                  <input type="checkbox" id="Mazowieckie" name="Mazowieckie" value="Mazowieckie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Opolskie">Opolskie</label>
+                  <input type="checkbox" id="Opolskie" name="Opolskie" value="Opolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Podkarpackie">Podkarpackie</label>
+                  <input type="checkbox" id="Podkarpackie" name="Podkarpackie" value="Podkarpackie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-Pomorskie">Podlaskie</label>
+                  <input type="checkbox" id="Podlaskie" name="Podlaskie" value="Podlaskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Pomorskie">Pomorskie</label>
+                  <input type="checkbox" id="Pomorskie" name="Pomorskie" value="Pomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Śląskie">Śląskie</label>
+                  <input type="checkbox" id="Śląskie" name="Śląskie" value="Śląskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Świętokrzyskie">Świętokrzyskie</label>
+                  <input type="checkbox" id="Świętokrzyskie" name="Świętokrzyskie" value="Świętokrzyskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Warmińsko-Mazurskie">Warmińsko-Mazurskie</label>
+                  <input type="checkbox" id="Warmińsko-Mazurskie" name="Warmińsko-Mazurskie" value="Warmińsko-Mazurskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Wielkopolskie">Wielkopolskie</label>
+                  <input type="checkbox" id="Wielkopolskie" name="Wielkopolskie" value="Wielkopolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Zachodniopomorskie">Zachodniopomorskie</label>
+                  <input type="checkbox" id="Zachodniopomorskie" name="Zachodniopomorskie" value="Zachodniopomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+
+        </details>
+      {% endif %}
+
       </div>
 
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+        {% if language == 'pl' %}
         <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
-          <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
-          <option style="font-family: Fira Sans" value="miasto">miasto</option>
-          <option style="font-family: Fira Sans" value="wieś">wieś</option>
-        </select>
-      </div>
+                   {% if language == 'pl' %}
+                     <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
+                     <option style="font-family: Fira Sans" value="miasto">miasto</option>
+                     <option style="font-family: Fira Sans" value="wieś">wieś</option>
+                   {% else %}
+                     <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
+                     <option style="font-family: Fira Sans" value="miasto">urban areas</option>
+                     <option style="font-family: Fira Sans" value="wieś">rural areas</option>
+                   {% endif %}
+                 </select>
 
-    </div>
+         {% else %}
+         <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
+           <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
+           <option style="font-family: Fira Sans" value="miasto">urban areas</option>
+           <option style="font-family: Fira Sans" value="wieś">rural areas</option>
+         </select>
+         {% endif %}
+        </div>
+      </div>
 
       <div id="chartBar" style="width: 100%;height: 600px"></div>
       <hr>
 
 
       <div id="chooseWojLine" style="display: inline-flex;margin-right: 1rem; position: relative;">
-      <details id="myselectlist" style="top: -20px; left: 0;">
-        <summary>Wybierz województwo</summary>
-        <form style="float: left;">
-          <fieldset>
-            <ul style="list-style: none; margin: 0; padding: 0;">
-              <li>
-                <label style="margin-top:0;color: #777;" for="all">Zaznacz/Usuń wszystko</label>
-                <input type="checkbox" id="all" name="all" value="all" onchange="addAllLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="PolskaLineCheckbox">Polska</label>
-                <input type="checkbox" id="PolskaLineCheckbox" name="Polska" value="Polska" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="DolnośląskieLineCheckbox">Dolnośląskie</label>
-                <input type="checkbox" id="DolnośląskieLineCheckbox" name="Dolnośląskie" value="Dolnośląskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Kujawsko-PomorskieLineCheckbox">Kujawsko-Pomorskie</label>
-                <input type="checkbox" id="Kujawsko-PomorskieLineCheckbox" name="Kujawsko-Pomorskie" value="Kujawsko-Pomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="LubelskieLineCheckbox">Lubelskie</label>
-                <input type="checkbox" id="LubelskieLineCheckbox" name="Lubelskie" value="Lubelskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="LubuskieLineCheckbox">Lubuskie</label>
-                <input type="checkbox" id="LubuskieLineCheckbox" name="Lubuskie" value="Lubuskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="ŁódzkieLineCheckbox">Łódzkie</label>
-                <input type="checkbox" id="ŁódzkieLineCheckbox" name="Łódzkie" value="Łódzkie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="MałopolskieLineCheckbox">Małopolskie</label>
-                <input type="checkbox" id="MałopolskieLineCheckbox" name="Małopolskie" value="Małopolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="MazowieckieLineCheckbox">Mazowieckie</label>
-                <input type="checkbox" id="MazowieckieLineCheckbox" name="Mazowieckie" value="Mazowieckie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="OpolskieLineCheckbox">Opolskie</label>
-                <input type="checkbox" id="OpolskieLineCheckbox" name="Opolskie" value="Opolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="PodkarpackieLineCheckbox">Podkarpackie</label>
-                <input type="checkbox" id="PodkarpackieLineCheckbox" name="Podkarpackie" value="Podkarpackie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="PodlaskieLineCheckbox">Podlaskie</label>
-                <input type="checkbox" id="PodlaskieLineCheckbox" name="Podlaskie" value="Podlaskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="PomorskieLineCheckbox">Pomorskie</label>
-                <input type="checkbox" id="PomorskieLineCheckbox" name="Pomorskie" value="Pomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="ŚląskieLineCheckbox">Śląskie</label>
-                <input type="checkbox" id="ŚląskieLineCheckbox" name="Śląskie" value="Śląskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="ŚwiętokrzyskieLineCheckbox">Świętokrzyskie</label>
-                <input type="checkbox" id="ŚwiętokrzyskieLineCheckbox" name="Świętokrzyskie" value="Świętokrzyskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="Warmińsko-MazurskieLineCheckbox">Warmińsko-Mazurskie</label>
-                <input type="checkbox" id="Warmińsko-MazurskieLineCheckbox" name="Warmińsko-Mazurskie" value="Warmińsko-Mazurskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="WielkopolskieLineCheckbox">Wielkopolskie</label>
-                <input type="checkbox" id="WielkopolskieLineCheckbox" name="Wielkopolskie" value="Wielkopolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-              <li>
-                <label style="margin-top:0;" for="ZachodniopomorskieLineCheckbox">Zachodniopomorskie</label>
-                <input type="checkbox" id="ZachodniopomorskieLineCheckbox" name="Zachodniopomorskie" value="Zachodniopomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
+      {% if language == 'pl' %}
+        <details id="myselectlist" style="top: -20px; left: 0;">
+          <summary>Wybierz województwo</summary>
+          <form style="float: left;">
+            <fieldset>
+              <ul style="list-style: none; margin: 0; padding: 0;">
+                <li>
+                  <label style="margin-top:0;color: #777;" for="all">Zaznacz/Usuń wszystko</label>
+                  <input type="checkbox" id="all" name="all" value="all" onchange="addAllLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PolskaLineCheckbox">Polska</label>
+                  <input type="checkbox" id="PolskaLineCheckbox" name="Polska" value="Polska" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="DolnośląskieLineCheckbox">Dolnośląskie</label>
+                  <input type="checkbox" id="DolnośląskieLineCheckbox" name="Dolnośląskie" value="Dolnośląskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-PomorskieLineCheckbox">Kujawsko-Pomorskie</label>
+                  <input type="checkbox" id="Kujawsko-PomorskieLineCheckbox" name="Kujawsko-Pomorskie" value="Kujawsko-Pomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="LubelskieLineCheckbox">Lubelskie</label>
+                  <input type="checkbox" id="LubelskieLineCheckbox" name="Lubelskie" value="Lubelskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="LubuskieLineCheckbox">Lubuskie</label>
+                  <input type="checkbox" id="LubuskieLineCheckbox" name="Lubuskie" value="Lubuskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŁódzkieLineCheckbox">Łódzkie</label>
+                  <input type="checkbox" id="ŁódzkieLineCheckbox" name="Łódzkie" value="Łódzkie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="MałopolskieLineCheckbox">Małopolskie</label>
+                  <input type="checkbox" id="MałopolskieLineCheckbox" name="Małopolskie" value="Małopolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="MazowieckieLineCheckbox">Mazowieckie</label>
+                  <input type="checkbox" id="MazowieckieLineCheckbox" name="Mazowieckie" value="Mazowieckie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="OpolskieLineCheckbox">Opolskie</label>
+                  <input type="checkbox" id="OpolskieLineCheckbox" name="Opolskie" value="Opolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PodkarpackieLineCheckbox">Podkarpackie</label>
+                  <input type="checkbox" id="PodkarpackieLineCheckbox" name="Podkarpackie" value="Podkarpackie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PodlaskieLineCheckbox">Podlaskie</label>
+                  <input type="checkbox" id="PodlaskieLineCheckbox" name="Podlaskie" value="Podlaskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PomorskieLineCheckbox">Pomorskie</label>
+                  <input type="checkbox" id="PomorskieLineCheckbox" name="Pomorskie" value="Pomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŚląskieLineCheckbox">Śląskie</label>
+                  <input type="checkbox" id="ŚląskieLineCheckbox" name="Śląskie" value="Śląskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŚwiętokrzyskieLineCheckbox">Świętokrzyskie</label>
+                  <input type="checkbox" id="ŚwiętokrzyskieLineCheckbox" name="Świętokrzyskie" value="Świętokrzyskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Warmińsko-MazurskieLineCheckbox">Warmińsko-Mazurskie</label>
+                  <input type="checkbox" id="Warmińsko-MazurskieLineCheckbox" name="Warmińsko-Mazurskie" value="Warmińsko-Mazurskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="WielkopolskieLineCheckbox">Wielkopolskie</label>
+                  <input type="checkbox" id="WielkopolskieLineCheckbox" name="Wielkopolskie" value="Wielkopolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ZachodniopomorskieLineCheckbox">Zachodniopomorskie</label>
+                  <input type="checkbox" id="ZachodniopomorskieLineCheckbox" name="Zachodniopomorskie" value="Zachodniopomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
 
-      </details>
+        </details>
+      {% else %}
+        <details id="myselectlist" style="top: -20px; left: 0;">
+          <summary>Choose voivodeship</summary>
+          <form style="float: left;">
+            <fieldset>
+              <ul style="list-style: none; margin: 0; padding: 0;">
+                <li>
+                  <label style="margin-top:0;color: #777;" for="all">Select/Diselect all</label>
+                  <input type="checkbox" id="all" name="all" value="all" onchange="addAllLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PolskaLineCheckbox">Poland</label>
+                  <input type="checkbox" id="PolskaLineCheckbox" name="Polska" value="Polska" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="DolnośląskieLineCheckbox">Dolnośląskie</label>
+                  <input type="checkbox" id="DolnośląskieLineCheckbox" name="Dolnośląskie" value="Dolnośląskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-PomorskieLineCheckbox">Kujawsko-Pomorskie</label>
+                  <input type="checkbox" id="Kujawsko-PomorskieLineCheckbox" name="Kujawsko-Pomorskie" value="Kujawsko-Pomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="LubelskieLineCheckbox">Lubelskie</label>
+                  <input type="checkbox" id="LubelskieLineCheckbox" name="Lubelskie" value="Lubelskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="LubuskieLineCheckbox">Lubuskie</label>
+                  <input type="checkbox" id="LubuskieLineCheckbox" name="Lubuskie" value="Lubuskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŁódzkieLineCheckbox">Łódzkie</label>
+                  <input type="checkbox" id="ŁódzkieLineCheckbox" name="Łódzkie" value="Łódzkie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="MałopolskieLineCheckbox">Małopolskie</label>
+                  <input type="checkbox" id="MałopolskieLineCheckbox" name="Małopolskie" value="Małopolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="MazowieckieLineCheckbox">Mazowieckie</label>
+                  <input type="checkbox" id="MazowieckieLineCheckbox" name="Mazowieckie" value="Mazowieckie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="OpolskieLineCheckbox">Opolskie</label>
+                  <input type="checkbox" id="OpolskieLineCheckbox" name="Opolskie" value="Opolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PodkarpackieLineCheckbox">Podkarpackie</label>
+                  <input type="checkbox" id="PodkarpackieLineCheckbox" name="Podkarpackie" value="Podkarpackie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PodlaskieLineCheckbox">Podlaskie</label>
+                  <input type="checkbox" id="PodlaskieLineCheckbox" name="Podlaskie" value="Podlaskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PomorskieLineCheckbox">Pomorskie</label>
+                  <input type="checkbox" id="PomorskieLineCheckbox" name="Pomorskie" value="Pomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŚląskieLineCheckbox">Śląskie</label>
+                  <input type="checkbox" id="ŚląskieLineCheckbox" name="Śląskie" value="Śląskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŚwiętokrzyskieLineCheckbox">Świętokrzyskie</label>
+                  <input type="checkbox" id="ŚwiętokrzyskieLineCheckbox" name="Świętokrzyskie" value="Świętokrzyskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Warmińsko-MazurskieLineCheckbox">Warmińsko-Mazurskie</label>
+                  <input type="checkbox" id="Warmińsko-MazurskieLineCheckbox" name="Warmińsko-Mazurskie" value="Warmińsko-Mazurskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="WielkopolskieLineCheckbox">Wielkopolskie</label>
+                  <input type="checkbox" id="WielkopolskieLineCheckbox" name="Wielkopolskie" value="Wielkopolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ZachodniopomorskieLineCheckbox">Zachodniopomorskie</label>
+                  <input type="checkbox" id="ZachodniopomorskieLineCheckbox" name="Zachodniopomorskie" value="Zachodniopomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+
+        </details>
+      {% endif %}
+
       </div>
+
+
       <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;top: 6px;left: 242px;position: relative;">
+        {% if language == 'pl' %}
         <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
-          <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
-          <option style="font-family: Fira Sans" value="miasto">miasto</option>
-          <option style="font-family: Fira Sans" value="wieś">wieś</option>
+                   {% if language == 'pl' %}
+                     <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
+                     <option style="font-family: Fira Sans" value="miasto">miasto</option>
+                     <option style="font-family: Fira Sans" value="wieś">wieś</option>
+                   {% else %}
+                     <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
+                     <option style="font-family: Fira Sans" value="miasto">urban areas</option>
+                     <option style="font-family: Fira Sans" value="wieś">rural areas</option>
+                   {% endif %}
         </select>
-      </div>
+
+         {% else %}
+         <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
+           <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
+           <option style="font-family: Fira Sans" value="miasto">urban areas</option>
+           <option style="font-family: Fira Sans" value="wieś">rural areas</option>
+         </select>
+         {% endif %}
+        </div>
 
       <div id="chartLine" style="width: 100%;height: 600px"></div>
 
@@ -1159,7 +1363,7 @@ function download_csv(csv, filename) {
         delete row["Polska"];
       });
 
-      createchartLineParam("chartLine",  data.slice(1));
+      createchartLineParam("chartLine",  data.slice(1),undefined,"{{ language }}");
 
       for(let i=0; i<17; i++){
         $('#row-'+i).toggle();
@@ -1185,7 +1389,7 @@ function download_csv(csv, filename) {
               }
           }
 
-          createchartBar("chartBar", data3.slice(1), 0,100, 0, ['2023']);
+          createchartBar("chartBar", data3.slice(1), 0,100, 0, ['2023'],"{{ language }}");
           });
     });
 //}, 500);
@@ -1285,7 +1489,7 @@ function updateChartBar(){
 
             console.log(data3);
 
-            createchartBar("chartBar", data3, 0, 100, 0, [selectedYear]);
+            createchartBar("chartBar", data3, 0, 100, 0, [selectedYear], "{{ language }}");
             });
       });
 }
@@ -1367,7 +1571,7 @@ function updateChartLine(){
               });
             });
             console.log(data2);
-            createchartLineParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex);
+            createchartLineParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}");
           });
     });
 
