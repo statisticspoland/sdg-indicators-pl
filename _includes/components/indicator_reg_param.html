@@ -40,7 +40,7 @@
         </label>
  -->
           {% if id_map == '1-g-2' %}
-          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans" value="2023" selected>2023</option>
             <option style="font-family: Fira Sans" value="2022">2022</option>
             <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -52,7 +52,7 @@
             <option style="font-family: Fira Sans" value="2015">2015</option>
           </select>
           {% else %}
-          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans" value="2023" selected>2023</option>
             <option style="font-family: Fira Sans" value="2022">2022</option>
             <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -83,21 +83,21 @@
  {% if language == 'pl' %}
           <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
             {% if language == 'pl' %}
-              <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
-              <option style="font-family: Fira Sans" value="miasto">miasto</option>
-              <option style="font-family: Fira Sans" value="wieś">wieś</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">miasto</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">wieś</option>
             {% else %}
-              <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
-              <option style="font-family: Fira Sans" value="miasto">urban areas</option>
-              <option style="font-family: Fira Sans" value="wieś">rural areas</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
             {% endif %}
           </select>
 
   {% else %}
   <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
-    <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
-    <option style="font-family: Fira Sans" value="miasto">urban areas</option>
-    <option style="font-family: Fira Sans" value="wieś">rural areas</option>
+    <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+    <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
+    <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
   </select>
   {% endif %}
       </div>
@@ -425,7 +425,7 @@
     <!-----------------------------------------------------NOWA WERSJA WYKRESU - AMCHART---------------------------------------------------------------------->
     <div style="width: 100%; position: relative;">
       {% if id_map == '1-a-4' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -437,12 +437,12 @@
         <option style="font-family: Fira Sans" value="2015">2015</option>
       </select>
       {% elsif id_map == '1-b-2' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
       </select>
       {% elsif id_map == '1-b-4' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2024" selected>2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
@@ -459,7 +459,7 @@
         <option style="font-family: Fira Sans" value="2011">2011</option>
       </select>
       {% elsif id_map == '1-b-5' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2024" selected>2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
@@ -477,7 +477,7 @@
         <option style="font-family: Fira Sans" value="2010">2010</option>
       </select>
       {% elsif id_map == '1-b-7' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -488,7 +488,7 @@
         <option style="font-family: Fira Sans" value="2016">2016</option>
       </select>
       {% elsif id_map == '1-b-8' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -498,7 +498,7 @@
         <option style="font-family: Fira Sans" value="2017">2017</option>
       </select>
       {% elsif id_map == '1-c-1' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2024" selected>2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
@@ -516,7 +516,7 @@
         <option style="font-family: Fira Sans" value="2010">2010</option>
       </select>
       {% elsif id_map == '1-c-2' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2024" selected>2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
@@ -534,7 +534,7 @@
         <option style="font-family: Fira Sans" value="2010">2010</option>
       </select>
       {% elsif id_map == '1-c-3' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2024" selected>2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
@@ -552,7 +552,7 @@
         <option style="font-family: Fira Sans" value="2010">2010</option>
       </select>
       {% elsif id_map == '1-d-3' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -566,7 +566,7 @@
         <option style="font-family: Fira Sans" value="2013">2013</option>
       </select>
       {% elsif id_map == '1-e-1' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2022" selected>2022</option>
         <option style="font-family: Fira Sans" value="2020">2020</option>
         <option style="font-family: Fira Sans" value="2018">2018</option>
@@ -576,7 +576,7 @@
         <option style="font-family: Fira Sans" value="2010">2010</option>
       </select>
       {% elsif id_map == '1-f-2' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -591,7 +591,7 @@
         <option style="font-family: Fira Sans" value="2012">2012</option>
       </select>
       {% elsif id_map == '1-g-3' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2022" selected>2022</option>
         <option style="font-family: Fira Sans" value="2020">2020</option>
         <option style="font-family: Fira Sans" value="2018">2018</option>
@@ -600,12 +600,12 @@
         <option style="font-family: Fira Sans" value="2013">2013</option>
       </select>
       {% elsif id_map == '1-g-4' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
       </select>
       {% elsif id_map == '1-g-5' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2022" selected>2022</option>
         <option style="font-family: Fira Sans" value="2020">2020</option>
         <option style="font-family: Fira Sans" value="2018">2018</option>
@@ -614,7 +614,7 @@
         <option style="font-family: Fira Sans" value="2013">2013</option>
       </select>
       {% elsif id_map == '1-g-6' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2022" selected>2022</option>
         <option style="font-family: Fira Sans" value="2020">2020</option>
         <option style="font-family: Fira Sans" value="2018">2018</option>
@@ -623,7 +623,7 @@
         <option style="font-family: Fira Sans" value="2013">2013</option>
       </select>
       {% elsif id_map == '1-g-7' %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -631,7 +631,7 @@
         <option style="font-family: Fira Sans" value="2019">2019</option>
       </select>
       {% else %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -666,11 +666,13 @@
           left: 155px;
           z-index: 10;
           background: #fff;
+          font-size: 14px;
         }
 
         details summary{
           top: 5px;
           position: relative;
+          font-size: 14px;
         }
 
         details summary::marker {
@@ -723,6 +725,7 @@
                   border-radius: 3px;
                   margin: 0;
                   padding: 4px 2px;
+                  font-size: 14px;
                 }
 
                 #chooseWojLine ul li:hover {
@@ -742,6 +745,7 @@
                   border-radius: 3px;
                   margin: 0;
                   padding: 4px 2px;
+                  font-size: 14px;
                 }
 
                 #chooseWojBar ul li:hover {
@@ -932,7 +936,7 @@
 
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
-        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
                    {% if language == 'pl' %}
                      <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
                      <option style="font-family: Fira Sans" value="miasto">miasto</option>
@@ -945,7 +949,7 @@
                  </select>
 
          {% else %}
-         <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
+         <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
            <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
            <option style="font-family: Fira Sans" value="miasto">urban areas</option>
            <option style="font-family: Fira Sans" value="wieś">rural areas</option>
@@ -1130,9 +1134,9 @@
       </div>
 
 
-      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;top: 6px;left: 242px;position: relative;">
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;top: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
-        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
                    {% if language == 'pl' %}
                      <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
                      <option style="font-family: Fira Sans" value="miasto">miasto</option>
@@ -1145,7 +1149,7 @@
         </select>
 
          {% else %}
-         <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
+         <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
            <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
            <option style="font-family: Fira Sans" value="miasto">urban areas</option>
            <option style="font-family: Fira Sans" value="wieś">rural areas</option>
