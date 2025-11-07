@@ -1460,7 +1460,33 @@ function download_csv(csv, filename) {
 
           console.log(data2);
 
-          createchartBar("chartBar", data2.slice(1), 0,200000, 0, ['2023'],"{{ language }}");
+          const maxValue = Math.max(
+            ...data2.flatMap(obj =>
+              Object.entries(obj)
+                .filter(([key]) => key !== "year")
+                .map(([_, val]) => parseFloat(val))
+                .filter(v => !isNaN(v))
+            )
+          );
+
+          console.log(maxValue);
+
+          let lastYearValue = undefined;
+          let lastValue = undefined;
+
+          for(let i=2;i<Object.keys(data2[0]).length-1; i++){
+            lastYearValue = Object.keys(data2[0]).at(-i);
+            console.log(lastYearValue);
+
+            lastValue = Object.values(data2[0]).at(-i);
+            console.log(lastValue);
+
+            if(lastValue !== ""){
+              break
+            }
+          }
+
+          createchartBar("chartBar", data2.slice(1), 0,maxValue+5, 0, [lastYearValue],"{{ language }}");
           });
     });
 //}, 500);
@@ -1553,9 +1579,20 @@ function updateChartBar(){
               }
             }
 
+            const maxValue = Math.max(
+              ...data2.flatMap(obj =>
+                Object.entries(obj)
+                  .filter(([key]) => key !== "year")
+                  .map(([_, val]) => parseFloat(val))
+                  .filter(v => !isNaN(v))
+              )
+            );
+
+            console.log(maxValue);
+
             console.log(data3);
 
-            createchartBar("chartBar", data3, 0, 200000, 0, [selectedYear],"{{ language }}");
+            createchartBar("chartBar", data3, 0, maxValue+5, 0, [selectedYear],"{{ language }}");
             });
       });
 }

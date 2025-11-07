@@ -127,32 +127,44 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
 
   //const woj = ["Dolnośląskie","Kujawsko-Pomorskie","Lubelskie","Lubuskie","Łódzkie","Małopolskie","Mazowieckie","Opolskie","Podkarpackie","Podlaskie","Pomorskie","Śląskie","Świętokrzyskie","Warmińsko-Mazurskie","Wielkopolskie","Zachodniopomorskie"];
 
+    const cleanedData = dane.map(obj => {
+      const cleaned = {};
+
+      for (const [key, value] of Object.entries(obj)) {
+        if (!Number.isNaN(value)) {
+          cleaned[key] = value;
+        }
+      }
+
+      return cleaned;
+    });
+
   for(const w of wojToSerie){
-  var series2 = chart.series.push(am5xy.LineSeries.new(root, {
-    name: w,
-    xAxis: xAxis,
-    yAxis: yAxis,
-    valueYField: w,
-    valueXField: "year",
-    legendValueText: ": {valueY}",
-    tooltip: am5.Tooltip.new(root, {
-      pointerOrientation: "horizontal",
-      labelText: w+": {valueY}"
-    })
-  }));
+    var series2 = chart.series.push(am5xy.LineSeries.new(root, {
+      name: w,
+      xAxis: xAxis,
+      yAxis: yAxis,
+      valueYField: w,
+      valueXField: "year",
+      legendValueText: ": {valueY}",
+      tooltip: am5.Tooltip.new(root, {
+        pointerOrientation: "horizontal",
+        labelText: w+": {valueY}"
+      })
+    }));
 
-  series2.data.processor = am5.DataProcessor.new(root, {
-  dateFormat: "yyyy",
-  dateFields: ["year"]
-  });
+    series2.data.processor = am5.DataProcessor.new(root, {
+    dateFormat: "yyyy",
+    dateFields: ["year"]
+    });
 
-  series2.strokes.template.setAll({
-    strokeWidth: 3  // increase this number to make line thicker
-  });
-  series2.data.setAll(dane);
-  series2.appear();
+    series2.strokes.template.setAll({
+      strokeWidth: 3  // increase this number to make line thicker
+    });
+    series2.data.setAll(cleanedData);
+    series2.appear();
 
-}
+  }
   //date = new Date();
   //console.log("date "+date);
   //date.setHours(0, 0, 0, 0);

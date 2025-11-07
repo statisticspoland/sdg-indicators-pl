@@ -630,8 +630,20 @@
         <option style="font-family: Fira Sans" value="2020">2020</option>
         <option style="font-family: Fira Sans" value="2019">2019</option>
       </select>
+      {% elsif id_map == '1-g-2' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+      </select>
       {% else %}
-      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -647,7 +659,7 @@
         <option style="font-family: Fira Sans" value="2011">2011</option>
         <option style="font-family: Fira Sans" value="2010">2010</option>
       </select>
-      {% endif %}
+      {%endif%}
 
 
 
@@ -1385,6 +1397,32 @@ function download_csv(csv, filename) {
 
           console.log(data2);
 
+          const maxValue = Math.max(
+            ...data2.flatMap(obj =>
+              Object.entries(obj)
+                .filter(([key]) => key !== "year")
+                .map(([_, val]) => parseFloat(val))
+                .filter(v => !isNaN(v))
+            )
+          );
+
+          console.log(maxValue);
+
+          let lastYearValue = undefined;
+          let lastValue = undefined;
+
+          for(let i=3;i<Object.keys(data2[0]).length-1; i++){
+            lastYearValue = Object.keys(data2[0]).at(-i);
+            console.log(lastYearValue);
+
+            lastValue = Object.values(data2[0]).at(-i);
+            console.log(lastValue);
+
+            if(lastValue !== ""){
+              break
+            }
+          }
+
           const data3 = [];
           for(let i of data2){
 
@@ -1393,7 +1431,7 @@ function download_csv(csv, filename) {
               }
           }
 
-          createchartBar("chartBar", data3.slice(1), 0,100, 0, ['2023'],"{{ language }}");
+          createchartBar("chartBar", data3.slice(1), 0,maxValue+5, 0, [lastYearValue],"{{ language }}");
           });
     });
 //}, 500);
@@ -1491,9 +1529,20 @@ function updateChartBar(){
               }
             }
 
+            const maxValue = Math.max(
+              ...data2.flatMap(obj =>
+                Object.entries(obj)
+                  .filter(([key]) => key !== "year")
+                  .map(([_, val]) => parseFloat(val))
+                  .filter(v => !isNaN(v))
+              )
+            );
+
+            console.log(maxValue);
+
             console.log(data3);
 
-            createchartBar("chartBar", data3, 0, 100, 0, [selectedYear], "{{ language }}");
+            createchartBar("chartBar", data3, 0, maxValue+5, 0, [selectedYear], "{{ language }}");
             });
       });
 }
