@@ -264,7 +264,7 @@
           {% endif %}
       </div>
 
-      <div style="width: 75%; margin: auto; margin-top: 28px; display: inline-block; vertical-align: top;">
+      <div style="width: 75%; margin: auto; margin-top: 10px; display: inline-block; vertical-align: top;">
         <p id="wartoscPolska" style="margin: 0 auto; text-align: center;">
           {% if language == 'pl' %}
             Wczytywanie danych...
@@ -816,7 +816,7 @@
           font-size: 0.6rem;
           height: 1rem;
           line-height: 1rem;
-          margin-left: 4.5rem;
+          margin-left: 12.5rem;
           transition: transform 0.25s;
           width: 22px;
           position: absolute;
@@ -889,7 +889,7 @@
 
       {% if language == 'pl' %}
         <details id="myselectlistBsr">
-          <summary>Wybierz województwo</summary>
+          <summary>Województwo</summary>
           <form style="float: left;">
             <fieldset>
               <ul style="list-style: none; margin: 0; padding: 0;">
@@ -972,7 +972,7 @@
         </details>
       {% else %}
         <details id="myselectlistBsr">
-          <summary>Choose voivodeship</summary>
+          <summary>Voivodeship</summary>
           <form style="float: left;">
             <fieldset>
               <ul style="list-style: none; margin: 0; padding: 0;">
@@ -1064,7 +1064,7 @@
       <div id="chooseWojLine" style="display: inline-flex;margin-right: 1rem; position: relative;">
       {% if language == 'pl' %}
         <details id="myselectlistLine" style="top: -20px; left: 0;">
-          <summary>Wybierz województwo</summary>
+          <summary>Województwo</summary>
           <form style="float: left;">
             <fieldset>
               <ul style="list-style: none; margin: 0; padding: 0;">
@@ -1148,7 +1148,7 @@
 
         {% else %}
           <details id="myselectlistLine" style="top: -20px; left: 0;">
-            <summary>Choose voivodeship</summary>
+            <summary>Voivodeship</summary>
             <form style="float: left;">
               <fieldset>
                 <ul style="list-style: none; margin: 0; padding: 0;">
@@ -1237,18 +1237,6 @@
 
       <hr>
 
-      {% if language == 'pl' %}
-        {% if filtry.size>0 %}
-          <button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px; float: right;" title="Pobierz wybrane dane w formacie .csv">Pobierz wybrane</button>
-        {% endif %}
-        <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px; float: right;" title="Pobierz dane w formacie .csv">Pobierz całość</button>
-      {% else %}
-        {% if filtry.size>0 %}
-          <button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px; float: right;" title="Download selected data in csv format">Download Selected</button>
-        {% endif %}
-        <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px; float: right;" title="Download all data in csv format">Download All</button>
-      {% endif %}
-
       {% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%}
       {% if language == 'pl' %}
         Jednostka prezentacji: {{ t1.pl_jednostka_prezentacji }} <br />
@@ -1265,6 +1253,18 @@
       {% else %}
         <p style="text-align: center;">The table will appear here</p>
       {% endif %}
+    {% endif %}
+
+    {% if language == 'pl' %}
+      {% if filtry.size>0 %}
+        <button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px; float: right;" title="Pobierz wybrane dane w formacie .csv">Pobierz wybrane</button>
+      {% endif %}
+      <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px; float: right;" title="Pobierz dane w formacie .csv">Pobierz całość</button>
+    {% else %}
+      {% if filtry.size>0 %}
+        <button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px; float: right;" title="Download selected data in csv format">Download Selected</button>
+      {% endif %}
+      <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px; float: right;" title="Download all data in csv format">Download All</button>
     {% endif %}
     </div>
     </div>
@@ -1461,7 +1461,7 @@ function download_csv(csv, filename) {
           console.log(data2);
 
           const maxValue = Math.max(
-            ...data2.flatMap(obj =>
+            ...data2.slice(1).flatMap(obj =>
               Object.entries(obj)
                 .filter(([key]) => key !== "year")
                 .map(([_, val]) => parseFloat(val))
@@ -1580,7 +1580,7 @@ function updateChartBar(){
             }
 
             const maxValue = Math.max(
-              ...data2.flatMap(obj =>
+              ...data3.flatMap(obj =>
                 Object.entries(obj)
                   .filter(([key]) => key !== "year")
                   .map(([_, val]) => parseFloat(val))

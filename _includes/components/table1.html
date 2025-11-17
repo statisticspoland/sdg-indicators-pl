@@ -1,5 +1,5 @@
 {% assign id = page.indicator | slugify %}
-<div id="content" align="center" style="overflow-x: auto; width: 100%; text-align: center; padding: 1px;"></div>
+<div id="content" align="center" style="overflow-x: auto; width: 100%; text-align: left; padding: 1px;"></div>
 
 <script>
 
@@ -27,6 +27,7 @@ if (jez=='pl'){
 function buildTable(data) {
     var table = document.createElement("table");
     table.className="gridtable";
+    table.id = "tabela_wart";
     var thead = document.createElement("thead");
     var tbody = document.createElement("tbody");
     var headRow = document.createElement("tr");
@@ -69,7 +70,22 @@ function buildTable(data) {
           el[o]='•'
         }
         td.appendChild(document.createTextNode(el[o]));
-        td.align="center";
+
+        if (el[o]!=null){
+          if(!Number.isNaN(el[o])){
+            //wartosc
+            td.align="right"
+          }
+          else{
+            td.align="left"
+          }
+        }
+        else{
+          td.align="right";
+        }
+
+
+
         tr.appendChild(td);
         if ('{{id}}'=='12-2-2' || '{{id}}' == '1-5-4' || '{{id}}' == '11-b-2' || '{{id}}' == '13-1-3' || '{{id}}' == '8-4-2' || '{{id}}' == '17-13-1' || '{{id}}' == '12-4-2'){
             tr.style.display='table-row';

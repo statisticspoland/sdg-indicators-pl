@@ -81,7 +81,7 @@
         </label>
  -->
  {% if language == 'pl' %}
-          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             {% if language == 'pl' %}
               <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
               <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">miasto</option>
@@ -94,7 +94,7 @@
           </select>
 
   {% else %}
-  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51)">
+  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
     <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
     <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
     <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
@@ -102,7 +102,7 @@
   {% endif %}
       </div>
 
-      <div style="width: 55%; margin: auto; margin-top: 28px; display: inline-block; vertical-align: top;">
+      <div style="width: 55%; margin: auto; margin-top: 10px; display: inline-block; vertical-align: top;">
         <p id="wartoscPolska" style="margin: 0 auto; text-align: center; margin-left: 20%;">
           {% if language == 'pl' %}
             Wczytywanie danych...
@@ -704,7 +704,7 @@
           font-size: 0.6rem;
           height: 1rem;
           line-height: 1rem;
-          margin-left: 4.5rem;
+          margin-left: 12.5rem;
           transition: transform 0.25s;
           width: 22px;
           position: absolute;
@@ -777,8 +777,8 @@
 
       <div id="chooseWojBar" style="display: inline-flex;margin-right: 5px;">
       {% if language == 'pl' %}
-        <details id="chooseWojBar">
-          <summary>Wybierz województwo</summary>
+        <details id="myselectlistBsr">
+          <summary>Województwo</summary>
           <form style="float: left;">
             <fieldset>
               <ul style="list-style: none; margin: 0; padding: 0;">
@@ -860,8 +860,8 @@
 
         </details>
       {% else %}
-        <details id="chooseWojBar">
-          <summary>Choose voivodeship</summary>
+        <details id="myselectlistBsr">
+          <summary>Voivodeship</summary>
           <form style="float: left;">
             <fieldset>
               <ul style="list-style: none; margin: 0; padding: 0;">
@@ -977,7 +977,7 @@
       <div id="chooseWojLine" style="display: inline-flex;margin-right: 1rem; position: relative;">
       {% if language == 'pl' %}
         <details id="myselectlist" style="top: -20px; left: 0;">
-          <summary>Wybierz województwo</summary>
+          <summary>Województwo</summary>
           <form style="float: left;">
             <fieldset>
               <ul style="list-style: none; margin: 0; padding: 0;">
@@ -1060,7 +1060,7 @@
         </details>
       {% else %}
         <details id="myselectlist" style="top: -20px; left: 0;">
-          <summary>Choose voivodeship</summary>
+          <summary>Voivodeship</summary>
           <form style="float: left;">
             <fieldset>
               <ul style="list-style: none; margin: 0; padding: 0;">
@@ -1173,18 +1173,6 @@
 
       <hr>
 
-      {% if language == 'pl' %}
-        {% if filtry.size>0 %}
-          <button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px; float: right;" title="Pobierz wybrane dane w formacie .csv">Pobierz wybrane</button>
-        {% endif %}
-        <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px; float: right;" title="Pobierz dane w formacie .csv">Pobierz całość</button>
-      {% else %}
-        {% if filtry.size>0 %}
-          <button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px; float: right;" title="Download selected data in csv format">Download Selected</button>
-        {% endif %}
-        <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px; float: right;" title="Download all data in csv format">Download All</button>
-      {% endif %}
-
       {% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%}
       {% if language == 'pl' %}
         Jednostka prezentacji: {{ t1.pl_jednostka_prezentacji }} <br />
@@ -1201,6 +1189,18 @@
       {% else %}
         <p style="text-align: center;">The table will appear here</p>
       {% endif %}
+    {% endif %}
+
+    {% if language == 'pl' %}
+      {% if filtry.size>0 %}
+        <button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px; float: right;" title="Pobierz wybrane dane w formacie .csv">Pobierz wybrane</button>
+      {% endif %}
+      <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px; float: right;" title="Pobierz dane w formacie .csv">Pobierz całość</button>
+    {% else %}
+      {% if filtry.size>0 %}
+        <button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px; float: right;" title="Download selected data in csv format">Download Selected</button>
+      {% endif %}
+      <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px; float: right;" title="Download all data in csv format">Download All</button>
     {% endif %}
     </div>
     </div>
@@ -1287,7 +1287,7 @@
       }
 
 
-      const details = document.getElementById('chooseWojBar');
+      const details = document.getElementById('myselectlistBsr');
       const details2 = document.getElementById('myselectlist');
 
       // Close when clicking outside

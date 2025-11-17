@@ -1,7 +1,7 @@
 
   //am5.ready(function() {
 function createMapWoj(div, dane, jez, precyzja){
-  
+
   am5.array.each(am5.registry.rootElements,
     function(root) {
       if (typeof root !== "undefined") {
@@ -78,9 +78,9 @@ function createMapWoj(div, dane, jez, precyzja){
   polygonSeries.set("heatRules", [{
     target: polygonSeries.mapPolygons.template,
     dataField: "value",
-    min: am5.color(0x99ff99),
+    min: am5.color(0xc1d8f1),
     //min: am5.color(0xf0e6ff),
-    max: am5.color(0x006600),
+    max: am5.color(0x6794dc),
     //max: am5.color(0xb380ff),
     key: "fill"
   }]);
@@ -95,16 +95,17 @@ function createMapWoj(div, dane, jez, precyzja){
 
   polygonSeries.mapPolygons.template.events.on("pointerover", function(ev) {
     const value = ev.target.dataItem.get("value");
+    heatLegend.showValue(ev.target.dataItem.get("value"));
   });
-  
+
   console.log("data_filtered", dane);
   polygonSeries.data.setAll(dane);
 
   const numericValues = dane.map(o => o.value).filter(v => !isNaN(v));
 
   let startText, endText;
-  let startColor = am5.color(0x99ff99);
-  let endColor = am5.color(0x006600);
+  let startColor = am5.color(0xc1d8f1);
+  let endColor = am5.color(0x6794dc);
 
   if (numericValues.length > 0) {
     startText = formatNumberLocalized(Math.min(...numericValues), precyzja, jez);

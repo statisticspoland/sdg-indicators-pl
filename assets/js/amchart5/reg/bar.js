@@ -85,37 +85,34 @@ am5.array.each(am5.registry.rootElements,
 	});
   // Create axes
   // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
-  var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 10 });
-  xRenderer.labels.template.setAll({
-    fontSize: 12,
-    rotation: -45,
-    centerY: am5.p50,
-    centerX: am5.p100
+  var yRenderer = am5xy.AxisRendererY.new(root, { minGridDistance: 5 });
+  yRenderer.labels.template.setAll({
+    fontSize: 12
   });
 
-  var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+  var yAxis = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
     categoryField: "REGION",
-    renderer: xRenderer,
+    renderer: yRenderer,
     tooltip: am5.Tooltip.new(root, {})
   }));
 
-  xRenderer.grid.template.setAll({
+  yRenderer.grid.template.setAll({
     location: 1
   })
 
-  xAxis.data.setAll(dane);
+  yAxis.data.setAll(dane);
 
-	var yRenderer = am5xy.AxisRendererY.new(root, { minGridDistance: 30, strokeOpacity: 0.1 });
-	yRenderer.labels.template.setAll({
+	var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30, strokeOpacity: 0.1 });
+	xRenderer.labels.template.setAll({
 		fontSize: 12
 	});
 
-  var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+  var xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
     maxPrecision: precyzja,
     max: yMax,
     min: yMin,
     strictMinMax: true,
-    renderer: yRenderer
+    renderer: xRenderer
   }));
 
 
@@ -123,34 +120,31 @@ am5.array.each(am5.registry.rootElements,
   // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
   function makeSeries(name, fieldName) {
     var series = chart.series.push(am5xy.ColumnSeries.new(root, {
-      name: name,
+      name: name.toLocaleLowerCase("pl-PL").charAt(0).toLocaleUpperCase("pl-PL")+name.toLocaleLowerCase("pl-PL").slice(1),
       xAxis: xAxis,
       yAxis: yAxis,
-      valueYField: fieldName,
-      categoryXField: "REGION"
+      fontSize: 12,
+      baseAxis: yAxis,
+      valueXField: fieldName,
+      categoryYField: "REGION"
     }));
 
     series.columns.template.setAll({
-      tooltipText: "{categoryX}, {name}: {valueY.formatNumber('#,###')}",
+      tooltipText: "{categoryY}, {name}: {valueX.formatNumber('#,###')}",
       width: am5.percent(75),
       tooltipY: 0,
       strokeOpacity: 0
     });
 
 
-/*series.columns.template.adapters.add("fill", function(fill, target) {
-  if (target.dataItem.get("categoryX") == "POLSKA") {
-    if (series.get("name") == "2023"){
-      return am5.color(0x674EA7);
-    }
-    else {
-      return am5.color(0x9D86D8);
-    }
+series.columns.template.adapters.add("fill", function(fill, target) {
+  if (target.dataItem.get("categoryY") == "POLSKA") {
+      return am5.color(0x6794dc);
   }
   else {
     return fill;
   }
-});*/
+});
 
 
     series.data.setAll(dane);
@@ -159,18 +153,18 @@ am5.array.each(am5.registry.rootElements,
     // https://www.amcharts.com/docs/v5/concepts/animations/
     series.appear();
 
-    series.bullets.push(function() {
+    /*series.bullets.push(function() {
       return am5.Bullet.new(root, {
         locationY: 0,
         sprite: am5.Label.new(root, {
-          text: "{valueY}",
+          text: "{valueX}",
           fill: root.interfaceColors.get("alternativeText"),
           centerY: 0,
           centerX: am5.p50,
           populateText: true
         })
       });
-    });
+    });*/
 
     legend.data.push(series);
   }

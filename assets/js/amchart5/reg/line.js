@@ -139,14 +139,36 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
       return cleaned;
     });
 
+    const wojColors = {
+      "Polska": 0x6794dc,
+      "Dolnośląskie": 0x33A1FF,
+      "Kujawsko-Pomorskie": 0x9B59B6,
+      "Lubelskie": 0x27AE60,
+      "Lubuskie": 0xF1C40F,
+      "Łódzkie": 0xE67E22,
+      "Małopolskie": 0x12876f,
+      "Mazowieckie": 0xC0392B,
+      "Opolskie": 0xd5b6e2,
+      "Podkarpackie": 0x2ECC71,
+      "Podlaskie": 0x3333ff,
+      "Pomorskie": 0xE74C3C,
+      "Śląskie": 0x16A085,
+      "Świętokrzyskie": 0xD35400,
+      "Warmińsko-Mazurskie": 0x2980B9,
+      "Wielkopolskie": 0x27AEAE,
+      "Zachodniopomorskie": 0xcc00cc
+    };
+    
   for(const w of wojToSerie){
+
     var series2 = chart.series.push(am5xy.LineSeries.new(root, {
       name: w,
       xAxis: xAxis,
       yAxis: yAxis,
       valueYField: w,
       valueXField: "year",
-      legendValueText: ": {valueY}",
+      legendLabelText: "{name}: {valueY}",
+      stroke: am5.color(wojColors[w]),
       tooltip: am5.Tooltip.new(root, {
         pointerOrientation: "horizontal",
         labelText: w+": {valueY}"
@@ -161,6 +183,13 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
     series2.strokes.template.setAll({
       strokeWidth: 3  // increase this number to make line thicker
     });
+
+    if (w === "Polska"){
+      series2.strokes.template.setAll({
+        strokeWidth: 5  // increase this number to make line thicker
+      });
+    }
+
     series2.data.setAll(cleanedData);
     series2.appear();
 
