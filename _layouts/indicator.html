@@ -109,7 +109,7 @@
           {% elsif slug=='2-2-a-0' %}
             {% assign dataset_name = 'indicator_12-2-a-0' %}
           {% else %}
-            {% assign dataset_name = 'indicator_' | append: slug %}
+            {% assign dataset_name = 'indicator_' | append: slug | slugify: "pretty" %}
           {% endif %}
 
           {% assign array = "" | split: ""  %}
