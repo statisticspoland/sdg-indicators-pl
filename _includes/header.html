@@ -543,14 +543,14 @@ localStorage.removeItem("nat-toolkit-accepted");
       element.id = "national-toolkit";
       var jez='{{page.lang}}'
       if (jez=='pl'){
-        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'><a href='https://sdg.gov.pl/o_sdg/#publ' >"+ this.text + "</a></div>"//"</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'><a target='_blank' href='https://raportsdg.stat.gov.pl/index.html' >"+ this.text + "</a></div></div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/index.html' onclick='FuncZamk()'>Wybierz</a><a id='natio' onclick='FuncZamk()'>Pomiń</a></div></div>";
         var headers = document.querySelector(".site-navbar");
         headers.after(element);
       }else{
-      //  element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'>" + this.text + "</div>"//"</div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/en/index.html' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
+        element.innerHTML = "<div id='national-toolkit-wrap'><div id='national-toolkit-text'><a target='_blank' href='https://raportsdg.stat.gov.pl/index.html' >"+ this.text + "</a></div></div><div id='national-toolkit-btns'><a target='_blank' id='natio' href='https://raportsdg.stat.gov.pl/index.html' onclick='FuncZamk()'>Select</a><a id='natio' onclick='FuncZamk()'>Skip</a></div></div>";
+        var headers = document.querySelector(".site-navbar");
+        headers.after(element);
       }
-      //var headers = document.querySelector(".site-navbar");
-      //headers.after(element);
 
     },
 		_show: function() {
@@ -567,9 +567,9 @@ localStorage.removeItem("nat-toolkit-accepted");
 	document.addEventListener( "DOMContentLoaded", function() {
 	var jez='{{page.lang}}'
 	if (jez=='pl'){
-	  var toolkit = new BusinessToolkit( "Folder „10 lat Agendy 2030 w Polsce” już dostępny!");
+	  var toolkit = new BusinessToolkit("Raport SDG 2025 już dostępny! Zapraszamy do lektury!");
 	}else{
-	  var toolkit = new BusinessToolkit(""); //"Folder „10 years of the 2030 Agenda in Poland” is now available!");
+	  var toolkit = new BusinessToolkit("SDG Report 2025 is now available! Enjoy reading it!");
 	}
 	});
 })();

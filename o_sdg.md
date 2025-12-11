@@ -217,17 +217,17 @@ permalink: /o_sdg/
   <h4><b>GŁÓWNY URZĄD STATYSTYCZNY</b> (koordynator monitorowania SDG w Polsce)</h4>
 
   <div class="image-wrapper">
-   <a target="_blank" href="https://raportsdg.stat.gov.pl/" alt="Dzieci w kontekście zrównoważonego rozwoju. Raport 2024" title="Zapoznaj się z raportem Dzieci w kontekście zrównoważonego rozwoju (2024)"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2024_pl.png" align="center" alt="GUS" border="0"/></a>
+   <a target="_blank" href="https://raportsdg.stat.gov.pl/index.html" alt="Polska na drodze zrównoważonego rozwoju. Raport 2025" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju. Raport 2025"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2025_pl.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Dzieci w kontekście zrównoważonego rozwoju. Raport 2024</b></p>
+  <p><b>Polska na drodze zrównoważonego rozwoju. Raport 2025</b></p>
 
   <p>Wydawane przez GUS od 2020 r. cyfrowe Raporty SDG podsumowują osiągnięcia Polski we wdrażaniu celów Agendy 2030. Publikacje są opracowywane corocznie, a ich tematyka dotyczy wybranych aspektów zrównoważonego rozwoju.</p>
 
-  <p>W najnowszej edycji cyfrowego Raportu SDG pt. <b>„Dzieci w kontekście zrównoważonego rozwoju”</b> poszukujemy odpowiedzi m.in. na takie pytania jak:</p>
-      <p>• w jakich warunkach żyją dzieci?
-      <br>• w jakich rodzinach się wychowują?
-      <br>• jaką mają kondycję zdrowotną?
-      <br>• jak radzą sobie w świecie cyfrowym?</p>
+  <p>W najnowszej edycji cyfrowego Raportu SDG pt. „Polska na drodze zrównoważonego rozwoju” podsumowujemy dziesięć lat realizacji Celów Zrównoważonego Rozwoju w Polsce i szukamy odpowiedzi m.in. na takie pytania jak:</p>
+      <p>• czy poprawiła się jakość życia mieszkańców?
+      <br>• jak rozwijała się polska gospodarka?
+      <br>• jakie zmiany zaszły w środowisku naturalnym?
+      <br>• jak na tle Unii Europejskiej wypadają nasze osiągnięcia?</p>
 
 
 
@@ -240,7 +240,8 @@ permalink: /o_sdg/
 </p>
 <div class="collapse" id="collapseExample1">
   <div class="card card-body">
-	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Zapoznaj się z raportem Kobiety na drodze zrównoważonego rozwoju (2023)" href="https://raportsdg.stat.gov.pl/2023/"> Kobiety na drodze zrównoważonego rozwoju. Raport 2023</a></p>
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Zapoznaj się z raportem Dzieci w kontekście zrównoważonego rozwoju (2024)" href="https://raportsdg.stat.gov.pl/2024/"> Dzieci w kontekście zrównoważonego rozwoju. Raport 2024</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z raportem Kobiety na drodze zrównoważonego rozwoju (2023)" href="https://raportsdg.stat.gov.pl/2023/"> Kobiety na drodze zrównoważonego rozwoju. Raport 2023</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo (2022)" href="https://raportsdg.stat.gov.pl/2022/"> Polska na drodze zrównoważonego rozwoju. Rozwój zrównoważony środowiskowo. Raport 2022</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy (2021)" href="https://raportsdg.stat.gov.pl/2021/">Polska na drodze zrównoważonego rozwoju. Inkluzywny wzrost gospodarczy. Raport 2021</a></p>
 	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z raportem Polska na drodze zrównoważonego rozwoju (2020)" href="https://raportsdg.stat.gov.pl/2020/">Polska na drodze zrównoważonego rozwoju. Raport 2020</a></p>

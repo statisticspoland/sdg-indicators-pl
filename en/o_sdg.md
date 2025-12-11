@@ -213,17 +213,17 @@ permalink: /en/o_sdg/
   <h4><b>STATISTICS POLAND</b> (coordinator of SDG monitoring in Poland)</h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://raportsdg.stat.gov.pl/en/index.html" alt="Children in the context of sustainable development. Report 2024" title="Read a publication Children in the context of sustainable development. Report 2024" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2024_en.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://raportsdg.stat.gov.pl/index.html" alt="Poland on the way to SDGs. Report 2025" title="Read a publication Poland on the way to SDGs. Report 2025" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2025_en.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Children in the context of sustainable development. Report 2024</b></p>
+  <p><b>Poland on the way to SDGs. Report 2025</b></p>
 
   <p>Since 2020, Statistics Poland has been publishing digital SDG Reports summing up Poland’s progress towards the 2030 Agenda’s goals. The publications are released on an annual basis, and their thematic scope covers selected aspects of sustainable development.</p>
 
-  <p>The latest edition of digital SDG Report <b>"Children in the context of sustainable development"</b> answers the questions, among others:</p>
-      <p>• In what conditions do children live?
-      <br>•	In what kind of families do they grow up?
-      <br>•	What is their health condition?
-      <br>• How do they deal with the digital world?</p>
+  <p>The latest edition of the digital SDG Report titled “Poland on way to SDGs” summarizes ten years of Poland’s efforts toward achieving the SDGs and answers the questions, among others:</p>
+      <p>• Has the quality of life of Poland’s residents improved?
+      <br>•	How has the Polish economy developed?
+      <br>•	What changes have occurred in the natural environment?
+      <br>• How do Poland’s achievements compare with those of the European Union?</p>
 
 
 
@@ -236,7 +236,8 @@ permalink: /en/o_sdg/
 </p>
 <div class="collapse" id="collapseExample1">
   <div class="card card-body">
-	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read Women on the way to sustainable development. Report 2023" href="https://raportsdg.stat.gov.pl/2023/en/index.html">Women on the way to sustainable development. Report 2023</a></p>
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read Children in the context of sustainable development. Report 2024" href="https://raportsdg.stat.gov.pl/2024/en/index.html">Children in the context of sustainable development. Report 2024</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read Women on the way to sustainable development. Report 2023" href="https://raportsdg.stat.gov.pl/2023/en/index.html">Women on the way to sustainable development. Report 2023</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read Poland on the way to SDGs. Environmentally sustainable development. Report 2022" href="https://raportsdg.stat.gov.pl/2022/en/index.html">Poland on the way to SDGs. Environmentally sustainable development. Report 2022</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read Poland on the way to SDGs. Inclusive economic growth. Report 2021" href="https://raportsdg.stat.gov.pl/2021/en/index.html">Poland on the way to SDGs. Inclusive economic growth. Report 2021</a></p>
 	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read Poland on the way to SDGs. Report 2020" href="https://raportsdg.stat.gov.pl/2020/en/index.html">Poland on the way to SDGs. Report 2020</a></p>
