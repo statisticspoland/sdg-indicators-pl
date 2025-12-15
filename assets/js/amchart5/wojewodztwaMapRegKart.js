@@ -1,6 +1,6 @@
 
   //am5.ready(function() {
-function createMapWoj(div, dane, jez, precyzja){
+function createMapWojKart(div, dane, jez, precyzja){
 
   am5.array.each(am5.registry.rootElements,
     function(root) {
@@ -101,6 +101,141 @@ function createMapWoj(div, dane, jez, precyzja){
   console.log("data_filtered", dane);
   polygonSeries.data.setAll(dane);
 
+
+  var cities = [
+    {
+      title: "Białystok",
+      latitude: 53.1439,
+      longitude: 22.9409242,
+      id: "PL-20"
+    },
+    {
+      title: "Gdańsk",
+      latitude:  54.2595652,
+      longitude: 18.0626726,
+      id: "PL-22"
+    },
+    {
+      title: "Katowice",
+      latitude: 50.5,
+      longitude: 19.0,
+      id: "PL-24"
+    },
+    {
+      title: "Kielce",
+      latitude: 50.7,
+      longitude: 20.6,
+      id: "PL-26"
+    },
+    {
+      title: "Kraków",
+      latitude: 49.951126,
+      longitude: 20.0295279,
+      id: "PL-12"
+    },
+    {
+      title: "Łódź",
+      latitude: 51.7,
+      longitude: 19.5,
+      id: "PL-10"
+    },
+    {
+      title: "Lublin",
+      latitude: 51.1729352,
+      longitude: 22.5252236,
+      id: "PL-06"
+    },
+    {
+      title: "Olsztyn",
+      latitude: 53.8041573,
+      longitude: 20.5172955,
+      id: "PL-28"
+    },
+    {
+      title: "Opole",
+      latitude: 50.8,
+      longitude: 17.8,
+      id: "PL-16"
+    },
+    {
+      title: "Poznań",
+      latitude:  52.3,
+      longitude: 17.2,
+      id: "PL-30"
+    },
+    {
+      title: "Rzeszów",
+      latitude: 49.8248861,
+      longitude: 22.2113309,
+      id: "PL-18"
+    },
+    {
+      title: "Szczecin",
+      latitude: 53.5,
+      longitude: 15.5,
+      id: "PL-32"
+    },
+    {
+      title: "Warszawa",
+      latitude: 52.3048888,
+      longitude: 21.1970899,
+      id: "PL-14"
+    },
+    {
+      title: "Wrocław",
+      latitude: 51.1989688,
+      longitude: 16.5,
+      id: "PL-02"
+    },
+    {
+      title: "Zielona Góra",
+      latitude: 52.1,
+      longitude: 15.3,
+      id: "PL-08"
+    },
+    {
+      title: "Toruń",
+      latitude: 53.0,
+      longitude: 18.5,
+      id: "PL-04"
+    }
+  ];
+
+  for (var i = 0; i < cities.length; i++) {
+    var ch = cities[i];
+    const item = dane.find(obj => obj.id === ch.id);
+    ch.value = item?.value;
+  }
+
+  console.log(cities);
+
+  let pointSeries = chart.series.push(
+    am5map.MapPointSeries.new(root, {})
+  );
+
+  // Put the circle into the point series
+  pointSeries.bullets.push(function(root, series, dataItem) {
+
+    const ctx = dataItem.dataContext;
+    const value = ctx.value;
+
+    // 4. Convert your value → pixel radius
+    // Adjust scaling however you want
+    const radius = am5.math.fitToRange(value / 2000, 5, 40);
+
+    // 5. Draw circle
+    let circle = am5.Circle.new(root, {
+      radius: radius,
+      fill: am5.color(0x2979ff),
+      fillOpacity: 0.6,
+      stroke: am5.color(0xffffff),
+      strokeWidth: 1
+    });
+
+    return am5.Bullet.new(root, { sprite: circle });
+  });
+
+
   const numericValues = dane.map(o => o.value).filter(v => !isNaN(v));
 
   let startText, endText;
@@ -148,4 +283,18 @@ function createMapWoj(div, dane, jez, precyzja){
   polygonSeries.mapPolygons.template.states.create("hover", {
     fill: am5.color(0xffeecc)
   });
+
+  for (var i = 0; i < cities.length; i++) {
+    var ch = cities[i];
+
+    //console.log(ch);
+    pointSeries.data.push({
+      //latitude: 53.13333,
+      //longitude: 23.16433
+      geometry: { type: "Point", coordinates: [ch.longitude, ch.latitude] },
+      id: ch.id,
+      value: ch.value
+    });
+  }
+
 }

@@ -158,7 +158,7 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
       "Wielkopolskie": 0x27AEAE,
       "Zachodniopomorskie": 0xcc00cc
     };
-    
+
   for(const w of wojToSerie){
 
     var series2 = chart.series.push(am5xy.LineSeries.new(root, {
@@ -235,7 +235,11 @@ chart.set("scrollbarY", am5.Scrollbar.new(root, {
 // https://www.amcharts.com/docs/v5/charts/xy-chart/legend-xy-series/
 var legend = chart.bottomAxesContainer.children.push(am5.Legend.new(root, {
   centerX: am5.p50,
-  x: am5.p50
+  x: am5.p50,
+  layout: am5.GridLayout.new(root, {
+    maxColumns: 3,
+    fixedWidthGrid: true
+  })
 }));
 
 legend.labels.template.setAll({

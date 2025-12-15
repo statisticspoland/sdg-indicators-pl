@@ -64,10 +64,10 @@ am5.array.each(am5.registry.rootElements,
   // Create chart
   // https://www.amcharts.com/docs/v5/charts/xy-chart/
   var chart = root.container.children.push(am5xy.XYChart.new(root, {
-    panX: false,
-    panY: false,
-    wheelX: "panX",
-    wheelY: "zoomX",
+    panX: "none",
+    panY: "none",
+    wheelX: "none",
+    wheelY: "none",
     layout: root.verticalLayout
   }));
 

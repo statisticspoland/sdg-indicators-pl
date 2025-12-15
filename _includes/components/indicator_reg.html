@@ -24,8 +24,10 @@
       <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
       <script src="https://cdn.amcharts.com/lib/5/locales/pl_PL.js"></script>
       <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
       <script src="https://cdn.amcharts.com/lib/5/geodata/polandLow.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapRegKart.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/bar.js"></script>
 
@@ -289,7 +291,13 @@
   function processData(data_processed) {
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
-  createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+  //console.log("{{ id_map }}");
+    if("{{ id_map }}"==="1-a-1"){
+      createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+    }
+    else{
+      createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+    }
   }
 
   function loadDataAndRenderMap(rok) {
@@ -456,8 +464,8 @@
     const CSV_URL = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv';
 
     const i18n = {
-      naglowek: "{% if language == 'pl' %}Polska w{% else %}Poland in{% endif %}",
-      blad: "{% if language == 'pl' %}Polska - brak danych dla {% else %}Poland - no data for {% endif %}",
+      naglowek: "{% if language == 'pl' %}Polska{% else %}Poland{% endif %}",
+      blad: "{% if language == 'pl' %}Polska - brak danych {% else %}Poland - no data {% endif %}",
       no_data: "{% if language == 'pl' %}Nie znaleziono danych dla Polski{% else %}No data for Poland{% endif %}"
     };
 
@@ -491,9 +499,9 @@
           minimumFractionDigits: miejscaPoPrzecinku,
           maximumFractionDigits: miejscaPoPrzecinku
           });
-        paragraf.textContent = `${i18n.naglowek} ${rok}: ${wartoscSformatowana} [{% if language == 'pl' %}{{ t1.pl_jednostka_prezentacji }}{% else %}{{ t1.en_jednostka_prezentacji }}{% endif %}]`;
+        paragraf.textContent = `${i18n.naglowek}: ${wartoscSformatowana} [{% if language == 'pl' %}{{ t1.pl_jednostka_prezentacji }}{% else %}{{ t1.en_jednostka_prezentacji }}{% endif %}]`;
       } else {
-        paragraf.textContent = `${i18n.blad} ${rok} {% if language == 'pl' %}roku{% else %}{% endif %} [{% if language == 'pl' %}{{ t1.pl_jednostka_prezentacji }}{% else %}{{ t1.en_jednostka_prezentacji }}{% endif %}]`;
+        paragraf.textContent = `${i18n.blad} [{% if language == 'pl' %}{{ t1.pl_jednostka_prezentacji }}{% else %}{{ t1.en_jednostka_prezentacji }}{% endif %}]`;
       }
     }
 
@@ -1238,7 +1246,7 @@
 
       <hr>
 
-      {% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%}
+    <!--  {% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%} -->
       {% if language == 'pl' %}
         Jednostka prezentacji: {{ t1.pl_jednostka_prezentacji }} <br />
         Źródło danych: {{ t1.pl_zrodlo_danych }}
