@@ -17,6 +17,7 @@ pl:
   nav-raport-2022: "Raport SDG. Edycja 2022"
   nav-raport-2023: "Raport SDG. Edycja 2023"
   nav-raport-2024: "Raport SDG. Edycja 2024"
+  nav-raport-2025: "Raport SDG. Edycja 2025"
   disclaimer-staging: "Strona do monitorowania wskaźników SDG w Polsce"
   government-site: "Krajowa Platforma Raportująca - SDG"
   login: "Zaloguj"
@@ -44,6 +45,7 @@ pl:
   nav-raport-title-2022: "Przejdź do raportu SDG w 2022"
   nav-raport-title-2023: "Przejdź do raportu SDG w 2023"
   nav-raport-title-2024: "Przejdź do raportu SDG w 2024"
+  nav-raport-title-2025: "Przejdź do raportu SDG w 2025"
 en:
   site-title: "Polish statistics SDG"
   disclaimer-wip: "This site is a work in progress"
@@ -61,6 +63,7 @@ en:
   nav-raport-2022: "SDG Reports - 2022"
   nav-raport-2023: "SDG Reports - 2023"
   nav-raport-2024: "SDG Reports - 2024"
+  nav-raport-2025: "SDG Reports - 2025"
   disclaimer-staging: "Website for monitoring SDG indicators in Poland"
   government-site: "National Reporting Platform - SDG"
   login: "Login"
@@ -88,4 +91,5 @@ en:
   nav-raport-title-2022: "Go to SDG report - 2022"
   nav-raport-title-2023: "Go to SDG report - 2023"
   nav-raport-title-2024: "Go to SDG report - 2024"
+  nav-raport-title-2025: "Go to SDG report - 2025"
 ---
