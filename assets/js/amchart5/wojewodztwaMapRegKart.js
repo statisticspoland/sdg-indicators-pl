@@ -80,7 +80,7 @@ function createMapWojKart(div, dane, jez, precyzja){
     dataField: "value",
     min: am5.color(0xc1d8f1),
     //min: am5.color(0xf0e6ff),
-    max: am5.color(0x6794dc),
+    max: am5.color(0xc1d8f1),
     //max: am5.color(0xb380ff),
     key: "fill"
   }]);
@@ -95,7 +95,7 @@ function createMapWojKart(div, dane, jez, precyzja){
 
   polygonSeries.mapPolygons.template.events.on("pointerover", function(ev) {
     const value = ev.target.dataItem.get("value");
-    heatLegend.showValue(ev.target.dataItem.get("value"));
+    //heatLegend.showValue(ev.target.dataItem.get("value"));
   });
 
   console.log("data_filtered", dane);
@@ -212,16 +212,28 @@ function createMapWojKart(div, dane, jez, precyzja){
   let pointSeries = chart.series.push(
     am5map.MapPointSeries.new(root, {})
   );
-
+  
   // Put the circle into the point series
   pointSeries.bullets.push(function(root, series, dataItem) {
 
-    const ctx = dataItem.dataContext;
-    const value = ctx.value;
+  let minValue = Infinity;
+  let maxValue = -Infinity;
 
-    // 4. Convert your value → pixel radius
-    // Adjust scaling however you want
-    const radius = am5.math.fitToRange(value / 2000, 5, 40);
+  pointSeries.data.each(item => {
+    const v = item.value;
+    if (v < minValue) minValue = v;
+    if (v > maxValue) maxValue = v;
+  });
+
+  const value = dataItem.dataContext.value;
+  
+  let normalized = 0;
+
+  if (maxValue !== minValue) {
+    normalized = (value - minValue) / (maxValue - minValue);
+  };
+
+  const radius = 5 + normalized * (40 - 5);
 
     // 5. Draw circle
     let circle = am5.Circle.new(root, {
@@ -234,7 +246,6 @@ function createMapWojKart(div, dane, jez, precyzja){
 
     return am5.Bullet.new(root, { sprite: circle });
   });
-
 
   const numericValues = dane.map(o => o.value).filter(v => !isNaN(v));
 
@@ -254,31 +265,31 @@ function createMapWojKart(div, dane, jez, precyzja){
     startColor = endColor = am5.color(0xcccccc);
   }
 
-  var heatLegend = chart.children.push(am5.HeatLegend.new(root, {
-    orientation: "vertical",
-    startColor: startColor,
-    endColor: endColor,
-    startText: startText,
-    endText: endText,
-    stepCount: 5,
-    height: 300
-  }));
+  // var heatLegend = chart.children.push(am5.HeatLegend.new(root, {
+  //   orientation: "vertical",
+  //   startColor: startColor,
+  //   endColor: endColor,
+  //   startText: startText,
+  //   endText: endText,
+  //   stepCount: 5,
+  //   height: 300
+  // }));
 
-  heatLegend.startLabel.setAll({
-    fontSize: 12,
-    fill: heatLegend.get("endColor")
-  });
+  // heatLegend.startLabel.setAll({
+  //   fontSize: 12,
+  //   fill: heatLegend.get("endColor")
+  // });
 
-  heatLegend.endLabel.setAll({
-    fontSize: 12,
-    fill: heatLegend.get("endColor")
-  });
+  // heatLegend.endLabel.setAll({
+  //   fontSize: 12,
+  //   fill: heatLegend.get("endColor")
+  // });
 
   // change this to template when possible
-  polygonSeries.events.on("datavalidated", function () {
-    heatLegend.set("startValue", polygonSeries.getPrivate("valueLow"));
-    heatLegend.set("endValue", polygonSeries.getPrivate("valueHigh"));
-  });
+  // polygonSeries.events.on("datavalidated", function () {
+  //   heatLegend.set("startValue", polygonSeries.getPrivate("valueLow"));
+  //   heatLegend.set("endValue", polygonSeries.getPrivate("valueHigh"));
+  // });
 
   polygonSeries.mapPolygons.template.states.create("hover", {
     fill: am5.color(0xffeecc)
