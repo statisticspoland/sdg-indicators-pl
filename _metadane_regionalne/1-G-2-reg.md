@@ -16,7 +16,7 @@ pl_priorytet: >-
   Zapewnienie warunków mieszkaniowych grupom najbardziej wrażliwym i potrzebującym społecznie
 pl_definicja: >-
   Udział budynków mieszkalnych podłączonych do sieci kanalizacyjnej w ogólnej liczbie budynków mieszkalnych.
-pl_jednostka_prezentacji: 'procent [%]'
+pl_jednostka_prezentacji: 'procent'
 pl_dostepne_wymiary: ogółem/miasto/wieś
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2015 r.
@@ -26,7 +26,7 @@ en_cel: Goal 1. No poverty
 en_zadanie: null
 en_priorytet: >-
   Providing housing conditions for the most vulnerable and socially needy groups
-en_jednostka_prezentacji: 'percent [%]'
+en_jednostka_prezentacji: 'percent'
 en_dostepne_wymiary: total/urban area/rural area
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2015

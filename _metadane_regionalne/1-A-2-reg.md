@@ -16,7 +16,7 @@ pl_priorytet: >-
   Wspieranie rodzin z dziećmi i opieka nad dziećmi
 pl_definicja: >-
   Procentowy udział dzieci w wieku do lat 17, na które rodzice otrzymują zasiłek rodzinny w ogólnej liczbie dzieci w tym wieku.
-pl_jednostka_prezentacji: 'procent [%]'
+pl_jednostka_prezentacji: 'procent'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
@@ -26,7 +26,7 @@ en_cel: Goal 1. No poverty
 en_zadanie: null
 en_priorytet: >-
   Supporting families with children and childcare
-en_jednostka_prezentacji: 'percent [%]'
+en_jednostka_prezentacji: 'percent'
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010

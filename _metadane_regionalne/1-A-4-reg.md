@@ -17,7 +17,7 @@ pl_priorytet: >-
 pl_definicja: >-
   Udział dzieci objętych opieką instytucjonalną w ogólnej liczbie dzieci w wieku
   od 1 roku do 2 lat.
-pl_jednostka_prezentacji: 'procent [%]'
+pl_jednostka_prezentacji: 'procent'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: 'Ministerstwo Rodziny, Pracy i Polityki Społecznej'
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2011 r.
@@ -27,7 +27,7 @@ en_cel: Goal 1. No poverty
 en_zadanie: null
 en_priorytet: >-
   Supporting families with children and childcare
-en_jednostka_prezentacji: 'percent [%]'
+en_jednostka_prezentacji: 'percent'
 en_dostepne_wymiary: total
 en_zrodlo_danych: 'Ministry of Family, Labour and Social Policy'
 en_czestotliwosc_dostępnosc_danych: Annual data; since 2011

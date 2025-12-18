@@ -31,7 +31,7 @@
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/bar.js"></script>
 
-      <div style="width: 15%; display: inline-block; margin-top: 6px; margin-left: 5px; vertical-align: top;">
+      <div style="width: 15%; display: inline-block; margin-top: 6px; vertical-align: top;">
 <!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
         {% if language == 'pl' %}
           Rok:
@@ -292,10 +292,10 @@
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
   //console.log("{{ id_map }}");
-    if("{{ id_map }}"==="1-a-1"){
+    if (["1-a-1", "1-f-2", "1-g-3", "1-g-5", "1-g-6", "1-g-7"].includes("{{ id_map }}")) {
       createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
     }
-    else{
+    else {
       createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
     }
   }
@@ -324,58 +324,58 @@
     });
 
     var data_filtered = data
-      .filter(item => item.REGION !== "POLSKA")  // usuwa wpis dla całej Polski
+      .filter(item => item.REGION !== "Polska")  // usuwa wpis dla całej Polski
       .map(item => {
 
     let newName;
 
     switch (item.REGION) {
-      case "DOLNOŚLĄSKIE":
+      case "Dolnośląskie":
         newName = "PL-02";
         break;
-      case "KUJAWSKO-POMORSKIE":
+      case "Kujawsko-Pomorskie":
         newName = "PL-04";
         break;
-      case "LUBELSKIE":
+      case "Lubelskie":
         newName = "PL-06";
         break;
-      case "LUBUSKIE":
+      case "Lubuskie":
         newName = "PL-08";
         break;
-      case "ŁÓDZKIE":
+      case "Łódzkie":
         newName = "PL-10";
         break;
-      case "MAŁOPOLSKIE":
+      case "Małopolskie":
         newName = "PL-12";
         break;
-      case "MAZOWIECKIE":
+      case "Mazowieckie":
         newName = "PL-14";
         break;
-      case "OPOLSKIE":
+      case "Opolskie":
         newName = "PL-16";
         break;
-      case "PODKARPACKIE":
+      case "Podkarpackie":
         newName = "PL-18";
         break;
-      case "PODLASKIE":
+      case "Podlaskie":
         newName = "PL-20";
         break;
-      case "POMORSKIE":
+      case "Pomorskie":
         newName = "PL-22";
         break;
-      case "ŚLĄSKIE":
+      case "Śląskie":
         newName = "PL-24";
         break;
-      case "ŚWIĘTOKRZYSKIE":
+      case "Świętokrzyskie":
         newName = "PL-26";
         break;
-      case "WARMIŃSKO-MAZURSKIE":
+      case "Warmińsko-Mazurskie":
         newName = "PL-28";
         break;
-      case "WIELKOPOLSKIE":
+      case "Wielkopolskie":
         newName = "PL-30";
         break;
-      case "ZACHODNIOPOMORSKIE":
+      case "Zachodniopomorskie":
         newName = "PL-32";
         break;
       default:
@@ -1559,7 +1559,7 @@ function updateChartBar(){
   });
 
   if(checkedValuesBar[0] === ""){
-    checkedValuesBar.push("POLSKA");
+    checkedValuesBar.push("Polska");
     const checkbox = document.getElementById('Polska');
     checkbox.checked = true;
   }
@@ -1574,6 +1574,7 @@ function updateChartBar(){
           .then(csvText => {
             const data2 = parseCSV(csvText);
 
+            console.log("data2");
             console.log(data2);
 
             const data3 = [];
@@ -1582,7 +1583,7 @@ function updateChartBar(){
               for(let a of checkedValuesBar){
                 console.log(i.REGION);
 
-                if(i.REGION == a.toUpperCase()){
+                if(i.REGION == a){
                   data3.push(i);
                 }
               }

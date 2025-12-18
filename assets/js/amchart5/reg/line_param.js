@@ -1,4 +1,4 @@
-function createchartLineParam(div, dane, idx, jez,precyzja){
+function createchartLineParam(div, dane, idx, jez, precyzja){
 
   console.log(jez);
 
@@ -66,12 +66,12 @@ root.setThemes([
 // Create chart
 // https://www.amcharts.com/docs/v5/charts/xy-chart/
 var chart = root.container.children.push(am5xy.XYChart.new(root, {
-  panX: true,
-  panY: true,
-  wheelX: "panX",
-  wheelY: "zoomX",
-  maxTooltipDistance: 0,
-  pinchZoomX:true
+  panX: false,
+  panY: false,
+  wheelX: "none",
+  wheelY: "none",
+  maxTooltipDistance: 0
+  //pinchZoomX:true
 }));
 
 

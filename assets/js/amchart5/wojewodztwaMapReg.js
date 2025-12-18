@@ -27,8 +27,9 @@ function createMapWoj(div, dane, jez, precyzja){
   ]);
   // Create chart
   var chart = root.container.children.push(am5map.MapChart.new(root, {
-    panX: "rotateX",
+    panX: "none",
     panY: "none",
+    wheelY: "none",
     projection: am5map.geoMercator(),
     layout: root.horizontalLayout
   }));

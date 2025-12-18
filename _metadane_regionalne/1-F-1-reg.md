@@ -17,7 +17,7 @@ pl_priorytet: >-
 pl_definicja: >-
   <p>Udział osób w wieku 25-64 lata uczących się lub dokształcających się (w
   okresie czterech tygodni przed badaniem) w ludności ogółem w tej samej grupie wieku.</p>
-pl_jednostka_prezentacji: 'procent [%]'
+pl_jednostka_prezentacji: 'procent'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
@@ -27,7 +27,7 @@ en_cel: Goal 1. No poverty
 en_zadanie: null
 en_priorytet: >-
   Integration and support for persons with disabilities
-en_jednostka_prezentacji: 'percent [%]'
+en_jednostka_prezentacji: 'percent'
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
