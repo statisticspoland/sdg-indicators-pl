@@ -2,7 +2,22 @@ function createchartBar(div, dane, yMin, yMax, precyzja, lata, jez){
 
   console.log(dane);
 
-  const woj = ["Polska","Dolnośląskie","Kujawsko-Pomorskie","Lubelskie","Lubuskie","Łódzkie","Małopolskie","Mazowieckie","Opolskie","Podkarpackie","Podlaskie","Pomorskie","Śląskie","Świętokrzyskie","Warmińsko-Mazurskie","Wielkopolskie","Zachodniopomorskie"];
+  var translate = ""
+  if (jez != "en") {
+    translate = "Polska"
+  } else {
+    translate = "Poland"
+  };
+
+  if (jez === "en") {
+  dane.forEach(x => {
+    if (x.REGION === "Polska") {
+      x.REGION = "Poland";
+    }
+  });
+  };
+  
+  const woj = [translate,"Dolnośląskie","Kujawsko-Pomorskie","Lubelskie","Lubuskie","Łódzkie","Małopolskie","Mazowieckie","Opolskie","Podkarpackie","Podlaskie","Pomorskie","Śląskie","Świętokrzyskie","Warmińsko-Mazurskie","Wielkopolskie","Zachodniopomorskie"];
 
   for (let item of dane) {
     for (const wo of woj) {
@@ -12,7 +27,7 @@ function createchartBar(div, dane, yMin, yMax, precyzja, lata, jez){
         // or: item[w] = Math.round(Number(item[w]));
       }
     }
-  }
+  };
 
 console.log(dane);
 // Create root element
@@ -138,7 +153,7 @@ am5.array.each(am5.registry.rootElements,
 
 
 series.columns.template.adapters.add("fill", function(fill, target) {
-  if (target.dataItem.get("categoryY") == "POLSKA") {
+  if (target.dataItem.get("categoryY") == "Polska" || target.dataItem.get("categoryY") == "Poland") {
       return am5.color(0x6794dc);
   }
   else {

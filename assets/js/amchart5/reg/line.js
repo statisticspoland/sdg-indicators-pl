@@ -1,8 +1,25 @@
 function createchartLine(div, dane, jez){
 
-  console.log(jez);
+  //console.log(jez);
+  //console.log(dane);
 
-  const woj = ["Polska","Dolnośląskie","Kujawsko-Pomorskie","Lubelskie","Lubuskie","Łódzkie","Małopolskie","Mazowieckie","Opolskie","Podkarpackie","Podlaskie","Pomorskie","Śląskie","Świętokrzyskie","Warmińsko-Mazurskie","Wielkopolskie","Zachodniopomorskie"];
+  var translate = ""
+  if (jez != "en") {
+    translate = "Polska"
+  } else {
+    translate = "Poland"
+  };
+
+  if (jez === "en") {
+  dane.forEach(obj => {
+    if (obj.Polska !== undefined) {
+      obj.Poland = obj.Polska;
+      delete obj.Polska;
+    }
+  });
+  };
+
+  const woj = [translate,"Dolnośląskie","Kujawsko-Pomorskie","Lubelskie","Lubuskie","Łódzkie","Małopolskie","Mazowieckie","Opolskie","Podkarpackie","Podlaskie","Pomorskie","Śląskie","Świętokrzyskie","Warmińsko-Mazurskie","Wielkopolskie","Zachodniopomorskie"];
 
   const wojToSerie = [];
   for (let item of dane) {
@@ -18,7 +35,7 @@ function createchartLine(div, dane, jez){
     }
   }
 
-console.log(dane);
+//console.log(dane);
 
 
 am5.array.each(am5.registry.rootElements,
@@ -141,6 +158,7 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
 
     const wojColors = {
       "Polska": 0x6794dc,
+      "Poland": 0x6794dc,
       "Dolnośląskie": 0x33A1FF,
       "Kujawsko-Pomorskie": 0x9B59B6,
       "Lubelskie": 0x27AE60,
@@ -184,7 +202,7 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
       strokeWidth: 3  // increase this number to make line thicker
     });
 
-    if (w === "Polska"){
+    if (w === "Polska" || w === "Poland"){
       series2.strokes.template.setAll({
         strokeWidth: 5  // increase this number to make line thicker
       });
