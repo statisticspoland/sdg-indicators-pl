@@ -30,6 +30,9 @@ function createchartBar(div, dane, yMin, yMax, precyzja, lata, jez){
   };
 
 console.log(dane);
+
+dane = dane.slice().reverse();
+
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
 
