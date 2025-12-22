@@ -9,20 +9,27 @@ function createchartLineParam(div, dane, idx, jez, precyzja){
     translate = "Poland"
   };
 
-  if (jez === "en") {
-  dane.forEach(obj => {
-    if (obj.Polska !== undefined) {
-      obj.Poland = obj.Polska;
-      delete obj.Polska;
-    }
-  });
-  };
-
 
   const wojTemp = [translate,"Dolnośląskie","Kujawsko-Pomorskie","Lubelskie","Lubuskie","Łódzkie","Małopolskie","Mazowieckie","Opolskie","Podkarpackie","Podlaskie","Pomorskie","Śląskie","Świętokrzyskie","Warmińsko-Mazurskie","Wielkopolskie","Zachodniopomorskie"];
 
   const woj = wojTemp.map(str => str + '_'.repeat(idx));
 
+    if (jez === "en") {
+    dane.forEach(obj => {
+      if (obj.Polska !== undefined) {
+        obj.Poland = obj.Polska;
+        delete obj.Polska;
+      };
+      if (obj.Polska_ !== undefined) {
+        obj.Poland_ = obj.Polska_;
+        delete obj.Polska_;
+      };
+      if (obj.Polska__ !== undefined) {
+        obj.Poland__ = obj.Polska__;
+        delete obj.Polska__;
+      };
+    });
+    };
 
   const wojToSerie = [];
   for (let item of dane) {
@@ -38,6 +45,7 @@ function createchartLineParam(div, dane, idx, jez, precyzja){
     }
   }
 
+console.log("TUTAJ");
 console.log(dane);
 
 
@@ -178,7 +186,43 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
     "Świętokrzyskie": 0xD35400,
     "Warmińsko-Mazurskie": 0x2980B9,
     "Wielkopolskie": 0x27AEAE,
-    "Zachodniopomorskie": 0xcc00cc
+    "Zachodniopomorskie": 0xcc00cc,
+    "Polska_": 0x6794dc,
+    "Poland_": 0x6794dc,
+    "Dolnośląskie_": 0x33A1FF,
+    "Kujawsko-Pomorskie_": 0x9B59B6,
+    "Lubelskie_": 0x27AE60,
+    "Lubuskie_": 0xF1C40F,
+    "Łódzkie_": 0xE67E22,
+    "Małopolskie_": 0x12876f,
+    "Mazowieckie_": 0xC0392B,
+    "Opolskie_": 0xd5b6e2,
+    "Podkarpackie_": 0x2ECC71,
+    "Podlaskie_": 0x3333ff,
+    "Pomorskie_": 0xE74C3C,
+    "Śląskie_": 0x16A085,
+    "Świętokrzyskie_": 0xD35400,
+    "Warmińsko-Mazurskie_": 0x2980B9,
+    "Wielkopolskie_": 0x27AEAE,
+    "Zachodniopomorskie_": 0xcc00cc,
+    "Polska__": 0x6794dc,
+    "Poland__": 0x6794dc,
+    "Dolnośląskie__": 0x33A1FF,
+    "Kujawsko-Pomorskie__": 0x9B59B6,
+    "Lubelskie__": 0x27AE60,
+    "Lubuskie__": 0xF1C40F,
+    "Łódzkie__": 0xE67E22,
+    "Małopolskie__": 0x12876f,
+    "Mazowieckie__": 0xC0392B,
+    "Opolskie__": 0xd5b6e2,
+    "Podkarpackie__": 0x2ECC71,
+    "Podlaskie__": 0x3333ff,
+    "Pomorskie__": 0xE74C3C,
+    "Śląskie__": 0x16A085,
+    "Świętokrzyskie__": 0xD35400,
+    "Warmińsko-Mazurskie__": 0x2980B9,
+    "Wielkopolskie__": 0x27AEAE,
+    "Zachodniopomorskie__": 0xcc00cc
   };
 
 for(const w of wojToSerie){
@@ -206,7 +250,7 @@ for(const w of wojToSerie){
       strokeWidth: 3  // increase this number to make line thicker
     });
 
-    if (w === "Polska" || w === "Poland"){
+    if (w === "Polska" || w === "Poland" || w === "Polska_" || w === "Poland_" || w === "Polska__" || w === "Poland__"){
       series2.strokes.template.setAll({
         strokeWidth: 5  // increase this number to make line thicker
       });
