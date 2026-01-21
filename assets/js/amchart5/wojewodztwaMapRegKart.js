@@ -99,7 +99,7 @@ function createMapWojKart(div, dane, jez, precyzja){
     //heatLegend.showValue(ev.target.dataItem.get("value"));
   });
 
-  console.log("data_filtered", dane);
+  //console.log("data_filtered", dane);
   polygonSeries.data.setAll(dane);
 
 
@@ -208,39 +208,67 @@ function createMapWojKart(div, dane, jez, precyzja){
     ch.value = item?.value;
   }
 
-  console.log(cities);
+  //console.log(cities);
 
   let pointSeries = chart.series.push(
     am5map.MapPointSeries.new(root, {})
   );
-  
+
+  const pointValues = cities
+    .map(c => c.value)
+    .filter(v => !isNaN(v));
+
+  const minPointValue = Math.min(...pointValues);
+  const maxPointValue = Math.max(...pointValues);
+
+  function calculateEqualRanges(min, max, count) {
+    const ranges = [];
+    const step = (max - min) / count;
+
+    for (let i = 0; i < count; i++) {
+      const from = Math.round(min + step * i);
+      const to   = Math.round(
+        i === count - 1 ? max : min + step * (i + 1)
+      );
+
+      const r = 5*i+10;
+
+      //console.log("from: ", from);
+      //console.log("to: ", to);
+      ranges.push({ min: from, max: to, radius: r});
+    }
+
+    return ranges;
+  }
+
+  const ranges = calculateEqualRanges(minPointValue, maxPointValue, 5);
+  //console.log(ranges);
+
+  function findRange(value, ranges) {
+    return ranges.find(range => value >= range.min && value <= range.max);
+  }
+
+  function findRangeFromRadius(radius, ranges) {
+    return ranges.find(range => radius == range.radius);
+  }
+
+  function radiusFromValue(value) {
+    //if (maxPointValue === minPointValue) return 20;
+    //const normalized = (value - minPointValue) / (maxPointValue - minPointValue);
+    //return 5 + normalized * (40 - 5);
+    return findRange(value, ranges).radius;
+  }
+
   // Put the circle into the point series
   pointSeries.bullets.push(function(root, series, dataItem) {
 
-  let minValue = Infinity;
-  let maxValue = -Infinity;
+    const value = dataItem.dataContext.value;
+    const radius = radiusFromValue(value);
 
-  pointSeries.data.each(item => {
-    const v = item.value;
-    if (v < minValue) minValue = v;
-    if (v > maxValue) maxValue = v;
-  });
-
-  const value = dataItem.dataContext.value;
-  
-  let normalized = 0;
-
-  if (maxValue !== minValue) {
-    normalized = (value - minValue) / (maxValue - minValue);
-  };
-
-  const radius = 5 + normalized * (40 - 5);
-
-    // 5. Draw circle
     let circle = am5.Circle.new(root, {
       radius: radius,
-      fill: am5.color(0x2979ff),
-      fillOpacity: 0.6,
+      fill: am5.color(0x67b7dc),
+      fillOpacity: 1.0,
       stroke: am5.color(0xffffff),
       strokeWidth: 1
     });
@@ -266,31 +294,64 @@ function createMapWojKart(div, dane, jez, precyzja){
     startColor = endColor = am5.color(0xcccccc);
   }
 
-  // var heatLegend = chart.children.push(am5.HeatLegend.new(root, {
-  //   orientation: "vertical",
-  //   startColor: startColor,
-  //   endColor: endColor,
-  //   startText: startText,
-  //   endText: endText,
-  //   stepCount: 5,
-  //   height: 300
-  // }));
+  // Legend container
+  var legendContainer = root.container.children.push(
+    am5.Container.new(root, {
+      layout: root.verticalLayout,
+      x: am5.p100,
+      centerX: am5.p100,
+      y: am5.p50,
+      centerY: am5.p50,
+      width: 100
+    })
+  );
 
-  // heatLegend.startLabel.setAll({
-  //   fontSize: 12,
-  //   fill: heatLegend.get("endColor")
-  // });
+  // Legend data (example)
+  var legendData = [
+    { color: am5.color(0x67b7dc), radius:10},
+    { color: am5.color(0x67b7dc), radius:15},
+    { color: am5.color(0x67b7dc), radius:20},
+    { color: am5.color(0x67b7dc), radius:25},
+    { color: am5.color(0x67b7dc), radius:30}
+  ];
 
-  // heatLegend.endLabel.setAll({
-  //   fontSize: 12,
-  //   fill: heatLegend.get("endColor")
-  // });
+  // Build legend items
+  legendData.forEach(function(item) {
+    var row = legendContainer.children.push(
+      am5.Container.new(root, {
+        layout: am5.GridLayout.new(root, {
+          maxColumns: 2,
+          fixedWidthGrid: true
+        }),
+        width: am5.p100,
+        marginBottom: 5
+      })
+    );
 
-  // change this to template when possible
-  // polygonSeries.events.on("datavalidated", function () {
-  //   heatLegend.set("startValue", polygonSeries.getPrivate("valueLow"));
-  //   heatLegend.set("endValue", polygonSeries.getPrivate("valueHigh"));
-  // });
+
+    const matchedRange = findRangeFromRadius(item.radius, ranges);
+    //console.log(matchedRange);
+
+    item.label = `${matchedRange.min} - ${matchedRange.max}`;
+    // Bullet
+    row.children.push(
+      am5.Circle.new(root, {
+        radius: item.radius,
+        fill: item.color,
+        marginLeft: 50-item.radius
+      })
+    );
+
+    // Label
+    row.children.push(
+      am5.Label.new(root, {
+        text: item.label,
+        fontSize: 13,
+        fill: am5.color(0x000000)
+      })
+    );
+  });
+
 
   polygonSeries.mapPolygons.template.states.create("hover", {
     fill: am5.color(0xffeecc)
@@ -309,4 +370,5 @@ function createMapWojKart(div, dane, jez, precyzja){
     });
   }
 
+  //console.log(polygonSeries.dataItems);
 }

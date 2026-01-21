@@ -30,6 +30,7 @@
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapRegKart.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/bar.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/scatter.js"></script>
 
       <div style="width: 15%; display: inline-block; margin-top: 6px; vertical-align: top;">
 <!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
@@ -1453,6 +1454,7 @@ function download_csv(csv, filename) {
       });
 
       createchartLine("chartLine",  data.slice(1),"{{ language }}");
+      createchartScatter("chartLine",  data.slice(1),"{{ language }}");
 
       for(let i=0; i<17; i++){
         $('#row-'+i).toggle();
@@ -1654,6 +1656,7 @@ function updateChartLine(){
             });
             console.log(data2);
             createchartLine("chartLine",  data2.slice(1),"{{ language }}");
+            //createchartScatter("chartLine",  data2.slice(1),"{{ language }}");
           });
     });
 
