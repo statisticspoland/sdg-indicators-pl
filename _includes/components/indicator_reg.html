@@ -1448,13 +1448,17 @@ function download_csv(csv, filename) {
     .then(csvText => {
       const data = parseCSV(csvText);
 
-      console.log(data);
+      //console.log(data);
       data.forEach(row => {
         delete row["Polska"];
       });
 
-      createchartLine("chartLine",  data.slice(1),"{{ language }}");
-      createchartScatter("chartLine",  data.slice(1),"{{ language }}");
+      if ('{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1'){
+        createchartScatter("chartLine",  data.slice(1),"{{ language }}");
+      }
+      else{
+        createchartLine("chartLine",  data.slice(1),"{{ language }}");
+      }
 
       for(let i=0; i<17; i++){
         $('#row-'+i).toggle();
@@ -1470,7 +1474,7 @@ function download_csv(csv, filename) {
         .then(csvText => {
           const data2 = parseCSV(csvText);
 
-          console.log(data2);
+          //console.log(data2);
 
           const maxValue = Math.max(
             ...data2.slice(1).flatMap(obj =>
@@ -1481,17 +1485,17 @@ function download_csv(csv, filename) {
             )
           );
 
-          console.log(maxValue);
+          //console.log(maxValue);
 
           let lastYearValue = undefined;
           let lastValue = undefined;
 
           for(let i=2;i<Object.keys(data2[0]).length-1; i++){
             lastYearValue = Object.keys(data2[0]).at(-i);
-            console.log(lastYearValue);
+            //console.log(lastYearValue);
 
             lastValue = Object.values(data2[0]).at(-i);
-            console.log(lastValue);
+            //console.log(lastValue);
 
             if(lastValue !== ""){
               break
@@ -1515,7 +1519,7 @@ function addAllBar(){
     if (cb.value!== 'all') {
       cb.checked = v;
     }
-    console.log(cb.value);
+    //console.log(cb.value);
     if(!v && cb.value.toUpperCase() === "POLSKA"){
       cb.checked = true;
     }
@@ -1536,7 +1540,7 @@ function addAllLine(){
     if (cb.value!== 'all') {
       cb.checked = v;
     }
-    console.log(cb.value);
+    //console.log(cb.value);
     if(!v && cb.value.toUpperCase() === "POLSKA"){
       cb.checked = true;
     }
@@ -1553,7 +1557,7 @@ function updateChartBar(){
   const checkboxesBar = document.querySelectorAll('#chooseWojBar input[type="checkbox"]');
   const checkedValuesBar = [];
 
-  console.log(checkboxesBar);
+  //console.log(checkboxesBar);
 
   checkboxesBar.forEach((cb, i) => {
     if (cb.checked) {
@@ -1566,8 +1570,8 @@ function updateChartBar(){
     const checkbox = document.getElementById('Polska');
     checkbox.checked = true;
   }
-  console.log("Wybrane wartosci");
-  console.log(checkedValuesBar);
+  //console.log("Wybrane wartosci");
+  //console.log(checkedValuesBar);
 
   am5.ready(function() {
     const CSV_FILE_URL2 = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv';
@@ -1577,14 +1581,14 @@ function updateChartBar(){
           .then(csvText => {
             const data2 = parseCSV(csvText);
 
-            console.log("data2");
-            console.log(data2);
+            //console.log("data2");
+            //console.log(data2);
 
             const data3 = [];
 
             for(let i of data2){
               for(let a of checkedValuesBar){
-                console.log(i.REGION);
+                //console.log(i.REGION);
 
                 if(i.REGION == a){
                   data3.push(i);
@@ -1601,9 +1605,9 @@ function updateChartBar(){
               )
             );
 
-            console.log(maxValue);
+            //console.log(maxValue);
 
-            console.log(data3);
+            //console.log(data3);
 
             createchartBar("chartBar", data3, 0, maxValue+5, 0, [selectedYear],"{{ language }}");
             });
@@ -1617,7 +1621,7 @@ function updateChartLine(){
 
 
   const tr = document.querySelectorAll('tr');
-  console.log(tr);
+  //console.log(tr);
 
   checkboxes.forEach((cb,i) => {
     if (cb.checked && cb.value !== 'all') {
@@ -1635,7 +1639,7 @@ function updateChartLine(){
     checkbox.checked = true;
   }
   checkedValues.push("year");
-  console.log(checkedValues);
+  //console.log(checkedValues);
 
   am5.ready(function() {
     const CSV_FILE_URL = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-reg.csv';
@@ -1645,7 +1649,7 @@ function updateChartLine(){
           .then(csvText => {
             const data2 = parseCSV(csvText);
 
-            console.log(data2);
+            //console.log(data2);
 
             data2.forEach(row => {
               Object.keys(row).forEach(key => {
@@ -1654,9 +1658,15 @@ function updateChartLine(){
                 }
               });
             });
-            console.log(data2);
-            createchartLine("chartLine",  data2.slice(1),"{{ language }}");
-            //createchartScatter("chartLine",  data2.slice(1),"{{ language }}");
+            //console.log(data2);
+
+            if ('{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1'){
+              createchartScatter("chartLine",  data2.slice(1),"{{ language }}");
+            }
+            else{
+              createchartLine("chartLine",  data2.slice(1),"{{ language }}");
+            }
+
           });
     });
 

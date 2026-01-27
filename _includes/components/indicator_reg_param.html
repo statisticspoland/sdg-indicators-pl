@@ -289,8 +289,8 @@
     var paramBox = document.getElementById("paramBox");
     var selectedParam = paramBox.options[paramBox.selectedIndex].value;
     var selectedYear = yearBox.options[yearBox.selectedIndex].value;
-    console.log(selectedYear);
-    console.log(selectedParam);
+    //console.log(selectedYear);
+    //console.log(selectedParam);
     loadDataAndRenderMap(selectedYear,selectedParam);
     //if(selectedParam===0){
     //loadDataAndRenderMap(selectedYear,"ogółem");
@@ -1376,8 +1376,8 @@ function download_csv(csv, filename) {
     .then(csvText => {
       const data = parseCSV(csvText);
 
-      console.log("data");
-      console.log(data);
+      //console.log("data");
+      //console.log(data);
       data.forEach(row => {
         delete row["Polska"];
       });
@@ -1398,7 +1398,7 @@ function download_csv(csv, filename) {
         .then(csvText => {
           const data2 = parseCSV(csvText);
 
-          console.log(data2);
+          //console.log(data2);
 
           const maxValue = Math.max(
             ...data2.flatMap(obj =>
@@ -1409,17 +1409,17 @@ function download_csv(csv, filename) {
             )
           );
 
-          console.log(maxValue);
+          //console.log(maxValue);
 
           let lastYearValue = undefined;
           let lastValue = undefined;
 
           for(let i=3;i<Object.keys(data2[0]).length-1; i++){
             lastYearValue = Object.keys(data2[0]).at(-i);
-            console.log(lastYearValue);
+            //console.log(lastYearValue);
 
             lastValue = Object.values(data2[0]).at(-i);
-            console.log(lastValue);
+            //console.log(lastValue);
 
             if(lastValue !== ""){
               break
@@ -1451,7 +1451,7 @@ function addAllBar(){
     if (cb.value!== 'all') {
       cb.checked = v;
     }
-    console.log(cb.value);
+    //console.log(cb.value);
     if(!v && cb.value.toUpperCase() === "POLSKA"){
       cb.checked = true;
     }
@@ -1472,7 +1472,7 @@ function addAllLine(){
     if (cb.value!== 'all') {
       cb.checked = v;
     }
-    console.log(cb.value);
+    //console.log(cb.value);
     if(!v && cb.value.toUpperCase() === "POLSKA"){
       cb.checked = true;
     }
@@ -1492,7 +1492,7 @@ function updateChartBar(){
   const checkboxesBar = document.querySelectorAll('#chooseWojBar input[type="checkbox"]');
   const checkedValuesBar = [];
 
-  console.log(checkboxesBar);
+  //console.log(checkboxesBar);
 
   checkboxesBar.forEach((cb, i) => {
     if (cb.checked) {
@@ -1507,8 +1507,8 @@ function updateChartBar(){
     const selectParam = document.getElementById('paramBoxBar');
     selectParam.value = "ogółem";
   }
-  console.log("Wybrane wartosci");
-  console.log(checkedValuesBar);
+  //console.log("Wybrane wartosci");
+  //console.log(checkedValuesBar);
 
   am5.ready(function() {
     const CSV_FILE_URL2 = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv';
@@ -1518,13 +1518,13 @@ function updateChartBar(){
           .then(csvText => {
             const data2 = parseCSV(csvText);
 
-            console.log(data2);
+            //console.log(data2);
 
             const data3 = [];
 
             for(let i of data2){
               for(let a of checkedValuesBar){
-                console.log(i.REGION);
+                //console.log(i.REGION);
 
                 if(i.REGION == a && i.PARAM == selectedParam){
                   data3.push(i);
@@ -1541,9 +1541,9 @@ function updateChartBar(){
               )
             );
 
-            console.log(maxValue);
+            //console.log(maxValue);
 
-            console.log(data3);
+            //console.log(data3);
 
             createchartBar("chartBar", data3, 0, maxValue+5, 0, [selectedYear], "{{ language }}");
             });
@@ -1611,8 +1611,8 @@ function updateChartLine(){
     selectParam.value = "ogółem";
   }
   checkedValues.push("year");
-  console.log("checkedValues_line");
-  console.log(checkedValues);
+  //console.log("checkedValues_line");
+  //console.log(checkedValues);
 
   am5.ready(function() {
   const CSV_FILE_URL = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-reg.csv';
@@ -1621,9 +1621,9 @@ function updateChartLine(){
     .then(response => response.text())
     .then(csvText => {
       const data2 = parseCSV(csvText);
-            
-      console.log("data2_line");
-      console.log(data2);
+
+      //console.log("data2_line");
+      //console.log(data2);
 
       data2.forEach(row => {
         Object.keys(row).forEach(key => {
@@ -1632,8 +1632,8 @@ function updateChartLine(){
           }
         });
       });
-      console.log("data2_forEach_line");
-      console.log(data2);
+      //console.log("data2_forEach_line");
+      //console.log(data2);
       createchartLineParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}");
       });
   });

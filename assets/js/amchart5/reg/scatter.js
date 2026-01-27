@@ -231,16 +231,30 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
 
     // Add bullet
     // https://www.amcharts.com/docs/v5/charts/xy-chart/series/#Bullets
-    series2.bullets.push(function() {
-      var graphics = am5.Triangle.new(root, {
-        fill: am5.color(wojColors[w]),
-        width: 15,
-        height: 13
+    if(w == 'Poland' || w == 'Polska'){
+      series2.bullets.push(function() {
+        var graphics = am5.Triangle.new(root, {
+          fill: am5.color(wojColors[w]),
+          width: 15,
+          height: 13
+        });
+        return am5.Bullet.new(root, {
+          sprite: graphics
+        });
       });
-      return am5.Bullet.new(root, {
-        sprite: graphics
+    }
+    else{
+      series2.bullets.push(function() {
+        var graphics = am5.Circle.new(root, {
+          fill: am5.color(wojColors[w]),
+          radius: 7
+        });
+        return am5.Bullet.new(root, {
+          sprite: graphics
+        });
       });
-    });
+    }
+
 
     series2.data.processor = am5.DataProcessor.new(root, {
     dateFormat: "yyyy",
