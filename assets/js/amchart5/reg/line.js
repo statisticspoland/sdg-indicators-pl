@@ -186,12 +186,43 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
       valueYField: w,
       valueXField: "year",
       legendLabelText: "{name}: {valueY}",
-      stroke: am5.color(wojColors[w]),
-      tooltip: am5.Tooltip.new(root, {
+      stroke: am5.color(wojColors[w])
+      /*tooltip: am5.Tooltip.new(root, {
         pointerOrientation: "horizontal",
         labelText: w+": {valueY}"
-      })
+      })*/
     }));
+
+    var tooltip = am5.Tooltip.new(root, {
+      pointerOrientation: "horizontal",
+      labelText: w + ": {valueY}",
+      getFillFromSprite: false
+    });
+
+    tooltip.get("background").setAll({
+      fill: am5.color(wojColors[w])
+    });
+
+    series2.set("tooltip", tooltip);
+
+    /*series2.set("tooltip", am5.Tooltip.new(root, {
+      pointerOrientation: "horizontal",
+      labelText: w + ": {valueY}",
+      getFillFromSprite: false,        // Important to prevent inheriting series color
+      background: am5.RoundedRectangle.new(root, {
+        fill: am5.color(wojColors[w]), // Set your desired background color
+        fillOpacity: 0.8,
+        cornerRadiusTL: 10,
+        cornerRadiusTR: 10,
+        cornerRadiusBL: 10,
+        cornerRadiusBR: 10,
+        stroke: am5.color(0xffffff)
+      }),
+      label: am5.Label.new(root, {
+        fill: am5.color(0xffffff), // Text color
+        fontWeight: "bold"
+      })
+    }));*/
 
     series2.data.processor = am5.DataProcessor.new(root, {
     dateFormat: "yyyy",

@@ -1,6 +1,6 @@
 function createchartLineParam(div, dane, idx, jez, precyzja){
 
-  console.log(jez);
+  //console.log(jez);
 
   var translate = ""
   if (jez != "en") {
@@ -45,8 +45,8 @@ function createchartLineParam(div, dane, idx, jez, precyzja){
     }
   }
 
-console.log("TUTAJ");
-console.log(dane);
+//console.log("TUTAJ");
+//console.log(dane);
 
 
 am5.array.each(am5.registry.rootElements,
@@ -234,12 +234,24 @@ for(const w of wojToSerie){
       valueYField: w,
       valueXField: "year",
       legendLabelText: "{name}: {valueY}",
-      stroke: am5.color(wojColors[w]),
-      tooltip: am5.Tooltip.new(root, {
+      stroke: am5.color(wojColors[w])
+      /*tooltip: am5.Tooltip.new(root, {
         pointerOrientation: "horizontal",
         labelText: w.replace('_','').replace('_','')+": {valueY}"
-      })
+      })*/
     }));
+
+    var tooltip = am5.Tooltip.new(root, {
+      pointerOrientation: "horizontal",
+      labelText: w.replace('_','').replace('_','') + ": {valueY}",
+      getFillFromSprite: false
+    });
+
+    tooltip.get("background").setAll({
+      fill: am5.color(wojColors[w])
+    });
+
+    series2.set("tooltip", tooltip);
 
     series2.data.processor = am5.DataProcessor.new(root, {
     dateFormat: "yyyy",
