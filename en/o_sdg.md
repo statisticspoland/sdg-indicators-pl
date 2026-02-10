@@ -213,7 +213,7 @@ permalink: /en/o_sdg/
   <h4><b>STATISTICS POLAND</b> (coordinator of SDG monitoring in Poland)</h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://raportsdg.stat.gov.pl/index.html" alt="Poland on the way to SDGs. Report 2025" title="Read a publication Poland on the way to SDGs. Report 2025" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2025_en.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://raportsdg.stat.gov.pl/en/index.html" alt="Poland on the way to SDGs. Report 2025" title="Read a publication Poland on the way to SDGs. Report 2025" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/1_b_raport_2025_en.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Poland on the way to SDGs. Report 2025</b></p>
 
