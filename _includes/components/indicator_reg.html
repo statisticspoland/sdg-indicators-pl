@@ -293,7 +293,7 @@
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
   //console.log("{{ id_map }}");
-    if (["1-a-1", "1-f-2", "1-g-3", "1-g-5", "1-g-6", "1-g-7"].includes("{{ id_map }}")) {
+    if (["1-a-1", "1-f-2", "1-g-3", "1-g-5", "1-g-6", "1-g-7","2-b-3","2-b-4","2-b-5","2-b-6","2-b-7"].includes("{{ id_map }}")) {
       createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
     }
     else {
@@ -1502,7 +1502,12 @@ function download_csv(csv, filename) {
             }
           }
 
-          createchartBar("chartBar", data2.slice(1), 0,maxValue+5, 0, [lastYearValue],"{{ language }}");
+          var marg = 5;
+          if(maxValue<=5){
+            marg = 2;
+          }
+
+          createchartBar("chartBar", data2.slice(1), 0,maxValue+marg, 0, [lastYearValue],"{{ language }}");
           });
     });
 //}, 500);
@@ -1609,7 +1614,11 @@ function updateChartBar(){
 
             //console.log(data3);
 
-            createchartBar("chartBar", data3, 0, maxValue+5, 0, [selectedYear],"{{ language }}");
+            var marg = 5;
+            if(maxValue<=5){
+              marg = 2;
+            }
+            createchartBar("chartBar", data3, 0, maxValue+marg, 0, [selectedYear],"{{ language }}");
             });
       });
 }

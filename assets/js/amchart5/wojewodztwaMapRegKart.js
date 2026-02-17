@@ -224,12 +224,20 @@ function createMapWojKart(div, dane, jez, precyzja){
   function calculateEqualRanges(min, max, count) {
     const ranges = [];
     const step = (max - min) / count;
-
+    var from = Math.floor(min);
     for (let i = 0; i < count; i++) {
-      const from = Math.round(min + step * i);
+      if(i==0){
+        from = Math.floor(min)-1;
+        if(from<0){
+          from = 0;
+        }
+      }
+      else{
+        from = Math.round(min + step * i)+1;
+      }
       const to   = Math.round(
         i === count - 1 ? max : min + step * (i + 1)
-      );
+      )+1;
 
       const r = 5*i+10;
 
@@ -241,11 +249,17 @@ function createMapWojKart(div, dane, jez, precyzja){
     return ranges;
   }
 
+  console.log(minPointValue);
+  console.log(maxPointValue);
   const ranges = calculateEqualRanges(minPointValue, maxPointValue, 5);
-  //console.log(ranges);
+  console.log(ranges);
 
   function findRange(value, ranges) {
-    return ranges.find(range => value >= range.min && value <= range.max);
+    if(value == 0){
+      return ranges[0];
+    }
+
+    return ranges.find(range => value > range.min && value <= range.max);
   }
 
   function findRangeFromRadius(radius, ranges) {
@@ -253,6 +267,7 @@ function createMapWojKart(div, dane, jez, precyzja){
   }
 
   function radiusFromValue(value) {
+    console.log(value);
     //if (maxPointValue === minPointValue) return 20;
     //const normalized = (value - minPointValue) / (maxPointValue - minPointValue);
     //return 5 + normalized * (40 - 5);
@@ -332,7 +347,7 @@ function createMapWojKart(div, dane, jez, precyzja){
     const matchedRange = findRangeFromRadius(item.radius, ranges);
     //console.log(matchedRange);
 
-    item.label = `${matchedRange.min} - ${matchedRange.max}`;
+    item.label = `${matchedRange.min+0.1} - ${matchedRange.max}`;
     // Bullet
     row.children.push(
       am5.Circle.new(root, {

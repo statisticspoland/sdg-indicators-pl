@@ -1,0 +1,6 @@
+---
+title: Dobra jakość edukacji
+permalink: /statistics_reg/quality-education/
+sdg_goal: 4
+layout: goal
+---

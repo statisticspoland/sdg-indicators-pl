@@ -1,0 +1,109 @@
+---
+translation_id: 2-E-2-reg
+pl_title: >-
+  Nakłady na B+R w dziedzinie rolnictwa w relacji do PKB
+pl_graph_title: >-
+  Nakłady na B+R w dziedzinie rolnictwa w relacji do PKB
+en_title: >-
+  Expenditure on R&D in agriculture in relation to GDP
+en_graph_title: >-
+  Expenditure on R&D in agriculture in relation to GDP
+pl_nazwa_wskaznika: >-
+  <b>2.E.2  Nakłady na B+R w dziedzinie rolnictwa w relacji do PKB</b>
+pl_cel: Cel 2. Zero głodu
+pl_zadanie: null
+pl_priorytet: >-
+  Badania i rozwój w dziedzinie produkcji żywności i rolnictwa
+pl_definicja: >-
+  Relacja nakładów na działalność badawczą i rozwojową w dziedzinie nauk rolniczych i weterynaryjnych do Produktu Krajowego Brutto.
+pl_jednostka_prezentacji: procent
+pl_dostepne_wymiary: ogółem
+pl_zrodlo_danych: Główny Urząd Statystyczny
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_nazwa_wskaznika: >-
+  <b>2.E.2 Expenditure on R&D in agriculture in relation to GDP</b>
+en_cel: Goal 2. Zero hunger
+en_zadanie: null
+en_priorytet: >-
+  Research and development in food production and agriculture
+en_jednostka_prezentacji: percent
+en_dostepne_wymiary: total
+en_zrodlo_danych: Statistics Poland
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
+published: true
+pl_wyjasnienia_metodologiczne: >-
+  <p><strong>Działalność badawcza i rozwojowa (B+R)</strong> to systematyczna
+  praca twórcza prowadzona w celu zwiększenia zasobów wiedzy (np. o człowieku,
+  kulturze i społeczeństwie) oraz znalezienia nowych zastosowań dla tej wiedzy.
+  Obejmuje badania naukowe(podstawowe, stosowane, przemysłowe) oraz prace
+  rozwojowe.</p> <p><strong>Nakłady wewnętrzne na działalność B+R</strong> to
+  nakłady poniesione w roku sprawozdawczym na prace B+R wykonane w jednostce
+  sprawozdawczej, niezależnie od źródła pochodzenia środków, czyli łącznie ze
+  środkami uzyskanymi z zagranicy (eksport prac B+R). Obejmują zarówno nakłady
+  bieżące, jak i nakłady inwestycyjne na środki trwałe związane z działalnością
+  B+R, lecz nie obejmują amortyzacji środków trwałych.</p> <p>Nakłady wewnętrzne
+  na działalność B+R badane są według dziedzin nauk w podziale na nauki:
+  przyrodnicze, inżynieryjne i techniczne, medyczne i o zdrowiu, rolnicze,
+  społeczne oraz humanistyczne. Nakłady na dziedziny nauk przeliczane są na
+  podstawie procentowego udziału w nakładach ogółem.</p> <p><strong>Nauki
+  rolnicze</strong>, zgodnie z Podręcznikiem Frascati, to dziedzina nauk
+  obejmująca dyscypliny: rolnictwo, leśnictwo i rybołówstwo, nauka o zwierzętach
+  i mleczarstwie, nauki weterynaryjne, biotechnologia rolnicza oraz inne nauki
+  rolnicze.</p> <p><strong>Produkt krajowy brutto (PKB)</strong> prezentuje
+  końcowy rezultat działalności wszystkich podmiotów gospodarki narodowej w
+  danym roku.</p> <p>Wartość PKB można obliczyć na trzy sposoby:</p> <p>- od
+  strony tworzenia jest ona równa wartości dodanej wszystkich sektorów
+  instytucjonalnych lub wszystkich sekcji Polskiej Klasyfikacji Działalności
+  (PKD) krajowych jednostek produkcyjnych powiększonej o podatki od produktów i
+  pomniejszonej o dotacje do produktów,</p> <p>- od strony rozdysponowania PKB
+  obliczany jest jako suma popytu krajowego, tj. spożycia i akumulacji oraz
+  salda wymiany produktów z zagranicą,</p> <p>- jako sumę rozchodów na rachunku
+  tworzenia dochodów gospodarki ogółem (a więc koszty związane z zatrudnieniem,
+  podatki związane z produkcją i importem pomniejszone o dotacje, nadwyżka
+  operacyjna brutto oraz dochód mieszany gospodarki ogółem).</p> <p>Produkt
+  krajowy brutto jest liczony zgodnie z obowiązującymi w krajach Unii
+  Europejskiej zasadami Europejskiego Systemu Rachunków Narodowych i
+  Regionalnych (ESA 2010) oraz zaleceniami Eurostatu.</p>
+
+en_wyjasnienia_metodologiczne: >-
+  <p><strong>Research and experimental development (R&D)</strong> comprises
+  creative work undertaken on a systematic basis in order to increase the stock
+  of knowledge (e.g. about man, culture and society) and the use of this stock
+  of knowledge to devise new applications. R&amp;D includes: scientific research
+  (basic, applied, industrial) and experimental development.</p>
+  <p><strong>Intramural expenditures on R&D</strong> are expenditures incurred
+  in a reporting year on R&D in the reported entity, irrespective of origin of
+  such funds, i.e. including funds obtained from abroad (exports of R&D). They
+  cover both current expenditures and investment outlays on fixed assets related
+  to R&;D, but do not cover depreciation of these assets.</p> <p>Intramural
+  expenditures on R&D are examined according to the fields of science divided
+  into: natural, engineering and technology, medical and health, agricultural,
+  social as well as humanities sciences. Expenditures on R&D by fields of
+  science are converted according to the percentage share of total
+  expenditures.</p> <p>According to Frascati Manual, agricultural science is a
+  field of science that covers the following fields: agriculture, forestry, and
+  fisheries, animal and dairy science, veterinary science, agricultural
+  biotechnology as well as other agricultural sciences.</p> <p><strong>Gross
+  domestic product (GDP)</strong> presents the final result of the activity of
+  all entities of the national economy in a given year. GDP value can be
+  calculated in three ways:</p> <p>- from the production side GDP is the sum of
+  value added of all institutional sectors or all sections of the Polish
+  Classification of Activities (PKD) of domestic production entities plus taxes
+  less subsidies on products,</p> <p>- from the distribution side GDP is
+  calculated as the sum of domestic demand, i.e. final consumption expenditure
+  and gross capital formation as well as external balance of goods and
+  services,</p> <p>- as the sum of uses in the total economy generation of
+  income account (compensation of<br />employees, taxes less subsidies on
+  production and imports, gross operating surplus and mixed<br />income of the
+  total economy).</p> <p>Gross domestic product is calculated according to the
+  principles of the European System of National and Regional Accounts (ESA
+  2010), whicha are obligatory in the European Union countries, and
+  recommendations of the Eurostat.</p>
+
+en_definicja: >-
+  Ratio of intramural expenditures on R&D in the field of agricultural and veterinary sciences to GDP.
+pl_data_aktualizacji_danych:
+pl_data_aktualizacji_metadanych:
+en_data_aktualizacji_danych:
+en_data_aktualizacji_metadanych:
+---
