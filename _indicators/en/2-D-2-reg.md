@@ -6,7 +6,7 @@ sdg_goal: 2
 indicator:  2.D.2.reg
 target_id:  '2.D.2'
 permalink: /en/statistics_reg/2-D-2/
-pre:  0
+pre:  1
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  en

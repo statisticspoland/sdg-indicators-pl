@@ -42,19 +42,24 @@ function createMapWoj(div, dane, jez, precyzja){
   }));
 
   function formatNumberLocalized(value, precyzja, jez) {
-  let parts = Number(value).toFixed(precyzja).split(".");
+    let parts = Number(value).toFixed(precyzja).split(".");
 
-  // Dodaj separator tysięcy
-  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, jez === "pl" ? " " : ",");
+    // Dodaj separator tysięcy
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, jez === "pl" ? " " : ",");
 
-  // Połącz z separatorem dziesiętnym
-  const decimalSeparator = jez === "pl" ? "," : ".";
-  return parts.join(decimalSeparator);
+    // Połącz z separatorem dziesiętnym
+    const decimalSeparator = jez === "pl" ? "," : ".";
+    return parts.join(decimalSeparator);
   }
 
   polygonSeries.mapPolygons.template.adapters.add("tooltipText", function(_, target) {
     const name = target.dataItem?.dataContext?.name;
     const value = target.dataItem?.dataContext?.value;
+
+    if (name != null && value==0) {
+      const formattedValue = formatNumberLocalized(value, 0, jez);
+      return `${name}: ${formattedValue}`;
+    }
 
     if (name != null && !isNaN(value)) {
       const formattedValue = formatNumberLocalized(value, precyzja, jez);
@@ -87,11 +92,11 @@ function createMapWoj(div, dane, jez, precyzja){
   }]);
 
   function formatDecimal(value, precyzja, jez) {
-  let formatted = Number(value).toFixed(precyzja);
-  if (jez === "pl") {
-    formatted = formatted.replace(".", ",");
-  }
-  return formatted;
+    let formatted = Number(value).toFixed(precyzja);
+    if (jez === "pl") {
+      formatted = formatted.replace(".", ",");
+    }
+    return formatted;
   }
 
   polygonSeries.mapPolygons.template.events.on("pointerover", function(ev) {
@@ -109,7 +114,12 @@ function createMapWoj(div, dane, jez, precyzja){
   let endColor = am5.color(0x6794dc);
 
   if (numericValues.length > 0) {
-    startText = formatNumberLocalized(Math.min(...numericValues), precyzja, jez);
+    if(Math.min(...numericValues)==0){
+      startText = formatNumberLocalized(Math.min(...numericValues), 0, jez);
+    }
+    else{
+      startText = formatNumberLocalized(Math.min(...numericValues), precyzja, jez);
+    }
     endText = formatNumberLocalized(Math.max(...numericValues), precyzja, jez);
   } else {
     // brak danych w ogóle
