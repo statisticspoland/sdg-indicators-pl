@@ -16,7 +16,7 @@ function createchartBar(div, dane, yMin, yMax, precyzja, lata, jez){
     }
   });
   };
-  
+
   const woj = [translate,"Dolnośląskie","Kujawsko-Pomorskie","Lubelskie","Lubuskie","Łódzkie","Małopolskie","Mazowieckie","Opolskie","Podkarpackie","Podlaskie","Pomorskie","Śląskie","Świętokrzyskie","Warmińsko-Mazurskie","Wielkopolskie","Zachodniopomorskie"];
 
   for (let item of dane) {
@@ -130,7 +130,8 @@ am5.array.each(am5.registry.rootElements,
     max: yMax,
     min: yMin,
     strictMinMax: true,
-    renderer: xRenderer
+    renderer: xRenderer,
+    baseValue: 100
   }));
 
 

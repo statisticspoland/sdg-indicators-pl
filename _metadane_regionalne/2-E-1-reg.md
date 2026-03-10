@@ -16,7 +16,7 @@ pl_priorytet: >-
   Badania i rozwój w dziedzinie produkcji żywności i rolnictwa
 pl_definicja: >-
   Nakłady na działalność badawczą i rozwojową w sektorze przedsiębiorstw w produkcji artykułów spożywczych.
-pl_jednostka_prezentacji: tys. zł.
+pl_jednostka_prezentacji: tys. zł
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.

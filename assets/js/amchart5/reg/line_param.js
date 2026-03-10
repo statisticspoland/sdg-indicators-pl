@@ -1,4 +1,4 @@
-function createchartLineParam(div, dane, idx, jez, precyzja){
+function createchartLineParam(div, dane, idx, jez, precyzja, min, baseV){
 
   //console.log(jez);
 
@@ -125,7 +125,8 @@ yRenderer.labels.template.setAll({
 });
 
 var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
-  min: 0,
+  min: min,
+  baseValue: baseV,
   //max: 1427063,
   strictMinMax: false,
   renderer: yRenderer

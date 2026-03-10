@@ -1382,7 +1382,7 @@ function download_csv(csv, filename) {
         delete row["Polska"];
       });
 
-      createchartLineParam("chartLine",  data.slice(1), undefined, "{{ language }}");
+      createchartLineParam("chartLine",  data.slice(1), undefined, "{{ language }}", 0,0);
 
       for(let i=0; i<17; i++){
         $('#row-'+i).toggle();
@@ -1554,7 +1554,7 @@ function updateChartBar(){
             if(maxValue<=5){
               marg = 2;
             }
-            
+
             createchartBar("chartBar", data3, 0, maxValue+marg, 0, [selectedYear], "{{ language }}");
             });
       });
@@ -1644,7 +1644,7 @@ function updateChartLine(){
       });
       //console.log("data2_forEach_line");
       //console.log(data2);
-      createchartLineParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}");
+      createchartLineParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}",0,0);
       });
   });
 

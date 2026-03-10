@@ -16,7 +16,7 @@ pl_priorytet: >-
   Zapewnienie jakości i bezpieczeństwa żywności oraz bezpieczeństwa żywnościowego
 pl_definicja: >-
   Stosunek wartości globalnej produkcji rolniczej (w cenach stałych) w roku badanym do wartości  globalnej produkcji rolniczej w roku poprzednim.
-pl_jednostka_prezentacji:
+pl_jednostka_prezentacji: "-"
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2013 r.
@@ -26,7 +26,7 @@ en_cel: Goal 2. Zero hunger
 en_zadanie: null
 en_priorytet: >-
   Ensuring food quality, safety and food security
-en_jednostka_prezentacji:
+en_jednostka_prezentacji: "-" 
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2013

@@ -1339,6 +1339,7 @@
 
 
 <script>
+
 				function onChangeOption(value){
 					//console.log(value);
 
@@ -1457,7 +1458,12 @@ function download_csv(csv, filename) {
         createchartScatter("chartLine",  data.slice(1),"{{ language }}");
       }
       else{
-        createchartLine("chartLine",  data.slice(1),"{{ language }}");
+        if ('{{ id_map }}' == '2-b-1'){
+          createchartLine("chartLine",  data.slice(1),"{{ language }}", 55, 100);
+        }
+        else {
+          createchartLine("chartLine",  data.slice(1),"{{ language }}",0,0);
+        }
       }
 
       for(let i=0; i<17; i++){
@@ -1476,7 +1482,7 @@ function download_csv(csv, filename) {
 
           //console.log(data2);
 
-          const maxValue = Math.max(
+          var maxValue = Math.max(
             ...data2.slice(1).flatMap(obj =>
               Object.entries(obj)
                 .filter(([key]) => key !== "year")
@@ -1505,6 +1511,22 @@ function download_csv(csv, filename) {
           var marg = 5;
           if(maxValue<=5){
             marg = 2;
+          }
+
+          switch ('{{ id_map }}') {
+            case '2-a-3':
+              maxValue=30000;
+              marg=0;
+              break;
+            case '2-b-4': //przy inicjacji nie ma w wartościach Polski
+              maxValue=2200;
+              marg=0;
+              break;
+            case '2-d-1':
+              maxValue=240;
+              marg=0;
+              break;
+            default:
           }
 
           createchartBar("chartBar", data2.slice(1), 0,maxValue+marg, 0, [lastYearValue],"{{ language }}");
@@ -1601,7 +1623,7 @@ function updateChartBar(){
               }
             }
 
-            const maxValue = Math.max(
+            var maxValue = Math.max(
               ...data3.flatMap(obj =>
                 Object.entries(obj)
                   .filter(([key]) => key !== "year")
@@ -1618,7 +1640,26 @@ function updateChartBar(){
             if(maxValue<=5){
               marg = 2;
             }
-            createchartBar("chartBar", data3, 0, maxValue+marg, 0, [selectedYear],"{{ language }}");
+
+            switch ('{{ id_map }}') {
+              case '2-a-3':
+                maxValue=30000;
+                marg=0;
+                break;
+              case '2-b-4' & !(checkedValuesBar.includes("POLSKA")):
+                maxValue=2200;
+                marg=0;
+                break;
+              case '2-d-1':
+                maxValue=240;
+                marg=0;
+                break;
+              default:
+            }
+
+            var minValue = 0;
+
+            createchartBar("chartBar", data3, minValue, maxValue+marg, 0, [selectedYear],"{{ language }}");
             });
       });
 }
@@ -1673,7 +1714,13 @@ function updateChartLine(){
               createchartScatter("chartLine",  data2.slice(1),"{{ language }}");
             }
             else{
-              createchartLine("chartLine",  data2.slice(1),"{{ language }}");
+              if ('{{ id_map }}' == '2-b-1'){
+                createchartLine("chartLine",  data2.slice(1),"{{ language }}", 55, 100);
+              }
+              else {
+                createchartLine("chartLine",  data2.slice(1),"{{ language }}",0,0);
+              }
+
             }
 
           });
