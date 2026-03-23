@@ -1,4 +1,4 @@
-function createchartBar(div, dane, yMin, yMax, precyzja, lata, jez){
+function createchartBar(div, dane, yMin, yMax,baseV, precyzja, lata, jez){
 
   console.log(dane);
 
@@ -131,7 +131,7 @@ am5.array.each(am5.registry.rootElements,
     min: yMin,
     strictMinMax: true,
     renderer: xRenderer,
-    baseValue: 100
+    baseValue: baseV
   }));
 
 

@@ -247,6 +247,26 @@
             <option style="font-family: Fira Sans" value="2020">2020</option>
             <option style="font-family: Fira Sans" value="2019">2019</option>
           </select>
+          {% elsif id_map == '2-b-1' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+            <option style="font-family: Fira Sans" value="2014">2014</option>
+            <option style="font-family: Fira Sans" value="2013">2013</option>
+          </select>
+          {% elsif id_map == '3-e-15' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2022" selected>2022</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2014">2014</option>
+          </select>
           {% else %}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans" value="2023" selected>2023</option>
@@ -293,7 +313,7 @@
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
   //console.log("{{ id_map }}");
-    if (["1-a-1", "1-f-2", "1-g-3", "1-g-5", "1-g-6", "1-g-7","2-b-3","2-b-4","2-b-5","2-b-6","2-b-7"].includes("{{ id_map }}")) {
+    if (["1-a-1", "1-f-2", "1-g-3", "1-g-5", "1-g-6", "1-g-7","2-b-3","2-b-4","2-b-5","2-b-6","2-b-7","3-d-1","3-d-2","3-d-3","3-d-4","3-d-5","3-e-13","3-e-16","3-e-17","3-g-1"].includes("{{ id_map }}")) {
       createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
     }
     else {
@@ -763,6 +783,26 @@
         <option style="font-family: Fira Sans" value="2021">2021</option>
         <option style="font-family: Fira Sans" value="2020">2020</option>
         <option style="font-family: Fira Sans" value="2019">2019</option>
+      </select>
+      {% elsif id_map == '2-b-1' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+      </select>
+      {% elsif id_map == '3-e-15' %}
+      <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2022" selected>2022</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
       </select>
       {% else %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
@@ -1454,7 +1494,7 @@ function download_csv(csv, filename) {
         delete row["Polska"];
       });
 
-      if ('{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1'){
+      if ('{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1'|| '{{ id_map }}' == '3-e-14'|| '{{ id_map }}' == '3-e-15'){
         createchartScatter("chartLine",  data.slice(1),"{{ language }}");
       }
       else{
@@ -1529,7 +1569,15 @@ function download_csv(csv, filename) {
             default:
           }
 
-          createchartBar("chartBar", data2.slice(1), 0,maxValue+marg, 0, [lastYearValue],"{{ language }}");
+          var baseV = 0;
+          switch ('{{ id_map }}') {
+            case '2-b-1':
+              baseV = 100;
+              break;
+            default:
+              baseV = 0;
+          }
+          createchartBar("chartBar", data2.slice(1), 0,maxValue+marg,baseV, 0, [lastYearValue],"{{ language }}");
           });
     });
 //}, 500);
@@ -1659,7 +1707,16 @@ function updateChartBar(){
 
             var minValue = 0;
 
-            createchartBar("chartBar", data3, minValue, maxValue+marg, 0, [selectedYear],"{{ language }}");
+            var baseV = 0;
+            switch ('{{ id_map }}') {
+              case '2-b-1':
+                baseV = 100;
+                break;
+              default:
+                baseV = 0;
+            }
+
+            createchartBar("chartBar", data3, minValue, maxValue+marg, baseV, 0, [selectedYear],"{{ language }}");
             });
       });
 }

@@ -80,25 +80,66 @@
         {% endif %}
         </label>
  -->
- {% if language == 'pl' %}
-          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-            {% if language == 'pl' %}
-              <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
-              <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">miasto</option>
-              <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">wieś</option>
-            {% else %}
-              <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-              <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
-              <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
-            {% endif %}
-          </select>
-
-  {% else %}
-  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-    <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-    <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
-    <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
-  </select>
+ {% if id_map == '3-c-1' %}
+   {% if language == 'pl' %}
+            <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem">anestezjologia i intensywna terapia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">chirurgia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">choroby płuc</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">choroby wewnętrzne</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">dermatologia i wenerologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">kardiologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">medycyna rodzinna</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">medycyna pracy</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">neurologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">endokrynologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">diabetologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">okulistyka</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">onkologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">otolaryngologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">pediatria</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">położnictwo i ginekologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">psychiatria</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">radiodiagnostyka</option>
+              </select>
+    {% else %}
+      <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem">anesthesiology and intensive therapy</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">surgery</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">respiratory diseases</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">internal diseases</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">dermatology and venereology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">cardiology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">general practitioners</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">medicine service</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">neurology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">endocrinology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">diabetology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">ophthalmology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">oncology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">otolaryngology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">paediatrics</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">obstetrics and gynaecology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">psychiatry</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">radiology and diagnostic imaging</option>
+      </select>
+    {% endif %}
+ {% else %}
+   {% if language == 'pl' %}
+            <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">miasto</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">wieś</option>
+            </select>
+    {% else %}
+      <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
+      </select>
+    {% endif %}
   {% endif %}
       </div>
 
@@ -1439,7 +1480,16 @@ function download_csv(csv, filename) {
             marg = 2;
           }
 
-          createchartBar("chartBar", data3.slice(1), 0,maxValue+marg, 0, [lastYearValue],"{{ language }}");
+          var baseV = 0;
+          /*switch ('{{ id_map }}') {
+            case '2-b-1':
+              baseV = 100;
+              break;
+            default:
+              baseV = 0;
+          }*/
+
+          createchartBar("chartBar", data3.slice(1), 0,maxValue+marg, baseV,0, [lastYearValue],"{{ language }}");
           });
     });
 //}, 500);
@@ -1555,7 +1605,16 @@ function updateChartBar(){
               marg = 2;
             }
 
-            createchartBar("chartBar", data3, 0, maxValue+marg, 0, [selectedYear], "{{ language }}");
+            var baseV = 0;
+            /*switch ('{{ id_map }}') {
+              case '2-b-1':
+                baseV = 100;
+                break;
+              default:
+                baseV = 0;
+            }*/
+
+            createchartBar("chartBar", data3, 0, maxValue+marg, baseV, 0, [selectedYear], "{{ language }}");
             });
       });
 }

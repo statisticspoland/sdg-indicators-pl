@@ -1,0 +1,92 @@
+---
+translation_id: 3-C-6-reg
+pl_title: >-
+  Liczba zgonów z powodu chorób układu oddechowego ogółem na 100 tys. ludności
+pl_graph_title: >-
+  Liczba zgonów z powodu chorób układu oddechowego ogółem na 100 tys. ludności
+en_title: >-
+  Number of deaths due to chronic respiratory disease per 100 thous. population
+en_graph_title: >-
+  Number of deaths due to chronic respiratory disease per 100 thous. population
+pl_nazwa_wskaznika: >-
+  <b>3.C.6  Liczba zgonów z powodu chorób układu oddechowego ogółem na 100 tys. ludności</b>
+pl_cel: Cel 3. Dobre zdrowie i jakość życia
+pl_zadanie: null
+pl_priorytet: >-
+  Zwiększenie dostępności do leczenia specjalistycznego oraz terapeutycznego, ze szczególnym uwzględnieniem chorób cywilizacyjnych
+pl_definicja: >-
+  Liczba zgonów z powodu przewlekłej choroby dróg oddechowych w przeliczeniu na 100 tys. ludności.
+pl_jednostka_prezentacji: Osoby
+pl_dostepne_wymiary: ogółem
+pl_zrodlo_danych: Główny Urząd Statystyczny
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_nazwa_wskaznika: >-
+  <b>3.C.6 Number of deaths due to chronic respiratory disease per 100 thous. population </b>
+en_cel: Goal 3. Good health and well-being
+en_zadanie: null
+en_priorytet: >-
+  Increasing access to specialist and therapeutic treatment, with particular emphasis on lifestyle diseases
+en_jednostka_prezentacji: persons
+en_dostepne_wymiary: total
+en_zrodlo_danych: Statistics Poland
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
+published: true
+pl_wyjasnienia_metodologiczne: >-
+  <p><strong>Zgon</strong> - trwałe, nieodwracalne ustanie czynności
+  narząd&oacute;w niezbędnych dla życia, konsekwencją czego jest ustanie
+  czynności całego ustroju.</p> <p><strong>Przewlekła choroba dr&oacute;g
+  oddechowych</strong> &ndash; wg Międzynarodowej Statystycznej Klasyfikacji
+  Chor&oacute;b i Problem&oacute;w Zdrowotnych ICD-10: jednostki chorobowe o
+  symbolach J30-J98 - schorzenia dotyczące chor&oacute;b g&oacute;rnych i
+  dolnych dr&oacute;g oddechowych.</p> <p>Źr&oacute;dłem informacji o zgonach
+  jest wykorzystywany wt&oacute;rnie przez statystykę indywidualny dokument
+  'Karta zgonu' (Rozporządzenie Ministra Zdrowia w sprawie wzoru karty zgonu i
+  sposobu jej wypełniania Dz. U. 2015 r., poz. 231).</p> <p>Dane o zgonach
+  opracowano w podziale terytorialnym - według miejsca zameldowania na pobyt
+  stały osoby zmarłej. Przy opracowywaniu danych zgon&oacute;w według przyczyn
+  przyjmuje się wyjściowa przyczynę zgonu. Za przyczynę wyjściową uważa się
+  chorobę stanowiącą początek procesu chorobowego, kt&oacute;ry doprowadził do
+  zgonu albo uraz czy zatrucie, w wyniku kt&oacute;rego nastąpił zgon. Dane
+  dotyczące orzecznictwa o przyczynach zgon&oacute;w podano zgodnie z
+  Międzynarodową Statystyczną Klasyfikacją Chor&oacute;b i Problem&oacute;w
+  Zdrowotnych (X Rewizja).</p> <p><strong>Ludność</strong> opracowano na
+  podstawie:</p> <ul> <li>bilans&oacute;w ludności zamieszkałej na terenie gminy
+  w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2021 (dla
+  danych od 2020 r.) dla lat wcześniejszych (2010-2019) w oparciu o dane
+  Narodowego Spisu Powszechnego Ludności i Mieszkań 2011,</li>
+  <li>rejestr&oacute;w Ministerstwa Spraw Wewnętrznych i Administracji -
+  migracje wewnętrzne i zagraniczne na pobyt stały (od 2006 r. dane są pobierane
+  z rejestru PESEL - Powszechny Elektroniczny System Ewidencji Ludności),</li>
+  <li>sprawozdań urzęd&oacute;w stanu cywilnego - urodzenia, zgony.</li>
+  </ul></ul>
+
+en_wyjasnienia_metodologiczne: >-
+  <p><strong>Death</strong> - permanent, irreversible cessation of functions of
+  the essential for life organs, the consequence of which is the cessation of
+  all functions of the whole organism.</p> <p><strong>Chronic respiratory tract
+  disease</strong> &ndash; according to the International Classification of
+  Diseases ICD -10: diseases marked with symbols J30-J98 &ndash; disorders
+  related to the upper and lower respiratory tract.</p> <p>When compiling the
+  data on deaths by cause the initial cause of death is assumed. The initial
+  cause is the disease, which was at the beginning of the morbid process and
+  which caused the death it may be also the injury or the poisoning, which
+  caused the death.</p> <p>Data relating to the judicature on the causes of
+  death are given in accordance with the International Statistical
+  Classification of Diseases and Related Health Problems (Revision X).</p>
+  <p>Data on <strong>population</strong> were compiled on the basis of:</p> <ul>
+  <li>the balances of the residing population in a gmina based on the results of
+  2021 Population and Housing Census (for data since 2020) for previous years
+  (2010 - 2019) on the basis of the 2011 Population and Housing Census,</li>
+  <li>the registers of the Ministry of Interior - internal and international
+  migration of population for permanent residence (since 2006 the presented data
+  come from the Common Electronic System of Population Register - PESEL),</li>
+  <li>documentation of Civil Status Offices regarding registered marriages,
+  births and deaths.</li> </ul>
+
+en_definicja: >-
+  Number of deaths due to chronic respiratory disease per 100 thous. population.
+pl_data_aktualizacji_danych:
+pl_data_aktualizacji_metadanych:
+en_data_aktualizacji_danych:
+en_data_aktualizacji_metadanych:
+---

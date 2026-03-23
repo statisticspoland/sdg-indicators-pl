@@ -1,0 +1,112 @@
+---
+translation_id: 3-A-3-reg
+pl_title: >-
+  Liczba pielęgniarek i położnych (pracujących wg podstawowego miejsca pracy) na 10 tys. ludności
+pl_graph_title: >-
+  Liczba pielęgniarek i położnych (pracujących wg podstawowego miejsca pracy) na 10 tys. ludności
+en_title: >-
+  Number of nurses and midwives per 10 thous. population (employed persons in the main place of work)
+en_graph_title: >-
+  Number of nurses and midwives per 10 thous. population (employed persons in the main place of work)
+pl_nazwa_wskaznika: >-
+  <b>3.A.3  Liczba pielęgniarek i położnych (pracujących wg podstawowego miejsca pracy) na 10 tys. ludności</b>
+pl_cel: Cel 3. Dobre zdrowie i jakość życia
+pl_zadanie: null
+pl_priorytet: >-
+  Zwiększenie dostępności do usług publicznych z zakresu ochrony zdrowia
+pl_definicja: >-
+  Liczba pielęgniarek i położnych (pracujących bezpośrednio z pacjentem) w przeliczeniu na 10 tys. ludności.
+pl_jednostka_prezentacji: Osoby
+pl_dostepne_wymiary: ogółem
+pl_zrodlo_danych: Główny Urząd Statystyczny
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_nazwa_wskaznika: >-
+  <b>3.A.3 Number of nurses and midwives per 10 thous. population (employed persons in the main place of work)</b>
+en_cel: Goal 3. Good health and well-being
+en_zadanie: null
+en_priorytet: >-
+  Increasing access to public health services
+en_jednostka_prezentacji: persons
+en_dostepne_wymiary: total
+en_zrodlo_danych: Statistics Poland
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
+published: true
+pl_wyjasnienia_metodologiczne: >-
+  <p><strong>Pielęgniarką lub pielęgniarzem</strong> jest osoba, która posiada
+  wymagane kwalifikacje, potwierdzone odpowiednimi dokumentami do udzielania
+  świadczeń zdrowotnych (w szczególności świadczeń pielęgnacyjnych,
+  zapobiegawczych, diagnostycznych, leczniczych, rehabilitacyjnych oraz z
+  zakresu promocji zdrowia). (Ustawa z dnia 5 lipca 1996 r. o zawodach
+  pielęgniarki i położnej - tekst jednolity: Dz.U. 2009 r. Nr 151 poz. 1217 z
+  późn. zm.).</p> <p><strong>Położną lub położnym</strong> jest osoba, która
+  posiada wymagane kwalifikacje, potwierdzone odpowiednimi dokumentami do
+  udzielania świadczeń zdrowotnych (w szczególności świadczeń pielęgnacyjnych,
+  zapobiegawczych, diagnostycznych, leczniczych, rehabilitacyjnych oraz promocji
+  zdrowia, w zakresie opieki nad kobietą, kobietą ciężarną, rodzącą i położnicą
+  oraz nad noworodkiem). (Ustawa z dnia 5 lipca 1996 r. o zawodach pielęgniarki
+  i położnej. Tekst pierwotny: Dz. U. 1996 r. Nr 91 poz. 410 tekst jednolity:
+  Dz. U. 2001 r. Nr 57 poz. 602 z późn. zm).</p> <p><strong>Pracujący
+  bezpośrednio z pacjentem </strong> - są to osoby wykazane jako pracujące w
+  przynajmniej jednym ze źródeł: RPWDL (Rejestr Podmiotów Wykonujących
+  Działalność Leczniczą), NFZ (wykaz podmiotów mających podpisany kontrakt z
+  NFZ), BJS (podmioty z Bazy Jednostek Statystycznych, działające według PKD w
+  sekcji Q Opieka zdrowotna i pomoc społeczna) lub aktywnej praktyce
+  (indywidualnej lub grupowej).</p> <p><strong>Przy wyznaczaniu głównego miejsca
+  pracy dla osób pracujących z pacjentem stosuje się następujące kolejne
+  kryteria:</strong></p> <p>• w przypadku, gdy osoba pracuje w jednym miejscu,
+  jest to jej główne miejsce pracy;</p> <p>• w przypadku, gdy osoba pracuje w
+  więcej niż jednym miejscu pracy, za główne, miejsce pracy uważa się to, w
+  którym wymiar czasu pracy jest największy;</p> <p>• kolejnym kryterium wyboru
+  głównego miejsca pracy były: podstawa wymiaru składki na ubezpieczenie
+  emerytalne, a w razie niemożności jej wykorzystania – podstawa wymiaru składki
+  na ubezpieczenie zdrowotne;</p> <p>• w przypadku, gdy powyższe, kolejno
+  stosowane kryteria nie pozwalają na dokonanie jednoznacznego wyboru, za główne
+  miejsce pracy uważa się to, w którym pracujący w zawodzie lekarza lub lekarza
+  dentysty lub pielęgniarki lub położnej jest zatrudniony na umowę o pracę (tj.
+  gdzie pierwsze cztery cyfry kodu tytułu ubezpieczenia to 01 10);</p> <p>• w
+  pozostałych przypadkach, główne miejsce pracy ustalone jest losowo.</p>
+
+
+en_wyjasnienia_metodologiczne: >-
+  <p>A <strong>nurse</strong> - a person who has required qualifications,
+  confirmed by appropriate documents, to perform the profession of a nurse,
+  which consists of providing health services (in particular as regards nursing,
+  preventive, diagnostic, medical, rehabilitative and health promotion services.
+  (Act of 5 July 1996 on the Profession of Nurses and Midwives - consolidated
+  text: Journal of Laws of 2009, No. 151, item 1217, with subsequent
+  amendments).</p> <p>A <strong>midwife</strong> - a person who has required
+  qualifications, confirmed by appropriate documents, to perform the profession
+  of a midwife, which consists of providing health services (in particular as
+  regards nursing, preventive, diagnostic, medical, rehabilitative a and health
+  promotion services, connected with care over a woman, a pregnant woman, a
+  childbearing woman, a woman lying-in as well as over an infant). (Act of 5
+  July 1996 on the Profession of Nurses and Midwives. Original text : Journal of
+  Laws 1996 No 91, item 410 consolidated text: Journal of Laws of 2001, No. 57,
+  item 602, with later amendments).</p> <p><strong>Persons working directly with
+  a patient</strong> - persons indicated as working in at least one of the
+  sources: Register of Entities Performing Medical Activity, list of entities
+  having a contract with National Health Fund, entities from the Statistical
+  Units Base, operating according to the Polish Classification of Activity in
+  Section Q Health and social work or active practice (individual or group).</p>
+  <p><strong>The following criteria are used in determining the main place of
+  work for people working with a patient:</strong></p> <p>• if a person works in
+  one place, this is their main place of work;</p> <p>• if a person works in
+  more than one workplace, the main workplace is considered to be the one where
+  the working time is the greatest;</p> <p>• another criterion for choosing the
+  main place of work was: the basis for assessing the pension insurance
+  contribution, and if it is impossible to use it - the basis for assessing the
+  health insurance contribution;</p> <p>• if the above, successively applied
+  criteria do not allow for an unambiguous choice, the main place of work is
+  considered to be the one where the person working in the profession of a
+  doctor or dentist or nurse or midwife is employed under an employment contract
+  (i.e. where the first four the digits of the insurance title code are 01
+  10);</p> <p>• in other cases, the main place of work is determined
+  randomly.</p>
+
+en_definicja: >-
+  Number of nurses and midwives (working directly with a patient) per 10 thous. population.
+pl_data_aktualizacji_danych:
+pl_data_aktualizacji_metadanych:
+en_data_aktualizacji_danych:
+en_data_aktualizacji_metadanych:
+---
