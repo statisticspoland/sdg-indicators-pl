@@ -6,7 +6,7 @@ sdg_goal: 3
 indicator:  3.F.4.reg
 target_id:  '3.F.4'
 permalink: /statistics_reg/3-F-4/
-pre:  1
+pre:  2
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  pl
