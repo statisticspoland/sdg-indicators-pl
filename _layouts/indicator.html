@@ -257,13 +257,13 @@ function Zmiana_jednostki(){
   labels.shift()
   var lan='{{language}}'
 
-    if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
+    if (document.getElementById("Jednostka").innerHTML=='Zmień wymiar - na 1 mieszkańca' || document.getElementById("Jednostka").innerHTML=='Change dimension - per capita'){
       var calo={{ row1 | jsonify }}
       for (i=0;i<naglowek_ang.length;i++){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(12,24);
+      calosc=calo.splice(15,30);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -273,14 +273,14 @@ function Zmiana_jednostki(){
 
       chart.update({labels: labels,series: seria})
       if(lan=='pl'){
-        document.getElementById("tytul").innerHTML = "tona";
-        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tys. ton";
+        document.getElementById("tytul").innerHTML = "tony";
+        document.getElementById("Jednostka").innerHTML = "Zmień wymiar - ogółem w tysiącach";
         $(".ct-series-0").text('na 1 mieszkańca');
 
       }
       if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "tonne";
-        document.getElementById("Jednostka").innerHTML = "Change unit - thous. tonnes";
+        document.getElementById("tytul").innerHTML = "tonnes";
+        document.getElementById("Jednostka").innerHTML = "Change dimension - total in thousands";
         $(".ct-series-0").text('per capita');
       }
 
@@ -291,7 +291,7 @@ function Zmiana_jednostki(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(0,12);
+      calosc=calo.splice(0,15);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -301,14 +301,14 @@ function Zmiana_jednostki(){
 
       chart.update({labels: labels,series: seria})
       if(lan='pl'){
-        document.getElementById("tytul").innerHTML = "tys. ton";
-        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tona";
-        $(".ct-series-0").text('ogółem');
+        document.getElementById("tytul").innerHTML = "tony";
+        document.getElementById("Jednostka").innerHTML = "Zmień wymiar - na 1 mieszkańca";
+        $(".ct-series-0").text('ogółem w tysiącach');
       }
       if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "thous. tonnes";
-        document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
-        $(".ct-series-0").text('total');
+        document.getElementById("tytul").innerHTML = "tonnes";
+        document.getElementById("Jednostka").innerHTML = "Change dimension - per capita";
+        $(".ct-series-0").text('total in thousands');
       }
 
     }
@@ -321,13 +321,13 @@ function Zmiana_jednostki4(){
   labels.shift()
   var lan='{{language}}'
 
-    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tony' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonnes'){
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień wymiar - na 1 mieszkańca' || document.getElementById("Jednostka4").innerHTML=='Change dimension - per capita'){
       var calo={{ row1 | jsonify }}
       for (i=0;i<naglowek_ang.length;i++){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(12,24);
+      calosc=calo.splice(15,30);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -338,13 +338,13 @@ function Zmiana_jednostki4(){
       chart.update({labels: labels,series: seria})
       if(lan=='pl'){
         document.getElementById("tytul").innerHTML = "tony";
-        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień wymiar - ogółem w tysiącach";
         $(".ct-series-0").text('na 1 mieszkańca');
 
       }
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "tonnes";
-        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change dimension - total in thousands";
         $(".ct-series-0").text('per capita');
       }
 
@@ -355,7 +355,7 @@ function Zmiana_jednostki4(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(0,12);
+      calosc=calo.splice(0,15);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -365,14 +365,14 @@ function Zmiana_jednostki4(){
 
       chart.update({labels: labels,series: seria})
       if(lan='pl'){
-        document.getElementById("tytul").innerHTML = "tys. ton";
-        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tony";
-        $(".ct-series-0").text('ogółem');
+        document.getElementById("tytul").innerHTML = "tony";
+        document.getElementById("Jednostka4").innerHTML = "Zmień wymiar - na 1 mieszkańca";
+        $(".ct-series-0").text('ogółem w tysiącach');
       }
       if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "thous. tonnes";
-        document.getElementById("Jednostka4").innerHTML = "Change unit - tonnes";
-        $(".ct-series-0").text('total');
+        document.getElementById("tytul").innerHTML = "tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change dimension - per capita";
+        $(".ct-series-0").text('total in thousands');
       }
 
     }
