@@ -228,13 +228,15 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
 
 for(const w of wojToSerie){
 
+    const format = "#." + "0".repeat(precyzja);
+    //console.log(format);
     var series2 = chart.series.push(am5xy.LineSeries.new(root, {
       name: w.replace('_','').replace('_',''),
       xAxis: xAxis,
       yAxis: yAxis,
       valueYField: w,
       valueXField: "year",
-      legendLabelText: "{name}: {valueY}",
+      legendLabelText: "{name}: " + `{valueY.formatNumber('${format}')}`,
       stroke: am5.color(wojColors[w])
       /*tooltip: am5.Tooltip.new(root, {
         pointerOrientation: "horizontal",
@@ -244,7 +246,7 @@ for(const w of wojToSerie){
 
     var tooltip = am5.Tooltip.new(root, {
       pointerOrientation: "horizontal",
-      labelText: w.replace('_','').replace('_','') + ": {valueY}",
+      labelText: w.replace('_','').replace('_','') + ": " + `{valueY.formatNumber('${format}')}`,
       getFillFromSprite: false
     });
 

@@ -1,6 +1,7 @@
 function createchartBar(div, dane, yMin, yMax,baseV, precyzja, lata, jez){
 
-  console.log(dane);
+  //console.log(dane);
+  //console.log(precyzja);
 
   var translate = ""
   if (jez != "en") {
@@ -137,7 +138,9 @@ am5.array.each(am5.registry.rootElements,
 
   // Add series
   // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
-  function makeSeries(name, fieldName) {
+  function makeSeries(name, fieldName, precyzja) {
+    const format = "#." + "0".repeat(precyzja);
+    //console.log("Format:"+format);
     var series = chart.series.push(am5xy.ColumnSeries.new(root, {
       name: name.toLocaleLowerCase("pl-PL").charAt(0).toLocaleUpperCase("pl-PL")+name.toLocaleLowerCase("pl-PL").slice(1),
       xAxis: xAxis,
@@ -149,7 +152,7 @@ am5.array.each(am5.registry.rootElements,
     }));
 
     series.columns.template.setAll({
-      tooltipText: "{categoryY}, {name}: {valueX.formatNumber('#,###')}",
+      tooltipText: `{categoryY}, {name}: {valueX.formatNumber('${format}')}`,
       width: am5.percent(75),
       tooltipY: 0,
       strokeOpacity: 0
@@ -189,7 +192,7 @@ series.columns.template.adapters.add("fill", function(fill, target) {
   }
 
   lata.forEach((item, i) => {
-    makeSeries(item, item);
+    makeSeries(item, item, precyzja);
   });
 
   // Make stuff animate on load
