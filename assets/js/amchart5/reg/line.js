@@ -1,4 +1,4 @@
-function createchartLine(div, dane, jez, min, baseV){
+function createchartLine(div, dane, jez, min, baseV, precyzja){
 
   //console.log(jez);
   //console.log(dane);
@@ -180,13 +180,15 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
 
   for(const w of wojToSerie){
 
+    const format = "#." + "0".repeat(precyzja);
+
     var series2 = chart.series.push(am5xy.LineSeries.new(root, {
       name: w,
       xAxis: xAxis,
       yAxis: yAxis,
       valueYField: w,
       valueXField: "year",
-      legendLabelText: "{name}: {valueY}",
+      legendLabelText: "{name}: " + `{valueY.formatNumber('${format}')}`,
       stroke: am5.color(wojColors[w])
       /*tooltip: am5.Tooltip.new(root, {
         pointerOrientation: "horizontal",
@@ -196,7 +198,7 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
 
     var tooltip = am5.Tooltip.new(root, {
       pointerOrientation: "horizontal",
-      labelText: w + ": {valueY}",
+      labelText: w + " " + `{valueY.formatNumber('${format}')}`,
       getFillFromSprite: false
     });
 
