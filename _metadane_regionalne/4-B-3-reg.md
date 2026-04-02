@@ -10,7 +10,7 @@ en_graph_title: >-
   Number of disabled students receiving individual teaching in primary schools
 pl_nazwa_wskaznika: >-
   <b>4.B.3 Liczba uczniów niepełnosprawnych indywidualnie nauczanych w szkołach podstawowych</b>
-pl_cel: Cel 4.  Dobra jakość edukacji
+pl_cel: Cel 4. Dobra jakość edukacji
 pl_zadanie: null
 pl_priorytet: >-
   Dostęp do wysokiej jakości edukacji uczniów uzdolnionych ze szczególnymi potrzebami

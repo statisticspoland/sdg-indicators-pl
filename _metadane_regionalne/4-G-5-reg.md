@@ -1,0 +1,238 @@
+---
+translation_id: 4-G-5-reg
+pl_title: >-
+  Odsetek osób posiadających podstawowe lub ponadpodstawowe umiejętności cyfrowe
+pl_graph_title: >-
+  Odsetek osób posiadających podstawowe lub ponadpodstawowe umiejętności cyfrowe
+pl_nazwa_wskaznika: >-
+  <b>4.G.5 Odsetek osób posiadających podstawowe lub ponadpodstawowe umiejętności cyfrowe</b>
+en_title: >-
+  Percentage of persons with above basic overall digital skills
+en_graph_title: >-
+  Percentage of persons with above basic overall digital skills
+en_nazwa_wskaznika: >-
+  <b>4.G.5 Percentage of persons with above basic overall digital skills</b>
+pl_cel: Cel 4. Dobra jakość edukacji
+en_cel: Goal 4. Quality education
+pl_zadanie: null
+en_zadanie: null
+pl_priorytet: >-
+  Nabywanie kluczowych umiejętności na wszystkich etapach edukacji
+en_priorytet: >-
+  Acquiring key skills at all stages of education
+pl_definicja: >-
+  Odsetek osób w wieku 16-74 lata posiadających ponadpodstawowe umiejętności cyfrowe.
+en_definicja: >-
+  Proportion of persons aged 16-74 having above basic overall digital skills.
+pl_jednostka_prezentacji: "%"
+en_jednostka_prezentacji: "%"
+pl_dostepne_wymiary: ogółem
+en_dostepne_wymiary: total
+pl_zrodlo_danych: Główny Urząd Statystyczny
+en_zrodlo_danych: Statistics Poland
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2015 r.
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2015
+published: true
+pl_wyjasnienia_metodologiczne: >-
+  <p>Dane pochodzą z badania&nbsp;<em>Wykorzystania technologii
+  informacyjno-komunikacyjnych w gospodarstwach domowych i wśr&oacute;d
+  os&oacute;b indywidualnych</em>, kt&oacute;re jest badaniem reprezentacyjnym,
+  ankietowym. Realizowane jest metodą wywiadu bezpośredniego, telefonicznego lub
+  samospisu internetowego, udział w badaniu jest dobrowolny. Badanie odbywa się
+  w kwietniu i maju każdego roku. Zgodnie z wymogami określonymi w
+  rozporządzeniach Komisji Europejskiej badanie obejmuje gospodarstwa domowe (z
+  przynajmniej jedną osobą w wieku 16-74 lata) znajdujące się na terenie całego
+  kraju oraz wszystkie osoby w wieku 16-74 lata w tych gospodarstwach. Badaniem
+  nie są objęte osoby mieszkające w gospodarstwach zbiorowych, takich jak: domy
+  studenckie, hotele robotnicze, domy opieki społecznej, zakony, szpitale,
+  koszary, zakłady karne itp. Cudzoziemcy mogą uczestniczyć w badaniu, o ile
+  posiadają znajomość języka polskiego.</p> <p>Wskaźnik dotyczy os&oacute;b
+  posiadających dwa najwyższe z sześciu poziom&oacute;w og&oacute;lnych
+  umiejętności cyfrowych:</p> <ul> <li style="text-align: justify;">Osoby
+  posiadające&nbsp;<strong>podstawowe og&oacute;lne umiejętności
+  cyfrowe</strong>&nbsp;&ndash; osoby, kt&oacute;re korzystały z Internetu w
+  ciągu ostatnich 3 miesięcy i posiadały każdy rodzaj umiejętności cyfrowych w
+  zakresie korzystania z informacji i danych, komunikacji i wsp&oacute;łpracy,
+  tworzenia treści cyfrowych, bezpieczeństwa i rozwiązywania problem&oacute;w,
+  ale nie wszystkie na poziomie ponadpodstawowym,</li> <li style="text-align:
+  justify;">Osoby posiadające&nbsp;<strong>ponadpodstawowe og&oacute;lne
+  umiejętności cyfrowe</strong>&nbsp;&ndash; osoby, kt&oacute;re korzystały z
+  Internetu w ciągu ostatnich 3 miesięcy i posiadały każdy rodzaj umiejętności
+  cyfrowych w zakresie korzystania z informacji i danych, komunikacji i
+  wsp&oacute;łpracy, tworzenia treści cyfrowych, bezpieczeństwa i rozwiązywania
+  problem&oacute;w na poziomie ponadpodstawowym.</li> </ul> <p>Osoby posiadające
+  poszczeg&oacute;lne rodzaje umiejętności cyfrowych na co najmniej podstawowym
+  poziomie definiuje się następująco:</p> <p style="text-align: justify;">Osoby
+  posiadające&nbsp;<strong>podstawowe umiejętności korzystania z informacji i
+  danych</strong>&nbsp;&ndash; osoby, kt&oacute;re korzystały z Internetu w
+  ciągu ostatnich 3 miesięcy i wykonywały tylko jedną z następujących czynności:
+  wyszukiwanie w Internecie informacji o towarach lub usługach; wyszukiwanie w
+  Internecie informacji związanych ze zdrowiem (np. o urazach, chorobach,
+  odżywianiu, poprawie zdrowia itp.); czytanie online wiadomości, gazet lub
+  czasopism oraz niesprawdzanie prawdziwości treści znalezionych w Internecie
+  ponieważ wiedziało się że treść lub źr&oacute;dło nie jest wiarygodne;
+  sprawdzanie prawdziwości treści znalezionych w Internecie,</p> <p
+  style="text-align: justify;">Osoby posiadające<strong>&nbsp;ponadpodstawowe
+  umiejętności korzystania z informacji i danych</strong>&nbsp;&ndash; osoby,
+  kt&oacute;re korzystały z Internetu w ciągu ostatnich 3 miesięcy i wykonywały
+  więcej niż jedną z wymienionych wyżej czynności,</p> <p style="text-align:
+  justify;">Osoby posiadające&nbsp;<strong>podstawowe umiejętności w zakresie
+  komunikacji i wsp&oacute;łpracy </strong>&ndash; osoby, kt&oacute;re
+  korzystały z Internetu w ciągu ostatnich 3 miesięcy i wykonywały tylko jedną z
+  następujących czynności: wysyłanie, odbieranie poczty elektronicznej;
+  korzystanie z serwis&oacute;w społecznościowych (tworzenie profilu
+  użytkownika, wysyłanie wiadomości do znajomych lub inne formy uczestnictwa w
+  takich serwisach, jak np. Facebook, Twitter, Instagram itp.); wykonywanie
+  rozm&oacute;w głosowych lub wideo przez Internet; korzystanie z
+  komunikator&oacute;w; wyrażanie opinii w sprawach społecznych lub politycznych
+  na stronach internetowych lub w serwisach społecznościowych; udział online w
+  konsultacjach społecznych, głosowanie w sprawach obywatelskich lub
+  politycznych,</p> <p style="text-align: justify;">Osoby
+  posiadające&nbsp;<strong>ponadpodstawowe umiejętności w zakresie komunikacji i
+  wsp&oacute;łpracy </strong>&ndash; osoby, kt&oacute;re korzystały z Internetu
+  w ciągu ostatnich 3 miesięcy i wykonywały więcej niż jedną z wymienionych
+  wyżej czynności,</p> <p style="text-align: justify;">Osoby
+  posiadające&nbsp;<strong>podstawowe umiejętności tworzenia treści cyfrowych
+  </strong>&ndash; osoby, kt&oacute;re korzystały z Internetu w ciągu ostatnich
+  3 miesięcy i wykonywały jedną lub dwie z następujących czynności: korzystanie
+  z edytor&oacute;w tekstu; korzystanie z arkuszy kalkulacyjnych; edytowanie
+  zdjęć, plik&oacute;w video lub audio; kopiowanie lub przenoszenie
+  plik&oacute;w; tworzenie plik&oacute;w (np. dokument&oacute;w, zdjęć, wideo)
+  łączących kilka element&oacute;w takich jak tekst, obrazki, tabele, wykresy,
+  animacje lub dźwięk (np. Microsoft Power Point, OpenOffice Impress,
+  LibreOffice Impress); korzystanie z zaawansowanych narzędzi (funkcji, formuł,
+  makro, Visual Basic) w celu organizacji, analizy lub zarządzania danymi;
+  kodowanie/programowanie w języku programowania,</p> <p style="text-align:
+  justify;">Osoby posiadające&nbsp;<strong>ponadpodstawowe umiejętności
+  tworzenia treści cyfrowych </strong>&ndash; osoby, kt&oacute;re korzystały z
+  Internetu w ciągu ostatnich 3 miesięcy i wykonywały co najmniej trzy z
+  wymienionych wyżej czynności,</p> <p style="text-align: justify;">Osoby
+  posiadające&nbsp;<strong>podstawowe umiejętności związane z bezpieczeństwem
+  </strong>&ndash; osoby, kt&oacute;re korzystały z Internetu w ciągu ostatnich
+  3 miesięcy i wykonywały jedną lub dwie z następujących czynności: sprawdzanie
+  czy strona, na kt&oacute;rej ma Pan/Pani podać informacje osobiste jest
+  bezpieczna; czytanie zasad polityki prywatności przed udostępnieniem/podaniem
+  informacji osobistych; odmowa dostępu do swojej lokalizacji geograficznej;
+  ograniczanie dostępu do swojego profilu, własnych treści na portalu
+  społecznościowym lub wsp&oacute;łdzielonej przestrzeni w Internecie; odmowa
+  wykorzystania informacji osobistych w celach reklamowych; zmiana ustawień w
+  swojej przeglądarce internetowej, aby zapobiec lub ograniczyć liczbę
+  ciasteczek (cookies) instalowanych na dowolnym urządzeniu,</p> <p
+  style="text-align: justify;">Osoby posiadające&nbsp;<strong>ponadpodstawowe
+  umiejętności związane z bezpieczeństwem </strong>&ndash; osoby, kt&oacute;re
+  korzystały z Internetu w ciągu ostatnich 3 miesięcy i wykonywały co najmniej
+  trzy z wymienionych wyżej czynności.</p> <p style="text-align: justify;">Osoby
+  posiadające&nbsp;<strong>podstawowe umiejętności rozwiązywania
+  problem&oacute;w </strong>&ndash; osoby, kt&oacute;re korzystały z Internetu w
+  ciągu ostatnich 3 miesięcy i wykonywały jedną lub dwie z następujących
+  czynności: pobieranie lub instalowanie aplikacji (apki) lub oprogramowania;
+  zmienianie ustawień dowolnego oprogramowania, aplikacji (apek) lub urządzeń
+  (np. zmiana wersji językowej, wersji kolorystycznej, rozmiaru czcionki,
+  dostosowanie paska narzędzi/menu); kupowanie przez Internet towar&oacute;w lub
+  usług do prywatnego użytku w ciągu ostatnich 12 miesięcy; sprzedawanie
+  towar&oacute;w lub usług przez stronę internetową lub aplikację;
+  uczestniczenie w kursie online lub korzystanie z materiał&oacute;w
+  szkoleniowych online innych niż pełny kurs online; korzystanie z bankowości
+  internetowej przez stronę internetową lub aplikację; szukanie pracy,
+  aplikowanie o pracę, wysyłanie CV,</p> <p style="text-align: justify;">Osoby
+  posiadające&nbsp;<strong>ponadpodstawowe umiejętności rozwiązywania
+  problem&oacute;w </strong>&ndash; osoby, kt&oacute;re korzystały z Internetu w
+  ciągu ostatnich 3 miesięcy i wykonywały co najmniej trzy z wymienionych wyżej
+  czynności.</p>
+   
+en_wyjasnienia_metodologiczne: >-
+  <p style="text-align: justify;">The data are from the survey of Information
+  and Communication Technology use in households and among individuals, which is
+  a sample, questionnaire-based survey. It is carried out by face-to-face
+  interview, telephone interview or online self-report, and participation in the
+  survey is voluntary. The survey takes place in April and May each year. As
+  required by European Commission regulations, the survey covers households
+  (with at least one person aged 16-74) located throughout the country and all
+  persons aged 16-74 in these households. Persons living in collective
+  households such as dormitories, workers' hotels, welfare homes, convents,
+  hospitals, barracks, prisons, etc. are not covered by the survey. Foreigners
+  may participate in the survey as long as they have knowledge of the Polish
+  language.</p> <p>The indicator refers to individuals with the two highest of
+  six levels of general digital skills:</p> <ul> <li style="text-align:
+  justify;">Individuals with <strong>basic general digital skills</strong> -
+  individuals who have used the internet in the last 3 months and have any type
+  of digital skills in using information and data, communication and
+  collaboration, digital content creation, security and problem solving, but not
+  all at above basic level.</li> <li style="text-align: justify;">Individuals
+  with <strong>above basic general digital skills</strong> - individuals who
+  have used the internet in the last 3 months and have any type of digital
+  skills in using information and data, communication and collaboration,
+  creating digital content, safety and problem solving at above basic
+  level.</li> </ul> <p>Individuals with each type of digital literacy skills at
+  least at a basic level are defined as follows:</p> <p style="text-align:
+  justify;">Individuals with <strong>basic information and data literacy
+  skills</strong> - individuals who have used the Internet in the past 3 months
+  and have done only one of the following: searching the Internet for
+  information about goods or services; searching the Internet for health-related
+  information (e.g. about injuries, diseases, nutrition, health improvement,
+  etc.); reading online news, newspapers or magazines and not checking the
+  veracity of the content found on the Internet because one knew that the
+  content or source was not reliable; checking the veracity of the content found
+  on the Internet.</p> <p style="text-align: justify;">Individuals with
+  <strong>above basic information and data literacy skills</strong> -
+  individuals who have used the Internet in the last 3 months and have done more
+  than one of the activities listed above.</p> <p style="text-align:
+  justify;">Individuals with <strong>basic communication and collaboration
+  skills</strong> - individuals who have used the Internet in the past 3 months
+  and have done only one of the following: sending, receiving email; using
+  social networking sites (creating a user profile, sending messages to friends
+  or other forms of participation in sites such as Facebook, Twitter, Instagram,
+  etc.); making voice or video calls over the Internet; using instant messaging;
+  expressing opinions on social or political issues on websites or social
+  networking sites; participating online in community consultations, voting on
+  civil or political issues.</p> <p style="text-align: justify;">Individuals
+  with <strong>above basic communication and collaboration skills</strong> -
+  those who have used the internet in the last 3 months and have done more than
+  one of the activities listed above.</p> <p style="text-align:
+  justify;">Individuals with <strong>basic digital content creation
+  skills</strong> - individuals who have used the Internet in the last 3 months
+  and have done one or two of the following: using word processing; using
+  spreadsheets; editing photos, video or audio files; copying or moving files;
+  creating files (e.g. creating files (e.g. documents, photos, videos) combining
+  several elements such as text, images, tables, charts, animations or sound
+  (e.g. Microsoft Power Point, OpenOffice Impress, LibreOffice Impress); using
+  advanced tools (functions, formulas, macros, Visual Basic) to organise,
+  analyse or manage data; coding/programming in a programming language.</p> <p
+  style="text-align: justify;">Individuals with <strong>above basic digital
+  content creation skills</strong> - individuals who have used the internet in
+  the last 3 months and performed at least three of the activities listed
+  above.</p> <p style="text-align: justify;">Individuals having <strong>basic
+  safety skills </strong>- individuals who have used the internet in the last 3
+  months and have done one or two of the following: checking that the website
+  where you are to provide personal information is secure; reading privacy
+  policies before sharing/providing personal information; denying access to your
+  geographical location; restricting access to your profile, your own content on
+  a social network or shared space on the internet; denying the use of personal
+  information for advertising purposes; changing the settings on your web
+  browser to prevent or limit the number of cookies installed on any device.</p>
+  <p style="text-align: justify;">Individuals having <strong>above basic safety
+  skills</strong> - individuals who have used the internet in the last 3 months
+  and performed at least three of the activities listed above.</p> <p
+  style="text-align: justify;">Individuals with <strong>basic problem solving
+  skills</strong> - individuals who have used the Internet in the past 3 months
+  and done one or two of the following: downloading or installing an application
+  (app) or software; changing the settings of any software, application (app) or
+  device (e.g. changing language version, colour version, font size, adjusting
+  toolbar/menu); buying goods or services online for personal use in the last 12
+  months; selling goods or services via a website or app; taking an online
+  course or using online training material other than a full online course;
+  using online banking via a website or app; looking for a job, applying for a
+  job, sending a CV.</p> <p style="text-align: justify;">Individuals with
+  <strong>above basic problem solving skills</strong> - individuals who have
+  used the internet in the last 3 months and performed at least three of the
+  activities listed above.</p>
+
+pl_uwagi: >-
+
+en_uwagi: >-
+
+pl_data_aktualizacji_danych:
+pl_data_aktualizacji_metadanych:
+en_data_aktualizacji_danych:
+en_data_aktualizacji_metadanych:
+---

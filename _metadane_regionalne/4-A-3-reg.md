@@ -10,7 +10,7 @@ en_graph_title: >-
   Average number of students per full-time teacher in vocational schools of the first and second degree
 pl_nazwa_wskaznika: >-
   <b>4.A.3 Średnia liczba uczniów przypadająca na etat nauczyciela w branżowych szkołach I i II stopnia</b>
-pl_cel: Cel 4.  Dobra jakość edukacji
+pl_cel: Cel 4. Dobra jakość edukacji
 pl_zadanie: null
 pl_priorytet: >-
   Wysokiej jakości wykształcenie zawodowe i ustawiczne, dostosowane do potrzeb rynku pracy

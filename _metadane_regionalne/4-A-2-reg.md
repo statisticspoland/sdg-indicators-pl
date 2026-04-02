@@ -10,7 +10,7 @@ en_graph_title: >-
   Share of technical school graduates in the total number of post-primary school graduates (vocational schools of the first and second degree, technical secondary schools and general secondary schools)
 pl_nazwa_wskaznika: >-
   <b>4.A.2 Udział absolwentów techników w ogólnej liczbie absolwentów szkół ponadpodstawowych (branżowych szkół I i II stopnia, techników i liceów ogólnokształcących)</b>
-pl_cel: Cel 4.  Dobra jakość edukacji
+pl_cel: Cel 4. Dobra jakość edukacji
 pl_zadanie: null
 pl_priorytet: >-
   Wysokiej jakości wykształcenie zawodowe i ustawiczne, dostosowane do potrzeb rynku pracy

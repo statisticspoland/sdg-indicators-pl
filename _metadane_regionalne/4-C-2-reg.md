@@ -10,7 +10,7 @@ en_graph_title: >-
   Number of general secondary schools per 1 thous. pupils
 pl_nazwa_wskaznika: >-
   <b>4.C.2 Liczba szkół ogólnokształcących ogółem na 1 tys. uczniów</b>
-pl_cel: Cel 4.  Dobra jakość edukacji
+pl_cel: Cel 4. Dobra jakość edukacji
 pl_zadanie: null
 pl_priorytet: >-
   Infrastruktura dla edukacji
@@ -52,10 +52,10 @@ en_wyjasnienia_metodologiczne: >-
   <p><b>Graduates of general secondary schools for adults</b> acquire secondary education on completion of the highest (according to the curriculum) grade, which allows them to apply to post-secondary schools. Having passed the matriculation examination, they become eligible for higher education.
   Complementary general secondary schools were schools operating from the 2004/2005 school year on the core curriculum of a vocational school. The study lasted 2 years. Graduates of supplementary general secondary schools after graduating from the highest program class received secondary education, which gave them the opportunity to apply for admission to post-secondary school. After passing the matriculation exam, they obtained the right to apply for admission to higher education. From the school year 2012/2013, as a result of amendments to the Act on the education system, recruitment to the first classes of supplementary general secondary schools (for youth and adults) was completed.</p>
 
-  <p><b>The student</b> is a person attending school. </p>
-
+  <p><b>Pupil/student</b> is a person attending school. </p>
 
   <p>The reform of the education system, which began on September 1, 2017, introduced an 8-year primary school and ultimately abolished lower secondary school and introduced a 4-year general secondary school, a 5-year technical school, a 3-year industry first-cycle school, a 2-year industry second-cycle school. This reform had an impact on the scope of the data presented, including the number of schools and pupils at different levels of education. </p>
+  
   <p>Data as of 30 September.</p>
 
 en_definicja: >-

@@ -10,7 +10,7 @@ en_graph_title: >-
   Number of students receiving scholarships for persons with disabilities
 pl_nazwa_wskaznika: >-
   <b>4.B.2 Liczba studentów otrzymujących stypendium dla osób z niepełnosprawnościami</b>
-pl_cel: Cel 4.  Dobra jakość edukacji
+pl_cel: Cel 4. Dobra jakość edukacji
 pl_zadanie: null
 pl_priorytet: >-
   Dostęp do wysokiej jakości edukacji uczniów uzdolnionych ze szczególnymi potrzebami

@@ -10,7 +10,7 @@ en_graph_title: >-
   Share of graduates of vocational schools of the first and second degree in the total number of graduates of upper secondary schools (vocational schools of the first and second degree, technical secondory schools and general secondary schools)
 pl_nazwa_wskaznika: >-
   <b>4.A.1 Udział absolwentów branżowych szkół I i II stopnia w ogólnej liczbie absolwentów szkół ponadpodstawowych (branżowych szkół I i II stopnia, techników i liceów ogólnokształcących)</b>
-pl_cel: Cel 4.  Dobra jakość edukacji
+pl_cel: Cel 4. Dobra jakość edukacji
 pl_zadanie: null
 pl_priorytet: >-
   Wysokiej jakości wykształcenie zawodowe i ustawiczne, dostosowane do potrzeb rynku pracy

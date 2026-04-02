@@ -10,7 +10,7 @@ en_graph_title: >-
   Number of primary schools per 1 thous. pupils
 pl_nazwa_wskaznika: >-
   <b>4.C.1 Liczba szkół podstawowych ogółem na 1 tys. uczniów</b>
-pl_cel: Cel 4.  Dobra jakość edukacji
+pl_cel: Cel 4. Dobra jakość edukacji
 pl_zadanie: null
 pl_priorytet: >-
   Infrastruktura dla edukacji

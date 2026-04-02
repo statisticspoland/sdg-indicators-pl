@@ -6,7 +6,7 @@ sdg_goal: 4
 indicator:  4.E.1.reg
 target_id:  '4.E.1'
 permalink: /statistics_reg/4-E-1/
-pre:  0
+pre:  1
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  pl
