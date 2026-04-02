@@ -24,8 +24,8 @@ pl_definicja: >-
   Udział liczby osób w wieku 18–24 lata z wykształceniem co najwyżej gimnazjalnym, które kontynuują naukę lub dokształcają się w ogólnej liczbie ludności w tej samej grupie wieku z wykształceniem co najwyżej gimnazjalnym.
 en_definicja: >-
   Share of 18-24 year olds with at most lower secondary education who continue their education or further education in the total population of the same age group with at most lower secondary education.
-pl_jednostka_prezentacji: "%"
-en_jednostka_prezentacji: "%"
+pl_jednostka_prezentacji: procent
+en_jednostka_prezentacji: percent
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

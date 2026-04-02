@@ -1,0 +1,149 @@
+---
+translation_id: 5-A-6-reg
+pl_title: >-
+  Wskaźnik zatrudnienia kobiet z najmłodszym dzieckiem w wieku do 5 lat wg BAEL
+pl_graph_title: >-
+  Wskaźnik zatrudnienia kobiet z najmłodszym dzieckiem w wieku do 5 lat wg BAEL
+pl_nazwa_wskaznika: >-
+  <b>5.A.6 Wskaźnik zatrudnienia kobiet z najmłodszym dzieckiem w wieku do 5 lat wg BAEL</b>
+en_title: >-
+  Employment rate of women with the youngest child up to 5 years old (LFS)
+en_graph_title: >-
+  Employment rate of women with the youngest child up to 5 years old (LFS)
+en_nazwa_wskaznika: >-
+  <b>5.A.6 Employment rate of women with the youngest child up to 5 years old (LFS)</b>
+pl_cel: Cel 5. Równość płci
+en_cel: Goal 5. Gender equality
+pl_zadanie: null
+en_zadanie: null
+pl_priorytet: >-
+  Działania wspierające równość płci w rodzinach
+en_priorytet: >-
+  Activities supporting gender equality in families
+pl_definicja: >-
+  Udział pracujących kobiet z najmłodszym dzieckiem w wieku do 5 lat w ogólnej liczbie kobiet znajmłodszym dzieckiem w wieku do 5 lat.
+en_definicja: >-
+  Share of employed women with the youngest child up to 5 years old in the total number of womenwith the youngest child up to 5 years old.
+pl_jednostka_prezentacji: procent
+en_jednostka_prezentacji: percent
+pl_dostepne_wymiary: ogółem
+en_dostepne_wymiary: total
+pl_zrodlo_danych: Główny Urząd Statystyczny
+en_zrodlo_danych: Statistics Poland
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
+published: true
+pl_wyjasnienia_metodologiczne: >-
+  <p>Dane pochodzą z reprezentacyjnego
+  <strong>Badania Aktywności Ekonomicznej Ludności (BAEL)</strong>, prowadzonego
+  w cyklu kwartalnym metodą obserwacji ciągłej (ruchomy tydzień badania),
+  pozwalającej na zilustrowanie sytuacji na rynku pracy w okresie całego
+  kwartału. Badaniem objęte są osoby w wieku 15-89 lat będące członkami
+  gospodarstw domowych w wylosowanych mieszkaniach. Poza zakresem badania
+  pozostają członkowie gospodarstw domowych przebywający (uwzględniany
+  jest całkowity czas pobytu faktyczny i planowany) 12 miesięcy lub więcej za
+  granicą oraz w gospodarstwach zbiorowych (takich jak: hotele
+  pracownicze, domy studenckie, internaty, domy opieki społecznej, itp.) oraz
+  osoby bezdomne.</p> <p>Podstawowym kryterium
+  podziału ludności z punktu widzenia aktywności zawodowej jest praca, tzn. fakt
+  wykonywania, posiadania bądź poszukiwania pracy. Zgodnie z międzynarodowymi
+  standardami ogół ludności można podzielić na trzy podstawowe kategorie:
+  pracujących, bezrobotnych i biernych zawodowo. Pracujący i bezrobotni stanowią
+  populację aktywnych zawodowo.</p> <p>Do <strong>pracujących </strong>zaliczane
+  są wszystkie osoby w wieku 15-89 lat, które w okresie badanego
+  tygodnia:</p> <ol> <li>- wykonywały przez co najmniej 1 godzinę pracę
+  przynoszącą dochód lub zarobek, były zatrudnione w firmie/instytucji
+  publicznej lub u prywatnego pracodawcy, pracowały we własnym (lub
+  dzierżawionym) gospodarstwie rolnym lub prowadziły własną działalność
+  gospodarczą poza rolnictwem, pomagały (bez wynagrodzenia) w prowadzeniu
+  rodzinnego gospodarstwa rolnego lub rodzinnej działalności gospodarczej poza
+  rolnictwem,</li> <li>- miały pracę, ale jej nie wykonywały:</li> </ol> <ul>
+  <li>• z powodu choroby lub urlopu wypoczynkowego, urlopu związanego z
+  rodzicielstwem (macierzyńskiego, rodzicielskiego, ojcowskiego lub
+  wychowawczego), organizacji czasu pracy (systemu pracy lub odbioru nadgodzin),
+  szkolenia związanego z wykonywaną pracą,</li> <li>• z powodu sezonowego
+  charakteru pracy, jeśli w okresie poza sezonem nadal regularnie wypełniały
+  zadania i obowiązki związane z pracą lub prowadzeniem działalności (z
+  wyłączeniem obowiązków prawnych lub administracyjnych),</li> <li>• z
+  innych powodów, jeśli przewidywany okres nieobecności w pracy nie
+  przekracza 3 miesięcy.</li> </ul> <p>Zgodnie z
+  międzynarodowymi standardami, do <strong>pracujących </strong>zaliczani są
+  również uczniowie, z którymi zakłady pracy lub osoby fizyczne
+  zawarły umowę o naukę zawodu lub przyuczenie do określonej pracy, jeżeli
+  otrzymywali wynagrodzenie.</p> <p><strong>Do
+  pracujących nie są zaliczani:</strong> wolontariusze oraz stażyści
+  nieotrzymujący wynagrodzenia, osoby pracujące w rolnictwie indywidualnym
+  zajmujące się wytwarzaniem produktów rolnych wyłącznie lub
+  głównie na własne potrzeby.</p>
+   
+en_wyjasnienia_metodologiczne: >-
+  <p>Data come from a sample
+  survey: <strong>Labour Force Survey (LFS)</strong>. The survey is
+  conducted on a quarterly basis, using the continuous observation method
+  (movable survey week) what allows presenting the situation on the labour
+  market during a whole quarter. The survey covers persons aged 15-89, who
+  are members of households in dwellings selected on a random basis.</p> <p>The scope of the survey does not include
+  household members staying (the total actual and planned stay is taken into
+  account) 12 months or more abroad and in collective households (such as:
+  employee hotels, student dormitories, boarding houses, social care centres
+  etc.) and the homeless.</p> <p>In the context of
+  economic activity - work is the main criterion in dividing the
+  population, i.e.performing, holding or seeking work. According to the
+  international standards, the three maincategories are distinguished: employed,
+  unemployed and economically inactive persons. The employed, unemployed are the
+  economically active population.</p> <p>Among <strong>the
+  employed</strong> are included all persons aged 15-89 who during the
+  reference week:</p> <ol> <li>- performed for at least one hour any work
+  generating pay or income, i.e. were employed in a company/public institution
+  or by a private employer, worked on their own (or leased) agricultural farm,
+  or conducted their own economic activity outside agriculture, assisted
+  (without pay) in conducting family agricultural farm or family economic
+  activity outside agriculture,</li> <li>- had work but did not perform it:</li>
+  </ol> <ul> <li>• due to illness or holiday leave, leave related to parenthood
+  (maternity, childcare, paternity or parental leave), organisation of working
+  time (work system or overtime collection), training related to the performed
+  work</li> <li>• due to the seasonal character of the work, if they still
+  regularly performed off-season their work or business conducting related tasks
+  and responsibilities (excluding legal or administrative obligations)</li>
+  <li>• for other reasons, if the anticipated break in employment did not exceed 3
+  months</li> </ul> <p>In accordance with
+  international standards, among <strong>employees</strong> are also
+  included apprentices with whom enterprises or natural persons signed a
+  contract for occupational training or learning skills for a particular job (if
+  they receive a payment).</p> <p>The employed do
+  not include: volunteers and interns who do not receive remuneration, people
+  working in private engaged in the production of agricultural products
+  solely or mainly for their own needs.</p>
+
+pl_uwagi: >-
+  <p>Od 2023 r. do uogólniania
+  wyników BAEL na populację generalną zastosowano dane o ludności
+  rezydującej Polski zamieszkałej w mieszkaniach, pochodzące z bilansów
+  opracowanych na podstawie wyników NSP 2021. Dane za lata 2021-2022
+  zostały opracowane zgodnie z nową podstawą uogólniania. W związku z
+  wprowadzonymi zmianami wyniki BAEL nie są w pełni porównywalne z
+  wynikami badań z lat poprzedzających 2021 rok.</p> <p>Ponadto na brak porównywalności szeregów czasowych
+  danych mają również wpływ zmiany metodologiczne wprowadzone do BAEL od
+  1 kwartału 2021 r. Dane za lata 2010-2020 zostały przeliczone i zaprezentowane
+  z uwzględnieniem nowej metodologii. W przeliczeniach tych nie jest
+  uwzględniona zmiana podstawy uogólniania danych na bilanse oparte o NSP
+  2021.</p>
+
+en_uwagi: >-
+  <p>From 2023 onwards, data on Poland's resident population living in
+  dwellings, derived from balance sheets compiled on the basis of Census 2021
+  results, were used to generalise the LFS results to the general population.
+  Data for 2021-2022 were compiled according to the new basis of generalisation.
+  Due to the changes introduced, the LFS results are not fully comparable with
+  the survey results for the years prior to 2021.</p> <p>In addition, the lack
+  of comparability of the data time series is also affected by methodological
+  changes introduced to the LFS from Q1 2021. Data for 2010-2020 have been
+  recalculated and presented taking into account the new methodology. These
+  recalculations do not take into account the change in the basis for
+  generalising data to balances based on the Census 2021.</p>
+
+pl_data_aktualizacji_danych:
+pl_data_aktualizacji_metadanych:
+en_data_aktualizacji_danych:
+en_data_aktualizacji_metadanych:
+---

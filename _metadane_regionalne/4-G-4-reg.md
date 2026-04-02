@@ -24,8 +24,8 @@ pl_definicja: >-
   Udział liczby uczestników zajęć sportowych w placówkach wychowania pozaszkolnego w liczbie uczestników zajęć ogółem w placówkach wychowania pozaszkolnego.
 en_definicja: >-
   Share of the number of participants in sports activities in out-of-school education institutions in the total number of participants in out-of-school education institutions.
-pl_jednostka_prezentacji: "%"
-en_jednostka_prezentacji: "%"
+pl_jednostka_prezentacji: procent
+en_jednostka_prezentacji: percent
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Edukacji Narodowej

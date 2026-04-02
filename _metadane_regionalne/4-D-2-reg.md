@@ -24,8 +24,8 @@ pl_definicja: >-
   Odsetek osób, które uzyskały świadectwo dojrzałości spośród absolwentów z danego roku, którzy w terminie głównym (w maju) przystąpili do wszystkich egzaminów obowiązkowych.
 en_definicja: >-
   Percentage of people who obtained a maturity certificate among graduates from a given year who took all compulsory examinations at the main date (in May).
-pl_jednostka_prezentacji: "%"
-en_jednostka_prezentacji: "%"
+pl_jednostka_prezentacji: procent
+en_jednostka_prezentacji: percent
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Centralna Komisja Egzaminacyjna

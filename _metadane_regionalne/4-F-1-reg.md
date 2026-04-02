@@ -24,8 +24,8 @@ pl_definicja: >-
   Udział liczby absolwentów uczelni (bez cudzoziemców) na kierunkach technicznych i przyrodniczych według klasyfikacji ISCED-F 2013 w liczbie absolwentów uczelni ogółem (bez cudzoziemców).
 en_definicja: >-
   Share of the number of university graduates (excluding foreigners) in technical and natural sciences according to the ISCED-F 2013 classification in the total number of university graduates (excluding foreigners).
-pl_jednostka_prezentacji: "%"
-en_jednostka_prezentacji: "%"
+pl_jednostka_prezentacji: procent
+en_jednostka_prezentacji: percent
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Nauki i Szkolnictwa Wyższego, Główny Urząd Statystyczny

@@ -24,8 +24,8 @@ pl_definicja: >-
   Odsetek osób w wieku 16-74 lata posiadających ponadpodstawowe umiejętności cyfrowe.
 en_definicja: >-
   Proportion of persons aged 16-74 having above basic overall digital skills.
-pl_jednostka_prezentacji: "%"
-en_jednostka_prezentacji: "%"
+pl_jednostka_prezentacji: procent
+en_jednostka_prezentacji: percent
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

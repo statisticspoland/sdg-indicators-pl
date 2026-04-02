@@ -24,8 +24,8 @@ pl_definicja: >-
   Udział osób w wieku 25-64 lata uczących się lub dokształcających się (w okresie czterech tygodni przed badaniem) w ludności ogółem w tej samej grupie wieku.
 en_definicja: >-
   Share of the number of persons aged 25-64 participating in education or training (in the period of four weeks before the survey); in the total number of population in the same age group.
-pl_jednostka_prezentacji: "%"
-en_jednostka_prezentacji: "%"
+pl_jednostka_prezentacji: procent
+en_jednostka_prezentacji: percent
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
