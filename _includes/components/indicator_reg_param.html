@@ -69,7 +69,7 @@
             <option style="font-family: Fira Sans" value="2011">2011</option>
             <option style="font-family: Fira Sans" value="2010">2010</option>
           </select>
-          {% elsif id_map == '6-b-1' or id_map == '6-d-5'%}
+          {% elsif id_map == '6-b-1' or id_map == '6-d-5' or id_map == '6-a-2' %}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans" value="2023" selected>2023</option>
             <option style="font-family: Fira Sans" value="2022">2022</option>
@@ -85,6 +85,25 @@
             <option style="font-family: Fira Sans" value="2012">2012</option>
             <option style="font-family: Fira Sans" value="2011">2011</option>
             <option style="font-family: Fira Sans" value="2010">2010</option>
+          </select>
+          {% elsif id_map == '6-e-1'}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2023" >2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+            <option style="font-family: Fira Sans" value="2014">2014</option>
+            <option style="font-family: Fira Sans" value="2013">2013</option>
+            <option style="font-family: Fira Sans" value="2012">2012</option>
+            <option style="font-family: Fira Sans" value="2011">2011</option>
+            <option style="font-family: Fira Sans" value="2010">2010</option>
+
           </select>
           {% elsif id_map == '6-d-4'%}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
@@ -191,29 +210,29 @@
   {% elsif id_map == '6-a-2' %}
      {% if language == 'pl' %}
        <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-         <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
-         <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">ujęcia i doprowadzenia wody</option>
-         <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">budowa i modernizacja stacji uzdatniania wody</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="ogółem" selected>ogółem</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody" data-short="ujęcia i ...">ujęcia i doprowadzenia wody</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody" data-short="budowa i ...">budowa i modernizacja stacji uzdatniania wody</option>
        </select>
      {% else %}
        <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-         <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-         <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">water intakes and supplies</option>
-         <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">onstruction and modernisation of water treatment plants</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="total" selected>total</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody" data-short="water intakes..." >water intakes...</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody" data-short="construction and ..." >construction and ...</option>
        </select>
      {% endif %}
   {% elsif id_map == '6-e-1' %}
         {% if language == 'pl' %}
-          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-            <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
-            <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">służące ochronie środowiska</option>
-            <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">służące gospodarce wodnej</option>
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="ogółem" selected>ogółem</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska" data-short="służące ochronie...">służące ochronie środowiska</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej" data-short="służące gospo...">służące gospodarce wodnej</option>
           </select>
         {% else %}
-          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-            <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-            <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">służące ochronie środowiska</option>
-            <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">służące gospodarce wodnej</option>
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="total" selected>total</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska" data-short="służące ochronie ...">służące ochronie środowiska</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej" data-short="służące gospo...">służące gospodarce wodnej</option>
           </select>
         {% endif %}
  {% else %}
@@ -362,7 +381,7 @@
 
   };
 
-  {% if id_map == '5-a-9' %}
+  {% if id_map == '5-a-9' or id_map == '6-e-1' %}
   loadDataAndRenderMap("2024","ogółem");
   {% else %}
   loadDataAndRenderMap("2023","ogółem");
@@ -420,6 +439,24 @@
    };
 
   function wyborParam() {
+
+    if('{{ id_map }}' == '6-a-2' || '{{ id_map }}' == '6-e-1' ){
+      const select = document.getElementById("paramBox");
+
+       // restore all long labels first
+       for (let option of select.options) {
+         if (option.dataset.long) {
+           option.text = option.dataset.long;
+         } else {
+           option.dataset.long = option.text;
+         }
+       }
+
+       // set short label for selected option
+       const selected = select.options[select.selectedIndex];
+       selected.text = selected.dataset.short;
+    }
+
     var yearBox = document.getElementById("yearBox");
     var paramBox = document.getElementById("paramBox");
     var selectedParam = paramBox.options[paramBox.selectedIndex].value;
@@ -795,9 +832,27 @@
         <option style="font-family: Fira Sans" value="2011">2011</option>
         <option style="font-family: Fira Sans" value="2010">2010</option>
       </select>
-      {% elsif id_map == '6-b-1' or id_map == '6-d-5'%}
+      {% elsif id_map == '6-b-1' or id_map == '6-d-5' or id_map == '6-a-2' %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+      </select>
+      {% elsif id_map == '6-e-1'}
+      <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023" >2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
         <option style="font-family: Fira Sans" value="2020">2020</option>
@@ -1150,36 +1205,36 @@
       {% elsif id_map == '6-a-2' %}
         <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
-           <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+           <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
            <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
-           <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">ujęcia i doprowadzenia wody</option>
-           <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">budowa i modernizacja stacji uzdatniania wody</option>
+           <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">ujęcia i doprowadzenia wody</option>
+           <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">budowa i modernizacja stacji uzdatniania wody</option>
            </select>
          {% else %}
-          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">water intakes and supplies</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">onstruction and modernisation of water treatment plants</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">water intakes and supplies</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">construction and modernisation of water treatment plants</option>
           </select>
          {% endif %}
        </div>
       {% elsif id_map == '6-e-1' %}
         <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
-          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">służące ochronie środowiska</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">służące gospodarce wodnej</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">służące ochronie środowiska</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">służące gospodarce wodnej</option>
           </select>
        {% else %}
-          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">służące ochronie środowiska</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">służące gospodarce wodnej</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">służące ochronie środowiska</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">służące gospodarce wodnej</option>
           </select>
       {% endif %}
       </div>
-    {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '3-f-2' %}
+    {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '3-f-2' or id_map == '6-b-1' or id_map == '6-d-4' or id_map == '6-d-5' %}
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
         <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
@@ -1207,8 +1262,8 @@
       <div id="chartBar" style="width: 100%;height: 600px"></div>
       <hr>
 
+    <div id="chooseWojLine" style="display: inline-flex;margin-right: 1rem; margin-bottom: 10px; position: relative; top: 5px;">
 
-      <div id="chooseWojLine" style="display: inline-flex;margin-right: 1rem; position: relative;">
       {% if language == 'pl' %}
         <details id="myselectlist" style="top: -20px; left: 0;">
           <summary>Województwo</summary>
@@ -1380,7 +1435,7 @@
       </div>
 
     {% if id_map == '5-a-9' %}
-      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;top: 5px;left: 242px;position: relative;">
+    <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
         <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
           <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
@@ -1396,39 +1451,39 @@
         {% endif %}
       </div>
       {% elsif id_map == '6-a-2' %}
-      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;top: 5px;left: 242px;position: relative;">
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
-        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
            <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
-           <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">ujęcia i doprowadzenia wody</option>
-           <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">budowa i modernizacja stacji uzdatniania wody</option>
+           <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">ujęcia i doprowadzenia wody</option>
+           <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">budowa i modernizacja stacji uzdatniania wody</option>
            </select>
          {% else %}
-          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">water intakes and supplies</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">onstruction and modernisation of water treatment plants</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">water intakes and supplies</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">construction and modernisation of water treatment plants</option>
           </select>
          {% endif %}
        </div>
       {% elsif id_map == '6-e-1' %}
-        <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;top: 5px;left: 242px;position: relative;">
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
-          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">służące ochronie środowiska</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">służące gospodarce wodnej</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">służące ochronie środowiska</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">służące gospodarce wodnej</option>
           </select>
        {% else %}
-          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">służące ochronie środowiska</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">służące gospodarce wodnej</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">służące ochronie środowiska</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">służące gospodarce wodnej</option>
           </select>
       {% endif %}
       </div>
-    {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '3-f-2' %}
-      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;top: 5px;left: 242px;position: relative;">
+    {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '3-f-2' or id_map == '6-b-1' or id_map == '6-d-4' or id_map == '6-d-5' %}
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
         <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
           <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
@@ -1675,7 +1730,7 @@ function download_csv(csv, filename) {
 
           //console.log(data2);
 
-          const maxValue = Math.max(
+          var maxValue = Math.max(
             ...data2.flatMap(obj =>
               Object.entries(obj)
                 .filter(([key]) => key !== "year")
@@ -1714,14 +1769,25 @@ function download_csv(csv, filename) {
             marg = 2;
           }
 
-          var baseV = 0;
           /*switch ('{{ id_map }}') {
+            case '6-a-2':
+              maxValue=1300;
+              marg=0;
+              break;
+
+            default:
+          }*/
+
+          var minValue = 0;
+
+          var baseV = 0;
+          switch ('{{ id_map }}') {
             case '2-b-1':
               baseV = 100;
               break;
             default:
               baseV = 0;
-          }*/
+          }
 
           createchartBar("chartBar", data3.slice(1), 0, maxValue+marg, baseV, "{{ precyzja }}", [lastYearValue], "{{ language }}");
           });
@@ -1821,7 +1887,7 @@ function updateChartBar(){
               }
             }
 
-            const maxValue = Math.max(
+            var maxValue = Math.max(
               ...data2.flatMap(obj =>
                 Object.entries(obj)
                   .filter(([key]) => key !== "year")
@@ -1838,6 +1904,15 @@ function updateChartBar(){
             if(maxValue<=5){
               marg = 2;
             }
+
+            /*switch ('{{ id_map }}') {
+              case '6-a-2':
+                maxValue=1300;
+                marg=0;
+                break;
+
+              default:
+            }*/
 
             var baseV = 0;
             /*switch ('{{ id_map }}') {
@@ -1873,14 +1948,14 @@ function updateChartLine(){
       else{
         /*tr[i].style.display = 'none';*/
       }
-      if(selectedLine === "miasto" || selectedLine === "mężczyźni"){
+      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska"){
         checkedValues.push(cb.value+"_");
         /*tr[i+17].style.display = '';*/
       }
       else{
         /*tr[i+17].style.display = 'none';*/
       }
-      if(selectedLine === "wieś" || selectedLine === "kobiety"){
+      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine === "budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej"){
         checkedValues.push(cb.value+"__");
         /*tr[i+17].style.display = '';*/
       }
@@ -1893,10 +1968,10 @@ function updateChartLine(){
       if(selectedLine === "ogółem"){
         /*tr[i].style.display = 'none';*/
       }
-      if(selectedLine === "miasto" || selectedLine === "mężczyźni"){
+      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska"){
         /*tr[i+17].style.display = 'none';*/
       }
-      if(selectedLine === "wieś" || selectedLine === "kobiety"){
+      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine==="budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej"){
         /*tr[i+17].style.display = 'none';*/
       }
     }
