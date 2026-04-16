@@ -25,7 +25,7 @@ pl_definicja: >-
 en_definicja: >-
   Total investment outlays for creation of small water retention facilities in a year.
 pl_jednostka_prezentacji: tys. zł
-en_jednostka_prezentacji: thousend PLN
+en_jednostka_prezentacji: thousands, PLN
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Infrastruktury
@@ -42,7 +42,6 @@ pl_wyjasnienia_metodologiczne: >-
   <br />- samodzielne budowle piętrzące i ujęcia wody,
   <br />- inne budowle piętrzące lub transportujące wodę.</p>
 
-
 en_wyjasnienia_metodologiczne: >-
   <p><b>Investment outlays</b> are financial or tangible outlays, the purpose of which is the creation of new fixed assets or the improvement (rebuilding, enlargement, reconstruction, adaptation or modernization) of existing capital asset items, as well as outlays on so-called initial investments.</p>
 
@@ -55,12 +54,9 @@ en_wyjasnienia_metodologiczne: >-
   <br />- self-weirs and water intake,
   <br />- other weirs or transporting water.
 
-
 pl_uwagi: >-
 
-
 en_uwagi: >-
-
 
 pl_data_aktualizacji_danych:
 pl_data_aktualizacji_metadanych:

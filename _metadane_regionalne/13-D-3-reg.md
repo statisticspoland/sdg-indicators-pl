@@ -1,25 +1,25 @@
 ---
-translation_id: 6-C-2-reg
+translation_id: 13-D-3-reg
 pl_title: >-
   Liczba obiektów małej retencji wodnej
 pl_graph_title: >-
   Liczba obiektów małej retencji wodnej
 pl_nazwa_wskaznika: >-
-  <b>6.C.2 Liczba obiektów małej retencji wodnej</b>
+  <b>13.D.3 Liczba obiektów małej retencji wodnej</b>
 en_title: >-
   Number of small water retention facilities
 en_graph_title: >-
   Number of small water retention facilities
 en_nazwa_wskaznika: >-
-  <b>6.C.2 Number of small water retention facilities</b>
-pl_cel: Cel 6. Czysta woda i warunki sanitarne
-en_cel: Goal 6. Clean water and sanitation
+  <b>13.D.3 Number of small water retention facilities</b>
+pl_cel: Cel 13. Działania w dziedzinie klimatu
+en_cel: Goal 13. Climate action
 pl_zadanie: null
 en_zadanie: null
 pl_priorytet: >-
-  Racjonalne wykorzystanie zasobów wodnych
+  Zwiększenie odporności regionu na skutki zmian klimatycznych
 en_priorytet: >-
-  Rational use of water resources
+  Increasing the region's resilience to the effects of climate change
 pl_definicja: >-
   Liczba obiektów zaliczanych do małej retencji wodnej.
 en_definicja: >-
