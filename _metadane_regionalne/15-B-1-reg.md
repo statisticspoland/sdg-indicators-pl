@@ -1,25 +1,25 @@
 ---
-translation_id: 6-D-5-reg
+translation_id: 15-B-1-reg
 pl_title: >-
   Odsetek ludności korzystającej z oczyszczalni ścieków
 pl_graph_title: >-
   Odsetek ludności korzystającej z oczyszczalni ścieków
 pl_nazwa_wskaznika: >-
-  <b>6.D.5 Odsetek ludności korzystającej z oczyszczalni ścieków</b>
+  <b>15.B.1 Odsetek ludności korzystającej z oczyszczalni ścieków</b>
 en_title: >-
   Percentage of population connected to wastewater treatment plants
 en_graph_title: >-
   Percentage of population connected to wastewater treatment plants
 en_nazwa_wskaznika: >-
-  <b>6.D.5 Percentage of population connected to wastewater treatment plants</b>
-pl_cel: Cel 6. Czysta woda i warunki sanitarne
-en_cel: Goal 6. Clean water and sanitation
+  <b>15.B.1 Percentage of population connected to wastewater treatment plants</b>
+pl_cel: Cel 15. Życie na lądzie
+en_cel: Goal 15. Life on land
 pl_zadanie: null
 en_zadanie: null
 pl_priorytet: >-
-  Rozwój infrastruktury wodno-ściekowej
+  Modernizacja i rozbudowa oczyszczalni i systemów kanalizacyjnych, a także ochrona powietrza (likwidacja źródeł emisji zanieczyszczeń lub zmniejszenie ich oddziaływania) w regionach
 en_priorytet: >-
-  Development of water and sewage infrastructure
+  Modernization and expansion of sewage treatment plants and systems, as well as air protection (elimination of sources of pollutant emissions or reduction of their impact) in the regions
 pl_definicja: >-
   Udział ludności korzystającej z oczyszczalni ścieków w całkowitej liczbie ludności.
 en_definicja: >-

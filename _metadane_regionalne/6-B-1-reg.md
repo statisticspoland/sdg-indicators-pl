@@ -22,10 +22,8 @@ en_priorytet: >-
   Organic farms water management
 pl_definicja: >-
   Udział ludności korzystającej z oczyszczalni ścieków w całkowitej liczbie ludności.
-
 en_definicja: >-
   The share of population connected to wastewater treatment plants in total population.
-
 pl_jednostka_prezentacji: procent
 en_jednostka_prezentacji: percent
 pl_dostepne_wymiary: ogółem, miasto, wieś
@@ -63,7 +61,6 @@ en_wyjasnienia_metodologiczne: >-
 pl_uwagi: >-
 
 en_uwagi: >-
-
 
 pl_data_aktualizacji_danych:
 pl_data_aktualizacji_metadanych:
