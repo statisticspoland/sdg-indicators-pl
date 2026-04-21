@@ -1,25 +1,25 @@
 ---
-translation_id: 11-A-1-reg
+translation_id: 16-B-3-reg
 pl_title: >-
   Łączne wydatki gmin i powiatów na bezpieczeństwo publiczne i ochronę przeciwpożarową na 1 mieszkańca
 pl_graph_title: >-
   Łączne wydatki gmin i powiatów na bezpieczeństwo publiczne i ochronę przeciwpożarową na 1 mieszkańca
 pl_nazwa_wskaznika: >-
-  <b>11.A.1 Łączne wydatki gmin i powiatów na bezpieczeństwo publiczne i ochronę przeciwpożarową na 1 mieszkańca</b>
+  <b>16.B.3 Łączne wydatki gmin i powiatów na bezpieczeństwo publiczne i ochronę przeciwpożarową na 1 mieszkańca</b>
 en_title: >-
   Total expenditures of gminas and powiats on public safety and fire protection per capita
 en_graph_title: >-
   Total expenditures of gminas and powiats on public safety and fire protection per capita
 en_nazwa_wskaznika: >-
-  <b>11.A.1 Total expenditures of gminas and powiats on public safety and fire protection per capita</b>
-pl_cel: Cel 11. Zrównoważone miasta i społeczności
-en_cel: Goal 11. Sustainable cities & communities
+  <b>16.B.3 Total expenditures of gminas and powiats on public safety and fire protection per capita</b>
+pl_cel: Cel 16. Pokój, sprawiedliwość i silne instytucje
+en_cel: Goal 16. Peace and justice - strong institutions
 pl_zadanie: null
 en_zadanie: null
 pl_priorytet: >-
-  Bezpieczna wspólnota
+  Bezpieczeństwo i rozwój systemów zarządzania bezpieczeństwem zwiększających zdolności adaptacyjne i ograniczających zagrożenia regionu
 en_priorytet: >-
-  Safe community
+  Security and development of security management systems that increase the adaptive capacity and reduce threats to the region
 pl_definicja: >-
   Suma wydatków gmin i powiatów na danym obszarze przeznaczanych na bezpieczeństwo publiczne i ochronę przeciwpożarową (tj. wydatków w Dziale 754 klasyfikacji budżetowej) w przeliczeniu na jednego mieszkańca.
 en_definicja: >-
