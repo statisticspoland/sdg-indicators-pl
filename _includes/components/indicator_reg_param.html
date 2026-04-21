@@ -156,6 +156,35 @@
             <option style="font-family: Fira Sans" value="2010">2010</option>
 
           </select>
+
+          {% elsif id_map == '13-c-4' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name"
+              style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+              <option style="font-family: Fira Sans" value="2023">2023</option>
+              <option style="font-family: Fira Sans" value="2022">2022</option>
+              <option style="font-family: Fira Sans" value="2021">2021</option>
+              <option style="font-family: Fira Sans" value="2020">2020</option>
+              <option style="font-family: Fira Sans" value="2019">2019</option>
+              <option style="font-family: Fira Sans" value="2018">2018</option>
+              <option style="font-family: Fira Sans" value="2017">2017</option>
+              <option style="font-family: Fira Sans" value="2016">2016</option>
+              <option style="font-family: Fira Sans" value="2015">2015</option>
+              <option style="font-family: Fira Sans" value="2014">2014</option>
+              <option style="font-family: Fira Sans" value="2013">2013</option>
+              <option style="font-family: Fira Sans" value="2012">2012</option>
+              <option style="font-family: Fira Sans" value="2011">2011</option>
+              <option style="font-family: Fira Sans" value="2010">2010</option>
+            </select>
+
+            {% elsif id_map == '17-a-1' %}
+            <select id="yearBox" onchange="wyborYear()" name="year-name"
+                style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+                <option style="font-family: Fira Sans" value="2022">2022</option>
+                <option style="font-family: Fira Sans" value="2020">2020</option>
+              </select>
+
           {% else %}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans" value="2023" selected>2023</option>
@@ -269,8 +298,8 @@
         {% else %}
           <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="total" selected>total</option>
-            <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska" data-short="służące ochronie ...">służące ochronie środowiska</option>
-            <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej" data-short="służące gospo...">służące gospodarce wodnej</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska" data-short="on environmental...">on environmental protection</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej" data-short="on water...">on water management</option>
           </select>
         {% endif %}
 
@@ -299,6 +328,28 @@
                 <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem" data-short="unloading...">unloading including transit</option>
               </select>
             {% endif %}
+
+            {% elsif id_map == '17-a-1' %}
+                {% if language == 'pl' %}
+                  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" data-short="plan nisko..." selected>plan niskoemisyjnej gospodarki</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" data-short="lokalny pro...">lokalny program rozwoju ekonomii społecznej</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" data-short="program o..." >program ochrony środowiska</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" data-short="roczny pro...">roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" data-short="strategia gm..." >strategia rozwoju gminy</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" data-short="strategia pro..." >strategia rozwiązywania problemów społecznych</option>
+
+                  </select>
+                {% else %}
+                  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" data-short="low-emission..." selected>low-emission economy plan</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" data-short="local ...">local social economy development programme</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" data-short="revitali...">revitalisation programme</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" data-short="long-term...">long-term cooperation programme with non-governmental organisations and other entities engaged in public benefit activities</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" data-short="spatial de...">spatial development plan</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" data-short="alcohol pre...">alcohol prevention and problem-solving programme</option>
+                  </select>
+                {% endif %}
 
  {% else %}
    {% if language == 'pl' %}
@@ -446,8 +497,10 @@
 
   };
 
-  {% if id_map == '5-a-9' or id_map == '6-e-1' or id_map == '8-c-1' or id_map == '8-d-4' or id_map == '11-d-2' %}
+  {% if id_map == '5-a-9' or id_map == '6-e-1' or id_map == '8-c-1' or id_map == '8-d-4' or id_map == '11-d-2' or id_map == '13-c-4' %}
   loadDataAndRenderMap("2024","ogółem");
+  {% elsif id_map == '17-a-1' %}
+  loadDataAndRenderMap("2024","plan gospodarki niskoemisyjnej");
   {% else %}
   loadDataAndRenderMap("2023","ogółem");
   {% endif %}
@@ -505,7 +558,7 @@
 
   function wyborParam() {
 
-    if('{{ id_map }}' == '6-a-2' || '{{ id_map }}' == '6-e-1' || '{{ id_map }}' == '13-c-4' || '{{ id_map }}' == '14-c-5'){
+    if('{{ id_map }}' == '6-a-2' || '{{ id_map }}' == '6-e-1' || '{{ id_map }}' == '13-c-4' || '{{ id_map }}' == '14-c-5' || '{{ id_map }}' == '17-a-1'){
       const select = document.getElementById("paramBox");
 
        // restore all long labels first
@@ -573,8 +626,8 @@
     "wieś": "rural areas",
     "ujęcia i doprowadzenia wody": "water intakes and supplies",
     "budowa i modernizacja stacji uzdatniania wody": "construction and modernisation of water treatment plants",
-    "służące ochronie środowiska": "służące ochronie środowiska",
-    "służące gospodarce wodnej": "służące gospodarce wodnej",
+    "służące ochronie środowiska": "on environmental protection",
+    "służące gospodarce wodnej": "on water management",
     "przyjazdy": "arrivals",
     "wyjazdy": "departures",
     "załadunek łącznie z tranzytem": "loading including transit",
@@ -1000,6 +1053,33 @@
         <option style="font-family: Fira Sans" value="2010">2010</option>
 
       </select>
+
+      {% elsif id_map == '13-c-4' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+        </select>
+
+        {% elsif id_map == '17-a-1' %}
+        <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+          </select>
+
       {% else %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2023" selected>2023</option>
@@ -1349,8 +1429,8 @@
        {% else %}
           <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">służące ochronie środowiska</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">służące gospodarce wodnej</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">on environmental protection</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">on water management</option>
           </select>
       {% endif %}
       </div>
@@ -1382,6 +1462,32 @@
               </select>
             {% endif %}
           </div>
+
+
+          {% elsif id_map == '17-a-1' %}
+          <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+              {% if language == 'pl' %}
+              <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej"  selected>plan niskoemisyjnej gospodarki</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >lokalny program rozwoju ekonomii społecznej</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska"  >program ochrony środowiska</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" >roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" >strategia rozwoju gminy</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" >strategia rozwiązywania problemów społecznych</option>
+
+                </select>
+              {% else %}
+              <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" selected>low-emission economy plan</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >local social economy development programme</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" >revitalisation programme</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" >long-term cooperation programme with non-governmental organisations and other entities engaged in public benefit activities</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" >spatial development plan</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" >alcohol prevention and problem-solving programme</option>
+                </select>
+              {% endif %}
+            </div>
+
 
     {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '6-b-1' or id_map == '6-d-4' or id_map == '6-d-5'  or id_map == '11-d-2'  or id_map == '12-e-2' or id_map == '15-b-1' %}
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
@@ -1626,8 +1732,8 @@
        {% else %}
           <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">służące ochronie środowiska</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">służące gospodarce wodnej</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">on environmental protection</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">on water management</option>
           </select>
       {% endif %}
       </div>
@@ -1659,6 +1765,33 @@
                 </select>
               {% endif %}
             </div>
+
+
+            {% elsif id_map == '17-a-1' %}
+            <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+                {% if language == 'pl' %}
+                <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" selected>plan niskoemisyjnej gospodarki</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >lokalny program rozwoju ekonomii społecznej</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" >program ochrony środowiska</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego">roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy"  >strategia rozwoju gminy</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" >strategia rozwiązywania problemów społecznych</option>
+
+                  </select>
+                {% else %}
+                <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" selected>low-emission economy plan</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >local social economy development programme</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" >revitalisation programme</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" >long-term cooperation programme with non-governmental organisations and other entities engaged in public benefit activities</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" >spatial development plan</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" >alcohol prevention and problem-solving programme</option>
+                  </select>
+                {% endif %}
+              </div>
+
+
     {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '6-b-1' or id_map == '6-d-4' or id_map == '6-d-5'  or id_map == '11-d-2'  or id_map == '12-e-2'  or id_map == '15-b-1' %}
       <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
@@ -1936,9 +2069,16 @@ function download_csv(csv, filename) {
           const data3 = [];
           for(let i of data2){
 
+            if('{{ id_map }}' == '17-a-1'){
+              if(i.PARAM == "plan gospodarki niskoemisyjnej"){
+                data3.push(i);
+              }
+            }
+            else{
               if(i.PARAM == "ogółem"){
                 data3.push(i);
               }
+            }
           }
 
           var marg = 5;
@@ -2037,7 +2177,13 @@ function updateChartBar(){
     const checkbox = document.getElementById('Polska');
     checkbox.checked = true;
     const selectParam = document.getElementById('paramBoxBar');
-    selectParam.value = "ogółem";
+
+    if('{{ id_map }}' == '17-a-1'){
+      selectParam.value = "plan gospodarki niskoemisyjnej";
+    }
+    else{
+      selectParam.value = "ogółem";
+    }
   }
   //console.log("Wybrane wartosci");
   //console.log(checkedValuesBar);
@@ -2118,21 +2264,21 @@ function updateChartLine(){
 
   checkboxes.forEach((cb,i) => {
     if (cb.checked && cb.value !== 'all') {
-      if(selectedLine === "ogółem" || selectedLine === "przyjazdy" || selectedLine === "załadunek łącznie z tranzytem" ){
+      if(selectedLine === "ogółem" || selectedLine === "przyjazdy" || selectedLine === "załadunek łącznie z tranzytem" || selectedLine === "plan gospodarki niskoemisyjnej" ){
         checkedValues.push(cb.value);
         /*tr[i].style.display = '';*/
       }
       else{
         /*tr[i].style.display = 'none';*/
       }
-      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem"){
+      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej"){
         checkedValues.push(cb.value+"_");
         /*tr[i+17].style.display = '';*/
       }
       else{
         /*tr[i+17].style.display = 'none';*/
       }
-      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine === "budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej"){
+      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine === "budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej" || selectedLine === "program ochrony środowiska"){
         checkedValues.push(cb.value+"__");
         /*tr[i+17].style.display = '';*/
       }
@@ -2142,13 +2288,13 @@ function updateChartLine(){
 
     }
     if (!cb.checked && cb.value !== 'all'){
-      if(selectedLine === "ogółem" || selectedLine === "przyjazdy" || selectedLine === "załadunek łącznie z tranzytem" ){
+      if(selectedLine === "ogółem" || selectedLine === "przyjazdy" || selectedLine === "załadunek łącznie z tranzytem" || selectedLine === "plan gospodarki niskoemisyjnej"){
         /*tr[i].style.display = 'none';*/
       }
-      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" ){
+      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej"){
         /*tr[i+17].style.display = 'none';*/
       }
-      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine==="budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej"){
+      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine==="budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej" || selectedLine === "program ochrony środowiska"){
         /*tr[i+17].style.display = 'none';*/
       }
     }
@@ -2163,7 +2309,13 @@ function updateChartLine(){
     const checkbox = document.getElementById('PolskaLineCheckbox');
     checkbox.checked = true;
     const selectParam = document.getElementById('paramBoxLine');
-    selectParam.value = "ogółem";
+
+    if('{{ id_map }}' == '17-a-1'){
+      selectParam.value = "plan gospodarki niskoemisyjnej";
+    }
+    else{
+      selectParam.value = "ogółem";
+    }
   }
   checkedValues.push("year");
   //console.log("checkedValues_line");
