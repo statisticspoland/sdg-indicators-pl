@@ -120,7 +120,7 @@
             <option style="font-family: Fira Sans" value="2019">2019</option>
 
           </select>
-          {% elsif id_map == '11-d-2' %}
+          {% elsif id_map == '11-d-2' or id_map == '11-d-3' %}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans" value="2024" selected>2024</option>
             <option style="font-family: Fira Sans" value="2023">2023</option>
@@ -303,7 +303,7 @@
             {% if language == 'pl' %}
               <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
                 <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem" data-short="załadunek..." selected>załadunek łącznie z tranzytem</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem" data-short="wyładunek...">wyładunek łącznie z tranzytem"</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem" data-short="wyładunek...">wyładunek łącznie z tranzytem</option>
               </select>
             {% else %}
               <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
@@ -480,7 +480,7 @@
 
   };
 
-  {% if id_map == '5-a-9' or id_map == '6-e-1' or id_map == '8-c-1' or id_map == '8-d-4' or id_map == '11-d-2' or id_map == '13-c-4' %}
+  {% if id_map == '5-a-9' or id_map == '6-e-1' or id_map == '8-c-1' or id_map == '8-d-4' or id_map == '11-d-2' or id_map == '11-d-3' or id_map == '13-c-4' %}
   loadDataAndRenderMap("2024","ogółem");
   {% elsif id_map == '17-a-1' %}
   loadDataAndRenderMap("2024","plan gospodarki niskoemisyjnej");
@@ -643,7 +643,7 @@
       row => row.PARAM === param
     );
 
-    if (wpis && wpis[rok]) {
+    if (wpis && wpis[rok] && wpis[rok] !== 'x') {
       const wartosc = wpis[rok];
       const czesci = wartosc.split('.');
       const miejscaPoPrzecinku = czesci.length === 2 ? czesci[1].length : 0;
@@ -999,7 +999,7 @@
 
       </select>
 
-      {% elsif id_map == '11-d-2' %}
+      {% elsif id_map == '11-d-2' or id_map == '11-d-3' %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2024" selected>2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>

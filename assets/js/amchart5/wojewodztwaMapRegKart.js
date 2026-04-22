@@ -61,7 +61,7 @@ function createMapWojKart(div, dane, jez, precyzja){
       return `${name}: ${formattedValue}`;
     }
 
-    if (name != null && isNaN(value)) {
+    if (name != null && (isNaN(value) || value == 'x')) {
       const noDataText = jez === "pl" ? "Brak danych" : "No data";
       return `${name}: ${noDataText}`;
     }
@@ -278,17 +278,20 @@ function createMapWojKart(div, dane, jez, precyzja){
   pointSeries.bullets.push(function(root, series, dataItem) {
 
     const value = dataItem.dataContext.value;
-    const radius = radiusFromValue(value);
 
-    let circle = am5.Circle.new(root, {
-      radius: radius,
-      fill: am5.color(0x67b7dc),
-      fillOpacity: 1.0,
-      stroke: am5.color(0xffffff),
-      strokeWidth: 1
-    });
+    if(value !== 'x' && !isNaN(value)){
+      const radius = radiusFromValue(value);
 
-    return am5.Bullet.new(root, { sprite: circle });
+      let circle = am5.Circle.new(root, {
+        radius: radius,
+        fill: am5.color(0x67b7dc),
+        fillOpacity: 1.0,
+        stroke: am5.color(0xffffff),
+        strokeWidth: 1
+      });
+
+      return am5.Bullet.new(root, { sprite: circle });
+    }
   });
 
   const numericValues = dane.map(o => o.value).filter(v => !isNaN(v));
