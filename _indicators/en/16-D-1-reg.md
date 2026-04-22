@@ -6,7 +6,7 @@ sdg_goal: 16
 indicator:  16.D.1.reg
 target_id:  '16.D.1'
 permalink: /en/statistics_reg/16-D-1/
-pre:  0
+pre:  1
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  en
