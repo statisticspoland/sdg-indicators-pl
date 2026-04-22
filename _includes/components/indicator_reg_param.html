@@ -2238,22 +2238,25 @@ function updateChartLine(){
         checkedValues.push(cb.value);
         /*tr[i].style.display = '';*/
       }
-      else{
-        /*tr[i].style.display = 'none';*/
-      }
       if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej"){
         checkedValues.push(cb.value+"_");
         /*tr[i+17].style.display = '';*/
-      }
-      else{
-        /*tr[i+17].style.display = 'none';*/
       }
       if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine === "budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej" || selectedLine === "program ochrony środowiska"){
         checkedValues.push(cb.value+"__");
         /*tr[i+17].style.display = '';*/
       }
-      else{
-        /*tr[i+17].style.display = 'none';*/
+      if(selectedLine === "roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego"){
+        checkedValues.push(cb.value+"___");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "strategia rozwoju gminy"){
+        checkedValues.push(cb.value+"____");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "strategia rozwiązywania problemów społecznych"){
+        checkedValues.push(cb.value+"_____");
+        /*tr[i+17].style.display = '';*/
       }
 
     }
@@ -2265,6 +2268,15 @@ function updateChartLine(){
         /*tr[i+17].style.display = 'none';*/
       }
       if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine==="budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej" || selectedLine === "program ochrony środowiska"){
+        /*tr[i+17].style.display = 'none';*/
+      }
+      if(selectedLine === "roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego"){
+        /*tr[i+17].style.display = 'none';*/
+      }
+      if(selectedLine === "strategia rozwoju gminy"){
+        /*tr[i+17].style.display = 'none';*/
+      }
+      if(selectedLine === "strategia rozwiązywania problemów społecznych"){
         /*tr[i+17].style.display = 'none';*/
       }
     }

@@ -28,6 +28,18 @@ function createchartScatterParam(div, dane, idx, jez, precyzja, min, baseV){
         obj.Poland__ = obj.Polska__;
         delete obj.Polska__;
       };
+      if (obj.Polska__ !== undefined) {
+        obj.Poland___ = obj.Polska___;
+        delete obj.Polska___;
+      };
+      if (obj.Polska____ !== undefined) {
+        obj.Poland____ = obj.Polska____;
+        delete obj.Polska____;
+      };
+      if (obj.Polska_____ !== undefined) {
+        obj.Poland_____ = obj.Polska_____;
+        delete obj.Polska_____;
+      };
     });
     };
 
@@ -223,7 +235,61 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
     "Świętokrzyskie__": 0xD35400,
     "Warmińsko-Mazurskie__": 0x2980B9,
     "Wielkopolskie__": 0x27AEAE,
-    "Zachodniopomorskie__": 0xcc00cc
+    "Zachodniopomorskie__": 0xcc00cc,
+    "Polska___": 0x6794dc,
+    "Poland___": 0x6794dc,
+    "Dolnośląskie___": 0x33A1FF,
+    "Kujawsko-Pomorskie___": 0x9B59B6,
+    "Lubelskie___": 0x27AE60,
+    "Lubuskie___": 0xF1C40F,
+    "Łódzkie___": 0xE67E22,
+    "Małopolskie___": 0x12876f,
+    "Mazowieckie___": 0xC0392B,
+    "Opolskie___": 0xd5b6e2,
+    "Podkarpackie___": 0x2ECC71,
+    "Podlaskie___": 0x3333ff,
+    "Pomorskie___": 0xE74C3C,
+    "Śląskie___": 0x16A085,
+    "Świętokrzyskie___": 0xD35400,
+    "Warmińsko-Mazurskie___": 0x2980B9,
+    "Wielkopolskie___": 0x27AEAE,
+    "Zachodniopomorskie___": 0xcc00cc,
+    "Polska____": 0x6794dc,
+    "Poland____": 0x6794dc,
+    "Dolnośląskie____": 0x33A1FF,
+    "Kujawsko-Pomorskie____": 0x9B59B6,
+    "Lubelskie____": 0x27AE60,
+    "Lubuskie____": 0xF1C40F,
+    "Łódzkie____": 0xE67E22,
+    "Małopolskie____": 0x12876f,
+    "Mazowieckie____": 0xC0392B,
+    "Opolskie____": 0xd5b6e2,
+    "Podkarpackie____": 0x2ECC71,
+    "Podlaskie____": 0x3333ff,
+    "Pomorskie____": 0xE74C3C,
+    "Śląskie____": 0x16A085,
+    "Świętokrzyskie____": 0xD35400,
+    "Warmińsko-Mazurskie____": 0x2980B9,
+    "Wielkopolskie____": 0x27AEAE,
+    "Zachodniopomorskie____": 0xcc00cc,
+    "Polska_____": 0x6794dc,
+    "Poland_____": 0x6794dc,
+    "Dolnośląskie_____": 0x33A1FF,
+    "Kujawsko-Pomorskie_____": 0x9B59B6,
+    "Lubelskie_____": 0x27AE60,
+    "Lubuskie_____": 0xF1C40F,
+    "Łódzkie_____": 0xE67E22,
+    "Małopolskie_____": 0x12876f,
+    "Mazowieckie_____": 0xC0392B,
+    "Opolskie_____": 0xd5b6e2,
+    "Podkarpackie_____": 0x2ECC71,
+    "Podlaskie_____": 0x3333ff,
+    "Pomorskie_____": 0xE74C3C,
+    "Śląskie_____": 0x16A085,
+    "Świętokrzyskie_____": 0xD35400,
+    "Warmińsko-Mazurskie_____": 0x2980B9,
+    "Wielkopolskie_____": 0x27AEAE,
+    "Zachodniopomorskie_____": 0xcc00cc
   };
 
 for(const w of wojToSerie){
@@ -231,7 +297,7 @@ for(const w of wojToSerie){
     const format = "#." + "0".repeat(precyzja);
     //console.log(format);
     var series2 = chart.series.push(am5xy.LineSeries.new(root, {
-      name: w.replace('_','').replace('_',''),
+      name: w.replace('_','').replace('_','').replace('_','').replace('_','').replace('_',''),
       xAxis: xAxis,
       yAxis: yAxis,
       valueYField: w,
@@ -246,7 +312,7 @@ for(const w of wojToSerie){
 
     var tooltip = am5.Tooltip.new(root, {
       pointerOrientation: "horizontal",
-      labelText: w.replace('_','').replace('_','') + ": " + `{valueY.formatNumber('${format}')}`,
+      labelText: w.replace('_','').replace('_','').replace('_','').replace('_','').replace('_','') + ": " + `{valueY.formatNumber('${format}')}`,
       getFillFromSprite: false
     });
 
@@ -266,7 +332,7 @@ for(const w of wojToSerie){
 
     // Add bullet
     // https://www.amcharts.com/docs/v5/charts/xy-chart/series/#Bullets
-    if (w === "Polska" || w === "Poland" || w === "Polska_" || w === "Poland_" || w === "Polska__" || w === "Poland__"){
+    if (w === "Polska" || w === "Poland" || w === "Polska_" || w === "Poland_" || w === "Polska__" || w === "Poland__" || w === "Polska___" || w === "Poland___" || w === "Polska____" || w === "Poland____" || w === "Polska_____" || w === "Poland_____"){
         series2.bullets.push(function() {
           var graphics = am5.Triangle.new(root, {
             fill: am5.color(wojColors[w]),
