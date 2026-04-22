@@ -275,6 +275,7 @@ for(const w of wojToSerie){
     series2.appear();
 
   }
+  console.log(cleanedData);
   //date = new Date();
   //console.log("date "+date);
   //date.setHours(0, 0, 0, 0);

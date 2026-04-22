@@ -28,6 +28,7 @@
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line_param.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/scatter_param.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/bar.js"></script>
 
       <div style="width: 15%; display: inline-block; margin-top: 6px; vertical-align: top;">
@@ -1981,12 +1982,17 @@ function download_csv(csv, filename) {
       const data = parseCSV(csvText);
 
       //console.log("data");
-      //console.log(data);
+      console.log(data);
       data.forEach(row => {
         delete row["Polska"];
       });
 
-      createchartLineParam("chartLine",  data.slice(1), undefined, "{{ language }}", "{{ precyzja }}", 0);
+      if('{{ id_map }}' == '17-a-1'){
+        createchartScatterParam("chartLine",  data.slice(1), undefined, "{{ language }}", "{{ precyzja }}", 0);
+      }
+      else{
+        createchartLineParam("chartLine",  data.slice(1), undefined, "{{ language }}", "{{ precyzja }}", 0);
+      }
 
       for(let i=0; i<17; i++){
         $('#row-'+i).toggle();
@@ -2305,7 +2311,13 @@ function updateChartLine(){
       });
       //console.log("data2_forEach_line");
       //console.log(data2);
-      createchartLineParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}", "{{ precyzja }}", 0);
+      if('{{ id_map }}' == '17-a-1'){
+        createchartScatterParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}", "{{ precyzja }}", 0);
+      }
+      else{
+        createchartLineParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}", "{{ precyzja }}", 0);
+      }
+
       });
   });
 
