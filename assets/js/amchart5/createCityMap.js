@@ -57,7 +57,7 @@ function createCityMap(div){
         tooltipY: 0,
         stroke: root.interfaceColors.get("background"),
         strokeWidth: 2,
-        tooltipText: "{title}"
+        tooltipText: "Warszawa"
       })
     });
   });
