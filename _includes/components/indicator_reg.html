@@ -4353,7 +4353,7 @@ function download_csv(csv, filename) {
             }
           }
 
-          var marg = 5;
+          var marg = 0;
           if(maxValue<=5){
             marg = 2;
           }
@@ -4489,7 +4489,7 @@ function updateChartBar(){
 
             //console.log(data3);
 
-            var marg = 5;
+            var marg = 0;
             if(maxValue<=5){
               marg = 2;
             }
@@ -4521,7 +4521,7 @@ function updateChartBar(){
                 baseV = 0;
             }
 
-            createchartBar("chartBar", data3, minValue, maxValue+marg, baseV, "{{ precyzja }}", [selectedYear],"{{ language }}");
+            createchartBar("chartBar", data3, minValue, maxValue+marg, baseV, "{{ precyzja }}", [selectedYear], "{{ language }}");
             });
       });
 }

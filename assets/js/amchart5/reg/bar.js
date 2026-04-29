@@ -92,7 +92,8 @@ am5.array.each(am5.registry.rootElements,
     panY: false,
     wheelX: "none",
     wheelY: "none",
-    layout: root.verticalLayout
+    layout: root.verticalLayout,
+    paddingRight: 50
   }));
 
   // Add legend
@@ -126,18 +127,19 @@ am5.array.each(am5.registry.rootElements,
 
   yAxis.data.setAll(dane);
 
-	var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30, strokeOpacity: 0.1 });
+	var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 50, strokeOpacity: 0.1 });
 	xRenderer.labels.template.setAll({
 		fontSize: 12
 	});
 
   var xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
     maxPrecision: precyzja,
-    max: yMax,
+    max: yMax * 1.05,
     min: yMin,
-    strictMinMax: true,
+    //strictMinMax: true,
     renderer: xRenderer,
-    baseValue: baseV
+    baseValue: baseV,
+    extraMax: 0.05
   }));
 
 
