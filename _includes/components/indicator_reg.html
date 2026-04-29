@@ -3659,7 +3659,7 @@
         }
       </style>
 
-      <div id="chooseWojBar" style="display: inline-flex;margin-right: 1rem;">
+      <div id="chooseWojBar" style="display: inline-flex; margin-right: 1rem; color: black;">
 
         {% if language == 'pl' %}
         <details id="myselectlistBsr">
@@ -3917,7 +3917,7 @@
       <hr>
 
 
-      <div id="chooseWojLine" style="display: inline-flex;margin-right: 1rem; position: relative;">
+      <div id="chooseWojLine" style="display: inline-flex; margin-right: 1rem; position: relative; color: black;">
       {% if language == 'pl' %}
         <details id="myselectlistLine" style="top: -20px; left: 0;">
           <summary>Województwo</summary>
@@ -4573,7 +4573,7 @@ function updateChartLine(){
             //console.log(data2);
 
             if ('{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1' || '{{ id_map }}' == '1-e-3'|| '{{ id_map }}' == '3-e-14'|| '{{ id_map }}' == '3-e-15' || '{{ id_map }}' == '11-c-1' || '{{ id_map }}' == '16-a-2'){
-              createchartScatter("chartLine",  data2.slice(1),"{{ language }}");
+              createchartScatter("chartLine", data2.slice(1), "{{ language }}", "{{ precyzja }}");
             }
             else{
               if ('{{ id_map }}' == '2-b-1'){

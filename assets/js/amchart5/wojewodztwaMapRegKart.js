@@ -320,7 +320,8 @@ function createMapWojKart(div, dane, jez, precyzja){
       centerX: am5.p100,
       y: am5.p50,
       centerY: am5.p50,
-      width: 100
+      width: 100,
+      dx: -30
     })
   );
 
@@ -363,13 +364,18 @@ function createMapWojKart(div, dane, jez, precyzja){
     // Label
     row.children.push(
       am5.Label.new(root, {
-        text: item.label,
-        fontSize: 13,
-        fill: am5.color(0x000000)
+        text: jez === "pl"
+          ? item.label.replace('.', ',')
+          : item.label,
+        fontSize: 12,
+        fill: am5.color(0x000000),
+        textAlign: "center",
+        centerX: am5.p50,
+        x: am5.p50
       })
     );
+  
   });
-
 
   polygonSeries.mapPolygons.template.states.create("hover", {
     fill: am5.color(0xffeecc)

@@ -99,6 +99,10 @@ root.setThemes([
   am5themes_Animated.new(root)
 ]);
 
+root.container.set("background", am5.Rectangle.new(root, {
+  fill: am5.color(0xffffff),
+  fillOpacity: 1
+}));
 
 // Create chart
 // https://www.amcharts.com/docs/v5/charts/xy-chart/
