@@ -16,7 +16,7 @@ pl_priorytet: >-
   Infrastruktura dla edukacji
 pl_definicja: >-
   Liczba zasadniczych szkół zawodowych i branżowych ogółem oraz szkół specjalnych przysposabiających do pracy w przeliczeniu na 1 tys. uczniów takich szkół.
-pl_jednostka_prezentacji: obiekty
+pl_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Ministerstwo Edukacji Narodowej
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
@@ -26,40 +26,40 @@ en_cel: Goal 4. Quality education
 en_zadanie: null
 en_priorytet: >-
   Infrastructure for education
-en_jednostka_prezentacji: objects
+en_jednostka_prezentacji: '-'
 en_dostepne_wymiary: total
 en_zrodlo_danych: Ministry of National Education
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p>Przez <b>szkołę</b> rozumie się jednostkę organizacyjną powołaną na podstawie aktu założycielskiego lub wpisu do ewidencji przez organ administracji rządowej, jednostkę samorządu terytorialnego, osobę prawną lub osobę fizyczną na mocy przepisów ustawy Prawo oświatowe. Szkoła prowadzi kształcenie określonego rodzaju i na określonym poziomie, posiada statut nadany przez organ lub osobę prowadzącą szkołę, określający m.in. jej nazwę, typ, organ prowadzący oraz organizację wewnętrzną. Szkoły i placówki wychowania przedszkolnego (w tym przedszkola) mogą być publiczne i niepubliczne.</p>
-  
+
   <p>Dane obejmują następujące szkoły i ich uczniów:</p>
-  
+
   <p>- w latach 2010-2014 - zasadnicze szkoły zawodowe dla młodzieży (wraz ze specjalnymi), zasadnicze szkoły zawodowe dla dorosłych oraz szkoły specjalne przysposabiające do pracy;</p>
-  
+
   <p>- w latach 2015-2016 – zasadnicze szkoły zawodowe dla młodzieży (wraz ze specjalnymi) oraz szkoły specjalne przysposabiające do pracy;/p>
-  
+
   <p>- w latach 2017-2018 – branżowe szkoły I stopnia (wraz ze specjalnymi), oddziały zasadniczych szkół zawodowych (wraz ze specjalnymi) prowadzone w szkołach branżowych (dla uczniów klas II i III) oraz szkoły specjalne przysposabiające do pracy;</p>
-  
+
   <p>- w 2019 r. – branżowe szkoły I stopnia (wraz ze specjalnymi) oraz szkoły specjalne przysposabiające do pracy;</p>
-  
+
   <p>- od 2020 r. - branżowe szkoły I i II stopnia (wraz ze specjalnymi) oraz szkoły specjalne przysposabiające do pracy.</p>
-  
+
   <p><b>Zasadnicze szkoły zawodowe</b> były trzyletnimi szkołami dającymi wykształcenie zasadnicze zawodowe, umożliwiającymi uzyskanie dyplomu potwierdzającego kwalifikacje zawodowe lub kwalifikacje w zawodzie (od 2012 roku) po zdaniu egzaminu, a także dalsze kształcenie w liceach ogólnokształcących dla dorosłych oraz na kwalifikacyjnych kursach zawodowych. Do szkół tych przyjmowani byli absolwenci gimnazjów. W niektórych zasadniczych szkołach zawodowych nauka trwała od 2 do 3 lat, ale od roku szkolnego 2012/2013 organy prowadzące szkoły o okresie nauczania krótszym niż 3 lata miały obowiązek przekształcić je w szkoły trzyletnie. Od roku szkolnego 2012/2013 nie prowadzono naboru do klas I szkół zawodowych dla dorosłych. W roku szkolnym 2017/18 zasadnicze szkoły zawodowe dla młodzieży zostały przekształcone w branżowe szkoły I stopnia. Uczniowie na poziomie klasy II i III uczyli się w oddziałach zasadniczych szkół zawodowych prowadzonych w szkołach branżowych.</p>
-  
+
   <p><b>Branżowe szkoły I stopnia</b> są to 3-letnie szkoły ponadpodstawowe dające wykształcenie zasadnicze branżowe, umożliwiające uzyskanie dyplomu potwierdzającego kwalifikacje w zawodzie po zdaniu egzaminu, a także dalsze kształcenie w branżowych szkołach II stopnia lub w liceum ogólnokształcącym dla dorosłych począwszy od klasy drugiej. Kształcenie w branżowych szkołach I stopnia rozpoczęło się z dniem 1 września 2017 r. Branżowe szkoły I stopnia zastąpiły wówczas zasadnicze szkoły zawodowe.</p>
-  
+
   <p><b>Branżowe szkoły II stopnia</b> to 2-letnie szkoły dające wykształcenie średnie branżowe, umożliwiające uzyskanie dyplomu zawodowego w zawodzie nauczanym na poziomie technika, po zdaniu egzaminu zawodowego w danym zawodzie, oraz uzyskanie świadectwa dojrzałości po zdaniu egzaminu maturalnego, a następnie kontynuację nauki na studiach. Do branżowej szkoły II stopnia przyjmuje się kandydatów, którzy ukończyli branżową szkołę I stopnia w okresie 5 lat szkolnych poprzedzających rok szkolny, na który ubiegają się o przyjęcie. Kształcenie w branżowych szkołach II stopnia rozpoczęło się z dniem 1 września 2020 r.</p>
-  
+
   <p><b>Szkoła specjalna</b> to instytucja edukacyjna przeznaczona dla uczniów posiadających orzeczenie o potrzebie kształcenia specjalnego. Kształcenie specjalne odbywa się w szkołach specjalnych lub w szkołach ogólnodostępnych, w których tworzone są oddziały: specjalne, integracyjne, ogólnodostępne oraz w specjalnych ośrodkach szkolno-wychowawczych, innych placówkach oświatowo-wychowawczych, zakładach opieki zdrowotnej (włącznie z zakładami lecznictwa uzdrowiskowego) lub w formie indywidualnej.</p>
-  
+
   <p><b>Szkoły specjalne przysposabiające do pracy</b> są to 3-letnie szkoły specjalne przeznaczone wyłącznie dla uczniów z niepełnosprawnością intelektualną w stopniu umiarkowanym lub znacznym oraz dla uczniów z niepełnosprawnościami sprzężonymi. Ukończenie tego typu szkoły umożliwia uzyskanie świadectwa potwierdzającego przysposobienie do pracy. Jest to typ szkoły, po której ukończeniu nie przewiduje się kontynuowania nauki.</p>
-  
+
   <p><b>Uczniem</b> jest osoba uczęszczająca do szkoły.</p>
-  
+
   <p>Reforma systemu edukacji, która rozpoczęła się od 1 września 2017 r., wprowadziła 8-letnią szkołę podstawową oraz docelowo likwidowała gimnazja i wprowadzała 4-letnie liceum ogólnokształcące, 5-letnie technikum, 3-letnią branżową szkołę I stopnia, 2-letnią branżową szkołę II stopnia. Reforma ta miała wpływ na zakres przedstawionych danych, m.in. w zakresie liczby szkół i uczniów na różnych poziomach edukacji.</p>
-  
+
   <p>Dane według stanu w dniu 30 września.</p>
 
 en_wyjasnienia_metodologiczne: >-

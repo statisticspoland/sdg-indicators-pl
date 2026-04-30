@@ -1,17 +1,17 @@
 ---
 translation_id: 4-E-1-reg
 pl_title: >-
-  Odsetek osób dorosłych uczestniczących w kształceniu lub szkoleniu (w wieku 25–64 lata)
+  Odsetek osób dorosłych uczestniczących w kształceniu lub szkoleniu (w wieku 25-64 lata)
 pl_graph_title: >-
-  Odsetek osób dorosłych uczestniczących w kształceniu lub szkoleniu (w wieku 25–64 lata)
+  Odsetek osób dorosłych uczestniczących w kształceniu lub szkoleniu (w wieku 25-64 lata)
 pl_nazwa_wskaznika: >-
-  <b>4.E.1 Odsetek osób dorosłych uczestniczących w kształceniu lub szkoleniu (w wieku 25–64 lata)</b>
+  <b>4.E.1 Odsetek osób dorosłych uczestniczących w kształceniu lub szkoleniu (w wieku 25-64 lata)</b>
 en_title: >-
-  Percentage of adults participating in education or training (aged 25–64)
+  Percentage of adults participating in education or training (aged 25-64)
 en_graph_title: >-
-  Percentage of adults participating in education or training (aged 25–64)
+  Percentage of adults participating in education or training (aged 25-64)
 en_nazwa_wskaznika: >-
-  <b>4.E.1 Percentage of adults participating in education or training (aged 25–64)</b>
+  <b>4.E.1 Percentage of adults participating in education or training (aged 25-64)</b>
 pl_cel: Cel 4. Dobra jakość edukacji
 en_cel: Goal 4. Quality education
 pl_zadanie: null
@@ -60,7 +60,7 @@ pl_wyjasnienia_metodologiczne: >-
   poza programami kształcenia i szkolenia prowadzącymi do uzyskania
   kwalifikacji;</p> <p>• kształcenie nieformalne - uczenie się niezorganizowane
   instytucjonalnie, realizowane w sposób zamierzony lub niezamierzony.</p>
-   
+
 en_wyjasnienia_metodologiczne: >-
   <p>Data (annual average) were compiled on the basis of the results of the
   sample survey: Labour Force Survey (LFS) conducted on a quaterly basis, using
@@ -89,7 +89,7 @@ en_wyjasnienia_metodologiczne: >-
   unintentional learning activities.</p>
 
 pl_uwagi: >-
-  
+
 en_uwagi: >-
 
 pl_data_aktualizacji_danych:

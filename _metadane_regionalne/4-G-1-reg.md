@@ -1,11 +1,11 @@
 ---
 translation_id: 4-G-1-reg
 pl_title: >-
-  Odsetek uczestników zajęć w placówkach wychowania pozaszkolnego ogółem
+  Udział uczestników zajęć w placówkach wychowania pozaszkolnego w Polsce ogółem
 pl_graph_title: >-
-  Odsetek uczestników zajęć w placówkach wychowania pozaszkolnego ogółem
+  Udział uczestników zajęć w placówkach wychowania pozaszkolnego w Polsce ogółem
 pl_nazwa_wskaznika: >-
-  <b>4.G.1 Odsetek uczestników zajęć w placówkach wychowania pozaszkolnego ogółem</b>
+  <b>4.G.1 Udział uczestników zajęć w placówkach wychowania pozaszkolnego w Polsce ogółem</b>
 en_title: >-
   Percentage of participants in classes in out-of-school educational institutions
 en_graph_title: >-
@@ -35,11 +35,11 @@ en_czestotliwosc_dostępnosc_danych: Annual data, since 2019
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p>Zadaniem <b>wychowania pozaszkolnego</b> jest stwarzanie dzieciom i młodzieży warunków sprzyjających rozwijaniu zainteresowań i uzdolnień oraz kształtowanie aktywności społecznej i umiejętności spędzania czasu wolnego.</p>
-   
+
   <p><b>Placówka wychowania pozaszkolnego</b> to placówka oświatowo - wychowawcza dla dzieci w wieku przedszkolnym oraz dzieci i młodzieży w wieku szkolnym. Ma na celu kształtowanie i rozwijanie uzdolnień dzieci i młodzieży, pogłębianie ich wiedzy i umiejętności oraz organizowanie rekreacji. Do placówek wychowania pozaszkolnego zalicza się: pałace młodzieży, młodzieżowe domy kultury, ogniska pracy pozaszkolnej, ogrody jordanowskie, międzyszkolne ośrodki sportowe i inne placówki o charakterze specjalistycznym, jak np. stacje młodego technika, planetaria itp.</p>
-   
+
   <p><b>Uczestnikiem zajęć</b> w placówce wychowania pozaszkolnego jest uczeń, który bierze udział w stałych lub okresowych formach zajęć w pozaszkolnych placówkach oświatowo-wychowawczych.</p>
-   
+
 en_wyjasnienia_metodologiczne: >-
   <p>The task of <b>extracurricular education</b> is to create conditions for children and young people conducive to the development of interests and talents, as well as to shape social activity and leisure skills.</p>
 

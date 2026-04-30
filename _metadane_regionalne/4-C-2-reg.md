@@ -16,7 +16,7 @@ pl_priorytet: >-
   Infrastruktura dla edukacji
 pl_definicja: >-
   Liczba liceów ogólnokształcących dla młodzieży (wraz ze specjalnymi) i dla dorosłych, a także (do 2013 r.) uzupełniających liceów ogólnokształcących dla młodzieży (wraz ze specjalnymi) i dla dorosłych – w przeliczeniu na 1 tys. uczniów takich szkół.
-pl_jednostka_prezentacji: obiekty
+pl_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Ministerstwo Edukacji Narodowej
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
@@ -26,7 +26,7 @@ en_cel: Goal 4. Quality education
 en_zadanie: null
 en_priorytet: >-
   Infrastructure for education
-en_jednostka_prezentacji: objects
+en_jednostka_prezentacji: '-'
 en_dostepne_wymiary: total
 en_zrodlo_danych: Ministry of National Education
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
@@ -55,7 +55,7 @@ en_wyjasnienia_metodologiczne: >-
   <p><b>Pupil/student</b> is a person attending school. </p>
 
   <p>The reform of the education system, which began on September 1, 2017, introduced an 8-year primary school and ultimately abolished lower secondary school and introduced a 4-year general secondary school, a 5-year technical school, a 3-year industry first-cycle school, a 2-year industry second-cycle school. This reform had an impact on the scope of the data presented, including the number of schools and pupils at different levels of education. </p>
-  
+
   <p>Data as of 30 September.</p>
 
 en_definicja: >-

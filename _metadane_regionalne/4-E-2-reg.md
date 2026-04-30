@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba absolwentów uczelni w przeliczeniu na 10 tys. ludności ogółem
 en_definicja: >-
   Number of graduates of higher education institutions per 10 thous. total population
-pl_jednostka_prezentacji: osoby na 10 tys. ludności
-en_jednostka_prezentacji: people per 10 000 population
+pl_jednostka_prezentacji: osoby
+en_jednostka_prezentacji: persons
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Nauki i Szkolnictwa Wyższego, Główny Urząd Statystyczny
@@ -35,19 +35,19 @@ en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p><b>Uczelnia</b> to jednostka stanowiąca część systemu nauki i edukacji, prowadząca studia na co najmniej jednym kierunku. Uczelnie mogą być publiczne i niepubliczne; uczelnie niepubliczne tworzone są na podstawie zezwolenia Ministra właściwego do spraw szkolnictwa wyższego i nauki. Uczelnie realizują kształcenie w formie studiów stacjonarnych i niestacjonarnych.</p>
-   
+
   <p><b>Absolwent studiów</b> otrzymuje dyplom ukończenia studiów na określonym kierunku i profilu potwierdzający wykształcenie wyższe oraz tytuł zawodowy:</p>
-   
+
   <p>- licencjata, inżyniera albo równorzędny potwierdzający wykształcenie wyższe na tym samym poziomie – w przypadku studiów pierwszego stopnia;</p>
-   
+
   <p>- magistra, magistra inżyniera albo równorzędny potwierdzający wykształcenie wyższe na tym samym poziomie – w przypadku studiów drugiego stopnia i jednolitych studiów magisterskich.</p>
-   
+
   <p>Dane prezentowane są według faktycznej lokalizacji uczelni i jednostek zamiejscowych/filii. Dane obejmują cudzoziemców.</p>
-   
+
   <p>Dane do 2011 r. – bez szkół resortu obrony narodowej i resortu spraw wewnętrznych, ale łącznie z jednostkami zamiejscowymi polskich uczelni za granicą (wykazywanymi w miejscu siedziby uczelni macierzystej).</p>
-   
+
   <p>Dane od 2012 r. – łącznie ze szkołami resortu obrony narodowej i resortu spraw wewnętrznych, ale bez jednostek zamiejscowych polskich uczelni za granicą.</p>
-   
+
 en_wyjasnienia_metodologiczne: >-
   <p><b>Higher education institution</b> a unit constituting a part of the system of science and education, providing study programmes in at least one field of study. Universities may be public and non-public; non-public universities are established on the basis of a permit of the Minister competent for higher education and science. Universities provide education in the form of full-time and part-time studies.</p>
 

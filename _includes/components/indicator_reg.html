@@ -800,6 +800,7 @@
             style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans" value="2024" selected>2024</option>
             <option style="font-family: Fira Sans" value="2023">2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
             <option style="font-family: Fira Sans" value="2021">2021</option>
             <option style="font-family: Fira Sans" value="2020">2020</option>
             <option style="font-family: Fira Sans" value="2019">2019</option>
@@ -2697,6 +2698,7 @@
         style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
         <option style="font-family: Fira Sans" value="2024" selected>2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
         <option style="font-family: Fira Sans" value="2020">2020</option>
         <option style="font-family: Fira Sans" value="2019">2019</option>
@@ -4299,12 +4301,18 @@ function download_csv(csv, filename) {
         delete row["Polska"];
       });
 
-      if ('{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1' || '{{ id_map }}' == '1-e-3'|| '{{ id_map }}' == '3-e-14'|| '{{ id_map }}' == '3-e-15' || '{{ id_map }}' == '11-c-1' || '{{ id_map }}' == '16-a-2' ){
+      if ('{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1' || '{{ id_map }}' == '1-e-3'|| '{{ id_map }}' == '3-e-14'|| '{{ id_map }}' == '3-e-15' || '{{ id_map }}' == '4-g-5' || '{{ id_map }}' == '11-c-1' || '{{ id_map }}' == '16-a-2' ){
         createchartScatter("chartLine",  data.slice(1),"{{ language }}");
       }
       else{
         if ('{{ id_map }}' == '2-b-1'){
           createchartLine("chartLine",  data.slice(1), "{{ language }}", 55, 100, "{{ precyzja }}");
+        }
+        else if ('{{ id_map }}' == '4-d-2'){
+          createchartLine("chartLine",  data.slice(1), "{{ language }}", 62, "{{ precyzja }}");
+        }
+        else if ('{{ id_map }}' == '4-d-3'){
+          createchartLine("chartLine",  data.slice(1), "{{ language }}", 62, "{{ precyzja }}");
         }
         else if ('{{ id_map }}' == '5-a-3'){
           createchartLine("chartLine",  data.slice(1), "{{ language }}", 62, "{{ precyzja }}");
@@ -4377,6 +4385,18 @@ function download_csv(csv, filename) {
               break;
             case '2-d-1':
               maxValue=240;
+              marg=0;
+              break;
+            case '4-a-4':
+              maxValue=13;
+              marg=0;
+              break;
+            case '4-b-1':
+              maxValue=3.5;
+              marg=0;
+              break;
+            case '4-c-3':
+              maxValue=16;
               marg=0;
               break;
             case '5-a-1':
@@ -4534,6 +4554,22 @@ function updateChartBar(){
                 maxValue=240;
                 marg=0;
                 break;
+              case '4-a-4':
+                maxValue=13;
+                marg=0;
+                break;
+              case '4-b-1':
+                maxValue=3.5;
+                marg=0;
+                break;
+              case '4-b-2' & !(checkedValuesBar.includes("POLSKA")):
+                maxValue=19000;
+                marg=0;
+                break;
+              case '4-c-3':
+                maxValue=16;
+                marg=0;
+                break;
               case '5-a-1':
                 maxValue=350;
                 marg=0;
@@ -4613,12 +4649,18 @@ function updateChartLine(){
             });
             //console.log(data2);
 
-            if ('{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1' || '{{ id_map }}' == '1-e-3'|| '{{ id_map }}' == '3-e-14'|| '{{ id_map }}' == '3-e-15' || '{{ id_map }}' == '11-c-1' || '{{ id_map }}' == '16-a-2'){
+            if ('{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1' || '{{ id_map }}' == '1-e-3'|| '{{ id_map }}' == '3-e-14'|| '{{ id_map }}' == '3-e-15' || '{{ id_map }}' == '4-g-5' || '{{ id_map }}' == '11-c-1' || '{{ id_map }}' == '16-a-2'){
               createchartScatter("chartLine", data2.slice(1), "{{ language }}", "{{ precyzja }}");
             }
             else{
               if ('{{ id_map }}' == '2-b-1'){
                 createchartLine("chartLine",  data2.slice(1), "{{ language }}", 55, 100, "{{ precyzja }}");
+              }
+              else if ('{{ id_map }}' == '4-d-2'){
+                createchartLine("chartLine",  data2.slice(1), "{{ language }}", 62, "{{ precyzja }}");
+              }
+              else if ('{{ id_map }}' == '4-d-3'){
+                createchartLine("chartLine",  data2.slice(1), "{{ language }}", 62, "{{ precyzja }}");
               }
               else if ('{{ id_map }}' == '5-a-3'){
                 createchartLine("chartLine",  data2.slice(1), "{{ language }}", 62, "{{ precyzja }}");

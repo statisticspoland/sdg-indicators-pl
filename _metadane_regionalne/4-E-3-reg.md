@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba słuchaczy studiów podyplomowych i uczestników studiów doktoranckich w przeliczeniu na 1 tys. ludności w wieku produkcyjnym i poprodukcyjnym
 en_definicja: >-
   Number of students of non-degree postgraduate programmes and PhD students per 1 thous. population of working and post-working age
-pl_jednostka_prezentacji: osoby na 1 tys. ludności w wieku produkcyjnym i poprodukcyjnym
-en_jednostka_prezentacji: persons per 1 000 of working and post-working age population
+pl_jednostka_prezentacji: osoby
+en_jednostka_prezentacji: persons
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Nauki i Szkolnictwa Wyższego, Główny Urząd Statystyczny
@@ -35,23 +35,23 @@ en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p><b>Studia podyplomowe</b> to forma kształcenia, na którą są przyjmowani kandydaci posiadający kwalifikacje co najmniej pierwszego stopnia, prowadzona w uczelni, instytucie naukowym Polskiej Akademii Nauk, instytucie badawczym lub Centrum Medycznym Kształcenia Podyplomowego, kończąca się uzyskaniem kwalifikacji podyplomowych.</p>
-   
+
   <p><b>Studia doktoranckie</b> to studia trzeciego stopnia, przygotowujące do uzyskania stopnia naukowego doktora, prowadzone przez uprawnioną jednostkę organizacyjną uczelni, instytut naukowy Polskiej Akademii Nauk, instytut badawczy lub międzynarodowy instytut naukowy działający na terytorium Rzeczypospolitej Polskiej utworzony na podstawie odrębnych przepisów, na które są przyjmowani kandydaci posiadający kwalifikacje drugiego stopnia, kończące się uzyskaniem kwalifikacji trzeciego stopnia.</p>
-   
+
   <p><b>Szkoły doktorskie</b> funkcjonujące od roku akademickiego 2019/20 są zorganizowaną formą kształcenia doktorantów, prowadzoną przez uprawnione uczelnie i instytuty w co najmniej dwóch dyscyplinach naukowych lub sztuki. Kształcenie przygotowuje uczestnika do uzyskania stopnia doktora i kończy się złożeniem rozprawy doktorskiej wraz z pozytywną opinią promotora lub promotorów. Szkoła doktorska może być prowadzona przez uczelnię akademicką, instytut PAN, instytut badawczy albo instytut międzynarodowy posiadające kategorię naukową A+, A albo B+ w co najmniej 2 dyscyplinach.</p>
-   
+
   <p>Słuchacze studiów podyplomowych i uczestnicy studiów doktoranckich są wykazywani tyle razy, na ilu kierunkach studiują.</p>
-   
+
   <p>Dane prezentowane są według faktycznej lokalizacji uczelni i jednostek zamiejscowych/filii. Dane obejmują cudzoziemców.</p>
-   
+
   <p>Dane do 2011 r. – bez szkół resortu obrony narodowej i resortu spraw wewnętrznych, ale łącznie z jednostkami zamiejscowymi polskich uczelni za granicą (wykazywanymi w miejscu siedziby uczelni macierzystej).</p>
-   
+
   <p>Dane od 2012 r. – łącznie ze szkołami resortu obrony narodowej i resortu spraw wewnętrznych, ale bez jednostek zamiejscowych polskich uczelni za granicą.</p>
-   
+
   <p>Ludność w <b>wieku produkcyjnym</b> oznacza ludność w wieku zdolności do pracy, tj. mężczyzn w wieku 18-64 lata i kobiety w wieku 18-59 lat.</p>
-   
+
   <p>Ludność w <b>wieku poprodukcyjnym</b> oznacza ludność w wieku, w którym zazwyczaj kończy się pracę zawodową, tj. mężczyzn w wieku 65 lat i więcej oraz kobiety w wieku 60 lat i więcej.</p>
-   
+
 en_wyjasnienia_metodologiczne: >-
   <p><b>Non-degree postgraduate programmes</b> a level of education open to holders of first-cycle qualifications and provided by a higher education institution, a scientific institute of the Polish Academy of Sciences, a research institute or the Centre for Postgraduate Medical Studies, leading upon successful completion to the award of postgraduate qualifications.</p>
 

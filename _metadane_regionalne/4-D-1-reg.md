@@ -13,7 +13,7 @@ pl_nazwa_wskaznika: >-
 pl_cel: Cel 1. Koniec z ubóstwem
 pl_zadanie: null
 pl_priorytet: >-
-  Wspieranie rodzin z dziećmi i opieka nad dziećmi
+  Tworzenie warunków dla poprawy dostępności i efektywności kształcenia oraz wyrównywania szans edukacyjnych. (Wspieranie edukacji na wszystkich poziomach w obszarze przygotowania do obowiązkowych egzaminów kończących szkołę)
 pl_definicja: >-
   Udział dzieci w wieku 3–5 lat objętych wychowaniem przedszkolnym w ogólnej liczbie ludności w tej grupie wieku.
 pl_jednostka_prezentacji: 'procent'
@@ -25,7 +25,7 @@ en_nazwa_wskaznika: >-
 en_cel: Goal 1. No poverty
 en_zadanie: null
 en_priorytet: >-
-  Supporting families with children and childcare
+  Creating conditions for improving the accessibility and effectiveness of education and equalizing educational opportunities. (Supporting education at all levels in the area of ​​preparation for compulsory school-leaving exams)
 en_jednostka_prezentacji: 'percent'
 en_dostepne_wymiary: total
 en_zrodlo_danych: The Ministry of Education and Science / Statistics Poland

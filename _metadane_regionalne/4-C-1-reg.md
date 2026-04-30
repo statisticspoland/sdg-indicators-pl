@@ -16,7 +16,7 @@ pl_priorytet: >-
   Infrastruktura dla edukacji
 pl_definicja: >-
   Liczba szkół podstawowych dla dzieci i młodzieży (wraz ze specjalnymi) oraz dla dorosłych w przeliczeniu na 1 tys. uczniów takich szkół.
-pl_jednostka_prezentacji: obiekty
+pl_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Ministerstwo Edukacji Narodowej
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
@@ -26,7 +26,7 @@ en_cel: Goal 4. Quality education
 en_zadanie: null
 en_priorytet: >-
   Infrastructure for education
-en_jednostka_prezentacji: objects
+en_jednostka_prezentacji: '-'
 en_dostepne_wymiary: total
 en_zrodlo_danych: Ministry of National Education
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
