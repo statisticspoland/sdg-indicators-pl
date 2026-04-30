@@ -16,7 +16,7 @@ pl_priorytet: >-
   Wysoki poziom kształcenia i szkolenia zawodowego kadry medycznej oraz jej dostępność dla pacjentów
 pl_definicja: >-
   Liczba studentów kierunków medycznych na uczelniach publicznych oraz niepublicznych.
-pl_jednostka_prezentacji: Osoby
+pl_jednostka_prezentacji: tys. os.
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2014 r.
@@ -26,7 +26,7 @@ en_cel: Goal 3. Good health and well-being
 en_zadanie: null
 en_priorytet: >-
   High level of education and professional training of medical staff and their availability to patients
-en_jednostka_prezentacji: persons
+en_jednostka_prezentacji: thousand people
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2014

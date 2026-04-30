@@ -16,7 +16,7 @@ pl_priorytet: >-
   Poprawa jakości i dostępności infrastruktury opieki zdrowotnej
 pl_definicja: >-
   Średnia liczba łóżek w szpitalach uzdrowiskowych i sanatoriach uzdrowiskowych.
-pl_jednostka_prezentacji: Sztuki
+pl_jednostka_prezentacji: tys. szt.
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
@@ -26,7 +26,7 @@ en_cel: Goal 3. Good health and well-being
 en_zadanie: null
 en_priorytet: >-
   Improving the quality and availability of healthcare infrastructure
-en_jednostka_prezentacji: pieces
+en_jednostka_prezentacji: thousand pices
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010

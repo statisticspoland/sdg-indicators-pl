@@ -279,7 +279,7 @@ function createMapWojKart(div, dane, jez, precyzja){
 
     const value = dataItem.dataContext.value;
 
-    if(value !== 'x' && !isNaN(value)){
+    if(value !== 'x' && !isNaN(value) && value !=0){
       const radius = radiusFromValue(value);
 
       let circle = am5.Circle.new(root, {
@@ -374,7 +374,7 @@ function createMapWojKart(div, dane, jez, precyzja){
         x: am5.p50
       })
     );
-  
+
   });
 
   polygonSeries.mapPolygons.template.states.create("hover", {

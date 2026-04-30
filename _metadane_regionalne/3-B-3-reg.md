@@ -16,7 +16,7 @@ pl_priorytet: >-
   Poprawa jakości i dostępności infrastruktury opieki zdrowotnej
 pl_definicja: >-
   Liczba przychodni przypadająca na 10000 ludności ogółem.
-pl_jednostka_prezentacji: obiekty
+pl_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.

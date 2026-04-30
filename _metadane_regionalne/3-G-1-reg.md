@@ -16,7 +16,7 @@ pl_priorytet: >-
   Wspieranie bezpieczeństwa zdrowotnego mieszkańców
 pl_definicja: >-
   Liczba wyjazdów zespołów ratownictwa medycznego na miejsce zdarzenia.
-pl_jednostka_prezentacji: Sztuki
+pl_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
@@ -26,7 +26,7 @@ en_cel: Goal 3. Good health and well-being
 en_zadanie: null
 en_priorytet: >-
   Supporting the health safety of residents
-en_jednostka_prezentacji: pieces
+en_jednostka_prezentacji: '-'
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
