@@ -6,7 +6,7 @@ sdg_goal: 5
 indicator:  5.A.8.reg
 target_id:  '5.A.8'
 permalink: /en/statistics_reg/5-A-8/
-pre:  0
+pre:  1
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  en

@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba miejsc w placówkach sprawujących opiekę nad dziećmi do lat 3 (żłobki, oddziały żłobkowe i kluby dziecięce) przypadająca na 1000 dzieci w grupie wieku do lat 3.
 en_definicja: >-
   Number of places in childcare facilities for children up to 3 years of age (nurseries, nursery wards and children's clubs) per 1000 children up to 3 years of age.
-pl_jednostka_prezentacji: miejsca na 1000 dzieci do 3 lat
-en_jednostka_prezentacji: places for 1000 children up to 3 years old
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
@@ -35,23 +35,23 @@ en_czestotliwosc_dostępnosc_danych: Annual data, since 2014
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p>Ustawa z dnia 4 lutego 2011 r. o opiece nad dziećmi w wieku do lat 3 (Dz. U. z 2024 r. poz. 338, z późn. zm.) przewiduje sprawowanie opieki nad dziećmi w: żłobkach, klubach dziecięcych, przez dziennego opiekuna lub przez nianię.</p>
-   
+
   <p><b>Żłobek, klub dziecięcy</b> to jednostka organizacyjna sprawująca opiekę nad dziećmi do lat 3, realizująca funkcje opiekuńcze, wychowawcze, edukacyjne oraz wpisana do rejestru prowadzonego przez wójta, burmistrza, prezydenta miasta.</p>
-   
+
   <p>Opieka w żłobku jest sprawowana nad dziećmi w wieku od ukończenia 20 tygodnia życia, natomiast w klubie dziecięcym – od ukończenia 1 roku życia. W żłobku i klubie dziecięcym zapewnia się opiekę nad dzieckiem w wymiarze do 10 godzin dziennie względem każdego dziecka. Liczba miejsc w klubie dziecięcym nie może być większa niż 30.</p>
-   
+
   <p><b>Oddział żłobkowy</b> to jednostka działająca przy przedszkolu (lub innej instytucji) sprawująca opiekę nad dziećmi do lat 3 nie wpisana do rejestru żłobków i klubów dziecięcych, prowadzonego przez wójta, burmistrza lub prezydenta miasta.</p>
-   
+
   <p>Placówki objęte badaniem GUS:</p>
-   
+
   <p>- żłobki i oddziały żłobkowe oraz od 2012 r. kluby dziecięce;</p>
-   
+
   <p>- żłobki i kluby dziecięce (od 2022 r.), z wyłączeniem oddziałów żłobkowych.</p>
-   
+
   <p>Dane od 2022 r. w oparciu o Rejestr Żłobków, który nie zawiera kategorii „oddziały żłobkowe”.</p>
-   
+
   <p>Do przeliczeń przyjęto liczbę dzieci według stanu w dniu 31 grudnia.</p>
-   
+
 en_wyjasnienia_metodologiczne: >-
   <p>Act of 4 February 2011 on the Care for Children aged up to 3 years (Journal of Laws 2024 item 338, as amended) provides for the care of children in: nurseries and children's clubs, by a day caregiver or by a nanny.</p>
 

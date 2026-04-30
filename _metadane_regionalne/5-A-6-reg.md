@@ -21,7 +21,7 @@ pl_priorytet: >-
 en_priorytet: >-
   Activities supporting gender equality in families
 pl_definicja: >-
-  Udział pracujących kobiet z najmłodszym dzieckiem w wieku do 5 lat w ogólnej liczbie kobiet znajmłodszym dzieckiem w wieku do 5 lat.
+  Udział pracujących kobiet z najmłodszym dzieckiem w wieku do 5 lat w ogólnej liczbie kobiet z najmłodszym dzieckiem w wieku do 5 lat.
 en_definicja: >-
   Share of employed women with the youngest child up to 5 years old in the total number of womenwith the youngest child up to 5 years old.
 pl_jednostka_prezentacji: procent
@@ -75,7 +75,7 @@ pl_wyjasnienia_metodologiczne: >-
   nieotrzymujący wynagrodzenia, osoby pracujące w rolnictwie indywidualnym
   zajmujące się wytwarzaniem produktów rolnych wyłącznie lub
   głównie na własne potrzeby.</p>
-   
+
 en_wyjasnienia_metodologiczne: >-
   <p>Data come from a sample
   survey: <strong>Labour Force Survey (LFS)</strong>. The survey is

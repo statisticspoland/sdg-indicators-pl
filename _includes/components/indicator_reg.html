@@ -4306,6 +4306,12 @@ function download_csv(csv, filename) {
         if ('{{ id_map }}' == '2-b-1'){
           createchartLine("chartLine",  data.slice(1), "{{ language }}", 55, 100, "{{ precyzja }}");
         }
+        else if ('{{ id_map }}' == '5-a-3'){
+          createchartLine("chartLine",  data.slice(1), "{{ language }}", 62, "{{ precyzja }}");
+        }
+        else if ('{{ id_map }}' == '5-a-4'){
+          createchartLine("chartLine",  data.slice(1), "{{ language }}", 62, "{{ precyzja }}");
+        }
         else {
           createchartLine("chartLine",  data.slice(1), "{{ language }}", 0, 0, "{{ precyzja }}");
         }
@@ -4354,6 +4360,8 @@ function download_csv(csv, filename) {
           }
 
           var marg = 0;
+          var minValue = 0;
+
           if(maxValue<=5){
             marg = 2;
           }
@@ -4371,6 +4379,17 @@ function download_csv(csv, filename) {
               maxValue=240;
               marg=0;
               break;
+            case '5-a-1':
+              maxValue=350;
+              marg=0;
+              break;
+            case '5-a-3':
+              minValue=60;
+              break;
+            case '5-a-4':
+              minValue=60;
+              break;
+
             default:
           }
 
@@ -4379,10 +4398,16 @@ function download_csv(csv, filename) {
             case '2-b-1':
               baseV = 100;
               break;
+            case '5-a-3':
+              baseV = 60;
+              break;
+            case '5-a-4':
+              baseV = 60;
+              break;
             default:
               baseV = 0;
           }
-          createchartBar("chartBar", data2.slice(1), 0,maxValue+marg,baseV, "{{ precyzja }}", [lastYearValue],"{{ language }}");
+          createchartBar("chartBar", data2.slice(1), minValue,maxValue+marg,baseV, "{{ precyzja }}", [lastYearValue],"{{ language }}");
           });
     });
 //}, 500);
@@ -4490,6 +4515,8 @@ function updateChartBar(){
             //console.log(data3);
 
             var marg = 0;
+            var minValue = 0;
+
             if(maxValue<=5){
               marg = 2;
             }
@@ -4507,15 +4534,29 @@ function updateChartBar(){
                 maxValue=240;
                 marg=0;
                 break;
+              case '5-a-1':
+                maxValue=350;
+                marg=0;
+                break;
+              case '5-a-3':
+                minValue=60;
+                break;
+              case '5-a-4':
+                minValue=60;
+                break;
               default:
             }
-
-            var minValue = 0;
 
             var baseV = 0;
             switch ('{{ id_map }}') {
               case '2-b-1':
                 baseV = 100;
+                break;
+              case '5-a-3':
+                baseV = 60;
+                break;
+              case '5-a-4':
+                baseV = 60;
                 break;
               default:
                 baseV = 0;
@@ -4578,6 +4619,12 @@ function updateChartLine(){
             else{
               if ('{{ id_map }}' == '2-b-1'){
                 createchartLine("chartLine",  data2.slice(1), "{{ language }}", 55, 100, "{{ precyzja }}");
+              }
+              else if ('{{ id_map }}' == '5-a-3'){
+                createchartLine("chartLine",  data2.slice(1), "{{ language }}", 62, "{{ precyzja }}");
+              }
+              else if ('{{ id_map }}' == '5-a-4'){
+                createchartLine("chartLine",  data2.slice(1), "{{ language }}", 62, "{{ precyzja }}");
               }
               else {
                 createchartLine("chartLine",  data2.slice(1), "{{ language }}", 0, 0, "{{ precyzja }}");
