@@ -26,7 +26,7 @@ en_cel: Goal 2. Zero hunger
 en_zadanie: null
 en_priorytet: >-
   Research and development in food production and agriculture
-en_jednostka_prezentacji: thousend zł
+en_jednostka_prezentacji: thous. zl
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010

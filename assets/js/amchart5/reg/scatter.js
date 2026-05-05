@@ -216,6 +216,9 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
     series2.appear();
     */
     const format = "#." + "0".repeat(precyzja);
+
+    //console.log("format: " + format);
+
     var series2 = chart.series.push(am5xy.LineSeries.new(root, {
       //calculateAggregates: true,
       name: w,
@@ -226,7 +229,7 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
       legendLabelText: "{name}: " + `{valueY.formatNumber('${format}')}`,
       tooltip: am5.Tooltip.new(root, {
         pointerOrientation: "horizontal",
-        labelText: w+": {valueY}"
+        labelText: w + " " + `{valueY.formatNumber('${format}')}`,
       })
     }));
 
