@@ -6,7 +6,7 @@ sdg_goal: 3
 indicator:  3.E.5.reg
 target_id:  '3.E.5'
 permalink: /statistics_reg/3-E-5/
-pre:  0
+pre:  1
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  pl
