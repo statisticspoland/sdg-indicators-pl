@@ -16,7 +16,7 @@ pl_priorytet: >-
   Zwiększenie dostępności do leczenia specjalistycznego oraz terapeutycznego, ze szczególnym uwzględnieniem chorób cywilizacyjnych
 pl_definicja: >-
   Liczba lekarzy specjalistów ogółem w przeliczeniu na 10 tys. ludności
-pl_jednostka_prezentacji: Osoby
+pl_jednostka_prezentacji: osoby
 pl_dostepne_wymiary: Ogółem, anestezjologia i intensywna terapia, chirurgia, choroby płuc, choroby wewnętrzne, dermatologia i wenerologia, kardiologia, medycyna rodzinna, medycyna pracy, neurologia, endokrynologia, diabetologia, okulistyka, onkologia, otolaryngologia, pediatria, położnictwo i ginekologia, psychiatria, radiodiagnostyka
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.

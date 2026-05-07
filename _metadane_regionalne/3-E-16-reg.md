@@ -16,7 +16,7 @@ pl_priorytet: >-
   Rozwój profilaktyki zdrowotnej i rehabilitacji oraz promocja zdrowia
 pl_definicja: >-
   Liczba kuracjuszy leczonych stacjonarnie w szpitalach uzdrowiskowych i sanatoriach uzdrowiskowych.
-pl_jednostka_prezentacji: Osoby
+pl_jednostka_prezentacji: osoby
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.

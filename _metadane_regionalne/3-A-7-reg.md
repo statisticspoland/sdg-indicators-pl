@@ -16,7 +16,7 @@ pl_priorytet: >-
   Zwiększenie dostępności do usług publicznych z zakresu ochrony zdrowia
 pl_definicja: >-
   Liczba pacjentów w hospicjach w przeliczeniu na 10 tys. ludności.
-pl_jednostka_prezentacji: Osoby
+pl_jednostka_prezentacji: osoby
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.

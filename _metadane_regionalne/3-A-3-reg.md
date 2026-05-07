@@ -16,10 +16,10 @@ pl_priorytet: >-
   Zwiększenie dostępności do usług publicznych z zakresu ochrony zdrowia
 pl_definicja: >-
   Liczba pielęgniarek i położnych (pracujących bezpośrednio z pacjentem) w przeliczeniu na 10 tys. ludności.
-pl_jednostka_prezentacji: Osoby
+pl_jednostka_prezentacji: osoby
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
-pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2019 r.
 en_nazwa_wskaznika: >-
   <b>3.A.3 Number of nurses and midwives per 10 thous. population (employed persons in the main place of work)</b>
 en_cel: Goal 3. Good health and well-being
@@ -29,7 +29,7 @@ en_priorytet: >-
 en_jednostka_prezentacji: persons
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
-en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2019
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p><strong>Pielęgniarką lub pielęgniarzem</strong> jest osoba, która posiada

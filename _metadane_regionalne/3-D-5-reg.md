@@ -16,7 +16,7 @@ pl_priorytet: >-
   Wysoki poziom kształcenia i szkolenia zawodowego kadry medycznej oraz jej dostępność dla pacjentów
 pl_definicja: >-
   Uczestnicy studiów doktoranckich i doktorskich uczelni nadzorowanych przez ministra właściwego do spraw zdrowia.
-pl_jednostka_prezentacji: Osoby
+pl_jednostka_prezentacji: osoby
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2019 r.

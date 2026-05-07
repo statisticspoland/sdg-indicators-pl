@@ -16,7 +16,7 @@ pl_priorytet: >-
   Zwiększenie dostępności do leczenia specjalistycznego oraz terapeutycznego, ze szczególnym uwzględnieniem chorób cywilizacyjnych
 pl_definicja: >-
   Liczba zgonów z powodu nowotworów ogółem w przeliczeniu na 100 tys. ludności.
-pl_jednostka_prezentacji: Osoby
+pl_jednostka_prezentacji: osoby
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.

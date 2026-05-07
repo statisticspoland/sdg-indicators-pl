@@ -16,7 +16,7 @@ pl_priorytet: >-
   Wspieranie bezpieczeństwa zdrowotnego mieszkańców
 pl_definicja: >-
   Liczba osób, którym udzielono świadczenia zdrowotnego w miejscu zdarzenia w przeliczeniu na 1 000 ludności.
-pl_jednostka_prezentacji: Osoby
+pl_jednostka_prezentacji: osoby
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
