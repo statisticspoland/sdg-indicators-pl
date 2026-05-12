@@ -17,7 +17,7 @@
                       
                         "jednostka": "TJ",
                       
-                        "wymiary": "ogółem",
+                        "wymiary": "wg sektorów",
                       
                         "metodologia": "Energia ze źródeł odnawialnych oznacza energię pochodzącą z naturalnych powtarzających się procesów przyrodniczych, pozyskiwaną z odnawialnych niekopalnych źródeł energii. Odnawialne źródła energii (OZE) stanowią alternatywę dla tradycyjnych pierwotnych nieodnawialnych nośników energii (paliw kopalnych). Ich zasoby uzupełniają się w naturalnych procesach, co praktycznie pozwala traktować je jako niewyczerpalne. Ponadto pozyskiwanie energii z tych źródeł jest, w porównaniu do źródeł tradycyjnych (kopalnych), bardziej przyjazne środowisku naturalnemu. Wykorzystywanie OZE w znacznym stopniu zmniejsza szkodliwe oddziaływanie energetyki na środowisko naturalne, głównie poprzez ograniczenie emisji szkodliwych substancji, zwłaszcza gazów cieplarnianych. W warunkach krajowych energia ze źródeł odnawialnych obejmuje energię promieniowania słonecznego, wody, wiatru, zasobów geotermalnych oraz energię wytworzoną z biopaliw stałych, biogazu i biopaliw ciekłych, a także energię otoczenia pozyskiwaną przez pompy ciepła. Pozyskanie jest to ilość energii uzyskana z naturalnych zasobów (dotyczy tylko nośników energii pierwotnej).",
                       
@@ -33,41 +33,116 @@
                       }
       ],
       "dane": [
-        {"ogółem": [
-                        {
-                        
-                            "2010" :   "563",
-                        
-                            "2011" :   "531",
-                        
-                            "2012" :   "661",
-                        
-                            "2013" :   "778",
-                        
-                            "2014" :   "847",
-                        
-                            "2015" :   "909",
-                        
-                            "2016" :   "930",
-                        
-                            "2017" :   "946",
-                        
-                            "2018" :   "991",
-                        
-                            "2019" :   "1050",
-                        
-                            "2020" :   "1073",
-                        
-                            "2021" :   "1189",
-                        
-                            "2022" :   "1318",
-                        
-                            "2023" :   "1372",
-                        
-                            "2024" :   "1556"
-                        
-                        }
-                    ]}
+        {
+                      "wg sektorów": [
+                          {
+                              "ogółem": [
+                                  {
+                                  
+                                      "2010" :   "563",
+                                  
+                                      "2011" :   "531",
+                                  
+                                      "2012" :   "661",
+                                  
+                                      "2013" :   "778",
+                                  
+                                      "2014" :   "847",
+                                  
+                                      "2015" :   "909",
+                                  
+                                      "2016" :   "930",
+                                  
+                                      "2017" :   "946",
+                                  
+                                      "2018" :   "991",
+                                  
+                                      "2019" :   "1050",
+                                  
+                                      "2020" :   "1073",
+                                  
+                                      "2021" :   "1189",
+                                  
+                                      "2022" :   "1318",
+                                  
+                                      "2023" :   "1372",
+                                  
+                                      "2024" :   "1556"
+                                  
+                                  }
+                              ],
+                              "w gospodarstwach domowych": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   "",
+                                  
+                                      "2020" :   "",
+                                  
+                                      "2021" :   "",
+                                  
+                                      "2022" :   "",
+                                  
+                                      "2023" :   "",
+                                  
+                                      "2024" :   ""
+                                  
+                                  }
+                              ],
+                              "w handlu i usługach": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   "",
+                                  
+                                      "2018" :   "",
+                                  
+                                      "2019" :   "",
+                                  
+                                      "2020" :   "",
+                                  
+                                      "2021" :   "",
+                                  
+                                      "2022" :   "",
+                                  
+                                      "2023" :   "",
+                                  
+                                      "2024" :   ""
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
       ]
     }
   ]

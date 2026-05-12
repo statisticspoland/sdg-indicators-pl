@@ -89,7 +89,7 @@
                           
                             "jednostka": "procent [%]",
                           
-                            "wymiary": "ogółem",
+                            "wymiary": "wg sektorów",
                           
                             "metodologia": "Energia ze źródeł odnawialnych (OZE) to energia pochodząca z naturalnych, powtarzających się procesów przyrodniczych, uzyskiwana z odnawialnych niekopalnych źródeł energii, w szczególności energia generowana z promieniowania słonecznego, wiatru, wody, zasobów geotermalnych, biomasy, biogazu i biopaliw ciekłych. Końcowe zużycie energii brutto oznacza nośniki energii dostarczane do celów energetycznych przemysłowi, sektorowi transportowemu, gospodarstwom domowym, sektorowi usługowemu, w tym świadczącemu usługi publiczne, rolnictwu, leśnictwu i rybołówstwu, łącznie ze zużyciem energii elektrycznej i ciepła przez przemysł energetyczny na wytwarzanie energii elektrycznej i ciepła oraz łącznie ze stratami energii elektrycznej i ciepła podczas przesyłania i dystrybucji.",
                           
@@ -105,42 +105,148 @@
                           }
           ],
           "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "9.28",
-                              
-                                  "2011" :   "10.34",
-                              
-                                  "2012" :   "10.96",
-                              
-                                  "2013" :   "11.45",
-                              
-                                  "2014" :   "11.61",
-                              
-                                  "2015" :   "11.88",
-                              
-                                  "2016" :   "11.40",
-                              
-                                  "2017" :   "11.06",
-                              
-                                  "2018" :   "14.94",
-                              
-                                  "2019" :   "15.38",
-                              
-                                  "2020" :   "16.10",
-                              
-                                  "2021" :   "15.60",
-                              
-                                  "2022" :   "16.64",
-                              
-                                  "2023" :   "16.65",
-                              
-                                  "2024" :   "17.77"
-                              
-                              }
-                          ]
-                        
+            {
+                      
+                              "wg sektorów": [
+                                  {"ogółem": [
+                                          {
+                                          
+                                              "2010" : "9.28",
+                                          
+                                              "2011" : "10.34",
+                                          
+                                              "2012" : "10.96",
+                                          
+                                              "2013" : "11.45",
+                                          
+                                              "2014" : "11.61",
+                                          
+                                              "2015" : "11.88",
+                                          
+                                              "2016" : "11.40",
+                                          
+                                              "2017" : "11.06",
+                                          
+                                              "2018" : "14.94",
+                                          
+                                              "2019" : "15.38",
+                                          
+                                              "2020" : "16.10",
+                                          
+                                              "2021" : "15.60",
+                                          
+                                              "2022" : "16.64",
+                                          
+                                              "2023" : "16.65",
+                                          
+                                              "2024" : "17.77"
+                                          
+                                          }
+                                      ],"transport": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : ""
+                                          
+                                          }
+                                      ],"elektroenergetyka": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : ""
+                                          
+                                          }
+                                      ],"ciepłownictwo i chłodnictwo": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
                     
                 
             }

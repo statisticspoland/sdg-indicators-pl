@@ -166,7 +166,7 @@
                           
                             "unit": "percent [%]",
                           
-                            "dimensions": "total",
+                            "dimensions": "by sectors",
                           
                             "methodology": "Energy from renewable sources is the energy derived from natural, repetitive environmental processes, obtained from renewable non-fossil energy sources (energy: water, wind, solar heat, geothermal heat, waves, sea currents and tides and energy obtained from biomass, biogas, biofuels). Gross energy consumption is a final consumption of energy carriers by the consumers (industry, transport sector, service sector, households, agriculture, forestry and fishery sector) including electricity and heat consumption by industry for electricity and heat generation as well as transformation and distribution looses.",
                           
@@ -182,42 +182,148 @@
                           }
           ],
           "data": [
-            {"total": [
-                              {
-                              
-                                  "2010" :   "9.28",
-                              
-                                  "2011" :   "10.34",
-                              
-                                  "2012" :   "10.96",
-                              
-                                  "2013" :   "11.45",
-                              
-                                  "2014" :   "11.61",
-                              
-                                  "2015" :   "11.88",
-                              
-                                  "2016" :   "11.40",
-                              
-                                  "2017" :   "11.06",
-                              
-                                  "2018" :   "14.94",
-                              
-                                  "2019" :   "15.38",
-                              
-                                  "2020" :   "16.10",
-                              
-                                  "2021" :   "15.60",
-                              
-                                  "2022" :   "16.64",
-                              
-                                  "2023" :   "16.65",
-                              
-                                  "2024" :   "17.77"
-                              
-                              }
-                          ]
+            {
                       
+                              "by sectors": [
+                                  {"total": [
+                                          {
+                                          
+                                              "2010" : "9.28",
+                                          
+                                              "2011" : "10.34",
+                                          
+                                              "2012" : "10.96",
+                                          
+                                              "2013" : "11.45",
+                                          
+                                              "2014" : "11.61",
+                                          
+                                              "2015" : "11.88",
+                                          
+                                              "2016" : "11.40",
+                                          
+                                              "2017" : "11.06",
+                                          
+                                              "2018" : "14.94",
+                                          
+                                              "2019" : "15.38",
+                                          
+                                              "2020" : "16.10",
+                                          
+                                              "2021" : "15.60",
+                                          
+                                              "2022" : "16.64",
+                                          
+                                              "2023" : "16.65",
+                                          
+                                              "2024" : "17.77"
+                                          
+                                          }
+                                      ],"transport": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : ""
+                                          
+                                          }
+                                      ],"electricity": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : ""
+                                          
+                                          }
+                                      ],"heating and cooling": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
                     
                 
             }
@@ -241,7 +347,7 @@
                           
                             "unit": "TJ",
                           
-                            "dimensions": "total",
+                            "dimensions": "by sectors",
                           
                             "methodology": "Energy from renewable sources means energy generated from recurring natural processes, obtained from renewable non-fossil energy sources. Renewable energy sources (RES) are an alternative to traditional primary non-renewable energy carriers (fossil fuels). Their resources are complementary in natural processes, which practically allows treating them as inexhaustible. Moreover, obtaining energy from these sources is more environmentally friendly compared to the conventional sources (fossil fuels). The use of RES significantly reduces the harmful impact of energy on the environment, notably by reducing emissions, especially greenhouse gases. In national conditions energy from renewable sources includes energy from solar radiation, water, wind, geothermal resources and energy generated from solid biofuels, biogas and liquid biofuels as well as ambient energy obtained by heat pumps. Acquisition is the amount of energy obtained from natural resources (only for primary energy carriers).",
                           
@@ -257,42 +363,114 @@
                           }
           ],
           "data": [
-            {"total": [
-                              {
-                              
-                                  "2010" :   "563",
-                              
-                                  "2011" :   "531",
-                              
-                                  "2012" :   "661",
-                              
-                                  "2013" :   "778",
-                              
-                                  "2014" :   "847",
-                              
-                                  "2015" :   "909",
-                              
-                                  "2016" :   "930",
-                              
-                                  "2017" :   "946",
-                              
-                                  "2018" :   "991",
-                              
-                                  "2019" :   "1050",
-                              
-                                  "2020" :   "1073",
-                              
-                                  "2021" :   "1189",
-                              
-                                  "2022" :   "1318",
-                              
-                                  "2023" :   "1372",
-                              
-                                  "2024" :   "1556"
-                              
-                              }
-                          ]
+            {
                       
+                              "by sectors": [
+                                  {"total": [
+                                          {
+                                          
+                                              "2010" : "563",
+                                          
+                                              "2011" : "531",
+                                          
+                                              "2012" : "661",
+                                          
+                                              "2013" : "778",
+                                          
+                                              "2014" : "847",
+                                          
+                                              "2015" : "909",
+                                          
+                                              "2016" : "930",
+                                          
+                                              "2017" : "946",
+                                          
+                                              "2018" : "991",
+                                          
+                                              "2019" : "1050",
+                                          
+                                              "2020" : "1073",
+                                          
+                                              "2021" : "1189",
+                                          
+                                              "2022" : "1318",
+                                          
+                                              "2023" : "1372",
+                                          
+                                              "2024" : "1556"
+                                          
+                                          }
+                                      ],"households": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : ""
+                                          
+                                          }
+                                      ],"trade and public services": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
                     
                 
             }
@@ -383,62 +561,62 @@
           "metadata": [
             
             {
-                            "name": "13.3.a Air quality indicator (46 zones of the country where air quality assesment is made)",
+                            "name": "13.3.a Investments in climate change mitigation in relation to GDP",
                           
                             "goal": "Goal 13. Climate action",
                           
                             "priority": "Enhancement of the role of adaptation to climate change as a means of combating climate change equivalent to mitigation",
                           
-                            "definition": "Share of zones with exceedances of the permissible level of particulates in 46 zones where air quality assesment is made.",
+                            "definition": "",
                           
                             "unit": "percent [%]",
                           
                             "dimensions": "total",
                           
-                            "methodology": "For the purposes of air quality protection Poland was divided into 46 zones, in which air quality assessment is made according to the Regulation of the Minister of the Environment of 2 August 2012. concerning zones where an assessment of quality is made (Journal of Laws from 2012, item 914). Separately, for each of 46 zones annual assessment is made of protection of human health for 12 pollutants (SO2, NO2, benzene, CO, O3, particulate matter PM 10, particulate matter PM 2,5, arsenic, cadmium, lead, nickel and benzo(a)pyrene). On the basis of this assessment for each pollutant a class (A, B or C) is subscribed. • A class is assigned to the zone in the area of which, no exceedances were observed. • Class B is attributed to the zone which has exceeded the permissible level, but not exceeded the permissible level increased by the margin of tolerance. • Class C - is attributed to the area where, in a given year exceedances of acceptable levels augmented by the margin of tolerance or exceedances of target level were observed. Since 2015 for none of the above mentioned pollutants the margin of tolerance was specified, thus starting from the air quality assessment for 2015, depending on the pollutant concentrations, the zone can be only classified as A or C. For the indicator calculations cumulative assessment of area class is taken based on the criteria laid down for the protection of health for all pollutants for which air quality standard (acceptable levels) were specified. This applies to the results of the classification of zones for SO2, NO2, benzene, CO, particulate PM matter 10, particulate matter PM 2,5). The zone is included in the zones where in a given year exceedances of the air quality standard were observed if the permissible level increased by the margin of tolerance, is exceeded in the area of the zone for one or more of the above mentioned pollutants. In calculating the air quality index, exceedances identified on the basis of the target value is not taken into consideration, because according to the Act of 27 April 2001 - Environmental Protection Law  (Journal of Laws from 2013,  item 1232 with later amendments),  target value is not an air quality standard. The result of the calculation is expressed as a percentage according to the formula: air quality index = (number of zones with exceedance of limit values / 46) • 100%",
+                            "methodology": "",
                           
-                            "source": "Chief Inspectorate of Environmental Protection",
+                            "source": "",
                           
-                            "availability": "Annual data; since 2010",
+                            "availability": "",
                           
                             "notes": "",
                           
-                            "data_updated_on": "12-08-2025",
+                            "data_updated_on": "",
                           
-                            "metadata_updated_on": "13-04-2023"
+                            "metadata_updated_on": ""
                           }
           ],
           "data": [
             {"total": [
                               {
                               
-                                  "2010" :   "91.3",
+                                  "2010" :   "",
                               
-                                  "2011" :   "91.3",
+                                  "2011" :   "",
                               
-                                  "2012" :   "84.8",
+                                  "2012" :   "",
                               
-                                  "2013" :   "80.4",
+                                  "2013" :   "",
                               
-                                  "2014" :   "93.5",
+                                  "2014" :   "",
                               
-                                  "2015" :   "87.0",
+                                  "2015" :   "",
                               
-                                  "2016" :   "78.3",
+                                  "2016" :   "",
                               
-                                  "2017" :   "76.1",
+                                  "2017" :   "",
                               
-                                  "2018" :   "84.8",
+                                  "2018" :   "",
                               
-                                  "2019" :   "47.8",
+                                  "2019" :   "",
                               
-                                  "2020" :   "35.6",
+                                  "2020" :   "",
                               
-                                  "2021" :   "54.4",
+                                  "2021" :   "",
                               
-                                  "2022" :   "30.4",
+                                  "2022" :   "",
                               
-                                  "2023" :   "4.3"
+                                  "2023" :   ""
                               
                               }
                           ]
@@ -456,210 +634,64 @@
           "metadata": [
             
             {
-                            "name": "13.3.b National indicator of average exposure to PM2.5",
+                            "name": "13.3.b Climate related economic losses",
                           
                             "goal": "Goal 13. Climate action",
                           
                             "priority": "Enhancement of the role of adaptation to climate change as a means of combating climate change equivalent to mitigation",
                           
-                            "definition": "Average level of substances in the air, determined on the basis of measurements carried out within the municipal background areas in cities with number of residents exceeding 100 thousand and agglomerations within the whole country; the calculation manner for KW is provided for in the regulation by the Minister of Environment of 13.09.2012 for calculation of the average exposure indicator and evaluation of keeping the concentration exposure threshold (Official Journal Dz.U. item 1029).",
+                            "definition": "",
                           
-                            "unit": "μg/m3",
+                            "unit": "total",
                           
-                            "dimensions": "total",
+                            "dimensions": "euro/per capita (at constant prices), mln euro (at constant prices)",
                           
-                            "methodology": "Measurements for the needs of calculating national indicator were started in 2010. According to the above the national average exposure indicator for 2010 was calculated as the arithmetic mean of the average annual PM2.5 concentrations in 2011. The index for 2011 was calculated as the arithmetic mean of the average annual PM2.5 concentrations in 2010-2011 in 2012. For 2012 and subsequent years, the national average exposure indicator is calculated as the arithmetic average of the average annual PM2,5 concentrations from the last three years (eg for 2015 the indicator was calculated in 2016 as the arithmetic mean of the average annual PM2,5 concentrations for 2013-2015). For the purposes of calculating national indicator, 30 measuring stations were created whose locations were approved by the Chief Inspectorate of Environmental Protection. Measuring stations are located in areas with a very high population density remote from dust emission sources. In cities over 100,000 inhabitants and agglomerations not exceeding 1 million inhabitants, these measurements are carried out on one measuring station. In the Warsaw Agglomeration and the Upper Silesian Agglomeration, measurements are carried out on two measurement stations. Detailed information on the location of air pollutant measuring stations PM2,5 for the purposes of calculating KW are included in voivodship environmental monitoring programs. Measurements are made using low-flow PM2.5 dust collectors, i.e. the reference method by voivodships inspectorates for environmental protection. Measurements are carried out continuously.",
+                            "methodology": "",
                           
-                            "source": "Chief Inspectorate of Environmental Protection",
+                            "source": "",
                           
-                            "availability": "Annual data; since 2010",
+                            "availability": "",
                           
                             "notes": "",
                           
-                            "data_updated_on": "01-03-2023",
+                            "data_updated_on": "",
                           
-                            "metadata_updated_on": "27-04-2023"
+                            "metadata_updated_on": ""
                           }
           ],
           "data": [
             {"total": [
                               {
                               
-                                  "2010" :   "28",
+                                  "2010" :   "",
                               
-                                  "2011" :   "27",
+                                  "2011" :   "",
                               
-                                  "2012" :   "26",
+                                  "2012" :   "",
                               
-                                  "2013" :   "25",
+                                  "2013" :   "",
                               
-                                  "2014" :   "24",
+                                  "2014" :   "",
                               
-                                  "2015" :   "23",
+                                  "2015" :   "",
                               
-                                  "2016" :   "22",
+                                  "2016" :   "",
                               
-                                  "2017" :   "22",
+                                  "2017" :   "",
                               
-                                  "2018" :   "22",
+                                  "2018" :   "",
                               
-                                  "2019" :   "21",
+                                  "2019" :   "",
                               
-                                  "2020" :   "19",
+                                  "2020" :   "",
                               
-                                  "2021" :   "17",
+                                  "2021" :   "",
                               
-                                  "2022" :   "16",
+                                  "2022" :   "",
                               
-                                  "2023" :   "16",
+                                  "2023" :   "",
                               
-                                  "2024" :   "15"
-                              
-                              }
-                          ]
-                      
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "13-3-c": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "13.3.c Total emissions of major air pollutants from households",
-                          
-                            "goal": "Goal 13. Climate action",
-                          
-                            "priority": "Enhancement of the role of adaptation to climate change as a means of combating climate change equivalent to mitigation",
-                          
-                            "definition": "Total emissions of the six main air pollutants from households",
-                          
-                            "unit": "thous. tonnes",
-                          
-                            "dimensions": "total",
-                          
-                            "methodology": "Emission of air pollutants - Release of dust and gaseous pollutants into the atmosphere in the organized (through stationary point-sources) or unorganized manner (from dumps, landfills, during reloading of loose or volatile substances, through roof and window ventilation, due to forest fires, etc.). Total emission of main air pollutants from households includes: • Sulphur dioxide • Nitrogen oxides • Carbon oxide • Volatile nonmethane organic compounds • Ammonia • Particulates (as Total Suspended Particulates)",
-                          
-                            "source": "National Administration of the Emissions Trading Scheme",
-                          
-                            "availability": "Annual data, since 2010",
-                          
-                            "notes": "",
-                          
-                            "data_updated_on": "10-03-2026",
-                          
-                            "metadata_updated_on": "12-04-2023"
-                          }
-          ],
-          "data": [
-            {"total": [
-                              {
-                              
-                                  "2010" :   "2186",
-                              
-                                  "2011" :   "1721",
-                              
-                                  "2012" :   "2035",
-                              
-                                  "2013" :   "2174",
-                              
-                                  "2014" :   "1981",
-                              
-                                  "2015" :   "1725",
-                              
-                                  "2016" :   "1826",
-                              
-                                  "2017" :   "1792",
-                              
-                                  "2018" :   "1744",
-                              
-                                  "2019" :   "1494",
-                              
-                                  "2020" :   "1820",
-                              
-                                  "2021" :   "2205",
-                              
-                                  "2022" :   "1959",
-                              
-                                  "2023" :   "1801"
-                              
-                              }
-                          ]
-                      
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "13-3-d": [
-        {
-          "metadata": [
-            
-            {
-                            "name": "13.3.d Emissions of pollutants from means of road transport",
-                          
-                            "goal": "Goal 13. Climate action",
-                          
-                            "priority": "Enhancement of the role of adaptation to climate change as a means of combating climate change equivalent to mitigation",
-                          
-                            "definition": "Total emissions of nine types of pollutants from road transport",
-                          
-                            "unit": "thous. tonnes",
-                          
-                            "dimensions": "total",
-                          
-                            "methodology": "Emissions from road transport are estimated using COPERT 5, an international software for calculating greenhouse gas and road traffic emissions (Computer Program for Calculating Road Transport Emissions). This model has been developed under the auspices of the European Environment Agency (EEA) for the reporting of emissions from national road transport by Member States. The model's emission estimation methodology is consistent with the applicable IPCC and EEA guidelines used in international reporting. Pollution from means of road transport comes mainly from fuel combustion processes in car engines, abrasion of tires, brake pads in cars and secondary entrainment of dust from road surfaces. The volume of emissions from the transport sector is mainly influenced by the number and age of vehicles, the condition of road surfaces and traffic organization. Pollutants emission from road transport facilities includes: • Carbon dioxide • Methane • Nitrous oxide • Carbon oxide • Non-methane volatile organic compounds • Nitrogen oxides • Particulates (as Total Suspended Particulates) • Sulphur dioxide • Lead",
-                          
-                            "source": "National Administration of the Emissions Trading Scheme",
-                          
-                            "availability": "Annual data, since 2010.",
-                          
-                            "notes": "",
-                          
-                            "data_updated_on": "10-03-2026",
-                          
-                            "metadata_updated_on": "12-04-2023"
-                          }
-          ],
-          "data": [
-            {"total": [
-                              {
-                              
-                                  "2010" :   "48641",
-                              
-                                  "2011" :   "48212",
-                              
-                                  "2012" :   "46053",
-                              
-                                  "2013" :   "43064",
-                              
-                                  "2014" :   "43315",
-                              
-                                  "2015" :   "47177",
-                              
-                                  "2016" :   "52332",
-                              
-                                  "2017" :   "62146",
-                              
-                                  "2018" :   "63975",
-                              
-                                  "2019" :   "64742",
-                              
-                                  "2020" :   "62093",
-                              
-                                  "2021" :   "66958",
-                              
-                                  "2022" :   "68530",
-                              
-                                  "2023" :   "67711"
+                                  "2024" :   ""
                               
                               }
                           ]

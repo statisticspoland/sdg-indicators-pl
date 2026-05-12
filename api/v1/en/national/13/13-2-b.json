@@ -17,7 +17,7 @@
                       
                         "unit": "TJ",
                       
-                        "dimensions": "total",
+                        "dimensions": "by sectors",
                       
                         "methodology": "Energy from renewable sources means energy generated from recurring natural processes, obtained from renewable non-fossil energy sources. Renewable energy sources (RES) are an alternative to traditional primary non-renewable energy carriers (fossil fuels). Their resources are complementary in natural processes, which practically allows treating them as inexhaustible. Moreover, obtaining energy from these sources is more environmentally friendly compared to the conventional sources (fossil fuels). The use of RES significantly reduces the harmful impact of energy on the environment, notably by reducing emissions, especially greenhouse gases. In national conditions energy from renewable sources includes energy from solar radiation, water, wind, geothermal resources and energy generated from solid biofuels, biogas and liquid biofuels as well as ambient energy obtained by heat pumps. Acquisition is the amount of energy obtained from natural resources (only for primary energy carriers).",
                       
@@ -33,42 +33,114 @@
                       }
       ],
       "data": [
-        {"total": [
-                      {
-                      
-                          "2010" :   "563",
-                      
-                          "2011" :   "531",
-                      
-                          "2012" :   "661",
-                      
-                          "2013" :   "778",
-                      
-                          "2014" :   "847",
-                      
-                          "2015" :   "909",
-                      
-                          "2016" :   "930",
-                      
-                          "2017" :   "946",
-                      
-                          "2018" :   "991",
-                      
-                          "2019" :   "1050",
-                      
-                          "2020" :   "1073",
-                      
-                          "2021" :   "1189",
-                      
-                          "2022" :   "1318",
-                      
-                          "2023" :   "1372",
-                      
-                          "2024" :   "1556"
-                      
-                      }
-                  ]
-            }
+        {
+                    "by sectors": [
+                        {
+                        "total": [
+                                {
+                                
+                                    "2010" :   "563",
+                                
+                                    "2011" :   "531",
+                                
+                                    "2012" :   "661",
+                                
+                                    "2013" :   "778",
+                                
+                                    "2014" :   "847",
+                                
+                                    "2015" :   "909",
+                                
+                                    "2016" :   "930",
+                                
+                                    "2017" :   "946",
+                                
+                                    "2018" :   "991",
+                                
+                                    "2019" :   "1050",
+                                
+                                    "2020" :   "1073",
+                                
+                                    "2021" :   "1189",
+                                
+                                    "2022" :   "1318",
+                                
+                                    "2023" :   "1372",
+                                
+                                    "2024" :   "1556"
+                                
+                                }
+                            ],"households": [
+                                {
+                                
+                                    "2010" :   "",
+                                
+                                    "2011" :   "",
+                                
+                                    "2012" :   "",
+                                
+                                    "2013" :   "",
+                                
+                                    "2014" :   "",
+                                
+                                    "2015" :   "",
+                                
+                                    "2016" :   "",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   "",
+                                
+                                    "2019" :   "",
+                                
+                                    "2020" :   "",
+                                
+                                    "2021" :   "",
+                                
+                                    "2022" :   "",
+                                
+                                    "2023" :   "",
+                                
+                                    "2024" :   ""
+                                
+                                }
+                            ],"trade and public services": [
+                                {
+                                
+                                    "2010" :   "",
+                                
+                                    "2011" :   "",
+                                
+                                    "2012" :   "",
+                                
+                                    "2013" :   "",
+                                
+                                    "2014" :   "",
+                                
+                                    "2015" :   "",
+                                
+                                    "2016" :   "",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   "",
+                                
+                                    "2019" :   "",
+                                
+                                    "2020" :   "",
+                                
+                                    "2021" :   "",
+                                
+                                    "2022" :   "",
+                                
+                                    "2023" :   "",
+                                
+                                    "2024" :   ""
+                                
+                                }
+                            ]
+                        }
+                    ]}
       ]
     }
   ]
