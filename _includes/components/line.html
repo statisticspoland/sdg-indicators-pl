@@ -45,6 +45,12 @@ function remove(array, element) {
     }else{
       legenda=["ogółem w tysiącach"]
     }
+  }else if ('{{id}}'=='13-3-b-0') {
+    if (window.location.href.indexOf("en") > -1){
+        legenda=["euro/per capita (at constant prices)","",""]
+    }else{
+      legenda=["euro/os. (w cenach stałych)","",""]
+    }
   }else if ('{{id}}'=='17-13-1') {
     if (window.location.href.indexOf("en") > -1){
         legenda=["GDP per capita in EUR (current prices)","",""]
@@ -158,6 +164,12 @@ for (i=1;i<licznik+1;i++){
 			axisTitle: 'tonnes',
 			{% else %}
 			axisTitle: 'tony',
+			{% endif %}
+    {% elsif id == '13-3-b-0' %}
+			{% if {{language}} == 'en' %}
+			axisTitle: 'total',
+			{% else %}
+			axisTitle: 'ogółem',
 			{% endif %}
 		{% else %}
 		axisTitle: '{{jednostka}}',

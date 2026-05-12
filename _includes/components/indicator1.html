@@ -32,6 +32,12 @@
               {% else %}
                 <button type="button" id="Jednostka4" onclick="Zmiana_jednostki4()" style="margin-top: 30px;" title="Change dimension to per capita">Change dimension - per capita</button>
               {% endif %}
+          {% elsif id == '13-3-b-0' %}
+              {% if language == 'pl' %}
+                <button type="button" id="Jednostka8" onclick="Zmiana_jednostki8()" style="margin-top: 30px;" title="Zmień wymiar na mln euro (w cenach stałych)">Zmień wymiar - mln euro (w cenach stałych)</button>
+              {% else %}
+                <button type="button" id="Jednostka8" onclick="Zmiana_jednostki8()" style="margin-top: 30px;" title="Change dimension to mln euro (at constant prices)">Change dimension - mln euro (at constant prices)</button>
+              {% endif %}
           {% elsif id == '1-5-4' %}
               {% if language == 'pl' %}
                 <button type="button" id="Jednostka7" onclick="Zmiana_jednostki7()" style="margin-top: 30px;" title="Zmień jednostkę na procent">Zmień jednostkę - %</button>
@@ -67,14 +73,14 @@
             {% if licznik>1 %}
               {% if language == 'pl' %}
                 <div id="filtry">.</div>
-                  {% if id != '12-2-2' and id != '1-5-4' and id != '11-b-2' and id != '13-1-3' and id != '8-4-2' and id != '17-13-1' and id != '12-4-2'%}
+                  {% if id != '12-2-2' and id != '1-5-4' and id != '13-3-b-0' and id != '11-b-2' and id != '13-1-3' and id != '8-4-2' and id != '17-13-1' and id != '12-4-2'%}
                     <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;" title="Pokaż wszystkie wymiary na wykresie">Zaznacz wszystko</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;" title="Wyszyść wykres do stanu początkowego">Usuń zaznaczenia</button></div>
                   {% endif %}
                 <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
                 <div id="Legenda" align="center" style="pointer-events: none;"></div>
               {% else %}
                 <div id="filtry">.</div>
-                  {% if id != '12-2-2' and id != '1-5-4' and id != '11-b-2' and id != '13-1-3' and id != '8-4-2' and id != '17-13-1' and id != '12-4-2'%}
+                  {% if id != '12-2-2' and id != '1-5-4' and id != '13-3-b-0' and id != '11-b-2' and id != '13-1-3' and id != '8-4-2' and id != '17-13-1' and id != '12-4-2'%}
                     <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;" title="Show all dimensions on chart">Select All</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;" title="Clear the chart">Clear All</button></div>
                   {% endif %}
                 <br>

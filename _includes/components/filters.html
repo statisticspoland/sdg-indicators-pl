@@ -129,7 +129,11 @@ var wymiar=0;
 lista.forEach(function(el,elind) {
 
     var Div = document.createElement('div');
-    Div.style.width = '25%';
+    {% if id == '13-2-b-0' or id == '13-2-a-0' or id == '7-2-a-0' %}
+      Div.style.width = '30%';
+    {% else %}
+      Div.style.width = '25%';
+    {% endif %}
     Div.style.height = '100px';
     Div.style.float = 'left';
     Div.style.padding = '5px';

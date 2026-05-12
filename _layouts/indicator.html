@@ -86,8 +86,6 @@
             {% assign dataset_name = 'indicator_13-3-1' %}
           {% elsif slug=='3-5-a-0' %}
             {% assign dataset_name = 'indicator_15-2-a-0' %}
-          {% elsif slug=='13-3-b-0' %}
-            {% assign dataset_name = 'indicator_15-2-a-0' %}
           {% elsif slug=='13-4-b-0' %}
             {% assign dataset_name = 'indicator_6-1-a-0' %}
           {% elsif slug=='1-2-a-0' %}
@@ -378,6 +376,70 @@ function Zmiana_jednostki4(){
     }
 }
 
+function Zmiana_jednostki8(){
+
+  var licznik={{ licznik }}
+  var labels = {{ labels | jsonify }}
+  labels.shift()
+  var lan='{{language}}'
+
+    if (document.getElementById("Jednostka8").innerHTML=='Zmień wymiar - mln euro (w cenach stałych)' || document.getElementById("Jednostka8").innerHTML=='Change dimension - mln euro (at constant prices)'){
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(15,30);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan=='pl'){
+        document.getElementById("tytul").innerHTML = "ogółem";
+        document.getElementById("Jednostka8").innerHTML = "Zmień wymiar - euro/os. (w cenach stałych)";
+        $(".ct-series-0").text('mln euro (w cenach stałych)');
+
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "total";
+        document.getElementById("Jednostka8").innerHTML = "Change dimension - euro/per capita (at constant prices)";
+        $(".ct-series-0").text('mln euro (at constant prices)');
+      }
+
+
+    }else{
+      var calo={{ row1 | jsonify }}
+      for (i=0;i<naglowek_ang.length;i++){
+        remove(calo, naglowek_ang[i]);
+
+      }
+      calosc=calo.splice(0,15);
+      var b = [[]];
+      seria=[]
+      for (i=1;i<licznik+1;i++){
+        b[i] = calosc.splice(0,labels.length);
+        seria.push(b[i])
+      }
+
+      chart.update({labels: labels,series: seria})
+      if(lan='pl'){
+        document.getElementById("tytul").innerHTML = "ogółem";
+        document.getElementById("Jednostka8").innerHTML = "Zmień wymiar - mln euro (w cenach stałych)";
+        $(".ct-series-0").text('euro/os. (w cenach stałych)');
+      }
+      if(window.location.href.indexOf("en") > -1) {
+        document.getElementById("tytul").innerHTML = "total";
+        document.getElementById("Jednostka8").innerHTML = "Change dimension - mln euro (at constant prices)";
+        $(".ct-series-0").text('euro/per capita (at constant prices)');
+      }
+
+    }
+}
+
 function Zmiana_jednostki7(){
 
   var licznik={{ licznik }}
@@ -391,7 +453,7 @@ function Zmiana_jednostki7(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(14,27);
+      calosc=calo.splice(16,31);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -418,7 +480,7 @@ function Zmiana_jednostki7(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(0,14);
+      calosc=calo.splice(0,16);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -765,7 +827,7 @@ function Zmiana_jednostki6(){
 
 
 $(window).on("load", function() {
-  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '1-5-4' || '{{id}}' == '11-b-2' || '{{id}}' == '13-1-3' || '{{id}}' == '17-13-1'  || '{{id}}' == '12-4-2'){
+  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '13-3-b-0' || '{{id}}' == '1-5-4' || '{{id}}' == '11-b-2' || '{{id}}' == '13-1-3' || '{{id}}' == '17-13-1'  || '{{id}}' == '12-4-2'){
     $('.ct-chart').css({'margin-top':'20px'});
 
   }
