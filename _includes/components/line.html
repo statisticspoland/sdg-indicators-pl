@@ -47,9 +47,9 @@ function remove(array, element) {
     }
   }else if ('{{id}}'=='13-3-b-0') {
     if (window.location.href.indexOf("en") > -1){
-        legenda=["euro/per capita (at constant prices)","",""]
+        legenda=["per capita (at constant prices)","",""]
     }else{
-      legenda=["euro/os. (w cenach stałych)","",""]
+      legenda=["na osobę (w cenach stałych)","",""]
     }
   }else if ('{{id}}'=='17-13-1') {
     if (window.location.href.indexOf("en") > -1){
@@ -167,9 +167,9 @@ for (i=1;i<licznik+1;i++){
 			{% endif %}
     {% elsif id == '13-3-b-0' %}
 			{% if {{language}} == 'en' %}
-			axisTitle: 'total',
+			axisTitle: 'euro',
 			{% else %}
-			axisTitle: 'ogółem',
+			axisTitle: 'euro',
 			{% endif %}
 		{% else %}
 		axisTitle: '{{jednostka}}',

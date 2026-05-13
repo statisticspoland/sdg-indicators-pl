@@ -383,7 +383,7 @@ function Zmiana_jednostki8(){
   labels.shift()
   var lan='{{language}}'
 
-    if (document.getElementById("Jednostka8").innerHTML=='Zmień wymiar - mln euro (w cenach stałych)' || document.getElementById("Jednostka8").innerHTML=='Change dimension - mln euro (at constant prices)'){
+    if (document.getElementById("Jednostka8").innerHTML=='Zmień wymiar - w mln (w cenach stałych)' || document.getElementById("Jednostka8").innerHTML=='Change dimension - in mln (at constant prices)'){
       var calo={{ row1 | jsonify }}
       for (i=0;i<naglowek_ang.length;i++){
         remove(calo, naglowek_ang[i]);
@@ -399,15 +399,15 @@ function Zmiana_jednostki8(){
 
       chart.update({labels: labels,series: seria})
       if(lan=='pl'){
-        document.getElementById("tytul").innerHTML = "ogółem";
-        document.getElementById("Jednostka8").innerHTML = "Zmień wymiar - euro/os. (w cenach stałych)";
-        $(".ct-series-0").text('mln euro (w cenach stałych)');
+        document.getElementById("tytul").innerHTML = "euro";
+        document.getElementById("Jednostka8").innerHTML = "Zmień wymiar - na osobę (w cenach stałych)";
+        $(".ct-series-0").text('w mln (w cenach stałych)');
 
       }
       if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "total";
-        document.getElementById("Jednostka8").innerHTML = "Change dimension - euro/per capita (at constant prices)";
-        $(".ct-series-0").text('mln euro (at constant prices)');
+        document.getElementById("tytul").innerHTML = "euro";
+        document.getElementById("Jednostka8").innerHTML = "Change dimension - per capita (at constant prices)";
+        $(".ct-series-0").text('in mln (at constant prices)');
       }
 
 
@@ -427,14 +427,14 @@ function Zmiana_jednostki8(){
 
       chart.update({labels: labels,series: seria})
       if(lan='pl'){
-        document.getElementById("tytul").innerHTML = "ogółem";
-        document.getElementById("Jednostka8").innerHTML = "Zmień wymiar - mln euro (w cenach stałych)";
-        $(".ct-series-0").text('euro/os. (w cenach stałych)');
+        document.getElementById("tytul").innerHTML = "euro";
+        document.getElementById("Jednostka8").innerHTML = "Zmień wymiar - w mln (w cenach stałych)";
+        $(".ct-series-0").text('na osobę (w cenach stałych)');
       }
       if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "total";
-        document.getElementById("Jednostka8").innerHTML = "Change dimension - mln euro (at constant prices)";
-        $(".ct-series-0").text('euro/per capita (at constant prices)');
+        document.getElementById("tytul").innerHTML = "euro";
+        document.getElementById("Jednostka8").innerHTML = "Change dimension - in mln (at constant prices)";
+        $(".ct-series-0").text('per capita (at constant prices)');
       }
 
     }
