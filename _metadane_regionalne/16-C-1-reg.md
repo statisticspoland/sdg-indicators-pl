@@ -1,15 +1,15 @@
 ---
 translation_id: 16-C-1-reg
 pl_title: >-
-  Udział mieszkańców w głosowaniu nad projektami na 100 000 mieszkańców
+  Udział mieszkańców w głosowaniu nad projektami na 10 tys. mieszkańców
 pl_graph_title: >-
-  Udział mieszkańców w głosowaniu nad projektami na 100 000 mieszkańców
+  Udział mieszkańców w głosowaniu nad projektami na 10 tys. mieszkańców
 pl_nazwa_wskaznika: >-
-  <b>16.C.1 Udział mieszkańców w głosowaniu nad projektami na 100 000 mieszkańców</b>
+  <b>16.C.1 Udział mieszkańców w głosowaniu nad projektami na 10 tys. mieszkańców</b>
 en_title: >-
-  Voters on projects for 100 thous. inhabitants
+  Voters on projects for 10 thous. inhabitants
 en_graph_title: >-
-  Voters on projects for 100 thous. inhabitants
+  Voters on projects for 10 thous. inhabitants
 en_nazwa_wskaznika: >-
   <b>16.C.1 Voters on projects for 100 thous. inhabitants</b>
 pl_cel: Cel 16. Pokój, sprawiedliwość i silne instytucje
@@ -21,9 +21,9 @@ pl_priorytet: >-
 en_priorytet: >-
   Development and strengthening of state institutions and organizations at all levels in the region
 pl_definicja: >-
-  Liczba mieszkańców, którzy wzięli udział w głosowaniu nad projektami zgłoszonymi w formule budżetu obywatelskiego przeliczeniu na 100000 ludności (według stanu na 30 czerwca badanego roku).
+  Liczba mieszkańców, którzy wzięli udział w głosowaniu nad projektami zgłoszonymi w formule budżetu obywatelskiego przeliczeniu na 10 000 ludności (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
-  Number of inhabitants who took part in voting on projects submitted in the form of a civic budget per 100000 population (as of 30 June of the surveyed  year).
+  Number of inhabitants who took part in voting on projects submitted in the form of a civic budget per 10 000 population (as of 30 June of the surveyed  year).
 pl_jednostka_prezentacji: osoba
 en_jednostka_prezentacji: person
 pl_dostepne_wymiary: ogółem

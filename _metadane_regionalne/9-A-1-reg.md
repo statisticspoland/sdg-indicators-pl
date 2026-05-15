@@ -1,17 +1,17 @@
 ---
 translation_id: 9-A-1-reg
 pl_title: >-
-  Udział przedsiębiorstw przemysłowych ponoszących nakłady na działalność innowacyjną - przedsiębiorstwa o liczbie pracujących 10 osób i więcej
+  Udział przedsiębiorstw przemysłowych ponoszących nakłady na działalność innowacyjną
 pl_graph_title: >-
-  Udział przedsiębiorstw przemysłowych ponoszących nakłady na działalność innowacyjną - przedsiębiorstwa o liczbie pracujących 10 osób i więcej
+  Udział przedsiębiorstw przemysłowych ponoszących nakłady na działalność innowacyjną
 pl_nazwa_wskaznika: >-
-  <b>9.A.1 Udział przedsiębiorstw przemysłowych ponoszących nakłady na działalność innowacyjną - przedsiębiorstwa o liczbie pracujących 10 osób i więcej</b>
+  <b>9.A.1 Udział przedsiębiorstw przemysłowych ponoszących nakłady na działalność innowacyjną</b>
 en_title: >-
-  Share of industrial enterprises with expenditures on innovation - enterprises with 10 or more employees
+  Share of industrial enterprises with expenditures on innovation
 en_graph_title: >-
-  Share of industrial enterprises with expenditures on innovation - enterprises with 10 or more employees
+  Share of industrial enterprises with expenditures on innovation
 en_nazwa_wskaznika: >-
-  <b>9.A.1 Share of industrial enterprises with expenditures on innovation - enterprises with 10 or more employees</b>
+  <b>9.A.1 Share of industrial enterprises with expenditures on innovation</b>
 pl_cel: Cel 9. Innowacyjność, Przemysł, Infrastruktura
 en_cel: Goal 9. Industry, innovation and infrastructure
 pl_zadanie: null
@@ -21,15 +21,15 @@ pl_priorytet: >-
 en_priorytet: >-
   Increased competitiveness of the region by increasing the research and innovation potential (Development of institutional potential for research and development, supporting cooperation between the research sector and the economy)
 pl_definicja: >-
-  Procentowy stosunek przedsiębiorstw przemysłowych o liczbie pracujących 10 osób i więcej ponoszących nakłady na działalność innowacyjną do ogółu przedsiębiorstw przemysłowych.
+  Procentowy stosunek przedsiębiorstw przemysłowych ponoszących nakłady na działalność innowacyjną do ogółu przedsiębiorstw przemysłowych.
 en_definicja: >-
-  Percentage ratio of industrial enterprises employing 10 or more persons and incurring expenditure on innovation activities to all industrial enterprises.
+  Percentage ratio of industrial enterprises incurring expenditure on innovation activities to all industrial enterprises.
 pl_jednostka_prezentacji: procent
 en_jednostka_prezentacji: percent
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
-en_zrodlo_danych: Statistics Poland 
+en_zrodlo_danych: Statistics Poland
 pl_czestotliwosc_dostępnosc_danych: Dane roczne od 2008 r.; od 2022 r. dane w cyklach dwuletnich
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2008; since 2022 data in two-year cycles
 published: true
