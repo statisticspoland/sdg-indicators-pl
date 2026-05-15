@@ -4357,7 +4357,7 @@ function download_csv(csv, filename) {
         delete row["Polska"];
       });
 
-      if ('{{ id_map }}' == '1-d-2' || '{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1' || '{{ id_map }}' == '1-e-3'|| '{{ id_map }}' == '2-c-2'|| '{{ id_map }}' == '3-e-14'|| '{{ id_map }}' == '3-e-15' || '{{ id_map }}' == '4-g-5' || '{{ id_map }}' == '10-a-3' || '{{ id_map }}' == '11-c-1' || '{{ id_map }}' == '16-a-2' || '{{ id_map }}' == '9-a-1' ){
+      if ('{{ id_map }}' == '1-d-2' || '{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1' || '{{ id_map }}' == '1-e-3'|| '{{ id_map }}' == '2-c-2'|| '{{ id_map }}' == '3-e-14'|| '{{ id_map }}' == '3-e-15' || '{{ id_map }}' == '4-g-5' || '{{ id_map }}' == '10-a-3' || '{{ id_map }}' == '11-c-1' || '{{ id_map }}' == '16-a-2' || '{{ id_map }}' == '9-a-1' || '{{ id_map }}' == '9-a-2' ){
         createchartScatter("chartLine",  data.slice(1), "{{ language }}", "{{ precyzja }}");
       }
       else{
@@ -4860,7 +4860,7 @@ function updateChartLine(){
             });
             //console.log(data2);
 
-            if ('{{ id_map }}' == '1-d-2' || '{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1' || '{{ id_map }}' == '2-c-2'|| '{{ id_map }}' == '1-e-3'|| '{{ id_map }}' == '3-e-14'|| '{{ id_map }}' == '3-e-15' || '{{ id_map }}' == '4-g-5' || '{{ id_map }}' == '10-a-3' || '{{ id_map }}' == '11-c-1' || '{{ id_map }}' == '16-a-2'){
+            if ('{{ id_map }}' == '1-d-2' || '{{ id_map }}' == '1-g-6' || '{{ id_map }}' == '1-g-5' || '{{ id_map }}' == '1-g-3' || '{{ id_map }}' == '1-e-1' || '{{ id_map }}' == '1-e-3'|| '{{ id_map }}' == '2-c-2'|| '{{ id_map }}' == '3-e-14'|| '{{ id_map }}' == '3-e-15' || '{{ id_map }}' == '4-g-5' || '{{ id_map }}' == '10-a-3' || '{{ id_map }}' == '11-c-1' || '{{ id_map }}' == '16-a-2' || '{{ id_map }}' == '9-a-1' || '{{ id_map }}' == '9-a-2' ){
               createchartScatter("chartLine", data2.slice(1), "{{ language }}", "{{ precyzja }}");
             }
             else{
