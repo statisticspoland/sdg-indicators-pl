@@ -252,6 +252,8 @@ function createMapWojKart(div, dane, jez, precyzja){
   console.log(minPointValue);
   console.log(maxPointValue);
   const ranges = calculateEqualRanges(minPointValue, maxPointValue, 5);
+  const shouldShowLegend = maxPointValue > 0;
+
   console.log(ranges);
 
   function findRange(value, ranges) {
@@ -312,6 +314,7 @@ function createMapWojKart(div, dane, jez, precyzja){
     startColor = endColor = am5.color(0xcccccc);
   }
 
+  if (shouldShowLegend) {
   // Legend container
   var legendContainer = root.container.children.push(
     am5.Container.new(root, {
@@ -357,7 +360,7 @@ function createMapWojKart(div, dane, jez, precyzja){
       am5.Circle.new(root, {
         radius: item.radius,
         fill: item.color,
-        marginLeft: 40-item.radius
+        marginLeft: 50-item.radius
       })
     );
 
@@ -370,12 +373,14 @@ function createMapWojKart(div, dane, jez, precyzja){
         fontSize: 12,
         fill: am5.color(0x000000),
         textAlign: "center",
-        centerX: am5.p20,
-        x: am5.p20
+        centerX: am5.p50,
+        x: am5.p50
       })
     );
 
   });
+
+};
 
   polygonSeries.mapPolygons.template.states.create("hover", {
     fill: am5.color(0xffeecc)
