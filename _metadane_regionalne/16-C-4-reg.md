@@ -24,7 +24,7 @@ pl_definicja: >-
   Suma środków na finansowanie programów i projektów otrzymanych z Unii Europejskiej przez jednostki samorządu terytorialnego w przeliczeniu na 1 mieszkańca (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
   Total funds for financing programmes and projects received from the European Union by local government units per capita (as of 30 June of  the surveyed  year).
-pl_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN 
 en_jednostka_prezentacji: PLN
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total

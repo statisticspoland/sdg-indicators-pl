@@ -32,7 +32,7 @@ en_definicja: >-
   <br />- for water intakes and supply;
   <br />- for the construction and modernisation of water treatment plants.
 
-pl_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN 
 en_jednostka_prezentacji: PLN
 pl_dostepne_wymiary: Ogółem, ujęcia i doprowadzenia wody, budowa i modernizacja stacji uzdatniania wody
 en_dostepne_wymiary: Total, water intake and supply, construction and modernisation of water treatment plants

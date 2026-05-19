@@ -24,8 +24,8 @@ pl_definicja: >-
   Suma wydatków gmin (łącznie z miastami na prawach powiatu) na ochronę powietrza atmosferycznego i klimatu w przeliczeniu na jednego mieszkańca (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
   The sum of expenditures of municipalities (including cities with county status) on air protection and climate in terms per capita (as of 30 June  of the surveyed year).
-pl_jednostka_prezentacji: zł
-en_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN
+en_jednostka_prezentacji: PLN 
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

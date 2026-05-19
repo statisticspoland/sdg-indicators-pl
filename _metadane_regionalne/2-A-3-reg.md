@@ -16,7 +16,7 @@ pl_priorytet: >-
   Zwiększenie konkurencyjności gospodarstw rolnych i producentów rolno-spożywczych
 pl_definicja: >-
   Wartość globalnej produkcji rolniczej (w cenach stałych) w roku badanym podzielona przez powierzchnię użytków rolnych, wyrażona w zł.
-pl_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
@@ -26,7 +26,7 @@ en_cel: Goal 2. Zero hunger
 en_zadanie: null
 en_priorytet: >-
   Increasing the competitiveness of farms and agri-food producers
-en_jednostka_prezentacji: zł
+en_jednostka_prezentacji: PLN 
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010

@@ -16,7 +16,7 @@ pl_priorytet: >-
   Zapewnienie warunków mieszkaniowych grupom najbardziej wrażliwym i potrzebującym społecznie
 pl_definicja: >-
   Średni miesięczny nieprzekraczalny dochód na osobę zgłoszoną do wniosku, uprawniający do uzyskania prawa do najmu lokalu mieszkalnego będącego w dyspozycji gminy.
-pl_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN 
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2022 r.

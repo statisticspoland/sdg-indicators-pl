@@ -24,12 +24,12 @@ pl_definicja: >-
   Poniesione nakłady inwestycyjne w przeliczeniu na 1 mieszkańca.
 en_definicja: >-
   Investment expenditures incurred per capita.
-pl_jednostka_prezentacji: zł
-en_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN
+en_jednostka_prezentacji: PLN 
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
-en_zrodlo_danych: Statistics Poland 
+en_zrodlo_danych: Statistics Poland
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2000 r.
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2000
 published: true

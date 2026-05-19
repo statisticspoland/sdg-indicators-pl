@@ -24,12 +24,12 @@ pl_definicja: >-
   Suma nakładów wewnętrznych poniesionych w danym roku na działalność B+R prowadzoną w jednostce sprawozdawczej, niezależnie od źródła pochodzenia  środków, przypadająca na 1 mieszkańca.
 en_definicja: >-
   Total internal expenditure incurred in a given year for R&D activities conducted in the reporting unit, regardless of the source of funds, per capita.
-pl_jednostka_prezentacji: zł
-en_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN
+en_jednostka_prezentacji: PLN 
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
-en_zrodlo_danych: Statistics Poland 
+en_zrodlo_danych: Statistics Poland
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2002 r.
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2002
 published: true

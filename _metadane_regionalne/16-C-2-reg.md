@@ -24,7 +24,7 @@ pl_definicja: >-
   Suma nakładów inwestycyjnych jednostek samorządu terytorialnego poniesionych w danym roku w przeliczeniu na 1 mieszkańca (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
   The sum of capital expenditures of local government units incurred in a given year per capita (as of 30 June of the surveyed year).
-pl_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN 
 en_jednostka_prezentacji: PLN
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total

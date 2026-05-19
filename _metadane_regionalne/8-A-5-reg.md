@@ -24,8 +24,8 @@ pl_definicja: >-
   Kapitał zagraniczny w przeliczeniu na 1 mieszkańca w wieku produkcyjnym, tj. dla mężczyzn grupa wieku 18-64 lata, dla kobiet - 18-59 lat.
 en_definicja: >-
   Foreign capital per capita of working age, i.e. for men aged 18-64, for women aged 18-59.
-pl_jednostka_prezentacji: zł
-en_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN
+en_jednostka_prezentacji: PLN 
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

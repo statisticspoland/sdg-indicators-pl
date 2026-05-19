@@ -24,12 +24,12 @@ pl_definicja: >-
   Wartość sprzedaży produktów (wyrobów i usług) własnej produkcji przedsiębiorstw przemysłowych, podzielona przez liczbę mieszkańców.
 en_definicja: >-
   The value of sales of products (goods and services) of industrial enterprises' own production, divided by the number of inhabitants.
-pl_jednostka_prezentacji: zł
-en_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN
+en_jednostka_prezentacji: PLN 
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
-en_zrodlo_danych: Statistics Poland 
+en_zrodlo_danych: Statistics Poland
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true

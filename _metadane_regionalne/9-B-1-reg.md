@@ -24,12 +24,12 @@ pl_definicja: >-
   Stosunek wartości Produktu Krajowego Brutto w cenach bieżących do liczby mieszkańców danego obszaru.
 en_definicja: >-
   The ratio of the value of Gross Domestic Product at current prices to the number of inhabitants of a given area.
-pl_jednostka_prezentacji: zł
-en_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN
+en_jednostka_prezentacji: PLN 
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
-en_zrodlo_danych: Statistics Poland 
+en_zrodlo_danych: Statistics Poland
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2000 r.
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2000
 published: true

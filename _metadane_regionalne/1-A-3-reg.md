@@ -16,7 +16,7 @@ pl_priorytet: >-
   Wspieranie rodzin z dziećmi i opieka nad dziećmi
 pl_definicja: >-
   Wydatki poniesione na zaspokojenie potrzeb na <b>towary i usługi konsumpcyjne z zakresu kultury i rekreacji</b> w przeliczeniu na 1 osobę w gospodarstwie domowym.
-pl_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.

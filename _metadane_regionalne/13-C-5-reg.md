@@ -24,7 +24,7 @@ pl_definicja: >-
   Nakłady brutto na środki trwałe służące ochronie powietrza atmosferycznego i klimatu na jednego mieszkańca (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
   Gross fixed capital formation for the protection of ambient air and climate per capita (as of 30 June of the surveyed year).
-pl_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN 
 en_jednostka_prezentacji: PLN
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total

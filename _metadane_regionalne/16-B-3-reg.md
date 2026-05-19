@@ -24,7 +24,7 @@ pl_definicja: >-
   Suma wydatków gmin i powiatów na danym obszarze przeznaczanych na bezpieczeństwo publiczne i ochronę przeciwpożarową (tj. wydatków w Dziale 754 klasyfikacji budżetowej) w przeliczeniu na jednego mieszkańca.
 en_definicja: >-
   Total expenditure of gminas and powiats dedicated to public safety and fire protection (i.e.  expenditure in Division 754 of budgetary classification) - per capita.
-pl_jednostka_prezentacji: zł
+pl_jednostka_prezentacji: PLN 
 en_jednostka_prezentacji: PLN
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
