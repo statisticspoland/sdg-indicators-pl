@@ -1,17 +1,17 @@
 ---
 translation_id: 9-C-7-reg
 pl_title: >-
-  Długość dróg dla rowerów na 100 km2 (w km)
+  Długość dróg dla rowerów na 100 km²
 pl_graph_title: >-
-  Długość dróg dla rowerów na 100 km2 (w km)
+  Długość dróg dla rowerów na 100 km²
 pl_nazwa_wskaznika: >-
-  <b>9.C.7 Długość dróg dla rowerów na 100 km2 (w km)</b>
+  <b>9.C.7 Długość dróg dla rowerów na 100 km²</b>
 en_title: >-
-  Lenght of bicycle tracks per 100 km2 (in km)
+  Lenght of bicycle tracks per 100 km²
 en_graph_title: >-
-  Lenght of bicycle tracks per 100 km2 (in km)
+  Lenght of bicycle tracks per 100 km²
 en_nazwa_wskaznika: >-
-  <b>9.C.7 Lenght of bicycle tracks per 100 km2 (in km)</b>
+  <b>9.C.7 Lenght of bicycle tracks per 100 km²</b>
 pl_cel: Cel 9. Innowacyjność, Przemysł, Infrastruktura
 en_cel: Goal 9. Industry, innovation and infrastructure
 pl_zadanie: null
@@ -21,9 +21,9 @@ pl_priorytet: >-
 en_priorytet: >-
   Strengthening the availability of transport infrastructure and the coherence of public communication in the region
 pl_definicja: >-
-  Długość ścieżek rowerowych (dróg dla rowerów) przypadająca na 100 km2 powierzchni, wyrażona w kilometrach.
+  Długość ścieżek rowerowych (dróg dla rowerów) przypadająca na 100 km² powierzchni, wyrażona w kilometrach.
 en_definicja: >-
-  Total length of bicycle lanes (bicycle tracks) per 100 km2 total area in kilometers.
+  Total length of bicycle lanes (bicycle tracks) per 100 km² total area in kilometers.
 pl_jednostka_prezentacji: km
 en_jednostka_prezentacji: km
 pl_dostepne_wymiary: ogółem

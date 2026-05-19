@@ -1,11 +1,11 @@
 ---
 translation_id: 16-C-1-reg
 pl_title: >-
-  Udział mieszkańców w głosowaniu nad projektami na 10 tys. mieszkańców
+  Liczba mieszkańców biorących udział w głosowaniu nad projektami na 10 tys. mieszkańców
 pl_graph_title: >-
-  Udział mieszkańców w głosowaniu nad projektami na 10 tys. mieszkańców
+  Liczba mieszkańców biorących udział w głosowaniu nad projektami na 10 tys. mieszkańców
 pl_nazwa_wskaznika: >-
-  <b>16.C.1 Udział mieszkańców w głosowaniu nad projektami na 10 tys. mieszkańców</b>
+  <b>16.C.1 Liczba mieszkańców biorących udział w głosowaniu nad projektami na 10 tys. mieszkańców</b>
 en_title: >-
   Voters on projects for 10 thous. inhabitants
 en_graph_title: >-

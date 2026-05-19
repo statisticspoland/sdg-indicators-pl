@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba podmiotów gospodarki narodowej wpisanych do rejestru REGON w przeliczeniu na 10 tys. ludności w wieku 18-59/64 lat.
 en_definicja: >-
   Number of entities of the national economy entered in the register REGON per 10 thousand population aged 18-59/64 years.
-pl_jednostka_prezentacji: sztuki / 10 tys. ludności
-en_jednostka_prezentacji: per pieces 10 thous. population
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

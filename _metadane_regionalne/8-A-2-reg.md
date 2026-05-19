@@ -84,7 +84,7 @@ en_wyjasnienia_metodologiczne: >-
   <p><b>Net revenue from the sale of products</b> includes amounts due - net of value added tax - from the sale of finished goods and services, adjusted for surcharges due and rebates and discounts granted.</p>
 
   <p>In the domain-based approach, the data concern enterprises from Section C - Industrial Processing (NACE Classification 2007).</p>
-  
+
   <p>According to the classification of industrial processing according to R&D intensity (NACE Classification 2007), the following divisions/groups belong to high and medium-high technology respectively:</p>
 
   <p>- <b>High technology</b> (Manufacture of basic pharmaceutical substances and medicines and other pharmaceutical products - 21, Manufacture of computers, electronic and optical products - 26, Manufacture of aircraft, spacecraft and similar machinery - 30.3);</p>
@@ -94,12 +94,8 @@ en_wyjasnienia_metodologiczne: >-
 pl_uwagi: >-
   <p>Metoda badań stopnia zaawansowania techniki według dziedzin odznacza się wysokim stopniem agregacji, w związku z tym wyroby produkowane przez firmy zaliczone do dziedziny wysokiej techniki mogą reprezentować w rzeczywistości średnią lub niską technikę, i odwrotnie, niektóre wyroby produkowane w sektorach średniej i niskiej techniki spełniają kryteria zaliczania do wysokiej techniki. Wynika to w głównej mierze z faktu, że całość nakładów na działalność B+R w danym sektorze jest przypisywana do podstawowego rodzaju działalności firm składających się na ten sektor; konsekwencją tego może być przeszacowanie intensywności technologicznej w jednych sektorach kosztem jej niedoszacowania w innych.</p>
 
-  <p>Z uwagi na zmiany w Programie Badań Statystycznych Statystyki Publicznej, badanie działalności innowacyjnej przedsiębiorstw zmieniło częstotliwość na dwuletnią. Dane począwszy od 2022 r. dostępne będą zawsze w lata parzyste.</p>
-
 en_uwagi: >-
   <p>The method of testing the degree of technical sophistication by field is characterized by a high degree of aggregation, therefore, products produced by companies classified in the high-tech field may in fact represent a medium or low technique, and conversely, some products produced in the medium and low-tech sectors meet the criteria for classification as high-tech. This is mainly due to the fact that all expenditure on R&D activities in a given sector is allocated to the main activity of the companies that make up this sector; this may result in overestimating the technological intensity in some sectors at the expense of underestimating it in others.</p>
-
-  <p>Due to changes in the Programme of statistical surveys of official statistics, the survey of innovative activities of enterprises changed the frequency to two years. Data from 2022 onwards will always be available in even years.</p>
 
 pl_data_aktualizacji_danych:
 pl_data_aktualizacji_metadanych:

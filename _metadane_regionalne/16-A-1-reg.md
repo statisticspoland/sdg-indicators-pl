@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba podmiotów gospodarki narodowej – fundacji, stowarzyszeń i organizacji społecznych wpisanych do rejestru REGON w przeliczeniu na 10 tysięcy mieszkańców.
 en_definicja: >-
   The number of entities of the national economy - foundations, associations and social organizations recorded in the REGON register per 10000 inhabitants.
-pl_jednostka_prezentacji: sztuki
-en_jednostka_prezentacji: pieces
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

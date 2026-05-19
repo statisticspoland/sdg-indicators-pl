@@ -24,8 +24,8 @@ pl_definicja: >-
   Suma liczby pożarów, zagrożeń miejscowych oraz fałszywych alarmów w przeliczeniu na 1000 ludności (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
   Total number of fires, local hazards and false alarms per 1000 population (as of 30 June of the surveyed  year).
-pl_jednostka_prezentacji: sztuki
-en_jednostka_prezentacji: pieces
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny / Ministerstwo Spraw Wewnętrznych i Administracji

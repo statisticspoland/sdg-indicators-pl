@@ -24,8 +24,8 @@ pl_definicja: >-
   Całkowite zużycie energii elektrycznej w przeliczeniu na 1 mieszkańca.
 en_definicja: >-
   Total electricity consumption in relation to number of inhabitants.
-pl_jednostka_prezentacji: kilowatogodzina
-en_jednostka_prezentacji: kilowatt-hour
+pl_jednostka_prezentacji: kWh
+en_jednostka_prezentacji: kWh
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

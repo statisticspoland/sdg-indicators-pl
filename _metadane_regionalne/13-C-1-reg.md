@@ -1,17 +1,17 @@
 ---
 translation_id: 13-C-1-reg
 pl_title: >-
-  Gęstość sieci cieplnej przesyłowej i rozdzielczej
+  Gęstość sieci cieplnej przesyłowej i rozdzielczej na 1 km²
 pl_graph_title: >-
-  Gęstość sieci cieplnej przesyłowej i rozdzielczej
+  Gęstość sieci cieplnej przesyłowej i rozdzielczej na 1 km²
 pl_nazwa_wskaznika: >-
-  <b>13.C.1 Gęstość sieci cieplnej przesyłowej i rozdzielczej</b>
+  <b>13.C.1 Gęstość sieci cieplnej przesyłowej i rozdzielczej na 1 km²</b>
 en_title: >-
-  The density of heating transmission and distribution network (in km per 100 km2)
+  The density of heating transmission and distribution network per 1 km²
 en_graph_title: >-
-  The density of heating transmission and distribution network (in km per 100 km2)
+  The density of heating transmission and distribution network per 1 km²
 en_nazwa_wskaznika: >-
-  <b>13.C.1 The density of heating transmission and distribution network (in km per 100 km2)</b>
+  <b>13.C.1 The density of heating transmission and distribution network per 1 km²</b>
 pl_cel: Cel 13. Działania w dziedzinie klimatu
 en_cel: Goal 13. Climate action
 pl_zadanie: null
@@ -24,14 +24,14 @@ pl_definicja: >-
   Suma sieci cieplnej przesyłowej i rozdzielczej przypadająca na 1 km2 powierzchni ogólnej.
 en_definicja: >-
   The sum of the transmission (main) thermic-line and distribution thermic-line per 1 km2 of total area.
-pl_jednostka_prezentacji: kilometry
-en_jednostka_prezentacji: kilometers
+pl_jednostka_prezentacji: km
+en_jednostka_prezentacji: km
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
 en_zrodlo_danych: Statistics Poland
-pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2017 r.
-en_czestotliwosc_dostępnosc_danych: Annual data, since 2017
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p><b>Sieć cieplna przesyłowa (magistralna)</b> – układ przewodów doprowadzających czynnik grzejny do przewodów rozdzielczych.</p>

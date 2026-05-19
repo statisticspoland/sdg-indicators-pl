@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba mieszkań, które znajdują się w budynkach będących w zasobach komunalnych gmin.
 en_definicja: >-
   The number of dwellings that are located in buildings in gminas’ dwelling stocks.
-pl_jednostka_prezentacji: sztuki
-en_jednostka_prezentacji: pieces
+pl_jednostka_prezentacji: tys. sztuk
+en_jednostka_prezentacji: thous. pieces
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
@@ -34,15 +34,9 @@ pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true
 pl_wyjasnienia_metodologiczne: >-
-  <p>Zapewnienie warunków mieszkaniowych grupom najbardziej wrażliwym i potrzebującym społecznie.</p>
-
-  <p>Zaspokojenie potrzeb mieszkaniowych ludności miast dzięki budowie powszechnego i dostępnego rynku mieszkaniowego.</p>
-
+  <p><b>Zasoby gminne (komunalne)</b> to mieszkania stanowiące własność gminy lub powiatu (lokalnej wspólnoty samorządowej), będące własnością gminy, ale znajdujące się w budynkach stanowiących nieruchomości wspólne, tj. mieszkania, które służą zaspokajaniu potrzeb mieszkaniowych ogółu mieszkańców gminy, a także mieszkania przekazane gminie, ale pozostające w dyspozycji jednostek użyteczności publicznej, takich jak: placówki wykonujące działalność leczniczą, ośrodki pomocy społecznej, jednostki systemu oświaty, nauki, instytucje kultury, służące głównie zaspokajaniu potrzeb mieszkaniowych pracowników tych jednostek.</p>
 en_wyjasnienia_metodologiczne: >-
-  <p>Providing housing conditions for the most vulnerable and socially needy groups.</p>
-
-  <p>Meeting the housing needs of the urban population by building a universal and accessible housing market.</p>
-
+  <p><b>Gmina (municipal) stocks</b> - dwellings owned by gminas or powiats (local self-government communities),owned by gminas but located in buildings constituting a shared real property e.j. dwellings which serve meeting the needs of all inhabitants of A gmina, as well as dwellings handed over to gminas, but remaining at the disposal of public use units, such as: units performing health care activities, social welfare centres, educational system entities, culture institutions, serving mainly the housing needs to employees of these entities.</p>
 pl_uwagi: >-
 
 en_uwagi: >-

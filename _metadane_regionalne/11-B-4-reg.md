@@ -30,8 +30,8 @@ pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
 en_zrodlo_danych: Statistics Poland
-pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2014 r.
-en_czestotliwosc_dostępnosc_danych: Annual data, since 2014
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p>Dotyczy komunikacji miejskiej naziemnej. Obejmuje przedsiębiorstwa i zakłady komunikacji miejskiej o liczbie pracujących powyżej 9 osób. Ponadto usługi komunikacji miejskiej świadczyły w prawie wszystkich województwach przedsiębiorstwa komunikacji międzymiastowej.</p>

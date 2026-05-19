@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba nowych podmiotów gospodarczych wpisanych do rejestru REGON w danym roku w przeliczeniu na 10 tysięcy mieszkańców.
 en_definicja: >-
   Number of new business entities entered in the register REGON in a given year per 10 thousand inhabitants.
-pl_jednostka_prezentacji: sztuki / 10 tys. ludności
-en_jednostka_prezentacji: per pieces 10 thous. population
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

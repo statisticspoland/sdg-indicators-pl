@@ -30,8 +30,8 @@ pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
 en_zrodlo_danych: Statistics Poland
-pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2013 r.
-en_czestotliwosc_dostępnosc_danych: Annual data, since 2013
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p><b>Sprzedaż poprzez strony internetowe</b> obejmuje zamówienia składane w sklepach internetowych lub poprzez elektroniczne formularze zamieszczone na stronie internetowej lub w extranecie, niezależnie od sposobu dostępności (np. poprzez komputer osobisty, laptop, telefon komórkowy).</p>
