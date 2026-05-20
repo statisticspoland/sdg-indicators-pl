@@ -6,7 +6,7 @@ sdg_goal: 13
 indicator:  13.C.1.reg
 target_id:  '13.C.1'
 permalink: /statistics_reg/13-C-1/
-pre:  2
+pre:  3
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  pl

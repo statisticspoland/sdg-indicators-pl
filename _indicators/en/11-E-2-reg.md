@@ -6,7 +6,7 @@ sdg_goal: 11
 indicator:  11.E.2.reg
 target_id:  '11.E.2'
 permalink: /en/statistics_reg/11-E-2/
-pre:  2
+pre:  1
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  en
