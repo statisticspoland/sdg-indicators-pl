@@ -444,7 +444,7 @@ permalink: /o_sdg/
 
   <h4><b>EUROPEJSKA KOMISJA GOSPODARCZA (EKG)</b></h4>
     <div class="image-wrapper">
-      <a target="_blank" href="https://unece.org/sites/default/files/2026-06/SDG-Report_2026%20%28v2026-06-02%29.pdf" alt="Sustainable Development in the UNECE Region: Trends and Actions in 2026" title="Zapoznaj się z publikacją Sustainable Development in the UNECE Region: Trends and Actions in 2026"><img src="{{ site.baseurl }}/assets/img/publikacje/12_sustainable_2026.PNG" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unece.org/sites/default/files/2026-06/SDG-Report_2026%20%28v2026-06-02%29.pdf" alt="Sustainable Development in the UNECE Region: Trends and Actions in 2026" title="Zapoznaj się z publikacją Sustainable Development in the UNECE Region: Trends and Actions in 2026"><img src="{{ site.baseurl }}/assets/img/publikacje/12_sustainable_2026.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>SDG Progress Report in the UNECE Region</b></p>
 
