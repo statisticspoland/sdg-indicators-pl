@@ -438,17 +438,13 @@ permalink: /en/o_sdg/
 
   <h4><b>UN ECONOMIC COMMISSION FOR EUROPE (UNECE)</b></h4>
     <div class="image-wrapper">
-      <a target="_blank" href="https://unece.org/sites/default/files/2025-03/SDG-Report_2025_web.pdf" alt="Sustainable Development in the UNECE Region in 2025: More Data, Persistent Challenges" title="Read a publication Sustainable Development in the UNECE Region in 2025: More Data, Persistent Challenges"><img src="{{ site.baseurl }}/assets/img/publikacje/12_sustainable_2025.PNG" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unece.org/sites/default/files/2026-06/SDG-Report_2026%20%28v2026-06-02%29.pdf" alt="Sustainable Development in the UNECE Region: Trends and Actions in 2026" title="Read a publication Sustainable Development in the UNECE Region: Trends and Actions in 2026"><img src="{{ site.baseurl }}/assets/img/publikacje/12_sustainable_2026.PNG" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>SDG Progress Report in the UNECE Region</b></p>
 
-  <p>The report provides a progress assessment of the 2030 Agenda’s implementation in the UNECE region, based on the data available in the <a title="Go to UNECE global SDG database" href="https://unstats.un.org/sdgs/dataportal" target="_blank">United Nations Global SDG Indicators Database</a>.</p>
-  <p>The latest edition of the report <em>Sustainable Development in the UNECE Region in 2025: More Data, Persistent Challenges</em> beside assessing the advancement of SDG targets and goals in the UNECE region, also provides <a target="_blank" href="https://w3.unece.org/sdg2023/stories.html" alt="UNECE Stories" title="Read UNECE Stories">stories</a> about the ways in which regional and country-level actions relate to sustainable development outcomes.</p>
-  <p>The publication is available as a download (PDF) and <a target="_blank" href="https://w3.unece.org/sdg2025/" alt="SDG Progress Report in the UNECE Region" title="Read a publication Sustainable Development in the UNECE Region in 2025: More Data, Persistent Challenges in interactive version">interactive version</a>.</p>
-
-
-
-
+  <p>The report analyses progress in the implementation of the 2030 Agenda in the UNECE region, based on data from the <a title="Go to UNECE global SDG database" href="https://unstats.un.org/sdgs/dataportal" target="_blank">United Nations Global SDG Indicators Database</a> and the official UN global indicator framework for the Sustainable Development Goals.</p>
+  <p>The latest edition of the report, <em>Sustainable Development in the UNECE Region: Trends and Actions in 2026</em>, presents an assessment of the progress made by UNECE member States towards achieving the SDGs and their targets, identifies areas requiring accelerated action, and highlights challenges affecting the achievement of the goals by 2030. As in previous editions, the publication also presents examples of <a target="_blank" href="https://w3.unece.org/sdg2026/stories.html" alt="UNECE Stories" title="Read UNECE Stories">initiatives and good practices</a> implemented at the regional and national levels to support the implementation of the 2030 Agenda <br /> and sustainable development.</p>
+  <p>The publication is available as a download (PDF) and <a target="_blank" href="https://w3.unece.org/sdg2026/" alt="SDG Progress Report in the UNECE Region" title="Read a publication Sustainable Development in the UNECE Region: Trends and Actions in 2026 in interactive version">interactive version</a>.</p>
 
 
 <p style="margin-bottom: 20px;">
@@ -458,6 +454,7 @@ permalink: /en/o_sdg/
 </p>
 <div class="collapse" id="collapseExample6">
   <div class="card card-body">
+  <p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication Sustainable Development in the UNECE Region in 2025: More Data, Persistent Challenges" href="https://unece.org/info/Statistics/pub/400029">Sustainable Development in the UNECE Region in 2025: More Data, Persistent Challenges</a></p>
 	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication Sustainable Development in the UNECE Region: Facing a Headwind in 2024" href="https://unece.org/info/publications/pub/388336">Sustainable Development in the UNECE Region: Facing a Headwind in 2024</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?" href="https://unece.org/statistics/publications/growing-challenges-sustainable-development-can-unece-region-turn-tide-2023">Growing Challenges for Sustainable Development: Can the UNECE Region Turn the Tide in 2023?</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Halfway to 2030: How many targets will be achieved in the UNECE region?" href="https://unece.org/info/Statistics/pub/365798">Halfway to 2030: How many targets will be achieved in the UNECE region?</a></p>
