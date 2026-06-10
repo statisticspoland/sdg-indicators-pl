@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba obiektów zaliczanych do małej retencji wodnej.
 en_definicja: >-
   Number of small water retention facilities.
-pl_jednostka_prezentacji: sztuki
-en_jednostka_prezentacji: pieces
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Infrastruktury

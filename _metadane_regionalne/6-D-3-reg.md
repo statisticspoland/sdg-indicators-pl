@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba stacji uzdatniania wody na wsi przypadająca na 10 tys. mieszkańców obszarów wiejskich.
 en_definicja: >-
   Number of water treatment plants in rural areas per 10 000 inhabitants of rural areas
-pl_jednostka_prezentacji: sztuki / 10 tys. mieszkańców
-en_jednostka_prezentacji: pieces per / 10,000 inhabitants
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Rolnictwa i Rozwoju Wsi

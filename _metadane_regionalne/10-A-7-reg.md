@@ -1,11 +1,11 @@
 ---
 translation_id: 10-A-7-reg
 pl_title: >-
-  Współczynnik aktywności zawodowej osób w wieku 15-89
+  Współczynnik aktywności zawodowej osób w wieku 15-89 lat
 pl_graph_title: >-
-  Współczynnik aktywności zawodowej osób w wieku 15-89
+  Współczynnik aktywności zawodowej osób w wieku 15-89 lat
 pl_nazwa_wskaznika: >-
-  <b>10.A.7 Współczynnik aktywności zawodowej osób w wieku 15-89</b>
+  <b>10.A.7 Współczynnik aktywności zawodowej osób w wieku 15-89 lat</b>
 en_title: >-
   Activity rate aged 15-89
 en_graph_title: >-

@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba przydomowych oczyszczalni ścieków.
 en_definicja: >-
   Number of household wastewater treatment systems.
-pl_jednostka_prezentacji: sztuki
-en_jednostka_prezentacji: pieces
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

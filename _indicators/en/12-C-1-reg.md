@@ -6,7 +6,7 @@ sdg_goal: 12
 indicator:  12.C.1.reg
 target_id:  '12.C.1'
 permalink: /en/statistics_reg/12-C-1/
-pre:  1
+pre:  0
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  en

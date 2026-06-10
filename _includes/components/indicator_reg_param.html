@@ -958,7 +958,7 @@
         <option style="font-family: Fira Sans" value="2010">2010</option>
       </select>
       {% elsif id_map == '6-e-1' or id_map == '6-c-6' %}
-      <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2024" selected>2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
@@ -999,7 +999,7 @@
 
       </select>
 
-      {% elsif id_map == '11-d-2'  %}
+      {% elsif id_map == '11-d-2' %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2024" selected>2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
@@ -1454,7 +1454,7 @@
             </div>
 
 
-    {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '6-b-1' or id_map == '6-d-4' or id_map == '6-d-5'  or id_map == '11-d-2'  or id_map == '12-e-2' or id_map == '15-b-1' or id_map == '15-a-3' or id_map == '3-f-2' or id_map == '11-d-3' or id_map == '13-d-7' %}
+    {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '6-b-1' or id_map == '6-c-6' or id_map == '6-d-4' or id_map == '6-d-5'  or id_map == '11-d-2'  or id_map == '12-e-2' or id_map == '15-b-1' or id_map == '15-a-3' or id_map == '3-f-2' or id_map == '11-d-3' or id_map == '13-d-7' %}
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
         <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
@@ -1757,7 +1757,7 @@
               </div>
 
 
-    {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '6-b-1' or id_map == '6-d-4' or id_map == '6-d-5'  or id_map == '11-d-2'  or id_map == '12-e-2'  or id_map == '15-b-1' or id_map == '15-a-3' or id_map == '15-a-3' or id_map == '3-f-2' or id_map == '11-d-3' or id_map == '13-d-7' %}
+    {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '6-b-1' or id_map == '6-c-6' or id_map == '6-d-4' or id_map == '6-d-5'  or id_map == '11-d-2'  or id_map == '12-e-2'  or id_map == '15-b-1' or id_map == '15-a-3' or id_map == '15-a-3' or id_map == '3-f-2' or id_map == '11-d-3' or id_map == '13-d-7' %}
       <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
         <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
@@ -2057,10 +2057,6 @@ function download_csv(csv, filename) {
           }
 
           switch ('{{ id_map }}') {
-            case '12-e-2':
-              maxValue=1300;
-              marg=0;
-              break;
             case '3-f-2':
               maxValue=10;
               marg=0;
@@ -2215,10 +2211,6 @@ function updateChartBar(){
             }
 
             switch ('{{ id_map }}') {
-              case '12-e-2':
-                maxValue=1300;
-                marg=0;
-                break;
               case '3-f-2':
                 maxValue=10;
                 marg=0;

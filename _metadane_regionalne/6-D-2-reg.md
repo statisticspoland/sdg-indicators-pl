@@ -24,8 +24,8 @@ pl_definicja: >-
   Ilość wód podziemnych pobranych w ciągu roku na cele eksploatacji sieci wodociągowej.
 en_definicja: >-
   Amount of underground waters collected during the year for the operation of the water supply network.
-pl_jednostka_prezentacji: dam3
-en_jednostka_prezentacji: dam3
+pl_jednostka_prezentacji: dam³
+en_jednostka_prezentacji: dam³
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

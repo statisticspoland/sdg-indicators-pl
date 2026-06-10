@@ -88,8 +88,23 @@ en_wyjasnienia_metodologiczne: >-
   activities on a small scale (below specific thresholds).</p>
 
 pl_uwagi: >-
+  W związku z wprowadzeniem od 2010 r. stopniowych zmian w metodologii badań
+  rolniczych, mających na celu dostosowanie do standardów unijnych oraz
+  uwzględnienie przemian dokonujących się w polskim rolnictwie – zmianie uległa
+  definicja gospodarstwa rolnego. Zgodnie z definicją obowiązującą od 2010 r. w
+  badaniach rolniczych nie ujmuje się posiadaczy użytków rolnych nieprowadzących
+  działalności rolniczej oraz posiadaczy poniżej 1 ha użytków rolnych
+  prowadzących działalność rolniczą o małej skali (poniżej określonych progów).
 
 en_uwagi: >-
+  In accordance with gradual changes in the methodology of agricultural surveys,
+  introduced since 2010 in order to adjust it to EU standards and encompass
+  changes taking place in the Polish agriculture, the definition of the
+  agricultural farm has been changed. In accordance with the definition binding
+  since 2010, agricultural surveys do not include owners of agricultural land
+  who do not conduct agricultural activities, and owners of less than 1 ha of
+  agricultural land who conduct agricultural activities on a small scale (below
+  the specified thresholds).
 
 pl_data_aktualizacji_danych:
 pl_data_aktualizacji_metadanych:

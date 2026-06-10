@@ -24,8 +24,8 @@ pl_definicja: >-
   Ilość wody zużytej na potrzeby gospodarki narodowej i ludności ogółem w ciągu roku.
 en_definicja: >-
   Amount of water used for needs of the national economy and the total population during the year.
-pl_jednostka_prezentacji: dam3
-en_jednostka_prezentacji: dam3
+pl_jednostka_prezentacji: dam³
+en_jednostka_prezentacji: dam³
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

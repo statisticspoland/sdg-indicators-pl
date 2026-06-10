@@ -26,8 +26,8 @@ pl_definicja: >-
 en_definicja: >-
   Total number of organic farms per 10 thous. population.
 
-pl_jednostka_prezentacji: sztuki / 10 tys. ludności
-en_jednostka_prezentacji: pieces per 10 thous. population
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Inspektorat Jakości Handlowej Artykułów Rolno-Spożywczych / Główny Urząd Statystyczny

@@ -1,17 +1,17 @@
 ---
 translation_id: 6-C-6-reg
 pl_title: >-
-  Zużycie wody z wodociągów w gospodarstwach domowych ogółem na 1 mieszkańca [m³/rok]
+  Zużycie wody z wodociągów w gospodarstwach domowych ogółem na 1 mieszkańca
 pl_graph_title: >-
-  Zużycie wody z wodociągów w gospodarstwach domowych ogółem na 1 mieszkańca [m³/rok]
+  Zużycie wody z wodociągów w gospodarstwach domowych ogółem na 1 mieszkańca
 pl_nazwa_wskaznika: >-
-  <b>6.C.6 Zużycie wody z wodociągów w gospodarstwach domowych ogółem na 1 mieszkańca [m³/rok] </b>
+  <b>6.C.6 Zużycie wody z wodociągów w gospodarstwach domowych ogółem na 1 mieszkańca</b>
 en_title: >-
-  Total household water consumption per user (m³/year)
+  Total household water consumption per user
 en_graph_title: >-
-  Total household water consumption per user (m³/year)
+  Total household water consumption per user
 en_nazwa_wskaznika: >-
-  <b>6.C.6 Total household water consumption per user (m³/year)</b>
+  <b>6.C.6 Total household water consumption per user</b>
 pl_cel: Cel 6. Czysta woda i warunki sanitarne
 en_cel: Goal 6. Clean water and sanitation
 pl_zadanie: null
@@ -24,8 +24,8 @@ pl_definicja: >-
   Ilość wody pochodzącej z sieci wodociągowej, którą zużywają w ciągu roku gospodarstwa domowe w przeliczeniu na jedną osobę, wyrażoną w m³.
 en_definicja: >-
   Amount of water consumed for industry, agriculture, forestry purposes, filling and completing fishponds and exploitation of water supply network per capita.
-pl_jednostka_prezentacji: [m³/rok]
-en_jednostka_prezentacji: [m³/year]
+pl_jednostka_prezentacji: m³/rok
+en_jednostka_prezentacji: m³/year
 pl_dostepne_wymiary: ogółem, miasto, wieś
 en_dostepne_wymiary: total, urban, rural
 pl_zrodlo_danych: Główny Urząd Statystyczny

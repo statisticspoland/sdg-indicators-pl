@@ -24,8 +24,8 @@ pl_definicja: >-
   Ilość zasobów eksploatacyjnych ujęć wód podziemnych ogółem wyrażona w hektometrach sześciennych na rok.
 en_definicja: >-
   The amount of total exploitable underground water resources expressed in cubic hectometers per year.
-pl_jednostka_prezentacji: hm3
-en_jednostka_prezentacji: hm3
+pl_jednostka_prezentacji: hm³
+en_jednostka_prezentacji: hm³
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Państwowy Instytut Geologiczny – Państwowy Instytut Badawczy

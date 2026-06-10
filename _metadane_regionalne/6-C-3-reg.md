@@ -1,17 +1,17 @@
 ---
 translation_id: 6-C-3-reg
 pl_title: >-
-  Pojemność obiektów małej retencji na 1 km2
+  Pojemność obiektów małej retencji wodnej (dam³)
 pl_graph_title: >-
-  Pojemność obiektów małej retencji na 1 km2
+  Pojemność obiektów małej retencji wodnej (dam³)
 pl_nazwa_wskaznika: >-
-  <b>6.C.3 Pojemność obiektów małej retencji na 1 km2</b>
+  <b>6.C.3 Pojemność obiektów małej retencji wodnej (dam³)</b>
 en_title: >-
-  Capacity of small water retention facilities per 1 km2
+  Capacity of small water retention facilities (dam³)
 en_graph_title: >-
-  Capacity of small water retention facilities per 1 km2
+  Capacity of small water retention facilities (dam³)
 en_nazwa_wskaznika: >-
-  <b>6.C.3 Capacity of small water retention facilities per 1 km2</b>
+  <b>6.C.3 Capacity of small water retention facilities (dam³)</b>
 pl_cel: Cel 6. Czysta woda i warunki sanitarne
 en_cel: Goal 6. Clean water and sanitation
 pl_zadanie: null
@@ -24,8 +24,8 @@ pl_definicja: >-
   Pojemność obiektów małej retencji wodnej.
 en_definicja: >-
   Volume of small water retention facilities.
-pl_jednostka_prezentacji: dam3
-en_jednostka_prezentacji: dam3
+pl_jednostka_prezentacji: dam³
+en_jednostka_prezentacji: dam³
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Infrastruktury

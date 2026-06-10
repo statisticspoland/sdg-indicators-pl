@@ -24,8 +24,8 @@ pl_definicja: >-
   Nakłady inwestycyjne przeznaczone na recykling i wykorzystanie odpadów.
 en_definicja: >-
   Outlays for recycling and the use of waste.
-pl_jednostka_prezentacji: kilowatogodzina
-en_jednostka_prezentacji: kilowatt-hour
+pl_jednostka_prezentacji: tys. zł
+en_jednostka_prezentacji: thous. PLN
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

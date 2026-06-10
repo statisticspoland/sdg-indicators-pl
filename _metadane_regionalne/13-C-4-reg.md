@@ -24,8 +24,8 @@ pl_definicja: >-
   Nakłady na środki trwałe służące ochronie środowiska i gospodarce wodnej w przeliczeniu na 1 mieszkańca.
 en_definicja: >-
   Outlays on fixed assets for environmental protection per capita.
-pl_jednostka_prezentacji: tys. zł
-en_jednostka_prezentacji: thousands, PLN
+pl_jednostka_prezentacji: zł
+en_jednostka_prezentacji: PLN
 pl_dostepne_wymiary: wg przeznaczenia
 en_dostepne_wymiary: by puropse
 pl_zrodlo_danych: Główny Urząd Statystyczny

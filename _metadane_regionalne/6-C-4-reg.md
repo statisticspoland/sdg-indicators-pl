@@ -1,17 +1,17 @@
 ---
 translation_id: 6-C-4-reg
 pl_title: >-
-  Pobór wody na potrzeby gospodarki narodowej i ludności w ciągu roku ogółem na 1 km2 powierzchni
+  Pobór wody na potrzeby gospodarki narodowej i ludności w ciągu roku ogółem na 1 km² powierzchni
 pl_graph_title: >-
-  Pobór wody na potrzeby gospodarki narodowej i ludności w ciągu roku ogółem na 1 km2 powierzchni
+  Pobór wody na potrzeby gospodarki narodowej i ludności w ciągu roku ogółem na 1 km² powierzchni
 pl_nazwa_wskaznika: >-
-  <b>6.C.4 Pobór wody na potrzeby gospodarki narodowej i ludności w ciągu roku ogółem na 1 km2 powierzchni</b>
+  <b>6.C.4 Pobór wody na potrzeby gospodarki narodowej i ludności w ciągu roku ogółem na 1 km² powierzchni</b>
 en_title: >-
-  Water withdrawal for the needs of the national economy and population during the year in total per 1 km2 of area
+  Water withdrawal for the needs of the national economy and population during the year in total per 1 km² of area
 en_graph_title: >-
-  Water withdrawal for the needs of the national economy and population during the year in total per 1 km2 of area
+  Water withdrawal for the needs of the national economy and population during the year in total per 1 km² of area
 en_nazwa_wskaznika: >-
-  <b>6.C.4 Water withdrawal for the needs of the national economy and population during the year in total per 1 km2 of area</b>
+  <b>6.C.4 Water withdrawal for the needs of the national economy and population during the year in total per 1 km² of area</b>
 pl_cel: Cel 6. Czysta woda i warunki sanitarne
 en_cel: Goal 6. Clean water and sanitation
 pl_zadanie: null
@@ -21,11 +21,11 @@ pl_priorytet: >-
 en_priorytet: >-
   Rational use of water resources
 pl_definicja: >-
-  Ilość wody pobranej w ciągu roku na potrzeby gospodarki narodowej i ludności w przeliczeniu na 1 km2.
+  Ilość wody pobranej w ciągu roku na potrzeby gospodarki narodowej i ludności w przeliczeniu na 1 km².
 en_definicja: >-
-  Amount of water abstracted per year for the national economy and population per km2.
-pl_jednostka_prezentacji: dam3 / 1 km2
-en_jednostka_prezentacji: dam3 / 1 km2
+  Amount of water abstracted per year for the national economy and population per km².
+pl_jednostka_prezentacji: dam³ / 1 km²
+en_jednostka_prezentacji: dam³ / 1 km²
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

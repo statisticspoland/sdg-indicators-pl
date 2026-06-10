@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba zakładów wytwarzających odpady według stanu na 31 grudnia badanego roku.
 en_definicja: >-
   Number of plants generating waste as at 31 December of the year under review.
-pl_jednostka_prezentacji: obiekt
-en_jednostka_prezentacji: object
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny / Główny Inspektorat Ochrony Środowiska / Ministerstwo Klimatu i Środowiska

@@ -24,8 +24,8 @@ pl_definicja: >-
   Zsumowana liczba produktów tradycyjnych zarejestrowanych na liście Ministerstwa Rolnictwa i Rozwoju Wsi, utworzonej na podstawie ustawy o rejestracji i ochronie nazw i oznaczeń produktów rolnych i środków spożywczych oraz o produktach tradycyjnych.
 en_definicja: >-
   The total number of traditional products registered in the list of the Ministry of Agriculture and Rural Development, established on the basis of the Act on the Registration and Protection of Names and Designations of Agricultural Products and Foodstuffs and on Traditional Products.
-pl_jednostka_prezentacji: sztuki
-en_jednostka_prezentacji: pieces
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Rolnictwa i Rozwoju Wsi
