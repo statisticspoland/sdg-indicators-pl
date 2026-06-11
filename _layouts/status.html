@@ -8,6 +8,9 @@
 {% if page.url contains '/statistics_nat/' %}
   {% assign nazwa = '/statistics_nat/' %}
   {% assign ktore = site.data.krajowe %}
+{% elsif page.url contains '/statistics_reg/' %}
+  {% assign nazwa = '/statistics_reg/' %}
+  {% assign ktore = site.data.regionalne %}
 {% else %}
   {% assign nazwa = '/statistics_glob/' %}
   {% assign ktore = site.data.globalne %}
@@ -15,20 +18,24 @@
 
     <div id="main" class="main-content initiative-content status-dashboard">
 
-        <a id="main-content" tabindex="-1"></a>
-        {% if page.url contains '/statistics_glob/' %}
-		<section class="pl-banner-glob">
-		{% else %}
-			{% if page.url contains '/statistics_nat/' %}
+    <a id="main-content" tabindex="-1"></a>
+    
+    {% if page.url contains '/statistics_glob/' %}
+		  <section class="pl-banner-glob">
+		{% elsif page.url contains '/statistics_nat/' %}
 			<section class="pl-banner-nat">
-			{% else %}
+		{% elsif page.url contains '/statistics_reg/' %}
+			<section class="pl-banner-reg">
+		{% else %}
 			<section class="pl-banner">
-			{% endif %}
 		{% endif %}
+		
             <div class="pl-grid">
                 <div class="pl-banner-content">
                   {% if page.url contains '/statistics_nat/' %}
                     <h1>{{ t.page-title2 }}</h1>
+                  {% elsif page.url contains '/statistics_reg/' %}
+                    <h1>{{ t.page-title3 }}</h1>
                   {% else %}
                     <h1>{{ t.page-title }}</h1>
                   {% endif %}
@@ -209,6 +216,8 @@
 
                 {% if page.url contains '/statistics_nat/' %}
                   <a class="goal-progress" href="{{ site.baseurl }}{{ lang }}/statistics_nat/{{ goal.short | slugify }}/">
+                {% elsif page.url contains '/statistics_reg/' %}
+                  <a class="goal-progress" href="{{ site.baseurl }}{{ lang }}/statistics_reg/{{ goal.short | slugify }}/">
                 {% else %}
                   <a class="goal-progress" href="{{ site.baseurl }}{{ lang }}/{{ goal.short | slugify }}/">
                 {% endif %}
