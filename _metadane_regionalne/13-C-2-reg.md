@@ -1,17 +1,17 @@
 ---
 translation_id: 13-C-2-reg
 pl_title: >-
-  Emisja zanieczyszczeń pyłowych z zakładów szczególnie uciążliwych na 1 km2
+  Emisja zanieczyszczeń pyłowych z zakładów szczególnie uciążliwych na 1 km²
 pl_graph_title: >-
-  Emisja zanieczyszczeń pyłowych z zakładów szczególnie uciążliwych na 1 km2
+  Emisja zanieczyszczeń pyłowych z zakładów szczególnie uciążliwych na 1 km²
 pl_nazwa_wskaznika: >-
-  <b>13.C.2 Emisja zanieczyszczeń pyłowych z zakładów szczególnie uciążliwych na 1 km2</b>
+  <b>13.C.2 Emisja zanieczyszczeń pyłowych z zakładów szczególnie uciążliwych na 1 km²</b>
 en_title: >-
-  Emissions of air pollutants from plants especially noxious to air purity per 1 km2
+  Emissions of air pollutants from plants especially noxious to air purity per 1 km²
 en_graph_title: >-
-  Emissions of air pollutants from plants especially noxious to air purity per 1 km2
+  Emissions of air pollutants from plants especially noxious to air purity per 1 km²
 en_nazwa_wskaznika: >-
-  <b>13.C.2 Emissions of air pollutants from plants especially noxious to air purity per 1 km2</b>
+  <b>13.C.2 Emissions of air pollutants from plants especially noxious to air purity per 1 km²</b>
 pl_cel: Cel 13. Działania w dziedzinie klimatu
 en_cel: Goal 13. Climate action
 pl_zadanie: null
@@ -21,9 +21,9 @@ pl_priorytet: >-
 en_priorytet: >-
   Strengthening the role of adaptation to climate change as a means of combating climate change equivalent to mitigation
 pl_definicja: >-
-  Łączna masa zanieczyszczeń pyłowych z zakładów szczególnie uciążliwych wyemitowanych w badanym roku w przeliczeniu na 1km2 powierzchni.
+  Łączna masa zanieczyszczeń pyłowych z zakładów szczególnie uciążliwych wyemitowanych w badanym roku w przeliczeniu na 1 km² powierzchni.
 en_definicja: >-
-  Total mass of particulate pollutants from particularly burdensome plants emitted in the surveyed year per 1km2 of area.
+  Total mass of particulate pollutants from particularly burdensome plants emitted in the surveyed year per 1 km² of area.
 pl_jednostka_prezentacji: tona
 en_jednostka_prezentacji: tonne
 pl_dostepne_wymiary: ogółem

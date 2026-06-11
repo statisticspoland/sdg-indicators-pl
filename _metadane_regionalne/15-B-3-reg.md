@@ -1,17 +1,17 @@
 ---
 translation_id: 15-B-3-reg
 pl_title: >-
-  Ścieki komunalne odprowadzone na 1 mieszkańca [dam3]
+  Ścieki komunalne odprowadzone na 1 mieszkańca [dam³]
 pl_graph_title: >-
-  Ścieki komunalne odprowadzone na 1 mieszkańca [dam3]
+  Ścieki komunalne odprowadzone na 1 mieszkańca [dam³]
 pl_nazwa_wskaznika: >-
-  <b>15.B.3 Ścieki komunalne odprowadzone na 1 mieszkańca [dam3]</b>
+  <b>15.B.3 Ścieki komunalne odprowadzone na 1 mieszkańca [dam³]</b>
 en_title: >-
-  Industrial waterwaste treaded per capita [dam3]
+  Industrial waterwaste treaded per capita [dam³]
 en_graph_title: >-
-  Industrial waterwaste treaded per capita [dam3]
+  Industrial waterwaste treaded per capita [dam³]
 en_nazwa_wskaznika: >-
-  <b>15.B.3 Industrial waterwaste treaded per capita [dam3]</b>
+  <b>15.B.3 Industrial waterwaste treaded per capita [dam³]</b>
 pl_cel: Cel 15. Życie na lądzie
 en_cel: Goal 15. Life on land
 pl_zadanie: null
@@ -24,11 +24,11 @@ pl_definicja: >-
   Łączna ilość ścieków komunalnych odprowadzona w badanym roku w przeliczeniu na 1 mieszkańca (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
   Total amount of urban wastewater discharged in the surveyed year per capita (as of  30 June of the surveyed year).
-pl_jednostka_prezentacji: dam3
-en_jednostka_prezentacji: dam3
+pl_jednostka_prezentacji: dam³
+en_jednostka_prezentacji: dam³
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
-pl_zrodlo_danych: Główny Urząd Statystyczny / Ministerstwo of Infrastruktury / Główny Inspektorat Ochrony Środowiska / Ministerstwo Klimatu i Środowiska
+pl_zrodlo_danych: Główny Urząd Statystyczny / Ministerstwo Infrastruktury / Główny Inspektorat Ochrony Środowiska / Ministerstwo Klimatu i Środowiska
 en_zrodlo_danych: Statistics Poland / Ministry of Infrastructure / Chief Inspectorate for Environmental Protection / Ministry of Climate and Environment
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010

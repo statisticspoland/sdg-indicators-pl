@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba dworców autobusowych przystosowanych do obsługi osób niepełnosprawnych (w komunikacji zamiejskiej).
 en_definicja: >-
   Number of bus stations adapted to serve disabled people (in out-of-town transport).
-pl_jednostka_prezentacji: procent
-en_jednostka_prezentacji: percent
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

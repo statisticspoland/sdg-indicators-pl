@@ -6,7 +6,7 @@ sdg_goal: 15
 indicator:  15.C.2.reg
 target_id:  '15.C.2'
 permalink: /en/statistics_reg/15-C-2/
-pre:  2
+pre:  3
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  en

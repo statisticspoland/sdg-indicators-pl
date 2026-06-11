@@ -17,9 +17,9 @@ en_cel: Goal 13. Climate action
 pl_zadanie: null
 en_zadanie: null
 pl_priorytet: >-
-  Efektywne zmniejszanie koncentracji CO2 w atmosferze
+  Efektywne zmniejszanie koncentracji CO₂ w atmosferze
 en_priorytet: >-
-  Effective reduction of CO2 concentration in the atmosphere
+  Effective reduction of CO₂ concentration in the atmosphere
 pl_definicja: >-
   Łączna masa dwutlenku węgla z zakładów szczególnie uciążliwych wyemitowanego w badanym roku w przeliczeniu na jednego mieszkańca (według stanu na 30 czerwca badanego roku).
 en_definicja: >-

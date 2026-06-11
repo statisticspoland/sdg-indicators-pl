@@ -26,6 +26,7 @@
       <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
       <script src="https://cdn.amcharts.com/lib/5/geodata/polandLow.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapRegKart.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line_param.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/scatter_param.js"></script>
@@ -376,7 +377,12 @@
   function processData(data_processed) {
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
-  createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+      if (["17-a-1"].includes("{{ id_map }}")) {
+        createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+      }
+      else {
+      createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+    }
   }
 
   function loadDataAndRenderMap(rok, param) {
@@ -2069,11 +2075,14 @@ function download_csv(csv, filename) {
               maxValue=10;
               marg=0;
               break;
-            case '15-a-3':
-              maxValue=10;
-              marg=0;
+            case '15-a-3' :
+              maxValue = 1.8;
+              marg = 0;
               break;
-
+            case '17-a-1' :
+              maxValue = 140;
+              marg = 0;
+              break;
             default:
           }
 
@@ -2203,7 +2212,7 @@ function updateChartBar(){
 
             //console.log(maxValue);
 
-            //console.log(data3);
+            console.log(selectedParam);
 
             var marg = 5;
             if(maxValue<=5){
@@ -2215,6 +2224,14 @@ function updateChartBar(){
                 maxValue=10;
                 marg=0;
                 break;
+              case '6-a-2' && (selectedParam === "ujęcia i doprowadzenia wody"):
+                maxValue=120;
+                marg=0;
+                break;
+              case '6-a-2' && (selectedParam === "służące ochronie środowiska"):
+                maxValue=65;
+                marg=0;
+                break;
               case '11-d-3':
                 maxValue=10;
                 marg=0;
@@ -2223,10 +2240,43 @@ function updateChartBar(){
                 maxValue=10;
                 marg=0;
                 break;
-              case '15-a-3':
-                maxValue=10;
-                marg=0;
+              case '15-a-3' :
+                if (selectedParam === "ogółem") {
+                     maxValue = 1.8;
+                     marg = 0;
+                 }
                 break;
+              case '17-a-1' :
+                if (selectedParam == "plan gospodarki niskoemisyjnej") {
+                  maxValue = 140;
+                  marg = 0;
+                }
+                else if (selectedParam === "lokalny program rozwoju ekonomii społecznej"){
+                  maxValue=5;
+                  marg=0;
+                }
+                else if (selectedParam === "program ochrony środowiska"){
+                  maxValue=150;
+                  marg=0;
+                }
+                else if (selectedParam === "roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego"){
+                  maxValue=250;
+                  marg=0;
+                }
+                else if (selectedParam === "strategia rozwoju gminy"){
+                  maxValue=200;
+                  marg=0;
+                }
+                else if (selectedParam === "strategia rozwoju gminy"){
+                  maxValue=200;
+                  marg=0;
+                }
+                else if (selectedParam === "strategia rozwiązywania problemów społecznych"){
+                  maxValue=140;
+                  marg=0;
+                }
+                break;
+
               default:
             }
 

@@ -24,11 +24,11 @@ pl_definicja: >-
   Łączna ilość ścieków przemysłowych i komunalnych wymagających oczyszczenia odprowadzona do wód lub do ziemi w badanym roku w przeliczeniu na 1 mieszkańca (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
   Total amount of industrial and municipal waste water requiring treatment discharged into water or land in the surveyed year per capita (as of 30 June of the surveyed year).
-pl_jednostka_prezentacji: m3
-en_jednostka_prezentacji: m3
+pl_jednostka_prezentacji: m³
+en_jednostka_prezentacji: m³
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
-pl_zrodlo_danych: Główny Urząd Statystyczny / Ministerstwo of Infrastruktury / Główny Inspektorat Ochrony Środowiska / Ministerstwo Klimatu i Środowiska
+pl_zrodlo_danych: Główny Urząd Statystyczny / Ministerstwo Infrastruktury / Główny Inspektorat Ochrony Środowiska / Ministerstwo Klimatu i Środowiska
 en_zrodlo_danych: Statistics Poland / Ministry of Infrastructure / Chief Inspectorate for Environmental Protection / Ministry of Climate and Environment
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
@@ -36,7 +36,7 @@ published: true
 pl_wyjasnienia_metodologiczne: >-
   <p><b>Ścieki wymagające oczyszczania</b> - ścieki, które przed odprowadzeniem do odbiornika powinny być w całości poddane procesom oczyszczania.</p>
 
-  <p>Dane obejmują ścieki wymagające oczyszczenia zarówno oczyszczone, jak i nieoczyszczone./p>
+  <p>Dane obejmują ścieki wymagające oczyszczenia zarówno oczyszczone, jak i nieoczyszczone.</p>
 
 en_wyjasnienia_metodologiczne: >-
   <p><b>Wastewater requiring treatment</b> - wastewater which, before being drained off to a collector, should be subjected to treatment process in whole.</p>

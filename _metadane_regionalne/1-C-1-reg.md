@@ -24,8 +24,8 @@ pl_definicja: >-
   Odsetek osób w wieku 16-74 lata korzystających z Internetu w kontaktach prywatnych z administracją publiczną (w ciągu ostatnich 12 miesięcy).
 en_definicja: >-
   Percentage of disabled individuals using the Internet for private contacts with public authorities (in the last 12 months).
-pl_jednostka_prezentacji: procent
-en_jednostka_prezentacji: percent
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

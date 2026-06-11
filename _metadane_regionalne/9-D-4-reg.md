@@ -24,14 +24,14 @@ pl_definicja: >-
   Odsetek osób w wieku 16-74 lata korzystających z Internetu w kontaktach prywatnych z administracją publiczną (w ciągu ostatnich 12 miesięcy).
 en_definicja: >-
   Percentage of disabled individuals using the Internet for private contacts with public authorities (in the last 12 months).
-pl_jednostka_prezentacji: procent
-en_jednostka_prezentacji: percent
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
 en_zrodlo_danych: Statistics Poland
-pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
-en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2015 r.
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2015
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p>Dane pochodzą z badania Wskaźniki społeczeństwa informacyjnego, które jest badaniem reprezentacyjnym, ankietowym, realizowanym metodą wywiadu bezpośredniego, w którym udział jest dobrowolny. Badanie odbywa się w kwietniu każdego roku. Zgodnie z wymogami określonymi w rozporządzeniach Komisji Europejskiej, badanie obejmuje gospodarstwa domowe (składającego się z przynajmniej jednej osoby w wieku 16-74 lata) znajdujące się na terenie całego kraju oraz wszystkie osoby w wieku 16-74 lata w tych gospodarstwach. Badaniem nie są objęte osoby mieszkające w gospodarstwach zbiorowych, takich jak: domy studenckie, hotele robotnicze, domy opieki społecznej, zakony, szpitale, koszary, zakłady karne itp. Cudzoziemcy mogą uczestniczyć w badaniu, o ile posiadają znajomość języka polskiego.</p>

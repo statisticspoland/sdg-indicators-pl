@@ -21,7 +21,7 @@ pl_priorytet: >-
 en_priorytet: >-
   Modernization and expansion of sewage treatment plants and systems, as well as air protection (elimination of sources of pollutant emissions or reduction of their impact) in the regions
 pl_definicja: >-
-  Udział ludności zamieszkałej w budynkach podłączonych do sieci kanalizacyjnej w ogólnej liczbie ludności(według stanu na 31 grudnia badanego roku).
+  Udział ludności zamieszkałej w budynkach podłączonych do sieci kanalizacyjnej w ogólnej liczbie ludności (według stanu na 31 grudnia badanego roku).
 en_definicja: >-
   Share of the population living in buildings connected to the sewage network in the total population (as of 31 December of the surveyed year).
 pl_jednostka_prezentacji: procent

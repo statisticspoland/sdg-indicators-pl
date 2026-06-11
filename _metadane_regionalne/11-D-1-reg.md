@@ -1,11 +1,11 @@
 ---
 translation_id: 11-D-1-reg
 pl_title: >-
-  Powierzchnia obszarów chronionego krajobrazu na 1 mieszkańca
+  Powierzchnia obszarów prawnie chronionych na 1 mieszkańca
 pl_graph_title: >-
-  Powierzchnia obszarów chronionego krajobrazu na 1 mieszkańca
+  Powierzchnia obszarów prawnie chronionych na 1 mieszkańca
 pl_nazwa_wskaznika: >-
-  <b>11.D.1 Powierzchnia obszarów chronionego krajobrazu na 1 mieszkańca</b>
+  <b>11.D.1 Powierzchnia obszarów prawnie chronionych na 1 mieszkańca</b>
 en_title: >-
   Area of landscape under legal protection per capita
 en_graph_title: >-
@@ -24,8 +24,8 @@ pl_definicja: >-
   Powierzchnia obszarów chronionego krajobrazu w przeliczeniu na jednego mieszkańca.
 en_definicja: >-
   Area of protected landscapes per capita.
-pl_jednostka_prezentacji: ha
-en_jednostka_prezentacji: ha
+pl_jednostka_prezentacji: m²
+en_jednostka_prezentacji: m²
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

@@ -34,10 +34,12 @@ pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2017 r.
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2017
 published: true
 pl_wyjasnienia_metodologiczne: >-
-  <p><b>Składowisko zrekultywowane</b> - składowisko poddane procesowi rekultywacji, polegające na przywróceniu lub nadaniu nowych wartości użytkowych gruntu poprzez właściwe ukształtowanie rzeźby terenu, poprawienie właściwości fizycznych i chemicznych, odtworzeniu gleby metodami technicznymi i biologicznymi oraz uregulowaniu stosunków wodnych. Dane dotyczą stanu na 31 grudnia badanego roku.</p>
+  <p><b>Składowisko zrekultywowane</b> - składowisko poddane procesowi rekultywacji, polegające na przywróceniu lub nadaniu nowych wartości użytkowych gruntu poprzez właściwe ukształtowanie rzeźby terenu, poprawienie właściwości fizycznych i chemicznych, odtworzeniu gleby metodami technicznymi i biologicznymi oraz uregulowaniu stosunków wodnych.</p>
+  <p> Dane dotyczą stanu na 31 grudnia badanego roku.</p>
 
 en_wyjasnienia_metodologiczne: >-
-  <p><b>Recultivated (Reclamationed) waste landfill</b> - waste landfill area, the exploitation of with has come to the end, and where the works targeted at creating and restoring its usability through proper relief of the land, enhancement of physical and chemical features as well as regulation of water conditions. Data concern as of 31 December of the surveyed year.</p>
+  <p><b>Recultivated (Reclamationed) waste landfill</b> - waste landfill area, the exploitation of with has come to the end, and where the works targeted at creating and restoring its usability through proper relief of the land, enhancement of physical and chemical features as well as regulation of water conditions.</p>
+  <p>Data concern as of 31 December of the surveyed year.</p>
 
 pl_uwagi: >-
 

@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba gmin w województwie, które poddały konsultacjom społecznym projekt obowiązującego programu/strategii/planu.
 en_definicja: >-
   Number of municipalities in the voivodship that submitted a draft of an existing programme/strategy/plan to public consultation.
-pl_jednostka_prezentacji: sztuki
-en_jednostka_prezentacji: pieces
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: wg rodzaju dokumentu
 en_dostepne_wymiary: by type of document
 pl_zrodlo_danych: Główny Urząd Statystyczny

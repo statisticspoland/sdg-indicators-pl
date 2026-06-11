@@ -24,8 +24,8 @@ pl_definicja: >-
   Łączna masa dwutlenku węgla z zakładów szczególnie uciążliwych wyemitowanego w badanym roku w przeliczeniu na jednego mieszkańca (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
   Total mass of carbon dioxide emitted per inhabitant from particularly burdensome plants in the surveyed year (as of 30 June of the surveyed year).
-pl_jednostka_prezentacji: tona
-en_jednostka_prezentacji: tonne
+pl_jednostka_prezentacji: procent
+en_jednostka_prezentacji: percent
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny / Główny Inspektorat Ochrony Środowiska / Ministerstwo Klimatu i Środowiska

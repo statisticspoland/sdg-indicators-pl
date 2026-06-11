@@ -24,12 +24,12 @@ pl_definicja: >-
   Liczba podmiotów gospodarki narodowej (osób prawnych, jednostek organizacyjnych niemających osobowości prawnej oraz osoba fizyczna prowadząca działalność gospodarczą) zarejestrowanych w rejestrze REGON w przeliczeniu na 1000 ludności na wsi.
 en_definicja: >-
   The number of entities of the national economy (legal persons, organizational units without legal personality and a natural person conducting business activity) registered in the REGON register per 1,000 people in rural areas.
-pl_jednostka_prezentacji: procent
-en_jednostka_prezentacji: percent
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
-en_zrodlo_danych: Statistics Poland 
+en_zrodlo_danych: Statistics Poland
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2002 r.
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2002
 published: true
