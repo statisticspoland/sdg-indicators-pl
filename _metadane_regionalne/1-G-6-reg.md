@@ -16,17 +16,17 @@ pl_priorytet: >-
   Zapewnienie warunków mieszkaniowych grupom najbardziej wrażliwym i potrzebującym społecznie
 pl_definicja: >-
   Mieszkania będące w zasobach gmin.
-pl_jednostka_prezentacji: tys. sztuk
+pl_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
-pl_czestotliwosc_dostępnosc_danych: Dane w cyklu 2 letnim roczne; od 2013 r.
+pl_czestotliwosc_dostępnosc_danych: Dane w cyklu 2 letnim; od 2013 r.
 en_nazwa_wskaznika: >-
   <b>1.G.6 Number of dwellings owned by municipalities (municipal)</b>
 en_cel: Goal 1. No poverty
 en_zadanie: null
 en_priorytet: >-
   Providing housing conditions for the most vulnerable and socially needy groups
-en_jednostka_prezentacji: thous. pieces
+en_jednostka_prezentacji: '-'
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Since 2013 data in two-year cycles

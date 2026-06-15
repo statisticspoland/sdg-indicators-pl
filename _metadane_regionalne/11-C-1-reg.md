@@ -24,14 +24,14 @@ pl_definicja: >-
   Liczba mieszkań, które znajdują się w budynkach będących w zasobach komunalnych gmin.
 en_definicja: >-
   The number of dwellings that are located in buildings in gminas’ dwelling stocks.
-pl_jednostka_prezentacji: tys. sztuk
-en_jednostka_prezentacji: thous. pieces
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
 en_zrodlo_danych: Statistics Poland
-pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
-en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
+pl_czestotliwosc_dostępnosc_danych: Dane w cyklu 2 letnim; od 2013 r.
+en_czestotliwosc_dostępnosc_danych: Since 2013 data in two-year cycles
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p><b>Zasoby gminne (komunalne)</b> to mieszkania stanowiące własność gminy lub powiatu (lokalnej wspólnoty samorządowej), będące własnością gminy, ale znajdujące się w budynkach stanowiących nieruchomości wspólne, tj. mieszkania, które służą zaspokajaniu potrzeb mieszkaniowych ogółu mieszkańców gminy, a także mieszkania przekazane gminie, ale pozostające w dyspozycji jednostek użyteczności publicznej, takich jak: placówki wykonujące działalność leczniczą, ośrodki pomocy społecznej, jednostki systemu oświaty, nauki, instytucje kultury, służące głównie zaspokajaniu potrzeb mieszkaniowych pracowników tych jednostek.</p>
