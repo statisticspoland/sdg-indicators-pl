@@ -6,7 +6,7 @@ sdg_goal: 14
 indicator:  14.C.4.reg
 target_id:  '14.C.4'
 permalink: /statistics_reg/14-C-4/
-pre:  1
+pre:  0
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  pl

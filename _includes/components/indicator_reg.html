@@ -1591,6 +1591,19 @@
               <option style="font-family: Fira Sans" value="2021">2021</option>
               <option style="font-family: Fira Sans" value="2020">2020</option>
             </select>
+          {% elsif id_map == '14-d-1' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name"
+              style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+              <option style="font-family: Fira Sans" value="2024">2024</option>
+              <option style="font-family: Fira Sans" value="2023">2023</option>
+              <option style="font-family: Fira Sans" value="2022">2022</option>
+              <option style="font-family: Fira Sans" value="2021">2021</option>
+              <option style="font-family: Fira Sans" value="2020">2020</option>
+              <option style="font-family: Fira Sans" value="2019">2019</option>
+              <option style="font-family: Fira Sans" value="2018">2018</option>
+              <option style="font-family: Fira Sans" value="2017">2017</option>
+            </select>
 
             {% elsif id_map == '15-a-1' or id_map == '15-a-2'  or id_map == '15-a-4' or id_map == '15-b-2' or id_map == '15-b-3' or id_map == '15-b-4' or id_map == '15-b-5' or id_map == '15-c-1' or id_map == '15-c-2' or id_map == '15-c-3' %}
             <select id="yearBox" onchange="wyborYear()" name="year-name"
@@ -1785,7 +1798,7 @@
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
   //console.log("{{ id_map }}");
-    if (["1-a-1", "1-f-2", "1-g-3", "1-g-5", "1-g-6", "1-g-7", "2-b-3", "2-b-4", "2-b-5", "2-b-6", "2-b-7", "3-d-1", "3-d-2", "3-d-3", "3-d-4", "3-d-5", "3-e-13", "3-e-16", "3-e-17", "3-g-1", "4-b-2", "4-b-3", "6-a-1", "6-c-1", "6-c-2", "6-c-3", "6-c-5", "6-d-1", "6-d-2", "6-d-6", "6-d-8", "6-e-2", "6-e-3", "6-e-4", "6-e-5", "9-b-2", "9-b-9", "9-c-9", "9-c-10", "11-c-1", "12-a-4", "12-a-5", "12-b-2", "12-c-1", "13-b-2", "13-d-3", "13-d-4", "13-d-5", "13-d-6", "14-a-3", "14-a-4", "14-a-5", "14-c-3", "14-c-4", "14-c-5", "14-d-1", "14-d-2", "14-d-3", "17-a-1"].includes("{{ id_map }}")) {
+    if (["1-a-1", "1-f-2", "1-g-3", "1-g-5", "1-g-6", "1-g-7", "2-b-3", "2-b-4", "2-b-5", "2-b-6", "2-b-7", "3-d-1", "3-d-2", "3-d-3", "3-d-4", "3-d-5", "3-e-13", "3-e-16", "3-e-17", "3-g-1", "4-b-2", "4-b-3", "6-a-1", "6-c-1", "6-c-2", "6-c-3", "6-c-5", "6-d-1", "6-d-2", "6-d-6", "6-d-8", "6-e-2", "6-e-3", "6-e-4", "6-e-5", "9-b-2", "9-b-9", "9-c-9", "9-c-10", "11-c-1", "12-a-4", "12-a-5", "12-b-2", "12-c-1", "13-b-2", "13-d-3", "13-d-4", "13-d-5", "13-d-6", "14-a-5", "14-d-1"].includes("{{ id_map }}")) {
       createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
     }
     else {
@@ -1897,7 +1910,7 @@
   loadDataAndRenderMap("2024");
 {% elsif id_map == '1-e-1' or id_map == '1-g-3' or id_map == '1-g-5' or id_map == '1-g-6' or id_map == '3-e-14' or id_map == '3-e-15' or id_map == '8-a-4' or id_map == '8-b-2' %}
   loadDataAndRenderMap("2022");
-{% elsif id_map == '14-a-2' %}
+{% elsif id_map == '14-a-2' or id_map == '14-d-1' %}
   loadDataAndRenderMap("2025");
 {% else %}
   loadDataAndRenderMap("2023");
@@ -3605,6 +3618,19 @@
             <option style="font-family: Fira Sans" value="2021">2021</option>
             <option style="font-family: Fira Sans" value="2020">2020</option>
           </select>
+        {% elsif id_map == '14-d-1' %}
+        <select id="yearBoxBar" onchange="updateChartBar()" name="year-name"
+          style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+            <option style="font-family: Fira Sans" value="2024">2024</option>
+            <option style="font-family: Fira Sans" value="2023">2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+          </select>
 
           {% elsif id_map == '15-a-1' or id_map == '15-a-2' or id_map == '15-a-4' or id_map == '15-b-2' or id_map == '15-b-3' or id_map == '15-b-4' or id_map == '15-b-5' or id_map == '15-c-1' or id_map == '15-c-2' or id_map == '15-c-3' %}
           <select id="yearBoxBar" onchange="updateChartBar()" name="year-name"
@@ -4329,9 +4355,9 @@
       <p></p>
     {% else %}
       {% if language == 'pl' %}
-        <p style="text-align: center;">W przyszłości pojawi się tu tabela</p>
+        <p style="text-align: center;">Wskaźnik w przygotowaniu</p>
       {% else %}
-        <p style="text-align: center;">The table will appear here</p>
+        <p style="text-align: center;">Indicator in progress</p>
       {% endif %}
     {% endif %}
 
