@@ -1581,6 +1581,16 @@
               <option style="font-family: Fira Sans" value="2011">2011</option>
               <option style="font-family: Fira Sans" value="2010">2010</option>
             </select>
+          {% elsif id_map == '14-a-2' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name"
+              style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+              <option style="font-family: Fira Sans" value="2024">2024</option>
+              <option style="font-family: Fira Sans" value="2023">2023</option>
+              <option style="font-family: Fira Sans" value="2022">2022</option>
+              <option style="font-family: Fira Sans" value="2021">2021</option>
+              <option style="font-family: Fira Sans" value="2020">2020</option>
+            </select>
 
             {% elsif id_map == '15-a-1' or id_map == '15-a-2'  or id_map == '15-a-4' or id_map == '15-b-2' or id_map == '15-b-3' or id_map == '15-b-4' or id_map == '15-b-5' or id_map == '15-c-1' or id_map == '15-c-2' or id_map == '15-c-3' %}
             <select id="yearBox" onchange="wyborYear()" name="year-name"
@@ -1887,6 +1897,8 @@
   loadDataAndRenderMap("2024");
 {% elsif id_map == '1-e-1' or id_map == '1-g-3' or id_map == '1-g-5' or id_map == '1-g-6' or id_map == '3-e-14' or id_map == '3-e-15' or id_map == '8-a-4' or id_map == '8-b-2' %}
   loadDataAndRenderMap("2022");
+{% elsif id_map == '14-a-2' %}
+  loadDataAndRenderMap("2025");
 {% else %}
   loadDataAndRenderMap("2023");
 {% endif %}
@@ -3583,7 +3595,16 @@
             <option style="font-family: Fira Sans" value="2011">2011</option>
             <option style="font-family: Fira Sans" value="2010">2010</option>
           </select>
-
+        {% elsif id_map == '14-a-2' %}
+        <select id="yearBoxBar" onchange="updateChartBar()" name="year-name"
+          style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+            <option style="font-family: Fira Sans" value="2024">2024</option>
+            <option style="font-family: Fira Sans" value="2023">2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+          </select>
 
           {% elsif id_map == '15-a-1' or id_map == '15-a-2' or id_map == '15-a-4' or id_map == '15-b-2' or id_map == '15-b-3' or id_map == '15-b-4' or id_map == '15-b-5' or id_map == '15-c-1' or id_map == '15-c-2' or id_map == '15-c-3' %}
           <select id="yearBoxBar" onchange="updateChartBar()" name="year-name"
@@ -4343,11 +4364,11 @@
         {% if indicator_num < 10 %} {% assign indicator_num = indicator_num | prepend:0  %} {% endif %}
 
     {% if language == 'pl' %}
-      <a href="{{ site.baseurl }}/assets/pdf/{{ page.lang }}/{{page.indicator | replace: ".", "-"}}.pdf" target="_blank">
+      <a href="{{ site.baseurl }}/assets/pdf/reg/{{ page.lang }}/{{page.indicator | replace: ".", "-"}}.pdf" target="_blank">
       <button style="float: right;margin-right: 0px;"><i class="fa fa-file-pdf-o" alt="Pobierz PDF" title="Pobierz metadane w formacie PDF" style="font-size:20px;"></i></button>
       </a>
     {% else %}
-      <a href="{{ site.baseurl }}/assets/pdf/en/{{page.indicator | replace: ".", "-"}}.pdf" target="_blank">
+      <a href="{{ site.baseurl }}/assets/pdf/reg/en/{{page.indicator | replace: ".", "-"}}.pdf" target="_blank">
       <button style="float: right;margin-right: 0px;"><i class="fa fa-file-pdf-o" alt="Save as PDF" title="Save metadata in PDF format" style="font-size:20px;"></i></button>
       </a>
     {% endif %}

@@ -7,7 +7,7 @@ indicator:  14.A.4.reg
 target_id:  '14.A.4'
 permalink: /statistics_reg/14-A-4/
 pre:  1
-graph: longitudinal
+graph: null
 source_url: 'www.stat.gov.pl'
 lang:  pl
 kategorie:  Cynk,Miedź,Ołów,Kadm,Chrom,Nikiel,Rtęć

@@ -7,7 +7,7 @@ indicator:  14.D.3.reg
 target_id:  '14.D.3'
 permalink: /en/statistics_reg/14-D-3/
 pre:  1
-graph: longitudinal
+graph: null
 source_url: 'www.stat.gov.pl'
 lang:  en
 kategorie:  Sea navigation control technician,Ship mechanical engineering technician,Terminal operations technician

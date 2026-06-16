@@ -7,7 +7,7 @@ indicator:  14.A.3.reg
 target_id:  '14.A.3'
 permalink: /en/statistics_reg/14-A-3/
 pre:  1
-graph: longitudinal
+graph: null
 source_url: 'www.stat.gov.pl'
 lang:  en
 kategorie:  BOD5,COD test using chromium,Total nitrogen,Nitrate nitrogen,Organic nitrogen,Total phosphorus,Phoshorate phosphorus

@@ -7,7 +7,7 @@ indicator:  14.C.2.reg
 target_id:  '14.C.2'
 permalink: /statistics_reg/14-C-2/
 pre:  1
-graph: longitudinal
+graph: null
 source_url: 'www.stat.gov.pl'
 lang:  pl
 kategorie:  województwa

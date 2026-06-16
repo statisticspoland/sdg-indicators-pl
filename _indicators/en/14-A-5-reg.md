@@ -7,7 +7,7 @@ indicator:  14.A.5.reg
 target_id:  '14.A.5'
 permalink: /en/statistics_reg/14-A-5/
 pre:  1
-graph: longitudinal
+graph: null
 source_url: 'www.stat.gov.pl'
 lang:  en
 kategorie:  voivodships

@@ -7,7 +7,7 @@ indicator:  14.A.3.reg
 target_id:  '14.A.3'
 permalink: /statistics_reg/14-A-3/
 pre:  1
-graph: longitudinal
+graph: null
 source_url: 'www.stat.gov.pl'
 lang:  pl
 kategorie:  BZT5,ChZTCR,Azot ogólny,Azot azotanowy,Azot organiczny,Fosfor ogólny,Fosfor fosforanowy

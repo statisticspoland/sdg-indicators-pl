@@ -7,7 +7,7 @@ indicator:  14.D.2.reg
 target_id:  '14.D.2'
 permalink: /statistics_reg/14-D-2/
 pre:  1
-graph: longitudinal
+graph: null
 source_url: 'www.stat.gov.pl'
 lang:  pl
 kategorie:  Technik nawigator morski,Technik mechanik okrętowy,Technik eksploatacji portów
