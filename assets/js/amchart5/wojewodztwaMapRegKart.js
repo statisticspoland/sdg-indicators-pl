@@ -342,7 +342,7 @@ function createMapWojKart(div, dane, jez, precyzja){
     var row = legendContainer.children.push(
       am5.Container.new(root, {
         layout: am5.GridLayout.new(root, {
-          maxColumns: 2,
+          maxColumns: 1,
           fixedWidthGrid: true
         }),
         width: am5.p100,
