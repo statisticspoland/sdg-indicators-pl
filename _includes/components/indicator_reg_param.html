@@ -1917,6 +1917,17 @@
         Source of data: {{ t1.en_zrodlo_danych }}
       {% endif %}
       <p></p>
+
+    {% if language == 'pl' %}
+      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
+        <button type="button" id="calosc" style="padding: 10px; float: right;" title="Pobierz dane w formacie .csv">Pobierz csv</button>
+      </a>
+    {% else %}
+      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
+        <button type="button" id="calosc" style="padding: 10px; float: right;" title="Download data in csv format">Download csv</button>
+      </a>
+    {% endif %}
+
     {% else %}
       {% if language == 'pl' %}
         <p style="text-align: center;">Wskaźnik w przygotowaniu</p>
@@ -1925,17 +1936,6 @@
       {% endif %}
     {% endif %}
 
-    {% if language == 'pl' %}
-      {% if filtry.size>0 %}
-        <button type="button" id="wybrane" onclick="Wybrane(1)" style="padding: 10px; float: right;" title="Pobierz wybrane dane w formacie .csv">Pobierz wybrane</button>
-      {% endif %}
-      <button type="button" id="calosc" onclick="Calosc(1)" style="padding: 10px; float: right;" title="Pobierz dane w formacie .csv">Pobierz całość</button>
-    {% else %}
-      {% if filtry.size>0 %}
-        <button type="button" id="wybrane" onclick="Wybrane(2)" style="padding: 10px; float: right;" title="Download selected data in csv format">Download Selected</button>
-      {% endif %}
-      <button type="button" id="calosc" onclick="Calosc(2)" style="padding: 10px; float: right;" title="Download all data in csv format">Download All</button>
-    {% endif %}
     </div>
     </div>
 
@@ -2036,68 +2036,6 @@
         }
       });
   });
-
-function Wybrane(jez){
-  var filename='{{ page.indicator }}'
-  var html = document.querySelector(".gridtable").outerHTML;
-  var csv = [];
-	var rows = document.querySelectorAll(".gridtable tr");
-  for (var i = 0; i < rows.length; i++) {
-    var row = [], cols = rows[i].querySelectorAll("td, th");
-
-        for (var j = 0; j < cols.length; j++)
-        if(rows[i].style.display != 'none'){
-            row.push(cols[j].innerText);
-        }
-    if(rows[i].style.display != 'none'){
-
-      if(jez==2){
-        csv.push(row.join(","));
-      }else{
-        csv.push(row.join(";"));
-      }
-
-    }
-  }
-  if(jez==2){
-    var reszta='selected';
-  }else{
-    var reszta='wybrane';
-  }
-  download_csv(csv.join("\n"), filename+'_'+reszta+'.csv');
-}
-
-function Calosc(jez){
-  var filename='{{ page.indicator }}'
-  var html = document.querySelector(".gridtable").outerHTML;
-  var csv = [];
-	var rows = document.querySelectorAll(".gridtable tr");
-  for (var i = 0; i < rows.length; i++) {
-    var row = [], cols = rows[i].querySelectorAll("td, th");
-
-        for (var j = 0; j < cols.length; j++)
-          row.push(cols[j].innerText);
-          if(jez==2){
-            csv.push(row.join(","));
-          }else{
-            csv.push(row.join(";"));
-          }
-  }
-  download_csv(csv.join("\n"), filename+'.csv');
-}
-
-function download_csv(csv, filename) {
-    var csvFile;
-    var downloadLink;
-
-    csvFile = new Blob(["\ufeff",csv], {type: "text/csv;"});
-    downloadLink = document.createElement("a");
-    downloadLink.download = filename;
-    downloadLink.href = window.URL.createObjectURL(csvFile);
-    downloadLink.style.display = "none";
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-}
 
 //setTimeout(() => {
   am5.ready(function() {
