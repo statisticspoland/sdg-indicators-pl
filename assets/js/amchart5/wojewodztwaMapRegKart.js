@@ -34,6 +34,11 @@ function createMapWojKart(div, dane, jez, precyzja){
     layout: root.horizontalLayout
   }));
 
+  chart.chartContainer.set("background", am5.Rectangle.new(root, {
+    fill: am5.color(0xffffff),
+    fillOpacity: 1
+  }));
+
     // Create polygon series
   var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
     geoJSON: am5geodata_polandLow,
@@ -324,7 +329,10 @@ function createMapWojKart(div, dane, jez, precyzja){
       y: am5.p50,
       centerY: am5.p50,
       width: 100,
-      dx: -30
+      dx: -30,
+      background: am5.Rectangle.new(root, {
+        fill: am5.color(0xffffff)
+      })
     })
   );
 

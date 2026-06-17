@@ -34,6 +34,10 @@ function createMapWoj(div, dane, jez, precyzja){
     layout: root.horizontalLayout
   }));
 
+  chart.chartContainer.set("background", am5.Rectangle.new(root, {
+    fill: am5.color(0xffffff),
+    fillOpacity: 1
+  }));
     // Create polygon series
   var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
     geoJSON: am5geodata_polandLow,
@@ -137,7 +141,10 @@ function createMapWoj(div, dane, jez, precyzja){
     startText: startText,
     endText: endText,
     stepCount: 5,
-    height: 300
+    height: 300,
+    background: am5.Rectangle.new(root, {
+      fill: am5.color(0xffffff)
+    })
   }));
 
   heatLegend.startLabel.setAll({
