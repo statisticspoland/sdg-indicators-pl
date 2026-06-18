@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Healthy Life Years — males
 pl_nazwa_wskaznika: >-
-  <b>3.E.3  Oczekiwane trwanie życia w zdrowiu mężczyzn</b>
+  <b>3.E.3 Oczekiwane trwanie życia w zdrowiu mężczyzn</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

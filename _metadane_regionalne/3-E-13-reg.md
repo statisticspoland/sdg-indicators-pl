@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of days of stay of children and adolescents aged 0-18 in health resort hospital and health resort sanatoria
 pl_nazwa_wskaznika: >-
-  <b>3.E.13  Liczba dni pobytu dzieci i młodzieży w wieku 0-18 w szpitalach uzdrowiskowych i sanatoriach uzdrowiskowych</b>
+  <b>3.E.13 Liczba dni pobytu dzieci i młodzieży w wieku 0-18 w szpitalach uzdrowiskowych i sanatoriach uzdrowiskowych</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

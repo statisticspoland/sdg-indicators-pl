@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Healthy Life Years — females
 pl_nazwa_wskaznika: >-
-  <b>3.E.4  Oczekiwane trwanie życia w zdrowiu kobiet</b>
+  <b>3.E.4 Oczekiwane trwanie życia w zdrowiu kobiet</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

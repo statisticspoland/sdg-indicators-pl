@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Percentage of newly registered entities in the agri-food processing sector
 pl_nazwa_wskaznika: >-
-  <b>2.A.2  Odsetek nowo zarejestrowanych podmiotów sektora przetwórstwa rolno-spożywczego</b>
+  <b>2.A.2 Odsetek nowo zarejestrowanych podmiotów sektora przetwórstwa rolno-spożywczego</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

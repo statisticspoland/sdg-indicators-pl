@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Share of organic farm area in total agricultural land
 pl_nazwa_wskaznika: >-
-  <b>2.C.2  Udział powierzchni ekologicznych gospodarstw rolnych w użytkach rolnych ogółem </b>
+  <b>2.C.2 Udział powierzchni ekologicznych gospodarstw rolnych w użytkach rolnych ogółem </b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

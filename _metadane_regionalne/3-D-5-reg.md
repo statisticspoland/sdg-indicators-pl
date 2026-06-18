@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Participants of doctoral and doctoral studies at universities supervised by the minister responsible for health affairs
 pl_nazwa_wskaznika: >-
-  <b>3.D.5  Uczestnicy studiów doktoranckich i doktorskich uczelni nadzorowanych przez ministra właściwego do spraw zdrowia</b>
+  <b>3.D.5 Uczestnicy studiów doktoranckich i doktorskich uczelni nadzorowanych przez ministra właściwego do spraw zdrowia</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

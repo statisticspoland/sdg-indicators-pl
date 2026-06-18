@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of dwellings per 1 thous. population
 pl_nazwa_wskaznika: >-
-  <b>1.G.8  Liczba mieszkań przypadających na 1000 ludności</b>
+  <b>1.G.8 Liczba mieszkań przypadających na 1000 ludności</b>
 pl_cel: Cel 1. Koniec z ubóstwem
 pl_zadanie: null
 pl_priorytet: >-

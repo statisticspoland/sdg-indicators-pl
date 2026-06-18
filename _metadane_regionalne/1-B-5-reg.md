@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Percentage of stationary social welfare facilities with facilities for persons with disabilities
 pl_nazwa_wskaznika: >-
-  <b>1.B.5  Odsetek zakładów stacjonarnych pomocy społecznej posiadających udogodnienia dla osób niepełnosprawnych</b>
+  <b>1.B.5 Odsetek zakładów stacjonarnych pomocy społecznej posiadających udogodnienia dla osób niepełnosprawnych</b>
 pl_cel: Cel 1. Koniec z ubóstwem
 pl_zadanie: null
 pl_priorytet: >-

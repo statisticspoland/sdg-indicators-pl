@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Share of green areas in the total area
 pl_nazwa_wskaznika: >-
-  <b>3.F.1  Powierzchnia dzikich wysypisk na 100 km2 powierzchni ogółem</b>
+  <b>3.F.1 Powierzchnia dzikich wysypisk na 100 km2 powierzchni ogółem</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

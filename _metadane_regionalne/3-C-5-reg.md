@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of female deaths due to cervical cancer per 100 thous. women
 pl_nazwa_wskaznika: >-
-  <b>3.C.5  Liczba zgonów kobiet z powodu nowotworu szyjki macicy na 100 tys. kobiet</b>
+  <b>3.C.5 Liczba zgonów kobiet z powodu nowotworu szyjki macicy na 100 tys. kobiet</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

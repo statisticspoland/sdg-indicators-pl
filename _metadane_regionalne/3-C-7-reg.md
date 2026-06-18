@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of deaths due to diseases of the digestive system per 100 thous. population
 pl_nazwa_wskaznika: >-
-  <b>3.C.7  Liczba zgonów z powodu chorób układu trawiennego ogółem na 100 tys. ludności</b>
+  <b>3.C.7 Liczba zgonów z powodu chorób układu trawiennego ogółem na 100 tys. ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

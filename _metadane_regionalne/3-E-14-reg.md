@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Persons practicing sports in sport clubs per 1 thous. population
 pl_nazwa_wskaznika: >-
-  <b>3.E.14  Ćwiczący w klubach sportowych na 1 tys. ludności</b>
+  <b>3.E.14 Ćwiczący w klubach sportowych na 1 tys. ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

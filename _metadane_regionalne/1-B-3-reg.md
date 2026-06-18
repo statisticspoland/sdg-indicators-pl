@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of patients in nursing homes per 10 thous. population
 pl_nazwa_wskaznika: >-
-  <b>1.B.3  Liczba pacjentów w zakładach pielęgnacyjno-opiekuńczych na 10 tys. ludności</b>
+  <b>1.B.3 Liczba pacjentów w zakładach pielęgnacyjno-opiekuńczych na 10 tys. ludności</b>
 pl_cel: Cel 1. Koniec z ubóstwem
 pl_zadanie: null
 pl_priorytet: >-

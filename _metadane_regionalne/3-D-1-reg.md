@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Students of health field of education
 pl_nazwa_wskaznika: >-
-  <b>3.D.1  Studenci kierunków medycznych</b>
+  <b>3.D.1 Studenci kierunków medycznych</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

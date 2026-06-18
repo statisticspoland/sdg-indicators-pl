@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Percentage of recreational and sports facilities adapted to the needs of disabled persons (exercising)
 pl_nazwa_wskaznika: >-
-  <b>3.E.15  Odsetek obiektów rekreacyjno-sportowych przystosowanych do potrzeb osób niepełnosprawnych (ćwiczących)</b>
+  <b>3.E.15 Odsetek obiektów rekreacyjno-sportowych przystosowanych do potrzeb osób niepełnosprawnych (ćwiczących)</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

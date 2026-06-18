@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of dwellings owned by social housing associations (TBS)
 pl_nazwa_wskaznika: >-
-  <b>1.G.5  Liczba mieszkań będących w zasobach towarzystw budownictwa społecznego (TBS)</b>
+  <b>1.G.5 Liczba mieszkań będących w zasobach towarzystw budownictwa społecznego (TBS)</b>
 pl_cel: Cel 1. Koniec z ubóstwem
 pl_zadanie: null
 pl_priorytet: >-

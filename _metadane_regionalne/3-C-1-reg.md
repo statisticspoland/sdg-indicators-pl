@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of physicians specialists per 10 thous. population
 pl_nazwa_wskaznika: >-
-  <b>3.C.1  Liczba lekarzy specjalistów ogółem w przeliczeniu na 10 tys. ludności</b>
+  <b>3.C.1 Liczba lekarzy specjalistów ogółem w przeliczeniu na 10 tys. ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

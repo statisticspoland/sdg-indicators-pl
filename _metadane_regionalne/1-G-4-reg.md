@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Average income entitling one to the right to rent a residential premises in the municipal resources in single-person households
 pl_nazwa_wskaznika: >-
-  <b>1.G.4  Średni dochód uprawniający do uzyskania prawa najmu lokalu mieszkalnego zasobu gminy w gospodarstwach jednoosobowych</b>
+  <b>1.G.4 Średni dochód uprawniający do uzyskania prawa najmu lokalu mieszkalnego zasobu gminy w gospodarstwach jednoosobowych</b>
 pl_cel: Cel 1. Koniec z ubóstwem
 pl_zadanie: null
 pl_priorytet: >-

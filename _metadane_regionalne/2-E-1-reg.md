@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Expenditures on R&D in the corporate sector in food production
 pl_nazwa_wskaznika: >-
-  <b>2.E.1  Nakłady na B+R w sektorze przedsiębiorstw w produkcji artykułów spożywczych</b>
+  <b>2.E.1 Nakłady na B+R w sektorze przedsiębiorstw w produkcji artykułów spożywczych</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

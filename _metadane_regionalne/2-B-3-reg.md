@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Share of agricultural market output in total agricultural output (in constant prices previous year)
 pl_nazwa_wskaznika: >-
-  <b>2.B.3  Udział towarowej produkcji rolniczej w sumie krajowej (w cenach stałych roku poprzedniego)</b>
+  <b>2.B.3 Udział towarowej produkcji rolniczej w sumie krajowej (w cenach stałych roku poprzedniego)</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of Lyme disease cases per 10 thous. population
 pl_nazwa_wskaznika: >-
-  <b>3.E.9  Liczba zachorowań na boreliozę na 10 tys. ludności</b>
+  <b>3.E.9 Liczba zachorowań na boreliozę na 10 tys. ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

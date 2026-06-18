@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of medical consultations provided in primary health care per capita
 pl_nazwa_wskaznika: >-
-  <b>3.E.10  Liczba porad lekarskich w podstawowej opiece zdrowotnej na 1 mieszkańca</b>
+  <b>3.E.10 Liczba porad lekarskich w podstawowej opiece zdrowotnej na 1 mieszkańca</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

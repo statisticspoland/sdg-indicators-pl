@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Graduates of health field of education
 pl_nazwa_wskaznika: >-
-  <b>3.D.2  Absolwenci kierunków medycznych</b>
+  <b>3.D.2 Absolwenci kierunków medycznych</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

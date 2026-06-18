@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Total number of households awaiting social renting in urban areas
 pl_nazwa_wskaznika: >-
-  <b>1.G.7  Liczba gospodarstw domowych oczekujących na najem socjalny na obszarach miejskich ogółem</b>
+  <b>1.G.7 Liczba gospodarstw domowych oczekujących na najem socjalny na obszarach miejskich ogółem</b>
 pl_cel: Cel 1. Koniec z ubóstwem
 pl_zadanie: null
 pl_priorytet: >-

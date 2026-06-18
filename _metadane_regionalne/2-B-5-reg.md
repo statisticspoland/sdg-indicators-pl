@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of bacterial dysentery cases
 pl_nazwa_wskaznika: >-
-  <b>2.B.5  Liczba zachorowań na czerwonkę bakteryjną</b>
+  <b>2.B.5 Liczba zachorowań na czerwonkę bakteryjną</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-
