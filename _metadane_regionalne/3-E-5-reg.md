@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of influenza cases and suspected influenza cases per 100 population
 pl_nazwa_wskaznika: >-
-  <b>3.E.5  Liczba zachorowań na grypę i podejrzenia zachorowań na grypę na 100 mieszkańców</b>
+  <b>3.E.5 Liczba zachorowań na grypę i podejrzenia zachorowań na grypę na 100 mieszkańców</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Share of population living in areas covered by revitalization processes in the total population
 pl_nazwa_wskaznika: >-
-  <b>3.F.5  Udział ludności mieszkającej na terenach objętych procesami rewitalizacji w ogólnej liczbie ludności</b>
+  <b>3.F.5 Udział ludności mieszkającej na terenach objętych procesami rewitalizacji w ogólnej liczbie ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

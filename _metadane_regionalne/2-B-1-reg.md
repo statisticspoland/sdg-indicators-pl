@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Indices of gross agricultural output (previous year = 100)
 pl_nazwa_wskaznika: >-
-  <b>2.B.1  Dynamika globalnej produkcji rolniczej (rok poprzedni = 100)</b>
+  <b>2.B.1 Dynamika globalnej produkcji rolniczej (rok poprzedni = 100)</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

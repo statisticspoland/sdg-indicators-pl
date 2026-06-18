@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Expenditure on R&D in agriculture in relation to GDP
 pl_nazwa_wskaznika: >-
-  <b>2.E.2  Nakłady na B+R w dziedzinie rolnictwa w relacji do PKB</b>
+  <b>2.E.2 Nakłady na B+R w dziedzinie rolnictwa w relacji do PKB</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Share of agricultural market output in final agricultural output
 pl_nazwa_wskaznika: >-
-  <b>2.B.2  Udział towarowej produkcji rolniczej w końcowej produkcji rolniczej</b>
+  <b>2.B.2 Udział towarowej produkcji rolniczej w końcowej produkcji rolniczej</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

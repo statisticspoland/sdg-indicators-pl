@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of patients in chronic medical care homes per 10 thous. Population
 pl_nazwa_wskaznika: >-
-  <b>3.A.6  Pacjenci w zakładach opiekuńczo-leczniczych na 10 tys. ludności</b>
+  <b>3.A.6 Pacjenci w zakładach opiekuńczo-leczniczych na 10 tys. ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

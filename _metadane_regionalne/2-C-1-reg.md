@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Share of certified agricultural land area of organic farms in total agricultural land area of farms
 pl_nazwa_wskaznika: >-
-  <b>2.C.1  Udział powierzchni ekologicznych użytków rolnych z certyfikatem w gospodarstwach ekologicznych w powierzchni użytków rolnych ogółem w gospodarstwach rolnych</b>
+  <b>2.C.1 Udział powierzchni ekologicznych użytków rolnych z certyfikatem w gospodarstwach ekologicznych w powierzchni użytków rolnych ogółem w gospodarstwach rolnych</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

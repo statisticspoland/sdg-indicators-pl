@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Patients treated in-patients in health resort hospitals and inpatient rehabilitation facilities
 pl_nazwa_wskaznika: >-
-  <b>3.E.16  Pacjenci/kuracjusze leczeni stacjonarnie w szpitalach uzdrowiskowych i sanatoryjnych zakładach rehabilitacji leczniczej</b>
+  <b>3.E.16 Pacjenci/kuracjusze leczeni stacjonarnie w szpitalach uzdrowiskowych i sanatoryjnych zakładach rehabilitacji leczniczej</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Emission of gaseous pollutants per thousand inhabitants
 pl_nazwa_wskaznika: >-
-  <b>3.F.3  Emisja zanieczyszczeń gazowych na 1 tysiąc mieszkańców</b>
+  <b>3.F.3 Emisja zanieczyszczeń gazowych na 1 tysiąc mieszkańców</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

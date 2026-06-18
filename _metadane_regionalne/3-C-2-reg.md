@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of deaths due to diseases of the circulatory system per 100 thous. population
 pl_nazwa_wskaznika: >-
-  <b>3.C.2  Liczba zgonów z powodu chorób układu krążenia na 100 tys. ludności</b>
+  <b>3.C.2 Liczba zgonów z powodu chorób układu krążenia na 100 tys. ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

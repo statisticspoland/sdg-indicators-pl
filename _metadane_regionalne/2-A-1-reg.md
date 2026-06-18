@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Gross value added per person employed in agriculture, forestry and fishing (Poland=100)
 pl_nazwa_wskaznika: >-
-  <b>2.A.1  Wartość dodana brutto na 1 pracującego w rolnictwie, leśnictwie, łowiectwie i rybactwie (Polska=100)</b>
+  <b>2.A.1 Wartość dodana brutto na 1 pracującego w rolnictwie, leśnictwie, łowiectwie i rybactwie (Polska=100)</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

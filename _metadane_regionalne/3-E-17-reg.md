@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Patients treated outpatients in health resort treatment center and and outpatient rehabilitation facilities
 pl_nazwa_wskaznika: >-
-  <b>3.E.17  Pacjenci/kuracjusze leczeni ambulatoryjnie w zakładach lecznictwa uzdrowiskowego i stacjonarnych zakładach rehabilitacji leczniczej</b>
+  <b>3.E.17 Pacjenci/kuracjusze leczeni ambulatoryjnie w zakładach lecznictwa uzdrowiskowego i stacjonarnych zakładach rehabilitacji leczniczej</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

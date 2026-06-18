@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Consumption of mineral fertilizers per 1 ha of agricultural land according to the new definition
 pl_nazwa_wskaznika: >-
-  <b>2.D.1  Zużycie nawozów mineralnych na 1 ha użytków rolnych wg nowej definicji</b>
+  <b>2.D.1 Zużycie nawozów mineralnych na 1 ha użytków rolnych wg nowej definicji</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

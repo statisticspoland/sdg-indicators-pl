@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of cases of invasive infections (Streptococcus pneumoniae) per 10 thous. population
 pl_nazwa_wskaznika: >-
-  <b>3.E.8  Liczba zachorowań na inwazyjne zakażenia - Streptococcus pneumoniae na 10 tys. ludności</b>
+  <b>3.E.8 Liczba zachorowań na inwazyjne zakażenia - Streptococcus pneumoniae na 10 tys. ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

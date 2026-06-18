@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Persons who received health care services at the occurrence place per 1 thous. population
 pl_nazwa_wskaznika: >-
-  <b>3.G.2  Osoby, którym udzielono świadczenia zdrowotnego w miejscu zdarzenia na 1 000 ludności</b>
+  <b>3.G.2 Osoby, którym udzielono świadczenia zdrowotnego w miejscu zdarzenia na 1 000 ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

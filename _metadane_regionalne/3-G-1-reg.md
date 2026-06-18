@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Calls to the occurrence places of emergency rescue teams
 pl_nazwa_wskaznika: >-
-  <b>3.G.1  Wyjazdy zespołów ratownictwa medycznego na miejsce zdarzenia</b>
+  <b>3.G.1 Wyjazdy zespołów ratownictwa medycznego na miejsce zdarzenia</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

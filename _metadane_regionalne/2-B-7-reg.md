@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of trichinosis cases
 pl_nazwa_wskaznika: >-
-  <b>2.B.7  Liczba zachorowań na włośnicę</b>
+  <b>2.B.7 Liczba zachorowań na włośnicę</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

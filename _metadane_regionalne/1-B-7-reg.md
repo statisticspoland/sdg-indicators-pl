@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of the social integration centres, vocational activity workshops and occupational therapy workshops per 100 thous. population
 pl_nazwa_wskaznika: >-
-  <b>1.B.7  Liczba centrów integracji społecznej, zakładów aktywności zawodowej i warsztatów terapii zajęciowej na 100 tys. ludności</b>
+  <b>1.B.7 Liczba centrów integracji społecznej, zakładów aktywności zawodowej i warsztatów terapii zajęciowej na 100 tys. ludności</b>
 pl_cel: Cel 1. Koniec z ubóstwem
 pl_zadanie: null
 pl_priorytet: >-

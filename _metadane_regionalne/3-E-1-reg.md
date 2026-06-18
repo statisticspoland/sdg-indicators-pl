@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Life expectancy - males
 pl_nazwa_wskaznika: >-
-  <b>3.E.1  Przeciętne trwanie życia mężczyzn</b>
+  <b>3.E.1 Przeciętne trwanie życia mężczyzn</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

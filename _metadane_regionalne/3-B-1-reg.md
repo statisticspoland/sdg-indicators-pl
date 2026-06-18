@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of beds in hospices, chronic medical care homes and nursing homes per 100 thous. population
 pl_nazwa_wskaznika: >-
-  <b>3.B.1  Liczba łóżek w hospicjach, zakładach opiekuńczo-leczniczych i zakładach pielęgnacyjno-opiekuńczych na 100 tys. ludności</b>
+  <b>3.B.1 Liczba łóżek w hospicjach, zakładach opiekuńczo-leczniczych i zakładach pielęgnacyjno-opiekuńczych na 100 tys. ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

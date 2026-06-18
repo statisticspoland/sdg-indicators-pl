@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of salmonellosis cases
 pl_nazwa_wskaznika: >-
-  <b>2.B.4  Liczba zachorowań na salmonellozę</b>
+  <b>2.B.4 Liczba zachorowań na salmonellozę</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

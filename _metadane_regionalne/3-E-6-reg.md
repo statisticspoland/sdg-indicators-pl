@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of cases of bacterial meningitis and/or encephalitis per 100 thous. population
 pl_nazwa_wskaznika: >-
-  <b>3.E.6  Liczba zachorowań na bakteryjne zapalenie opon mózgowych i/lub mózgu na 100 tys. ludności</b>
+  <b>3.E.6 Liczba zachorowań na bakteryjne zapalenie opon mózgowych i/lub mózgu na 100 tys. ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

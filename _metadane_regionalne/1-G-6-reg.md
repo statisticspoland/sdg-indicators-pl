@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of dwellings owned by municipalities (municipal)
 pl_nazwa_wskaznika: >-
-  <b>1.G.6  Liczba mieszkań będących w zasobach gmin (komunalnych)</b>
+  <b>1.G.6 Liczba mieszkań będących w zasobach gmin (komunalnych)</b>
 pl_cel: Cel 1. Koniec z ubóstwem
 pl_zadanie: null
 pl_priorytet: >-

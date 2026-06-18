@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Students of post-secondary schools, including colleges of social workers - health narrow field of education
 pl_nazwa_wskaznika: >-
-  <b>3.D.3  Uczniowie szkół policealnych łącznie z kolegiami pracowników służb społecznych - podgrupa kształcenia - medyczna</b>
+  <b>3.D.3 Uczniowie szkół policealnych łącznie z kolegiami pracowników służb społecznych - podgrupa kształcenia - medyczna</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

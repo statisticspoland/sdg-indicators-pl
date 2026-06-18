@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Gross agricultural output per 1 ha of agricultural land
 pl_nazwa_wskaznika: >-
-  <b>2.A.3  Globalna produkcja rolnicza na 1 ha użytków rolnych</b>
+  <b>2.A.3 Globalna produkcja rolnicza na 1 ha użytków rolnych</b>
 pl_cel: Cel 2. Zero głodu
 pl_zadanie: null
 pl_priorytet: >-

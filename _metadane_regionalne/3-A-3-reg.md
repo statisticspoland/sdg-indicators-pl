@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of nurses and midwives per 10 thous. population (employed persons in the main place of work)
 pl_nazwa_wskaznika: >-
-  <b>3.A.3  Liczba pielęgniarek i położnych (pracujących wg podstawowego miejsca pracy) na 10 tys. ludności</b>
+  <b>3.A.3 Liczba pielęgniarek i położnych (pracujących wg podstawowego miejsca pracy) na 10 tys. ludności</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-

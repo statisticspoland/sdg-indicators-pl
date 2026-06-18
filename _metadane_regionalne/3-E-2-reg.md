@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Life expectancy - females
 pl_nazwa_wskaznika: >-
-  <b>3.E.2  Przeciętne trwanie życia kobiet</b>
+  <b>3.E.2 Przeciętne trwanie życia kobiet</b>
 pl_cel: Cel 3. Dobre zdrowie i jakość życia
 pl_zadanie: null
 pl_priorytet: >-
