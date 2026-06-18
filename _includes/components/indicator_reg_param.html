@@ -261,47 +261,47 @@
  {% if id_map == '3-c-1' %}
    {% if language == 'pl' %}
             <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-                <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem">anestezjologia i intensywna terapia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">chirurgia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">choroby płuc</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">choroby wewnętrzne</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">dermatologia i wenerologia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">kardiologia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">medycyna rodzinna</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">medycyna pracy</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">neurologia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">endokrynologia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">diabetologia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">okulistyka</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">onkologia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">otolaryngologia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">pediatria</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">położnictwo i ginekologia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">psychiatria</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">radiodiagnostyka</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="ogółem" selected>ogółem</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia" data-short="anestezjologia..." >anestezjologia i intensywna terapia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia" data-short="chirurgia" >chirurgia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc" data-short="choroby płuc">choroby płuc</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne" data-short="choroby..." >choroby wewnętrzne</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia" data-short="dermatologia..." >dermatologia i wenerologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia" data-short="kardiologia" >kardiologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna" data-short="medycyna..." >medycyna rodzinna</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy" data-short="medycyna pracy" >medycyna pracy</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia" data-short="neurologia" >neurologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia" data-short="endokrynologia" >endokrynologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia" data-short="diabetologia" >diabetologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka" data-short="okulistyka" >okulistyka</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia" data-short="onkologia" >onkologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia" data-short="otolaryngologia" >otolaryngologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria" data-short="pediatria" >pediatria</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia" data-short="położnictwo..." >położnictwo i ginekologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria" data-short="psychiatria" >psychiatria</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka" data-short="radiodiagnostyka" >radiodiagnostyka</option>
               </select>
     {% else %}
       <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-        <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem">anesthesiology and intensive therapy</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">surgery</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">respiratory diseases</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">internal diseases</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">dermatology and venereology</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">cardiology</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">general practitioners</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">medicine service</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">neurology</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">endocrinology</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">diabetology</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">ophthalmology</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">oncology</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">otolaryngology</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">paediatrics</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">obstetrics and gynaecology</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">psychiatry</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">radiology and diagnostic imaging</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="total" selected>total</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia" data-short="anesthesiology..." >anesthesiology and intensive therapy</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia" data-short="surgery" >surgery</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc" data-short="respiratory..." >respiratory diseases</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne" data-short="internal..." >internal diseases</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia" data-short="dermatology..." >dermatology and venereology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia" data-short="cardiology" >cardiology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna" data-short="general..." >general practitioners</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy" data-short="medicine..." >medicine service</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia" data-short="neurology" >neurology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia" data-short="endocrinology" >endocrinology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia" data-short="diabetology" >diabetology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka" data-short="ophthalmology" >ophthalmology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia" data-short="oncology" >oncology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia" data-short="otolaryngology" >otolaryngology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria" data-short="paediatrics" >paediatrics</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia" data-short="obstetrics..." >obstetrics and gynaecology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria" data-short="psychiatry" >psychiatry</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka" data-short="radiology..." >radiology and diagnostic imaging</option>
       </select>
     {% endif %}
   {% elsif id_map == '5-a-9' or id_map == '8-c-1' or id_map == '8-d-4' %}
@@ -611,7 +611,7 @@
 
   function wyborParam() {
 
-    if('{{ id_map }}' == '6-a-2' || '{{ id_map }}' == '6-e-1' || '{{ id_map }}' == '13-c-4' || '{{ id_map }}' == '14-c-5' || '{{ id_map }}' == '17-a-1'){
+    if('{{ id_map }}' == '6-a-2' || '{{ id_map }}' == '3-c-1' || '{{ id_map }}' == '6-e-1' || '{{ id_map }}' == '13-c-4' || '{{ id_map }}' == '14-c-5' || '{{ id_map }}' == '17-a-1'){
       const select = document.getElementById("paramBox");
 
        // restore all long labels first
@@ -1584,16 +1584,48 @@
     {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '6-b-1' or id_map == '6-c-6' or id_map == '6-d-4' or id_map == '6-d-5'  or id_map == '11-d-2'  or id_map == '12-e-2' or id_map == '15-b-1' or id_map == '15-a-3' or id_map == '3-f-2' or id_map == '11-d-3' or id_map == '13-d-7' %}
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
-        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-          <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
-          <option style="font-family: Fira Sans" value="miasto">miasto</option>
-          <option style="font-family: Fira Sans" value="wieś">wieś</option>
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anestezjologia i intensywna terapia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">chirurgia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">choroby płuc</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">choroby wewnętrzne</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia">dermatologia i wenerologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia">kardiologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna">medycyna rodzinna</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy">medycyna pracy</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia">neurologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia">endokrynologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia">diabetologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka">okulistyka</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia">onkologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia">otolaryngologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria">pediatria</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia">położnictwo i ginekologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria">psychiatria</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiodiagnostyka</option>
         </select>
         {% else %}
-        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-          <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
-          <option style="font-family: Fira Sans" value="miasto">urban areas</option>
-          <option style="font-family: Fira Sans" value="wieś">rural areas</option>
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anesthesiology and intensive therapy</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">surgery</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">respiratory diseases</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">internal diseases</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia">dermatology and venereology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia">cardiology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna">general practitioners</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy">medicine service</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia">neurology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia">endocrinology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia">diabetology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka">ophthalmology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia">oncology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia">otolaryngology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria">paediatrics</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia">obstetrics and gynaecology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria">psychiatry</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiology and diagnostic imaging</option>
         </select>
         {% endif %}
       </div>
@@ -1887,16 +1919,48 @@
     {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '6-b-1' or id_map == '6-c-6' or id_map == '6-d-4' or id_map == '6-d-5'  or id_map == '11-d-2'  or id_map == '12-e-2'  or id_map == '15-b-1' or id_map == '15-a-3' or id_map == '15-a-3' or id_map == '3-f-2' or id_map == '11-d-3' or id_map == '13-d-7' %}
       <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
-        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-          <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
-          <option style="font-family: Fira Sans" value="miasto">miasto</option>
-          <option style="font-family: Fira Sans" value="wieś">wieś</option>
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anestezjologia i intensywna terapia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">chirurgia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">choroby płuc</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">choroby wewnętrzne</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia">dermatologia i wenerologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia">kardiologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna">medycyna rodzinna</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy">medycyna pracy</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia">neurologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia">endokrynologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia">diabetologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka">okulistyka</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia">onkologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia">otolaryngologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria">pediatria</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia">położnictwo i ginekologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria">psychiatria</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiodiagnostyka</option>
         </select>
         {% else %}
-        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-          <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
-          <option style="font-family: Fira Sans" value="miasto">urban areas</option>
-          <option style="font-family: Fira Sans" value="wieś">rural areas</option>
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anesthesiology and intensive therapy</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">surgery</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">respiratory diseases</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">internal diseases</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia">dermatology and venereology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia">cardiology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna">general practitioners</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy">medicine service</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia">neurology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia">endocrinology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia">diabetology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka">ophthalmology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia">oncology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia">otolaryngology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria">paediatrics</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia">obstetrics and gynaecology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria">psychiatry</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiology and diagnostic imaging</option>
         </select>
         {% endif %}
       </div>
@@ -2194,6 +2258,10 @@ function download_csv(csv, filename) {
           }
 
           switch ('{{ id_map }}') {
+            case '3-c-1':
+              maxValue=3.2;
+              marg=0;
+              break;
             case '3-f-2':
               maxValue=10;
               marg=0;
@@ -2357,6 +2425,17 @@ function updateChartBar(){
             }
 
             switch ('{{ id_map }}') {
+              case '3-c-1':
+                if(selectedParam !== "ogółem"){
+                  maxValue=1;
+                  marg=0;
+                  break;
+                }
+                else{
+                  maxValue=3.2;
+                  marg=0;
+                  break;
+                }
               case '3-f-2':
                 maxValue=10;
                 marg=0;
@@ -2448,27 +2527,78 @@ function updateChartLine(){
         checkedValues.push(cb.value);
         /*tr[i].style.display = '';*/
       }
-      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej"){
+      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej" || selectedLine === "anastezjologia i intensywna terapia"){
         checkedValues.push(cb.value+"_");
         /*tr[i+17].style.display = '';*/
       }
-      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine === "budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej" || selectedLine === "program ochrony środowiska"){
+      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine === "budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej" || selectedLine === "program ochrony środowiska" || selectedLine === "chirurgia" ){
         checkedValues.push(cb.value+"__");
         /*tr[i+17].style.display = '';*/
       }
-      if(selectedLine === "roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego"){
+      if(selectedLine === "roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" || selectedLine === "choroby płuc"){
         checkedValues.push(cb.value+"___");
         /*tr[i+17].style.display = '';*/
       }
-      if(selectedLine === "strategia rozwoju gminy"){
+      if(selectedLine === "strategia rozwoju gminy" || selectedLine === "choroby wewnętrzne"){
         checkedValues.push(cb.value+"____");
         /*tr[i+17].style.display = '';*/
       }
-      if(selectedLine === "strategia rozwiązywania problemów społecznych"){
+      if(selectedLine === "strategia rozwiązywania problemów społecznych" || selectedLine === "dermatologia i wenerologia"){
         checkedValues.push(cb.value+"_____");
         /*tr[i+17].style.display = '';*/
       }
-
+      if(selectedLine === "kardiologia"){
+        checkedValues.push(cb.value+"______");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "medycyna rodzinna"){
+        checkedValues.push(cb.value+"_______");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "medycyna pracy"){
+        checkedValues.push(cb.value+"________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "neurologia"){
+        checkedValues.push(cb.value+"_________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "endokrynologia"){
+        checkedValues.push(cb.value+"__________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "diabetologia"){
+        checkedValues.push(cb.value+"___________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "okulistyka"){
+        checkedValues.push(cb.value+"____________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "onkologia"){
+        checkedValues.push(cb.value+"_____________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "otolaryngologia"){
+        checkedValues.push(cb.value+"______________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "pediatria"){
+        checkedValues.push(cb.value+"_______________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "położnictwo i ginekologia"){
+        checkedValues.push(cb.value+"________________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "psychiatria"){
+        checkedValues.push(cb.value+"_________________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "radiodiagnostyka"){
+        checkedValues.push(cb.value+"__________________");
+        /*tr[i+17].style.display = '';*/
+      }
     }
     if (!cb.checked && cb.value !== 'all'){
       if(selectedLine === "ogółem" || selectedLine === "przyjazdy" || selectedLine === "załadunek łącznie z tranzytem" || selectedLine === "plan gospodarki niskoemisyjnej"){

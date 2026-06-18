@@ -191,7 +191,7 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
     "Świętokrzyskie": 0xD35400,
     "Warmińsko-Mazurskie": 0x2980B9,
     "Wielkopolskie": 0x27AEAE,
-    "Zachodniopomorskie": 0xcc00cc,
+    "Zachodniopomorskie": 0xcc00cc/*,
     "Polska_": 0x6794dc,
     "Poland_": 0x6794dc,
     "Dolnośląskie_": 0x33A1FF,
@@ -227,21 +227,23 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
     "Świętokrzyskie__": 0xD35400,
     "Warmińsko-Mazurskie__": 0x2980B9,
     "Wielkopolskie__": 0x27AEAE,
-    "Zachodniopomorskie__": 0xcc00cc
+    "Zachodniopomorskie__": 0xcc00cc*/
   };
+
+  //__________________
 
 for(const w of wojToSerie){
 
     const format = "#." + "0".repeat(precyzja);
     //console.log(format);
     var series2 = chart.series.push(am5xy.LineSeries.new(root, {
-      name: w.replace('_','').replace('_',''),
+      name: w.replaceAll('_',''),
       xAxis: xAxis,
       yAxis: yAxis,
       valueYField: w,
       valueXField: "year",
       legendLabelText: "{name}: " + `{valueY.formatNumber('${format}')}`,
-      stroke: am5.color(wojColors[w])
+      stroke: am5.color(wojColors[w.replaceAll('_','')])
       /*tooltip: am5.Tooltip.new(root, {
         pointerOrientation: "horizontal",
         labelText: w.replace('_','').replace('_','')+": {valueY}"
@@ -250,12 +252,12 @@ for(const w of wojToSerie){
 
     var tooltip = am5.Tooltip.new(root, {
       pointerOrientation: "horizontal",
-      labelText: w.replace('_','').replace('_','') + ": " + `{valueY.formatNumber('${format}')}`,
+      labelText: w.replaceAll('_','') + ": " + `{valueY.formatNumber('${format}')}`,
       getFillFromSprite: false
     });
 
     tooltip.get("background").setAll({
-      fill: am5.color(wojColors[w])
+      fill: am5.color(wojColors[w.replaceAll('_','')])
     });
 
     series2.set("tooltip", tooltip);
@@ -269,7 +271,7 @@ for(const w of wojToSerie){
       strokeWidth: 3  // increase this number to make line thicker
     });
 
-    if (w === "Polska" || w === "Poland" || w === "Polska_" || w === "Poland_" || w === "Polska__" || w === "Poland__"){
+    if (w.replaceAll('_','') === "Polska" || w.replaceAll('_','') === "Poland"){// || w === "Polska_" || w === "Poland_" || w === "Polska__" || w === "Poland__"){
       series2.strokes.template.setAll({
         strokeWidth: 5  // increase this number to make line thicker
       });

@@ -6,7 +6,7 @@ sdg_goal: 9
 indicator:  9.D.1.reg
 target_id:  '9.D.1'
 permalink: /en/statistics_reg/9-D-1/
-pre:  1
+pre:  2
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  en
