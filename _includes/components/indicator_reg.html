@@ -4513,7 +4513,7 @@
           createchartLine("chartLine",  data.slice(1), "{{ language }}", 62, "{{ precyzja }}");
         }
         else if ('{{ id_map }}' == '4-d-3'){
-          createchartLine("chartLine",  data.slice(1), "{{ language }}", 62, "{{ precyzja }}");
+          createchartLine("chartLine",  data.slice(1), "{{ language }}", 85, "{{ precyzja }}");
         }
         else if ('{{ id_map }}' == '5-a-3'){
           createchartLine("chartLine",  data.slice(1), "{{ language }}", 62, "{{ precyzja }}");
@@ -4656,6 +4656,10 @@
               maxValue=16;
               marg=0;
               break;
+            case '4-d-3':
+              minValue = 85;
+              marg=0;
+              break;
             case '5-a-1':
               maxValue=350;
               marg=0;
@@ -4721,6 +4725,9 @@
               break;
             case '3-e-4':
               baseV = 55;
+              break;
+            case '4-d-3':
+              baseV = 100;
               break;
             case '5-a-3':
               baseV = 60;
@@ -4934,6 +4941,11 @@ function updateChartBar(){
                 maxValue=16;
                 marg=0;
                 break;
+
+              case '4-d-3':
+                minValue = 85;
+                marg=0;
+                break;
               case '5-a-1':
                 maxValue=350;
                 marg=0;
@@ -5000,6 +5012,9 @@ function updateChartBar(){
                 break;
               case '3-e-4':
                 baseV = 55;
+                break;
+              case '4-d-3':
+                baseV = 100;
                 break;
               case '5-a-3':
                 baseV = 60;
@@ -5088,7 +5103,7 @@ function updateChartLine(){
                 createchartLine("chartLine",  data2.slice(1), "{{ language }}", 62, "{{ precyzja }}");
               }
               else if ('{{ id_map }}' == '4-d-3'){
-                createchartLine("chartLine",  data2.slice(1), "{{ language }}", 62, "{{ precyzja }}");
+                createchartLine("chartLine",  data2.slice(1), "{{ language }}", 85, "{{ precyzja }}");
               }
               else if ('{{ id_map }}' == '5-a-3'){
                 createchartLine("chartLine",  data2.slice(1), "{{ language }}", 62, "{{ precyzja }}");
