@@ -24,8 +24,8 @@ pl_definicja: >-
   Zarejestrowany i działający w Polsce podmiot, w którego kapitale podstawowym ma udziały jednostka zagraniczna w przeliczeniu na 10 tyś. ludności.
 en_definicja: >-
   An entity registered and operating in Poland, in whose share capital a foreign entity has shares per 10,000 inhabitants.
-pl_jednostka_prezentacji: "-"
-en_jednostka_prezentacji: "-"
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

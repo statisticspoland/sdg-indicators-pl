@@ -24,7 +24,7 @@ pl_definicja: >-
   Łączna masa odpadów wytworzonych w ciągu badanego roku (z wyłączeniem odpadów komunalnych) w przeliczeniu na jednego mieszkańca (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
   Total weight of waste generated during the surveyed year (excluding municipal waste) per capita (as of 30 June of the surveyed year).
-pl_jednostka_prezentacji: ton
+pl_jednostka_prezentacji: tona
 en_jednostka_prezentacji: tonne
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
