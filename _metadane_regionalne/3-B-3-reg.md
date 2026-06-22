@@ -26,7 +26,7 @@ en_cel: Goal 3. Good health and well-being
 en_zadanie: null
 en_priorytet: >-
   Improving the quality and availability of healthcare infrastructure
-en_jednostka_prezentacji: "-"
+en_jednostka_prezentacji: '-'
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
