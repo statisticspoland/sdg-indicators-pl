@@ -9,7 +9,7 @@ en_title: >-
 en_graph_title: >-
   Number of basic vocational and sectoral vocational schools per 1 thous. pupils
 pl_nazwa_wskaznika: >-
-  <b>4.C.2 Liczba zasadniczych szkół zawodowych i branżowych ogółem na 1 tys. uczniów</b>
+  <b>4.C.3 Liczba zasadniczych szkół zawodowych i branżowych ogółem na 1 tys. uczniów</b>
 pl_cel: Cel 4. Dobra jakość edukacji
 pl_zadanie: null
 pl_priorytet: >-
@@ -21,7 +21,7 @@ pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Ministerstwo Edukacji Narodowej
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
 en_nazwa_wskaznika: >-
-  <b>4.C.2 Number of basic vocational and sectoral vocational schools per 1 thous. pupils</b>
+  <b>4.C.3 Number of basic vocational and sectoral vocational schools per 1 thous. pupils</b>
 en_cel: Goal 4. Quality education
 en_zadanie: null
 en_priorytet: >-
