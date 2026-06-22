@@ -349,12 +349,12 @@
 
     {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
         {% if language == 'pl' %}
-          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">przyjazdy</option>
             <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">wyjazdy</option>
           </select>
         {% else %}
-          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">arrivals</option>
             <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">departures</option>
           </select>
@@ -1529,12 +1529,12 @@
       {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
           {% if language == 'pl' %}
-          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
               <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">przyjazdy</option>
               <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">wyjazdy</option>
             </select>
           {% else %}
-          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
               <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">arrivals</option>
               <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">departures</option>
             </select>
@@ -1581,7 +1581,7 @@
             </div>
 
 
-    {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '6-b-1' or id_map == '6-c-6' or id_map == '6-d-4' or id_map == '6-d-5'  or id_map == '11-d-2'  or id_map == '12-e-2' or id_map == '15-b-1' or id_map == '15-a-3' or id_map == '3-f-2' or id_map == '11-d-3' or id_map == '13-d-7' %}
+    {% elsif id_map == '3-c-1' %}
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
         <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
@@ -1629,6 +1629,24 @@
         </select>
         {% endif %}
       </div>
+      
+      {% else %}
+      <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+        {% if language == 'pl' %}
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">miasto</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">wieś</option>
+        </select>
+        {% else %}
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
+        </select>
+        {% endif %}
+      </div>
+
     {% endif %}
 
 
@@ -1864,12 +1882,12 @@
       {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
       <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
           {% if language == 'pl' %}
-          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
               <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">przyjazdy</option>
               <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">wyjazdy</option>
             </select>
           {% else %}
-          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
               <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">arrivals</option>
               <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">departures</option>
             </select>
@@ -1916,7 +1934,7 @@
               </div>
 
 
-    {% elsif id_map == '1-g-1' or id_map == '1-g-2' or id_map == '3-c-1' or id_map == '6-b-1' or id_map == '6-c-6' or id_map == '6-d-4' or id_map == '6-d-5'  or id_map == '11-d-2'  or id_map == '12-e-2'  or id_map == '15-b-1' or id_map == '15-a-3' or id_map == '15-a-3' or id_map == '3-f-2' or id_map == '11-d-3' or id_map == '13-d-7' %}
+    {% elsif id_map == '3-c-1' %}
       <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
         <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
@@ -1961,6 +1979,22 @@
           <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia">obstetrics and gynaecology</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria">psychiatry</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiology and diagnostic imaging</option>
+        </select>
+        {% endif %}
+      </div>
+    {% else %}
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+        {% if language == 'pl' %}
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">miasto</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">wieś</option>
+        </select>
+        {% else %}
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
         </select>
         {% endif %}
       </div>
