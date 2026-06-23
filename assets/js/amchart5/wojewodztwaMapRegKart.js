@@ -256,29 +256,49 @@ function createMapWojKart(div, dane, jez, precyzja){
 
   console.log(minPointValue);
   console.log(maxPointValue);
-  const ranges = calculateEqualRanges(minPointValue, maxPointValue, 5);
+
+  var ranges = [];
+
+  if(precyzja==0 && maxPointValue<=5){
+    const st = minPointValue == 0 ? 1 : min;
+    var it = 0;
+    for (let i = st; i <= maxPointValue; i++) {
+      const r = 5*it+10;
+      it = it + 1;
+      ranges.push({ min: i, max: i, radius: r});
+    }
+  }
+  else{
+    ranges = calculateEqualRanges(minPointValue, maxPointValue, 5);
+  }
+
+
   const shouldShowLegend = maxPointValue > 0;
 
   console.log(ranges);
 
-  function findRange(value, ranges) {
+  function findRange(value, ranges, precyzja, maxPointValue) {
     if(value == 0){
       return ranges[0];
     }
 
+    if(precyzja==0 && maxPointValue<=5){
+      return ranges.find(range => value >= range.min && value <= range.max);
+    }
     return ranges.find(range => value > range.min && value <= range.max);
   }
 
   function findRangeFromRadius(radius, ranges) {
+
     return ranges.find(range => radius == range.radius);
   }
 
-  function radiusFromValue(value) {
+  function radiusFromValue(value, precyzja, maxPointValue) {
     console.log(value);
     //if (maxPointValue === minPointValue) return 20;
     //const normalized = (value - minPointValue) / (maxPointValue - minPointValue);
     //return 5 + normalized * (40 - 5);
-    return findRange(value, ranges).radius;
+    return findRange(value, ranges, precyzja, maxPointValue).radius;
   }
 
   // Put the circle into the point series
@@ -287,7 +307,7 @@ function createMapWojKart(div, dane, jez, precyzja){
     const value = dataItem.dataContext.value;
 
     if(value !== 'x' && !isNaN(value) && value !=0){
-      const radius = radiusFromValue(value);
+      const radius = radiusFromValue(value, precyzja, maxPointValue);
 
       let circle = am5.Circle.new(root, {
         radius: radius,
@@ -346,7 +366,7 @@ function createMapWojKart(div, dane, jez, precyzja){
   ];
 
   // Build legend items
-  legendData.forEach(function(item) {
+  legendData.slice(0,ranges.length).forEach(function(item) {
     var row = legendContainer.children.push(
       am5.Container.new(root, {
         layout: am5.GridLayout.new(root, {
@@ -358,11 +378,27 @@ function createMapWojKart(div, dane, jez, precyzja){
       })
     );
 
+    const krok = 10 ** (-precyzja);
 
     const matchedRange = findRangeFromRadius(item.radius, ranges);
     //console.log(matchedRange);
 
-    item.label = `${matchedRange.min} - ${matchedRange.max}`;
+    if(matchedRange.min == 0){
+      item.label = `${formatNumberLocalized(matchedRange.min + krok, precyzja, jez)} - ${formatNumberLocalized(matchedRange.max - krok, precyzja, jez)}`;
+    }
+    else if(matchedRange.min == matchedRange.max || (matchedRange.min == matchedRange.max-krok && precyzja==0)){
+      item.label = `${formatNumberLocalized(matchedRange.min, precyzja, jez)}`;
+    }
+    else if(matchedRange.min == 1 && precyzja == 0){
+      item.label = `${formatNumberLocalized(matchedRange.min, precyzja, jez)} - ${formatNumberLocalized(matchedRange.max, precyzja, jez)}`;
+    }
+    else if(matchedRange.max == maxPointValue){
+      item.label = `${formatNumberLocalized(matchedRange.min, precyzja, jez)} - ${formatNumberLocalized(matchedRange.max, precyzja, jez)}`;
+    }
+    else{
+      item.label = `${formatNumberLocalized(matchedRange.min, precyzja, jez)} - ${formatNumberLocalized(matchedRange.max - krok, precyzja, jez)}`;
+    }
+
     // Bullet
     row.children.push(
       am5.Circle.new(root, {
