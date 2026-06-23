@@ -19,7 +19,7 @@ pl_definicja: >-
 pl_jednostka_prezentacji: osoby
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
-pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2019 r.
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2021 r.
 en_nazwa_wskaznika: >-
   <b>3.A.1 Number of physicians per 10 thous. population (employed persons in the main place of work)</b>
 en_cel: Goal 3. Good health and well-being
@@ -29,7 +29,7 @@ en_priorytet: >-
 en_jednostka_prezentacji: persons
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
-en_czestotliwosc_dostępnosc_danych: Annual data, since 2019
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2021
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p>Zgodnie z ustawą z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty (tekst jednolity: Dz. U. 2005 r. Nr 226 poz. 1943) <strong>lekarzem</strong> jest osoba posiadająca wymagane prawem kwalifikacje do wykonywania zawodu lekarza i wykonująca zawód, tj. udziela świadczeń zdrowotnych, w szczególności: bada stan zdrowia, rozpoznaje choroby i im zapobiega, prowadzi leczenie i rehabilitację chorych, udziela porad lekarskich, a także wydaje opinie i orzeczenia lekarskie. Zgodnie z w/w ustawą zawód lekarza może być wykonywany w różnych formach prawnych. Do lekarzy nie zaliczamy dentystów.</p> <p><strong>Pracujący bezpośrednio z pacjentem </strong> - są to osoby wykazane jako pracujące w przynajmniej jednym ze źródeł: RPWDL (Rejestr Podmiotów Wykonujących Działalność Leczniczą), NFZ (wykaz podmiotów mających podpisany kontrakt z NFZ), BJS (podmioty z Bazy Jednostek Statystycznych, działające według PKD w sekcji Q Opieka zdrowotna i pomoc społeczna) lub aktywnej praktyce (indywidualnej lub grupowej).</p> <p><strong>Przy wyznaczaniu głównego miejsca pracy dla osób pracujących z pacjentem stosuje się następujące kolejne kryteria:</strong></p> <p>• w przypadku, gdy osoba pracuje w jednym miejscu, jest to jej główne miejsce pracy;</p> <p>• w przypadku, gdy osoba pracuje w więcej niż jednym miejscu pracy, za główne, miejsce pracy uważa się to, w którym wymiar czasu pracy jest największy;</p> <p>• kolejnym kryterium wyboru głównego miejsca pracy były: podstawa wymiaru składki na ubezpieczenie emerytalne, a w razie niemożności jej wykorzystania – podstawa wymiaru składki na ubezpieczenie zdrowotne;</p> <p>• w przypadku, gdy powyższe, kolejno stosowane kryteria nie pozwalają na dokonanie jednoznacznego wyboru, za główne miejsce pracy uważa się to, w którym pracujący w zawodzie lekarza lub lekarza dentysty lub pielęgniarki lub położnej jest zatrudniony na umowę o pracę (tj. gdzie pierwsze cztery cyfry kodu tytułu ubezpieczenia to 01 10);</p> <p>• w pozostałych przypadkach, główne miejsce pracy ustalone jest losowo.</p>
