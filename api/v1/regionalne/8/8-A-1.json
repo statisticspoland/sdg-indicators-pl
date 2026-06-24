@@ -1,0 +1,574 @@
+
+
+
+
+
+
+{
+  "8-A-1": [
+    {
+      "metadane": [
+        
+        {
+                        "nazwa": "8.A.1 PKB na 1 mieszkańca [UE27=100]",
+                      
+                        "cel": "Cel 8. Wzrost gospodarczy i godna praca",
+                      
+                        "priorytet": "Efektywne wykorzystanie gospodarczego potencjału regionu w oparciu o innowacje i odpowiedzialny wzrost gospodarczy",
+                      
+                        "definicja": "Wartość produktu krajowego brutto na 1 mieszkańca obliczana wg parytetu siły nabywczej (Purchasing Power Parity - PPP) i wyrażona we wspólnej umownej walucie PPS (Purchasing Power Standard) w relacji do średniej dla UE27 (od 2020 r., tj. bez Wielkiej Brytanii), ustalonej jako równa 100 (UE27_2020 = 100).",
+                      
+                        "jednostka": "procent",
+                      
+                        "wymiary": "ogółem",
+                      
+                        "metodologia": "Produkt krajowy brutto (PKB) przedstawia końcowy rezultat działalności wszystkich podmiotów gospodarki narodowej (jednostek będących rezydentami) w danym roku. Szczegółową definicję i metodologię obliczania PKB określa rozporządzenie Parlamentu Europejskiego i Rady (UE) nr 549/2013 z dnia 21 maja 2013 r. w sprawie europejskiego systemu rachunków narodowych i regionalnych w Unii Europejskiej (ESA 2010).Parytety siły nabywczej (PPP) to rodzaj kursów wymiany walut, które stosuje się w celu przeliczenia wskaźników ekonomicznych wyrażonych w walutach krajowych na wspólną umowną walutę. Eliminują one wpływ różnic w poziomach cen między państwami uczestniczącymi w badaniu, a tym samym umożliwiają bezpośrednie porównanie wolumenu PKB i jego składowych. Parytety siły nabywczej wylicza się m.in. w ramach programu porównań międzynarodowych prowadzonych przez Unię Europejską. Wspólną umowną walutą przyjętą w Unii Europejskiej jest standard siły nabywczej (PPS). Wartość jednego PPS równa się liczbie jednostek waluty danego kraju odpowiadającej 1 euro na rynku krajowym, przy uwzględnieniu relacji cen danego kraju do cen pozostałych krajów biorących udział w porównaniu.Jeśli wartość wskaźnika jest niższa niż 100 wówczas poziom PKB na mieszkańca w danym kraju (regionie) jest niższy niż przeciętnie w UE i odwrotnie.",
+                      
+                        "zrodlo": "Eurostat",
+                      
+                        "czestotliwosc": "Dane roczne; od 2010 r.",
+                      
+                        "uwagi": "",
+                      
+                        "data_aktualizacji_danych": "",
+                      
+                        "data_aktualizacji_metadanych": ""
+                      }
+      ],
+      "dane": [
+        {
+                      "województwa": [
+                          {
+                              "Polska": [
+                                  {
+                                  
+                                      "2010" :   "63",
+                                  
+                                      "2011" :   "66",
+                                  
+                                      "2012" :   "67",
+                                  
+                                      "2013" :   "67",
+                                  
+                                      "2014" :   "68",
+                                  
+                                      "2015" :   "70",
+                                  
+                                      "2016" :   "69",
+                                  
+                                      "2017" :   "70",
+                                  
+                                      "2018" :   "72",
+                                  
+                                      "2019" :   "74",
+                                  
+                                      "2020" :   "78",
+                                  
+                                      "2021" :   "79",
+                                  
+                                      "2022" :   "78"
+                                  
+                                  }
+                              ],
+                              "Dolnośląskie": [
+                                  {
+                                  
+                                      "2010" :   "71",
+                                  
+                                      "2011" :   "75",
+                                  
+                                      "2012" :   "76",
+                                  
+                                      "2013" :   "75",
+                                  
+                                      "2014" :   "76",
+                                  
+                                      "2015" :   "78",
+                                  
+                                      "2016" :   "77",
+                                  
+                                      "2017" :   "77",
+                                  
+                                      "2018" :   "78",
+                                  
+                                      "2019" :   "80",
+                                  
+                                      "2020" :   "86",
+                                  
+                                      "2021" :   "87",
+                                  
+                                      "2022" :   "84"
+                                  
+                                  }
+                              ],
+                              "Kujawsko-Pomorskie": [
+                                  {
+                                  
+                                      "2010" :   "52",
+                                  
+                                      "2011" :   "54",
+                                  
+                                      "2012" :   "55",
+                                  
+                                      "2013" :   "55",
+                                  
+                                      "2014" :   "55",
+                                  
+                                      "2015" :   "57",
+                                  
+                                      "2016" :   "56",
+                                  
+                                      "2017" :   "56",
+                                  
+                                      "2018" :   "58",
+                                  
+                                      "2019" :   "58",
+                                  
+                                      "2020" :   "65",
+                                  
+                                      "2021" :   "65",
+                                  
+                                      "2022" :   "65"
+                                  
+                                  }
+                              ],
+                              "Lubelskie": [
+                                  {
+                                  
+                                      "2010" :   "44",
+                                  
+                                      "2011" :   "46",
+                                  
+                                      "2012" :   "48",
+                                  
+                                      "2013" :   "48",
+                                  
+                                      "2014" :   "48",
+                                  
+                                      "2015" :   "49",
+                                  
+                                      "2016" :   "48",
+                                  
+                                      "2017" :   "49",
+                                  
+                                      "2018" :   "49",
+                                  
+                                      "2019" :   "51",
+                                  
+                                      "2020" :   "55",
+                                  
+                                      "2021" :   "55",
+                                  
+                                      "2022" :   "55"
+                                  
+                                  }
+                              ],
+                              "Lubuskie": [
+                                  {
+                                  
+                                      "2010" :   "54",
+                                  
+                                      "2011" :   "55",
+                                  
+                                      "2012" :   "56",
+                                  
+                                      "2013" :   "56",
+                                  
+                                      "2014" :   "58",
+                                  
+                                      "2015" :   "59",
+                                  
+                                      "2016" :   "58",
+                                  
+                                      "2017" :   "58",
+                                  
+                                      "2018" :   "59",
+                                  
+                                      "2019" :   "60",
+                                  
+                                      "2020" :   "65",
+                                  
+                                      "2021" :   "65",
+                                  
+                                      "2022" :   "63"
+                                  
+                                  }
+                              ],
+                              "Łódzkie": [
+                                  {
+                                  
+                                      "2010" :   "59",
+                                  
+                                      "2011" :   "61",
+                                  
+                                      "2012" :   "63",
+                                  
+                                      "2013" :   "63",
+                                  
+                                      "2014" :   "64",
+                                  
+                                      "2015" :   "65",
+                                  
+                                      "2016" :   "65",
+                                  
+                                      "2017" :   "65",
+                                  
+                                      "2018" :   "67",
+                                  
+                                      "2019" :   "69",
+                                  
+                                      "2020" :   "76",
+                                  
+                                      "2021" :   "75",
+                                  
+                                      "2022" :   "73"
+                                  
+                                  }
+                              ],
+                              "Małopolskie": [
+                                  {
+                                  
+                                      "2010" :   "56",
+                                  
+                                      "2011" :   "58",
+                                  
+                                      "2012" :   "59",
+                                  
+                                      "2013" :   "59",
+                                  
+                                      "2014" :   "60",
+                                  
+                                      "2015" :   "63",
+                                  
+                                      "2016" :   "63",
+                                  
+                                      "2017" :   "64",
+                                  
+                                      "2018" :   "66",
+                                  
+                                      "2019" :   "67",
+                                  
+                                      "2020" :   "71",
+                                  
+                                      "2021" :   "72",
+                                  
+                                      "2022" :   "69"
+                                  
+                                  }
+                              ],
+                              "Mazowieckie": [
+                                  {
+                                  
+                                      "2010" :   "99",
+                                  
+                                      "2011" :   "103",
+                                  
+                                      "2012" :   "106",
+                                  
+                                      "2013" :   "107",
+                                  
+                                      "2014" :   "107",
+                                  
+                                      "2015" :   "110",
+                                  
+                                      "2016" :   "109",
+                                  
+                                      "2017" :   "111",
+                                  
+                                      "2018" :   "114",
+                                  
+                                      "2019" :   "118",
+                                  
+                                      "2020" :   "122",
+                                  
+                                      "2021" :   "120",
+                                  
+                                      "2022" :   "120"
+                                  
+                                  }
+                              ],
+                              "Opolskie": [
+                                  {
+                                  
+                                      "2010" :   "53",
+                                  
+                                      "2011" :   "55",
+                                  
+                                      "2012" :   "56",
+                                  
+                                      "2013" :   "56",
+                                  
+                                      "2014" :   "57",
+                                  
+                                      "2015" :   "58",
+                                  
+                                      "2016" :   "57",
+                                  
+                                      "2017" :   "57",
+                                  
+                                      "2018" :   "58",
+                                  
+                                      "2019" :   "60",
+                                  
+                                      "2020" :   "64",
+                                  
+                                      "2021" :   "66",
+                                  
+                                      "2022" :   "63"
+                                  
+                                  }
+                              ],
+                              "Podkarpackie": [
+                                  {
+                                  
+                                      "2010" :   "44",
+                                  
+                                      "2011" :   "46",
+                                  
+                                      "2012" :   "48",
+                                  
+                                      "2013" :   "48",
+                                  
+                                      "2014" :   "49",
+                                  
+                                      "2015" :   "50",
+                                  
+                                      "2016" :   "49",
+                                  
+                                      "2017" :   "49",
+                                  
+                                      "2018" :   "51",
+                                  
+                                      "2019" :   "52",
+                                  
+                                      "2020" :   "56",
+                                  
+                                      "2021" :   "57",
+                                  
+                                      "2022" :   "55"
+                                  
+                                  }
+                              ],
+                              "Podlaskie": [
+                                  {
+                                  
+                                      "2010" :   "48",
+                                  
+                                      "2011" :   "50",
+                                  
+                                      "2012" :   "50",
+                                  
+                                      "2013" :   "51",
+                                  
+                                      "2014" :   "51",
+                                  
+                                      "2015" :   "51",
+                                  
+                                      "2016" :   "51",
+                                  
+                                      "2017" :   "52",
+                                  
+                                      "2018" :   "53",
+                                  
+                                      "2019" :   "55",
+                                  
+                                      "2020" :   "61",
+                                  
+                                      "2021" :   "60",
+                                  
+                                      "2022" :   "60"
+                                  
+                                  }
+                              ],
+                              "Pomorskie": [
+                                  {
+                                  
+                                      "2010" :   "61",
+                                  
+                                      "2011" :   "63",
+                                  
+                                      "2012" :   "66",
+                                  
+                                      "2013" :   "64",
+                                  
+                                      "2014" :   "64",
+                                  
+                                      "2015" :   "67",
+                                  
+                                      "2016" :   "67",
+                                  
+                                      "2017" :   "67",
+                                  
+                                      "2018" :   "69",
+                                  
+                                      "2019" :   "71",
+                                  
+                                      "2020" :   "73",
+                                  
+                                      "2021" :   "76",
+                                  
+                                      "2022" :   "77"
+                                  
+                                  }
+                              ],
+                              "Śląskie": [
+                                  {
+                                  
+                                      "2010" :   "67",
+                                  
+                                      "2011" :   "70",
+                                  
+                                      "2012" :   "71",
+                                  
+                                      "2013" :   "69",
+                                  
+                                      "2014" :   "70",
+                                  
+                                      "2015" :   "72",
+                                  
+                                      "2016" :   "71",
+                                  
+                                      "2017" :   "72",
+                                  
+                                      "2018" :   "74",
+                                  
+                                      "2019" :   "75",
+                                  
+                                      "2020" :   "78",
+                                  
+                                      "2021" :   "81",
+                                  
+                                      "2022" :   "82"
+                                  
+                                  }
+                              ],
+                              "Świętokrzyskie": [
+                                  {
+                                  
+                                      "2010" :   "50",
+                                  
+                                      "2011" :   "51",
+                                  
+                                      "2012" :   "51",
+                                  
+                                      "2013" :   "50",
+                                  
+                                      "2014" :   "51",
+                                  
+                                      "2015" :   "52",
+                                  
+                                      "2016" :   "51",
+                                  
+                                      "2017" :   "51",
+                                  
+                                      "2018" :   "53",
+                                  
+                                      "2019" :   "54",
+                                  
+                                      "2020" :   "59",
+                                  
+                                      "2021" :   "59",
+                                  
+                                      "2022" :   "57"
+                                  
+                                  }
+                              ],
+                              "Warmińsko-Mazurskie": [
+                                  {
+                                  
+                                      "2010" :   "46",
+                                  
+                                      "2011" :   "48",
+                                  
+                                      "2012" :   "49",
+                                  
+                                      "2013" :   "49",
+                                  
+                                      "2014" :   "49",
+                                  
+                                      "2015" :   "50",
+                                  
+                                      "2016" :   "50",
+                                  
+                                      "2017" :   "50",
+                                  
+                                      "2018" :   "50",
+                                  
+                                      "2019" :   "51",
+                                  
+                                      "2020" :   "57",
+                                  
+                                      "2021" :   "57",
+                                  
+                                      "2022" :   "56"
+                                  
+                                  }
+                              ],
+                              "Wielkopolskie": [
+                                  {
+                                  
+                                      "2010" :   "66",
+                                  
+                                      "2011" :   "69",
+                                  
+                                      "2012" :   "71",
+                                  
+                                      "2013" :   "72",
+                                  
+                                      "2014" :   "73",
+                                  
+                                      "2015" :   "75",
+                                  
+                                      "2016" :   "75",
+                                  
+                                      "2017" :   "76",
+                                  
+                                      "2018" :   "77",
+                                  
+                                      "2019" :   "80",
+                                  
+                                      "2020" :   "84",
+                                  
+                                      "2021" :   "83",
+                                  
+                                      "2022" :   "81"
+                                  
+                                  }
+                              ],
+                              "Zachodniopomorskie": [
+                                  {
+                                  
+                                      "2010" :   "55",
+                                  
+                                      "2011" :   "55",
+                                  
+                                      "2012" :   "57",
+                                  
+                                      "2013" :   "56",
+                                  
+                                      "2014" :   "58",
+                                  
+                                      "2015" :   "60",
+                                  
+                                      "2016" :   "58",
+                                  
+                                      "2017" :   "59",
+                                  
+                                      "2018" :   "60",
+                                  
+                                      "2019" :   "61",
+                                  
+                                      "2020" :   "66",
+                                  
+                                      "2021" :   "66",
+                                  
+                                      "2022" :   "64"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,608 @@
+
+
+
+
+
+
+{
+  "1-D-3": [
+    {
+      "metadane": [
+        
+        {
+                        "nazwa": "1.D.3 Odsetek gospodarstw domowych oceniających (subiektywnie) swoją sytuację materialną jako raczej złą lub złą",
+                      
+                        "cel": "Cel 1. Koniec z ubóstwem",
+                      
+                        "priorytet": "Włączenie społeczne i przeciwdziałanie ubóstwu",
+                      
+                        "definicja": "Procentowy udział gospodarstw domowych, w których respondenci ocenili sytuację materialną własnego gospodarstwa jako raczej złą lub złą.",
+                      
+                        "jednostka": "procent",
+                      
+                        "wymiary": "ogółem",
+                      
+                        "metodologia": "Gospodarstwo domowe to zespół osób zamieszkujących razem i wspólnie utrzymujących się. Osoby samotne utrzymujące się samodzielnie tworzą jednoosobowe gospodarstwa domowe.Gospodarstwa domowe wyodrębnia się spośród ludności zamieszkałej w mieszkaniach (bez obiektów zbiorowego zakwaterowania). Wśród gospodarstw domowych wyróżniamy jednoosobowe i wieloosobowe (2 i więcej osobowe), a także rodzinne i nierodzinne.Dane opracowane na podstawie reprezentacyjnego badania budżetów gospodarstw domowych, które stanowi podstawowe źródło informacji o warunkach życia ludności, tj. poziomie i strukturze dochodu rozporządzalnego, wydatków, spożycia, wyposażeniu gospodarstw domowych w przedmioty trwałego użytkowania oraz zagrożeniu ubóstwem. Badaniem objęte są wszystkie prywatne gospodarstwa domowe, z wyjątkiem zamieszkujących obiekty zbiorowego zakwaterowania oraz gospodarstw członków korpusu dyplomatycznego państw obcych. Jednostką badania jest gospodarstwo domowe jedno- lub wieloosobowe.Liczba wylosowanych do badania mieszkań ulegała zmianie. Począwszy od 2006 r. próba wynosi ok. 37 tys. mieszkań, od 2021 r. - około 34 tys., a od 2022 r. - około 30 tys. mieszkań. Liczba zbadanych gospodarstw domowych stanowi około 0,2% ogólnej liczby gospodarstw domowych w Polsce. Więcej informacji nt. badania można uzyskać pod adresem: https://stat.gov.pl/obszary-tematyczne/warunki-zycia/dochody-wydatki-i-warunki-zycia-ludnosci/zeszyt-metodologiczny-badanie-budzetow-gospodarstw-domowych,10,2.html.",
+                      
+                        "zrodlo": "Główny Urząd Statystyczny",
+                      
+                        "czestotliwosc": "Dane roczne; od 2013 r.",
+                      
+                        "uwagi": "",
+                      
+                        "data_aktualizacji_danych": "",
+                      
+                        "data_aktualizacji_metadanych": ""
+                      }
+      ],
+      "dane": [
+        {
+                      "ogółem": [
+                          {
+                              "Polska": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "20.5",
+                                  
+                                      "2014" :   "17.7",
+                                  
+                                      "2015" :   "15.7",
+                                  
+                                      "2016" :   "12.9",
+                                  
+                                      "2017" :   "11.2",
+                                  
+                                      "2018" :   "8.1",
+                                  
+                                      "2019" :   "7.0",
+                                  
+                                      "2020" :   "5.8",
+                                  
+                                      "2021" :   "5.0",
+                                  
+                                      "2022" :   "6.0",
+                                  
+                                      "2023" :   "4.9"
+                                  
+                                  }
+                              ],
+                              "Dolnośląskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "21.3",
+                                  
+                                      "2014" :   "17.8",
+                                  
+                                      "2015" :   "15.4",
+                                  
+                                      "2016" :   "13.1",
+                                  
+                                      "2017" :   "11.7",
+                                  
+                                      "2018" :   "8.6",
+                                  
+                                      "2019" :   "7.3",
+                                  
+                                      "2020" :   "5.3",
+                                  
+                                      "2021" :   "5.1",
+                                  
+                                      "2022" :   "5.7",
+                                  
+                                      "2023" :   "5.7"
+                                  
+                                  }
+                              ],
+                              "Kujawsko-Pomorskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "19.3",
+                                  
+                                      "2014" :   "17.1",
+                                  
+                                      "2015" :   "15.8",
+                                  
+                                      "2016" :   "11.8",
+                                  
+                                      "2017" :   "10.9",
+                                  
+                                      "2018" :   "7.6",
+                                  
+                                      "2019" :   "7.4",
+                                  
+                                      "2020" :   "7.2",
+                                  
+                                      "2021" :   "5.9",
+                                  
+                                      "2022" :   "5.8",
+                                  
+                                      "2023" :   "5.1"
+                                  
+                                  }
+                              ],
+                              "Lubelskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "21.4",
+                                  
+                                      "2014" :   "17.5",
+                                  
+                                      "2015" :   "17.5",
+                                  
+                                      "2016" :   "16.3",
+                                  
+                                      "2017" :   "12.7",
+                                  
+                                      "2018" :   "10.7",
+                                  
+                                      "2019" :   "9.1",
+                                  
+                                      "2020" :   "7.8",
+                                  
+                                      "2021" :   "5.2",
+                                  
+                                      "2022" :   "7.1",
+                                  
+                                      "2023" :   "5.2"
+                                  
+                                  }
+                              ],
+                              "Lubuskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "26.3",
+                                  
+                                      "2014" :   "23.2",
+                                  
+                                      "2015" :   "19.7",
+                                  
+                                      "2016" :   "16.3",
+                                  
+                                      "2017" :   "12.1",
+                                  
+                                      "2018" :   "7.8",
+                                  
+                                      "2019" :   "7.0",
+                                  
+                                      "2020" :   "4.5",
+                                  
+                                      "2021" :   "4.3",
+                                  
+                                      "2022" :   "6.0",
+                                  
+                                      "2023" :   "4.4"
+                                  
+                                  }
+                              ],
+                              "Łódzkie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "23.2",
+                                  
+                                      "2014" :   "20.2",
+                                  
+                                      "2015" :   "17.3",
+                                  
+                                      "2016" :   "14.8",
+                                  
+                                      "2017" :   "14.5",
+                                  
+                                      "2018" :   "9.8",
+                                  
+                                      "2019" :   "8.7",
+                                  
+                                      "2020" :   "8.1",
+                                  
+                                      "2021" :   "6.1",
+                                  
+                                      "2022" :   "8.5",
+                                  
+                                      "2023" :   "6.1"
+                                  
+                                  }
+                              ],
+                              "Małopolskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "17.7",
+                                  
+                                      "2014" :   "15.7",
+                                  
+                                      "2015" :   "12.7",
+                                  
+                                      "2016" :   "10.0",
+                                  
+                                      "2017" :   "9.7",
+                                  
+                                      "2018" :   "5.7",
+                                  
+                                      "2019" :   "4.7",
+                                  
+                                      "2020" :   "3.1",
+                                  
+                                      "2021" :   "3.1",
+                                  
+                                      "2022" :   "3.5",
+                                  
+                                      "2023" :   "2.5"
+                                  
+                                  }
+                              ],
+                              "Mazowieckie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "17.9",
+                                  
+                                      "2014" :   "16.1",
+                                  
+                                      "2015" :   "14.7",
+                                  
+                                      "2016" :   "12.6",
+                                  
+                                      "2017" :   "10.3",
+                                  
+                                      "2018" :   "7.4",
+                                  
+                                      "2019" :   "6.2",
+                                  
+                                      "2020" :   "5.0",
+                                  
+                                      "2021" :   "5.0",
+                                  
+                                      "2022" :   "5.0",
+                                  
+                                      "2023" :   "4.8"
+                                  
+                                  }
+                              ],
+                              "Opolskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "16.8",
+                                  
+                                      "2014" :   "17.6",
+                                  
+                                      "2015" :   "12.6",
+                                  
+                                      "2016" :   "8.7",
+                                  
+                                      "2017" :   "8.4",
+                                  
+                                      "2018" :   "5.4",
+                                  
+                                      "2019" :   "5.1",
+                                  
+                                      "2020" :   "4.0",
+                                  
+                                      "2021" :   "2.2",
+                                  
+                                      "2022" :   "3.6",
+                                  
+                                      "2023" :   "3.4"
+                                  
+                                  }
+                              ],
+                              "Podkarpackie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "24.6",
+                                  
+                                      "2014" :   "19.4",
+                                  
+                                      "2015" :   "17.9",
+                                  
+                                      "2016" :   "12.8",
+                                  
+                                      "2017" :   "11.8",
+                                  
+                                      "2018" :   "10.0",
+                                  
+                                      "2019" :   "7.5",
+                                  
+                                      "2020" :   "5.3",
+                                  
+                                      "2021" :   "3.7",
+                                  
+                                      "2022" :   "5.3",
+                                  
+                                      "2023" :   "2.5"
+                                  
+                                  }
+                              ],
+                              "Podlaskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "23.7",
+                                  
+                                      "2014" :   "19.5",
+                                  
+                                      "2015" :   "18.8",
+                                  
+                                      "2016" :   "15.7",
+                                  
+                                      "2017" :   "11.7",
+                                  
+                                      "2018" :   "7.6",
+                                  
+                                      "2019" :   "7.8",
+                                  
+                                      "2020" :   "6.4",
+                                  
+                                      "2021" :   "4.6",
+                                  
+                                      "2022" :   "6.5",
+                                  
+                                      "2023" :   "4.5"
+                                  
+                                  }
+                              ],
+                              "Pomorskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "19.0",
+                                  
+                                      "2014" :   "15.5",
+                                  
+                                      "2015" :   "16.2",
+                                  
+                                      "2016" :   "13.2",
+                                  
+                                      "2017" :   "12.2",
+                                  
+                                      "2018" :   "8.7",
+                                  
+                                      "2019" :   "7.3",
+                                  
+                                      "2020" :   "6.9",
+                                  
+                                      "2021" :   "5.4",
+                                  
+                                      "2022" :   "6.3",
+                                  
+                                      "2023" :   "6.5"
+                                  
+                                  }
+                              ],
+                              "Śląskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "20.0",
+                                  
+                                      "2014" :   "18.1",
+                                  
+                                      "2015" :   "15.4",
+                                  
+                                      "2016" :   "12.9",
+                                  
+                                      "2017" :   "9.8",
+                                  
+                                      "2018" :   "7.0",
+                                  
+                                      "2019" :   "6.3",
+                                  
+                                      "2020" :   "4.8",
+                                  
+                                      "2021" :   "5.4",
+                                  
+                                      "2022" :   "6.2",
+                                  
+                                      "2023" :   "5.0"
+                                  
+                                  }
+                              ],
+                              "Świętokrzyskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "21.4",
+                                  
+                                      "2014" :   "18.2",
+                                  
+                                      "2015" :   "18.3",
+                                  
+                                      "2016" :   "12.1",
+                                  
+                                      "2017" :   "11.3",
+                                  
+                                      "2018" :   "9.0",
+                                  
+                                      "2019" :   "8.4",
+                                  
+                                      "2020" :   "4.9",
+                                  
+                                      "2021" :   "3.9",
+                                  
+                                      "2022" :   "4.2",
+                                  
+                                      "2023" :   "4.4"
+                                  
+                                  }
+                              ],
+                              "Warmińsko-Mazurskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "26.9",
+                                  
+                                      "2014" :   "21.4",
+                                  
+                                      "2015" :   "16.7",
+                                  
+                                      "2016" :   "14.5",
+                                  
+                                      "2017" :   "12.2",
+                                  
+                                      "2018" :   "9.3",
+                                  
+                                      "2019" :   "7.3",
+                                  
+                                      "2020" :   "6.9",
+                                  
+                                      "2021" :   "5.3",
+                                  
+                                      "2022" :   "7.5",
+                                  
+                                      "2023" :   "5.5"
+                                  
+                                  }
+                              ],
+                              "Wielkopolskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "18.1",
+                                  
+                                      "2014" :   "15.9",
+                                  
+                                      "2015" :   "14.0",
+                                  
+                                      "2016" :   "10.9",
+                                  
+                                      "2017" :   "9.6",
+                                  
+                                      "2018" :   "7.9",
+                                  
+                                      "2019" :   "7.0",
+                                  
+                                      "2020" :   "5.9",
+                                  
+                                      "2021" :   "5.0",
+                                  
+                                      "2022" :   "7.2",
+                                  
+                                      "2023" :   "5.6"
+                                  
+                                  }
+                              ],
+                              "Zachodniopomorskie": [
+                                  {
+                                  
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "22.8",
+                                  
+                                      "2014" :   "20.3",
+                                  
+                                      "2015" :   "17.1",
+                                  
+                                      "2016" :   "15.9",
+                                  
+                                      "2017" :   "14.1",
+                                  
+                                      "2018" :   "9.1",
+                                  
+                                      "2019" :   "9.1",
+                                  
+                                      "2020" :   "10.3",
+                                  
+                                      "2021" :   "7.2",
+                                  
+                                      "2022" :   "7.8",
+                                  
+                                      "2023" :   "5.3"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+  ]
+}

@@ -33,7 +33,7 @@
 
         <!--dyrektywa Content Security Policy -->
 
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: ; connect-src 'self' www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js  cdnjs.cloudflare.com cdn.amcharts.com https://www.google-analytics.com/analytics.js; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com cdnjs.cloudflare.com; font-src 'self' cdnjs.cloudflare.com/ajax/libs/font-awesome/;" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: ; connect-src 'self' www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js  cdnjs.cloudflare.com cdn.amcharts.com https://www.google-analytics.com/analytics.js https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css cdnjs.cloudflare.com; font-src 'self' cdnjs.cloudflare.com/ajax/libs/font-awesome/ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.eot?#iefix  https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.woff2 https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.woff https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.ttf  https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular;" />
 
         <link rel="canonical" href="/"><!--[if lt IE 9]>
   <script src="/assets/js/vendor/html5shiv.js"></script>
@@ -51,8 +51,8 @@
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/chartist.css">
         <link rel="stylesheet" href="/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2025-04-08-10-51-23-+0200">
-        <link rel="stylesheet" href="/assets/css/custom.css?v=2025-04-08-10-51-23-+0200">
+        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2026-06-24-11-56-11-+0200">
+        <link rel="stylesheet" href="/assets/css/custom.css?v=2026-06-24-11-56-11-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="/assets/css/jquery-ui.css">
 
@@ -190,6 +190,9 @@
             <a class="nav-link" href="/statistics_nat" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Wybierz wskaźniki dla priorytetów krajowych">Wskaźniki dla priorytetów krajowych</a>
           </li>
           <li class="nav-item small">
+            <a class="nav-link" href="/statistics_reg" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Wybierz wskaźniki dla priorytetów krajowych">Wskaźniki dla priorytetów regionalnych</a>
+          </li>
+          <li class="nav-item small">
             <a class="nav-link" href="/statistics_exp" style="width: 100%;text-decoration: none;color: #000;" title="Przejdź do statystyk eksperymentalnych">Statystyki eksperymentalne</a>
           </li>
 
@@ -245,6 +248,8 @@
              <div class="dropdown-content" style="margin-right: 15px;">
               <a class="pod" href="/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Wybierz wskaźniki dla celów globalnych">Wskaźniki dla celów globalnych</a>
               <a class="pod" href="/statistics_nat" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Wybierz wskaźniki dla priorytetów krajowych">Wskaźniki dla priorytetów krajowych</a>
+              <a class="pod" href="/statistics_reg" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Wybierz wskaźniki dla priorytetów regionalnych">Wskaźniki dla priorytetów regionalnych</a>
+
             </div>
           </div>
         </li>
@@ -730,6 +735,16 @@ localStorage.removeItem("nat-toolkit-accepted");
         
       
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
           
             <article class=''>
               <a name=''><h2>Kody odpowiedzi</h2></a>
@@ -835,6 +850,22 @@ localStorage.removeItem("nat-toolkit-accepted");
 
               </section>
             </article>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
           
         
       
@@ -3147,6 +3178,10 @@ $.getJSON('https://sdg.gov.pl/api/v1/custodian/world-bank.json', function(data) 
         
       
         
+          
+        
+      
+        
       
     
   </section>
@@ -3196,6 +3231,7 @@ $.getJSON('https://sdg.gov.pl/api/v1/custodian/world-bank.json', function(data) 
       
       <a href="/statistics_glob/status" style="font-size: 15px;margin-right: 0px;" title="Otwórz podstronę ze statusem raportowania wskaźników globalnych">globalnych</a>
       <a href="/statistics_nat/status" style="font-size: 15px;margin-right: 0px;" title="Otwórz podstronę ze statusem raportowania wskaźników krajowych">krajowych</a>
+      <a href="/statistics_reg/status" style="font-size: 15px;margin-right: 0px;" title="">regionalnych</a>
     </div>
 
 
