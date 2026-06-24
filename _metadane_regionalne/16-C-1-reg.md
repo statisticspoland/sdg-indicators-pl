@@ -11,7 +11,7 @@ en_title: >-
 en_graph_title: >-
   Voters on projects for 10 thous. inhabitants
 en_nazwa_wskaznika: >-
-  <b>16.C.1 Voters on projects for 100 thous. inhabitants</b>
+  <b>16.C.1 Voters on projects for 10 thous. inhabitants</b>
 pl_cel: Cel 16. Pokój, sprawiedliwość i silne instytucje
 en_cel: Goal 16. Peace and justice - strong institutions
 pl_zadanie: null

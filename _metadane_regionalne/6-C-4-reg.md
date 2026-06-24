@@ -24,8 +24,8 @@ pl_definicja: >-
   Ilość wody pobranej w ciągu roku na potrzeby gospodarki narodowej i ludności w przeliczeniu na 1 km².
 en_definicja: >-
   Amount of water abstracted per year for the national economy and population per km².
-pl_jednostka_prezentacji: dam³ / 1 km²
-en_jednostka_prezentacji: dam³ / 1 km²
+pl_jednostka_prezentacji: dam³/1 km²
+en_jednostka_prezentacji: dam³/1 km²
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
