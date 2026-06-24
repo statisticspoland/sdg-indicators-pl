@@ -10,6 +10,6 @@ pre:  0
 graph: longitudinal
 source_url: 'www.stat.gov.pl'
 lang:  pl
-kategorie:  voivodships
+kategorie:  województwa
 zmienne: Polska,Dolnośląskie,Kujawsko-Pomorskie,Lubelskie,Lubuskie,Łódzkie,Małopolskie,Mazowieckie,Opolskie,Podkarpackie,Podlaskie,Pomorskie,Śląskie,Świętokrzyskie,Warmińsko-Mazurskie,Wielkopolskie,Zachodniopomorskie
 ---
