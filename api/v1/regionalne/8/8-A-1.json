@@ -1,0 +1,591 @@
+
+
+
+
+
+
+{
+  "8-A-1": [
+    {
+      "metadane": [
+        
+        {
+                        "nazwa": "8.A.1 PKB na 1 mieszkańca [UE27=100]",
+                      
+                        "cel": "Cel 8. Wzrost gospodarczy i godna praca",
+                      
+                        "priorytet": "Efektywne wykorzystanie gospodarczego potencjału regionu w oparciu o innowacje i odpowiedzialny wzrost gospodarczy",
+                      
+                        "definicja": "Wartość produktu krajowego brutto na 1 mieszkańca obliczana wg parytetu siły nabywczej (Purchasing Power Parity - PPP) i wyrażona we wspólnej umownej walucie PPS (Purchasing Power Standard) w relacji do średniej dla UE27 (od 2020 r., tj. bez Wielkiej Brytanii), ustalonej jako równa 100 (UE27_2020 = 100).",
+                      
+                        "jednostka": "procent",
+                      
+                        "wymiary": "ogółem",
+                      
+                        "metodologia": "Produkt krajowy brutto (PKB) przedstawia końcowy rezultat działalności wszystkich podmiotów gospodarki narodowej (jednostek będących rezydentami) w danym roku. Szczegółową definicję i metodologię obliczania PKB określa rozporządzenie Parlamentu Europejskiego i Rady (UE) nr 549/2013 z dnia 21 maja 2013 r. w sprawie europejskiego systemu rachunków narodowych i regionalnych w Unii Europejskiej (ESA 2010).Parytety siły nabywczej (PPP) to rodzaj kursów wymiany walut, które stosuje się w celu przeliczenia wskaźników ekonomicznych wyrażonych w walutach krajowych na wspólną umowną walutę. Eliminują one wpływ różnic w poziomach cen między państwami uczestniczącymi w badaniu, a tym samym umożliwiają bezpośrednie porównanie wolumenu PKB i jego składowych. Parytety siły nabywczej wylicza się m.in. w ramach programu porównań międzynarodowych prowadzonych przez Unię Europejską. Wspólną umowną walutą przyjętą w Unii Europejskiej jest standard siły nabywczej (PPS). Wartość jednego PPS równa się liczbie jednostek waluty danego kraju odpowiadającej 1 euro na rynku krajowym, przy uwzględnieniu relacji cen danego kraju do cen pozostałych krajów biorących udział w porównaniu.Jeśli wartość wskaźnika jest niższa niż 100 wówczas poziom PKB na mieszkańca w danym kraju (regionie) jest niższy niż przeciętnie w UE i odwrotnie.",
+                      
+                        "zrodlo": "Eurostat",
+                      
+                        "czestotliwosc": "Dane roczne; od 2010 r.",
+                      
+                        "uwagi": "",
+                      
+                        "data_aktualizacji_danych": "",
+                      
+                        "data_aktualizacji_metadanych": ""
+                      }
+      ],
+      "dane": [
+        {
+                      "województwa": [
+                          {
+                              "Polska": [
+                                  {
+                                      "" :   "Poland",
+                                  
+                                      "" :   "63",
+                                  
+                                      "" :   "66",
+                                  
+                                      "" :   "67",
+                                  
+                                      "" :   "67",
+                                  
+                                      "" :   "68",
+                                  
+                                      "" :   "70",
+                                  
+                                      "" :   "69",
+                                  
+                                      "" :   "70",
+                                  
+                                      "" :   "72",
+                                  
+                                      "" :   "74",
+                                  
+                                      "" :   "78",
+                                  
+                                      "" :   "79",
+                                  
+                                      "" :   "78"
+                                  
+                                  }
+                              ],
+                              "Dolnośląskie": [
+                                  {
+                                      "" :   "Dolnośląskie",
+                                  
+                                      "" :   "71",
+                                  
+                                      "" :   "75",
+                                  
+                                      "" :   "76",
+                                  
+                                      "" :   "75",
+                                  
+                                      "" :   "76",
+                                  
+                                      "" :   "78",
+                                  
+                                      "" :   "77",
+                                  
+                                      "" :   "77",
+                                  
+                                      "" :   "78",
+                                  
+                                      "" :   "80",
+                                  
+                                      "" :   "86",
+                                  
+                                      "" :   "87",
+                                  
+                                      "" :   "84"
+                                  
+                                  }
+                              ],
+                              "Kujawsko-Pomorskie": [
+                                  {
+                                      "" :   "Kujawsko-Pomorskie",
+                                  
+                                      "" :   "52",
+                                  
+                                      "" :   "54",
+                                  
+                                      "" :   "55",
+                                  
+                                      "" :   "55",
+                                  
+                                      "" :   "55",
+                                  
+                                      "" :   "57",
+                                  
+                                      "" :   "56",
+                                  
+                                      "" :   "56",
+                                  
+                                      "" :   "58",
+                                  
+                                      "" :   "58",
+                                  
+                                      "" :   "65",
+                                  
+                                      "" :   "65",
+                                  
+                                      "" :   "65"
+                                  
+                                  }
+                              ],
+                              "Lubelskie": [
+                                  {
+                                      "" :   "Lubelskie",
+                                  
+                                      "" :   "44",
+                                  
+                                      "" :   "46",
+                                  
+                                      "" :   "48",
+                                  
+                                      "" :   "48",
+                                  
+                                      "" :   "48",
+                                  
+                                      "" :   "49",
+                                  
+                                      "" :   "48",
+                                  
+                                      "" :   "49",
+                                  
+                                      "" :   "49",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "55",
+                                  
+                                      "" :   "55",
+                                  
+                                      "" :   "55"
+                                  
+                                  }
+                              ],
+                              "Lubuskie": [
+                                  {
+                                      "" :   "Lubuskie",
+                                  
+                                      "" :   "54",
+                                  
+                                      "" :   "55",
+                                  
+                                      "" :   "56",
+                                  
+                                      "" :   "56",
+                                  
+                                      "" :   "58",
+                                  
+                                      "" :   "59",
+                                  
+                                      "" :   "58",
+                                  
+                                      "" :   "58",
+                                  
+                                      "" :   "59",
+                                  
+                                      "" :   "60",
+                                  
+                                      "" :   "65",
+                                  
+                                      "" :   "65",
+                                  
+                                      "" :   "63"
+                                  
+                                  }
+                              ],
+                              "Łódzkie": [
+                                  {
+                                      "" :   "Łódzkie",
+                                  
+                                      "" :   "59",
+                                  
+                                      "" :   "61",
+                                  
+                                      "" :   "63",
+                                  
+                                      "" :   "63",
+                                  
+                                      "" :   "64",
+                                  
+                                      "" :   "65",
+                                  
+                                      "" :   "65",
+                                  
+                                      "" :   "65",
+                                  
+                                      "" :   "67",
+                                  
+                                      "" :   "69",
+                                  
+                                      "" :   "76",
+                                  
+                                      "" :   "75",
+                                  
+                                      "" :   "73"
+                                  
+                                  }
+                              ],
+                              "Małopolskie": [
+                                  {
+                                      "" :   "Małopolskie",
+                                  
+                                      "" :   "56",
+                                  
+                                      "" :   "58",
+                                  
+                                      "" :   "59",
+                                  
+                                      "" :   "59",
+                                  
+                                      "" :   "60",
+                                  
+                                      "" :   "63",
+                                  
+                                      "" :   "63",
+                                  
+                                      "" :   "64",
+                                  
+                                      "" :   "66",
+                                  
+                                      "" :   "67",
+                                  
+                                      "" :   "71",
+                                  
+                                      "" :   "72",
+                                  
+                                      "" :   "69"
+                                  
+                                  }
+                              ],
+                              "Mazowieckie": [
+                                  {
+                                      "" :   "Mazowieckie",
+                                  
+                                      "" :   "99",
+                                  
+                                      "" :   "103",
+                                  
+                                      "" :   "106",
+                                  
+                                      "" :   "107",
+                                  
+                                      "" :   "107",
+                                  
+                                      "" :   "110",
+                                  
+                                      "" :   "109",
+                                  
+                                      "" :   "111",
+                                  
+                                      "" :   "114",
+                                  
+                                      "" :   "118",
+                                  
+                                      "" :   "122",
+                                  
+                                      "" :   "120",
+                                  
+                                      "" :   "120"
+                                  
+                                  }
+                              ],
+                              "Opolskie": [
+                                  {
+                                      "" :   "Opolskie",
+                                  
+                                      "" :   "53",
+                                  
+                                      "" :   "55",
+                                  
+                                      "" :   "56",
+                                  
+                                      "" :   "56",
+                                  
+                                      "" :   "57",
+                                  
+                                      "" :   "58",
+                                  
+                                      "" :   "57",
+                                  
+                                      "" :   "57",
+                                  
+                                      "" :   "58",
+                                  
+                                      "" :   "60",
+                                  
+                                      "" :   "64",
+                                  
+                                      "" :   "66",
+                                  
+                                      "" :   "63"
+                                  
+                                  }
+                              ],
+                              "Podkarpackie": [
+                                  {
+                                      "" :   "Podkarpackie",
+                                  
+                                      "" :   "44",
+                                  
+                                      "" :   "46",
+                                  
+                                      "" :   "48",
+                                  
+                                      "" :   "48",
+                                  
+                                      "" :   "49",
+                                  
+                                      "" :   "50",
+                                  
+                                      "" :   "49",
+                                  
+                                      "" :   "49",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "52",
+                                  
+                                      "" :   "56",
+                                  
+                                      "" :   "57",
+                                  
+                                      "" :   "55"
+                                  
+                                  }
+                              ],
+                              "Podlaskie": [
+                                  {
+                                      "" :   "Podlaskie",
+                                  
+                                      "" :   "48",
+                                  
+                                      "" :   "50",
+                                  
+                                      "" :   "50",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "52",
+                                  
+                                      "" :   "53",
+                                  
+                                      "" :   "55",
+                                  
+                                      "" :   "61",
+                                  
+                                      "" :   "60",
+                                  
+                                      "" :   "60"
+                                  
+                                  }
+                              ],
+                              "Pomorskie": [
+                                  {
+                                      "" :   "Pomorskie",
+                                  
+                                      "" :   "61",
+                                  
+                                      "" :   "63",
+                                  
+                                      "" :   "66",
+                                  
+                                      "" :   "64",
+                                  
+                                      "" :   "64",
+                                  
+                                      "" :   "67",
+                                  
+                                      "" :   "67",
+                                  
+                                      "" :   "67",
+                                  
+                                      "" :   "69",
+                                  
+                                      "" :   "71",
+                                  
+                                      "" :   "73",
+                                  
+                                      "" :   "76",
+                                  
+                                      "" :   "77"
+                                  
+                                  }
+                              ],
+                              "Śląskie": [
+                                  {
+                                      "" :   "Śląskie",
+                                  
+                                      "" :   "67",
+                                  
+                                      "" :   "70",
+                                  
+                                      "" :   "71",
+                                  
+                                      "" :   "69",
+                                  
+                                      "" :   "70",
+                                  
+                                      "" :   "72",
+                                  
+                                      "" :   "71",
+                                  
+                                      "" :   "72",
+                                  
+                                      "" :   "74",
+                                  
+                                      "" :   "75",
+                                  
+                                      "" :   "78",
+                                  
+                                      "" :   "81",
+                                  
+                                      "" :   "82"
+                                  
+                                  }
+                              ],
+                              "Świętokrzyskie": [
+                                  {
+                                      "" :   "Świętokrzyskie",
+                                  
+                                      "" :   "50",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "50",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "52",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "53",
+                                  
+                                      "" :   "54",
+                                  
+                                      "" :   "59",
+                                  
+                                      "" :   "59",
+                                  
+                                      "" :   "57"
+                                  
+                                  }
+                              ],
+                              "Warmińsko-Mazurskie": [
+                                  {
+                                      "" :   "Warmińsko-Mazurskie",
+                                  
+                                      "" :   "46",
+                                  
+                                      "" :   "48",
+                                  
+                                      "" :   "49",
+                                  
+                                      "" :   "49",
+                                  
+                                      "" :   "49",
+                                  
+                                      "" :   "50",
+                                  
+                                      "" :   "50",
+                                  
+                                      "" :   "50",
+                                  
+                                      "" :   "50",
+                                  
+                                      "" :   "51",
+                                  
+                                      "" :   "57",
+                                  
+                                      "" :   "57",
+                                  
+                                      "" :   "56"
+                                  
+                                  }
+                              ],
+                              "Wielkopolskie": [
+                                  {
+                                      "" :   "Wielkopolskie",
+                                  
+                                      "" :   "66",
+                                  
+                                      "" :   "69",
+                                  
+                                      "" :   "71",
+                                  
+                                      "" :   "72",
+                                  
+                                      "" :   "73",
+                                  
+                                      "" :   "75",
+                                  
+                                      "" :   "75",
+                                  
+                                      "" :   "76",
+                                  
+                                      "" :   "77",
+                                  
+                                      "" :   "80",
+                                  
+                                      "" :   "84",
+                                  
+                                      "" :   "83",
+                                  
+                                      "" :   "81"
+                                  
+                                  }
+                              ],
+                              "Zachodniopomorskie": [
+                                  {
+                                      "" :   "Zachodniopomorskie",
+                                  
+                                      "" :   "55",
+                                  
+                                      "" :   "55",
+                                  
+                                      "" :   "57",
+                                  
+                                      "" :   "56",
+                                  
+                                      "" :   "58",
+                                  
+                                      "" :   "60",
+                                  
+                                      "" :   "58",
+                                  
+                                      "" :   "59",
+                                  
+                                      "" :   "60",
+                                  
+                                      "" :   "61",
+                                  
+                                      "" :   "66",
+                                  
+                                      "" :   "66",
+                                  
+                                      "" :   "64"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+  ]
+}

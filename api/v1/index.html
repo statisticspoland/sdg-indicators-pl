@@ -33,7 +33,7 @@
 
         <!--dyrektywa Content Security Policy -->
 
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: ; connect-src 'self' www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js  cdnjs.cloudflare.com cdn.amcharts.com https://www.google-analytics.com/analytics.js; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com cdnjs.cloudflare.com; font-src 'self' cdnjs.cloudflare.com/ajax/libs/font-awesome/;" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: ; connect-src 'self' www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js  cdnjs.cloudflare.com cdn.amcharts.com https://www.google-analytics.com/analytics.js https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css cdnjs.cloudflare.com; font-src 'self' cdnjs.cloudflare.com/ajax/libs/font-awesome/ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.eot?#iefix  https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.woff2 https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.woff https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.ttf  https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular;" />
 
         <link rel="canonical" href="/"><!--[if lt IE 9]>
   <script src="/assets/js/vendor/html5shiv.js"></script>
@@ -51,8 +51,8 @@
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/chartist.css">
         <link rel="stylesheet" href="/assets/css/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2025-04-08-10-51-23-+0200">
-        <link rel="stylesheet" href="/assets/css/custom.css?v=2025-04-08-10-51-23-+0200">
+        <link rel="stylesheet" href="/assets/css/pl_sdg.css?v=2026-06-24-10-45-18-+0200">
+        <link rel="stylesheet" href="/assets/css/custom.css?v=2026-06-24-10-45-18-+0200">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="/assets/css/jquery-ui.css">
 
@@ -190,6 +190,9 @@
             <a class="nav-link" href="/statistics_nat" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Wybierz wskaźniki dla priorytetów krajowych">Wskaźniki dla priorytetów krajowych</a>
           </li>
           <li class="nav-item small">
+            <a class="nav-link" href="/statistics_reg" style="margin-left: 15px;width: 100%;text-decoration: none;color: #000;" title="Wybierz wskaźniki dla priorytetów krajowych">Wskaźniki dla priorytetów regionalnych</a>
+          </li>
+          <li class="nav-item small">
             <a class="nav-link" href="/statistics_exp" style="width: 100%;text-decoration: none;color: #000;" title="Przejdź do statystyk eksperymentalnych">Statystyki eksperymentalne</a>
           </li>
 
@@ -245,6 +248,8 @@
              <div class="dropdown-content" style="margin-right: 15px;">
               <a class="pod" href="/" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Wybierz wskaźniki dla celów globalnych">Wskaźniki dla celów globalnych</a>
               <a class="pod" href="/statistics_nat" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Wybierz wskaźniki dla priorytetów krajowych">Wskaźniki dla priorytetów krajowych</a>
+              <a class="pod" href="/statistics_reg" style="padding: 9px; border-bottom-style:solid; border-color:#dddddd; border-width:thin; width: 150px;" title="Wybierz wskaźniki dla priorytetów regionalnych">Wskaźniki dla priorytetów regionalnych</a>
+
             </div>
           </div>
         </li>
@@ -977,6 +982,159 @@ localStorage.removeItem("nat-toolkit-accepted");
         
           
             <article class='GET'>
+              <a name='/2012/12/27/api_regionalne_metadane.html'><h2><code><b>GET</b> /api/v1/regionalne_metadane.json</code> Pobierz metadane dla wszystkich wskaźników regionalnych</h2></a>
+              <section class='body'>
+                <p>Metoda pozwala na uzyskanie metadanych dla wszystkich wskaźników regionalnych w języku polskim.</p>
+
+<p>###Parametry</p>
+
+<p>Usługa nie przyjmuje parametrów wejściowych.</p>
+
+<p style="float:left;margin-top: 7px;">Typ treści odpowiedzi</p>
+<p><select style="float:left;padding: 0px 15px;width: 155px;margin-left: 10px;text-align-last: center;">
+  <option>application/json</option>
+</select></p>
+
+<div id="exampleReg">
+
+<h3 id="przykładowy-curl">Przykładowy Curl</h3>
+
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/regionalne_metadane.json"</code></p>
+
+<h3 id="przykładowy-url">Przykładowy URL</h3>
+
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/regionalne_metadane.json</code></p>
+
+<h3 id="przykładowy-kod-odpowiedzi">Kod odpowiedzi</h3>
+
+<p><code class="highlighter-rouge">200</code></p>
+
+<h3 id="przykładowa-odpowiedź">Odpowiedź</h3>
+
+<p><code class="highlighter-rouge" id="show-data-reg-metadane">
+</code></p>
+
+</div>
+
+<script>
+
+$.getJSON('https://sdg.gov.pl/api/v1/regionalne_metadane.json', function(data) {
+    $('#show-data-reg-metadane').html(JSON.stringify(data, null, 2));
+});
+
+</script>
+
+
+              </section>
+            </article>
+          
+        
+      
+        
+          
+            <article class='GET'>
+              <a name='/2012/12/27/api_regionalne_lista.html'><h2><code><b>GET</b> /api/v1/regionalne/lista.json</code> Pobierz tytuły wskaźników regionalnych</h2></a>
+              <section class='body'>
+                <p>Metoda pozwala na uzyskanie tytułów wszystkich wskaźników regionalnych w języku polskim.</p>
+
+<p>###Parametry</p>
+
+<p>Usługa nie przyjmuje parametrów wejściowych.</p>
+
+<p style="float:left;margin-top: 7px;">Typ treści odpowiedzi</p>
+<p><select style="float:left;padding: 0px 15px;width: 155px;margin-left: 10px;text-align-last: center;">
+  <option>application/json</option>
+</select></p>
+
+<div id="exampleReg">
+
+<h3 id="przykładowy-curl">Przykładowy Curl</h3>
+
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/regionalne/lista.json"</code></p>
+
+<h3 id="przykładowy-url">Przykładowy URL</h3>
+
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/regionalne/lista.json</code></p>
+
+<h3 id="przykładowy-kod-odpowiedzi">Kod odpowiedzi</h3>
+
+<p><code class="highlighter-rouge">200</code></p>
+
+<h3 id="przykładowa-odpowiedź">Odpowiedź</h3>
+
+<p><code class="highlighter-rouge" id="show-data-reg-lista">
+</code></p>
+
+</div>
+
+<script>
+
+$.getJSON('https://sdg.gov.pl/api/v1/regionalne/lista.json', function(data) {
+    $('#show-data-reg-lista').html(JSON.stringify(data, null, 2));
+});
+
+</script>
+
+
+              </section>
+            </article>
+          
+        
+      
+        
+          
+            <article class='GET'>
+              <a name='/2012/12/27/api_regionalne_dane.html'><h2><code><b>GET</b> /api/v1/regionalne_dane.json</code> Pobierz dane dla wszystkich wskaźników regionalnych</h2></a>
+              <section class='body'>
+                <p>Metoda pozwala na uzyskanie danych dla wszystkich wskaźników regionalnych w języku polskim.</p>
+
+<p>###Parametry</p>
+
+<p>Usługa nie przyjmuje parametrów wejściowych.</p>
+
+<p style="float:left;margin-top: 7px;">Typ treści odpowiedzi</p>
+<p><select style="float:left;padding: 0px 15px;width: 155px;margin-left: 10px;text-align-last: center;">
+  <option>application/json</option>
+</select></p>
+
+<div id="exampleReg">
+
+<h3 id="przykładowy-curl">Przykładowy Curl</h3>
+
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/regionalne_dane.json"</code></p>
+
+<h3 id="przykładowy-url">Przykładowy URL</h3>
+
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/regionalne_dane.json</code></p>
+
+<h3 id="przykładowy-kod-odpowiedzi">Kod odpowiedzi</h3>
+
+<p><code class="highlighter-rouge">200</code></p>
+
+<h3 id="przykładowa-odpowiedź">Odpowiedź</h3>
+
+<p><code class="highlighter-rouge" id="show-data-reg-dane">
+</code></p>
+
+</div>
+
+<script>
+
+$.getJSON('https://sdg.gov.pl/api/v1/regionalne_dane.json', function(data) {
+    $('#show-data-reg-dane').html(JSON.stringify(data, null, 2));
+});
+
+</script>
+
+
+              </section>
+            </article>
+          
+        
+      
+        
+          
+            <article class='GET'>
               <a name='/2012/12/27/api_krajowe_metadane.html'><h2><code><b>GET</b> /api/v1/krajowe_metadane.json</code> Pobierz metadane dla wszystkich wskaźników krajowych</h2></a>
               <section class='body'>
                 <p>Metoda pozwala na uzyskanie metadanych dla wszystkich wskaźników krajowych w języku polskim.</p>
@@ -1293,6 +1451,72 @@ $.getJSON('https://sdg.gov.pl/api/v1/globalne_dane.json', function(data) {
         
       
         
+      
+        
+      
+        
+      
+        
+          
+            <article class='GET'>
+              <a name='/2012/12/26/api_regionalne_1.html'><h2><code><b>GET</b> /api/v1/regionalne/{cel}.json</code> Pobierz wszystkie wskaźniki regionalne z danego celu</h2></a>
+              <section class='body'>
+                <p>Metoda pozwala na uzyskanie danych oraz metadanych dla wszystkich wskaźników regionalnych dla wybranego celu w języku polskim.</p>
+
+<p>###Parametry</p>
+
+<table id="api_table">
+  <tr>
+    <th><b>Parametry</b></th>
+    <th><b>Opis</b></th>
+  </tr>
+  <tr>
+    <td><b>cel</b></td>
+    <td>numer celu w którym znajduje się wskaźnik ( od 1 do 17 )</td>
+  </tr>
+</table>
+
+<p style="float:left;margin-top: 7px;">Typ treści odpowiedzi</p>
+<p><select style="float:left;padding: 0px 15px;width: 155px;margin-left: 10px;text-align-last: center;">
+  <option>application/json</option>
+</select></p>
+
+<div id="exampleReg1">
+
+<h3 id="przykładowy-curl">Przykładowy Curl</h3>
+
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/regionalne/1.json"</code></p>
+
+<h3 id="przykładowy-url">Przykładowy URL</h3>
+
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/regionalne/1.json</code></p>
+
+<h3 id="przykładowy-kod-odpowiedzi">Kod odpowiedzi</h3>
+
+<p><code class="highlighter-rouge">200</code></p>
+
+<h3 id="przykładowa-odpowiedź">Odpowiedź</h3>
+
+<p><code class="highlighter-rouge" id="show-data-reg-1">
+</code></p>
+
+</div>
+
+<script>
+
+$.getJSON('https://sdg.gov.pl/api/v1/regionalne/1.json', function(data) {
+    $('#show-data-reg-1').html(JSON.stringify(data, null, 2));
+});
+
+</script>
+
+
+              </section>
+            </article>
+          
+        
+      
+        
           
             <article class='GET'>
               <a name='/2012/12/26/api_krajowe_1.html'><h2><code><b>GET</b> /api/v1/krajowe/{cel}.json</code> Pobierz wszystkie wskaźniki krajowe z danego celu</h2></a>
@@ -1414,6 +1638,72 @@ $.getJSON('https://sdg.gov.pl/api/v1/globalne/1.json', function(data) {
       
         
       
+        
+      
+        
+      
+        
+          
+            <article class='GET'>
+              <a name='/2012/12/25/api_regionalne_1-1-1.html'><h2><code><b>GET</b> /api/v1/regionalne/{cel}/{num}.json</code> Pobierz wskaźnik regionalny</h2></a>
+              <section class='body'>
+                <p>Metoda pozwala na uzyskanie danych oraz metadanych dla wybranego wskaźnika regionalnego w języku polskim.</p>
+
+<p>###Parametry</p>
+
+<table id="api_table">
+  <tr>
+    <th><b>Parametry</b></th>
+    <th><b>Opis</b></th>
+  </tr>
+  <tr>
+    <td><b>cel</b></td>
+    <td>numer celu w którym znajduje się wskaźnik ( od 1 do 17 )</td>
+  </tr>
+  <tr>
+    <td><b>num</b></td>
+    <td>numer wskaźnika</td>
+  </tr>
+</table>
+
+<p style="float:left;margin-top: 7px;">Typ treści odpowiedzi</p>
+<p><select style="float:left;padding: 0px 15px;width: 155px;margin-left: 10px;text-align-last: center;">
+  <option>application/json</option>
+</select></p>
+
+<div id="exampleReg2">
+
+<h3 id="przykładowy-curl">Przykładowy Curl</h3>
+
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/regionalne/1/1-A-1.json"</code></p>
+
+<h3 id="przykładowy-url">Przykładowy URL</h3>
+
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/regionalne/1/1-A-1.json</code></p>
+
+<h3 id="przykładowy-kod-odpowiedzi">Kod odpowiedzi</h3>
+
+<p><code class="highlighter-rouge">200</code></p>
+
+<h3 id="przykładowa-odpowiedź">Odpowiedź</h3>
+
+<p><code class="highlighter-rouge" id="show-data-1-A-1">
+</code></p>
+
+</div>
+
+<script>
+
+$.getJSON('https://sdg.gov.pl/api/v1/regionalne/1/1-A-1.json', function(data) {
+    $('#show-data-1-A-1').html(JSON.stringify(data, null, 2));
+});
+
+</script>
+
+
+              </section>
+            </article>
+          
         
       
         
@@ -1542,6 +1832,8 @@ $.getJSON('https://sdg.gov.pl/api/v1/globalne/1/1-1-1.json', function(data) {
               </section>
             </article>
           
+        
+      
         
       
         
@@ -1895,6 +2187,7 @@ $.getJSON('https://sdg.gov.pl/api/v1/globalne/plec_g.json', function(data) {
       
       <a href="/statistics_glob/status" style="font-size: 15px;margin-right: 0px;" title="Otwórz podstronę ze statusem raportowania wskaźników globalnych">globalnych</a>
       <a href="/statistics_nat/status" style="font-size: 15px;margin-right: 0px;" title="Otwórz podstronę ze statusem raportowania wskaźników krajowych">krajowych</a>
+      <a href="/statistics_reg/status" style="font-size: 15px;margin-right: 0px;" title="">regionalnych</a>
     </div>
 
 
