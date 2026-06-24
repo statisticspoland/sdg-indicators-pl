@@ -26,6 +26,7 @@
       <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
       <script src="https://cdn.amcharts.com/lib/5/geodata/polandLow.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapRegStep.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapRegKart.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line_param.js"></script>
@@ -437,11 +438,16 @@
   function processData(data_processed) {
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
-      if (["14-a-3"].includes("{{ id_map }}") || ["14-a-4"].includes("{{ id_map }}") || ["14-c-3"].includes("{{ id_map }}") || ["14-c-4"].includes("{{ id_map }}") || ["14-c-5"].includes("{{ id_map }}") || ["14-d-2"].includes("{{ id_map }}") || ["14-d-3"].includes("{{ id_map }}") || ["17-a-1"].includes("{{ id_map }}")) {
-        createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+    if("{{id_map }}" == "6-a-2"){
+      createMapWojStep("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+    }
+    else{
+        if (["14-a-3"].includes("{{ id_map }}") || ["14-a-4"].includes("{{ id_map }}") || ["14-c-3"].includes("{{ id_map }}") || ["14-c-4"].includes("{{ id_map }}") || ["14-c-5"].includes("{{ id_map }}") || ["14-d-2"].includes("{{ id_map }}") || ["14-d-3"].includes("{{ id_map }}") || ["17-a-1"].includes("{{ id_map }}")) {
+          createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+        }
+        else {
+        createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
       }
-      else {
-      createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
     }
   }
 
@@ -1629,7 +1635,7 @@
         </select>
         {% endif %}
       </div>
-      
+
       {% else %}
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
@@ -2238,6 +2244,10 @@
               maxValue=10;
               marg=0;
               break;
+            case '6-a-2':
+              maxValue=1000;
+              marg=0;
+              break;
             case '11-d-3':
               maxValue=10;
               marg=0;
@@ -2412,14 +2422,22 @@ function updateChartBar(){
                 maxValue=10;
                 marg=0;
                 break;
-              case '6-a-2' && (selectedParam === "ujęcia i doprowadzenia wody"):
-                maxValue=120;
-                marg=0;
-                break;
-              case '6-a-2' && (selectedParam === "służące ochronie środowiska"):
-                maxValue=65;
-                marg=0;
-                break;
+              case '6-a-2' :
+                if(selectedParam == "ujęcia i doprowadzenia wody"){
+                  maxValue=100;
+                  marg=0;
+                  break;
+                }
+                 else if(selectedParam == "budowa i modernizacja stacji uzdatniania wody"){
+                  maxValue=55;
+                  marg=0;
+                  break;
+                }
+                else{
+                  maxValue=1000;
+                  marg=0;
+                  break;
+                }
               case '11-d-3':
                 maxValue=10;
                 marg=0;
