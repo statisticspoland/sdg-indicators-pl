@@ -35,7 +35,7 @@ en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p>Dane o pracujących dotyczą osób wykonujących pracę przynoszącą im zarobek
-  lub dochód.</p> <p>&nbsp;Do pracujących zalicza się:</p> 1. pracowników
+  lub dochód.</p> <p>Do pracujących zalicza się:</p> 1. pracowników
   najemnych (od 2022 r. zmiana nazwy, wcześniej zatrudnieni), czyli osoby
   zatrudnione na podstawie stosunku pracy (umowa o pracę, powołanie, mianowanie,
   wybór) lub stosunku służbowego na czas określony i nieokreślony, w pełnym i
@@ -52,7 +52,7 @@ pl_wyjasnienia_metodologiczne: >-
   
 en_wyjasnienia_metodologiczne: >-
   <p>Data regarding employment concern persons performing work providing
-  earnings or income.</p> <p>&nbsp;Employed persons include:</p> <ol
+  earnings or income.</p> <p>Employed persons include:</p> <ol
   style="list-style-type: lower-alpha;"> <li>a. persons employed on the basis of
   an employment relationship (i.e. employment contract, appointment, election or
   nomination) or service relationship for a definite and indefinite period of
