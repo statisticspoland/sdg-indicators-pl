@@ -117,8 +117,17 @@ function createMapWojStep(div, dane, jez, precyzja){
     console.log(dane[i]);
 
     const group = classifyValue(dane[i].value, minV, maxV);
-    dane[i].polygonSettings = {
-      fill: colors[group]
+
+    //console.log(dane[i].value)
+
+    if (isNaN(dane[i].value)) {
+      dane[i].polygonSettings = {
+        fill: am5.color(0xbfbfbf)
+      }
+    } else {
+      dane[i].polygonSettings = {
+        fill: colors[group]
+      }
     }
   }
 
