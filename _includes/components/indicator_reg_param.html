@@ -456,17 +456,17 @@
   function processData(data_processed) {
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
-    if("{{id_map }}" == "6-a-2"){
+/*    if("{{id_map }}" == "6-a-2"){
       createMapWojStep("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
     }
-    else{
+    else{*/
         if (["14-a-3"].includes("{{ id_map }}") || ["14-a-4"].includes("{{ id_map }}") || ["14-c-3"].includes("{{ id_map }}") || ["14-c-4"].includes("{{ id_map }}") || ["14-c-5"].includes("{{ id_map }}") || ["14-d-2"].includes("{{ id_map }}") || ["14-d-3"].includes("{{ id_map }}") || ["17-a-1"].includes("{{ id_map }}")) {
           createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
         }
         else {
-        createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+        createMapWojStep("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
       }
-    }
+    //}
   }
 
   function loadDataAndRenderMap(rok, param) {

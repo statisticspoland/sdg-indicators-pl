@@ -27,7 +27,7 @@
       <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
       <script src="https://cdn.amcharts.com/lib/5/geodata/polandLow.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
-      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapRegGrad.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapRegStep.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapRegKart.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line.js"></script>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/bar.js"></script>
@@ -1810,17 +1810,17 @@
   //console.log("Dane gotowe:", data_processed);
   // użyj data gdzie chcesz
   //console.log("{{ id_map }}");
-    if("{{id_map }}" == "12-a-2"){
+  /*  if("{{id_map }}" == "12-a-2"){
       createMapWojGrad("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
     }
-    else{
+    else{*/
       if (["1-a-1", "1-f-2", "1-g-3", "1-g-5", "1-g-6", "1-g-7", "2-b-3", "2-b-4", "2-b-5", "2-b-6", "2-b-7", "3-d-1", "3-d-2", "3-d-3", "3-d-4", "3-d-5", "3-e-13", "3-e-16", "3-e-17", "3-g-1", "4-b-2", "4-b-3", "6-a-1", "6-c-1", "6-c-2", "6-c-3", "6-c-5", "6-d-1", "6-d-2", "6-d-6", "6-d-8", "6-e-2", "6-e-3", "6-e-4", "6-e-5", "9-b-2", "9-b-9", "9-c-9", "9-c-10", "11-c-1", "12-a-4", "12-a-5", "12-b-2", "12-c-1", "13-b-2", "13-d-3", "13-d-4", "13-d-5", "13-d-6", "14-a-5", "14-d-1"].includes("{{ id_map }}")) {
         createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
       }
       else {
-        createMapWoj("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+        createMapWojStep("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
       }
-    }
+    //}
 
   }
 
