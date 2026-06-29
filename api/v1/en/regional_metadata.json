@@ -474,7 +474,7 @@
                                         
                                           "definition": "Percentage of disabled individuals using the Internet for private contacts with public authorities (in the last 12 months).",
                                         
-                                          "unit": "-",
+                                          "unit": "percent",
                                         
                                           "dimensions": "total",
                                         
@@ -509,7 +509,7 @@
                                         
                                           "definition": "Percentage of households with at least one person aged 16-74 having broadband Internet access at home.",
                                         
-                                          "unit": "-",
+                                          "unit": "percent",
                                         
                                           "dimensions": "total",
                                         
@@ -1104,7 +1104,7 @@
                                         
                                           "definition": "Apartments owned by social housing associations (TBS).",
                                         
-                                          "unit": "pices",
+                                          "unit": "pieces",
                                         
                                           "dimensions": "total",
                                         
@@ -1209,7 +1209,7 @@
                                         
                                           "definition": "Number of dwellings per 1,000 population.",
                                         
-                                          "unit": "pices",
+                                          "unit": "pieces",
                                         
                                           "dimensions": "total",
                                         
@@ -2726,7 +2726,7 @@
                                         
                                           "definition": "Number of specialist consultations provided as part of outpatient health care (in thousands).",
                                         
-                                          "unit": "pieces",
+                                          "unit": "-",
                                         
                                           "dimensions": "total",
                                         
@@ -2761,7 +2761,7 @@
                                         
                                           "definition": "Number of days per person of stay of children and adolescents aged 0-18 in spa hospitals and health resort sanatoriums.",
                                         
-                                          "unit": "osoba/day",
+                                          "unit": "person/day",
                                         
                                           "dimensions": "total",
                                         
@@ -4949,7 +4949,7 @@
                                         
                                           "definition": "Total investment outlays for creation of small water retention facilities in a year.",
                                         
-                                          "unit": "thousands, PLN",
+                                          "unit": "thous. PLN",
                                         
                                           "dimensions": "total",
                                         
@@ -5054,7 +5054,7 @@
                                         
                                           "definition": "Amount of water abstracted per year for the national economy and population per km².",
                                         
-                                          "unit": "dam³ / 1 km²",
+                                          "unit": "dam³",
                                         
                                           "dimensions": "total",
                                         
@@ -5544,7 +5544,7 @@
                                         
                                           "definition": "Total investment outlays for creation of small water retention facilities in a year.",
                                         
-                                          "unit": "thousand PLN",
+                                          "unit": "thous. PLN",
                                         
                                           "dimensions": "total",
                                         
@@ -5579,7 +5579,7 @@
                                         
                                           "definition": "The value of financial or material expenditure on creating or increasing the value of fixed assets used for wastewater management and water protection, incurred during the year.",
                                         
-                                          "unit": "in thousand PLN",
+                                          "unit": "thous. PLN",
                                         
                                           "dimensions": "total",
                                         
@@ -5614,7 +5614,7 @@
                                         
                                           "definition": "Value of investment outlays, financial or in-kind, for collective waterworks in the countryside, incurred during the year.",
                                         
-                                          "unit": "in thousand PLN",
+                                          "unit": "thous. PLN",
                                         
                                           "dimensions": "total",
                                         
@@ -5649,7 +5649,7 @@
                                         
                                           "definition": "Value of investment outlays, whether financial or in kind, for collective sewage in the rural areas, incurred during the year.",
                                         
-                                          "unit": "in thousand PLN",
+                                          "unit": "thous. PLN",
                                         
                                           "dimensions": "total",
                                         
@@ -6295,7 +6295,7 @@
                                         
                                           "dimensions": "total",
                                         
-                                          "methodology": "Data regarding employment concern persons performing work providing earnings or income.  Employed persons include:  a. persons employed on the basis of an employment relationship (i.e. employment contract, appointment, election or nomination) or service relationship for a definite and indefinite period of time, according to full-time and part-time work schedules; b. employers and own-account workers including contributing family workers; c. outworkers; d. agents (until 2021); e. members of agricultural production cooperatives; f. clergy fulfilling priestly obligations.  When determining the number of employees, each working person is listed only once. For this purpose, a main workplace is assigned to her. Data on people working in the national economy are presented in relation to their main workplace. Data on the number of people employed in the national economy in the main workplace are given in persons as at the end of December.",
+                                          "methodology": "Data regarding employment concern persons performing work providing earnings or income. Employed persons include:  a. persons employed on the basis of an employment relationship (i.e. employment contract, appointment, election or nomination) or service relationship for a definite and indefinite period of time, according to full-time and part-time work schedules; b. employers and own-account workers including contributing family workers; c. outworkers; d. agents (until 2021); e. members of agricultural production cooperatives; f. clergy fulfilling priestly obligations.  When determining the number of employees, each working person is listed only once. For this purpose, a main workplace is assigned to her. Data on people working in the national economy are presented in relation to their main workplace. Data on the number of people employed in the national economy in the main workplace are given in persons as at the end of December.",
                                         
                                           "source": "Statistics Poland",
                                         
@@ -6536,7 +6536,7 @@
                                         
                                           "definition": "The number of people who have not worked so far, registered in district labour offices as unemployed per 1000 population aged 18-59/64 years.",
                                         
-                                          "unit": "person",
+                                          "unit": "persons",
                                         
                                           "dimensions": "total",
                                         
@@ -7479,7 +7479,7 @@
                         "metadata": [
                           
                           {
-                                          "name": "9.C.3 Length of railway lines total per 100 km2",
+                                          "name": "9.C.3 Length of railway lines total per 100 km²",
                                         
                                           "goal": "Goal 9. Industry, innovation and infrastructure",
                                         
@@ -7662,7 +7662,7 @@
                                         
                                           "definition": "The indicator is calculated based on the population status as of mid-year, i.e. 30.06, and on data on the geodetic area of the country according to directions of use.",
                                         
-                                          "unit": "percent",
+                                          "unit": "persons",
                                         
                                           "dimensions": "total",
                                         
@@ -7697,7 +7697,7 @@
                                         
                                           "definition": "Number of railway stations adapted to serve disabled people.",
                                         
-                                          "unit": "percent",
+                                          "unit": "-",
                                         
                                           "dimensions": "total",
                                         
@@ -7705,7 +7705,7 @@
                                         
                                           "source": "Statistics Poland",
                                         
-                                          "availability": "Annual data, since 2016",
+                                          "availability": "Annual data, since 2015",
                                         
                                           "notes": "",
                                         
@@ -7837,7 +7837,7 @@
                                         
                                           "definition": "Percentage of disabled individuals using the Internet for private contacts with public authorities (in the last 12 months).",
                                         
-                                          "unit": "-",
+                                          "unit": "percent",
                                         
                                           "dimensions": "total",
                                         
@@ -7845,7 +7845,7 @@
                                         
                                           "source": "Statistics Poland",
                                         
-                                          "availability": "Annual data, since 2015",
+                                          "availability": "Annual data, since 2010",
                                         
                                           "notes": "",
                                         
@@ -7872,7 +7872,7 @@
                                         
                                           "definition": "Percentage of households with at least one person aged 16-74 having broadband Internet access at home.",
                                         
-                                          "unit": "-",
+                                          "unit": "percent",
                                         
                                           "dimensions": "total",
                                         
@@ -8870,7 +8870,7 @@
                                         
                                           "definition": "Total weight of municipal waste generated during the surveyed year per capita (as of  30 June of the surveyed year).",
                                         
-                                          "unit": "kilogram",
+                                          "unit": "kg",
                                         
                                           "dimensions": "total",
                                         
@@ -9388,41 +9388,6 @@
                   },
                   
                   {
-                    "13-B-2": [
-                      {
-                        "metadata": [
-                          
-                          {
-                                          "name": "13.B.2 Outlays on fixed assets serving environmental protection in research-development activity",
-                                        
-                                          "goal": "Goal 13. Climate action",
-                                        
-                                          "priority": "Introduction of innovative technologies for the use of available energy sources",
-                                        
-                                          "definition": "Gross fixed capital formation for environmental protection in research and development.",
-                                        
-                                          "unit": "thousands, PLN",
-                                        
-                                          "dimensions": "total",
-                                        
-                                          "methodology": "Gross fixed capital formation – expenditure that increases the value of fixed assets and expenditure incurred for the repair of fixed assets and the increase in intangible assets.Investments on environmental protection – expenditure on creation or increase of fixed assets serving environmental protection. They can be expressed:1) in monetary terms, as investment expenditures incurred for environmental protection activities,2) in tangible form (effects), as environmental protection devices or technical equipment used for environmental protection purposes. Those may be end-of-pipe equipment or integrated technologies.Research and development (R&D) - research and experimental development (R&D) comprise creative and systematic work undertaken in order to increase the stock of knowledge - including knowledge of humankind, culture and society - and to devise new applications of available knowledge.The five criteria for identifying R&D:• novel - to be aimed at new findings,• creative - to be based on original, not obvious, concepts and hypotheses,• uncertain - to be uncertain about the final outcome and the cost, including time allocation,• systematic - to be conducted in a planned way (with identified the purpose of the R&D project and the sources of funding),• transferable and/or reproducible - to lead to results that could be possibly reproduced.Research and development includes:1. scientific researcha)	- basic researchb)	- applied research (industrial research)2. experimental development",
-                                        
-                                          "source": "Statistics Poland / Ministry of Agriculture and Rural Development / Chief Inspectorate of Environmental Protection / Ministry of Climate and Environment",
-                                        
-                                          "availability": "Annual data, since 2010",
-                                        
-                                          "notes": "",
-                                        
-                                          "data_updated_on": "",
-                                        
-                                          "metadata_updated_on": ""
-                                        }
-                        ]
-                      }
-                    ]
-                  },
-                  
-                  {
                     "13-C-1": [
                       {
                         "metadata": [
@@ -9751,7 +9716,7 @@
                                         
                                           "definition": "Total investment outlays for creation of small water retention facilities in a year.",
                                         
-                                          "unit": "thousands, PLN",
+                                          "unit": "thous. PLN",
                                         
                                           "dimensions": "total",
                                         
@@ -10986,7 +10951,7 @@
                         "metadata": [
                           
                           {
-                                          "name": "16.C.1 Voters on projects for 100 thous. inhabitants",
+                                          "name": "16.C.1 Voters on projects for 10 thous. inhabitants",
                                         
                                           "goal": "Goal 16. Peace and justice - strong institutions",
                                         
@@ -10994,7 +10959,7 @@
                                         
                                           "definition": "Number of inhabitants who took part in voting on projects submitted in the form of a civic budget per 10 000 population (as of 30 June of the surveyed  year).",
                                         
-                                          "unit": "person",
+                                          "unit": "persons",
                                         
                                           "dimensions": "total",
                                         
@@ -11169,7 +11134,7 @@
                                         
                                           "definition": "Percentage of disabled individuals using the Internet for private contacts with public authorities (in the last 12 months).",
                                         
-                                          "unit": "-",
+                                          "unit": "percent",
                                         
                                           "dimensions": "total",
                                         
@@ -11358,7 +11323,7 @@
                                         
                                           "source": "Statistics Poland",
                                         
-                                          "availability": "Annual data, since 2006",
+                                          "availability": "Annual data, since 2010",
                                         
                                           "notes": "",
                                         
