@@ -16,7 +16,7 @@ pl_priorytet: >-
   Rozwój profilaktyki zdrowotnej i rehabilitacji oraz promocja zdrowia
 pl_definicja: >-
   Liczba porad specjalistycznych udzielonych w ramach ambulatoryjnej opieki zdrowotnej (w tysiącach).
-pl_jednostka_prezentacji: sztuki
+pl_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 pl_zrodlo_danych: Główny Urząd Statystyczny
 pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2012 r.
@@ -26,7 +26,7 @@ en_cel: Goal 3. Good health and well-being
 en_zadanie: null
 en_priorytet: >-
   Development of health prevention and rehabilitation and health promotion
-en_jednostka_prezentacji: pieces
+en_jednostka_prezentacji: '-'
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Annual data, since 2012
