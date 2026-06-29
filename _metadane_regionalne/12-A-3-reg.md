@@ -25,7 +25,7 @@ pl_definicja: >-
 en_definicja: >-
   Total weight of municipal waste generated during the surveyed year per capita (as of  30 June of the surveyed year).
 pl_jednostka_prezentacji: kg
-en_jednostka_prezentacji: kilogram
+en_jednostka_prezentacji: kg
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny / Główny Inspektorat Ochrony Środowiska / Ministerstwo Klimatu i Środowiska

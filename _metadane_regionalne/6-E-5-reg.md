@@ -25,7 +25,7 @@ pl_definicja: >-
 en_definicja: >-
   Value of investment outlays, whether financial or in kind, for collective sewage in the rural areas, incurred during the year.
 pl_jednostka_prezentacji: tys. zł
-en_jednostka_prezentacji: in thousand PLN
+en_jednostka_prezentacji: thous. PLN
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Rolnictwa i Rozwoju Wsi

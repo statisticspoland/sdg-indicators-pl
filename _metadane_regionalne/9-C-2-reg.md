@@ -1,7 +1,7 @@
 ---
 translation_id: 9-C-2-reg
 pl_title: >-
-  Gęstość dróg ekspresowych i autostrad na 1000 km²  
+  Gęstość dróg ekspresowych i autostrad na 1000 km²
 pl_graph_title: >-
   Gęstość dróg ekspresowych i autostrad na 1000 km²
 pl_nazwa_wskaznika: >-

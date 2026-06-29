@@ -1,17 +1,17 @@
 ---
 translation_id: 9-C-3-reg
 pl_title: >-
-  Długość linii kolejowych ogółem na 100 km2
+  Długość linii kolejowych ogółem na 100 km²
 pl_graph_title: >-
-  Długość linii kolejowych ogółem na 100 km2
+  Długość linii kolejowych ogółem na 100 km²
 pl_nazwa_wskaznika: >-
-  <b>9.C.3 Długość linii kolejowych ogółem na 100 km2</b>
+  <b>9.C.3 Długość linii kolejowych ogółem na 100 km²</b>
 en_title: >-
-  Length of railway lines total per 100 km2
+  Length of railway lines total per 100 km²
 en_graph_title: >-
-  Length of railway lines total per 100 km2
+  Length of railway lines total per 100 km²
 en_nazwa_wskaznika: >-
-  <b>9.C.3 Length of railway lines total per 100 km2</b>
+  <b>9.C.3 Length of railway lines total per 100 km²</b>
 pl_cel: Cel 9. Innowacyjność, Przemysł, Infrastruktura
 en_cel: Goal 9. Industry, innovation and infrastructure
 pl_zadanie: null

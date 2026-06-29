@@ -24,8 +24,8 @@ pl_definicja: >-
   Odsetek gospodarstw domowych z przynajmniej jedną osobą w wieku 16-74 lata posiadających szerokopasmowy dostęp do Internetu w domu.
 en_definicja: >-
   Percentage of households with at least one person aged 16-74 having broadband Internet access at home.
-pl_jednostka_prezentacji: '-'
-en_jednostka_prezentacji: '-'
+pl_jednostka_prezentacji: procent
+en_jednostka_prezentacji: percent
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

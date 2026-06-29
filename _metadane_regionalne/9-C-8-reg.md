@@ -24,8 +24,8 @@ pl_definicja: >-
   Wskaźnik jest wyliczany na podstawie stanu ludności na połowę roku, tj. 30.06 oraz z danych o powierzchni geodezyjnej kraju według kierunków wykorzystania.
 en_definicja: >-
   The indicator is calculated based on the population status as of mid-year, i.e. 30.06, and on data on the geodetic area of the country according to directions of use.
-pl_jednostka_prezentacji: procent
-en_jednostka_prezentacji: percent
+pl_jednostka_prezentacji: osoby
+en_jednostka_prezentacji: persons
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
