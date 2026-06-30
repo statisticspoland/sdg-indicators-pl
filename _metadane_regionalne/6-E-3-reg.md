@@ -25,7 +25,7 @@ pl_definicja: >-
 en_definicja: >-
   The value of financial or material expenditure on creating or increasing the value of fixed assets used for wastewater management and water protection, incurred during the year.
 pl_jednostka_prezentacji: tys. zł
-en_jednostka_prezentacji: in thousand PLN
+en_jednostka_prezentacji: thous. PLN
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

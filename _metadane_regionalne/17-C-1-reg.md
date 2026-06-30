@@ -30,8 +30,8 @@ pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
 en_zrodlo_danych: Statistics Poland 
-pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2006 r.
-en_czestotliwosc_dostępnosc_danych: Annual data, since 2006
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p>Przychody netto ze sprzedaży produktów obejmują kwoty należne - bez podatku od towarów i usług - z tytułu sprzedaży produktów (wyrobów i usług), towarów i materiałów.</p>

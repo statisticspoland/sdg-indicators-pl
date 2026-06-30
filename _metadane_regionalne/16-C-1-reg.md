@@ -24,8 +24,8 @@ pl_definicja: >-
   Liczba mieszkańców, którzy wzięli udział w głosowaniu nad projektami zgłoszonymi w formule budżetu obywatelskiego przeliczeniu na 10 000 ludności (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
   Number of inhabitants who took part in voting on projects submitted in the form of a civic budget per 10 000 population (as of 30 June of the surveyed  year).
-pl_jednostka_prezentacji: osoba
-en_jednostka_prezentacji: person
+pl_jednostka_prezentacji: osoby
+en_jednostka_prezentacji: persons
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny

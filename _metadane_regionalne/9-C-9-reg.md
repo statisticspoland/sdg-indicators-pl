@@ -24,14 +24,14 @@ pl_definicja: >-
   Liczba dworców kolejowych przystosowanych do obsługi osób niepełnosprawnych.
 en_definicja: >-
   Number of railway stations adapted to serve disabled people.
-pl_jednostka_prezentacji: procent
-en_jednostka_prezentacji: percent
+pl_jednostka_prezentacji: '-'
+en_jednostka_prezentacji: '-'
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
 en_zrodlo_danych: Statistics Poland
-pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2016 r.
-en_czestotliwosc_dostępnosc_danych: Annual data, since 2016
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2015 r.
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2015
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p>Dworzec kolejowy przystosowany do obsługi osób niepełnosprawnych – obiekt budowlany wraz ze związanymi z nim urządzeniami budowlanymi zapewniający niezbędne warunki do korzystania z nich przez osoby niepełnosprawne, w szczególności poruszające się na wózkach inwalidzkich, np. wyposażone w ułatwienia dojścia i wyjścia z/do budynków, urządzenia dźwigowe, schody i pochylnie (ustawa z dnia 7 lipca 1994 r. – Prawo budowlane, Dz. U. z 2017 r. poz. 1332, z późn. zm.) oraz rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz. U. z 2015 r. poz. 1422). W praktyce jest to obiekt posiadający udogodnienia do poruszania się osób niepełnosprawnych na terenie dworca (np. usługa asysty, obsługa w języku migowym, wspólne kasy dla wszystkich przewoźników, urządzenia wspomagające poruszanie się z ograniczoną mobilnością, dostosowane toalety), peronów, przejść podziemnych, kładek i innych ciągów komunikacyjnych (np. windy, platformy, poziome oznakowanie terenu).</p>

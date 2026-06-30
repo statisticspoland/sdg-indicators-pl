@@ -25,7 +25,7 @@ pl_definicja: >-
 en_definicja: >-
   Total investment outlays for creation of small water retention facilities in a year.
 pl_jednostka_prezentacji: tys. zł
-en_jednostka_prezentacji: thousands, PLN
+en_jednostka_prezentacji: thous. PLN
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Infrastruktury

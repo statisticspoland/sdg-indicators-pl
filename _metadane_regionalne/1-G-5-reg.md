@@ -26,7 +26,7 @@ en_cel: Goal 1. No poverty
 en_zadanie: null
 en_priorytet: >-
   Providing housing conditions for the most vulnerable and socially needy groups
-en_jednostka_prezentacji: pices
+en_jednostka_prezentacji: pieces
 en_dostepne_wymiary: total
 en_zrodlo_danych: Statistics Poland
 en_czestotliwosc_dostępnosc_danych: Since 2013 data in two-year cycles

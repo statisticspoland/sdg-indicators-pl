@@ -25,7 +25,7 @@ pl_definicja: >-
 en_definicja: >-
   The number of people who have not worked so far, registered in district labour offices as unemployed per 1000 population aged 18-59/64 years.
 pl_jednostka_prezentacji: osoby
-en_jednostka_prezentacji: person
+en_jednostka_prezentacji: persons
 pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Ministerstwo Rodziny, Pracy i Polityki Społecznej / Główny Urząd Statystyczny
