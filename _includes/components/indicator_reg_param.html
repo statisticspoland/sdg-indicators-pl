@@ -1,0 +1,2706 @@
+{% assign table_template = 'components/table1.html' %}
+{% assign id = page.indicator | slugify %}
+{% assign id_map = id | replace: '-reg', '' %}
+
+{% assign slug = page.indicator | replace: '.', '-' %}
+{% assign t1 = site.metadane_regionalne | where:"translation_id", slug | first %}
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="data">
+    <div style="display: flow-root;">
+    {% if page.graph == 'bar' or page.graph == 'longitudinal' or page.graph == 'scatter'%}
+
+      {% assign graph_type = page.graph %}
+
+      {% if page.graph == 'longitudinal' %}
+        {% assign graph_type = 'line' %}
+      {% endif %}
+
+      {% assign graph_template = 'components/' | append: graph_type | append: '.html' %}
+      {% assign indicator_template = 'components/indicator1' | append: '.html' %}
+
+      <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/locales/pl_PL.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/geodata/polandLow.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapReg.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapRegStep.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/wojewodztwaMapRegKart.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/line_param.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/scatter_param.js"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/amchart5/reg/bar.js"></script>
+
+      <div style="width: 15%; display: inline-block; margin-top: 6px; vertical-align: top;">
+<!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
+        {% if language == 'pl' %}
+          Rok:
+        {% else %}
+          Year:
+        {% endif %}
+        </label>
+ -->
+          {% if id_map == '1-g-2' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+          </select>
+          {% elsif id_map == '5-a-9' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2023">2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+          </select>
+          {% elsif id_map == '6-b-1' or id_map == '6-d-5' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+            <option style="font-family: Fira Sans" value="2014">2014</option>
+            <option style="font-family: Fira Sans" value="2013">2013</option>
+            <option style="font-family: Fira Sans" value="2012">2012</option>
+            <option style="font-family: Fira Sans" value="2011">2011</option>
+            <option style="font-family: Fira Sans" value="2010">2010</option>
+          </select>
+          {% elsif id_map == '6-a-2' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2023">2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+            <option style="font-family: Fira Sans" value="2014">2014</option>
+            <option style="font-family: Fira Sans" value="2013">2013</option>
+            <option style="font-family: Fira Sans" value="2012">2012</option>
+            <option style="font-family: Fira Sans" value="2011">2011</option>
+            <option style="font-family: Fira Sans" value="2010">2010</option>
+          </select>
+          {% elsif id_map == '6-e-1' or id_map == '6-c-6' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2023">2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+            <option style="font-family: Fira Sans" value="2014">2014</option>
+            <option style="font-family: Fira Sans" value="2013">2013</option>
+            <option style="font-family: Fira Sans" value="2012">2012</option>
+            <option style="font-family: Fira Sans" value="2011">2011</option>
+            <option style="font-family: Fira Sans" value="2010">2010</option>
+
+          </select>
+          {% elsif id_map == '6-d-4'%}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2023">2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+          </select>
+          {% elsif id_map == '8-c-1' or id_map == '8-d-4' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2023">2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+
+          </select>
+          {% elsif id_map == '11-d-2' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2023">2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+            <option style="font-family: Fira Sans" value="2014">2014</option>
+            <option style="font-family: Fira Sans" value="2013">2013</option>
+            <option style="font-family: Fira Sans" value="2012">2012</option>
+            <option style="font-family: Fira Sans" value="2011">2011</option>
+            <option style="font-family: Fira Sans" value="2010">2010</option>
+
+          </select>
+
+          {% elsif id_map == '13-c-4' or id_map == '12-e-2' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name"
+              style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+              <option style="font-family: Fira Sans" value="2023">2023</option>
+              <option style="font-family: Fira Sans" value="2022">2022</option>
+              <option style="font-family: Fira Sans" value="2021">2021</option>
+              <option style="font-family: Fira Sans" value="2020">2020</option>
+              <option style="font-family: Fira Sans" value="2019">2019</option>
+              <option style="font-family: Fira Sans" value="2018">2018</option>
+              <option style="font-family: Fira Sans" value="2017">2017</option>
+              <option style="font-family: Fira Sans" value="2016">2016</option>
+              <option style="font-family: Fira Sans" value="2015">2015</option>
+              <option style="font-family: Fira Sans" value="2014">2014</option>
+              <option style="font-family: Fira Sans" value="2013">2013</option>
+              <option style="font-family: Fira Sans" value="2012">2012</option>
+              <option style="font-family: Fira Sans" value="2011">2011</option>
+              <option style="font-family: Fira Sans" value="2010">2010</option>
+            </select>
+          {% elsif id_map == '14-c-3' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name"
+              style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+              <option style="font-family: Fira Sans" value="2024">2024</option>
+              <option style="font-family: Fira Sans" value="2023">2023</option>
+              <option style="font-family: Fira Sans" value="2022">2022</option>
+              <option style="font-family: Fira Sans" value="2021">2021</option>
+              <option style="font-family: Fira Sans" value="2020">2020</option>
+              <option style="font-family: Fira Sans" value="2019">2019</option>
+              <option style="font-family: Fira Sans" value="2018">2018</option>
+              <option style="font-family: Fira Sans" value="2017">2017</option>
+              <option style="font-family: Fira Sans" value="2016">2016</option>
+              <option style="font-family: Fira Sans" value="2015">2015</option>
+              <option style="font-family: Fira Sans" value="2014">2014</option>
+              <option style="font-family: Fira Sans" value="2013">2013</option>
+              <option style="font-family: Fira Sans" value="2012">2012</option>
+              <option style="font-family: Fira Sans" value="2011">2011</option>
+              <option style="font-family: Fira Sans" value="2010">2010</option>
+            </select>
+          {% elsif id_map == '14-c-4' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name"
+              style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+              <option style="font-family: Fira Sans" value="2024">2024</option>
+              <option style="font-family: Fira Sans" value="2023">2023</option>
+              <option style="font-family: Fira Sans" value="2022">2022</option>
+              <option style="font-family: Fira Sans" value="2021">2021</option>
+              <option style="font-family: Fira Sans" value="2020">2020</option>
+              <option style="font-family: Fira Sans" value="2019">2019</option>
+              <option style="font-family: Fira Sans" value="2018">2018</option>
+              <option style="font-family: Fira Sans" value="2017">2017</option>
+              <option style="font-family: Fira Sans" value="2016">2016</option>
+              <option style="font-family: Fira Sans" value="2015">2015</option>
+              <option style="font-family: Fira Sans" value="2014">2014</option>
+              <option style="font-family: Fira Sans" value="2013">2013</option>
+              <option style="font-family: Fira Sans" value="2012">2012</option>
+              <option style="font-family: Fira Sans" value="2011">2011</option>
+              <option style="font-family: Fira Sans" value="2010">2010</option>
+            </select>
+          {% elsif id_map == '14-c-5' %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name"
+              style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+              <option style="font-family: Fira Sans" value="2024">2024</option>
+              <option style="font-family: Fira Sans" value="2023">2023</option>
+              <option style="font-family: Fira Sans" value="2022">2022</option>
+              <option style="font-family: Fira Sans" value="2021">2021</option>
+              <option style="font-family: Fira Sans" value="2020">2020</option>
+              <option style="font-family: Fira Sans" value="2019">2019</option>
+              <option style="font-family: Fira Sans" value="2018">2018</option>
+              <option style="font-family: Fira Sans" value="2017">2017</option>
+              <option style="font-family: Fira Sans" value="2016">2016</option>
+              <option style="font-family: Fira Sans" value="2015">2015</option>
+              <option style="font-family: Fira Sans" value="2014">2014</option>
+              <option style="font-family: Fira Sans" value="2013">2013</option>
+              <option style="font-family: Fira Sans" value="2012">2012</option>
+              <option style="font-family: Fira Sans" value="2011">2011</option>
+              <option style="font-family: Fira Sans" value="2010">2010</option>
+            </select>
+
+            {% elsif id_map == '17-a-1' %}
+            <select id="yearBox" onchange="wyborYear()" name="year-name"
+                style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+                <option style="font-family: Fira Sans" value="2022">2022</option>
+                <option style="font-family: Fira Sans" value="2020">2020</option>
+              </select>
+
+          {% else %}
+          <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2021">2021</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+            <option style="font-family: Fira Sans" value="2019">2019</option>
+            <option style="font-family: Fira Sans" value="2018">2018</option>
+            <option style="font-family: Fira Sans" value="2017">2017</option>
+            <option style="font-family: Fira Sans" value="2016">2016</option>
+            <option style="font-family: Fira Sans" value="2015">2015</option>
+            <option style="font-family: Fira Sans" value="2014">2014</option>
+            <option style="font-family: Fira Sans" value="2013">2013</option>
+            <option style="font-family: Fira Sans" value="2012">2012</option>
+            <option style="font-family: Fira Sans" value="2011">2011</option>
+            <option style="font-family: Fira Sans" value="2010">2010</option>
+          </select>
+          {% endif %}
+      </div>
+
+      <div style="width: 15%; display: inline-block; margin-top: 6px; margin-left: 5px; vertical-align: top;">
+<!--         <label for="years" style="margin: 10px; max-width: 100px; display: inline; font-weight: normal;">
+        {% if language == 'pl' %}
+          Rok:
+        {% else %}
+          Year:
+        {% endif %}
+        </label>
+ -->
+ {% if id_map == '3-c-1' %}
+   {% if language == 'pl' %}
+            <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="ogółem" selected>ogółem</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia" data-short="anestezjologia..." >anestezjologia i intensywna terapia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia" data-short="chirurgia" >chirurgia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc" data-short="choroby płuc">choroby płuc</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne" data-short="choroby..." >choroby wewnętrzne</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia" data-short="dermatologia..." >dermatologia i wenerologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia" data-short="kardiologia" >kardiologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna" data-short="medycyna..." >medycyna rodzinna</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy" data-short="medycyna pracy" >medycyna pracy</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia" data-short="neurologia" >neurologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia" data-short="endokrynologia" >endokrynologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia" data-short="diabetologia" >diabetologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka" data-short="okulistyka" >okulistyka</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia" data-short="onkologia" >onkologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia" data-short="otolaryngologia" >otolaryngologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria" data-short="pediatria" >pediatria</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia" data-short="położnictwo..." >położnictwo i ginekologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria" data-short="psychiatria" >psychiatria</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka" data-short="radiodiagnostyka" >radiodiagnostyka</option>
+              </select>
+    {% else %}
+      <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="total" selected>total</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia" data-short="anesthesiology..." >anesthesiology and intensive therapy</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia" data-short="surgery" >surgery</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc" data-short="respiratory..." >respiratory diseases</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne" data-short="internal..." >internal diseases</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia" data-short="dermatology..." >dermatology and venereology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia" data-short="cardiology" >cardiology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna" data-short="general..." >general practitioners</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy" data-short="medicine..." >medicine service</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia" data-short="neurology" >neurology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia" data-short="endocrinology" >endocrinology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia" data-short="diabetology" >diabetology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka" data-short="ophthalmology" >ophthalmology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia" data-short="oncology" >oncology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia" data-short="otolaryngology" >otolaryngology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria" data-short="paediatrics" >paediatrics</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia" data-short="obstetrics..." >obstetrics and gynaecology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria" data-short="psychiatry" >psychiatry</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka" data-short="radiology..." >radiology and diagnostic imaging</option>
+      </select>
+    {% endif %}
+  {% elsif id_map == '5-a-9' or id_map == '8-c-1' or id_map == '8-d-4' %}
+   {% if language == 'pl' %}
+     <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+       <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+       <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">mężczyźni</option>
+       <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">kobiety</option>
+     </select>
+   {% else %}
+     <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+       <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+       <option style="font-family: Fira Sans;font-size: 14px;" value="mężczyźni">men</option>
+       <option style="font-family: Fira Sans;font-size: 14px;" value="kobiety">women</option>
+     </select>
+   {% endif %}
+  {% elsif id_map == '6-a-2' %}
+     {% if language == 'pl' %}
+       <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+         <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="ogółem" selected>ogółem</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody" data-short="ujęcia i ...">ujęcia i doprowadzenia wody</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody" data-short="budowa i ...">budowa i modernizacja stacji uzdatniania wody</option>
+       </select>
+     {% else %}
+       <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+         <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="total" selected>total</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody" data-short="water intakes..." >water intakes...</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody" data-short="construction and ..." >construction and ...</option>
+       </select>
+     {% endif %}
+    {% elsif id_map == '6-e-1' or id_map == '13-c-4' %}
+        {% if language == 'pl' %}
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="ogółem" selected>ogółem</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska" data-short="służące ochronie...">służące ochronie środowiska</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej" data-short="służące gospo...">służące gospodarce wodnej</option>
+          </select>
+        {% else %}
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="total" selected>total</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska" data-short="on environmental...">on environmental protection</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej" data-short="on water...">on water management</option>
+          </select>
+        {% endif %}
+
+    {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
+        {% if language == 'pl' %}
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">przyjazdy</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">wyjazdy</option>
+          </select>
+        {% else %}
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">arrivals</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">departures</option>
+          </select>
+        {% endif %}
+
+        {% elsif id_map == '14-c-5' %}
+            {% if language == 'pl' %}
+              <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem" data-short="załadunek..." selected>załadunek łącznie z tranzytem</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem" data-short="wyładunek...">wyładunek łącznie z tranzytem</option>
+              </select>
+            {% else %}
+              <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem" data-short="loading...">loading including transit</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem" data-short="unloading...">unloading including transit</option>
+              </select>
+            {% endif %}
+
+            {% elsif id_map == '17-a-1' %}
+                {% if language == 'pl' %}
+                  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" data-short="plan nisko..." selected>plan niskoemisyjnej gospodarki</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" data-short="lokalny pro...">lokalny program rozwoju ekonomii społecznej</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" data-short="program o..." >program ochrony środowiska</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" data-short="roczny pro...">roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" data-short="strategia gm..." >strategia rozwoju gminy</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" data-short="strategia pro..." >strategia rozwiązywania problemów społecznych</option>
+
+                  </select>
+                {% else %}
+                  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" data-short="low-emission..." selected>low-emission economy plan</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" data-short="local ...">local social economy development programme</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" data-short="revitali...">revitalisation programme</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" data-short="long-term...">long-term cooperation programme with non-governmental organisations and other entities engaged in public benefit activities</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" data-short="spatial de...">spatial development plan</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" data-short="alcohol pre...">alcohol prevention and problem-solving programme</option>
+                  </select>
+                {% endif %}
+
+ {% else %}
+   {% if language == 'pl' %}
+            <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">miasto</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">wieś</option>
+            </select>
+    {% else %}
+      <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
+      </select>
+    {% endif %}
+  {% endif %}
+      </div>
+
+      <div style="width: 55%; margin: auto; margin-top: 10px; display: inline-block; vertical-align: top;">
+        <p id="wartoscPolska" style="margin: 0 auto; text-align: center; margin-left: 20%;">
+          {% if language == 'pl' %}
+            Wczytywanie danych...
+          {% else %}
+            Loading data...
+          {% endif %}
+        </p>
+      </div>
+
+      <div class="grid-container" style="width: 70%; margin: auto; display: inline-block; margin-left: 28%;">
+        <div id = "map1" class="grid-child">
+          <div id="mapdiv" style="width: 100%;height: 400px">
+            <div id="mapWoj" style="width: 100%;height: 400px"></div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+  <script>
+
+  function processData(data_processed) {
+  //console.log("Dane gotowe:", data_processed);
+  // użyj data gdzie chcesz
+/*    if("{{id_map }}" == "6-a-2"){
+      createMapWojStep("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+    }
+    else{*/
+        if (["14-a-3"].includes("{{ id_map }}") || ["14-a-4"].includes("{{ id_map }}") || ["14-c-3"].includes("{{ id_map }}") || ["14-c-4"].includes("{{ id_map }}") || ["14-c-5"].includes("{{ id_map }}") || ["14-d-2"].includes("{{ id_map }}") || ["14-d-3"].includes("{{ id_map }}") || ["17-a-1"].includes("{{ id_map }}")) {
+          createMapWojKart("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+        }
+        else {
+        createMapWojStep("mapWoj", data_processed, "{{ language }}", {{ precyzja }});
+      }
+    //}
+  }
+
+  function loadDataAndRenderMap(rok, param) {
+  am5.ready(function() {
+
+  am5.net.load("{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv").then(function(result) {
+
+    // Parse data
+    var data = am5.CSVParser.parse(result.response, {
+      delimiter: ",",
+      reverse: true,
+      skipEmpty: true,
+      useColumnNames: true
+    });
+
+    // Zamiana pustych wartości na null
+    data.forEach(function(item) {
+      // Przejdź po wszystkich polach obiektu
+      Object.keys(item).forEach(function(key) {
+        if (item[key] === "" || item[key] === undefined) {
+          item[key] = NaN;
+        }
+      });
+    });
+
+    var data_filtered = data
+      .filter(item => item.REGION !== "Polska")  // usuwa wpis dla całej Polski
+      .filter(item => item.PARAM == param)  // wybiera wpisy dla param
+      .map(item => {
+
+    let newName;
+
+    switch (item.REGION) {
+      case "Dolnośląskie":
+        newName = "PL-02";
+        break;
+      case "Kujawsko-Pomorskie":
+        newName = "PL-04";
+        break;
+      case "Lubelskie":
+        newName = "PL-06";
+        break;
+      case "Lubuskie":
+        newName = "PL-08";
+        break;
+      case "Łódzkie":
+        newName = "PL-10";
+        break;
+      case "Małopolskie":
+        newName = "PL-12";
+        break;
+      case "Mazowieckie":
+        newName = "PL-14";
+        break;
+      case "Opolskie":
+        newName = "PL-16";
+        break;
+      case "Podkarpackie":
+        newName = "PL-18";
+        break;
+      case "Podlaskie":
+        newName = "PL-20";
+        break;
+      case "Pomorskie":
+        newName = "PL-22";
+        break;
+      case "Śląskie":
+        newName = "PL-24";
+        break;
+      case "Świętokrzyskie":
+        newName = "PL-26";
+        break;
+      case "Warmińsko-Mazurskie":
+        newName = "PL-28";
+        break;
+      case "Wielkopolskie":
+        newName = "PL-30";
+        break;
+      case "Zachodniopomorskie":
+        newName = "PL-32";
+        break;
+      default:
+        newName = "PL-PL";
+    }
+
+    return {
+      id: newName,
+      value: Number(item[rok])
+    };
+  });
+
+  //console.log("data", data);
+  //console.log("data_filtered", data_filtered);
+
+  processData(data_filtered);
+  });
+
+    //var daneWoj = [{"id":"PL-02","value":97.223785641},{"id":"PL-04","value":94.4174451195},{"id":"PL-06","value":96.3942170481},{"id":"PL-08","value":96.8237887052},{"id":"PL-10","value":96.5128258255},{"id":"PL-12","value":98.3907790671},{"id":"PL-14","value":98.012883452},{"id":"PL-16","value":99.210081905},{"id":"PL-18","value":94.2844886674},{"id":"PL-20","value":89.8130658568},{"id":"PL-22","value":94.7017846298},{"id":"PL-24","value":98.471359928},{"id":"PL-26","value":97.4958489946},{"id":"PL-28","value":92.3905090752},{"id":"PL-30","value":95.6207943758},{"id":"PL-32","value":94.3770711078},{"id":"PL-PL","value":96.1862414329}];
+    //console.log("daneWoj", daneWoj);
+  }); // end am5.ready()
+
+  };
+
+  {% if id_map == '5-a-9' or id_map == '6-a-2' or id_map == '6-e-1' or id_map == '6-c-6' or id_map == '8-c-1' or id_map == '8-d-4' or id_map == '11-d-2'  or id_map == '13-c-4' or id_map == '12-e-2' %}
+  loadDataAndRenderMap("2024","ogółem");
+  {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
+  loadDataAndRenderMap("2025","przyjazdy");
+  {% elsif id_map == '14-c-5' %}
+  loadDataAndRenderMap("2025","załadunek łącznie z tranzytem");
+  {% elsif id_map == '17-a-1' %}
+  loadDataAndRenderMap("2024","plan gospodarki niskoemisyjnej");
+  {% else %}
+  loadDataAndRenderMap("2023","ogółem");
+  {% endif %}
+
+  function wyborYear() {
+    var yearBox = document.getElementById("yearBox");
+    var paramBox = document.getElementById("paramBox");
+    var selectedYear = yearBox.options[yearBox.selectedIndex].value;
+    var selectedParam = paramBox.options[paramBox.selectedIndex].value;
+    //console.log(selectedYear);
+    loadDataAndRenderMap(selectedYear,selectedParam);
+    //if(selectedYear===0){
+    //loadDataAndRenderMap("2023",selectedParam);
+    //}
+    //if(selectedYear===1){
+    //loadDataAndRenderMap("2022",selectedParam);
+    //}
+    //if(selectedYear===2){
+    //loadDataAndRenderMap("2021",selectedParam);
+    //}
+    //if(selectedYear===3){
+    //loadDataAndRenderMap("2020",selectedParam);
+    //}
+    //if(selectedYear===4){
+    //loadDataAndRenderMap("2019",selectedParam);
+    //}
+    //if(selectedYear===5){
+    //loadDataAndRenderMap("2018",selectedParam);
+    //}
+    //if(selectedYear===6){
+    //loadDataAndRenderMap("2017",selectedParam);
+    //}
+    //if(selectedYear===7){
+    //loadDataAndRenderMap("2016",selectedParam);
+    //}
+    //if(selectedYear===8){
+    //loadDataAndRenderMap("2015",selectedParam);
+    //}
+    //if(selectedYear===9){
+    //loadDataAndRenderMap("2014",selectedParam);
+    //}
+    //if(selectedYear===10){
+    //loadDataAndRenderMap("2013",selectedParam);
+    //}
+    //if(selectedYear===11){
+    //loadDataAndRenderMap("2012",selectedParam);
+    //}
+    //if(selectedYear===12){
+    //loadDataAndRenderMap("2011",selectedParam);
+    //}
+    //if(selectedYear===13){
+    //loadDataAndRenderMap("2010",selectedParam);
+    //}
+   };
+
+  function wyborParam() {
+
+    if('{{ id_map }}' == '6-a-2' || '{{ id_map }}' == '3-c-1' || '{{ id_map }}' == '6-e-1' || '{{ id_map }}' == '13-c-4' || '{{ id_map }}' == '14-c-5' || '{{ id_map }}' == '17-a-1'){
+      const select = document.getElementById("paramBox");
+
+       // restore all long labels first
+       for (let option of select.options) {
+         if (option.dataset.long) {
+           option.text = option.dataset.long;
+         } else {
+           option.dataset.long = option.text;
+         }
+       }
+
+       // set short label for selected option
+       const selected = select.options[select.selectedIndex];
+       selected.text = selected.dataset.short;
+    }
+
+    var yearBox = document.getElementById("yearBox");
+    var paramBox = document.getElementById("paramBox");
+    var selectedParam = paramBox.options[paramBox.selectedIndex].value;
+    var selectedYear = yearBox.options[yearBox.selectedIndex].value;
+    //console.log(selectedYear);
+    //console.log(selectedParam);
+    loadDataAndRenderMap(selectedYear,selectedParam);
+    //if(selectedParam===0){
+    //loadDataAndRenderMap(selectedYear,"ogółem");
+    //}
+    //if(selectedParam===1){
+    //loadDataAndRenderMap(selectedYear,"miasto");
+    //}
+    //if(selectedParam===2){
+    //loadDataAndRenderMap(selectedYear,"wieś");
+    //}
+   };
+
+  </script>
+
+
+
+  <script>
+  const CSV_URL = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv';
+
+  const i18n = {
+    naglowek: "{% if language == 'pl' %}Polska{% else %}Poland{% endif %}",
+    blad: "{% if language == 'pl' %}Polska - brak danych{% else %}Poland - no data{% endif %}",
+    no_data: "{% if language == 'pl' %}Nie znaleziono danych dla Polski{% else %}No data for Poland{% endif %}"
+  };
+
+  const paramLabels = {
+  pl: {
+    "ogółem": "ogółem",
+    "miasto": "miasto",
+    "wieś": "wieś",
+    "ujęcia i doprowadzenia wody": "ujęcia i doprowadzenia wody",
+    "budowa i modernizacja stacji uzdatniania wody": "budowa i modernizacja stacji uzdatniania wody",
+    "służące ochronie środowiska": "służące ochronie środowiska",
+    "służące gospodarce wodnej": "służące gospodarce wodnej",
+    "przyjazdy": "przyjazdy",
+    "wyjazdy": "wyjazdy",
+    "załadunek łącznie z tranzytem": "załadunek łącznie z tranzytem",
+    "wyładunek łącznie z tranzytem": "wyładunek łącznie z tranzytem"
+  },
+  en: {
+    "ogółem": "total",
+    "miasto": "urban areas",
+    "wieś": "rural areas",
+    "ujęcia i doprowadzenia wody": "water intakes and supplies",
+    "budowa i modernizacja stacji uzdatniania wody": "construction and modernisation of water treatment plants",
+    "służące ochronie środowiska": "on environmental protection",
+    "służące gospodarce wodnej": "on water management",
+    "przyjazdy": "arrivals",
+    "wyjazdy": "departures",
+    "załadunek łącznie z tranzytem": "loading including transit",
+    "wyładunek łącznie z tranzytem": "unloading including transit"
+  }
+  };
+
+  const locale = "{% if language == 'pl' %}pl-PL{% else %}en-US{% endif %}";
+
+  let danePolski = []; // teraz to będzie tablica z wszystkimi wierszami dla Polski
+
+  function parseCSV(csv) {
+    const lines = csv.trim().split("\n");
+    const headers = lines[0].split(",");
+    const rows = lines.slice(1);
+
+    return rows.map(line => {
+      const values = line.split(",");
+      let obj = {};
+      headers.forEach((h, i) => obj[h.trim()] = values[i]?.trim());
+      return obj;
+    });
+  }
+
+  function updateWartosc(rok) {
+    const param = document.getElementById("paramBox").value;
+    const paragraf = document.getElementById("wartoscPolska");
+
+    const wpis = danePolski.find(
+      row => row.PARAM === param
+    );
+
+    if (wpis && wpis[rok] && wpis[rok] !== 'x') {
+      const wartosc = wpis[rok];
+      const czesci = wartosc.split('.');
+      const miejscaPoPrzecinku = czesci.length === 2 ? czesci[1].length : 0;
+      const wartoscLiczbowa = Number(wartosc);
+      const wartoscSformatowana = wartoscLiczbowa.toLocaleString(locale, {
+        minimumFractionDigits: miejscaPoPrzecinku,
+        maximumFractionDigits: miejscaPoPrzecinku
+      });
+      const lang = "{% if language == 'pl' %}pl{% else %}en{% endif %}";
+      const paramLabel = paramLabels[lang][param] || param; // fallback jeśli brak tłumaczenia
+
+      paragraf.textContent = `${i18n.naglowek}: ${wartoscSformatowana} [{% if language == 'pl' %}{{ t1.pl_jednostka_prezentacji }}{% else %}{{ t1.en_jednostka_prezentacji }}{% endif %}]`;
+    } else {
+        paragraf.textContent = `${i18n.blad} [{% if language == 'pl' %}{{ t1.pl_jednostka_prezentacji }}{% else %}{{ t1.en_jednostka_prezentacji }}{% endif %}]`;
+    }
+  }
+
+  // Główne ładowanie
+  fetch(CSV_URL)
+    .then(response => response.text())
+    .then(csvText => {
+      const data = parseCSV(csvText);
+      danePolski = data.filter(row => row.REGION?.toUpperCase() === "POLSKA");
+
+      if (danePolski.length > 0) {
+        updateWartosc(document.getElementById("yearBox").value);
+      } else {
+        document.getElementById("wartoscPolska").textContent = i18n.no_data;
+      }
+    });
+
+  // Obsługa zmiany roku i parametru
+  document.getElementById("yearBox").addEventListener("change", function() {
+    updateWartosc(this.value);
+  });
+
+  document.getElementById("paramBox").addEventListener("change", function() {
+    const rok = document.getElementById("yearBox").value;
+    updateWartosc(rok);
+  });
+</script>
+
+
+<!-----------------------------------------------------STARA WERSJA WYKRESU---------------------------------------------------------------------->
+<!--      {% if licznik>1 %}
+        {% if language == 'pl' %}
+          <div id="filtry">.</div>
+          {% if id != '12-2-2' and id != '1-5-4' and id != '11-b-2' and id != '13-1-3' and id != '8-4-2' and id != '17-13-1' and id != '12-4-2'%}
+          <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;" title="Pokaż wszystkie wymiary na wykresie">Zaznacz wszystko</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;" title="Wyszyść wykres do stanu początkowego">Usuń zaznaczenia</button></div>
+          {% endif %}
+          <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
+          <div id="Legenda" align="center" style="pointer-events: none;"></div>
+        {% else %}
+          <div id="filtry">.</div>
+          {% if id != '12-2-2' and id != '1-5-4' and id != '11-b-2' and id != '13-1-3' and id != '8-4-2' and id != '17-13-1' and id != '12-4-2'%}
+          <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;" title="Show all dimensions on chart">Select All</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;" title="Clear the chart">Clear All</button></div>
+          {% endif %}
+          <br>
+          <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
+          <div id="Legenda" align="center" style="pointer-events: none;"></div>
+        {% endif %}
+        <div>{% include components/filters.html content=filtry content1=foo content2=language%}</div>
+      {%else%}
+        <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels content2=language%}</div>
+        <div id="Legenda" align="center" style="pointer-events: none;"></div>
+      {% endif %}
+    -->
+    <!-----------------------------------------------------NOWA WERSJA WYKRESU - AMCHART---------------------------------------------------------------------->
+    <div style="width: 100%; position: relative;">
+      {% if id_map == '1-a-4' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+      </select>
+      {% elsif id_map == '1-b-2' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+      </select>
+      {% elsif id_map == '1-b-4' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+      </select>
+      {% elsif id_map == '1-b-5' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+      </select>
+      {% elsif id_map == '1-b-7' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+      </select>
+      {% elsif id_map == '1-b-8' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+      </select>
+      {% elsif id_map == '1-c-1' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+      </select>
+      {% elsif id_map == '1-c-2' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+      </select>
+      {% elsif id_map == '1-c-3' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+      </select>
+      {% elsif id_map == '1-d-3' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+      </select>
+      {% elsif id_map == '1-e-1' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2022" selected>2022</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+      </select>
+      {% elsif id_map == '1-f-2' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+      </select>
+      {% elsif id_map == '1-g-3' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2022" selected>2022</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+      </select>
+      {% elsif id_map == '1-g-4' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+      </select>
+      {% elsif id_map == '1-g-5' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2022" selected>2022</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+      </select>
+      {% elsif id_map == '1-g-6' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2022" selected>2022</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+      </select>
+      {% elsif id_map == '1-g-7' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+      </select>
+      {% elsif id_map == '1-g-2' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+      </select>
+      {% elsif id_map == '5-a-9' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+      </select>
+      {% elsif id_map == '6-b-1' or id_map == '6-d-5' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+      </select>
+      {% elsif id_map == '6-a-2' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+      </select>
+      {% elsif id_map == '6-e-1' or id_map == '6-c-6' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+      </select>
+      {% elsif id_map == '6-d-4'%}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+      </select>
+      {% elsif id_map == '8-c-1' or id_map == '8-d-4' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+
+      </select>
+
+      {% elsif id_map == '11-d-2' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+
+      </select>
+
+      {% elsif id_map == '13-c-4' or id_map == '12-e-2' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+        </select>
+      {% elsif id_map == '14-c-3' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+        <option style="font-family: Fira Sans" value="2024">2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+        </select>
+      {% elsif id_map == '14-c-4' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+        <option style="font-family: Fira Sans" value="2024">2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+        </select>
+      {% elsif id_map == '14-c-5' %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+        <option style="font-family: Fira Sans" value="2024">2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+        </select>
+
+        {% elsif id_map == '17-a-1' %}
+        <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2022">2022</option>
+            <option style="font-family: Fira Sans" value="2020">2020</option>
+          </select>
+
+      {% else %}
+      <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2022">2022</option>
+        <option style="font-family: Fira Sans" value="2021">2021</option>
+        <option style="font-family: Fira Sans" value="2020">2020</option>
+        <option style="font-family: Fira Sans" value="2019">2019</option>
+        <option style="font-family: Fira Sans" value="2018">2018</option>
+        <option style="font-family: Fira Sans" value="2017">2017</option>
+        <option style="font-family: Fira Sans" value="2016">2016</option>
+        <option style="font-family: Fira Sans" value="2015">2015</option>
+        <option style="font-family: Fira Sans" value="2014">2014</option>
+        <option style="font-family: Fira Sans" value="2013">2013</option>
+        <option style="font-family: Fira Sans" value="2012">2012</option>
+        <option style="font-family: Fira Sans" value="2011">2011</option>
+        <option style="font-family: Fira Sans" value="2010">2010</option>
+      </select>
+      {%endif%}
+
+
+
+      <style>
+        details {
+          border: 1px solid #5b616b;
+          display: inline-flex;
+          flex-direction: column;
+          padding: 5px;
+          padding-top: 0px;
+          width: 250px;
+          min-height: 35px;
+          margin: 0.2em 0;
+          position: absolute;
+          top: 0;
+          left: 155px;
+          z-index: 10;
+          background: #fff;
+          font-size: 14px;
+        }
+
+        details summary{
+          top: 5px;
+          position: relative;
+          font-size: 14px;
+        }
+
+        details summary::marker {
+          display: none;
+          font-size: 0;
+        }
+
+        details summary::-webkit-details-marker {
+          display: none;
+          font-size: 0;
+        }
+
+        details summary::after {
+          /*content: url("../img/arrow-down.svg");*/
+          /*content: url("../../assets/img/arrow-down.svg");*/
+          /*content: url("../../../assets/img/arrow-down.svg");*/
+          content: url("{{ site.baseurl }}/assets/img/arrow-down.svg");
+          display: inline-block;
+          font-size: 0.6rem;
+          height: 1rem;
+          line-height: 1rem;
+          margin-left: 12.5rem;
+          transition: transform 0.25s;
+          width: 22px;
+          position: absolute;
+          transition: transform 0.25s;
+        }
+
+        details[open] summary {
+          margin-bottom: 1rem;
+        }
+
+        fieldset {
+          border: 0;
+          padding: 0;
+        }
+
+        fieldset legend {
+          position: absolute !important;
+          width: 1px !important;
+          height: 1px !important;
+          padding: 0 !important;
+          margin: -1px !important;
+          overflow: hidden !important;
+          clip: rect(0, 0, 0, 0) !important;
+          white-space: nowrap !important;
+          border: 0 !important;
+        }
+
+
+                #chooseWojLine ul li {
+                  border-radius: 3px;
+                  margin: 0;
+                  padding: 4px 2px;
+                  font-size: 14px;
+                }
+
+                #chooseWojLine ul li:hover {
+                  background: #eee;
+                }
+
+                #chooseWojLine ul li::after
+                {
+                  margin-bottom: 0 !important;
+                }
+                #chooseWojLine ul li label {
+                  display: inline-block;
+                  font-weight: 400;
+                }
+
+                #chooseWojBar ul li {
+                  border-radius: 3px;
+                  margin: 0;
+                  padding: 4px 2px;
+                  font-size: 14px;
+                }
+
+                #chooseWojBar ul li:hover {
+                  background: #eee;
+                }
+
+                #chooseWojBar ul li::after
+                {
+                  margin-bottom: 0 !important;
+                }
+                #chooseWojBar ul li label {
+                  display: inline-block;
+                  font-weight: 400;
+                }
+        }
+      </style>
+
+      <div id="chooseWojBar" style="display: inline-flex; margin-right: 5px; color: black;">
+      {% if language == 'pl' %}
+        <details id="myselectlistBsr">
+          <summary>Województwo</summary>
+          <form style="float: left;">
+            <fieldset>
+              <ul style="list-style: none; margin: 0; padding: 0;">
+                <li>
+                  <label style="margin-top:0;color: #777;" for="allBar">Zaznacz/Usuń wszystko</label>
+                  <input type="checkbox" id="allBar" name="allBar" value="allBar" onchange="addAllBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Polska">Polska</label>
+                  <input type="checkbox" id="Polska" name="Polska" value="Polska" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Dolnośląskie">Dolnośląskie</label>
+                  <input type="checkbox" id="Dolnośląskie" name="Dolnośląskie" value="Dolnośląskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-Pomorskie">Kujawsko-Pomorskie</label>
+                  <input type="checkbox" id="Kujawsko-Pomorskie" name="Kujawsko-Pomorskie" value="Kujawsko-Pomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Lubelskie">Lubelskie</label>
+                  <input type="checkbox" id="Lubelskie" name="Lubelskie" value="Lubelskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Lubuskie">Lubuskie</label>
+                  <input type="checkbox" id="Lubuskie" name="Lubuskie" value="Lubuskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Łódzkie">Łódzkie</label>
+                  <input type="checkbox" id="Łódzkie" name="Łódzkie" value="Łódzkie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Małopolskie">Małopolskie</label>
+                  <input type="checkbox" id="Małopolskie" name="Małopolskie" value="Małopolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Mazowieckie">Mazowieckie</label>
+                  <input type="checkbox" id="Mazowieckie" name="Mazowieckie" value="Mazowieckie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Opolskie">Opolskie</label>
+                  <input type="checkbox" id="Opolskie" name="Opolskie" value="Opolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Podkarpackie">Podkarpackie</label>
+                  <input type="checkbox" id="Podkarpackie" name="Podkarpackie" value="Podkarpackie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-Pomorskie">Podlaskie</label>
+                  <input type="checkbox" id="Podlaskie" name="Podlaskie" value="Podlaskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Pomorskie">Pomorskie</label>
+                  <input type="checkbox" id="Pomorskie" name="Pomorskie" value="Pomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Śląskie">Śląskie</label>
+                  <input type="checkbox" id="Śląskie" name="Śląskie" value="Śląskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Świętokrzyskie">Świętokrzyskie</label>
+                  <input type="checkbox" id="Świętokrzyskie" name="Świętokrzyskie" value="Świętokrzyskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Warmińsko-Mazurskie">Warmińsko-Mazurskie</label>
+                  <input type="checkbox" id="Warmińsko-Mazurskie" name="Warmińsko-Mazurskie" value="Warmińsko-Mazurskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Wielkopolskie">Wielkopolskie</label>
+                  <input type="checkbox" id="Wielkopolskie" name="Wielkopolskie" value="Wielkopolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Zachodniopomorskie">Zachodniopomorskie</label>
+                  <input type="checkbox" id="Zachodniopomorskie" name="Zachodniopomorskie" value="Zachodniopomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+
+        </details>
+      {% else %}
+        <details id="myselectlistBsr">
+          <summary>Voivodeship</summary>
+          <form style="float: left;">
+            <fieldset>
+              <ul style="list-style: none; margin: 0; padding: 0;">
+                <li>
+                  <label style="margin-top:0;color: #777;" for="allBar">Select/Diselect all</label>
+                  <input type="checkbox" id="allBar" name="allBar" value="allBar" onchange="addAllBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Polska">Poland</label>
+                  <input type="checkbox" id="Polska" name="Polska" value="Polska" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Dolnośląskie">Dolnośląskie</label>
+                  <input type="checkbox" id="Dolnośląskie" name="Dolnośląskie" value="Dolnośląskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-Pomorskie">Kujawsko-Pomorskie</label>
+                  <input type="checkbox" id="Kujawsko-Pomorskie" name="Kujawsko-Pomorskie" value="Kujawsko-Pomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Lubelskie">Lubelskie</label>
+                  <input type="checkbox" id="Lubelskie" name="Lubelskie" value="Lubelskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Lubuskie">Lubuskie</label>
+                  <input type="checkbox" id="Lubuskie" name="Lubuskie" value="Lubuskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Łódzkie">Łódzkie</label>
+                  <input type="checkbox" id="Łódzkie" name="Łódzkie" value="Łódzkie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Małopolskie">Małopolskie</label>
+                  <input type="checkbox" id="Małopolskie" name="Małopolskie" value="Małopolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Mazowieckie">Mazowieckie</label>
+                  <input type="checkbox" id="Mazowieckie" name="Mazowieckie" value="Mazowieckie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Opolskie">Opolskie</label>
+                  <input type="checkbox" id="Opolskie" name="Opolskie" value="Opolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Podkarpackie">Podkarpackie</label>
+                  <input type="checkbox" id="Podkarpackie" name="Podkarpackie" value="Podkarpackie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-Pomorskie">Podlaskie</label>
+                  <input type="checkbox" id="Podlaskie" name="Podlaskie" value="Podlaskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Pomorskie">Pomorskie</label>
+                  <input type="checkbox" id="Pomorskie" name="Pomorskie" value="Pomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Śląskie">Śląskie</label>
+                  <input type="checkbox" id="Śląskie" name="Śląskie" value="Śląskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Świętokrzyskie">Świętokrzyskie</label>
+                  <input type="checkbox" id="Świętokrzyskie" name="Świętokrzyskie" value="Świętokrzyskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Warmińsko-Mazurskie">Warmińsko-Mazurskie</label>
+                  <input type="checkbox" id="Warmińsko-Mazurskie" name="Warmińsko-Mazurskie" value="Warmińsko-Mazurskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Wielkopolskie">Wielkopolskie</label>
+                  <input type="checkbox" id="Wielkopolskie" name="Wielkopolskie" value="Wielkopolskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Zachodniopomorskie">Zachodniopomorskie</label>
+                  <input type="checkbox" id="Zachodniopomorskie" name="Zachodniopomorskie" value="Zachodniopomorskie" onchange="updateChartBar()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+
+        </details>
+      {% endif %}
+
+      </div>
+
+    {% if id_map == '5-a-9' or  id_map == '8-c-1' or id_map == '8-d-4' %}
+      <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+        {% if language == 'pl' %}
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans" value="mężczyźni">mężczyźni</option>
+          <option style="font-family: Fira Sans" value="kobiety">kobiety</option>
+        </select>
+        {% else %}
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans" value="mężczyźni">men</option>
+          <option style="font-family: Fira Sans" value="kobiety">women</option>
+        </select>
+        {% endif %}
+      </div>
+      {% elsif id_map == '6-a-2' %}
+        <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+        {% if language == 'pl' %}
+           <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+           <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">ujęcia i doprowadzenia wody</option>
+           <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">budowa i modernizacja stacji uzdatniania wody</option>
+           </select>
+         {% else %}
+          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">water intakes and supplies</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">construction and modernisation of water treatment plants</option>
+          </select>
+         {% endif %}
+       </div>
+      {% elsif id_map == '6-e-1' or id_map == '13-c-4' %}
+        <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+        {% if language == 'pl' %}
+          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">służące ochronie środowiska</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">służące gospodarce wodnej</option>
+          </select>
+       {% else %}
+          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">on environmental protection</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">on water management</option>
+          </select>
+      {% endif %}
+      </div>
+      {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
+      <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+          {% if language == 'pl' %}
+            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">przyjazdy</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">wyjazdy</option>
+            </select>
+          {% else %}
+            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">arrivals</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">departures</option>
+            </select>
+          {% endif %}
+        </div>
+      {% elsif id_map == '14-c-5' %}
+        <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+            {% if language == 'pl' %}
+            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem">załadunek łącznie z tranzytem</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem">wyładunek łącznie z tranzytem</option>
+              </select>
+            {% else %}
+            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem">loading including transit</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem">unloading including transit</option>
+              </select>
+            {% endif %}
+          </div>
+
+
+          {% elsif id_map == '17-a-1' %}
+          <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+              {% if language == 'pl' %}
+              <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej"  selected>plan niskoemisyjnej gospodarki</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >lokalny program rozwoju ekonomii społecznej</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska"  >program ochrony środowiska</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" >roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" >strategia rozwoju gminy</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" >strategia rozwiązywania problemów społecznych</option>
+
+                </select>
+              {% else %}
+              <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" selected>low-emission economy plan</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >local social economy development programme</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" >revitalisation programme</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" >long-term cooperation programme with non-governmental organisations and other entities engaged in public benefit activities</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" >spatial development plan</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" >alcohol prevention and problem-solving programme</option>
+                </select>
+              {% endif %}
+            </div>
+
+
+    {% elsif id_map == '3-c-1' %}
+      <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+        {% if language == 'pl' %}
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anestezjologia i intensywna terapia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">chirurgia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">choroby płuc</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">choroby wewnętrzne</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia">dermatologia i wenerologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia">kardiologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna">medycyna rodzinna</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy">medycyna pracy</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia">neurologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia">endokrynologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia">diabetologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka">okulistyka</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia">onkologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia">otolaryngologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria">pediatria</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia">położnictwo i ginekologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria">psychiatria</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiodiagnostyka</option>
+        </select>
+        {% else %}
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anesthesiology and intensive therapy</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">surgery</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">respiratory diseases</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">internal diseases</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia">dermatology and venereology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia">cardiology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna">general practitioners</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy">medicine service</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia">neurology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia">endocrinology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia">diabetology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka">ophthalmology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia">oncology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia">otolaryngology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria">paediatrics</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia">obstetrics and gynaecology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria">psychiatry</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiology and diagnostic imaging</option>
+        </select>
+        {% endif %}
+      </div>
+
+      {% else %}
+      <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+        {% if language == 'pl' %}
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">miasto</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">wieś</option>
+        </select>
+        {% else %}
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
+        </select>
+        {% endif %}
+      </div>
+
+    {% endif %}
+
+
+
+
+
+
+    </div>
+
+      <div id="chartBar" style="width: 100%;height: 600px"></div>
+      <hr>
+
+    <div id="chooseWojLine" style="display: inline-flex; margin-right: 1rem; margin-bottom: 10px; position: relative; top: 5px; color: black;">
+
+      {% if language == 'pl' %}
+        <details id="myselectlist" style="top: -20px; left: 0;">
+          <summary>Województwo</summary>
+          <form style="float: left;">
+            <fieldset>
+              <ul style="list-style: none; margin: 0; padding: 0;">
+                <li>
+                  <label style="margin-top:0;color: #777;" for="allLine">Zaznacz/Usuń wszystko</label>
+                  <input type="checkbox" id="allLine" name="allLine" value="allLine" onchange="addAllLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PolskaLineCheckbox">Polska</label>
+                  <input type="checkbox" id="PolskaLineCheckbox" name="Polska" value="Polska" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="DolnośląskieLineCheckbox">Dolnośląskie</label>
+                  <input type="checkbox" id="DolnośląskieLineCheckbox" name="Dolnośląskie" value="Dolnośląskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-PomorskieLineCheckbox">Kujawsko-Pomorskie</label>
+                  <input type="checkbox" id="Kujawsko-PomorskieLineCheckbox" name="Kujawsko-Pomorskie" value="Kujawsko-Pomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="LubelskieLineCheckbox">Lubelskie</label>
+                  <input type="checkbox" id="LubelskieLineCheckbox" name="Lubelskie" value="Lubelskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="LubuskieLineCheckbox">Lubuskie</label>
+                  <input type="checkbox" id="LubuskieLineCheckbox" name="Lubuskie" value="Lubuskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŁódzkieLineCheckbox">Łódzkie</label>
+                  <input type="checkbox" id="ŁódzkieLineCheckbox" name="Łódzkie" value="Łódzkie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="MałopolskieLineCheckbox">Małopolskie</label>
+                  <input type="checkbox" id="MałopolskieLineCheckbox" name="Małopolskie" value="Małopolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="MazowieckieLineCheckbox">Mazowieckie</label>
+                  <input type="checkbox" id="MazowieckieLineCheckbox" name="Mazowieckie" value="Mazowieckie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="OpolskieLineCheckbox">Opolskie</label>
+                  <input type="checkbox" id="OpolskieLineCheckbox" name="Opolskie" value="Opolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PodkarpackieLineCheckbox">Podkarpackie</label>
+                  <input type="checkbox" id="PodkarpackieLineCheckbox" name="Podkarpackie" value="Podkarpackie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PodlaskieLineCheckbox">Podlaskie</label>
+                  <input type="checkbox" id="PodlaskieLineCheckbox" name="Podlaskie" value="Podlaskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PomorskieLineCheckbox">Pomorskie</label>
+                  <input type="checkbox" id="PomorskieLineCheckbox" name="Pomorskie" value="Pomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŚląskieLineCheckbox">Śląskie</label>
+                  <input type="checkbox" id="ŚląskieLineCheckbox" name="Śląskie" value="Śląskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŚwiętokrzyskieLineCheckbox">Świętokrzyskie</label>
+                  <input type="checkbox" id="ŚwiętokrzyskieLineCheckbox" name="Świętokrzyskie" value="Świętokrzyskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Warmińsko-MazurskieLineCheckbox">Warmińsko-Mazurskie</label>
+                  <input type="checkbox" id="Warmińsko-MazurskieLineCheckbox" name="Warmińsko-Mazurskie" value="Warmińsko-Mazurskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="WielkopolskieLineCheckbox">Wielkopolskie</label>
+                  <input type="checkbox" id="WielkopolskieLineCheckbox" name="Wielkopolskie" value="Wielkopolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ZachodniopomorskieLineCheckbox">Zachodniopomorskie</label>
+                  <input type="checkbox" id="ZachodniopomorskieLineCheckbox" name="Zachodniopomorskie" value="Zachodniopomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+
+        </details>
+      {% else %}
+        <details id="myselectlist" style="top: -20px; left: 0;">
+          <summary>Voivodeship</summary>
+          <form style="float: left;">
+            <fieldset>
+              <ul style="list-style: none; margin: 0; padding: 0;">
+                <li>
+                  <label style="margin-top:0;color: #777;" for="allLine">Select/Diselect all</label>
+                  <input type="checkbox" id="allLine" name="allLine" value="allLine" onchange="addAllLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PolskaLineCheckbox">Poland</label>
+                  <input type="checkbox" id="PolskaLineCheckbox" name="Polska" value="Polska" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block; height:15px;width:15px;"/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="DolnośląskieLineCheckbox">Dolnośląskie</label>
+                  <input type="checkbox" id="DolnośląskieLineCheckbox" name="Dolnośląskie" value="Dolnośląskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Kujawsko-PomorskieLineCheckbox">Kujawsko-Pomorskie</label>
+                  <input type="checkbox" id="Kujawsko-PomorskieLineCheckbox" name="Kujawsko-Pomorskie" value="Kujawsko-Pomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="LubelskieLineCheckbox">Lubelskie</label>
+                  <input type="checkbox" id="LubelskieLineCheckbox" name="Lubelskie" value="Lubelskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="LubuskieLineCheckbox">Lubuskie</label>
+                  <input type="checkbox" id="LubuskieLineCheckbox" name="Lubuskie" value="Lubuskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŁódzkieLineCheckbox">Łódzkie</label>
+                  <input type="checkbox" id="ŁódzkieLineCheckbox" name="Łódzkie" value="Łódzkie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="MałopolskieLineCheckbox">Małopolskie</label>
+                  <input type="checkbox" id="MałopolskieLineCheckbox" name="Małopolskie" value="Małopolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="MazowieckieLineCheckbox">Mazowieckie</label>
+                  <input type="checkbox" id="MazowieckieLineCheckbox" name="Mazowieckie" value="Mazowieckie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="OpolskieLineCheckbox">Opolskie</label>
+                  <input type="checkbox" id="OpolskieLineCheckbox" name="Opolskie" value="Opolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PodkarpackieLineCheckbox">Podkarpackie</label>
+                  <input type="checkbox" id="PodkarpackieLineCheckbox" name="Podkarpackie" value="Podkarpackie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PodlaskieLineCheckbox">Podlaskie</label>
+                  <input type="checkbox" id="PodlaskieLineCheckbox" name="Podlaskie" value="Podlaskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="PomorskieLineCheckbox">Pomorskie</label>
+                  <input type="checkbox" id="PomorskieLineCheckbox" name="Pomorskie" value="Pomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŚląskieLineCheckbox">Śląskie</label>
+                  <input type="checkbox" id="ŚląskieLineCheckbox" name="Śląskie" value="Śląskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ŚwiętokrzyskieLineCheckbox">Świętokrzyskie</label>
+                  <input type="checkbox" id="ŚwiętokrzyskieLineCheckbox" name="Świętokrzyskie" value="Świętokrzyskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="Warmińsko-MazurskieLineCheckbox">Warmińsko-Mazurskie</label>
+                  <input type="checkbox" id="Warmińsko-MazurskieLineCheckbox" name="Warmińsko-Mazurskie" value="Warmińsko-Mazurskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="WielkopolskieLineCheckbox">Wielkopolskie</label>
+                  <input type="checkbox" id="WielkopolskieLineCheckbox" name="Wielkopolskie" value="Wielkopolskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+                <li>
+                  <label style="margin-top:0;" for="ZachodniopomorskieLineCheckbox">Zachodniopomorskie</label>
+                  <input type="checkbox" id="ZachodniopomorskieLineCheckbox" name="Zachodniopomorskie" value="Zachodniopomorskie" onchange="updateChartLine()" style="margin-left: 10px; opacity:1; -webkit-appearance:checkbox; display:inline-block;height:15px;width:15px;" checked/>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+
+        </details>
+      {% endif %}
+
+      </div>
+
+    {% if id_map == '5-a-9' or id_map == '8-c-1' or id_map == '8-d-4' %}
+    <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+        {% if language == 'pl' %}
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans" value="mężczyźni">mężczyźni</option>
+          <option style="font-family: Fira Sans" value="kobiety">kobiety</option>
+        </select>
+        {% else %}
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans" value="mężczyźni">men</option>
+          <option style="font-family: Fira Sans" value="kobiety">women</option>
+        </select>
+        {% endif %}
+      </div>
+      {% elsif id_map == '6-a-2' %}
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+        {% if language == 'pl' %}
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+           <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">ujęcia i doprowadzenia wody</option>
+           <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">budowa i modernizacja stacji uzdatniania wody</option>
+           </select>
+         {% else %}
+          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">water intakes and supplies</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">construction and modernisation of water treatment plants</option>
+          </select>
+         {% endif %}
+       </div>
+      {% elsif id_map == '6-e-1' or id_map == '13-c-4' %}
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+        {% if language == 'pl' %}
+          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">służące ochronie środowiska</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">służące gospodarce wodnej</option>
+          </select>
+       {% else %}
+          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">on environmental protection</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">on water management</option>
+          </select>
+      {% endif %}
+      </div>
+      {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+          {% if language == 'pl' %}
+            <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">przyjazdy</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">wyjazdy</option>
+            </select>
+          {% else %}
+            <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">arrivals</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">departures</option>
+            </select>
+          {% endif %}
+        </div>
+        {% elsif id_map == '14-c-5' %}
+        <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+              {% if language == 'pl' %}
+              <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem">załadunek łącznie z tranzytem</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem">wyładunek łącznie z tranzytem</option>
+                </select>
+              {% else %}
+              <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem">loading including transit</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem">unloading including transit</option>
+                </select>
+              {% endif %}
+            </div>
+
+
+            {% elsif id_map == '17-a-1' %}
+            <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+                {% if language == 'pl' %}
+                <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" selected>plan niskoemisyjnej gospodarki</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >lokalny program rozwoju ekonomii społecznej</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" >program ochrony środowiska</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego">roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy"  >strategia rozwoju gminy</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" >strategia rozwiązywania problemów społecznych</option>
+
+                  </select>
+                {% else %}
+                <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" selected>low-emission economy plan</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >local social economy development programme</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" >revitalisation programme</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" >long-term cooperation programme with non-governmental organisations and other entities engaged in public benefit activities</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" >spatial development plan</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" >alcohol prevention and problem-solving programme</option>
+                  </select>
+                {% endif %}
+              </div>
+
+
+    {% elsif id_map == '3-c-1' %}
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+        {% if language == 'pl' %}
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anestezjologia i intensywna terapia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">chirurgia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">choroby płuc</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">choroby wewnętrzne</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia">dermatologia i wenerologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia">kardiologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna">medycyna rodzinna</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy">medycyna pracy</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia">neurologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia">endokrynologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia">diabetologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka">okulistyka</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia">onkologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia">otolaryngologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria">pediatria</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia">położnictwo i ginekologia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria">psychiatria</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiodiagnostyka</option>
+        </select>
+        {% else %}
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anesthesiology and intensive therapy</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">surgery</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">respiratory diseases</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">internal diseases</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia">dermatology and venereology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia">cardiology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna">general practitioners</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy">medicine service</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia">neurology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia">endocrinology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia">diabetology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="okulistyka">ophthalmology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia">oncology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia">otolaryngology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria">paediatrics</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia">obstetrics and gynaecology</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria">psychiatry</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiology and diagnostic imaging</option>
+        </select>
+        {% endif %}
+      </div>
+    {% else %}
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+        {% if language == 'pl' %}
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">miasto</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">wieś</option>
+        </select>
+        {% else %}
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="miasto">urban areas</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="wieś">rural areas</option>
+        </select>
+        {% endif %}
+      </div>
+    {% endif %}
+
+
+      <div id="chartLine" style="width: 100%;height: 600px"></div>
+
+      <hr>
+
+      <!--{% include {{table_template}} content=header_csv content1=sdg_indicator content2=language%}-->
+      {% if language == 'pl' %}
+        Jednostka prezentacji: {{ t1.pl_jednostka_prezentacji }} <br />
+        Źródło danych: {{ t1.pl_zrodlo_danych }}
+      {% endif %}
+      {% if language == 'en' %}
+        Unit: {{ t1.en_jednostka_prezentacji }} <br />
+        Source of data: {{ t1.en_zrodlo_danych }}
+      {% endif %}
+      <p></p>
+
+    {% if language == 'pl' %}
+      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
+        <button type="button" id="calosc" style="padding: 10px; float: right;" title="Pobierz dane w formacie .csv">Pobierz csv</button>
+      </a>
+    {% else %}
+      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
+        <button type="button" id="calosc" style="padding: 10px; float: right;" title="Download data in csv format">Download csv</button>
+      </a>
+    {% endif %}
+
+    {% else %}
+      {% if language == 'pl' %}
+        <p style="text-align: center;">Wskaźnik w przygotowaniu</p>
+      {% else %}
+        <p style="text-align: center;">Indicator in progress</p>
+      {% endif %}
+    {% endif %}
+
+    </div>
+    </div>
+
+
+    <div role="tabpanel" class="tab-pane" id="metadata">
+      <div class="metadata-table">
+        <h2 style="display: contents;">{{ t.global-metadata }}</h2>
+
+        {% assign indicator_decimals = page.indicator | split: '.'  %}
+        {% assign goal_num = indicator_decimals[0] | plus:0  %}
+        {% assign target_num = indicator_decimals[1] | plus:0  %}
+        {% assign indicator_num = indicator_decimals[2] | plus:0  %}
+
+        {% if goal_num < 10 %} {% assign goal_num = goal_num | prepend:0  %} {% endif %}
+        {% if target_num < 10 %} {% assign target_num = target_num | prepend:0  %} {% endif %}
+        {% if indicator_num < 10 %} {% assign indicator_num = indicator_num | prepend:0  %} {% endif %}
+
+    {% if language == 'pl' %}
+      <a href="{{ site.baseurl }}/assets/pdf/reg/{{ page.lang }}/{{page.indicator | replace: ".", "-"}}.pdf" target="_blank">
+      <button style="float: right;margin-right: 0px;"><i class="fa fa-file-pdf-o" alt="Pobierz PDF" title="Pobierz metadane w formacie PDF" style="font-size:20px;"></i></button>
+      </a>
+    {% else %}
+      <a href="{{ site.baseurl }}/assets/pdf/reg/en/{{page.indicator | replace: ".", "-"}}.pdf" target="_blank">
+      <button style="float: right;margin-right: 0px;"><i class="fa fa-file-pdf-o" alt="Save as PDF" title="Save metadata in PDF format" style="font-size:20px;"></i></button>
+      </a>
+    {% endif %}
+
+
+
+
+        <table id="metadane">
+          {% if page.url contains '/statistics_reg/' %}
+            {% for indicator_metadata in site.prose.metadata._metadane_regionalne %}
+              {% if indicator_metadata.name != 'pl_graph_title' and indicator_metadata.name != 'pl_title' and indicator_metadata.name != 'pl_jednostka' and indicator_metadata.name != 'en_graph_title' and indicator_metadata.name != 'en_title' and indicator_metadata.name != 'en_jednostka'%}
+                <tr>
+                  {% if language == 'pl' %}
+                    {% if indicator_metadata.name contains 'pl_' %}
+                      <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
+                      <td style="padding: 10px; text-align: left; height: 45px;">  {{ t1.[indicator_metadata.name] }} </td>
+                    {% endif %}
+                  {% else %}
+                    {% if indicator_metadata.name contains 'en_' %}
+                      <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label }} </th>
+                      <td style="padding: 10px; text-align: left; height: 45px;">  {{ t1.[indicator_metadata.name] }} </td>
+                    {% endif %}
+                  {% endif %}
+                </tr>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </table>
+
+
+      </div>
+    </div>
+
+
+</div>
+
+
+
+<script>
+				function onChangeOption(value){
+					//console.log(value);
+
+					var wojMap = document.getElementById("mapWoj");
+
+					if(value==="Woj"){
+						wojMap.removeAttribute("hidden");
+					}
+				}
+
+
+  $( document ).ready(function(){
+    //console.log('site_met','{{site.metadane_regionalne}}');
+    //console.log('site_','{{site.translations}}');
+    //console.log('trans','{{translation_id}}');
+    //console.log('indicator1','{{jednostka}}');
+
+
+      if ('{{metadane["jednostka_prezentacji"]}}'==''){
+          $('.usa-button').css('display','none');
+      }
+
+
+      const details = document.getElementById('myselectlistBsr');
+      const details2 = document.getElementById('myselectlist');
+
+      // Close when clicking outside
+      document.addEventListener('click', e => {
+        if (details.open && !details.contains(e.target)) {
+          details.removeAttribute('open');
+        }
+      });
+      document.addEventListener('click', e => {
+        if (details2.open && !details2.contains(e.target)) {
+          details2.removeAttribute('open');
+        }
+      });
+  });
+
+//setTimeout(() => {
+  am5.ready(function() {
+  const CSV_FILE_URL = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-reg.csv';
+
+  fetch(CSV_FILE_URL)
+    .then(response => response.text())
+    .then(csvText => {
+      const data = parseCSV(csvText);
+
+      //console.log("data");
+      console.log(data);
+      data.forEach(row => {
+        delete row["Polska"];
+      });
+
+      if('{{ id_map }}' == '17-a-1'){
+        createchartScatterParam("chartLine",  data.slice(1), undefined, "{{ language }}", "{{ precyzja }}", 0);
+      }
+      else{
+        createchartLineParam("chartLine",  data.slice(1), undefined, "{{ language }}", "{{ precyzja }}", 0);
+      }
+
+      for(let i=0; i<17; i++){
+        $('#row-'+i).toggle();
+      }
+
+      });
+
+
+  const CSV_FILE_URL2 = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv';
+
+  fetch(CSV_FILE_URL2)
+        .then(response => response.text())
+        .then(csvText => {
+          const data2 = parseCSV(csvText);
+
+          //console.log(data2);
+
+          var maxValue = Math.max(
+            ...data2.flatMap(obj =>
+              Object.entries(obj)
+                .filter(([key]) => key !== "year")
+                .map(([_, val]) => parseFloat(val))
+                .filter(v => !isNaN(v))
+            )
+          );
+
+          //console.log(maxValue);
+
+          let lastYearValue = undefined;
+          let lastValue = undefined;
+
+          for(let i=3;i<Object.keys(data2[0]).length-1; i++){
+            lastYearValue = Object.keys(data2[0]).at(-i);
+            //console.log(lastYearValue);
+
+            lastValue = Object.values(data2[0]).at(-i);
+            //console.log(lastValue);
+
+            if(lastValue !== ""){
+              break
+            }
+          }
+
+          const data3 = [];
+          for(let i of data2){
+
+            if('{{ id_map }}' == '14-c-3' || '{{ id_map }}' == '14-c-4'){
+              if(i.PARAM == "przyjazdy"){
+                data3.push(i);
+              }
+            }
+            else if('{{ id_map }}' == '14-c-5'){
+              if(i.PARAM == "załadunek łącznie z tranzytem"){
+                data3.push(i);
+              }
+            }
+            else if('{{ id_map }}' == '17-a-1'){
+              if(i.PARAM == "plan gospodarki niskoemisyjnej"){
+                data3.push(i);
+              }
+            }
+            else{
+              if(i.PARAM == "ogółem"){
+                data3.push(i);
+              }
+            }
+          }
+
+          var marg = 5;
+          if(maxValue<=5){
+            marg = 2;
+          }
+
+          switch ('{{ id_map }}') {
+            case '3-c-1':
+              maxValue=3.2;
+              marg=0;
+              break;
+            case '3-f-2':
+              maxValue=1.8;
+              marg=0;
+              break;
+            case '6-a-2':
+              maxValue=1000;
+              marg=0;
+              break;
+            case '11-d-3' :
+              maxValue = 1.8;
+              marg = 0;
+              break;
+            case '13-d-7' :
+              maxValue = 1.8;
+              marg = 0;
+              break;
+            case '15-a-3' :
+              maxValue = 1.8;
+              marg = 0;
+              break;
+            default:
+          }
+
+          var minValue = 0;
+
+          var baseV = 0;
+          switch ('{{ id_map }}') {
+            case '2-b-1':
+              baseV = 100;
+              break;
+            default:
+              baseV = 0;
+          }
+
+          createchartBar("chartBar", data3.slice(1), 0, maxValue+marg, baseV, "{{ precyzja }}", [lastYearValue], "{{ language }}");
+          });
+    });
+//}, 500);
+
+function addAllBar(){
+  const checkboxesBar = document.querySelectorAll('#chooseWojBar input[type="checkbox"]');
+
+  var v = false;
+  if(checkboxesBar[0].checked){
+    v = true;
+  }
+
+  checkboxesBar.forEach((cb, i) => {
+    if (cb.value!== 'all') {
+      cb.checked = v;
+    }
+    //console.log(cb.value);
+    if(!v && cb.value.toUpperCase() === "POLSKA"){
+      cb.checked = true;
+    }
+  });
+
+  updateChartBar();
+}
+
+function addAllLine(){
+  const checkboxesBar = document.querySelectorAll('#chooseWojLine input[type="checkbox"]');
+
+  var v = false;
+  if(checkboxesBar[0].checked){
+    v = true;
+  }
+
+  checkboxesBar.forEach((cb, i) => {
+    if (cb.value!== 'all') {
+      cb.checked = v;
+    }
+    //console.log(cb.value);
+    if(!v && cb.value.toUpperCase() === "POLSKA"){
+      cb.checked = true;
+    }
+  });
+
+  updateChartLine();
+}
+
+function updateChartBar(){
+
+  var yearBoxBar = document.getElementById("yearBoxBar");
+  var selectedYear = yearBoxBar.options[yearBoxBar.selectedIndex].value;
+
+  var paramBoxBar = document.getElementById("paramBoxBar");
+  var selectedParam = paramBoxBar.options[paramBoxBar.selectedIndex].value;
+
+  const checkboxesBar = document.querySelectorAll('#chooseWojBar input[type="checkbox"]');
+  const checkedValuesBar = [];
+
+  //console.log(checkboxesBar);
+
+  checkboxesBar.forEach((cb, i) => {
+    if (cb.checked) {
+      checkedValuesBar.push(cb.value);
+    }
+  });
+
+  if(checkedValuesBar[0] === ""){
+    checkedValuesBar.push("Polska");
+    const checkbox = document.getElementById('Polska');
+    checkbox.checked = true;
+    const selectParam = document.getElementById('paramBoxBar');
+
+    if('{{ id_map }}' == '14-c-3' || '{{ id_map }}' == '14-c-4'){
+      selectParam.value = "przyjazdy";
+    }
+    else if('{{ id_map }}' == '14-c-5'){
+      selectParam.value = "załadunek łącznie z tranzytem";
+    }
+    else if('{{ id_map }}' == '17-a-1'){
+      selectParam.value = "plan gospodarki niskoemisyjnej";
+    }
+    else{
+      selectParam.value = "ogółem";
+    }
+  }
+  //console.log("Wybrane wartosci");
+  //console.log(checkedValuesBar);
+
+  am5.ready(function() {
+    const CSV_FILE_URL2 = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-map.csv';
+
+    fetch(CSV_FILE_URL2)
+          .then(response => response.text())
+          .then(csvText => {
+            const data2 = parseCSV(csvText);
+
+            //console.log(data2);
+
+            const data3 = [];
+
+            for(let i of data2){
+              for(let a of checkedValuesBar){
+                //console.log(i.REGION);
+
+                if(i.REGION == a && i.PARAM == selectedParam){
+                  data3.push(i);
+                }
+              }
+            }
+
+            var maxValue = Math.max(
+              ...data2.flatMap(obj =>
+                Object.entries(obj)
+                  .filter(([key]) => key !== "year")
+                  .map(([_, val]) => parseFloat(val))
+                  .filter(v => !isNaN(v))
+              )
+            );
+
+            //console.log(maxValue);
+
+            console.log(selectedParam);
+
+            var marg = 5;
+            if(maxValue<=5){
+              marg = 2;
+            }
+
+            switch ('{{ id_map }}') {
+              case '3-c-1':
+                if(selectedParam !== "ogółem"){
+                  maxValue=1;
+                  marg=0;
+                  break;
+                }
+                else{
+                  maxValue=3.2;
+                  marg=0;
+                  break;
+                }
+              case '3-f-2':
+                maxValue=10;
+                marg=0;
+                break;
+              case '6-a-2' :
+                if(selectedParam == "ujęcia i doprowadzenia wody"){
+                  maxValue=100;
+                  marg=0;
+                  break;
+                }
+                 else if(selectedParam == "budowa i modernizacja stacji uzdatniania wody"){
+                  maxValue=55;
+                  marg=0;
+                  break;
+                }
+                else{
+                  maxValue=1000;
+                  marg=0;
+                  break;
+                }
+              case '11-d-3':
+                maxValue=10;
+                marg=0;
+                break;
+              case '13-d-7':
+                maxValue=10;
+                marg=0;
+                break;
+              case '15-a-3' :
+                if (selectedParam === "ogółem") {
+                     maxValue = 1.8;
+                     marg = 0;
+                 }
+                break;
+              case '17-a-1' :
+                if (selectedParam == "plan gospodarki niskoemisyjnej") {
+                  maxValue = 140;
+                  marg = 0;
+                }
+                else if (selectedParam === "lokalny program rozwoju ekonomii społecznej"){
+                  maxValue=5;
+                  marg=0;
+                }
+                else if (selectedParam === "program ochrony środowiska"){
+                  maxValue=150;
+                  marg=0;
+                }
+                else if (selectedParam === "roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego"){
+                  maxValue=250;
+                  marg=0;
+                }
+                else if (selectedParam === "strategia rozwoju gminy"){
+                  maxValue=200;
+                  marg=0;
+                }
+                else if (selectedParam === "strategia rozwoju gminy"){
+                  maxValue=200;
+                  marg=0;
+                }
+                else if (selectedParam === "strategia rozwiązywania problemów społecznych"){
+                  maxValue=140;
+                  marg=0;
+                }
+                break;
+
+              default:
+            }
+
+            var baseV = 0;
+            /*switch ('{{ id_map }}') {
+              case '2-b-1':
+                baseV = 100;
+                break;
+              default:
+                baseV = 0;
+            }*/
+
+            createchartBar("chartBar", data3, 0, maxValue+marg, baseV, "{{ precyzja }}", [selectedYear], "{{ language }}");
+            });
+      });
+}
+
+
+function updateChartLine(){
+  const checkboxes = document.querySelectorAll('#chooseWojLine input[type="checkbox"]');
+  const checkedValues = [];
+
+  var paramBoxLine = document.getElementById("paramBoxLine");
+  var selectedLine = paramBoxLine.options[paramBoxLine.selectedIndex].value;
+
+  const tr = document.querySelectorAll('tr');
+  //console.log(tr);
+
+  checkboxes.forEach((cb,i) => {
+    if (cb.checked && cb.value !== 'all') {
+      if(selectedLine === "ogółem" || selectedLine === "przyjazdy" || selectedLine === "załadunek łącznie z tranzytem" || selectedLine === "plan gospodarki niskoemisyjnej" ){
+        checkedValues.push(cb.value);
+        /*tr[i].style.display = '';*/
+      }
+      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej" || selectedLine === "anastezjologia i intensywna terapia"){
+        checkedValues.push(cb.value+"_");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine === "budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej" || selectedLine === "program ochrony środowiska" || selectedLine === "chirurgia" ){
+        checkedValues.push(cb.value+"__");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" || selectedLine === "choroby płuc"){
+        checkedValues.push(cb.value+"___");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "strategia rozwoju gminy" || selectedLine === "choroby wewnętrzne"){
+        checkedValues.push(cb.value+"____");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "strategia rozwiązywania problemów społecznych" || selectedLine === "dermatologia i wenerologia"){
+        checkedValues.push(cb.value+"_____");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "kardiologia"){
+        checkedValues.push(cb.value+"______");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "medycyna rodzinna"){
+        checkedValues.push(cb.value+"_______");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "medycyna pracy"){
+        checkedValues.push(cb.value+"________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "neurologia"){
+        checkedValues.push(cb.value+"_________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "endokrynologia"){
+        checkedValues.push(cb.value+"__________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "diabetologia"){
+        checkedValues.push(cb.value+"___________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "okulistyka"){
+        checkedValues.push(cb.value+"____________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "onkologia"){
+        checkedValues.push(cb.value+"_____________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "otolaryngologia"){
+        checkedValues.push(cb.value+"______________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "pediatria"){
+        checkedValues.push(cb.value+"_______________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "położnictwo i ginekologia"){
+        checkedValues.push(cb.value+"________________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "psychiatria"){
+        checkedValues.push(cb.value+"_________________");
+        /*tr[i+17].style.display = '';*/
+      }
+      if(selectedLine === "radiodiagnostyka"){
+        checkedValues.push(cb.value+"__________________");
+        /*tr[i+17].style.display = '';*/
+      }
+    }
+    if (!cb.checked && cb.value !== 'all'){
+      if(selectedLine === "ogółem" || selectedLine === "przyjazdy" || selectedLine === "załadunek łącznie z tranzytem" || selectedLine === "plan gospodarki niskoemisyjnej"){
+        /*tr[i].style.display = 'none';*/
+      }
+      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej"){
+        /*tr[i+17].style.display = 'none';*/
+      }
+      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine==="budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej" || selectedLine === "program ochrony środowiska"){
+        /*tr[i+17].style.display = 'none';*/
+      }
+      if(selectedLine === "roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego"){
+        /*tr[i+17].style.display = 'none';*/
+      }
+      if(selectedLine === "strategia rozwoju gminy"){
+        /*tr[i+17].style.display = 'none';*/
+      }
+      if(selectedLine === "strategia rozwiązywania problemów społecznych"){
+        /*tr[i+17].style.display = 'none';*/
+      }
+    }
+  });
+
+  if(checkedValues[0] === ""){
+    if(jez==2){
+      checkedValues.push("Poland");
+    } else {
+      checkedValues.push("Polska");
+    }
+    const checkbox = document.getElementById('PolskaLineCheckbox');
+    checkbox.checked = true;
+    const selectParam = document.getElementById('paramBoxLine');
+
+    if('{{ id_map }}' == '14-c-3' || '{{ id_map }}' == '14-c-4'){
+      selectParam.value = "przyjazdy";
+    }
+    else if('{{ id_map }}' == '17-a-1'){
+      selectParam.value = "plan gospodarki niskoemisyjnej";
+    }
+    else if('{{ id_map }}' == '17-a-1'){
+      selectParam.value = "plan gospodarki niskoemisyjnej";
+    }
+    else{
+      selectParam.value = "ogółem";
+    }
+  }
+  checkedValues.push("year");
+  //console.log("checkedValues_line");
+  //console.log(checkedValues);
+
+  am5.ready(function() {
+  const CSV_FILE_URL = '{{ site.baseurl }}/data/regionalne/indicator_{{ id_map }}-reg.csv';
+
+  fetch(CSV_FILE_URL)
+    .then(response => response.text())
+    .then(csvText => {
+      const data2 = parseCSV(csvText);
+
+      //console.log("data2_line");
+      //console.log(data2);
+
+      data2.forEach(row => {
+        Object.keys(row).forEach(key => {
+          if (!checkedValues.includes(key)) {
+            delete row[key];
+          }
+        });
+      });
+      //console.log("data2_forEach_line");
+      //console.log(data2);
+      if('{{ id_map }}' == '17-a-1'){
+        createchartScatterParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}", "{{ precyzja }}", 0);
+      }
+      else{
+        createchartLineParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}", "{{ precyzja }}", 0);
+      }
+
+      });
+  });
+
+}
+
+</script>

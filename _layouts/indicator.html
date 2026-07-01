@@ -13,6 +13,8 @@
 
 {% if page.url contains '/statistics_nat/' %}
   {% assign ktore = site.data.krajowe %}
+{% elsif page.url contains '/statistics_reg/' %}
+    {% assign ktore = site.data.regionalne %}
 {% else %}
   {% assign ktore = site.data.globalne %}
 {% endif %}
@@ -38,6 +40,8 @@
 		{% else %}
 			{% if page.url contains '/statistics_nat/' %}
 			<section class="pl-banner-nat">
+      {% elsif page.url contains '/statistics_reg/' %}
+  		<section class="pl-banner-reg">
 			{% else %}
 			<section class="pl-banner">
 			{% endif %}
@@ -48,6 +52,8 @@
 
                     {% if page.url contains '/statistics_nat/' %}
                     {% assign rodzaj = '/statistics_nat/' %}
+                    {% elsif page.url contains '/statistics_reg/' %}
+                    {% assign rodzaj = '/statistics_reg/' %}
                     {% else %}
                     {% assign rodzaj = '/statistics_glob/' %}
                     {% endif %}
@@ -84,11 +90,9 @@
             {% assign dataset_name = 'indicator_1-5-4' %}
           {% elsif slug=='4-7-1' or slug=='12-8-1' %}
             {% assign dataset_name = 'indicator_13-3-1' %}
-          {% elsif slug=='10-1-b-0' %}
-            {% assign dataset_name = 'indicator_2-3-b-0' %}
-          {% elsif slug=='10-4-b-0' %}
-            {% assign dataset_name = 'indicator_1-1-c-0' %}
           {% elsif slug=='3-5-a-0' %}
+            {% assign dataset_name = 'indicator_15-2-a-0' %}
+          {% elsif slug=='13-3-b-0' %}
             {% assign dataset_name = 'indicator_15-2-a-0' %}
           {% elsif slug=='13-4-b-0' %}
             {% assign dataset_name = 'indicator_6-1-a-0' %}
@@ -105,7 +109,7 @@
           {% elsif slug=='2-2-a-0' %}
             {% assign dataset_name = 'indicator_12-2-a-0' %}
           {% else %}
-            {% assign dataset_name = 'indicator_' | append: slug %}
+            {% assign dataset_name = 'indicator_' | append: slug | slugify: "pretty" %}
           {% endif %}
 
           {% assign array = "" | split: ""  %}
@@ -182,6 +186,8 @@
 
           {% if page.url contains '/statistics_nat/' %}
             {% assign rodzaj = '/statistics_nat/' %}
+          {% elsif page.url contains '/statistics_reg/' %}
+              {% assign rodzaj = '/statistics_reg/' %}
           {% else %}
             {% assign rodzaj = '/' %}
           {% endif %}
@@ -194,7 +200,7 @@
                 <ol class="breadcrumb">
               <li><a title="Przejdź do strony głównej" href="{{ site.baseurl }}{{ rodzaj }}">Strona Główna</a> / </li>
               <li><a title="Przejdź do celu nr {{ page.sdg_goal }}" href="{{ site.baseurl }}{{ rodzaj }}{{ goals.short | slugify }}">Cel {{ page.sdg_goal }}</a></li>
-              <li class="active"> / Wskaźnik {{ page.indicator | remove: ".0" }}</li>
+              <li class="active"> / Wskaźnik {{ page.indicator | remove: ".0" | remove: ".reg" }}</li>
               </ol>
             {% endif %}
           {% endfor %}
@@ -208,7 +214,7 @@
                 <ol class="breadcrumb">
               <li><a title="Go to home page" href="{{ site.baseurl }}/{{ language }}{{ rodzaj }}">Home</a> / </li>
               <li><a title="Go to goal nr {{ page.sdg_goal }}" href="{{ site.baseurl }}/{{ language }}{{ rodzaj }}{{ goals.short | slugify }}">Goal {{ page.sdg_goal }}</a></li>
-              <li class="active"> / Indicator {{ page.indicator | remove: ".0" }}</li>
+              <li class="active"> / Indicator {{ page.indicator | remove: ".0" | remove: ".reg" }}</li>
               </ol>
             {% endif %}
           {% endfor %}
@@ -228,21 +234,37 @@
 			{% endif %}
 		  {% endif %}
 
+      {% if page.url contains '/statistics_reg/' %}
+			{% assign t1 = site.metadane_regionalne | where:"translation_id", slug | first %}
+			{% if language == 'pl' %}
+				<p style="font-size: 21px;"> Priorytet regionalny - {{ t1.pl_priorytet }} </p>
+			{% else %}
+				<p style="font-size: 21px;"> Regional piority - {{ t1.en_priorytet }} </p>
+			{% endif %}
+		  {% endif %}
 
 
 
 
 
 
-          <h3>{{ t.sub-subtitle }} {{ page.indicator | remove: ".0" }} - {{ indicator_title }} </h3>
+
+          <h3>{{ t.sub-subtitle }} {{ page.indicator | remove: ".0" | remove: ".reg" }} - {{ indicator_title }} </h3>
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#data" aria-controls="data" role="tab" data-toggle="tab" title="{{t.data-title}}">{{ t.data }}</a></li>
             <li role="presentation"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab" title="{{t.metadata-title}}">{{ t.metadata }}</a></li>
 
           </ul>
 
-
-          <div style="float: left;width: 100%;">{% include components/indicator1.html %}</div>
+    {% if page.url contains '/statistics_reg/' %}
+      {% if page.url contains '/1-G-1/' or page.url contains '/1-G-2/' or page.url contains '/3-C-1/' or page.url contains '/3-F-2/' or page.url contains '/5-A-9/'  or page.url contains '/6-A-2/' or page.url contains '/6-B-1/'  or page.url contains '/6-C-6/'  or page.url contains '/6-D-4/' or page.url contains '/6-D-5/' or page.url contains '/6-E-1/'  or page.url contains '/8-C-1/'  or page.url contains '/8-D-4/' or page.url contains '/11-D-2/' or page.url contains '/11-D-3/' or page.url contains '/12-E-2/' or page.url contains '/13-C-4/' or page.url contains '/13-D-7/' or page.url contains '/14-C-3/' or page.url contains '/14-C-4/' or page.url contains '/14-C-5/' or page.url contains '/15-A-3/' or page.url contains '/15-B-1/' or page.url contains '/17-A-1/' %}
+        <div style="float: left;width: 100%;">{% include components/indicator_reg_param.html %}</div>
+      {% else %}
+        <div style="float: left;width: 100%;">{% include components/indicator_reg.html %}</div>
+      {% endif %}
+    {% else %}
+      <div style="float: left;width: 100%;">{% include components/indicator1.html %}</div>
+    {% endif %}
 
         </div>
 
@@ -259,13 +281,13 @@ function Zmiana_jednostki(){
   labels.shift()
   var lan='{{language}}'
 
-    if (document.getElementById("Jednostka").innerHTML=='Zmień wymiar - na 1 mieszkańca' || document.getElementById("Jednostka").innerHTML=='Change dimension - per capita'){
+    if (document.getElementById("Jednostka").innerHTML=='Zmień jednostkę - tona' || document.getElementById("Jednostka").innerHTML=='Change unit - tonne'){
       var calo={{ row1 | jsonify }}
       for (i=0;i<naglowek_ang.length;i++){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(15,30);
+      calosc=calo.splice(12,24);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -275,14 +297,14 @@ function Zmiana_jednostki(){
 
       chart.update({labels: labels,series: seria})
       if(lan=='pl'){
-        document.getElementById("tytul").innerHTML = "tony";
-        document.getElementById("Jednostka").innerHTML = "Zmień wymiar - ogółem w tysiącach";
+        document.getElementById("tytul").innerHTML = "tona";
+        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tys. ton";
         $(".ct-series-0").text('na 1 mieszkańca');
 
       }
       if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "tonnes";
-        document.getElementById("Jednostka").innerHTML = "Change dimension - total in thousands";
+        document.getElementById("tytul").innerHTML = "tonne";
+        document.getElementById("Jednostka").innerHTML = "Change unit - thous. tonnes";
         $(".ct-series-0").text('per capita');
       }
 
@@ -293,7 +315,7 @@ function Zmiana_jednostki(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(0,15);
+      calosc=calo.splice(0,12);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -303,14 +325,14 @@ function Zmiana_jednostki(){
 
       chart.update({labels: labels,series: seria})
       if(lan='pl'){
-        document.getElementById("tytul").innerHTML = "tony";
-        document.getElementById("Jednostka").innerHTML = "Zmień wymiar - na 1 mieszkańca";
-        $(".ct-series-0").text('ogółem w tysiącach');
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka").innerHTML = "Zmień jednostkę - tona";
+        $(".ct-series-0").text('ogółem');
       }
       if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "tonnes";
-        document.getElementById("Jednostka").innerHTML = "Change dimension - per capita";
-        $(".ct-series-0").text('total in thousands');
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka").innerHTML = "Change unit - tonne";
+        $(".ct-series-0").text('total');
       }
 
     }
@@ -323,13 +345,13 @@ function Zmiana_jednostki4(){
   labels.shift()
   var lan='{{language}}'
 
-    if (document.getElementById("Jednostka4").innerHTML=='Zmień wymiar - na 1 mieszkańca' || document.getElementById("Jednostka4").innerHTML=='Change dimension - per capita'){
+    if (document.getElementById("Jednostka4").innerHTML=='Zmień jednostkę - tony' || document.getElementById("Jednostka4").innerHTML=='Change unit - tonnes'){
       var calo={{ row1 | jsonify }}
       for (i=0;i<naglowek_ang.length;i++){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(15,30);
+      calosc=calo.splice(12,24);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -340,13 +362,13 @@ function Zmiana_jednostki4(){
       chart.update({labels: labels,series: seria})
       if(lan=='pl'){
         document.getElementById("tytul").innerHTML = "tony";
-        document.getElementById("Jednostka4").innerHTML = "Zmień wymiar - ogółem w tysiącach";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tys. ton";
         $(".ct-series-0").text('na 1 mieszkańca');
 
       }
       if(window.location.href.indexOf("en") > -1) {
         document.getElementById("tytul").innerHTML = "tonnes";
-        document.getElementById("Jednostka4").innerHTML = "Change dimension - total in thousands";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - thous. tonnes";
         $(".ct-series-0").text('per capita');
       }
 
@@ -357,7 +379,7 @@ function Zmiana_jednostki4(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(0,15);
+      calosc=calo.splice(0,12);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -367,78 +389,14 @@ function Zmiana_jednostki4(){
 
       chart.update({labels: labels,series: seria})
       if(lan='pl'){
-        document.getElementById("tytul").innerHTML = "tony";
-        document.getElementById("Jednostka4").innerHTML = "Zmień wymiar - na 1 mieszkańca";
-        $(".ct-series-0").text('ogółem w tysiącach');
+        document.getElementById("tytul").innerHTML = "tys. ton";
+        document.getElementById("Jednostka4").innerHTML = "Zmień jednostkę - tony";
+        $(".ct-series-0").text('ogółem');
       }
       if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "tonnes";
-        document.getElementById("Jednostka4").innerHTML = "Change dimension - per capita";
-        $(".ct-series-0").text('total in thousands');
-      }
-
-    }
-}
-
-function Zmiana_jednostki8(){
-
-  var licznik={{ licznik }}
-  var labels = {{ labels | jsonify }}
-  labels.shift()
-  var lan='{{language}}'
-
-    if (document.getElementById("Jednostka8").innerHTML=='Zmień wymiar - w mln (w cenach stałych)' || document.getElementById("Jednostka8").innerHTML=='Change dimension - in mln (at constant prices)'){
-      var calo={{ row1 | jsonify }}
-      for (i=0;i<naglowek_ang.length;i++){
-        remove(calo, naglowek_ang[i]);
-
-      }
-      calosc=calo.splice(15,30);
-      var b = [[]];
-      seria=[]
-      for (i=1;i<licznik+1;i++){
-        b[i] = calosc.splice(0,labels.length);
-        seria.push(b[i])
-      }
-
-      chart.update({labels: labels,series: seria})
-      if(lan=='pl'){
-        document.getElementById("tytul").innerHTML = "euro";
-        document.getElementById("Jednostka8").innerHTML = "Zmień wymiar - na osobę (w cenach stałych)";
-        $(".ct-series-0").text('w mln (w cenach stałych)');
-
-      }
-      if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "euro";
-        document.getElementById("Jednostka8").innerHTML = "Change dimension - per capita (at constant prices)";
-        $(".ct-series-0").text('in mln (at constant prices)');
-      }
-
-
-    }else{
-      var calo={{ row1 | jsonify }}
-      for (i=0;i<naglowek_ang.length;i++){
-        remove(calo, naglowek_ang[i]);
-
-      }
-      calosc=calo.splice(0,15);
-      var b = [[]];
-      seria=[]
-      for (i=1;i<licznik+1;i++){
-        b[i] = calosc.splice(0,labels.length);
-        seria.push(b[i])
-      }
-
-      chart.update({labels: labels,series: seria})
-      if(lan='pl'){
-        document.getElementById("tytul").innerHTML = "euro";
-        document.getElementById("Jednostka8").innerHTML = "Zmień wymiar - w mln (w cenach stałych)";
-        $(".ct-series-0").text('na osobę (w cenach stałych)');
-      }
-      if(window.location.href.indexOf("en") > -1) {
-        document.getElementById("tytul").innerHTML = "euro";
-        document.getElementById("Jednostka8").innerHTML = "Change dimension - in mln (at constant prices)";
-        $(".ct-series-0").text('per capita (at constant prices)');
+        document.getElementById("tytul").innerHTML = "thous. tonnes";
+        document.getElementById("Jednostka4").innerHTML = "Change unit - tonnes";
+        $(".ct-series-0").text('total');
       }
 
     }
@@ -457,7 +415,7 @@ function Zmiana_jednostki7(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(16,31);
+      calosc=calo.splice(14,27);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -484,7 +442,7 @@ function Zmiana_jednostki7(){
         remove(calo, naglowek_ang[i]);
 
       }
-      calosc=calo.splice(0,16);
+      calosc=calo.splice(0,14);
       var b = [[]];
       seria=[]
       for (i=1;i<licznik+1;i++){
@@ -831,7 +789,7 @@ function Zmiana_jednostki6(){
 
 
 $(window).on("load", function() {
-  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '13-3-b-0' || '{{id}}' == '1-5-4' || '{{id}}' == '11-b-2' || '{{id}}' == '13-1-3' || '{{id}}' == '17-13-1'  || '{{id}}' == '12-4-2'){
+  if ('{{id}}'=='12-2-2' || '{{id}}' == '8-4-2' || '{{id}}' == '1-5-4' || '{{id}}' == '11-b-2' || '{{id}}' == '13-1-3' || '{{id}}' == '17-13-1'  || '{{id}}' == '12-4-2'){
     $('.ct-chart').css({'margin-top':'20px'});
 
   }
@@ -881,6 +839,12 @@ $('body').click(function( e ){
 
 
 $(function () {
+  //console.log('site','{{site}}');
+  //console.log('site_meta','{{site.metadane_regionalne}}');
+  //console.log('t1','{{t1}}');
+  //console.log('t1_jednostka_prezentacji','{{t1.pl_jednostka_prezentacji}}');
+  //console.log('jednostka','{{jednostka}}');
+
 $('.list-group.checked-list-box .list-group-item').each(function () {
 
           var zmienna={{licznik}}

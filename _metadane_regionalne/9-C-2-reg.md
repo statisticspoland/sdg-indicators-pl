@@ -1,0 +1,79 @@
+---
+translation_id: 9-C-2-reg
+pl_title: >-
+  Gęstość dróg ekspresowych i autostrad na 1000 km²
+pl_graph_title: >-
+  Gęstość dróg ekspresowych i autostrad na 1000 km²
+pl_nazwa_wskaznika: >-
+  <b>9.C.2 Gęstość dróg ekspresowych i autostrad na 1000 km²</b>
+en_title: >-
+  Density of expressways and motorways per 1000 km²
+en_graph_title: >-
+  Density of expressways and motorways per 1000 km²
+en_nazwa_wskaznika: >-
+  <b>9.C.2 Density of expressways and motorways per 1000 km²</b>
+pl_cel: Cel 9. Innowacyjność, Przemysł, Infrastruktura
+en_cel: Goal 9. Industry, innovation and infrastructure
+pl_zadanie: null
+en_zadanie: null
+pl_priorytet: >-
+  Wzmocnienie dostępności infrastruktury transportowej i spójności komunikacji publicznej regionu
+en_priorytet: >-
+  Strengthening the availability of transport infrastructure and the coherence of public communication in the region
+pl_definicja: >-
+  Długość dróg ekspresowych i autostrad wyrażona w kilometrach na 1000 km² powierzchni.
+en_definicja: >-
+  Percentage of persons in households living below relative poverty threshold which is determined at 50% of the mean expenditure at the level of all households.
+pl_jednostka_prezentacji: km
+en_jednostka_prezentacji: km
+pl_dostepne_wymiary: ogółem
+en_dostepne_wymiary: total
+pl_zrodlo_danych: Główny Urząd Statystyczny
+en_zrodlo_danych: Statistics Poland
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_czestotliwosc_dostępnosc_danych: Annual data; since 2010
+published: true
+pl_wyjasnienia_metodologiczne: >-
+  <p>Podstawę do wyliczania wskaźnika stanowi łączna długość dróg ekspresowych i
+  autostrad według stanu w dniu 31 XII. Zgodnie z przepisami ustawy z dnia 21
+  marca 1985 r. o drogach publicznych (tekst jednolity Dz. U. 2015 poz. 460):<br
+  />a) droga ekspresowa jest to droga przeznaczona wyłącznie do ruchu pojazdów
+  samochodowych:<br /> - wyposażona w jedną lub dwie jezdnie,<br /> -
+  posiadająca wielopoziomowe skrzyżowania z przecinającymi ją innymi drogami
+  transportu lądowego i wodnego, z dopuszczeniem wyjątkowo jednopoziomowych
+  skrzyżowań z drogami publicznymi,<br /> - wyposażona w urządzenia obsługi
+  podróżnych, pojazdów i przesyłek, przeznaczone wyłącznie dla użytkowników
+  drogi.<br />b) autostrada jest to droga przeznaczona wyłącznie do ruchu
+  pojazdów samochodowych:<br /> - wyposażona przynajmniej w dwie trwale
+  rozdzielone jednokierunkowe jezdnie,<br /> - posiadająca wielopoziomowe
+  skrzyżowania ze wszystkimi przecinającymi ją drogami transportu lądowego i
+  wodnego,<br /> - wyposażona w urządzenia obsługi podróżnych, pojazdów i
+  przesyłek, przeznaczone wyłącznie dla użytkowników autostrady.</p>
+
+en_wyjasnienia_metodologiczne: >-
+  <p>The basis for calculating the indicator is the total length of express-ways
+  and motorways as of 31 December.</p> <p>In accordance with the provisions of
+  the Act of 21 March 1985 on public roads (uniform text, Journal of Laws 2015
+  item 460):</p> <p>a) an expressway is a road specially designed for motor
+  vehicle traffic and which:</p> <p>– is provided with one or two
+  carriageways,</p> <p>– has multi-level crossings with any road, railway or
+  tramway track, footpath or waterway, with rare exceptions when one-level
+  intersections with public roads are allowed,</p> <p>– is equipped with devices
+  intended for serving the travelers, vehicles and packages, and reserved only
+  for motorway users.</p> <p>b) a motorway is a road specially designed for
+  motor vehicle traffic and which:</p> <p>– is provided with at least two
+  permanently separated from each other carriageways for the opposite directions
+  of traffic,</p> <p>– has multi-level crossings with any road, railway or
+  tramway track, footpath or waterway, – is equipped with devices intended for
+  serving the travelers, vehicles and packages, and reserved only for motorway
+  users.</p>
+
+pl_uwagi: >-
+
+en_uwagi: >-
+
+pl_data_aktualizacji_danych:
+pl_data_aktualizacji_metadanych:
+en_data_aktualizacji_danych:
+en_data_aktualizacji_metadanych:
+---

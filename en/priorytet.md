@@ -1,6 +1,6 @@
 ---
 layout: priorytet
 lang: en
-title: Priorytety dla Polski
+title: Priorities for Poland
 permalink: /en/priorytet/
 ---
