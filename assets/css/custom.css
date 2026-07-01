@@ -393,22 +393,6 @@ header.fixed-header .logo-home-en {
     color : #fff;
 }
 
-.pl-banner-reg {
-    background-color : #ededed;
-    padding : 5rem 0 4rem 0;
-    color : rgb(51, 51, 51);
-	background-image: url('../../assets/img/regionalny.svg');
-    background-repeat: no-repeat;
-    background-position: 980px 0px;
-	background-size: 437px 194px;
-}
-
-.pl-banner-reg.contrast-high {
-    background-color : #000000;
-    padding : 5rem 0 4rem 0;
-    color : #fff;
-}
-
 .pl-banner-exp {
     background-color :#eee6ff;
     padding : 5rem 0 4rem 0;
@@ -525,10 +509,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-image: none;
 	}
-    .pl-banner-reg {
-    background-image: none;
-    }
-    .pl-banner-exp {
+  .pl-banner-exp {
 	background-image: none;
 	}
 	.pl-banner-exp-indicator {
@@ -549,15 +530,12 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 445px 0px;
 	}
-    .pl-banner-reg {
-    background-position: 445px 0px;
-    }
-    .pl-banner-exp {
-    background-position: 445px 0px;
-    }
-    .pl-banner-exp-indicator {
-    background-position: 445px 0px;
-    }
+  .pl-banner-exp {
+background-position: 445px 0px;
+}
+.pl-banner-exp-indicator {
+background-position: 445px 0px;
+}
 }
 
 @media only screen and (min-width: 951px) and (max-width: 970px) {
@@ -567,10 +545,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 465px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 465px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 465px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -585,10 +560,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 485px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 485px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 485px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -603,10 +575,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 505px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 505px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 505px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -621,10 +590,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 525px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 525px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 525px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -639,10 +605,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 545px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 545px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 545px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -657,10 +620,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 555px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 555px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 555px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -675,10 +635,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 565px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 565px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 565px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -693,10 +650,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 575px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 575px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 575px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -711,10 +665,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 585px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 585px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 585px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -729,10 +680,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 595px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 595px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 595px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -747,10 +695,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 605px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 605px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 605px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -765,10 +710,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 615px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 615px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 615px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -783,10 +725,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 625px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 625px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 625px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -801,10 +740,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 635px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 635px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 635px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -819,10 +755,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 645px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 645px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 645px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -837,10 +770,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 655px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 655px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 655px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -855,10 +785,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 665px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 665px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 665px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -873,10 +800,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 675px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 675px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 675px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -891,10 +815,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 685px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 685px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 685px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -909,15 +830,12 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 695px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 695px 0px;
-	}
-	.pl-banner-exp {
-    background-position: 695px 0px;
-    }
-    .pl-banner-exp-indicator {
-    background-position: 695px 0px;
-    }
+  .pl-banner-exp {
+  background-position: 695px 0px;
+  }
+  .pl-banner-exp-indicator {
+  background-position: 695px 0px;
+  }
 }
 
 @media only screen and (min-width: 1351px) and (max-width: 1370px) {
@@ -927,10 +845,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 705px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 705px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 705px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -945,10 +860,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 715px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 715px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 715px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -963,10 +875,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 725px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 725px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 725px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -981,10 +890,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 735px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 735px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 735px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -999,10 +905,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 745px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 745px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 745px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -1017,10 +920,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 755px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 755px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 755px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -1035,15 +935,12 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 765px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 765px 0px;
-	}
-	.pl-banner-exp {
-    background-position: 765px 0px;
-    }
-    .pl-banner-exp-indicator {
-    background-position: 765px 0px;
-    }
+  .pl-banner-exp {
+  background-position: 765px 0px;
+  }
+  .pl-banner-exp-indicator {
+  background-position: 765px 0px;
+  }
 }
 
 @media only screen and (min-width: 1491px) and (max-width: 1510px) {
@@ -1053,10 +950,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 775px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 775px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 775px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -1071,15 +965,12 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 785px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 785px 0px;
-	}
-	.pl-banner-exp {
-    background-position: 785px 0px;
-    }
-    .pl-banner-exp-indicator {
-    background-position: 785px 0px;
-    }
+  .pl-banner-exp {
+  background-position: 785px 0px;
+  }
+  .pl-banner-exp-indicator {
+  background-position: 785px 0px;
+  }
 }
 
 @media only screen and (min-width: 1531px) and (max-width: 1550px) {
@@ -1089,15 +980,12 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 795px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 795px 0px;
-	}
-	.pl-banner-exp {
-    background-position: 795px 0px;
-    }
-    .pl-banner-exp-indicator {
-    background-position: 795px 0px;
-    }
+  .pl-banner-exp {
+  background-position: 795px 0px;
+  }
+  .pl-banner-exp-indicator {
+  background-position: 795px 0px;
+  }
 }
 
 @media only screen and (min-width: 1551px) and (max-width: 1570px) {
@@ -1107,15 +995,12 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 805px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 805px 0px;
-	}
-	.pl-banner-exp {
-    background-position: 805px 0px;
-    }
-    .pl-banner-exp-indicator {
-    background-position: 805px 0px;
-    }
+  .pl-banner-exp {
+  background-position: 805px 0px;
+  }
+  .pl-banner-exp-indicator {
+  background-position: 805px 0px;
+  }
 }
 
 @media only screen and (min-width: 1571px) and (max-width: 1590px) {
@@ -1125,10 +1010,7 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 815px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 815px 0px;
-	}
-	.pl-banner-exp {
+  .pl-banner-exp {
 	background-position: 815px 0px;
 	}
 	.pl-banner-exp-indicator {
@@ -1143,15 +1025,12 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 825px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 825px 0px;
-	}
-	.pl-banner-exp {
-    background-position: 825px 0px;
-    }
-    .pl-banner-exp-indicator {
-    background-position: 825px 0px;
-    }
+  .pl-banner-exp {
+  background-position: 825px 0px;
+  }
+  .pl-banner-exp-indicator {
+  background-position: 825px 0px;
+  }
 }
 
 @media only screen and (min-width: 1611px) and (max-width: 1630px) {
@@ -1161,15 +1040,12 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 835px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 835px 0px;
-	}
-	.pl-banner-exp {
-    background-position: 835px 0px;
-    }
-    .pl-banner-exp-indicator {
-    background-position: 835px 0px;
-    }
+  .pl-banner-exp {
+  background-position: 835px 0px;
+  }
+  .pl-banner-exp-indicator {
+  background-position: 835px 0px;
+  }
 }
 
 @media only screen and (min-width: 1631px) and (max-width: 1650px) {
@@ -1177,9 +1053,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 845px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 845px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 845px 0px;
 	}
 	.pl-banner-exp {
@@ -1197,9 +1070,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 855px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 855px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 855px 0px;
 	}
@@ -1213,9 +1083,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 865px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 865px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 865px 0px;
 	}
 	.pl-banner-exp {
@@ -1233,9 +1100,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 875px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 875px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 875px 0px;
 	}
@@ -1249,9 +1113,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 885px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 885px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 885px 0px;
 	}
 	.pl-banner-exp {
@@ -1269,9 +1130,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 895px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 895px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 895px 0px;
 	}
@@ -1285,9 +1143,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 905px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 905px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 905px 0px;
 	}
 	.pl-banner-exp {
@@ -1305,9 +1160,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 915px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 915px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 915px 0px;
 	}
@@ -1321,9 +1173,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 925px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 925px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 925px 0px;
 	}
 	.pl-banner-exp {
@@ -1341,9 +1190,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 935px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 935px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 935px 0px;
 	}
@@ -1359,9 +1205,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 945px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 945px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 945px 0px;
 	}
@@ -1372,9 +1215,6 @@ header.fixed-header .site-navbar ul li a {
 
 @media only screen and (min-width: 1851px) and (max-width: 1870px) {
 	.pl-banner-glob {
-	background-position: 955px 0px;
-	}
-	.pl-banner-nat {
 	background-position: 955px 0px;
 	}
 	.pl-banner-nat {
@@ -1395,9 +1235,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 965px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 965px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 965px 0px;
 	}
@@ -1411,9 +1248,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 975px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 975px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 975px 0px;
 	}
 	.pl-banner-exp {
@@ -1431,9 +1265,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 985px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 985px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 985px 0px;
 	}
@@ -1447,9 +1278,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 995px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 995px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 995px 0px;
 	}
 	.pl-banner-exp {
@@ -1467,9 +1295,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1005px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1005px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1005px 0px;
 	}
@@ -1483,9 +1308,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1015px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1015px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1015px 0px;
 	}
 	.pl-banner-exp {
@@ -1503,9 +1325,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1025px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1025px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1025px 0px;
 	}
@@ -1519,9 +1338,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1035px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1035px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1035px 0px;
 	}
 	.pl-banner-exp {
@@ -1539,9 +1355,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1045px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1045px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1045px 0px;
 	}
@@ -1555,9 +1368,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1055px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1055px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1055px 0px;
 	}
 	.pl-banner-exp {
@@ -1575,9 +1385,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1065px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1065px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1065px 0px;
 	}
@@ -1591,9 +1398,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1075px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1075px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1075px 0px;
 	}
 	.pl-banner-exp {
@@ -1611,9 +1415,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1085px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1085px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1085px 0px;
 	}
@@ -1627,9 +1428,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1095px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1095px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1095px 0px;
 	}
 	.pl-banner-exp {
@@ -1647,9 +1445,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1105px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1105px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1105px 0px;
 	}
@@ -1663,9 +1458,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1115px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1115px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1115px 0px;
 	}
 	.pl-banner-exp {
@@ -1683,9 +1475,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1125px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1125px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1125px 0px;
 	}
@@ -1699,9 +1488,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1135px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1135px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1135px 0px;
 	}
 	.pl-banner-exp {
@@ -1719,9 +1505,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1145px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1145px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1145px 0px;
 	}
@@ -1735,9 +1518,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1155px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1155px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1155px 0px;
 	}
 	.pl-banner-exp {
@@ -1755,9 +1535,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1165px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1165px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1165px 0px;
 	}
@@ -1771,9 +1548,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1175px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1175px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1175px 0px;
 	}
 	.pl-banner-exp {
@@ -1791,9 +1565,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1185px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1185px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1185px 0px;
 	}
@@ -1807,9 +1578,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1195px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1195px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1195px 0px;
 	}
 	.pl-banner-exp {
@@ -1827,9 +1595,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1205px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1205px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1205px 0px;
 	}
@@ -1843,9 +1608,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1215px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1215px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1215px 0px;
 	}
 	.pl-banner-exp {
@@ -1863,9 +1625,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1225px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1225px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1225px 0px;
 	}
@@ -1879,9 +1638,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1235px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1235px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1235px 0px;
 	}
 	.pl-banner-exp {
@@ -1899,9 +1655,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1245px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1245px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1245px 0px;
 	}
@@ -1915,9 +1668,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1255px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1255px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1255px 0px;
 	}
 	.pl-banner-exp {
@@ -1935,9 +1685,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1265px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1265px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1265px 0px;
 	}
@@ -1951,9 +1698,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1275px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1275px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1275px 0px;
 	}
 	.pl-banner-exp {
@@ -1971,9 +1715,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1285px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1285px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1285px 0px;
 	}
@@ -1987,9 +1728,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1295px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1295px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1295px 0px;
 	}
 	.pl-banner-exp {
@@ -2007,9 +1745,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1305px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1305px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1305px 0px;
 	}
@@ -2023,9 +1758,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1315px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1315px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1315px 0px;
 	}
 	.pl-banner-exp {
@@ -2043,9 +1775,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1325px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1325px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1325px 0px;
 	}
@@ -2059,9 +1788,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1335px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1335px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1335px 0px;
 	}
 	.pl-banner-exp {
@@ -2079,9 +1805,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1345px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1345px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1345px 0px;
 	}
@@ -2095,9 +1818,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1355px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1355px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1355px 0px;
 	}
 	.pl-banner-exp {
@@ -2115,9 +1835,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1365px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1365px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1365px 0px;
 	}
@@ -2131,9 +1848,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1375px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1375px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1375px 0px;
 	}
 	.pl-banner-exp {
@@ -2151,9 +1865,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1385px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1385px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1385px 0px;
 	}
@@ -2167,9 +1878,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1395px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1395px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1395px 0px;
 	}
 	.pl-banner-exp {
@@ -2187,9 +1895,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1405px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1405px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1405px 0px;
 	}
@@ -2203,9 +1908,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1415px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1415px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1415px 0px;
 	}
 	.pl-banner-exp {
@@ -2223,9 +1925,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1425px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1425px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1425px 0px;
 	}
@@ -2239,9 +1938,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1435px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1435px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1435px 0px;
 	}
 	.pl-banner-exp {
@@ -2259,9 +1955,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1445px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1445px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1445px 0px;
 	}
@@ -2275,9 +1968,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1455px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1455px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1455px 0px;
 	}
 	.pl-banner-exp {
@@ -2295,9 +1985,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1465px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1465px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1465px 0px;
 	}
@@ -2311,9 +1998,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1475px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1475px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1475px 0px;
 	}
 	.pl-banner-exp {
@@ -2331,9 +2015,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1485px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1485px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1485px 0px;
 	}
@@ -2347,9 +2028,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1495px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1495px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1495px 0px;
 	}
 	.pl-banner-exp {
@@ -2367,9 +2045,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1505px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1505px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1505px 0px;
 	}
@@ -2383,9 +2058,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1515px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1515px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1515px 0px;
 	}
 	.pl-banner-exp {
@@ -2403,9 +2075,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1525px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1525px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1525px 0px;
 	}
@@ -2419,9 +2088,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1535px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1535px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1535px 0px;
 	}
 	.pl-banner-exp {
@@ -2439,9 +2105,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1545px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1545px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1545px 0px;
 	}
@@ -2455,9 +2118,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1555px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1555px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1555px 0px;
 	}
 	.pl-banner-exp {
@@ -2475,9 +2135,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1565px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1565px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1565px 0px;
 	}
@@ -2491,9 +2148,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1575px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1575px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1575px 0px;
 	}
 	.pl-banner-exp {
@@ -2511,9 +2165,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1585px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1585px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1585px 0px;
 	}
@@ -2527,9 +2178,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1595px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1595px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1595px 0px;
 	}
 	.pl-banner-exp {
@@ -2547,9 +2195,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1605px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1605px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1605px 0px;
 	}
@@ -2563,9 +2208,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1615px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1615px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1615px 0px;
 	}
 	.pl-banner-exp {
@@ -2583,9 +2225,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1625px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1625px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1625px 0px;
 	}
@@ -2599,9 +2238,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1635px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1635px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1635px 0px;
 	}
 	.pl-banner-exp {
@@ -2619,9 +2255,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1645px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1645px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1645px 0px;
 	}
@@ -2635,9 +2268,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1655px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1655px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1655px 0px;
 	}
 	.pl-banner-exp {
@@ -2655,9 +2285,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1665px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1665px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1665px 0px;
 	}
@@ -2671,9 +2298,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1675px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1675px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1675px 0px;
 	}
 	.pl-banner-exp {
@@ -2691,9 +2315,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1685px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1685px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1685px 0px;
 	}
@@ -2707,9 +2328,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1695px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1695px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1695px 0px;
 	}
 	.pl-banner-exp {
@@ -2727,9 +2345,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1705px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1705px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1705px 0px;
 	}
@@ -2743,9 +2358,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1715px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1715px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1715px 0px;
 	}
 	.pl-banner-exp {
@@ -2763,9 +2375,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1725px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1725px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1725px 0px;
 	}
@@ -2779,9 +2388,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1735px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1735px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1735px 0px;
 	}
 	.pl-banner-exp {
@@ -2799,9 +2405,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1745px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1745px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1745px 0px;
 	}
@@ -2815,9 +2418,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1755px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1755px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1755px 0px;
 	}
 	.pl-banner-exp {
@@ -2835,9 +2435,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1765px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1765px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1765px 0px;
 	}
@@ -2851,9 +2448,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1775px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1775px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1775px 0px;
 	}
 	.pl-banner-exp {
@@ -2871,9 +2465,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1785px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1785px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1785px 0px;
 	}
@@ -2887,9 +2478,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1795px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1795px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1795px 0px;
 	}
 	.pl-banner-exp {
@@ -2907,9 +2495,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1805px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1805px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1805px 0px;
 	}
@@ -2923,9 +2508,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1815px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1815px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1815px 0px;
 	}
 	.pl-banner-exp {
@@ -2943,9 +2525,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1825px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1825px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1825px 0px;
 	}
@@ -2959,9 +2538,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1835px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1835px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1835px 0px;
 	}
 	.pl-banner-exp {
@@ -2979,9 +2555,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1845px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1845px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1845px 0px;
 	}
@@ -2995,9 +2568,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1855px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1855px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1855px 0px;
 	}
 	.pl-banner-exp {
@@ -3015,9 +2585,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1865px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1865px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1865px 0px;
 	}
@@ -3031,9 +2598,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1875px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1875px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1875px 0px;
 	}
 	.pl-banner-exp {
@@ -3051,9 +2615,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1885px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1885px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1885px 0px;
 	}
@@ -3067,9 +2628,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1895px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1895px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1895px 0px;
 	}
 	.pl-banner-exp {
@@ -3087,9 +2645,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1905px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1905px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1905px 0px;
 	}
@@ -3103,9 +2658,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1915px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1915px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1915px 0px;
 	}
 	.pl-banner-exp {
@@ -3123,9 +2675,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1925px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1925px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1925px 0px;
 	}
@@ -3139,9 +2688,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1935px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1935px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1935px 0px;
 	}
 	.pl-banner-exp {
@@ -3159,9 +2705,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1945px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1945px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1945px 0px;
 	}
@@ -3175,9 +2718,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1955px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1955px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1955px 0px;
 	}
 	.pl-banner-exp {
@@ -3195,9 +2735,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1965px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1965px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1965px 0px;
 	}
@@ -3211,9 +2748,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1975px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1975px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1975px 0px;
 	}
 	.pl-banner-exp {
@@ -3231,9 +2765,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 1985px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 1985px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 1985px 0px;
 	}
@@ -3247,9 +2778,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 1995px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 1995px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 1995px 0px;
 	}
 	.pl-banner-exp {
@@ -3267,9 +2795,6 @@ header.fixed-header .site-navbar ul li a {
 	.pl-banner-nat {
 	background-position: 2005px 0px;
 	}
-	.pl-banner-reg {
-	background-position: 2005px 0px;
-	}
 	.pl-banner-exp {
 	background-position: 2005px 0px;
 	}
@@ -3283,9 +2808,6 @@ header.fixed-header .site-navbar ul li a {
 	background-position: 2015px 0px;
 	}
 	.pl-banner-nat {
-	background-position: 2015px 0px;
-	}
-	.pl-banner-reg {
 	background-position: 2015px 0px;
 	}
 	.pl-banner-exp {
@@ -3694,7 +3216,7 @@ p a, .usa-content-list a {
     margin-top : 2em;
 }
 
-.goal-progress {
+.goal-progress, .goal-progress:visited {
     color : #000;
 }
 

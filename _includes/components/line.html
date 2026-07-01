@@ -1,11 +1,7 @@
 {% assign id = page.indicator | slugify %}
 {% assign unit_label = page.variable_unit_label %}
 
-{% if page.url contains '/statistics_reg/' %}
-  <div id="linechart-{{ id }}" class="ct-chart ct-major-eleventh" style="margin-top: 100px;"></div>
-{% else %}
-  <div id="linechart-{{ id }}" class="ct-chart ct-major-eleventh"></div>
-{% endif %}
+<div id="linechart-{{ id }}" class="ct-chart ct-major-eleventh"></div>
 
 <script>
 //LINIOWY

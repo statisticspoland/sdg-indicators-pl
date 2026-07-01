@@ -3,7 +3,6 @@ translation_id: status
 pl:
   page-title: "Stan raportowania wskaźników globalnych"
   page-title2: "Stan raportowania wskaźników krajowych"
-  page-title3: "Stan raportowania wskaźników regionalnych"
   disclaimer-wip: "Strona w budowie"
   nav-reporting-status : "Stan raportowania"
   nav-statistics : "GUS"
@@ -17,7 +16,6 @@ pl:
 en:
   page-title: "Global Reporting Status"
   page-title2: "National Reporting Status"
-  page-title3: "Regional Reporting Status"
   disclaimer-wip: "This site is a work in progress"
   nav-reporting-status : "Reporting Status"
   nav-statistics : "U.S. Statistics"
