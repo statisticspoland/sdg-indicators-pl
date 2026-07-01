@@ -4429,11 +4429,11 @@
       <p></p>
 
     {% if language == 'pl' %}
-      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | downcase | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
+      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
         <button type="button" id="calosc" style="padding: 10px; float: right;" title="Pobierz dane w formacie .csv">Pobierz csv</button>
       </a>
     {% else %}
-      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | downcase | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
+      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
         <button type="button" id="calosc" style="padding: 10px; float: right;" title="Download data in csv format">Download csv</button>
       </a>
     {% endif %}
