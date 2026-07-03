@@ -1430,11 +1430,10 @@ select {
   -webkit-appearance: none;
   appearance: none;
   background-color: #ffffff;
-  background-image: url("../img/arrow-down.png");
   background-image: url("../img/arrow-down.svg");
   background-position: right 1.3rem center;
   background-repeat: no-repeat;
-  background-size: 1.3rem;
+  background-size: 2.2rem;
 }
 
 legend {
@@ -2485,7 +2484,6 @@ li.usa-footer-primary-content:last-child {
 }
 
 .usa-footer-big ul .usa-footer-primary-link {
-  background-image: url("../img/arrow-down.png");
   background-image: url("../img/arrow-down.svg");
   background-position: 1.5rem center;
   background-repeat: no-repeat;
@@ -2987,4 +2985,8 @@ ul {
   @media screen and (min-width: 1201px)
 .pl-grid .usa-width-one-fourth:nth-child(4n), .pl-grid-full .usa-width-one-fourth:nth-child(4n) {
     margin-right: .5;
+}
+
+#tabela_wart{
+  text-align: left !important;
 }

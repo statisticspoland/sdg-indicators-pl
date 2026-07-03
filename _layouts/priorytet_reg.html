@@ -1,0 +1,141 @@
+{% include head.html %}
+
+{% include header.html %}
+
+{% assign ktore = site.data.regionalne %}
+{% if page.url contains '/en/' %}
+  {% assign goals = ktore['en'].sdg_goals %}
+  {% assign goals_priorytet = ktore['en'].sdg_priorytet %}
+  {% assign indicators_priorytet = ktore['en'].sdg_indicator_metadata %}
+  {% assign lang = '/en' %}
+  {% assign title = 'Regional SDG priorities' %}
+  {% assign g1 = 'SDGs' %}
+  {% assign g2 = 'Regional priorities' %}
+  {% assign g3 = 'Indicators' %}
+{% else %}
+  {% assign goals = ktore.sdg_goals %}
+  {% assign goals_priorytet = ktore.sdg_priorytet %}
+  {% assign indicators_priorytet = ktore.sdg_indicator_metadata %}
+  {% assign lang = '' %}
+  {% assign title = 'Priorytety regionalne SDGs' %}
+  {% assign g1 = 'Cele SDGs' %}
+  {% assign g2 = 'Priorytety dla regionów' %}
+  {% assign g3 = 'Wskaźniki' %}
+{% endif %}
+
+    <div id="main" class="main-content initiative-content status-dashboard">
+
+        <a id="main-content" tabindex="-1"></a>
+
+			<section class="pl-banner-reg">
+
+            <div class="pl-grid">
+                <div class="pl-banner-content">
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="pl-grid">
+            {{ content }}
+        </div>
+
+        <div class="pl-grid initiative-description">
+
+          {% if page.url contains '/en/' %}
+            <br/>
+            <p>The set of more than 330 indicators monitoring over 70 regional priorities was developed to analyse changes taking place in Polish regions and assess progress in areas relevant to sustainable development and the implementation of the Sustainable Development Goals at the regional level. Unlike global and national indicators, the regional priorities and the corresponding indicators have been adapted to the socio-economic and environmental specificities of Polish voivodships.</p>
+            <p>Work on developing the set of regional priorities and monitoring indicators was undertaken in response to the growing demand for territorial data, as well as in line with the 2030 Agenda principle of “leaving no one behind”. The work was also inspired by recommendations from the United Nations, the OECD and Eurostat, highlighting the role of regions and cities in achieving the Sustainable Development Goals. An important impulse also came from the experience gained during the preparation of Poland’s Voluntary National Review on SDG implementation in 2023, which highlighted the need to take the regional dimension into account.</p>
+            <p>The regional priorities were identified on the basis of an analysis of the National Strategy for Regional Development, voivodship development strategies, and other strategic documents relating to the social, economic and environmental development of regions. The adopted approach aimed to ensure consistency between regional and national priorities while taking into account the specific challenges and potential of individual voivodships.</p>
+            <p>The regional indicator proposals submitted by Statistics Poland are based primarily on official statistics data available at the voivodship level and in other territorial breakdowns. The selection of indicators took into account their relevance to the monitored issues, the possibility of regular updates, and the comparability of data across regions.</p>
+          {% else %}
+            <br/>
+            <p>Zestaw ponad 330 wskaźników monitorujących ponad 70 priorytetów regionalnych został opracowany na potrzeby analizowania zmian zachodzących w polskich regionach oraz oceny postępów w obszarach istotnych dla zrównoważonego rozwoju i realizacji Celów Zrównoważonego Rozwoju na poziomie regionalnym. W odróżnieniu od wskaźników globalnych i krajowych, priorytety regionalne oraz odpowiadające im mierniki zostały dostosowane do specyfiki społeczno-gospodarczej i środowiskowej polskich województw.</p>
+            <p>Prace nad budową zestawu priorytetów regionalnych i monitorujących je wskaźników zostały podjęte w odpowiedzi na rosnące zapotrzebowanie na dane w ujęciu terytorialnym, a także zgodnie z zaleceniami Agendy 2030 („nie pozostawiać nikogo w tyle”). Inspiracją były również rekomendacje ONZ, OECD oraz Eurostatu, podkreślające rolę regionów i miast w osiąganiu Celów Zrównoważonego Rozwoju. Istotnym impulsem były również doświadczenia z przygotowania dobrowolnego przeglądu krajowego Polski z wdrażania SDGs (ang. Voluntary National Review) w 2023 r., w którym zwrócono uwagę na potrzebę uwzględnienia wymiaru regionalnego.</p>
+            <p>Regionalne priorytety zostały zidentyfikowane w oparciu o analizę Krajowej Strategii Rozwoju Regionalnego, strategii rozwoju województw oraz innych dokumentów strategicznych odnoszących się do rozwoju społecznego, gospodarczego i środowiskowego regionów. Przyjęte podejście miało na celu zachowanie spójności pomiędzy priorytetami regionalnymi i krajowymi, przy jednoczesnym uwzględnieniu specyficznych wyzwań i potencjałów poszczególnych województw.</p>
+            <p>Zgłoszone przez Główny Urząd Statystyczny propozycje wskaźników regionalnych opierają się przede wszystkim na danych statystyki publicznej dostępnych na poziomie województw i innych przekrojach terytorialnych. Przy doborze wskaźników uwzględniono ich adekwatność do monitorowanych zagadnień, możliwość regularnej aktualizacji oraz porównywalność danych pomiędzy regionami.</p>
+          {% endif %}
+
+
+            <div class="goal-list" style="margin-bottom: 32px">
+
+              <div class="media pl-grid-full" style="font-weight: bold;border-bottom: 1px solid #cecece;border-left: 1px solid #cecece;border-top: 1px solid #cecece;border-right: 1px solid #cecece;margin-top: -1px">
+
+                        <div class="usa-width-one-sixth" style="padding-left: 5px;border-left: 1px solid #cecece;padding-right: 5px;margin-top: 16px;">{{g1}}</div>
+                        <div class="usa-width-five-sixths" style="border-left: 1px solid #cecece">
+                            <div style="display: inline-block;width: 100%;border-bottom: 1px solid #cecece;padding-left: 5px;margin-bottom: -7px">
+                              <div style="width: 50%;float: left;padding-right: 15px;border-right: 1px solid #cecece;margin-right: -1px"><p>{{g2}}</p></div>
+                              <div style="width: 50%;float: left;padding-left:5px;border-left: 1px solid #cecece;padding-right: 5px;margin-top: 16px">{{g3}}<br><br></div>
+                            </div>
+                        </div>
+              </div>
+
+
+            {% for goal in goals %}
+
+                {% assign this_goal = goal.goal | plus:0 %}
+
+                {% if this_goal < 10 %}
+                    {% assign img_path = 0  %}
+                {% else %}
+                    {% assign img_path = ''  %}
+                {% endif %}
+
+                    <div class="media pl-grid-full" style="border-bottom: 1px solid #cecece;border-left: 1px solid #cecece;border-top: 1px solid #cecece;border-right: 1px solid #cecece;margin-top: -1px">
+
+                      <div class="usa-width-one-sixth">
+                        <div class="media-left">
+                          <div>
+
+                            <a href="{{ site.baseurl }}{{ lang }}/statistics_reg/{{ goal.short | slugify }}/" title="{{goal.title}}" alt="{{goal.title}}">
+                              {% if page.url contains '/en/' %}
+                                <img class="media-object" title="Go to goal {{ goal.short}}" src="{{ site.baseurl }}/assets/img{{ lang }}{{ lang }}-sdg-goal-{{ img_path }}{{ this_goal }}.png" width="75%" height="calc(1 * width)" alt="{{ goal.short}}" style="padding-top: 16px">
+                              {% else %}
+                                <img class="media-object" title="Przejdź do celu o nazwie {{ goal.title}}" src="{{ site.baseurl }}/assets/img/pl/pl-sdg-goal-{{ img_path }}{{ this_goal }}.png" width="75%" height="calc(1 * width)" alt="{{ goal.short}}" style="padding-top: 16px">
+                              {% endif %}
+                            </a>
+                          <span class="sr-only">
+                                {{ goal.title}}
+                          </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="usa-width-five-sixths" style="border-left: 1px solid #cecece">
+
+                        {% for goal_p in goals_priorytet %}
+                          {% if goal.goal==goal_p.goal %}
+                          <div style="display: inline-block;width: 100%;border-bottom: 1px solid #cecece;padding-left: 5px;margin-bottom: -7px">
+                            <div style="width: 50%;float: left;padding-right: 15px;border-right: 1px solid #cecece;margin-right: -1px">
+                              <p>{{goal_p.priorytet}}</p>
+
+                            </div>
+                            <div style="width: 50%;float: left;padding-left:5px;border-left: 1px solid #cecece;padding-right: 5px;margin-top: 16px">
+                              {% assign nr_indi = goal_p.indicators | split: "," %}
+                              {% for jeden in nr_indi %}
+                                {% for indicators_p in indicators_priorytet %}
+                                  {% if jeden==indicators_p.target_id %}
+                                    {% assign jeden_myslnik = jeden | replace: '.', '-' %}
+                                    {% if page.url contains '/en/' %}
+                                    <a href="{{ site.baseurl }}{{ lang }}/statistics_reg/{{ jeden_myslnik }}" title="Go to indicator {{ jeden_myslnik  | replace: '-', '.' | remove: ".0"}} {{ indicators_p.indicator }}">{{ jeden_myslnik  | replace: '-', '.' | remove: ".0"}} {{ indicators_p.indicator }}</a><br /><br />
+                                    {% else %}
+                                    <a href="{{ site.baseurl }}{{ lang }}/statistics_reg/{{ jeden_myslnik }}" title="Przejdź do wskaźnika {{ jeden_myslnik  | replace: '-', '.' | remove: ".0"}} {{ indicators_p.indicator }}">{{ jeden_myslnik  | replace: '-', '.' | remove: ".0"}} {{ indicators_p.indicator }}</a><br /><br />
+                                    {% endif %}
+                                  {% endif %}
+                                {% endfor %}
+                              {% endfor %}
+                            </div>
+                          </div>
+                          {% endif %}
+                        {% endfor %}
+                        </div>
+                      </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+{% include footer.html %}

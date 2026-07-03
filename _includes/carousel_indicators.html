@@ -4,6 +4,9 @@
 {% if page.url contains '/statistics_nat/' %}
                     {% assign rodzaj = '/statistics_nat/' %}
 					          {% assign ktore_v1 = site.data.krajowe %}
+{% elsif page.url contains '/statistics_reg/' %}
+                    {% assign rodzaj = '/statistics_reg/' %}
+					          {% assign ktore_v1 = site.data.regionalne %}
 {% else %}
                     {% assign rodzaj = '' %}
 					          {% assign ktore_v1 = site.data.globalne %}

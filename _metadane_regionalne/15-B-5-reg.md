@@ -1,0 +1,82 @@
+---
+translation_id: 15-B-5-reg
+pl_title: >-
+  Ścieki przemysłowe i komunalne oczyszczane biologicznie, chemicznie i z podwyższonym usuwaniem biogenów w % ścieków wymagających oczyszczenia
+pl_graph_title: >-
+  Ścieki przemysłowe i komunalne oczyszczane biologicznie, chemicznie i z podwyższonym usuwaniem biogenów w % ścieków wymagających oczyszczenia
+pl_nazwa_wskaznika: >-
+  <b>15.B.5 Ścieki przemysłowe i komunalne oczyszczane biologicznie, chemicznie i z podwyższonym usuwaniem biogenów w % ścieków wymagających oczyszczenia</b>
+en_title: >-
+  Industrial and municipal wastewater treated biologically, chemically and with increased biogene removal in % of wastewater requiring treatment
+en_graph_title: >-
+  Industrial and municipal wastewater treated biologically, chemically and with increased biogene removal in % of wastewater requiring treatment
+en_nazwa_wskaznika: >-
+  <b>15.B.5 Industrial and municipal wastewater treated biologically, chemically and with increased biogene removal in % of wastewater requiring treatment</b>
+pl_cel: Cel 15. Życie na lądzie
+en_cel: Goal 15. Life on land
+pl_zadanie: null
+en_zadanie: null
+pl_priorytet: >-
+  Modernizacja i rozbudowa oczyszczalni i systemów kanalizacyjnych, a także ochrona powietrza (likwidacja źródeł emisji zanieczyszczeń lub zmniejszenie ich oddziaływania) w regionach
+en_priorytet: >-
+  Modernization and expansion of sewage treatment plants and systems, as well as air protection (elimination of sources of pollutant emissions or reduction of their impact) in the regions
+pl_definicja: >-
+  Ścieki przemysłowe i komunalne oczyszczane biologicznie, chemicznie i z podwyższonym usuwaniem biogenów w % ścieków wymagających oczyszczenia.
+en_definicja: >-
+  Industrial and municipal wastewater treated biologically, chemically and with increased biogene removal in % of wastewater requiring treatment.
+pl_jednostka_prezentacji: procent
+en_jednostka_prezentacji: percent
+pl_dostepne_wymiary: ogółem
+en_dostepne_wymiary: total
+pl_zrodlo_danych: Główny Urząd Statystyczny
+en_zrodlo_danych: Statistics Poland
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
+published: true
+pl_wyjasnienia_metodologiczne: >-
+  <p><strong>Ścieki przemysłowe</strong> - ścieki niebędące ściekami bytowymi
+  albo wodami opadowymi lub roztopowymi powstałe w związku z prowadzoną przez
+  zakład działalnością handlową, przemysłową, składową, transportową lub
+  usługową, a także będące ich mieszaniną ze ściekami innego podmiotu,
+  odprowadzane urządzeniami kanalizacyjnymi tego zakładu.</p> <p><strong>Ścieki
+  komunalne</strong> - ścieki bytowe lub mieszanina ścieków bytowych ze
+  ściekami przemysłowymi albo wodami opadowymi lub roztopowymi.</p>
+  <p><strong>Ścieki oczyszczane biologicznie</strong> - ścieki poddane
+  procesowi usuwania zanieczyszczeń przy wykorzystaniu specyficznej mikroflory i
+  mikrofauny.</p> <p><strong>Ścieki oczyszczane chemicznie</strong> -
+   ścieki poddane procesowi oczyszczania przy zastosowaniu metod
+  chemicznych, takich jak koagulacja, sorpcja na węglu aktywnym i innych,
+  powodujących wytrącanie niektórych związków rozpuszczalnych lub
+  neutralizację ścieków.</p> <p><strong>Ścieki oczyszczane z podwyższonym
+  usuwaniem biogenów</strong> - ścieki oczyszczane z
+  zastosowaniem technologii umożliwiających wysoko efektywne usuwanie azotu,
+  fosforu lub fosforu i azotu łącznie (metody biologiczne z ewentualnie
+  chemicznym strącaniem fosforu).</p>
+
+en_wyjasnienia_metodologiczne: >-
+  <p><strong>Industrial wastewater</strong> - sewage which is not residential
+  sewage or rainwater, produced as a result of commercial, industrial, storage,
+  transportation or service activity as well as water mixed with sewage produced
+  by another entities discharged by sewage network owned by this plant.</p>
+  <p><strong>Municipal wastewater</strong> - residential sewage or the
+  mixture of residential sewage with industrial sewage or rainwater or thaw.</p>
+  <p><strong>Biologically treated wastewater</strong> - wastewater treated
+  using specific microflora and microfauna.</p> <p><strong>Chemically treated
+  wastewater</strong> - wastewater treated using chemical methods, such as
+  coagulation, absorption using active carbon and other methods, resulting in
+  precipitation of certain soluble chemical compounds or in neutralisation of
+  wastewater.</p> <p><strong>Wastewater treated with increased biogene
+  removal</strong> - wastewater treated using technologies allowing for
+  highly efficient removal of nitrogen, phosphorus or nitrogen and phosphorus
+  jointly (biological methods with possible chemical reduction in
+  phosphorus).</p>
+
+pl_uwagi: >-
+
+en_uwagi: >-
+
+pl_data_aktualizacji_danych:
+pl_data_aktualizacji_metadanych:
+en_data_aktualizacji_danych:
+en_data_aktualizacji_metadanych:
+---

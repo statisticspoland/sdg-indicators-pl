@@ -7,6 +7,8 @@
 
 {% if page.url contains '/statistics_nat/' %}
 {% assign ktore = site.data.krajowe %}
+{% elsif page.url contains '/statistics_reg/' %}
+{% assign ktore = site.data.regionalne %}
 {% else %}
 {% assign ktore = site.data.globalne %}
 {% endif %}
@@ -34,6 +36,8 @@
   <a id="main-content" tabindex="-1"></a>
   {% if page.url contains '/statistics_nat/' %}
     <section class="pl-banner-nat">
+    {% elsif page.url contains '/statistics_reg/' %}
+    <section class="pl-banner-reg">
 		{% elsif page.url contains '/'%}
 		<section class="pl-banner-glob">
 		{% else %}
@@ -46,6 +50,8 @@
           <h1>
           {% if page.url contains '/statistics_nat/' %}
             {% assign rodzaj = '/statistics_nat/' %}
+          {% elsif page.url contains '/statistics_reg/' %}
+              {% assign rodzaj = '/statistics_reg/' %}
           {% else %}
             {% assign rodzaj = '/statistics_glob' %}
           {% endif %}
@@ -72,6 +78,8 @@
 
     {% if page.url contains '/statistics_nat/' %}
 		{% assign rodzaj = '/statistics_nat/' %}
+    {% elsif page.url contains '/statistics_reg/' %}
+		{% assign rodzaj = '/statistics_reg/' %}
 		{% else %}
 		{% assign rodzaj = '/' %}
     {% endif %}
@@ -144,24 +152,26 @@
 
 		{% if indicator.permalink contains '/statistics_nat/' %}
 			<td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_nat/status/" alt="{{indicator_status}}" title="{{indicator_status}}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
+    {% elsif indicator.permalink contains '/statistics_reg/' %}
+  			<td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_reg/status/" alt="{{indicator_status}}" title="{{indicator_status}}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
 		{% else %}
 			<td style="text-align: center; padding: 8px; height: 45px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_glob/status/" alt="{{indicator_status}}" title="{{indicator_status}}"><span class="label label-{{ status_label }}">{{ indicator_status }}</span></a></td>
 		{% endif %}
 
     {% if indicator.indicator contains '9.1.1' %}
-    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/09_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
+    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/09_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}</a></td>
     {% elsif indicator.indicator contains '11.2.1' %}
-    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_2_1_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
+    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_2_1_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}</a></td>
     {% elsif indicator.indicator contains '11.3.1' %}
-    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_3_1_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
+    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_3_1_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}</a></td>
       {% elsif indicator.indicator contains '11.7.1' %}
-    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_7_1_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
+    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/11_7_1_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}</a></td>
     {% elsif indicator.indicator contains '15.1.2' %}
-    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_1_2_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
+    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_1_2_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}</a></td>
     {% elsif indicator.indicator contains '15.4.1' %}
-    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_4_1_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
+    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}/statistics_exp/15_4_1_exp/" title="{{text}}{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}</a></td>
     {% else %}
-    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}" title="{{text}}{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0"}} {{ indicator_sort.indicator }}</a></td>
+    	<td style="text-align: left; padding: 10px;"><a href="{{ site.baseurl }}{{ lang }}{{ indicator.permalink }}" title="{{text}}{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}">{{ indicator.indicator  | remove: ".0" | remove: ".reg"}} {{ indicator_sort.indicator }}</a></td>
     {% endif %}
 
           {% if indicator.indicator == "1.5.1"
@@ -179,7 +189,7 @@
           or indicator.indicator == "15.7.1"
           or indicator.indicator == "16.1.2" or indicator.indicator == "16.2.3" or indicator.indicator == "16.3.2" or indicator.indicator == "16.5.1" or indicator.indicator == "16.7.1"
           or indicator.indicator == "17.14.1"   %}
-          <td><i class="fa fa-check" style="font-size:20px; width: 100%; text-align: center;" title="Zastępczy" alt="Zastępczy"></i></td>
+          <td><i class="fa fa-check" style="font-size:20px; width: 100%; text-align: center;" title="check" alt="check"></i></td>
 
           {% else %}
 

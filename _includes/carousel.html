@@ -2,6 +2,8 @@
  {% assign number = page.sdg_goal | downcase %}
  {% if page.url contains '/statistics_nat/' %}
 		{% assign glob_kraj = "/statistics_nat/" %}
+ {% elsif page.url contains '/statistics_reg/' %}
+		{% assign glob_kraj = "/statistics_reg/" %}
  {% else %}
 		{% assign glob_kraj = "/" %}
 {% endif %}
