@@ -279,15 +279,15 @@
  -->
  {% if id_map == '3-c-1' %}
    {% if language == 'pl' %}
-            <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
                 <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="ogółem" selected>ogółem</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia" data-short="anestezjologia..." >anestezjologia i intensywna terapia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="anestezjologia i intensywna terapia" data-short="anestezjologia i intensywna terapia" >anestezjologia i intensywna terapia</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia" data-short="chirurgia" >chirurgia</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc" data-short="choroby płuc">choroby płuc</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne" data-short="choroby..." >choroby wewnętrzne</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia" data-short="dermatologia..." >dermatologia i wenerologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne" data-short="choroby wewnętrzne" >choroby wewnętrzne</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia" data-short="dermatologia i wenerologia" >dermatologia i wenerologia</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia" data-short="kardiologia" >kardiologia</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna" data-short="medycyna..." >medycyna rodzinna</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna" data-short="medycyna rodzinna" >medycyna rodzinna</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy" data-short="medycyna pracy" >medycyna pracy</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia" data-short="neurologia" >neurologia</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia" data-short="endokrynologia" >endokrynologia</option>
@@ -296,21 +296,21 @@
                 <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia" data-short="onkologia" >onkologia</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia" data-short="otolaryngologia" >otolaryngologia</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria" data-short="pediatria" >pediatria</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia" data-short="położnictwo..." >położnictwo i ginekologia</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia" data-short="położnictwo i ginekologia" >położnictwo i ginekologia</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria" data-short="psychiatria" >psychiatria</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka" data-short="radiodiagnostyka" >radiodiagnostyka</option>
               </select>
     {% else %}
-      <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+      <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
         <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="total" selected>total</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia" data-short="anesthesiology..." >anesthesiology and intensive therapy</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="anestezjologia i intensywna terapia" data-short="anesthesiology and intensive therapy" >anesthesiology and intensive therapy</option>
         <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia" data-short="surgery" >surgery</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc" data-short="respiratory..." >respiratory diseases</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne" data-short="internal..." >internal diseases</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia" data-short="dermatology..." >dermatology and venereology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc" data-short="respiratory diseases" >respiratory diseases</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne" data-short="internal diseases" >internal diseases</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="dermatologia i wenerologia" data-short="dermatology and venereology" >dermatology and venereology</option>
         <option style="font-family: Fira Sans;font-size: 14px;" value="kardiologia" data-short="cardiology" >cardiology</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna" data-short="general..." >general practitioners</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy" data-short="medicine..." >medicine service</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna rodzinna" data-short="general practitioners" >general practitioners</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="medycyna pracy" data-short="medicine service" >medicine service</option>
         <option style="font-family: Fira Sans;font-size: 14px;" value="neurologia" data-short="neurology" >neurology</option>
         <option style="font-family: Fira Sans;font-size: 14px;" value="endokrynologia" data-short="endocrinology" >endocrinology</option>
         <option style="font-family: Fira Sans;font-size: 14px;" value="diabetologia" data-short="diabetology" >diabetology</option>
@@ -318,9 +318,9 @@
         <option style="font-family: Fira Sans;font-size: 14px;" value="onkologia" data-short="oncology" >oncology</option>
         <option style="font-family: Fira Sans;font-size: 14px;" value="otolaryngologia" data-short="otolaryngology" >otolaryngology</option>
         <option style="font-family: Fira Sans;font-size: 14px;" value="pediatria" data-short="paediatrics" >paediatrics</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia" data-short="obstetrics..." >obstetrics and gynaecology</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="położnictwo i ginekologia" data-short="obstetrics and gynaecology" >obstetrics and gynaecology</option>
         <option style="font-family: Fira Sans;font-size: 14px;" value="psychiatria" data-short="psychiatry" >psychiatry</option>
-        <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka" data-short="radiology..." >radiology and diagnostic imaging</option>
+        <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka" data-short="radiology and diagnostic imaging" >radiology and diagnostic imaging</option>
       </select>
     {% endif %}
   {% elsif id_map == '5-a-9' or id_map == '8-c-1' or id_map == '8-d-4' %}
@@ -339,30 +339,30 @@
    {% endif %}
   {% elsif id_map == '6-a-2' %}
      {% if language == 'pl' %}
-       <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+       <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="ogółem" selected>ogółem</option>
-         <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody" data-short="ujęcia i ...">ujęcia i doprowadzenia wody</option>
-         <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody" data-short="budowa i ...">budowa i modernizacja stacji uzdatniania wody</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody" data-short="ujęcia i doprowadzenia wody">ujęcia i doprowadzenia wody</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody" data-short="budowa i modernizacja stacji uzdatniania wody">budowa i modernizacja stacji uzdatniania wody</option>
        </select>
      {% else %}
-       <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+       <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
          <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="total" selected>total</option>
-         <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody" data-short="water intakes..." >water intakes...</option>
-         <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody" data-short="construction and ..." >construction and ...</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody" data-short="water intakes and supplies" >water intakes and supplies</option>
+         <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody" data-short="construction and modernisation of water treatment plants" >construction and modernisation of water treatment plants</option>
        </select>
      {% endif %}
     {% elsif id_map == '6-e-1' or id_map == '13-c-4' %}
         {% if language == 'pl' %}
-          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
             <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="ogółem" selected>ogółem</option>
-            <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska" data-short="służące ochronie...">służące ochronie środowiska</option>
-            <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej" data-short="służące gospo...">służące gospodarce wodnej</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska" data-short="służące ochronie środowiska">służące ochronie środowiska</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej" data-short="służące gospodarce wodnej">służące gospodarce wodnej</option>
           </select>
         {% else %}
-          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
             <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" data-short="total" selected>total</option>
-            <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska" data-short="on environmental...">on environmental protection</option>
-            <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej" data-short="on water...">on water management</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska" data-short="on environmental protection">on environmental protection</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej" data-short="on water management">on water management</option>
           </select>
         {% endif %}
 
@@ -381,36 +381,36 @@
 
         {% elsif id_map == '14-c-5' %}
             {% if language == 'pl' %}
-              <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-                <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem" data-short="załadunek..." selected>załadunek łącznie z tranzytem</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem" data-short="wyładunek...">wyładunek łącznie z tranzytem</option>
+              <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
+                <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem" data-short="załadunek łącznie z tranzytem" selected>załadunek łącznie z tranzytem</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem" data-short="wyładunek łącznie z tranzytem">wyładunek łącznie z tranzytem</option>
               </select>
             {% else %}
-              <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-                <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem" data-short="loading...">loading including transit</option>
-                <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem" data-short="unloading...">unloading including transit</option>
+              <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
+                <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem" data-short="loading including transit">loading including transit</option>
+                <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem" data-short="unloading including transit">unloading including transit</option>
               </select>
             {% endif %}
 
             {% elsif id_map == '17-a-1' %}
                 {% if language == 'pl' %}
-                  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" data-short="plan nisko..." selected>plan niskoemisyjnej gospodarki</option>
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" data-short="lokalny pro...">lokalny program rozwoju ekonomii społecznej</option>
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" data-short="program o..." >program ochrony środowiska</option>
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" data-short="roczny pro...">roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego</option>
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" data-short="strategia gm..." >strategia rozwoju gminy</option>
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" data-short="strategia pro..." >strategia rozwiązywania problemów społecznych</option>
+                  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" data-short="plan gospodarki niskoemisyjnej" selected>plan gospodarki niskoemisyjnej</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" data-short="lokalny program rozwoju ekonomii społecznej">lokalny program rozwoju ekonomii społecznej</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" data-short="program ochrony środowiska" >program ochrony środowiska</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" data-short="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego">roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" data-short="strategia rozwoju gminy" >strategia rozwoju gminy</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" data-short="strategia rozwiązywania problemów społecznych" >strategia rozwiązywania problemów społecznych</option>
 
                   </select>
                 {% else %}
-                  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" data-short="low-emission..." selected>low-emission economy plan</option>
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" data-short="local ...">local social economy development programme</option>
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" data-short="revitali...">revitalisation programme</option>
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" data-short="long-term...">long-term cooperation programme with non-governmental organisations and other entities engaged in public benefit activities</option>
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" data-short="spatial de...">spatial development plan</option>
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" data-short="alcohol pre...">alcohol prevention and problem-solving programme</option>
+                  <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 250px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" data-short="low-emission economy plan" selected>low-emission economy plan</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" data-short="local social economy development programme">local social economy development programme</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" data-short="revitalisation programme">revitalisation programme</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" data-short="long-term cooperation programme with non-governmental organisations and other entities engaged in public benefit activities">long-term cooperation programme with non-governmental organisations and other entities engaged in public benefit activities</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwoju gminy" data-short="spatial development plan">spatial development plan</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="strategia rozwiązywania problemów społecznych" data-short="alcohol prevention and problem-solving programme">alcohol prevention and problem-solving programme</option>
                   </select>
                 {% endif %}
 
@@ -1539,13 +1539,13 @@
       {% elsif id_map == '6-a-2' %}
         <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
-           <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+           <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
            <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
            <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">ujęcia i doprowadzenia wody</option>
            <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">budowa i modernizacja stacji uzdatniania wody</option>
            </select>
          {% else %}
-          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">water intakes and supplies</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">construction and modernisation of water treatment plants</option>
@@ -1555,13 +1555,13 @@
       {% elsif id_map == '6-e-1' or id_map == '13-c-4' %}
         <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
-          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">służące ochronie środowiska</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">służące gospodarce wodnej</option>
           </select>
        {% else %}
-          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">on environmental protection</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">on water management</option>
@@ -1585,12 +1585,12 @@
       {% elsif id_map == '14-c-5' %}
         <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
             {% if language == 'pl' %}
-            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
                 <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem">załadunek łącznie z tranzytem</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem">wyładunek łącznie z tranzytem</option>
               </select>
             {% else %}
-            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
                 <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem">loading including transit</option>
                 <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem">unloading including transit</option>
               </select>
@@ -1601,8 +1601,8 @@
           {% elsif id_map == '17-a-1' %}
           <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
               {% if language == 'pl' %}
-              <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-                  <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej"  selected>plan niskoemisyjnej gospodarki</option>
+              <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej"  selected>plan gospodarki niskoemisyjnej</option>
                   <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >lokalny program rozwoju ekonomii społecznej</option>
                   <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska"  >program ochrony środowiska</option>
                   <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" >roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego</option>
@@ -1611,7 +1611,7 @@
 
                 </select>
               {% else %}
-              <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
                   <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" selected>low-emission economy plan</option>
                   <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >local social economy development programme</option>
                   <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" >revitalisation programme</option>
@@ -1626,9 +1626,9 @@
     {% elsif id_map == '3-c-1' %}
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
         {% if language == 'pl' %}
-        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anestezjologia i intensywna terapia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anestezjologia i intensywna terapia">anestezjologia i intensywna terapia</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">chirurgia</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">choroby płuc</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">choroby wewnętrzne</option>
@@ -1648,9 +1648,9 @@
           <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiodiagnostyka</option>
         </select>
         {% else %}
-        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anesthesiology and intensive therapy</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anestezjologia i intensywna terapia">anesthesiology and intensive therapy</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">surgery</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">respiratory diseases</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">internal diseases</option>
@@ -1892,13 +1892,13 @@
       {% elsif id_map == '6-a-2' %}
       <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
-        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
            <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
            <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">ujęcia i doprowadzenia wody</option>
            <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">budowa i modernizacja stacji uzdatniania wody</option>
            </select>
          {% else %}
-          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="ujęcia i doprowadzenia wody">water intakes and supplies</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="budowa i modernizacja stacji uzdatniania wody">construction and modernisation of water treatment plants</option>
@@ -1908,13 +1908,13 @@
       {% elsif id_map == '6-e-1' or id_map == '13-c-4' %}
       <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
-          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">służące ochronie środowiska</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">służące gospodarce wodnej</option>
           </select>
        {% else %}
-          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="służące ochronie środowiska">on environmental protection</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="służące gospodarce wodnej">on water management</option>
@@ -1938,12 +1938,12 @@
         {% elsif id_map == '14-c-5' %}
         <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
               {% if language == 'pl' %}
-              <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
                   <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem">załadunek łącznie z tranzytem</option>
                   <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem">wyładunek łącznie z tranzytem</option>
                 </select>
               {% else %}
-              <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
                   <option style="font-family: Fira Sans;font-size: 14px;" value="załadunek łącznie z tranzytem">loading including transit</option>
                   <option style="font-family: Fira Sans;font-size: 14px;" value="wyładunek łącznie z tranzytem">unloading including transit</option>
                 </select>
@@ -1954,8 +1954,8 @@
             {% elsif id_map == '17-a-1' %}
             <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
                 {% if language == 'pl' %}
-                <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" selected>plan niskoemisyjnej gospodarki</option>
+                <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" selected>plan gospodarki niskoemisyjnej</option>
                     <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >lokalny program rozwoju ekonomii społecznej</option>
                     <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" >program ochrony środowiska</option>
                     <option style="font-family: Fira Sans;font-size: 14px;" value="roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego">roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego</option>
@@ -1964,7 +1964,7 @@
 
                   </select>
                 {% else %}
-                <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
                     <option style="font-family: Fira Sans;font-size: 14px;" value="plan gospodarki niskoemisyjnej" selected>low-emission economy plan</option>
                     <option style="font-family: Fira Sans;font-size: 14px;" value="lokalny program rozwoju ekonomii społecznej" >local social economy development programme</option>
                     <option style="font-family: Fira Sans;font-size: 14px;" value="program ochrony środowiska" >revitalisation programme</option>
@@ -1979,9 +1979,9 @@
     {% elsif id_map == '3-c-1' %}
       <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
         {% if language == 'pl' %}
-        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>ogółem</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anestezjologia i intensywna terapia</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anestezjologia i intensywna terapia">anestezjologia i intensywna terapia</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">chirurgia</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">choroby płuc</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">choroby wewnętrzne</option>
@@ -2001,9 +2001,9 @@
           <option style="font-family: Fira Sans;font-size: 14px;" value="radiodiagnostyka">radiodiagnostyka</option>
         </select>
         {% else %}
-        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+        <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
           <option style="font-family: Fira Sans;font-size: 14px;" value="ogółem" selected>total</option>
-          <option style="font-family: Fira Sans;font-size: 14px;" value="anastezjologia i intensywna terapia">anesthesiology and intensive therapy</option>
+          <option style="font-family: Fira Sans;font-size: 14px;" value="anestezjologia i intensywna terapia">anesthesiology and intensive therapy</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="chirurgia">surgery</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="choroby płuc">respiratory diseases</option>
           <option style="font-family: Fira Sans;font-size: 14px;" value="choroby wewnętrzne">internal diseases</option>
@@ -2059,11 +2059,11 @@
       <p></p>
 
     {% if language == 'pl' %}
-      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
+      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | downcase | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
         <button type="button" id="calosc" style="padding: 10px; float: right;" title="Pobierz dane w formacie .csv">Pobierz csv</button>
       </a>
     {% else %}
-      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
+      <a href="{{ site.baseurl }}/data/regionalne/indicator_{{page.indicator | downcase | replace: ".", "-" | replace: "-reg", ""}}-map.csv" target="_blank">
         <button type="button" id="calosc" style="padding: 10px; float: right;" title="Download data in csv format">Download csv</button>
       </a>
     {% endif %}
@@ -2192,7 +2192,7 @@
         delete row["Polska"];
       });
 
-      if('{{ id_map }}' == '17-a-1'){
+      if('{{ id_map }}' == '17-a-1' || '{{ id_map }}' == '6-a-2'){
         createchartScatterParam("chartLine",  data.slice(1), undefined, "{{ language }}", "{{ precyzja }}", 0);
       }
       else{
@@ -2549,7 +2549,7 @@ function updateChartLine(){
         checkedValues.push(cb.value);
         /*tr[i].style.display = '';*/
       }
-      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej" || selectedLine === "anastezjologia i intensywna terapia"){
+      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej" || selectedLine === "anestezjologia i intensywna terapia"){
         checkedValues.push(cb.value+"_");
         /*tr[i+17].style.display = '';*/
       }
@@ -2691,7 +2691,7 @@ function updateChartLine(){
       });
       //console.log("data2_forEach_line");
       //console.log(data2);
-      if('{{ id_map }}' == '17-a-1'){
+      if('{{ id_map }}' == '17-a-1' || '{{ id_map }}' == '6-a-2'){
         createchartScatterParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}", "{{ precyzja }}", 0);
       }
       else{
