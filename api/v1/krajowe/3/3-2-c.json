@@ -1,0 +1,155 @@
+
+
+
+{
+  "3-2-c": [
+    {
+      "metadane": [
+        
+        {
+                        "nazwa": "3.2.c Odsetek osób deklarujących niezaspokojone potrzeby w zakresie badań lekarskich i opieki medycznej z powodu zbyt wysokich kosztów, zbyt dużej odległości lub list oczekujących",
+                      
+                        "cel": "Cel 3. Dobre zdrowie i jakość życia",
+                      
+                        "priorytet": "Zmniejszenie nierówności w dostępie do opieki zdrowotnej",
+                      
+                        "definicja": "Odsetek osób zgłaszających potrzebę wykonania badania lekarskiego lub leczenia, która nie została zaspokojona z powodu barier finansowych, nadmiernej odległości do świadczeniodawców lub długich list oczekujących.",
+                      
+                        "jednostka": "procent [%]",
+                      
+                        "wymiary": "ogółem, płeć",
+                      
+                        "metodologia": "Wskaźnik odzwierciedla poziom ograniczeń w dostępie do badań lekarskich i leczenia, z wyłączeniem niezrealizowanych potrzeb w obszarze opieki stomatologicznej.Dane na podstawie których obliczono wskaźnik pochodzą z Europejskiego Badania Warunków Życia Ludności (EU-SILC). Obejmują one zamieszkujące gospodarstwa domowe osoby w wieku co najmniej 16 lat oraz odnoszą się do potrzeb występujących w ciągu ostatnich 12 miesięcy.Wskaźnik został wyrażony jako odsetek osób, które zadeklarowały potrzebę w zakresie badań i leczenia niezaspokojoną na skutek jednego z trzech następujących powodów: „względy finansowe”, „lista oczekujących” oraz „zbyt duża odległość do pokonania”.Pojęcie niezaspokojonych potrzeb w zakresie badań lekarskich i opieki medycznej opiera się na subiektywnej ocenie danej osoby co do tego czy potrzebowała badania lub leczenia ale z niego nie skorzystała lub nie podjęła próby uzyskania takiego świadczenia.Badania lekarskie i leczenie należy rozumieć jako indywidualne świadczenia zdrowotne udzielane przez lekarzy lub pod ich bezpośrednim nadzorem, bądź przez osoby wykonujące równoważne zawody medyczne uwzględnione w krajowym systemie ochrony zdrowia. ",
+                      
+                        "zrodlo": "Eurostat",
+                      
+                        "czestotliwosc": "Dane roczne; od 2010 r.",
+                      
+                        "uwagi": "Dane zaprezentowane dla 2010 r. dotyczą badania przeprowadzonego w 2009 r.",
+                      
+                        "data_aktualizacji_danych": "07-07-2026",
+                      
+                        "data_aktualizacji_metadanych": "07-07-2026"
+                      }
+      ],
+      "dane": [
+        {
+                      "wg płci": [
+                          {
+                              "ogółem": [
+                                  {
+                                  
+                                      "2010" :   "8.3",
+                                  
+                                      "2011" :   "7.9",
+                                  
+                                      "2012" :   "9.0",
+                                  
+                                      "2013" :   "8.8",
+                                  
+                                      "2014" :   "7.8",
+                                  
+                                      "2015" :   "7.3",
+                                  
+                                      "2016" :   "6.6",
+                                  
+                                      "2017" :   "3.3",
+                                  
+                                      "2018" :   "4.2",
+                                  
+                                      "2019" :   "4.2",
+                                  
+                                      "2020" :   "1.9",
+                                  
+                                      "2021" :   "2.7",
+                                  
+                                      "2022" :   "2.3",
+                                  
+                                      "2023" :   "3.6",
+                                  
+                                      "2024" :   "3.8",
+                                  
+                                      "2025" :   "2.9"
+                                  
+                                  }
+                              ],
+                              "mężczyźni": [
+                                  {
+                                  
+                                      "2010" :   "6.8",
+                                  
+                                      "2011" :   "6.5",
+                                  
+                                      "2012" :   "7.4",
+                                  
+                                      "2013" :   "7.4",
+                                  
+                                      "2014" :   "6.7",
+                                  
+                                      "2015" :   "6.2",
+                                  
+                                      "2016" :   "5.5",
+                                  
+                                      "2017" :   "3.0",
+                                  
+                                      "2018" :   "3.7",
+                                  
+                                      "2019" :   "3.5",
+                                  
+                                      "2020" :   "1.6",
+                                  
+                                      "2021" :   "2.3",
+                                  
+                                      "2022" :   "1.8",
+                                  
+                                      "2023" :   "2.9",
+                                  
+                                      "2024" :   "3.4",
+                                  
+                                      "2025" :   "2.5"
+                                  
+                                  }
+                              ],
+                              "kobiety": [
+                                  {
+                                  
+                                      "2010" :   "9.6",
+                                  
+                                      "2011" :   "9.2",
+                                  
+                                      "2012" :   "10.4",
+                                  
+                                      "2013" :   "10.0",
+                                  
+                                      "2014" :   "8.7",
+                                  
+                                      "2015" :   "8.3",
+                                  
+                                      "2016" :   "7.5",
+                                  
+                                      "2017" :   "3.5",
+                                  
+                                      "2018" :   "4.6",
+                                  
+                                      "2019" :   "4.7",
+                                  
+                                      "2020" :   "2.1",
+                                  
+                                      "2021" :   "3.1",
+                                  
+                                      "2022" :   "2.7",
+                                  
+                                      "2023" :   "4.1",
+                                  
+                                      "2024" :   "4.2",
+                                  
+                                      "2025" :   "3.3"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+  ]
+}

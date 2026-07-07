@@ -1,0 +1,73 @@
+
+
+
+{
+  "3-5-b": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "3.5.b Number of premature deaths due to exposure to fine particulate matter (PM2.5) per 100 thous. inhabitants",
+                      
+                        "goal": "Goal 3. Good health and well-being",
+                      
+                        "priority": "Comprehensive improvement of air quality reaching the state of no risk to health and environment in accordance with EU legislation and, in a longer-term perspective, WHO guidelines by reducing emissions of pollutants into the air",
+                      
+                        "definition": "The number of premature deaths in a given population that can be attributed to exposure to fine particulate matter (PM2.5), expressed per 100 thous. inhabitants.",
+                      
+                        "unit": "persons",
+                      
+                        "dimensions": "total",
+                      
+                        "methodology": "The indicator is used to estimate the impact of air pollution on population health and to monitor progress in reducing environmental risk.The numerator is the number of premature deaths attributable to long-term exposure to concentrations of fine particulate matter (PM2.5) above 5 µg/m³, corresponding to the reference level specified in the 2021 World Health Organization (WHO) Air Quality Guidelines. The denominator is the total population. The indicator is expressed per 100 000 population.Fine particulate matter (PM2.5) consists of particles with a diameter of less than 2.5 micrometres that can penetrate deep into the lungs, causing inflammation and deterioration in the health status of persons with cardiovascular and respiratory diseases.The number of premature deaths was calculated on the basis of data and methodology provided by the European Environment Agency (EEA) - the European Union agency responsible for monitoring the state of the environment.",
+                      
+                        "source": "Eurostat",
+                      
+                        "availability": "Annual data, since 2010",
+                      
+                        "notes": "",
+                      
+                        "data_updated_on": "07-07-2026",
+                      
+                        "metadata_updated_on": "07-07-2026"
+                      }
+      ],
+      "data": [
+        {"total": [
+                      {
+                      
+                          "2010" :   "137",
+                      
+                          "2011" :   "129",
+                      
+                          "2012" :   "123",
+                      
+                          "2013" :   "119",
+                      
+                          "2014" :   "116",
+                      
+                          "2015" :   "114",
+                      
+                          "2016" :   "107",
+                      
+                          "2017" :   "115",
+                      
+                          "2018" :   "121",
+                      
+                          "2019" :   "93",
+                      
+                          "2020" :   "96",
+                      
+                          "2021" :   "126",
+                      
+                          "2022" :   "93",
+                      
+                          "2023" :   "69"
+                      
+                      }
+                  ]
+            }
+      ]
+    }
+  ]
+}
