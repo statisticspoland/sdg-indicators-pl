@@ -409,12 +409,14 @@ permalink: /o_sdg/
   <hr style="margin-top: 0px;">
 
     <div class="image-wrapper" style="height: 250px;">
-      <a target="_blank" href="https://s3.amazonaws.com/sustainabledevelopment.report/2025/sustainable-development-report-2025.pdf" alt="Sustainable Development Report" title="Zapoznaj się z publikacją Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2025.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://s3.amazonaws.com/sustainabledevelopment.report/2026/sustainable-development-report-2026.pdf" alt="Sustainable Development Report" title="Zapoznaj się z publikacją Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2026.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable Development Report</b></p>
 
-  <p>Raport Zrównoważonego Rozwoju, opracowywany przez Sieć Rozwiązań na Rzecz Zrównoważonego Rozwoju (UN SDSN) oraz Fundację Bertelsmanna, zawiera przegląd corocznych postępów państw członkowskich ONZ w zakresie SDGs. Publikacja prezentuje Indeks SDG i Dashboard SDG, narzędzia umożliwiające ocenę ogólnych wyników krajów w zakresie SDGs oraz identyfikację ich mocnych i słabych stron w odniesieniu do 17 Celów, a także pozwala na analizę światowych tendencji w tym zakresie</p>
-  <p>Tegoroczna edycja przedstawia dodatkowo indeks wsparcia krajów na rzecz współpracy wielostronnej ONZ oraz podkreśla osiem kluczowych przesłań, m.in. utrzymującą się w rankingu dominację krajów europejskich, silne globalne zaangażowanie w SDGs, najszybszy postęp w Azji Wschodniej i Południowej oraz wyzwania finansowe wielu krajów rozwijających się.</p>
+  <p>Raport Zrównoważonego Rozwoju, opracowywany przez Sieć Rozwiązań na Rzecz Zrównoważonego Rozwoju (UN SDSN), zawiera przegląd corocznych postępów państw członkowskich ONZ w zakresie SDGs. Publikacja prezentuje Indeks SDG i Dashboard SDG, narzędzia umożliwiające ocenę ogólnych wyników krajów w zakresie SDGs oraz identyfikację ich mocnych i słabych stron w odniesieniu do 17 Celów, a także pozwala na analizę światowych tendencji w tym zakresie.</p>
+  <p>Raport z 2026 r. pt. <i>Implementing Sustainable Development: 2030 and Beyond</i> zwraca szczególną uwagę na wdrażanie zrównoważonego rozwoju w perspektywie 2030 roku i dalszych lat.</p>
+  <p>Podkreśla, że mimo ogólnego poparcia dla Celów Zrównoważonego Rozwoju (SDGs), ich osiągnięcie do 2030 r. wymaga znacznego wzmocnienia mechanizmów realizacji – przede wszystkim finansowania, międzynarodowej współpracy, zarządzania oraz lepszego wykorzystania nauki i danych.</p>
+  <p>Publikacja przedstawia również indeks wsparcia krajów dla wielostronnej współpracy w ramach ONZ oraz wyniki badań na temat działań rządów na rzecz SDGs.</p>
 
 
 
@@ -427,7 +429,8 @@ permalink: /o_sdg/
 </p>
 <div class="collapse" id="collapseExample5">
   <div class="card card-body">
-	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2024)" href="https://s3.amazonaws.com/sustainabledevelopment.report/2024/sustainable-development-report-2024.pdf">Sustainable Development Report 2024</a></p>
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2025)" href="https://s3.amazonaws.com/sustainabledevelopment.report/2025/sustainable-development-report-2025.pdf">Sustainable Development Report 2025</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2024)" href="https://s3.amazonaws.com/sustainabledevelopment.report/2024/sustainable-development-report-2024.pdf">Sustainable Development Report 2024</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2023)" href="https://sdgtransformationcenter.org/reports/sustainable-development-report-2023">Sustainable Development Report 2023</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2022)" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/">Sustainable Development Report 2022</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z publikacją Sustainable Development Report (2021)" href="https://www.sdgindex.org/reports/sustainable-development-report-2021/">Sustainable Development Report 2021</a></p>

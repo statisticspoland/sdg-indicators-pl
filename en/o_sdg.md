@@ -400,15 +400,17 @@ permalink: /en/o_sdg/
 
 
 
-  <hr style="margin-top: 0px;">
+  <hr style="margin-top: 0px; ">
 
-    <div class="image-wrapper">
-      <a target="_blank" href="https://s3.amazonaws.com/sustainabledevelopment.report/2025/sustainable-development-report-2025.pdf" alt="Sustainable Development Report" title="Read a publication Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2025.png" align="center" alt="GUS" border="0"/></a>
+  <div class="image-wrapper" style="height: 250px;">
+      <a target="_blank" href="https://s3.amazonaws.com/sustainabledevelopment.report/2026/sustainable-development-report-2026.pdf" alt="Sustainable Development Report" title="Read a publication Sustainable Development Report"><img src="{{ site.baseurl }}/assets/img/publikacje/11_sustainablereport_2026.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Sustainable Development Report</b></p>
 
-  <p>The Sustainable Development Report (SDR), developed by Sustainable Development Solutions Network (UN SDSN) and the Bertelsmann Stiftung, reviews progress on SDGs made each year by UN Member States. The SDR contains the SDG index and SDG dashboard, tools allowing the assessment of each country’s overall performance on the SDGs and identifying country's strengths and weaknesses in relation to the 17 Goals both with the global trends in this area.</p>
-  <p>This year’s edition also presents a new index of countries’ support to UN-based multilateralism and highlights eight key messages, including the continued dominance of European countries in the ranking, strong global commitment to the SDGs, the fastest progress in East and South Asia, and the financial challenges faced by many developing countries.</p>
+  <p>The Sustainable Development Report, prepared by the Sustainable Development Solutions Network (UN SDSN), provides an overview of the annual progress made by UN Member States in implementing the SDGs. The publication presents the SDG Index and SDG Dashboard, tools that enable the assessment of countries’ overall performance on the SDGs, the identification of their strengths and weaknesses in relation to the 17 Goals, and the analysis of global trends in this area.</p>
+  <p>The 2026 report, entitled <i>Implementing Sustainable Development: 2030 and Beyond</i>, places particular emphasis on the implementation of sustainable development in the perspective of 2030 and beyond.</p>
+  <p>It highlights that, despite broad support for the Sustainable Development Goals (SDGs), achieving them by 2030 requires a significant strengthening of implementation mechanisms — primarily financing, international cooperation, governance, and better use of science and data.</p>
+  <p>The publication also presents an index of countries’ support for multilateral cooperation within the UN framework, as well as research findings on government actions in support of the SDGs.</p>
 
 
 
@@ -421,7 +423,8 @@ permalink: /en/o_sdg/
 </p>
 <div class="collapse" id="collapseExample5">
   <div class="card card-body">
-	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication Sustainable Development Report 2024" href="https://s3.amazonaws.com/sustainabledevelopment.report/2024/sustainable-development-report-2024.pdf">Sustainable Development Report 2024</a></p>
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication Sustainable Development Report 2025" href="https://s3.amazonaws.com/sustainabledevelopment.report/2025/sustainable-development-report-2025.pdf">Sustainable Development Report 2025</a></p>
+	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable Development Report 2024" href="https://s3.amazonaws.com/sustainabledevelopment.report/2024/sustainable-development-report-2024.pdf">Sustainable Development Report 2024</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable Development Report 2023" href="https://sdgtransformationcenter.org/reports/sustainable-development-report-2023">Sustainable Development Report 2023</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable Development Report 2022" href="https://www.sdgindex.org/reports/sustainable-development-report-2022/">Sustainable Development Report 2022</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication Sustainable Development Report 2021" href="https://www.sdgindex.org/reports/sustainable-development-report-2021/">Sustainable Development Report 2021</a></p>
