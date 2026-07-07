@@ -44,9 +44,9 @@ en_wyjasnienia_metodologiczne: >-
   <p><b>Deadweight tonnage (DWT)</b> - the weight of cargo and stores at summer loadline draft in seawater, expressed in tonnes (1,000 kg). The difference in tonnes between the displacement of a vessel at summer loadline draft in water with a specific gravity of 1.025 t/m³ and the total weight of the vessel, i.e., the displacement of the vessel in tonnes without cargo, fuel, lubricating oil, ballast, fresh water and drinking water in tanks, utility items, as well as passengers, crew, and their belongings.</p>
 
 pl_uwagi: >-
-
+  Dane prezentowane są według siedziby przedsiębiorstwa, tj. zostały przypisane do jednostki terytorialnej, w której znajduje się siedziba podmiotu, niezależnie od miejsca prowadzenia działalności.
 en_uwagi: >-
-
+  Data are presented by the location of the enterprise's registered office, i.e. they are allocated to the territorial unit where the registered office of the enterprise is located, regardless of the place where the economic activity is actually carried out.
 pl_data_aktualizacji_danych:
 pl_data_aktualizacji_metadanych:
 en_data_aktualizacji_danych:
