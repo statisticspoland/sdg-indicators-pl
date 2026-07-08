@@ -30,8 +30,8 @@ pl_dostepne_wymiary: ogółem
 en_dostepne_wymiary: total
 pl_zrodlo_danych: Główny Urząd Statystyczny
 en_zrodlo_danych: Statistics Poland 
-pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2017 r.
-en_czestotliwosc_dostępnosc_danych: Annual data, since 2017
+pl_czestotliwosc_dostępnosc_danych: Dane roczne; od 2010 r.
+en_czestotliwosc_dostępnosc_danych: Annual data, since 2010
 published: true
 pl_wyjasnienia_metodologiczne: >-
   <p><b>Recykling</b> to odzysk, w ramach którego odpady są ponownie przetwarzane na produkty, materiały lub substancje wykorzystywane w pierwotnym celu lub innych celach; obejmuje to ponowne przetwarzanie materiału organicznego (recykling organiczny), ale nie obejmuje odzysku energii i ponownego przetwarzania na materiały, które mają być wykorzystane jako paliwa lub do celów wypełniania wyrobisk.</p>
