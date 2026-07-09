@@ -6,7 +6,7 @@ permalink: /en/guide/
 ---
 <article>
             <h4>National reporting platform - SDG</h4>
-            <p>National Reporting Platform (SDG Platform) is a publicly available tool for dissemination and presentation of <a title="Go to global indicators" href="https://sdg.gov.pl/en/"  target="_blank">global</a> and <a title="Go to national indicators" href="https://sdg.gov.pl/en/statistics_nat/"  target="_blank">national</a> indicators monitoring the Sustainable Development Goals (SDGs) of the 2030 Agenda in Poland.</p>
+            <p>National Reporting Platform (SDG Platform) is a publicly available tool for dissemination and presentation of <a title="Go to global indicators" href="https://sdg.gov.pl/en/"  target="_blank">global</a>, <a title="Go to national indicators" href="https://sdg.gov.pl/en/statistics_nat/"  target="_blank">national</a> and <a title="Go to regional indicators" href="https://sdg.gov.pl/en/statistics_reg/"  target="_blank">regional</a> indicators monitoring the Sustainable Development Goals (SDGs) of the 2030 Agenda in Poland.</p>
 </article>
 <hr>
 <article>
@@ -29,47 +29,10 @@ permalink: /en/guide/
             <p>Polish statistics actively supports the development of national reporting platforms, in particular
             produced in the open-source model for the purpose of monitoring SDGs indicators.
             Precursors in this field are USA and UK.<br />
-
             The current version of the Polish reporting platform has been developed based on earlier version of the US NRP,
             and was developed by us with new functionality and adapted to the needs of Polish statistics.
             <br />The project code is publicly available in the repository - <a title="Go to sdg github repository" href="https://github.com/statisticspoland/sdg-indicators-pl"  target="_blank">
             https://github.com/statisticspoland/sdg-indicators-pl</a>
-            </p>
-            <p>
-            The new universal version of the <b><i>open-sdg</i></b> platform developed by the US, UK and Center for Open Data Enterprise is available.
-            <br />We encourage you to familiarize yourself with the national US, UK platforms for SDG and the
-            <a title="Read project documentation" href="https://open-sdg.readthedocs.io/en/latest/"  target="_blank">project documentation</a>.
-            </p>
-            <p>
-            - US NPR SDG -
-            <a title="Go to SDG USA page" href="https://gsa.github.io/sdg-indicators-usa/" target="_blank">https://gsa.github.io/sdg-indicators-usa/</a>
-            </p>
-            <p>
-            - UK NPR SDG -
-            <a title="Go to SDG UK page" href="https://sustainabledevelopment-uk.github.io" target="_blank">https://sustainabledevelopment-uk.github.io</a>
-            </p>
-</article>
-<hr>
-<article>
-            <h4>NRP - selected modifications developed by us</h4>
-            <p>- new page layout, menu, graphics, CSS style sheet
-            <br />- preparation of the mobile version
-            <br />- preparation of the Polish language version
-            <br />- increasing the availability of the platform - contrast
-            <br />- extending the structure to accommodate in parallel both global and national SDG indicators
-            <br />- SDG indicator search engine
-            <br />- improvement of navigation between particular pages of the platform (eg scrolling between goals, breadcrumbs)
-            <br />- improving the presentation of indicators
-            <br />- dynamically generated table, charts based on selected data
-            <br />- the possibility of adding several data series from available dimensional attributes
-            <br />- CSV download (all or selected data)
-            </p>
-</article>
-<hr>
-<article>
-            <h4>NRP - planned development</h4>
-            <p>- sharing data sets at a lower level of aggregation
-             <br /> - implementation of GIS solutions using technology <i> open source </i>
             </p>
 </article>
 <hr>
