@@ -23,30 +23,29 @@ layout: page
     {% if page.url contains 'en/' %}
       {% for post in site.posts %}
         {% if post.lang == 'en' %}
-          {% unless post.url contains '30' %}
             <article class='{{ post.type }}'>
               <a name='{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
               <section class='body'>
                 {{ post.content }}
               </section>
             </article>
-          {% endunless %}
         {% endif %}
       {% endfor %}
     {% else %}
       {% for post in site.posts %}
         {% if post.lang == 'pl' %}
-          {% unless post.url contains '30' %}
             <article class='{{ post.type }}'>
               <a name='{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
               <section class='body'>
                 {{ post.content }}
               </section>
             </article>
-          {% endunless %}
         {% endif %}
       {% endfor %}
     {% endif %}
   </section>
 
-  <script>require('boot');</script>
+
+
+  <script>require('boot');
+  </script>
