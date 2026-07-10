@@ -55,11 +55,11 @@ en_wyjasnienia_metodologiczne: >-
 
   <p><b>The economically inactive population by the LFS</b> are people aged 15-89 years who were not classified as employed or unemployed, who who in the reference week:</p>
 
-  <p>a)	did not work, neither had a job nor were seeking work,</p>
+  <p>a) did not work, neither had a job nor were seeking work,</p>
 
-  <p>b)	did not work, were seeking a job, albeit not in an active way or were actively seeking work but were not ready (available) to start work within the two weeks following the reference week,</p>
+  <p>b) did not work, were seeking a job, albeit not in an active way or were actively seeking work but were not ready (available) to start work within the two weeks following the reference week,</p>
 
-  <p>c)	neither worked nor were seeking work, as they had already found a job and were waiting to start work during the period:</p>
+  <p>c) neither worked nor were seeking work, as they had already found a job and were waiting to start work during the period:</p>
 
   <p>- longer than 3 months,</p>
 

@@ -53,7 +53,7 @@ pl_wyjasnienia_metodologiczne: >-
 en_wyjasnienia_metodologiczne: >-
   <p><b>Special education</b> is organised for children and young people with disabilities, socially inappropriate and at risk of social inadequacy, requiring the use of special educational organisation and working methods. It can be implemented in the school system or in an individual form. Special education takes place in:
   <br />• public schools in which branches are established: special, inclusive and publicly accessible,
-  <br />•	independent special schools,
+  <br />• independent special schools,
   <br />• special educational centres, other educational establishments or establishments carrying out medical activities (including spa centres).</p>
   <p>Students study in one of the provided organizational forms of education on the basis of a decision of a public psychological and pedagogical clinic (including a public specialist clinic) on the need for special education or individual teaching of children and adolescents. </p>
   <p>Pupils holding a certificate on the need for special education do not have to be disabled within the meaning of the Act on Vocational and Social Rehabilitation and Employment of Persons with Disabilities, just as pupils with disabilities do not have to have a certificate on the need for special education.</p>

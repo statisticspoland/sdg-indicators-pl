@@ -63,15 +63,15 @@ en_wyjasnienia_metodologiczne: >-
   <p><b>Investment outlays</b> are financial or material outlays aimed at creating new fixed assets or improving (reconstruction, extension, reconstruction or modernization) existing fixed assets, as well as outlays on the so-called first equipment of the investment. Capital expenditure is divided into fixed capital formation and other expenditure.</p>
 
   <p>Fixed capital formation includes, inter alia, expenditure on:
-  <br />•	acquisition of land (including the right of perpetual usufruct of land), buildings, premises and civil engineering structures (including construction and assembly works, design and cost documentation),
+  <br />• acquisition of land (including the right of perpetual usufruct of land), buildings, premises and civil engineering structures (including construction and assembly works, design and cost documentation),
   <br />• technical equipment and machinery,
   <br />• means of transport,
   <br />• tools, instruments, movables and equipment,
   <br />• other fixed assets the purpose of which is to obtain protective effects or effects in water management.</p>
 
   <p>Expenditure on fixed assets for environmental protection and water management should also include expenditure on:
-  <br />•	improvement of fixed assets related to environmental protection or water management, consisting in their reconstruction, extension, modernization or reconstruction,
-  <br />•	research and development activities.</p>
+  <br />• improvement of fixed assets related to environmental protection or water management, consisting in their reconstruction, extension, modernization or reconstruction,
+  <br />• research and development activities.</p>
 
   <p><b>The remaining outlays</b> are outlays on the so-called first equipment of the investment and other costs related to the implementation of the investment. These expenditures do not increase the value of fixed assets. </p>
 
