@@ -36,17 +36,17 @@ published: true
 pl_wyjasnienia_metodologiczne: >-
   <p><b>Zużycie wody</b> to ilość wody zużytej na potrzeby gospodarki narodowej i ludności, pochodzącej z ujęć własnych bądź z sieci wodociągowej lub zakupionej od innych jednostek.</p>
   <p>W statystyce stanowi sumę zużycia wody na cele:
-  <br />•	przemysłowe – woda zużyta na cele produkcyjne, eksploatacyjne, socjalne i administracyjne (za wyjątkiem wody dostarczanej do budynków mieszkalnych np. zakładowych) z wyłączeniem wody sprzedanej oraz strat wody w sieci;
-  <br />•	rolnictwa i leśnictwa – woda zużyta jest tożsama z wodą pobraną do napełniania i uzupełniania stawów rybnych;
-  <br />•	eksploatacji sieci wodociągowej – woda dostarczona: gospodarstwom domowym, indywidualnym gospodarstwom rolnym i osobom zamieszkałym w obiektach długotrwałego zbiorowego zakwaterowania (np. internaty, domy dziecka, domy opieki społecznej, klasztory itp.), przedsiębiorcom i zakładom produkcyjnym we wszystkich działach gospodarki narodowej – niezależnie czy została zużyta na cele produkcyjne czy socjalno-bytowe (np. w łaźniach, stołówkach, budynkach biurowych)
-  <br />•	pozostałe cele.</p>
+  <br />• przemysłowe - woda zużyta na cele produkcyjne, eksploatacyjne, socjalne i administracyjne (za wyjątkiem wody dostarczanej do budynków mieszkalnych np. zakładowych) z wyłączeniem wody sprzedanej oraz strat wody w sieci;
+  <br />• rolnictwa i leśnictwa - woda zużyta jest tożsama z wodą pobraną do napełniania i uzupełniania stawów rybnych;
+  <br />• eksploatacji sieci wodociągowej - woda dostarczona: gospodarstwom domowym, indywidualnym gospodarstwom rolnym i osobom zamieszkałym w obiektach długotrwałego zbiorowego zakwaterowania (np. internaty, domy dziecka, domy opieki społecznej, klasztory itp.), przedsiębiorcom i zakładom produkcyjnym we wszystkich działach gospodarki narodowej - niezależnie czy została zużyta na cele produkcyjne czy socjalno-bytowe (np. w łaźniach, stołówkach, budynkach biurowych)
+  <br />• pozostałe cele.</p>
 
 en_wyjasnienia_metodologiczne: >-
   <p><b>Consumption of water</b> - In the statistic it is the sum of water consumption for the purposes of:
-  <br />•	industry - water consumed for production, operational, social, administrative purposes (except for water supplied to residential buildings, eg. plant buildings) excluding water sold and losses in water network;
-  <br />•	agriculture and forestry - water consumed is water withdrawn for filling and completing fishponds;
-  <br />•	exploitation of water supply network - water delivered to households, individual farms, residents of lon-term collective accomodation facilities (dormitories, orphanages, nursing homes, monasteries etc.), entrepreneurs and manufacturing plants in all sectors of the national economy - whether it was used for production or social and living purposes (eg. in bathhouse, canteens, office buildings)
-  <br />•	and other purposes.</p>
+  <br />• industry - water consumed for production, operational, social, administrative purposes (except for water supplied to residential buildings, eg. plant buildings) excluding water sold and losses in water network;
+  <br />• agriculture and forestry - water consumed is water withdrawn for filling and completing fishponds;
+  <br />• exploitation of water supply network - water delivered to households, individual farms, residents of lon-term collective accomodation facilities (dormitories, orphanages, nursing homes, monasteries etc.), entrepreneurs and manufacturing plants in all sectors of the national economy - whether it was used for production or social and living purposes (eg. in bathhouse, canteens, office buildings)
+  <br />• and other purposes.</p>
 
 pl_uwagi: >-
 

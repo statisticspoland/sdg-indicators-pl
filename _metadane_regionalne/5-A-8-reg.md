@@ -91,8 +91,8 @@ pl_uwagi: >-
 
 en_uwagi: >-
 
-pl_data_aktualizacji_danych:
-pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
-en_data_aktualizacji_metadanych:
+pl_data_aktualizacji_danych: 10-07-2026
+pl_data_aktualizacji_metadanych: 03-07-2026
+en_data_aktualizacji_danych: 10-07-2026
+en_data_aktualizacji_metadanych: 03-07-2026
 ---
