@@ -21,6 +21,11 @@ permalink: /en/guide/
             <p>In addition, the Polish NRP reporting platform has been developed in accordance with accepted ones
             international guidelines, in particular for open data and software produced in the <i>open source model</i>.
             </p>
+            <p>
+            The new universal version of the <b><i>open-sdg</i></b> platform developed by the US, UK and Center for Open Data Enterprise is available.
+            <br />We encourage you to familiarize yourself with the 
+            <a title="Read project documentation" href="https://open-sdg.readthedocs.io/en/latest/"  target="_blank">project documentation</a>.
+            </p>
 
 </article>
 <hr>

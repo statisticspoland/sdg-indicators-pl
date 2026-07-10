@@ -22,6 +22,10 @@ permalink: /guide/
             <p>Dodatkowo, polska platforma raportująca NRP została opracowana zgodnie z przyjętymi międzynarodowymi wytycznymi,
             w szczególności w odniesieniu do otwartych danych (<i>open data</i>) oraz oprogramowania wytwarzanego w modelu <i>open source</i>.
             </p>
+            <p>
+            Aktualnie dostępna jest nowa wersja platformy <b><i>open-sdg</i></b> opracowana przez US, UK, CODE.
+            Zachęcamy do zapoznania się z <a title="Zapoznaj się z dokumentacją projektu" href="https://open-sdg.readthedocs.io/en/latest/"  target="_blank">dokumentacją projektu</a>.
+            </p>
 </article>
 <hr>
 <article>
