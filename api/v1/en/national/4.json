@@ -83,29 +83,29 @@
           "metadata": [
             
             {
-                            "name": "4.2.a Share of pupils with statements of special educational needs attending generally-accessible mainstream schools in total number of pupils with statements of special educational needs",
+                            "name": "4.2.a Percentage of graduates in the fields of biological sciences, enivronment, physical sciences, engineering and engineering trades, production and processing, agriculture, forestry, fisheries, veterinary – according to the ISCED-F 2013 classification",
                           
                             "goal": "Goal 4. Quality education",
                           
                             "priority": "Education for sustainable development",
                           
-                            "definition": "Share of pupils with statements of special educational needs attending generally-accessible mainstream schools in total number of pupils with statements of special educational needs (including in integration institutions).",
+                            "definition": "Percentage of graduates of higher education institutions in fields of biological sciences, environment, engineering and engineering trades, manufacturing and processing, agriculture, forestry, fisheries, veterinary (according to ISCED-F 2013) in the total number of graduates of higher education institutions.",
                           
                             "unit": "percent [%]",
                           
                             "dimensions": "total",
                           
-                            "methodology": "Special education (at the level of primary school, lower secondary school and upper secondary school) takes place in individually-functioning special schools or in generally-accessible mainstream schools, in which the following sections are created – special, integration, mainstream or therapeutic and compensatory, as well as in special educational centres or healthcare institutions (including health resorts). Pursuant to the provisions of the Act – Educational Law, the term 'school' should also be understood as a nursery school. Statement of special educational needs is a document issued by a psychological and pedagogical counseling center at the request of parents, which is a prerequisite for obtaining a special organization of education. Data collected on the basis of the analysis of data contained in the Educational Information System, to which nursery school and schools are obliged to provide information on the number of students withstatements of special educational needs. The denominator is the number of students with statements of special educational needs, and the numerator is the number of students with in nursery schools/generally-accessible mainstream  schools.",
+                            "methodology": "The International Standard Classification of Education ISCED was designed by UNESCO as a tool for collecting and presenting internationally comparable statistics on education. It was first developed in 1970 by the United NationsEducational, Scientific and Cultural Organization (UNESCO). The current version of ISCED-F 2013 was approved at the session of General Conference of UNESCO in October 2013.For statistical purposes Polish fields of studies are assigned by the CSO representatives in cooperation with representatives of the Ministry of Science and Higher Education to groups and sub-groups of fields of study based on the guidelines Classification.Graduates of higher education institutions (excluding foreign students) are persons who obtained a diploma confirming the completion of higher education studies (after defence of the thesis) and received the professional title of Engineer (inzynier) or Bachelor (licencjat) awarded as a result of completing a first-cycle programme – vocational), Master's degree – magister (awarded as a result of completing long-cycle Master’s degree programme or a second-cycle programme – supplementary Master’s degree studies).Graduates (included foreigners) in higher education are presented form the previous academic year, 2018 – concern persons who obtained higher education diplomas between 1st December 2017 and 31st December 2018. The data - presented by the actual location of the university excluding organizational units of Polish universities operating abroad, which were previously reported at the seat of the university; they include public and private universities, including schools of the Ministry of National Defense and the Ministry of Interior and Administration.",
                           
-                            "source": "Ministry of National Education (Educational Information System)",
+                            "source": "Statistics Poland",
                           
-                            "availability": "Annual data; since 2018",
+                            "availability": "Annual data; since 2015",
                           
-                            "notes": "Data for 2018 refer to the 2018/2019 school year.",
+                            "notes": "",
                           
-                            "data_updated_on": "02-12-2025",
+                            "data_updated_on": "",
                           
-                            "metadata_updated_on": "03-12-2025"
+                            "metadata_updated_on": ""
                           }
           ],
           "data": [
@@ -122,27 +122,27 @@
                               
                                   "2014" :   "",
                               
-                                  "2015" :   "",
+                                  "2015" :   "16.5",
                               
-                                  "2016" :   "",
+                                  "2016" :   "17.5",
                               
-                                  "2017" :   "",
+                                  "2017" :   "18.0",
                               
-                                  "2018" :   "65.7",
+                                  "2018" :   "18.0",
                               
-                                  "2019" :   "66.0",
+                                  "2019" :   "17.0",
                               
-                                  "2020" :   "66.4",
+                                  "2020" :   "14.8",
                               
-                                  "2021" :   "68.0",
+                                  "2021" :   "14.2",
                               
-                                  "2022" :   "69.3",
+                                  "2022" :   "13.7",
                               
-                                  "2023" :   "71.0",
+                                  "2023" :   "12.5",
                               
-                                  "2024" :   "73.3",
+                                  "2024" :   "11.9",
                               
-                                  "2025" :   "75.2"
+                                  "2025" :   ""
                               
                               }
                           ]
@@ -734,6 +734,83 @@
       ]
     },
     {
+      "4-3-h": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "4.3.h Share of pupils with statements of special educational needs attending generally-accessible mainstream schools in total number of pupils with statements of special educational needs",
+                          
+                            "goal": "Goal 4. Quality education",
+                          
+                            "priority": "Creation of conditions for education development all over the country and equalization of educational opportunities",
+                          
+                            "definition": "Share of pupils with statements of special educational needs attending generally-accessible mainstream schools in total number of pupils with statements of special educational needs (including in integration institutions).",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Special education (at the level of primary school, lower secondary school and upper secondary school) takes place in individually-functioning special schools or in generally-accessible mainstream schools, in which the following sections are created – special, integration, mainstream or therapeutic and compensatory, as well as in special educational centres or healthcare institutions (including health resorts). Pursuant to the provisions of the Act – Educational Law, the term 'school' should also be understood as a nursery school. Statement of special educational needs is a document issued by a psychological and pedagogical counseling center at the request of parents, which is a prerequisite for obtaining a special organization of education. Data collected on the basis of the analysis of data contained in the Educational Information System, to which nursery school and schools are obliged to provide information on the number of students withstatements of special educational needs. The denominator is the number of students with statements of special educational needs, and the numerator is the number of students with in nursery schools/generally-accessible mainstream  schools.",
+                          
+                            "source": "Ministry of National Education (Educational Information System)",
+                          
+                            "availability": "Annual data; since 2018",
+                          
+                            "notes": "Data for 2018 refer to the 2018/2019 school year.",
+                          
+                            "data_updated_on": "02-12-2025",
+                          
+                            "metadata_updated_on": "17-07-2026"
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   "65.7",
+                              
+                                  "2019" :   "66.0",
+                              
+                                  "2020" :   "66.4",
+                              
+                                  "2021" :   "68.0",
+                              
+                                  "2022" :   "69.3",
+                              
+                                  "2023" :   "71.0",
+                              
+                                  "2024" :   "73.3",
+                              
+                                  "2025" :   "75.2"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
       "4-4-a": [
         {
           "metadata": [
@@ -1220,248 +1297,299 @@
       ]
     },
     {
-      "4-5-a": [
+      "4-4-c": [
         {
           "metadata": [
             
             {
-                            "name": "4.5.a Percentage of persons who declare knowledge of at least one foreign language",
+                            "name": "4.4.c Percentage of young people neither in employment nor in education and training (NEET)",
                           
                             "goal": "Goal 4. Quality education",
                           
-                            "priority": "Improvement in education innovativeness",
+                            "priority": "Creation of conditions for adults' wider engagement in learning in various forms and places and for the recognition of learning outcomes acquired outside formal education",
                           
-                            "definition": "Percentage of persons aged 18-69 declaring knowledge of at least one foreign language.",
+                            "definition": "Share of unemployed or inactive 15-24 year olds who do not continue their education in the formal education system and do not further their education/training in the non-formal education system (within 4 weeks before the survey) in the total population in the same age group. Indicator's numerator refers to those who meet two conditions:  - are not employed (i.e. are unemployed or economically inactive), - did not participate in any form of education during four weeks preceding the survey.  Indicator's denominator is a population in a given age group, which the indicator concerns, excluding persons who did not answer the question concerning 'participation in regular education and training'.",
                           
                             "unit": "percent [%]",
                           
                             "dimensions": "total",
                           
-                            "methodology": "International Adult Education Survey, conducted every five years, is an important source of information for monitoring specific objectives of the program 'Lifelong Learning” which plays a significant role in European socio-economic development strategies. The main objective of the Adult Education Survey was to provide adult education data comparable for EU countries. The set of variables adopted in the survey encompassed people aged 18-69 participating in formal, non-formal and informal education, in connection with socio-demographic characteristics. Another purpose of the survey was to supply data on access to information regarding learning possibilities, difficulties preventing or hindering participation in education, as well as foreign language skills.The legal basis for the Adult Education Survey was laid down in the Commission Regulation (EU) No. 1175/2014 of 30 October 2014 implementing the Regulation (EC) No. 452/2008 of the European Parliament and of the Council concerning the production and development of statistics on education and lifelong learning, as regards statistics on the participation of adults in the process of lifelong learning and the Regulation of the Council of Ministers on the Programme of Statistical Surveys of Official Statistics for 2016 of 21 July 2015 (Journal of Laws of 2015, item 1304).",
+                            "methodology": "The data comes from the representative Labour Force Survey (LFS), conducted on a quarterly basis using the continuous observation method (movable survey week), allowing to illustrate the labor market situation over the entire quarter. The survey covers persons aged 15-89 who are members of households in drawn dwellings. Outside the scope of the survey are members of households residing (the total duration of actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as staff hotels, dormitories, dormitories, nursing homes, etc.) and homeless persons. The basic criterion for dividing the population from the point of view of labor force participation is work, i.e. the fact of doing, having or seeking work. According to international standards, the general population can be divided into three basic categories: employed, unemployed and economically inactive. The employed and unemployed constitute the economically active population.",
                           
                             "source": "Statistics Poland",
                           
-                            "availability": "Annual data every 5 years; since 2011.",
+                            "availability": "Annual data; since 2010.",
                           
-                            "notes": "",
+                            "notes": "From 2023 onwards, data on Poland's resident population living in dwellings, derived from balance sheets compiled on the basis of Census 2021 results, were used to generalise the LFS results to the general population. Data for 2021-2022 were compiled according to the new basis of generalisation. Due to the changes introduced, the LFS results are not fully comparable with the survey results for the years prior to 2021. In addition, the lack of comparability of the data time series is also affected by methodological changes introduced to the LFS from Q1 2021. Data for 2010-2020 have been recalculated and presented taking into account the new methodology. These recalculations do not take into account the change in the basis for generalising data to balances based on the Census 2021.",
                           
-                            "data_updated_on": "30-07-2024",
+                            "data_updated_on": "",
                           
-                            "metadata_updated_on": "23-05-2023"
+                            "metadata_updated_on": ""
                           }
           ],
           "data": [
             {
                       
-                              "by education level of the head of the household": [
+                              "by sex": [
+                                  {"total": [
+                                          {
+                                          
+                                              "2010" : "11.0",
+                                          
+                                              "2011" : "11.7",
+                                          
+                                              "2012" : "12.1",
+                                          
+                                              "2013" : "12.5",
+                                          
+                                              "2014" : "12.2",
+                                          
+                                              "2015" : "11.2",
+                                          
+                                              "2016" : "10.8",
+                                          
+                                              "2017" : "9.7",
+                                          
+                                              "2018" : "8.8",
+                                          
+                                              "2019" : "7.9",
+                                          
+                                              "2020" : "8.6",
+                                          
+                                              "2021" : "11.2",
+                                          
+                                              "2022" : "8.1",
+                                          
+                                              "2023" : "6.9",
+                                          
+                                              "2024" : "7.0",
+                                          
+                                              "2025" : "7.1"
+                                          
+                                          }
+                                      ],"males": [
+                                          {
+                                          
+                                              "2010" : "10.9",
+                                          
+                                              "2011" : "11.7",
+                                          
+                                              "2012" : "12.2",
+                                          
+                                              "2013" : "12.4",
+                                          
+                                              "2014" : "12.0",
+                                          
+                                              "2015" : "10.9",
+                                          
+                                              "2016" : "11.2",
+                                          
+                                              "2017" : "10.7",
+                                          
+                                              "2018" : "10.1",
+                                          
+                                              "2019" : "9.1",
+                                          
+                                              "2020" : "9.3",
+                                          
+                                              "2021" : "11.8",
+                                          
+                                              "2022" : "8.6",
+                                          
+                                              "2023" : "6.7",
+                                          
+                                              "2024" : "6.9",
+                                          
+                                              "2025" : "7.6"
+                                          
+                                          }
+                                      ],"females": [
+                                          {
+                                          
+                                              "2010" : "11.1",
+                                          
+                                              "2011" : "11.8",
+                                          
+                                              "2012" : "12.0",
+                                          
+                                              "2013" : "12.6",
+                                          
+                                              "2014" : "12.4",
+                                          
+                                              "2015" : "11.5",
+                                          
+                                              "2016" : "10.4",
+                                          
+                                              "2017" : "8.8",
+                                          
+                                              "2018" : "7.4",
+                                          
+                                              "2019" : "6.8",
+                                          
+                                              "2020" : "7.9",
+                                          
+                                              "2021" : "10.6",
+                                          
+                                              "2022" : "7.5",
+                                          
+                                              "2023" : "7.1",
+                                          
+                                              "2024" : "7.0",
+                                          
+                                              "2025" : "6.7"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "4-5-a": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "4.5.a Number of graduates from higher education in technical fields (natural sciences, mathematics, ICT, engineering, manufacturing and construction) per 1 thous. persons aged 20–29",
+                          
+                            "goal": "Goal 4. Quality education",
+                          
+                            "priority": "Improvement in education innovativeness",
+                          
+                            "definition": "Number of tertiary education graduates in technical fields (science, mathematics, computing, engineering, manufacturing, construction) per 1 000 persons aged 20–29 years.",
+                          
+                            "unit": "persons",
+                          
+                            "dimensions": "total, sex",
+                          
+                            "methodology": "The purpose of the indicator is to measure output of STEM-related tertiary education relative to young adult population.The numerator is the number of graduates in STEM fields in tertiary education in the given reference year. The denominator is the total population aged 20–29 years, based on the Eurostat data. The indicator is expressed per 1 000 persons.Data on the number of graduates are derived from the joint UOE (UNESCO–OECD–Eurostat) data collection on education statistics, based on administrative data reported by national statistical authorities and ministries responsible for education.A graduate is defined as a person who has successfully completed a programme of study at the tertiary education level (i.e. ISCED 2011 levels 5–8). STEM fields are defined in accordance with ISCED-F 2013 classification as follows: F05 (Natural sciences, mathematics and statistics), F06 (Information and Communication Technologies), and F07 (Engineering, manufacturing and construction).The International Standard Classification of Education (ISCED) is a framework for compiling, analysing and presenting internationally comparable statistics on education.",
+                          
+                            "source": "Eurostat",
+                          
+                            "availability": "Annual data, since 2014",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "",
+                          
+                            "metadata_updated_on": ""
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "by sex": [
                                   {"total": [
                                           {
                                           
                                               "2010" : "",
                                           
-                                              "2011" : "64.4",
+                                              "2011" : "",
                                           
                                               "2012" : "",
                                           
                                               "2013" : "",
                                           
-                                              "2014" : "",
+                                              "2014" : "20.5",
                                           
-                                              "2015" : "",
+                                              "2015" : "21.4",
                                           
-                                              "2016" : "68.3",
+                                              "2016" : "21.5",
                                           
-                                              "2017" : "",
+                                              "2017" : "23.6",
                                           
-                                              "2018" : "",
+                                              "2018" : "20.9",
                                           
-                                              "2019" : "",
+                                              "2019" : "20.1",
                                           
-                                              "2020" : "",
+                                              "2020" : "17.7",
                                           
-                                              "2021" : "",
+                                              "2021" : "18.8",
                                           
-                                              "2022" : "72.8"
+                                              "2022" : "19.1",
+                                          
+                                              "2023" : "19.5",
+                                          
+                                              "2024" : "20.0",
+                                          
+                                              "2025" : ""
                                           
                                           }
-                                      ],"tertiary": [
+                                      ],"males": [
                                           {
                                           
                                               "2010" : "",
                                           
-                                              "2011" : "93.3",
+                                              "2011" : "",
                                           
                                               "2012" : "",
                                           
                                               "2013" : "",
                                           
-                                              "2014" : "",
+                                              "2014" : "23.0",
                                           
-                                              "2015" : "",
+                                              "2015" : "23.6",
                                           
-                                              "2016" : "93.1",
+                                              "2016" : "23.5",
                                           
-                                              "2017" : "",
+                                              "2017" : "26.2",
                                           
-                                              "2018" : "",
+                                              "2018" : "23.3",
                                           
-                                              "2019" : "",
+                                              "2019" : "22.6",
                                           
-                                              "2020" : "",
+                                              "2020" : "20.1",
                                           
-                                              "2021" : "",
+                                              "2021" : "21.4",
                                           
-                                              "2022" : "93.8"
+                                              "2022" : "22.0",
+                                          
+                                              "2023" : "22.8",
+                                          
+                                              "2024" : "23.9",
+                                          
+                                              "2025" : ""
                                           
                                           }
-                                      ],"post-secondary": [
+                                      ],"females": [
                                           {
                                           
                                               "2010" : "",
                                           
-                                              "2011" : "80.4",
+                                              "2011" : "",
                                           
                                               "2012" : "",
                                           
                                               "2013" : "",
                                           
-                                              "2014" : "",
+                                              "2014" : "17.8",
                                           
-                                              "2015" : "",
+                                              "2015" : "19.0",
                                           
-                                              "2016" : "80.7",
+                                              "2016" : "19.3",
                                           
-                                              "2017" : "",
+                                              "2017" : "20.9",
                                           
-                                              "2018" : "",
+                                              "2018" : "18.5",
                                           
-                                              "2019" : "",
+                                              "2019" : "17.4",
                                           
-                                              "2020" : "",
+                                              "2020" : "15.2",
                                           
-                                              "2021" : "",
+                                              "2021" : "15.9",
                                           
-                                              "2022" : "85.2"
+                                              "2022" : "16.0",
                                           
-                                          }
-                                      ],"secondary vocational": [
-                                          {
+                                              "2023" : "16.1",
                                           
-                                              "2010" : "",
+                                              "2024" : "15.9",
                                           
-                                              "2011" : "70.4",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "72.2",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "",
-                                          
-                                              "2021" : "",
-                                          
-                                              "2022" : "70.7"
-                                          
-                                          }
-                                      ],"general secondary": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "81.1",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "79.6",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "",
-                                          
-                                              "2021" : "",
-                                          
-                                              "2022" : "77.5"
-                                          
-                                          }
-                                      ],"basic vocational": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "42.5",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "43.6",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "",
-                                          
-                                              "2021" : "",
-                                          
-                                              "2022" : "46.1"
-                                          
-                                          }
-                                      ],"not higher than lower secondary": [
-                                          {
-                                          
-                                              "2010" : "",
-                                          
-                                              "2011" : "35.0",
-                                          
-                                              "2012" : "",
-                                          
-                                              "2013" : "",
-                                          
-                                              "2014" : "",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "41.8",
-                                          
-                                              "2017" : "",
-                                          
-                                              "2018" : "",
-                                          
-                                              "2019" : "",
-                                          
-                                              "2020" : "",
-                                          
-                                              "2021" : "",
-                                          
-                                              "2022" : "50.3"
+                                              "2025" : ""
                                           
                                           }
                                       ]

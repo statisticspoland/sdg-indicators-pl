@@ -81,68 +81,187 @@
           "metadane": [
             
             {
-                            "nazwa": "6.1.b Odsetek ludności zaopatrywanej z sieci wodociągowej w wodę nieodpowiadającą wymaganiom",
+                            "nazwa": "6.1.b Odsetek kąpielisk śródlądowych i przybrzeżnych o doskonałej jakości wody",
                           
                             "cel": "Cel 6. Czysta woda i warunki sanitarne",
                           
                             "priorytet": "Zwiększenie dyspozycyjnych zasobów wód, poprawa ich stanu ekologicznego i jakości chemicznej",
                           
-                            "definicja": "Odsetek ludności zaopatrywanej z sieci wodociągowej w wodę, która jest niezdatna do użycia.",
+                            "definicja": "Stosunek liczby kąpielisk śródlądowych i przybrzeżnych o najwyższej klasie czystości wody do liczby wszystkich kąpielisk śródlądowych i przybrzeżnych.",
                           
                             "jednostka": "procent [%]",
                           
                             "wymiary": "ogółem",
                           
-                            "metodologia": "Sieć wodociągowa to przewody wodociągowe wraz z uzbrojeniem i urządzeniami, którymi jest dostarczana woda. Wodociągami nazywamy kompleks urządzeń wodociągowych służących do ujęcia wód powierzchniowych i podziemnych, studni publicznych, urządzeń służących do magazynowania i uzdatniania wód, sieci wodociągowe, urządzenia regulujące ciśnienie wody. Woda jest zdatna do użycia, jeżeli jest wolna od mikroorganizmów chorobotwórczych i pasożytów w liczbie stanowiącej potencjalne zagrożenie dla zdrowia ludzkiego, wszelkich substancji w stężeniach stanowiących potencjalne zagrożenie dla zdrowia ludzkiego oraz nie wykazuje agresywnych właściwości.",
+                            "metodologia": "Wskaźnik pozwala śledzić zmiany czystości wód kąpieliskowych w ujęciu długoterminowym i nie odnosi się do bieżącej jakości wody w kąpieliskach.W liczniku ujęte są wszystkie kąpieliska śródlądowe i przybrzeżne o najwyższej klasie czystości wody, a w mianowniku wszystkie czynne w danym sezonie kąpieliska śródlądowe i przybrzeżne.Dane potrzebne do obliczenia wskaźnika gromadzone są przez państwa członkowskie Unii Europejskiej (UE) zgodnie z Dyrektywą 2006/7/WE. Za ich kompilację i udostępnianie odpowiada Europejska Agencja Środowiska.W Polsce klasyfikacja jakości wód kąpieliskowych przeprowadzana jest corocznie przez organy Państwowej Inspekcji Sanitarnej po sezonie kąpielowym na podstawie wyników badań parametrów mikrobiologicznych (pałeczki okrężnicy i enterokoki) realizowanych w ramach harmonogramów z ostatnich czterech lat.Na podstawie oceny jakości wód kąpieliskowych za okres 4 lat wyróżnia się następujące klasy czystości: 4 Doskonała – najwyższa jakość wody, 3 Dobra – ogólnie dobra jakość wody, 2 Dostateczna – woda spełnia minimalny standard, 1 Niedostateczna– woda nie spełniła minimalnego standardu, 0 Nieklasyfikowana – klasyfikacja niemożliwa z uwagi na brak pełnego zestawu danych o jakości wody.Najczęstsza przyczyna braku klasyfikacji jakości wody (nieklasyfikowane) dotyczy kąpielisk: a)	nowo zidentyfikowanych (dane nt. kąpieliska są dopiero gromadzone), b)	niewyznaczonych przez radę gminy w danym sezonie kąpielowym (w trakcie czteroletniego okresu oceny), co skutkuje brakiem ciągłości badań mikrobiologicznych niezbędnych do dokonania klasyfikacji jakości wody w kąpielisku.Fakt niesklasyfikowania nie oznacza automatycznie, że woda kąpieliskowa nie spełnia norm. Oznacza jedynie, że nie upłynął wymagany czas, by przypisać jej klasę z dostępnych czterech kategorii.",
                           
-                            "zrodlo": "Ministerstwo Zdrowia",
+                            "zrodlo": "Eurostat",
                           
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
+                            "czestotliwosc": "Dane roczne; od 2011 r.",
                           
                             "uwagi": "",
                           
-                            "data_aktualizacji_danych": "02-12-2025",
+                            "data_aktualizacji_danych": "",
                           
-                            "data_aktualizacji_metadanych": "25-05-2021"
+                            "data_aktualizacji_metadanych": ""
                           }
           ],
           "dane": [
             {"ogółem": [
                               {
                               
-                                  "2010" :   "6.4",
+                                  "2010" :   "",
                               
-                                  "2011" :   "4.4",
+                                  "2011" :   "67.3",
                               
-                                  "2012" :   "3.7",
+                                  "2012" :   "68.3",
                               
-                                  "2013" :   "3.6",
+                                  "2013" :   "66.8",
                               
-                                  "2014" :   "1.8",
+                                  "2014" :   "55.7",
                               
-                                  "2015" :   "1.1",
+                                  "2015" :   "60.9",
                               
-                                  "2016" :   "0.6",
+                                  "2016" :   "66.2",
                               
-                                  "2017" :   "0.3",
+                                  "2017" :   "66.8",
                               
-                                  "2018" :   "0.3",
+                                  "2018" :   "28.0",
                               
-                                  "2019" :   "0.3",
+                                  "2019" :   "21.6",
                               
-                                  "2020" :   "0.4",
+                                  "2020" :   "22.1",
                               
-                                  "2021" :   "0.5",
+                                  "2021" :   "44.5",
                               
-                                  "2022" :   "0.3",
+                                  "2022" :   "55.9",
                               
-                                  "2023" :   "0.2",
+                                  "2023" :   "54.9",
                               
-                                  "2024" :   "0.3"
+                                  "2024" :   "58.1",
+                              
+                                  "2025" :   ""
                               
                               }
                           ]
                         
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "6-1-c": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "6.1.c Odsetek jednolitych części wód powierzchniowych o dobrym stanie",
+                          
+                            "cel": "Cel 6. Czysta woda i warunki sanitarne",
+                          
+                            "priorytet": "Zwiększenie dyspozycyjnych zasobów wód, poprawa ich stanu ekologicznego i jakości chemicznej",
+                          
+                            "definicja": "Udział jednolitych części wód powierzchniowych (jcwp) rzek i zbiorników zaporowych oraz jezior sklasyfikowanych jako będące w stanie dobrym w ogólnej liczbie (jcwp) danej kategorii.",
+                          
+                            "jednostka": "procent [%]",
+                          
+                            "wymiary": "kategorie wód powierzchniowych",
+                          
+                            "metodologia": "Jednolita część wód powierzchniowych (jcwp) oznacza oddzielny i znaczący element wód powierzchniowych takich jak: jezioro, zbiornik, strumień, rzeka lub kanał, część strumienia, rzeki lub kanału, wody przejściowe lub pas wód przybrzeżnych, a także zbiorniki zaporowe.Zbiorniki zaporowe powstają przez spiętrzenie wód rzecznych, dlatego po zakończeniu pełnienia przewidzianych dla nich funkcji należy dążyć do przywrócenia ich stanu naturalnego, którym jest rzeka. Ponadto, nie są one zbiornikami zupełnie sztucznymi, tak jak np. wyrobiska. W związku z powyższym zbiorniki zaporowe uznaje się za silnie przekształcone jcwp rzeczne.Stan jednolitych części wód rzek i jezior ocenia się jako dobry lub zły, analizując wyniki klasyfikacji ich stanu lub potencjału ekologicznego (na podstawie wyników badań wskaźników jakości wód wchodzących w skład elementów fizyko-chemicznych, biologicznych i hydromorfologicznych). Stan ekologiczny określa się dla naturalnych jcwp, natomiast potencjał ekologiczny dla wód sztucznie i silnie zmienionych w wyniku działalności człowieka.Informacje o stanie wód powierzchniowych (rzek, jezior, wód przejściowych i przybrzeżnych) pozyskiwane są w ramach monitoringu jakości wód, będącego podsystemem Państwowego Monitoringu Środowiska. Monitoring jakości wód realizowany jest przez Główny Inspektorat Ochrony Środowiska w oparciu o wyznaczone jednolite części wód, stanowiące podstawową jednostkę gospodarowania wodami.",
+                          
+                            "zrodlo": "Główny Inspektorat Ochrony Środowiska",
+                          
+                            "czestotliwosc": "Dane roczne; od 2015 r. – 2019 r., oraz za lata 2021 i 2024",
+                          
+                            "uwagi": "",
+                          
+                            "data_aktualizacji_danych": "",
+                          
+                            "data_aktualizacji_metadanych": ""
+                          }
+          ],
+          "dane": [
+            {
+                      
+                              "kategorie wód powierzchniowych": [
+                                  {"rzeki i zbiorniki zaporowe": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "10.9",
+                                          
+                                              "2016" : "7.0",
+                                          
+                                              "2017" : "0.3",
+                                          
+                                              "2018" : "0.6",
+                                          
+                                              "2019" : "1.1",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "0.5",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : "1.6",
+                                          
+                                              "2025" : ""
+                                          
+                                          }
+                                      ],"jeziora": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "18.7",
+                                          
+                                              "2016" : "15.7",
+                                          
+                                              "2017" : "14.7",
+                                          
+                                              "2018" : "13.5",
+                                          
+                                              "2019" : "11.5",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "1.2",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : "6.0",
+                                          
+                                              "2025" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
                     
                 
             }

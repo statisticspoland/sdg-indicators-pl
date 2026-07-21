@@ -7,249 +7,143 @@
       "metadane": [
         
         {
-                        "nazwa": "4.5.a Odsetek osób deklarujących znajomość przynajmniej jednego języka obcego",
+                        "nazwa": "4.5.a Liczba absolwentów szkół wyższych o kierunkach technicznych (nauki ścisłe, matematyka, informatyka, inżynieria, produkcja, budownictwo) w przeliczeniu na 1 000 osób w wieku 20-29 lat",
                       
                         "cel": "Cel 4. Dobra jakość edukacji",
                       
                         "priorytet": "Poprawa innowacyjności kształcenia",
                       
-                        "definicja": "Odsetek osób w wieku 18-69 lat deklarujących znajomość przynajmniej jednego języka obcego.",
+                        "definicja": "Liczba absolwentów szkolnictwa wyższego w obszarach technicznych (nauki ścisłe, matematyka, informatyka, inżynieria, produkcja, budownictwo) przypadająca na 1 000 osób w wieku 20–29 lat.",
                       
-                        "jednostka": "procent [%]",
+                        "jednostka": "osoby",
                       
-                        "wymiary": "ogółem",
+                        "wymiary": "ogółem, płeć",
                       
-                        "metodologia": "Międzynarodowe badanie Kształcenie dorosłych (Adult Education Survey) przeprowadzane co 5 lat, stanowi ważne źródło informacji służące do monitorowania szczegółowych celów programu „Uczenie się przez całe życie” (Lifelong Learning) zajmującego znaczącą pozycję w europejskich strategiach rozwoju społeczno-gospodarczego. Głównym celem badania Kształcenie dorosłych było dostarczenie porównywalnych dla krajów Unii Europejskiej danych dotyczących edukacji osób dorosłych. Zestaw zmiennych obowiązujących w badaniu obejmował udział osób w wieku 18-69 lat uczestniczących w systemie edukacji formalnej, pozaformalnej oraz nieformalnej, w powiązaniu z cechami społeczno-demograficznymi. Dodatkowo badanie miało dostarczyć informacji na temat dostępu do informacji o możliwościach uczenia się, trudnościach uniemożliwiających bądź ograniczających uczestnictwo w kształceniu oraz znajomości języków obcych.Podstawą prawną badania Kształcenie dorosłych było Rozporządzenie Komisji (UE) nr 1175/2014 z dnia 30 października 2014 r. w sprawie wykonania rozporządzenia Parlamentu Europejskiego i Rady (WE) nr 452/2008 dotyczącego tworzenia i rozwoju statystyk z dziedziny edukacji i uczenia się przez całe życie, w odniesieniu do statystyk dotyczących udziału dorosłych w procesie uczenia się przez całe życie oraz Rozporządzenie Rady Ministrów w sprawie programu badań statystycznych statystyki publicznej na rok 2016 z dnia 21 lipca 2015 r. (Dz. U. 2015, poz. 1304).",
+                        "metodologia": "Celem wskaźnika jest pomiar efektów kształcenia na poziomie wyższym w obszarach STEM (Nauka, Technologia, Inżynieria, Matematyka) w relacji do populacji młodych dorosłych. Licznik stanowi liczba absolwentów kierunków STEM w szkolnictwie wyższym w danym roku referencyjnym. Mianownikiem jest całkowita liczba ludności w wieku 20–29 lat według danych Eurostat. Wskaźnik wyrażany jest w przeliczeniu na 1 000 osób.Dotyczące liczby absolwentów dane pochodzą ze wspólnego badania statystycznego UOE (UNESCO-OECD-Eurostat) w zakresie statystyki edukacji, opartego na danych administracyjnych przekazywanych przez krajowe organy statystyczne oraz ministerstwa właściwe ds. edukacji.Absolwentem jest osoba, która pomyślnie ukończyła program kształcenia na poziomie szkolnictwa wyższego (tj. poziomy ISCED 2011 5–8), natomiast obszary STEM definiowane są zgodnie z klasyfikacją ISCED-F 2013: F05 (nauki przyrodnicze, matematyka i statystyka), F06 (technologie informacyjno-komunikacyjne), F07 (inżynieria, produkcja i budownictwo). Międzynarodowa Standardowa Klasyfikacja Edukacji (ISCED) jest systemem służącym do gromadzenia, zestawiania i analizowania statystyk dotyczących edukacji, porównywalnych na szczeblu międzynarodowym.",
                       
-                        "zrodlo": "Główny Urząd Statystyczny",
+                        "zrodlo": "Eurostat",
                       
-                        "czestotliwosc": "Dane roczne co 5 lat; od 2011 r.",
+                        "czestotliwosc": "Dane roczne; od 2014 r.",
                       
                         "uwagi": "",
                       
-                        "data_aktualizacji_danych": "30-07-2024",
+                        "data_aktualizacji_danych": "",
                       
-                        "data_aktualizacji_metadanych": "23-05-2023"
+                        "data_aktualizacji_metadanych": ""
                       }
       ],
       "dane": [
         {
-                      "wg poziomu wykształcenia głowy gospodarstwa domowego": [
+                      "wg płci": [
                           {
                               "ogółem": [
                                   {
                                   
                                       "2010" :   "",
                                   
-                                      "2011" :   "64.4",
+                                      "2011" :   "",
                                   
                                       "2012" :   "",
                                   
                                       "2013" :   "",
                                   
-                                      "2014" :   "",
+                                      "2014" :   "20.5",
                                   
-                                      "2015" :   "",
+                                      "2015" :   "21.4",
                                   
-                                      "2016" :   "68.3",
+                                      "2016" :   "21.5",
                                   
-                                      "2017" :   "",
+                                      "2017" :   "23.6",
                                   
-                                      "2018" :   "",
+                                      "2018" :   "20.9",
                                   
-                                      "2019" :   "",
+                                      "2019" :   "20.1",
                                   
-                                      "2020" :   "",
+                                      "2020" :   "17.7",
                                   
-                                      "2021" :   "",
+                                      "2021" :   "18.8",
                                   
-                                      "2022" :   "72.8"
+                                      "2022" :   "19.1",
+                                  
+                                      "2023" :   "19.5",
+                                  
+                                      "2024" :   "20.0",
+                                  
+                                      "2025" :   ""
                                   
                                   }
                               ],
-                              "wyższe": [
+                              "mężczyźni": [
                                   {
                                   
                                       "2010" :   "",
                                   
-                                      "2011" :   "93.3",
+                                      "2011" :   "",
                                   
                                       "2012" :   "",
                                   
                                       "2013" :   "",
                                   
-                                      "2014" :   "",
+                                      "2014" :   "23.0",
                                   
-                                      "2015" :   "",
+                                      "2015" :   "23.6",
                                   
-                                      "2016" :   "93.1",
+                                      "2016" :   "23.5",
                                   
-                                      "2017" :   "",
+                                      "2017" :   "26.2",
                                   
-                                      "2018" :   "",
+                                      "2018" :   "23.3",
                                   
-                                      "2019" :   "",
+                                      "2019" :   "22.6",
                                   
-                                      "2020" :   "",
+                                      "2020" :   "20.1",
                                   
-                                      "2021" :   "",
+                                      "2021" :   "21.4",
                                   
-                                      "2022" :   "93.8"
+                                      "2022" :   "22.0",
+                                  
+                                      "2023" :   "22.8",
+                                  
+                                      "2024" :   "23.9",
+                                  
+                                      "2025" :   ""
                                   
                                   }
                               ],
-                              "policealne": [
+                              "kobiety": [
                                   {
                                   
                                       "2010" :   "",
                                   
-                                      "2011" :   "80.4",
+                                      "2011" :   "",
                                   
                                       "2012" :   "",
                                   
                                       "2013" :   "",
                                   
-                                      "2014" :   "",
+                                      "2014" :   "17.8",
                                   
-                                      "2015" :   "",
+                                      "2015" :   "19.0",
                                   
-                                      "2016" :   "80.7",
+                                      "2016" :   "19.3",
                                   
-                                      "2017" :   "",
+                                      "2017" :   "20.9",
                                   
-                                      "2018" :   "",
+                                      "2018" :   "18.5",
                                   
-                                      "2019" :   "",
+                                      "2019" :   "17.4",
                                   
-                                      "2020" :   "",
+                                      "2020" :   "15.2",
                                   
-                                      "2021" :   "",
+                                      "2021" :   "15.9",
                                   
-                                      "2022" :   "85.2"
+                                      "2022" :   "16.0",
                                   
-                                  }
-                              ],
-                              "średnie zawodowe": [
-                                  {
+                                      "2023" :   "16.1",
                                   
-                                      "2010" :   "",
+                                      "2024" :   "15.9",
                                   
-                                      "2011" :   "70.4",
-                                  
-                                      "2012" :   "",
-                                  
-                                      "2013" :   "",
-                                  
-                                      "2014" :   "",
-                                  
-                                      "2015" :   "",
-                                  
-                                      "2016" :   "72.2",
-                                  
-                                      "2017" :   "",
-                                  
-                                      "2018" :   "",
-                                  
-                                      "2019" :   "",
-                                  
-                                      "2020" :   "",
-                                  
-                                      "2021" :   "",
-                                  
-                                      "2022" :   "70.7"
-                                  
-                                  }
-                              ],
-                              "średnie ogólnokształcące": [
-                                  {
-                                  
-                                      "2010" :   "",
-                                  
-                                      "2011" :   "81.1",
-                                  
-                                      "2012" :   "",
-                                  
-                                      "2013" :   "",
-                                  
-                                      "2014" :   "",
-                                  
-                                      "2015" :   "",
-                                  
-                                      "2016" :   "79.6",
-                                  
-                                      "2017" :   "",
-                                  
-                                      "2018" :   "",
-                                  
-                                      "2019" :   "",
-                                  
-                                      "2020" :   "",
-                                  
-                                      "2021" :   "",
-                                  
-                                      "2022" :   "77.5"
-                                  
-                                  }
-                              ],
-                              "zasadnicze zawodowe": [
-                                  {
-                                  
-                                      "2010" :   "",
-                                  
-                                      "2011" :   "42.5",
-                                  
-                                      "2012" :   "",
-                                  
-                                      "2013" :   "",
-                                  
-                                      "2014" :   "",
-                                  
-                                      "2015" :   "",
-                                  
-                                      "2016" :   "43.6",
-                                  
-                                      "2017" :   "",
-                                  
-                                      "2018" :   "",
-                                  
-                                      "2019" :   "",
-                                  
-                                      "2020" :   "",
-                                  
-                                      "2021" :   "",
-                                  
-                                      "2022" :   "46.1"
-                                  
-                                  }
-                              ],
-                              "co najwyżej gimnazjalne": [
-                                  {
-                                  
-                                      "2010" :   "",
-                                  
-                                      "2011" :   "35.0",
-                                  
-                                      "2012" :   "",
-                                  
-                                      "2013" :   "",
-                                  
-                                      "2014" :   "",
-                                  
-                                      "2015" :   "",
-                                  
-                                      "2016" :   "41.8",
-                                  
-                                      "2017" :   "",
-                                  
-                                      "2018" :   "",
-                                  
-                                      "2019" :   "",
-                                  
-                                      "2020" :   "",
-                                  
-                                      "2021" :   "",
-                                  
-                                      "2022" :   "50.3"
+                                      "2025" :   ""
                                   
                                   }
                               ]

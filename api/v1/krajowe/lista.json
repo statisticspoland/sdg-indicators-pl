@@ -237,7 +237,7 @@
                   },{
                     "4-2-a": [
                       {
-                            "nazwa" : "4.2.a Udział liczby uczniów posiadających orzeczenie o potrzebie kształcenia specjalnego w przedszkolach i szkołach ogólnodostępnych w ogólnej liczbie uczniów posiadających orzeczenie"
+                            "nazwa" : "4.2.a Odsetek absolwentów uczelni na kierunkach należących do podgrup: biologiczna, nauk o środowisku, inżynieryjno-techniczna, produkcji i przetwórstwa, rolnicza, leśna, rybactwa, weterynaryjna – według klasyfikacji ISCED-F 2013"
                       }
                     ]
                   },{
@@ -283,6 +283,12 @@
                       }
                     ]
                   },{
+                    "4-3-h": [
+                      {
+                            "nazwa" : "4.3.h Udział liczby uczniów posiadających orzeczenie o potrzebie kształcenia specjalnego w przedszkolach i szkołach ogólnodostępnych w ogólnej liczbie uczniów posiadających orzeczenie"
+                      }
+                    ]
+                  },{
                     "4-4-a": [
                       {
                             "nazwa" : "4.4.a Młodzież niekontynuująca nauki w wieku 18-24 lata"
@@ -295,9 +301,15 @@
                       }
                     ]
                   },{
+                    "4-4-c": [
+                      {
+                            "nazwa" : "4.4.c Osoby młode niepracujące, nieuczące się i niedokształcające się (w wieku 15-24 lata) - NEET"
+                      }
+                    ]
+                  },{
                     "4-5-a": [
                       {
-                            "nazwa" : "4.5.a Odsetek osób deklarujących znajomość przynajmniej jednego języka obcego"
+                            "nazwa" : "4.5.a Liczba absolwentów szkół wyższych o kierunkach technicznych (nauki ścisłe, matematyka, informatyka, inżynieria, produkcja, budownictwo) w przeliczeniu na 1 000 osób w wieku 20-29 lat"
                       }
                     ]
                   },{
@@ -326,7 +338,7 @@
                   },{
                     "5-1-c": [
                       {
-                            "nazwa" : "5.1.c Udział kobiet w ogólnej liczbie osób zatrudnionych na stanowiskach wyższego szczebla"
+                            "nazwa" : "5.1.c Odsetek kobiet na stanowiskach kierowniczych"
                       }
                     ]
                   },{
@@ -339,6 +351,12 @@
                     "5-3-a": [
                       {
                             "nazwa" : "5.3.a Wskaźnik zatrudnienia kobiet z najmłodszym dzieckiem w wieku do 5 lat wg BAEL"
+                      }
+                    ]
+                  },{
+                    "5-3-b": [
+                      {
+                            "nazwa" : "5.3.b Liczba kobiet, które nie podjęły zatrudnienia po urodzeniu dziecka na 10 tys. mieszkańców"
                       }
                     ]
                   }]
@@ -355,7 +373,13 @@
                   },{
                     "6-1-b": [
                       {
-                            "nazwa" : "6.1.b Odsetek ludności zaopatrywanej z sieci wodociągowej w wodę nieodpowiadającą wymaganiom"
+                            "nazwa" : "6.1.b Odsetek kąpielisk śródlądowych i przybrzeżnych o doskonałej jakości wody"
+                      }
+                    ]
+                  },{
+                    "6-1-c": [
+                      {
+                            "nazwa" : "6.1.c Odsetek jednolitych części wód powierzchniowych o dobrym stanie"
                       }
                     ]
                   },{
@@ -382,6 +406,12 @@
                       }
                     ]
                   },{
+                    "7-1-b": [
+                      {
+                            "nazwa" : "7.1.b Zużycie końcowe energii na 1 mieszkańca"
+                      }
+                    ]
+                  },{
                     "7-2-a": [
                       {
                             "nazwa" : "7.2.a Udział energii ze źródeł odnawialnych w końcowym zużyciu energii brutto"
@@ -390,13 +420,7 @@
                   },{
                     "7-3-a": [
                       {
-                            "nazwa" : "7.3.a Stosunek pozyskania energii ogółem do globalnego zużycia energii ogółem"
-                      }
-                    ]
-                  },{
-                    "7-3-b": [
-                      {
-                            "nazwa" : "7.3.b SAIDI (Wskaźnik przeciętnego systemowego czasu trwania przerwy długiej i bardzo długiej w przeliczeniu na jednego odbiorcę)"
+                            "nazwa" : "7.3.a Uzależnienie od importu energii"
                       }
                     ]
                   }]

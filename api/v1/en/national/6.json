@@ -81,68 +81,187 @@
           "metadata": [
             
             {
-                            "name": "6.1.b Percentage of population supplied with water not meeting requirements",
+                            "name": "6.1.b Percentage of inland and coastal bathing waters with excellent water quality",
                           
                             "goal": "Goal 6. Clear water and sanitation",
                           
                             "priority": "Increase in disposable water resources, improvement of its ecological state and chemical quality",
                           
-                            "definition": "The percentage of the population supplied with the water supply network, which is not safe to use.",
+                            "definition": "The proportion of inland and coastal bathing waters classified as having excellent water quality in relation to the total number of inland and coastal bathing waters.",
                           
                             "unit": "percent [%]",
                           
                             "dimensions": "total",
                           
-                            "methodology": "The water supply system is the water supply pipelines together with the utilities and devices supplied with water. Water supply are a complex of water supply devices used to capture surface and underground water, public wells, devices for storage and treatment of water, water supply networks, water pressure regulating devices. The water is safe to use if it is free from pathogenic microorganisms and parasites in a number that poses a potential threat to human health, all substances in concentrations that pose a potential threat to human health and does not exhibit aggressive properties.",
+                            "methodology": "The indicator enables the monitoring of long-term changes in the quality of bathing waters and does not refer to the current water quality at bathing sites.The numerator includes all inland and coastal bathing waters classified as having excellent water quality, while the denominator includes all inland and coastal bathing waters operating during the reference bathing season.The data required for the calculation of the indicator are collected by Member States of the European Union (EU) in accordance with Directive 2006/7/EC. The European Environment Agency is responsible for the compilation and dissemination of the data. In Poland, the classification of bathing water quality is carried out annually by the authorities of the State Sanitary Inspection following the bathing season, on the basis of the results of microbiological parameter testing (Escherichia coli and enterococci) conducted in accordance with monitoring schedules covering the previous four years.Based on the assessment of bathing water quality over a four-year period, the following water quality classes are distinguished: 4 Excellent – highest water quality; 3 Good – generally good water quality; 2 Sufficient – water meets the minimum quality standard; 1 Poor – water does not meet the minimum quality standard; 0 Not classified – classification is not possible due to the absence of a complete set of water quality data. The most common reasons for the absence of a water quality classification (“Not classified”) concern bathing waters that are: a) newly identified, for which data are still being collected; b) not designated by the gmina council during a given bathing season (within the four-year assessment period), resulting in interruptions in the microbiological monitoring required for the classification of bathing water quality.A “not classified” status does not automatically imply that the bathing water fails to meet the required standards. It only indicates that the period required to assign the bathing water to one of the four available quality classes has not yet elapsed.",
                           
-                            "source": "Ministry of Health",
+                            "source": "Eurostat",
                           
-                            "availability": "Annual data; since 2010",
+                            "availability": "Annual data, since 2011",
                           
                             "notes": "",
                           
-                            "data_updated_on": "02-12-2025",
+                            "data_updated_on": "",
                           
-                            "metadata_updated_on": "25-05-2021"
+                            "metadata_updated_on": ""
                           }
           ],
           "data": [
             {"total": [
                               {
                               
-                                  "2010" :   "6.4",
+                                  "2010" :   "",
                               
-                                  "2011" :   "4.4",
+                                  "2011" :   "67.3",
                               
-                                  "2012" :   "3.7",
+                                  "2012" :   "68.3",
                               
-                                  "2013" :   "3.6",
+                                  "2013" :   "66.8",
                               
-                                  "2014" :   "1.8",
+                                  "2014" :   "55.7",
                               
-                                  "2015" :   "1.1",
+                                  "2015" :   "60.9",
                               
-                                  "2016" :   "0.6",
+                                  "2016" :   "66.2",
                               
-                                  "2017" :   "0.3",
+                                  "2017" :   "66.8",
                               
-                                  "2018" :   "0.3",
+                                  "2018" :   "28.0",
                               
-                                  "2019" :   "0.3",
+                                  "2019" :   "21.6",
                               
-                                  "2020" :   "0.4",
+                                  "2020" :   "22.1",
                               
-                                  "2021" :   "0.5",
+                                  "2021" :   "44.5",
                               
-                                  "2022" :   "0.3",
+                                  "2022" :   "55.9",
                               
-                                  "2023" :   "0.2",
+                                  "2023" :   "54.9",
                               
-                                  "2024" :   "0.3"
+                                  "2024" :   "58.1",
+                              
+                                  "2025" :   ""
                               
                               }
                           ]
                       
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "6-1-c": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "6.1.c Percentage of uniform surface water bodies with good status",
+                          
+                            "goal": "Goal 6. Clear water and sanitation",
+                          
+                            "priority": "Increase in disposable water resources, improvement of its ecological state and chemical quality",
+                          
+                            "definition": "Share of surface water bodies (SWBs) of rivers, dam reservoirs and lakes classified as being in Good Status, in the total number of SWBs in the respective category.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "surface water category",
+                          
+                            "methodology": "A surface water body (SWB) is a discrete and significant element of surface waters such as a lake, reservoir, stream, river or canal, a section of a stream, river or canal, transitional waters, coastal water bodies, as well as dam reservoirs.Dam reservoirs are formed by the impoundment of river water; therefore, after the completion of their intended functions, efforts should be made to restore their natural state, which is a river. Moreover, they are not entirely artificial reservoirs, unlike, for example, excavations. Consequently, dam reservoirs are classified as heavily modified river surface water bodies.The status of river and lake surface water bodies is assessed as good or poor by analysing the results of classification of their ecological status or ecological potential (based on the results of measurements of water quality indicators comprising physicochemical, biological and hydromorphological elements). Ecological status is determined for natural surface water bodies, whereas ecological potential is determined for waters that are artificial or heavily modified due to human activity.Information on the status of surface waters (rivers, lakes, transitional and coastal waters) is obtained within the framework of water quality monitoring, which is a subsystem of the State Environmental Monitoring system. Water quality monitoring is carried out by the Chief Inspectorate of Environmental Protection on the basis of designated surface water bodies, which constitute the basic water management unit.",
+                          
+                            "source": "Chief Inspectorate of Environmental Protection",
+                          
+                            "availability": "Annual data; for the period 2015–2019, and for 2021 and 2024",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "",
+                          
+                            "metadata_updated_on": ""
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "surface water category": [
+                                  {"rivers and reservoirs": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "10.9",
+                                          
+                                              "2016" : "7.0",
+                                          
+                                              "2017" : "0.3",
+                                          
+                                              "2018" : "0.6",
+                                          
+                                              "2019" : "1.1",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "0.5",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : "1.6",
+                                          
+                                              "2025" : ""
+                                          
+                                          }
+                                      ],"lakes": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "18.7",
+                                          
+                                              "2016" : "15.7",
+                                          
+                                              "2017" : "14.7",
+                                          
+                                              "2018" : "13.5",
+                                          
+                                              "2019" : "11.5",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "1.2",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : "6.0",
+                                          
+                                              "2025" : ""
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
                     
                 
             }

@@ -74,6 +74,81 @@
       ]
     },
     {
+      "7-1-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "7.1.b Final energy consumption per capita",
+                          
+                            "goal": "Goal 7. Affordable and clean energy",
+                          
+                            "priority": "Improvement of energy efficiency",
+                          
+                            "definition": "Final energy consumption per capita refers to the share of total energy consumed by end users across individual sectors of the economy attributable to one person.",
+                          
+                            "unit": "toe",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator presents the level of final energy consumption per capita and supports the monitoring of energy consumption patterns.The numerator is total final energy consumption expressed in tonnes of oil equivalent (toe), while the denominator is the total population. The indicator is expressed on a per capita basis.The data required to calculate the indicator are provided by the European Statistical System (ESS), established under Regulation (EC) No 223/2009 of the European Parliament and of the Council. The ESS constitutes a partnership between Eurostat, national statistical institutes (for example, Statistics Poland), and other national authorities in each Member State responsible for the development, production and dissemination of European statistics.A tonne of oil equivalent (toe) is a standardised unit of energy used to compare different energy sources. The International Energy Agency (IEA) defines one tonne of oil equivalent (toe) as the amount of energy released by burning one tonne of crude oil with a net calorific value of 41 868 kJ/kg.Final energy consumption refers to energy consumed by end users in all sectors of the economy (for example, industry, transport, agriculture and households), excluding energy consumed by the energy sector itself. Final energy consumption also excludes losses occurring during the distribution of energy.The calculation of the indicator excludes the use of energy carriers for non-energy purposes (for example, the use of natural gas in the chemical industry as feedstock rather than as fuel).",
+                          
+                            "source": "Eurostat",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "",
+                          
+                            "metadata_updated_on": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "1.73",
+                              
+                                  "2011" :   "1.68",
+                              
+                                  "2012" :   "1.67",
+                              
+                                  "2013" :   "1.64",
+                              
+                                  "2014" :   "1.60",
+                              
+                                  "2015" :   "1.62",
+                              
+                                  "2016" :   "1.73",
+                              
+                                  "2017" :   "1.84",
+                              
+                                  "2018" :   "1.94",
+                              
+                                  "2019" :   "1.91",
+                              
+                                  "2020" :   "1.87",
+                              
+                                  "2021" :   "2.01",
+                              
+                                  "2022" :   "1.94",
+                              
+                                  "2023" :   "1.90",
+                              
+                                  "2024" :   "1.91"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
       "7-2-a": [
         {
           "metadata": [
@@ -260,135 +335,174 @@
           "metadata": [
             
             {
-                            "name": "7.3.a Relation of energy acquisition in general to the global energy consumption in general",
+                            "name": "7.3.a Energy import dependency",
                           
                             "goal": "Goal 7. Affordable and clean energy",
                           
                             "priority": "Ensurance of energy security of the state",
                           
-                            "definition": "Relation of energy acquisition in general to the global energy consumption in general.",
+                            "definition": "Net energy imports divided by gross available energy, expressed as a percentage.",
                           
                             "unit": "percent [%]",
                           
-                            "dimensions": "total",
+                            "dimensions": "total, solid fossil fuels, natural gas, oil and petroleum products",
                           
-                            "methodology": "Acquisition is the quantity of primary energy carriers coming from domestic resources. The global consumption is determined as: acquisition + (plus) import - (minus) export - (minus) change in inventories. The indicator is based on preliminary data.",
+                            "methodology": "The indicator measures the degree to which a country depends on imports of energy or raw materials used for energy production.The numerator is net energy imports, while the denominator is gross available energy. The reference period is the calendar year. The indicator is expressed as a percentage and is presented both as an aggregate measure for all energy sources and broken down by individual fuel categories, namely solid fossil fuels, natural gas, and oil and petroleum products (excluding the biofuel portion).A negative value of the indicator indicates net exports of energy, while a value exceeding 100% indicates the accumulation of energy stocks.Net energy imports are defined as the difference between the energy imported and exported by a given country.Gross available energy refers to the total supply of energy within the territory of a given country intended for all types of activity.The biofuel portion refers to fuel additives produced from biomass.",
                           
-                            "source": "Ministry of Climate and Environment / Statistics Poland",
+                            "source": "Eurostat",
                           
                             "availability": "Annual data; since 2010",
                           
                             "notes": "",
                           
-                            "data_updated_on": "30-07-2024",
+                            "data_updated_on": "",
                           
-                            "metadata_updated_on": "31-01-2023"
+                            "metadata_updated_on": ""
                           }
           ],
           "data": [
-            {"total": [
-                              {
-                              
-                                  "2010" :   "66",
-                              
-                                  "2011" :   "67",
-                              
-                                  "2012" :   "73",
-                              
-                                  "2013" :   "73",
-                              
-                                  "2014" :   "72",
-                              
-                                  "2015" :   "71",
-                              
-                                  "2016" :   "67",
-                              
-                                  "2017" :   "62",
-                              
-                                  "2018" :   "60",
-                              
-                                  "2019" :   "59",
-                              
-                                  "2020" :   "58",
-                              
-                                  "2021" :   "56",
-                              
-                                  "2022" :   "59"
-                              
-                              }
-                          ]
-                      
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "7-3-b": [
-        {
-          "metadata": [
-            
             {
-                            "name": "7.3.b SAIDI (System Average Interruption Duration Index)",
-                          
-                            "goal": "Goal 7. Affordable and clean energy",
-                          
-                            "priority": "Ensurance of energy security of the state",
-                          
-                            "definition": "Average system duration of long or very long interruption in electricity supply per one power consumer.",
-                          
-                            "unit": "minutes ",
-                          
-                            "dimensions": "total",
-                          
-                            "methodology": "SAIDI (System Average Interruption Duration Index), expressed in minutes per power consumer per year, is the products sum of duration of long and very long interruption in electricity supply and number of power consumers exposed on effects of this interruption in a year, divided by total number of power consumers served. SAIDI informs of total duration of interruption of electricity power supply (in minutes) that power consumer can expect on average in a year. SAIDI is determined separately for planned and non-planned interruptions, taking into consideration disastrous interruptions and without taking into consideration those interruptions, according to Decree of the Minister of the Economy of 21 September 2008, changing the decree on detailed conditions of electro-energetic system functioning (Journal of Laws from 2008 No 162, item 162 position 1005). Long interruption lasts longer than 3 minutes and no longer that 12 hours very long interruption lasts longer than 12 hours and no longer than 24 hours.",
-                          
-                            "source": "the Ministry of Climate and Environment",
-                          
-                            "availability": "Annual data; since 2010",
-                          
-                            "notes": "",
-                          
-                            "data_updated_on": "30-07-2024",
-                          
-                            "metadata_updated_on": "15-02-2021"
-                          }
-          ],
-          "data": [
-            {"total": [
-                              {
-                              
-                                  "2010" :   "316.1",
-                              
-                                  "2011" :   "309.1",
-                              
-                                  "2012" :   "254.0",
-                              
-                                  "2013" :   "254.2",
-                              
-                                  "2014" :   "191.3",
-                              
-                                  "2015" :   "243.6",
-                              
-                                  "2016" :   "179.9",
-                              
-                                  "2017" :   "285.0",
-                              
-                                  "2018" :   "133.0",
-                              
-                                  "2019" :   "138.5",
-                              
-                                  "2020" :   "118.6",
-                              
-                                  "2021" :   "169.7",
-                              
-                                  "2022" :   "244.7"
-                              
-                              }
-                          ]
                       
+                              "by products": [
+                                  {"total": [
+                                          {
+                                          
+                                              "2010" : "31.56",
+                                          
+                                              "2011" : "34.01",
+                                          
+                                              "2012" : "31.61",
+                                          
+                                              "2013" : "26.24",
+                                          
+                                              "2014" : "29.40",
+                                          
+                                              "2015" : "29.83",
+                                          
+                                              "2016" : "30.74",
+                                          
+                                              "2017" : "38.26",
+                                          
+                                              "2018" : "43.52",
+                                          
+                                              "2019" : "45.25",
+                                          
+                                              "2020" : "42.78",
+                                          
+                                              "2021" : "40.46",
+                                          
+                                              "2022" : "46.12",
+                                          
+                                              "2023" : "48.00",
+                                          
+                                              "2024" : "45.67"
+                                          
+                                          }
+                                      ],"solid fossil fuels": [
+                                          {
+                                          
+                                              "2010" : "-4.96",
+                                          
+                                              "2011" : "-1.00",
+                                          
+                                              "2012" : "-6.44",
+                                          
+                                              "2013" : "-10.17",
+                                          
+                                              "2014" : "-8.57",
+                                          
+                                              "2015" : "-11.44",
+                                          
+                                              "2016" : "-11.70",
+                                          
+                                              "2017" : "-2.96",
+                                          
+                                              "2018" : "8.23",
+                                          
+                                              "2019" : "6.02",
+                                          
+                                              "2020" : "0.33",
+                                          
+                                              "2021" : "-3.61",
+                                          
+                                              "2022" : "7.96",
+                                          
+                                              "2023" : "5.01",
+                                          
+                                              "2024" : "-6.90"
+                                          
+                                          }
+                                      ],"natural gas": [
+                                          {
+                                          
+                                              "2010" : "69.31",
+                                          
+                                              "2011" : "75.10",
+                                          
+                                              "2012" : "73.40",
+                                          
+                                              "2013" : "74.20",
+                                          
+                                              "2014" : "71.97",
+                                          
+                                              "2015" : "72.21",
+                                          
+                                              "2016" : "78.38",
+                                          
+                                              "2017" : "77.77",
+                                          
+                                              "2018" : "77.60",
+                                          
+                                              "2019" : "82.37",
+                                          
+                                              "2020" : "78.25",
+                                          
+                                              "2021" : "83.57",
+                                          
+                                              "2022" : "81.22",
+                                          
+                                              "2023" : "81.31",
+                                          
+                                              "2024" : "78.67"
+                                          
+                                          }
+                                      ],"oil and petroleum products": [
+                                          {
+                                          
+                                              "2010" : "98.20",
+                                          
+                                              "2011" : "96.83",
+                                          
+                                              "2012" : "96.62",
+                                          
+                                              "2013" : "93.53",
+                                          
+                                              "2014" : "95.45",
+                                          
+                                              "2015" : "99.50",
+                                          
+                                              "2016" : "94.95",
+                                          
+                                              "2017" : "98.60",
+                                          
+                                              "2018" : "98.77",
+                                          
+                                              "2019" : "97.34",
+                                          
+                                              "2020" : "96.86",
+                                          
+                                              "2021" : "96.39",
+                                          
+                                              "2022" : "98.36",
+                                          
+                                              "2023" : "96.83",
+                                          
+                                              "2024" : "100.07"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
                     
                 
             }

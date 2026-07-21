@@ -74,6 +74,81 @@
       ]
     },
     {
+      "7-1-b": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "7.1.b Zużycie końcowe energii na 1 mieszkańca",
+                          
+                            "cel": "Cel 7. Czysta i dostępna energia",
+                          
+                            "priorytet": "Poprawa efektywności energetycznej",
+                          
+                            "definicja": "Zużycie końcowe energii na 1 mieszkańca to przypadająca na jedną osobę część sumy energii zużytej przez użytkowników końcowych z poszczególnych sektorów gospodarki.",
+                          
+                            "jednostka": "toe",
+                          
+                            "wymiary": "ogółem",
+                          
+                            "metodologia": "Wskaźnik przedstawia poziom końcowego zużycia energii per capita i wspiera monitorowanie wzorców zużycia energii.Licznikiem jest całkowite końcowe zużycie energii wyrażone w tonach oleju ekwiwalentnego (toe), a mianownikiem całkowita liczba ludności. Wskaźnik wyrażony został w przeliczeniu na 1 osobę.Niezbędne do obliczania wskaźnika dane dostarcza Europejski System Statystyczny (ESS), czyli usankcjonowany Rozporządzeniem Parlamentu Europejskiego i Rady (WE) nr 223/2009 system partnerstwa pomiędzy Eurostatem a krajowymi urzędami statystycznymi (np. GUS) oraz innymi organami krajowymi odpowiedzialnymi w każdym państwie członkowskim za opracowywanie, tworzenie i rozpowszechnianie statystyki europejskiej.Tona oleju ekwiwalentnego (toe) to znormalizowana jednostka energii, która pozwala porównywać ze sobą różne źródła energii. Międzynarodowa Agencja Energetyczna (IEA) definiuje tonę oleju ekwiwalentnego (toe) jako równoważnik jednej tony ropy naftowej o wartości opałowej równej 41 868 kJ/kg. Końcowe zużycie energii to energia zużyta przez odbiorców końcowych ze wszystkich sektorów gospodarki (np. przemysł, transport, rolnictwo, gospodarstwa domowe itd.) z wyłączeniem energii zużywanej przez sektor energetyczny. Do końcowego zużycia energii nie wlicza się również strat powstałych w procesie dystrybucji energii. Przy obliczaniu wskaźnika nie uwzględnia się wykorzystania nośników energii do celów nieenergetycznych (np. wykorzystania gazu ziemnego w przemyśle chemicznym jako surowca, a nie paliwa).",
+                          
+                            "zrodlo": "Eurostat",
+                          
+                            "czestotliwosc": "Dane roczne; od 2010 r.",
+                          
+                            "uwagi": "",
+                          
+                            "data_aktualizacji_danych": "",
+                          
+                            "data_aktualizacji_metadanych": ""
+                          }
+          ],
+          "dane": [
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "1.73",
+                              
+                                  "2011" :   "1.68",
+                              
+                                  "2012" :   "1.67",
+                              
+                                  "2013" :   "1.64",
+                              
+                                  "2014" :   "1.60",
+                              
+                                  "2015" :   "1.62",
+                              
+                                  "2016" :   "1.73",
+                              
+                                  "2017" :   "1.84",
+                              
+                                  "2018" :   "1.94",
+                              
+                                  "2019" :   "1.91",
+                              
+                                  "2020" :   "1.87",
+                              
+                                  "2021" :   "2.01",
+                              
+                                  "2022" :   "1.94",
+                              
+                                  "2023" :   "1.90",
+                              
+                                  "2024" :   "1.91"
+                              
+                              }
+                          ]
+                        
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
       "7-2-a": [
         {
           "metadane": [
@@ -260,135 +335,174 @@
           "metadane": [
             
             {
-                            "nazwa": "7.3.a Stosunek pozyskania energii ogółem do globalnego zużycia energii ogółem",
+                            "nazwa": "7.3.a Uzależnienie od importu energii",
                           
                             "cel": "Cel 7. Czysta i dostępna energia",
                           
                             "priorytet": "Zapewnienie bezpieczeństwa energetycznego państwa",
                           
-                            "definicja": "Stosunek pozyskania energii ogółem do globalnego zużycia energii ogółem.",
+                            "definicja": "Wyrażony w procentach iloraz importu energii netto i energii dostępnej brutto.",
                           
                             "jednostka": "procent [%]",
                           
-                            "wymiary": "ogółem",
+                            "wymiary": "ogółem, stałe paliwa kopalne, gaz ziemny, ropa naftowa i produkty ropopochodne",
                           
-                            "metodologia": "Pozyskanie jest to ilość nośników energii pierwotnej pochodzącej z zasobów krajowych. Zużycie globalne wyznaczane jest jako: pozyskanie + (plus) import - (minus) eksport - (minus) zmiana zapasów. Wskaźnik oparty jest na danych wstępnych.",
+                            "metodologia": "Wskaźnik mierzy stopień uzależnienia kraju od importu energii lub surowców do jej produkcji.Licznikiem jest energia importowana netto, zaś mianownikiem energia dostępna brutto. Okresem referencyjnym jest rok kalendarzowy. Wskaźnik wyrażony został w procentach i prezentowany jest zarówno w ujęciu zbiorczym dla wszystkich źródeł energii jak i w podziale na indywidualne rodzaje paliw tj. kopalne paliwa stałe, gaz ziemny oraz ropę naftową i produkty ropopochodne (z wyłączeniem biokomponentów).Ujemna wartość wskaźnika wskazuje na eksport netto energii, natomiast przekroczenie przez wskaźnik wartości 100% oznacza, oznacza gromadzenie zapasów energetycznych.Energia importowana netto to różnica pomiędzy energią importowaną a eksportowaną przez dany kraj.Energia dostępna brutto jest to całkowita podaż energii na terytorium danego kraju przeznaczonej na wszystkie rodzaje działalności.Biokomponenty to wytwarzane z biomasy dodatki do paliw.",
                           
-                            "zrodlo": "Ministerstwo Klimatu i Środowiska/ Główny Urząd Statystyczny",
+                            "zrodlo": "Eurostat",
                           
                             "czestotliwosc": "Dane roczne; od 2010 r.",
                           
                             "uwagi": "",
                           
-                            "data_aktualizacji_danych": "30-07-2024",
+                            "data_aktualizacji_danych": "",
                           
-                            "data_aktualizacji_metadanych": "31-01-2023"
+                            "data_aktualizacji_metadanych": ""
                           }
           ],
           "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "66",
-                              
-                                  "2011" :   "67",
-                              
-                                  "2012" :   "73",
-                              
-                                  "2013" :   "73",
-                              
-                                  "2014" :   "72",
-                              
-                                  "2015" :   "71",
-                              
-                                  "2016" :   "67",
-                              
-                                  "2017" :   "62",
-                              
-                                  "2018" :   "60",
-                              
-                                  "2019" :   "59",
-                              
-                                  "2020" :   "58",
-                              
-                                  "2021" :   "56",
-                              
-                                  "2022" :   "59"
-                              
-                              }
-                          ]
-                        
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "7-3-b": [
-        {
-          "metadane": [
-            
             {
-                            "nazwa": "7.3.b SAIDI (Wskaźnik przeciętnego systemowego czasu trwania przerwy długiej i bardzo długiej w przeliczeniu na jednego odbiorcę)",
-                          
-                            "cel": "Cel 7. Czysta i dostępna energia",
-                          
-                            "priorytet": "Zapewnienie bezpieczeństwa energetycznego państwa",
-                          
-                            "definicja": "Wskaźnik przeciętnego systemowego czasu trwania przerwy długiej i bardzo długiej w dostawie energii elektrycznej w przeliczeniu na jednego odbiorcę.",
-                          
-                            "jednostka": "minuty ",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "Wskaźnik SAIDI (System Average Interruption Duration Index), wyrażony w minutach na odbiorcę na rok, stanowi sumę iloczynów czasu trwania przerwy długiej i bardzo długiej w dostawie energii elektrycznej i liczby odbiorców narażonych na skutki tej przerwy w ciągu roku podzieloną przez łączną liczbę obsługiwanych odbiorców. Wskaźnik SAIDI informuje o całkowitym czasie trwania przerw w zasilaniu w energię elektryczną (w minutach), jakiego może się spodziewać odbiorca średnio w ciągu roku. Wskaźnik SAIDI wyznacza się oddzielnie dla przerw planowanych i nieplanowanych, z uwzględnieniem przerw katastrofalnych oraz bez uwzględnienia tych przerw, zgodnie z Rozporządzeniem Ministra Gospodarki z dnia 21 sierpnia 2008 r. zmieniające rozporządzenie w sprawie szczegółowych warunków funkcjonowania systemu elektroenergetycznego (Dz.U. z 2008 r. nr 162 poz. 1005). Przerwy długie trwają dłużej niż 3 minuty i nie dłużej niż 12 godzin przerwa bardzo długa trwa dłużej niż 12 godzin, ale nie dłużej niż 24 godziny.",
-                          
-                            "zrodlo": "Ministerstwo Klimatu i Środowiska",
-                          
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
-                          
-                            "uwagi": "",
-                          
-                            "data_aktualizacji_danych": "30-07-2024",
-                          
-                            "data_aktualizacji_metadanych": "15-02-2021"
-                          }
-          ],
-          "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "316.1",
-                              
-                                  "2011" :   "309.1",
-                              
-                                  "2012" :   "254.0",
-                              
-                                  "2013" :   "254.2",
-                              
-                                  "2014" :   "191.3",
-                              
-                                  "2015" :   "243.6",
-                              
-                                  "2016" :   "179.9",
-                              
-                                  "2017" :   "285.0",
-                              
-                                  "2018" :   "133.0",
-                              
-                                  "2019" :   "138.5",
-                              
-                                  "2020" :   "118.6",
-                              
-                                  "2021" :   "169.7",
-                              
-                                  "2022" :   "244.7"
-                              
-                              }
-                          ]
-                        
+                      
+                              "wg produktu": [
+                                  {"ogółem": [
+                                          {
+                                          
+                                              "2010" : "31.56",
+                                          
+                                              "2011" : "34.01",
+                                          
+                                              "2012" : "31.61",
+                                          
+                                              "2013" : "26.24",
+                                          
+                                              "2014" : "29.40",
+                                          
+                                              "2015" : "29.83",
+                                          
+                                              "2016" : "30.74",
+                                          
+                                              "2017" : "38.26",
+                                          
+                                              "2018" : "43.52",
+                                          
+                                              "2019" : "45.25",
+                                          
+                                              "2020" : "42.78",
+                                          
+                                              "2021" : "40.46",
+                                          
+                                              "2022" : "46.12",
+                                          
+                                              "2023" : "48.00",
+                                          
+                                              "2024" : "45.67"
+                                          
+                                          }
+                                      ],"stałe paliwa kopalne": [
+                                          {
+                                          
+                                              "2010" : "-4.96",
+                                          
+                                              "2011" : "-1.00",
+                                          
+                                              "2012" : "-6.44",
+                                          
+                                              "2013" : "-10.17",
+                                          
+                                              "2014" : "-8.57",
+                                          
+                                              "2015" : "-11.44",
+                                          
+                                              "2016" : "-11.70",
+                                          
+                                              "2017" : "-2.96",
+                                          
+                                              "2018" : "8.23",
+                                          
+                                              "2019" : "6.02",
+                                          
+                                              "2020" : "0.33",
+                                          
+                                              "2021" : "-3.61",
+                                          
+                                              "2022" : "7.96",
+                                          
+                                              "2023" : "5.01",
+                                          
+                                              "2024" : "-6.90"
+                                          
+                                          }
+                                      ],"gaz ziemny": [
+                                          {
+                                          
+                                              "2010" : "69.31",
+                                          
+                                              "2011" : "75.10",
+                                          
+                                              "2012" : "73.40",
+                                          
+                                              "2013" : "74.20",
+                                          
+                                              "2014" : "71.97",
+                                          
+                                              "2015" : "72.21",
+                                          
+                                              "2016" : "78.38",
+                                          
+                                              "2017" : "77.77",
+                                          
+                                              "2018" : "77.60",
+                                          
+                                              "2019" : "82.37",
+                                          
+                                              "2020" : "78.25",
+                                          
+                                              "2021" : "83.57",
+                                          
+                                              "2022" : "81.22",
+                                          
+                                              "2023" : "81.31",
+                                          
+                                              "2024" : "78.67"
+                                          
+                                          }
+                                      ],"ropa naftowa i produkty ropopochodne": [
+                                          {
+                                          
+                                              "2010" : "98.20",
+                                          
+                                              "2011" : "96.83",
+                                          
+                                              "2012" : "96.62",
+                                          
+                                              "2013" : "93.53",
+                                          
+                                              "2014" : "95.45",
+                                          
+                                              "2015" : "99.50",
+                                          
+                                              "2016" : "94.95",
+                                          
+                                              "2017" : "98.60",
+                                          
+                                              "2018" : "98.77",
+                                          
+                                              "2019" : "97.34",
+                                          
+                                              "2020" : "96.86",
+                                          
+                                              "2021" : "96.39",
+                                          
+                                              "2022" : "98.36",
+                                          
+                                              "2023" : "96.83",
+                                          
+                                              "2024" : "100.07"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
                     
                 
             }

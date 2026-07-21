@@ -237,7 +237,7 @@
                   },{
                     "4-2-a": [
                       {
-                            "name" : "4.2.a Share of pupils with statements of special educational needs attending generally-accessible mainstream schools in total number of pupils with statements of special educational needs"
+                            "name" : "4.2.a Percentage of graduates in the fields of biological sciences, enivronment, physical sciences, engineering and engineering trades, production and processing, agriculture, forestry, fisheries, veterinary – according to the ISCED-F 2013 classification"
                       }
                     ]
                   },{
@@ -283,6 +283,12 @@
                       }
                     ]
                   },{
+                    "4-3-h": [
+                      {
+                            "name" : "4.3.h Share of pupils with statements of special educational needs attending generally-accessible mainstream schools in total number of pupils with statements of special educational needs"
+                      }
+                    ]
+                  },{
                     "4-4-a": [
                       {
                             "name" : "4.4.a Early leavers from education and training aged 18-24"
@@ -295,9 +301,15 @@
                       }
                     ]
                   },{
+                    "4-4-c": [
+                      {
+                            "name" : "4.4.c Percentage of young people neither in employment nor in education and training (NEET)"
+                      }
+                    ]
+                  },{
                     "4-5-a": [
                       {
-                            "name" : "4.5.a Percentage of persons who declare knowledge of at least one foreign language"
+                            "name" : "4.5.a Number of graduates from higher education in technical fields (natural sciences, mathematics, ICT, engineering, manufacturing and construction) per 1 thous. persons aged 20–29"
                       }
                     ]
                   },{
@@ -326,7 +338,7 @@
                   },{
                     "5-1-c": [
                       {
-                            "name" : "5.1.c Proportion of women in managerial positions"
+                            "name" : "5.1.c Percentage of women in managerial positions"
                       }
                     ]
                   },{
@@ -339,6 +351,12 @@
                     "5-3-a": [
                       {
                             "name" : "5.3.a Employment rate of women with the youngest child up to 5 years old (LFS)"
+                      }
+                    ]
+                  },{
+                    "5-3-b": [
+                      {
+                            "name" : "5.3.b Women who did not start work after childbirth per 10 thous. inhabitants"
                       }
                     ]
                   }]
@@ -355,7 +373,13 @@
                   },{
                     "6-1-b": [
                       {
-                            "name" : "6.1.b Percentage of population supplied with water not meeting requirements"
+                            "name" : "6.1.b Percentage of inland and coastal bathing waters with excellent water quality"
+                      }
+                    ]
+                  },{
+                    "6-1-c": [
+                      {
+                            "name" : "6.1.c Percentage of uniform surface water bodies with good status"
                       }
                     ]
                   },{
@@ -382,6 +406,12 @@
                       }
                     ]
                   },{
+                    "7-1-b": [
+                      {
+                            "name" : "7.1.b Final energy consumption per capita"
+                      }
+                    ]
+                  },{
                     "7-2-a": [
                       {
                             "name" : "7.2.a Renewable energy share in the gross final energy consumption"
@@ -390,13 +420,7 @@
                   },{
                     "7-3-a": [
                       {
-                            "name" : "7.3.a Relation of energy acquisition in general to the global energy consumption in general"
-                      }
-                    ]
-                  },{
-                    "7-3-b": [
-                      {
-                            "name" : "7.3.b SAIDI (System Average Interruption Duration Index)"
+                            "name" : "7.3.a Energy import dependency"
                       }
                     ]
                   }]
