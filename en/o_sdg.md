@@ -290,15 +290,14 @@ permalink: /en/o_sdg/
   <h4><b>MINISTRY OF ECONOMIC DEVELOPMENT AND TECHNOLOGY</b> (coordinator of SDG implementation in Poland)</h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.gov.pl/attachment/bfb5fdbb-f6f9-4dd0-b46d-7079e5ac5677" alt="Monitoring of the implementation of the Sustainable Development Goals in Poland" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/11_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.gov.pl/attachment/362f4889-de8c-4af3-96fb-2c5eaa5f8e92" alt="Monitoring of the implementation of the Sustainable Development Goals in Poland" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland" target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/11_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>Monitoring of the implementation of the Sustainable Development Goals in Poland</b></p>
-  <p>The publication by the Ministry of Economic Development and Technology presents the selected activities for 2030 Agenda in Poland performed by Polish government, local government, universities and other stakeholders. It describes important national and regional strategic projects and operational programs, the implementation of which may contribute to bringing the country closer to achieving progress in all dimensions of sustainable development. The publication also takes into account the global context, including the consequences of Russia’s aggression against Ukraine and climate challenges. The publication is complemented with information on the monitoring of SDGs in Poland, the EU and in the World as well as selected indicators from the set of measures monitoring <a title="Go to subpage with polish priorities" href="https://sdg.gov.pl/en/priorytet/"  target="_blank">Polish priorities</a> from the <a title="Go to SDG's homepage" href="https://sdg.gov.pl/en/"  target="_blank">SDG NRP</a>, presented in graphic form.</p>
-  <p>The publication is available only in Polish.</p>
+  <p>The publication presents the implementation of the 2030 Agenda in Poland as of the end of 2025. For the first time, it includes an assessment prepared by Statistics Poland of progress towards the SDGs in relation to <a title="Go to subpage with polish priorities" href="https://sdg.gov.pl/en/priorytet/"  target="_blank">Polish priorities</a> available on the <a title="Go to SDG's homepage" href="https://sdg.gov.pl/en/"  target="_blank">SDG Platform</a>. The assessment covers indicators, 74 national priorities and all 17 SDGs. For each SDG, the publication also presents selected actions taken at government and local government level.</p>
 
+  <p>The report also shows Poland’s position against the background of the world and Europe and presents the perspective of stakeholders involved in implementing the Sustainable Development Goals. The publication is complemented by information on cooperation and partnerships, as well as key conclusions concerning the further implementation of the 2030 Agenda.</p>
 
-
-
+  <p><b>The publication is available only in Polish.</b></p>
 
 <p style="margin-bottom: 20px;">
   <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" style="background-color: dimgray;">
@@ -307,6 +306,7 @@ permalink: /en/o_sdg/
 </p>
 <div class="collapse" id="collapseExample2">
   <div class="card card-body">
+  <p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland - 2024" href="https://www.gov.pl/attachment/bfb5fdbb-f6f9-4dd0-b46d-7079e5ac5677">Monitoring of the implementation of the Sustainable Development Goals in Poland - 2024</a></p>
   <p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland - 2023" href="https://www.gov.pl/attachment/22950221-b985-4cdd-8b76-8a3edaa3f247">Monitoring of the implementation of the Sustainable Development Goals in Poland - 2023</a></p>
 	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021" href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72">Monitoring of the implementation of the Sustainable Development Goals in Poland - 2021</a></p>
 	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a report Monitoring of the implementation of the Sustainable Development Goals in Poland in 2020" href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitoring of the implementation of the Sustainable Development Goals in Poland – 2020</a></p>
@@ -369,14 +369,17 @@ permalink: /en/o_sdg/
   <h4><b>UNITED NATIONS (UN)</b></h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2025/" alt="The Sustainable Development Goals Report 2025" title="Read a publication The Sustainable Development Goals Report 2025"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2025.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2026/The-Sustainable-Development-Goals-Report-2026.pdf" alt="The Sustainable Development Goals Report 2026" title="Read a publication The Sustainable Development Goals Report 2026"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2026.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>The Sustainable Development Goals Report</b></p>
 
-  <p>The report reviews progress in the following years of implementation of the 2030 Agenda for Sustainable Development. The 2025 edition details the significant challenges the world is facing in making substantial strides towards achieving the SDGs based on the latest data and estimates. It features areas with setbacks (e.g. ongoing inequalities, hunger, lack of access to water and sanitation, insufficient support for women and persons with disabilities, climate change, debt, rising living costs, and inadequate financing for development efforts) while also showcasing where tangible progress has been made (e.g. a decline in new HIV infections, improved access to energy and the Internet, increased enrollment of children in education, and biodiversity improvement). The 2025 report also highlights where action needs to be accelerated including: energy transition, digitalization, education, and climate protection – as well as the need for stronger multilateralism.</p>
+  <p>The report provides an overview of progress in implementing the 2030 Agenda. The 2026 edition, based on the latest statistics, highlights both areas of failure and progress.</p>
 
+  <p>The most significant challenges include persistent extreme poverty, deteriorating food security, declining official development assistance (ODA), rising debt in developing countries, the persistent financing gap in achieving the Sustainable Development Goals (SDGs), escalating armed conflicts, and record numbers of migrants. It also highlights the impact of the Middle East crisis, which is disrupting global food and energy transport routes.</p>
 
+  <p>At the same time, the report points to areas where progress has been made, such as increasing access to safe drinking water and electricity, reducing maternal and child mortality, declines in new HIV infections and AIDS-related deaths, fewer fatalities from disasters, developing renewable energy sources, and a decrease in the number of child laborers.</p>
 
+  <p>The latest edition places particular attention on the role of artificial intelligence in monitoring SDG implementation, highlighting both its potential in supporting official statistics and the risks associated with the loss of data sovereignty, the erosion of public trust, and threats to information confidentiality. The report also emphasizes the urgent need to reform the global financial architecture, reduce the financing gap, and strengthen international cooperation in the final four years of the 2030 Agenda.</p>
 
 
 <p style="margin-bottom: 20px;">
@@ -386,7 +389,7 @@ permalink: /en/o_sdg/
 </p>
 <div class="collapse" id="collapseExample4">
   <div class="card card-body">
-	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2024" href="https://unstats.un.org/sdgs/report/2024/">The Sustainable Development Goals Report 2024</a></p>
+	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2025" href="https://unstats.un.org/sdgs/report/2025/">The Sustainable Development Goals Report 2025</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2023" href="https://unstats.un.org/sdgs/report/2023/">The Sustainable Development Goals Report 2023</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2022" href="https://unstats.un.org/sdgs/report/2022/">The Sustainable Development Goals Report 2022</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2021" href="https://unstats.un.org/sdgs/report/2021/">The Sustainable Development Goals Report 2021</a></p>
@@ -395,8 +398,6 @@ permalink: /en/o_sdg/
 	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Read a publication The Sustainable Development Goals Report 2018" href="https://unstats.un.org/sdgs/report/2018/">The Sustainable Development Goals Report 2018</a></p>
   </div>
 </div>
-
-
 
 
 

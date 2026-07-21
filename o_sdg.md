@@ -297,13 +297,12 @@ permalink: /o_sdg/
 
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://www.gov.pl/attachment/bfb5fdbb-f6f9-4dd0-b46d-7079e5ac5677" alt="Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2024 r." title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2024 r." target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/11_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://www.gov.pl/attachment/362f4889-de8c-4af3-96fb-2c5eaa5f8e92" alt="Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2025 r." title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2025 r." target="_blank"><img src="{{ site.baseurl }}/assets/img/publikacje/11_monitorowanie_small.png" align="center" alt="GUS" border="0"/></a>
   </div>
-  <p><b>Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2024 r.</b></p>
-  <p>Publikacja Ministerstwa Rozwoju i Technologii prezentuje opis wybranych działań zrealizowanych na rzecz Agendy 2030 i jej celów (SDGs) w Polsce przez rząd, samorządy, uczelnie wyższe i innych interesariuszy. Opisane zostały w niej istotne projekty strategiczne i programy operacyjne szczebla krajowego oraz regionalnego, których realizacja może przyczyniać się do przybliżania kraju do osiągnięcia postępów w zakresie wszystkich wymiarów zrównoważonego rozwoju. W publikacji uwzględniono również globalny kontekst, m.in. skutki rosyjskiej agresji na Ukrainę oraz wyzwania klimatyczne. Dopełnieniem publikacji są: informacje o monitorowaniu SDGs w Polsce, UE i na świecie oraz zaprezentowane w formie graficznej wybrane wskaźniki monitorujące <a title="Przejdź do podstrony z priorytetami" href="https://sdg.gov.pl/priorytet/"  target="_blank">polskie priorytety</a>, pochodzące z <a title="Przejdź do podstrony ze wskaźnikami krajowymi" href="https://sdg.gov.pl/statistics_nat/"  target="_blank">Platformy SDG</a>.</p>
+  <p><b>Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2025 r.</b></p>
+  <p>Publikacja przedstawia realizację Agendy 2030 w Polsce według stanu na koniec 2025 r. Po raz pierwszy zaprezentowano w niej przygotowaną przez GUS ocenę postępu realizacji SDG według <a title="Przejdź do podstrony z priorytetami" href="https://sdg.gov.pl/priorytet/"  target="_blank">polskich priorytetów</a> zrównoważonego rozwoju dostępnych na <a title="Przejdź do podstrony ze wskaźnikami krajowymi" href="https://sdg.gov.pl/statistics_nat/"  target="_blank">Platformie SDG</a>. Ocena obejmuje poziom wskaźników, 74 krajowych priorytetów oraz wszystkich 17 celów. Dla każdego celu przedstawiono również wybrane działania podejmowane na szczeblu rządowym i samorządowym.</p>
 
-
-
+  <p>Raport pokazuje także Polskę na tle świata i Europy oraz przedstawia perspektywę interesariuszy zaangażowanych we wdrażanie celów zrównoważonego rozwoju. Publikację dopełniają informacje poświęcone współpracy i partnerstwu oraz kluczowe wnioski dotyczące dalszej realizacji Agendy 2030.</p>
 
 
 <p style="margin-bottom: 20px;">
@@ -313,6 +312,7 @@ permalink: /o_sdg/
 </p>
 <div class="collapse" id="collapseExample2">
   <div class="card card-body">
+  <p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2024 r." href="https://www.gov.pl/attachment/bfb5fdbb-f6f9-4dd0-b46d-7079e5ac5677">Monitorowanie celów zrównoważonego rozwoju w Polsce – informacja wg stanu na koniec 2024 r.</a></p>
   <p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2023 r." href="https://www.gov.pl/attachment/22950221-b985-4cdd-8b76-8a3edaa3f247">Monitorowanie celów zrównoważonego rozwoju w Polsce – informacja wg stanu na koniec 2023 r.</a></p>
 	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2021 r." href="https://www.gov.pl/attachment/67577a57-a7e8-4f85-93bf-8ce1447a1c72">Monitorowanie celów zrównoważonego rozwoju w Polsce – informacja wg stanu na koniec 2021 r.</a></p>
 	<p style="margin-bottom: 20px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z raportem Monitorowanie realizacji Celów Zrównoważonego Rozwoju w Polsce – informacja wg stanu na koniec 2020 r." href="https://www.gov.pl/attachment/b8585e8a-86d5-4c4a-b8de-38bb9cbc9889">Monitorowanie celów zrównoważonego rozwoju w Polsce – informacja wg stanu na koniec 2020 r.</a></p>
@@ -375,15 +375,17 @@ permalink: /o_sdg/
   <h4><b>ORGANIZACJA NARODÓW ZJEDNOCZONYCH (ONZ)</b></h4>
 
   <div class="image-wrapper">
-      <a target="_blank" href="https://unstats.un.org/sdgs/report/2025/" alt="The Sustainable Development Goals Report 2025" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2025)"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2025.png" align="center" alt="GUS" border="0"/></a>
+      <a target="_blank" href="https://unstats.un.org/sdgs/report/2026/The-Sustainable-Development-Goals-Report-2026.pdf" alt="The Sustainable Development Goals Report 2026" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2026)"><img src="{{ site.baseurl }}/assets/img/publikacje/3_sdgreport_2026.png" align="center" alt="GUS" border="0"/></a>
   </div>
   <p><b>The Sustainable Development Goals Report</b></p>
 
-  <p>Raport stanowi przegląd postępów, jakich dokonywano w kolejnych latach z realizacji Agendy 2030. Edycja z 2025 r. szczegółowo opisuje najważniejsze wyzwania, przed którymi stoi świat w zakresie osiągania Celów Zrównoważonego Rozwoju, w oparciu o najnowsze statystyki. Raport przedstawia obszary, w których występują niepowodzenia (np. utrzymujące się nierówności, głód, brak dostępu do wody i sanitariów, niewystarczające wsparcie dla kobiet i osób z niepełnosprawnościami, zmiany klimatyczne, zadłużenie, rosnące koszty życia czy brak wystarczającego finansowania działań rozwojowych), a jednocześnie pokazuje, gdzie poczyniono postępy (np. spadek liczby nowych zakażeń wirusem HIV, poprawa dostępu do energii i Internetu, zapewnienie dostępu do edukacji większej liczbie dzieci, poprawa bioróżnorodności). W edycji z 2025 r. zwrócono szczególną uwagę na konieczność przyspieszenia działań w kluczowych obszarach – m.in. transformacji energetycznej, cyfryzacji, edukacji i ochrony klimatu – a także potrzebę silniejszej współpracy i koordynacji działań między wieloma krajami.</p>
+  <p>Raport stanowi przegląd postępów w realizacji Agendy 2030. Edycja z 2026 r. wskazuje, w oparciu o najnowsze statystyki, zarówno obszary, w których odnotowano niepowodzenia, jak i te, w których osiągnięto postęp.</p>
 
+  <p>Do najważniejszych wyzwań zaliczono m.in. utrzymujące się skrajne ubóstwo, pogarszające się bezpieczeństwo żywnościowe, spadek oficjalnej pomocy rozwojowej (ODA), rosnące zadłużenie krajów rozwijających się, utrzymującą się lukę finansową w realizacji Celów Zrównoważonego Rozwoju (SDG), eskalację konfliktów zbrojnych oraz rekordową liczbę migrantów. Zwrócono również uwagę na skutki kryzysu na Bliskim Wschodzie, które zakłócają funkcjonowanie globalnych szlaków transportu żywności i energii.</p>
 
+  <p>Jednocześnie raport pokazuje, gdzie poczyniono postępy, np. w zakresie zwiększenia dostępu do bezpiecznej wody pitnej oraz do energii elektrycznej, spadku umieralności matek oraz śmiertelności dzieci, ograniczenia liczby nowych zakażeń HIV i zgonów związanych z AIDS, zmniejszenia liczby ofiar katastrof, rozwoju odnawialnych źródeł energii, a także spadku liczby dzieci wykonujących pracę.</p>
 
-
+  <p>Szczególną uwagę w najnowszej edycji poświęcono roli sztucznej inteligencji w monitorowaniu realizacji SDG, podkreślając zarówno jej potencjał we wspieraniu statystyki publicznej, jak i ryzyka związane z utratą suwerenności danych, erozją zaufania publicznego oraz zagrożeniami dla poufności informacji. Raport akcentuje również pilną potrzebę reformy globalnej architektury finansowej, ograniczenia luki finansowania oraz wzmocnienia współpracy międzynarodowej w ostatnich czterech latach pozostałych do realizacji Agendy 2030.</p>
 
 <p style="margin-bottom: 20px;">
   <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4" style="background-color: dimgray;">
@@ -392,6 +394,7 @@ permalink: /o_sdg/
 </p>
 <div class="collapse" id="collapseExample4">
   <div class="card card-body">
+  <p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2025)" href="https://unstats.un.org/sdgs/report/2025/">The Sustainable Development Goals Report 2025</a></p>
 	<p style="margin-bottom: 5px;margin-top: 0px;"><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2024)" href="https://unstats.un.org/sdgs/report/2024/">The Sustainable Development Goals Report 2024</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2023)" href="https://unstats.un.org/sdgs/report/2023/">The Sustainable Development Goals Report 2023</a></p>
 	<p style="margin-bottom: 5px;margin-top: 5px;"><a target="_blank" title="Zapoznaj się z publikacją The Sustainable Development Goals Report (2022)" href="https://unstats.un.org/sdgs/report/2022/">The Sustainable Development Goals Report 2022</a></p>
