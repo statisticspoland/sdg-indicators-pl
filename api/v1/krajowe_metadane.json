@@ -154,7 +154,7 @@
                                         
                                           "definicja": "Liczba miejsc w placówkach stacjonarnej pomocy społecznej (łącznie z filiami) przypadająca na 10 tys. mieszkańców.",
                                         
-                                          "jednostka": "-",
+                                          "jednostka": "[–]",
                                         
                                           "wymiary": "ogółem",
                                         
@@ -4855,6 +4855,40 @@
                     ]
                   },
                   {
+                    "16-1-c": [
+                      {
+                        "metadane": [
+                          
+                          {
+                                          "nazwa": "16.1.c Liczba spraw sądowych rozpatrzonych w I instancji na 100 tys. ludności",
+                                        
+                                          "cel": "Cel 16. Pokój, sprawiedliwość i silne instytucje",
+                                        
+                                          "priorytet": "Zwiększenie skuteczności państwa i instytucji służących wzrostowi oraz włączeniu społecznemu i gospodarczemu",
+                                        
+                                          "definicja": "Liczba spraw karnych oraz innych niż karne rozpatrzonych w pierwszej instancji w przeliczeniu na 100 tys. mieszkańców.",
+                                        
+                                          "jednostka": "[–]",
+                                        
+                                          "wymiary": "ogółem",
+                                        
+                                          "metodologia": "Wskaźnik pozwala ocenić aktywność orzeczniczą sądów w odniesieniu do populacji.Licznikiem jest suma rozstrzygniętych przez sądy pierwszej instancji spraw karnych oraz spraw innych niż karne. Mianownikiem jest całkowita liczba ludności. Wskaźnik został wyrażony w przeliczeniu na 100 tys. osób.Dane o liczbie rozstrzyganych spraw sądowych pochodzą ze źródeł administracyjnych właściwych dla resortu sądownictwa. Dane o liczbie ludności dostarcza Eurostat w oparciu o informacje przekazane przez urzędy statystyczne Państw Członkowskich.Pojęcia spraw karnych oraz spraw innych niż karne należy rozumieć zgodnie z metodologią Europejskiej Komisji na Rzecz Skutecznego Wymiaru Sprawiedliwości (CEPEJ).Za sprawę rozpatrzoną w pierwszej instancji uważa się sprawę, która w danym roku referencyjnym została skutecznie rozpatrzona i zakończona wyrokiem lub inną decyzją sądu, która kończy postępowanie na szczeblu pierwszej instancji.",
+                                        
+                                          "zrodlo": "Eurostat",
+                                        
+                                          "czestotliwosc": "Dane roczne; od 2022 r.",
+                                        
+                                          "uwagi": "",
+                                        
+                                          "data_aktualizacji_danych": "27-07-2026",
+                                        
+                                          "data_aktualizacji_metadanych": "27-07-2026"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
                     "16-2-a": [
                       {
                         "metadane": [
@@ -4928,29 +4962,63 @@
                         "metadane": [
                           
                           {
-                                          "nazwa": "16.4.a Odsetek osób korzystających z Internetu w kontaktach z administracją publiczną do przekazywania wypełnionych formularzy",
+                                          "nazwa": "16.4.a Przedsiębiorstwa wykorzystujące usługę e-Doręczenia",
                                         
                                           "cel": "Cel 16. Pokój, sprawiedliwość i silne instytucje",
                                         
-                                          "priorytet": "Większe wykorzystanie technologii informacyjno-komunikacyjnych w zarządzaniu państwem i komunikacji z obywatelami (w tym z przedsiębiorcami)",
+                                          "priorytet": "Większe wykorzystanie technologii informacyjno-komunikacyjnych w zarządzaniu państwem i komunikacji z obywatelami (w tym z  przedsiębiorcami)",
                                         
-                                          "definicja": "Odsetek osób w wieku 16-74 lata korzystających z Internetu w kontaktach prywatnych z administracją publiczną do przekazywania wypełnionych formularzy (w ciągu ostatnich 12 miesięcy).",
+                                          "definicja": "Przedsiębiorstwa wykorzystujące usługę rejestrowanego doręczenia elektronicznego (e-Doręczenia).",
                                         
                                           "jednostka": "procent [%]",
                                         
                                           "wymiary": "ogółem",
                                         
-                                          "metodologia": "Dane pochodzą z badania Wskaźniki społeczeństwa informacyjnego, które jest badaniem reprezentacyjnym, ankietowym, realizowanym metodą wywiadu bezpośredniego, w którym udział jest dobrowolny. Badanie odbywa się w kwietniu każdego roku. Zgodnie z wymogami określonymi w rozporządzeniach Komisji Europejskiej badanie obejmuje gospodarstwa domowe (z przynajmniej jedną osobą w wieku 16-74 lata) znajdujące się na terenie całego kraju oraz wszystkie osoby w wieku 16-74 lata w tych gospodarstwach. Badaniem nie są objęte osoby mieszkające w gospodarstwach zbiorowych, takich jak: domy studenckie, hotele robotnicze, domy opieki społecznej, zakony, szpitale, koszary, zakłady karne itp. Cudzoziemcy mogą uczestniczyć w badaniu, o ile posiadają znajomość języka polskiego. Pojęcie administracja publiczna odnosi się zarówno do organów świadczących usługi publiczne, jak i prowadzących typową działalność administracyjną. Możemy do nich zaliczyć na przykład organy podatkowe (np. urząd skarbowy, izbę skarbową), organy służby celnej, organy rejestrowe (np. KRS, REGON), instytucje ubezpieczeń społecznych (np. ZUS), organy publicznej służby zdrowia (np. NFZ, szpitale), instytucje związane z ochroną środowiska i pozostałe prowadzące działalność publiczną. Wyróżnia się administrację szczebla lokalnego, regionalnego i krajowego. Kontakt z administracją publiczną poprzez Internet obejmuje m.in. wyszukiwanie informacji na stronach internetowych, pobieranie formularzy urzędowych, wysyłanie wypełnionych formularzy (z wyłączeniem ręcznie pisanych e-maili).",
+                                          "metodologia": "Informacje nt. wykorzystywania przez przedsiębiostwa e-Doręczeń czyli rejestrowanych doręczeń elektronicznych pochodzą ze sprawozdania SSI-01 Sprawozdanie o wykorzystaniu technologii informacyjno-komunikacyjnych w przedsiębiorstwach. Badanie dotyczy wykorzystania technologii ICT w przedsiębiorstwie. Nie ma znaczenia, czy wyposażenie ICT lub oprogramowanie, z którego korzysta przedsiębiorstwo są jego własnością czy nie.Termin ICT oznacza technologie informacyjno-komunikacyjne które przetwarzają, gromadzą i przesyłają informacje w postaci elektronicznej. Obejmują Internet i inne sieci komputerowe, systemy informatyczne, komputery i inne urządzenia komputerowe.Formularz SSI-01 wypełniają osoby prawne, jednostki organizacyjne niemające osobowości prawnej oraz osoby fizyczne prowadzące działalność gospodarczą, w których liczba pracujących wynosi 10 osób i więcej, a działalność została zaklasyfikowana według Polskiej Klasyfikacji Działalności do sekcji A, B, C, D, E, F, G, H, I, J, L, M, N, R, S.Usługa e-Doręczenia to elektroniczny odpowiednik listu poleconego za potwierdzeniem odbioru. Dzięki tej usłudze, podmioty publiczne, obywatele i firmy mogą korzystać z wygodnych i bezpiecznych doręczeń elektronicznych, które są równoważne prawnie tradycyjnej przesyłce poleconej. Usługa e-Doręczenia umożliwia prowadzenie oficjalnej korespondencji przez Internet, co czyni proces szybszym i bardziej efektywnym.",
+                                        
+                                          "zrodlo": "Główny Urząd Statystyczny",
+                                        
+                                          "czestotliwosc": "Dane roczne; od 2024 r.",
+                                        
+                                          "uwagi": "",
+                                        
+                                          "data_aktualizacji_danych": "27-07-2026",
+                                        
+                                          "data_aktualizacji_metadanych": "27-07-2026"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "16-4-b": [
+                      {
+                        "metadane": [
+                          
+                          {
+                                          "nazwa": "16.4.b Odsetek osób korzystających z Internetu w kontaktach z administracją publiczną",
+                                        
+                                          "cel": "Cel 16. Pokój, sprawiedliwość i silne instytucje",
+                                        
+                                          "priorytet": "Większe wykorzystanie technologii informacyjno-komunikacyjnych w zarządzaniu państwem i komunikacji z obywatelami (w tym z  przedsiębiorcami)",
+                                        
+                                          "definicja": "Odsetek osób w wieku 16-74 lata korzystających z Internetu w kontaktach prywatnych z administracją publiczną (w ciągu ostatnich 12 miesięcy).",
+                                        
+                                          "jednostka": "procent [%]",
+                                        
+                                          "wymiary": "ogółem, według wieku",
+                                        
+                                          "metodologia": "Dane pochodzą z badania Wskaźniki społeczeństwa informacyjnego, które jest badaniem reprezentacyjnym, ankietowym, realizowanym metodą wywiadu bezpośredniego, w którym udział jest dobrowolny. Badanie odbywa się w kwietniu każdego roku. Zgodnie z wymogami określonymi w rozporządzeniach Komisji Europejskiej badanie obejmuje gospodarstwa domowe (z przynajmniej jedną osobą w wieku 16-74 lata) znajdujące się na terenie całego kraju oraz wszystkie osoby w wieku 16-74 lata w tych gospodarstwach. Badaniem nie są objęte osoby mieszkające w gospodarstwach zbiorowych, takich jak: domy studenckie, hotele robotnicze, domy opieki społecznej, zakony, szpitale, koszary, zakłady karne itp. Cudzoziemcy mogą uczestniczyć w badaniu, o ile posiadają znajomość języka polskiego.Pojęcie 'administracja publiczna' odnosi się zarówno do organów świadczących usługi publiczne, jak i prowadzących typową działalność administracyjną. Możemy do nich zaliczyć na przykład organy podatkowe (np. urząd skarbowy, izbę skarbową), organy służby celnej, organy rejestrowe (np. KRS, REGON), instytucje ubezpieczeń społecznych (np. ZUS), organy publicznej służby zdrowia (np. NFZ, szpitale), instytucje związane z ochroną środowiska i pozostałe prowadzące działalność publiczną. Wyróżnia się administrację szczebla lokalnego, regionalnego i krajowego.Kontakt z administracją publiczną poprzez Internet obejmuje m.in. wyszukiwanie informacji na stronach internetowych, pobieranie formularzy urzędowych, wysyłanie wypełnionych formularzy (z wyłączeniem ręcznie pisanych e-maili).",
                                         
                                           "zrodlo": "Główny Urząd Statystyczny",
                                         
                                           "czestotliwosc": "Dane roczne; od 2010 r.",
                                         
-                                          "uwagi": "Z uwagi na znaczne błędy losowe niektóre dane za lata 2010-2014 są mniej dokładne niż pozostałe. Wskaźnik przestał być wyliczany, ostatnia wartość dostępna jest za 2021 r.",
+                                          "uwagi": "",
                                         
-                                          "data_aktualizacji_danych": "28-01-2022",
+                                          "data_aktualizacji_danych": "27-07-2026",
                                         
-                                          "data_aktualizacji_metadanych": "29-04-2025"
+                                          "data_aktualizacji_metadanych": "27-07-2026"
                                         }
                         ]
                       }
@@ -4985,6 +5053,108 @@
                                           "data_aktualizacji_danych": "12-05-2026",
                                         
                                           "data_aktualizacji_metadanych": "25-05-2021"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "16-6-a": [
+                      {
+                        "metadane": [
+                          
+                          {
+                                          "nazwa": "16.6.a Stosunek liczby ochotników powołanych do dobrowolnej zasadniczej służby wojskowej do liczby ochotników planowanych do powołania według dokumentów planistycznych MON",
+                                        
+                                          "cel": "Cel 16. Pokój, sprawiedliwość i silne instytucje",
+                                        
+                                          "priorytet": "Podniesienie odporności państwa na zagrożenia poprzez tworzenie systemu obrony powszechnej",
+                                        
+                                          "definicja": "",
+                                        
+                                          "jednostka": "procent [%]",
+                                        
+                                          "wymiary": "ogółem",
+                                        
+                                          "metodologia": "",
+                                        
+                                          "zrodlo": "Ministerstwo Obrony Narodowej",
+                                        
+                                          "czestotliwosc": "",
+                                        
+                                          "uwagi": "",
+                                        
+                                          "data_aktualizacji_danych": "",
+                                        
+                                          "data_aktualizacji_metadanych": ""
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "16-7-a": [
+                      {
+                        "metadane": [
+                          
+                          {
+                                          "nazwa": "16.7.a Liczba incydentów teleinformatycznych obsługiwanych przez CERT Polska, zakwalifikowanych jako faktyczne incydenty cyberbezpieczeństwa",
+                                        
+                                          "cel": "Cel 16. Pokój, sprawiedliwość i silne instytucje",
+                                        
+                                          "priorytet": "Podniesienie poziomu odporności na cyberzagrożenia oraz zwiększenie poziomu ochrony informacji w państwie, a także promowanie wiedzy i dobrych praktyk umożliwiających obywatelom lepszą ochronę ich informacji",
+                                        
+                                          "definicja": "Liczba incydentów teleinformatycznych obsłużonych przez CERT Polska w danym roku sprawozdawczym, które po analizie zgłoszeń zostały zakwalifikowane jako faktyczne incydenty cyberbezpieczeństwa i zarejestrowane jako incydenty.",
+                                        
+                                          "jednostka": "[–]",
+                                        
+                                          "wymiary": "ogółem",
+                                        
+                                          "metodologia": "Wskaźnik jest opracowywany na podstawie rocznych raportów z działalności CERT Polska, publikowanych przez NASK – Państwowy Instytut Badawczy. CERT Polska jest zespołem działającym w strukturach NASK, powołanym do reagowania na incydenty bezpieczeństwa komputerowego i realizującym zadania CSIRT NASK.Podstawą ustalenia wartości wskaźnika jest liczba incydentów cyberbezpieczeństwa zarejestrowanych przez CERT Polska w danym roku sprawozdawczym. Dane wynikają z analizy zgłoszeń przekazanych do zespołu, m.in. przez formularz zgłoszeniowy oraz pocztę elektroniczną. Zgłoszenia są analizowane i grupowane, ponieważ kilka zgłoszeń z różnych źródeł może dotyczyć tego samego incydentu.Do wskaźnika nie włącza się samej liczby zgłoszeń. Prezentowana wartość odnosi się do liczby zarejestrowanych incydentów, tj. przypadków zakwalifikowanych po analizie jako faktyczne incydenty cyberbezpieczeństwa.",
+                                        
+                                          "zrodlo": "NASK - Państwowy Instytut Badawczy / CERT Polska",
+                                        
+                                          "czestotliwosc": "Dane roczne; od 2010 r.",
+                                        
+                                          "uwagi": "",
+                                        
+                                          "data_aktualizacji_danych": "27-07-2026",
+                                        
+                                          "data_aktualizacji_metadanych": "27-07-2026"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "16-7-b": [
+                      {
+                        "metadane": [
+                          
+                          {
+                                          "nazwa": "16.7.b Odsetek respondentów korzystających z internetu sprawdzających prawdziwość informacji lub treści znalezionych w serwisach informacyjnych lub mediach społecznościowych (w ciągu ostatnich trzech miesięcy)",
+                                        
+                                          "cel": "Cel 16. Pokój, sprawiedliwość i silne instytucje",
+                                        
+                                          "priorytet": "Podniesienie poziomu odporności na cyberzagrożenia oraz zwiększenie poziomu ochrony informacji w państwie, a także promowanie wiedzy i dobrych praktyk umożliwiających obywatelom lepszą ochronę ich informacji",
+                                        
+                                          "definicja": "Odsetek uczestników badania wykorzystania technologii informacyjno-komunikacyjnych (ICT), którzy w ciągu ostatnich trzech miesięcy poprzedzających badanie sprawdzili prawdziwość informacji lub treści znalezionych w serwisach informacyjnych lub mediach społecznościowych.",
+                                        
+                                          "jednostka": "procent [%]",
+                                        
+                                          "wymiary": "ogółem",
+                                        
+                                          "metodologia": "Wskaźnik mierzy zakres działań podejmowanych przez użytkowników internetu w celu oceny wiarygodności informacji i treści znalezionych w internetowych serwisach informacyjnych lub mediach społecznościowych.Niezbędne do obliczania wskaźnika dane dostarcza Europejski System Statystyczny (ESS), czyli usankcjonowany Rozporządzeniem Parlamentu Europejskiego i Rady (WE) nr 223/2009 system partnerstwa pomiędzy Eurostatem a krajowymi urzędami statystycznymi (np. GUS) oraz innymi organami krajowymi odpowiedzialnymi w każdym państwie członkowskim za opracowywanie, tworzenie i rozpowszechnianie statystyki europejskiej.Dane pochodzą z badania wykorzystania technologii informacyjno-komunikacyjnych (ICT) w gospodarstwach domowych. Jest to badanie reprezentacyjne, którym objęte są zamieszkujące gospodarstwa domowe osoby w wieku 16 – 74 lata. Licznikiem jest liczba respondentów korzystających z internetu, którzy podjęli działania mające na celu sprawdzenie wiarygodności informacji lub treści znalezionych w internecie, natomiast mianownikiem - liczba respondentów korzystających z internetu.Działania podejmowane w celu oceny wiarygodności treści lub informacji znalezionych w internecie należy rozumieć jako wykonanie co najmniej jednej z poniższych czynności:a) sprawdzenie źródeł lub wyszukanie w internecie innej informacji,b) śledzenie lub uczestnictwo w toczącej się w internecie dyskusji na temat weryfikowanej informacji,c) omówienie z innymi osobami w trybie offline weryfikowanej informacji lub odwołanie się do źródeł poza internetowych.",
+                                        
+                                          "zrodlo": "Eurostat",
+                                        
+                                          "czestotliwosc": "Dane co 2 lata; 2021, 2023, 2025",
+                                        
+                                          "uwagi": "",
+                                        
+                                          "data_aktualizacji_danych": "27-07-2026",
+                                        
+                                          "data_aktualizacji_metadanych": "27-07-2026"
                                         }
                         ]
                       }

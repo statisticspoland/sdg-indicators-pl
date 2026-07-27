@@ -1,0 +1,76 @@
+
+
+
+{
+  "16-7-a": [
+    {
+      "metadane": [
+        
+        {
+                        "nazwa": "16.7.a Liczba incydentów teleinformatycznych obsługiwanych przez CERT Polska, zakwalifikowanych jako faktyczne incydenty cyberbezpieczeństwa",
+                      
+                        "cel": "Cel 16. Pokój, sprawiedliwość i silne instytucje",
+                      
+                        "priorytet": "Podniesienie poziomu odporności na cyberzagrożenia oraz zwiększenie poziomu ochrony informacji w państwie, a także promowanie wiedzy i dobrych praktyk umożliwiających obywatelom lepszą ochronę ich informacji",
+                      
+                        "definicja": "Liczba incydentów teleinformatycznych obsłużonych przez CERT Polska w danym roku sprawozdawczym, które po analizie zgłoszeń zostały zakwalifikowane jako faktyczne incydenty cyberbezpieczeństwa i zarejestrowane jako incydenty.",
+                      
+                        "jednostka": "[–]",
+                      
+                        "wymiary": "ogółem",
+                      
+                        "metodologia": "Wskaźnik jest opracowywany na podstawie rocznych raportów z działalności CERT Polska, publikowanych przez NASK – Państwowy Instytut Badawczy. CERT Polska jest zespołem działającym w strukturach NASK, powołanym do reagowania na incydenty bezpieczeństwa komputerowego i realizującym zadania CSIRT NASK.Podstawą ustalenia wartości wskaźnika jest liczba incydentów cyberbezpieczeństwa zarejestrowanych przez CERT Polska w danym roku sprawozdawczym. Dane wynikają z analizy zgłoszeń przekazanych do zespołu, m.in. przez formularz zgłoszeniowy oraz pocztę elektroniczną. Zgłoszenia są analizowane i grupowane, ponieważ kilka zgłoszeń z różnych źródeł może dotyczyć tego samego incydentu.Do wskaźnika nie włącza się samej liczby zgłoszeń. Prezentowana wartość odnosi się do liczby zarejestrowanych incydentów, tj. przypadków zakwalifikowanych po analizie jako faktyczne incydenty cyberbezpieczeństwa.",
+                      
+                        "zrodlo": "NASK - Państwowy Instytut Badawczy / CERT Polska",
+                      
+                        "czestotliwosc": "Dane roczne; od 2010 r.",
+                      
+                        "uwagi": "",
+                      
+                        "data_aktualizacji_danych": "27-07-2026",
+                      
+                        "data_aktualizacji_metadanych": "27-07-2026"
+                      }
+      ],
+      "dane": [
+        {"ogółem": [
+                        {
+                        
+                            "2010" :   "674",
+                        
+                            "2011" :   "605",
+                        
+                            "2012" :   "1082",
+                        
+                            "2013" :   "1219",
+                        
+                            "2014" :   "1282",
+                        
+                            "2015" :   "1456",
+                        
+                            "2016" :   "1926",
+                        
+                            "2017" :   "3182",
+                        
+                            "2018" :   "3739",
+                        
+                            "2019" :   "6484",
+                        
+                            "2020" :   "10420",
+                        
+                            "2021" :   "29483",
+                        
+                            "2022" :   "39683",
+                        
+                            "2023" :   "80267",
+                        
+                            "2024" :   "103449",
+                        
+                            "2025" :   "260783"
+                        
+                        }
+                    ]}
+      ]
+    }
+  ]
+}

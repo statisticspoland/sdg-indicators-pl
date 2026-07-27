@@ -1,0 +1,77 @@
+
+
+
+{
+  "16-7-a": [
+    {
+      "metadata": [
+        
+        {
+                        "name": "16.7.a Number of ICT incidents handled by CERT Polska, classified as actual cybersecurity incidents",
+                      
+                        "goal": "Goal 16. Peace, justice and strong institutions",
+                      
+                        "priority": "Increasing the level of resilience to cyber threats and increasing the level of information protection in the country, as well as promoting knowledge and good practices that enable citizens to better protect their information",
+                      
+                        "definition": "Number of ICT incidents handled by CERT Polska in the reporting year which, after the analysis of reports, were classified as actual cybersecurity incidents and registered as incidents.",
+                      
+                        "unit": "[–]",
+                      
+                        "dimensions": "total",
+                      
+                        "methodology": "The indicator is developed on the basis of annual reports on the activities of CERT Polska, published by NASK – National Research Institute. CERT Polska is a team operating within the structures of NASK, established to respond to computer security incidents and performing the tasks of CSIRT NASK.The value of the indicator is determined on the basis of the number of cybersecurity incidents registered by CERT Polska in a given reporting year. The data are derived from the analysis of reports submitted to the team, including via the reporting form and by e-mail. Reports are analysed and grouped, as several reports from different sources may refer to the same incident.The indicator does not include the number of reports itself. The presented value refers to the number of registered incidents, i.e. cases classified, following analysis, as actual cybersecurity incidents.",
+                      
+                        "source": "NASK - National Research Institute / CERT Polska",
+                      
+                        "availability": "Annual data, since 2010",
+                      
+                        "notes": "",
+                      
+                        "data_updated_on": "27-07-2026",
+                      
+                        "metadata_updated_on": "27-07-2026"
+                      }
+      ],
+      "data": [
+        {"total": [
+                      {
+                      
+                          "2010" :   "674",
+                      
+                          "2011" :   "605",
+                      
+                          "2012" :   "1082",
+                      
+                          "2013" :   "1219",
+                      
+                          "2014" :   "1282",
+                      
+                          "2015" :   "1456",
+                      
+                          "2016" :   "1926",
+                      
+                          "2017" :   "3182",
+                      
+                          "2018" :   "3739",
+                      
+                          "2019" :   "6484",
+                      
+                          "2020" :   "10420",
+                      
+                          "2021" :   "29483",
+                      
+                          "2022" :   "39683",
+                      
+                          "2023" :   "80267",
+                      
+                          "2024" :   "103449",
+                      
+                          "2025" :   "260783"
+                      
+                      }
+                  ]
+            }
+      ]
+    }
+  ]
+}

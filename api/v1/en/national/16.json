@@ -153,6 +153,79 @@
       ]
     },
     {
+      "16-1-c": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "16.1.c Number of legal cases resolved in the first instance per 100 thousand population",
+                          
+                            "goal": "Goal 16. Peace, justice and strong institutions",
+                          
+                            "priority": "Increase in effectiveness of the state and its institutions for social and economic enhancement and inclusion",
+                          
+                            "definition": "Number of cases resolved in first instance courts (criminal cases and other than criminal (non-criminal) cases) expressed per 100 thous. population.",
+                          
+                            "unit": "[–]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator measures judicial activity of courts in relation to the population.The numerator comprises criminal cases and non-criminal cases resolved by courts of first instance. The denominator is the total population. The indicator is expressed per 100 thous. population.Data on the number of resolved court cases are derived from administrative justice records. Population data are provided by Eurostat based on data supplied by the statistical offices of Member States.Criminal and non-criminal cases are defined according to the methodology of the European Commission for the Efficiency of Justice (CEPEJ).A case resolved at first instance is a case completed by judgment or other decision in the reference year that terminates proceedings at first-instance level.",
+                          
+                            "source": "Eurostat",
+                          
+                            "availability": "Annual data; since 2022",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "27-07-2026",
+                          
+                            "metadata_updated_on": "27-07-2026"
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   "",
+                              
+                                  "2019" :   "",
+                              
+                                  "2020" :   "",
+                              
+                                  "2021" :   "",
+                              
+                                  "2022" :   "33109.31",
+                              
+                                  "2023" :   "33829.39"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
       "16-2-a": [
         {
           "metadata": [
@@ -308,553 +381,362 @@
           "metadata": [
             
             {
-                            "name": "16.4.a Percentage of individuals using the Internet for contacts with public authorities or public services for submitting completed forms",
+                            "name": "16.4.a Enterprises using the e-Delivery service",
                           
                             "goal": "Goal 16. Peace, justice and strong institutions",
                           
                             "priority": "Wider use of ICT for state governance and communication with its citizens (including entrepreneurs)",
                           
-                            "definition": "Percentage of individuals aged 16-74 using the Internet for private contacts with public authorities or public services for submitting completed forms online (in the last 12 months).",
+                            "definition": "Enterprises using the registered electronic delivery service (e-Delivery).",
                           
                             "unit": "percent [%]",
                           
                             "dimensions": "total",
                           
-                            "methodology": "Data come from the survey Information society indicators, which is a questionnaire-based sample survey carried out in a voluntary face-to face interview. The survey is conducted in April every year. In accordance with the requirements set up in the Commission regulations, the survey covers all households in the country (with at least one person aged 16-74) and all persons aged 16-74 living in those households. The survey excludes persons living in collective accommodation establishments such as student dormitories, employee hostels, social welfare homes, convents, hospitals, barracks, prisons etc.) Foreigners may participate in the survey as long as they are able to speak Polish. The term of public authorities refers to authorities providing public services, as well as conducting typical administrative activities. This includes, for example, the tax authorities, customs authorities, registration authorities, social security institutions, public health authorities (eg. NFZ, hospitals), institutions of environmental protection, and other authorities providing public activities. There are local, regional, and national public authorities. Contact with the public authorities via the Internet includes for example: search for information on web pages, downloading official forms, sending filled-in forms (excluding self-written e-mails).",
+                            "methodology": "Information on enterprises’ use of e-Delivery, i.e. registered electronic delivery services, is derived from the SSI-01 survey report: “Report on the use of information and communication technologies in enterprises”. The survey covers the use of ICT within enterprises. It is not relevant whether the ICT equipment or software used by the enterprise is owned by the enterprise or not.The term ICT refers to information and communication technologies that process, store and transmit information in electronic form. These technologies include the Internet and other computer networks, information systems, computers and other computing devices.The SSI-01 questionnaire is completed by legal persons, organisational units without legal personality, and natural persons conducting economic activity with 10 or more persons employed, and whose activity is classified, according to the Polish Classification of Activities (PKD), under sections A, B, C, D, E, F, G, H, I, J, L, M, N, R and S.The e-Delivery service is the electronic equivalent of a registered letter with acknowledgement of receipt. Through this service, public entities, citizens and businesses can use convenient and secure electronic delivery services that are legally equivalent to traditional registered mail. The e-Delivery service enables official correspondence to be conducted via the Internet, making the process faster and more efficient.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2024",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "27-07-2026",
+                          
+                            "metadata_updated_on": "27-07-2026"
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   "",
+                              
+                                  "2019" :   "",
+                              
+                                  "2020" :   "",
+                              
+                                  "2021" :   "",
+                              
+                                  "2022" :   "",
+                              
+                                  "2023" :   "",
+                              
+                                  "2024" :   "30.2",
+                              
+                                  "2025" :   "51.3"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "16-4-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "16.4.b Percentage of individuals using the Internet for contacts with public administration",
+                          
+                            "goal": "Goal 16. Peace, justice and strong institutions",
+                          
+                            "priority": "Wider use of ICT for state governance and communication with its citizens (including entrepreneurs)",
+                          
+                            "definition": "Proportion of individuals aged 16–74 using the internet to interact with public administration for private purposes (within the last 12 months).",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total, by age groups",
+                          
+                            "methodology": "The data are derived from the survey Information Society Indicators, which is a sample-based survey conducted using direct interview methods, with voluntary participation. The survey is carried out in April each year. In accordance with requirements specified in European Commission regulations, the survey covers households (with at least one person aged 16–74) located throughout the entire country, as well as all individuals aged 16–74 within those households. The survey does not cover persons living in collective living quarters, such as student dormitories, workers’ hostels, social welfare homes, religious institutions, hospitals, military barracks, prisons, and similar establishments. Foreign nationals may participate in the survey provided that they have sufficient knowledge of the Polish language.The concept of ‘public administration’ refers both to institutions providing public services and to those performing administrative functions. These include, inter alia, tax authorities, customs authorities, registration authorities (e.g. the National Court Register (KRS) and the National Official Business Register (REGON)), social security institutions (e.g. the Social Insurance Institution (ZUS)), public healthcare institutions (e.g. the National Health Fund (NFZ) and hospitals), environmental protection authorities, and other public-sector bodies. Public administration is classified at local, regional, and national levels.Internet-based interaction with public administration includes, inter alia, searching for information on websites, downloading official forms, and submitting completed forms (excluding unsolicited or manually composed email communication).",
                           
                             "source": "Statistics Poland",
                           
                             "availability": "Annual data; since 2010",
                           
-                            "notes": "Due to significant random errors, some data for 2010-2014 are less accurate than others. The indicator is no longer calculated, with the last value available for 2021.",
+                            "notes": "",
                           
-                            "data_updated_on": "28-01-2022",
+                            "data_updated_on": "27-07-2026",
                           
-                            "metadata_updated_on": "29-04-2025"
+                            "metadata_updated_on": "27-07-2026"
                           }
           ],
           "data": [
             {
                       
-                              "by sex": [
+                              "by age group": [
                                   {"total": [
                                           {
                                           
-                                              "2010" : "10",
+                                              "2010" : "28.1",
                                           
-                                              "2011" : "9",
+                                              "2011" : "27.6",
                                           
-                                              "2012" : "11",
+                                              "2012" : "31.6",
                                           
-                                              "2013" : "11",
+                                              "2013" : "22.6",
                                           
-                                              "2014" : "15",
+                                              "2014" : "26.9",
                                           
-                                              "2015" : "16",
+                                              "2015" : "26.6",
                                           
-                                              "2016" : "19",
+                                              "2016" : "30.2",
                                           
-                                              "2017" : "21",
+                                              "2017" : "30.8",
                                           
-                                              "2018" : "25",
+                                              "2018" : "35.5",
                                           
-                                              "2019" : "31",
+                                              "2019" : "40.4",
                                           
-                                              "2020" : "34",
+                                              "2020" : "41.9",
                                           
-                                              "2021" : "40"
+                                              "2021" : "47.5",
                                           
-                                          }
-                                      ],"males": [
-                                          {
+                                              "2022" : "55.4",
                                           
-                                              "2010" : "10",
+                                              "2023" : "58.5",
                                           
-                                              "2011" : "9",
+                                              "2024" : "61.0",
                                           
-                                              "2012" : "11",
-                                          
-                                              "2013" : "12",
-                                          
-                                              "2014" : "14",
-                                          
-                                              "2015" : "15",
-                                          
-                                              "2016" : "19",
-                                          
-                                              "2017" : "21",
-                                          
-                                              "2018" : "24",
-                                          
-                                              "2019" : "31",
-                                          
-                                              "2020" : "32",
-                                          
-                                              "2021" : "39"
+                                              "2025" : "61.1"
                                           
                                           }
-                                      ],"females": [
+                                      ],"16-24 years": [
                                           {
                                           
-                                              "2010" : "10",
+                                              "2010" : "31.5",
                                           
-                                              "2011" : "9",
+                                              "2011" : "27.9",
                                           
-                                              "2012" : "10",
+                                              "2012" : "36.8",
                                           
-                                              "2013" : "11",
+                                              "2013" : "20.2",
                                           
-                                              "2014" : "15",
+                                              "2014" : "23.9",
                                           
-                                              "2015" : "16",
+                                              "2015" : "20.8",
                                           
-                                              "2016" : "19",
+                                              "2016" : "20.5",
                                           
-                                              "2017" : "21",
+                                              "2017" : "22.4",
                                           
-                                              "2018" : "26",
+                                              "2018" : "29.5",
                                           
-                                              "2019" : "32",
+                                              "2019" : "29.8",
                                           
-                                              "2020" : "35",
+                                              "2020" : "30.9",
                                           
-                                              "2021" : "41"
+                                              "2021" : "35.6",
+                                          
+                                              "2022" : "42.1",
+                                          
+                                              "2023" : "44.0",
+                                          
+                                              "2024" : "47.7",
+                                          
+                                              "2025" : "48.9"
                                           
                                           }
-                                      ]
-                                  }
-                              ],
-                              "urban/rural": [
-                                  {"urban area": [
+                                      ],"25-34 years": [
                                           {
                                           
-                                              "2010" : "12",
+                                              "2010" : "47.6",
                                           
-                                              "2011" : "11",
+                                              "2011" : "46.2",
                                           
-                                              "2012" : "13",
+                                              "2012" : "50.6",
                                           
-                                              "2013" : "15",
+                                              "2013" : "39.0",
                                           
-                                              "2014" : "18",
+                                              "2014" : "46.0",
                                           
-                                              "2015" : "19",
+                                              "2015" : "45.0",
                                           
-                                              "2016" : "23",
+                                              "2016" : "48.1",
                                           
-                                              "2017" : "26",
+                                              "2017" : "48.1",
                                           
-                                              "2018" : "30",
+                                              "2018" : "53.0",
                                           
-                                              "2019" : "37",
+                                              "2019" : "58.6",
                                           
-                                              "2020" : "39",
+                                              "2020" : "59.9",
                                           
-                                              "2021" : "46"
+                                              "2021" : "68.3",
+                                          
+                                              "2022" : "75.2",
+                                          
+                                              "2023" : "81.0",
+                                          
+                                              "2024" : "81.2",
+                                          
+                                              "2025" : "81.8"
                                           
                                           }
-                                      ],"rural area": [
+                                      ],"35-44 years": [
                                           {
                                           
-                                              "2010" : "6",
+                                              "2010" : "37.6",
                                           
-                                              "2011" : "5",
+                                              "2011" : "36.9",
                                           
-                                              "2012" : "6",
+                                              "2012" : "45.3",
                                           
-                                              "2013" : "6",
+                                              "2013" : "35.2",
                                           
-                                              "2014" : "9",
+                                              "2014" : "40.1",
                                           
-                                              "2015" : "10",
+                                              "2015" : "38.6",
                                           
-                                              "2016" : "12",
+                                              "2016" : "40.5",
                                           
-                                              "2017" : "13",
+                                              "2017" : "45.0",
                                           
-                                              "2018" : "17",
+                                              "2018" : "49.6",
                                           
-                                              "2019" : "23",
+                                              "2019" : "57.6",
                                           
-                                              "2020" : "25",
+                                              "2020" : "59.4",
                                           
-                                              "2021" : "31"
+                                              "2021" : "65.9",
+                                          
+                                              "2022" : "75.6",
+                                          
+                                              "2023" : "78.3",
+                                          
+                                              "2024" : "81.1",
+                                          
+                                              "2025" : "78.3"
                                           
                                           }
-                                      ]
-                                  }
-                              ],
-                              "by age group": [
-                                  {"aged 16-24": [
+                                      ],"45-54 years": [
                                           {
                                           
-                                              "2010" : "10",
+                                              "2010" : "26.2",
                                           
-                                              "2011" : "6",
+                                              "2011" : "26.3",
                                           
-                                              "2012" : "8",
+                                              "2012" : "28.7",
                                           
-                                              "2013" : "9",
+                                              "2013" : "21.5",
                                           
-                                              "2014" : "9",
+                                              "2014" : "26.2",
                                           
-                                              "2015" : "8",
+                                              "2015" : "26.0",
                                           
-                                              "2016" : "9",
+                                              "2016" : "30.0",
                                           
-                                              "2017" : "11",
+                                              "2017" : "28.0",
                                           
-                                              "2018" : "16",
+                                              "2018" : "35.0",
                                           
-                                              "2019" : "21",
+                                              "2019" : "41.4",
                                           
-                                              "2020" : "21",
+                                              "2020" : "45.1",
                                           
-                                              "2021" : "27"
+                                              "2021" : "51.7",
+                                          
+                                              "2022" : "62.4",
+                                          
+                                              "2023" : "65.7",
+                                          
+                                              "2024" : "68.8",
+                                          
+                                              "2025" : "69.9"
                                           
                                           }
-                                      ],"aged 25-34": [
+                                      ],"55-64 years": [
                                           {
                                           
-                                              "2010" : "18",
+                                              "2010" : "13.5",
                                           
-                                              "2011" : "16",
+                                              "2011" : "15.7",
                                           
-                                              "2012" : "19",
+                                              "2012" : "17.2",
                                           
-                                              "2013" : "20",
+                                              "2013" : "12.7",
                                           
-                                              "2014" : "28",
+                                              "2014" : "15.5",
                                           
-                                              "2015" : "28",
+                                              "2015" : "18.3",
                                           
-                                              "2016" : "32",
+                                              "2016" : "19.8",
                                           
-                                              "2017" : "35",
+                                              "2017" : "18.8",
                                           
-                                              "2018" : "39",
+                                              "2018" : "22.4",
                                           
-                                              "2019" : "47",
+                                              "2019" : "28.5",
                                           
-                                              "2020" : "53",
+                                              "2020" : "29.4",
                                           
-                                              "2021" : "60"
+                                              "2021" : "35.0",
+                                          
+                                              "2022" : "39.5",
+                                          
+                                              "2023" : "44.4",
+                                          
+                                              "2024" : "50.8",
+                                          
+                                              "2025" : "51.4"
                                           
                                           }
-                                      ],"aged 35-44": [
+                                      ],"65-74 years": [
                                           {
                                           
-                                              "2010" : "13",
+                                              "2010" : "4.1",
                                           
-                                              "2011" : "13",
+                                              "2011" : "5.0",
                                           
-                                              "2012" : "16",
+                                              "2012" : "6.8",
                                           
-                                              "2013" : "19",
+                                              "2013" : "3.7",
                                           
-                                              "2014" : "24",
+                                              "2014" : "6.6",
                                           
-                                              "2015" : "25",
+                                              "2015" : "6.0",
                                           
-                                              "2016" : "27",
+                                              "2016" : "8.7",
                                           
-                                              "2017" : "33",
+                                              "2017" : "8.4",
                                           
-                                              "2018" : "36",
+                                              "2018" : "10.9",
                                           
-                                              "2019" : "46",
+                                              "2019" : "12.2",
                                           
-                                              "2020" : "48",
+                                              "2020" : "13.5",
                                           
-                                              "2021" : "57"
+                                              "2021" : "15.8",
                                           
-                                          }
-                                      ],"aged 45-54": [
-                                          {
+                                              "2022" : "23.6",
                                           
-                                              "2010" : "9",
+                                              "2023" : "26.1",
                                           
-                                              "2011" : "9",
+                                              "2024" : "27.4",
                                           
-                                              "2012" : "11",
-                                          
-                                              "2013" : "12",
-                                          
-                                              "2014" : "15",
-                                          
-                                              "2015" : "15",
-                                          
-                                              "2016" : "18",
-                                          
-                                              "2017" : "19",
-                                          
-                                              "2018" : "25",
-                                          
-                                              "2019" : "32",
-                                          
-                                              "2020" : "35",
-                                          
-                                              "2021" : "43"
-                                          
-                                          }
-                                      ],"aged 55-64": [
-                                          {
-                                          
-                                              "2010" : "4",
-                                          
-                                              "2011" : "5",
-                                          
-                                              "2012" : "6",
-                                          
-                                              "2013" : "6",
-                                          
-                                              "2014" : "7",
-                                          
-                                              "2015" : "10",
-                                          
-                                              "2016" : "12",
-                                          
-                                              "2017" : "12",
-                                          
-                                              "2018" : "14",
-                                          
-                                              "2019" : "21",
-                                          
-                                              "2020" : "23",
-                                          
-                                              "2021" : "29"
-                                          
-                                          }
-                                      ],"aged 65-74": [
-                                          {
-                                          
-                                              "2010" : "2",
-                                          
-                                              "2011" : "2",
-                                          
-                                              "2012" : "2",
-                                          
-                                              "2013" : "2",
-                                          
-                                              "2014" : "4",
-                                          
-                                              "2015" : "3",
-                                          
-                                              "2016" : "4",
-                                          
-                                              "2017" : "5",
-                                          
-                                              "2018" : "6",
-                                          
-                                              "2019" : "8",
-                                          
-                                              "2020" : "9",
-                                          
-                                              "2021" : "11"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "by education": [
-                                  {"tertiary": [
-                                          {
-                                          
-                                              "2010" : "27",
-                                          
-                                              "2011" : "27",
-                                          
-                                              "2012" : "28",
-                                          
-                                              "2013" : "30",
-                                          
-                                              "2014" : "39",
-                                          
-                                              "2015" : "41",
-                                          
-                                              "2016" : "45",
-                                          
-                                              "2017" : "49",
-                                          
-                                              "2018" : "55",
-                                          
-                                              "2019" : "64",
-                                          
-                                              "2020" : "62",
-                                          
-                                              "2021" : "71"
-                                          
-                                          }
-                                      ],"secondary": [
-                                          {
-                                          
-                                              "2010" : "7",
-                                          
-                                              "2011" : "6",
-                                          
-                                              "2012" : "8",
-                                          
-                                              "2013" : "8",
-                                          
-                                              "2014" : "10",
-                                          
-                                              "2015" : "10",
-                                          
-                                              "2016" : "12",
-                                          
-                                              "2017" : "14",
-                                          
-                                              "2018" : "17",
-                                          
-                                              "2019" : "23",
-                                          
-                                              "2020" : "25",
-                                          
-                                              "2021" : "29"
-                                          
-                                          }
-                                      ],"primary": [
-                                          {
-                                          
-                                              "2010" : "2",
-                                          
-                                              "2011" : "1",
-                                          
-                                              "2012" : "2",
-                                          
-                                              "2013" : "1",
-                                          
-                                              "2014" : "1",
-                                          
-                                              "2015" : "2",
-                                          
-                                              "2016" : "2",
-                                          
-                                              "2017" : "2",
-                                          
-                                              "2018" : "4",
-                                          
-                                              "2019" : "5",
-                                          
-                                              "2020" : "5",
-                                          
-                                              "2021" : "8"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ],
-                              "by occupational status of persons": [
-                                  {"economically active": [
-                                          {
-                                          
-                                              "2010" : "14",
-                                          
-                                              "2011" : "13",
-                                          
-                                              "2012" : "15",
-                                          
-                                              "2013" : "17",
-                                          
-                                              "2014" : "21",
-                                          
-                                              "2015" : "23",
-                                          
-                                              "2016" : "25",
-                                          
-                                              "2017" : "29",
-                                          
-                                              "2018" : "33",
-                                          
-                                              "2019" : "42",
-                                          
-                                              "2020" : "45",
-                                          
-                                              "2021" : "52"
-                                          
-                                          }
-                                      ],"employed": [
-                                          {
-                                          
-                                              "2010" : "15",
-                                          
-                                              "2011" : "14",
-                                          
-                                              "2012" : "16",
-                                          
-                                              "2013" : "18",
-                                          
-                                              "2014" : "23",
-                                          
-                                              "2015" : "25",
-                                          
-                                              "2016" : "27",
-                                          
-                                              "2017" : "30",
-                                          
-                                              "2018" : "35",
-                                          
-                                              "2019" : "44",
-                                          
-                                              "2020" : "46",
-                                          
-                                              "2021" : "54"
-                                          
-                                          }
-                                      ],"unemployed": [
-                                          {
-                                          
-                                              "2010" : "8",
-                                          
-                                              "2011" : "5",
-                                          
-                                              "2012" : "6",
-                                          
-                                              "2013" : "7",
-                                          
-                                              "2014" : "7",
-                                          
-                                              "2015" : "7",
-                                          
-                                              "2016" : "7",
-                                          
-                                              "2017" : "11",
-                                          
-                                              "2018" : "10",
-                                          
-                                              "2019" : "17",
-                                          
-                                              "2020" : "25",
-                                          
-                                              "2021" : "22"
-                                          
-                                          }
-                                      ],"economically inactive": [
-                                          {
-                                          
-                                              "2010" : "4",
-                                          
-                                              "2011" : "3",
-                                          
-                                              "2012" : "5",
-                                          
-                                              "2013" : "4",
-                                          
-                                              "2014" : "5",
-                                          
-                                              "2015" : "5",
-                                          
-                                              "2016" : "7",
-                                          
-                                              "2017" : "8",
-                                          
-                                              "2018" : "9",
-                                          
-                                              "2019" : "12",
-                                          
-                                              "2020" : "14",
-                                          
-                                              "2021" : "17"
+                                              "2025" : "27.6"
                                           
                                           }
                                       ]
@@ -933,6 +815,237 @@
                                   "2024" :   "4.8",
                               
                                   "2025" :   "5.2"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "16-6-a": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "16.6.a Ratio of volunteers enlisted for voluntary basic military service to the number of volunteers planned for enlistment according to the planning documents of the Ministry of National Defence",
+                          
+                            "goal": "Goal 16. Peace, justice and strong institutions",
+                          
+                            "priority": "Strengthening the resilience of the state to threats through the development of a universal defence system",
+                          
+                            "definition": "",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "",
+                          
+                            "source": "Ministry of National Defence",
+                          
+                            "availability": "",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "",
+                          
+                            "metadata_updated_on": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   "",
+                              
+                                  "2019" :   "",
+                              
+                                  "2020" :   "",
+                              
+                                  "2021" :   "",
+                              
+                                  "2022" :   "",
+                              
+                                  "2023" :   "",
+                              
+                                  "2024" :   "",
+                              
+                                  "2025" :   ""
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "16-7-a": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "16.7.a Number of ICT incidents handled by CERT Polska, classified as actual cybersecurity incidents",
+                          
+                            "goal": "Goal 16. Peace, justice and strong institutions",
+                          
+                            "priority": "Increasing the level of resilience to cyber threats and increasing the level of information protection in the country, as well as promoting knowledge and good practices that enable citizens to better protect their information",
+                          
+                            "definition": "Number of ICT incidents handled by CERT Polska in the reporting year which, after the analysis of reports, were classified as actual cybersecurity incidents and registered as incidents.",
+                          
+                            "unit": "[–]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator is developed on the basis of annual reports on the activities of CERT Polska, published by NASK – National Research Institute. CERT Polska is a team operating within the structures of NASK, established to respond to computer security incidents and performing the tasks of CSIRT NASK.The value of the indicator is determined on the basis of the number of cybersecurity incidents registered by CERT Polska in a given reporting year. The data are derived from the analysis of reports submitted to the team, including via the reporting form and by e-mail. Reports are analysed and grouped, as several reports from different sources may refer to the same incident.The indicator does not include the number of reports itself. The presented value refers to the number of registered incidents, i.e. cases classified, following analysis, as actual cybersecurity incidents.",
+                          
+                            "source": "NASK - National Research Institute / CERT Polska",
+                          
+                            "availability": "Annual data, since 2010",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "27-07-2026",
+                          
+                            "metadata_updated_on": "27-07-2026"
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "674",
+                              
+                                  "2011" :   "605",
+                              
+                                  "2012" :   "1082",
+                              
+                                  "2013" :   "1219",
+                              
+                                  "2014" :   "1282",
+                              
+                                  "2015" :   "1456",
+                              
+                                  "2016" :   "1926",
+                              
+                                  "2017" :   "3182",
+                              
+                                  "2018" :   "3739",
+                              
+                                  "2019" :   "6484",
+                              
+                                  "2020" :   "10420",
+                              
+                                  "2021" :   "29483",
+                              
+                                  "2022" :   "39683",
+                              
+                                  "2023" :   "80267",
+                              
+                                  "2024" :   "103449",
+                              
+                                  "2025" :   "260783"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "16-7-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "16.7.b Percentage of Internet users verifying the accuracy of information or content found on news websites or social media (during the last three months)",
+                          
+                            "goal": "Goal 16. Peace, justice and strong institutions",
+                          
+                            "priority": "Increasing the level of resilience to cyber threats and increasing the level of information protection in the country, as well as promoting knowledge and good practices that enable citizens to better protect their information",
+                          
+                            "definition": "Proportion of respondents to the Information and Communication Technologies (ICT) usage survey who, during the three months preceding the survey, checked the truthfulness of information or content found on online news sites or social media.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator measures the extent of actions undertaken by internet users to assess the credibility of information and content found on online news sites or social media.The data required to calculate the indicator are provided by the European Statistical System (ESS), established under Regulation (EC) No 223/2009 of the European Parliament and of the Council. The ESS constitutes a partnership between Eurostat, national statistical institutes (for example, Statistics Poland), and other national authorities in each Member State responsible for the development, production and dissemination of European statistics.Data are derived from the survey on the use of Information and Communication Technologies (ICT) in households. This is a representative survey covering persons aged 16–74 living in private households.The numerator is the number of respondents using the internet who undertook actions aimed at assessing the credibility of information or content found online, while the denominator is the total number of respondents using the internet.Actions undertaken to assess the credibility of information or content found online are understood as carrying out at least one of the following activities:a) checking sources or searching online for additional information;b) following or participating in online discussions concerning the information being verified;c) discussing the information being verified with other persons offline or consulting offline sources.",
+                          
+                            "source": "Eurostat",
+                          
+                            "availability": "Data available every 2 years; 2021, 2023, 2025",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "27-07-2026",
+                          
+                            "metadata_updated_on": "27-07-2026"
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   "",
+                              
+                                  "2019" :   "",
+                              
+                                  "2020" :   "",
+                              
+                                  "2021" :   "18.93",
+                              
+                                  "2022" :   "",
+                              
+                                  "2023" :   "21.30",
+                              
+                                  "2024" :   "",
+                              
+                                  "2025" :   "23.01"
                               
                               }
                           ]
