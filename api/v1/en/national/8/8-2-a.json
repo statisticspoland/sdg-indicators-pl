@@ -7,58 +7,146 @@
       "metadata": [
         
         {
-                        "name": "8.2.a Ease of Doing Business Index (ranking positions in Doing Business)",
+                        "name": "8.2.a Business Conditions Index (B-READY)",
                       
                         "goal": "Goal 8. Decent work and economic growth",
                       
                         "priority": "Entrepreneurship development (legal facilitation in conducting economic activity and access to financial instruments)",
                       
-                        "definition": "The country position in Doing Business ranking concerning ease of doing business. The higher ranking position is, the simpler rules regulating matters on conducting an enterprise are and a stronger protection of property by law is.",
+                        "definition": "",
                       
-                        "unit": "position in the ranking",
+                        "unit": "points",
                       
-                        "dimensions": "total",
+                        "dimensions": "by pillar",
                       
-                        "methodology": "Ease of doing business index is meant to measure regulations directly affecting businesses and does not directly measure more general conditions such as a nation's proximity to large markets, quality of infrastructure, inflation, or crime. A nation's ranking on the index is based on the average of 10 subindices:  starting a business - procedures, time, cost and minimum capital to open a new business; dealing with construction permits - procedures, time and cost to build a warehouse; getting electricity - time and cost required for a business to obtain a permanent electricity connection for a newly constructed warehouse; registering property - procedures, time and cost to register commercial real estate; getting credit - strength of legal rights index, depth of credit information index; protecting investors - indices on the extent of disclosure, extent of director liability and ease of shareholder suits; paying taxes - number of taxes paid, hours per year spent preparing tax returns and total tax payable as share of gross profit; trading across borders - number of documents, cost and time necessary to export and import; enforcing contracts - procedures, time and cost to enforce a debt contract; resolving insolvency - time, cost and recovery rate under bankruptcy proceeding. ",
+                        "methodology": "",
                       
                         "source": "World Bank",
                       
-                        "availability": "Annual data; since 2012",
+                        "availability": "",
                       
-                        "notes": "Due to the ceasing of publication of the World Bank „Doing Business” report in 2020, the indicator is no longer calculated. The last available data comes from 2019.",
+                        "notes": "",
                       
-                        "data_updated_on": "23-08-2021",
+                        "data_updated_on": "",
                       
-                        "metadata_updated_on": "07-10-2021"
+                        "metadata_updated_on": ""
                       }
       ],
       "data": [
-        {"total": [
-                      {
-                      
-                          "2010" :   "",
-                      
-                          "2011" :   "",
-                      
-                          "2012" :   "55",
-                      
-                          "2013" :   "45",
-                      
-                          "2014" :   "32",
-                      
-                          "2015" :   "25",
-                      
-                          "2016" :   "24",
-                      
-                          "2017" :   "27",
-                      
-                          "2018" :   "33",
-                      
-                          "2019" :   "40"
-                      
-                      }
-                  ]
-            }
+        {
+                    "by pillar": [
+                        {
+                        "Regulatory Framework": [
+                                {
+                                
+                                    "2010" :   "",
+                                
+                                    "2011" :   "",
+                                
+                                    "2012" :   "",
+                                
+                                    "2013" :   "",
+                                
+                                    "2014" :   "",
+                                
+                                    "2015" :   "",
+                                
+                                    "2016" :   "",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   "",
+                                
+                                    "2019" :   "",
+                                
+                                    "2020" :   "",
+                                
+                                    "2021" :   "",
+                                
+                                    "2022" :   "",
+                                
+                                    "2023" :   "",
+                                
+                                    "2024" :   "",
+                                
+                                    "2025" :   "79.02"
+                                
+                                }
+                            ],"Public Services": [
+                                {
+                                
+                                    "2010" :   "",
+                                
+                                    "2011" :   "",
+                                
+                                    "2012" :   "",
+                                
+                                    "2013" :   "",
+                                
+                                    "2014" :   "",
+                                
+                                    "2015" :   "",
+                                
+                                    "2016" :   "",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   "",
+                                
+                                    "2019" :   "",
+                                
+                                    "2020" :   "",
+                                
+                                    "2021" :   "",
+                                
+                                    "2022" :   "",
+                                
+                                    "2023" :   "",
+                                
+                                    "2024" :   "",
+                                
+                                    "2025" :   "68.34"
+                                
+                                }
+                            ],"Operational Efficiency": [
+                                {
+                                
+                                    "2010" :   "",
+                                
+                                    "2011" :   "",
+                                
+                                    "2012" :   "",
+                                
+                                    "2013" :   "",
+                                
+                                    "2014" :   "",
+                                
+                                    "2015" :   "",
+                                
+                                    "2016" :   "",
+                                
+                                    "2017" :   "",
+                                
+                                    "2018" :   "",
+                                
+                                    "2019" :   "",
+                                
+                                    "2020" :   "",
+                                
+                                    "2021" :   "",
+                                
+                                    "2022" :   "",
+                                
+                                    "2023" :   "",
+                                
+                                    "2024" :   "",
+                                
+                                    "2025" :   "63.63"
+                                
+                                }
+                            ]
+                        }
+                    ]}
       ]
     }
   ]

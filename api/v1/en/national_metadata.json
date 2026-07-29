@@ -2325,68 +2325,34 @@
                     ]
                   },
                   {
-                    "8-1-c": [
-                      {
-                        "metadata": [
-                          
-                          {
-                                          "name": "8.1.c Global Competitiveness Index (GCI) - position in the ranking",
-                                        
-                                          "goal": "Goal 8. Decent work and economic growth",
-                                        
-                                          "priority": "Search for new competitive adventages based on products' technological advancement, quality and innovativeness as well as mechanisms for internationalization of enterprises",
-                                        
-                                          "definition": "The position in ranking in terms of Global Competitiveness Index (GCI) indicating abilities of particular countries to provide long-term economic growth.",
-                                        
-                                          "unit": "position in the ranking ",
-                                        
-                                          "dimensions": "total",
-                                        
-                                          "methodology": "Global Competitiveness Index (GCI) is made up of 114 variables. These variables are grouped into 12 correlated with each other pillars (domains). These domains cover the most important determinants of competitiveness in the global market. 12 pillars were defined: 1st pillar: Institutions;2nd pillar: Infrastructure;3rd pillar: Macroeconomic environment;4th pillar: Health and primary education;5th pillar: Higher education and training;6th pillar: Goods market efficiency;7th pillar: Labour market efficiency;8th pillar: Financial market development;9th pillar: Technological readiness;10th pillar: Market size;11th pillar: Business sophistication;12th pillar: R&D Innovation. The level of GCI index includes connections between particular pillars. Properly connected pillars form 3 subindexes, on which GCI index is based: subindex based on the basic development factors: 1-4 pillarssubindex based on the efficiency enhancement factors: 5-10 pillarssubindex based on the innovation and sophistications factors: 11-12 pillars The value of subindexes reflects assignment of countries to a given group of economy, remaining in one of three stages of development: I stage - factor-driven stage;II stage - efficiency-driven stage;III stage - innovation-driven stage. Weights of three subindexes were defined during GCI index construction. The main criterion for defining weights is the level of economic development measured by the value of GDP per capita and influence of natural resources extraction on economy. The values of 114 variables included in the GCI index are mainly from annual survey conducted by the World Economic Forum, which is additionally supplemented with data gathered from UN agencies, e.g. UNESCO, WHO, the International Monetary Fund.",
-                                        
-                                          "source": "World Economic Forum",
-                                        
-                                          "availability": "Annual data; since 2010",
-                                        
-                                          "notes": "Due to the crisis caused by COVID-19, the authors of the GCI index decided not to rank national economies in 2020 according to the level of their competitiveness. Details on: https://www.weforum.org/reports/the-global-competitiveness-report-2020 The number of economies included in the ranking has been changing since the setting-up of the GCI index, 139 economies of the world were compiled in the ranking in 2010, in 2011 - 142, in 2012 – 144, in 2013 – 148, in 2014 – 144, in 2015 – 140, in 2016 – 138, in 2017 - 137, in 2018 - 140 and in 2019 - 141.",
-                                        
-                                          "data_updated_on": "24-10-2019",
-                                        
-                                          "metadata_updated_on": "10-05-2022"
-                                        }
-                        ]
-                      }
-                    ]
-                  },
-                  {
                     "8-2-a": [
                       {
                         "metadata": [
                           
                           {
-                                          "name": "8.2.a Ease of Doing Business Index (ranking positions in Doing Business)",
+                                          "name": "8.2.a Business Conditions Index (B-READY)",
                                         
                                           "goal": "Goal 8. Decent work and economic growth",
                                         
                                           "priority": "Entrepreneurship development (legal facilitation in conducting economic activity and access to financial instruments)",
                                         
-                                          "definition": "The country position in Doing Business ranking concerning ease of doing business. The higher ranking position is, the simpler rules regulating matters on conducting an enterprise are and a stronger protection of property by law is.",
+                                          "definition": "",
                                         
-                                          "unit": "position in the ranking",
+                                          "unit": "points",
                                         
-                                          "dimensions": "total",
+                                          "dimensions": "by pillar",
                                         
-                                          "methodology": "Ease of doing business index is meant to measure regulations directly affecting businesses and does not directly measure more general conditions such as a nation's proximity to large markets, quality of infrastructure, inflation, or crime. A nation's ranking on the index is based on the average of 10 subindices:  starting a business - procedures, time, cost and minimum capital to open a new business; dealing with construction permits - procedures, time and cost to build a warehouse; getting electricity - time and cost required for a business to obtain a permanent electricity connection for a newly constructed warehouse; registering property - procedures, time and cost to register commercial real estate; getting credit - strength of legal rights index, depth of credit information index; protecting investors - indices on the extent of disclosure, extent of director liability and ease of shareholder suits; paying taxes - number of taxes paid, hours per year spent preparing tax returns and total tax payable as share of gross profit; trading across borders - number of documents, cost and time necessary to export and import; enforcing contracts - procedures, time and cost to enforce a debt contract; resolving insolvency - time, cost and recovery rate under bankruptcy proceeding. ",
+                                          "methodology": "",
                                         
                                           "source": "World Bank",
                                         
-                                          "availability": "Annual data; since 2012",
+                                          "availability": "",
                                         
-                                          "notes": "Due to the ceasing of publication of the World Bank „Doing Business” report in 2020, the indicator is no longer calculated. The last available data comes from 2019.",
+                                          "notes": "",
                                         
-                                          "data_updated_on": "23-08-2021",
+                                          "data_updated_on": "",
                                         
-                                          "metadata_updated_on": "07-10-2021"
+                                          "metadata_updated_on": ""
                                         }
                         ]
                       }
@@ -2574,23 +2540,23 @@
                                         
                                           "priority": "Development of responsible migration policy",
                                         
-                                          "definition": "Net international migration for permanent residence, i.e. the difference between registrations (inflow) for permanent residence in Poland and deregistrations (outflow) from permanent residence in Poland.",
+                                          "definition": "Proportion of employed persons among the imigrant population aged 15–64 years.",
                                         
-                                          "unit": "persons",
+                                          "unit": "percent [%]",
                                         
-                                          "dimensions": "total, sex",
+                                          "dimensions": "total",
                                         
-                                          "methodology": "Net migration - as recognized in the period in a given area as a difference between the two values. Migration - moves of the people in order to change the place of residence. The migration is divided as follows: - internal migration - changes in the place of residence within the country; - international migration - moves of the people related to the change of country of residence. Data on international migration for permanent residence were compiled on the basis of gmina gmina documentation regarding the registration of people arriving in Poland for permanent residence (immigration for permanent residence) as well as deregistration of inhabitants of Poland leaving the country for permanent residence abroad (emigration for permanent residence). Data on internal and international migration for permanent residence based on gminas records are taken directly from the Common Electronic System of Population Register - PESEL. Data on population were compiled on the basis of:  - the balances of the residing population in a gmina based on the results of 2011 Population and Housing Census (for data since 2010),  - the Common Electronic System of Population Register - PESEL),  - documentation of Civil Status Offices regarding registered marriages, births and deaths.",
+                                          "methodology": "This indicator measures the proportion of employed persons among the immigrant working-age population and is used to assess immmigrant labour market integration.The numerator comprises employed immigrants aged 15-64. The denominator comprises the total immigrant population aged 15-64. The indicator is expressed as a percentage.Employed persons (including self-employed) are defined as individuals who, during the reference week, performed at least one hour of work for pay or profit, or who had a job but were temporarily absent from work (e.g. due to leave).Immigrants are defined as persons who have moved from abroad to the country with the intention of settling (residing permanently) or for a temporary stay.",
                                         
-                                          "source": "Statistics Poland",
+                                          "source": "OECD",
                                         
                                           "availability": "Annual data; since 2010",
                                         
-                                          "notes": "Due to inaedequate data quality on international migration for permanent residence, they are not published.",
+                                          "notes": "",
                                         
-                                          "data_updated_on": "12-08-2025",
+                                          "data_updated_on": "",
                                         
-                                          "metadata_updated_on": "24-10-2023"
+                                          "metadata_updated_on": ""
                                         }
                         ]
                       }
@@ -2631,6 +2597,40 @@
                                           "data_updated_on": "02-12-2025",
                                         
                                           "metadata_updated_on": "26-04-2023"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "9-1-b": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "9.1.b Ratio expenditures on innovation activities in enterprises to GDP",
+                                        
+                                          "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                                        
+                                          "priority": "Increase in innovation, improvement of the legal and institutional environment that stimulates undertaking innovative activities",
+                                        
+                                          "definition": "Total expenditures on innovation activities incurred in total industrial and service enterprises employing 10 persons and more, in relation to GDP.",
+                                        
+                                          "unit": "percent [%]",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "Innovation activities are all scientific, technological, organisational, financial and commercial steps which actually, or are intended to, lead to the implementation of innovations. Some of these activities are themselves innovative, others are not novel activities but are necessary for the implementation of innovations. Innovation activities also include R&D that is not directly related to the development of a specific innovation. During a given period, an enterprise's innovation activities may be of three kinds: successful in having resulted in the implementation of a new innovation; ongoing, work in progress, which has not yet resulted in the implementation of an innovation and abandoned before the implementation of an innovation. Innovation survey is conducted on the basis of international methodology (Oslo Manual). Expenditures incurred on innovation activities in the scope of product and business process innovations include expenditures incurred in a given reporting year. All expenditures on product and business process innovations are taken into consideration in an innovation survey, that is, current and capital expenditures incurred within a reporting period on successful (i.e. having resulted in the implementation of an innovation), ongoing and abandoned activities, irrespective of their source of funding. Industrial enterprise is an enterprise that predominant activity was included in the industrial sector according to NACE Rev.2 - PKD 2007 classification, i.e. into one of four sections B - Mining and quarrying, C - Manufacturing, D - Electricity, gas, steam and air conditioning supply and E - Water supply; sewerage, waste management and remediation activities. Data concern listed service sector enterprises according to Nace, Rev. 2 classification: Section G Wholesale and retail trade; repair of motor vehicles and motorcycles ›› Division 46 Wholesale trade, except of motor vehicles and motorcycles Section H Transportation and storage ›› Division 49 Land transport and transport via pipelines ›› Division 50 Water transport ›› Division 51 Air transport ›› Division 52 Warehousing and support activities for transportation ›› Division 53 Postal and courier activities Section J Information and communication ›› Division 58 Publishing activities ›› Division 59 Motion picture, video and television programme production, sound recording and music publishing activities ›› Division 60 Programming and broadcasting activities ›› Division 61 Telecommunications ›› Division 62 Computer programming, consultancy and related activities ›› Division 63 Information service activities Section K Financial and insurance activities ›› Division 64 Financial service activities, except insurance and pension funding ›› Division 65 Insurance, reinsurance and pension funding, except compulsory social security ›› Division 66 Activities auxiliary to financial services and insurance activities Section M Professional, scientific and technical activities ›› Division 71 Architectural and engineering activities; technical testing and analysis ›› Division 72 Scientific research and development ›› Division 73 Advertising and market researchGross domestic product (GDP) illustrates the final result of the activity of all entities of the national economy. It is calculated on the basis of ESA methodology, which is mandatory within European Union.",
+                                        
+                                          "source": "Statistics Poland",
+                                        
+                                          "availability": "Annual data; since 2010",
+                                        
+                                          "notes": "Until 2018, there were product and process innovations.2021 - preliminary estimates.",
+                                        
+                                          "data_updated_on": "",
+                                        
+                                          "metadata_updated_on": ""
                                         }
                         ]
                       }
@@ -2710,29 +2710,29 @@
                         "metadata": [
                           
                           {
-                                          "name": "9.4.a Index of multimodal accessibility of transport",
+                                          "name": "9.4.a Length of railway line per 100 km2",
                                         
                                           "goal": "Goal 9. Industry, Innovation and Infrastructure",
                                         
                                           "priority": "Development of transport infrastructure",
                                         
-                                          "definition": "Index is a synthetic quality measure of mutual, potential time accessibility of the biggest national settlement centers and transport nodes (internal and border) which takes into consideration all essential means of transport (in proportion to their share in transport performance) and weighted by the level of social-economic development.",
+                                          "definition": "Density of total railway lines per 100 km2 area.",
                                         
-                                          "unit": "[–]",
+                                          "unit": "km",
                                         
                                           "dimensions": "total",
                                         
-                                          "methodology": "WMDT is a measure of potential accessibility in terms of multimodality, taking into accountsignificance/ attractiveness of territorial units as well as travelling time between these units viadifferent modes of transport (i.e. road, railway, air and inland waterway transport). There are two versions of the index; the first one (WMDT I) was used in the surveys in 2008 and 2010,whereas the second one, introduced in 2013 (WMDT II), is fully adjusted to the purpuse of constantmonitoring of the potential accessibility in terms of its dynamics. Since 2013, WMDT has beencalculated as WMDT II. In each case, the indicator relies on the model of the potential, which isreferred to as 'potential accessibility' in Polish.",
+                                          "methodology": "The basis for the calculation of the indicator is the total length of railway lines operated on 31 December.A railway line is an element of the railway network between two junction stations (or terminal stations).The length of operated railway lines is the sum of the construction length of standard gauge, narrow gauge and large gauge railway lines operated on 31 December. The construction length of railway line is understood as the distance between its extremes measured on single-track lines – along the axis of the track, and on multi-track lines – along the axis of the longest track.",
                                         
-                                          "source": "Polish Academy of Sciences / Ministry of Funds and Regional Policy",
+                                          "source": "Statistics Poland",
                                         
-                                          "availability": "Data available at irregular intervals depending on the conduction of the survey.",
+                                          "availability": "Annual data, since 2010",
                                         
                                           "notes": "",
                                         
-                                          "data_updated_on": "26-04-2023",
+                                          "data_updated_on": "",
                                         
-                                          "metadata_updated_on": "09-05-2023"
+                                          "metadata_updated_on": ""
                                         }
                         ]
                       }
@@ -2767,6 +2767,40 @@
                                           "data_updated_on": "02-12-2025",
                                         
                                           "metadata_updated_on": "09-05-2023"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "9-4-c": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "9.4.c Number of parking spaces in the Park & Ride System",
+                                        
+                                          "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                                        
+                                          "priority": "Development of transport infrastructure",
+                                        
+                                          "definition": "Number of parking spaces in the Park & Ride System",
+                                        
+                                          "unit": "units",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "Park-and-Ride (P+R) parking spaces are car parking bays for passenger vehicles located at sites enabling users to leave their car in order to continue their journey using public transport.The Park-and-Ride parking system contributes to the reduction of private car traffic in city centres, while prioritising public transport. It enables the use of urban and rail transport following the parking of a vehicle in a secure, monitored location.Park-and-Ride parking spaces are located at key interchanges, underground stations, and railway stations, thereby facilitating access to destinations.This is an environmentally beneficial solution. A reduction in the number of cars in city centres results in lower noise levels and reduced emissions of exhaust pollutants.",
+                                        
+                                          "source": "Statistics Poland",
+                                        
+                                          "availability": "Annual data, since 2016",
+                                        
+                                          "notes": "",
+                                        
+                                          "data_updated_on": "",
+                                        
+                                          "metadata_updated_on": ""
                                         }
                         ]
                       }

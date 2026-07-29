@@ -7,56 +7,64 @@
       "metadane": [
         
         {
-                        "nazwa": "9.4.a Wskaźnik Międzygałęziowej dostępności transportowej (WMDT)",
+                        "nazwa": "9.4.a Długość linii kolejowych na 100 km2",
                       
                         "cel": "Cel 9. Innowacyjność, Przemysł, Infrastruktura",
                       
                         "priorytet": "Rozwój infrastruktury transportowej",
                       
-                        "definicja": "Wskaźnik stanowi syntetyczną miarę jakościową wzajemnej potencjalnej dostępności czasowej najważniejszych krajowych ośrodków osadniczych oraz węzłów transportowych (wewnętrznych i granicznych) uwzględniającą wszystkie podstawowe rodzaje transportu (w proporcji do ich udziału w pracy przewozowej) oraz ważoną poziomem rozwoju społeczno-gospodarczego.",
+                        "definicja": "Gęstość sieci linii kolejowych ogółem na 100 km2 powierzchni.",
                       
-                        "jednostka": "[–]",
+                        "jednostka": "km",
                       
                         "wymiary": "ogółem",
                       
-                        "metodologia": "Wskaźnik WMDT jest miarą dostępności potencjałowej w układzie multimodalnym przy uwzględnieniu znaczenia/atrakcyjności jednostek przestrzennych, a także czasów podróży między jednostkami różnymi gałęziami transportu (tj. transportem drogowym, transportem kolejowym, lotniczymi i wodnym-śródlądowym). Istnieją dwie wersje wskaźnika - pierwsza (WMDT I) - wykorzystywana w badaniach w 2008 i 2010 r., druga (WMDT II) - funkcjonująca od 2013 r. w pełni dostosowana do potrzeb stałego monitoringu zjawiska w ujęciu dynamicznym (pełne możliwości badania zmian dostępności od momentu akcesji Polski do Unii Europejskiej). Stworzenie wskaźnika WMDT II było związane z potrzebami ewaluacji inwestycji transportowych finansowanych w latach 2014-2020, a także umożliwienia pełnego monitoringu postępów realizacji dokumentów strategicznych. Od 2013 r. wskaźnik WMDT jest wyliczany według zweryfikowanej metodologii (wskaźnik WMDT II). W obu przypadkach (WMDT I i WMDT II) wskaźnik bazuje na tzw. modelu potencjału, co w języku polskim zostało określone jako tzw. dostępność potencjałowa (potential accessibility).",
+                        "metodologia": "Podstawą do wyliczania wskaźnika jest ogólna długość linii kolejowych eksploatowanych w dniu 31 XII.Linia kolejowa jest to element sieci kolejowej pomiędzy dwiema stacjami węzłowymi (lub krańcowymi).Długość linii kolejowych eksploatowanych jest to suma długości budowlanych linii kolejowych normalnotorowych, wąskotorowych i szerokotorowych czynnych w dniu 31 XII. Przez długość budowlaną linii kolejowych rozumie się odległość pomiędzy jej punktami krańcowymi mierzoną na liniach jednotorowych – wzdłuż osi toru, a na liniach wielotorowych – wzdłuż osi najdłuższego toru.",
                       
-                        "zrodlo": "Polska Akademia Nauk / Ministerstwo Funduszy i Polityki Regionalnej",
+                        "zrodlo": "Główny Urząd Statystyczny",
                       
-                        "czestotliwosc": "Dane nieregularne; w zależności od przeprowadzonego badania",
+                        "czestotliwosc": "Dane roczne; od 2010 r.",
                       
                         "uwagi": "",
                       
-                        "data_aktualizacji_danych": "26-04-2023",
+                        "data_aktualizacji_danych": "",
                       
-                        "data_aktualizacji_metadanych": "09-05-2023"
+                        "data_aktualizacji_metadanych": ""
                       }
       ],
       "dane": [
         {"ogółem": [
                         {
                         
-                            "2010" :   "30.8",
+                            "2010" :   "6.5",
                         
-                            "2011" :   "",
+                            "2011" :   "6.5",
                         
-                            "2012" :   "",
+                            "2012" :   "6.4",
                         
-                            "2013" :   "33.4",
+                            "2013" :   "6.2",
                         
-                            "2014" :   "34.5",
+                            "2014" :   "6.2",
                         
-                            "2015" :   "35.2",
+                            "2015" :   "6.2",
                         
-                            "2016" :   "35.9",
+                            "2016" :   "6.1",
                         
-                            "2017" :   "36.6",
+                            "2017" :   "6.1",
                         
-                            "2018" :   "37.5",
+                            "2018" :   "6.2",
                         
-                            "2019" :   "38.8",
+                            "2019" :   "6.2",
                         
-                            "2020" :   "38.7"
+                            "2020" :   "6.2",
+                        
+                            "2021" :   "6.2",
+                        
+                            "2022" :   "6.2",
+                        
+                            "2023" :   "6.3",
+                        
+                            "2024" :   "6.3"
                         
                         }
                     ]}

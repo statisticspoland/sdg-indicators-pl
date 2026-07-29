@@ -147,128 +147,151 @@
       ]
     },
     {
-      "8-1-c": [
-        {
-          "metadane": [
-            
-            {
-                            "nazwa": "8.1.c Wskaźnik Globalnej Konkurencyjności (GCI) - pozycja w rankingu",
-                          
-                            "cel": "Cel 8. Wzrost gospodarczy i godna praca",
-                          
-                            "priorytet": "Poszukiwanie nowych przewag konkurencyjnych opartych na zaawansowaniu technologicznym produktów, jakości i innowacyjności oferowanych produktów, jak również mechanizmów umiędzynarodowienia przedsiębiorstw",
-                          
-                            "definicja": "Miejsce w rankingu pod względem Wskaźnika Globalnej Konkurencyjności (GCI) określającego zdolności poszczególnych państw do zapewnienia długookresowego wzrostu gospodarczego.",
-                          
-                            "jednostka": "pozycja w rankingu",
-                          
-                            "wymiary": "ogółem",
-                          
-                            "metodologia": "Na złożony Wskaźnik Globalnej Konkurencyjności (GCI) składa się 114 zmiennych. Zmienne pogrupowane są w 12 skorelowanych ze sobą filarach (dziedzinach). Dziedziny te obejmują najważniejsze czynniki konkurencyjności na rynku globalnym. Wyróżniono 12 filarów:  filar 1: Instytucje; filar 2: Infrastruktura; filar 3: Środowiska makroekonomiczne; filar 4: Ochrona zdrowia i edukacja podstawowa; filar 5: Szkolnictwo wyższe; filar 6: Wydajność rynku; filar 7: Wydajność rynku pracy; filar 8: Poziom rozwoju rynku finansowego; filar 9: Gotowość technologiczna; filar 10: Rozmiar rynku; filar 11: Jakość środowiska biznesowego; filar 12: Innowacyjność.  Poziom wskaźnika GCI uwzględnia powiązania pomiędzy poszczególnymi filarami. Odpowiednio połączone ze sobą filary tworzą 3 podwskaźniki, na których opiera się wskaźnik GCI:  podwskaźnik oparty na podstawowych czynnikach rozwoju: filary 1-4; podwskaźnik oparty na czynnikach poprawiających efektywność: filary 5-10; podwskaźnik oparty na czynnikach innowacyjności i rozwoju: filary 11-12.  Wartość podwskaźników odzwierciedla przyporządkowanie krajów do określonej grupy gospodarek znajdujących się w jednej z trzech faz rozwoju:  faza I - rozwój determinowany czynnikami wytwórczymi; faza II - rozwój determinowany inwestycjami; faza III - rozwój determinowany innowacjami.  Konstruując wskaźnik GCI, określono wagi poszczególnych trzech podwskaźników. Głównym kryterium dla określenia wag jest poziom rozwoju gospodarki mierzony wartością PKB na 1 mieszkańca oraz wpływ wydobycia surowców naturalnych na gospodarkę. Wartości 114 zmiennych wchodzących w skład wskaźnika GCI pochodzą głównie z prowadzonego przez Światowe Forum Ekonomiczne badania rocznego, które dodatkowo uzupełnia się danymi pozyskiwanymi z agend ONZ np. UNESCO, WHO, Międzynarodowy Fundusz Walutowy.",
-                          
-                            "zrodlo": "World Economic Forum",
-                          
-                            "czestotliwosc": "Dane roczne; od 2010 r.",
-                          
-                            "uwagi": "Ze względu na kryzys wywołany COVID-19 autorzy wskaźnika GCI zdecydowali nie tworzyć w 2020 r. rankingu gospodarek krajowych wg poziomu ich konkurencyjności. Szczegóły na stronie: https://www.weforum.org/reports/the-global-competitiveness-report-2020 Od momentu powstania wskaźnika GCI liczba gospodarek ujmowanych w rankingu ulega zmianie, w 2010 r. w rankingu zestawiono 139 gospodarek świata, w 2011 r. – 142, w 2012 r. – 144, w 2013 r. – 148, w 2014 r. – 144, w 2015 r. – 140, w 2016 r. – 138, w 2017 r. - 137, w 2018 r. - 140 i w 2019 r. - 141.",
-                          
-                            "data_aktualizacji_danych": "24-10-2019",
-                          
-                            "data_aktualizacji_metadanych": "10-05-2022"
-                          }
-          ],
-          "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "39",
-                              
-                                  "2011" :   "41",
-                              
-                                  "2012" :   "41",
-                              
-                                  "2013" :   "42",
-                              
-                                  "2014" :   "43",
-                              
-                                  "2015" :   "41",
-                              
-                                  "2016" :   "36",
-                              
-                                  "2017" :   "39",
-                              
-                                  "2018" :   "37",
-                              
-                                  "2019" :   "37"
-                              
-                              }
-                          ]
-                        
-                    
-                
-            }
-          ]
-        }
-      ]
-    },
-    {
       "8-2-a": [
         {
           "metadane": [
             
             {
-                            "nazwa": "8.2.a Wskaźnik łatwości prowadzenia interesów (pozycja w rankingu Doing Business)",
+                            "nazwa": "8.2.a Wskaźnik warunków prowadzenia działalności gospodarczej (B-READY)",
                           
                             "cel": "Cel 8. Wzrost gospodarczy i godna praca",
                           
                             "priorytet": "Rozwój przedsiębiorczości (ułatwienia prawne w prowadzeniu działalności gospodarczej i dostępie do instrumentów finansowania)",
                           
-                            "definicja": "Miejsce kraju w rankingu Doing Business dot. łatwości prowadzenia interesów. Im wyższa pozycja w rankingu, tym prostsze przepisy regulujące sprawy związane z prowadzeniem przedsiębiorstwa oraz silniejsza ochrona własności przez prawo.",
+                            "definicja": "",
                           
-                            "jednostka": "pozycja w rankingu",
+                            "jednostka": "punkty",
                           
-                            "wymiary": "ogółem",
+                            "wymiary": "wg filaru",
                           
-                            "metodologia": "Wskaźnik łatwości prowadzenia interesów (Easy of doing business index) ma na celu zmierzenie regulacji bezpośrednio wpływających na przedsiębiorstwa bez badania innych warunków takich jak bliskość znaczących rynków, jakości infrastruktury, inflacji, czy przestępczości. Pozycja danego kraju w rankingu opiera się na średniej z 10 kategorii:  zakładanie firmy - procedury, czas oraz wymagany minimalny wkład początkowy; uzyskiwanie pozwoleń na budowę - procedury, czas oraz koszt inspekcji oraz uzyskiwania pozwolenia;  wskaźnik energii elektrycznej - czas i koszt uzyskania przyłącza elektrycznego dla nowo wybudowanego przedsiębiorstwa; rejestrowanie własności - procedury, czas oraz koszt rejestrowania nieruchomości; otrzymywanie kredytu - siła regulacji kredytów oraz ilość informacji na temat kredytowania;  ochrona inwestorów - zakres jawności oraz zakres odpowiedzialności zarządu przed współudziałowcami; płacenie podatków - liczba płaconych podatków, godziny spędzone rocznie nad przygotowaniem zeznań podatkowych oraz cześć dochodu brutto, jaką stanowi płacony podatek; handel zagraniczny - liczba dokumentów, podpisów i czasu wymaganego aby przedsiębiorca mógł importować lub eksportować; zawieranie umów - procedury, czas i koszt zawierania i egzekwowania umów dłużnych; Likwidacja przedsiębiorstwa - czas i koszt związany z zakończeniem działalności oraz stopa odzysku. ",
+                            "metodologia": "",
                           
                             "zrodlo": "Bank Światowy",
                           
-                            "czestotliwosc": "Dane roczne; od 2012 r.",
+                            "czestotliwosc": "",
                           
-                            "uwagi": "Ze względu na zaprzestanie w 2020 r. publikowania przez Bank Światowy raportów „Doing Business” wskaźnik nie jest już wyliczany; ostatnia wartość jest dostępna za 2019 r.",
+                            "uwagi": "",
                           
-                            "data_aktualizacji_danych": "23-08-2021",
+                            "data_aktualizacji_danych": "",
                           
-                            "data_aktualizacji_metadanych": "07-10-2021"
+                            "data_aktualizacji_metadanych": ""
                           }
           ],
           "dane": [
-            {"ogółem": [
-                              {
-                              
-                                  "2010" :   "",
-                              
-                                  "2011" :   "",
-                              
-                                  "2012" :   "55",
-                              
-                                  "2013" :   "45",
-                              
-                                  "2014" :   "32",
-                              
-                                  "2015" :   "25",
-                              
-                                  "2016" :   "24",
-                              
-                                  "2017" :   "27",
-                              
-                                  "2018" :   "33",
-                              
-                                  "2019" :   "40"
-                              
-                              }
-                          ]
-                        
+            {
+                      
+                              "wg filaru": [
+                                  {"Ramy regulacyjne": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : "",
+                                          
+                                              "2025" : "79.02"
+                                          
+                                          }
+                                      ],"Usługi publiczne": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : "",
+                                          
+                                              "2025" : "68.34"
+                                          
+                                          }
+                                      ],"Efektywność operacyjna": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "",
+                                          
+                                              "2012" : "",
+                                          
+                                              "2013" : "",
+                                          
+                                              "2014" : "",
+                                          
+                                              "2015" : "",
+                                          
+                                              "2016" : "",
+                                          
+                                              "2017" : "",
+                                          
+                                              "2018" : "",
+                                          
+                                              "2019" : "",
+                                          
+                                              "2020" : "",
+                                          
+                                              "2021" : "",
+                                          
+                                              "2022" : "",
+                                          
+                                              "2023" : "",
+                                          
+                                              "2024" : "",
+                                          
+                                              "2025" : "63.63"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
                     
                 
             }
@@ -1833,140 +1856,68 @@
           "metadane": [
             
             {
-                            "nazwa": "8.6.a Saldo migracji zagranicznych na pobyt stały",
+                            "nazwa": "8.6.a Wskaźnik zatrudnienia imigrantów (jako % populacji w wieku produkcyjnym w grupie imigrantów)",
                           
                             "cel": "Cel 8. Wzrost gospodarczy i godna praca",
                           
                             "priorytet": "Rozwój odpowiedzialnej polityki migracyjnej",
                           
-                            "definicja": "Różnica liczby osób przybyłych z zagranicy (zameldowanych na pobyt stały w Polsce) i liczby osób, które wyjechały za granicę (wymeldowały się z pobytu stałego w Polsce). Imigracja na pobyt stały - emigracja na pobyt stały.",
+                            "definicja": "Udział osób pracujących w grupie imigrantów w wieku 15 do 64 lat.",
                           
-                            "jednostka": "osoby",
+                            "jednostka": "procent [%]",
                           
-                            "wymiary": "ogółem, płeć",
+                            "wymiary": "ogółem",
                           
-                            "metodologia": "Saldo - stan wykazywany w danym okresie na danym obszarze jako różnica między dwoma wartościami. Migracja - przemieszczanie się ludności mające na celu zmianę miejsca pobytu. Migracje dzielimy na: - migracje wewnętrzne - to zmiana miejsca zamieszkania w kraju - migracje zagraniczne - to przemieszczenia ludności związane ze zmianą kraju zamieszkania Dane o migracjach zagranicznych na pobyt stały opracowano na podstawie informacji ewidencyjnych gmin o zameldowaniu osób przyjeżdżających do Polski na pobyt stały (imigracja na pobyt stały) oraz o wymeldowanych mieszkańców Polski wyjeżdżających na stałe za granicę (emigracja na pobyt stały). Dane o migracjach wewnętrznych i zagranicznych na pobyt stały opracowane na podstawie informacji ewidencyjnych gmin pobierane są bezpośrednio z rejestru PESEL - Powszechny Elektroniczny System Ewidencji Ludności  Ludność opracowano na podstawie: bilansów ludności zamieszkałej na terenie gminy w oparciu o dane Narodowego Spisu Powszechnego Ludności i Mieszkań 2011  rejestru PESEL - Powszechny Elektroniczny System Ewidencji Ludności,  sprawozdań urzędów stanu cywilnego - małżeństwa, urodzenia, zgony.",
+                            "metodologia": "Wskaźnik mierzy udział osób pracujących w populacji imigrantów w wieku produkcyjnym i pozwala na ocenę poziomu zintegrowania imigrantów rynkiem pracy.Licznikiem jest liczba pracujących imigrantów w wieku 15- 64 lata, zaś mianownikiem cała populacja imigrantów w wieku 15-64 lata. Wskaźnik wyrażono w procentach.Pracujący (w tym również samozatrudnieni) to osoby, które w okresie referencyjnego tygodnia wykonywały przez co najmniej 1 godzinę pracę przynoszącą zarobek lub dochód, bądź miały pracę, ale jej nie wykonywały (np. z powodu urlopu).Imigranci to osoby przybyłe z zagranicy do kraju w celu osiedlenia się (zamieszkania na stałe) lub na pobyt czasowy.",
                           
-                            "zrodlo": "Główny Urząd Statystyczny",
+                            "zrodlo": "OECD",
                           
                             "czestotliwosc": "Dane roczne; od 2010 r.",
                           
-                            "uwagi": "Ze względu na niedostateczną jakość danych dotyczących migracji zagranicznych na pobyt stały za 2015 r., dane te nie są publikowane.",
+                            "uwagi": "",
                           
-                            "data_aktualizacji_danych": "12-08-2025",
+                            "data_aktualizacji_danych": "",
                           
-                            "data_aktualizacji_metadanych": "24-10-2023"
+                            "data_aktualizacji_metadanych": ""
                           }
           ],
           "dane": [
-            {
-                      
-                              "wg płci": [
-                                  {"ogółem": [
-                                          {
-                                          
-                                              "2010" : "-2114",
-                                          
-                                              "2011" : "-4334",
-                                          
-                                              "2012" : "-6617",
-                                          
-                                              "2013" : "-19904",
-                                          
-                                              "2014" : "-15750",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "1505",
-                                          
-                                              "2017" : "1436",
-                                          
-                                              "2018" : "3612",
-                                          
-                                              "2019" : "6183",
-                                          
-                                              "2020" : "4483",
-                                          
-                                              "2021" : "3404",
-                                          
-                                              "2022" : "1939",
-                                          
-                                              "2023" : "6766",
-                                          
-                                              "2024" : "9301"
-                                          
-                                          }
-                                      ],"kobiety": [
-                                          {
-                                          
-                                              "2010" : "-3150",
-                                          
-                                              "2011" : "-4043",
-                                          
-                                              "2012" : "-4772",
-                                          
-                                              "2013" : "-11884",
-                                          
-                                              "2014" : "-8724",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "401",
-                                          
-                                              "2017" : "166",
-                                          
-                                              "2018" : "1074",
-                                          
-                                              "2019" : "2279",
-                                          
-                                              "2020" : "1850",
-                                          
-                                              "2021" : "1043",
-                                          
-                                              "2022" : "2234",
-                                          
-                                              "2023" : "3648",
-                                          
-                                              "2024" : "5320"
-                                          
-                                          }
-                                      ],"mężczyźni": [
-                                          {
-                                          
-                                              "2010" : "1036",
-                                          
-                                              "2011" : "-291",
-                                          
-                                              "2012" : "-1845",
-                                          
-                                              "2013" : "-8020",
-                                          
-                                              "2014" : "-7026",
-                                          
-                                              "2015" : "",
-                                          
-                                              "2016" : "1104",
-                                          
-                                              "2017" : "1270",
-                                          
-                                              "2018" : "2538",
-                                          
-                                              "2019" : "3904",
-                                          
-                                              "2020" : "2633",
-                                          
-                                              "2021" : "2361",
-                                          
-                                              "2022" : "-295",
-                                          
-                                              "2023" : "3118",
-                                          
-                                              "2024" : "3981"
-                                          
-                                          }
-                                      ]
-                                  }
-                              ]
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "50.4",
+                              
+                                  "2011" :   "55.2",
+                              
+                                  "2012" :   "61.9",
+                              
+                                  "2013" :   "59.2",
+                              
+                                  "2014" :   "63.0",
+                              
+                                  "2015" :   "60.7",
+                              
+                                  "2016" :   "62.6",
+                              
+                                  "2017" :   "69.9",
+                              
+                                  "2018" :   "73.0",
+                              
+                                  "2019" :   "75.0",
+                              
+                                  "2020" :   "76.4",
+                              
+                                  "2021" :   "80.4",
+                              
+                                  "2022" :   "75.7",
+                              
+                                  "2023" :   "75.4",
+                              
+                                  "2024" :   "78.4"
+                              
+                              }
+                          ]
+                        
                     
                 
             }

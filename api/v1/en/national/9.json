@@ -78,6 +78,77 @@
       ]
     },
     {
+      "9-1-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.1.b Ratio expenditures on innovation activities in enterprises to GDP",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "priority": "Increase in innovation, improvement of the legal and institutional environment that stimulates undertaking innovative activities",
+                          
+                            "definition": "Total expenditures on innovation activities incurred in total industrial and service enterprises employing 10 persons and more, in relation to GDP.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Innovation activities are all scientific, technological, organisational, financial and commercial steps which actually, or are intended to, lead to the implementation of innovations. Some of these activities are themselves innovative, others are not novel activities but are necessary for the implementation of innovations. Innovation activities also include R&D that is not directly related to the development of a specific innovation. During a given period, an enterprise's innovation activities may be of three kinds: successful in having resulted in the implementation of a new innovation; ongoing, work in progress, which has not yet resulted in the implementation of an innovation and abandoned before the implementation of an innovation. Innovation survey is conducted on the basis of international methodology (Oslo Manual). Expenditures incurred on innovation activities in the scope of product and business process innovations include expenditures incurred in a given reporting year. All expenditures on product and business process innovations are taken into consideration in an innovation survey, that is, current and capital expenditures incurred within a reporting period on successful (i.e. having resulted in the implementation of an innovation), ongoing and abandoned activities, irrespective of their source of funding. Industrial enterprise is an enterprise that predominant activity was included in the industrial sector according to NACE Rev.2 - PKD 2007 classification, i.e. into one of four sections B - Mining and quarrying, C - Manufacturing, D - Electricity, gas, steam and air conditioning supply and E - Water supply; sewerage, waste management and remediation activities. Data concern listed service sector enterprises according to Nace, Rev. 2 classification: Section G Wholesale and retail trade; repair of motor vehicles and motorcycles ›› Division 46 Wholesale trade, except of motor vehicles and motorcycles Section H Transportation and storage ›› Division 49 Land transport and transport via pipelines ›› Division 50 Water transport ›› Division 51 Air transport ›› Division 52 Warehousing and support activities for transportation ›› Division 53 Postal and courier activities Section J Information and communication ›› Division 58 Publishing activities ›› Division 59 Motion picture, video and television programme production, sound recording and music publishing activities ›› Division 60 Programming and broadcasting activities ›› Division 61 Telecommunications ›› Division 62 Computer programming, consultancy and related activities ›› Division 63 Information service activities Section K Financial and insurance activities ›› Division 64 Financial service activities, except insurance and pension funding ›› Division 65 Insurance, reinsurance and pension funding, except compulsory social security ›› Division 66 Activities auxiliary to financial services and insurance activities Section M Professional, scientific and technical activities ›› Division 71 Architectural and engineering activities; technical testing and analysis ›› Division 72 Scientific research and development ›› Division 73 Advertising and market researchGross domestic product (GDP) illustrates the final result of the activity of all entities of the national economy. It is calculated on the basis of ESA methodology, which is mandatory within European Union.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": "Until 2018, there were product and process innovations.2021 - preliminary estimates.",
+                          
+                            "data_updated_on": "",
+                          
+                            "metadata_updated_on": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "2.40",
+                              
+                                  "2011" :   "2.03",
+                              
+                                  "2012" :   "2.26",
+                              
+                                  "2013" :   "2.01",
+                              
+                                  "2014" :   "2.20",
+                              
+                                  "2015" :   "2.42",
+                              
+                                  "2016" :   "2.09",
+                              
+                                  "2017" :   "2.06",
+                              
+                                  "2018" :   "1.70",
+                              
+                                  "2019" :   "1.67",
+                              
+                                  "2020" :   "1.64",
+                              
+                                  "2021" :   "1.56",
+                              
+                                  "2022" :   "1.80"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
       "9-2-a": [
         {
           "metadata": [
@@ -235,56 +306,64 @@
           "metadata": [
             
             {
-                            "name": "9.4.a Index of multimodal accessibility of transport",
+                            "name": "9.4.a Length of railway line per 100 km2",
                           
                             "goal": "Goal 9. Industry, Innovation and Infrastructure",
                           
                             "priority": "Development of transport infrastructure",
                           
-                            "definition": "Index is a synthetic quality measure of mutual, potential time accessibility of the biggest national settlement centers and transport nodes (internal and border) which takes into consideration all essential means of transport (in proportion to their share in transport performance) and weighted by the level of social-economic development.",
+                            "definition": "Density of total railway lines per 100 km2 area.",
                           
-                            "unit": "[–]",
+                            "unit": "km",
                           
                             "dimensions": "total",
                           
-                            "methodology": "WMDT is a measure of potential accessibility in terms of multimodality, taking into accountsignificance/ attractiveness of territorial units as well as travelling time between these units viadifferent modes of transport (i.e. road, railway, air and inland waterway transport). There are two versions of the index; the first one (WMDT I) was used in the surveys in 2008 and 2010,whereas the second one, introduced in 2013 (WMDT II), is fully adjusted to the purpuse of constantmonitoring of the potential accessibility in terms of its dynamics. Since 2013, WMDT has beencalculated as WMDT II. In each case, the indicator relies on the model of the potential, which isreferred to as 'potential accessibility' in Polish.",
+                            "methodology": "The basis for the calculation of the indicator is the total length of railway lines operated on 31 December.A railway line is an element of the railway network between two junction stations (or terminal stations).The length of operated railway lines is the sum of the construction length of standard gauge, narrow gauge and large gauge railway lines operated on 31 December. The construction length of railway line is understood as the distance between its extremes measured on single-track lines – along the axis of the track, and on multi-track lines – along the axis of the longest track.",
                           
-                            "source": "Polish Academy of Sciences / Ministry of Funds and Regional Policy",
+                            "source": "Statistics Poland",
                           
-                            "availability": "Data available at irregular intervals depending on the conduction of the survey.",
+                            "availability": "Annual data, since 2010",
                           
                             "notes": "",
                           
-                            "data_updated_on": "26-04-2023",
+                            "data_updated_on": "",
                           
-                            "metadata_updated_on": "09-05-2023"
+                            "metadata_updated_on": ""
                           }
           ],
           "data": [
             {"total": [
                               {
                               
-                                  "2010" :   "30.8",
+                                  "2010" :   "6.5",
                               
-                                  "2011" :   "",
+                                  "2011" :   "6.5",
                               
-                                  "2012" :   "",
+                                  "2012" :   "6.4",
                               
-                                  "2013" :   "33.4",
+                                  "2013" :   "6.2",
                               
-                                  "2014" :   "34.5",
+                                  "2014" :   "6.2",
                               
-                                  "2015" :   "35.2",
+                                  "2015" :   "6.2",
                               
-                                  "2016" :   "35.9",
+                                  "2016" :   "6.1",
                               
-                                  "2017" :   "36.6",
+                                  "2017" :   "6.1",
                               
-                                  "2018" :   "37.5",
+                                  "2018" :   "6.2",
                               
-                                  "2019" :   "38.8",
+                                  "2019" :   "6.2",
                               
-                                  "2020" :   "38.7"
+                                  "2020" :   "6.2",
+                              
+                                  "2021" :   "6.2",
+                              
+                                  "2022" :   "6.2",
+                              
+                                  "2023" :   "6.3",
+                              
+                                  "2024" :   "6.3"
                               
                               }
                           ]
@@ -360,6 +439,83 @@
                                   "2023" :   "16.2",
                               
                                   "2024" :   "16.6"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "9-4-c": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "9.4.c Number of parking spaces in the Park & Ride System",
+                          
+                            "goal": "Goal 9. Industry, Innovation and Infrastructure",
+                          
+                            "priority": "Development of transport infrastructure",
+                          
+                            "definition": "Number of parking spaces in the Park & Ride System",
+                          
+                            "unit": "units",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Park-and-Ride (P+R) parking spaces are car parking bays for passenger vehicles located at sites enabling users to leave their car in order to continue their journey using public transport.The Park-and-Ride parking system contributes to the reduction of private car traffic in city centres, while prioritising public transport. It enables the use of urban and rail transport following the parking of a vehicle in a secure, monitored location.Park-and-Ride parking spaces are located at key interchanges, underground stations, and railway stations, thereby facilitating access to destinations.This is an environmentally beneficial solution. A reduction in the number of cars in city centres results in lower noise levels and reduced emissions of exhaust pollutants.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data, since 2016",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "",
+                          
+                            "metadata_updated_on": ""
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "66",
+                              
+                                  "2017" :   "90",
+                              
+                                  "2018" :   "175",
+                              
+                                  "2019" :   "261",
+                              
+                                  "2020" :   "316",
+                              
+                                  "2021" :   "378",
+                              
+                                  "2022" :   "425",
+                              
+                                  "2023" :   "488",
+                              
+                                  "2024" :   "517",
+                              
+                                  "2025" :   ""
                               
                               }
                           ]
