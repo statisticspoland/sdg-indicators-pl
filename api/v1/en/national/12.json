@@ -226,6 +226,79 @@
       ]
     },
     {
+      "12-1-d": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "12.1.d Amount of food wasted per capita",
+                          
+                            "goal": "Goal 12. Responsible consumption and production",
+                          
+                            "priority": "Increase in resource efficiency and shift in approach to resources consisting in departure from their linear use as well as shift in consumption patterns (development of circular economy)",
+                          
+                            "definition": "Total amount of food waste generated at the various stages of the food supply chain per capita.",
+                          
+                            "unit": "kg",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator enables the estimation of the quantity of food waste generated along the food supply chain.The numerator is the total quantity of food waste, expressed in kilograms, generated at the individual stages of the food supply chain. The denominator is the total population. The indicator is expressed on a per capita basis.Population data based on the annual average population were used for the calculations.The data required to calculate the indicator are provided by the European Statistical System (ESS), established under Regulation (EC) No 223/2009 of the European Parliament and of the Council. The ESS constitutes a partnership between Eurostat, national statistical institutes (for example, Statistics Poland), and other national authorities in each Member State responsible for the development, production and dissemination of European statistics.The food supply chain is defined as the sequence of stages and operations involved in the production, processing, distribution, storage and handling of food and its ingredients, from primary production to consumption.The following stages of the food supply chain are covered by the indicator:a) primary production;b) processing and manufacturing;c) retail and other distribution of food;d) restaurants and food services;e) households.Food waste refers to food discarded from the food supply chain. It includes both edible and inedible parts of food products (for example, bones attached to meat).The concept of food waste, including the relevant exclusions, is defined in Commission Delegated Decision (EU) 2019/1597 of 3 May 2019 supplementing Directive 2008/98/EC of the European Parliament and of the Council as regards a common methodology and minimum quality requirements for the uniform measurement of levels of food waste.",
+                          
+                            "source": "Eurostat",
+                          
+                            "availability": "Annual data; since 2020",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "05-08-2026",
+                          
+                            "metadata_updated_on": "05-08-2026"
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   "",
+                              
+                                  "2019" :   "",
+                              
+                                  "2020" :   "120",
+                              
+                                  "2021" :   "122",
+                              
+                                  "2022" :   "123",
+                              
+                                  "2023" :   "127"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
       "12-2-a": [
         {
           "metadata": [
@@ -287,6 +360,81 @@
                                   "2022" :   "",
                               
                                   "2023" :   "3.10"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "12-2-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "12.2.b Number of organic farms",
+                          
+                            "goal": "Goal 12. Responsible consumption and production",
+                          
+                            "priority": "Development of ecological agriculture",
+                          
+                            "definition": "Number of organic farms (certificated or under conversion).",
+                          
+                            "unit": "thous.",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "Organic farm – an agricultural holding applying organic production methods, which holds a certificate issued by a certification body or is in the process of conversion to organic production methods under the supervision of a certification body.Certification bodies in organic farming are entities which, by decision of the Minister of Agriculture and Rural Development, have been authorised to carry out inspections and to issue and revoke certificates of conformity in the field of organic farming (Act of 25 June 2009 on Organic Farming, Journal of Laws No. 116, item 975).",
+                          
+                            "source": "Chief Inspectorate of Commercial Quality of Agri-food Products (GIJHARS)",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "05-08-2026",
+                          
+                            "metadata_updated_on": "05-08-2026"
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "20.6",
+                              
+                                  "2011" :   "23.4",
+                              
+                                  "2012" :   "25.9",
+                              
+                                  "2013" :   "26.6",
+                              
+                                  "2014" :   "24.8",
+                              
+                                  "2015" :   "22.3",
+                              
+                                  "2016" :   "22.4",
+                              
+                                  "2017" :   "20.3",
+                              
+                                  "2018" :   "19.2",
+                              
+                                  "2019" :   "18.6",
+                              
+                                  "2020" :   "18.6",
+                              
+                                  "2021" :   "20.0",
+                              
+                                  "2022" :   "21.2",
+                              
+                                  "2023" :   "22.4",
+                              
+                                  "2024" :   "23.2"
                               
                               }
                           ]
