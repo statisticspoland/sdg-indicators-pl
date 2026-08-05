@@ -2336,17 +2336,17 @@
                                         
                                           "priority": "Entrepreneurship development (legal facilitation in conducting economic activity and access to financial instruments)",
                                         
-                                          "definition": "",
+                                          "definition": "Business Ready Index (B-READY) assesses the environment of individual national economies, focusing on three pillars: 1.	regulatory framework – evaluation of the quality and transparency of legal regulations governing business, 2.	public services – evaluation of institutions and support programs directed aimed directly at firms and markets, 3.	operational efficiency – the ease and efficiency with which the regulatory framework and public services function in daily economic practice.",
                                         
                                           "unit": "points",
                                         
                                           "dimensions": "by pillar",
                                         
-                                          "methodology": "",
+                                          "methodology": "The Business Ready (B-READY) index, developed by the World Bank in 2024, constitutes a new global standard for assessing the business environment, replacing the former Doing Business ranking. B-READY provides a comprehensive spectrum of evaluation for the business environment—not only from the perspective of benefits to individual firms but also by incorporating the interests of workers, consumers, and environmental protection. The B-READY methodology is anchored in striking a balance across four key areas: •	between the ease of conducting business and broader social and market benefits, •	between the quality of regulations (regulatory framework) and institutional support (public services), •	between the law on the books (de jure) and its practical implementation (de facto), •	between the representativeness of local data and its international comparability.B-READY focuses on ten topics, structured around the lifecycle of a firm and its stages of market participation (from opening, through ongoing operation and expansion, to eventual reorganization or closure). These include: 1.	Business Entry 2.	Business Location 3.	Utility Services 4.	Labor 5.	Financial Services 6.	International Trade 7.	Taxation 8.	Dispute Resolution 9.	Market Competition 10.	Business InsolvencyWithin each of these areas, three cross-cutting themes are additionally examined: digitalization (the adoption of digital technologies), environmental sustainability, and gender equality.Based on the collected data, B-READY generates scores for individual topics, which are then aggregated into three main pillars: •	regulatory framework (quality of regulations), •	public services (infrastructure and institutional support), •	operational efficiency (efficiency of the system in practice).The index bridges the analysis of legal regulations (de jure) with the assessment of market realities (de facto). Legal data are gathered through centralized consultations with experts (lawyers, advisors). Meanwhile, data on the practical functioning of business (de facto) are derived from both expert questionnaires and representative, nationwide surveys conducted directly among operating firms (Enterprise Surveys).",
                                         
                                           "source": "World Bank",
                                         
-                                          "availability": "",
+                                          "availability": "Annual data, since 2025",
                                         
                                           "notes": "",
                                         
@@ -2710,13 +2710,13 @@
                         "metadata": [
                           
                           {
-                                          "name": "9.4.a Length of railway line per 100 km2",
+                                          "name": "9.4.a Length of railway line per 100 km²",
                                         
                                           "goal": "Goal 9. Industry, Innovation and Infrastructure",
                                         
                                           "priority": "Development of transport infrastructure",
                                         
-                                          "definition": "Density of total railway lines per 100 km2 area.",
+                                          "definition": "Density of total railway lines per 100 km² area.",
                                         
                                           "unit": "km",
                                         
@@ -2886,29 +2886,63 @@
                         "metadata": [
                           
                           {
-                                          "name": "10.2.a Change in the number of employees in sub-regions with less favorable development conditions",
+                                          "name": "10.2.a Entities of the national economy per 10 thous. inhabitants in working age in rural areas",
                                         
                                           "goal": "Goal 10. Reduce inequalities",
                                         
                                           "priority": "Workplace creation in areas with less favourable conditions for development",
                                         
-                                          "definition": "Decrease/increase in the number of employees compared to the previous year in subregions with less favorable development conditions.",
+                                          "definition": "Number of entities of the national economy registered in the REGON register per 10 000 inhabitants of working age in rural areas.",
+                                        
+                                          "unit": "units",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "National economy refers to economic activity conducted within the territory of a given country. It constitutes a structure in which the economic activity of domestic enterprises is aggregated, i.e. it encompasses all individual and collective units engaged in production, services, distribution, exchange, and consumption within the territory of the state.Entity of the national economy is a legal person, an organisational unit without legal personality (including its establishments, branches, and subsidiaries constituting its local units), as well as a natural person engaged in economic activity.Working age is the age of capacity for work, i.e. for men the age group 18–64 years, and for women 18–59 years.REGON (the National Official Register of Entities of the National Economy) is a collection of information on entities of the national economy, maintained in an information system in the form of a central database and regional databases. It is currently the only integrated register in Poland covering all entities of the national economy.Each entity is assigned a unique nine-digit REGON identification number by Statistics Poland, which is used in the banking, customs, and tax systems, as well as in the processing of foreign trade data and other commercial and marketing systems.",
+                                        
+                                          "source": "Statistics Poland",
+                                        
+                                          "availability": "Annual data; since 2010",
+                                        
+                                          "notes": "",
+                                        
+                                          "data_updated_on": "05-08-2026",
+                                        
+                                          "metadata_updated_on": "05-08-2026"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "10-2-b": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "10.2.b Net internal migration in rural areas",
+                                        
+                                          "goal": "Goal 10. Reduce inequalities",
+                                        
+                                          "priority": "Workplace creation in areas with less favourable conditions for development",
+                                        
+                                          "definition": "Net internal migration for permanent residence in rural areas, i.e. the difference between registrations (inflow) and deregistrations (outflow) of permanent residence.",
                                         
                                           "unit": "persons",
                                         
                                           "dimensions": "total",
                                         
-                                          "methodology": "A subregion with less favorable development conditions should be understood as a subregion (NUTS 3), for which the indicator of gross domestic product per 1 inhabitant is below the value determining the first quartile in a given year. GDP (gross domestic product) value can be calculated in three ways: - from the production side GDP is the sum of value added of all institutional sectors or all sections of the Polish Classification of Activities (PKD) of domestic production entities plus taxes less subsidies on products, - from the distribution side GDP is calculated as the sum of domestic demand, i.e. final consumption expenditure and gross capital formation as well as external balance of goods and services, - as the sum of uses in the total economy generation of income account (compensation of employees, taxes less subsidies on production and imports, gross operating surplus and mixed income of the total economy). Gross domestic product is calculated according to obligatory in the European Union countries principles of the European System of National and Regional Accounts (ESA 2010) and recommendations of Eurostat. Regional accounts are a subsystem of national accounts, in which the economic activity of all entities of the national economy is grouped in territorial sections - according to macroregions, regions and subregions. Regional accounts are developed in accordance with the rules of the European System of Accounts 2010 (ESA 2010). For sub-regions, the following items are calculated: gross domestic product (GDP) and gross value added (GVA) by type of activity groups (by local type of activity type). For conversions per capita, the population was assumed as of 30 VI, taking into account the results of the 2011 National Population and Housing Census. Employment in national economy includes:  employees hired on the basis of employment (labour contract, posting, appointment, election or service relation); employers and own-account workers, i.e.  owners, co-owners and leaseholders of private farms in agriculture (including contributing family workers) owners and co-owners (including contributing family workers; excluding partners in companies who do not work in them) of entities conducting economic activity other than that related to private farms in agriculture other self-employed persons, e.g. persons practising learned professions   outworkers; agents (including contributing family workers and persons employed by agents); members of agricultural production co-operatives (agricultural producers co-operatives and co-operatives established on their basis as well as agricultural farmers co-operatives); clergy fulfilling priestly obligations.  Without working in budgetary units operating in the field of national defence and public safety, according to the actual workplace and type of activity.",
+                                          "methodology": "Net migration – a value recorded for a given period and area as the difference between two quantities.Migration – the movement of the population with the aim of changing the place of residence.Data on migration have been compiled on the basis of the complete population register of migrants maintained by gminas (pursuant to Article 46 of the Act of 10 April 1974 on Population Registration and Identity Cards, consolidated text: Journal of Laws of 2006, No. 139, item 993, as amended). Persons changing their place of residence complete registration forms at gmina offices relating to:• registration of permanent residence (internal migration and immigration for permanent residence),• deregistration of permanent residence in connection with departure abroad (emigration for permanent residence),• registration of temporary residence (internal migration and immigration for temporary residence),• notification of temporary departure abroad (emigration for temporary residence).Data on internal migration for permanent residence are obtained directly from the PESEL register – the Universal Electronic System for Population Registration (Powszechny Elektroniczny System Ewidencji Ludności). (Up to and including 2005, data were compiled by the Ministry of the Interior and Administration on the basis of reporting from gminas.)Migration is classified into:• internal migration – a change of place of residence within the country,• international migration – population movements associated with a change of country of residence.Internal migration of the population refers to changes of place of residence (permanent or temporary) within the country, involving crossing the administrative boundary of a gmina in order to settle permanently (or for temporary residence), as well as changes of registration from temporary to permanent residence within a given locality, if the previous place of residence was located in another gmina. Internal migration of the population does not include changes of address within the same administrative unit, as such movements do not affect the size or structure of the population of that unit.The fact of arrival (i.e. registration) in a given administrative unit for the purpose of residence is referred to as migration inflow, while departure for the purpose of residence in another unit is referred to as migration outflow.Within internal migration, the following are distinguished:• inter-voivodship migration – population movement from one voivodeship to another;• intra-voivodeship migration – changes of place of residence within the same voivodeship.",
                                         
                                           "source": "Statistics Poland",
                                         
-                                          "availability": "Annual data; since 2011",
+                                          "availability": "Annual data; since 2010",
                                         
-                                          "notes": "Regional accounts data undergoes verification owing to routine revisions in annual national accounts, conducted in accordance with the rules of Harmonized European Revision Policy (HERP), recommended by the European Commission to all EU countries.",
+                                          "notes": "",
                                         
-                                          "data_updated_on": "06-02-2024",
+                                          "data_updated_on": "05-08-2026",
                                         
-                                          "metadata_updated_on": "11-05-2021"
+                                          "metadata_updated_on": "05-08-2026"
                                         }
                         ]
                       }
@@ -2930,7 +2964,7 @@
                                         
                                           "unit": "points",
                                         
-                                          "dimensions": "total",
+                                          "dimensions": "total, urban area, rural area",
                                         
                                           "methodology": "The indicator is calculated on the basis of househols' equivalised disposable income obtained from the EU-SILC survey. EU-SILC survey (European Union Statistics on Income and Living Conditions) is a constant survey (conducted every year) whose subject are households and persons aged 16 and more in households. The survey is of a panel character, i.e. selected group of respondents is subject to several rounds of observation at intervals, so that it allows to observe and analyze the changing situation, attitudes, behaviour or opinions of a surveyed group. Survey is conducted by face-to-face interview technique using 2 questionnaires; one of which is used to obtain data on households, and the second to obtain data on individuals. The purpose of EU-SILC survey is to obtain information which allows the assessment of living conditions of Polish society and allows to compare them to the living conditions in other countries of European Union. This is achieved by adoption of a uniform methodology by Eurostat. At current requests of European Union authorities, module surveys devoted to selected issue are also conducted within EU-SILC survey (that is an additional questionnaire proceeded together with the basic survey). Central Statistical Office of Poland implemented EU-SILC survey in 2005. The survey unit is a household, which is understood as the persons who may be related or unrelated, living together and maintaining themselves jointly (multi-person household). Household can also be formed by one individual maintaining himself/herself independently, regardless of whether the individual lives alone or with other persons (one-person household). Equivalised disposable income is the household's total disposable income, divided by comparable household size. In order to determine a comparable household size, each member of the household (including children) is assigned with a coefficient based on modified OECD scale. Weight 1,0 is assigned to the first adult, weight 0,5 is assigned to every next adult and weight 0,3 is assigned to each child under 14. This means that an exemplary three-person family consisting of 2 adults (i.e. aged at least 14) and one child amounts to 1,8 equivalent units (1+ 0,5 + 0,3). Disposable income is defined as a sum of monetary net (after deduction for personal income taxes, income from properties taxes, contributions to social security and health insurance) incomes (additionally including non-monetary income associated with the use of a company car in case of hired work income) of all household members less: real estate taxes, monetary transfers to other households and balance of settlement with the Tax Office.",
                                         
@@ -2942,7 +2976,7 @@
                                         
                                           "data_updated_on": "10-02-2026",
                                         
-                                          "metadata_updated_on": "23-02-2023"
+                                          "metadata_updated_on": "05-08-2026"
                                         }
                         ]
                       }
@@ -2994,23 +3028,23 @@
                                         
                                           "priority": "Ensuring social and economic inclusion and accessibility for people with disabilities, including reducing barriers to access to infrastructure",
                                         
-                                          "definition": "",
+                                          "definition": "Share of employed disabled persons aged 16-64 in the total number of disabled persons at this age (in %), average data for the year.",
                                         
                                           "unit": "percent [%]",
                                         
                                           "dimensions": "total",
                                         
-                                          "methodology": "",
+                                          "methodology": "The data comes from the representative Labour Force Survey (LFS), conducted on a quarterly basis using the continuous observation method (moving week of the survey), allowing to illustrate the labour market situation over the entire quarter. The survey covers persons aged 15-89 who are members of households in drawn dwellings. Outside the scope of the survey, there are members of households staying (the total duration of actual and planned stay is taken into account) 12 months or more abroad and in collective households (such as staff hotels, dormitories, boarding schools, nursing homes, etc.) and homeless persons.In the context of economic activity – work is the main criterion in dividing the population, i.e. performing, holding or seeking work. According to the international standards, the tree main categories are distinguished: employed, unemployed and economically inactive persons. The employed, unemployed are the economically active population.Among the employed are included all persons aged 15-89 years who during the reference week:1) performed for at least 1 hour an income-generating or earning job, i.e., were employed by a public company/institution or private employer, worked on their own (or leased) agricultural farm or conducted their own economic activity outside agriculture, assisted (without pay) in running a family farm or family economic activity outside agriculture,2) had work, but did not perform it:• due to to sickness, vacation, parenthood-related leave (maternity leave, paternity or parental leave), working time arrangement (work system or compensation for overtime hours), training related to the performed work,• due to the seasonal nature of work, if they still regularly performed off-season work or business-related tasks and responsibilities (excluding legal or administrative obligations),• for other reasons, if the expected period of absence from work does not exceed 3 months.According to international standards, among employees are also included persons performing outwork and apprentices with whom enterprises or natural persons signed a contract for occupational training or learning skills for a particular job (if they receive a payment).Among the employed are not included: volunteers and unpaid interns, persons employed in private agriculture who produce agricultural exclusively or primarily for their own use.Population of disabled persons was legally separated from the total population aged 16-89, based on the legal criterion. Persons with disabilities include persons who are 16 years of age and in accordance with the provisions of the Act of 27 August 1997 on vocational and social rehabilitation and employment of disabled persons (Journal of Laws of 2016, item 2046, as amended). d.) have a disability degree certificate or an equivalent certificate:• significant degree of disability - this includes persons with the 1st disability group, or a certificate of total inability to work and live independently, or a certificate of permanent or long-term incapacity to work on a farm with the right to a care allowance,• moderate degree of disability - this includes people with disability group II or a certificate of total inability to work,• slight degree of disability - this includes persons with disability group III, or a certificate of partial inability to work and the advisability of retraining, or a certificate of permanent or long-term incapacity to work on a farm without entitlement to care allowance.",
                                         
                                           "source": "Statistics Poland",
                                         
-                                          "availability": "",
+                                          "availability": "Annual data, since 2010",
                                         
-                                          "notes": "",
+                                          "notes": "From 2023 onwards, data on Poland's resident population living in dwellings, derived from balance sheets compiled on the basis of Census 2021 results, were used to generalise the LFS results to the general population. Data for 2021-2022 were compiled according to the new basis of generalisation. Due to the changes introduced, the LFS results are not fully comparable with the survey results for the years prior to 2021.In addition, the lack of comparability of the data time series is also affected by methodological changes introduced to the LFS from Q1 2021. Data for 2010-2020 have been recalculated and presented taking into account the new methodology. These recalculations do not take into account the change in the basis for generalising data to balances based on the Census 2021.",
                                         
                                           "data_updated_on": "23-06-2026",
                                         
-                                          "metadata_updated_on": ""
+                                          "metadata_updated_on": "07-07-2026"
                                         }
                         ]
                       }

@@ -7,58 +7,66 @@
       "metadata": [
         
         {
-                        "name": "10.2.a Change in the number of employees in sub-regions with less favorable development conditions",
+                        "name": "10.2.a Entities of the national economy per 10 thous. inhabitants in working age in rural areas",
                       
                         "goal": "Goal 10. Reduce inequalities",
                       
                         "priority": "Workplace creation in areas with less favourable conditions for development",
                       
-                        "definition": "Decrease/increase in the number of employees compared to the previous year in subregions with less favorable development conditions.",
+                        "definition": "Number of entities of the national economy registered in the REGON register per 10 000 inhabitants of working age in rural areas.",
                       
-                        "unit": "persons",
+                        "unit": "units",
                       
                         "dimensions": "total",
                       
-                        "methodology": "A subregion with less favorable development conditions should be understood as a subregion (NUTS 3), for which the indicator of gross domestic product per 1 inhabitant is below the value determining the first quartile in a given year. GDP (gross domestic product) value can be calculated in three ways: - from the production side GDP is the sum of value added of all institutional sectors or all sections of the Polish Classification of Activities (PKD) of domestic production entities plus taxes less subsidies on products, - from the distribution side GDP is calculated as the sum of domestic demand, i.e. final consumption expenditure and gross capital formation as well as external balance of goods and services, - as the sum of uses in the total economy generation of income account (compensation of employees, taxes less subsidies on production and imports, gross operating surplus and mixed income of the total economy). Gross domestic product is calculated according to obligatory in the European Union countries principles of the European System of National and Regional Accounts (ESA 2010) and recommendations of Eurostat. Regional accounts are a subsystem of national accounts, in which the economic activity of all entities of the national economy is grouped in territorial sections - according to macroregions, regions and subregions. Regional accounts are developed in accordance with the rules of the European System of Accounts 2010 (ESA 2010). For sub-regions, the following items are calculated: gross domestic product (GDP) and gross value added (GVA) by type of activity groups (by local type of activity type). For conversions per capita, the population was assumed as of 30 VI, taking into account the results of the 2011 National Population and Housing Census. Employment in national economy includes:  employees hired on the basis of employment (labour contract, posting, appointment, election or service relation); employers and own-account workers, i.e.  owners, co-owners and leaseholders of private farms in agriculture (including contributing family workers) owners and co-owners (including contributing family workers; excluding partners in companies who do not work in them) of entities conducting economic activity other than that related to private farms in agriculture other self-employed persons, e.g. persons practising learned professions   outworkers; agents (including contributing family workers and persons employed by agents); members of agricultural production co-operatives (agricultural producers co-operatives and co-operatives established on their basis as well as agricultural farmers co-operatives); clergy fulfilling priestly obligations.  Without working in budgetary units operating in the field of national defence and public safety, according to the actual workplace and type of activity.",
+                        "methodology": "National economy refers to economic activity conducted within the territory of a given country. It constitutes a structure in which the economic activity of domestic enterprises is aggregated, i.e. it encompasses all individual and collective units engaged in production, services, distribution, exchange, and consumption within the territory of the state.Entity of the national economy is a legal person, an organisational unit without legal personality (including its establishments, branches, and subsidiaries constituting its local units), as well as a natural person engaged in economic activity.Working age is the age of capacity for work, i.e. for men the age group 18–64 years, and for women 18–59 years.REGON (the National Official Register of Entities of the National Economy) is a collection of information on entities of the national economy, maintained in an information system in the form of a central database and regional databases. It is currently the only integrated register in Poland covering all entities of the national economy.Each entity is assigned a unique nine-digit REGON identification number by Statistics Poland, which is used in the banking, customs, and tax systems, as well as in the processing of foreign trade data and other commercial and marketing systems.",
                       
                         "source": "Statistics Poland",
                       
-                        "availability": "Annual data; since 2011",
+                        "availability": "Annual data; since 2010",
                       
-                        "notes": "Regional accounts data undergoes verification owing to routine revisions in annual national accounts, conducted in accordance with the rules of Harmonized European Revision Policy (HERP), recommended by the European Commission to all EU countries.",
+                        "notes": "",
                       
-                        "data_updated_on": "06-02-2024",
+                        "data_updated_on": "05-08-2026",
                       
-                        "metadata_updated_on": "11-05-2021"
+                        "metadata_updated_on": "05-08-2026"
                       }
       ],
       "data": [
         {"total": [
                       {
                       
-                          "2010" :   "",
+                          "2010" :   "1045.4",
                       
-                          "2011" :   "9328",
+                          "2011" :   "1047.7",
                       
-                          "2012" :   "-32498",
+                          "2012" :   "1082.2",
                       
-                          "2013" :   "13290",
+                          "2013" :   "1119.6",
                       
-                          "2014" :   "35266",
+                          "2014" :   "1146.3",
                       
-                          "2015" :   "26026",
+                          "2015" :   "1172.4",
                       
-                          "2016" :   "48039",
+                          "2016" :   "1195.4",
                       
-                          "2017" :   "44900",
+                          "2017" :   "1229.7",
                       
-                          "2018" :   "31595",
+                          "2018" :   "1289.6",
                       
-                          "2019" :   "17985",
+                          "2019" :   "1366.0",
                       
-                          "2020" :   "-499944",
+                          "2020" :   "1471.0",
                       
-                          "2021" :   "7406"
+                          "2021" :   "1551.5",
+                      
+                          "2022" :   "1621.2",
+                      
+                          "2023" :   "1689.0",
+                      
+                          "2024" :   "1757.9",
+                      
+                          "2025" :   "1816.0"
                       
                       }
                   ]
