@@ -7,19 +7,19 @@
       "metadane": [
         
         {
-                        "nazwa": "11.6.b Zdolność zainstalowanych urządzeń i instalacji do redukcji zanieczyszczeń w miastach na prawach powiatu ogółem",
+                        "nazwa": "11.6.b Odsetek zanieczyszczeń zatrzymanych lub zneutralizowanych w urządzeniach oczyszczających w zakładach szczególnie uciążliwych w miastach na prawach powiatu",
                       
                         "cel": "Cel 11. Zrównoważone miasta i społeczności",
                       
                         "priorytet": "Poprawa jakości powietrza poprzez redukcję 'niskiej emisji' (tj. do 40 m n.p.g.) pochodzącej m.in. z kotłowni domowych i transportu drogowego",
                       
-                        "definicja": "Ilość zatrzymanych i zneutralizowanych zanieczyszczeń pyłowych oraz gazowych przez zainstalowane urządzenia i instalacje do redukcji zanieczyszczeń w miastach na prawach powiatu w ciągu roku.",
+                        "definicja": "Wskaźnik wyraża procentowy stosunek ilości zanieczyszczenia zatrzymanego do ilości zanieczyszczenia wytworzonego, tj.: zatrzymanego i wyemitowanego w miastach na prawach powiatu. Wartość tego wskaźnika może wahać się od 0 do 100%. Im bliższa jest 100%, tym większy jest potencjał ochronny danego źródła zanieczyszczeń.",
                       
-                        "jednostka": "tony",
+                        "jednostka": "procent [%]",
                       
-                        "wymiary": "ogółem",
+                        "wymiary": "typ zanieczyszczeń: gazowe (bez CO₂), pyłowe",
                       
-                        "metodologia": "Zanieczyszczenia pyłowe to emisja do atmosfery stałych cząstek o rozdrobnieniu makroskopowym i koloidalnym, których stężenie przekracza średnią zawartość tych substancji w powietrzu czystym, negatywnie oddziałując na zdrowie człowieka oraz na stan i jakość środowiska. Zanieczyszczenia pyłowe dzieli się w zależności od wymiarów ziaren na: • pyły o rozdrobnieniu makroskopowym o wymiarach ziaren od 1 do 1000 ľm • oraz pyły o rozdrobnieniu koloidalnym o wymiarach ziaren od 0,001 do 1 ľm. W zależności od źródła pochodzenia pyłu lub formy jego występowania stosuje się podział na:  • pyły dyspersyjne, tzn. powstałe wskutek mechanicznego rozdrabniania ciał stałych (np. pył węglowy przy kruszeniu i mieleniu węgla w zakładach energetycznych)  • oraz pyły kondensacyjne, powstałe w wyniku skraplania się i zestalania par różnych substancji chemicznych (np. sadza), występujące tylko w klasie o rozdrobnieniu koloidalnym. Powstawanie zanieczyszczeń pyłowych wiąże się nierozerwalnie ze wszystkimi procesami produkcyjnymi i procesami spalania. Szczególnie duże ilości pyłów powstają przy spalaniu paliw stałych.  Zanieczyszczenia gazowe to emisja do atmosfery substancji gazowych, których stężenie przekracza średnią zawartość tych substancji w powietrzu czystym, negatywnie oddziałując na zdrowie człowieka oraz na stan i jakość środowiska. Do charakterystycznych zanieczyszczeń powietrza występujących w formie gazowej należą: dwutlenek siarki (SO2, tlenki azotu (NOx), tlenek węgla (CO), dwutlenek węgla (CO2), węglowodory (CnHm) oraz tzw. 'utleniacze'. Utleniacze są substancjami zanieczyszczającymi wtórnymi, powstałymi na drodze reakcji fotochemicznych podstawowych zanieczyszczeń. Zalicza się do nich ozon, dwutlenek azotu, formaldehyd, akroleinę i inne.",
+                        "metodologia": "Dane o ilości zatrzymanych i zneutralizowanych zanieczyszczeń gazowych i pyłowych obrazują rozmiary zanieczyszczeń zredukowanych w urządzeniach do ochrony powietrza, zainstalowanych w zakładach uznanych za szczególnie uciążliwe dla atmosfery. Skuteczność działania urządzeń oczyszczających, określana jako stopień redukcji zanieczyszczeń, jest wielkością charakterystyczną dla urządzeń i wskazuje, jaki procent całkowitej ilości danego zanieczyszczenia wprowadzonego do urządzenia został przez to urządzenie zatrzymany.Rzeczywista skuteczność działania urządzenia jest równa lub mniejsza od zakładanej skuteczności eksploatacyjnej, uwzględnia bowiem warunki pracy urządzenia (np. skład chemiczny przepływających pyłów i gazów, skład ziarnowy pyłu, przepływ gazu, temperaturę, wilgotność oraz ciśnienie gazu i inne), także jego dyspozycyjność.Zakłady szczególnie uciążliwe dla czystości powietrza to tzw. punktowe źródła emisji zanieczyszczeń, do których zaliczono  jednostki organizacyjne ustalone przez ówczesnego Ministra Ochrony Środowiska i Zasobów Naturalnych na podstawie określonej wysokości opłat wniesionych w 1986 r. za roczną emisję substancji zanieczyszczających powietrze według stawek określonych w rozporządzeniu Rady Ministrów z dnia 13 stycznia 1986 r. w sprawie opłat za gospodarcze korzystanie ze środowiska i wprowadzanie w nim zmian (Dz. U. Nr 7, poz. 40 z późn. zmianami). Ustalona w ten sposób zbiorowość jednostek sprawozdawczych (zakładów) utrzymywana jest corocznie, co m.in. zapewnia zachowanie ciągłości i porównywalności wyników badania. Zbiorowość ta może być zmieniona jedynie w szczególnych wypadkach, np. powiększona o jednostki nowouruchomione lub rozbudowane o wysokiej skali progowej emisji zanieczyszczeń.",
                       
                         "zrodlo": "Główny Urząd Statystyczny",
                       
@@ -27,47 +27,87 @@
                       
                         "uwagi": "",
                       
-                        "data_aktualizacji_danych": "02-12-2025",
+                        "data_aktualizacji_danych": "05-08-2026",
                       
-                        "data_aktualizacji_metadanych": "20-04-2023"
+                        "data_aktualizacji_metadanych": "05-08-2026"
                       }
       ],
       "dane": [
-        {"ogółem": [
-                        {
-                        
-                            "2010" :   "961",
-                        
-                            "2011" :   "136730",
-                        
-                            "2012" :   "11553",
-                        
-                            "2013" :   "15701",
-                        
-                            "2014" :   "2758",
-                        
-                            "2015" :   "69422",
-                        
-                            "2016" :   "44764",
-                        
-                            "2017" :   "78118",
-                        
-                            "2018" :   "14958",
-                        
-                            "2019" :   "68943",
-                        
-                            "2020" :   "57788",
-                        
-                            "2021" :   "27276",
-                        
-                            "2022" :   "256675",
-                        
-                            "2023" :   "211015",
-                        
-                            "2024" :   "1435"
-                        
-                        }
-                    ]}
+        {
+                      "wg typu zanieczyszczeń": [
+                          {
+                              "gazowe (bez CO₂)": [
+                                  {
+                                  
+                                      "2010" :   "99.6",
+                                  
+                                      "2011" :   "99.6",
+                                  
+                                      "2012" :   "99.6",
+                                  
+                                      "2013" :   "99.6",
+                                  
+                                      "2014" :   "99.6",
+                                  
+                                      "2015" :   "99.6",
+                                  
+                                      "2016" :   "99.7",
+                                  
+                                      "2017" :   "99.7",
+                                  
+                                      "2018" :   "99.7",
+                                  
+                                      "2019" :   "99.7",
+                                  
+                                      "2020" :   "99.8",
+                                  
+                                      "2021" :   "99.8",
+                                  
+                                      "2022" :   "99.8",
+                                  
+                                      "2023" :   "99.8",
+                                  
+                                      "2024" :   "99.8"
+                                  
+                                  }
+                              ],
+                              "pyłowe": [
+                                  {
+                                  
+                                      "2010" :   "43.4",
+                                  
+                                      "2011" :   "46.5",
+                                  
+                                      "2012" :   "47.2",
+                                  
+                                      "2013" :   "47.8",
+                                  
+                                      "2014" :   "46.4",
+                                  
+                                      "2015" :   "46.5",
+                                  
+                                      "2016" :   "51.4",
+                                  
+                                      "2017" :   "53.8",
+                                  
+                                      "2018" :   "54.0",
+                                  
+                                      "2019" :   "54.3",
+                                  
+                                      "2020" :   "58.5",
+                                  
+                                      "2021" :   "61.4",
+                                  
+                                      "2022" :   "60.0",
+                                  
+                                      "2023" :   "62.3",
+                                  
+                                      "2024" :   "59.6"
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
       ]
     }
   ]

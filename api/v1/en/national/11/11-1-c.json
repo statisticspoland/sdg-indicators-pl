@@ -7,19 +7,19 @@
       "metadata": [
         
         {
-                        "name": "11.1.c Share of total population in urban areas living in a dwelling with a leaking roof, damp walls, floors or foundation, or rot in window frames or floor",
+                        "name": "11.1.c Area of strolling-recreational parks and green areas per capita in the city",
                       
                         "goal": "Goal 11. Sustainable cities and communities",
                       
                         "priority": "Enhancement of cities and urbanised areas' capability for sustainable development and workplace creation as well as improvement of quality of life of their inhabitants by taking into account the need to increase green areas, water areas and ventilation corridors in urban development plans",
                       
-                        "definition": "Percentage of population in urban areas that declared, at least in one case, that they live in a dwelling with a leaking roof, damp walls, floors or foundation, or rot in window frames or floor.",
+                        "definition": "Parks and small urban green spaces per capita.",
                       
-                        "unit": "percent [%]",
+                        "unit": "m²",
                       
                         "dimensions": "total",
                       
-                        "methodology": "The category of households includes persons that declared, at least in one case, that they live in a dwelling with a leaking roof, damp walls, floors or foundation, or rot in window frames or floor. The questions from the EU-SILC survey:  untill 2014: Does your dwelling have: a leaking roof, damp walls, floors or foundation or rot in window frames or floor? since 2015: Does your dwelling have: A. a leaking roof, B. damp walls/floors/foundation, C. rot in window frames or floor? ",
+                        "methodology": "Parks are green areas of at least 2 hectares, comprising high and low vegetation, developed and maintained for public recreational use and equipped with visitor infrastructure such as paths, benches, and playgrounds. They include internal water bodies and publicly accessible areas for water-based recreation, sports, and games.Small urban green spaces are publicly accessible green areas under 2 hectares with a dominant recreational function, including green areas associated with public buildings and monuments, boulevards, promenades, and publicly accessible recreational sports and water-related areas. They may consist of lawns, flowerbeds, trees, and shrubs forming landscaped urban green compositions.",
                       
                         "source": "Statistics Poland",
                       
@@ -27,42 +27,44 @@
                       
                         "notes": "",
                       
-                        "data_updated_on": "23-04-2024",
+                        "data_updated_on": "05-08-2026",
                       
-                        "metadata_updated_on": "21-03-2023"
+                        "metadata_updated_on": "05-08-2026"
                       }
       ],
       "data": [
         {"total": [
                       {
                       
-                          "2010" :   "13.0",
+                          "2010" :   "10.5",
                       
-                          "2011" :   "10.3",
+                          "2011" :   "10.5",
                       
-                          "2012" :   "9.3",
+                          "2012" :   "10.5",
                       
-                          "2013" :   "8.8",
+                          "2013" :   "10.5",
                       
-                          "2014" :   "8.9",
+                          "2014" :   "10.7",
                       
-                          "2015" :   "10.6",
+                          "2015" :   "11.1",
                       
-                          "2016" :   "10.1",
+                          "2016" :   "11.1",
                       
-                          "2017" :   "10.5",
+                          "2017" :   "11.2",
                       
-                          "2018" :   "10.5",
+                          "2018" :   "11.4",
                       
-                          "2019" :   "10.4",
+                          "2019" :   "11.8",
                       
-                          "2020" :   "5.7",
+                          "2020" :   "11.9",
                       
-                          "2021" :   "",
+                          "2021" :   "12.3",
                       
-                          "2022" :   "",
+                          "2022" :   "12.4",
                       
-                          "2023" :   "6.1"
+                          "2023" :   "12.7",
+                      
+                          "2024" :   "13.0"
                       
                       }
                   ]

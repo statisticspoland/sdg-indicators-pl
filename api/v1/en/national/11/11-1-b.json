@@ -7,19 +7,19 @@
       "metadata": [
         
         {
-                        "name": "11.1.b Average useful floor area of dwelling per capita in urban areas",
+                        "name": "11.1.b Share of strolling-recreational parks and green areas in the total area of the city",
                       
                         "goal": "Goal 11. Sustainable cities and communities",
                       
                         "priority": "Enhancement of cities and urbanised areas' capability for sustainable development and workplace creation as well as improvement of quality of life of their inhabitants by taking into account the need to increase green areas, water areas and ventilation corridors in urban development plans",
                       
-                        "definition": "Average useful floor area of dwelling per 1 person in urban areas.",
+                        "definition": "Proportion of city area covered by parks and small urban green spaces.",
                       
-                        "unit": "m2",
+                        "unit": "percent [%]",
                       
                         "dimensions": "total",
                       
-                        "methodology": "A dwelling - a space for permanent residence of persons, built or remodelled for residential purpose structurally separated (by permanent walls) within a building, consisting of a one or several rooms and auxiliary spaces (i.e.: foyers, hall, bathroom, toilet, wardrobe, pantry, hiding place), into which a separate access leads. A dwelling in residences for communities is understood as a premises, which is designated for the permanent residence.The useful floor area of a dwelling - the area of all spaces in a dwelling, i.e. rooms, kitchens, pantries, foyers, alcoves, halls, corridors, bathrooms, toilets, enclosed verandah, porch, wardrobe as well as other spaces serving the residential and household needs of the inhabitants (art studios, recreational or hobby spaces) regardless of their designation and manner of use. Useful floor area does not include: balconies, terraces, loggias, mezzanines, closets and recesses in walls, laundry rooms, drying rooms, bicycle storage rooms, attics, basements and areas designated for storing heating fuel as well as garages, water pump rooms and boiler rooms. Completion of a dwelling/building - according to the building law - means that the investor reported completion of its construction to the proper building control authorities and this body has not reported an objection (through a decision) or that the investor has obtained permission for use of this dwelling/building (through a decision) from the building control authorities.",
+                        "methodology": "Parks are green areas of at least 2 hectares, comprising high and low vegetation, developed and maintained for public recreational use and equipped with visitor infrastructure such as paths, benches, and playgrounds. They include internal water bodies and publicly accessible areas for water-based recreation, sports, and games.Small urban green spaces are publicly accessible green areas under 2 hectares with a dominant recreational function, including green areas associated with public buildings and monuments, boulevards, promenades, and publicly accessible recreational sports and water-related areas. They may consist of lawns, flowerbeds, trees, and shrubs forming landscaped urban green compositions.",
                       
                         "source": "Statistics Poland",
                       
@@ -27,44 +27,44 @@
                       
                         "notes": "",
                       
-                        "data_updated_on": "12-08-2025",
+                        "data_updated_on": "05-08-2026",
                       
-                        "metadata_updated_on": "21-03-2023"
+                        "metadata_updated_on": "05-08-2026"
                       }
       ],
       "data": [
         {"total": [
                       {
                       
-                          "2010" :   "24.7",
+                          "2010" :   "1.14",
                       
-                          "2011" :   "25.0",
+                          "2011" :   "1.13",
                       
-                          "2012" :   "25.4",
+                          "2012" :   "1.13",
                       
-                          "2013" :   "25.7",
+                          "2013" :   "1.14",
                       
-                          "2014" :   "26.1",
+                          "2014" :   "1.15",
                       
-                          "2015" :   "26.4",
+                          "2015" :   "1.18",
                       
-                          "2016" :   "26.8",
+                          "2016" :   "1.18",
                       
-                          "2017" :   "27.2",
+                          "2017" :   "1.18",
                       
-                          "2018" :   "27.7",
+                          "2018" :   "1.20",
                       
-                          "2019" :   "28.1",
+                          "2019" :   "1.23",
                       
-                          "2020" :   "29.2",
+                          "2020" :   "1.22",
                       
-                          "2021" :   "29.8",
+                          "2021" :   "1.24",
                       
-                          "2022" :   "30.4",
+                          "2022" :   "1.24",
                       
-                          "2023" :   "31.0",
+                          "2023" :   "1.21",
                       
-                          "2024" :   "31.6"
+                          "2024" :   "1.21"
                       
                       }
                   ]
