@@ -4435,24 +4435,92 @@
                     ]
                   },
                   {
+                    "14-1-b": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "14.1.b Share of marine protected areas",
+                                        
+                                          "goal": "Goal 14. Life below water",
+                                        
+                                          "priority": "Effective and sustainable exploitation of marine resources for different social and economic purposes, while ensuring conservation of non-renewable resources natural process for the present and future generations; ensurance of coordination of entities' activities and methods of sea exploitation, coherent management of sea and coastal areas, including the Baltic Sea resources",
+                                        
+                                          "definition": "Proportion of marine areas under legal protection as a percentage of the total maritime area of a country.",
+                                        
+                                          "unit": "percent [%]",
+                                        
+                                          "dimensions": "total",
+                                        
+                                          "methodology": "The indicator enables the estimation of the proportion of marine protected areas (MPAs) and, over time, the monitoring of trends in their spatial extent.A marine protected area is defined, in accordance with the definition of the International Union for Conservation of Nature (IUCN), as a clearly defined geographical space, which is part of or adjacent to the marine environment, together with its associated flora, fauna and cultural heritage features, which is designated and managed through legal or other effective means, including customary practices. As a result, its biodiversity is subject to a higher level of protection than the surrounding areas.Marine protected areas include sites designated under national legislation as well as those established under the Natura 2000 network.The data required for the calculation of the indicator are provided by Member States, while their consolidation is carried out by the European Environment Agency (EEA) in cooperation with the European Topic Centre on Biological Diversity (ETC/BD).The area of marine waters is reported by Member States on the basis of the provisions of the Marine Strategy Framework Directive (2008/56/EC).",
+                                        
+                                          "source": "Eurostat",
+                                        
+                                          "availability": "Data are available for selected years since 2012",
+                                        
+                                          "notes": "",
+                                        
+                                          "data_updated_on": "07-08-2026",
+                                        
+                                          "metadata_updated_on": "07-08-2026"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
                     "14-2-a": [
                       {
                         "metadata": [
                           
                           {
-                                          "name": "14.2.a Indices of average employment in maritime economy (2010=100)",
+                                          "name": "14.2.a Indices of average employment in the maritime economy (previous year = 100)",
                                         
                                           "goal": "Goal 14. Life below water",
                                         
                                           "priority": "Increase of maritime economy share in GDP and increase of employment in maritime economy",
                                         
-                                          "definition": "Ratio of average paid employment in the maritime economy in the surveyed year to average paid employment in the maritime economy in 2010.",
+                                          "definition": "Ratio of average paid employment in the maritime economy in the surveyed year to average paid employment in the maritime economy in previous year.",
                                         
-                                          "unit": "index: 2010=100",
+                                          "unit": "previous year = 100",
+                                        
+                                          "dimensions": "by sectors",
+                                        
+                                          "methodology": "Entities of the national economy are understood as legal entities, i.e. legal persons, organisational units without legal personality and natural persons conducting economic activity.Entities of the maritime economy are entities of the national economy, whose basic activity is connected with broadly defined maritime economy. The basic activity is defined by using a measure e.g. added value, sales revenues, number of employed persons or activity provided in the statute as a basic one.Data on average paid employment in maritime economy refer to the number of full- and part-time employees converted to full-time equivalents, excluding persons employed abroad.Full-time paid employees are persons employed on a full-time basis, as defined by a given company or for a given position as well as persons who, in accordance with regulations, work a reduced work-time period, e.g. due to hazardous conditions or an extended work-time period (e.g. property caretaker).Part-time paid employees are persons, who in accordance with labour contracts, regularly work on a part-time basis, as defined by a given company or for a given position. Part-time paid employees in the main workplace are persons who declared that the given workplace is their main workplace.",
+                                        
+                                          "source": "Statistics Poland",
+                                        
+                                          "availability": "Annual data; since 2011",
+                                        
+                                          "notes": "",
+                                        
+                                          "data_updated_on": "07-08-2026",
+                                        
+                                          "metadata_updated_on": "07-08-2026"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "14-2-b": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "14.2.b Share of the maritime economy in the gross value of fixed assets of the national economy",
+                                        
+                                          "goal": "Goal 14. Life below water",
+                                        
+                                          "priority": "Increase of maritime economy share in GDP and increase of employment in maritime economy",
+                                        
+                                          "definition": "Share of the gross value of fixed assets in the maritime economy in the gross value of fixed assets in the national economy (current book values).",
+                                        
+                                          "unit": "percent [%]",
                                         
                                           "dimensions": "total",
                                         
-                                          "methodology": "Entities of the national economy are understood as legal entities, i.e. legal persons, organisational units without legal personality and natural persons conducting economic activity. Entities of the maritime economy are entities of the national economy, whose basic activity is connected with broadly defined maritime economy. The basic activity is defined by using a measure e.g. added value, sales revenues, number of employed persons or activity provided in the statute as a basic one. Data on average paid employment in maritime economy refer to the number of full- and part-time employees converted to full-time equivalents, excluding persons employed abroad. Full-time paid employees are persons employed on a full-time basis, as defined by a given company or for a given position as well as persons who, in accordance with regulations, work a reduced work-time period, e.g. due to hazardous conditions or an extended work-time period (e.g. property caretaker). Part-time paid employees are persons, who in accordance with labour contracts, regularly work on a part-time basis, as defined by a given company or for a given position. Part-time paid employees in the main workplace are persons who declared that the given workplace is their main workplace.",
+                                          "methodology": "Entities of the national economy are defined as legal units, namely legal persons, organisational units without legal personality, and natural persons conducting economic activity.Entities of the maritime economy are entities of the national economy whose principal activity is associated with the broadly defined maritime economy. Principal activity is determined using such information as value added, sales revenue, employment, and the activity designated as principal in the entity’s statutes or founding documents.Gross value of fixed assets is the value corresponding to expenditure incurred for their purchase or production, without deduction of depreciation (amortisation).",
                                         
                                           "source": "Statistics Poland",
                                         
@@ -4460,9 +4528,9 @@
                                         
                                           "notes": "",
                                         
-                                          "data_updated_on": "02-12-2025",
+                                          "data_updated_on": "07-08-2026",
                                         
-                                          "metadata_updated_on": "05-03-2020"
+                                          "metadata_updated_on": "07-08-2026"
                                         }
                         ]
                       }
@@ -4497,6 +4565,74 @@
                                           "data_updated_on": "09-09-2025",
                                         
                                           "metadata_updated_on": "05-03-2020"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "14-3-b": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "14.3.b Domestic passenger traffic in seaports",
+                                        
+                                          "goal": "Goal 14. Life below water",
+                                        
+                                          "priority": "Enhancement of Polish seaports position, increase in competitiveness of sea transport and ensurance of sea security",
+                                        
+                                          "definition": "Number of passengers who arrived at or departed from Polish seaports on passenger ships, cargo vessels and ferries in domestic traffic.",
+                                        
+                                          "unit": "persons",
+                                        
+                                          "dimensions": "passenger traffic: arrivals, departures",
+                                        
+                                          "methodology": "Domestic traffic covers passengers for whom both the port of embarkation and the port of disembarkation for a sea journey are Polish ports.A seaport is an economic facility located at the interface between land and sea, appropriately equipped in technical, technological and organisational terms to handle trade flows carried out by sea, as well as to service maritime and land transport modes involved in their carriage.",
+                                        
+                                          "source": "Statistics Poland",
+                                        
+                                          "availability": "Annual data; since 2010",
+                                        
+                                          "notes": "",
+                                        
+                                          "data_updated_on": "07-08-2026",
+                                        
+                                          "metadata_updated_on": "07-08-2026"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "14-3-c": [
+                      {
+                        "metadata": [
+                          
+                          {
+                                          "name": "14.3.c International passenger traffic in seaports",
+                                        
+                                          "goal": "Goal 14. Life below water",
+                                        
+                                          "priority": "Enhancement of Polish seaports position, increase in competitiveness of sea transport and ensurance of sea security",
+                                        
+                                          "definition": "Number of passengers who arrived at or departed from Polish seaports on passenger ships, cargo vessels and ferries in international traffic.",
+                                        
+                                          "unit": "persons",
+                                        
+                                          "dimensions": "passenger traffic: arrivals, departures",
+                                        
+                                          "methodology": "International traffic covers passengers who arrived during the reference year from foreign ports to Polish ports as their destination ports in their sea journey, as well as the number of passengers who departed on a sea voyage from Polish ports to foreign ports on passenger ships, cargo vessels and ferries.A seaport is an economic facility located at the interface between land and sea, appropriately equipped in technical, technological and organisational terms to handle trade flows carried out by sea, as well as to service maritime and land transport modes involved in their carriage.",
+                                        
+                                          "source": "Statistics Poland",
+                                        
+                                          "availability": "Annual data; since 2010",
+                                        
+                                          "notes": "",
+                                        
+                                          "data_updated_on": "07-08-2026",
+                                        
+                                          "metadata_updated_on": "07-08-2026"
                                         }
                         ]
                       }

@@ -182,24 +182,210 @@
       ]
     },
     {
+      "14-1-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "14.1.b Share of marine protected areas",
+                          
+                            "goal": "Goal 14. Life below water",
+                          
+                            "priority": "Effective and sustainable exploitation of marine resources for different social and economic purposes, while ensuring conservation of non-renewable resources natural process for the present and future generations; ensurance of coordination of entities' activities and methods of sea exploitation, coherent management of sea and coastal areas, including the Baltic Sea resources",
+                          
+                            "definition": "Proportion of marine areas under legal protection as a percentage of the total maritime area of a country.",
+                          
+                            "unit": "percent [%]",
+                          
+                            "dimensions": "total",
+                          
+                            "methodology": "The indicator enables the estimation of the proportion of marine protected areas (MPAs) and, over time, the monitoring of trends in their spatial extent.A marine protected area is defined, in accordance with the definition of the International Union for Conservation of Nature (IUCN), as a clearly defined geographical space, which is part of or adjacent to the marine environment, together with its associated flora, fauna and cultural heritage features, which is designated and managed through legal or other effective means, including customary practices. As a result, its biodiversity is subject to a higher level of protection than the surrounding areas.Marine protected areas include sites designated under national legislation as well as those established under the Natura 2000 network.The data required for the calculation of the indicator are provided by Member States, while their consolidation is carried out by the European Environment Agency (EEA) in cooperation with the European Topic Centre on Biological Diversity (ETC/BD).The area of marine waters is reported by Member States on the basis of the provisions of the Marine Strategy Framework Directive (2008/56/EC).",
+                          
+                            "source": "Eurostat",
+                          
+                            "availability": "Data are available for selected years since 2012",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "07-08-2026",
+                          
+                            "metadata_updated_on": "07-08-2026"
+                          }
+          ],
+          "data": [
+            {"total": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "21.8",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "21.8",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   "",
+                              
+                                  "2019" :   "21.8",
+                              
+                                  "2020" :   "",
+                              
+                                  "2021" :   "21.9",
+                              
+                                  "2022" :   "21.9",
+                              
+                                  "2023" :   "22.0"
+                              
+                              }
+                          ]
+                      
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
       "14-2-a": [
         {
           "metadata": [
             
             {
-                            "name": "14.2.a Indices of average employment in maritime economy (2010=100)",
+                            "name": "14.2.a Indices of average employment in the maritime economy (previous year = 100)",
                           
                             "goal": "Goal 14. Life below water",
                           
                             "priority": "Increase of maritime economy share in GDP and increase of employment in maritime economy",
                           
-                            "definition": "Ratio of average paid employment in the maritime economy in the surveyed year to average paid employment in the maritime economy in 2010.",
+                            "definition": "Ratio of average paid employment in the maritime economy in the surveyed year to average paid employment in the maritime economy in previous year.",
                           
-                            "unit": "index: 2010=100",
+                            "unit": "previous year = 100",
+                          
+                            "dimensions": "by sectors",
+                          
+                            "methodology": "Entities of the national economy are understood as legal entities, i.e. legal persons, organisational units without legal personality and natural persons conducting economic activity.Entities of the maritime economy are entities of the national economy, whose basic activity is connected with broadly defined maritime economy. The basic activity is defined by using a measure e.g. added value, sales revenues, number of employed persons or activity provided in the statute as a basic one.Data on average paid employment in maritime economy refer to the number of full- and part-time employees converted to full-time equivalents, excluding persons employed abroad.Full-time paid employees are persons employed on a full-time basis, as defined by a given company or for a given position as well as persons who, in accordance with regulations, work a reduced work-time period, e.g. due to hazardous conditions or an extended work-time period (e.g. property caretaker).Part-time paid employees are persons, who in accordance with labour contracts, regularly work on a part-time basis, as defined by a given company or for a given position. Part-time paid employees in the main workplace are persons who declared that the given workplace is their main workplace.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2011",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "07-08-2026",
+                          
+                            "metadata_updated_on": "07-08-2026"
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "by sectors": [
+                                  {"private": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "101.8",
+                                          
+                                              "2012" : "100.0",
+                                          
+                                              "2013" : "101.8",
+                                          
+                                              "2014" : "103.2",
+                                          
+                                              "2015" : "101.8",
+                                          
+                                              "2016" : "115.4",
+                                          
+                                              "2017" : "98.6",
+                                          
+                                              "2018" : "110.3",
+                                          
+                                              "2019" : "149.6",
+                                          
+                                              "2020" : "98.5",
+                                          
+                                              "2021" : "102.3",
+                                          
+                                              "2022" : "106.1",
+                                          
+                                              "2023" : "102.7",
+                                          
+                                              "2024" : "101.0"
+                                          
+                                          }
+                                      ],"public": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "95.6",
+                                          
+                                              "2012" : "94.8",
+                                          
+                                              "2013" : "102.6",
+                                          
+                                              "2014" : "102.1",
+                                          
+                                              "2015" : "96.9",
+                                          
+                                              "2016" : "99.7",
+                                          
+                                              "2017" : "106.1",
+                                          
+                                              "2018" : "100.5",
+                                          
+                                              "2019" : "119.0",
+                                          
+                                              "2020" : "98.4",
+                                          
+                                              "2021" : "98.1",
+                                          
+                                              "2022" : "101.5",
+                                          
+                                              "2023" : "98.9",
+                                          
+                                              "2024" : "105.5"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "14-2-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "14.2.b Share of the maritime economy in the gross value of fixed assets of the national economy",
+                          
+                            "goal": "Goal 14. Life below water",
+                          
+                            "priority": "Increase of maritime economy share in GDP and increase of employment in maritime economy",
+                          
+                            "definition": "Share of the gross value of fixed assets in the maritime economy in the gross value of fixed assets in the national economy (current book values).",
+                          
+                            "unit": "percent [%]",
                           
                             "dimensions": "total",
                           
-                            "methodology": "Entities of the national economy are understood as legal entities, i.e. legal persons, organisational units without legal personality and natural persons conducting economic activity. Entities of the maritime economy are entities of the national economy, whose basic activity is connected with broadly defined maritime economy. The basic activity is defined by using a measure e.g. added value, sales revenues, number of employed persons or activity provided in the statute as a basic one. Data on average paid employment in maritime economy refer to the number of full- and part-time employees converted to full-time equivalents, excluding persons employed abroad. Full-time paid employees are persons employed on a full-time basis, as defined by a given company or for a given position as well as persons who, in accordance with regulations, work a reduced work-time period, e.g. due to hazardous conditions or an extended work-time period (e.g. property caretaker). Part-time paid employees are persons, who in accordance with labour contracts, regularly work on a part-time basis, as defined by a given company or for a given position. Part-time paid employees in the main workplace are persons who declared that the given workplace is their main workplace.",
+                            "methodology": "Entities of the national economy are defined as legal units, namely legal persons, organisational units without legal personality, and natural persons conducting economic activity.Entities of the maritime economy are entities of the national economy whose principal activity is associated with the broadly defined maritime economy. Principal activity is determined using such information as value added, sales revenue, employment, and the activity designated as principal in the entity’s statutes or founding documents.Gross value of fixed assets is the value corresponding to expenditure incurred for their purchase or production, without deduction of depreciation (amortisation).",
                           
                             "source": "Statistics Poland",
                           
@@ -207,44 +393,44 @@
                           
                             "notes": "",
                           
-                            "data_updated_on": "02-12-2025",
+                            "data_updated_on": "07-08-2026",
                           
-                            "metadata_updated_on": "05-03-2020"
+                            "metadata_updated_on": "07-08-2026"
                           }
           ],
           "data": [
             {"total": [
                               {
                               
-                                  "2010" :   "100.0",
+                                  "2010" :   "0.7",
                               
-                                  "2011" :   "100.8",
+                                  "2011" :   "0.6",
                               
-                                  "2012" :   "99.9",
+                                  "2012" :   "0.6",
                               
-                                  "2013" :   "101.8",
+                                  "2013" :   "0.6",
                               
-                                  "2014" :   "104.9",
+                                  "2014" :   "0.6",
                               
-                                  "2015" :   "106.0",
+                                  "2015" :   "0.7",
                               
-                                  "2016" :   "119.9",
+                                  "2016" :   "0.7",
                               
-                                  "2017" :   "119.4",
+                                  "2017" :   "0.7",
                               
-                                  "2018" :   "130.0",
+                                  "2018" :   "0.8",
                               
-                                  "2019" :   "189.5",
+                                  "2019" :   "0.7",
                               
-                                  "2020" :   "186.6",
+                                  "2020" :   "0.7",
                               
-                                  "2021" :   "190.1",
+                                  "2021" :   "0.7",
                               
-                                  "2022" :   "200.8",
+                                  "2022" :   "0.7",
                               
-                                  "2023" :   "205.6",
+                                  "2023" :   "0.9",
                               
-                                  "2024" :   "208.5"
+                                  "2024" :   "0.8"
                               
                               }
                           ]
@@ -324,6 +510,240 @@
                               }
                           ]
                       
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "14-3-b": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "14.3.b Domestic passenger traffic in seaports",
+                          
+                            "goal": "Goal 14. Life below water",
+                          
+                            "priority": "Enhancement of Polish seaports position, increase in competitiveness of sea transport and ensurance of sea security",
+                          
+                            "definition": "Number of passengers who arrived at or departed from Polish seaports on passenger ships, cargo vessels and ferries in domestic traffic.",
+                          
+                            "unit": "persons",
+                          
+                            "dimensions": "passenger traffic: arrivals, departures",
+                          
+                            "methodology": "Domestic traffic covers passengers for whom both the port of embarkation and the port of disembarkation for a sea journey are Polish ports.A seaport is an economic facility located at the interface between land and sea, appropriately equipped in technical, technological and organisational terms to handle trade flows carried out by sea, as well as to service maritime and land transport modes involved in their carriage.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "07-08-2026",
+                          
+                            "metadata_updated_on": "07-08-2026"
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "by passenger traffic": [
+                                  {"arrivals": [
+                                          {
+                                          
+                                              "2010" : "493249",
+                                          
+                                              "2011" : "474154",
+                                          
+                                              "2012" : "372834",
+                                          
+                                              "2013" : "302421",
+                                          
+                                              "2014" : "232736",
+                                          
+                                              "2015" : "284915",
+                                          
+                                              "2016" : "334020",
+                                          
+                                              "2017" : "279852",
+                                          
+                                              "2018" : "330941",
+                                          
+                                              "2019" : "351775",
+                                          
+                                              "2020" : "176029",
+                                          
+                                              "2021" : "275628",
+                                          
+                                              "2022" : "257955",
+                                          
+                                              "2023" : "261424",
+                                          
+                                              "2024" : "353616",
+                                          
+                                              "2025" : "303091"
+                                          
+                                          }
+                                      ],"departures": [
+                                          {
+                                          
+                                              "2010" : "485152",
+                                          
+                                              "2011" : "474731",
+                                          
+                                              "2012" : "372768",
+                                          
+                                              "2013" : "301883",
+                                          
+                                              "2014" : "233889",
+                                          
+                                              "2015" : "285054",
+                                          
+                                              "2016" : "334120",
+                                          
+                                              "2017" : "279520",
+                                          
+                                              "2018" : "330602",
+                                          
+                                              "2019" : "351685",
+                                          
+                                              "2020" : "175421",
+                                          
+                                              "2021" : "276413",
+                                          
+                                              "2022" : "262425",
+                                          
+                                              "2023" : "256157",
+                                          
+                                              "2024" : "346671",
+                                          
+                                              "2025" : "299556"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "14-3-c": [
+        {
+          "metadata": [
+            
+            {
+                            "name": "14.3.c International passenger traffic in seaports",
+                          
+                            "goal": "Goal 14. Life below water",
+                          
+                            "priority": "Enhancement of Polish seaports position, increase in competitiveness of sea transport and ensurance of sea security",
+                          
+                            "definition": "Number of passengers who arrived at or departed from Polish seaports on passenger ships, cargo vessels and ferries in international traffic.",
+                          
+                            "unit": "persons",
+                          
+                            "dimensions": "passenger traffic: arrivals, departures",
+                          
+                            "methodology": "International traffic covers passengers who arrived during the reference year from foreign ports to Polish ports as their destination ports in their sea journey, as well as the number of passengers who departed on a sea voyage from Polish ports to foreign ports on passenger ships, cargo vessels and ferries.A seaport is an economic facility located at the interface between land and sea, appropriately equipped in technical, technological and organisational terms to handle trade flows carried out by sea, as well as to service maritime and land transport modes involved in their carriage.",
+                          
+                            "source": "Statistics Poland",
+                          
+                            "availability": "Annual data; since 2010",
+                          
+                            "notes": "",
+                          
+                            "data_updated_on": "07-08-2026",
+                          
+                            "metadata_updated_on": "07-08-2026"
+                          }
+          ],
+          "data": [
+            {
+                      
+                              "by passenger traffic": [
+                                  {"arrivals": [
+                                          {
+                                          
+                                              "2010" : "759502",
+                                          
+                                              "2011" : "781353",
+                                          
+                                              "2012" : "802702",
+                                          
+                                              "2013" : "787070",
+                                          
+                                              "2014" : "875518",
+                                          
+                                              "2015" : "919666",
+                                          
+                                              "2016" : "962501",
+                                          
+                                              "2017" : "1011758",
+                                          
+                                              "2018" : "1029218",
+                                          
+                                              "2019" : "1057440",
+                                          
+                                              "2020" : "780543",
+                                          
+                                              "2021" : "882463",
+                                          
+                                              "2022" : "885794",
+                                          
+                                              "2023" : "871811",
+                                          
+                                              "2024" : "872944",
+                                          
+                                              "2025" : "884918"
+                                          
+                                          }
+                                      ],"departures": [
+                                          {
+                                          
+                                              "2010" : "781553",
+                                          
+                                              "2011" : "802785",
+                                          
+                                              "2012" : "809836",
+                                          
+                                              "2013" : "809712",
+                                          
+                                              "2014" : "878045",
+                                          
+                                              "2015" : "931632",
+                                          
+                                              "2016" : "970959",
+                                          
+                                              "2017" : "1013639",
+                                          
+                                              "2018" : "1029660",
+                                          
+                                              "2019" : "1026283",
+                                          
+                                              "2020" : "773182",
+                                          
+                                              "2021" : "881969",
+                                          
+                                              "2022" : "929215",
+                                          
+                                              "2023" : "862113",
+                                          
+                                              "2024" : "853481",
+                                          
+                                              "2025" : "873943"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
                     
                 
             }

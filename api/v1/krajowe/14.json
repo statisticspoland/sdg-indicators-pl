@@ -182,24 +182,210 @@
       ]
     },
     {
+      "14-1-b": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "14.1.b Odsetek morskich obszarów chronionych",
+                          
+                            "cel": "Cel 14. Życie pod wodą",
+                          
+                            "priorytet": "Efektywne i zrównoważone wykorzystanie zasobów morskich dla różnych celów społecznych i gospodarczych, przy jednoczesnym zapewnieniu trwałości nieodnawialnych zasobów i procesów przyrodniczych w perspektywie obecnego i kolejnych pokoleń; zapewnienie koordynacji działań podmiotów i sposobów wykorzystania morza, spójnego zarządzania obszarami morskimi i nadmorskimi, w tym zasobami Morza Bałtyckiego",
+                          
+                            "definicja": "Odsetek obszarów morskich objętych ochroną prawną w całkowitej powierzchni morskiej danego państwa.",
+                          
+                            "jednostka": "procent [%]",
+                          
+                            "wymiary": "ogółem",
+                          
+                            "metodologia": "Wskaźnik pozwala szacować odsetek morskich obszarów chronionych (MPA), a w ujęciu chronologicznym śledzić trendy dotyczące ich powierzchni.Za morski obszar chroniony uznaje się, zgodnie z definicją  Międzynarodowej Unii Ochrony Przyrody (ICUN), ściśle wyznaczony obszar stanowiący część środowiska morskiego lub do niego przyległy oraz związaną z nim florę, faunę i obiekty dziedzictwa kulturowego, który został objęty ochroną przez prawo lub inne efektywne środki prewencyjne, w tym również zwyczaj, a w konsekwencji, występująca w nim różnorodność biologiczna jest objęta wyższym poziomem ochrony niż jego otoczenie.Do morskich obszarów chronionych zalicza się tereny wyznaczone zarówno w oparciu o przepisy prawa krajowego jak i w ramach programu Natura 2000.Niezbędne do obliczenia wskaźnika dane dostarczają państwa członkowskie, zaś ich konsolidację przeprowadza Europejska Agencja Środowiska (EEA) wspólnie z Europejskim Centrum Tematycznym ds. Ochrony Przyrody i Bioróżnorodności (ETC/BD).Powierzchnię obszaru wód morskich państwa członkowskie raportują w oparciu o zapisy Dyrektywy Ramowej w Sprawie Strategii Morskiej (2008/56/WE).",
+                          
+                            "zrodlo": "Eurostat",
+                          
+                            "czestotliwosc": "Dane co kilka lat od 2012 r.",
+                          
+                            "uwagi": "",
+                          
+                            "data_aktualizacji_danych": "07-08-2026",
+                          
+                            "data_aktualizacji_metadanych": "07-08-2026"
+                          }
+          ],
+          "dane": [
+            {"ogółem": [
+                              {
+                              
+                                  "2010" :   "",
+                              
+                                  "2011" :   "",
+                              
+                                  "2012" :   "21.8",
+                              
+                                  "2013" :   "",
+                              
+                                  "2014" :   "",
+                              
+                                  "2015" :   "",
+                              
+                                  "2016" :   "21.8",
+                              
+                                  "2017" :   "",
+                              
+                                  "2018" :   "",
+                              
+                                  "2019" :   "21.8",
+                              
+                                  "2020" :   "",
+                              
+                                  "2021" :   "21.9",
+                              
+                                  "2022" :   "21.9",
+                              
+                                  "2023" :   "22.0"
+                              
+                              }
+                          ]
+                        
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
       "14-2-a": [
         {
           "metadane": [
             
             {
-                            "nazwa": "14.2.a Dynamika przeciętnego zatrudnienia w gospodarce morskiej (2010=100)",
+                            "nazwa": "14.2.a Dynamika przeciętnego zatrudnienia w gospodarce morskiej (rok poprzedni=100)",
                           
                             "cel": "Cel 14. Życie pod wodą",
                           
                             "priorytet": "Zwiększenie udziału sektora gospodarki morskiej w PKB oraz wzrostu zatrudnienia w gospodarce morskiej",
                           
-                            "definicja": "Stosunek przeciętnego zatrudnienia w gospodarce morskiej w badanym roku do przeciętnego zatrudnienia w gospodarce morskiej w roku 2010.",
+                            "definicja": "Stosunek przeciętnego zatrudnienia w gospodarce morskiej w badanym roku do przeciętnego zatrudnienia w gospodarce morskiej w roku poprzednim.",
                           
-                            "jednostka": "2010=100",
+                            "jednostka": "rok poprzedni=100",
+                          
+                            "wymiary": "wg sektorów",
+                          
+                            "metodologia": "Za podmioty gospodarki narodowej przyjmuje się jednostki prawne, tj. osoby prawne, jednostki organizacyjne niemające osobowości prawnej oraz osoby fizyczne prowadzące działalność gospodarczą.Podmioty gospodarki morskiej są to podmioty gospodarki narodowej, których podstawowa działalność związana jest z szeroko rozumianą gospodarką morską. Podstawową działalność określono przy wykorzystaniu takich informacji jak: wartość dodana, przychody ze sprzedaży, zatrudnienie, działalność przewidziana w statucie jako podstawowa.Informacje o przeciętnym zatrudnieniu w gospodarce morskiej dotyczą pracowników pełnozatrudnionych oraz niepełnozatrudnionych w przeliczeniu na pełne etaty, bez osób zatrudnionych poza granicami kraju.Pracownicy pełnozatrudnieni są to osoby, które pracują w pełnym wymiarze czasu pracy obowiązującym w danym zakładzie pracy lub na stanowisku pracy, w tym również osoby, które zgodnie z obowiązującymi przepisami pracują w skróconym czasie pracy, np. z tytułu warunków szkodliwych dla zdrowia lub w przedłużonym czasie pracy (np. dozorcy mienia).Pracownicy niepełnozatrudnieni są to osoby, które zgodnie z zawartą umową, pracują stale w niepełnym wymiarze czasu pracy obowiązującym w danym zakładzie lub na danym stanowisku pracy. Niepełnozatrudnieni w głównym miejscu pracy są to osoby, które złożyły w zakładzie pracy oświadczenia stwierdzające, że dany zakład jest ich głównym miejscem pracy.",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne; od 2011 r.",
+                          
+                            "uwagi": "",
+                          
+                            "data_aktualizacji_danych": "07-08-2026",
+                          
+                            "data_aktualizacji_metadanych": "07-08-2026"
+                          }
+          ],
+          "dane": [
+            {
+                      
+                              "wg sektorów": [
+                                  {"prywatny": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "101.8",
+                                          
+                                              "2012" : "100.0",
+                                          
+                                              "2013" : "101.8",
+                                          
+                                              "2014" : "103.2",
+                                          
+                                              "2015" : "101.8",
+                                          
+                                              "2016" : "115.4",
+                                          
+                                              "2017" : "98.6",
+                                          
+                                              "2018" : "110.3",
+                                          
+                                              "2019" : "149.6",
+                                          
+                                              "2020" : "98.5",
+                                          
+                                              "2021" : "102.3",
+                                          
+                                              "2022" : "106.1",
+                                          
+                                              "2023" : "102.7",
+                                          
+                                              "2024" : "101.0"
+                                          
+                                          }
+                                      ],"publiczny": [
+                                          {
+                                          
+                                              "2010" : "",
+                                          
+                                              "2011" : "95.6",
+                                          
+                                              "2012" : "94.8",
+                                          
+                                              "2013" : "102.6",
+                                          
+                                              "2014" : "102.1",
+                                          
+                                              "2015" : "96.9",
+                                          
+                                              "2016" : "99.7",
+                                          
+                                              "2017" : "106.1",
+                                          
+                                              "2018" : "100.5",
+                                          
+                                              "2019" : "119.0",
+                                          
+                                              "2020" : "98.4",
+                                          
+                                              "2021" : "98.1",
+                                          
+                                              "2022" : "101.5",
+                                          
+                                              "2023" : "98.9",
+                                          
+                                              "2024" : "105.5"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "14-2-b": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "14.2.b Udział gospodarki morskiej w wartości brutto środków trwałych gospodarki narodowej",
+                          
+                            "cel": "Cel 14. Życie pod wodą",
+                          
+                            "priorytet": "Zwiększenie udziału sektora gospodarki morskiej w PKB oraz wzrostu zatrudnienia w gospodarce morskiej",
+                          
+                            "definicja": "Udział wartości brutto środków trwałych w gospodarce morskiej w wartości brutto środków trwałych w gospodarce narodowej (bieżące ceny ewidencyjne).",
+                          
+                            "jednostka": "procent [%]",
                           
                             "wymiary": "ogółem",
                           
-                            "metodologia": "Za podmioty gospodarki narodowej przyjmuje się jednostki prawne, tj. osoby prawne, jednostki organizacyjne niemające osobowości prawnej oraz osoby fizyczne prowadzące działalność gospodarczą. Podmioty gospodarki morskiej są to podmioty gospodarki narodowej, których podstawowa działalność związana jest z szeroko rozumianą gospodarką morską. Podstawową działalność określono przy wykorzystaniu takich informacji jak: wartość dodana, przychody ze sprzedaży, zatrudnienie, działalność przewidziana w statucie jako podstawowa. Informacje o przeciętnym zatrudnieniu w gospodarce morskiej dotyczą pracowników pełnozatrudnionych oraz niepełnozatrudnionych w przeliczeniu na pełne etaty, bez osób zatrudnionych poza granicami kraju. Pracownicy pełnozatrudnieni są to osoby, które pracują w pełnym wymiarze czasu pracy obowiązującym w danym zakładzie pracy lub na stanowisku pracy, w tym również osoby, które zgodnie z obowiązującymi przepisami pracują w skróconym czasie pracy, np. z tytułu warunków szkodliwych dla zdrowia lub w przedłużonym czasie pracy (np. dozorcy mienia). Pracownicy niepełnozatrudnieni są to osoby, które zgodnie z zawartą umową, pracują stale  w niepełnym wymiarze czasu pracy obowiązującym w danym zakładzie lub na danym stanowisku pracy. Niepełnozatrudnieni w głównym miejscu pracy są to osoby, które złożyły w zakładzie pracy oświadczenia stwierdzające, że dany zakład jest ich głównym miejscem pracy.",
+                            "metodologia": "Za podmioty gospodarki narodowej przyjmuje się jednostki prawne, tj. osoby prawne, jednostki organizacyjne niemające osobowości prawnej oraz osoby fizyczne prowadzące działalność gospodarczą.Podmioty gospodarki morskiej są to podmioty gospodarki narodowej, których podstawowa działalność związana jest z szeroko rozumianą gospodarką morską. Podstawową działalność określono przy wykorzystaniu takich informacji jak: wartość dodana, przychody ze sprzedaży, zatrudnienie, działalność przewidziana w statucie jako podstawowa.Wartość brutto środków trwałych jest to wartość równa nakładom poniesionym na ich zakup lub wytworzenie, bez potrącenia wartości zużycia (umorzenia).",
                           
                             "zrodlo": "Główny Urząd Statystyczny",
                           
@@ -207,44 +393,44 @@
                           
                             "uwagi": "",
                           
-                            "data_aktualizacji_danych": "02-12-2025",
+                            "data_aktualizacji_danych": "07-08-2026",
                           
-                            "data_aktualizacji_metadanych": "05-03-2020"
+                            "data_aktualizacji_metadanych": "07-08-2026"
                           }
           ],
           "dane": [
             {"ogółem": [
                               {
                               
-                                  "2010" :   "100.0",
+                                  "2010" :   "0.7",
                               
-                                  "2011" :   "100.8",
+                                  "2011" :   "0.6",
                               
-                                  "2012" :   "99.9",
+                                  "2012" :   "0.6",
                               
-                                  "2013" :   "101.8",
+                                  "2013" :   "0.6",
                               
-                                  "2014" :   "104.9",
+                                  "2014" :   "0.6",
                               
-                                  "2015" :   "106.0",
+                                  "2015" :   "0.7",
                               
-                                  "2016" :   "119.9",
+                                  "2016" :   "0.7",
                               
-                                  "2017" :   "119.4",
+                                  "2017" :   "0.7",
                               
-                                  "2018" :   "130.0",
+                                  "2018" :   "0.8",
                               
-                                  "2019" :   "189.5",
+                                  "2019" :   "0.7",
                               
-                                  "2020" :   "186.6",
+                                  "2020" :   "0.7",
                               
-                                  "2021" :   "190.1",
+                                  "2021" :   "0.7",
                               
-                                  "2022" :   "200.8",
+                                  "2022" :   "0.7",
                               
-                                  "2023" :   "205.6",
+                                  "2023" :   "0.9",
                               
-                                  "2024" :   "208.5"
+                                  "2024" :   "0.8"
                               
                               }
                           ]
@@ -324,6 +510,240 @@
                               }
                           ]
                         
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "14-3-b": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "14.3.b Ruch pasażerów w portach morskich (krajowy)",
+                          
+                            "cel": "Cel 14. Życie pod wodą",
+                          
+                            "priorytet": "Wzmocnienie pozycji polskich portów morskich, zwiększenie konkurencyjności transportu morskiego oraz zapewnienie bezpieczeństwa morskiego",
+                          
+                            "definicja": "Liczba pasażerów, którzy przyjechali lub wyjechali z portów polskich na statkach pasażerskich, towarowych i promach w ruchu krajowym.",
+                          
+                            "jednostka": "osoby",
+                          
+                            "wymiary": "ruch pasażerów: przyjazdy, wyjazdy",
+                          
+                            "metodologia": "Ruch krajowy dotyczy pasażerów dla których port rozpoczęcia i zakończenia podróży morskiej jest portem krajowym.Port morski to obiekt gospodarczy usytuowany na styku lądu z morzem odpowiednio przygotowany pod względem techniczno-technologicznym i organizacyjnym do obsługi obrotów handlu realizowanych drogą morską, a także do obsługi środków transportu morskiego i lądowego zaangażowanych w ich przewozie.",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne; od 2010 r.",
+                          
+                            "uwagi": "",
+                          
+                            "data_aktualizacji_danych": "07-08-2026",
+                          
+                            "data_aktualizacji_metadanych": "07-08-2026"
+                          }
+          ],
+          "dane": [
+            {
+                      
+                              "wg ruchu pasażerów": [
+                                  {"przyjazdy": [
+                                          {
+                                          
+                                              "2010" : "493249",
+                                          
+                                              "2011" : "474154",
+                                          
+                                              "2012" : "372834",
+                                          
+                                              "2013" : "302421",
+                                          
+                                              "2014" : "232736",
+                                          
+                                              "2015" : "284915",
+                                          
+                                              "2016" : "334020",
+                                          
+                                              "2017" : "279852",
+                                          
+                                              "2018" : "330941",
+                                          
+                                              "2019" : "351775",
+                                          
+                                              "2020" : "176029",
+                                          
+                                              "2021" : "275628",
+                                          
+                                              "2022" : "257955",
+                                          
+                                              "2023" : "261424",
+                                          
+                                              "2024" : "353616",
+                                          
+                                              "2025" : "303091"
+                                          
+                                          }
+                                      ],"wyjazdy": [
+                                          {
+                                          
+                                              "2010" : "485152",
+                                          
+                                              "2011" : "474731",
+                                          
+                                              "2012" : "372768",
+                                          
+                                              "2013" : "301883",
+                                          
+                                              "2014" : "233889",
+                                          
+                                              "2015" : "285054",
+                                          
+                                              "2016" : "334120",
+                                          
+                                              "2017" : "279520",
+                                          
+                                              "2018" : "330602",
+                                          
+                                              "2019" : "351685",
+                                          
+                                              "2020" : "175421",
+                                          
+                                              "2021" : "276413",
+                                          
+                                              "2022" : "262425",
+                                          
+                                              "2023" : "256157",
+                                          
+                                              "2024" : "346671",
+                                          
+                                              "2025" : "299556"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
+                    
+                
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "14-3-c": [
+        {
+          "metadane": [
+            
+            {
+                            "nazwa": "14.3.c Ruch pasażerów w portach morskich (międzynarodowy)",
+                          
+                            "cel": "Cel 14. Życie pod wodą",
+                          
+                            "priorytet": "Wzmocnienie pozycji polskich portów morskich, zwiększenie konkurencyjności transportu morskiego oraz zapewnienie bezpieczeństwa morskiego",
+                          
+                            "definicja": "Liczba pasażerów, którzy przyjechali lub wyjechali z portów polskich na statkach pasażerskich, towarowych i promach w ruchu międzynarodowym.",
+                          
+                            "jednostka": "osoby",
+                          
+                            "wymiary": "ruch pasażerów: przyjazdy, wyjazdy",
+                          
+                            "metodologia": "Ruch międzynarodowy obejmuje pasażerów, którzy przyjechali w roku sprawozdawczym z portów zagranicznych do portów polskich jako portów docelowych w ich podróży morskiej oraz liczbę pasażerów, którzy wyjechali w podróż morską z portów polskich do portów zagranicznych na statkach pasażerskich, towarowych i promach.Port morski to obiekt gospodarczy usytuowany na styku lądu z morzem odpowiednio przygotowany pod względem techniczno-technologicznym i organizacyjnym do obsługi obrotów handlu realizowanych drogą morską, a także do obsługi środków transportu morskiego i lądowego zaangażowanych w ich przewozie.",
+                          
+                            "zrodlo": "Główny Urząd Statystyczny",
+                          
+                            "czestotliwosc": "Dane roczne; od 2010 r.",
+                          
+                            "uwagi": "",
+                          
+                            "data_aktualizacji_danych": "07-08-2026",
+                          
+                            "data_aktualizacji_metadanych": "07-08-2026"
+                          }
+          ],
+          "dane": [
+            {
+                      
+                              "wg ruchu pasażerów": [
+                                  {"przyjazdy": [
+                                          {
+                                          
+                                              "2010" : "759502",
+                                          
+                                              "2011" : "781353",
+                                          
+                                              "2012" : "802702",
+                                          
+                                              "2013" : "787070",
+                                          
+                                              "2014" : "875518",
+                                          
+                                              "2015" : "919666",
+                                          
+                                              "2016" : "962501",
+                                          
+                                              "2017" : "1011758",
+                                          
+                                              "2018" : "1029218",
+                                          
+                                              "2019" : "1057440",
+                                          
+                                              "2020" : "780543",
+                                          
+                                              "2021" : "882463",
+                                          
+                                              "2022" : "885794",
+                                          
+                                              "2023" : "871811",
+                                          
+                                              "2024" : "872944",
+                                          
+                                              "2025" : "884918"
+                                          
+                                          }
+                                      ],"wyjazdy": [
+                                          {
+                                          
+                                              "2010" : "781553",
+                                          
+                                              "2011" : "802785",
+                                          
+                                              "2012" : "809836",
+                                          
+                                              "2013" : "809712",
+                                          
+                                              "2014" : "878045",
+                                          
+                                              "2015" : "931632",
+                                          
+                                              "2016" : "970959",
+                                          
+                                              "2017" : "1013639",
+                                          
+                                              "2018" : "1029660",
+                                          
+                                              "2019" : "1026283",
+                                          
+                                              "2020" : "773182",
+                                          
+                                              "2021" : "881969",
+                                          
+                                              "2022" : "929215",
+                                          
+                                              "2023" : "862113",
+                                          
+                                              "2024" : "853481",
+                                          
+                                              "2025" : "873943"
+                                          
+                                          }
+                                      ]
+                                  }
+                              ]
                     
                 
             }

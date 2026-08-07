@@ -4435,24 +4435,92 @@
                     ]
                   },
                   {
+                    "14-1-b": [
+                      {
+                        "metadane": [
+                          
+                          {
+                                          "nazwa": "14.1.b Odsetek morskich obszarów chronionych",
+                                        
+                                          "cel": "Cel 14. Życie pod wodą",
+                                        
+                                          "priorytet": "Efektywne i zrównoważone wykorzystanie zasobów morskich dla różnych celów społecznych i gospodarczych, przy jednoczesnym zapewnieniu trwałości nieodnawialnych zasobów i procesów przyrodniczych w perspektywie obecnego i kolejnych pokoleń; zapewnienie koordynacji działań podmiotów i sposobów wykorzystania morza, spójnego zarządzania obszarami morskimi i nadmorskimi, w tym zasobami Morza Bałtyckiego",
+                                        
+                                          "definicja": "Odsetek obszarów morskich objętych ochroną prawną w całkowitej powierzchni morskiej danego państwa.",
+                                        
+                                          "jednostka": "procent [%]",
+                                        
+                                          "wymiary": "ogółem",
+                                        
+                                          "metodologia": "Wskaźnik pozwala szacować odsetek morskich obszarów chronionych (MPA), a w ujęciu chronologicznym śledzić trendy dotyczące ich powierzchni.Za morski obszar chroniony uznaje się, zgodnie z definicją  Międzynarodowej Unii Ochrony Przyrody (ICUN), ściśle wyznaczony obszar stanowiący część środowiska morskiego lub do niego przyległy oraz związaną z nim florę, faunę i obiekty dziedzictwa kulturowego, który został objęty ochroną przez prawo lub inne efektywne środki prewencyjne, w tym również zwyczaj, a w konsekwencji, występująca w nim różnorodność biologiczna jest objęta wyższym poziomem ochrony niż jego otoczenie.Do morskich obszarów chronionych zalicza się tereny wyznaczone zarówno w oparciu o przepisy prawa krajowego jak i w ramach programu Natura 2000.Niezbędne do obliczenia wskaźnika dane dostarczają państwa członkowskie, zaś ich konsolidację przeprowadza Europejska Agencja Środowiska (EEA) wspólnie z Europejskim Centrum Tematycznym ds. Ochrony Przyrody i Bioróżnorodności (ETC/BD).Powierzchnię obszaru wód morskich państwa członkowskie raportują w oparciu o zapisy Dyrektywy Ramowej w Sprawie Strategii Morskiej (2008/56/WE).",
+                                        
+                                          "zrodlo": "Eurostat",
+                                        
+                                          "czestotliwosc": "Dane co kilka lat od 2012 r.",
+                                        
+                                          "uwagi": "",
+                                        
+                                          "data_aktualizacji_danych": "07-08-2026",
+                                        
+                                          "data_aktualizacji_metadanych": "07-08-2026"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
                     "14-2-a": [
                       {
                         "metadane": [
                           
                           {
-                                          "nazwa": "14.2.a Dynamika przeciętnego zatrudnienia w gospodarce morskiej (2010=100)",
+                                          "nazwa": "14.2.a Dynamika przeciętnego zatrudnienia w gospodarce morskiej (rok poprzedni=100)",
                                         
                                           "cel": "Cel 14. Życie pod wodą",
                                         
                                           "priorytet": "Zwiększenie udziału sektora gospodarki morskiej w PKB oraz wzrostu zatrudnienia w gospodarce morskiej",
                                         
-                                          "definicja": "Stosunek przeciętnego zatrudnienia w gospodarce morskiej w badanym roku do przeciętnego zatrudnienia w gospodarce morskiej w roku 2010.",
+                                          "definicja": "Stosunek przeciętnego zatrudnienia w gospodarce morskiej w badanym roku do przeciętnego zatrudnienia w gospodarce morskiej w roku poprzednim.",
                                         
-                                          "jednostka": "2010=100",
+                                          "jednostka": "rok poprzedni=100",
+                                        
+                                          "wymiary": "wg sektorów",
+                                        
+                                          "metodologia": "Za podmioty gospodarki narodowej przyjmuje się jednostki prawne, tj. osoby prawne, jednostki organizacyjne niemające osobowości prawnej oraz osoby fizyczne prowadzące działalność gospodarczą.Podmioty gospodarki morskiej są to podmioty gospodarki narodowej, których podstawowa działalność związana jest z szeroko rozumianą gospodarką morską. Podstawową działalność określono przy wykorzystaniu takich informacji jak: wartość dodana, przychody ze sprzedaży, zatrudnienie, działalność przewidziana w statucie jako podstawowa.Informacje o przeciętnym zatrudnieniu w gospodarce morskiej dotyczą pracowników pełnozatrudnionych oraz niepełnozatrudnionych w przeliczeniu na pełne etaty, bez osób zatrudnionych poza granicami kraju.Pracownicy pełnozatrudnieni są to osoby, które pracują w pełnym wymiarze czasu pracy obowiązującym w danym zakładzie pracy lub na stanowisku pracy, w tym również osoby, które zgodnie z obowiązującymi przepisami pracują w skróconym czasie pracy, np. z tytułu warunków szkodliwych dla zdrowia lub w przedłużonym czasie pracy (np. dozorcy mienia).Pracownicy niepełnozatrudnieni są to osoby, które zgodnie z zawartą umową, pracują stale w niepełnym wymiarze czasu pracy obowiązującym w danym zakładzie lub na danym stanowisku pracy. Niepełnozatrudnieni w głównym miejscu pracy są to osoby, które złożyły w zakładzie pracy oświadczenia stwierdzające, że dany zakład jest ich głównym miejscem pracy.",
+                                        
+                                          "zrodlo": "Główny Urząd Statystyczny",
+                                        
+                                          "czestotliwosc": "Dane roczne; od 2011 r.",
+                                        
+                                          "uwagi": "",
+                                        
+                                          "data_aktualizacji_danych": "07-08-2026",
+                                        
+                                          "data_aktualizacji_metadanych": "07-08-2026"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "14-2-b": [
+                      {
+                        "metadane": [
+                          
+                          {
+                                          "nazwa": "14.2.b Udział gospodarki morskiej w wartości brutto środków trwałych gospodarki narodowej",
+                                        
+                                          "cel": "Cel 14. Życie pod wodą",
+                                        
+                                          "priorytet": "Zwiększenie udziału sektora gospodarki morskiej w PKB oraz wzrostu zatrudnienia w gospodarce morskiej",
+                                        
+                                          "definicja": "Udział wartości brutto środków trwałych w gospodarce morskiej w wartości brutto środków trwałych w gospodarce narodowej (bieżące ceny ewidencyjne).",
+                                        
+                                          "jednostka": "procent [%]",
                                         
                                           "wymiary": "ogółem",
                                         
-                                          "metodologia": "Za podmioty gospodarki narodowej przyjmuje się jednostki prawne, tj. osoby prawne, jednostki organizacyjne niemające osobowości prawnej oraz osoby fizyczne prowadzące działalność gospodarczą. Podmioty gospodarki morskiej są to podmioty gospodarki narodowej, których podstawowa działalność związana jest z szeroko rozumianą gospodarką morską. Podstawową działalność określono przy wykorzystaniu takich informacji jak: wartość dodana, przychody ze sprzedaży, zatrudnienie, działalność przewidziana w statucie jako podstawowa. Informacje o przeciętnym zatrudnieniu w gospodarce morskiej dotyczą pracowników pełnozatrudnionych oraz niepełnozatrudnionych w przeliczeniu na pełne etaty, bez osób zatrudnionych poza granicami kraju. Pracownicy pełnozatrudnieni są to osoby, które pracują w pełnym wymiarze czasu pracy obowiązującym w danym zakładzie pracy lub na stanowisku pracy, w tym również osoby, które zgodnie z obowiązującymi przepisami pracują w skróconym czasie pracy, np. z tytułu warunków szkodliwych dla zdrowia lub w przedłużonym czasie pracy (np. dozorcy mienia). Pracownicy niepełnozatrudnieni są to osoby, które zgodnie z zawartą umową, pracują stale  w niepełnym wymiarze czasu pracy obowiązującym w danym zakładzie lub na danym stanowisku pracy. Niepełnozatrudnieni w głównym miejscu pracy są to osoby, które złożyły w zakładzie pracy oświadczenia stwierdzające, że dany zakład jest ich głównym miejscem pracy.",
+                                          "metodologia": "Za podmioty gospodarki narodowej przyjmuje się jednostki prawne, tj. osoby prawne, jednostki organizacyjne niemające osobowości prawnej oraz osoby fizyczne prowadzące działalność gospodarczą.Podmioty gospodarki morskiej są to podmioty gospodarki narodowej, których podstawowa działalność związana jest z szeroko rozumianą gospodarką morską. Podstawową działalność określono przy wykorzystaniu takich informacji jak: wartość dodana, przychody ze sprzedaży, zatrudnienie, działalność przewidziana w statucie jako podstawowa.Wartość brutto środków trwałych jest to wartość równa nakładom poniesionym na ich zakup lub wytworzenie, bez potrącenia wartości zużycia (umorzenia).",
                                         
                                           "zrodlo": "Główny Urząd Statystyczny",
                                         
@@ -4460,9 +4528,9 @@
                                         
                                           "uwagi": "",
                                         
-                                          "data_aktualizacji_danych": "02-12-2025",
+                                          "data_aktualizacji_danych": "07-08-2026",
                                         
-                                          "data_aktualizacji_metadanych": "05-03-2020"
+                                          "data_aktualizacji_metadanych": "07-08-2026"
                                         }
                         ]
                       }
@@ -4497,6 +4565,74 @@
                                           "data_aktualizacji_danych": "09-09-2025",
                                         
                                           "data_aktualizacji_metadanych": "05-03-2020"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "14-3-b": [
+                      {
+                        "metadane": [
+                          
+                          {
+                                          "nazwa": "14.3.b Ruch pasażerów w portach morskich (krajowy)",
+                                        
+                                          "cel": "Cel 14. Życie pod wodą",
+                                        
+                                          "priorytet": "Wzmocnienie pozycji polskich portów morskich, zwiększenie konkurencyjności transportu morskiego oraz zapewnienie bezpieczeństwa morskiego",
+                                        
+                                          "definicja": "Liczba pasażerów, którzy przyjechali lub wyjechali z portów polskich na statkach pasażerskich, towarowych i promach w ruchu krajowym.",
+                                        
+                                          "jednostka": "osoby",
+                                        
+                                          "wymiary": "ruch pasażerów: przyjazdy, wyjazdy",
+                                        
+                                          "metodologia": "Ruch krajowy dotyczy pasażerów dla których port rozpoczęcia i zakończenia podróży morskiej jest portem krajowym.Port morski to obiekt gospodarczy usytuowany na styku lądu z morzem odpowiednio przygotowany pod względem techniczno-technologicznym i organizacyjnym do obsługi obrotów handlu realizowanych drogą morską, a także do obsługi środków transportu morskiego i lądowego zaangażowanych w ich przewozie.",
+                                        
+                                          "zrodlo": "Główny Urząd Statystyczny",
+                                        
+                                          "czestotliwosc": "Dane roczne; od 2010 r.",
+                                        
+                                          "uwagi": "",
+                                        
+                                          "data_aktualizacji_danych": "07-08-2026",
+                                        
+                                          "data_aktualizacji_metadanych": "07-08-2026"
+                                        }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "14-3-c": [
+                      {
+                        "metadane": [
+                          
+                          {
+                                          "nazwa": "14.3.c Ruch pasażerów w portach morskich (międzynarodowy)",
+                                        
+                                          "cel": "Cel 14. Życie pod wodą",
+                                        
+                                          "priorytet": "Wzmocnienie pozycji polskich portów morskich, zwiększenie konkurencyjności transportu morskiego oraz zapewnienie bezpieczeństwa morskiego",
+                                        
+                                          "definicja": "Liczba pasażerów, którzy przyjechali lub wyjechali z portów polskich na statkach pasażerskich, towarowych i promach w ruchu międzynarodowym.",
+                                        
+                                          "jednostka": "osoby",
+                                        
+                                          "wymiary": "ruch pasażerów: przyjazdy, wyjazdy",
+                                        
+                                          "metodologia": "Ruch międzynarodowy obejmuje pasażerów, którzy przyjechali w roku sprawozdawczym z portów zagranicznych do portów polskich jako portów docelowych w ich podróży morskiej oraz liczbę pasażerów, którzy wyjechali w podróż morską z portów polskich do portów zagranicznych na statkach pasażerskich, towarowych i promach.Port morski to obiekt gospodarczy usytuowany na styku lądu z morzem odpowiednio przygotowany pod względem techniczno-technologicznym i organizacyjnym do obsługi obrotów handlu realizowanych drogą morską, a także do obsługi środków transportu morskiego i lądowego zaangażowanych w ich przewozie.",
+                                        
+                                          "zrodlo": "Główny Urząd Statystyczny",
+                                        
+                                          "czestotliwosc": "Dane roczne; od 2010 r.",
+                                        
+                                          "uwagi": "",
+                                        
+                                          "data_aktualizacji_danych": "07-08-2026",
+                                        
+                                          "data_aktualizacji_metadanych": "07-08-2026"
                                         }
                         ]
                       }
