@@ -111,7 +111,7 @@ function createchart3(div, dane, wymiary){
         else {
           return text;
         }
-        });   
+        });
 
       series.data.setAll(dane);
 

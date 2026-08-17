@@ -92,7 +92,7 @@ root.numberFormatter.set("numberFormat", "#,###.0");
 
 series.columns.template.adapters.add("fill", function(fill, target) {
   if (target.dataItem.get("categoryX") == "POLSKA") {
-    if (series.get("name") == "2023"){
+    if (series.get("name") == "2024"){
       return am5.color(0x674EA7);
     }
     else {

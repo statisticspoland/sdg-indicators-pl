@@ -39,40 +39,40 @@ var chart = root.container.children.push(am5xy.XYChart.new(root, {
 
 var data = [{
   "woj": "POLAND",
-  "towns": 59.4,
-  "the rural area": 40.6
+  "towns": 59.3,
+  "the rural area": 40.7
 }, {
   "woj": "Dolnośląskie",
-  "towns": 67.1,
-  "the rural area": 32.9
+  "towns": 66.9,
+  "the rural area": 33.1
 }, {
   "woj": "Kujawsko-Pomorskie",
-  "towns": 57.9,
-  "the rural area": 42.1
+  "towns": 57.7,
+  "the rural area": 42.3
 }, {
   "woj": "Lubelskie",
-  "towns": 46.2,
-  "the rural area": 53.8
+  "towns": 46.4,
+  "the rural area": 53.6
 }, {
   "woj": "Lubuskie",
-  "towns": 64.0,
-  "the rural area": 36.0
+  "towns": 63.9,
+  "the rural area": 36.1
 }, {
   "woj": "Łódzkie",
-  "towns": 61.9,
-  "the rural area": 38.1
+  "towns": 61.8,
+  "the rural area": 38.2
 }, {
   "woj": "Małopolskie",
-  "towns": 47.8,
-  "the rural area": 52.2
+  "towns": 47.9,
+  "the rural area": 52.1
 }, {
   "woj": "Mazowieckie",
-  "towns": 64.8,
-  "the rural area": 35.2
+  "towns": 64.7,
+  "the rural area": 35.3
 }, {
   "woj": "Opolskie",
-  "towns": 52.8,
-  "the rural area": 47.2
+  "towns": 52.6,
+  "the rural area": 47.4
 }, {
   "woj": "Podkarpackie",
   "towns": 41.0,
@@ -87,26 +87,25 @@ var data = [{
   "the rural area": 37.9
 }, {
   "woj": "Śląskie",
-  "towns": 75.7,
-  "the rural area": 24.3
+  "towns": 75.6,
+  "the rural area": 24.4
 }, {
   "woj": "Świętokrzyskie",
   "towns": 45.1,
   "the rural area": 54.9
 }, {
   "woj": "Warmińsko-Mazurskie",
-  "towns": 58.7,
-  "the rural area": 41.3
+  "towns": 58.6,
+  "the rural area": 41.4
 }, {
   "woj": "Wielkopolskie",
-  "towns": 52.9,
-  "the rural area": 47.1
+  "towns": 52.7,
+  "the rural area": 47.3
 }, {
   "woj": "Zachodniopomorskie",
-  "towns": 67.9,
-  "the rural area": 32.1
+  "towns": 67.8,
+  "the rural area": 32.2
 }]
-
 
 
 // Create axes

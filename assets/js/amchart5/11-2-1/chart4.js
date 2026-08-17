@@ -3,21 +3,24 @@ function createchart4(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2023 r.";
+	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2024 r.";
 }
 if (d==1) {
-	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2022 r.";
+	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2023 r.";
 }
 if (d==2) {
-	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2021 r.";
+	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2022 r.";
 }
 if (d==3) {
-	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2020 r.";
+	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2021 r.";
 }
 if (d==4) {
-	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2019 r.";
+	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2020 r.";
 }
 if (d==5) {
+	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2019 r.";
+}
+if (d==6) {
 	document.getElementById("tytuł_4").innerHTML = "Czynne przystanki autobusowe (z trolejbusowymi) i tramwajowe na 10 km<sup>2</sup> w 2018 r.";
 }
 am5.array.each(am5.registry.rootElements,
@@ -33,6 +36,80 @@ am5.array.each(am5.registry.rootElements,
 	function getData(index) {
 		var data = [
 			// Data set #1
+			[{
+			"w1": "2024",
+			"ogółem": 16.3,
+			"city": "Zielona Góra"
+			}, {
+			"w1": "2024",
+			"ogółem": 53.4,
+			"city": "Wrocław"
+			}, {
+			"w1": "2024",
+			"ogółem": 84.4,
+			"city": "Warszawa"
+			}, {
+			"w1": "2024",
+			"ogółem": 69.9,
+			"city": "Toruń"
+			}, {
+			"w1": "2024",
+			"ogółem": 46.8,
+			"city": "Szczecin"
+			}, {
+			"w1": "2024",
+			"ogółem": 50.2,
+			"city": "Rzeszów"
+			}, {
+			"w1": "2024",
+			"ogółem": 54.7,
+			"city": "Poznań"
+			}, {
+			"w1": "2024",
+			"ogółem": 32.3,
+			"city": "Opole"
+			}, {
+			"w1": "2024",
+			"ogółem": 57.6,
+			"city": "Olsztyn"
+			}, {
+			"w1": "2024",
+			"ogółem": 74.3,
+			"city": "Łódź"
+			}, {
+			"w1": "2024",
+			"ogółem": 53.9,
+			"city": "Lublin"
+			}, {
+			"w1": "2024",
+			"ogółem": 60.2,
+			"city": "Kraków"
+			}, {
+			"w1": "2024",
+			"ogółem": 58.5,
+			"city": "Kielce"
+			}, {
+			"w1": "2024",
+			"ogółem": 44.4,
+			"city": "Katowice"
+			}, {
+			"w1": "2024",
+			"ogółem": 48.3,
+			"city": "Gorzów Wielkopolski"
+			}, {
+			"w1": "2024",
+			"ogółem": 18.7,
+			"city": "Gdańsk"
+			}, {
+			"w1": "2024",
+			"ogółem": 56.9,
+			"city": "Bydgoszcz"
+			}, {
+			"w1": "2024",
+			"ogółem": 69.0,
+			"city": "Białystok"
+			}],
+			// data set #2
 			[{
 			"w1": "2023",
 			"ogółem": 14.5,

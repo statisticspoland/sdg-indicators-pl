@@ -120,9 +120,9 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
   //date.setHours(0, 0, 0, 0);
   //value = 0;
 
-  var data1 = [{"date":"2015","value":6.3},{"date":"2016","value":5.6},{"date":"2017","value":6.7},{"date":"2018","value":7.6},{"date":"2019","value":5.8},{"date":"2020","value":5.9},{"date":"2021","value":5.7},{"date":"2022","value":7.1}];
-  var data2 = [{"date":"2015","value":9.1},{"date":"2016","value":5.8},{"date":"2017","value":6.2},{"date":"2018","value":7.3},{"date":"2019","value":6.9},{"date":"2020","value":6.2},{"date":"2021","value":5.9},{"date":"2022","value":6.2}];
-
+  var data1 = [{"date":"2015","value":6.3},{"date":"2016","value":5.6},{"date":"2017","value":6.7},{"date":"2018","value":7.6},{"date":"2019","value":5.8},{"date":"2020","value":5.9},{"date":"2021","value":5.7},{"date":"2022","value":7.1},{"date":"2023","value":10.1},{"date":"2024","value":9.9}];
+  var data2 = [{"date":"2015","value":9.1},{"date":"2016","value":5.8},{"date":"2017","value":6.2},{"date":"2018","value":7.3},{"date":"2019","value":6.9},{"date":"2020","value":6.2},{"date":"2021","value":5.9},{"date":"2022","value":6.2},{"date":"2023","value":7.0},{"date":"2024","value":5.4}];
+  
 
   series1.data.processor = am5.DataProcessor.new(root, {
   dateFormat: "yyyy",

@@ -3,33 +3,36 @@ function createchart7(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2024 (%)";
+	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2025 (%)";
 }
 if (d==1) {
-	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2023 (%)";
+	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2024 (%)";
 }
 if (d==2) {
-	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2022 (%)";
+	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2023 (%)";
 }
 if (d==3) {
-	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2021 (%)";
+	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2022 (%)";
 }
 if (d==4) {
-	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2020 (%)";
+	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2021 (%)";
 }
 if (d==5) {
-	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2019 (%)";
+	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2020 (%)";
 }
 if (d==6) {
-	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2018 (%)";
+	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2019 (%)";
 }
 if (d==7) {
-	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2017 (%)";
+	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2018 (%)";
 }
 if (d==8) {
-	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2016 (%)";
+	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2017 (%)";
 }
 if (d==9) {
+	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2016 (%)";
+}
+if (d==10) {
 	document.getElementById("tytuł_7").innerHTML = "Area of Special Areas of Conservation of habitats in total area in 2015 (%)";
 }
 
@@ -47,6 +50,75 @@ am5.array.each(am5.registry.rootElements,
 	function getData(index) {
 		var data = [
 		// Data set #1
+		[{
+	"w1": "2025",
+	"ogółem": 11.2,
+	"year": "POLAND"
+	}, {
+	"w1": "2025",
+	"ogółem": 17.8,
+	"year": "Dolnośląskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 4.9,
+	"year": "Kujawsko-Pomorskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 6.6,
+	"year": "Lubelskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 14.9,
+	"year": "Lubuskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 3.0,
+	"year": "Łódzkie"
+	}, {
+	"w1": "2025",
+	"ogółem": 10.1,
+	"year": "Małopolskie"
+	},{
+	"w1": "2025",
+	"ogółem": 5.5,
+	"year": "Mazowieckie"
+	}, {
+	"w1": "2025",
+	"ogółem": 3.0,
+	"year": "Opolskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 19.7,
+	"year": "Podkarpackie"
+	}, {
+	"w1": "2025",
+	"ogółem": 26.9,
+	"year": "Podlaskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 10.3,
+	"year": "Pomorskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 7.6,
+	"year": "Śląskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 13.3,
+	"year": "Świętokrzyskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 10.7,
+	"year": "Warmińsko-Mazurskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 8.2,
+	"year": "Wielkopolskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 18.7,
+	"year": "Zachodniopomorskie"
+	}],
 	    [{
 		"w1": "2024",
 		"ogółem": 11.2,
@@ -857,7 +929,7 @@ root.numberFormatter.set("numberFormat", "#,###");
 		  return fill;
 		}
 	  });
-	  
+
     series.data.setAll(getData(d));
 
     // Make stuff animate on load

@@ -118,6 +118,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 264268,
 	"registrations of departure": 228805,
 	"year": "2024"
+	},{
+	"w1": "POLSKA - cities",
+	"registrations for permanent residence": 220727,
+	"registrations of departure": 248608,
+	"year": "2025"
 	}],
     // Data set #2
     [{
@@ -165,6 +170,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 2707,
 	"registrations of departure": 3419,
 	"year": "2024"
+	}, {
+	"w1": "Białystok",
+	"registrations for permanent residence": 2590,
+	"registrations of departure": 3332,
+	"year": "2025"
 	}],
     // Data set #3
     [{
@@ -212,6 +222,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 2512,
 	"registrations of departure": 3603,
 	"year": "2024"
+	}, {
+	"w1": "Bydgoszcz",
+	"registrations for permanent residence": 2473,
+	"registrations of departure": 3437,
+	"year": "2025"
 	}],
     // Data set #4
     [{
@@ -259,6 +274,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 6639,
 	"registrations of departure": 4808,
 	"year": "2024"
+	}, {
+	"w1": "Gdańsk",
+	"registrations for permanent residence": 6303,
+	"registrations of departure": 4779,
+	"year": "2025"
 	}],
     // Data set #5
     [{
@@ -306,6 +326,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 884,
 	"registrations of departure": 1468,
 	"year": "2024"
+	}, {
+	"w1": "Gorzów Wielkopolski",
+	"registrations for permanent residence": 992,
+	"registrations of departure": 1322,
+	"year": "2025"
 	}],
     // Data set #6
     [{
@@ -353,6 +378,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 3388,
 	"registrations of departure": 3355,
 	"year": "2024"
+	}, {
+	"w1": "Katowice",
+	"registrations for permanent residence": 3130,
+	"registrations of departure": 3136,
+	"year": "2025"
 	}],
     // Data set #7
     [{
@@ -400,6 +430,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 1560,
 	"registrations of departure": 2299,
 	"year": "2024"
+	}, {
+	"w1": "Kielce",
+	"registrations for permanent residence": 1444,
+	"registrations of departure": 2037,
+	"year": "2025"
 	}],
     // Data set #8
     [{
@@ -447,6 +482,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 10790,
 	"registrations of departure": 7519,
 	"year": "2024"
+	}, {
+	"w1": "Kraków",
+	"registrations for permanent residence": 12514,
+	"registrations of departure": 6690,
+	"year": "2025"
 	}],
     // Data set #9
     [{
@@ -494,6 +534,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 3656,
 	"registrations of departure": 3913,
 	"year": "2024"
+	}, {
+	"w1": "Lublin",
+	"registrations for permanent residence": 3334,
+	"registrations of departure": 3768,
+	"year": "2025"
 	}],
     // Data set #10
     [{
@@ -541,6 +586,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 4000,
 	"registrations of departure": 5228,
 	"year": "2024"
+	}, {
+	"w1": "Łódź",
+	"registrations for permanent residence": 4074,
+	"registrations of departure": 4832,
+	"year": "2025"
 	}],
     // Data set #11
     [{
@@ -588,6 +638,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 1835,
 	"registrations of departure": 2303,
 	"year": "2024"
+	}, {
+	"w1": "Olsztyn",
+	"registrations for permanent residence": 1875,
+	"registrations of departure": 2172,
+	"year": "2025"
 	}],
     // Data set #12
     [{
@@ -635,6 +690,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 1244,
 	"registrations of departure": 1329,
 	"year": "2024"
+	}, {
+	"w1": "Opole",
+	"registrations for permanent residence": 1048,
+	"registrations of departure": 1245,
+	"year": "2025"
 	}],
     // Data set #13
     [{
@@ -682,6 +742,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 5454,
 	"registrations of departure": 6546,
 	"year": "2024"
+	}, {
+	"w1": "Poznań",
+	"registrations for permanent residence": 5785,
+	"registrations of departure": 6138,
+	"year": "2025"
 	}],
     // Data set #14
     [{
@@ -729,6 +794,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 2753,
 	"registrations of departure": 2285,
 	"year": "2024"
+	}, {
+	"w1": "Rzeszów",
+	"registrations for permanent residence": 2844,
+	"registrations of departure": 2215,
+	"year": "2025"
 	}],
     // Data set #15
     [{
@@ -776,6 +846,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 3246,
 	"registrations of departure": 3757,
 	"year": "2024"
+	}, {
+	"w1": "Szczecin",
+	"registrations for permanent residence": 3147,
+	"registrations of departure": 3498,
+	"year": "2025"
 	}],
     // Data set #16
     [{
@@ -823,6 +898,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 2151,
 	"registrations of departure": 2229,
 	"year": "2024"
+	}, {
+	"w1": "Toruń",
+	"registrations for permanent residence": 2018,
+	"registrations of departure": 1968,
+	"year": "2025"
 	}],
     // Data set #17
     [{
@@ -870,6 +950,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 21796,
 	"registrations of departure": 17406,
 	"year": "2024"
+	}, {
+	"w1": "Warszawa",
+	"registrations for permanent residence": 20321,
+	"registrations of departure": 16589,
+	"year": "2025"
 	}],
     // Data set #18
     [{
@@ -917,6 +1002,11 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 8444,
 	"registrations of departure": 7814,
 	"year": "2024"
+	}, {
+	"w1": "Wrocław",
+	"registrations for permanent residence": 7951,
+	"registrations of departure": 7120,
+	"year": "2025"
 	}],
     // Data set #19
     [{
@@ -964,8 +1054,13 @@ am5.array.each(am5.registry.rootElements,
 	"registrations for permanent residence": 1552,
 	"registrations of departure": 1169,
 	"year": "2024"
+	}, {
+	"w1": "Zielona Góra",
+	"registrations for permanent residence": 1406,
+	"registrations of departure": 1133,
+	"year": "2025"
 	}]
-  ];
+	];
 
   return data[index];
 }

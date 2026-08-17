@@ -3,21 +3,24 @@ function createchart4(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2023";
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2024";
 }
 if (d==1) {
-	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2022";
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2023";
 }
 if (d==2) {
-	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2021";
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2022";
 }
 if (d==3) {
-	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2020";
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2021";
 }
 if (d==4) {
-	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2019";
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2020";
 }
 if (d==5) {
+	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2019";
+}
+if (d==6) {
 	document.getElementById("tytuł_4").innerHTML = "Active bus stops (with trolleybus) and trams<br/>per 10 km<sup>2</sup> in 2018";
 }
 am5.array.each(am5.registry.rootElements,
@@ -33,6 +36,79 @@ am5.array.each(am5.registry.rootElements,
 	function getData(index) {
 		var data = [
 			// Data set #1
+			[{
+			"w1": "2024",
+			"ogółem": 16.3,
+			"city": "Zielona Góra"
+			}, {
+			"w1": "2024",
+			"ogółem": 53.4,
+			"city": "Wrocław"
+			}, {
+			"w1": "2024",
+			"ogółem": 84.4,
+			"city": "Warszawa"
+			}, {
+			"w1": "2024",
+			"ogółem": 69.9,
+			"city": "Toruń"
+			}, {
+			"w1": "2024",
+			"ogółem": 46.8,
+			"city": "Szczecin"
+			}, {
+			"w1": "2024",
+			"ogółem": 50.2,
+			"city": "Rzeszów"
+			}, {
+			"w1": "2024",
+			"ogółem": 54.7,
+			"city": "Poznań"
+			}, {
+			"w1": "2024",
+			"ogółem": 32.3,
+			"city": "Opole"
+			}, {
+			"w1": "2024",
+			"ogółem": 57.6,
+			"city": "Olsztyn"
+			}, {
+			"w1": "2024",
+			"ogółem": 74.3,
+			"city": "Łódź"
+			}, {
+			"w1": "2024",
+			"ogółem": 53.9,
+			"city": "Lublin"
+			}, {
+			"w1": "2024",
+			"ogółem": 60.2,
+			"city": "Kraków"
+			}, {
+			"w1": "2024",
+			"ogółem": 58.5,
+			"city": "Kielce"
+			}, {
+			"w1": "2024",
+			"ogółem": 44.4,
+			"city": "Katowice"
+			}, {
+			"w1": "2024",
+			"ogółem": 48.3,
+			"city": "Gorzów Wielkopolski"
+			}, {
+			"w1": "2024",
+			"ogółem": 18.7,
+			"city": "Gdańsk"
+			}, {
+			"w1": "2024",
+			"ogółem": 56.9,
+			"city": "Bydgoszcz"
+			}, {
+			"w1": "2024",
+			"ogółem": 69.0,
+			"city": "Białystok"
+			}],
 			[{
 			"w1": "2023",
 			"ogółem": 14.5,

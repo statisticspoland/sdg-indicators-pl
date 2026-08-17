@@ -3,33 +3,36 @@ function createchart6(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2024 r.";
+	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2025 r.";
 }
 if (d==1) {
-	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2023 r.";
+	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2024 r.";
 }
 if (d==2) {
-	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2022 r.";
+	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2023 r.";
 }
 if (d==3) {
-	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2021 r.";
+	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2022 r.";
 }
 if (d==4) {
-	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2020 r.";
+	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2021 r.";
 }
 if (d==5) {
-	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2019 r.";
+	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2020 r.";
 }
 if (d==6) {
-	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2018 r.";
+	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2019 r.";
 }
 if (d==7) {
-	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2017 r.";
+	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2018 r.";
 }
 if (d==8) {
-	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2016 r.";
+	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2017 r.";
 }
 if (d==9) {
+	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2016 r.";
+}
+if (d==10) {
 	document.getElementById("tytuł_6").innerHTML = "Liczba pomników przyrody na 100 km<sup>2</sup> w 2015 r.";
 }
 am5.array.each(am5.registry.rootElements,
@@ -45,6 +48,75 @@ am5.array.each(am5.registry.rootElements,
 	function getData(index) {
 		var data = [
 			// Data set #1
+			[{
+			"w1": "2025",
+			"ogółem": 10.9,
+			"city": "Zachodniopomorskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 12.7,
+			"city": "Wielkopolskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 9.6,
+			"city": "Warmińsko-Mazurskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 6.9,
+			"city": "Świętokrzyskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 12.6,
+			"city": "Śląskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 14.8,
+			"city": "Pomorskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 9.8,
+			"city": "Podlaskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 12.8,
+			"city": "Podkarpackie"
+			}, {
+			"w1": "2025",
+			"ogółem": 8.1,
+			"city": "Opolskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 11.4,
+			"city": "Mazowieckie"
+			}, {
+			"w1": "2025",
+			"ogółem": 15.0,
+			"city": "Małopolskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 11.6,
+			"city": "Łódzkie"
+			}, {
+			"w1": "2025",
+			"ogółem": 10.5,
+			"city": "Lubuskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 5.8,
+			"city": "Lubelskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 13.1,
+			"city": "Kujawsko-Pomorskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 13.5,
+			"city": "Dolnośląskie"
+			}, {
+			"w1": "2025",
+			"ogółem": 11.2,
+			"city": "POLSKA"
+			}],
 			[{
 			"w1": "2024",
 			"ogółem": 10.9,

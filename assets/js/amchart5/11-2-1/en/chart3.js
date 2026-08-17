@@ -15,7 +15,7 @@ am5.array.each(am5.registry.rootElements,
 	function getData(index) {
 		var data = [
     // Data set #1
-		[{"w1":"Dolnośląskie","w2":"miejskie","2015":135,"2023":301},{"w1":"Kujawsko-Pomorskie","w2":"miejskie","2015":131,"2023":0},{"w1":"Lubelskie","w2":"miejskie","2015":20,"2023":0},{"w1":"Lubuskie","w2":"miejskie","2015":62,"2023":0},{"w1":"Łódzkie","w2":"miejskie","2015":100,"2023":0},{"w1":"Małopolskie","w2":"miejskie","2015":89,"2023":0},{"w1":"Mazowieckie","w2":"miejskie","2015":476,"2023":10},{"w1":"Opolskie","w2":"miejskie","2015":70,"2023":70},{"w1":"Podkarpackie","w2":"miejskie","2015":60,"2023":0},{"w1":"Podlaskie","w2":"miejskie","2015":50,"2023":35},{"w1":"Pomorskie","w2":"miejskie","2015":220,"2023":60},{"w1":"Śląskie","w2":"miejskie","2015":253,"2023":228},{"w1":"Świętokrzyskie","w2":"miejskie","2015":0,"2023":0},{"w1":"Warmińsko-Mazurskie","w2":"miejskie","2015":313,"2023":0},{"w1":"Wielkopolskie","w2":"miejskie","2015":62,"2023":0},{"w1":"Zachodniopomorskie","w2":"miejskie","2015":51,"2023":48}]
+		[{"w1":"Dolnośląskie","w2":"miejskie","2015":135,"2023":301,"2024":301},{"w1":"Kujawsko-Pomorskie","w2":"miejskie","2015":131,"2023":0,"2024":0},{"w1":"Lubelskie","w2":"miejskie","2015":20,"2023":0,"2024":0},{"w1":"Lubuskie","w2":"miejskie","2015":62,"2023":0,"2024":0},{"w1":"Łódzkie","w2":"miejskie","2015":100,"2023":0,"2024":0},{"w1":"Małopolskie","w2":"miejskie","2015":89,"2023":0,"2024":0},{"w1":"Mazowieckie","w2":"miejskie","2015":476,"2023":10,"2024":10},{"w1":"Opolskie","w2":"miejskie","2015":70,"2023":70,"2024":95},{"w1":"Podkarpackie","w2":"miejskie","2015":60,"2023":0,"2024":0},{"w1":"Podlaskie","w2":"miejskie","2015":50,"2023":35,"2024":30},{"w1":"Pomorskie","w2":"miejskie","2015":220,"2023":60,"2024":59},{"w1":"Śląskie","w2":"miejskie","2015":253,"2023":228,"2024":252},{"w1":"Świętokrzyskie","w2":"miejskie","2015":0,"2023":0,"2024":0},{"w1":"Warmińsko-Mazurskie","w2":"miejskie","2015":313,"2023":0,"2024":64},{"w1":"Wielkopolskie","w2":"miejskie","2015":62,"2023":0,"2024":0},{"w1":"Zachodniopomorskie","w2":"miejskie","2015":51,"2023":48,"2024":9}]
   ];
 
   return data[index];
@@ -112,7 +112,7 @@ root.numberFormatter.set("numberFormat", "#,###");
 
 series.columns.template.adapters.add("fill", function(fill, target) {
   if (target.dataItem.get("categoryX") == "POLAND") {
-    if (series.get("name") == "2023"){
+    if (series.get("name") == "2024"){
       return am5.color(0x674EA7);
     }
     else {

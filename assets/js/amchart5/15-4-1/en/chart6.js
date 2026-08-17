@@ -3,36 +3,38 @@ function createchart6(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2024 (%)";
+	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2025 (%)";
 }
 if (d==1) {
-	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2023 (%)";
+	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2024 (%)";
 }
 if (d==2) {
-	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2022 (%)";
+	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2023 (%)";
 }
 if (d==3) {
-	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2021 (%)";
+	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2022 (%)";
 }
 if (d==4) {
-	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2020 (%)";
+	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2021 (%)";
 }
 if (d==5) {
-	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2019 (%)";
+	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2020 (%)";
 }
 if (d==6) {
-	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2018 (%)";
+	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2019 (%)";
 }
 if (d==7) {
-	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2017 (%)";
+	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2018 (%)";
 }
 if (d==8) {
-	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2016 (%)";
+	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2017 (%)";
 }
 if (d==9) {
+	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2016 (%)";
+}
+if (d==10) {
 	document.getElementById("tytuł_6").innerHTML = "Area of Special Protection Areas of birds in total area in 2015 (%)";
 }
-
 
 am5.array.each(am5.registry.rootElements,
 	function(root) {
@@ -47,6 +49,75 @@ am5.array.each(am5.registry.rootElements,
 	function getData(index) {
 		var data = [
 		// Data set #1
+		[{
+	"w1": "2025",
+	"ogółem": 15.9,
+	"year": "POLSKA"
+	}, {
+	"w1": "2025",
+	"ogółem": 14.9,
+	"year": "Dolnośląskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 8.8,
+	"year": "Kujawsko-Pomorskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 13.4,
+	"year": "Lubelskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 21.0,
+	"year": "Lubuskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 2.2,
+	"year": "Łódzkie"
+	}, {
+	"w1": "2025",
+	"ogółem": 8.8,
+	"year": "Małopolskie"
+	},{
+	"w1": "2025",
+	"ogółem": 12.1,
+	"year": "Mazowieckie"
+	}, {
+	"w1": "2025",
+	"ogółem": 1.5,
+	"year": "Opolskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 28.5,
+	"year": "Podkarpackie"
+	}, {
+	"w1": "2025",
+	"ogółem": 28.7,
+	"year": "Podlaskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 21.9,
+	"year": "Pomorskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 5.1,
+	"year": "Śląskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 1.9,
+	"year": "Świętokrzyskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 23.8,
+	"year": "Warmińsko-Mazurskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 13.7,
+	"year": "Wielkopolskie"
+	}, {
+	"w1": "2025",
+	"ogółem": 30.3,
+	"year": "Zachodniopomorskie"
+	}],
 	    [{
 		"w1": "2024",
 		"ogółem": 15.9,
@@ -857,7 +928,7 @@ root.numberFormatter.set("numberFormat", "#,###");
 		  return fill;
 		}
 	  });
-	  
+
     series.data.setAll(getData(d));
 
     // Make stuff animate on load

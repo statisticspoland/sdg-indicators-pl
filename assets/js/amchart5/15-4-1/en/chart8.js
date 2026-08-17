@@ -100,7 +100,7 @@ function createchart8(div, dane, wymiary){
 
       series.columns.template.adapters.add("fill", function(fill, target) {
         if (target.dataItem.get("categoryY") == "POLAND") {
-          if (series.get("name") == "2023"){
+          if (series.get("name") == "2024"){
             return am5.color(0x674EA7);
           }
           else {
@@ -111,7 +111,7 @@ function createchart8(div, dane, wymiary){
           return fill;
         }
       });
-      
+
       series.data.setAll(dane);
 
       // Make stuff animate on load

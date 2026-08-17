@@ -22,17 +22,49 @@ am5.array.each(am5.registry.rootElements,
 	}
 );
 
-	function getData(index) {
-		var data = [
-    // Data set #1
-    [{"w1":"POLSKA","w2":"ogółem","2015":64.0,"2023":69.9},{"w1":"Dolnośląskie","w2":"ogółem","2015":76.4,"2023":79.9},{"w1":"Kujawsko-Pomorskie","w2":"ogółem","2015":56.6,"2023":65.9},{"w1":"Lubelskie","w2":"ogółem","2015":56.5,"2023":61.9},{"w1":"Lubuskie","w2":"ogółem","2015":50.8,"2023":52.4},{"w1":"Łódzkie","w2":"ogółem","2015":70.7,"2023":78.6},{"w1":"Małopolskie","w2":"ogółem","2015":74.2,"2023":76.9},{"w1":"Mazowieckie","w2":"ogółem","2015":63.9,"2023":71.4},{"w1":"Opolskie","w2":"ogółem","2015":74.9,"2023":79.0},{"w1":"Podkarpackie","w2":"ogółem","2015":74.1,"2023":78.4},{"w1":"Podlaskie","w2":"ogółem","2015":44.5,"2023":50.3},{"w1":"Pomorskie","w2":"ogółem","2015":53.5,"2023":65.8},{"w1":"Śląskie","w2":"ogółem","2015":79.8,"2023":84.7},{"w1":"Świętokrzyskie","w2":"ogółem","2015":70.3,"2023":79.4},{"w1":"Warmińsko-Mazurskie","w2":"ogółem","2015":54.4,"2023":60.7},{"w1":"Wielkopolskie","w2":"ogółem","2015":64.4,"2023":69.1},{"w1":"Zachodniopomorskie","w2":"ogółem","2015":63.8,"2023":67.9}],
-    // Data set #2
-    [{"w1":"POLSKA","w2":"miasto","2015":13.4,"2023":14.5},{"w1":"Dolnośląskie","w2":"miasto","2015":20.9,"2023":21.7},{"w1":"Kujawsko-Pomorskie","w2":"miasto","2015":9.5,"2023":10.2},{"w1":"Lubelskie","w2":"miasto","2015":7.0,"2023":7.8},{"w1":"Lubuskie","w2":"miasto","2015":11.5,"2023":12.0},{"w1":"Łódzkie","w2":"miasto","2015":12.5,"2023":14.0},{"w1":"Małopolskie","w2":"miasto","2015":14.1,"2023":14.4},{"w1":"Mazowieckie","w2":"miasto","2015":12.8,"2023":14.1},{"w1":"Opolskie","w2":"miasto","2015":15.1,"2023":17.6},{"w1":"Podkarpackie","w2":"miasto","2015":12.9,"2023":14.0},{"w1":"Podlaskie","w2":"miasto","2015":6.8,"2023":7.7},{"w1":"Pomorskie","w2":"miasto","2015":12.6,"2023":15.0},{"w1":"Śląskie","w2":"miasto","2015":37.3,"2023":40.0},{"w1":"Świętokrzyskie","w2":"miasto","2015":9.2,"2023":11.6},{"w1":"Warmińsko-Mazurskie","w2":"miasto","2015":8.4,"2023":8.9},{"w1":"Wielkopolskie","w2":"miasto","2015":12.1,"2023":13.4},{"w1":"Zachodniopomorskie","w2":"miasto","2015":14.9,"2023":15.7}],
-    // Data set #3
-    [{"w1":"POLSKA","w2":"wieś","2015":50.6,"2023":55.4},{"w1":"Dolnośląskie","w2":"wieś","2015":55.5,"2023":58.2},{"w1":"Kujawsko-Pomorskie","w2":"wieś","2015":47.1,"2023":55.6},{"w1":"Lubelskie","w2":"wieś","2015":49.5,"2023":54.1},{"w1":"Lubuskie","w2":"wieś","2015":39.3,"2023":40.3},{"w1":"Łódzkie","w2":"wieś","2015":58.2,"2023":64.6},{"w1":"Małopolskie","w2":"wieś","2015":60.0,"2023":62.5},{"w1":"Mazowieckie","w2":"wieś","2015":51.2,"2023":57.3},{"w1":"Opolskie","w2":"wieś","2015":59.8,"2023":61.4},{"w1":"Podkarpackie","w2":"wieś","2015":61.2,"2023":64.4},{"w1":"Podlaskie","w2":"wieś","2015":37.8,"2023":42.7},{"w1":"Pomorskie","w2":"wieś","2015":40.9,"2023":50.9},{"w1":"Śląskie","w2":"wieś","2015":42.5,"2023":44.7},{"w1":"Świętokrzyskie","w2":"wieś","2015":61.1,"2023":67.8},{"w1":"Warmińsko-Mazurskie","w2":"wieś","2015":46.1,"2023":51.8},{"w1":"Wielkopolskie","w2":"wieś","2015":52.2,"2023":55.7},{"w1":"Zachodniopomorskie","w2":"wieś","2015":48.9,"2023":52.2}]
-  ];
+function getData(index) {
+	var data = [
+		// Data set #1
+		[{"w1":"POLSKA","w2":"ogółem","2015":64.0,"2024":71.1},
+		{"w1":"Dolnośląskie","w2":"ogółem","2015":76.4,"2024":81.4},
+		{"w1":"Kujawsko-Pomorskie","w2":"ogółem","2015":56.6,"2024":67.1},
+		{"w1":"Lubelskie","w2":"ogółem","2015":56.5,"2024":63.5},
+		{"w1":"Lubuskie","w2":"ogółem","2015":50.8,"2024":54.8},
+		{"w1":"Łódzkie","w2":"ogółem","2015":70.7,"2024":80.0},
+		{"w1":"Małopolskie","w2":"ogółem","2015":74.2,"2024":77.1},
+		{"w1":"Mazowieckie","w2":"ogółem","2015":63.9,"2024":71.6},
+		{"w1":"Opolskie","w2":"ogółem","2015":74.9,"2024":79.4},
+		{"w1":"Podkarpackie","w2":"ogółem","2015":74.1,"2024":79.8},
+		{"w1":"Podlaskie","w2":"ogółem","2015":44.5,"2024":52.2},
+		{"w1":"Pomorskie","w2":"ogółem","2015":53.5,"2024":67.3},
+		{"w1":"Śląskie","w2":"ogółem","2015":79.8,"2024":85.4},
+		{"w1":"Świętokrzyskie","w2":"ogółem","2015":70.3,"2024":79.7},
+		{"w1":"Warmińsko-Mazurskie","w2":"ogółem","2015":54.4,"2024":61.6},
+		{"w1":"Wielkopolskie","w2":"ogółem","2015":64.4,"2024":70.5},
+		{"w1":"Zachodniopomorskie","w2":"ogółem","2015":63.8,"2024":70.8}],
+		// Data set #2
+		[{"w1":"POLSKA","w2":"miasto","2015":13.4,"2024":14.8},
+		{"w1":"Dolnośląskie","w2":"miasto","2015":20.9,"2024":22.0},
+		{"w1":"Kujawsko-Pomorskie","w2":"miasto","2015":9.5,"2024":11.1},
+		{"w1":"Lubelskie","w2":"miasto","2015":7.0,"2024":8.0},
+		{"w1":"Lubuskie","w2":"miasto","2015":11.5,"2024":12.3},
+		{"w1":"Łódzkie","w2":"miasto","2015":12.5,"2024":14.4},
+		{"w1":"Małopolskie","w2":"miasto","2015":14.1,"2024":14.5},
+		{"w1":"Mazowieckie","w2":"miasto","2015":12.8,"2024":14.3},
+		{"w1":"Opolskie","w2":"miasto","2015":15.1,"2024":17.9},
+		{"w1":"Podkarpackie","w2":"miasto","2015":12.9,"2024":14.0}, 
+		{"w1":"Podlaskie","w2":"miasto","2015":6.8,"2024":7.8},
+		{"w1":"Pomorskie","w2":"miasto","2015":12.6,"2024":15.3},
+		{"w1":"Śląskie","w2":"miasto","2015":37.3,"2024":40.5},
+		{"w1":"Świętokrzyskie","w2":"miasto","2015":9.2,"2024":11.4},
+		{"w1":"Warmińsko-Mazurskie","w2":"miasto","2015":8.4,"2024":9.0},
+		{"w1":"Wielkopolskie","w2":"miasto","2015":12.1,"2024":13.9},
+		{"w1":"Zachodniopomorskie","w2":"miasto","2015":14.9,"2024":16.3}],
+		// Data set #3
+		[{"w1":"POLSKA","w2":"wieś","2015":50.6,"2024":56.2},{"w1":"Dolnośląskie","w2":"wieś","2015":55.5,"2024":59.4},{"w1":"Kujawsko-Pomorskie","w2":"wieś","2015":47.1,"2024":56.1},{"w1":"Lubelskie","w2":"wieś","2015":49.5,"2024":55.4},{"w1":"Lubuskie","w2":"wieś","2015":39.3,"2024":42.5},{"w1":"Łódzkie","w2":"wieś","2015":58.2,"2024":65.5},{"w1":"Małopolskie","w2":"wieś","2015":60.0,"2024":62.6},{"w1":"Mazowieckie","w2":"wieś","2015":51.2,"2024":57.2},{"w1":"Opolskie","w2":"wieś","2015":59.8,"2024":61.5},{"w1":"Podkarpackie","w2":"wieś","2015":61.2,"2024":65.8},{"w1":"Podlaskie","w2":"wieś","2015":37.8,"2024":44.5}, {"w1":"Pomorskie","w2":"wieś","2015":40.9,"2024":52.0},{"w1":"Śląskie","w2":"wieś","2015":42.5,"2024":44.9},{"w1":"Świętokrzyskie","w2":"wieś","2015":61.1,"2024":68.3},{"w1":"Warmińsko-Mazurskie","w2":"wieś","2015":46.1,"2024":52.6},{"w1":"Wielkopolskie","w2":"wieś","2015":52.2,"2024":56.6},{"w1":"Zachodniopomorskie","w2":"wieś","2015":48.9,"2024":54.4}]
+		];
 
-  return data[index];
+return data[index];
 }
 
     // Create root element
@@ -130,7 +162,7 @@ root.numberFormatter.set("numberFormat", "#,###.0");
 
 series.columns.template.adapters.add("fill", function(fill, target) {
   if (target.dataItem.get("categoryX") == "POLSKA") {
-    if (series.get("name") == "2023"){
+    if (series.get("name") == "2024"){
       return am5.color(0x674EA7);
     }
     else {

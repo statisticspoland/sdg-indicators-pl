@@ -3,34 +3,37 @@ function createchart1(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2024 (2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2025 (2015=100)";
 }
 if (d==1) {
-	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2023 (2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2024 (2015=100)";
 }
 if (d==2) {
-	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2022 (2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2023 (2015=100)";
 }
 if (d==3) {
-	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2021 (2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2022 (2015=100)";
 }
 if (d==4) {
-	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2020 (2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2021 (2015=100)";
 }
 if (d==5) {
-	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2019 (2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2020 (2015=100)";
 }
 if (d==6) {
-	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2018 (2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2019 (2015=100)";
 }
 if (d==7) {
-	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2017 (2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2018 (2015=100)";
 }
 if (d==8) {
+	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2017 (2015=100)";
+}
+if (d==9) {
 	document.getElementById("tytuł_1").innerHTML = "Population by place of residence in 2016 (2015=100)";
 }
 
-am5.array.each(am5.registry.rootElements, 
+am5.array.each(am5.registry.rootElements,
 	function(root) {
 		if (typeof root !== "undefined") {
 			if (root.dom.id == div) {
@@ -43,6 +46,79 @@ am5.array.each(am5.registry.rootElements,
 	function getData(index) {
 		var data = [
     // Data set #1
+		[{
+	"w1": "2025",
+	"ogółem": 97.7,
+	"city": "Białystok"
+	}, {
+	"w1": "2025",
+	"ogółem": 90.3,
+	"city": "Bydgoszcz"
+	}, {
+	"w1": "2025",
+	"ogółem": 105.9,
+	"city": "Gdańsk"
+	}, {
+	"w1": "2025",
+	"ogółem": 91.8,
+	"city": "Gorzów Wielkopolski"
+	}, {
+	"w1": "2025",
+	"ogółem": 92.5,
+	"city": "Katowice"
+	}, {
+	"w1": "2025",
+	"ogółem": 90.3,
+	"city": "Kielce"
+	}, {
+	"w1": "2025",
+	"ogółem": 107.3,
+	"city": "Kraków"
+	}, {
+	"w1": "2025",
+	"ogółem": 95.9,
+	"city": "Lublin"
+	}, {
+	"w1": "2025",
+	"ogółem": 91.3,
+	"city": "Łódź"
+	}, {
+	"w1": "2025",
+	"ogółem": 95.4,
+	"city": "Olsztyn"
+	}, {
+	"w1": "2025",
+	"ogółem": 104.7,
+	"city": "Opole"
+	}, {
+	"w1": "2025",
+	"ogółem": 98.5,
+	"city": "Poznań"
+	}, {
+	"w1": "2025",
+	"ogółem": 107.3,
+	"city": "Rzeszów"
+	}, {
+	"w1": "2025",
+	"ogółem": 94.6,
+	"city": "Szczecin"
+	}, {
+	"w1": "2025",
+	"ogółem": 95.1,
+	"city": "Toruń"
+	}, {
+	"w1": "2025",
+	"ogółem": 107.0,
+	"city": "Warszawa"
+	}, {
+	"w1": "2025",
+	"ogółem": 105.8,
+	"city": "Wrocław"
+	}, {
+	"w1": "2025",
+	"ogółem": 99.8,
+	"city": "Zielona Góra"
+	}],
     [{
 	"w1": "2024",
 	"ogółem": 98.1,

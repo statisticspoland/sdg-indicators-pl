@@ -3,34 +3,37 @@ function createchart1(div, yMin, yMax, precyzja, lata, d){
 console.log("ROOT: "+root);
 
 if (d==0) {
-	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2024 r. (rok 2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2025 r. (rok 2015=100)";
 }
 if (d==1) {
-	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2023 r. (rok 2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2024 r. (rok 2015=100)";
 }
 if (d==2) {
-	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2022 r. (rok 2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2023 r. (rok 2015=100)";
 }
 if (d==3) {
-	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2021 r. (rok 2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2022 r. (rok 2015=100)";
 }
 if (d==4) {
-	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2020 r. (rok 2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2021 r. (rok 2015=100)";
 }
 if (d==5) {
-	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2019 r. (rok 2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2020 r. (rok 2015=100)";
 }
 if (d==6) {
-	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2018 r. (rok 2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2019 r. (rok 2015=100)";
 }
 if (d==7) {
-	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2017 r. (rok 2015=100)";
+	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2018 r. (rok 2015=100)";
 }
 if (d==8) {
+	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2017 r. (rok 2015=100)";
+}
+if (d==9) {
 	document.getElementById("tytuł_1").innerHTML = "Dynamika zmian liczby ludności w 2016 r. (rok 2015=100)";
 }
 
-am5.array.each(am5.registry.rootElements, 
+am5.array.each(am5.registry.rootElements,
 	function(root) {
 		if (typeof root !== "undefined") {
 			if (root.dom.id == div) {
@@ -44,78 +47,152 @@ am5.array.each(am5.registry.rootElements,
 		var data = [
     // Data set #1
     [{
-	"w1": "2024",
-	"ogółem": 98.1,
+	"w1": "2025",
+	"ogółem": 97.7,
 	"city": "Białystok"
 	}, {
-	"w1": "2024",
-	"ogółem": 91.1,
+	"w1": "2025",
+	"ogółem": 90.3,
 	"city": "Bydgoszcz"
 	}, {
-	"w1": "2024",
-	"ogółem": 105.7,
+	"w1": "2025",
+	"ogółem": 105.9,
 	"city": "Gdańsk"
 	}, {
-	"w1": "2024",
-	"ogółem": 92.7,
+	"w1": "2025",
+	"ogółem": 91.8,
 	"city": "Gorzów Wielkopolski"
 	}, {
-	"w1": "2024",
-	"ogółem": 93.0,
+	"w1": "2025",
+	"ogółem": 92.5,
 	"city": "Katowice"
 	}, {
-	"w1": "2024",
-	"ogółem": 91.2,
+	"w1": "2025",
+	"ogółem": 90.3,
 	"city": "Kielce"
 	}, {
-	"w1": "2024",
-	"ogółem": 106.3,
+	"w1": "2025",
+	"ogółem": 107.3,
 	"city": "Kraków"
 	}, {
-	"w1": "2024",
-	"ogółem": 96.4,
+	"w1": "2025",
+	"ogółem": 95.9,
 	"city": "Lublin"
 	}, {
-	"w1": "2024",
-	"ogółem": 92.1,
+	"w1": "2025",
+	"ogółem": 91.3,
 	"city": "Łódź"
 	}, {
-	"w1": "2024",
-	"ogółem": 95.9,
+	"w1": "2025",
+	"ogółem": 95.4,
 	"city": "Olsztyn"
 	}, {
-	"w1": "2024",
-	"ogółem": 105.5,
+	"w1": "2025",
+	"ogółem": 104.7,
 	"city": "Opole"
 	}, {
-	"w1": "2024",
-	"ogółem": 98.9,
+	"w1": "2025",
+	"ogółem": 98.5,
 	"city": "Poznań"
 	}, {
-	"w1": "2024",
-	"ogółem": 106.7,
+	"w1": "2025",
+	"ogółem": 107.3,
 	"city": "Rzeszów"
 	}, {
-	"w1": "2024",
-	"ogółem": 95.3,
+	"w1": "2025",
+	"ogółem": 94.6,
 	"city": "Szczecin"
 	}, {
-	"w1": "2024",
-	"ogółem": 95.6,
+	"w1": "2025",
+	"ogółem": 95.1,
 	"city": "Toruń"
 	}, {
-	"w1": "2024",
-	"ogółem": 106.9,
+	"w1": "2025",
+	"ogółem": 107.0,
 	"city": "Warszawa"
 	}, {
-	"w1": "2024",
+	"w1": "2025",
 	"ogółem": 105.8,
 	"city": "Wrocław"
 	}, {
-	"w1": "2024",
-	"ogółem": 100.1,
+	"w1": "2025",
+	"ogółem": 99.8,
 	"city": "Zielona Góra"
 	}],
+	// Data set #2
+	[{
+"w1": "2024",
+"ogółem": 98.1,
+"city": "Białystok"
+}, {
+"w1": "2024",
+"ogółem": 91.1,
+"city": "Bydgoszcz"
+}, {
+"w1": "2024",
+"ogółem": 105.7,
+"city": "Gdańsk"
+}, {
+"w1": "2024",
+"ogółem": 92.7,
+"city": "Gorzów Wielkopolski"
+}, {
+"w1": "2024",
+"ogółem": 93.0,
+"city": "Katowice"
+}, {
+"w1": "2024",
+"ogółem": 91.2,
+"city": "Kielce"
+}, {
+"w1": "2024",
+"ogółem": 106.3,
+"city": "Kraków"
+}, {
+"w1": "2024",
+"ogółem": 96.4,
+"city": "Lublin"
+}, {
+"w1": "2024",
+"ogółem": 92.1,
+"city": "Łódź"
+}, {
+"w1": "2024",
+"ogółem": 95.9,
+"city": "Olsztyn"
+}, {
+"w1": "2024",
+"ogółem": 105.5,
+"city": "Opole"
+}, {
+"w1": "2024",
+"ogółem": 98.9,
+"city": "Poznań"
+}, {
+"w1": "2024",
+"ogółem": 106.7,
+"city": "Rzeszów"
+}, {
+"w1": "2024",
+"ogółem": 95.3,
+"city": "Szczecin"
+}, {
+"w1": "2024",
+"ogółem": 95.6,
+"city": "Toruń"
+}, {
+"w1": "2024",
+"ogółem": 106.9,
+"city": "Warszawa"
+}, {
+"w1": "2024",
+"ogółem": 105.8,
+"city": "Wrocław"
+}, {
+"w1": "2024",
+"ogółem": 100.1,
+"city": "Zielona Góra"
+}],
     // Data set #2
     [{
 	"w1": "2023",
