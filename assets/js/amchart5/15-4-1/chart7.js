@@ -53,7 +53,7 @@ am5.array.each(am5.registry.rootElements,
 		[{
 	"w1": "2025",
 	"ogółem": 11.2,
-	"year": "POLAND"
+	"year": "POLSKA"
 	}, {
 	"w1": "2025",
 	"ogółem": 17.8,
