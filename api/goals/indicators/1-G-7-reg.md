@@ -1,9 +1,9 @@
 ---
-translation_id: 1-G-7
-permalink: /api/regionalne/1/1-G-7.json
+translation_id: 1-G-7-reg
+permalink: /api/globalne/1/1-G-7-reg.json
 sdg_goal: 1
-layout: json_regionalne_goal_indicator
-indicator: "1.G.7"
+layout: json_globalne_goal_indicator
+indicator: "1.G.7.reg"
 zmienne: Polska,Dolnośląskie,Kujawsko-Pomorskie,Lubelskie,Lubuskie,Łódzkie,Małopolskie,Mazowieckie,Opolskie,Podkarpackie,Podlaskie,Pomorskie,Śląskie,Świętokrzyskie,Warmińsko-Mazurskie,Wielkopolskie,Zachodniopomorskie
 kategorie: ogółem
 source_url: www.stat.gov.pl

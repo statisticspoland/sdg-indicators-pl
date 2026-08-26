@@ -1,9 +1,9 @@
 ---
-translation_id: 15-C-2
-permalink: /api/en/regional/15/15-C-2.json
+translation_id: 15-C-2-reg
+permalink: /api/en/global/15/15-C-2-reg.json
 sdg_goal: 15
-layout: json_en_regionalne_goal_indicator
-indicator: "15.C.2"
+layout: json_en_globalne_goal_indicator
+indicator: "15.C.2.reg"
 zmienne: Poland,Dolnośląskie,Kujawsko-Pomorskie,Lubelskie,Lubuskie,Łódzkie,Małopolskie,Mazowieckie,Opolskie,Podkarpackie,Podlaskie,Pomorskie,Śląskie,Świętokrzyskie,Warmińsko-Mazurskie,Wielkopolskie,Zachodniopomorskie
 indicator_variable_1: Polska,Dolnośląskie,Kujawsko-Pomorskie,Lubelskie,Lubuskie,Łódzkie,Małopolskie,Mazowieckie,Opolskie,Podkarpackie,Podlaskie,Pomorskie,Śląskie,Świętokrzyskie,Warmińsko-Mazurskie,Wielkopolskie,Zachodniopomorskie;
 kategorie: voivodships

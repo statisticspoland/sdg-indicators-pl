@@ -1,9 +1,9 @@
 ---
-translation_id: 7-B-1
-permalink: /api/en/regional/7/7-B-1.json
+translation_id: 7-B-1-reg
+permalink: /api/en/global/7/7-B-1-reg.json
 sdg_goal: 7
-layout: json_en_regionalne_goal_indicator
-indicator: "7.B.1"
+layout: json_en_globalne_goal_indicator
+indicator: "7.B.1.reg"
 zmienne: Poland,Dolnośląskie,Kujawsko-Pomorskie,Lubelskie,Lubuskie,Łódzkie,Małopolskie,Mazowieckie,Opolskie,Podkarpackie,Podlaskie,Pomorskie,Śląskie,Świętokrzyskie,Warmińsko-Mazurskie,Wielkopolskie,Zachodniopomorskie
 indicator_variable_1: Polska,Dolnośląskie,Kujawsko-Pomorskie,Lubelskie,Lubuskie,Łódzkie,Małopolskie,Mazowieckie,Opolskie,Podkarpackie,Podlaskie,Pomorskie,Śląskie,Świętokrzyskie,Warmińsko-Mazurskie,Wielkopolskie,Zachodniopomorskie;
 kategorie: voivodships
