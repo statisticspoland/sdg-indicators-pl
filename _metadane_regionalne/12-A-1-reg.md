@@ -1,17 +1,17 @@
 ---
 translation_id: 12-A-1-reg
 pl_title: >-
-  Odpady wytworzone (z wyłączeniem odpadów komunalnych) na 1 mieszkańca
+  Odpady wytworzone (z wyłączeniem odpadów komunalnych) na 1 tys. ludności
 pl_graph_title: >-
-  Odpady wytworzone (z wyłączeniem odpadów komunalnych) na 1 mieszkańca
+  Odpady wytworzone (z wyłączeniem odpadów komunalnych) na 1 tys. ludności
 pl_nazwa_wskaznika: >-
-  <b>12.A.1 Odpady wytworzone (z wyłączeniem odpadów komunalnych) na 1 mieszkańca</b>
+  <b>12.A.1 Odpady wytworzone (z wyłączeniem odpadów komunalnych) na 1 tys. ludności</b>
 en_title: >-
-  Waste generated (excluding municipal waste) per capita
+  Waste generated (excluding municipal waste) per 1 thous. population
 en_graph_title: >-
-  Waste generated (excluding municipal waste) per capita
+  Waste generated (excluding municipal waste) per 1 thous. population
 en_nazwa_wskaznika: >-
-  <b>12.A.1 Waste generated (excluding municipal waste) per capita</b>
+  <b>12.A.1 Waste generated (excluding municipal waste) per 1 thous. population </b>
 pl_cel: Cel 12. Odpowiedzialna konsumpcja i produkcja
 en_cel: Goal 12. Responsible consumption and production
 pl_zadanie: null
@@ -21,9 +21,9 @@ pl_priorytet: >-
 en_priorytet: >-
   Improving the quality and protection of the natural environment through rational waste management
 pl_definicja: >-
-  Łączna masa odpadów wytworzonych w ciągu badanego roku (z wyłączeniem odpadów komunalnych) w przeliczeniu na jednego mieszkańca (według stanu na 30 czerwca badanego roku).
+  Łączna masa odpadów wytworzonych w ciągu badanego roku (z wyłączeniem odpadów komunalnych) w przeliczeniu na tysiąc ludności (według stanu na 30 czerwca badanego roku).
 en_definicja: >-
-  Total weight of waste generated during the surveyed year (excluding municipal waste) per capita (as of 30 June of the surveyed year).
+  Total weight of waste generated during the surveyed year (excluding municipal waste) per thousand population (as of 30 June of the surveyed year).
 pl_jednostka_prezentacji: tona
 en_jednostka_prezentacji: tonne
 pl_dostepne_wymiary: ogółem
