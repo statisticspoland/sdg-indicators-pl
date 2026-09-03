@@ -40,6 +40,54 @@ function createchartScatterParam(div, dane, idx, jez, precyzja, min, baseV){
         obj.Poland_____ = obj.Polska_____;
         delete obj.Polska_____;
       };
+      if (obj.Polska______ !== undefined) {
+        obj.Poland______ = obj.Polska______;
+        delete obj.Polska______;
+      };
+      if (obj.Polska_______ !== undefined) {
+        obj.Poland_______ = obj.Polska_______;
+        delete obj.Polska_______;
+      };
+      if (obj.Polska________ !== undefined) {
+        obj.Poland________ = obj.Polska________;
+        delete obj.Polska________;
+      };
+      if (obj.Polska_________ !== undefined) {
+        obj.Poland_________ = obj.Polska_________;
+        delete obj.Polska_________;
+      };
+      if (obj.Polska__________ !== undefined) {
+        obj.Poland__________ = obj.Polska__________;
+        delete obj.Polska__________;
+      };
+      if (obj.Polska___________ !== undefined) {
+        obj.Poland___________ = obj.Polska___________;
+        delete obj.Polska___________;
+      };
+      if (obj.Polska____________ !== undefined) {
+        obj.Poland____________ = obj.Polska____________;
+        delete obj.Polska____________;
+      };
+      if (obj.Polska_____________ !== undefined) {
+        obj.Poland_____________ = obj.Polska_____________;
+        delete obj.Polska_____________;
+      };
+      if (obj.Polska______________ !== undefined) {
+        obj.Polska______________ = obj.Polska______________;
+        delete obj.Polska______________;
+      };
+      if (obj.Polska_______________ !== undefined) {
+        obj.Polska_______________ = obj.Polska_______________;
+        delete obj.Polska_______________;
+      };
+      if (obj.Polska________________ !== undefined) {
+        obj.Polska________________ = obj.Polska________________;
+        delete obj.Polska________________;
+      };
+      if (obj.Polska_________________ !== undefined) {
+        obj.Polska_________________ = obj.Polska_________________;
+        delete obj.Polska_________________;
+      };
     });
     };
 
@@ -301,13 +349,13 @@ for(const w of wojToSerie){
     const format = "#." + "0".repeat(precyzja);
     //console.log(format);
     var series2 = chart.series.push(am5xy.LineSeries.new(root, {
-      name: w.replace('_','').replace('_','').replace('_','').replace('_','').replace('_',''),
+      name: w.replaceAll('_',''),
       xAxis: xAxis,
       yAxis: yAxis,
       valueYField: w,
       valueXField: "year",
       legendLabelText: "{name}: " + `{valueY.formatNumber('${format}')}`,
-      stroke: am5.color(wojColors[w])
+      stroke: am5.color(wojColors[w.replaceAll('_','')])
       /*tooltip: am5.Tooltip.new(root, {
         pointerOrientation: "horizontal",
         labelText: w.replace('_','').replace('_','')+": {valueY}"
@@ -316,12 +364,12 @@ for(const w of wojToSerie){
 
     var tooltip = am5.Tooltip.new(root, {
       pointerOrientation: "horizontal",
-      labelText: w.replace('_','').replace('_','').replace('_','').replace('_','').replace('_','') + ": " + `{valueY.formatNumber('${format}')}`,
+      labelText: w.replaceAll('_','') + ": " + `{valueY.formatNumber('${format}')}`,
       getFillFromSprite: false
     });
 
     tooltip.get("background").setAll({
-      fill: am5.color(wojColors[w])
+      fill: am5.color(wojColors[w.replaceAll('_','')])
     });
 
     series2.set("tooltip", tooltip);
@@ -336,10 +384,10 @@ for(const w of wojToSerie){
 
     // Add bullet
     // https://www.amcharts.com/docs/v5/charts/xy-chart/series/#Bullets
-    if (w === "Polska" || w === "Poland" || w === "Polska_" || w === "Poland_" || w === "Polska__" || w === "Poland__" || w === "Polska___" || w === "Poland___" || w === "Polska____" || w === "Poland____" || w === "Polska_____" || w === "Poland_____"){
+    if (w.replaceAll('_','') === "Polska" || w.replaceAll('_','') === "Poland"){// || w === "Polska_" || w === "Poland_" || w === "Polska__" || w === "Poland__"){
         series2.bullets.push(function() {
           var graphics = am5.Triangle.new(root, {
-            fill: am5.color(wojColors[w]),
+            fill: am5.color(wojColors[w.replaceAll('_','')]),
             width: 15,
             height: 13
           });
@@ -351,7 +399,7 @@ for(const w of wojToSerie){
       else{
         series2.bullets.push(function() {
           var graphics = am5.Circle.new(root, {
-            fill: am5.color(wojColors[w]),
+            fill: am5.color(wojColors[w.replaceAll('_','')]),
             radius: 7
           });
           return am5.Bullet.new(root, {

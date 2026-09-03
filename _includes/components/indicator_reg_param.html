@@ -44,7 +44,9 @@
  -->
           {% if id_map == '1-g-2' %}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-            <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+            <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+            <option style="font-family: Fira Sans" value="2024" >2024</option>
+            <option style="font-family: Fira Sans" value="2023" >2023</option>
             <option style="font-family: Fira Sans" value="2022">2022</option>
             <option style="font-family: Fira Sans" value="2021">2021</option>
             <option style="font-family: Fira Sans" value="2020">2020</option>
@@ -63,9 +65,11 @@
             <option style="font-family: Fira Sans" value="2020">2020</option>
             <option style="font-family: Fira Sans" value="2019">2019</option>
           </select>
-          {% elsif id_map == '6-b-1' or id_map == '6-d-5' %}
+          {% elsif id_map == '6-b-1' or id_map == '6-c-6' or id_map == '6-d-5' %}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-            <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+            <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+            <option style="font-family: Fira Sans" value="2024">2024</option>
+            <option style="font-family: Fira Sans" value="2023">2023</option>
             <option style="font-family: Fira Sans" value="2022">2022</option>
             <option style="font-family: Fira Sans" value="2021">2021</option>
             <option style="font-family: Fira Sans" value="2020">2020</option>
@@ -98,7 +102,7 @@
             <option style="font-family: Fira Sans" value="2011">2011</option>
             <option style="font-family: Fira Sans" value="2010">2010</option>
           </select>
-          {% elsif id_map == '6-e-1' or id_map == '6-c-6' %}
+          {% elsif id_map == '6-e-1' %}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
             <option style="font-family: Fira Sans" value="2024" selected>2024</option>
             <option style="font-family: Fira Sans" value="2023">2023</option>
@@ -119,7 +123,8 @@
           </select>
           {% elsif id_map == '6-d-4'%}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+            <option style="font-family: Fira Sans" value="2024">2024</option>
             <option style="font-family: Fira Sans" value="2023">2023</option>
             <option style="font-family: Fira Sans" value="2022">2022</option>
             <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -132,7 +137,8 @@
           </select>
           {% elsif id_map == '8-c-1' or id_map == '8-d-4' %}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+            <option style="font-family: Fira Sans" value="2024">2024</option>
             <option style="font-family: Fira Sans" value="2023">2023</option>
             <option style="font-family: Fira Sans" value="2022">2022</option>
             <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -142,7 +148,8 @@
           </select>
           {% elsif id_map == '11-d-2' %}
           <select id="yearBox" onchange="wyborYear()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-            <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+            <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+            <option style="font-family: Fira Sans" value="2024" >2024</option>
             <option style="font-family: Fira Sans" value="2023">2023</option>
             <option style="font-family: Fira Sans" value="2022">2022</option>
             <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -179,6 +186,17 @@
               <option style="font-family: Fira Sans" value="2011">2011</option>
               <option style="font-family: Fira Sans" value="2010">2010</option>
             </select>
+
+          {% elsif id_map == '14-a-3'  or id_map == '14-a-4' %}
+            <select id="yearBox" onchange="wyborYear()" name="year-name"
+                style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+                <option style="font-family: Fira Sans" value="2024">2024</option>
+                <option style="font-family: Fira Sans" value="2023">2023</option>
+                <option style="font-family: Fira Sans" value="2022">2022</option>
+                <option style="font-family: Fira Sans" value="2021">2021</option>
+                <option style="font-family: Fira Sans" value="2020">2020</option>
+              </select>
           {% elsif id_map == '14-c-3' %}
           <select id="yearBox" onchange="wyborYear()" name="year-name"
               style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
@@ -366,15 +384,62 @@
           </select>
         {% endif %}
 
+    {% elsif id_map == '14-a-3' %}
+        {% if language == 'pl' %}
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans;font-size: 14px;" value="BZT5" selected>BZT5</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="ChZT-CR">ChZT-CR</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="Azot ogólny">Azot ogólny</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="Azot azotanowy">Azot azotanowy</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="Azot organiczny">Azot organiczny</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor ogólny">Fosfor ogólny</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor fosforanowy">Fosfor fosforanowy</option>
+          </select>
+        {% else %}
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+            <option style="font-family: Fira Sans;font-size: 14px;" value="BZT5" selected>BOD5</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="ChZT-CR">COD test using chromium</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="Azot ogólny">Total nitrogen</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="Azot azotanowy">Nitrate nitrogen</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="Azot organiczny">Organic nitrogen</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor ogólny">Total phosphorus</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor fosforanowy">Phoshorate phosphorus</option>
+          </select>
+        {% endif %}
+
+
+        {% elsif id_map == '14-a-4' %}
+        {% if language == 'pl' %}
+          <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Cynk" selected>Cynk</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Miedź">Miedź</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Ołów">Ołów</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Kadm">Kadm</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Chrom">Chrom</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Nikiel">Nikiel</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Rtęć">Rtęć</option>
+                </select>
+              {% else %}
+              <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Cynk" selected>Zinc</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Miedź">Copper</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Ołów">Lead</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Kadm">Cadmium</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Chrom">Chromium</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Nikiel">Nickel</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Rtęć">Mercury</option>
+                </select>
+              {% endif %}
+
     {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
         {% if language == 'pl' %}
           <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-            <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">przyjazdy</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy" selected>przyjazdy</option>
             <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">wyjazdy</option>
           </select>
         {% else %}
           <select id="paramBox" onchange="wyborParam()" name="param-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
-            <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy">arrivals</option>
+            <option style="font-family: Fira Sans;font-size: 14px;" value="przyjazdy" selected>arrivals</option>
             <option style="font-family: Fira Sans;font-size: 14px;" value="wyjazdy">departures</option>
           </select>
         {% endif %}
@@ -570,8 +635,16 @@
 
   };
 
-  {% if id_map == '5-a-9' or id_map == '6-a-2' or id_map == '6-e-1' or id_map == '6-c-6' or id_map == '8-c-1' or id_map == '8-d-4' or id_map == '11-d-2'  or id_map == '13-c-4' or id_map == '12-e-2' %}
+  {% if id_map == '5-a-9' or id_map == '6-a-2' or id_map == '6-e-1' or id_map == '13-c-4' or id_map == '12-e-2' %}
   loadDataAndRenderMap("2024","ogółem");
+
+  {% elsif id_map == '1-g-2'  or id_map == '6-b-1' or id_map == '6-c-6' or id_map == '6-d-4' or id_map == '6-d-5' or id_map == '8-c-1' or id_map == '8-d-4' or id_map == '11-d-2') %}
+  loadDataAndRenderMap("2025","ogółem");
+
+  {% elsif id_map == '14-a-3' %}
+  loadDataAndRenderMap("2025","BZT5");
+  {% elsif id_map == '14-a-4' %}
+  loadDataAndRenderMap("2025","Cynk");
   {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
   loadDataAndRenderMap("2025","przyjazdy");
   {% elsif id_map == '14-c-5' %}
@@ -695,7 +768,21 @@
     "przyjazdy": "przyjazdy",
     "wyjazdy": "wyjazdy",
     "załadunek łącznie z tranzytem": "załadunek łącznie z tranzytem",
-    "wyładunek łącznie z tranzytem": "wyładunek łącznie z tranzytem"
+    "wyładunek łącznie z tranzytem": "wyładunek łącznie z tranzytem",
+    "BZT5": "BZT5",
+    "ChZT-CR": "ChZT-CR",
+    "Azot ogólny": "Azot ogólny",
+    "Azot azotanowy": "Azot azotanowy",
+    "Azot organiczny": "Azot organiczny",
+    "Fosfor ogólny": "Fosfor ogólny",
+    "Fosfor fosforanowy": "Fosfor fosforanowy",
+    "Cynk": "Cynk",
+    "Miedź": "Miedź",
+    "Ołów": "Ołów",
+    "Kadm": "Kadm",
+    "Chrom": "Chrom",
+    "Nikiel": "Nikiel",
+    "Rtęć": "Rtęć"
   },
   en: {
     "ogółem": "total",
@@ -708,7 +795,21 @@
     "przyjazdy": "arrivals",
     "wyjazdy": "departures",
     "załadunek łącznie z tranzytem": "loading including transit",
-    "wyładunek łącznie z tranzytem": "unloading including transit"
+    "wyładunek łącznie z tranzytem": "unloading including transit",
+    "BZT5": "BOD5",
+    "ChZT-CR": "COD test using chromium",
+    "Azot ogólny": "Total nitrogen",
+    "Azot azotanowy": "Nitrate nitrogen",
+    "Azot organiczny": "Organic nitrogen",
+    "Fosfor ogólny": "Total phosphorus",
+    "Fosfor fosforanowy": "Phoshorate phosphorus",
+    "Cynk": "Zinc",
+    "Miedź": "Copper",
+    "Ołów": "Lead",
+    "Kadm": "Cadmium",
+    "Chrom": "Chromium",
+    "Nikiel": "Nickel",
+    "Rtęć": "Mercury"
   }
   };
 
@@ -1015,7 +1116,9 @@
       </select>
       {% elsif id_map == '1-g-2' %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
-        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+        <option style="font-family: Fira Sans" value="2024" >2024</option>
+        <option style="font-family: Fira Sans" value="2023" >2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
         <option style="font-family: Fira Sans" value="2020">2020</option>
@@ -1034,9 +1137,11 @@
         <option style="font-family: Fira Sans" value="2020">2020</option>
         <option style="font-family: Fira Sans" value="2019">2019</option>
       </select>
-      {% elsif id_map == '6-b-1' or id_map == '6-d-5' %}
+      {% elsif id_map == '6-b-1' or id_map == '6-c-6' or id_map == '6-d-5' %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
-        <option style="font-family: Fira Sans" value="2023" selected>2023</option>
+        <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+        <option style="font-family: Fira Sans" value="2024">2024</option>
+        <option style="font-family: Fira Sans" value="2023">2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
         <option style="font-family: Fira Sans" value="2020">2020</option>
@@ -1069,7 +1174,7 @@
         <option style="font-family: Fira Sans" value="2011">2011</option>
         <option style="font-family: Fira Sans" value="2010">2010</option>
       </select>
-      {% elsif id_map == '6-e-1' or id_map == '6-c-6' %}
+      {% elsif id_map == '6-e-1'  %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2024" selected>2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
@@ -1089,7 +1194,8 @@
       </select>
       {% elsif id_map == '6-d-4'%}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
-        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+        <option style="font-family: Fira Sans" value="2024" >2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -1102,7 +1208,8 @@
       </select>
       {% elsif id_map == '8-c-1' or id_map == '8-d-4' %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
-        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+        <option style="font-family: Fira Sans" value="2024">2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -1113,7 +1220,8 @@
 
       {% elsif id_map == '11-d-2' %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
-        <option style="font-family: Fira Sans" value="2024" selected>2024</option>
+        <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+        <option style="font-family: Fira Sans" value="2024">2024</option>
         <option style="font-family: Fira Sans" value="2023">2023</option>
         <option style="font-family: Fira Sans" value="2022">2022</option>
         <option style="font-family: Fira Sans" value="2021">2021</option>
@@ -1149,6 +1257,15 @@
         <option style="font-family: Fira Sans" value="2011">2011</option>
         <option style="font-family: Fira Sans" value="2010">2010</option>
         </select>
+        {% elsif id_map == '14-a-3'  or id_map == '14-a-4' %}
+        <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
+              <option style="font-family: Fira Sans" value="2025" selected>2025</option>
+              <option style="font-family: Fira Sans" value="2024">2024</option>
+              <option style="font-family: Fira Sans" value="2023">2023</option>
+              <option style="font-family: Fira Sans" value="2022">2022</option>
+              <option style="font-family: Fira Sans" value="2021">2021</option>
+              <option style="font-family: Fira Sans" value="2020">2020</option>
+            </select>
       {% elsif id_map == '14-c-3' %}
       <select id="yearBoxBar" onchange="updateChartBar()" name="year-name" style="padding: 5px; max-width: 150px; display: inline; height: 35px; color: rgb(51,51,51);margin-right: 5px;font-size: 14px;">
         <option style="font-family: Fira Sans" value="2025" selected>2025</option>
@@ -1568,6 +1685,56 @@
           </select>
       {% endif %}
       </div>
+
+      {% elsif id_map == '14-a-3' %}
+      <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+      {% if language == 'pl' %}
+        <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
+              <option style="font-family: Fira Sans;font-size: 14px;" value="BZT5" selected>BZT5</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="ChZT-CR">ChZT-CR</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot ogólny">Azot ogólny</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot azotanowy">Azot azotanowy</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot organiczny">Azot organiczny</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor ogólny">Fosfor ogólny</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor fosforanowy">Fosfor fosforanowy</option>
+            </select>
+          {% else %}
+          <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
+              <option style="font-family: Fira Sans;font-size: 14px;" value="BZT5" selected>BOD5</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="ChZT-CR">COD test using chromium</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot ogólny">Total nitrogen</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot azotanowy">Nitrate nitrogen</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot organiczny">Organic nitrogen</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor ogólny">Total phosphorus</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor fosforanowy">Phoshorate phosphorus</option>
+            </select>
+          {% endif %}
+          </div>
+
+          {% elsif id_map == '14-a-4' %}
+          <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
+          {% if language == 'pl' %}
+            <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Cynk" selected>Cynk</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Miedź">Miedź</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Ołów">Ołów</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Kadm">Kadm</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Chrom">Chrom</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Nikiel">Nikiel</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Rtęć">Rtęć</option>
+                </select>
+              {% else %}
+              <select id="paramBoxBar" onchange="updateChartBar()" name="param-name" style="padding: 5px; width: 420px; display: inline; height: 35px; color: rgb(51,51,51); font-size: 14px; overflow: hidden; text-overflow: ellipsis; padding-right: 30px;">
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Cynk" selected>Zinc</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Miedź">Copper</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Ołów">Lead</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Kadm">Cadmium</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Chrom">Chromium</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Nikiel">Nickel</option>
+                  <option style="font-family: Fira Sans;font-size: 14px;" value="Rtęć">Mercury</option>
+                </select>
+              {% endif %}
+              </div>
       {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
       <div id="chooseParamBar" style="display: inline-flex;margin-right: 5px;position: absolute;top: 0;left: 410px;">
           {% if language == 'pl' %}
@@ -1921,6 +2088,56 @@
           </select>
       {% endif %}
       </div>
+  {% elsif id_map == '14-a-3' %}
+      <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+          {% if language == 'pl' %}
+            <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans;font-size: 14px;" value="BZT5" selected>BZT5</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="ChZT-CR">ChZT-CR</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot ogólny">Azot ogólny</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot azotanowy">Azot azotanowy</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot organiczny">Azot organiczny</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor ogólny">Fosfor ogólny</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor fosforanowy">Fosfor fosforanowy</option>
+            </select>
+          {% else %}
+          <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+              <option style="font-family: Fira Sans;font-size: 14px;" value="BZT5" selected>BOD5</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="ChZT-CR">COD test using chromium</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot ogólny">Total nitrogen</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot azotanowy">Nitrate nitrogen</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Azot organiczny">Organic nitrogen</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor ogólny">Total phosphorus</option>
+              <option style="font-family: Fira Sans;font-size: 14px;" value="Fosfor fosforanowy">Phoshorate phosphorus</option>
+            </select>
+          {% endif %}
+            </div>
+
+          {% elsif id_map == '14-a-4' %}
+          <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
+              {% if language == 'pl' %}
+                <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Cynk" selected>Cynk</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Miedź">Miedź</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Ołów">Ołów</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Kadm">Kadm</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Chrom">Chrom</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Nikiel">Nikiel</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Rtęć">Rtęć</option>
+                  </select>
+                {% else %}
+                <select id="paramBoxLine" onchange="updateChartLine()" name="param-name" style="padding: 5px; width: 150px; display: inline; height: 35px; color: rgb(51,51,51);font-size: 14px;">
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Cynk" selected>Zinc</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Miedź">Copper</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Ołów">Lead</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Kadm">Cadmium</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Chrom">Chromium</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Nikiel">Nickel</option>
+                    <option style="font-family: Fira Sans;font-size: 14px;" value="Rtęć">Mercury</option>
+                  </select>
+                {% endif %}
+                </div>
+
       {% elsif id_map == '14-c-3' or id_map == '14-c-4' %}
       <div id="chooseParamBLine" style="display: inline-flex;margin-right: 5px;left: 242px;position: relative;">
           {% if language == 'pl' %}
@@ -2192,7 +2409,7 @@
         delete row["Polska"];
       });
 
-      if('{{ id_map }}' == '17-a-1' || '{{ id_map }}' == '6-a-2'){
+      if('{{ id_map }}' == '17-a-1' || '{{ id_map }}' == '6-a-2' || '{{ id_map }}' == '14-a-3' || '{{ id_map }}' == '14-a-4'){
         createchartScatterParam("chartLine",  data.slice(1), undefined, "{{ language }}", "{{ precyzja }}", 0);
       }
       else{
@@ -2251,6 +2468,16 @@
             }
             else if('{{ id_map }}' == '14-c-5'){
               if(i.PARAM == "załadunek łącznie z tranzytem"){
+                data3.push(i);
+              }
+            }
+            else if('{{ id_map }}' == '14-a-3'){
+              if(i.PARAM == "BZT5"){
+                data3.push(i);
+              }
+            }
+            else if('{{ id_map }}' == '14-a-4'){
+              if(i.PARAM == "Cynk"){
                 data3.push(i);
               }
             }
@@ -2384,6 +2611,12 @@ function updateChartBar(){
 
     if('{{ id_map }}' == '14-c-3' || '{{ id_map }}' == '14-c-4'){
       selectParam.value = "przyjazdy";
+    }
+    else if('{{ id_map }}' == '14-a-3'){
+      selectParam.value = "BZT5";
+    }
+    else if('{{ id_map }}' == '14-a-4'){
+      selectParam.value = "Cynk";
     }
     else if('{{ id_map }}' == '14-c-5'){
       selectParam.value = "załadunek łącznie z tranzytem";
@@ -2545,31 +2778,31 @@ function updateChartLine(){
 
   checkboxes.forEach((cb,i) => {
     if (cb.checked && cb.value !== 'all') {
-      if(selectedLine === "ogółem" || selectedLine === "przyjazdy" || selectedLine === "załadunek łącznie z tranzytem" || selectedLine === "plan gospodarki niskoemisyjnej" ){
+      if(selectedLine === "ogółem" || selectedLine === "przyjazdy" || selectedLine === "BZT5" || selectedLine === "Cynk" || selectedLine === "załadunek łącznie z tranzytem" || selectedLine === "plan gospodarki niskoemisyjnej" ){
         checkedValues.push(cb.value);
         /*tr[i].style.display = '';*/
       }
-      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej" || selectedLine === "anestezjologia i intensywna terapia"){
+      if(selectedLine === "miasto" || selectedLine === "mężczyźni" || selectedLine === "ChZT-CR" || selectedLine === "Miedź" || selectedLine === "ujęcia i doprowadzenia wody" || selectedLine === "służące ochronie środowiska" || selectedLine === "wyjazdy" || selectedLine === "wyładunek łącznie z tranzytem" || selectedLine === "lokalny program rozwoju ekonomii społecznej" || selectedLine === "anestezjologia i intensywna terapia"){
         checkedValues.push(cb.value+"_");
         /*tr[i+17].style.display = '';*/
       }
-      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine === "budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej" || selectedLine === "program ochrony środowiska" || selectedLine === "chirurgia" ){
+      if(selectedLine === "wieś" || selectedLine === "kobiety" || selectedLine === "Azot ogólny" || selectedLine === "Ołów" || selectedLine === "budowa i modernizacja stacji uzdatniania wody" || selectedLine === "służące gospodarce wodnej" || selectedLine === "program ochrony środowiska" || selectedLine === "chirurgia" ){
         checkedValues.push(cb.value+"__");
         /*tr[i+17].style.display = '';*/
       }
-      if(selectedLine === "roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" || selectedLine === "choroby płuc"){
+      if(selectedLine === "roczny program współpracy z organizacjami pozarządowymi i innymi podmiotami prowadzącymi działalność pożytku publicznego" || selectedLine === "Azot azotanowy"  || selectedLine === "Kadm" || selectedLine === "choroby płuc"){
         checkedValues.push(cb.value+"___");
         /*tr[i+17].style.display = '';*/
       }
-      if(selectedLine === "strategia rozwoju gminy" || selectedLine === "choroby wewnętrzne"){
+      if(selectedLine === "strategia rozwoju gminy" || selectedLine === "choroby wewnętrzne" || selectedLine === "Azot organiczny" || selectedLine === "Chrom" ){
         checkedValues.push(cb.value+"____");
         /*tr[i+17].style.display = '';*/
       }
-      if(selectedLine === "strategia rozwiązywania problemów społecznych" || selectedLine === "dermatologia i wenerologia"){
+      if(selectedLine === "strategia rozwiązywania problemów społecznych" || selectedLine === "dermatologia i wenerologia" || selectedLine === "Fosfor ogólny" || selectedLine === "Nikiel" ){
         checkedValues.push(cb.value+"_____");
         /*tr[i+17].style.display = '';*/
       }
-      if(selectedLine === "kardiologia"){
+      if(selectedLine === "kardiologia" || selectedLine === "Fosfor fosforanowy"  || selectedLine === "Rtęć" ){
         checkedValues.push(cb.value+"______");
         /*tr[i+17].style.display = '';*/
       }
@@ -2657,6 +2890,12 @@ function updateChartLine(){
     if('{{ id_map }}' == '14-c-3' || '{{ id_map }}' == '14-c-4'){
       selectParam.value = "przyjazdy";
     }
+    else if('{{ id_map }}' == '14-a-3'){
+      selectParam.value = "BZT5";
+    }
+    else if('{{ id_map }}' == '14-a-4'){
+      selectParam.value = "Cynk";
+    }
     else if('{{ id_map }}' == '17-a-1'){
       selectParam.value = "plan gospodarki niskoemisyjnej";
     }
@@ -2691,7 +2930,7 @@ function updateChartLine(){
       });
       //console.log("data2_forEach_line");
       //console.log(data2);
-      if('{{ id_map }}' == '17-a-1' || '{{ id_map }}' == '6-a-2'){
+      if('{{ id_map }}' == '17-a-1' || '{{ id_map }}' == '6-a-2' || '{{ id_map }}' == '14-a-3' || '{{ id_map }}' == '14-a-4'){
         createchartScatterParam("chartLine",  data2.slice(1), paramBoxLine.selectedIndex, "{{ language }}", "{{ precyzja }}", 0);
       }
       else{
