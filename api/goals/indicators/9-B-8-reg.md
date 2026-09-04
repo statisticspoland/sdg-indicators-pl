@@ -1,9 +1,9 @@
 ---
-translation_id: 9-B-8-reg
-permalink: /api/globalne/9/9-B-8-reg.json
+translation_id: 9-B-8
+permalink: /api/regionalne/9/9-B-8.json
 sdg_goal: 9
-layout: json_globalne_goal_indicator
-indicator: "9.B.8.reg"
+layout: json_regionalne_goal_indicator
+indicator: "9.B.8"
 zmienne: Polska,Dolnośląskie,Kujawsko-Pomorskie,Lubelskie,Lubuskie,Łódzkie,Małopolskie,Mazowieckie,Opolskie,Podkarpackie,Podlaskie,Pomorskie,Śląskie,Świętokrzyskie,Warmińsko-Mazurskie,Wielkopolskie,Zachodniopomorskie
 kategorie: województwa
 source_url: www.stat.gov.pl

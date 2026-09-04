@@ -1,9 +1,9 @@
 ---
-translation_id: 10-A-4-reg
-permalink: /api/globalne/10/10-A-4-reg.json
+translation_id: 10-A-4
+permalink: /api/regionalne/10/10-A-4.json
 sdg_goal: 10
-layout: json_globalne_goal_indicator
-indicator: "10.A.4.reg"
+layout: json_regionalne_goal_indicator
+indicator: "10.A.4"
 zmienne: Polska,Dolnośląskie,Kujawsko-Pomorskie,Lubelskie,Lubuskie,Łódzkie,Małopolskie,Mazowieckie,Opolskie,Podkarpackie,Podlaskie,Pomorskie,Śląskie,Świętokrzyskie,Warmińsko-Mazurskie,Wielkopolskie,Zachodniopomorskie
 kategorie: województwa
 source_url: www.stat.gov.pl
