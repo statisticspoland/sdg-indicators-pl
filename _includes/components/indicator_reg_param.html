@@ -2758,6 +2758,11 @@
               maxValue = 1.8;
               marg = 0;
               break;
+            case '14-a-3' :
+              maxValue = 140;
+              marg = 0;
+              break;
+
             case '15-a-3' :
               maxValue = 1.8;
               marg = 0;
@@ -2949,6 +2954,58 @@ function updateChartBar(){
               case '13-d-7':
                 maxValue=10;
                 marg=0;
+                break;
+              case '14-a-3' :
+                if(selectedParam == "BZT5"){
+                  maxValue = 140;
+                  marg = 0;
+                }
+                else if(selectedParam == "Azot ogólny"){
+                  maxValue = 140;
+                  marg = 0;
+                }
+                else if(selectedParam == "Azot azotanowy"){
+                  maxValue = 90;
+                  marg = 0;
+                }
+                else if(selectedParam == "Azot organiczny"){
+                  maxValue = 35;
+                  marg = 0;
+                }
+                else if(selectedParam == "Fosfor ogólny"){
+                  maxValue = 7;
+                  marg = 0;
+                }
+                else if(selectedParam == "Fosfor fosforanowy"){
+                  maxValue = 90;
+                  marg = 0;
+                }
+                break;
+              case '14-a-4' :
+                if(selectedParam == "Miedź"){
+                  maxValue = 70;
+                  marg = 0;
+                }
+                else if(selectedParam == "Ołów"){
+                  maxValue = 13;
+                  marg = 0;
+                }
+                else if(selectedParam == "Kadm"){
+                  maxValue = 1;
+                  marg = 0;
+                }
+                else if(selectedParam == "Chrom"){
+                  maxValue = 5;
+                  marg = 0;
+                }
+                else if(selectedParam == "Nikiel"){
+                  maxValue = 90;
+                  marg = 0;
+                }
+                else if(selectedParam == "Rtęć"){
+                  maxValue = 0.5;
+                  marg = 0;
+                }
                 break;
               case '15-a-3' :
                 if (selectedParam === "ogółem") {
