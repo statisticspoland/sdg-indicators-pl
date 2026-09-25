@@ -250,6 +250,22 @@ permalink: /o_sdg/
 
 <hr style="margin-top: 0px;">
 
+  <div class="image-wrapper" style="height: 220px;">
+    <a target="_blank" href="https://publikacje.new.stat.gov.pl/file/228134/download" alt="Realizacja SDG w Polsce. Pomiar postępów" title="Zapoznaj się z publikacją Realizacja SDG w Polsce. Pomiar postępów"><img src="{{ site.baseurl }}/assets/img/publikacje/18_realizacja_sdg_w_polsce_pl.png" align="center" alt="Realizacja SDG w Polsce. Pomiar postępów" border="0"/></a>
+  </div>
+
+  <p><b>Realizacja SDG w Polsce. Pomiar postępów</b></p>
+
+  <p>Publikacja przedstawia ocenę postępów Polski w realizacji Celów Zrównoważonego Rozwoju (SDGs) w ramach Agendy 2030. Analiza obejmuje 162 wskaźniki monitorujące 74 krajowe priorytety i pokazuje zarówno kierunek, jak i tempo zachodzących zmian.</p>
+
+  <p>Po raz pierwszy do oceny postępów zastosowano metodę CAGR (skumulowanej rocznej stopy wzrostu), wykorzystywaną m.in. przez ONZ i Eurostat. Wyniki przedstawiono na trzech poziomach – wskaźników, krajowych priorytetów oraz 17 Celów Zrównoważonego Rozwoju.</p>
+
+  <p>Publikacja pokazuje, w których obszarach Polska osiąga postęp, a gdzie potrzebne są dalsze działania i przyspieszenie zmian.</p>
+
+  <br />
+
+<hr style="margin-top: 0px;">
+
 <div class="image-wrapper">
  <a target="_blank" href="https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5501/54/1/1/sdg_w_liczbach._10_lat_agendy_2030_w_polsce.pdf" alt="SDG w liczbach. 10 lat Agendy 2030 w Polsce" title="Zapoznaj się z folderem SDG w liczbach. 10 lat Agendy 2030 w Polsce"><img src="{{ site.baseurl }}/assets/img/publikacje/17_10_lat_agendy.png" align="center" alt="SDG w liczbach. 10 lat Agendy 2030 w Polsce" border="0"/></a>
 </div>
@@ -264,7 +280,7 @@ permalink: /o_sdg/
 <br />
 
 
-  <hr style="margin-top: 0px;">
+<hr style="margin-top: 0px;">
 
   <div class="image-wrapper">
    <a target="_blank" href="https://stat.gov.pl/obszary-tematyczne/inne-opracowania/inne-opracowania-zbiorcze/polish-sdg-statistics-in-a-nutshell,48,1.html#" alt="Polish SDG Statistics in a nutshell" title="Zapoznaj się z folderem Polish SDG statistics in a nutshell"><img src="{{ site.baseurl }}/assets/img/publikacje/polish_SDG_statistics_in_a_nutshell.PNG" align="center" alt="GUS" border="0"/></a>

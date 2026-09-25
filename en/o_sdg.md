@@ -246,6 +246,22 @@ permalink: /en/o_sdg/
 
 <hr style="margin-top: 0px;">
 
+  <div class="image-wrapper" style="height: 220px;">
+    <a target="_blank" href="https://publikacje.new.stat.gov.pl/en/file/228266/download" alt="SDG Implementation in Poland. Measuring Progress" title="See SDG Implementation in Poland. Measuring Progress"><img src="{{ site.baseurl }}/assets/img/publikacje/18_realizacja_sdg_w_polsce_en.png" align="center" alt="SDG Implementation in Poland. Measuring Progress" border="0"/></a>
+  </div>
+
+  <p><b>SDG Implementation in Poland. Measuring Progress</b></p>
+
+  <p>The publication provides an assessment of Poland’s progress towards achieving the Sustainable Development Goals (SDGs) under the 2030 Agenda. The analysis covers 162 indicators monitoring 74 national priorities and highlights both the direction and pace of change.</p>
+
+  <p>For the first time, the assessment applies the CAGR (Compound Annual Growth Rate) method, also used by the United Nations and Eurostat. The results are presented at three levels – indicators, national priorities and the 17 Sustainable Development Goals.</p>
+
+  <p>The publication identifies areas where Poland is making progress, as well as those where further action and faster progress are needed.</p>
+
+  <br />
+
+<hr style="margin-top: 0px;">
+
 <div class="image-wrapper">
  <a target="_blank" href="https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5501/54/1/1/sdg_w_liczbach._10_lat_agendy_2030_w_polsce.pdf" alt="SDG in numbers. 10 years of the 2030 Agenda in Poland" title="See SDG in numbers. 10 years of the 2030 Agenda in Poland"><img src="{{ site.baseurl }}/assets/img/publikacje/17_10_lat_agendy.png" align="center" alt="SDG in numbers. 10 years of the 2030 Agenda in Poland" border="0"/></a>
 </div>
