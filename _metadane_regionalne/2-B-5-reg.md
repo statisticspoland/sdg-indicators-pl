@@ -42,8 +42,8 @@ en_wyjasnienia_metodologiczne: >-
 
 en_definicja: >-
   Cases of bacterial dysentery.
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

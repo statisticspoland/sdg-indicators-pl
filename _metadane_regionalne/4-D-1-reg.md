@@ -69,8 +69,8 @@ en_wyjasnienia_metodologiczne: >-
   System, administered by the Ministry of National Education.</p>
 en_definicja: >-
   Share of children aged 3-5 covered by pre-primary education in the number of population in the same age group.
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

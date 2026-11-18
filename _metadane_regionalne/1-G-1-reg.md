@@ -37,8 +37,8 @@ en_wyjasnienia_metodologiczne: >-
   <p><b>A dwelling</b> is a premises consisting of one or more rooms and auxiliary rooms, intended for the permanent residence of persons, built or rebuilt for residential purposes; structurally separated by permanent walls within a building, with an independent entrance from a staircase, common corridor, common hall, street, yard or garden.</p><p>A dwelling taken into account in the study is one that includes a room in which a bathtub or shower is installed, or both, and devices discharging sewage into the sewer system or to local devices (drainless tanks, domestic sewage treatment plants).</p>
 en_definicja: >-
   Share of apartments equipped with a bathroom in the total number of apartments.
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

@@ -37,8 +37,8 @@ en_wyjasnienia_metodologiczne: >-
   <p><b>A household</b> is a group of people related to each other or unrelated, living together and supporting themselves together (multi-person household) or a person supporting themselves, regardless of whether they live alone or with other people (single-person household).</p><p>Family members living together but living separately form separate households.</p><p><b>Goods include:</b> audiovisual, photographic and IT equipment, durable equipment related to recreation and culture (e.g. cars with a living area, caravans, airplanes, gliders, hang gliders, balloons, boats, horses, kayaks, surfboards, diving equipment, golf equipment, bodybuilding equipment, billiards), musical instruments.</p><p><b>The services include</b> - among others: entrance fees (to the cinema, theatre, opera, concert, museum, gallery, circus, zoo, national park), fees related to cultural, sports and recreational activities (use of swimming pools, ice rinks, gyms, rental of horses, sports and tourist equipment, rental of equipment satisfying cultural needs), fees for radio and television, other services related to cultural activities (e.g. rental of musicians,  taking photographs and other photographic and film services), participation in gambling, other.</p>
 en_definicja: >-
   Expenditure incurred to meet the needs for consumer goods and services in the field of culture and recreation per 1 person in the household.
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

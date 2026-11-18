@@ -67,8 +67,8 @@ en_wyjasnienia_metodologiczne: >-
   <p>Data were grouped by voivodeships and divided into types of activity according to the Polish Classification of Activities using the method of local units of the type of activity, i.e. according to the seat and the basic type of activity of the local unit of the enterprise.</p>
 en_definicja: >-
   Gross value added per employee in relation to the national average in agriculture, forestry, hunting and fishing
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

@@ -37,8 +37,8 @@ en_wyjasnienia_metodologiczne: >-
   <p><b>A household</b> is a group of people living together and maintaining themselves together. Single people maintaining themselves form single-person households.</p><p>Households are distinguished from the population living in apartments (without collective accommodation facilities). Among households, we distinguish single-person and multi-person (2 or more people), as well as family and non-family.</p><p>Data prepared on the basis of a <b>representative survey of household budgets</b>, which is the basic source of information on the living conditions of the population, i.e. the level and structure of disposable income, expenditure, consumption, equipment of households with durable goods and the risk of poverty. The survey covers all private households, except those living in collective accommodation facilities and households of members of the diplomatic corps of foreign countries. The unit of the survey is a single- or multi-person household. The number of apartments selected for the survey has changed. Since 2006, the sample has been around 37 thousand apartments, since 2021 - around 34 thousand, and since 2022 - around 30 thousand apartments. The number of households surveyed is around 0.2% of the total number of households in Poland.</p>
 en_definicja: >-
   Percentage of households in which respondents assessed the material situation of their household as rather bad or bad.
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

@@ -63,8 +63,8 @@ en_wyjasnienia_metodologiczne: >-
 
 en_definicja: >-
   Share of graduates of vocational schools of the first and second degree (excluding special schools) in the total number of graduates of upper secondary schools for youth (excluding special schools)(vocational schools of the first and second degree, technical secondary schools and general secondary schools).
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

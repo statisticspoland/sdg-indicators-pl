@@ -75,8 +75,8 @@ pl_uwagi: >-
   Do 2016 r. dane pozyskiwane ze sprawozdawczości GUS. Od 2017 r. dane o uczelniach, z wyjątkiem danych o części uczelni prowadzonych przez kościoły i inne związki wyznaniowe, opracowano na podstawie Zintegrowanego Systemu Informacji o Nauce i Szkolnictwie Wyższym POL-on administrowanego przez Ministerstwo Nauki i Szkolnictwa Wyższego.
 en_uwagi: >-
   Until 2016, data obtained from the Statistics Poland reporting. Since 2017, data on universities, with the exception of data on parts of universities run by churches and other religious associations, have been compiled on the basis of the Integrated Information System on Science and Higher Education POL-on administered by the Ministry of Science and Higher Education.
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

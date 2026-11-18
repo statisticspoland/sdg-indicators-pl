@@ -37,8 +37,8 @@ en_wyjasnienia_metodologiczne: >-
   <p><b>Disposable income of a household</b> is the sum of current household income from individual sources, reduced by advances on personal income tax paid by the remitter on behalf of the taxpayer, taxes on income from property, taxes paid by self-employed persons, including representatives of liberal professions and persons using individual farms in agriculture, and social and health insurance contributions.</p><p>Disposable income includes monetary and non-monetary income, including natural consumption (consumer goods or services taken for the needs of a household from an individual household or from self-employed business activity - agricultural and non-agricultural) and goods and services received free of charge. Disposable income is intended for expenses and the increase in savings.</p>
 en_definicja: >-
   Ratio of average monthly disposable income per person in a household in a given voivodeship to average monthly disposable income per 1 person in a household in Poland.
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

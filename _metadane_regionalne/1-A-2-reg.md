@@ -37,8 +37,8 @@ en_wyjasnienia_metodologiczne: >-
   Children up to the age of 17 for whom parents receive a family benefit in the form of a family allowance on the basis of the Act of 28 November 2003 on family benefits (Journal of Laws of 2006 No. 139, as amended). The child benefit is intended to partially cover the expenses for maintaining a child. Granting the right to family allowance depends, m.in on meeting the family income criterion.
 en_definicja: >-
   Percentage share of children up to the age of 17 for whom parents receive child benefit in the total number of children at this age.
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

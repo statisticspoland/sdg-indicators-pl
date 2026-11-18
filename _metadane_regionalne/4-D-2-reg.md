@@ -55,8 +55,8 @@ pl_uwagi: >-
   W roku 2015 podano łącznie liczbę osób zdających egzamin maturalny według nowej i starej formuły.
 en_uwagi: >-
   In 2015, the total number of people taking the matriculation exam according to the new and old formula was given.
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---

@@ -37,8 +37,8 @@ en_wyjasnienia_metodologiczne: >-
   Families receiving a family benefit in the form of a family allowance on the basis of the Act of 28 November 2003 on family benefits (Journal of Laws of 2006, No. 139, as amended). The child benefit is intended to partially cover the expenses for maintaining a child. Granting the right to family allowance depends, m.in on meeting the income criterion.
 en_definicja: >-
   Families receiving family allowances on the basis of the Act of 28 November 2003 on family benefits (Journal of Laws of 2006, No. 139, as amended).
-pl_data_aktualizacji_danych:
+pl_data_aktualizacji_danych: 18-11-2026
 pl_data_aktualizacji_metadanych:
-en_data_aktualizacji_danych:
+en_data_aktualizacji_danych: 18-11-2026
 en_data_aktualizacji_metadanych:
 ---
