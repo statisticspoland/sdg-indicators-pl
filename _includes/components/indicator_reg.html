@@ -8163,12 +8163,16 @@
               maxValue=8;
               marg=0;
               break;
-            case '2-a-3':
-              maxValue=30000;
+            case '1-c-2':
+              maxValue=90;
               marg=0;
               break;
             case '2-a-2':
               maxValue=1;
+              marg=0;
+              break;
+            case '2-a-3':
+              maxValue=30000;
               marg=0;
               break;
             case '2-b-4': //przy inicjacji nie ma w wartościach Polski
@@ -8239,12 +8243,16 @@
               maxValue=16;
               marg=0;
               break;
+            case '4-d-1':
+              maxValue=90;
+              marg=0;
+              break;
             case '4-d-3':
-              minValue = 85;
+              minValue=85;
               marg=0;
               break;
             case '5-a-1':
-              maxValue=350;
+              maxValue=400;
               marg=0;
               break;
             case '5-a-3':
@@ -8253,8 +8261,36 @@
             case '5-a-4':
               minValue=60;
               break;
+            case '7-a-1':
+              maxValue=90;
+              marg=0;
+              break;
             case '7-b-3':
               maxValue=0.25;
+              marg=0;
+              break;
+            case '7-c-2':
+              maxValue=90.7;
+              marg=0;
+              break;
+            case '9-c-11':
+              maxValue=90;
+              marg=0;
+              break;
+            case '9-d-1':
+              maxValue=90;
+              marg=0;
+              break;
+            case '9-d-5':
+              maxValue=90;
+              marg=0;
+              break;
+            case '10-a-5':
+              maxValue=90;
+              marg=0;
+              break;
+            case '11-b-4':
+              maxValue=90;
               marg=0;
               break;
             case '13-c-1':
@@ -8262,32 +8298,28 @@
               marg=0;
               break;
             case '13-c-2':
-              maxValue = 1.04;
-              marg = 0;
-              break;
-            case '7-c-2':
-              maxValue = 90.7;
-              marg = 0;
+              maxValue=1.04;
+              marg=0;
               break;
             case '13-d-1':
-              maxValue = 90.7;
-              marg = 0;
+              maxValue=90.7;
+              marg=0;
               break;
             case '13-d-2':
-              maxValue = 90.7;
-              marg = 0;
+              maxValue=90.7;
+              marg=0;
               break;
             case '15-b-3':
-              maxValue = 0.047;
-              marg = 0;
+              maxValue=0.047;
+              marg=0;
               break;
             case '15-c-2':
-              maxValue = 0.152;
-              marg = 0;
+              maxValue=0.152;
+              marg=0;
               break;
             case '15-c-3':
-              maxValue = 0.43;
-              marg = 0;
+              maxValue=0.43;
+              marg=0;
               break;
             default:
           }
@@ -8295,31 +8327,31 @@
           var baseV = 0;
           switch ('{{ id_map }}') {
             case '2-b-1':
-              baseV = 100;
+              baseV=100;
               break;
             case '3-e-1':
-              baseV = 60;
+              baseV=60;
               break;
             case '3-e-2':
-              baseV = 60;
+              baseV=60;
               break;
             case '3-e-3':
-              baseV = 55;
+              baseV=55;
               break;
             case '3-e-4':
-              baseV = 55;
+              baseV=55;
               break;
             case '4-d-3':
-              baseV = 100;
+              baseV=100;
               break;
             case '5-a-3':
-              baseV = 60;
+              baseV=60;
               break;
             case '5-a-4':
-              baseV = 60;
+              baseV=60;
               break;
             default:
-              baseV = 0;
+              baseV=0;
           }
           createchartBar("chartBar", data2.slice(1), minValue,maxValue+marg,baseV, "{{ precyzja }}", [lastYearValue],"{{ language }}");
           });
@@ -8440,6 +8472,10 @@ function updateChartBar(){
                 maxValue=8;
                 marg=0;
                 break;
+              case '1-c-2':
+                maxValue=90;
+                marg=0;
+                break;
               case '2-a-2':
                 maxValue=1;
                 marg=0;
@@ -8524,12 +8560,16 @@ function updateChartBar(){
                 maxValue=16;
                 marg=0;
                 break;
+              case '4-d-1':
+                maxValue=90;
+                marg=0;
+                break;
               case '4-d-3':
-                minValue = 85;
+                minValue=85;
                 marg=0;
                 break;
               case '5-a-1':
-                maxValue=350;
+                maxValue=400;
                 marg=0;
                 break;
               case '5-a-3':
@@ -8538,9 +8578,36 @@ function updateChartBar(){
               case '5-a-4':
                 minValue=60;
                 break;
-
+              case '7-a-1':
+                maxValue=90;
+                marg=0;
+                break;
               case '7-b-3':
                 maxValue=0.25;
+                marg=0;
+                break;
+              case '7-c-2':
+                maxValue=90.7;
+                marg=0;
+                break;
+              case '9-c-11':
+                maxValue=90;
+                marg=0;
+                break;
+              case '9-d-1':
+                maxValue=90;
+                marg=0;
+                break;
+              case '9-d-5':
+                maxValue=90;
+                marg=0;
+                break;
+              case '10-a-5':
+                maxValue=90;
+                marg=0;
+                break;
+              case '11-b-4':
+                maxValue=90;
                 marg=0;
                 break;
               case '13-c-1':
@@ -8548,32 +8615,28 @@ function updateChartBar(){
                 marg=0;
                 break;
               case '13-c-2':
-                maxValue = 1.04;
-                marg = 0;
-                break;
-              case '7-c-2':
-                maxValue = 90.7;
-                marg = 0;
+                maxValue=1.04;
+                marg=0;
                 break;
               case '13-d-1':
-                maxValue = 90.7;
-                marg = 0;
+                maxValue=90.7;
+                marg=0;
                 break;
               case '13-d-2':
-                maxValue = 90.7;
-                marg = 0;
+                maxValue=90.7;
+                marg=0;
                 break;
               case '15-b-3':
-                maxValue = 0.047;
-                marg = 0;
+                maxValue=0.047;
+                marg=0;
                 break;
               case '15-c-2':
-                maxValue = 0.152;
-                marg = 0;
+                maxValue=0.152;
+                marg=0;
                 break;
               case '15-c-3':
-                maxValue = 0.43;
-                marg = 0;
+                maxValue=0.43;
+                marg=0;
                 break;
               default:
             }
@@ -8581,31 +8644,31 @@ function updateChartBar(){
             var baseV = 0;
             switch ('{{ id_map }}') {
               case '2-b-1':
-                baseV = 100;
+                baseV=100;
                 break;
               case '3-e-1':
-                baseV = 60;
+                baseV=60;
                 break;
               case '3-e-2':
-                baseV = 60;
+                baseV=60;
                 break;
               case '3-e-3':
-                baseV = 55;
+                baseV=55;
                 break;
               case '3-e-4':
-                baseV = 55;
+                baseV=55;
                 break;
               case '4-d-3':
-                baseV = 100;
+                baseV=100;
                 break;
               case '5-a-3':
-                baseV = 60;
+                baseV=60;
                 break;
               case '5-a-4':
-                baseV = 60;
+                baseV=60;
                 break;
               default:
-                baseV = 0;
+                baseV=0;
             }
 
             createchartBar("chartBar", data3, minValue, maxValue+marg, baseV, "{{ precyzja }}", [selectedYear], "{{ language }}");
